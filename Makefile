@@ -14,4 +14,5 @@ TITLE="title"
 # to create a new post with a particular title:
 # make new TITLE="blah blah blah"
 new:
-	R -e 'blogdown::new_post(title="\"$(TITLE)\"", author="Karl")'
+	R -e 'blogdown::new_post(title="\"$(TITLE)\"", author="Karl", rmd=TRUE)'
+	emacs content/post/
