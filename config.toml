@@ -28,6 +28,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     disqusURL = "http://kbroman.org/blog"
     fullURL = "http://kbroman.org/blog"
     githubContentURL = "https://github.com/kbroman/blog/edit/source/content/"
+    customCSS = ["css/custom.css"]
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
