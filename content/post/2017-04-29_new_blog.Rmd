@@ -1,0 +1,23 @@
+---
+title: "new blog"
+author: "Karl"
+date: 2017-04-29T08:37:00-05:00
+categories: ["News"]
+tags: ["news"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+This is the new site for my blog. Also see my
+[old wordpress site](https://kbroman.wordpress.com/); I'm not going to
+try to figure out how to move things over.
+
+I'm not been writing much recently, in part because Wordpress is such
+a drag to work with. The present site uses
+[blogdown](https://github.com/rstudio/blogdown), which is a _joy_. See the
+[bookdown-based documentation](https://bookdown.org/yihui/blogdown)
+plus examples at [github.com/rbind](https://github.com/rbind).
+
+The source for this site is at [github](https://github.com/kbroman/blog).
