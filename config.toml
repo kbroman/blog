@@ -1,27 +1,30 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "A Hugo website"
+title = "The stupidest thing..."
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
-disqusShortname = ""
+disqusShortname = "kbroman-blog"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "About"
+    name = "about"
     url = "/about/"
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
+    name = "github"
+    url = "https://github.com/kbroman"
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
+    name = "twitter"
+    url = "https://twitter.com/kwbroman"
 
 [params]
     description = "A website built through Hugo and blogdown."
+    disqusURL = "http://kbroman.org/blog"
+    fullURL = "http://kbroman.org/blog"
+    githubContentURL = "https://github.com/kbroman/blog/edit/source/content/"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
@@ -30,8 +33,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     highlightjsTheme = "github"
 
     [params.logo]
-    url = "logo.png"
+    url = "karl.png"
     width = 50
     height = 50
     alt = "Logo"
-
