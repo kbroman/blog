@@ -19,5 +19,6 @@ a drag to work with. The present site uses
 [blogdown](https://github.com/rstudio/blogdown), which is a _joy_. See the
 [bookdown-based documentation](https://bookdown.org/yihui/blogdown)
 plus examples at [github.com/rbind](https://github.com/rbind).
+Also see my [notes on how I constructed this site](https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md).
 
 The source for this site is at [github](https://github.com/kbroman/blog).
