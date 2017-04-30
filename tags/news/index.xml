@@ -34,7 +34,8 @@
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
       <guid>/2017/04/29/new-blog/</guid>
-      <description>This is the new site for my blog. Also see my old wordpress site; I’m not going to try to figure out how to move things over.
+      <description>This is the new site for my blog; source at github..
+I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation plus examples at github.com/rbind. Also see my notes on how I constructed this site.</description>
     </item>
     
