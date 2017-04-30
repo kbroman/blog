@@ -11,7 +11,7 @@ description: "Announcing a new site for Karl Broman's blog."
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-This is the new site for my blog; source at [github](https://github.com/kbroman/blog)..
+This is the new site for my blog; source at [github](https://github.com/kbroman/blog).
 
 I'm going to leave my [old wordpress
 site](https://kbroman.wordpress.com/) as it is and not try to figure
