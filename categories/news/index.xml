@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Old posts</title>
+      <title>old posts</title>
       <link>/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
@@ -35,8 +35,7 @@
       
       <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog. Also see my old wordpress site; I’m not going to try to figure out how to move things over.
-I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation plus examples at github.com/rbind.
-The source for this site is at github.</description>
+I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation plus examples at github.com/rbind. Also see my notes on how I constructed this site.</description>
     </item>
     
   </channel>
