@@ -19,6 +19,9 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 [[menu.main]]
     name = "twitter"
     url = "https://twitter.com/kwbroman"
+[[menu.main]]
+    name = "web"
+    url = "http://kbroman.org"
 
 [params]
     description = "Karl Broman's blog, The stupidest thing... Statistics, genetics, programming, academics."
