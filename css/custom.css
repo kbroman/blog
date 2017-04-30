@@ -1,0 +1,9 @@
+.article-content a {
+    border-bottom: 2px solid #9d81ba;
+    box-shadow: none;
+}
+
+.article-content a:hover,
+.article-content a:focus {
+    background: #cdb1ea;
+}
