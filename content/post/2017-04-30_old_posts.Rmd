@@ -1,5 +1,5 @@
 ---
-title: "Old posts"
+title: "old posts"
 author: "Karl"
 date: 2017-04-30T10:50:00-05:00
 categories: ["News"]
