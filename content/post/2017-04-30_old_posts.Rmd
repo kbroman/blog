@@ -1,0 +1,149 @@
+---
+title: "Old posts"
+author: "Karl"
+date: 2017-04-30T10:50:00-05:00
+categories: ["News"]
+tags: ["news"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+In moving away from my
+[old wordpress site](https://kbroman.wordpress.com/), I thought I'd
+look back at some of my old posts there. Here are the most frequently
+visited ones.
+
+- [Better-looking LaTeX/Beamer slides](http://kbroman.wordpress.com/2013/10/07/better-looking-latexbeamer-slides/),
+  2013-10-07
+
+- [MongoDB with D3.js](http://kbroman.wordpress.com/2015/06/22/mongodb-with-d3-js/),
+  2015-06-22
+
+- [Crayon colors in R](http://kbroman.wordpress.com/2014/05/07/crayon-colors-in-r/),
+  2014-05-07
+
+- [`apply` vs `for`](http://kbroman.wordpress.com/2013/04/02/apply-vs-for/),
+  2013-04-02
+
+- [Thoughts on statistical consulting](http://kbroman.wordpress.com/2013/04/02/thoughts-on-statistical-consulting/),
+  2013-04-02
+
+- [Notifications from R](http://kbroman.wordpress.com/2014/09/03/notifications-from-r/),
+  2014-09-03
+
+- [A course in statistical programming](http://kbroman.wordpress.com/2012/05/25/a-course-in-statistical-programming/),
+  2012-05-25
+
+- [Row names in data frames: beware of `1:nrow`](http://kbroman.wordpress.com/2012/03/21/row-names-in-data-frames-beware-of-1nrow/),
+  2012-03-21
+
+- [Interactive graphics with d3.js](http://kbroman.wordpress.com/2013/02/08/interactive-graphics-with-d3-js/),
+  2013-02-08
+
+- [I am a data scientist](http://kbroman.wordpress.com/2016/04/08/i-am-a-data-scientist/),
+  2016-04-08
+
+
+There are a bunch of other things that I've written and quite like.
+Here's a long list:
+
+- [The stupidest R code ever](https://kbroman.wordpress.com/2011/08/17/the-stupidest-r-code-ever/),
+  2011-04-17
+
+- [Microarrays suck](https://kbroman.wordpress.com/2012/04/25/microarrays-suck/),
+  2012-04-25
+
+- [Curved arrows in R](https://kbroman.wordpress.com/2012/10/11/curved-arrows-in-r/),
+  2012-10-11
+
+- [The Hopkins SPH
+  logo](https://kbroman.wordpress.com/2012/11/16/the-hopkins-sph-logo-part-1/),
+  parts [1 (2012-11-16)](https://kbroman.wordpress.com/2012/11/16/the-hopkins-sph-logo-part-1/),
+  [2 (2012-11-21)](https://kbroman.wordpress.com/2012/11/21/the-hopkins-sph-logo-part-2/),
+  and
+  [3 (2013-03-06)](https://kbroman.wordpress.com/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/)
+
+- [Towards making my own papers reproducible](https://kbroman.wordpress.com/2013/03/10/towards-making-my-own-papers-reproducible/),
+  2013-03-10
+
+- [Methods before results](https://kbroman.wordpress.com/2013/04/29/methods-before-results/),
+  2013-04-29
+
+- [Knuth: Journal referees should assist authors](https://kbroman.wordpress.com/2013/04/08/knuth-journal-referees-should-assist-authors/),
+  2013-04-08
+
+- [Data science is statistics](https://kbroman.wordpress.com/2013/04/05/data-science-is-statistics/),
+  2013-04-05
+
+- [Chutes & ladders: How long is this going to take?](https://kbroman.wordpress.com/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/)
+  2013-05-17
+
+- [Stack exchange: why I dropped out](https://kbroman.wordpress.com/2013/05/13/stack-exchange-why-i-dropped-out/),
+  2013-05-13
+
+- [Hiring computational biologists](https://kbroman.wordpress.com/2013/09/25/hiring-computational-biologists/),
+  2013-09-25
+
+- [Department websites](https://kbroman.wordpress.com/2013/09/11/department-websites/),
+  2013-09-11
+
+- [Complaints about the NIH grant review process](https://kbroman.wordpress.com/2013/10/02/complaints-about-the-nih-grant-review-process/),
+  2013-10-02
+
+- [Reform academic statistics](https://kbroman.wordpress.com/2014/05/01/reform-academic-statistics/),
+  2014-05-01
+
+- [If I could do it over again, I'd self-publish](https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/),
+  2014-08-12
+
+- [Improved graphs of car crash stats](https://kbroman.wordpress.com/2014/10/29/improved-graphs-of-car-crash-stats/),
+  2014-10-29
+
+- [Interactive plot of car crash stats](https://kbroman.wordpress.com/2014/10/30/interactive-plot-of-car-crash-stats/),
+  2014-10-30
+
+- [Car crash stats revisited: My measurement errors](https://kbroman.wordpress.com/2014/11/03/car-crash-stats-revisited-my-measurement-errors/),
+  2014-11-03
+
+- [God-awful conference websites](https://kbroman.wordpress.com/2015/08/05/god-awful-conference-web-sites/),
+  2015-08-05
+
+- [Reproducibility is hard](https://kbroman.wordpress.com/2015/09/09/reproducibility-is-hard/),
+  2015-09-09
+
+
+I have also written a few advice-type posts on
+various academic matters:
+
+- [Seminars, bad and good](https://kbroman.wordpress.com/2011/09/29/seminars-bad-and-good/),
+  2011-09-29
+
+- [Tips on grant writing](https://kbroman.wordpress.com/2011/10/21/grant-writing/),
+  2011-10-21
+
+- [What should I do badly?](https://kbroman.wordpress.com/2012/05/23/what-should-i-do-badly/),
+  2012-05-23
+
+- [Things to avoid as a new faculty member](https://kbroman.wordpress.com/2013/12/05/things-to-avoid-as-a-new-faculty-member/)
+  2013-12-05
+
+
+
+Here are a few more programming things:
+
+- [Beware of `grep` with a list](https://kbroman.wordpress.com/2013/04/03/beware-of-grep-with-a-list/),
+  2013-04-03
+
+- [`[` and `[[` with the `apply()` functions](https://kbroman.wordpress.com/2013/08/20/and-with-the-apply-functions/),
+  2013-08-20
+
+- [`[` with the `apply()` functions, revisited](https://kbroman.wordpress.com/2014/04/29/with-the-apply-functions-revisited/)
+  2014-04-29
+
+- [Read the source code](https://kbroman.wordpress.com/2013/08/06/read-the-source-code/),
+  2013-08-06
+
+- [Emacs key bindings in MS Word](https://kbroman.wordpress.com/2014/02/12/emacs-key-bindings-in-ms-word/),
+  2014-02-12
