@@ -4,6 +4,7 @@ author: "Karl"
 date: 2017-04-29T08:37:00-05:00
 categories: ["News"]
 tags: ["news"]
+description: "Announcing a new site for Karl Broman's blog."
 ---
 
 ```{r setup, include=FALSE}

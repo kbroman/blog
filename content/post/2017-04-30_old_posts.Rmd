@@ -4,6 +4,7 @@ author: "Karl"
 date: 2017-04-30T10:50:00-05:00
 categories: ["News"]
 tags: ["news"]
+description: "Lists of recommended old posts from Karl Broman's blog."
 ---
 
 ```{r setup, include=FALSE}
