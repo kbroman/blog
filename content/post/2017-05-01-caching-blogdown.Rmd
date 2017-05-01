@@ -2,8 +2,8 @@
 title: "caching blogdown"
 author: Karl
 date: '2017-05-01T00:10:00-05:00'
-categories: [R]
-tags: [R, blogdown]
+categories: ["R"]
+tags: ["R", "blogdown"]
 ---
 
 [blogdown](https://github.com/rstudio/blogdown) is cool, but it seems
