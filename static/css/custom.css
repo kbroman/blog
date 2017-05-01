@@ -36,6 +36,7 @@ pre > code {
 /* hide title on iphone */
 @media (max-width: 415px) {
     .nav-title {
-        visibility: hidden;
+        visibility: hidden; /* hide it */
+        margin-left: -400px; /* move off the screen to make space for menu */
     }
 }
