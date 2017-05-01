@@ -14,7 +14,7 @@ set.seed(1979300)
 ```
 
 I don't think I'm unusual among statisticians in having avoided
-working directly databases for much of my career. The data for my
+working directly with databases for much of my career. The data for my
 projects have been reasonably small. (In fact, basically all of the
 data for my 20 years of projects are on my laptop's drive.) Flat files
 (such as CSV files) were sufficient.
