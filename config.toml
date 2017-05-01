@@ -1,7 +1,7 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "The stupidest thing..."
+title = "the stupidest thing..."
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = "kbroman-blog"
@@ -24,7 +24,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     url = "http://kbroman.org"
 
 [params]
-    description = "Karl Broman's blog, The stupidest thing... Statistics, genetics, programming, academics."
+    description = "Karl Broman's blog: The stupidest thing... statistics, genetics, programming, academics."
     disqusURL = "http://kbroman.org/blog"
     fullURL = "http://kbroman.org/blog"
     githubContentURL = "https://github.com/kbroman/blog/edit/source/content/"
