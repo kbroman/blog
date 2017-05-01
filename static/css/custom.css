@@ -21,7 +21,6 @@ pre > code {
 }
 
 @media (min-width: 600px) {
-
     .nav-title {
         font-size: 18px;
         margin-left: 14px;
@@ -29,8 +28,14 @@ pre > code {
 }
 
 @media (min-width: 700px) {
-
     .nav-title {
         margin-left: 36px;
+    }
+}
+
+/* hide title on iphone */
+@media (max-width: 415px) {
+    .nav-title {
+        visibility: hidden;
     }
 }
