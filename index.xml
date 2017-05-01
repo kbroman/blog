@@ -6,10 +6,20 @@
     <description>Recent content on The stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Apr 2017 14:07:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2017 00:10:00 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>caching blogdown</title>
+      <link>/2017/05/01/caching-blogdown/</link>
+      <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
+      
+      <guid>/2017/05/01/caching-blogdown/</guid>
+      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
+I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
+    </item>
     
     <item>
       <title>sqlite, feather, and fst</title>
