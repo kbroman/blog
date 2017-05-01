@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Apr 2017 10:50:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 30 Apr 2017 14:07:00 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Feather</title>
+      <link>/tags/feather/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/tags/feather/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fst</title>
+      <link>/tags/fst/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/tags/fst/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>News</title>
@@ -17,6 +35,33 @@
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sql</title>
+      <link>/tags/sql/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     

@@ -7,3 +7,7 @@
 .article-content a:focus {
     background: #cdb1ea;
 }
+
+pre > code {
+    font-size: 0.8em;
+}

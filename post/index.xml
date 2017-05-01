@@ -6,10 +6,20 @@
     <description>Recent content in Posts on The stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Apr 2017 10:50:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 30 Apr 2017 14:07:00 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>sqlite, feather, and fst</title>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
+      <description>I don’t think I’m unusual among statisticians in having avoided working directly databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
+But I’ve finally entered the modern era of biggish data. (Why do they call it big data? That doesn’t leave us much room for gradations of size.</description>
+    </item>
     
     <item>
       <title>old posts</title>
@@ -36,7 +46,7 @@
       <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
-I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation plus examples at github.com/rbind. Also see my notes on how I constructed this site.</description>
+I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
     </item>
     
   </channel>

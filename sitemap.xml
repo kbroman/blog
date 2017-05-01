@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2017/04/30/sqlite-feather-and-fst/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/04/30/old-posts/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
   </url>
@@ -23,6 +28,18 @@
   </url>
   
   <url>
+    <loc>/tags/feather/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/fst/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/news/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
@@ -36,19 +53,43 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-04-30T10:50:00-05:00</lastmod>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sql/</loc>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-04-30T10:50:00-05:00</lastmod>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-04-30T10:50:00-05:00</lastmod>
+    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
