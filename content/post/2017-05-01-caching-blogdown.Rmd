@@ -1,0 +1,29 @@
+---
+title: "caching blogdown"
+author: Karl
+date: '2017-05-01T00:10:00-05:00'
+categories: [R]
+tags: [R, blogdown]
+---
+
+[blogdown](https://github.com/rstudio/blogdown) is cool, but it seems
+that it builds every `.Rmd` file every time you run `build_site()`, so
+if your site includes an analysis that takes a while...well, every
+time you build the site it's going to take a while.
+
+I had the mistaken impression that blogdown would look at the
+timestamps on the `.Rmd` and `.html` and only build the `.html` if the
+`.Rmd` file is newer, but that's not true.
+
+My [post about sqlite, feather, and fst](http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/)
+is rather slow, because I'm writing and reading rather big files and
+measuring access times. So it was looking like building my
+[new blog](http://kbroman.org/blog) would be really painful, forever
+more.
+
+Thus, I spent a bunch of time reworking the post to cache the times
+rather than running things every time the `.Rmd` file was built.
+[It's not pretty](https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd),
+and my method is _not_ generally recommended, but it seems to work.
+
+I expect [Yihui](https://yihui.name) has a better solution to this.
