@@ -1,0 +1,25 @@
+.article-content a {
+    border-bottom: 2px solid #9d81ba;
+    box-shadow: none;
+}
+
+.article-content a:hover,
+.article-content a:focus {
+    background: #cdb1ea;
+}
+
+pre > code {
+    font-size: 0.8em;
+}
+
+.nav-title {
+  float: left;
+  margin-top: -8px;
+  margin-left: 11px;
+  text-align: left;
+}
+
+a.nav-title, a.nav-subtitle {
+    text-decoration: none;
+    color: #111;
+}

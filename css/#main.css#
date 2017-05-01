@@ -128,15 +128,15 @@ code {
 .article-content a {
   text-decoration: none;
   color: inherit;
-  border-bottom: 2px solid #9d81ba;
-  box-shadow: none;
+  border-bottom: 3px solid #CBF8DF;
+  box-shadow: inset 0 -4px 0 #CBF8DF;
   background: transparent;
   transition: background 150ms ease;
 }
 
 .article-content a:hover,
 .article-content a:focus {
-  background: #bd1ba;
+  background: #CBF8DF;
 }
 
 .article-content hr {
