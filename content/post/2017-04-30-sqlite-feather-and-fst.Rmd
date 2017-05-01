@@ -45,7 +45,7 @@ I/O speed.
 
 ```{r simulate_data}
 n_ind <- 500
-n_snps <- 1e3
+n_snps <- 1e5
 ind_names <- paste0("ind", 1:n_ind)
 snp_names <- paste0("snp", 1:n_snps)
 sigX <- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
@@ -328,7 +328,7 @@ results <- data.frame(write_time= c(rds=write_rds_time[3],
                                     fst=file.info(fst_file)$size,
                                     fst_comp=file.info(fstcomp_file)$size)/10^6,
                       access_time=c(rds=NA,tapply(m$time/1e6, m$expr, mean)))
-rownames(results) <- c("rds", "sqlite", "feather", "feather (transp)", "fst", "fst (compr)")
+rownames(results) <- c("rds", "sqlite", "feather", "feather (tr)", "fst", "fst (compr)")
 knitr::kable(results, digits=c(1,1,0,1),
              col.names=c("write time (s)", "read time (s)",
                          "file size (MB)", "access time (ms)"))
