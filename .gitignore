@@ -1,3 +1,4 @@
 public/
 content/post/*.html
 static/post/
+_cache/
