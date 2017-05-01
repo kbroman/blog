@@ -17,8 +17,8 @@
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
       <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
-      <description>I don’t think I’m unusual among statisticians in having avoided working directly databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
-But I’ve finally entered the modern era of biggish data. (Why do they call it big data? That doesn’t leave us much room for gradations of size.</description>
+      <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
+But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
     <item>
