@@ -8,6 +8,6 @@
     background: #cdb1ea;
 }
 
-code {
+pre > code {
     font-size: 0.8em;
 }
