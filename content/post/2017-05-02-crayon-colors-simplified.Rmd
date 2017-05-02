@@ -1,0 +1,63 @@
+---
+title: "crayon colors, simplified"
+author: Karl
+date: '2017-05-02'
+categories: [R]
+tags: [R, data visualization]
+---
+
+```{r options, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, fig.width=7.2)
+```
+
+Back in 2014, I'd grabbed the [Crayola crayon colors from
+Wikipedia](https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)
+and made them available as part of my [R/broman](https://github.com/kbroman/broman)
+package.
+
+(I [wrote about it on my wordpress blog](https://kbroman.wordpress.com/2014/05/07/crayon-colors-in-r/),
+and then
+[again](https://kbroman.wordpress.com/2014/05/08/two-more-points-about-crayon-colors/)
+and
+[again](https://kbroman.wordpress.com/2014/05/09/further-points-on-crayon-colors/).)
+
+But it's rather tedious to grab the colors.
+
+There's a useful function for viewing the available colors.
+
+```{r plot_crayons, fig.height=6, fig.width=10.5, out.width=700}
+library(broman)
+plot_crayons()
+```
+
+But grabbing a color, say "Purple Mountain's Majesty", requires rather
+verbose code.
+
+```{r purple_mountains_majesty}
+brocolors("crayons")["Purple Mountain's Majesty"]
+```
+
+This morning, it was just too much for me. So I wrote a simpler
+function `crayons()`, which accepts partial matches, using `grep`.
+So you can write things like:
+
+```{r purple_m}
+crayons("purple m")
+crayons("tickle")
+crayons(c("purple m", "tickle"))
+crayons("purple m", "tickle")
+```
+
+Why didn't I think of this before?
+
+The new version of the package is not yet on
+[CRAN](https://cran.r-project.org), but you can install it from
+[GitHub](https://github.com/kbroman/broman) using
+[devtools](https://github.com/hadley/devtools):
+
+```{r install_broman, eval=FALSE}
+devtools::install_github("kbroman/broman")
+```
+
+Or you can ignore the rest of the package and just [grab the
+code](https://github.com/kbroman/broman/blob/master/R/brocolors.R).
