@@ -10,7 +10,9 @@
 
   <ul class="nav-links">
     {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    <li><a href="{{ .URL }}">
+            <img alt="{{ .Name }}" src="/images/{{ .Name }}_logo.png" class="nav-link"/>
+            </a></li>
     {{ end }}
   </ul>
 </nav>

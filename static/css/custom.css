@@ -12,6 +12,23 @@ pre > code {
     font-size: 0.8em;
 }
 
+.nav-link {
+  float: left;
+  margin: -4px 0 0 0;
+  transition: transform 150ms ease-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+img.nav-link {
+  display: block;
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+}
+
 .nav-title {
     float: left;
     margin-left: 6px;
@@ -25,6 +42,17 @@ pre > code {
         font-size: 18px;
         margin-left: 14px;
     }
+  .nav-links li {
+      max-height: 8px;
+      margin: 0 0 0 14px;
+  }
+
+  .nav-link {
+      margin: -20px 0 0 0;
+  }
+  img.nav-link {
+    height: 44px;
+  }
 }
 
 @media (min-width: 700px) {
