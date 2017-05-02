@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogdown on the stupidest thing...</title>
-    <link>/tags/blogdown/</link>
+    <link>http://kbroman.org/blog/tags/blogdown/</link>
     <description>Recent content in Blogdown on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 May 2017 00:10:00 -0500</lastBuildDate>
     
-	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://kbroman.org/blog/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>caching blogdown</title>
-      <link>/2017/05/01/caching-blogdown/</link>
+      <link>http://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>/2017/05/01/caching-blogdown/</guid>
+      <guid>http://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
       <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
 I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
     </item>
     
     <item>
       <title>new blog</title>
-      <link>/2017/04/29/new-blog/</link>
+      <link>http://kbroman.org/blog/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>/2017/04/29/new-blog/</guid>
+      <guid>http://kbroman.org/blog/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>

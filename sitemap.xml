@@ -3,120 +3,120 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2017/05/02/crayon-colors-simplified/</loc>
+    <loc>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/05/01/caching-blogdown/</loc>
+    <loc>http://kbroman.org/blog/2017/05/01/caching-blogdown/</loc>
     <lastmod>2017-05-01T00:10:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/04/30/sqlite-feather-and-fst/</loc>
+    <loc>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/04/30/old-posts/</loc>
+    <loc>http://kbroman.org/blog/2017/04/30/old-posts/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/04/29/new-blog/</loc>
+    <loc>http://kbroman.org/blog/2017/04/29/new-blog/</loc>
     <lastmod>2017-04-29T08:37:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>http://kbroman.org/blog/about/</loc>
     <lastmod>2017-04-29T08:36:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/blogdown/</loc>
+    <loc>http://kbroman.org/blog/tags/blogdown/</loc>
     <lastmod>2017-05-01T00:10:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://kbroman.org/blog/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/data-visualization/</loc>
+    <loc>http://kbroman.org/blog/tags/data-visualization/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/feather/</loc>
+    <loc>http://kbroman.org/blog/tags/feather/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/fst/</loc>
+    <loc>http://kbroman.org/blog/tags/fst/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/news/</loc>
+    <loc>http://kbroman.org/blog/tags/news/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/news/</loc>
+    <loc>http://kbroman.org/blog/categories/news/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>http://kbroman.org/blog/post/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/programming/</loc>
+    <loc>http://kbroman.org/blog/tags/programming/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>http://kbroman.org/blog/tags/r/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>http://kbroman.org/blog/categories/r/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/sql/</loc>
+    <loc>http://kbroman.org/blog/tags/sql/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://kbroman.org/blog/tags/</loc>
     <lastmod>2017-05-01T00:10:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/wordpress/</loc>
+    <loc>http://kbroman.org/blog/tags/wordpress/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://kbroman.org/blog/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

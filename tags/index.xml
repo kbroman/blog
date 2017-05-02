@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on the stupidest thing...</title>
-    <link>/tags/</link>
+    <link>http://kbroman.org/blog/tags/</link>
     <description>Recent content in Tags on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 May 2017 00:10:00 -0500</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://kbroman.org/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blogdown</title>
-      <link>/tags/blogdown/</link>
+      <link>http://kbroman.org/blog/tags/blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>http://kbroman.org/blog/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Visualization</title>
-      <link>/tags/data-visualization/</link>
+      <link>http://kbroman.org/blog/tags/data-visualization/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-visualization/</guid>
+      <guid>http://kbroman.org/blog/tags/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Feather</title>
-      <link>/tags/feather/</link>
+      <link>http://kbroman.org/blog/tags/feather/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/tags/feather/</guid>
+      <guid>http://kbroman.org/blog/tags/feather/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fst</title>
-      <link>/tags/fst/</link>
+      <link>http://kbroman.org/blog/tags/fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/tags/fst/</guid>
+      <guid>http://kbroman.org/blog/tags/fst/</guid>
       <description></description>
     </item>
     
     <item>
       <title>News</title>
-      <link>/tags/news/</link>
+      <link>http://kbroman.org/blog/tags/news/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>/tags/news/</guid>
+      <guid>http://kbroman.org/blog/tags/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>/tags/programming/</link>
+      <link>http://kbroman.org/blog/tags/programming/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/tags/programming/</guid>
+      <guid>http://kbroman.org/blog/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>http://kbroman.org/blog/tags/r/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>http://kbroman.org/blog/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sql</title>
-      <link>/tags/sql/</link>
+      <link>http://kbroman.org/blog/tags/sql/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/tags/sql/</guid>
+      <guid>http://kbroman.org/blog/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wordpress</title>
-      <link>/tags/wordpress/</link>
+      <link>http://kbroman.org/blog/tags/wordpress/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>/tags/wordpress/</guid>
+      <guid>http://kbroman.org/blog/tags/wordpress/</guid>
       <description></description>
     </item>
     
