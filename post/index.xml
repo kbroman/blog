@@ -19,8 +19,8 @@
       <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>Back in 2014, I’d grabbed the Crayola crayon colors from Wikipedia and made them available as part of my R/broman package.
 (I wrote about it on my wordpress blog, and then again and again.)
-But it’s rather tedious to grab the colors.
-There’s a useful function for viewing the available colors.
+But using my package to get the crayon colors can be rather tedious.
+It’s easy to view the available colors.
 library(broman) plot_crayons() But grabbing a color, say “Purple Mountain’s Majesty”, requires rather verbose code.
 brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majesty&amp;quot;] ## Purple Mountain&amp;#39;s Majesty ## &amp;quot;#9d81ba&amp;quot; This morning, it was just too much for me.</description>
     </item>
