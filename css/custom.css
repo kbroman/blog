@@ -68,3 +68,9 @@ img.nav-link {
         margin-left: -400px; /* move off the screen to make space for menu */
     }
 }
+
+.footer {
+    text-align: right;
+    margin-right: 34px;
+    margin-top: 34px;
+}
