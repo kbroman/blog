@@ -21,9 +21,9 @@ and then
 and
 [again](https://kbroman.wordpress.com/2014/05/09/further-points-on-crayon-colors/).)
 
-But it's rather tedious to grab the colors.
+But using my package to get the crayon colors can be rather tedious.
 
-There's a useful function for viewing the available colors.
+It's easy to view the available colors.
 
 ```{r plot_crayons, fig.height=6, fig.width=10.5, out.width=700}
 library(broman)
