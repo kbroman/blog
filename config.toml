@@ -6,6 +6,7 @@ theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = "kbroman-blog"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+rssLimit = 30
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
