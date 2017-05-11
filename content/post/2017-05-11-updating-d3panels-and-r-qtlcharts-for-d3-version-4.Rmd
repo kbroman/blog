@@ -42,6 +42,11 @@ printer, and covers D3 version 4.)
 
 [Irene Ros](http://www.ireneros.com/)'s [slides on what's new in D3
 V4](https://iros.github.io/d3-v4-whats-new/#1) were super helpful.
+(Also I just saw [Tim Roth](http://www.puzzlr.org/sample-page/)'s
+nice [tutorial on
+d3-force](http://www.puzzlr.org/force-graphs-with-d3/), linked on the
+[D3 tutorials page](https://github.com/d3/d3/wiki/Tutorials); duh.)
+
 
 My D3 code isn't particularly fancy. (And note that I'm still writing
 in [CoffeeScript](http://coffeescript.org); I toyed with the idea of
