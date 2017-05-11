@@ -1,5 +1,5 @@
 ---
-title: 'Updating d3panels and R/qtlcharts for D3 version 4'
+title: 'updating d3panels and R/qtlcharts for D3 version 4'
 author: Karl
 date: '2017-05-11'
 slug: ''
