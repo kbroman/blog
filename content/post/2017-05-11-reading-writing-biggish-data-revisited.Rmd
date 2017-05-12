@@ -23,7 +23,7 @@ R"](https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/). Also see his
 fread](https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf).
 
 I'll first generate the same data that I was using before. And note,
-as [@shabbychef](https://twitter.com/shabbychef) [mentioned on
+as [\@shabbychef](https://twitter.com/shabbychef) [mentioned on
 twitter](https://twitter.com/shabbychef/status/858892435820130304), my
 iid simulations mean that compression isn't likely to be useful, [as
 we saw in my previous
