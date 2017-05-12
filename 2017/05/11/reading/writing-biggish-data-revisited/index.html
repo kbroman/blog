@@ -73,7 +73,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     
 
     <h1 class="article-title">reading/writing biggish data, revisited</h1>
@@ -102,18 +102,199 @@ rds_comp_file &lt;- &quot;db_comp.rds&quot;
 saveRDS(db, rds_comp_file)
 db_copy1 &lt;- readRDS(rds_file)
 db_copy2 &lt;- readRDS(rds_comp_file)</code></pre>
-<p>Writing the data to an RDS file took 2.3 sec when uncompressed and 37.1 sec when compressed. Reading them back in took 1.8 sec for the uncompressed file and 6.4 sec for the compressed file. The uncompressed RDS file was 805 MB, while the compressed one was 769 MB.</p>
+<p>Writing the data to an RDS file took 5.5 sec when uncompressed and 51.4 sec when compressed. Reading them back in took 2.4 sec for the uncompressed file and 11.0 sec for the compressed file. The uncompressed RDS file was 805 MB, while the compressed one was 769 MB.</p>
 <p>So, <em>holy crap</em> reading and writing the RDS files is fast when you use <code>compress=FALSE</code>. Don’t tell your system administrator I said this, but if you’re working on a server with loads of disk space, for sure go with <code>compress=FALSE</code> with your RDS files. On your laptop where uncompressed RDS files might get in the way of your music and movie libraries, you might want to use the compression.</p>
 <div id="how-about-csv" class="section level2">
 <h2>How about CSV?</h2>
 <p><a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a> suggested that I might just use a plain CSV file, since <code>data.table::fread</code> and <code>data.table::fwrite</code> are so fast. How fast?</p>
+<p>To make use of the multi-threaded version of <a href="https://github.com/Rdatatable/data.table/wiki">data.table</a>’s <code>fread</code>, I need version 1.10.5 which is <a href="https://github.com/rdatatable/data.table">on GitHub</a>. The version on <a href="https://cran.r-project.org">CRAN</a> (<a href="https://cran.r-project.org/package=data.table">1.10.4</a>) has multi-threaded <code>fwrite</code> but only single-threaded <code>fread</code>.</p>
+<p>But the GitHub version needs to be compiled with OpenMP, and after a lot of screwing around to do that, I ended up getting segfaults from <code>fwrite</code>, so I just dumped this plan.</p>
+<p>So we’ll look at multi-threaded <code>fwrite</code> but only single-threaded <code>fread</code>. But we can all look forward to the multi-threaded <code>fread</code> in the near future.</p>
+<p>For <code>fwrite</code>, the number of threads is controlled by the argument <code>nThread</code>. The default is to call <code>data.table::getDTthreads()</code> which detects the maximum number of cores. On my Mac desktop at work, that’s 24. I’m going to hard-code it in.</p>
 <pre class="r"><code>csv_file &lt;- &quot;db.csv&quot;
-data.table::fwrite(db, csv_file, quote=FALSE)
+library(data.table)
+fwrite(db, csv_file, quote=FALSE)
 db_copy3 &lt;- data.table::fread(csv_file)</code></pre>
-<p>That took 27.7 sec to write and 37.9 sec to read, and the file size is 1818 MB.</p>
+<p>That took 41.6 sec to write and 55.0 sec to read, and the file size is 1818 MB.</p>
+<p>How about if I set <code>nThread=1</code> with <code>fwrite</code>?</p>
+<pre class="r"><code>fwrite(db, csv_file, quote=FALSE, nThread=1)</code></pre>
+<p>Single-threaded, <code>fwrite</code> took 69.1 sec.</p>
+<p>But the data set is 500 rows by 200k columns. How about if I used the transpose?</p>
+<pre class="r"><code>t_db &lt;- cbind(data.frame(snp=rep(snp_names, 2),
+                         signal=rep(c(&quot;X&quot;, &quot;Y&quot;), each=n_snps),
+                         stringsAsFactors=FALSE),
+              rbind(t(sigX), t(sigY)))</code></pre>
+<p>Now to write and read this.</p>
+<pre class="r"><code>csv_t_file &lt;- &quot;db_t.csv&quot;
+fwrite(t_db, csv_t_file, quote=FALSE, nThread=24)
+t_db_copy &lt;- fread(csv_t_file)</code></pre>
+<p>That took 8.3 sec to write and 26.6 sec to read, and the file size is 1818 MB.</p>
+<p>And how about if I do <code>fwrite</code> single-threaded?</p>
+<pre class="r"><code>fwrite(t_db, csv_t_file, quote=FALSE, nThread=1)</code></pre>
+<p>Single-threaded, the transposed data took 30.2 sec to write.</p>
 <p>(I’m not even going to try <code>read.csv</code> and <code>write.csv</code>. I’ll leave that to the reader.)</p>
-<p>So I agree that <code>fread</code> and <code>fwrite</code> are impressive. And I’d never have thought you could get advantage from parallel reads and writes.</p>
-<p>But I’m going to stick with RDS (making use of <code>compress=FALSE</code> when I don’t care much about disk space) when I want to read/write whole files from R. And I’ll go with SQLite, feather, or fst when I want super fast access to a single row or column.</p>
+<p>Here’s a summary of the times:</p>
+<style type="text/css">.table { width: 100%; }</style>
+<!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
+<!-- Thu May 11 23:50:59 2017 -->
+<table border="0" width="100%">
+<tr>
+<th>
+function
+</th>
+<th>
+method
+</th>
+<th>
+data size
+</th>
+<th>
+time (s)
+</th>
+</tr>
+<tr>
+<td align="center">
+saveRDS
+</td>
+<td align="center">
+not compressed
+</td>
+<td align="center">
+500 × 200k
+</td>
+<td align="right">
+5.5
+</td>
+</tr>
+<tr>
+<td align="center">
+saveRDS
+</td>
+<td align="center">
+compressed
+</td>
+<td align="center">
+500 × 200k
+</td>
+<td align="right">
+51.4
+</td>
+</tr>
+<tr>
+<td align="center">
+fwrite
+</td>
+<td align="center">
+24 threads
+</td>
+<td align="center">
+500 × 200k
+</td>
+<td align="right">
+41.6
+</td>
+</tr>
+<tr>
+<td align="center">
+fwrite
+</td>
+<td align="center">
+1 thread
+</td>
+<td align="center">
+500 × 200k
+</td>
+<td align="right">
+69.1
+</td>
+</tr>
+<tr>
+<td align="center">
+fwrite
+</td>
+<td align="center">
+24 threads
+</td>
+<td align="center">
+200k × 500
+</td>
+<td align="right">
+8.3
+</td>
+</tr>
+<tr>
+<td align="center">
+fwrite
+</td>
+<td align="center">
+1 thread
+</td>
+<td align="center">
+200k × 500
+</td>
+<td align="right">
+30.2
+</td>
+</tr>
+<tr>
+<td align="center">
+readRDS
+</td>
+<td align="center">
+not compressed
+</td>
+<td align="center">
+500 × 200k
+</td>
+<td align="right">
+2.4
+</td>
+</tr>
+<tr>
+<td align="center">
+readRDS
+</td>
+<td align="center">
+compressed
+</td>
+<td align="center">
+200k × 500
+</td>
+<td align="right">
+11.0
+</td>
+</tr>
+<tr>
+<td align="center">
+fread
+</td>
+<td align="center">
+1 thread
+</td>
+<td align="center">
+500 × 200k
+</td>
+<td align="right">
+55.0
+</td>
+</tr>
+<tr>
+<td align="center">
+fread
+</td>
+<td align="center">
+1 thread
+</td>
+<td align="center">
+200k × 500
+</td>
+<td align="right">
+26.6
+</td>
+</tr>
+</table>
+<p>For sure, <code>fread</code> and <code>fwrite</code> are impressive. And I’d never have thought you could get advantage from parallel reads and writes.</p>
+<p>I’m going to stick with RDS (making use of <code>compress=FALSE</code> when I don’t care much about disk space) when I want to read/write whole files from R. And I’ll go with SQLite, feather, or fst when I want super fast access to a single row or column. But I also do a lot of reading and writing of CSV files, and I’ve enjoyed <code>data.table::fread</code> and will now be using <code>data.table::fwrite</code>, too.</p>
 </div>
 
     </div>
