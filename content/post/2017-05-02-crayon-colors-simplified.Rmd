@@ -2,8 +2,8 @@
 title: "crayon colors, simplified"
 author: Karl
 date: '2017-05-02'
-categories: [R]
-tags: [R, data visualization]
+categories: ['R']
+tags: ['R', 'data visualization']
 ---
 
 ```{r options, include=FALSE}

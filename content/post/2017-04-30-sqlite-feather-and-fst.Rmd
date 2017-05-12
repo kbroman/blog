@@ -3,7 +3,7 @@ title: "sqlite, feather, and fst"
 author: Karl
 date: 2017-04-30T14:07:00-05:00
 categories: ["R"]
-tags: ["R", "programming", "SQL", "feather", "fst"]
+tags: ["R", "programming", "SQL", "feather", "fst", "big data"]
 description: "Exploring methods for storing/accessing large data sets from R"
 ---
 
