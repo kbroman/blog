@@ -50,8 +50,8 @@ if(file.exists(cache_file)) {
     load(cache_file)
     not_cached <- FALSE
 } else {
-  <<simulate_data>>
-  not_cached <- TRUE
+    <<simulate_data>>
+    not_cached <- TRUE
 }
 ```
 
@@ -103,17 +103,40 @@ libraries, you might want to use the compression.
 might just use a plain CSV file, since `data.table::fread` and
 `data.table::fwrite` are so fast. How fast?
 
+To make use of the multi-threaded version of
+[data.table](https://github.com/Rdatatable/data.table/wiki)'s `fread`,
+I need version 1.10.5 which is [on
+GitHub](https://github.com/rdatatable/data.table). The version on
+[CRAN](https://cran.r-project.org)
+([1.10.4](https://cran.r-project.org/package=data.table)) has
+multi-threaded `fwrite` but only single-threaded `fread`.
+
+But the GitHub version needs to be compiled with OpenMP, and after a
+lot of screwing around to do that, I ended up getting segfaults from
+`fwrite`, so I just dumped this plan.
+
+So we'll look at multi-threaded `fwrite` but only single-threaded
+`fread`. But we can all look forward to the multi-threaded `fread` in
+the near future.
+
+For `fwrite`, the number of threads is controlled by the argument
+`nThread`. The default is to call `data.table::getDTthreads()` which
+detects the maximum number of cores. On my Mac desktop at work, that's
+24. I'm going to hard-code it in.
+
 ```{r read_write_csv, eval=FALSE}
 csv_file <- "db.csv"
-data.table::fwrite(db, csv_file, quote=FALSE)
+library(data.table)
+fwrite(db, csv_file, quote=FALSE)
 db_copy3 <- data.table::fread(csv_file)
 ```
 
 ```{r read_write_csv_really, include=FALSE}
 if(not_cached) {
     csv_file <- "db.csv"
-    write_csv_time <- system.time(data.table::fwrite(db, csv_file, quote=FALSE))
-    read_csv_time <- system.time(db_copy3 <- data.table::fread(csv_file))
+    library(data.table)
+    write_csv_time <- system.time(fwrite(db, csv_file, quote=FALSE, nThread=24))
+    read_csv_time <- system.time(db_copy3 <- fread(csv_file))
     csv_size <- file.info(csv_file)$size/10^6
 }
 ```
@@ -122,16 +145,105 @@ That took `r myround(write_csv_time[3], 1)` sec to write and
 `r myround(read_csv_time[3], 1)` sec to read, and the file size is
 `r round(csv_size)` MB.
 
-(I'm not even going to try `read.csv` and `write.csv`. I'll leave that
-to the reader.)
+How about if I set `nThread=1` with `fwrite`?
 
-So I agree that `fread` and `fwrite` are impressive. And I'd never have
+```{r read_write_csv_1thread, eval=FALSE}
+fwrite(db, csv_file, quote=FALSE, nThread=1)
+```
+
+```{r read_write_csv_1thread_really, include=FALSE}
+if(not_cached) {
+    write_csv_1thread_time <- system.time(fwrite(db, csv_file, quote=FALSE, nThread=1))
+}
+```
+
+Single-threaded, `fwrite` took `r myround(write_csv_1thread_time[3], 1)` sec.
+
+But the data set is 500 rows by 200k columns. How about if I used the transpose?
+
+```{r transpose_df, eval=FALSE}
+t_db <- cbind(data.frame(snp=rep(snp_names, 2),
+                         signal=rep(c("X", "Y"), each=n_snps),
+                         stringsAsFactors=FALSE),
+              rbind(t(sigX), t(sigY)))
+```
+
+```{r transpose_df_really, include=FALSE}
+if(not_cached) {
+    <<transpose_df>>
+}
+```
+
+Now to write and read this.
+
+```{r read_write_csv_t, eval=FALSE}
+csv_t_file <- "db_t.csv"
+fwrite(t_db, csv_t_file, quote=FALSE, nThread=24)
+t_db_copy <- fread(csv_t_file)
+```
+
+```{r read_write_csv_t_really, include=FALSE}
+if(not_cached) {
+    csv_t_file <- "db_t.csv"
+    write_csv_t_time <- system.time(fwrite(t_db, csv_t_file, quote=FALSE, nThread=24))
+    read_csv_t_time <- system.time(t_db_copy <- fread(csv_t_file))
+    csv_t_size <- file.info(csv_t_file)$size/10^6
+}
+```
+
+That took `r myround(write_csv_t_time[3], 1)` sec to write and
+`r myround(read_csv_t_time[3], 1)` sec to read, and the file size is
+`r round(csv_t_size)` MB.
+
+And how about if I do `fwrite` single-threaded?
+
+```{r read_write_csv_t_1thread, eval=FALSE}
+fwrite(t_db, csv_t_file, quote=FALSE, nThread=1)
+```
+
+```{r read_write_csv_t_1thread_really, include=FALSE}
+if(not_cached) {
+    write_csv_t_1thread_time <- system.time(fwrite(t_db, csv_t_file, quote=FALSE, nThread=1))
+}
+```
+
+Single-threaded, the transposed data took
+`r myround(write_csv_t_1thread_time[3], 1)` sec to write.
+
+(I'm not even going to try `read.csv` and `write.csv`.
+I'll leave that to the reader.)
+
+Here's a summary of the times:
+
+<style type="text/css">.table { width: 100%; }</style>
+
+```{r, summary_table, echo=FALSE, results="asis"}
+tab <- data.frame("function"=c("saveRDS", "saveRDS", "fwrite", "fwrite",
+           "fwrite", "fwrite", "readRDS", "readRDS", "fread", "fread"),
+           method=c("not compressed", "compressed", "24 threads",
+               "1 thread", "24 threads", "1 thread", "not compressed",
+               "compressed", "1 thread", "1 thread"),
+          data=c("500 \u00d7 200k","500 \u00d7 200k","500 \u00d7 200k","500 \u00d7 200k","200k \u00d7 500","200k \u00d7 500",
+               "500 \u00d7 200k","200k \u00d7 500", "500 \u00d7 200k","200k \u00d7 500"),
+          time=c(write_rds_time[3], write_rds_comp_time[3],
+                 write_csv_time[3], write_csv_1thread_time[3], write_csv_t_time[3],
+                 write_csv_t_1thread_time[3], read_rds_time[3], read_rds_comp_time[3],
+                 read_csv_time[3], read_csv_t_time[3]))
+colnames(tab) <- c("function", "method", "data size", "time (s)")
+library(xtable)
+print(xtable(tab, digits=1, align=c(rep("center", 4), "right")), type="html",
+      html.table.attributes='border=0 width="100%"', include.rownames=FALSE)
+```
+
+For sure, `fread` and `fwrite` are impressive. And I'd never have
 thought you could get advantage from parallel reads and writes.
 
-But I'm going to stick with RDS (making use of `compress=FALSE` when
+I'm going to stick with RDS (making use of `compress=FALSE` when
 I don't care much about disk space) when I want to read/write whole
 files from R. And I'll go with SQLite, feather, or fst when I want
-super fast access to a single row or column.
+super fast access to a single row or column. But I also do a lot of reading
+and writing of CSV files, and I've enjoyed `data.table::fread`
+and will now be using `data.table::fwrite`, too.
 
 ```{r save_cache, include=FALSE}
 if(not_cached) {
@@ -139,6 +251,9 @@ if(not_cached) {
          read_rds_time, read_rds_comp_time,
          rds_size, rds_comp_size,
          write_csv_time, read_csv_time, csv_size,
+         write_csv_1thread_time,
+         write_csv_t_time, read_csv_t_time, csv_t_size,
+         write_csv_t_1thread_time,
          file=cache_file)
 }
 ```
@@ -148,5 +263,6 @@ if(not_cached) {
     unlink(rds_file)
     unlink(rds_comp_file)
     unlink(csv_file)
+    unlink(csv_t_file)
 }
 ```
