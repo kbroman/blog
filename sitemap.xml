@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</loc>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</loc>
     <lastmod>2017-05-11T16:22:00-05:00</lastmod>
   </url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>http://kbroman.org/blog/tags/big-data/</loc>
-    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,6 +72,12 @@
   </url>
   
   <url>
+    <loc>http://kbroman.org/blog/tags/data.table/</loc>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://kbroman.org/blog/tags/feather/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
@@ -79,26 +90,20 @@
   </url>
   
   <url>
-    <loc>http://kbroman.org/blog/categories/news/</loc>
-    <lastmod>2017-04-30T10:50:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://kbroman.org/blog/tags/news/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://kbroman.org/blog/post/</loc>
-    <lastmod>2017-05-11T16:22:00-05:00</lastmod>
+    <loc>http://kbroman.org/blog/categories/news/</loc>
+    <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://kbroman.org/blog/categories/programming/</loc>
-    <lastmod>2017-05-11T16:22:00-05:00</lastmod>
+    <loc>http://kbroman.org/blog/post/</loc>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -109,14 +114,26 @@
   </url>
   
   <url>
-    <loc>http://kbroman.org/blog/categories/r/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <loc>http://kbroman.org/blog/categories/programming/</loc>
+    <lastmod>2017-05-11T16:22:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://kbroman.org/blog/tags/r/</loc>
-    <lastmod>2017-05-11T16:22:00-05:00</lastmod>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kbroman.org/blog/categories/r/</loc>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://kbroman.org/blog/tags/rds/</loc>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -128,7 +145,7 @@
   
   <url>
     <loc>http://kbroman.org/blog/tags/</loc>
-    <lastmod>2017-04-30T14:07:00-05:00</lastmod>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,7 +157,7 @@
   
   <url>
     <loc>http://kbroman.org/blog/</loc>
-    <lastmod>2017-05-11T16:22:00-05:00</lastmod>
+    <lastmod>2017-05-11T20:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   

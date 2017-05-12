@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.21-DEV" />
+
+
+<title>reading/writing biggish data, revisited - the stupidest thing...</title>
+<meta property="og:title" content="reading/writing biggish data, revisited - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="http://kbroman.org/blog/css/fonts.css" media="all">
+<link rel="stylesheet" href="http://kbroman.org/blog/css/main.css" media="all">
+
+<link rel="stylesheet" href="http://kbroman.org/blog/css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://kbroman.org/blog/" class="nav-logo">
+    <img src="http://kbroman.org/blog/images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="http://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../../blog/about/">
+            <img alt="about" src="../../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">reading/writing biggish data, revisited</h1>
+
+    
+    <span class="article-date">2017/05/11</span>
+    
+
+    <div class="article-content">
+      <p><a href="https://twitter.com/mattdowle?lang=en">Matt Dowle</a> encouraged me to follow up on my <a href="../../../../../2017/04/30/sqlite-feather-and-fst/">post about sqlite, feather, and fst</a>. One thing to emphasize is that <code>saveRDS</code>, by default, uses compression. If you use <code>compress=FALSE</code> you can skip that and it goes <em>much</em> faster. See, for example, <a href="https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/">his post on “Fast csv writing for R”</a>. Also see his <a href="https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf">slides from a recent presentation on parallel fread</a>.</p>
+<p>I’ll first generate the same data that I was using before. And note, as <span class="citation">[@shabbychef]</span>(<a href="https://twitter.com/shabbychef" class="uri">https://twitter.com/shabbychef</a>) <a href="https://twitter.com/shabbychef/status/858892435820130304">mentioned on twitter</a>, my iid simulations mean that compression isn’t likely to be useful, <a href="../../../../../2017/04/30/sqlite-feather-and-fst/">as we saw in my previous post</a>. So don’t assume that these results apply generally; compression is useful much of the time.</p>
+<pre class="r"><code>n_ind &lt;- 500
+n_snps &lt;- 1e5
+ind_names &lt;- paste0(&quot;ind&quot;, 1:n_ind)
+snp_names &lt;- paste0(&quot;snp&quot;, 1:n_snps)
+sigX &lt;- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
+sigY &lt;- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
+dimnames(sigX) &lt;- list(ind_names, paste0(snp_names, &quot;.X&quot;))
+dimnames(sigY) &lt;- list(ind_names, paste0(snp_names, &quot;.Y&quot;))
+db &lt;- cbind(data.frame(id=ind_names, stringsAsFactors=FALSE),
+            sigX, sigY)</code></pre>
+<p>Now, let’s look at the time to write an RDS file, when compressed and when not. I’m again going to cache my results and just tell you what happened.</p>
+<pre class="r"><code>rds_file &lt;- &quot;db.rds&quot;
+saveRDS(db, rds_file, compress=FALSE)
+rds_comp_file &lt;- &quot;db_comp.rds&quot;
+saveRDS(db, rds_comp_file)
+db_copy1 &lt;- readRDS(rds_file)
+db_copy2 &lt;- readRDS(rds_comp_file)</code></pre>
+<p>Writing the data to an RDS file took 2.3 sec when uncompressed and 37.1 sec when compressed. Reading them back in took 1.8 sec for the uncompressed file and 6.4 sec for the compressed file. The uncompressed RDS file was 805 MB, while the compressed one was 769 MB.</p>
+<p>So, <em>holy crap</em> reading and writing the RDS files is fast when you use <code>compress=FALSE</code>. Don’t tell your system administrator I said this, but if you’re working on a server with loads of disk space, for sure go with <code>compress=FALSE</code> with your RDS files. On your laptop where uncompressed RDS files might get in the way of your music and movie libraries, you might want to use the compression.</p>
+<div id="how-about-csv" class="section level2">
+<h2>How about CSV?</h2>
+<p><a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a> suggested that I might just use a plain CSV file, since <code>data.table::fread</code> and <code>data.table::fwrite</code> are so fast. How fast?</p>
+<pre class="r"><code>csv_file &lt;- &quot;db.csv&quot;
+data.table::fwrite(db, csv_file, quote=FALSE)
+db_copy3 &lt;- data.table::fread(csv_file)</code></pre>
+<p>That took 27.7 sec to write and 37.9 sec to read, and the file size is 1818 MB.</p>
+<p>(I’m not even going to try <code>read.csv</code> and <code>write.csv</code>. I’ll leave that to the reader.)</p>
+<p>So I agree that <code>fread</code> and <code>fwrite</code> are impressive. And I’d never have thought you could get advantage from parallel reads and writes.</p>
+<p>But I’m going to stick with RDS (making use of <code>compress=FALSE</code> when I don’t care much about disk space) when I want to read/write whole files from R. And I’ll go with SQLite, feather, or fst when I want super fast access to a single row or column.</p>
+</div>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="http://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
