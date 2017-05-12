@@ -1,7 +1,7 @@
 ---
 title: 'reading/writing biggish data, revisited'
 author: Karl
-date: '2017-05-11T20:00:00-05:00'
+date: '2017-05-11T23:50:00-05:00'
 categories: ['R']
 tags: ['R', 'RDS', 'data.table', 'big data']
 ---
