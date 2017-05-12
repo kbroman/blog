@@ -1,0 +1,152 @@
+---
+title: 'reading/writing biggish data, revisited'
+author: Karl
+date: '2017-05-11T20:00:00-05:00'
+categories: ['R']
+tags: ['R', 'RDS', 'data.table', 'big data']
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(broman)
+set.seed(1979300)
+```
+
+[Matt Dowle](https://twitter.com/mattdowle?lang=en) encouraged me to
+follow up on my [post about sqlite, feather, and
+fst](/2017/04/30/sqlite-feather-and-fst/). One thing to emphasize is
+that `saveRDS`, by default, uses compression. If you use
+`compress=FALSE` you can skip that and it goes _much_ faster. See, for
+example, [his post on "Fast csv writing for
+R"](https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/). Also see his
+[slides from a recent presentation on parallel
+fread](https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf).
+
+I'll first generate the same data that I was using before. And note,
+as [@shabbychef](https://twitter.com/shabbychef) [mentioned on
+twitter](https://twitter.com/shabbychef/status/858892435820130304), my
+iid simulations mean that compression isn't likely to be useful, [as
+we saw in my previous
+post](/2017/04/30/sqlite-feather-and-fst/).
+So don't assume that these results apply generally; compression is
+useful much of the time.
+
+```{r simulate_data, eval=FALSE}
+n_ind <- 500
+n_snps <- 1e5
+ind_names <- paste0("ind", 1:n_ind)
+snp_names <- paste0("snp", 1:n_snps)
+sigX <- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
+sigY <- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
+dimnames(sigX) <- list(ind_names, paste0(snp_names, ".X"))
+dimnames(sigY) <- list(ind_names, paste0(snp_names, ".Y"))
+db <- cbind(data.frame(id=ind_names, stringsAsFactors=FALSE),
+            sigX, sigY)
+```
+
+```{r simulate_data_really, include=FALSE}
+cache_file <- "_cache/2017-05-11-reading-writing-etc.RData"
+if(file.exists(cache_file)) {
+    load(cache_file)
+    not_cached <- FALSE
+} else {
+  <<simulate_data>>
+  not_cached <- TRUE
+}
+```
+
+Now, let's look at the time to write an RDS file, when compressed and
+when not. I'm again going to cache my results and just tell you
+what happened.
+
+```{r write_rds, eval=FALSE}
+rds_file <- "db.rds"
+saveRDS(db, rds_file, compress=FALSE)
+rds_comp_file <- "db_comp.rds"
+saveRDS(db, rds_comp_file)
+db_copy1 <- readRDS(rds_file)
+db_copy2 <- readRDS(rds_comp_file)
+```
+
+```{r write_rds_really, include=FALSE}
+if(not_cached) {
+    rds_file <- "db.rds"
+    write_rds_time <- system.time(saveRDS(db, rds_file, compress=FALSE))
+    rds_comp_file <- "db_comp.rds"
+    write_rds_comp_time <- system.time(saveRDS(db, rds_comp_file))
+    read_rds_time <- system.time(db_copy1 <- readRDS(rds_file))
+    read_rds_comp_time <- system.time(db_copy2 <- readRDS(rds_comp_file))
+    rds_size <- file.info(rds_file)$size/10^6
+    rds_comp_size <- file.info(rds_comp_file)$size/10^6
+}
+```
+
+Writing the data to an RDS file took
+`r myround(write_rds_time[3], 1)` sec when uncompressed and
+`r myround(write_rds_comp_time[3], 1)` sec when compressed.
+Reading them back in took `r myround(read_rds_time[3], 1)`
+sec for the uncompressed file and
+`r myround(read_rds_comp_time[3], 1)` sec for the compressed
+file. The uncompressed RDS file was `r round(rds_size)` MB, while the
+compressed one was `r round(rds_comp_size)` MB.
+
+So, _holy crap_ reading and writing the RDS files is fast when you use
+`compress=FALSE`. Don't tell your system administrator I said this,
+but if you're working on a server with loads of disk space, for sure
+go with `compress=FALSE` with your RDS files. On your laptop where
+uncompressed RDS files might get in the way of your music and movie
+libraries, you might want to use the compression.
+
+## How about CSV?
+
+[Dirk Eddelbuettel](http://dirk.eddelbuettel.com/) suggested that I
+might just use a plain CSV file, since `data.table::fread` and
+`data.table::fwrite` are so fast. How fast?
+
+```{r read_write_csv, eval=FALSE}
+csv_file <- "db.csv"
+data.table::fwrite(db, csv_file, quote=FALSE)
+db_copy3 <- data.table::fread(csv_file)
+```
+
+```{r read_write_csv_really, include=FALSE}
+if(not_cached) {
+    csv_file <- "db.csv"
+    write_csv_time <- system.time(data.table::fwrite(db, csv_file, quote=FALSE))
+    read_csv_time <- system.time(db_copy3 <- data.table::fread(csv_file))
+    csv_size <- file.info(csv_file)$size/10^6
+}
+```
+
+That took `r myround(write_csv_time[3], 1)` sec to write and
+`r myround(read_csv_time[3], 1)` sec to read, and the file size is
+`r round(csv_size)` MB.
+
+(I'm not even going to try `read.csv` and `write.csv`. I'll leave that
+to the reader.)
+
+So I agree that `fread` and `fwrite` are impressive. And I'd never have
+thought you could get advantage from parallel reads and writes.
+
+But I'm going to stick with RDS (making use of `compress=FALSE` when
+I don't care much about disk space) when I want to read/write whole
+files from R. And I'll go with SQLite, feather, or fst when I want
+super fast access to a single row or column.
+
+```{r save_cache, include=FALSE}
+if(not_cached) {
+    save(write_rds_time, write_rds_comp_time,
+         read_rds_time, read_rds_comp_time,
+         rds_size, rds_comp_size,
+         write_csv_time, read_csv_time, csv_size,
+         file=cache_file)
+}
+```
+
+```{r clean_up, include=FALSE}
+if(not_cached) {
+    unlink(rds_file)
+    unlink(rds_comp_file)
+    unlink(csv_file)
+}
+```
