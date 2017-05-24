@@ -6,10 +6,20 @@
     <description>Recent content in R on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 May 2017 23:50:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 23 May 2017 23:42:00 -0500</lastBuildDate>
     
 	<atom:link href="http://kbroman.org/blog/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>miniCRAN</title>
+      <link>http://kbroman.org/blog/2017/05/23/minicran/</link>
+      <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/05/23/minicran/</guid>
+      <description>Next month, I’m teaching a workshop on R/qtl and R/qtl2 at the joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017) meeting in Memphis.
+I was chatting with Śaunak Sen about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on CRAN. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</description>
+    </item>
     
     <item>
       <title>reading/writing biggish data, revisited</title>
