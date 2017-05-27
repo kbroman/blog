@@ -6,10 +6,20 @@
     <description>Recent content in Posts on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 May 2017 23:42:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 27 May 2017 12:30:00 -0500</lastBuildDate>
     
 	<atom:link href="http://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ROpenSci Unconf 2017</title>
+      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
+    </item>
     
     <item>
       <title>miniCRAN</title>
