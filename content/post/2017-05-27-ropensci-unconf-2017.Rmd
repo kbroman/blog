@@ -46,7 +46,7 @@ Awesome stuff, and that's [4 of
 I don't think I'm particularly good at any of those things. And for
 that reason, I was super excited when [Gergely
 Daróczi](https://github.com/daroczig) posted the idea that we make an
-R package through which we can interactive with the game Minecraft.
+R package through which we can interact with the game Minecraft.
 
 I've played a lot of Minecraft with my kids. And there's a big
 community of folks writing "mods" for the game, but to do that, you
