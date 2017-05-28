@@ -6,10 +6,9 @@
     <description>Recent content in News on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 27 May 2017 12:30:00 -0500</lastBuildDate>
-    
-	<atom:link href="http://kbroman.org/blog/categories/news/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://kbroman.org/blog/categories/news/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ROpenSci Unconf 2017</title>
@@ -17,8 +16,54 @@
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
-This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
+      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
+&lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
+&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
+Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runconf17?src=hash&#34;&gt;#runconf17&lt;/a&gt; issue! &lt;a href=&#34;https://t.co/AqQpxVJZuk&#34;&gt;pic.twitter.com/AqQpxVJZuk&lt;/a&gt;
+&lt;/p&gt;
+— Amelia McNamara (&lt;span class=&#34;citation&#34;&gt;@AmeliaMN&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/867793745986469889&#34;&gt;May 25, 2017&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;I found the list of topics a bit forbidding. Important stuff, but a lot of them seemed technically difficult, and I didn’t really see how I could best contribute. And, jumping to the punch line, the &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;outcomes of the 2 days’ work&lt;/a&gt; are pretty awesome, for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A R package, &lt;a href=&#34;https://github.com/ropenscilabs/available&#34;&gt;available&lt;/a&gt;, to help name R packages. (Have others used it? Can it be viewed as offensive?)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A book on &lt;a href=&#34;https://github.com/ropenscilabs/r-security-practices&#34;&gt;best security practices for R package developers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/ropenscilabs/gramr&#34;&gt;grammar checker&lt;/a&gt; for R Markdown documents, “Write good and do good stuff.”&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ropenscilabs/testrmd&#34;&gt;testrmd&lt;/a&gt;, a package for including tests in R Markdown documents.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Awesome stuff, and that’s &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;4 of 20&lt;/a&gt;. But you know, I don’t think I’m particularly good at any of those things. And for that reason, I was super excited when &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt; posted the idea that we make an R package through which we can interact with the game Minecraft.&lt;/p&gt;
+&lt;p&gt;I’ve played a lot of Minecraft with my kids. And there’s a big community of folks writing “mods” for the game, but to do that, you need to write Java. And, well, I really don’t like Java. So I was excited, a few years ago, to see the book &lt;a href=&#34;https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;Learning to program with Minecraft&lt;/a&gt;, which uses a &lt;a href=&#34;https://github.com/py3minepi/py3minepi&#34;&gt;python module&lt;/a&gt; that allows you to interact with the game.&lt;/p&gt;
+&lt;p&gt;The book is a very nice and thorough introduction to programming, using Minecraft as all of the examples and exercises. Really, it’s the best book on programming for kids that I’ve seen, &lt;em&gt;because&lt;/em&gt; it is so full of challenging but do-able and above all &lt;em&gt;interesting&lt;/em&gt; exercises. Good exercises are really the key to learning programming, and Minecraft provides a lot of really great It’s a great way to learn programming, because a key challenge in learning to program is identifying appropriate &lt;em&gt;challenges&lt;/em&gt; to try to work on, and for people who’ve tried to&lt;/p&gt;
+&lt;p&gt;Our team of six (me, &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;, &lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario Inchiosa&lt;/a&gt;, and &lt;a href=&#34;https://github.com/akzaidi&#34;&gt;Adi Zaidi&lt;/a&gt;) set out to replicate the features of the python module as an R package. There are basically just eight functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;set a particular type of block somewhere&lt;/li&gt;
+&lt;li&gt;figure out what type of block is at some spot&lt;/li&gt;
+&lt;li&gt;figure out where a player is&lt;/li&gt;
+&lt;li&gt;move a player somewhere&lt;/li&gt;
+&lt;li&gt;figure out where a player is pointing&lt;/li&gt;
+&lt;li&gt;check whether anyone has hit something with a sword&lt;/li&gt;
+&lt;li&gt;post a message to chat&lt;/li&gt;
+&lt;li&gt;read the chat messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We had our basic working package, &lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt;, by lunchtime on the first day and spent the next day and a half playing with it and Minecraft.&lt;/p&gt;
+&lt;p&gt;Just eight basic functions, but we did a ton of awesome things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A robot number-guessing game&lt;/li&gt;
+&lt;li&gt;Automatic creation of mazes that players can walk through (or be moved through automatically)&lt;/li&gt;
+&lt;li&gt;Replicate a photograph, or the R logo, within Minecraft using different types of blocks&lt;/li&gt;
+&lt;li&gt;Give a player Elsa (from the movie Frozen) powers, like walking on water and having it turn to ice, or creating random-sized columns of ice by hitting things&lt;/li&gt;
+&lt;li&gt;Write letters on the side of a mountain&lt;/li&gt;
+&lt;li&gt;Draw a full ggplot2-like scatterplot in the sky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check out &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/README.md&#34;&gt;the ReadMe file for our package&lt;/a&gt; to see a bunch of pictures and gifs.&lt;/p&gt;
+&lt;p&gt;I’ll write about some of these things in the (hopefully near) future, because I learned some cool stuff, and it was was really fun.&lt;/p&gt;
+&lt;p&gt;Just after lunch on day 2, I realized that we could use the chat feature in Minecraft to &lt;em&gt;execute R code from within Minecraft&lt;/em&gt;, using &lt;code&gt;parse&lt;/code&gt; and &lt;code&gt;eval&lt;/code&gt;. And it totally worked. So I could generate my ggplot2-style scatterplot entirely within Minecraft. (The key advantage of this, other than just being cool, is not having to keep switching back and forth between R and Minecraft.)&lt;/p&gt;
+&lt;p&gt;Watch me type a bit of R and get my scatterplot going:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zggCAYAfjXE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;What next? We’re thinking we’ll compile the many vignettes we developed into a &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -27,15 +72,58 @@ This was ROpenSci’s 4th unconference; the first I could attend. There were lik
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/04/30/old-posts/</guid>
-      <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
- Better-looking LaTeX/Beamer slides, 2013-10-07
- MongoDB with D3.js, 2015-06-22
- Crayon colors in R, 2014-05-07
- apply vs for, 2013-04-02
- Thoughts on statistical consulting, 2013-04-02
- Notifications from R, 2014-09-03
- A course in statistical programming, 2012-05-25
- Row names in data frames: beware of 1:nrow, 2012-03-21</description>
+      <description>&lt;p&gt;In moving away from my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;Better-looking LaTeX/Beamer slides&lt;/a&gt;, 2013-10-07&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2015/06/22/mongodb-with-d3-js/&#34;&gt;MongoDB with D3.js&lt;/a&gt;, 2015-06-22&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2014/05/07/crayon-colors-in-r/&#34;&gt;Crayon colors in R&lt;/a&gt;, 2014-05-07&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2013/04/02/apply-vs-for/&#34;&gt;&lt;code&gt;apply&lt;/code&gt; vs &lt;code&gt;for&lt;/code&gt;&lt;/a&gt;, 2013-04-02&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;Thoughts on statistical consulting&lt;/a&gt;, 2013-04-02&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2014/09/03/notifications-from-r/&#34;&gt;Notifications from R&lt;/a&gt;, 2014-09-03&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2012/05/25/a-course-in-statistical-programming/&#34;&gt;A course in statistical programming&lt;/a&gt;, 2012-05-25&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2012/03/21/row-names-in-data-frames-beware-of-1nrow/&#34;&gt;Row names in data frames: beware of &lt;code&gt;1:nrow&lt;/code&gt;&lt;/a&gt;, 2012-03-21&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2013/02/08/interactive-graphics-with-d3-js/&#34;&gt;Interactive graphics with d3.js&lt;/a&gt;, 2013-02-08&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2016/04/08/i-am-a-data-scientist/&#34;&gt;I am a data scientist&lt;/a&gt;, 2016-04-08&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are a bunch of other things that I’ve written and quite like. Here’s a long list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;The stupidest R code ever&lt;/a&gt;, 2011-04-17&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2012/04/25/microarrays-suck/&#34;&gt;Microarrays suck&lt;/a&gt;, 2012-04-25&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2012/10/11/curved-arrows-in-r/&#34;&gt;Curved arrows in R&lt;/a&gt;, 2012-10-11&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;The Hopkins SPH logo&lt;/a&gt;, parts &lt;a href=&#34;https://kbroman.wordpress.com/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;1 (2012-11-16)&lt;/a&gt;, &lt;a href=&#34;https://kbroman.wordpress.com/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;2 (2012-11-21)&lt;/a&gt;, and &lt;a href=&#34;https://kbroman.wordpress.com/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;3 (2013-03-06)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/03/10/towards-making-my-own-papers-reproducible/&#34;&gt;Towards making my own papers reproducible&lt;/a&gt;, 2013-03-10&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/04/29/methods-before-results/&#34;&gt;Methods before results&lt;/a&gt;, 2013-04-29&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/04/08/knuth-journal-referees-should-assist-authors/&#34;&gt;Knuth: Journal referees should assist authors&lt;/a&gt;, 2013-04-08&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;, 2013-04-05&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;Chutes &amp;amp; ladders: How long is this going to take?&lt;/a&gt; 2013-05-17&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/05/13/stack-exchange-why-i-dropped-out/&#34;&gt;Stack exchange: why I dropped out&lt;/a&gt;, 2013-05-13&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/09/25/hiring-computational-biologists/&#34;&gt;Hiring computational biologists&lt;/a&gt;, 2013-09-25&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/09/11/department-websites/&#34;&gt;Department websites&lt;/a&gt;, 2013-09-11&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/10/02/complaints-about-the-nih-grant-review-process/&#34;&gt;Complaints about the NIH grant review process&lt;/a&gt;, 2013-10-02&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/05/01/reform-academic-statistics/&#34;&gt;Reform academic statistics&lt;/a&gt;, 2014-05-01&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;If I could do it over again, I’d self-publish&lt;/a&gt;, 2014-08-12&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;Improved graphs of car crash stats&lt;/a&gt;, 2014-10-29&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/10/30/interactive-plot-of-car-crash-stats/&#34;&gt;Interactive plot of car crash stats&lt;/a&gt;, 2014-10-30&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/11/03/car-crash-stats-revisited-my-measurement-errors/&#34;&gt;Car crash stats revisited: My measurement errors&lt;/a&gt;, 2014-11-03&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2015/08/05/god-awful-conference-web-sites/&#34;&gt;God-awful conference websites&lt;/a&gt;, 2015-08-05&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2015/09/09/reproducibility-is-hard/&#34;&gt;Reproducibility is hard&lt;/a&gt;, 2015-09-09&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have also written a few advice-type posts on various academic matters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2011/09/29/seminars-bad-and-good/&#34;&gt;Seminars, bad and good&lt;/a&gt;, 2011-09-29&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2011/10/21/grant-writing/&#34;&gt;Tips on grant writing&lt;/a&gt;, 2011-10-21&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2012/05/23/what-should-i-do-badly/&#34;&gt;What should I do badly?&lt;/a&gt;, 2012-05-23&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/12/05/things-to-avoid-as-a-new-faculty-member/&#34;&gt;Things to avoid as a new faculty member&lt;/a&gt; 2013-12-05&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are a few more programming things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/04/03/beware-of-grep-with-a-list/&#34;&gt;Beware of &lt;code&gt;grep&lt;/code&gt; with a list&lt;/a&gt;, 2013-04-03&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/08/20/and-with-the-apply-functions/&#34;&gt;&lt;code&gt;[&lt;/code&gt; and &lt;code&gt;[[&lt;/code&gt; with the &lt;code&gt;apply()&lt;/code&gt; functions&lt;/a&gt;, 2013-08-20&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/04/29/with-the-apply-functions-revisited/&#34;&gt;&lt;code&gt;[&lt;/code&gt; with the &lt;code&gt;apply()&lt;/code&gt; functions, revisited&lt;/a&gt; 2014-04-29&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2013/08/06/read-the-source-code/&#34;&gt;Read the source code&lt;/a&gt;, 2013-08-06&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kbroman.wordpress.com/2014/02/12/emacs-key-bindings-in-ms-word/&#34;&gt;Emacs key bindings in MS Word&lt;/a&gt;, 2014-02-12&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -44,9 +132,10 @@ This was ROpenSci’s 4th unconference; the first I could attend. There were lik
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/04/29/new-blog/</guid>
-      <description>This is the new site for my blog; source at github.
-I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
-I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
+      <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt; as it is and not try to figure out how to move things over.&lt;/p&gt;
+&lt;p&gt;I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which is a &lt;em&gt;joy&lt;/em&gt;. See the &lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;bookdown-based documentation&lt;/a&gt; (currently a bit thin) plus &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas’s tutorial&lt;/a&gt; and the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbind&lt;/a&gt;. Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

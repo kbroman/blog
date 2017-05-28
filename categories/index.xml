@@ -6,9 +6,8 @@
     <description>Recent content in Categories on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
-	<atom:link href="http://kbroman.org/blog/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <atom:link href="http://kbroman.org/blog/categories/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>News</title>
