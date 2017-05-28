@@ -8,6 +8,11 @@ disqusShortname = "kbroman-blog"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "drafts/"]
 rssLimit = 30
 
+copyright="The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License"
+
+[author]
+    name="Karl Broman"
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
