@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.20.7" />
 
 
-<title>caching blogdown - the stupidest thing...</title>
-<meta property="og:title" content="caching blogdown - the stupidest thing...">
+<title>deeply nested functions - the stupidest thing...</title>
+<meta property="og:title" content="deeply nested functions - the stupidest thing...">
 
 
 
@@ -16,6 +16,11 @@
 
 
 
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
 
 
 
@@ -71,18 +76,28 @@
     <span class="article-duration">1 min read</span>
     
 
-    <h1 class="article-title">caching blogdown</h1>
+    <h1 class="article-title">deeply nested functions</h1>
 
     
-    <span class="article-date">2017/05/01</span>
+    <span class="article-date">2017/05/30</span>
     
 
     <div class="article-content">
-      <p><a href="https://github.com/rstudio/blogdown">blogdown</a> is cool, but it seems that it builds every <code>.Rmd</code> file every time you run <code>build_site()</code>, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.</p>
-<p>I had the mistaken impression that blogdown would look at the timestamps on the <code>.Rmd</code> and <code>.html</code> and only build the <code>.html</code> if the <code>.Rmd</code> file is newer, but that’s not true.</p>
-<p>My <a href="http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/">post about sqlite, feather, and fst</a> is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my <a href="http://kbroman.org/blog">new blog</a> would be really painful, forever more.</p>
-<p>Thus, I spent a bunch of time reworking the post to cache the times rather than running things every time the <code>.Rmd</code> file was built. <a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">It’s not pretty</a>, and my method is <em>not</em> generally recommended, but it seems to work.</p>
-<p>I expect <a href="https://yihui.name">Yihui</a> has a better solution to this.</p>
+      <p>If, in teaching folks about the <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a> pipe operator, <code>%&gt;%</code>, you’re looking for an in-the-wild example of deeply nested functions, our <a href="https://github.com/ROpenSciLabs/miner">miner</a> package (for connecting <a href="https://www.r-project.org">R</a> to <a href="https://minecraft.net">Minecraft</a>, developed at the <a href="https://ropensci.org">ROpenSci</a> <a href="http://unconf17.ropensci.org">2017 Unconference</a> has <a href="https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41">a good one</a>:</p>
+<pre class="r"><code>setNames(data.frame(
+    do.call(rbind,
+            sapply(
+                X = sub(&quot;,&quot;, &quot;|&quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE),
+                FUN = strsplit,
+                split = &#39;|&#39;, fixed=TRUE,
+                USE.NAMES = FALSE)),
+    stringsAsFactors=FALSE),
+    colnames)</code></pre>
+<p>This turns character strings like <code>&quot;121,hello everyone|4734,R mc_plot()&quot;</code> into a data frame like</p>
+<pre><code>##   player        message
+## 1    121 hello everyone
+## 2   4734    R mc_plot()</code></pre>
+<p>That’s six functions deep: <code>strsplit %&gt;% sub %&gt;% sapply %&gt;% do.call %&gt;% data.frame %&gt;% setNames</code>.</p>
 
     </div>
   </article>
@@ -126,6 +141,16 @@
 
     </div>
     
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 

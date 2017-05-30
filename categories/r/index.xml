@@ -7,8 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Sat, 27 May 2017 12:30:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 30 May 2017 10:41:00 -0500</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/categories/r/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>deeply nested functions</title>
+      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt; has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
+    do.call(rbind,
+            sapply(
+                X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE),
+                FUN = strsplit,
+                split = &amp;#39;|&amp;#39;, fixed=TRUE,
+                USE.NAMES = FALSE)),
+    stringsAsFactors=FALSE),
+    colnames)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This turns character strings like &lt;code&gt;&amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot;&lt;/code&gt; into a data frame like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;##   player        message
+## 1    121 hello everyone
+## 2   4734    R mc_plot()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That’s six functions deep: &lt;code&gt;strsplit %&amp;gt;% sub %&amp;gt;% sapply %&amp;gt;% do.call %&amp;gt;% data.frame %&amp;gt;% setNames&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ROpenSci Unconf 2017</title>
@@ -177,7 +201,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
-&lt;!-- Sun May 28 10:54:34 2017 --&gt;
+&lt;!-- Tue May 30 10:53:49 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
