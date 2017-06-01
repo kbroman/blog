@@ -35,10 +35,10 @@ And so today I did. (You can see the working draft at
 - Made a [github repository](https://github.com/ropenscilabs/miner_book)
 - Created a `index.Rmd` file and a `_bookdown.yml` file.
 - Copied over all of our extra `.Rmd` files from `miner/extra_vignettes`
-- Replaced the YAML in those `.Rmd` files with `# [chapter title]`
+- Replaced the YAML in those `.Rmd` files with "`# [chapter title]`"
 - Copied over our screen shots
 - Added references in `book.bib` (and `packages.bib`)
-- Screw around making a cover
+- Screwed around making a cover
 
 Oh, plus `README` and `LICENSE` files.
 
