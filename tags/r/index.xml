@@ -7,8 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 30 May 2017 10:41:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 31 May 2017 23:16:00 -0500</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/tags/r/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>omg, bookdown!</title>
+      <link>http://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
+      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
+      <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
+&lt;p&gt;I mean, from &lt;a href=&#34;https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
+&lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
+&lt;p&gt;And so today I did. (You can see the working draft at &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34; class=&#34;uri&#34;&gt;https://ROpenSciLabs.github.io/miner_book&lt;/a&gt;.) And boy it was easy.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Made a &lt;a href=&#34;https://github.com/ropenscilabs/miner_book&#34;&gt;github repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Created a &lt;code&gt;index.Rmd&lt;/code&gt; file and a &lt;code&gt;_bookdown.yml&lt;/code&gt; file.&lt;/li&gt;
+&lt;li&gt;Copied over all of our extra &lt;code&gt;.Rmd&lt;/code&gt; files from &lt;code&gt;miner/extra_vignettes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Replaced the YAML in those &lt;code&gt;.Rmd&lt;/code&gt; files with &lt;code&gt;# [chapter title]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copied over our screen shots&lt;/li&gt;
+&lt;li&gt;Added references in &lt;code&gt;book.bib&lt;/code&gt; (and &lt;code&gt;packages.bib&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Screw around making a cover&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Oh, plus &lt;code&gt;README&lt;/code&gt; and &lt;code&gt;LICENSE&lt;/code&gt; files.&lt;/p&gt;
+&lt;p&gt;Okay, so I admit there was one glitch. I opened the thing in RStudio and said&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Now I just click the Build Book button. Wait, where is that? I just see the cutest-button-ever knit button. And clicking that doesn’t work properly.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;More time than I care to admit passes, with me doing all kinds of crazy shit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Oh, he said the Build Book button on the &lt;em&gt;Build&lt;/em&gt; tab. I see it now.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And done.&lt;/p&gt;
+&lt;p&gt;(Note that I also used his suggestion to have &lt;code&gt;output_dir: &amp;quot;docs&amp;quot;&lt;/code&gt; and then use GitHub Pages to host the book-in-progress, which was also easy.)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>deeply nested functions</title>
@@ -201,7 +234,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
-&lt;!-- Tue May 30 10:57:56 2017 --&gt;
+&lt;!-- Wed May 31 23:42:08 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;

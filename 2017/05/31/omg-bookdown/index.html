@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.21" />
+
+
+<title>omg, bookdown! - the stupidest thing...</title>
+<meta property="og:title" content="omg, bookdown! - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://kbroman.org/blog/css/fonts.css" media="all">
+<link rel="stylesheet" href="http://kbroman.org/blog/css/main.css" media="all">
+
+<link rel="stylesheet" href="http://kbroman.org/blog/css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://kbroman.org/blog/" class="nav-logo">
+    <img src="http://kbroman.org/blog/images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="http://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../blog/about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">omg, bookdown!</h1>
+
+    
+    <span class="article-date">2017/05/31</span>
+    
+
+    <div class="article-content">
+      <p>So I heard <a href="https://yihui.name">Yihui Xie</a> talk about <a href="https://bookdown.org">bookdown</a>, and I read, with considerable excitement, his <a href="https://bookdown.org/yihui/bookdown/">bookdown book</a>. (There’s a <a href="https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;tag=7210-20">blurb from me at Amazon</a> saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.</p>
+<p>I mean, from <a href="https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/">my own book writing experience</a>, I felt like, “Hell if <em>I’m</em> going to be writing another book.” And while I can see that it could be useful to reformat my <a href="http://kbroman.org/pages/tutorials">various tutorials</a> as bookdown books, I wasn’t in a hurry to do that.</p>
+<p>But the R/minecraft team from the <a href="https://ropensci.org">ROpenSci</a> <a href="http://unconf17.ropensci.org">Unconference</a> had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our <a href="https://github.com/ROpenSciLabs/miner">miner</a> package, to compile our varied set of vignettes into a bookdown book.</p>
+<p>And so today I did. (You can see the working draft at <a href="https://ROpenSciLabs.github.io/miner_book" class="uri">https://ROpenSciLabs.github.io/miner_book</a>.) And boy it was easy.</p>
+<ul>
+<li>Made a <a href="https://github.com/ropenscilabs/miner_book">github repository</a></li>
+<li>Created a <code>index.Rmd</code> file and a <code>_bookdown.yml</code> file.</li>
+<li>Copied over all of our extra <code>.Rmd</code> files from <code>miner/extra_vignettes</code></li>
+<li>Replaced the YAML in those <code>.Rmd</code> files with <code># [chapter title]</code></li>
+<li>Copied over our screen shots</li>
+<li>Added references in <code>book.bib</code> (and <code>packages.bib</code>)</li>
+<li>Screw around making a cover</li>
+</ul>
+<p>Oh, plus <code>README</code> and <code>LICENSE</code> files.</p>
+<p>Okay, so I admit there was one glitch. I opened the thing in RStudio and said</p>
+<blockquote>
+<p>“Now I just click the Build Book button. Wait, where is that? I just see the cutest-button-ever knit button. And clicking that doesn’t work properly.”</p>
+</blockquote>
+<p>More time than I care to admit passes, with me doing all kinds of crazy shit.</p>
+<blockquote>
+<p>“Oh, he said the Build Book button on the <em>Build</em> tab. I see it now.”</p>
+</blockquote>
+<p>And done.</p>
+<p>(Note that I also used his suggestion to have <code>output_dir: &quot;docs&quot;</code> and then use GitHub Pages to host the book-in-progress, which was also easy.)</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="http://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+
