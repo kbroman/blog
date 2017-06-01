@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://kbroman.org/blog/2017/05/31/miner-and-craft/</loc>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kbroman.org/blog/2017/05/31/omg-bookdown/</loc>
     <lastmod>2017-05-31T23:16:00-05:00</lastmod>
   </url>
@@ -117,7 +122,7 @@
   
   <url>
     <loc>http://kbroman.org/blog/tags/minecraft/</loc>
-    <lastmod>2017-05-27T12:30:00-05:00</lastmod>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -135,13 +140,13 @@
   
   <url>
     <loc>http://kbroman.org/blog/post/</loc>
-    <lastmod>2017-05-31T23:16:00-05:00</lastmod>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://kbroman.org/blog/tags/programming/</loc>
-    <lastmod>2017-05-30T10:41:00-05:00</lastmod>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -159,13 +164,13 @@
   
   <url>
     <loc>http://kbroman.org/blog/tags/r/</loc>
-    <lastmod>2017-05-31T23:16:00-05:00</lastmod>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://kbroman.org/blog/categories/r/</loc>
-    <lastmod>2017-05-31T23:16:00-05:00</lastmod>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -195,7 +200,7 @@
   
   <url>
     <loc>http://kbroman.org/blog/</loc>
-    <lastmod>2017-05-31T23:16:00-05:00</lastmod>
+    <lastmod>2017-05-31T23:48:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
