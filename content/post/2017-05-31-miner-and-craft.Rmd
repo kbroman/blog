@@ -8,7 +8,7 @@ tags: ["R", "minecraft", "programming"]
 
 In addition to our [miner](https://github.com/ROpenSciLabs/miner)
 package and our [in-development bookdown
-book](https://ROpenSciLabs/miner_book), the R/minecraft team from the
+book](https://ROpenSciLabs.github.io/miner_book), the R/minecraft team from the
 [ROpenSci](https://ropensci.org)
 [Unconference](http://unconf17.ropensci.org) had
 created a
