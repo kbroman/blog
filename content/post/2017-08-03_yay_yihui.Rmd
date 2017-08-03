@@ -1,0 +1,16 @@
+---
+title: 'yay, yihui!'
+author: Karl
+date: '2017-08-03T00:01:00-05:00'
+categories: [blog]
+tags: ["blogdown"]
+---
+
+When I abandoned my [wordpress site](https://kbroman.wordpress.com)
+and moved to [blogdown](https://bookdown.org/yihui/blogdown/),
+[I'd said](2017/04/30/new_blog_site/)
+that I wouldn't bother trying to move the old posts over.
+
+But [Yihui Xie](https://yihui.name) just
+[transferred everything](https://github.com/kbroman/blog/pull/2) for
+me! So awesome.
