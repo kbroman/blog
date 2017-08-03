@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>hipsteR: re-educating people who learned R before it was cool - the stupidest thing...</title>
+<meta property="og:title" content="hipsteR: re-educating people who learned R before it was cool - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">hipsteR: re-educating people who learned R before it was cool</h1>
+
+    
+    <span class="article-date">2014/05/15</span>
+    
+
+    <div class="article-content">
+      <p>This morning, I started <a href="http://kbroman.github.io/hipsteR/">a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.</a></p>
+
+<p>Yesterday I started reading the <a href="http://www.amazon.com/exec/obidos/ASIN/1461468671/7210-20">Rcpp book</a>, and on page 4 there&rsquo;s an example using the R function <code>replicate</code>, which (a) I&rsquo;d never heard before, and (b) is super useful.</p>
+
+<p>I mean, I often write code like this, for a bootstrap:</p>
+
+<pre><code>x &lt;- rnorm(2500)
+sapply(1:1000, function(a) quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
+</code></pre>
+
+<p>But I could just be writing</p>
+
+<pre><code>x &lt;- rnorm(100)
+replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
+</code></pre>
+
+<p>&ldquo;Oh, <code>replicate</code> must be some new function.&rdquo; Yeah, new in <strong>R version 1.8, in 2003!</strong></p>
+
+<p>I&rsquo;m in serious need of some re-education (e.g., I should be using more of <a href="http://github.com/hadley">Hadley Wickham&rsquo;s packages</a>). Hence the beginnings of a tutorial.</p>
+
+<hr />
+
+<p>Note: the title was suggested by <a href="https://www.stat.auckland.ac.nz/showperson?firstname=Thomas&amp;surname=Lumley">Thomas Lumley</a>. No connection to @hspter; it&rsquo;s not really so hip. I probably should have written &ldquo;geeksteR.&rdquo;</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

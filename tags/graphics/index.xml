@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphics on the stupidest thing...</title>
+    <link>/tags/graphics/</link>
+    <description>Recent content in Graphics on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/graphics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Halloween 2016 count</title>
+      <link>/2016/10/31/halloween-2016-count/</link>
+      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/31/halloween-2016-count/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MongoDB with D3.js</title>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
+      <description>
+
+&lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; is rough in spots, and while it works well for moderate-sized data sets, it can&amp;rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.&lt;/p&gt;
+
+&lt;p&gt;For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&amp;rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.&lt;/p&gt;
+
+&lt;p&gt;So, I&amp;rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&amp;rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb&#34;&gt;small illustration&lt;/a&gt; in my &lt;a href=&#34;https://github.com/kbroman/d3examples&#34;&gt;d3examples&lt;/a&gt; repository on GitHub.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;learning-mongodb&#34;&gt;Learning MongoDB&lt;/h3&gt;
+
+&lt;p&gt;I thought &lt;a href=&#34;http://www.mongodb.org&#34;&gt;mongoDB&lt;/a&gt; seemed like a good database to try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;storage of general documents seems a good match for the sort of data I work with&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;use of JSON/BSON seems a good match for &lt;a href=&#34;http://d3js.org&#34;&gt;D3.js&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So I&amp;rsquo;ve been taking an online-course though &lt;a href=&#34;https://university.mongodb.com/&#34;&gt;MongoDB University&lt;/a&gt; &amp;ndash; the &lt;a href=&#34;https://university.mongodb.com/courses/M101JS/about&#34;&gt;one for Node.js developers&lt;/a&gt;. I should have done &lt;a href=&#34;https://university.mongodb.com/courses/M101P/about&#34;&gt;the more general one, using Python&lt;/a&gt;, but I was thinking it&amp;rsquo;d be interesting to learn &lt;a href=&#34;http://nodejs.org&#34;&gt;Node&lt;/a&gt;, which is basically command-line scripting in javascript. I guess the advantage of node is that you can just write javascript. But personally I prefer to switch to the language appropriate to the task, so I&amp;rsquo;m not too hot on node. But maybe I just haven&amp;rsquo;t come to understand how best to make use of the whole callback function business.&lt;/p&gt;
+
+&lt;p&gt;MongoDB is not all that hard. It&amp;rsquo;s just kind of boring. The MongoDB Uni class is quite well done, though a few of the lectures were frustratingly out-of-date. I have the &lt;a href=&#34;http://shop.oreilly.com/product/0636920028031.do&#34;&gt;MongoDB book&lt;/a&gt;, but it&amp;rsquo;s been rough going; the class has been good for that. (The weekly deadlines have been good for motivating me to get through the dull &amp;ndash; for me &amp;ndash; material.)&lt;/p&gt;
+
+&lt;p&gt;The obvious bits with a database: how to get stuff into it and then back out of it. And then I guess deleting or changing stuff. So that&amp;rsquo;s all fine. I also learned about making indexes, so that you can more quickly get stuff out later. I don&amp;rsquo;t think my needs for these things are all that complicated. And so I think I understand those bits.&lt;/p&gt;
+
+&lt;h3 id=&#34;getting-the-data-for-the-data-vis&#34;&gt;Getting the data for the data vis&lt;/h3&gt;
+
+&lt;p&gt;The last key step that I was pondering last night: how do I, based on some user interaction with a data visualization (clicking on a point, or some such), fire off a request to the database and get the data back?&lt;/p&gt;
+
+&lt;p&gt;I guessed some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Representational_state_transfer&#34;&gt;RESTful API&lt;/a&gt; type thing. But while I can write that down, I don&amp;rsquo;t really understand what the hell it means.&lt;/p&gt;
+
+&lt;p&gt;But then I thought, what I need is to use some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods&#34;&gt;HTTP GET request&lt;/a&gt;. I kind of know what that means, but I don&amp;rsquo;t really understand what happens on the back end.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d been poking around in &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt;, the python-based mongoDB driver. (I like it much better than the &lt;a href=&#34;https://api.mongodb.org/ruby/current/&#34;&gt;ruby&lt;/a&gt; or &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/node-js/&#34;&gt;node&lt;/a&gt; drivers.) And as part of the Mongo University class, we used &lt;a href=&#34;http://expressjs.com/&#34;&gt;express&lt;/a&gt; with Node to do some HTTP GET and PUSH. If I want to grab some bit of data, I could have a python script running on the back end, looking for an http request, and then based on some key that was passed, grabbing data from the database and sending it back as JSON.&lt;/p&gt;
+
+&lt;p&gt;So I looked around for how to do this with mongoDB, found &lt;a href=&#34;https://github.com/10gen-labs/sleepy.mongoose&#34;&gt;sleepy mongoose&lt;/a&gt;, but that seemed like more than I wanted, and then came to &lt;a href=&#34;http://bottlepy.org/docs/dev/index.html&#34;&gt;bottle&lt;/a&gt;, which seemed like what I needed to handle the http bit. The example on the front page is just what I want: take a name from a URL and use it as input to some function, and give results back.&lt;/p&gt;
+
+&lt;h3 id=&#34;mongodb-d3-illustration&#34;&gt;MongoDB/D3 illustration&lt;/h3&gt;
+
+&lt;p&gt;The goal of all this: as part of some data visualization, the user will hover over or click a point, and this will lead to a request to the database, and then a plot of the data that comes back.&lt;/p&gt;
+
+&lt;p&gt;It seemed like a simple test case would be to use the data for &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;Anscombe&amp;rsquo;s quartet&lt;/a&gt;. Put the four series into a MongoDB database, and then have four buttons that, when clicked, cause a request to the database to grab the corresponding series, which is then plotted.&lt;/p&gt;
+
+&lt;p&gt;So first I wrote an &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/grab_anscombe.R&#34;&gt;R script&lt;/a&gt; to grab the data from the table on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;wikipedia page&lt;/a&gt; and write it to a &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt; file. I&amp;rsquo;m sure there was an easier way to get the data in a suitable form, but I was really procrastinating from writing a paper at this point, so I thought I&amp;rsquo;d test my web scraping skill in a simple case.&lt;/p&gt;
+
+&lt;p&gt;I then wrote a &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_insert.py&#34;&gt;python script&lt;/a&gt; that reads in the JSON file and inserts the data into a mongoDB database. You make a database connection with &lt;code&gt;pymongo.MongoClient()&lt;/code&gt; and insert the documents with the &lt;code&gt;insert_one()&lt;/code&gt; method to a collection. I later added an index with &lt;code&gt;create_index()&lt;/code&gt;; pretty silly here, but for large problems it would be useful.&lt;/p&gt;
+
+&lt;p&gt;So, the data&amp;rsquo;s in the database. How to get it back out? I wrote a second &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py&#34;&gt;python script&lt;/a&gt; (just 8 lines, really), that uses &lt;a href=&#34;http://bottlepy.org&#34;&gt;bottle&lt;/a&gt; to create a server that connects a URL to a function call. The function then uses &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt; to find the corresponding document and send it back as JSON. One &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;tricky bit that needed some extra googling&lt;/a&gt; was getting the browser to allow the request.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee&#34;&gt;D3 code (in coffeescript&lt;/a&gt;) is pretty standard. On clicking a button, I call &lt;code&gt;d3.json&lt;/code&gt; with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.&lt;/p&gt;
+
+&lt;p&gt;This &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/&#34;&gt;MongoDB/D3 illustration&lt;/a&gt; is a toy example, but it represents an important step for me, personally. I&amp;rsquo;m rather proud of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2015/06/anscombe_2.png&#34; alt=&#34;Anscombe&#39;s quartet, set 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Car crash stats revisited: My measurement errors</title>
+      <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
+      <description>&lt;p&gt;Last week, I &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
+
+&lt;p&gt;I later emailed &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi&#34;&gt;Mona Chalabi&lt;/a&gt;, and she and &lt;a href=&#34;http://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; quickly posted the data to &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. (That repository has a lot of interesting data, and if you see data at 538 that you&amp;rsquo;re interested in, just ask them!)&lt;/p&gt;
+
+&lt;p&gt;I was curious to look at how I&amp;rsquo;d done with my measurements and data entry. Here&amp;rsquo;s a plot of my percent errors:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png&#34; alt=&#34;Percent measurement errors in Karl&#39;s car crash stats&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not too bad, really. Here are the biggest problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Mississippi, non-distracted: off by 6%, but that corresponded to 0.5 mm.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Rhode Island and Ohio, speeding: off by 40 and 35%, respectively. I&amp;rsquo;d written down 8 and 9 mm rather than 13 and 14 mm.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Maine and Indiana, alcohol: wrote 15.5 and 14.5 mm, but typed 13.5 and 13 mm. In the former, I think I just misinterpreted my writing; in the latter, I think I wrote the number for the state below (Iowa).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;rsquo;s also interesting to note that my &amp;ldquo;total&amp;rdquo; and &amp;ldquo;non-distracted&amp;rdquo; were almost entirely under-estimates: probably an error in the measurement of the overall width of the bar chart.&lt;/p&gt;
+
+&lt;p&gt;Also note: &lt;a href=&#34;https://twitter.com/brycem&#34;&gt;@brycem&lt;/a&gt; had recommended using &lt;a href=&#34;http://arohatgi.info/WebPlotDigitizer/&#34;&gt;WebPlotDigitizer&lt;/a&gt; for digitizing data from images.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive plot of car crash stats</title>
+      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See it in action &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Code &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/car_crashes&#34;&gt;on github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improved graphs of car crash stats</title>
+      <link>/2014/10/29/improved-graphs-of-car-crash-stats/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
+      <description>
+
+&lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/MonaChalabi&#34;&gt;Mona Chalabi&lt;/a&gt; wrote &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;an interesting post on car crash statistics by state&lt;/a&gt;, at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;fivethirtyeight.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png&#34; alt=&#34;chalabi-dearmona-drinking&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m giving a talk today about data visualization [&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;slides&lt;/a&gt; | &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014&#34;&gt;github&lt;/a&gt;], and I thought this would make a good example, so I spent some time creating versions that I like better.
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two basic issues with Mona Chalabi&amp;rsquo;s graphs. First, you almost &lt;em&gt;never&lt;/em&gt; want to use alphabetical order. It&amp;rsquo;s useful for finding particular states, but it&amp;rsquo;s not useful for anything else. (Howard Wainer calls this &amp;ldquo;Austria first!&amp;rdquo; See, e.g., &lt;a href=&#34;http://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf&#34;&gt;this paper&lt;/a&gt;.) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.&lt;/p&gt;
+
+&lt;p&gt;Second, the separate figures make comparisons difficult. It would be better to put everything side-by-side. Even better is to do some scatterplots.&lt;/p&gt;
+
+&lt;p&gt;(We shouldn&amp;rsquo;t be too hard on Mona Chalabi, though. Yesterday &lt;a href=&#34;https://twitter.com/MonaChalabi/status/527121946073632768&#34;&gt;she tweeted a great illustration of the suckiness of pie charts&lt;/a&gt;, which I&amp;rsquo;m also using as an example in my lecture today.)&lt;/p&gt;
+
+&lt;h3 id=&#34;dot-plots&#34;&gt;Dot plots&lt;/h3&gt;
+
+&lt;p&gt;I started with a set of side-by-side dot plots, with states ordered by total collisions per billion miles:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/dotplots.png&#34; alt=&#34;Dot plots of crash statistics&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The design was inspired by the figures in &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;Visualizing data patterns with micromaps&lt;/a&gt; (Carr and Pickle, 2010). (I&amp;rsquo;m a huge &lt;a href=&#34;http://mason.gmu.edu/~dcarr/&#34;&gt;Dan Carr&lt;/a&gt; fan.)&lt;/p&gt;
+
+&lt;p&gt;Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes &lt;em&gt;with fatalities&lt;/em&gt;.) And you can more easily see the associations among the different variables.&lt;/p&gt;
+
+&lt;h3 id=&#34;scatterplots&#34;&gt;Scatterplots&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in the associations among the variables, it&amp;rsquo;s best to look at scatterplots. Here are what I viewed to be the most interesting ones:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/scatterplots.png&#34; alt=&#34;Scatterplots of car crash stats&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The association between average insurance premiums and average insurance losses is now clear. And there&amp;rsquo;s an interesting pattern in the association between speeding-related crashes and total crashes. It&amp;rsquo;s like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing &lt;a href=&#34;http://www.jstor.org/stable/1269768&#34;&gt;brushing&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&#34;the-data&#34;&gt;The data&lt;/h3&gt;
+
+&lt;p&gt;It was a bit of a pain to get the data to make the revised plots. The &lt;a href=&#34;http://www-fars.nhtsa.dot.gov/Main/index.aspx&#34;&gt;National Highway Traffic Safety Administration&lt;/a&gt; has a lot of data, but I didn&amp;rsquo;t want to spend the time trying to make sense of it and extract the numbers.&lt;/p&gt;
+
+&lt;p&gt;I considered trying to do some image analysis to figure out the lengths of the bars in the bar plots, but I don&amp;rsquo;t have much experience with that, so while it&amp;rsquo;d be a great thing to learn, it seemed like I wouldn&amp;rsquo;t be able to get it done in time.&lt;/p&gt;
+
+&lt;p&gt;So I used the old-fashioned method: print the graphs and measure the bars with a ruler.  Here&amp;rsquo;s a scan of some of my measurements (click on it to see the larger version).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/via_ruler.png&#34; alt=&#34;Digitizing car crash stats with a ruler&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Data entry was another not-quite-how-I-want-my-scientific-collaborators-to-be-doing-this aspect. The data are &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/data.R&#34;&gt;here&lt;/a&gt;, as R code, in the most tedious possible form. And surely there are errors.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-code&#34;&gt;The code&lt;/h3&gt;
+
+&lt;p&gt;The code to make the dotplots is &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/plot.R&#34;&gt;here&lt;/a&gt;; the code to make the scatterplots is &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/scatterplots.R&#34;&gt;here&lt;/a&gt;. Not the prettiest, and uses base graphics not the recommended &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt;, and with the &lt;code&gt;grayplot&lt;/code&gt; function in my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; and &lt;a href=&#34;http://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; posted the data at &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. I discuss the errors in my ruler-based measurements &lt;a href=&#34;http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testing an R package&#39;s interactive graphs</title>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
+
+&lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
+
+&lt;p&gt;But if I want to post the package to &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, it seems (from the &lt;a href=&#34;http://cran.r-project.org/web/packages/policies.html&#34;&gt;CRAN policy&lt;/a&gt;) that the examples in the &lt;code&gt;.Rd&lt;/code&gt; files shouldn&amp;rsquo;t be opening a web browser. Thus, I need to surround the example code with &lt;code&gt;\dontrun{}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But I was using those examples, and &lt;code&gt;R CMD check&lt;/code&gt;, to open the series of examples for manual checking.&lt;/p&gt;
+
+&lt;p&gt;So, what I&amp;rsquo;ve decided to do:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Include examples opening a browser, but within &lt;code&gt;\dontrun{}&lt;/code&gt; so the browser isn&amp;rsquo;t opened in &lt;code&gt;R CMD check&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Also include examples that don&amp;rsquo;t open the browser, within &lt;code&gt;\dontshow{}&lt;/code&gt;, so that &lt;code&gt;R CMD check&lt;/code&gt; will at least check the basics.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a &lt;a href=&#34;http://ruby-lang.org&#34;&gt;ruby&lt;/a&gt; script that pulls out all of the examples from the &lt;code&gt;.Rd&lt;/code&gt; files, stripping off the &lt;code&gt;\dontrun{}&lt;/code&gt; and &lt;code&gt;\dontshow{}&lt;/code&gt; and pasting it all into a &lt;code&gt;.R&lt;/code&gt; file.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Periodically run &lt;code&gt;R CMD BATCH&lt;/code&gt; on that set of examples, to do the manual checking of the interactive graphs.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham/status/495535873711431681&#34;&gt;pointed me&lt;/a&gt; to &lt;strong&gt;&lt;code&gt;\donttest{}&lt;/code&gt;&lt;/strong&gt;, added in R ver 2.7 (in 2008). (More value from blog + twitter!)&lt;/p&gt;
+
+&lt;p&gt;So I replaced my &lt;code&gt;\dontrun{}&lt;/code&gt; bits with &lt;code&gt;\donttest{}&lt;/code&gt;. And I can use &lt;code&gt;devtools::run_examples()&lt;/code&gt; to run all of the examples, for my manual checks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2014 UseR conference, days 1-2</title>
+      <link>/2014/07/02/2014-user-conference-days-1-2/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m at UCLA for the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR Conference&lt;/a&gt;. I attended &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;once before&lt;/a&gt;, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.&lt;/p&gt;
+
+&lt;p&gt;In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having &lt;a href=&#34;http://www.rqtl.org/ctc2013/&#34;&gt;co-organized a small conference last year&lt;/a&gt;, I appreciate the difficulties. I think the organizers of this meeting have done a great job, but there are some ways it which it might have been better (e.g., no tiny rooms, a better time slot for the posters, and more space for the posters).&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;day-1-tutorials&#34;&gt;Day 1: Tutorials&lt;/h3&gt;
+
+&lt;p&gt;The first day was devoted to &lt;a href=&#34;http://user2014.stat.ucla.edu/#tutorials&#34;&gt;tutorials&lt;/a&gt;. I arrived later than intended and missed the morning tutorials and was just in time for the afternoon ones. But the tutorial I wanted to attend, [Ramnath Vaidyanathan&amp;rsquo;s tutorial on interactive documents]() was in a tiny room that was already filled beyond capacity. And by the time I tried to switch, the others were well underway, and I&amp;rsquo;d lost my momentum. Plus I was distracted by ice cream. And seeing &lt;a href=&#34;http://yihui.name/en/&#34;&gt;Yihui&lt;/a&gt;, &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik&lt;/a&gt;, &lt;a href=&#34;http://hilaryparker.com/&#34;&gt;Hilary&lt;/a&gt;, and &lt;a href=&#34;http://www.sandradgriffith.com/&#34;&gt;Sandy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Materials for many of the tutorials are &lt;a href=&#34;http://user2014.stat.ucla.edu/#tutorials&#34;&gt;online&lt;/a&gt;; grab them while you can.&lt;/p&gt;
+
+&lt;p&gt;The evening reception was interesting. I listened in to &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Chang&lt;/a&gt; talking to &lt;a href=&#34;http://www.talgalili.com/&#34;&gt;Tal Galili&lt;/a&gt; about the value of &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;&amp;rsquo;s pipe operator (&lt;code&gt;%&amp;gt;%&lt;/code&gt;) for data manipulation in R. Joe was quite persuasive: replace a nested series of function calls, to be read from the inside out, with a stream of pipes.&lt;/p&gt;
+
+&lt;p&gt;I was excited to meet &lt;a href=&#34;http://scottchamberlain.info/&#34;&gt;Scott Chamberlain&lt;/a&gt; and to see &lt;a href=&#34;http://www.stat.ubc.ca/~jenny/&#34;&gt;Jenny Bryan&lt;/a&gt; and &lt;a href=&#34;http://www.vince.vu/&#34;&gt;Vince Vu&lt;/a&gt;, and of course &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;day-2&#34;&gt;Day 2&lt;/h3&gt;
+
+&lt;h4 id=&#34;john-chambers&#34;&gt;John Chambers&lt;/h4&gt;
+
+&lt;p&gt;The opening talk was by &lt;a href=&#34;http://en.wikipedia.org/wiki/John_Chambers_(statistician)&#34;&gt;John Chambers&lt;/a&gt;. I&amp;rsquo;d not heard him speak before. (Back in 2005, I think, at JSM in Minneapolis, I tried to attend a session with John Chambers, &lt;a href=&#34;http://www.gene.com/scientists/our-scientists/robert-gentleman&#34;&gt;Robert Gentleman&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.ucdavis.edu/~duncan/&#34;&gt;Duncan Temple Lang&lt;/a&gt;, on the future of statistical computing, but it was assigned a room for 30 people, and by the time I got there there was a mass of more than 30 people &lt;em&gt;outside&lt;/em&gt; the room.)&lt;/p&gt;
+
+&lt;p&gt;John talked about the origin of S, including a &lt;a href=&#34;https://twitter.com/kwbroman/status/484005898965090305&#34;&gt;handwritten &amp;ldquo;viewgraph&amp;rdquo;&lt;/a&gt; from the first discussion of the idea in 1976. His basic point was that R was conceived not as a language but as an interface to algorithms: to make it easier to use Fortran-based routines for things like linear regression. And R continues to have much value in that regard:  user-friendly interfaces for statistical calculations.&lt;/p&gt;
+
+&lt;p&gt;He gave a shout out to &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt;, &lt;a href=&#34;http://www.omegahat.org/Rllvm/&#34;&gt;Rllvm&lt;/a&gt;, and &lt;a href=&#34;http://0xdata.com/&#34;&gt;h2o&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;interactive-graphics&#34;&gt;Interactive graphics&lt;/h4&gt;
+
+&lt;p&gt;The first contributed session was on interactive graphics from R.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/wch&#34;&gt;Winston Chang&lt;/a&gt; introduced &lt;a href=&#34;http://ggvis.rstudio.com/&#34;&gt;ggvis&lt;/a&gt;, which is an exciting effort at &lt;a href=&#34;http://www.rstudio.com&#34;&gt;RStudio&lt;/a&gt; to make interactive graphics readily accessible from R.  It uses a ggplot2-style syntax, but with the &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, and using &lt;a href=&#34;https://github.com/trifacta/vega/&#34;&gt;Vega&lt;/a&gt; as the underlying engine.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ramnathv.github.io/&#34;&gt;Ramnath Vaidyanathan&lt;/a&gt; spoke about &lt;a href=&#34;http://rcharts.io/&#34;&gt;rCharts&lt;/a&gt;, which makes a huge list of javascript-based visualization libraries accessible from R using a lattice-style syntax. He went through a ton of great examples, pointed to a &lt;a href=&#34;http://rcharts.io/gallery/&#34;&gt;gallery of others&lt;/a&gt;, and briefly describing the underlying strategy.&lt;/p&gt;
+
+&lt;p&gt;There were additional talks about &lt;a href=&#34;https://plot.ly/&#34;&gt;plotly&lt;/a&gt; and &lt;a href=&#34;http://user2014.stat.ucla.edu/abstracts/talks/216_Subramaniam.pdf&#34;&gt;iwPlot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;plotly is an effort to make &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based graphs accessible from R (and python and matlab), as well as editable and collaborative. But I don&amp;rsquo;t like plotly&amp;rsquo;s &lt;a href=&#34;https://plot.ly/tou&#34;&gt;Terms of service&lt;/a&gt;, nor that it&amp;rsquo;s closed source. And the presentation was all demonstration with little exposition and so a bit hard to follow.&lt;/p&gt;
+
+&lt;p&gt;iwPlot is an effort to reimplement &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;iPlot eXtreme&lt;/a&gt; with web-based graphics, for interactive graphics with massive datasets, with everything &amp;ldquo;in the cloud&amp;rdquo; rather than on a desktop. I was surprised that they&amp;rsquo;re writing everything from scratch rather than make use of other javascript-based libraries. And the examples weren&amp;rsquo;t very compelling. I was excited about iplot eXtreme back in 2011, but it doesn&amp;rsquo;t seem to have progressed much since. Its &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;web site&lt;/a&gt; says &amp;ldquo;An official release on CRAN is expected in Sept 2011,&amp;rdquo; but that doesn&amp;rsquo;t seem to have happened.&lt;/p&gt;
+
+&lt;h4 id=&#34;web-integration&#34;&gt;Web/integration&lt;/h4&gt;
+
+&lt;p&gt;I skipped a couple of important talks in here: on &lt;a href=&#34;http://rcloud.persistent.com/rCloud&#34;&gt;RCloud&lt;/a&gt; and &lt;a href=&#34;https://www.opencpu.org/&#34;&gt;OpenCPU&lt;/a&gt;. I needed a walk and an espresso.&lt;/p&gt;
+
+&lt;p&gt;I was back for &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt;&amp;rsquo;s talk about &lt;a href=&#34;http://shiny.rstudio.com/&#34;&gt;Shiny&lt;/a&gt;, for making interactive web applications with R, with no requirement of knowledge of html, css, or javascript. It was really well presented; especially cool is the ability to include shiny apps within R Markdown documents, which is apparently even easier than creating stand-alone shiny apps.&lt;/p&gt;
+
+&lt;p&gt;And then &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik Ram&lt;/a&gt; gave a great talk about &lt;a href=&#34;http://ropensci.org/&#34;&gt;rOpenSci&lt;/a&gt;, to foster open science: a large set of packages providing access to a variety of data sources.&lt;/p&gt;
+
+&lt;h4 id=&#34;martin-machler&#34;&gt;Martin Machler&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stat.ethz.ch/people/maechler&#34;&gt;Martin Machler&lt;/a&gt; gave a superb talk on &amp;ldquo;Good practices for R programming,&amp;rdquo; including seven principles:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Work with source files (rather than just typing in the console)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Keep R source readable and maintainable&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the documentation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Learn from the masters (read others&amp;rsquo; code)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Do not copy and paste (write functions)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Strive for clarity and simplicity&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Test your code&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;He made a number of further points:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Leave optimization to later, clear code is more important than optimized code, and if you &lt;em&gt;do&lt;/em&gt; optimize, measure rather than guess about speed.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write packages&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use version control&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;R CMD BATCH&lt;/code&gt; should work on your R script.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Never use &lt;code&gt;.RData&lt;/code&gt;; your code should do all of the work. But use &lt;code&gt;save&lt;/code&gt; for big computations and then &lt;code&gt;attach&lt;/code&gt;. (Later he clarified, don&amp;rsquo;t use &lt;code&gt;attach&lt;/code&gt; with data frames, but do use it with &lt;code&gt;RData&lt;/code&gt; files.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make use of the &lt;code&gt;log&lt;/code&gt; argument to density functions, to avoid underflow, and use functions like &lt;code&gt;log1p&lt;/code&gt;, for accuracy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;drop=FALSE&lt;/code&gt; when subsetting a matrix, so that the outcome remains a matrix.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;is.na(x)&lt;/code&gt; not &lt;code&gt;x == NA&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t use &lt;code&gt;1:n&lt;/code&gt; when &lt;code&gt;n&lt;/code&gt; is not a positive integer.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;data-manipulation&#34;&gt;Data manipulation&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; gave a persuasive and instructive talk on &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;&amp;rsquo;s pipe operator, for data manipulation tasks in R. &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt; had largely convinced me the night before, but now I&amp;rsquo;m thoroughly convinced of the value of these tools. The bottlenecks in analysis tasks are thinking, coding, and doing. For data manipulation, dplyr helps with the &lt;em&gt;thinking&lt;/em&gt; part, by having you focus on a set of basic operations: filter, select, arrange, mutate, summarize, and &amp;ldquo;group by,&amp;rdquo; and then also the left join, right join, semi-join, and anti-join. Magrittr&amp;rsquo;s pipe operator (%&amp;gt;%) helps with the &lt;em&gt;coding&lt;/em&gt;: you create a stream of pipes rather than a nasty mess of nested function calls that need to be read from the inside out. And &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt; helps with the &lt;em&gt;doing&lt;/em&gt;: dplyr is super-fast (though not quite as fast as &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;). Further, dplyr takes advantage of R&amp;rsquo;s &amp;ldquo;non-standard evaluation&amp;rdquo; in a way that makes it easy to connect to external data sources, like databases, as if they were regular objects.&lt;/p&gt;
+
+&lt;p&gt;I skipped the rest of the session, though I should have at least stayed for the Matt Dowle&amp;rsquo;s presentation on &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;. (I understand that &lt;a href=&#34;https://twitter.com/_inundata/status/484120526021881858&#34;&gt;he could have an alternate career as a leader of group meditations&lt;/a&gt;.) I&amp;rsquo;ve just found that I have to limit myself. But &lt;a href=&#34;https://twitter.com/timtriche/status/484120355254980608&#34;&gt;a tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/timtriche&#34;&gt;Tim Triche&lt;/a&gt; had a photo of a slide that showed the speed of data.table&amp;rsquo;s &lt;code&gt;fread&lt;/code&gt; function over R&amp;rsquo;s &lt;code&gt;read.csv&lt;/code&gt;. I need to adopt &lt;code&gt;fread&lt;/code&gt;!&lt;/p&gt;
+
+&lt;h4 id=&#34;posters&#34;&gt;Posters&lt;/h4&gt;
+
+&lt;p&gt;The poster sessions were a tragedy. Seriously.&lt;/p&gt;
+
+&lt;p&gt;First, it was immediately after a long session (well, for those who stuck it through), and at the slot &lt;a href=&#34;https://twitter.com/kwbroman/status/484131994708627456&#34;&gt;where one would want to eat dinner&lt;/a&gt;. (Martin&amp;rsquo;s talk was 3-4, the 3rd contributed session was 4-5:30, the posters were 5:30-7, and two panel sessions/mixers were 6:30-9.)&lt;/p&gt;
+
+&lt;p&gt;Second, the posters were arranged along a narrow hallway, and not on the walls but on stands which stuck out into the hallway. There really was no room for people to view the things.&lt;/p&gt;
+
+&lt;p&gt;It was too frustrating. I left to eat dinner.&lt;/p&gt;
+
+&lt;h4 id=&#34;her-panel&#34;&gt;heR panel&lt;/h4&gt;
+
+&lt;p&gt;It was great that the meeting included a well-attended &lt;a href=&#34;https://github.com/skoval/her2014&#34;&gt;panel discussion and mixer&lt;/a&gt; to discuss how to encourage more women R users. But I was a bit disappointed with the event.&lt;/p&gt;
+
+&lt;p&gt;We can all agree that women are underrepresented as contributors of packages to &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; and as participants in R conferences. But why? And how to change this? I didn&amp;rsquo;t gain much insight.&lt;/p&gt;
+
+&lt;p&gt;I think I just don&amp;rsquo;t like panel discussion. The five women on the panel, and the moderator, are admirable and their views interesting. But they don&amp;rsquo;t have a unique understanding of the problem or solutions. I think I would have preferred a more open discussion, to hear much more from all of the other women in the room.&lt;/p&gt;
+
+&lt;p&gt;I felt the same way about the panel discussion at &lt;a href=&#34;http://www.rqtl.org/ctc2013&#34;&gt;the meeting I co-organized in 2013&lt;/a&gt;: I would have preferred to have heard much more from the general audience and less from the panel.&lt;/p&gt;
+
+&lt;p&gt;The most shocking revelation concerned the unnecessarily extensive effort that &lt;a href=&#34;http://www.stat.ucla.edu/~amelia.mcnamara/&#34;&gt;Amelia McNamara&lt;/a&gt; had to expend in order to include a &lt;em&gt;harrassment policy&lt;/em&gt; on the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;meeting web site&lt;/a&gt;. The value of such a policy should be obvious from the &lt;a href=&#34;http://geekfeminism.wikia.com/wiki/Timeline_of_incidents&#34;&gt;history of bad behavior&lt;/a&gt; at scientific and technical conferences.&lt;/p&gt;
+
+&lt;p&gt;I would have been happier had the discussion continued for another hour. The audience was just getting going when the event ended.&lt;/p&gt;
+
+&lt;p&gt;My personal opinion is that there are a lot more women R users out there, but they aren&amp;rsquo;t contributing R packages because it has long been a very cumbersome process. (But see &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/&#34;&gt;Hilary Parker&amp;rsquo;s tutorial&lt;/a&gt;.) And they don&amp;rsquo;t necessarily identify as &amp;ldquo;R users&amp;rdquo; but rather as more general applied statisticians. And they&amp;rsquo;ve not yet learned of the great value in attending UseR conferences, for learning and networking.&lt;/p&gt;
+
+&lt;h4 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;UseR conferences are fabulous: for inspiration, learning, and networking. They&amp;rsquo;re not for gurus, but for normal people who want to share ideas and learn about new and exciting developments. (The next &lt;a href=&#34;http://user2015.org&#34;&gt;UseR meeting&lt;/a&gt; will be June 30-July 3, 2015, in Aalborg, Denmark.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The smallest meeting room shouldn&amp;rsquo;t be very small.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Poster sessions need a proper time slot, and they need a lot of space.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t much like panel discussions but rather prefer more open discussions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I need to adopt &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; immediately. Also &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;&amp;rsquo;s &lt;code&gt;fread&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I need to learn &lt;a href=&#34;http://shiny.rstudio.com&#34;&gt;shiny&lt;/a&gt;, &lt;a href=&#34;http://ggvis.rstudio.com&#34;&gt;ggvis&lt;/a&gt;, &lt;a href=&#34;http://rcharts.io&#34;&gt;rCharts&lt;/a&gt;, and some of the &lt;a href=&#34;http://ropensci.org&#34;&gt;rOpenSci&lt;/a&gt; packages (and &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; for that matter; I still just use base graphics), at least so that I can get students using them.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Further points on crayon colors</title>
+      <link>/2014/05/09/further-points-on-crayon-colors/</link>
+      <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/05/09/further-points-on-crayon-colors/</guid>
+      <description>&lt;p&gt;I saw &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;this great post on crayola crayon colors&lt;/a&gt; at the &lt;a href=&#34;http://learnr.wordpress.com&#34;&gt;Learning R blog&lt;/a&gt;, reproducing a &lt;a href=&#34;http://www.datapointed.net/2010/01/crayola-crayon-color-chart/&#34;&gt;nice graph&lt;/a&gt; of the Crayola crayon colors over time. (Also see &lt;a href=&#34;http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/&#34;&gt;this even nicer version&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;List of Crayola crayon colors&lt;/a&gt;,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(XML)
+theurl &amp;lt;- &amp;quot;http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&amp;quot;
+crayontable &amp;lt;- readHTMLTable(theurl, stringsAsFactors = FALSE)[[1]]
+crayons &amp;lt;- crayontable[,grep(&amp;quot;Hex&amp;quot;, colnames(crayontable))]
+names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Comparing these to what I&amp;rsquo;d grabbed, I noted one small discrepancy on the Wikipedia page: Yellow Orange was listed as &lt;code&gt;&amp;quot;#FFAE42&amp;quot;&lt;/code&gt; but the background color for the Yellow Orange cell in the table was &lt;code&gt;&amp;quot;#FFB653&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So I created a Wikipedia account and edited the Wikipedia page.&lt;/p&gt;
+
+&lt;p&gt;(Then I realized that I&amp;rsquo;d made a mistake in my edit, undid my change, thought the whole thing through again, and edited the page again.)&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; also showed a different way to sort the colors: convert to HSV, and then sort by the H then S then V. So &lt;a href=&#34;https://github.com/kbroman/broman/commit/dde305de2c3cd5f3a00f7378fefd4f73a4520599&#34;&gt;I edited my &lt;code&gt;plot_crayons()&lt;/code&gt; function again&lt;/a&gt;, to create the following picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png&#34; alt=&#34;Crayon colors, again&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two more points about crayon colors</title>
+      <link>/2014/05/08/two-more-points-about-crayon-colors/</link>
+      <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
+      <description>&lt;p&gt;If you want to use &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;crayon colors in R&lt;/a&gt; but you don&amp;rsquo;t want to rely on my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, you can just grab the code. Copy the &lt;a href=&#34;https://github.com/kbroman/broman/blob/master/R/brocolors.R#L72-L204&#34;&gt;relevant lines from the &lt;code&gt;R/brocolors.R&lt;/code&gt; file&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;,
+            &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;,
+            &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;,
+            ...
+            &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;,
+            &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I spent a bit of time thinking about &lt;a href=&#34;http://stackoverflow.com/questions/11923659/javascript-sort-rgb-values&#34;&gt;how best to sort the colors in a meaningful way&lt;/a&gt;, for the &lt;code&gt;plot_crayons()&lt;/code&gt; function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering. Here&amp;rsquo;s the code from &lt;a href=&#34;https://github.com/kbroman/broman/blob/852b0ebd84c4cfed6f21f3e26635a46a10143757/R/brocolors.R#L234-L238&#34;&gt;&lt;code&gt;plot_crayons()&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# get rgb
+colval &amp;lt;- t(col2rgb(crayons))
+
+# hclust to order the colors
+ord &amp;lt;- hclust(dist(colval))$order
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s not perfect, but I think it worked remarkably well:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2014/05/crayons.png&#34; alt=&#34;Crayon colors&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Crayon colors in R</title>
+      <link>/2014/05/07/crayon-colors-in-r/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/05/07/crayon-colors-in-r/</guid>
+      <description>&lt;p&gt;Last night I was working on a &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/tree/ictr2014&#34;&gt;talk on creating effective graphs&lt;/a&gt;. Mostly, I needed to update the colors, as there&amp;rsquo;d been some gaudy ones in &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/ictr2014.pdf&#34;&gt;its previous form&lt;/a&gt; (e.g., slide 22).&lt;/p&gt;
+
+&lt;p&gt;I usually pick colors using the crayons in the &lt;a href=&#34;https://www.robinwood.com/Catalog/Technical/OtherTuts/MacColorPicker/MacColorPicker.html&#34;&gt;Mac Color Picker&lt;/a&gt;. But that has just 40 crayons, and I wanted more choices.&lt;/p&gt;
+
+&lt;p&gt;That led me to the &lt;a href=&#34;http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;list of Crayola crayon colors on wikipedia&lt;/a&gt;. I wrote a ruby script to grab the color names and codes and added them to my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;Use &lt;code&gt;brocolors(&amp;quot;crayons&amp;quot;)&lt;/code&gt; to get the list of colors. For example, to get &amp;ldquo;Tickle Me Pink,&amp;rdquo; use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(broman)
+pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Use &lt;code&gt;plot_crayons()&lt;/code&gt; to get the following summary plot of the colors:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2014/05/crayons.png&#34; alt=&#34;Crayon colors&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can install the R/broman package using &lt;code&gt;install_github&lt;/code&gt; in devtools, (specifically, &lt;code&gt;install_github(&amp;quot;kbroman/broman&amp;quot;)&lt;/code&gt;) or wait a day or two and the version with this code will be &lt;a href=&#34;http://cran.r-project.org/web/packages/broman/&#34;&gt;on CRAN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: See also &lt;a href=&#34;http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;Two more points about crayon colors&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data structures are important</title>
+      <link>/2013/03/19/data-structures-are-important/</link>
+      <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/19/data-structures-are-important/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The code is on &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/lod_by_time&#34;&gt;github&lt;/a&gt;. It took me about a day.&lt;/p&gt;
+
+&lt;p&gt;The hardest part was figuring out the right data structures.  A pixel here is linked to curves over there and over there and over there.  You need to set things up so it&amp;rsquo;s easy to traverse such linkages.&lt;/p&gt;
+
+&lt;p&gt;If you hover over a point in the top-left image, you get views of the vertical and horizontal cross-sections.  If you click on a point, pointwise confidence bands are added to the &amp;ldquo;QTL effect&amp;rdquo; plot.  (You have to click, because if I included those confidence bands automatically, the graph became painfully slow to refresh.)&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not completely happy with the layout of the graph; it&amp;rsquo;s not particularly intuitive.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why aren&#39;t all of our graphs interactive?</title>
+      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
+
+&lt;p&gt;We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard.  This was a primary contributor to &lt;a href=&#34;http://kbroman.org/blog/2012/04/25/microarrays-suck/&#34;&gt;my recent embarrassments&lt;/a&gt;, in which clear problems in the data were not discovered when they should have been.&lt;/p&gt;
+
+&lt;p&gt;I gave &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs&#34;&gt;a talk on interactive graphs (with the title above)&lt;/a&gt; at Johns Hopkins last fall, and then &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;a related talk&lt;/a&gt; at ENAR earlier this week, and I have a few thoughts to add here.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-brief-digression&#34;&gt;A brief digression&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m giving a talk at a plant breeding symposium at Kansas State in a couple of weeks, and I&amp;rsquo;ve been pondering what to talk about.  A principal problem is that I don&amp;rsquo;t really work on plant breeding.  My most relevant talks are a bit too technical, and my more interesting talks are not relevant.&lt;/p&gt;
+
+&lt;p&gt;Then I had the idea to talk about some of my recent work with my graduate student, Il-youp Kwak, on the genetic analysis of phenotypes measured over time.&lt;/p&gt;
+
+&lt;p&gt;I realized that I could incorporate some interactive graphs into the talk.  Initially I was just thinking that the interactive graphs would make the talk more interesting and would allow me to talk about things that weren&amp;rsquo;t necessarily relevant but were interesting to me.&lt;/p&gt;
+
+&lt;p&gt;But then I realized that this work really cries out for interactive graphs.  And as I begin to construct one of them, I thought of a whole bunch more I might create.  More importantly, I realized that these interactive graphs are extremely useful teaching tools.&lt;/p&gt;
+
+&lt;h3 id=&#34;more-d3-http-d3js-org-examples&#34;&gt;More &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; examples&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an image of first graph I created for the talk; click on it to jump to the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manycurves&#34;&gt;interactive version&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Statisticians are often confronted with a large set of curves.  We&amp;rsquo;d like to show the individual curves, but there are too many.  The resulting &lt;a href=&#34;http://www.ats.ucla.edu/stat/stata/faq/spagplot.htm&#34;&gt;spaghetti plot&lt;/a&gt; is a total mess.  An image plot (like the &lt;a href=&#34;http://journals.lww.com/epidem/Fulltext/2010/09000/Lasagna_Plots__A_Saucy_Alternative_to_Spaghetti.15.aspx&#34;&gt;lasagna plot&lt;/a&gt;) allows us to see all of the curves, but it can be hard to get a sense of what the actual curves look like.  The interactive version solves the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manycurves&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/manycurves2.png&#34; alt=&#34;Many curves&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a second example; again click on the image to jump to the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;interactive version&lt;/a&gt;. (I&amp;rsquo;ve shown this before, but I want to use it to make another point.)&lt;/p&gt;
+
+&lt;p&gt;Typically, in a lecture on complex trait analysis, I&amp;rsquo;d show one LOD curve (like the top panel in the image below) and a few different plots of phenotype vs genotype (the lower-right panel in the image).  I think the exploratory tool will be much more effective, in a lecture, for explaining what it all means.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_and_effect.png&#34; alt=&#34;LOD and QTL effects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;statisticians-need-to-be-doing-this-routinely&#34;&gt;Statisticians need to be doing this routinely&lt;/h3&gt;
+
+&lt;p&gt;In constructing a graph, one must make some difficult choices.  For high-dimensional data, one must greatly compress the available information.  The resulting summaries, while potentially informative, take one far away from the original data.&lt;/p&gt;
+
+&lt;p&gt;Interactive graphs provide a means through which one may view the overall summary but have immediate access to the underlying details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive eQTL plot with d3.js</title>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The code (in &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) is available at &lt;a href=&#34;https://github.com/kbroman/JSbroman/tree/master/cistrans&#34;&gt;github&lt;/a&gt;.  But beware: it&amp;rsquo;s pretty awful.&lt;/p&gt;
+
+&lt;p&gt;The hardest part was setting up the data files.  Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive MA plot</title>
+      <link>/2013/02/11/interactive-ma-plot/</link>
+      <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/02/11/interactive-ma-plot/</guid>
+      <description>&lt;p&gt;The New York Times has &lt;a href=&#34;http://tinyurl.com/aqa9wum&#34;&gt;an interesting interactive graphic&lt;/a&gt; on boys&amp;rsquo; and girls&amp;rsquo; average scores on a science exam, by country.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://tinyurl.com/aqa9wum&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/science_scores.png&#34; alt=&#34;Science scores&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s nice to see a scatterplot. (Often one would see just a bar plot, with female and male bars side-by-side.) Even better, this is an &amp;ldquo;&lt;a href=&#34;http://en.wikipedia.org/wiki/MA_plot&#34;&gt;MA plot&lt;/a&gt;.&amp;rdquo; That is, rather than just plot males vs females, they show the difference vs the average.&lt;/p&gt;
+
+&lt;p&gt;The wikipedia entry for &lt;a href=&#34;http://en.wikipedia.org/wiki/MA_plot&#34;&gt;MA plot&lt;/a&gt; says such a plot of difference vs average is in medical statistics known as a &lt;a href=&#34;http://en.wikipedia.org/wiki/Bland–Altman_plot&#34;&gt;Bland-Altman plot&lt;/a&gt; and in other fields is known as a Tukey mean-difference plot.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive graphics with d3.js</title>
+      <link>/2013/02/08/interactive-graphics-with-d3-js/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m making some progress learning &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.&lt;/p&gt;
+
+&lt;h3 id=&#34;many-box-plots&#34;&gt;Many box plots&lt;/h3&gt;
+
+&lt;p&gt;First, an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manyboxplots&#34;&gt;example for displaying many distributions&lt;/a&gt;.  Here I&amp;rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements.  It&amp;rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&amp;rsquo;t give enough information about the tails.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manyboxplots&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/manyboxplots.png&#34; alt=&#34;Many box plots&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the top figure, the 500 arrays are aligned next to each other, sorted by their median, and then I show the 1, 5, 10, 25 50, &amp;hellip;, 99th percentiles.  The advantage of the interactive plot is that you can hover over a given array on the top and see a more detailed histogram below.  And if you click on an array, its histogram will be retained below, for easy comparison to other arrays.&lt;/p&gt;
+
+&lt;h3 id=&#34;lod-curves-and-qtl-effects&#34;&gt;LOD curves and QTL effects&lt;/h3&gt;
+
+&lt;p&gt;As a &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;second example&lt;/a&gt;, I plot the LOD curves from QTL analysis across the genome; click on a chromosome above and you get a more detailed view of that chromosome in the bottom-left; click on a marker position in the bottom-left, and you get a view of the QTL effect on the bottom-right.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/lod_and_effect1.png&#34; alt=&#34;LOD curves and QTL effects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Likely none of that is understandable; let me try to explain.  QTL stands for &amp;ldquo;quantitative trait locus,&amp;rdquo; a region of the genome (i.e., locus) that influences some quantitative trait (like insulin level in serum).  To identify QTL, we look at the association between the quantitative trait and genotype at each of many genetic markers across the genome.  We&amp;rsquo;re basically doing analysis of variance, but we express the results as a log10 likelihood ratio, called the LOD score.&lt;/p&gt;
+
+&lt;p&gt;The advantage of this interactive graph is that you have some ability to look at the underlying genotype/phenotype association, rather than just rely on LOD curves.  It would be nice to include the option of a dot-plot on the lower right, rather than just the within-group averages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Office</title>
+      <link>/2013/01/30/microsoft-office/</link>
+      <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/01/30/microsoft-office/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
+
+&lt;blockquote&gt;As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.&#34; As an example, he cited a feature in Excel that analyzes a batch of numbers selected by a user and automatically recommends the best way to represent the data in a chart.&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Curved arrows in R</title>
+      <link>/2012/10/11/curved-arrows-in-r/</link>
+      <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/10/11/curved-arrows-in-r/</guid>
+      <description>&lt;p&gt;I briefly investigated how to draw curved arrows in R. Here&amp;rsquo;s a small piece of the figure that I ultimately created:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png&#34; alt=&#34;&#34; /&gt;
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;A google search for &amp;ldquo;curved arrows in R&amp;rdquo; revealed three options:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://rgm2.lab.nig.ac.jp/RGM2/func.php?rd_id=diagram:curvedarrow&#34;&gt;&lt;code&gt;curvedarrow&lt;/code&gt;&lt;/a&gt; in the &lt;a href=&#34;http://cran.r-project.org/web/packages/diagram/&#34;&gt;diagram&lt;/a&gt; package&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The internal function &lt;code&gt;igraph.Arrows&lt;/code&gt; within the &lt;a href=&#34;http://cran.r-project.org/web/packages/igraph&#34;&gt;igraph&lt;/a&gt; package (mentioned by Gabor Csardi &lt;a href=&#34;http://r.789695.n4.nabble.com/Curved-arrows-td886056.html&#34;&gt;in R help&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Using &lt;code&gt;xspline&lt;/code&gt; for the shaft and adding the head &amp;ldquo;by hand&amp;rdquo; (&lt;a href=&#34;http://r.789695.n4.nabble.com/Curved-arrows-tt886056.html#a886057&#34;&gt;mentioned&lt;/a&gt; by Greg Snow)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I wasn&amp;rsquo;t too happy with how the arrow heads looked using the diagram package, and I didn&amp;rsquo;t want to have to fiddle around with &lt;code&gt;xspline&lt;/code&gt;, and igraph worked quite easily, so I went with that.&lt;/p&gt;
+
+&lt;p&gt;Plotting multiple arrows with different colors in a single call to &lt;code&gt;igraph.Arrows&lt;/code&gt; didn&amp;rsquo;t work right (the arrow heads were all the first color), but using a loop and plotting one arrow per call worked fine.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R&#34;&gt;a bit of code I played with&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(igraph)
+par(mar=rep(1,4))
+plot(0,0, type=&amp;quot;n&amp;quot;,xaxt=&amp;quot;n&amp;quot;, yaxt=&amp;quot;n&amp;quot;, xlab=&amp;quot;&amp;quot;, ylab=&amp;quot;&amp;quot;,
+     xlim=c(0,11), ylim=c(1,11))
+
+x &amp;lt;- 1:10
+y &amp;lt;- rep(2, 10)
+
+for(k in 0:4)
+  points(x, y+k*2)
+
+iArrows &amp;lt;- igraph:::igraph.Arrows
+
+mycolors &amp;lt;- rep(c(&amp;quot;green&amp;quot;, &amp;quot;orange&amp;quot;, &amp;quot;red&amp;quot;, &amp;quot;blue&amp;quot;), 3)
+
+for(i in 1:9) {
+  iArrows(x[i], y[i], x[i+1], y[i+1],
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=0.5 - (i %% 2), width=1, size=0.7)
+
+  iArrows(x[i], y[i]+2, x[i+1], y[i+1]+2,
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=1 - (i %% 2), width=1, size=0.7)
+}
+
+for(i in 1:8) {
+  iArrows(x[i], y[i]+4, x[i+2], y[i+2]+4,
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=0.5 - (i %% 2), width=1, size=0.7)
+
+  iArrows(x[i], y[i]+6, x[i+2], y[i+2]+6,
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=1 - 2*(i %% 2), width=1, size=0.7)
+}
+
+x1 &amp;lt;- x[1:8]
+x2 &amp;lt;- x[3:10]
+y &amp;lt;- y[1:8]+8
+
+iArrows(x1, y, x2, y,
+        h.lwd=2, sh.lwd=2, sh.col=mycolors[1:8],
+        curve=1 - 2*((1:8) %% 2), width=1, size=0.7)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And here&amp;rsquo;s the corresponding figure:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that the arrows at the top all have green arrow heads.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Odd smoother</title>
+      <link>/2012/09/27/odd-smoother/</link>
+      <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/09/27/odd-smoother/</guid>
+      <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;http://thalamus.wustl.edu/cheverudlab/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
+
+&lt;p&gt;I poked through the paper, and my eye was attracted to the following figure.  These are supposed to be functions, but some weird smoother was used, and the results are not functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://g3journal.org/content/2/9/1019/F3.large.jpg&#34;&gt;&lt;img src=&#34;http://g3journal.org/content/2/9/1019/F3.medium.gif&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hilarious graph</title>
+      <link>/2012/09/11/hilarious-graph/</link>
+      <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/09/11/hilarious-graph/</guid>
+      <description>&lt;p&gt;I read &lt;a href=&#34;http://campaignstops.blogs.nytimes.com/2012/09/10/the-unexpected-impact-of-coded-appeals/?hp&#34;&gt;an interesting post&lt;/a&gt; on the &lt;a href=&#34;http://nytimes.com&#34;&gt;NY Times&lt;/a&gt; site this morning, which said:&lt;/p&gt;
+
+&lt;blockquote&gt;Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without  college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care. For college-educated whites, however, increases in negative feelings are associated with large increases in opposition to government-provided health care.&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://graphics8.nytimes.com/images/2012/09/11/opinion/11campstops-graph/11campstops-graph-blog480.jpg&#34; alt=&#34;hilariously empty graph&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They must be right; they have a graph!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning a new language</title>
+      <link>/2012/06/21/learning-a-new-language/</link>
+      <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/06/21/learning-a-new-language/</guid>
+      <description>&lt;p&gt;It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.thebird.nl/&#34;&gt;A friend&lt;/a&gt; now has me doing &lt;a href=&#34;http://dlang.org&#34;&gt;D&lt;/a&gt;, wanting to find time to learn &lt;a href=&#34;http://www.ruby-lang.org&#34;&gt;ruby&lt;/a&gt;, and, most recently, playing with &lt;a href=&#34;https://developer.mozilla.org/en/JavaScript/Reference&#34;&gt;JavaScript&lt;/a&gt; and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m really excited about &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. It&amp;rsquo;s long past time for dynamic, interactive graphics to be routine. And with D3, I think it can be.&lt;/p&gt;
+
+&lt;p&gt;The object-oriented stuff is most foreign to me.  When your programming skills are stuck in the early 90s, there&amp;rsquo;s a lot to catch up on.  It&amp;rsquo;s hard to adapt to a new way of thinking.  But I&amp;rsquo;ve used &amp;ldquo;&lt;code&gt;this&lt;/code&gt;&amp;rdquo; a couple of times, which makes me feel quite accomplished.&lt;/p&gt;
+
+&lt;p&gt;The hardest part has been slowing myself down; I&amp;rsquo;m too impatient. It&amp;rsquo;s critical to have a challenging problem for motivation, but I tend to want to jump into complicated things when I should be a bit more methodical.&lt;/p&gt;
+
+&lt;p&gt;I want to make things like &lt;a href=&#34;http://mbostock.github.com/d3/talk/20111018/collision.html&#34;&gt;this&lt;/a&gt;. (I don&amp;rsquo;t really see a use for it yet, but it&amp;rsquo;s fun.)  So I start mucking about with code that I don&amp;rsquo;t yet understand and end up going nowhere for hours.&lt;/p&gt;
+
+&lt;p&gt;The important thing is that I&amp;rsquo;m having fun; eventually I&amp;rsquo;ll be able to usefully apply some new skills.  For now I&amp;rsquo;ve got this: [&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html&#34;&gt;Click&lt;/a&gt; for the dynamic version.]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/06/lod_curve1.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;PS: I really like &lt;a href=&#34;http://alignedleft.com/tutorials/d3/&#34;&gt;Scott Murray&amp;rsquo;s tutorials on D3&lt;/a&gt;. After working through those, &lt;a href=&#34;https://github.com/mbostock/d3/wiki/Tutorials&#34;&gt;other tutorials&lt;/a&gt; became much more understandable.  &lt;a href=&#34;http://eloquentjavascript.net/&#34;&gt;Eloquent JavaScript&lt;/a&gt; is a super-cool, open source, interactive text on JavaScript; also take a look at the &amp;ldquo;fork&amp;rdquo; for &lt;a href=&#34;http://coffeescript.org/&#34;&gt;CoffeeScript&lt;/a&gt;, &lt;a href=&#34;http://autotelicum.github.com/Smooth-CoffeeScript/&#34;&gt;Smooth CoffeeScript&lt;/a&gt;.  (I&amp;rsquo;m thinking I&amp;rsquo;ll switch to CoffeeScript once I&amp;rsquo;ve learned a bit of JavaScript; the useful libraries and examples are mostly in JavaScript.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trees</title>
+      <link>/2012/05/17/trees/</link>
+      <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/17/trees/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it.  Here&amp;rsquo;s a link to &lt;a href=&#34;http://kbroman.files.wordpress.com/2012/05/trees1.pdf&#34;&gt;the full page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with &lt;a href=&#34;http://www.stat.wisc.edu/~ane&#34;&gt;considerable help&lt;/a&gt;), regarding phylogenetic trees.  It&amp;rsquo;s part of &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl_combined.pdf&#34;&gt;this paper&lt;/a&gt;, which I&amp;rsquo;m getting ready to re-submit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microarrays suck</title>
+      <link>/2012/04/25/microarrays-suck/</link>
+      <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/04/25/microarrays-suck/</guid>
+      <description>
+
+&lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-1-what-the-hell-is-that&#34;&gt;Lesson 1: What the hell is that?&lt;/h3&gt;
+
+&lt;p&gt;Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf&#34;&gt;autozygosity in the CEPH families&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;a large, common human inversion polymorphism&lt;/a&gt;, and most recently &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf&#34;&gt;sample mixups&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, &amp;ldquo;Hmm, that&amp;rsquo;s interesting,&amp;rdquo; and so I made some more plots.  And then I saw this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.&lt;/p&gt;
+
+&lt;p&gt;Following up on this, it seems that the plaid pattern is the result of a set of bad arrays that should have been but hadn&amp;rsquo;t been detected before.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-2-look&#34;&gt;Lesson 2: Look&lt;/h3&gt;
+
+&lt;p&gt;Of course, I wouldn&amp;rsquo;t have found this array problem if I hadn&amp;rsquo;t looked.  And in my several years working on this project, I hadn&amp;rsquo;t looked.&lt;/p&gt;
+
+&lt;p&gt;I was overwhelmed by the 500 microarrays × 6 tissues × 40,000 probes, and so didn&amp;rsquo;t make the sorts of plots that I should have.&lt;/p&gt;
+
+&lt;p&gt;Plus, this is the first real microarray project I&amp;rsquo;ve been involved in, and I haven&amp;rsquo;t known what to look for.  (I should have looked at images of correlation matrices with arrays sorted by similarity as determined from hierarchical clustering.)&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/many_boxplots.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.&lt;/p&gt;
+
+&lt;p&gt;I quite like the picture.&lt;/p&gt;
+
+&lt;p&gt;The code is available within my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, though there&amp;rsquo;s not much to it.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-3-don-t-trust-anyone&#34;&gt;Lesson 3: Don&amp;rsquo;t trust anyone&lt;/h3&gt;
+
+&lt;p&gt;Don&amp;rsquo;t even trust yourself.&lt;/p&gt;
+
+&lt;p&gt;I relied on others to do the data cleaning.  I should have checked things more carefully.&lt;/p&gt;
+
+&lt;p&gt;I looked at the data quite closely a year or so ago and detected sample mix-ups.  In correcting those mistakes, I spent a lot of time looking at the array data and trying to identify bad arrays.  Clearly I didn&amp;rsquo;t look closely enough, or I just looked at the wrong things.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-4-take-your-time&#34;&gt;Lesson 4: Take your time&lt;/h3&gt;
+
+&lt;p&gt;Scientists are under a lot of pressure to produce and often are not exploring data as thoroughly as the data deserve.&lt;/p&gt;
+
+&lt;p&gt;But if you rush through data diagnostics, you could embarrass yourself later.&lt;/p&gt;
+
+&lt;p&gt;More importantly, take the time to follow up on apparent artifacts.  For me, the unintended analyses are more interesting than the planned ones.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-basic-strategy-for-data-diagnostics&#34;&gt;My basic strategy for data diagnostics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Expect errors&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Think about what might have gone wrong and how such problems might be revealed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make lots of specially-tailored plots&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create a (potentially informal) pipeline of all of the useful diagnostics you&amp;rsquo;ve used in the past&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make more plots just because you think they might interesting&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If something looks odd, figure out why&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Halloween 2011 count</title>
+      <link>/2011/10/31/halloween-2011-count/</link>
+      <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/31/halloween-2011-count/</guid>
+      <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
+
+&lt;p&gt;I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/10/halloween20111.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They arrived pretty regularly from 5:50 to 7:50.&lt;/p&gt;
+
+&lt;p&gt;I comment on the figure&amp;rsquo;s style below.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;In the above graph, I&amp;rsquo;m applying ideas learned from &lt;a href=&#34;http://statistics.gmu.edu/people_pages/carr.html&#34;&gt;Dan Carr&lt;/a&gt; when I visited the &lt;a href=&#34;http://statistics.gmu.edu&#34;&gt;statistics department&lt;/a&gt; at &lt;a href=&#34;http://www.gmu.edu&#34;&gt;George Mason&lt;/a&gt; in September, to give &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/gmu2011.pdf&#34;&gt;a seminar&lt;/a&gt;.  (I had a great time at GMU, particularly talking to Dan about graphics.  I had a copy of &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;his book about micromaps&lt;/a&gt; on my iPad, but hadn&amp;rsquo;t really looked at it until after I met him.  Take a look at the first chapter; it&amp;rsquo;s full of good ideas and may convince you to read the rest.)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The gray background makes the figure stand out on the &amp;ldquo;page&amp;rdquo;.  (I had disliked this aspect of &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt; plots (for example, &lt;a href=&#34;http://had.co.nz/ggplot2/graphics/7f083a1488351d731c01ea449ee690f0.png&#34;&gt;this one&lt;/a&gt;), but Dan convinced me that it&amp;rsquo;s better.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The black border around the figure is important.  (Dan pointed out that it&amp;rsquo;s not the gray background I dislike about the default ggplot2 plots, but the lack of the border.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The white grid lines make it easy to see the details, and they still don&amp;rsquo;t get in the way of the plot.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;With the grid lines, you don&amp;rsquo;t need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no &lt;strike&gt;bristles&lt;/strike&gt; ticks.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The use of color for the actual data makes them stand out better.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The code I used for the figure is &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/blog/halloween2011.R&#34;&gt;here&lt;/a&gt;.  It&amp;rsquo;s old-fashioned and inefficient, but it works.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Infographic</title>
+      <link>/2011/09/22/infographics/</link>
+      <pubDate>Thu, 22 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/22/infographics/</guid>
+      <description>&lt;p&gt;I saw this great infographic at &lt;a href=&#34;http://andrewgelman.com/2011/09/meta-infographic/&#34;&gt;Andrew Gelman&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/smoy/6143338263/&#34;&gt;&lt;img src=&#34;http://farm7.static.flickr.com/6190/6143338263_d2497c02fe.jpg&#34; alt=&#34;MOST POPULAR INFOGRAPHICS&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m inclined to &lt;a href=&#34;http://society6.com/albyantoniazzi/MOST-POPULAR-INFOGRAPHICS-You-can-find-around-the-Web_Print?show=promoters#user_list&#34;&gt;buy an art print&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;Note the relationship between the central panel and the cover of the latest &lt;a href=&#34;http://magazine.amstat.org/&#34;&gt;Amstat News&lt;/a&gt; (always a good source for embarrassing figures):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/09/amstatnews.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick labels within figures</title>
+      <link>/2011/08/26/quick-labels-within-figures-done-right/</link>
+      <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/08/26/quick-labels-within-figures-done-right/</guid>
+      <description>&lt;p&gt;One of the coolest R packages I heard about at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt;: &lt;a href=&#34;http://cbio.ensmp.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels directly next to the relevant curves or point clouds in a figure.&lt;/p&gt;
+
+&lt;p&gt;I think I first learned about this idea from &lt;a href=&#34;http://www.andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this:
+&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/direct_by_hand.png&#34; alt=&#34;&#34; /&gt;
+&lt;!-- more --&gt;rather than this:
+&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/legend.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here&amp;rsquo;s the code I used for the first of those pictures. (It was relatively easy here.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;load(con &amp;lt;- url(&amp;quot;http://www.biostat.wisc.edu/~kbroman/blog/mapexpansion.RData&amp;quot;))
+close(con)
+
+plot(dat[,1], dat[,4],
+     xlab=expression(paste(&amp;quot;Generation &amp;quot;, F[k])),
+     ylab=&amp;quot;Map expansion&amp;quot;,
+     type=&amp;quot;l&amp;quot;, lwd=2, col=&amp;quot;black&amp;quot;, las=1,
+     xaxs=&amp;quot;i&amp;quot;, yaxs=&amp;quot;i&amp;quot;, ylim=c(0, 7))
+
+for(i in 2:3)
+  lines(dat[,1], dat[,i], lwd=2, col=c(&amp;quot;blue&amp;quot;, &amp;quot;red&amp;quot;)[i-1])
+
+text(17, dat[18,-1]-0.1, paste(colnames(dat)[-1], &amp;quot;-way&amp;quot;, sep=&amp;quot;&amp;quot;),
+     adj=c(0,1), col=c(&amp;quot;blue&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;black&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The aim of the &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package is get this without effort.&lt;/p&gt;
+
+&lt;p&gt;I need to switch to either &lt;code&gt;lattice&lt;/code&gt; or &lt;code&gt;ggplot2&lt;/code&gt; (vs. base graphics). But I should be doing that anyway. I&amp;rsquo;ll try &lt;code&gt;lattice&lt;/code&gt; for this. I rearrange the data a bit, call &lt;code&gt;xyplot&lt;/code&gt; and then use &lt;code&gt;direct.labels&lt;/code&gt; to make the actual plot, as follows. (Note the use of &lt;code&gt;with&lt;/code&gt; and &lt;code&gt;gl&lt;/code&gt;, which I just learned about from &lt;a href=&#34;http://4dpiecharts.com/2011/08/22/more-useless-statistics/&#34;&gt;Richie Cotton&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(lattice)
+library(directlabels)
+
+dat2 &amp;lt;- with(dat, data.frame(gen=rep(gen,3),
+                             mapexpansion=c(two, four, eight),
+                             cross=gl(3, nrow(dat), labels=c(&amp;quot;two&amp;quot;,&amp;quot;four&amp;quot;,&amp;quot;eight&amp;quot;))))
+
+p &amp;lt;- xyplot(mapexpansion ~ gen, data=dat2, groups=cross, type=&amp;quot;l&amp;quot;, lwd=2)
+direct.label(p)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And here&amp;rsquo;s what I get:
+&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/from_directlabels.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the &amp;ldquo;real&amp;rdquo; version of the above figure, from &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf&#34;&gt;a paper under review&lt;/a&gt;, using a mixture of legend and direct labels:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/fig_in_paper.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s another figure I&amp;rsquo;m quite proud of, from a paper nearing submission.
+&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/phyloqtl.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>useR! Conference 2011 highlights</title>
+      <link>/2011/08/20/user-conference-2011-highlights/</link>
+      <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/08/20/user-conference-2011-highlights/</guid>
+      <description>
+
+&lt;p&gt;I was at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; at &lt;a href=&#34;http://www.warwick.ac.uk&#34;&gt;The University of Warwick&lt;/a&gt; in &lt;a href=&#34;http://maps.google.com/maps?q=Coventry,+United+Kingdom&amp;amp;hl=en&amp;amp;ll=52.40577,-1.51062&amp;amp;spn=0.772453,1.207123&amp;amp;sll=52.953395,-1.148586&amp;amp;sspn=0.095353,0.15089&amp;amp;vpsrc=6&amp;amp;z=10&#34;&gt;Coventry, UK&lt;/a&gt;, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&amp;rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &amp;ldquo;highlights&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;I left feeling that my programming skills are crap. My biggest failing is in not making sufficient use of others&amp;rsquo; packages, but rather just building what I need from scratch (with great effort) and skipping dynamic graphics completely.&lt;/p&gt;
+
+&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
+
+&lt;p&gt;There were 440 participants from 41 countries (342 Europe; 60 North America).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stats.ox.ac.uk/~ripley/&#34;&gt;Prof. Brian Ripley&lt;/a&gt; [&lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/user-2011/images/tuesday/img_5278.jpg&#34;&gt;picture&lt;/a&gt; taken from &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/user-2011/images/&#34;&gt;here&lt;/a&gt;] spoke about the R development process.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;There are now &amp;gt;3000 packages on CRAN, with 110 submissions per week (of which 80 are successful), basically all handled by &lt;a href=&#34;http://statmath.wu.ac.at/~hornik/&#34;&gt;Kurt Hornik&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CRAN will throw out binaries of packages that are more than two years old.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What&amp;rsquo;s within the base of R will shrink rather than grow.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There have been a lot of improvements in the rendering of graphics.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;R is heavily dependent on a small number of altruistic developers, many of whom feel their contributions are not treated with respect.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;library()&lt;/code&gt; is to be replaced by &lt;code&gt;use()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There will soon be a &lt;code&gt;parallel&lt;/code&gt; package for &lt;a href=&#34;http://cran.r-project.org/web/views/HighPerformanceComputing.html&#34;&gt;parallel computing&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.r-bloggers.com/author/david-smith/&#34;&gt;David Smith&lt;/a&gt; from &lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;, in &lt;a href=&#34;http://prezi.com/s1qrgfm9ko4i/the-r-ecosystem/&#34;&gt;his talk on the R Ecosystem&lt;/a&gt;, claimed that there are more than 2 million R users.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; gave a great lightning talk, &amp;ldquo;Why R-help must die!&amp;rdquo; He suggested the Q-and-A type sites &lt;a href=&#34;http://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt; (on programming) and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; (on statistics), both part of &lt;a href=&#34;http://stackexchange.com/&#34;&gt;Stack Exchange&lt;/a&gt;; they hope to create an R-specific site soon (currently R things are split between the two).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.r-statistics.com/&#34;&gt;Tal Galili&lt;/a&gt; (founder of &lt;a href=&#34;http://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt;) gave a lightning talk about blogging and R. He emphasized that one need not write frequent posts. At the &lt;a href=&#34;http://user2010.org/&#34;&gt;2010 useR! Conference&lt;/a&gt; he gave a more comprehensive introduction to blogging available &lt;a href=&#34;http://www.r-statistics.com/2010/07/blogging-about-r-presentation-and-audio/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ams.med.uni-goettingen.de/amsneu/leha-en.shtml&#34;&gt;Andreas Leha&lt;/a&gt; talked about emacs &lt;a href=&#34;http://orgmode.org/&#34;&gt;org-mode&lt;/a&gt; for reproducible research: sort of like &lt;a href=&#34;http://www.stat.uni-muenchen.de/~leisch/Sweave/&#34;&gt;Sweave&lt;/a&gt; but it will take a large number of possible languages (R, python, Java, &amp;hellip;) and can produce html as well as pdf.&lt;/p&gt;
+
+&lt;p&gt;Tobias Verbeke from &lt;a href=&#34;http://www.openanalytics.eu/&#34;&gt;OpenAnalytics&lt;/a&gt; talked about &lt;a href=&#34;http://www.walware.de/goto/statet&#34;&gt;StatET&lt;/a&gt;, an &lt;a href=&#34;http://www.eclipse.org/eclipse/&#34;&gt;Eclipse&lt;/a&gt;-based IDE for R (especially useful for debugging).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.portfolioprobe.com/blog&#34;&gt;Patrick Burns&lt;/a&gt; talked about &lt;a href=&#34;http://www.portfolioprobe.com/2011/08/23/random-input-software-testing/&#34;&gt;random input software testing&lt;/a&gt; and had a great analogy: if writing test suites is like digging ditches, random input testing is like digging in the sand (ie, fun). (I do random input testing, but with my users providing the inputs.) [&lt;a href=&#34;http://www.burns-stat.com/pages/Present/random_input_test_annotated.pdf&#34;&gt;slides (with transcript)&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;Olaf Mersmann gave a cool talk about &lt;a href=&#34;http://cran.r-project.org/web/packages/microbenchmark/index.html&#34;&gt;microbenchmark&lt;/a&gt; to get accurate nanosecond timings of R expressions. Why do that? Because if you repeat something 1000 times in a &lt;code&gt;for&lt;/code&gt; loop and then time it with &lt;code&gt;system.time()&lt;/code&gt;, you are including the overhead of the &lt;code&gt;for&lt;/code&gt; loop.&lt;/p&gt;
+
+&lt;p&gt;The next useR! Conference will be at Vanderbilt in Nashville, TN, June 12-15, 2012.&lt;/p&gt;
+
+&lt;h2 id=&#34;graphics&#34;&gt;Graphics&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cbio.ensmp.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt; had a poster about the &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels near curves or clusters of points in a plot rather than have a separate legend. I really like the technique and am eager to try out the package. For figures for a publication, one will probably want to edit things by hand, but for day-to-day, the package looks extremely useful.&lt;/p&gt;
+
+&lt;p&gt;Sina Rüeger presented &lt;a href=&#34;http://uniplot.sinarueeger.ch/&#34;&gt;uniPlot&lt;/a&gt; to reduce time to polish reports, by making base graphics, ggplot2, and lattice all use the same style (otherwise the reader may be distracted by the differences). [&lt;a href=&#34;http://cran.r-project.org/web/packages/uniPlot/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;Alexander Kowarik presented &lt;a href=&#34;http://cran.r-project.org/web/packages/sparkTable/&#34;&gt;sparkTable&lt;/a&gt; for creating html tables with very small graphs included.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://simon.urbanek.info/&#34;&gt;Simon Urbanek&lt;/a&gt; mentioned several new features in R graphics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;R will soon include &lt;code&gt;dev.hold()&lt;/code&gt; and &lt;code&gt;dev.flush()&lt;/code&gt; (written by &lt;a href=&#34;http://www.stats.ox.ac.uk/~ripley/&#34;&gt;Prof. Brian Ripley&lt;/a&gt;) so that you can tell a graphics device when you actually want to see a plot. This should improve graphics rendering.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;rasterImage()&lt;/code&gt; is way faster than &lt;code&gt;image()&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;osmap()&lt;/code&gt; to get &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; maps in one line, with different zoom levels. [It&amp;rsquo;s in the &lt;a href=&#34;http://www.rforge.net/snippets/&#34;&gt;snippets&lt;/a&gt; package.]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;polypath()&lt;/code&gt; to plot polygons with holes.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dynamic-graphics&#34;&gt;Dynamic graphics&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/&#34;&gt;Paul Murrell&lt;/a&gt; gave an especially cool talk on turning a PDF of a campus map of the University of Aukland into a dynamic graph where mousing over a number in the legend lights up the number at the corresponding building (and vice versa). The pdf was converted to postscript, loaded into R via &lt;a href=&#34;http://cran.r-project.org/web/packages/grImport/index.html&#34;&gt;grImport&lt;/a&gt; and written to an SVG via &lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/&#34;&gt;gridSVG&lt;/a&gt;. There was a bit of javascript to write. [&lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/Talks/UseR2011/processing.pdf&#34;&gt;slides&lt;/a&gt; | &lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/Talks/UseR2011/&#34;&gt;page with the interactive maps&lt;/a&gt; (you may need &lt;a href=&#34;http://www.mozilla.com/en-US/firefox/new/&#34;&gt;Firefox&lt;/a&gt; for the maps)]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stats.gla.ac.uk/~adrian/&#34;&gt;Adrian Bowman&lt;/a&gt; gave a talk on modeling 3d surfaces with some great dynamic graphics using &lt;a href=&#34;http://rgl.neoscientists.org/about.shtml&#34;&gt;RGL&lt;/a&gt; and &lt;a href=&#34;http://www.stats.gla.ac.uk/~adrian/rpanel/&#34;&gt;rpanel&lt;/a&gt;. He had some cool animations in his PDF, too, developed with the &lt;a href=&#34;http://www.tug.org/texlive/Contents/live/texmf-dist/doc/latex/animate/&#34;&gt;animate&lt;/a&gt; package for LaTeX.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://simon.urbanek.info/&#34;&gt;Simon Urbanek&lt;/a&gt; talked about &lt;a href=&#34;http://www.rosuda.org/iplots/&#34;&gt;iPlots&lt;/a&gt; eXtreme (currently: codename &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;Acinonyx&lt;/a&gt;) which has fabulous and easy-to-create dynamic graphics. You basically just prefix the usual plot functions with an &amp;ldquo;i&amp;rdquo; (iplot, ihist). Super fast and can handle big data sets. It uses &lt;a href=&#34;http://www.opengl.org/&#34;&gt;OpenGL&lt;/a&gt; (a solution developed by the gaming industry).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://spotfire.tibco.com&#34;&gt;TIBCO Spotfire&lt;/a&gt; has some ways to develop interactive graphics tools, but it&amp;rsquo;s commercial and Windows only.&lt;/p&gt;
+
+&lt;p&gt;Ian Hansel talked about Rocessing, for combining &lt;a href=&#34;http://processing.org/&#34;&gt;processing&lt;/a&gt; with &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://4dpiecharts.com/&#34;&gt;Richie Cotton&lt;/a&gt; talked about the use of &lt;a href=&#34;http://cran.r-project.org/web/packages/gWidgets/index.html&#34;&gt;gWidgets&lt;/a&gt; for easy interactive graphics. [&lt;a href=&#34;http://4dpiecharts.com/2011/08/17/user2011-easy-interactive-ggplots-talk/&#34;&gt;data and code here&lt;/a&gt;; also see &lt;a href=&#34;http://4dpiecharts.com/2010/10/06/creating-guis-in-r-with-gwidgets/&#34;&gt;this blog post&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://adrian.waddell.ch/&#34;&gt;Adrian Waddell&lt;/a&gt; talked about &lt;a href=&#34;https://r-forge.r-project.org/projects/rnavgraph/&#34;&gt;RnavGraph&lt;/a&gt; for interactive graphics. He had some neat ideas about navigating among multiple scatterplots: a graph where nodes are images and where moving along an edge between two nodes involves morphing from one image to another. Moving from one scatterplot to another is like rotating a 3d scatterplot. [&lt;a href=&#34;http://cran.r-project.org/web/packages/RnavGraph/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;
+
+&lt;h2 id=&#34;simple-web-applications&#34;&gt;Simple web applications&lt;/h2&gt;
+
+&lt;p&gt;Timothee Carayol gave a lightning talk about how to use &lt;a href=&#34;http://www.omegahat.org/RGoogleDocs/&#34;&gt;RGoogleDocs&lt;/a&gt; and &lt;a href=&#34;http://rapache.net/&#34;&gt;rApache&lt;/a&gt; for quick and easy deployment of a web interface. You set up a spreadsheet, which acts as a configuration file for rApache, so RGoogleDocs handles the inputs in place of what could be complex web programming.  It sounds neat but I don&amp;rsquo;t fully understand it. But Timothee wrote to say that he would write a tutorial in the coming weeks. [&lt;a href=&#34;http://dl.dropbox.com/u/2312517/RGoogleDocs_rApache_useR2011.pdf&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.embl.de/research/units/genome_biology/huber/&#34;&gt;Wolfgang Huber&lt;/a&gt; gave a cool talk on the analysis of images of cells from a large experiment in which each gene is knocked down, one at a time, by RNAi. They are creating interactive reports that are like Sweave but using html5 to give dynamic reports viewed in a browser. He gave examples using the &lt;a href=&#34;http://www.bioconductor.org/packages/2.1/bioc/html/arrayQualityMetrics.html&#34;&gt;arrayQualityMetrics&lt;/a&gt; package. One can identify points via tooltips; multiple plots are linked; click to select/highlight; collapse/expand sections. Callback processing is in javascript. It uses the gridSVG package (which makes it mostly easy).&lt;/p&gt;
+
+&lt;p&gt;Eleni-Anthippi Chatzimichali talked about &lt;a href=&#34;http://cran.r-project.org/web/packages/iWebPlots/index.html&#34;&gt;iWebPlots&lt;/a&gt; for making dynamic, web-based scatterplots.&lt;/p&gt;
+
+&lt;h2 id=&#34;comprehensive-web-applications-and-guis&#34;&gt;Comprehensive web applications and GUIs&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stat.wvu.edu/Faculty/jharner.html&#34;&gt;E. James Harner&lt;/a&gt; spoke about &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/useR-2011/abstracts/010411-rc2.pdf&#34;&gt;Rc2&lt;/a&gt; for collaborative use of R (including shared R sessions with voice chat), aimed to support distance learning. It seems really complicated and not easily adapted for others&amp;rsquo; use.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.iplantcollaborative.org/connect/staff-collaborators/naim-matasci&#34;&gt;Naim Matasci&lt;/a&gt; had a poster about &lt;a href=&#34;http://iplantcollaborative.org&#34;&gt;iPlant&lt;/a&gt; which has a fancy web front end with interactive analysis (using R). They have something like 10 developers working on it, but he said that the source code will be available and that it could be adapted for other purposes.&lt;/p&gt;
+
+&lt;p&gt;Xavier de Pedro Puente discussed the use of &lt;a href=&#34;http://tiki.org&#34;&gt;Tiki&lt;/a&gt; with R to make comprehensive web sites with wiki-like pages including R (converted to output or graphs on the fly) or web-based forms. It uses his &lt;a href=&#34;https://doc.tiki.org/PluginR&#34;&gt;PluginR&lt;/a&gt; package. It seems a great idea, but is likely too complicated for me. The key coding is with &lt;a href=&#34;http://www.smarty.net/&#34;&gt;Smarty&lt;/a&gt;. [&lt;a href=&#34;http://ueb.ir.vhebron.net/2011+UseR&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;Jason Waddell and Tobias Verbeke from &lt;a href=&#34;http://www.openanalytics.eu/&#34;&gt;OpenAnalytics&lt;/a&gt; talked about the use of the &lt;a href=&#34;http://www.openanalytics.eu/r-service-bus&#34;&gt;R service bus&lt;/a&gt; [&lt;a href=&#34;http://rsb.doc.openanalytics.eu/&#34;&gt;documentation&lt;/a&gt;] for lab automation.&lt;/p&gt;
+
+&lt;p&gt;David Nicolaides from &lt;a href=&#34;http://accelrys.com/&#34;&gt;Accelrys&lt;/a&gt; talked about browser-based applications using &lt;a href=&#34;http://accelrys.com/products/pipeline-pilot/&#34;&gt;Pipeline Pilot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sheri Gilley from &lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt; presented a GUI that they&amp;rsquo;re working on. It looks like it will be superb for the novice who wants a GUI. They&amp;rsquo;ll have a beta by the end of 2011, with the real release in 2012. Sheri spent 25 years doing UI design at SPSS (so I guess she was 10 or 15 when she started).&lt;/p&gt;
+
+&lt;h2 id=&#34;companies&#34;&gt;Companies&lt;/h2&gt;
+
+&lt;p&gt;I was surprised by the large number of companies forming around R.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;: have code for handling large datasets and parallel computing and are developing a GUI.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://rstudio.org&#34;&gt;RStudio&lt;/a&gt;: aimed to be an IDE (supporting programmers) rather than a GUI. Upcoming features (including quick traversal of code across multiple files) look cool, but I&amp;rsquo;ll probably stay with emacs.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.mango-solutions.com/index.html&#34;&gt;Mango Solutions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.openanalytics.eu/&#34;&gt;OpenAnalytics&lt;/a&gt;: &lt;a href=&#34;http://www.openanalytics.eu/r-service-bus&#34;&gt;R service bus&lt;/a&gt; and &lt;a href=&#34;http://www.walware.de/goto/statet&#34;&gt;StatET&lt;/a&gt; (IDE via &lt;a href=&#34;http://www.eclipse.org/eclipse/&#34;&gt;Eclipse&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://spotfire.tibco.com/&#34;&gt;TIBCO&lt;/a&gt;: purchased Insightful (who had bought Splus) in 2008.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cloudnumbers.com&#34;&gt;CloudNumbers&lt;/a&gt;: cloud-based computing, including the use of R.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;talks-i-wish-i-d-seen&#34;&gt;Talks I wish I&amp;rsquo;d seen&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ablejec.nib.si/&#34;&gt;Andrej Blejec&lt;/a&gt; talked about his animatoR package for creating animations in R.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.maths.bris.ac.uk/~MAZJCR/&#34;&gt;Jonathan Rougier&lt;/a&gt; talked about nomograms (and donkeys).&lt;/p&gt;
+
+&lt;p&gt;Markus Gesmann talked about using the &lt;a href=&#34;http://code.google.com/apis/chart/index.html&#34;&gt;Google visualization API&lt;/a&gt; with R: the &lt;a href=&#34;http://cran.r-project.org/web/packages/googleVis/index.html&#34;&gt;googleVis&lt;/a&gt; package. [&lt;a href=&#34;http://code.google.com/p/google-motion-charts-with-r/&#34;&gt;detailed info&lt;/a&gt;]&lt;/p&gt;
+
+&lt;h2 id=&#34;things-particularly-packages-i-need-to-try-out&#34;&gt;Things (particularly packages) I need to try out&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Emacs &lt;a href=&#34;http://orgmode.org&#34;&gt;org-mode&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://mosaic-web.org&#34;&gt;mosaic&lt;/a&gt; package for teaching [&lt;a href=&#34;http://cran.r-project.org/web/packages/mosaic/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for automatically putting labels directly next to curves or clouds of points.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/hexbin/index.html&#34;&gt;hexbin&lt;/a&gt; package for dense scatterplots.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://iplots.org&#34;&gt;iPlots&lt;/a&gt; eXtreme (&lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;Acinonyx&lt;/a&gt;) for fast dynamic graphics&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/animation/index.html&#34;&gt;animation&lt;/a&gt; for making animations in R&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;grid and &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt; (I&amp;rsquo;m still just using base graphics)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r-forge.r-project.org/R/?group_id=761&#34;&gt;gWidgets&lt;/a&gt; and &lt;a href=&#34;http://www.stats.gla.ac.uk/~adrian/rpanel/&#34;&gt;rpanel&lt;/a&gt; for making simple dynamic graphics&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/&#34;&gt;gridSVG&lt;/a&gt; for making complex web-based dynamic graphics&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/sparkTable/&#34;&gt;sparkTable&lt;/a&gt; for making html tables with small figures inserted&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://uniplot.sinarueeger.ch/&#34;&gt;uniPlot&lt;/a&gt; for making base graphics, ggplot2, and lattice all use the same style. [&lt;a href=&#34;http://cran.r-project.org/web/packages/uniPlot/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/compareGroups/index.html&#34;&gt;compareGroups&lt;/a&gt; for making complex tables with confidence intervals and p-values and such, like epidemiologists (and my collaborators) often want&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cranfield.ac.uk/health/researchareas/bioinformatics/page53292.html&#34;&gt;iWebPlots&lt;/a&gt; for making web-based plots [&lt;a href=&#34;http://cran.r-project.org/web/packages/iWebPlots/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.bioconductor.org/packages/2.1/bioc/html/arrayQualityMetrics.html&#34;&gt;arrayQualityMetrics&lt;/a&gt; which creates fancy web-based dynamic reports&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;osmap (contained in &lt;a href=&#34;http://www.rforge.net/snippets/&#34;&gt;snippets&lt;/a&gt;) for making maps.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;animatoR for making animations&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://code.google.com/p/google-motion-charts-with-r/&#34;&gt;googlevis&lt;/a&gt; package [&lt;a href=&#34;http://cran.r-project.org/web/packages/googleVis/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

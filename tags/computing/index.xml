@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computing on the stupidest thing...</title>
+    <link>/tags/computing/</link>
+    <description>Recent content in Computing on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Fri, 14 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/computing/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Startling lack of training in statistical computing</title>
+      <link>/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
+      <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
+      <description>&lt;p&gt;It is shocking to me that &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;a statistics department&lt;/a&gt; would offer a graduate-level statistical computing course only &lt;em&gt;every fourth year&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/&#34;&gt;had been arguing for a statistical programming course&lt;/a&gt;: that we supplement the usual course on the &lt;em&gt;theory&lt;/em&gt; of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the &lt;em&gt;practice&lt;/em&gt; of statistical computing.&lt;/p&gt;
+
+&lt;p&gt;But I was assuming that the more theoretical statistical computing course was &lt;em&gt;actually being taught&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If a department teaches a course at a frequency less than every-other-year, it&amp;rsquo;s unavailable to many students, or it comes too late in their training to be useful. And statistical computing should really be considered part of a statistics department&amp;rsquo;s &lt;em&gt;core curriculum&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Update: As you might have anticipated, I&amp;rsquo;ve been asked to teach the course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Googling errors</title>
+      <link>/2014/02/14/googling-errors/</link>
+      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/02/14/googling-errors/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
+
+&lt;blockquote&gt;[If attendees of this weekend&#39;s intro to python workshop leave with one thing, it&#39;ll be to Google your error messages first and foremost.](https://twitter.com/roguelynn/status/431321921909968896)&lt;/blockquote&gt;
+
+&lt;p&gt;I had just talked about the technique in my &lt;a href=&#34;http://kbroman.github.io/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, and I had a few recent examples.&lt;/p&gt;
+
+&lt;h3 id=&#34;gtk-warning-cannot-open-display&#34;&gt;Gtk-WARNING **: cannot open display:&lt;/h3&gt;
+
+&lt;p&gt;I was logged into a department server, trying to clone a private repository from GitHub, and got an error like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(gnome-ssh-askpass:1731): Gtk-WARNING **: cannot open display:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I googled that, and the first item was a &lt;a href=&#34;http://stackoverflow.com/questions/16077971/git-push-produces-gtk-warning&#34;&gt;stackoverflow question&lt;/a&gt;, whose answer said &amp;ldquo;&lt;code&gt;unset SSH_ASKPASS&lt;/code&gt;&amp;rdquo;, which totally worked.&lt;/p&gt;
+
+&lt;h3 id=&#34;except-keyerror-k-raise-attributeerror-k&#34;&gt;except KeyError, k: raise AttributeError, k&lt;/h3&gt;
+
+&lt;p&gt;AsciiDoc was giving me this error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;asciidoc -a data-uri -a toc -a toclevels=4 -a num example2.txt
+  File &amp;quot;/usr/local/bin/asciidoc&amp;quot;, line 101
+    except KeyError, k: raise AttributeError, k
+                   ^
+SyntaxError: invalid syntax
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Google the &amp;ldquo;&lt;code&gt;except KeyError&lt;/code&gt;&amp;rdquo; line, and you get to a &lt;a href=&#34;https://groups.google.com/forum/#!topic/asciidoc/7ICtOReZJ74&#34;&gt;Q&amp;amp;A on the AsciiDoc google group&lt;/a&gt;, which says &amp;ldquo;Asciidoc is Python 2, not 3.&amp;rdquo;&lt;/p&gt;
+
+&lt;h3 id=&#34;mclapply-isn-t-working-in-windows&#34;&gt;mclapply isn&amp;rsquo;t working in windows&lt;/h3&gt;
+
+&lt;p&gt;I got a report that parallel processing in my &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt; package wasn&amp;rsquo;t working in Windows.&lt;/p&gt;
+
+&lt;p&gt;I googled &amp;ldquo;mclapply isn&amp;rsquo;t working windows&amp;rdquo; (because mclapply was the function I was using) and got &lt;a href=&#34;http://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r&#34;&gt;this stackoverflow page&lt;/a&gt;, which says:&lt;/p&gt;
+
+&lt;blockquote&gt;since Windows does not have fork(), it will run standard lapply instead - no parallelization&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A course in statistical programming</title>
+      <link>/2012/05/25/a-course-in-statistical-programming/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/25/a-course-in-statistical-programming/</guid>
+      <description>&lt;p&gt;Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.&lt;/p&gt;
+
+&lt;p&gt;For example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html&#34;&gt;here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo;&lt;/a&gt; that I taught at &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Johns Hopkins&lt;/a&gt; back in 2001.&lt;/p&gt;
+
+&lt;p&gt;Many (perhaps most) good programmers learned to code outside of formal courses.  But many statisticians are terrible programmers and would benefit by a formal course.&lt;/p&gt;
+
+&lt;p&gt;Moreover, applied statisticians spend the vast majority of their time interacting with a computer and would likely benefit from more formal presentations of how to do it well.  And I think this sort of training is particularly important for ensuring that &lt;a href=&#34;https://groups.google.com/forum/?fromgroups#!forum/reproducible-research&#34;&gt;research is reproducible&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One really learns to code in private, struggling over problems, but I benefited enormously from a statistical computing course I took from &lt;a href=&#34;http://www.stat.berkeley.edu/~spector/&#34;&gt;Phil Spector&lt;/a&gt; at &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Berkeley&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.jhsph.edu/~bcaffo&#34;&gt;Brian Caffo&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo Ruczinski&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng&#34;&gt;Roger Peng&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~ririzarr/&#34;&gt;Rafael Irizarry&lt;/a&gt;, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman&#34;&gt;I&lt;/a&gt; developed a &lt;a href=&#34;http://www.biostat.jhsph.edu/~bcaffo/statcomp/&#34;&gt;statistical programming course&lt;/a&gt; at Hopkins that (I think) really did the job.&lt;/p&gt;
+
+&lt;p&gt;I would like to develop a similar such course at &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;Wisconsin&lt;/a&gt;: on statistical programming, in the most general sense.&lt;/p&gt;
+
+&lt;p&gt;I have in mind several basic principles:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;be self-sufficient&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;get the right answer&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;document what you did (so that you will understand what you did 6 months later)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;if primary data change, be able to re-run the analysis without a lot of work&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;are your simulation results reproducible?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;reuse of code (others&amp;rsquo; and your own) rather than starting from scratch every time&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;make methods accessible to (and used by) others&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are my current thoughts about the topics to include in such a course.  The key aim would be to make students aware of the basic principles and issues: to give them a good base from which to learn on their own.  Homework would include interesting and realistic programming assignments plus create a Sweave-type document and an R package.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Basic unix tools (find; df; top; ps ux; grep); unix on Mac and windows&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Emacs/vim/other editors (rstudio/eclipse)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Latex (for papers; for presentations)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;slides for talks; posters; figures/tables&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Advanced R (fancy data structures; functions; object-oriented stuff)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Advanced R graphics&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;R packages&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sweave/asciidoc/knitr&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;minimal Perl (or Python or Ruby); example of data manipulation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Minimal C (or C++); examples of speed-up&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;version control (eg git or mercurial); backups&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;reproducible research ideas&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;data management&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;managing projects: data, analyses, results, papers&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;programming style (readable, modular); general but not too general&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;debugging/profiling/testing&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;high-throughput computing; parallel computing; managing big jobs&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;finding answers to questions: man pages; documentation; web&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;more on visualization; dynamic graphics&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;making a web page; html &amp;amp; css; simple cgi-type web forms?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;writing and managing email&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;managing references to journal articles&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

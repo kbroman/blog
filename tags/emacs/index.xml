@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on the stupidest thing...</title>
+    <link>/tags/emacs/</link>
+    <description>Recent content in Emacs on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Wed, 12 Feb 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/emacs/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Emacs key bindings in MS Word</title>
+      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
+
+&lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
+
+&lt;p&gt;Following that suggestion, I was able to get these:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;C-b&lt;/code&gt; – CharLeft
+&lt;code&gt;C-f&lt;/code&gt; – CharRight
+&lt;code&gt;C-e&lt;/code&gt; – EndOfLine
+&lt;code&gt;C-p&lt;/code&gt; – LineUp
+&lt;code&gt;C-n&lt;/code&gt; – LineDown
+&lt;code&gt;C-a&lt;/code&gt; – StartOfLine
+&lt;code&gt;C-v&lt;/code&gt; – PageDown&lt;/p&gt;
+
+&lt;p&gt;I can&amp;rsquo;t figure out how to have &lt;code&gt;M-v&lt;/code&gt; for PageUp, though, because &lt;code&gt;M-v&lt;/code&gt; seems permanently stuck to &amp;ldquo;√&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The procedure, in MS Word 2011 for Mac, is:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Tools → Customize Keyboard&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select &amp;ldquo;All Commands&amp;rdquo; under &amp;ldquo;Categories:&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select the command (e.g., RightChar) under &amp;ldquo;Commands:&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Press the keyboard shortcut in the &amp;ldquo;Press new keyboard shortcut&amp;rdquo; box&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the Assign button&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Repeat for the other commands you want&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click OK&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I needed two more, &lt;code&gt;C-d&lt;/code&gt; and &lt;code&gt;C-k&lt;/code&gt;; it took me a while to figure out how to do it, as there didn&amp;rsquo;t seem to be any built-in commands. But you can just record a macro. I created these:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;C-d&lt;/code&gt; – &lt;a href=&#34;as a macro&#34;&gt;DeleteCharacter&lt;/a&gt;
+&lt;code&gt;C-k&lt;/code&gt; – &lt;a href=&#34;as a macro&#34;&gt;KillLine&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the procedure, in MS Word 2011 for Mac.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Tools -&amp;gt; Macros -&amp;gt; Record Macro&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Give it a name with no spaces&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Click the keyboard button to assign a keystroke to it&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select OK&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Type the set of key strokes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tools -&amp;gt; Macros -&amp;gt; Stop Recording&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/apps/mediawiki/womacs/index.php&#34;&gt;Womacs&lt;/a&gt; is a really extensive set of Visual Basic macros that looks really useful, but I was getting Visual Basic errors and didn&amp;rsquo;t want to spend any more time on it; grants to write&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

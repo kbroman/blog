@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Session info from R/Travis - the stupidest thing...</title>
+<meta property="og:title" content="Session info from R/Travis - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Session info from R/Travis</h1>
+
+    
+    <span class="article-date">2015/09/25</span>
+    
+
+    <div class="article-content">
+      <p>For the problem <a href="http://kbroman.org/blog/2015/09/24/its-not-you-its-me">I reported yesterday</a>, in which my R package was working fine locally but failing on <a href="http://travis-ci.org">Travis</a>, the key solution is to run <code>update.packages(ask=FALSE)</code> locally, and maybe even <code>update.packages(ask=FALSE, type=&quot;source&quot;)</code> to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.</p>
+
+<p>In addition, it&rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.</p>
+
+<p>If you don&rsquo;t want to go with a fully custom Travis script, your <a href="http://docs.travis-ci.com/user/customizing-the-build/">customization options</a> are limited. We really only care about the case of a failure, so <code>after_success</code> is not of interest, and <code>after_script</code> seems not to be run if there&rsquo;s a Travis fail. Moreover, <code>script</code> and <code>after_failure</code> are defined by the main <code>language: r</code> script, so you can&rsquo;t change them without going all-custom.</p>
+
+<p>What&rsquo;s left is <code>before_script</code>.</p>
+
+<p>I want to see the result of <code>devtools::session_info()</code> with the package of interest loaded, but the package actually gets built <em>after</em> <code>before_script</code> is run, so we&rsquo;ll need to build and install it, even though it&rsquo;ll be built and installed again afterwards. The best I could work out is in <a href="https://github.com/kbroman/testsysfile/blob/master/.travis.yml#L12-L19">this example <code>.travis.yml</code> file</a>, with the key bits being:</p>
+
+<pre><code>before_script:
+  - export PKG_NAME=$(Rscript -e 'cat(paste0(devtools::as.package(&quot;.&quot;)$package))')
+  - export PKG_TARBALL=$(Rscript -e 'pkg &lt;- devtools::as.package(&quot;.&quot;); cat(paste0(pkg$package,&quot;_&quot;,pkg$version,&quot;.tar.gz&quot;))')
+  - R CMD build --no-build-vignettes .
+  - R CMD INSTALL ${PKG_TARBALL}
+  - rm ${PKG_TARBALL}
+  - echo &quot;Session info:&quot;
+  - Rscript -e &quot;library(${PKG_NAME});devtools::session_info('${PKG_NAME}')&quot;
+</code></pre>
+
+<p>I use <code>--no-build-vignettes</code> in <code>R CMD build</code> as otherwise the package would be built and installed yet another time. And I remove the <code>.tar.gz</code> file afterwards, to avoid having the later check complain about the extra file.</p>
+
+<p>Here&rsquo;s an <a href="https://travis-ci.org/kbroman/testsysfile#L850-L864">example of the session info in the Travis log</a>.</p>
+
+<p>If you have suggests about how to simplify this, I&rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.</p>
+
+<p>Thanks to <a href="https://twitter.com/jennybryan">Jenny Bryan</a> for [showing me how to search for instances of <code>session_info</code> in <code>.travis.yml</code> files on GitHub, and to <a href="https://twitter.com/cpsievert">Carson Sievert</a> for <a href="https://twitter.com/cpsievert/status/647189393162178560">further moral support</a>.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>useR! Conference 2011 highlights - the stupidest thing...</title>
+<meta property="og:title" content="useR! Conference 2011 highlights - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">8 min read</span>
+    
+
+    <h1 class="article-title">useR! Conference 2011 highlights</h1>
+
+    
+    <span class="article-date">2011/08/20</span>
+    
+
+    <div class="article-content">
+      
+
+<p>I was at the <a href="http://www.warwick.ac.uk/statsdept/user-2011/">useR! Conference</a> at <a href="http://www.warwick.ac.uk">The University of Warwick</a> in <a href="http://maps.google.com/maps?q=Coventry,+United+Kingdom&amp;hl=en&amp;ll=52.40577,-1.51062&amp;spn=0.772453,1.207123&amp;sll=52.953395,-1.148586&amp;sspn=0.095353,0.15089&amp;vpsrc=6&amp;z=10">Coventry, UK</a>, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &ldquo;highlights&rdquo;.</p>
+
+<p>I left feeling that my programming skills are crap. My biggest failing is in not making sufficient use of others&rsquo; packages, but rather just building what I need from scratch (with great effort) and skipping dynamic graphics completely.</p>
+
+<h2 id="general">General</h2>
+
+<p>There were 440 participants from 41 countries (342 Europe; 60 North America).</p>
+
+<p><a href="http://www.stats.ox.ac.uk/~ripley/">Prof. Brian Ripley</a> [<a href="http://www2.warwick.ac.uk/fac/sci/statistics/user-2011/images/tuesday/img_5278.jpg">picture</a> taken from <a href="http://www2.warwick.ac.uk/fac/sci/statistics/user-2011/images/">here</a>] spoke about the R development process.</p>
+
+<ul>
+<li><p>There are now &gt;3000 packages on CRAN, with 110 submissions per week (of which 80 are successful), basically all handled by <a href="http://statmath.wu.ac.at/~hornik/">Kurt Hornik</a>.</p></li>
+
+<li><p>CRAN will throw out binaries of packages that are more than two years old.</p></li>
+
+<li><p>What&rsquo;s within the base of R will shrink rather than grow.</p></li>
+
+<li><p>There have been a lot of improvements in the rendering of graphics.</p></li>
+
+<li><p>R is heavily dependent on a small number of altruistic developers, many of whom feel their contributions are not treated with respect.</p></li>
+
+<li><p><code>library()</code> is to be replaced by <code>use()</code>.</p></li>
+
+<li><p>There will soon be a <code>parallel</code> package for <a href="http://cran.r-project.org/web/views/HighPerformanceComputing.html">parallel computing</a>.</p></li>
+</ul>
+
+<!-- more -->
+
+<p><a href="http://www.r-bloggers.com/author/david-smith/">David Smith</a> from <a href="http://www.revolutionanalytics.com/">Revolution Analytics</a>, in <a href="http://prezi.com/s1qrgfm9ko4i/the-r-ecosystem/">his talk on the R Ecosystem</a>, claimed that there are more than 2 million R users.</p>
+
+<p><a href="http://geospaced.blogspot.com/">Barry Rowlingson</a> gave a great lightning talk, &ldquo;Why R-help must die!&rdquo; He suggested the Q-and-A type sites <a href="http://stackoverflow.com/">Stack Overflow</a> (on programming) and <a href="http://stats.stackexchange.com/">Cross Validated</a> (on statistics), both part of <a href="http://stackexchange.com/">Stack Exchange</a>; they hope to create an R-specific site soon (currently R things are split between the two).</p>
+
+<p><a href="http://www.r-statistics.com/">Tal Galili</a> (founder of <a href="http://www.r-bloggers.com/">R-bloggers</a>) gave a lightning talk about blogging and R. He emphasized that one need not write frequent posts. At the <a href="http://user2010.org/">2010 useR! Conference</a> he gave a more comprehensive introduction to blogging available <a href="http://www.r-statistics.com/2010/07/blogging-about-r-presentation-and-audio/">here</a>.</p>
+
+<p><a href="http://www.ams.med.uni-goettingen.de/amsneu/leha-en.shtml">Andreas Leha</a> talked about emacs <a href="http://orgmode.org/">org-mode</a> for reproducible research: sort of like <a href="http://www.stat.uni-muenchen.de/~leisch/Sweave/">Sweave</a> but it will take a large number of possible languages (R, python, Java, &hellip;) and can produce html as well as pdf.</p>
+
+<p>Tobias Verbeke from <a href="http://www.openanalytics.eu/">OpenAnalytics</a> talked about <a href="http://www.walware.de/goto/statet">StatET</a>, an <a href="http://www.eclipse.org/eclipse/">Eclipse</a>-based IDE for R (especially useful for debugging).</p>
+
+<p><a href="http://www.portfolioprobe.com/blog">Patrick Burns</a> talked about <a href="http://www.portfolioprobe.com/2011/08/23/random-input-software-testing/">random input software testing</a> and had a great analogy: if writing test suites is like digging ditches, random input testing is like digging in the sand (ie, fun). (I do random input testing, but with my users providing the inputs.) [<a href="http://www.burns-stat.com/pages/Present/random_input_test_annotated.pdf">slides (with transcript)</a>]</p>
+
+<p>Olaf Mersmann gave a cool talk about <a href="http://cran.r-project.org/web/packages/microbenchmark/index.html">microbenchmark</a> to get accurate nanosecond timings of R expressions. Why do that? Because if you repeat something 1000 times in a <code>for</code> loop and then time it with <code>system.time()</code>, you are including the overhead of the <code>for</code> loop.</p>
+
+<p>The next useR! Conference will be at Vanderbilt in Nashville, TN, June 12-15, 2012.</p>
+
+<h2 id="graphics">Graphics</h2>
+
+<p><a href="http://cbio.ensmp.fr/~thocking/">Toby Dylan Hocking</a> had a poster about the <a href="http://directlabels.r-forge.r-project.org/">directlabels</a> package for putting labels near curves or clusters of points in a plot rather than have a separate legend. I really like the technique and am eager to try out the package. For figures for a publication, one will probably want to edit things by hand, but for day-to-day, the package looks extremely useful.</p>
+
+<p>Sina Rüeger presented <a href="http://uniplot.sinarueeger.ch/">uniPlot</a> to reduce time to polish reports, by making base graphics, ggplot2, and lattice all use the same style (otherwise the reader may be distracted by the differences). [<a href="http://cran.r-project.org/web/packages/uniPlot/index.html">CRAN</a>]</p>
+
+<p>Alexander Kowarik presented <a href="http://cran.r-project.org/web/packages/sparkTable/">sparkTable</a> for creating html tables with very small graphs included.</p>
+
+<p><a href="http://simon.urbanek.info/">Simon Urbanek</a> mentioned several new features in R graphics:</p>
+
+<ul>
+<li><p>R will soon include <code>dev.hold()</code> and <code>dev.flush()</code> (written by <a href="http://www.stats.ox.ac.uk/~ripley/">Prof. Brian Ripley</a>) so that you can tell a graphics device when you actually want to see a plot. This should improve graphics rendering.</p></li>
+
+<li><p><code>rasterImage()</code> is way faster than <code>image()</code></p></li>
+
+<li><p><code>osmap()</code> to get <a href="http://www.openstreetmap.org/">OpenStreetMap</a> maps in one line, with different zoom levels. [It&rsquo;s in the <a href="http://www.rforge.net/snippets/">snippets</a> package.]</p></li>
+
+<li><p><code>polypath()</code> to plot polygons with holes.</p></li>
+</ul>
+
+<h2 id="dynamic-graphics">Dynamic graphics</h2>
+
+<p><a href="http://www.stat.auckland.ac.nz/~paul/">Paul Murrell</a> gave an especially cool talk on turning a PDF of a campus map of the University of Aukland into a dynamic graph where mousing over a number in the legend lights up the number at the corresponding building (and vice versa). The pdf was converted to postscript, loaded into R via <a href="http://cran.r-project.org/web/packages/grImport/index.html">grImport</a> and written to an SVG via <a href="http://www.stat.auckland.ac.nz/~paul/">gridSVG</a>. There was a bit of javascript to write. [<a href="http://www.stat.auckland.ac.nz/~paul/Talks/UseR2011/processing.pdf">slides</a> | <a href="http://www.stat.auckland.ac.nz/~paul/Talks/UseR2011/">page with the interactive maps</a> (you may need <a href="http://www.mozilla.com/en-US/firefox/new/">Firefox</a> for the maps)]</p>
+
+<p><a href="http://www.stats.gla.ac.uk/~adrian/">Adrian Bowman</a> gave a talk on modeling 3d surfaces with some great dynamic graphics using <a href="http://rgl.neoscientists.org/about.shtml">RGL</a> and <a href="http://www.stats.gla.ac.uk/~adrian/rpanel/">rpanel</a>. He had some cool animations in his PDF, too, developed with the <a href="http://www.tug.org/texlive/Contents/live/texmf-dist/doc/latex/animate/">animate</a> package for LaTeX.</p>
+
+<p><a href="http://simon.urbanek.info/">Simon Urbanek</a> talked about <a href="http://www.rosuda.org/iplots/">iPlots</a> eXtreme (currently: codename <a href="http://rforge.net/Acinonyx/">Acinonyx</a>) which has fabulous and easy-to-create dynamic graphics. You basically just prefix the usual plot functions with an &ldquo;i&rdquo; (iplot, ihist). Super fast and can handle big data sets. It uses <a href="http://www.opengl.org/">OpenGL</a> (a solution developed by the gaming industry).</p>
+
+<p><a href="http://spotfire.tibco.com">TIBCO Spotfire</a> has some ways to develop interactive graphics tools, but it&rsquo;s commercial and Windows only.</p>
+
+<p>Ian Hansel talked about Rocessing, for combining <a href="http://processing.org/">processing</a> with <a href="http://www.r-project.org">R</a>.</p>
+
+<p><a href="http://4dpiecharts.com/">Richie Cotton</a> talked about the use of <a href="http://cran.r-project.org/web/packages/gWidgets/index.html">gWidgets</a> for easy interactive graphics. [<a href="http://4dpiecharts.com/2011/08/17/user2011-easy-interactive-ggplots-talk/">data and code here</a>; also see <a href="http://4dpiecharts.com/2010/10/06/creating-guis-in-r-with-gwidgets/">this blog post</a>]</p>
+
+<p><a href="http://adrian.waddell.ch/">Adrian Waddell</a> talked about <a href="https://r-forge.r-project.org/projects/rnavgraph/">RnavGraph</a> for interactive graphics. He had some neat ideas about navigating among multiple scatterplots: a graph where nodes are images and where moving along an edge between two nodes involves morphing from one image to another. Moving from one scatterplot to another is like rotating a 3d scatterplot. [<a href="http://cran.r-project.org/web/packages/RnavGraph/index.html">CRAN</a>]</p>
+
+<h2 id="simple-web-applications">Simple web applications</h2>
+
+<p>Timothee Carayol gave a lightning talk about how to use <a href="http://www.omegahat.org/RGoogleDocs/">RGoogleDocs</a> and <a href="http://rapache.net/">rApache</a> for quick and easy deployment of a web interface. You set up a spreadsheet, which acts as a configuration file for rApache, so RGoogleDocs handles the inputs in place of what could be complex web programming.  It sounds neat but I don&rsquo;t fully understand it. But Timothee wrote to say that he would write a tutorial in the coming weeks. [<a href="http://dl.dropbox.com/u/2312517/RGoogleDocs_rApache_useR2011.pdf">slides</a>]</p>
+
+<p><a href="http://www.embl.de/research/units/genome_biology/huber/">Wolfgang Huber</a> gave a cool talk on the analysis of images of cells from a large experiment in which each gene is knocked down, one at a time, by RNAi. They are creating interactive reports that are like Sweave but using html5 to give dynamic reports viewed in a browser. He gave examples using the <a href="http://www.bioconductor.org/packages/2.1/bioc/html/arrayQualityMetrics.html">arrayQualityMetrics</a> package. One can identify points via tooltips; multiple plots are linked; click to select/highlight; collapse/expand sections. Callback processing is in javascript. It uses the gridSVG package (which makes it mostly easy).</p>
+
+<p>Eleni-Anthippi Chatzimichali talked about <a href="http://cran.r-project.org/web/packages/iWebPlots/index.html">iWebPlots</a> for making dynamic, web-based scatterplots.</p>
+
+<h2 id="comprehensive-web-applications-and-guis">Comprehensive web applications and GUIs</h2>
+
+<p><a href="http://stat.wvu.edu/Faculty/jharner.html">E. James Harner</a> spoke about <a href="http://www.warwick.ac.uk/statsdept/useR-2011/abstracts/010411-rc2.pdf">Rc2</a> for collaborative use of R (including shared R sessions with voice chat), aimed to support distance learning. It seems really complicated and not easily adapted for others&rsquo; use.</p>
+
+<p><a href="http://www.iplantcollaborative.org/connect/staff-collaborators/naim-matasci">Naim Matasci</a> had a poster about <a href="http://iplantcollaborative.org">iPlant</a> which has a fancy web front end with interactive analysis (using R). They have something like 10 developers working on it, but he said that the source code will be available and that it could be adapted for other purposes.</p>
+
+<p>Xavier de Pedro Puente discussed the use of <a href="http://tiki.org">Tiki</a> with R to make comprehensive web sites with wiki-like pages including R (converted to output or graphs on the fly) or web-based forms. It uses his <a href="https://doc.tiki.org/PluginR">PluginR</a> package. It seems a great idea, but is likely too complicated for me. The key coding is with <a href="http://www.smarty.net/">Smarty</a>. [<a href="http://ueb.ir.vhebron.net/2011+UseR">slides</a>]</p>
+
+<p>Jason Waddell and Tobias Verbeke from <a href="http://www.openanalytics.eu/">OpenAnalytics</a> talked about the use of the <a href="http://www.openanalytics.eu/r-service-bus">R service bus</a> [<a href="http://rsb.doc.openanalytics.eu/">documentation</a>] for lab automation.</p>
+
+<p>David Nicolaides from <a href="http://accelrys.com/">Accelrys</a> talked about browser-based applications using <a href="http://accelrys.com/products/pipeline-pilot/">Pipeline Pilot</a>.</p>
+
+<p>Sheri Gilley from <a href="http://www.revolutionanalytics.com/">Revolution Analytics</a> presented a GUI that they&rsquo;re working on. It looks like it will be superb for the novice who wants a GUI. They&rsquo;ll have a beta by the end of 2011, with the real release in 2012. Sheri spent 25 years doing UI design at SPSS (so I guess she was 10 or 15 when she started).</p>
+
+<h2 id="companies">Companies</h2>
+
+<p>I was surprised by the large number of companies forming around R.</p>
+
+<ul>
+<li><p><a href="http://www.revolutionanalytics.com/">Revolution Analytics</a>: have code for handling large datasets and parallel computing and are developing a GUI.</p></li>
+
+<li><p><a href="http://rstudio.org">RStudio</a>: aimed to be an IDE (supporting programmers) rather than a GUI. Upcoming features (including quick traversal of code across multiple files) look cool, but I&rsquo;ll probably stay with emacs.</p></li>
+
+<li><p><a href="http://www.mango-solutions.com/index.html">Mango Solutions</a></p></li>
+
+<li><p><a href="http://www.openanalytics.eu/">OpenAnalytics</a>: <a href="http://www.openanalytics.eu/r-service-bus">R service bus</a> and <a href="http://www.walware.de/goto/statet">StatET</a> (IDE via <a href="http://www.eclipse.org/eclipse/">Eclipse</a>)</p></li>
+
+<li><p><a href="http://spotfire.tibco.com/">TIBCO</a>: purchased Insightful (who had bought Splus) in 2008.</p></li>
+
+<li><p><a href="http://www.cloudnumbers.com">CloudNumbers</a>: cloud-based computing, including the use of R.</p></li>
+</ul>
+
+<h2 id="talks-i-wish-i-d-seen">Talks I wish I&rsquo;d seen</h2>
+
+<p><a href="http://ablejec.nib.si/">Andrej Blejec</a> talked about his animatoR package for creating animations in R.</p>
+
+<p><a href="http://www.maths.bris.ac.uk/~MAZJCR/">Jonathan Rougier</a> talked about nomograms (and donkeys).</p>
+
+<p>Markus Gesmann talked about using the <a href="http://code.google.com/apis/chart/index.html">Google visualization API</a> with R: the <a href="http://cran.r-project.org/web/packages/googleVis/index.html">googleVis</a> package. [<a href="http://code.google.com/p/google-motion-charts-with-r/">detailed info</a>]</p>
+
+<h2 id="things-particularly-packages-i-need-to-try-out">Things (particularly packages) I need to try out</h2>
+
+<ul>
+<li><p>Emacs <a href="http://orgmode.org">org-mode</a></p></li>
+
+<li><p><a href="http://mosaic-web.org">mosaic</a> package for teaching [<a href="http://cran.r-project.org/web/packages/mosaic/index.html">CRAN</a>]</p></li>
+
+<li><p><a href="http://directlabels.r-forge.r-project.org/">directlabels</a> package for automatically putting labels directly next to curves or clouds of points.</p></li>
+
+<li><p><a href="http://cran.r-project.org/web/packages/hexbin/index.html">hexbin</a> package for dense scatterplots.</p></li>
+
+<li><p><a href="http://iplots.org">iPlots</a> eXtreme (<a href="http://rforge.net/Acinonyx/">Acinonyx</a>) for fast dynamic graphics</p></li>
+
+<li><p><a href="http://cran.r-project.org/web/packages/animation/index.html">animation</a> for making animations in R</p></li>
+
+<li><p>grid and <a href="http://had.co.nz/ggplot2/">ggplot2</a> (I&rsquo;m still just using base graphics)</p></li>
+
+<li><p><a href="https://r-forge.r-project.org/R/?group_id=761">gWidgets</a> and <a href="http://www.stats.gla.ac.uk/~adrian/rpanel/">rpanel</a> for making simple dynamic graphics</p></li>
+
+<li><p><a href="http://www.stat.auckland.ac.nz/~paul/">gridSVG</a> for making complex web-based dynamic graphics</p></li>
+
+<li><p><a href="http://cran.r-project.org/web/packages/sparkTable/">sparkTable</a> for making html tables with small figures inserted</p></li>
+
+<li><p><a href="http://uniplot.sinarueeger.ch/">uniPlot</a> for making base graphics, ggplot2, and lattice all use the same style. [<a href="http://cran.r-project.org/web/packages/uniPlot/index.html">CRAN</a>]</p></li>
+
+<li><p><a href="http://cran.r-project.org/web/packages/compareGroups/index.html">compareGroups</a> for making complex tables with confidence intervals and p-values and such, like epidemiologists (and my collaborators) often want</p></li>
+
+<li><p><a href="http://www.cranfield.ac.uk/health/researchareas/bioinformatics/page53292.html">iWebPlots</a> for making web-based plots [<a href="http://cran.r-project.org/web/packages/iWebPlots/index.html">CRAN</a>]</p></li>
+
+<li><p><a href="http://www.bioconductor.org/packages/2.1/bioc/html/arrayQualityMetrics.html">arrayQualityMetrics</a> which creates fancy web-based dynamic reports</p></li>
+
+<li><p>osmap (contained in <a href="http://www.rforge.net/snippets/">snippets</a>) for making maps.</p></li>
+
+<li><p>animatoR for making animations</p></li>
+
+<li><p><a href="http://code.google.com/p/google-motion-charts-with-r/">googlevis</a> package [<a href="http://cran.r-project.org/web/packages/googleVis/index.html">CRAN</a>]</p></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

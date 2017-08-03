@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qtl Mapping on the stupidest thing...</title>
+    <link>/tags/qtl-mapping/</link>
+    <description>Recent content in Qtl Mapping on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/qtl-mapping/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fitting linear mixed models for QTL mapping</title>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
+
+&lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
+
+&lt;p&gt;But I now finally understand LMMs, or at least a particular, simple LMM, and I&amp;rsquo;ve been able to write an implementation: the R package &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It seemed worthwhile to write down some of the details.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The model I want to fit is &lt;em&gt;y = X b + e&lt;/em&gt;, where var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;sK + tI&lt;/em&gt;, where &lt;em&gt;K&lt;/em&gt; is a known kinship matrix and &lt;em&gt;I&lt;/em&gt; is the identity matrix. Think of &lt;em&gt;y&lt;/em&gt; as a vector of phenotypes and &lt;em&gt;X&lt;/em&gt; as a matrix of covariates. Let &lt;em&gt;v = s+t&lt;/em&gt; be the residual variance, and let &lt;em&gt;h = s/(s+t) = s/v&lt;/em&gt; be the heritability.&lt;/p&gt;
+
+&lt;p&gt;First, a shout to &lt;a href=&#34;https://github.com/lomereiter&#34;&gt;Artem Tarasov&lt;/a&gt;, who wrote a &lt;a href=&#34;http://lomereiter.github.io/2015/02/16/lmm_cov.html&#34;&gt;series of blog posts&lt;/a&gt; walking through and explaining the source code for &lt;a href=&#34;https://github.com/MicrosoftGenomics/FaST-LMM&#34;&gt;FaST-LMM&lt;/a&gt; and &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;, and to &lt;a href=&#34;http://whatmind.com/&#34;&gt;Nick Furlotte&lt;/a&gt;, whose &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt; code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.&lt;/p&gt;
+
+&lt;p&gt;Back to the model fit:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For a fixed value of the heritability, &lt;em&gt;h&lt;/em&gt;, we have var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;v[hK + (1-h)I] = vV&lt;/em&gt; where &lt;em&gt;V&lt;/em&gt; is known. And so we end up with a general least squares problem, which we can fit in order to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;And actually, if you take the eigen decomposition of &lt;em&gt;K&lt;/em&gt;, say &lt;em&gt;K = UDU&amp;rsquo;&lt;/em&gt;, it turns out that you can write &lt;em&gt;hK + (1-h)I = hUDU&amp;rsquo; + (1-h)UU&amp;rsquo; = U[hD + (1-h)I]U&amp;rsquo;&lt;/em&gt;. That is, the eigenvectors of &lt;em&gt;K&lt;/em&gt; are the same as the eigenvectors of &lt;em&gt;hK + (1-h)I&lt;/em&gt;. And so if you pre-multiply &lt;em&gt;y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; by &lt;em&gt;U&amp;rsquo;&lt;/em&gt;, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Having fit the weighted least squares problem to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;, you can then calculate the corresponding log likelihood (or, better, the restricted log likelihood, if you want to do REML).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You&amp;rsquo;re then left with a one-dimensional optimization problem (optimizing the log likelihood over &lt;em&gt;h&lt;/em&gt;), which you can solve by &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34;&gt;Brent&amp;rsquo;s method&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It seems quite obvious in retrospect. It&amp;rsquo;s a bit embarrassing that it&amp;rsquo;s taken me so long to come to this understanding.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

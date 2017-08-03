@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>UseR 2014, days 3-4 - the stupidest thing...</title>
+<meta property="og:title" content="UseR 2014, days 3-4 - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">UseR 2014, days 3-4</h1>
+
+    
+    <span class="article-date">2014/07/21</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Three weeks ago, I&rsquo;d <a href="http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/">commented on the first two days</a> of the <a href="http://user2014.stat.ucla.edu/">UseR 2014 conference</a>. I&rsquo;m finally back to talk about the second half.</p>
+
+<h4 id="dirk-eddelbuettel-on-rcpp">Dirk Eddelbuettel on Rcpp</h4>
+
+<p><a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a> gave a keynote on <a href="http://rcpp.org">Rcpp</a> [<a href="http://dirk.eddelbuettel.com/papers/useR2014_keynote.pdf">slides</a>]. The goal of Rcpp is to have &ldquo;the speed of C++ with the ease and clarity of R.&rdquo; He gave a series of examples that left me (who still uses <code>.C()</code> to access C code) thinking, &ldquo;Holy crap this is so much easier than what I do!&rdquo;</p>
+
+<p>Take a look at the <a href="http://gallery.rcpp.org">Rcpp Gallery</a>, and the <a href="http://dirk.eddelbuettel.com/papers/useR2014_tutorial.pdf">slides from Dirk&rsquo;s Rcpp tutorial</a>.</p>
+
+<p>Dirk ended with a detailed discussion of <a href="https://www.docker.com/">Docker</a>: a system for virtual machines as portable containers. I didn&rsquo;t fully appreciate this part, but according to Dirk, Docker &ldquo;changes how we build and test R&hellip;.It&rsquo;s like pushing to <a href="http://github.com">GitHub</a>.&rdquo;</p>
+
+<h4 id="sponsors-talk">Sponsors Talk</h4>
+
+<p>After Dirk&rsquo;s talk was the Sponsor&rsquo;s Talk. But if I&rsquo;m going to skip a session (and I strongly recommend that you skip at least some sessions at any conference), anything called &ldquo;Sponsor&rsquo;s Talk&rdquo; is going to be high on my list to skip.</p>
+
+<h4 id="lunch-at-venice-beach">Lunch at Venice Beach</h4>
+
+<p><a href="http://inundata.org/">Karthik Ram</a> and I met up with <a href="http://hilaryparker.com/">Hilary Parker</a> and <a href="http://www.sandradgriffith.com/">Sandy Griffith</a> for <a href="https://twitter.com/hspter/status/484441248229367808">lunch at Venice Beach</a>.</p>
+
+<p>It took us a bit longer to get back than we&rsquo;d anticipated. But I did get a chance to <a href="https://twitter.com/leonidkruglyak/status/484461511692152832">meet up with</a> <a href="https://labs.genetics.ucla.edu/kruglyak/people">Leonid Kruglyak</a> at his office at UCLA.</p>
+
+<h4 id="r-and-reproducibility">R and reproducibility</h4>
+
+<p><a href="https://twitter.com/revodavid">David Smith</a> from <a href="http://www.revolutionanalytics.com/">Revolution Analytics</a> and <a href="http://en.wikipedia.org/wiki/Joseph_J._Allaire">JJ Allaire</a> from <a href="http://rstudio.com">RStudio</a> each spoke about package management systems to enhance reproducibility with R.</p>
+
+<p>For your <a href="http://www.r-project.org">R</a>-based project to be reproducible, the many packages that you&rsquo;ve used need to be available. And future versions of those packages may not work the same way, so ideally you should keep copies of the particular versions that you used.</p>
+
+<p>David Smith spoke about the <a href="https://github.com/RevolutionAnalytics/RRT">R reproducibility toolkit (RRT)</a>. The focus was more on business analytics, and the need to maintain a group of versioned packages that are known to work together. <a href="http://cran.r-project.org">CRAN</a> runs checks on all packages so that they&rsquo;re all known to work together. As I understand it, RRT manages snapshots of sets of packages from CRAN.</p>
+
+<p>JJ Alaire spoke about <a href="http://www.rstudio.org">RStudio</a>&rsquo;s solution: <a href="http://rstudio.github.io/packrat/">packrat</a>. This seems more suitable for scientific work. It basically creates privates sets of packages, specific to a project.</p>
+
+<p>I&rsquo;ve not thought much about this issue. <a href="http://rstudio.github.io/packrat/">packrat</a> seems the best fit for my sort of work. I should start using it.</p>
+
+<h4 id="poster-session">Poster session</h4>
+
+<p>The second poster session was <a href="https://twitter.com/kwbroman/status/484471383166967809">in a different location with more space</a>. It was still a bit cramped, being in a hallway, but it was <em>way better</em> than the first day. There were a number of interesting posters, including <a href="http://hilaryparker.com/">Hilary&rsquo;s</a> on <a href="https://github.com/ropensci/testdat">testdat</a>, for testing CSV files; <a href="http://www.sandradgriffith.com/">Sandy&rsquo;s</a> on using Shiny apps for teaching; and Mine Çetinkaya-Rundel and Andrew Bray&rsquo;s poster on &ldquo;Teaching data analysis in R through the lens of reproducibility&rdquo; [<a href="https://www.dropbox.com/s/te7o3h6ypi3ejhu/user2014_reproduce_poster.pdf">pdf</a>].</p>
+
+<h4 id="met-more-folks">Met more folks</h4>
+
+<p>The main purpose of conferences is to meet people. I was glad to be able to chat with <a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a>, <a href="http://ramnathv.github.io/">Ramnath Vaidyanathan</a>, and also <a href="https://twitter.com/timtriche">Tim Triche</a>. Also karaoke with <a href="http://www.sandradgriffith.com/">Sandy</a>, <a href="http://inundata.org/">Karthik</a>, <a href="http://hilaryparker.com">Hilary</a>, <a href="http://www.fil.lu.se/en/department/staff/RasmusBaath/">Rasmus</a>, and <a href="http://blog.r-enthusiasts.com/">Romain</a>.</p>
+
+<h4 id="wish-i-d-seen">Wish I&rsquo;d seen</h4>
+
+<p>I had a bit of a <a href="https://twitter.com/_inundata/status/484584850700005376">late night on Wednesday night</a>, and then I was in a hurry to get down (via <a href="https://twitter.com/kwbroman/status/484750328655400960">public</a> <a href="https://twitter.com/kwbroman/status/484759436964028416">transit</a>!) to the Science Center to meet up with <a href="https://twitter.com/kwbroman/status/484780542169059328">my family</a>. So I&rsquo;m sorry that I didn&rsquo;t get to see <a href="http://yihui.name/">Yihui Xie</a>&rsquo;s talk on <a href="https://github.com/yihui/knitr-talks/tree/master/useR2014">Knitr Ninja</a>.</p>
+
+<p>Looking back through the program, there are a number of other talks I wish I&rsquo;d seen:</p>
+
+<ul>
+<li><p>Jan de Leeuw on the <a href="http://www.jstatsoft.org/">Journal of Statistical Software</a> [<a href="http://gifi.stat.ucla.edu/janspubs/2014/notes/deleeuw_mullen_U_14.pdf">slides</a>]</p></li>
+
+<li><p>Romain Francois on Rcpp11 [<a href="http://fr.slideshare.net/romainfrancois/rcpp11-use-r">slides</a>]</p></li>
+
+<li><p>Rasmus Baath on Bayesian First Aid [<a href="http://www.sumsar.net/files/academia/UseR2014_Bayesian_First_Aid.pdf">slides</a>]</p></li>
+
+<li><p>Jeroen Ooms on <a href="https://www.opencpu.org/">OpenCPU</a> [<a href="http://jeroenooms.github.io/opencpu-slides/">slides</a>]</p></li>
+
+<li><p>Nicholas Reich on <a href="http://statsteachr.org/">statsTeachR.org</a></p></li>
+
+<li><p>Amelia McNamara on Teaching R to high school students (and teachers)</p></li>
+
+<li><p>Jeff Allen on the latest with R Markdown [<a href="http://rpubs.com/trestletech/usermd">slides</a>]</p></li>
+</ul>
+
+<h4 id="summary">Summary</h4>
+
+<p><a href="http://user2014.stat.ucla.edu/">UseR 2014</a> was a great meeting. In addition to the packages mentioned with <a href="http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/">Days 1-2</a>, I need to pick up <a href="http://rcpp.org">Rcpp</a> and <a href="http://rstudio.github.io/packrat/">packrat</a>.</p>
+
+<p>Slides for many of the talks and tutorials are on the <a href="http://user2014.stat.ucla.edu/">UseR 2014 web site</a>. If you know of others, you can add them via the <a href="https://github.com/user2014/user2014.github.io">site&rsquo;s GitHub repository</a> and make a pull request.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

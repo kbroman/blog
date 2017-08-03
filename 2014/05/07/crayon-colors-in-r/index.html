@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Crayon colors in R - the stupidest thing...</title>
+<meta property="og:title" content="Crayon colors in R - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Crayon colors in R</h1>
+
+    
+    <span class="article-date">2014/05/07</span>
+    
+
+    <div class="article-content">
+      <p>Last night I was working on a <a href="https://github.com/kbroman/Talk_Graphs/tree/ictr2014">talk on creating effective graphs</a>. Mostly, I needed to update the colors, as there&rsquo;d been some gaudy ones in <a href="http://www.biostat.wisc.edu/~kbroman/presentations/ictr2014.pdf">its previous form</a> (e.g., slide 22).</p>
+
+<p>I usually pick colors using the crayons in the <a href="https://www.robinwood.com/Catalog/Technical/OtherTuts/MacColorPicker/MacColorPicker.html">Mac Color Picker</a>. But that has just 40 crayons, and I wanted more choices.</p>
+
+<p>That led me to the <a href="http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">list of Crayola crayon colors on wikipedia</a>. I wrote a ruby script to grab the color names and codes and added them to my <a href="http://github.com/kbroman/broman">R/broman</a> package.</p>
+
+<p>Use <code>brocolors(&quot;crayons&quot;)</code> to get the list of colors. For example, to get &ldquo;Tickle Me Pink,&rdquo; use</p>
+
+<pre><code>library(broman)
+pink &lt;- brocolors(&quot;crayons&quot;)[&quot;Tickle Me Pink&quot;]
+</code></pre>
+
+<p>Use <code>plot_crayons()</code> to get the following summary plot of the colors:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2014/05/crayons.png" alt="Crayon colors" /></p>
+
+<p>You can install the R/broman package using <code>install_github</code> in devtools, (specifically, <code>install_github(&quot;kbroman/broman&quot;)</code>) or wait a day or two and the version with this code will be <a href="http://cran.r-project.org/web/packages/broman/">on CRAN</a>.</p>
+
+<p><strong>Update</strong>: See also <a href="http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/">Two more points about crayon colors</a>.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

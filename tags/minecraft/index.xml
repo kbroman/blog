@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minecraft on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/minecraft/</link>
+    <link>/tags/minecraft/</link>
     <description>Recent content in Minecraft on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/minecraft/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/minecraft/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>miner and craft</title>
-      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>/2017/05/31/miner-and-craft/</guid>
       <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
 &lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>/2017/05/27/ropensci-unconf-2017/</guid>
       <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
 &lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;

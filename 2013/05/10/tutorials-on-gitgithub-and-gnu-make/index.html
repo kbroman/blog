@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Tutorials on git/github and GNU make - the stupidest thing...</title>
+<meta property="og:title" content="Tutorials on git/github and GNU make - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Tutorials on git/github and GNU make</h1>
+
+    
+    <span class="article-date">2013/05/10</span>
+    
+
+    <div class="article-content">
+      <p>If you&rsquo;re not using version control, you should be.  <em>Learn <a href="http://git-scm.com">git</a></em>.</p>
+
+<p>If you&rsquo;re not on <a href="http://github.com">github</a>, you should be.  That&rsquo;s <em>real</em> open source.</p>
+
+<p>To help some colleagues get started with <a href="http://git-scm.com">git</a> and <a href="http://github.com">github</a>, I wrote a <a href="http://kbroman.github.io/github_tutorial">minimal tutorial</a>. There are lots of git and github resources available, but I thought I&rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</p>
+
+<p>And for <a href="http://r-project.org">R</a> folks, note that it&rsquo;s easy to install R packages that are hosted on github, using <a href="http://had.co.nz">Hadley Wickham</a>&rsquo;s <a href="https://github.com/hadley/devtools">devtools</a> package.  For example, to install <a href="https://github.com/nachocab">Nacho Caballero</a>&rsquo;s <a href="https://github.com/nachocab/clickme">clickme</a> package:</p>
+
+<pre><code class="language-r">install.packages(&quot;devtools&quot;)
+library(devtools)
+install_github(&quot;clickme&quot;, &quot;nachocab&quot;)
+</code></pre>
+
+<p>Having written that git/github tutorial, I thought: I should write more such!</p>
+
+<p>So I immediately wrote <a href="http://kbroman.github.io/minimal_make">a similar short tutorial</a> on <a href="http://www.gnu.org/software/make">GNU make</a>, which I think is the <em>most important tool</em> for reproducible research.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

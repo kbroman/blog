@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>&#34;[&#34; and &#34;[[&#34; with the apply() functions - the stupidest thing...</title>
+<meta property="og:title" content="&#34;[&#34; and &#34;[[&#34; with the apply() functions - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">&#34;[&#34; and &#34;[[&#34; with the apply() functions</h1>
+
+    
+    <span class="article-date">2013/08/20</span>
+    
+
+    <div class="article-content">
+      <p>Did you know you can use <code>&quot;[&quot;</code> and <code>&quot;[[&quot;</code> as function names for subsetting with calls to the <code>apply</code>-type functions?</p>
+
+<p>For example, suppose you have a bunch of identifier strings like <code>&quot;ZYY-43S-CWA3&quot;</code> and you want to pull off the bit before the first hyphen (<code>&quot;ZYY&quot;</code> in this case).  (For code to create random IDs like that, see the end of this post.)</p>
+
+<p>Suppose the IDs are in a vector of character strings, <code>id</code>.</p>
+
+<p>If I wanted to grab the bit before the first hyphen, I would typically use <code>strsplit</code> and then <code>sapply</code> with <code>function(a) a[1]</code>, as so:</p>
+
+<pre><code class="language-r">sapply(strsplit(id, &quot;-&quot;), function(a) a[1])
+</code></pre>
+
+<p>But in place of <code>function(a) a[1]</code>, you can use <code>&quot;[&quot;, 1</code>, as follows:</p>
+
+<pre><code class="language-r">sapply(strsplit(id, &quot;-&quot;), &quot;[&quot;, 1)
+</code></pre>
+
+<p>I think that&rsquo;s kind of cute. You can use <code>&quot;[[&quot;</code> the same way, if you&rsquo;re working with lists.</p>
+
+<p>Here&rsquo;s some code to create random IDs of this form, to test out the above:</p>
+
+<pre><code class="language-r">nind &lt;- 8
+lengths &lt;- c(3, 3, 4)
+id &lt;- NULL
+for(i in seq(along=lengths)) {
+  randchar &lt;- sample(c(LETTERS, 0:9), nind*lengths[i], replace=TRUE)
+  randstring &lt;- apply(matrix(randchar, ncol=lengths[i]),
+                   1, paste, collapse=&quot;&quot;)
+  if(is.null(id)) id &lt;- randstring
+  else id &lt;- paste(id, randstring, sep=&quot;-&quot;)
+}
+</code></pre>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

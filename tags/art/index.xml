@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Art on the stupidest thing...</title>
+    <link>/tags/art/</link>
+    <description>Recent content in Art on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Thu, 17 May 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/art/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Trees</title>
+      <link>/2012/05/17/trees/</link>
+      <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/17/trees/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it.  Here&amp;rsquo;s a link to &lt;a href=&#34;http://kbroman.files.wordpress.com/2012/05/trees1.pdf&#34;&gt;the full page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with &lt;a href=&#34;http://www.stat.wisc.edu/~ane&#34;&gt;considerable help&lt;/a&gt;), regarding phylogenetic trees.  It&amp;rsquo;s part of &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl_combined.pdf&#34;&gt;this paper&lt;/a&gt;, which I&amp;rsquo;m getting ready to re-submit.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

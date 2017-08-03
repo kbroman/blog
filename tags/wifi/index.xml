@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wifi on the stupidest thing...</title>
+    <link>/tags/wifi/</link>
+    <description>Recent content in Wifi on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Tue, 20 Nov 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/wifi/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wireless router woes</title>
+      <link>/2012/11/20/wireless-router-woes/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/11/20/wireless-router-woes/</guid>
+      <description>&lt;p&gt;I had problems with my internet connection at home this morning.  The usual things didn&amp;rsquo;t work, but an unusual thing did work, so I thought I&amp;rsquo;d write about it.&lt;/p&gt;
+
+&lt;p&gt;My internet connection worked last night, but it didn&amp;rsquo;t work this morning.  I did the usual things: turn off the cable modem and the wireless router, and then turn them back on again.  Turn off the computer and then turn it back on again, and then power cycle the modem and router again.   Go to network settings and renew the DHCP.  None of that worked.&lt;/p&gt;
+
+&lt;p&gt;I called the cable company, to see if there was a problem on their end.  An automated system talked me through the whole turn on/off modem, router and computer.  (I stuck through the whole thing, hoping there might be a trick at the end, but no luck.)  I talked to a tech support person, who had me do the same things again; no luck.  (He did suggest that I call to ask to get a better deal on my services, which I later did, with success, so he made the call worth my time.)&lt;/p&gt;
+
+&lt;p&gt;After getting off the phone with him (and after the kids were out of the house), I tried it all again, and then tried bypassing the router: plugging the computer straight into the cable modem.  I then had internet, so I could see it was a router problem.&lt;/p&gt;
+
+&lt;p&gt;And I could do google searches, but search for &amp;ldquo;router internet connection problem&amp;rdquo; or such things, and you get 19 million pages that all seem to say to do what I&amp;rsquo;d already done and no more.  (I didn&amp;rsquo;t read all 19 million, though.)&lt;/p&gt;
+
+&lt;p&gt;Finally, I found &lt;a href=&#34;http://tinyurl.com/az3ltws&#34;&gt;this page&lt;/a&gt; at this Cisco site, on connecting a Linksys router to a cable modem, which suggests enabling &amp;ldquo;clone my PC&amp;rsquo;s MAC address&amp;rdquo;.  I tried that, and it worked!  (My next plan was to reset the router to the factory settings, after first doing screen shots of all of the settings, so I could get back to how I wanted them; I&amp;rsquo;m glad I didn&amp;rsquo;t have to do that.)&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know why that worked.  I&amp;rsquo;ve never done that before, and the router worked perfectly fine last night.  What could have changed over night?  Did the cable company change some setting on their end?&lt;/p&gt;
+
+&lt;p&gt;What a fun way to spend two hours!  At least, in the end, I cut 25% off my monthly cable bill.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

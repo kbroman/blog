@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genetics on the stupidest thing...</title>
+    <link>/categories/genetics/</link>
+    <description>Recent content in Genetics on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/genetics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fitting linear mixed models for QTL mapping</title>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
+
+&lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
+
+&lt;p&gt;But I now finally understand LMMs, or at least a particular, simple LMM, and I&amp;rsquo;ve been able to write an implementation: the R package &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It seemed worthwhile to write down some of the details.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The model I want to fit is &lt;em&gt;y = X b + e&lt;/em&gt;, where var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;sK + tI&lt;/em&gt;, where &lt;em&gt;K&lt;/em&gt; is a known kinship matrix and &lt;em&gt;I&lt;/em&gt; is the identity matrix. Think of &lt;em&gt;y&lt;/em&gt; as a vector of phenotypes and &lt;em&gt;X&lt;/em&gt; as a matrix of covariates. Let &lt;em&gt;v = s+t&lt;/em&gt; be the residual variance, and let &lt;em&gt;h = s/(s+t) = s/v&lt;/em&gt; be the heritability.&lt;/p&gt;
+
+&lt;p&gt;First, a shout to &lt;a href=&#34;https://github.com/lomereiter&#34;&gt;Artem Tarasov&lt;/a&gt;, who wrote a &lt;a href=&#34;http://lomereiter.github.io/2015/02/16/lmm_cov.html&#34;&gt;series of blog posts&lt;/a&gt; walking through and explaining the source code for &lt;a href=&#34;https://github.com/MicrosoftGenomics/FaST-LMM&#34;&gt;FaST-LMM&lt;/a&gt; and &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;, and to &lt;a href=&#34;http://whatmind.com/&#34;&gt;Nick Furlotte&lt;/a&gt;, whose &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt; code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.&lt;/p&gt;
+
+&lt;p&gt;Back to the model fit:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For a fixed value of the heritability, &lt;em&gt;h&lt;/em&gt;, we have var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;v[hK + (1-h)I] = vV&lt;/em&gt; where &lt;em&gt;V&lt;/em&gt; is known. And so we end up with a general least squares problem, which we can fit in order to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;And actually, if you take the eigen decomposition of &lt;em&gt;K&lt;/em&gt;, say &lt;em&gt;K = UDU&amp;rsquo;&lt;/em&gt;, it turns out that you can write &lt;em&gt;hK + (1-h)I = hUDU&amp;rsquo; + (1-h)UU&amp;rsquo; = U[hD + (1-h)I]U&amp;rsquo;&lt;/em&gt;. That is, the eigenvectors of &lt;em&gt;K&lt;/em&gt; are the same as the eigenvectors of &lt;em&gt;hK + (1-h)I&lt;/em&gt;. And so if you pre-multiply &lt;em&gt;y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; by &lt;em&gt;U&amp;rsquo;&lt;/em&gt;, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Having fit the weighted least squares problem to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;, you can then calculate the corresponding log likelihood (or, better, the restricted log likelihood, if you want to do REML).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You&amp;rsquo;re then left with a one-dimensional optimization problem (optimizing the log likelihood over &lt;em&gt;h&lt;/em&gt;), which you can solve by &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34;&gt;Brent&amp;rsquo;s method&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It seems quite obvious in retrospect. It&amp;rsquo;s a bit embarrassing that it&amp;rsquo;s taken me so long to come to this understanding.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>&#34;My&#34; chromosome 8p inversion</title>
+      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
+      <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <description>
+
+&lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
+
+&lt;p&gt;I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.) Sure enough, they cited a paper of mine, but it was &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/11231899&#34;&gt;Giglo et al. (2001) Am J Hum Genet 68: 874–883&lt;/a&gt;, on &amp;ldquo;my&amp;rdquo; chr 8p inversion, and not what I&amp;rsquo;d expected, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;my autozygosity paper&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What did the chr 8p inversion have to do with this?  Search for &amp;ldquo;[36]&amp;rdquo; and you&amp;rsquo;ll find:&lt;/p&gt;
+
+&lt;blockquote&gt;
+We find that the local density of IBD blocks of all lengths is relatively constant across the genome, but in certain regions the length distribution is systematically perturbed (see Figure S1), including around certain centromeres and the large inversion on chromosome 8 [36], also seen by [35].
+&lt;/blockquote&gt;
+
+&lt;p&gt;The chr 8p inversion presents an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;interesting data analysis story&lt;/a&gt; from my postdoc years.  In a nutshell: I was studying human crossover interference, found poor model fit for maternal chr 8 that was due to tight apparent triple-crossovers in two individuals in each of two families, hypothesized that there was an inversion in the region, but it would have to be both &lt;em&gt;long&lt;/em&gt; and with both orientations being &lt;em&gt;common&lt;/em&gt;. The inversion was confirmed via FISH, and it&amp;rsquo;s something like 5 Mbp long, with the frequencies of the two orientations being 40 and 60% in people of European ancestry.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;marshfield-maps-and-crossover-interference&#34;&gt;Marshfield maps and crossover interference&lt;/h3&gt;
+
+&lt;p&gt;I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9718341&#34;&gt;construction of human genetic maps&lt;/a&gt; using data from eight of the &lt;a href=&#34;http://www.cephb.fr/en/cephdb/&#34;&gt;CEPH&lt;/a&gt; families.  I was particularly interested in &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10801387&#34;&gt;characterizing crossover interference&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I found that the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/7713406&#34;&gt;gamma model&lt;/a&gt; fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But the model fit poorly for maternal chromosome 8:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
+
+&lt;p&gt;Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I saw these tight triple-crossovers and thought, &amp;ldquo;Oops!  I got the marker order wrong.&amp;rdquo; (Remember, this was before we had a physical map.)  But if you reverse the orientation of the region, crossovers in other individuals would become triple-crossovers.&lt;/p&gt;
+
+&lt;p&gt;So I thought, perhaps this is an inversion polymorphism: some individuals have the region in one orientation and others have it in the opposite orientation.  But it would have to be long (it was an estimated 12 cM in females: something like 5 Mbp).  And both orientations would have to be common, since they would each need to be present in the homozygous state for there to be recombination events.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-inversion&#34;&gt;The inversion&lt;/h3&gt;
+
+&lt;p&gt;Jim Weber contacted David Ledbetter, and folks in his group investigated the region and confirmed, via FISH, that there was indeed a long, common inversion polymorphisms on chromosome 8p.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_fish.jpg&#34; alt=&#34;Inversion, FISH&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They marked one side of the region in green and the other side red, and in the left panels green is above red on both chromosomes, in the right panels red is above green on both chromosomes, and in the center there is one chromosome with each orientation.  Analysis of further subjects indicated that the two orientations have allele frequencies 40 and 60% in people of European ancestry.&lt;/p&gt;
+
+&lt;h3 id=&#34;authorship-order&#34;&gt;Authorship order&lt;/h3&gt;
+
+&lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/&#34;&gt;referred to this story in passing&lt;/a&gt; in the past.  A fortuitous clinical connection was made to this chr 8p inversion, and due a dispute over author order, what should have been one paper got split into two, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;my half&lt;/a&gt; trickled down the journal chain to finally appear in &lt;a href=&#34;http://projecteuclid.org/DPubS?service=UI&amp;amp;version=1.0&amp;amp;verb=Display&amp;amp;page=toc&amp;amp;handle=euclid.lnms/1215091126&#34;&gt;Terry Speed&amp;rsquo;s Festschrift&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I try not to discuss author order anymore.  I care only about presence/absence.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-related-story-autozygosity&#34;&gt;A related story: autozygosity&lt;/h3&gt;
+
+&lt;p&gt;This wasn&amp;rsquo;t the only surprising finding to come from my efforts on the &lt;a href=&#34;http://research.marshfieldclinic.org/genetics/GeneticResearch/compMaps.asp&#34;&gt;Marshfield genetic maps&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of &lt;a href=&#34;http://compgen.rutgers.edu/old/multimap/crimap/&#34;&gt;CRI-MAP&lt;/a&gt; &lt;em&gt;chrompic&lt;/em&gt; output, to find such double crossovers.  Here&amp;rsquo;s a somewhat nicer image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozygosity.png&#34; alt=&#34;Autozygosity&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?&lt;/p&gt;
+
+&lt;p&gt;After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;turned out to be autozygosity&lt;/a&gt;: in two CEPH families, the grandparents were related, and so the parents where homozygous by descent (aka autozygous) for chunks of their genome.&lt;/p&gt;
+
+&lt;h3 id=&#34;moral&#34;&gt;Moral&lt;/h3&gt;
+
+&lt;p&gt;In both of these cases, apparent artifacts in the data led to the most interesting findings in the work. If your model doesn&amp;rsquo;t fit, or you see something odd, ask, &amp;ldquo;Why is that?&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive eQTL plot with d3.js</title>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The code (in &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) is available at &lt;a href=&#34;https://github.com/kbroman/JSbroman/tree/master/cistrans&#34;&gt;github&lt;/a&gt;.  But beware: it&amp;rsquo;s pretty awful.&lt;/p&gt;
+
+&lt;p&gt;The hardest part was setting up the data files.  Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The future of personalized medicine</title>
+      <link>/2012/10/11/the-future-of-personalized-medicine/</link>
+      <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/10/11/the-future-of-personalized-medicine/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: &lt;a href=&#34;http://well.blogs.nytimes.com/2012/10/10/are-you-likely-to-respond-to-exercise/?smid=pl-share&#34;&gt;a genetic test for exercise&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Odd smoother</title>
+      <link>/2012/09/27/odd-smoother/</link>
+      <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/09/27/odd-smoother/</guid>
+      <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;http://thalamus.wustl.edu/cheverudlab/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
+
+&lt;p&gt;I poked through the paper, and my eye was attracted to the following figure.  These are supposed to be functions, but some weird smoother was used, and the results are not functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://g3journal.org/content/2/9/1019/F3.large.jpg&#34;&gt;&lt;img src=&#34;http://g3journal.org/content/2/9/1019/F3.medium.gif&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trees</title>
+      <link>/2012/05/17/trees/</link>
+      <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/17/trees/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it.  Here&amp;rsquo;s a link to &lt;a href=&#34;http://kbroman.files.wordpress.com/2012/05/trees1.pdf&#34;&gt;the full page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with &lt;a href=&#34;http://www.stat.wisc.edu/~ane&#34;&gt;considerable help&lt;/a&gt;), regarding phylogenetic trees.  It&amp;rsquo;s part of &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl_combined.pdf&#34;&gt;this paper&lt;/a&gt;, which I&amp;rsquo;m getting ready to re-submit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Genetic testing of sperm donors</title>
+      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <description>&lt;p&gt;A recent New York Times article &lt;a href=&#34;http://www.nytimes.com/2012/05/15/health/in-sperm-banks-a-matrix-of-untested-genetic-diseases.html&#34;&gt;discusses the potential need for genetic screening of sperm donors&lt;/a&gt;. A couple of points struck me as rather odd.&lt;/p&gt;
+
+&lt;p&gt;One, the mention of fragile X syndrome, has been corrected:&lt;/p&gt;
+
+&lt;blockquote&gt;
+An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.)
+&lt;/blockquote&gt;
+
+&lt;p&gt;The other:&lt;/p&gt;
+
+&lt;blockquote&gt;
+Sperm donors are no more likely to carry genetic diseases than anybody else, but they can father a far greater number of children: 50, 100 or even 150, each a potential inheritor of flawed genes, and each a vector for making those genes more pervasive in the general population.
+&lt;/blockquote&gt;
+
+&lt;p&gt;But the frequency of offspring of sperm donors with genetic diseases would be the same whether there were many more donors with one child each or fewer donors with many children each, and so it&amp;rsquo;s not clear how sperm donors fathering many children is an argument for genetic testing, except that with fewer donors for the same number of offspring, one would not need to perform as many genetic tests, and so there would be a considerable cost savings.&lt;/p&gt;
+
+&lt;p&gt;The article led with a story about a couple whose child, fathered by a sperm donor, has cystic fibrosis.  But the chance of that is the same whether or not the sperm came from a donor or in the usual way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rob Tibshirani and Andy Clark named to NAS</title>
+      <link>/2012/05/03/tibshirani-named-to-nas/</link>
+      <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/03/tibshirani-named-to-nas/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www-stat.stanford.edu/~tibs/&#34;&gt;Rob Tibshirani&lt;/a&gt; and &lt;a href=&#34;http://mbg.cornell.edu/faculty-staff/faculty/clark.cfm&#34;&gt;Andy Clark&lt;/a&gt; are now &lt;a href=&#34;http://www.nasonline.org/news-and-multimedia/news/2012_05_01_NAS_Election.html&#34;&gt;members of the National Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microarrays suck</title>
+      <link>/2012/04/25/microarrays-suck/</link>
+      <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/04/25/microarrays-suck/</guid>
+      <description>
+
+&lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-1-what-the-hell-is-that&#34;&gt;Lesson 1: What the hell is that?&lt;/h3&gt;
+
+&lt;p&gt;Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf&#34;&gt;autozygosity in the CEPH families&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;a large, common human inversion polymorphism&lt;/a&gt;, and most recently &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf&#34;&gt;sample mixups&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, &amp;ldquo;Hmm, that&amp;rsquo;s interesting,&amp;rdquo; and so I made some more plots.  And then I saw this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.&lt;/p&gt;
+
+&lt;p&gt;Following up on this, it seems that the plaid pattern is the result of a set of bad arrays that should have been but hadn&amp;rsquo;t been detected before.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-2-look&#34;&gt;Lesson 2: Look&lt;/h3&gt;
+
+&lt;p&gt;Of course, I wouldn&amp;rsquo;t have found this array problem if I hadn&amp;rsquo;t looked.  And in my several years working on this project, I hadn&amp;rsquo;t looked.&lt;/p&gt;
+
+&lt;p&gt;I was overwhelmed by the 500 microarrays × 6 tissues × 40,000 probes, and so didn&amp;rsquo;t make the sorts of plots that I should have.&lt;/p&gt;
+
+&lt;p&gt;Plus, this is the first real microarray project I&amp;rsquo;ve been involved in, and I haven&amp;rsquo;t known what to look for.  (I should have looked at images of correlation matrices with arrays sorted by similarity as determined from hierarchical clustering.)&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/many_boxplots.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.&lt;/p&gt;
+
+&lt;p&gt;I quite like the picture.&lt;/p&gt;
+
+&lt;p&gt;The code is available within my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, though there&amp;rsquo;s not much to it.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-3-don-t-trust-anyone&#34;&gt;Lesson 3: Don&amp;rsquo;t trust anyone&lt;/h3&gt;
+
+&lt;p&gt;Don&amp;rsquo;t even trust yourself.&lt;/p&gt;
+
+&lt;p&gt;I relied on others to do the data cleaning.  I should have checked things more carefully.&lt;/p&gt;
+
+&lt;p&gt;I looked at the data quite closely a year or so ago and detected sample mix-ups.  In correcting those mistakes, I spent a lot of time looking at the array data and trying to identify bad arrays.  Clearly I didn&amp;rsquo;t look closely enough, or I just looked at the wrong things.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-4-take-your-time&#34;&gt;Lesson 4: Take your time&lt;/h3&gt;
+
+&lt;p&gt;Scientists are under a lot of pressure to produce and often are not exploring data as thoroughly as the data deserve.&lt;/p&gt;
+
+&lt;p&gt;But if you rush through data diagnostics, you could embarrass yourself later.&lt;/p&gt;
+
+&lt;p&gt;More importantly, take the time to follow up on apparent artifacts.  For me, the unintended analyses are more interesting than the planned ones.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-basic-strategy-for-data-diagnostics&#34;&gt;My basic strategy for data diagnostics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Expect errors&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Think about what might have gone wrong and how such problems might be revealed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make lots of specially-tailored plots&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create a (potentially informal) pipeline of all of the useful diagnostics you&amp;rsquo;ve used in the past&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make more plots just because you think they might interesting&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If something looks odd, figure out why&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collaborative Cross papers</title>
+      <link>/2012/02/16/collaborative-cross-papers/</link>
+      <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/02/16/collaborative-cross-papers/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.genetics.org/site/misc/MouseGeneticResources.xhtml&#34;&gt;batch of 15 papers&lt;/a&gt; on the mouse Collaborative Cross appeared in &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt; today, including two of my own:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Broman KW (2012) &lt;a href=&#34;http://www.genetics.org/content/190/2/403.full&#34;&gt;Genotype probabilities at intermediate generations in the construction of recombinant inbred lines&lt;/a&gt;. &lt;em&gt;Genetics&lt;/em&gt; 190:403-412&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Broman KW (2012) &lt;a href=&#34;http://www.g3journal.org/content/2/2/199.full&#34;&gt;Haplotype probabilities in advanced intercross populations&lt;/a&gt;. &lt;em&gt;G3&lt;/em&gt; 2:199-202&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>James Crow</title>
+      <link>/2012/02/06/james-crow/</link>
+      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/02/06/james-crow/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/James_F._Crow&#34;&gt;James Crow&lt;/a&gt; died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was &lt;em&gt;the nicest person I&amp;rsquo;ve met&lt;/em&gt; . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;There have been a number of obituaries: &lt;a href=&#34;http://www.nytimes.com/2012/01/11/science/james-f-crow-population-genetics-pioneer-dies-at-95.html&#34;&gt;New York Times&lt;/a&gt;, &lt;a href=&#34;http://www.nature.com/nature/journal/v481/n7382/full/481444a.html&#34;&gt;Nature&lt;/a&gt;, &lt;a href=&#34;http://www.genetics.org/site/misc/genet138610.pdf&#34;&gt;Genetics&lt;/a&gt;. Also see &lt;a href=&#34;http://whyevolutionistrue.wordpress.com/2012/01/05/jim-crow-died/&#34;&gt;Jerry Coyne&amp;rsquo;s comments&lt;/a&gt;.  The one in Nature, by &lt;a href=&#34;http://en.wikipedia.org/wiki/Alexey_Kondrashov&#34;&gt;Alexey Kondrashov&lt;/a&gt;, is my favorite: it really captures his humor. Here are a couple of quotes from the final paragraph:&lt;/p&gt;
+
+&lt;blockquote&gt;When asked about his religious views, he always cheerfully replied that the Bible is &#34;important if true&#34;.&lt;/blockquote&gt;
+
+&lt;blockquote&gt;Crow also explained to an insistent advocate of a healthy lifestyle that exercise prolongs life only by as much time as one spends exercising, so he did not see a point in it.&lt;/blockquote&gt;
+
+&lt;p&gt;Another of Jim&amp;rsquo;s jokes: at the end of his recent talks, on the standard acknowledgement slide, he thanked the Social Security Administration for its financial support.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; is also publishing a series of commentaries on Jim&amp;rsquo;s life and work, commissioned to celebrate his 95th birthday. Dan Hartl &lt;a href=&#34;http://www.genetics.org/content/189/4/1129.full&#34;&gt;wrote about his teaching&lt;/a&gt;; Seymour Abrahamson &lt;a href=&#34;http://www.genetics.org/content/190/1/1.full&#34;&gt;wrote about his public service&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Last summer, I sent him a couple of papers that I was writing. In response to, &amp;ldquo;I think you&amp;rsquo;ll find this interesting,&amp;rdquo; he said, &amp;ldquo;You are right. I did find it interesting.&amp;rdquo; He also wrote, &amp;ldquo;This is a masterful paper.&amp;rdquo; And later, &amp;ldquo;While I am writing let me mention something I forgot to say yesterday.  Your diagrams are very neat and very useful, both the chromosomes and the dominos.  The latter are particularly useful.  One picture is worth many words in this case.&amp;rdquo; I cherish those comments.&lt;/p&gt;
+
+&lt;p&gt;The dominos he&amp;rsquo;s referring to are in the 20+ supplemental tables to one of the papers. Here&amp;rsquo;s an example:
+&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/dominos.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In August, I sat with Jim in his office, discussing the two papers. I asked him for advice on how to maintain a balanced life, referring particularly to my obsession, over several weeks, with the calculations in those papers. He did not offer any advice, but expressed that he had also experienced such intense periods of concentration and obsession about a problem, with a mixture of pleasure and pain, though in hindsight mostly pleasure.&lt;/p&gt;
+
+&lt;p&gt;A few years ago, I gave a talk in the &lt;a href=&#34;http://www.evolution.wisc.edu/&#34;&gt;Evolution seminar series&lt;/a&gt;. Jim wasn&amp;rsquo;t able to attend, but later he mentioned that he enjoyed listening to the recording of my talk, though it was a bit hard to follow without the visuals. To think of Jim sitting at a computer listening to me speak without access to the slides&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;I wish I could be more like him. In particular, I wish I paid as much attention to others&amp;rsquo;  work, and to science generally, as I do to my own work.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://www.genetics.wisc.edu&#34;&gt;Laboratory of Genetics&lt;/a&gt; at UW-Madison is raising money for a &lt;a href=&#34;http://www.genetics.wisc.edu/node/691&#34;&gt;James F. Crow Endowed Professorship&lt;/a&gt;. Consider &lt;a href=&#34;https://secure.supportuw.org/MultiPage/processStep1.do?seq=6949&#34;&gt;making a donation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parachutes</title>
+      <link>/2011/10/19/parachutes/</link>
+      <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/19/parachutes/</guid>
+      <description>&lt;p&gt;I went to a great talk today by &lt;a href=&#34;http://humangenome.duke.edu/people/david-goldstein&#34;&gt;David Goldstein&lt;/a&gt;, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: &lt;a href=&#34;http://www.bmj.com/content/327/7429/1459.full.pdf&#34;&gt;Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials&lt;/a&gt;. The main conclusion:&lt;/p&gt;
+
+&lt;blockquote&gt;We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.&lt;/blockquote&gt;
+
+&lt;p&gt;Make sure to read the statement regarding the authors&amp;rsquo; contributions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lager yeast</title>
+      <link>/2011/09/19/lager-yeast/</link>
+      <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/19/lager-yeast/</guid>
+      <description>&lt;p&gt;Last week, I attended an excellent seminar by &lt;a href=&#34;http://hittinger.genetics.wisc.edu/&#34;&gt;Chris Hittinger&lt;/a&gt; on the identification and evolution of &lt;a href=&#34;http://hittinger.genetics.wisc.edu/#Aug22_2011&#34;&gt;lager yeast&lt;/a&gt; (see &lt;a href=&#34;http://www.pnas.org/content/early/2011/08/17/1105430108.full.pdf+html&#34;&gt;the paper&lt;/a&gt;), part of &lt;a href=&#34;http://www.evolution.wisc.edu/node/30&#34;&gt;my favorite seminar series&lt;/a&gt;, on &lt;a href=&#34;http://www.evolution.wisc.edu&#34;&gt;evolution&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[Forgive me if this description is not fully accurate.] Ales are the original (proper, better tasting) type of beer; they&amp;rsquo;re brewed at a warmer temperature, with &amp;ldquo;top-fermenting&amp;rdquo; yeast (the yeast rises to the top or is suspended throughout the column). Lagers were developed in the 15th century in Bavaria and are brewed at a colder temperature, with &amp;ldquo;bottom-fermenting&amp;rdquo; yeast (the yeast settles to the bottom). Lagers spread world-wide in the 19th century, and now are the most popular fermented beverage (but that&amp;rsquo;s mostly &lt;a href=&#34;http://www.millercoors.com&#34;&gt;swill&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;(Chris explained the top vs bottom business: it has to do with &lt;a href=&#34;http://en.wikipedia.org/wiki/Yeast_flocculation&#34;&gt;flocculation&lt;/a&gt; genes; lager yeast clumps together and drop out of the suspension. Flocculation is different than precipitation; the latter concerns the case that the substance is first dissolved in the liquid rather than merely suspended.)&lt;/p&gt;
+
+&lt;p&gt;The yeast for brewing ales is &lt;em&gt;Saccharomyces cerevisiae&lt;/em&gt;; it&amp;rsquo;s apparently long been known that lager yeast is a hybrid between the ale yeast and something else, but the origin of that something else has not been known. Previous efforts to identify it have not been successful.&lt;/p&gt;
+
+&lt;p&gt;Chris and colleagues (the &lt;a href=&#34;http://www.saccharomycessensustricto.org/cgi-bin/s3&#34;&gt;SSS Consortium&lt;/a&gt;) sought to expand the known yeast species by gathering new strains in the wild on five continents. As part of that effort, they identified a new species in Argentina, adapted to fermenting in cold temperatures, that turned out to be the missing part of the hybrid that formed lager yeast. They believe that the yeast was brought from South America to Bavaria sometime after the 15th century (when lagers were first developed) but before the 19th century (when they became widespread).&lt;/p&gt;
+
+&lt;p&gt;Who would have thought you&amp;rsquo;d have to go to Argentina to figure this out?&lt;/p&gt;
+
+&lt;p&gt;Chris mentioned that he prefers lager, while his former postdoc advisor, &lt;a href=&#34;http://www.genetics.wustl.edu/mjlab/&#34;&gt;Mark Johnston&lt;/a&gt;, prefers ales, and that they&amp;rsquo;ve had more debate on that point than on the science. I agree with Mark.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

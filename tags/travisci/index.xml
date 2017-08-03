@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travisci on the stupidest thing...</title>
+    <link>/tags/travisci/</link>
+    <description>Recent content in Travisci on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Fri, 25 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/travisci/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Session info from R/Travis</title>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
+      <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
+      <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
+
+&lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t want to go with a fully custom Travis script, your &lt;a href=&#34;http://docs.travis-ci.com/user/customizing-the-build/&#34;&gt;customization options&lt;/a&gt; are limited. We really only care about the case of a failure, so &lt;code&gt;after_success&lt;/code&gt; is not of interest, and &lt;code&gt;after_script&lt;/code&gt; seems not to be run if there&amp;rsquo;s a Travis fail. Moreover, &lt;code&gt;script&lt;/code&gt; and &lt;code&gt;after_failure&lt;/code&gt; are defined by the main &lt;code&gt;language: r&lt;/code&gt; script, so you can&amp;rsquo;t change them without going all-custom.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s left is &lt;code&gt;before_script&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I want to see the result of &lt;code&gt;devtools::session_info()&lt;/code&gt; with the package of interest loaded, but the package actually gets built &lt;em&gt;after&lt;/em&gt; &lt;code&gt;before_script&lt;/code&gt; is run, so we&amp;rsquo;ll need to build and install it, even though it&amp;rsquo;ll be built and installed again afterwards. The best I could work out is in &lt;a href=&#34;https://github.com/kbroman/testsysfile/blob/master/.travis.yml#L12-L19&#34;&gt;this example &lt;code&gt;.travis.yml&lt;/code&gt; file&lt;/a&gt;, with the key bits being:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;before_script:
+  - export PKG_NAME=$(Rscript -e &#39;cat(paste0(devtools::as.package(&amp;quot;.&amp;quot;)$package))&#39;)
+  - export PKG_TARBALL=$(Rscript -e &#39;pkg &amp;lt;- devtools::as.package(&amp;quot;.&amp;quot;); cat(paste0(pkg$package,&amp;quot;_&amp;quot;,pkg$version,&amp;quot;.tar.gz&amp;quot;))&#39;)
+  - R CMD build --no-build-vignettes .
+  - R CMD INSTALL ${PKG_TARBALL}
+  - rm ${PKG_TARBALL}
+  - echo &amp;quot;Session info:&amp;quot;
+  - Rscript -e &amp;quot;library(${PKG_NAME});devtools::session_info(&#39;${PKG_NAME}&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I use &lt;code&gt;--no-build-vignettes&lt;/code&gt; in &lt;code&gt;R CMD build&lt;/code&gt; as otherwise the package would be built and installed yet another time. And I remove the &lt;code&gt;.tar.gz&lt;/code&gt; file afterwards, to avoid having the later check complain about the extra file.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an &lt;a href=&#34;https://travis-ci.org/kbroman/testsysfile#L850-L864&#34;&gt;example of the session info in the Travis log&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have suggests about how to simplify this, I&amp;rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for [showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

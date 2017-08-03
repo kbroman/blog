@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on the stupidest thing...</title>
+    <link>/tags/statistics/</link>
+    <description>Recent content in Statistics on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Fri, 08 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/statistics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I am a data scientist</title>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
+      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
+      <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
+
+&lt;blockquote&gt;When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math.
+
+If you&#39;re analyzing data, you&#39;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&#39;s still statistics.
+
+If you say that one kind of data analysis is statistics and another kind is not, you&#39;re not allowing innovation. We need to define the field broadly.
+
+You may not like what some statisticians do. You may feel they don&#39;t share your values. They may embarrass you. But that shouldn&#39;t lead us to abandon the term &#34;statistics&#34;.&lt;/blockquote&gt;
+
+&lt;p&gt;I still sort of feel that way, but I must admit that &lt;em&gt;my&lt;/em&gt; definition of &amp;ldquo;statistics&amp;rdquo; is rather different than most others&amp;rsquo; definition. In my view, a good statistician will consider &lt;em&gt;all&lt;/em&gt; aspects of the data analysis process:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;the broader context of a scientific question&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;study design&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;data handling, organization, and integration&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;data cleaning&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;data visualization&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;exploratory data analysis&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;formal inference methods&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;clear communication of results&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;development of useful and trustworthy software tools&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;actually answering real questions&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I missed some things there, but my main point is that most academic statisticians focus solely on developing &amp;ldquo;sophisticated&amp;rdquo; methods for formal inference, and while I agree that that is an important piece, in my experience as an applied statistician, the other aspects are often of vastly greater importance. In many cases, we don&amp;rsquo;t need to develop sophisticated new methods, and most of my effort is devoted to the other aspects, and these are generally treated as being unworthy of consideration by academic statisticians.&lt;/p&gt;
+
+&lt;p&gt;As I wrote in a later post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2014/05/01/reform-academic-statistics/&#34;&gt;Reform academic statistics&lt;/a&gt;&amp;rdquo;, we as a field appear satisfied with&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Papers that report new methods with no usable software&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Applications that focus on toy problems&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Talks that skip the details of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Data visualizations that are both ugly and ineffective&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Discussions of &lt;em&gt;Data Science&lt;/em&gt; generally recognize the full range of activities that are required for the analysis of data, and place greater value on such things as data visualization and software tools which are &lt;em&gt;obviously&lt;/em&gt; important but not viewed so by many statisticians.&lt;/p&gt;
+
+&lt;p&gt;And so I&amp;rsquo;ve come to &lt;em&gt;embrace&lt;/em&gt; the term Data Science.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Data Science&lt;/em&gt; is also a much more straightforward and understandable label for what I do. I don&amp;rsquo;t think we should &lt;em&gt;need&lt;/em&gt; a new term, and I think we should argue against misunderstandings of Statistics rather than slink off to a new &amp;ldquo;brand&amp;rdquo;. But in general, when I talk about Data Science, I feel I can better trust that folks will understand that I am talking about the broad set of activities required in good data analysis.&lt;/p&gt;
+
+&lt;p&gt;If people ask me what I do, I&amp;rsquo;ll continue to say that I&amp;rsquo;m a Statistician, even though I do tend to stumble over the word. But I am also a &lt;em&gt;Data Scientist&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;One last thing: I&amp;rsquo;ve also come to realize that computer science folks working in computational biology are really just like me. They have expertise in a somewhat different set of tools, but then that&amp;rsquo;s true for pretty much every statistician, too: they&amp;rsquo;re much like me but they have expertise in a somewhat different set of tools. And it&amp;rsquo;s nice to be able to say that &lt;em&gt;we&amp;rsquo;re all data scientists&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;It should be recognized, too, that academic computer science suffers from many of the same problems that academic statistics has suffered: an overemphasis on novelty, sophistication, and toy applications, and an under-appreciation for solving real problems, for data visualization, and for useful software tools.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Memories of past JSMs</title>
+      <link>/2015/08/03/memories-of-past-jsms/</link>
+      <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/03/memories-of-past-jsms/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;http://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;http://imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;http://www.tibs.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;http://www.ssc.ca&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/&#34;&gt;JSM 2015&lt;/a&gt; is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Berkeley&lt;/a&gt;), I got free registration in return for some small service work. I didn&amp;rsquo;t register formally, but they got a list of volunteers and printed name tags from that. My name tag said &amp;ldquo;&lt;strong&gt;Bioman&lt;/strong&gt;.&amp;rdquo; I considered changing my name, since &lt;strong&gt;Bioman&lt;/strong&gt; is so awesome.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Advice I got from a &lt;a href=&#34;https://www.stat.berkeley.edu/~evans/&#34;&gt;Berkeley faculty member&lt;/a&gt;: avoid the contributed papers sessions. Nevertheless, my office mate dragged me to one. One of the speakers showed scatterplots produced with Minitab, in glorious 80×24 ascii resolution, with &lt;code&gt;*&lt;/code&gt;&amp;rsquo;s, and digits to indicate over-plotting.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At JSM 1996 in Chicago, I shared a hotel room with Michael Camarri. He&amp;rsquo;d found the place. It had no air conditioning. That was bad.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At that &amp;lsquo;96 JSM, Michael and I went to a huge Berkeley dinner at the conference hotel. It was obnoxiously expensive so we split a personal-sized pizza, to save our money for, um, the pub. The other table was living it up with champagne and lobster. Seriously. And then they wanted to split the check evenly. Seriously. Without any consideration for students. (I pay better attention to students&amp;rsquo; needs, from that experience.)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That same night, Michael and I and the considerable entourage we&amp;rsquo;d formed ran into &lt;a href=&#34;http://research.jax.org/faculty/gary-churchill.html&#34;&gt;Gary Churchill&lt;/a&gt; at the &lt;a href=&#34;http://www.rockbottom.com/locations/chicago&#34;&gt;Rock Bottom&lt;/a&gt;. He was sitting alone with a beer. I latched onto him and bent his ear about QTL mapping and &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/thesis.pdf&#34;&gt;my thesis work&lt;/a&gt;. When we got up to leave, I asked him if he&amp;rsquo;d remembered me (we&amp;rsquo;d met previously when he&amp;rsquo;d visited Berkeley). He admitted that he hadn&amp;rsquo;t, &amp;ldquo;But I&amp;rsquo;ll remember you now!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We ended up at the &lt;a href=&#34;http://www.crobar.com/crobar-chicago.html&#34;&gt;Crō*Bar&lt;/a&gt;, which featured free tattoos and body piercing.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At JSM 2003 in San Francisco (I think), I spoke at a Sunday afternoon contributed papers session on statistical genetics. Many people didn&amp;rsquo;t realize that they&amp;rsquo;d added Sunday afternoon sessions. And there were two invited sessions on statistical genetics at the same time. We had just one audience member. In fact, one of the speakers didn&amp;rsquo;t even show up, and we waited through that time slot so as not to disturb the schedule. (It seemed like there was a greater risk of losing our audience member.) I went last, and when I got up to speak, a &lt;a href=&#34;http://www.calpoly.edu/~srein/&#34;&gt;friend of mine&lt;/a&gt; joined the audience. &amp;ldquo;When I got up to speak, the audience doubled!&amp;rdquo; is how I like to characterize it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There was a session with John Chambers, Robert Gentleman, and Duncan Tempel Lang on the future of &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;, in room that seated 25 comfortably. There was crowd of like 50 people packed in a big bunch outside the door, hoping to at least hear John Chambers&amp;rsquo;s voice.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At JSM 2005 in Minneapolis, I was talking to some random statistician in a pub and made a statement like, &amp;ldquo;Does anyone still use Splus? Anyone who still uses Splus is an idiot.&amp;rdquo; It turned out that the guy worked for Insightful, or whatever the company was that owned Splus at the time. &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt; said the guy looked like he was going to punch me.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There was the bet I made with &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt;, in which I promised to &lt;a href=&#34;http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;put a certain variation on the Johns Hopkins &lt;em&gt;Bloomberg&lt;/em&gt; School of Public Health logo&lt;/a&gt; on one of the slides of my talk, in exchange for a month&amp;rsquo;s beer. I stayed up really late preparing, but I was ultimately successful.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At the end of an evening, &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt;, &lt;a href=&#34;http://www.albany.edu/sph/19585.php&#34;&gt;Greg&lt;/a&gt;, and I paid the waitress to &lt;em&gt;not&lt;/em&gt; bring us the round of drinks that Ingo was trying to buy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Actually, I think those last 3 were all on the same night.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In the &lt;a href=&#34;https://cran.r-project.org/doc/Rnews/Rnews_2002-3.pdf&#34;&gt;December, 2002 issue&lt;/a&gt; of &lt;a href=&#34;https://cran.r-project.org/doc/Rnews/&#34;&gt;R news&lt;/a&gt; (superseded by the &lt;a href=&#34;http://journal.r-project.org/&#34;&gt;R Journal&lt;/a&gt;), I poked fun at Dallas, a previous JSM site. I didn&amp;rsquo;t attend the meeting in Dallas. Here&amp;rsquo;s what I wrote:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;A good time was had at the Joint Statistical Meetings (JSM) in New York City, August 11–15, 2002. After several years of dismal locations (who can forget Dallas?), this year&#39;s JSM began a series of venues possibly even more interesting than the Meetings: in the next two years, the JSM will be in San Francisco and Toronto.&lt;/blockquote&gt;
+
+&lt;p&gt;I have other memories that I can&amp;rsquo;t share here. Find me at &lt;a href=&#34;https://twitter.com/hashtag/jsm2015&#34;&gt;#JSM2015&lt;/a&gt; next week. Seattle is sure to be great!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reform academic statistics</title>
+      <link>/2014/05/01/reform-academic-statistics/</link>
+      <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
+
+&lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
+
+&lt;p&gt;Following the &lt;a href=&#34;http://www.rss.org.uk/&#34;&gt;RSS&lt;/a&gt; &lt;a href=&#34;http://www.worldofstatistics.org/presentations-and-panelists&#34;&gt;Future of the Statistical Sciences Workshop&lt;/a&gt;, Rafael was &lt;a href=&#34;http://simplystatistics.org/2013/11/18/feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop&#34;&gt;quite optimistic&lt;/a&gt; about the prospects for academic statistics, as he noted considerable consensus on the following points:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;We need to engage in real present-day problems&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Computing should be a big part of our PhD curriculum&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We need to deliver solutions&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We need to improve our communication skills&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jeff said, &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/&#34;&gt;Data science only poses a threat to (bio)statistics if we don&amp;rsquo;t adapt,&lt;/a&gt;&amp;rdquo; and made the following series of proposals:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Remove some theoretical requirements and add computing requirements to statistics curricula.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Focus on statistical writing, presentation, and communication as a main part of the curriculum.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Focus on positive interactions with collaborators (being a scientist) rather than immediately going to the referee attitude.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add a unit on translating scientific problems to statistical problems.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add a unit on data munging and getting data from databases.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Integrating real and live data analyses into our curricula.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make all our students create an R package (a data product) before they graduate.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Most important of all have a &amp;ldquo;big tent&amp;rdquo; attitude about what constitutes statistics.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I agree strongly with what they&amp;rsquo;ve written. To make it happen, we ultimately need to reform our &lt;em&gt;values&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Currently, we (as a field) appear satisfied with&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Papers that report new methods with no usable software&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Applications that focus on toy problems&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Talks that skip the details of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Data visualizations that are both ugly and ineffective&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further, we tend to get more excited about the &lt;em&gt;fanciness&lt;/em&gt; of a method than its &lt;em&gt;usefulness&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;We &lt;em&gt;should&lt;/em&gt; value&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Usefulness above fanciness&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tool building (e.g., usable software)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Data visualization&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In-depth knowledge of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In evaluating (bio)statistics faculty, we should consider not just the number of &lt;em&gt;JASA&lt;/em&gt; or &lt;em&gt;Biometrics&lt;/em&gt; papers they&amp;rsquo;ve published, but also whether they&amp;rsquo;ve made themselves useful, and to the scientific community and well as to other statisticians.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

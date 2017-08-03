@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/programming/</link>
+    <link>/tags/programming/</link>
     <description>Recent content in Programming on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/programming/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/programming/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>miner and craft</title>
-      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>/2017/05/31/miner-and-craft/</guid>
       <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
 &lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>deeply nested functions</title>
-      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <link>/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
     do.call(rbind,
@@ -51,10 +51,10 @@
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
 &lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
 &lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
@@ -259,6 +259,615 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I don’t think we can draw general conclusions about the relative speed and file size of the three approaches from these results. And I think they’re all really useful and interesting.&lt;/p&gt;
 &lt;p&gt;But in this particular case, the file compression didn’t really help with &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; and slowed things down. When accessing the data, &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; was considerably faster than &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; when the data were organized with the SNPs as columns, but was considerably slower when the data were in the opposite orientation. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; has much faster access times, but with a larger file size that takes longer to write.&lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Write unit tests!</title>
+      <link>/2015/12/07/write-unit-tests/</link>
+      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/12/07/write-unit-tests/</guid>
+      <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve recently been working on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation of R/qtl to better handle high-dimensional data and more complex crosses, such as &lt;a href=&#34;http://www.genetics.org/content/190/2/437.short&#34;&gt;Diversity Outbred mice&lt;/a&gt;. In doing so, I&amp;rsquo;m trying to make use of the software engineering principles that I&amp;rsquo;ve learned over the last 15 years, which pretty much correspond to the ideas in &amp;ldquo;&lt;a href=&#34;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745&#34;&gt;Best Practices for Scientific Computing&lt;/a&gt;&amp;rdquo; (&lt;a href=&#34;http://www.third-bit.com/&#34;&gt;Greg Wilson&lt;/a&gt; et al., PLOS Biology 12(1): e1001745, &lt;a href=&#34;http://doi.org/10.1371/journal.pbio.1001745&#34;&gt;doi:10.1371/journal.pbio.1001745&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m still working on &amp;ldquo;Make names consistent, distinctive, and meaningful&amp;rdquo;, but I&amp;rsquo;m doing pretty well on writing shorter functions with less repeated code, and &lt;em&gt;particularly importantly&lt;/em&gt; I&amp;rsquo;m writing extensive unit tests.
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;The basic idea is to break up your code into small functions that ideally do just one thing. (These are the &amp;ldquo;units&amp;rdquo;.) And then write tests that explicitly check whether those functions are giving the correct answers. That is, don&amp;rsquo;t just test that the code &lt;em&gt;runs&lt;/em&gt;; you want to know that your code is &lt;em&gt;giving the right answers&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;Last week, I was working on implementing a basic genome scan function. I included the option of doing weighted least squares with known weights, because it&amp;rsquo;s easy enough to do, and R/qtl had done that. (I&amp;rsquo;ve never actually &lt;em&gt;used&lt;/em&gt; that feature, but it&amp;rsquo;s been there.) And my results were matching those that R/qtl provided. Well, mostly: in the case of multiple phenotypes, with some phenotypes having missing values, and when doing a weighted analysis, the results from R/qtl and R/qtl2 were quite different.&lt;/p&gt;
+
+&lt;p&gt;I expect you may be questioning the logic of testing code by comparing it to software that has not been formally tested. I was thinking the same thing. And so I wrote some tests that compared results to those using &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;&amp;rsquo;s &lt;code&gt;lm()&lt;/code&gt; function. And (surprise) the results from &lt;code&gt;lm()&lt;/code&gt; matched R/qtl2 but not R/qtl. So it was R/qtl that was the problem.&lt;/p&gt;
+
+&lt;p&gt;So that had me debugging the &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scanone.R&#34;&gt;&lt;code&gt;scanone&lt;/code&gt; function in R/qtl&lt;/a&gt;, the R code for which is &lt;strong&gt;831&lt;/strong&gt; lines long and was written according to the principle, &amp;ldquo;I&amp;rsquo;ll just add this one thing and then clean things up later,&amp;rdquo; with &amp;ldquo;later&amp;rdquo; really meaning &amp;ldquo;never&amp;rdquo;, and &amp;ldquo;this one thing&amp;rdquo; really meaning &amp;ldquo;all the things.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;I did, after resorting to a bunch of print/cat statements, &lt;a href=&#34;https://github.com/kbroman/qtl/commit/254a1c728&#34;&gt;find the bug&lt;/a&gt;. In subsetting the data to remove individuals with missing values, I&amp;rsquo;d forgotten to subset the weights. Back in 2012, I&amp;rsquo;d &lt;a href=&#34;https://github.com/kbroman/qtl/commit/a07c575&#34;&gt;fixed a related bug&lt;/a&gt;, but apparently it was only a partial fix. In thinking about the bug again while writing this post, and in looking back at the 2012 bug fix, I realized that I probably had the same bug in &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scantwo.R&#34;&gt;&lt;code&gt;scantwo&lt;/code&gt;&lt;/a&gt; (which is &lt;strong&gt;1443&lt;/strong&gt; lines long). Sure enough, and so now there&amp;rsquo;s &lt;a href=&#34;https://github.com/kbroman/qtl/commit/c71b3dfce9&#34;&gt;yet another bug fix&lt;/a&gt;, though not yet on &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://thebird.nl/&#34;&gt;Pjotr Prins&lt;/a&gt; was the first to encourage me towards software testing. &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/testthat&#34;&gt;testthat&lt;/a&gt; package makes it easy to do in R packages. In his &lt;a href=&#34;https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf&#34;&gt;paper about testthat&lt;/a&gt;, Hadley wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;It&#39;s not that we don&#39;t test our code, it&#39;s that we don&#39;t store our tests so they can be re-run automatically.
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is my favorite comment on testing; it totally applies to (old) me.&lt;/p&gt;
+
+&lt;p&gt;The bottom line:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Write unit tests.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;When you find a bug, first write a test for it and then fix the bug.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;When you find a bug, look for other possible instances of that bug, and fix them too.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To learn more about testing in R packages, see the &lt;a href=&#34;http://r-pkgs.had.co.nz/tests.html&#34;&gt;Testing&lt;/a&gt; chapter in Hadley&amp;rsquo;s &lt;a href=&#34;amazon.com/exec/obidos/ASIN/1491910593/7210-20&#34;&gt;R packages book&lt;/a&gt;. Also see the &lt;a href=&#34;http://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf&#34;&gt;slides for my lecture on testing and debugging&lt;/a&gt; in my &lt;a href=&#34;http://kbroman.org/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fitting linear mixed models for QTL mapping</title>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
+
+&lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
+
+&lt;p&gt;But I now finally understand LMMs, or at least a particular, simple LMM, and I&amp;rsquo;ve been able to write an implementation: the R package &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It seemed worthwhile to write down some of the details.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The model I want to fit is &lt;em&gt;y = X b + e&lt;/em&gt;, where var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;sK + tI&lt;/em&gt;, where &lt;em&gt;K&lt;/em&gt; is a known kinship matrix and &lt;em&gt;I&lt;/em&gt; is the identity matrix. Think of &lt;em&gt;y&lt;/em&gt; as a vector of phenotypes and &lt;em&gt;X&lt;/em&gt; as a matrix of covariates. Let &lt;em&gt;v = s+t&lt;/em&gt; be the residual variance, and let &lt;em&gt;h = s/(s+t) = s/v&lt;/em&gt; be the heritability.&lt;/p&gt;
+
+&lt;p&gt;First, a shout to &lt;a href=&#34;https://github.com/lomereiter&#34;&gt;Artem Tarasov&lt;/a&gt;, who wrote a &lt;a href=&#34;http://lomereiter.github.io/2015/02/16/lmm_cov.html&#34;&gt;series of blog posts&lt;/a&gt; walking through and explaining the source code for &lt;a href=&#34;https://github.com/MicrosoftGenomics/FaST-LMM&#34;&gt;FaST-LMM&lt;/a&gt; and &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;, and to &lt;a href=&#34;http://whatmind.com/&#34;&gt;Nick Furlotte&lt;/a&gt;, whose &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt; code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.&lt;/p&gt;
+
+&lt;p&gt;Back to the model fit:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For a fixed value of the heritability, &lt;em&gt;h&lt;/em&gt;, we have var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;v[hK + (1-h)I] = vV&lt;/em&gt; where &lt;em&gt;V&lt;/em&gt; is known. And so we end up with a general least squares problem, which we can fit in order to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;And actually, if you take the eigen decomposition of &lt;em&gt;K&lt;/em&gt;, say &lt;em&gt;K = UDU&amp;rsquo;&lt;/em&gt;, it turns out that you can write &lt;em&gt;hK + (1-h)I = hUDU&amp;rsquo; + (1-h)UU&amp;rsquo; = U[hD + (1-h)I]U&amp;rsquo;&lt;/em&gt;. That is, the eigenvectors of &lt;em&gt;K&lt;/em&gt; are the same as the eigenvectors of &lt;em&gt;hK + (1-h)I&lt;/em&gt;. And so if you pre-multiply &lt;em&gt;y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; by &lt;em&gt;U&amp;rsquo;&lt;/em&gt;, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Having fit the weighted least squares problem to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;, you can then calculate the corresponding log likelihood (or, better, the restricted log likelihood, if you want to do REML).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You&amp;rsquo;re then left with a one-dimensional optimization problem (optimizing the log likelihood over &lt;em&gt;h&lt;/em&gt;), which you can solve by &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34;&gt;Brent&amp;rsquo;s method&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It seems quite obvious in retrospect. It&amp;rsquo;s a bit embarrassing that it&amp;rsquo;s taken me so long to come to this understanding.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Session info from R/Travis</title>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
+      <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
+      <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
+
+&lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t want to go with a fully custom Travis script, your &lt;a href=&#34;http://docs.travis-ci.com/user/customizing-the-build/&#34;&gt;customization options&lt;/a&gt; are limited. We really only care about the case of a failure, so &lt;code&gt;after_success&lt;/code&gt; is not of interest, and &lt;code&gt;after_script&lt;/code&gt; seems not to be run if there&amp;rsquo;s a Travis fail. Moreover, &lt;code&gt;script&lt;/code&gt; and &lt;code&gt;after_failure&lt;/code&gt; are defined by the main &lt;code&gt;language: r&lt;/code&gt; script, so you can&amp;rsquo;t change them without going all-custom.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s left is &lt;code&gt;before_script&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I want to see the result of &lt;code&gt;devtools::session_info()&lt;/code&gt; with the package of interest loaded, but the package actually gets built &lt;em&gt;after&lt;/em&gt; &lt;code&gt;before_script&lt;/code&gt; is run, so we&amp;rsquo;ll need to build and install it, even though it&amp;rsquo;ll be built and installed again afterwards. The best I could work out is in &lt;a href=&#34;https://github.com/kbroman/testsysfile/blob/master/.travis.yml#L12-L19&#34;&gt;this example &lt;code&gt;.travis.yml&lt;/code&gt; file&lt;/a&gt;, with the key bits being:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;before_script:
+  - export PKG_NAME=$(Rscript -e &#39;cat(paste0(devtools::as.package(&amp;quot;.&amp;quot;)$package))&#39;)
+  - export PKG_TARBALL=$(Rscript -e &#39;pkg &amp;lt;- devtools::as.package(&amp;quot;.&amp;quot;); cat(paste0(pkg$package,&amp;quot;_&amp;quot;,pkg$version,&amp;quot;.tar.gz&amp;quot;))&#39;)
+  - R CMD build --no-build-vignettes .
+  - R CMD INSTALL ${PKG_TARBALL}
+  - rm ${PKG_TARBALL}
+  - echo &amp;quot;Session info:&amp;quot;
+  - Rscript -e &amp;quot;library(${PKG_NAME});devtools::session_info(&#39;${PKG_NAME}&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I use &lt;code&gt;--no-build-vignettes&lt;/code&gt; in &lt;code&gt;R CMD build&lt;/code&gt; as otherwise the package would be built and installed yet another time. And I remove the &lt;code&gt;.tar.gz&lt;/code&gt; file afterwards, to avoid having the later check complain about the extra file.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an &lt;a href=&#34;https://travis-ci.org/kbroman/testsysfile#L850-L864&#34;&gt;example of the session info in the Travis log&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have suggests about how to simplify this, I&amp;rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for [showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s not you, it&#39;s me</title>
+      <link>/2015/09/24/its-not-you-its-me/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/24/its-not-you-its-me/</guid>
+      <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
+
+&lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
+
+&lt;p&gt;I spent the day trying to resolve a bug in my early-in-development R package, &lt;a href=&#34;https://github.com/kbroman/qtl2geno&#34;&gt;qtl2geno&lt;/a&gt;. In the process, I blamed&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;TravisCI for not handling &lt;code&gt;system.file()&lt;/code&gt; properly.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;R-devel for having broken &lt;code&gt;system.file()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;data.table::fread()&lt;/code&gt; for treating &lt;code&gt;sep=NULL&lt;/code&gt; differently on different operating systems.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, none of these were true. I was just passing &lt;code&gt;sep=NULL&lt;/code&gt; to &lt;code&gt;data.table::fread()&lt;/code&gt;, and that worked in the previous version, but doesn&amp;rsquo;t work in the latest release on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, and I hadn&amp;rsquo;t yet installed the latest version of &lt;a href=&#34;https://github.com/Rdatatable/data.table&#34;&gt;data.table&lt;/a&gt; on my Mac, but Travis and my junky Windows laptop had the latest version.&lt;/p&gt;
+
+&lt;p&gt;The debugging process seems a potentially interesting case study, so I thought I&amp;rsquo;d write down some of the details.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The whole thing started off with my &lt;a href=&#34;https://github.com/kbroman/qtl2geno&#34;&gt;qtl2geno&lt;/a&gt; package suddenly failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;TravisCI&lt;/a&gt;, even though it was still passing &lt;code&gt;R CMD check&lt;/code&gt; on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn&amp;rsquo;t realize that until the very end of the story.)&lt;/p&gt;
+
+&lt;p&gt;The problem line was in a &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd&#34;&gt;vignette&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grav2 &amp;lt;- read_cross2( system.file(&amp;quot;extdata&amp;quot;, &amp;quot;grav2.zip&amp;quot;, package=&amp;quot;qtl2geno&amp;quot;) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The changes I&amp;rsquo;d been making to my package didn&amp;rsquo;t seem to have anything to do with this, so I concluded that the problem was &lt;code&gt;system.file()&lt;/code&gt;. Why that would have worked before but not now, I couldn&amp;rsquo;t say, but I figured maybe Travis was installing things differently than before.&lt;/p&gt;
+
+&lt;p&gt;I changed that code block to &lt;code&gt;eval=FALSE&lt;/code&gt;, but then a bunch of tests using &lt;code&gt;read_cross2( system.file( ... ) )&lt;/code&gt; were failing instead. Again, I figured the problem was &lt;code&gt;system.file()&lt;/code&gt;, because &lt;code&gt;R CMD check&lt;/code&gt; worked fine on my machine.&lt;/p&gt;
+
+&lt;p&gt;I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used &lt;a href=&#34;http://win-builder.r-project.org/&#34;&gt;R Win-builder&lt;/a&gt; to test my package with R-devel, and sure enough it failed there. So it wasn&amp;rsquo;t Travis. My conclusion was that R-devel had broken &lt;code&gt;system.file()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Poked around some more, and then finally used &lt;a href=&#34;http://win-builder.r-project.org/&#34;&gt;R Win-builder&lt;/a&gt; with R-release. And it failed with that, too. So it wasn&amp;rsquo;t R-devel either.&lt;/p&gt;
+
+&lt;p&gt;I then created a little tester package, &lt;a href=&#34;https://github.com/kbroman/testsysfile&#34;&gt;testsysfile&lt;/a&gt;, testing &lt;code&gt;system.file()&lt;/code&gt; with &lt;code&gt;read.csv()&lt;/code&gt; and then with &lt;code&gt;data.table::fread()&lt;/code&gt;. That all worked fine. So it seemed like it wasn&amp;rsquo;t actually &lt;code&gt;system.file()&lt;/code&gt;, but something within &lt;code&gt;read_cross2()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So finally I poked into my own code, and then I realized that I was passing a &lt;code&gt;NULL&lt;/code&gt; value to the &lt;code&gt;sep&lt;/code&gt; argument of &lt;code&gt;fread()&lt;/code&gt;. (See &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L99-L100&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L474-L485&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;But why would &lt;code&gt;sep=NULL&lt;/code&gt; work on my Mac but not on Travis or R Win-builder? I pulled out my junky Windows laptop (purchased in order to have a better sense of what my students were dealing with), went through all of the Windows updates, then updated R, &lt;a href=&#34;https://cran.r-project.org/bin/windows/Rtools/&#34;&gt;Rtools&lt;/a&gt;, and &lt;a href=&#34;http://rstudio.com&#34;&gt;RStudio&lt;/a&gt;, and tried things out there.&lt;/p&gt;
+
+&lt;p&gt;With my &lt;a href=&#34;https://github.com/kbroman/testsysfile&#34;&gt;testsysfile&lt;/a&gt; package, I could see that &lt;code&gt;data.table::fread()&lt;/code&gt; was throwing an error with &lt;code&gt;sep=NULL&lt;/code&gt; on Windows, though it was working fine on my Mac.&lt;/p&gt;
+
+&lt;p&gt;I spent some time making a patch to &lt;code&gt;fread()&lt;/code&gt;, and I was really close to submitting a pull request. (Treating &lt;code&gt;sep=NULL&lt;/code&gt; didn&amp;rsquo;t seem important, but it did seem like it the behavior should be the same on Windows and Mac.) But then I saw, in the &lt;a href=&#34;https://github.com/Rdatatable/data.table/blob/master/README.md&#34;&gt;README&lt;/a&gt; file, that there were &lt;a href=&#34;https://github.com/Rdatatable/data.table/blob/master/Contributing.md&#34;&gt;Contribution guidelines&lt;/a&gt;. I figured I&amp;rsquo;d better go through them.&lt;/p&gt;
+
+&lt;p&gt;The guidelines say, &amp;ldquo;squash all your commits together,&amp;rdquo; so I spent some time getting my two commits combined into one. The guidelines also say to update the README file. In doing so, I realized that they&amp;rsquo;d put a new version of data.table on CRAN on 19 Sep 2015, which is precisely when my package started failing on Travis.&lt;/p&gt;
+
+&lt;p&gt;And so then I finally installed the updated version of data.table on my Mac, and saw that there was no operating system dependence; the differences I was seeing were just because of the old vs new version of data.table.&lt;/p&gt;
+
+&lt;p&gt;So data.table was updated in a way where &lt;code&gt;sep=NULL&lt;/code&gt; was no longer working, and in my own code, I had relied on that. So six hours, &lt;a href=&#34;https://twitter.com/kwbroman/status/647125510686920705&#34;&gt;many tweets&lt;/a&gt;, lots of blaming of others, and finally I&amp;rsquo;d worked out that it was all my own fault.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MongoDB with D3.js</title>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
+      <description>
+
+&lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; is rough in spots, and while it works well for moderate-sized data sets, it can&amp;rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.&lt;/p&gt;
+
+&lt;p&gt;For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&amp;rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.&lt;/p&gt;
+
+&lt;p&gt;So, I&amp;rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&amp;rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb&#34;&gt;small illustration&lt;/a&gt; in my &lt;a href=&#34;https://github.com/kbroman/d3examples&#34;&gt;d3examples&lt;/a&gt; repository on GitHub.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;learning-mongodb&#34;&gt;Learning MongoDB&lt;/h3&gt;
+
+&lt;p&gt;I thought &lt;a href=&#34;http://www.mongodb.org&#34;&gt;mongoDB&lt;/a&gt; seemed like a good database to try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;storage of general documents seems a good match for the sort of data I work with&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;use of JSON/BSON seems a good match for &lt;a href=&#34;http://d3js.org&#34;&gt;D3.js&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So I&amp;rsquo;ve been taking an online-course though &lt;a href=&#34;https://university.mongodb.com/&#34;&gt;MongoDB University&lt;/a&gt; &amp;ndash; the &lt;a href=&#34;https://university.mongodb.com/courses/M101JS/about&#34;&gt;one for Node.js developers&lt;/a&gt;. I should have done &lt;a href=&#34;https://university.mongodb.com/courses/M101P/about&#34;&gt;the more general one, using Python&lt;/a&gt;, but I was thinking it&amp;rsquo;d be interesting to learn &lt;a href=&#34;http://nodejs.org&#34;&gt;Node&lt;/a&gt;, which is basically command-line scripting in javascript. I guess the advantage of node is that you can just write javascript. But personally I prefer to switch to the language appropriate to the task, so I&amp;rsquo;m not too hot on node. But maybe I just haven&amp;rsquo;t come to understand how best to make use of the whole callback function business.&lt;/p&gt;
+
+&lt;p&gt;MongoDB is not all that hard. It&amp;rsquo;s just kind of boring. The MongoDB Uni class is quite well done, though a few of the lectures were frustratingly out-of-date. I have the &lt;a href=&#34;http://shop.oreilly.com/product/0636920028031.do&#34;&gt;MongoDB book&lt;/a&gt;, but it&amp;rsquo;s been rough going; the class has been good for that. (The weekly deadlines have been good for motivating me to get through the dull &amp;ndash; for me &amp;ndash; material.)&lt;/p&gt;
+
+&lt;p&gt;The obvious bits with a database: how to get stuff into it and then back out of it. And then I guess deleting or changing stuff. So that&amp;rsquo;s all fine. I also learned about making indexes, so that you can more quickly get stuff out later. I don&amp;rsquo;t think my needs for these things are all that complicated. And so I think I understand those bits.&lt;/p&gt;
+
+&lt;h3 id=&#34;getting-the-data-for-the-data-vis&#34;&gt;Getting the data for the data vis&lt;/h3&gt;
+
+&lt;p&gt;The last key step that I was pondering last night: how do I, based on some user interaction with a data visualization (clicking on a point, or some such), fire off a request to the database and get the data back?&lt;/p&gt;
+
+&lt;p&gt;I guessed some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Representational_state_transfer&#34;&gt;RESTful API&lt;/a&gt; type thing. But while I can write that down, I don&amp;rsquo;t really understand what the hell it means.&lt;/p&gt;
+
+&lt;p&gt;But then I thought, what I need is to use some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods&#34;&gt;HTTP GET request&lt;/a&gt;. I kind of know what that means, but I don&amp;rsquo;t really understand what happens on the back end.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d been poking around in &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt;, the python-based mongoDB driver. (I like it much better than the &lt;a href=&#34;https://api.mongodb.org/ruby/current/&#34;&gt;ruby&lt;/a&gt; or &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/node-js/&#34;&gt;node&lt;/a&gt; drivers.) And as part of the Mongo University class, we used &lt;a href=&#34;http://expressjs.com/&#34;&gt;express&lt;/a&gt; with Node to do some HTTP GET and PUSH. If I want to grab some bit of data, I could have a python script running on the back end, looking for an http request, and then based on some key that was passed, grabbing data from the database and sending it back as JSON.&lt;/p&gt;
+
+&lt;p&gt;So I looked around for how to do this with mongoDB, found &lt;a href=&#34;https://github.com/10gen-labs/sleepy.mongoose&#34;&gt;sleepy mongoose&lt;/a&gt;, but that seemed like more than I wanted, and then came to &lt;a href=&#34;http://bottlepy.org/docs/dev/index.html&#34;&gt;bottle&lt;/a&gt;, which seemed like what I needed to handle the http bit. The example on the front page is just what I want: take a name from a URL and use it as input to some function, and give results back.&lt;/p&gt;
+
+&lt;h3 id=&#34;mongodb-d3-illustration&#34;&gt;MongoDB/D3 illustration&lt;/h3&gt;
+
+&lt;p&gt;The goal of all this: as part of some data visualization, the user will hover over or click a point, and this will lead to a request to the database, and then a plot of the data that comes back.&lt;/p&gt;
+
+&lt;p&gt;It seemed like a simple test case would be to use the data for &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;Anscombe&amp;rsquo;s quartet&lt;/a&gt;. Put the four series into a MongoDB database, and then have four buttons that, when clicked, cause a request to the database to grab the corresponding series, which is then plotted.&lt;/p&gt;
+
+&lt;p&gt;So first I wrote an &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/grab_anscombe.R&#34;&gt;R script&lt;/a&gt; to grab the data from the table on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;wikipedia page&lt;/a&gt; and write it to a &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt; file. I&amp;rsquo;m sure there was an easier way to get the data in a suitable form, but I was really procrastinating from writing a paper at this point, so I thought I&amp;rsquo;d test my web scraping skill in a simple case.&lt;/p&gt;
+
+&lt;p&gt;I then wrote a &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_insert.py&#34;&gt;python script&lt;/a&gt; that reads in the JSON file and inserts the data into a mongoDB database. You make a database connection with &lt;code&gt;pymongo.MongoClient()&lt;/code&gt; and insert the documents with the &lt;code&gt;insert_one()&lt;/code&gt; method to a collection. I later added an index with &lt;code&gt;create_index()&lt;/code&gt;; pretty silly here, but for large problems it would be useful.&lt;/p&gt;
+
+&lt;p&gt;So, the data&amp;rsquo;s in the database. How to get it back out? I wrote a second &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py&#34;&gt;python script&lt;/a&gt; (just 8 lines, really), that uses &lt;a href=&#34;http://bottlepy.org&#34;&gt;bottle&lt;/a&gt; to create a server that connects a URL to a function call. The function then uses &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt; to find the corresponding document and send it back as JSON. One &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;tricky bit that needed some extra googling&lt;/a&gt; was getting the browser to allow the request.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee&#34;&gt;D3 code (in coffeescript&lt;/a&gt;) is pretty standard. On clicking a button, I call &lt;code&gt;d3.json&lt;/code&gt; with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.&lt;/p&gt;
+
+&lt;p&gt;This &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/&#34;&gt;MongoDB/D3 illustration&lt;/a&gt; is a toy example, but it represents an important step for me, personally. I&amp;rsquo;m rather proud of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2015/06/anscombe_2.png&#34; alt=&#34;Anscombe&#39;s quartet, set 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cheat sheets for R-based Software Carpentry course</title>
+      <link>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
+      <description>&lt;p&gt;At the &lt;a href=&#34;http://software-carpentry.org&#34;&gt;Software Carpentry&lt;/a&gt; workshop at  &lt;a href=&#34;https://github.com/UW-Madison-ACI/boot-camps/blob/2014-08-25/README.md&#34;&gt;UW-Madison in August, 2014&lt;/a&gt;, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.&lt;/p&gt;
+
+&lt;p&gt;So at the SWC workshop at &lt;a href=&#34;http://karawoo.com/2015-04-27-wsu/&#34;&gt;Washington State University this week&lt;/a&gt;, we handed out the following five pages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf&#34;&gt;ddplyr&lt;/a&gt; (from RStudio)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/04/ggplot2-cheatsheet.pdf&#34;&gt;ggplot2&lt;/a&gt; (from RStudio)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/&#34;&gt;unix command line&lt;/a&gt; (from Dave Child at Cheatography)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf&#34;&gt;git&lt;/a&gt; (from GitHub)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf&#34;&gt;R Markdown&lt;/a&gt; (from RStudio)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I really appreciate the work (and design sense) that were put into these.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yet another R package primer</title>
+      <link>/2014/08/28/yet-another-r-package-primer/</link>
+      <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/08/28/yet-another-r-package-primer/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; is writing what will surely be a &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;great book&lt;/a&gt; about the basics of R packages. And &lt;a href=&#34;http://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; wrote a &lt;a href=&#34;https://twitter.com/ErikaMudrak/status/504732734674444288&#34;&gt;very&lt;/a&gt; &lt;a href=&#34;https://twitter.com/polesasunder/status/504785818922131456&#34;&gt;influential&lt;/a&gt; &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch&#34;&gt;post on how to write an R package&lt;/a&gt;. So it seems like that topic is well covered.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another &lt;a href=&#34;http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/&#34;&gt;minimal tutorial with an alliterative name&lt;/a&gt;, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic. (R packages are the best way to distribute R code, or just to keep track of your own personal R code, as part of a reproducible research process.)&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m going ahead with it, even though it doesn&amp;rsquo;t seem necessary: the &lt;a href=&#34;http://kbroman.org/pkg_primer&#34;&gt;R package primer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not completely done, but the &lt;a href=&#34;http://kbroman.org/pkg_primer&#34;&gt;basic stuff is there&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testing an R package&#39;s interactive graphs</title>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
+
+&lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
+
+&lt;p&gt;But if I want to post the package to &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, it seems (from the &lt;a href=&#34;http://cran.r-project.org/web/packages/policies.html&#34;&gt;CRAN policy&lt;/a&gt;) that the examples in the &lt;code&gt;.Rd&lt;/code&gt; files shouldn&amp;rsquo;t be opening a web browser. Thus, I need to surround the example code with &lt;code&gt;\dontrun{}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But I was using those examples, and &lt;code&gt;R CMD check&lt;/code&gt;, to open the series of examples for manual checking.&lt;/p&gt;
+
+&lt;p&gt;So, what I&amp;rsquo;ve decided to do:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Include examples opening a browser, but within &lt;code&gt;\dontrun{}&lt;/code&gt; so the browser isn&amp;rsquo;t opened in &lt;code&gt;R CMD check&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Also include examples that don&amp;rsquo;t open the browser, within &lt;code&gt;\dontshow{}&lt;/code&gt;, so that &lt;code&gt;R CMD check&lt;/code&gt; will at least check the basics.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a &lt;a href=&#34;http://ruby-lang.org&#34;&gt;ruby&lt;/a&gt; script that pulls out all of the examples from the &lt;code&gt;.Rd&lt;/code&gt; files, stripping off the &lt;code&gt;\dontrun{}&lt;/code&gt; and &lt;code&gt;\dontshow{}&lt;/code&gt; and pasting it all into a &lt;code&gt;.R&lt;/code&gt; file.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Periodically run &lt;code&gt;R CMD BATCH&lt;/code&gt; on that set of examples, to do the manual checking of the interactive graphs.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham/status/495535873711431681&#34;&gt;pointed me&lt;/a&gt; to &lt;strong&gt;&lt;code&gt;\donttest{}&lt;/code&gt;&lt;/strong&gt;, added in R ver 2.7 (in 2008). (More value from blog + twitter!)&lt;/p&gt;
+
+&lt;p&gt;So I replaced my &lt;code&gt;\dontrun{}&lt;/code&gt; bits with &lt;code&gt;\donttest{}&lt;/code&gt;. And I can use &lt;code&gt;devtools::run_examples()&lt;/code&gt; to run all of the examples, for my manual checks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why hadn&#39;t I written a function for that?</title>
+      <link>/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
+
+&lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;ll write the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;u &amp;lt;- par(&amp;quot;usr&amp;quot;)
+rect(u[1], u[3], u[2], u[4])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know &lt;em&gt;how&lt;/em&gt; many times I&amp;rsquo;ve typed that! Today I realized that I should put those two lines in a function &lt;code&gt;add_border()&lt;/code&gt;. And then I added &lt;code&gt;add_border()&lt;/code&gt; to my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman package&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It was a bit more work adding the &lt;a href=&#34;https://github.com/klutometis/roxygen&#34;&gt;Roxygen2&lt;/a&gt; comments for the documentation, but now I&amp;rsquo;ve got a proper function that is easier to use and much more clear.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/tpoi&#34;&gt;@tpoi&lt;/a&gt; &lt;a href=&#34;https://twitter.com/tpoi/status/489622770398289920&#34;&gt;pointed out&lt;/a&gt; that &lt;code&gt;box()&lt;/code&gt; does the same thing as my &lt;code&gt;add_border()&lt;/code&gt;. My general point still stands, and this raises the additional point: twitter + blog -&amp;gt; education.&lt;/p&gt;
+
+&lt;p&gt;I want to add, &amp;ldquo;I&amp;rsquo;m an idiot&amp;rdquo; but I think I&amp;rsquo;ll just say that there&amp;rsquo;s always more that I can learn about R. And I&amp;rsquo;ll remove &lt;code&gt;add_border&lt;/code&gt; from R/broman and just use &lt;code&gt;box()&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Googling errors</title>
+      <link>/2014/02/14/googling-errors/</link>
+      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/02/14/googling-errors/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
+
+&lt;blockquote&gt;[If attendees of this weekend&#39;s intro to python workshop leave with one thing, it&#39;ll be to Google your error messages first and foremost.](https://twitter.com/roguelynn/status/431321921909968896)&lt;/blockquote&gt;
+
+&lt;p&gt;I had just talked about the technique in my &lt;a href=&#34;http://kbroman.github.io/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, and I had a few recent examples.&lt;/p&gt;
+
+&lt;h3 id=&#34;gtk-warning-cannot-open-display&#34;&gt;Gtk-WARNING **: cannot open display:&lt;/h3&gt;
+
+&lt;p&gt;I was logged into a department server, trying to clone a private repository from GitHub, and got an error like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(gnome-ssh-askpass:1731): Gtk-WARNING **: cannot open display:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I googled that, and the first item was a &lt;a href=&#34;http://stackoverflow.com/questions/16077971/git-push-produces-gtk-warning&#34;&gt;stackoverflow question&lt;/a&gt;, whose answer said &amp;ldquo;&lt;code&gt;unset SSH_ASKPASS&lt;/code&gt;&amp;rdquo;, which totally worked.&lt;/p&gt;
+
+&lt;h3 id=&#34;except-keyerror-k-raise-attributeerror-k&#34;&gt;except KeyError, k: raise AttributeError, k&lt;/h3&gt;
+
+&lt;p&gt;AsciiDoc was giving me this error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;asciidoc -a data-uri -a toc -a toclevels=4 -a num example2.txt
+  File &amp;quot;/usr/local/bin/asciidoc&amp;quot;, line 101
+    except KeyError, k: raise AttributeError, k
+                   ^
+SyntaxError: invalid syntax
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Google the &amp;ldquo;&lt;code&gt;except KeyError&lt;/code&gt;&amp;rdquo; line, and you get to a &lt;a href=&#34;https://groups.google.com/forum/#!topic/asciidoc/7ICtOReZJ74&#34;&gt;Q&amp;amp;A on the AsciiDoc google group&lt;/a&gt;, which says &amp;ldquo;Asciidoc is Python 2, not 3.&amp;rdquo;&lt;/p&gt;
+
+&lt;h3 id=&#34;mclapply-isn-t-working-in-windows&#34;&gt;mclapply isn&amp;rsquo;t working in windows&lt;/h3&gt;
+
+&lt;p&gt;I got a report that parallel processing in my &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt; package wasn&amp;rsquo;t working in Windows.&lt;/p&gt;
+
+&lt;p&gt;I googled &amp;ldquo;mclapply isn&amp;rsquo;t working windows&amp;rdquo; (because mclapply was the function I was using) and got &lt;a href=&#34;http://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r&#34;&gt;this stackoverflow page&lt;/a&gt;, which says:&lt;/p&gt;
+
+&lt;blockquote&gt;since Windows does not have fork(), it will run standard lapply instead - no parallelization&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Read the source code</title>
+      <link>/2013/08/06/read-the-source-code/</link>
+      <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/08/06/read-the-source-code/</guid>
+      <description>&lt;p&gt;The other day, there was a bit of &lt;a href=&#34;https://twitter.com/hspter/status/363015797204992000&#34;&gt;a twitter conversation about &lt;code&gt;qqline&lt;/code&gt;&lt;/a&gt; in R.&lt;/p&gt;
+
+&lt;p&gt;It made me think: how exactly is the line produced by &lt;code&gt;qqline&lt;/code&gt; chosen? I seemed to recall that the line was through the first and third quartiles.&lt;/p&gt;
+
+&lt;p&gt;An advantage of R is that you can just type the name of the function and see the code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;# qqline
+function (y, datax = FALSE, distribution = qnorm, probs = c(0.25,
+    0.75), qtype = 7, ...)
+{
+    stopifnot(length(probs) == 2, is.function(distribution))
+    y &amp;lt;- quantile(y, probs, names = FALSE, type = qtype, na.rm = TRUE)
+    x &amp;lt;- distribution(probs)
+    if (datax) {
+        slope &amp;lt;- diff(x)/diff(y)
+        int &amp;lt;- x[1L] - slope * y[1L]
+    }
+    else {
+        slope &amp;lt;- diff(y)/diff(x)
+        int &amp;lt;- y[1L] - slope * x[1L]
+    }
+    abline(int, slope, ...)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I was right: They take the 25th and 75th percentiles of the data and of the theoretical distribution, calculate the slope and y-intercept of the line that goes through those two points, and use &lt;code&gt;abline&lt;/code&gt; to draw the line.&lt;/p&gt;
+
+&lt;p&gt;Open source means the source is open, so why not take the time to look at it?&lt;/p&gt;
+
+&lt;p&gt;Sometimes typing the name of the function doesn&amp;rsquo;t tell you much:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;# qqnorm
+function (y, ...)
+UseMethod(&amp;quot;qqnorm&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In such cases, you could try typing, for example, &lt;code&gt;qqnorm.default&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Still, the comments (if there were any) get stripped off, and for long functions, it&amp;rsquo;s not pretty.  So I like to keep a copy of the source code (for example, &lt;a href=&#34;http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz&#34;&gt;&lt;code&gt;R-3.0.1.tar.gz&lt;/code&gt;&lt;/a&gt;; extract it with &lt;code&gt;tar xzf R-3.0.1.tar.gz&lt;/code&gt;). I use &lt;code&gt;grep&lt;/code&gt; to find the relevant files.&lt;/p&gt;
+
+&lt;p&gt;For example,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep -r &#39;qqline&#39; R-3.0.1/src/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;shows that I should look for &lt;code&gt;qqline&lt;/code&gt; in&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;R-3.0.1/src/library/stats/R/qqnorm.R
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For something like &lt;code&gt;cor&lt;/code&gt;, you might want to do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep -r &#39;cor &amp;lt;-&#39; R-3.0.1/src
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or maybe:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep -r &#39;cor &amp;lt;-&#39; R-3.0.1/src/library/stats/R
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But for &lt;code&gt;cor&lt;/code&gt;, you probably also want to look at the C code, which is in&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;R-3.0.1/src/library/stats/src/cov.c
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can learn a lot about programming from the source code for R.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorials on git/github and GNU make</title>
+      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re not on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, you should be.  That&amp;rsquo;s &lt;em&gt;real&lt;/em&gt; open source.&lt;/p&gt;
+
+&lt;p&gt;To help some colleagues get started with &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, I wrote a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;minimal tutorial&lt;/a&gt;. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.&lt;/p&gt;
+
+&lt;p&gt;And for &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; folks, note that it&amp;rsquo;s easy to install R packages that are hosted on github, using &lt;a href=&#34;http://had.co.nz&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; package.  For example, to install &lt;a href=&#34;https://github.com/nachocab&#34;&gt;Nacho Caballero&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/nachocab/clickme&#34;&gt;clickme&lt;/a&gt; package:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;devtools&amp;quot;)
+library(devtools)
+install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Having written that git/github tutorial, I thought: I should write more such!&lt;/p&gt;
+
+&lt;p&gt;So I immediately wrote &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;a similar short tutorial&lt;/a&gt; on &lt;a href=&#34;http://www.gnu.org/software/make&#34;&gt;GNU make&lt;/a&gt;, which I think is the &lt;em&gt;most important tool&lt;/em&gt; for reproducible research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>charset=&#34;utf-8&#34;</title>
+      <link>/2013/03/02/charsetutf-8/</link>
+      <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/02/charsetutf-8/</guid>
+      <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.&lt;/p&gt;
+
+&lt;p&gt;I figured out that I needed to add &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt;, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script charset=&amp;quot;utf-8&amp;quot; type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;js/d3.js&amp;quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>D3.js difficulties</title>
+      <link>/2013/02/08/d3-js-difficulties/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
+
+&lt;p&gt;But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.&lt;/p&gt;
+
+&lt;h3 id=&#34;put-the-script-in-the-body&#34;&gt;Put the script in the body&lt;/h3&gt;
+
+&lt;p&gt;First, I&amp;rsquo;d tried to make a &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html&#34;&gt;truly simple example&lt;/a&gt;, making just an SVG with a little rectangle.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt;
+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;
+        src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var h=50;
+    var svg = d3.select(&amp;quot;body&amp;quot;).append(&amp;quot;svg&amp;quot;)
+                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;, h);
+    svg.append(&amp;quot;rect&amp;quot;).attr(&amp;quot;x&amp;quot;, 0).attr(&amp;quot;y&amp;quot;, 0)
+                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;,h);
+    &amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But this gives nothing.  You need to move the script from the &lt;code&gt;head&lt;/code&gt; to the &lt;code&gt;body&lt;/code&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html&#34;&gt;as it is here&lt;/a&gt;.  Then it works.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t really understand this.  Perhaps I should go back to my reading.&lt;/p&gt;
+
+&lt;p&gt;[&lt;strong&gt;Update&lt;/strong&gt;: I think I&amp;rsquo;ve figured this out.  If you put the script in the &lt;code&gt;head&lt;/code&gt;, the code gets run before the &lt;code&gt;body&lt;/code&gt; exists, and so there&amp;rsquo;s no &lt;code&gt;body&lt;/code&gt; in which to append the SVG.  &lt;em&gt;Conclusion&lt;/em&gt;: Put the link to your script at the very bottom of the html file.]&lt;/p&gt;
+
+&lt;h3 id=&#34;don-t-forget-enter&#34;&gt;Don&amp;rsquo;t forget &lt;code&gt;enter()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;In D3, you bind data to a bunch of objects, and attributes of the objects can be controlled by features of the data.  I write code sort of like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;svg.append(&amp;quot;g&amp;quot;).selectAll(&amp;quot;empty&amp;quot;)
+   .data(thedata)
+   .enter()
+   .append(&amp;quot;rect&amp;quot;)
+   .attr(&amp;quot;x&amp;quot;, (d) -&amp;gt; start[d])
+   .attr(&amp;quot;y&amp;quot;, pad.top)
+   .attr(&amp;quot;width&amp;quot;, (d) -&amp;gt; end[d] - start[d])
+   .attr(&amp;quot;height&amp;quot;, (d) -&amp;gt; hInner)
+   .attr(&amp;quot;fill&amp;quot;, (d) -&amp;gt; color[d])
+   .attr(&amp;quot;stroke&amp;quot;, &amp;quot;none&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My most common mistake so far: I forget the &lt;code&gt;.enter()&lt;/code&gt; part.  You don&amp;rsquo;t get a error message, but the objects don&amp;rsquo;t get created.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning a new language</title>
+      <link>/2012/06/21/learning-a-new-language/</link>
+      <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/06/21/learning-a-new-language/</guid>
+      <description>&lt;p&gt;It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.thebird.nl/&#34;&gt;A friend&lt;/a&gt; now has me doing &lt;a href=&#34;http://dlang.org&#34;&gt;D&lt;/a&gt;, wanting to find time to learn &lt;a href=&#34;http://www.ruby-lang.org&#34;&gt;ruby&lt;/a&gt;, and, most recently, playing with &lt;a href=&#34;https://developer.mozilla.org/en/JavaScript/Reference&#34;&gt;JavaScript&lt;/a&gt; and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m really excited about &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. It&amp;rsquo;s long past time for dynamic, interactive graphics to be routine. And with D3, I think it can be.&lt;/p&gt;
+
+&lt;p&gt;The object-oriented stuff is most foreign to me.  When your programming skills are stuck in the early 90s, there&amp;rsquo;s a lot to catch up on.  It&amp;rsquo;s hard to adapt to a new way of thinking.  But I&amp;rsquo;ve used &amp;ldquo;&lt;code&gt;this&lt;/code&gt;&amp;rdquo; a couple of times, which makes me feel quite accomplished.&lt;/p&gt;
+
+&lt;p&gt;The hardest part has been slowing myself down; I&amp;rsquo;m too impatient. It&amp;rsquo;s critical to have a challenging problem for motivation, but I tend to want to jump into complicated things when I should be a bit more methodical.&lt;/p&gt;
+
+&lt;p&gt;I want to make things like &lt;a href=&#34;http://mbostock.github.com/d3/talk/20111018/collision.html&#34;&gt;this&lt;/a&gt;. (I don&amp;rsquo;t really see a use for it yet, but it&amp;rsquo;s fun.)  So I start mucking about with code that I don&amp;rsquo;t yet understand and end up going nowhere for hours.&lt;/p&gt;
+
+&lt;p&gt;The important thing is that I&amp;rsquo;m having fun; eventually I&amp;rsquo;ll be able to usefully apply some new skills.  For now I&amp;rsquo;ve got this: [&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html&#34;&gt;Click&lt;/a&gt; for the dynamic version.]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/06/lod_curve1.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;PS: I really like &lt;a href=&#34;http://alignedleft.com/tutorials/d3/&#34;&gt;Scott Murray&amp;rsquo;s tutorials on D3&lt;/a&gt;. After working through those, &lt;a href=&#34;https://github.com/mbostock/d3/wiki/Tutorials&#34;&gt;other tutorials&lt;/a&gt; became much more understandable.  &lt;a href=&#34;http://eloquentjavascript.net/&#34;&gt;Eloquent JavaScript&lt;/a&gt; is a super-cool, open source, interactive text on JavaScript; also take a look at the &amp;ldquo;fork&amp;rdquo; for &lt;a href=&#34;http://coffeescript.org/&#34;&gt;CoffeeScript&lt;/a&gt;, &lt;a href=&#34;http://autotelicum.github.com/Smooth-CoffeeScript/&#34;&gt;Smooth CoffeeScript&lt;/a&gt;.  (I&amp;rsquo;m thinking I&amp;rsquo;ll switch to CoffeeScript once I&amp;rsquo;ve learned a bit of JavaScript; the useful libraries and examples are mostly in JavaScript.)&lt;/p&gt;
 </description>
     </item>
     

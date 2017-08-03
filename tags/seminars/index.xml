@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seminars on the stupidest thing...</title>
+    <link>/tags/seminars/</link>
+    <description>Recent content in Seminars on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Mon, 07 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/seminars/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Better-looking LaTeX/Beamer slides</title>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <description>
+
+&lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
+
+&lt;p&gt;Most people that use LaTeX to make slides seem to use &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX)&#34;&gt;Beamer&lt;/a&gt;, but the resulting slides are usually a bit busy, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html&#34;&gt;&lt;img src=&#34;http://deic.uab.es/~iblanes/beamer_gallery/large/Warsaw-default-default-01.png&#34; alt=&#34;Typical beamer slide&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I admire &lt;a href=&#34;http://en.wikipedia.org/wiki/Till_Tantau&#34;&gt;Till Tantau&lt;/a&gt; for creating Beamer; it was a great idea and it&amp;rsquo;s been widely adopted. But I don&amp;rsquo;t like talk outlines at all; I certainly don&amp;rsquo;t want to see one on every page.&lt;/p&gt;
+
+&lt;p&gt;After several days work, I&amp;rsquo;ve finally figured out how to create LaTeX/Beamer-based slides that look like what I want:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png&#34; alt=&#34;Open Access talk, title page&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this post, I&amp;rsquo;ll explain what I did.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;my-history&#34;&gt;My history&lt;/h3&gt;
+
+&lt;p&gt;Take a look at my &lt;a href=&#34;http://kbroman.org/pages/talks.html&#34;&gt;list of presentations&lt;/a&gt; (going back to 1998), and you&amp;rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.&lt;/p&gt;
+
+&lt;p&gt;My LaTeX-based slides (e.g., see &lt;a href=&#34;http://github.com/kbroman/Talk_Graphs&#34;&gt;my talks on data visualization&lt;/a&gt;) have been made using &lt;code&gt;\documentclass{article}&lt;/code&gt;, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Example 1
+\end{minipage}
+
+\vspace{30mm}
+
+\centerline{\includegraphics[height=6in]{Figs/fig1a.png}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I knew Beamer would give cleaner code, but how to also have cleaner slides?&lt;/p&gt;
+
+&lt;h3 id=&#34;a-starting-point&#34;&gt;A starting point&lt;/h3&gt;
+
+&lt;p&gt;I googled &amp;ldquo;clean Beamer slides&amp;rdquo; or something like that, and I came across &lt;a href=&#34;http://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;http://mikedewar.wordpress.com&#34;&gt;Mike Dewar&lt;/a&gt;, with a picture of a slide that looked much like what I wanted:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://mikedewar.files.wordpress.com/2009/02/beamer_screen.png&amp;amp;h=360&#34; alt=&#34;Slide from Mike Dewar&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I read his post and studied his code and played around. Then I searched for stuff on the &lt;a href=&#34;http://tex.stackexchange.com/&#34;&gt;LaTeX Stack Exchange&lt;/a&gt; and played around some more. Then I read the &lt;a href=&#34;ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf&#34;&gt;Beamer manual&lt;/a&gt; and played around some more.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s really not much to it.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-benefits-of-beamer&#34;&gt;The benefits of Beamer&lt;/h3&gt;
+
+&lt;p&gt;The main benefits of using Beamer:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Simpler code, because it will place elements in reasonable places without a lot of messing about&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple animations using less code, so you &lt;a href=&#34;http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself&#34;&gt;don&amp;rsquo;t repeat yourself&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Easy way to create handouts with notes on what you&amp;rsquo;re going to say. This is especially useful for others to learn from your presentation even if they can&amp;rsquo;t attend (which is most of the world). Here&amp;rsquo;s an example page from such a handout:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png&#34; alt=&#34;Example notes page from Open Access talk&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;here-s-what-i-did&#34;&gt;Here&amp;rsquo;s what I did&lt;/h3&gt;
+
+&lt;p&gt;I was preparing a talk on open access publishing. Here&amp;rsquo;s &lt;a href=&#34;http://github.com/kbroman/Talk_OpenAccess&#34;&gt;the source&lt;/a&gt;; &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;the pdf&lt;/a&gt;; and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;a pdf with notes on what I intend to say&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll go through the details of the code, in case it might be useful to someone.&lt;/p&gt;
+
+&lt;p&gt;Here are the first two lines of the &lt;code&gt;.tex&lt;/code&gt; file. The &lt;code&gt;12pt&lt;/code&gt; makes the default font a bit bigger, but not actually twelve point. The &lt;code&gt;t&lt;/code&gt; makes the body of each slide top-justified rather than vertically centered. You don&amp;rsquo;t need many packages, as lots of them (like &lt;code&gt;color&lt;/code&gt;) are included by default with Beamer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\documentclass[12pt,t]{beamer}
+\usepackage{graphicx}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These next two lines are for the notes pages (if you are going to use that feature); more below.  By default, the notes are hidden. I wrote a &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb&#34;&gt;ruby script&lt;/a&gt; to switch the &lt;code&gt;hide&lt;/code&gt; to &lt;code&gt;show&lt;/code&gt; and add &lt;code&gt;handout&lt;/code&gt; to the options in the &lt;code&gt;\documentclass&lt;/code&gt; command (more on that below). The &lt;code&gt;\setbeamertemplate&lt;/code&gt; command makes the note pages completely plain.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These next lines choose the default Beamer theme, get rid of all of the navigation stuff, and make it so any bookmarks are not shown when you open the PDF in Acrobat.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\usetheme{default}
+\beamertemplatenavigationsymbolsempty
+\hypersetup{pdfpagemode=UseNone} % don&#39;t show bookmarks on initial view
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These next lines change the font to Helvetica Neue, with Palatino used for the notes pages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}
+\setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I define a bunch of colors.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\definecolor{foreground}{RGB}{255,255,255}
+\definecolor{background}{RGB}{24,24,24}
+\definecolor{title}{RGB}{107,174,214}
+\definecolor{gray}{RGB}{155,155,155}
+\definecolor{subtitle}{RGB}{102,255,204}
+\definecolor{hilight}{RGB}{102,255,204}
+\definecolor{vhilight}{RGB}{255,111,207}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I use those colors, for the titles, subtitle, institute, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{subtitle}{fg=subtitle}
+\setbeamercolor{institute}{fg=gray}
+\setbeamercolor{normal text}{fg=foreground,bg=background}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This stuff changes the color of bullets in &lt;code&gt;itemize&lt;/code&gt; environments and changes nested bullet symbols to en-dashes (-) in gray, and a bit smaller.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeamercolor{item}{fg=foreground} % color of bullets
+\setbeamercolor{subitem}{fg=gray}
+\setbeamercolor{itemize/enumerate subbody}{fg=gray}
+\setbeamertemplate{itemize subitem}{{\textendash}}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This gives me a slide number in the lower-right, in gray.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeamertemplate{footline}{%
+    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This adds a bit of space between paragraphs on the notes pages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also made a few small macros to simplify some things.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ig}{\includegraphics}
+\newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;code-for-example-slides&#34;&gt;Code for example slides&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the code to create the title slide. (The content is determined by &lt;code&gt;\title&lt;/code&gt;, &lt;code&gt;\author&lt;/code&gt;, etc., before the &lt;code&gt;\begin{document}&lt;/code&gt;.) The first line is to get rid of the page number. The text in &lt;code&gt;\note{}&lt;/code&gt; will appear on a separate page after the title slide, in the version of the PDF with notes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+\setbeamertemplate{footline}{} % no page number here
+\frame{
+  \titlepage
+  \note{These are slides for a talk I will give on 24 Oct 2013, at a
+    symposium on open access publishing, organized by the Ebling
+    Library, UW{\textendash}Madison.}
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example regular slide. &lt;code&gt;\subt&lt;/code&gt; is a macro defined above and just makes that text smaller and in a different color.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\begin{frame}{Access in action}
+\subt{Interesting reference}
+
+\bigskip
+\centerline{
+\ig[height=0.75\textheight]{Images/img01.jpg}
+}
+
+\note{I&#39;ll begin with an illustration of what I mean by
+  access.
+
+  The other day I was reading a manuscript and saw an
+  article of interest.}
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a fancier slide, with a bit of animation: codes like &lt;code&gt;&amp;lt;2-&amp;gt;&lt;/code&gt;, which means that bit is not on the first version of this slide but appears on subsequent versions. When the LaTeX file is turned into a PDF, four versions of this slide are created. But in the handout (with the notes), there&amp;rsquo;ll be just one, and the &lt;code&gt;&amp;lt;3| handout 0&amp;gt;&lt;/code&gt; bits are to control the separate look on the animated slides and on the single-slide version that shows up with the notes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\begin{frame}{It&#39;s all about money}
+\subt{(Costs in scientific publishing)}
+
+\vspace{24pt}
+
+\bi
+\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Research}
+\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Writing}
+\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Peer review, editorial oversight}
+\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Journal administration}
+\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Copy editing, typesetting}
+\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Distribution}
+\item&amp;amp;lt;2-&amp;amp;gt;{\color&amp;amp;lt;2| handout 0&amp;amp;gt;{vhilight} \color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Profit}
+\ei
+\note{ [clip] }
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;a-version-with-notes&#34;&gt;A version with notes&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s nice to have a version of one&amp;rsquo;s slides that includes notes of what you&amp;rsquo;re going to say. I like &lt;a href=&#34;http://bost.ocks.org/mike&#34;&gt;Mike Bostock&lt;/a&gt; approach, as in &lt;a href=&#34;http://bost.ocks.org/mike/d3/workshop/#0&#34;&gt;these slides&lt;/a&gt;, with little sticky notes. But I don&amp;rsquo;t want to spend time trying to implement that in LaTeX, so I went with the built-in functionality in Beamer, though selecting a very plain template and adding a bit of space between paragraphs.&lt;/p&gt;
+
+&lt;p&gt;I also chose to create a handout with just a single snapshot of the animated pages (in which I sequentially overlayed a number of images).&lt;/p&gt;
+
+&lt;p&gt;Having added a &lt;code&gt;\note{}&lt;/code&gt; to each &amp;ldquo;frame,&amp;rdquo; there are just a few simple commands to add to the &lt;code&gt;.tex&lt;/code&gt; file to get it to compile to the handout with notes. So I wrote a &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb&#34;&gt;ruby script&lt;/a&gt; to make those changes.&lt;/p&gt;
+
+&lt;p&gt;I then used &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;pdfnup&lt;/a&gt; to make the notes PDF be 2-up: the slide above and the notes below. The details are in the &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/Makefile&#34;&gt;Makefile&lt;/a&gt;; if that&amp;rsquo;s not obvious, see my &lt;a href=&#34;http://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial about GNU make&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Hopkins SPH logo, part 3: Karl&#39;s revenge</title>
+      <link>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
+      <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m finally back to the story of the &lt;a href=&#34;http://www.jhsph.edu/&#34;&gt;Johns Hopkins Bloomberg School of Public Health&lt;/a&gt; &lt;a href=&#34;http://www.jhsph.edu/identity/coreIdentity/logoIntro.shtml&#34;&gt;logo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wrote &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Part 1&lt;/a&gt; in mid-November and &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;Part 2&lt;/a&gt; a week later.  I said that Part 3 was &amp;ldquo;coming soon,&amp;rdquo; but I&amp;rsquo;ve been a bit shy about revealing this.  You&amp;rsquo;ll see why.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;In August, 2005, &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt;, &lt;a href=&#34;http://www.albany.edu/sph/19585.php&#34;&gt;Greg&lt;/a&gt;, and I were sitting in a pub in Minneapolis in the early morning hours.  I think maybe &lt;a href=&#34;http://www.bcaffo.com&#34;&gt;Brian&lt;/a&gt; was there, too.  We had a session, which Ingo had organized, at the &lt;a href=&#34;http://www.amstat.org/meetings/jsm/2005/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; the next morning (really &lt;em&gt;that&lt;/em&gt; morning), and so we should have been sleeping.  (&lt;a href=&#34;http://sunduzkeles.org&#34;&gt;Sunduz&lt;/a&gt; was also in the session, but, sensibly, she wasn&amp;rsquo;t out drinking with us.)  I think this was later in the evening on the night I&amp;rsquo;d offended the guy from Insightful when I said that anyone who still used Splus rather than R was an idiot.  And it was just after Greg and I (and perhaps Brian, if he was there) paid the waitress to &lt;em&gt;not&lt;/em&gt; bring the round of drinks that Ingo had ordered.&lt;/p&gt;
+
+&lt;p&gt;Of course, we were talking about the Hopkins SPH logo (otherwise, why would I be discussing this?) as well as an innovative alternative that Brian Caffo had devised, and Ingo bet me to include Brian&amp;rsquo;s alternative logo in my talk the next day (or really &lt;em&gt;that&lt;/em&gt; day): If I included the alternative logo in my talk, he&amp;rsquo;d buy me beer for a month.&lt;/p&gt;
+
+&lt;p&gt;So, I did, though I had to stay up quite a bit later to get the images together.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kendzior/&#34;&gt;Christina&lt;/a&gt; and &lt;a href=&#34;http://www.stat.wisc.edu/~newton/&#34;&gt;Michael&lt;/a&gt; were in the back of the room.  Ingo was sitting in the front row.  We&amp;rsquo;d used Greg&amp;rsquo;s laptop, so there was evidence.  I made a bit of fun of the Bloomberg name change, and I made a bit of fun of the logo, by showing the &lt;a href=&#34;http://www.mcusa.org/Portals/8/Images/logo_251x130.gif&#34;&gt;Missionary Church&lt;/a&gt; logo.  And then on my third slide, I paused for a bit and looked at Ingo, and he looked at me and then up at the screen, and when I saw that he&amp;rsquo;d seen it, I flipped to the next slide.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s Brian&amp;rsquo;s alternative logo, next to the original.  Well, it&amp;rsquo;s Brian&amp;rsquo;s design but my rendering.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/logo.png&#34; alt=&#34;JHBSPH logo&#34; /&gt; &lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/altlogo.png&#34; alt=&#34;Alternative logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/03/evidence.pdf&#34;&gt;here&amp;rsquo;s a PDF of the logos in context&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And here&amp;rsquo;s the month of beer:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/month_of_beer.jpg&#34; alt=&#34;Month of beer&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ingo was willing to restock if necessary, but that wasn&amp;rsquo;t allowed.  We still have most of those coasters; they&amp;rsquo;ve been great toys for the kids.&lt;/p&gt;
+
+&lt;p&gt;In October that year, I used the alternative logo on the &amp;ldquo;&lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder&lt;/a&gt;&amp;rdquo; itself, on a second bet, with &lt;a href=&#34;http://www.jhsph.edu/faculty/directory/profile/3980/Pineda/Fernando_J.&#34;&gt;Fernando&lt;/a&gt; this time.&lt;/p&gt;
+
+&lt;p&gt;I gave another of those informal statistics lectures, this time on &amp;ldquo;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/regression_ho.pdf&#34;&gt;What is regression?&lt;/a&gt;&amp;rdquo;  Of course, they were pre-screening slides at that point, because of the &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2&#34;&gt;first such informal talk&lt;/a&gt;.  But I gave them a last-minute substitution, with just the one logo change.&lt;/p&gt;
+
+&lt;p&gt;(I&amp;rsquo;m pretty sure that &lt;a href=&#34;http://www.biostat.jhsph.edu/people/staff/hubbard.shtml&#34;&gt;Patty&lt;/a&gt; caught me, but she didn&amp;rsquo;t turn me in.)&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the second month of beer:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/second_month_of_beer.jpg&#34; alt=&#34;Second month of beer&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It all seems a bit juvenile in retrospect.  I guess I&amp;rsquo;m getting (or &lt;em&gt;have gotten&lt;/em&gt;) old.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins&#34;&gt;Ingo&lt;/a&gt; says that &amp;ldquo;juvenile&amp;rdquo; is another word for &amp;ldquo;hip and dynamic,&amp;rdquo; so I guess it&amp;rsquo;s just that I&amp;rsquo;m no longer hip and dynamic.&lt;/p&gt;
+
+&lt;p&gt;Related posts on the Hopkins SPH logo: &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1&#34;&gt;part 1&lt;/a&gt; | &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;part 2&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Hopkins SPH logo, part 2</title>
+      <link>/2012/11/21/the-hopkins-sph-logo-part-2/</link>
+      <pubDate>Wed, 21 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
+      <description>&lt;p&gt;Last week, I wrote about the &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Johns Hopkins &lt;strong&gt;Bloomberg&lt;/strong&gt; School of Public Health logo&lt;/a&gt;.  I now present part 2 of the story.&lt;/p&gt;
+
+&lt;p&gt;Hopkins SPH had done some fancy renovations of part of the building, including an important new feature, the &amp;ldquo;&lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder&lt;/a&gt;&amp;ldquo;: a big display composed of nine LCD screens in the atrium of the building, to display various PR type stuff.  (&amp;ldquo;Wall of Wonder&amp;rdquo; (WOW) is the official name!  Consider the &lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder policies&lt;/a&gt;, inspired by the events I detail below.) Here&amp;rsquo;s a photo:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/graphs_photos/IMG_0213a.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;A number of us in &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostatistics&lt;/a&gt; had the idea to have a short seminar series on Friday afternoon just before Happy Hour, making use of the WOW.  (Fridays at 4, biochemistry graduate students sell beer, and lots of SPH faculty, staff, and students gather to drink and chat.)  The concept was informal lectures about different statistics topics, suitable for a general audience.  Here&amp;rsquo;s the list of talks from 2005-2006.&lt;/p&gt;
+
+&lt;p&gt;I volunteered to do the first one, on &amp;ldquo;How to display data badly,&amp;rdquo; a lecture I&amp;rsquo;d given in my &amp;ldquo;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/teaching/labstat/&#34;&gt;Statistics for laboratory scientists&lt;/a&gt;&amp;rdquo; course, inspired by &lt;a href=&#34;http://www.jstor.org/sici?sici=0003-1305%28198405%2938%3A2%3C137%3AHTDDB%3E2.0.CO%3B2-N&#34;&gt;Howard Wainer&amp;rsquo;s 1984 article&lt;/a&gt; in &lt;a href=&#34;http://www.amstat.org/publications/tas.cfm&#34;&gt;The American Statistician&lt;/a&gt;.  It took a lot of negotiations to get access to the WOW, and even more to get beer served early and at the seminar.  But &lt;a href=&#34;http://www.jhsph.edu/faculty/directory/profile/3859/Zeger/Scott&#34;&gt;we&lt;/a&gt; pulled it off.&lt;/p&gt;
+
+&lt;p&gt;The concept of my talk was to take a reasonably good graph, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/11/fig1a.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and then show how to turn it into a terrible graph, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/11/fig1h.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In addition, as an ancillary commentary on the use of gratuitous animation in slides, I animated &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;the School&amp;rsquo;s logo&lt;/a&gt; on each slide, with those animations becoming increasingly intrusive as the talk went on.  Then, at the summary slide, it was flying all around.  I wasn&amp;rsquo;t going to refer to the logo in any way, or say anything about slide animations at all.  I just thought it would be a funny backdrop.&lt;/p&gt;
+
+&lt;p&gt;Well, to get the slides on the computer that drives the big screen, you need to send them to the &lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/&#34;&gt;Office of Communications&lt;/a&gt;.  So I did that the morning of, and then went off to teach a class.  When I got back to my office, I had a voice mail from someone in Communications, saying that they had applied &lt;a href=&#34;http://www.jhsph.edu/identity/commonCommunications/pptPresentations.shtml&#34;&gt;the School&amp;rsquo;s PowerPoint template&lt;/a&gt; to my slides.  (This was back in the days when I was using PowerPoint; you can see the slides for all of the talks I&amp;rsquo;ve given since 1998 &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations&#34;&gt;here&lt;/a&gt;; I stopped using PowerPoint in 2006.) The Communications person said that since she wasn&amp;rsquo;t as facile with PowerPoint as I was, I might want to take a look at the slides to be sure they were okay.&lt;/p&gt;
+
+&lt;p&gt;Of course, the animated logo was gone.  But also my slides had a blue background, while the School&amp;rsquo;s template had a light background, and so all of my &amp;ldquo;nice&amp;rdquo; figures looked terrible, being big blue rectangles in the middle of a light background.  And this was a talk about good (well, actually bad) graphics!&lt;/p&gt;
+
+&lt;p&gt;I could tell it would take all the time I had left before the talk to fix the figures, so I had to choose:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Fight, but probably lose, and then be stuck with ugly slides.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Cave in, and clean up the slides.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I wish I could say I chose the former option, but I&amp;rsquo;m weak, and I chose the latter.&lt;/p&gt;
+
+&lt;p&gt;After, there was considerable discussion in the Dean&amp;rsquo;s office about my &amp;ldquo;abuse&amp;rdquo; of the School&amp;rsquo;s logo.  And they created &lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;a formal policy&lt;/a&gt; on the use of the Wall of Wonder, which includes:&lt;/p&gt;
+
+&lt;blockquote&gt;When there are School events that involve external audiences the Office of External Affairs will manage the content of the Wall so that it is appropriate for the event.&lt;/blockquote&gt;
+
+&lt;p&gt;You can see the slides as presented, as well as the &amp;ldquo;Director&amp;rsquo;s Cut&amp;rdquo;, at &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/index.html#wow&#34;&gt;my web page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a slide from the Director&amp;rsquo;s Cut (the colors matched better originally; that they don&amp;rsquo;t now is an instance of one of the many reasons I hate PowerPoint):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/11/before.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here&amp;rsquo;s how it was presented:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/11/after.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Related posts on the Hopkins SPH logo: &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1&#34;&gt;part 1&lt;/a&gt; | &lt;a href=&#34;http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;part 3&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Practicing talks</title>
+      <link>/2012/06/22/practicing-talks/</link>
+      <pubDate>Fri, 22 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/06/22/practicing-talks/</guid>
+      <description>&lt;p&gt;Clay Johnson, the author of &lt;a href=&#34;http://www.amazon.com/gp/product/1449304680&#34;&gt;The Information Diet&lt;/a&gt;, recently wrote about &lt;a href=&#34;http://lifehacker.com/5920033/how-to-prep-for-a-presentation&#34;&gt;how to prepare to give a presentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was shocked.&lt;/p&gt;
+
+&lt;p&gt;First, he says&lt;/p&gt;
+
+&lt;blockquote&gt;When I started writing my book, I knew that authors generally make more money from speaking than they do from royalties, so I wanted my talks on the Information Diet to be great.&lt;/blockquote&gt;
+
+&lt;p&gt;I probably should have stopped there, since we clearly have completely different goals.  He wrote a book and is giving talks in order to make money?&lt;/p&gt;
+
+&lt;p&gt;He goes on to suggest a course of preparation that involves an &lt;em&gt;enormous&lt;/em&gt; amount of practice.&lt;/p&gt;
+
+&lt;p&gt;I guess stand-up comics do that, but me: I&amp;rsquo;ll flip through my slides and think through the tricky bits, but mostly I rely on experience and innate ability.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/giving_talks.pdf&#34;&gt;a talk I gave about giving talks&lt;/a&gt;, I mentioned that others have said to do 10 practice runs for every presentation.  But for me, my practice run is the time I gave the talk to a different group.  I can&amp;rsquo;t stand the sound of my voice, and I&amp;rsquo;m certainly not going to watch myself on video, not even &lt;a href=&#34;http://tinyurl.com/7ulrh6z&#34;&gt;this short one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mr. Johnson suggests having a test audience, in part to try out one&amp;rsquo;s jokes.  The intended humor in my talks is almost entirely spontaneous; if I have idea for a joke in advance, I will generally abandon it, as if I think about it too much it will just seem stupid.&lt;/p&gt;
+
+&lt;p&gt;The main reason I don&amp;rsquo;t practice talks is that I don&amp;rsquo;t want to waste time; it would take a lot of practice to get just a bit of improvement, and I could spend that time writing or programming or looking at data.&lt;/p&gt;
+
+&lt;p&gt;Also, I think if I give a talk too much, by practicing or otherwise, I&amp;rsquo;ll be less excited and interested in the material.  Without practice, I&amp;rsquo;m not so polished, but I&amp;rsquo;m more enthusiastic.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ENAR 2012</title>
+      <link>/2012/04/18/enar-2012/</link>
+      <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/04/18/enar-2012/</guid>
+      <description>
+
+&lt;p&gt;The annual &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org/&#34;&gt;eastern North America portion&lt;/a&gt; of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see &lt;a href=&#34;http://biostat.jhsph.edu&#34;&gt;old friends&lt;/a&gt;, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.&lt;/p&gt;
+
+&lt;h3 id=&#34;ways-to-annoy-me&#34;&gt;Ways to annoy me&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Distorted aspect ratios: I&amp;rsquo;m often seeing LCD projectors set up in wide format, stretching a presentation that was developed in the old 4:3 style. Is it not obvious that preserving the aspect ratio is more important than filling the screen?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This is especially bad with photographs:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian.jpg&#34; alt=&#34;&#34; /&gt;                 &lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian_stretch.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* It also makes fonts ugly:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian_slide.png&#34; alt=&#34;&#34; /&gt;     &lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian_slide_stretch.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Outlines for talks (especially 15 min talks): If you have only 15 min, don&amp;rsquo;t waste any time telling us what you&amp;rsquo;re going to be telling us; just tell us.  And even if you&amp;rsquo;ve got 45 min, I find the &amp;ldquo;Background, Methods, Simulations, Application, Discussion&amp;rdquo; outline totally useless, and anything more complicated than that seldom makes sense until the speaker is part way through the talk.  Why try to explain terminology before you&amp;rsquo;ve gotten to the background section?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&amp;ldquo;I&amp;rsquo;m running out of time so I&amp;rsquo;m going to skip the real data analysis and go quickly through some asymptotic results.&amp;rdquo;  Someone actually said that.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Opening night poster session (and for three hours!): It actually seemed to be working, but I sure wouldn&amp;rsquo;t want to be standing next to a poster from 8-11pm.  I would prefer:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;posters available to look at throughout the meeting&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;multiple poster sessions (so presenters have some opportunity to talk to each other)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;nothing happening at the time of a poster session&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dull talks by famous people: (I&amp;rsquo;m not talking about &lt;em&gt;you&lt;/em&gt;, fine reader, but the other famous people.)  Biology meetings will have a few invited speakers but the bulk of the talks will be chosen based on submitted abstracts.  Statistics meetings seem more often arranged to have people submit proposals for full sessions, with a slate of pre-selected speakers, and it is those sessions that are reviewed.  That seems the perfect design if you want crappy talks by famous people.  Perhaps I&amp;rsquo;m annoyed only because I&amp;rsquo;m a non-famous person who can give a good talk.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Caffeine</title>
+      <link>/2011/10/27/caffeine/</link>
+      <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/27/caffeine/</guid>
+      <description>&lt;p&gt;A cute and useful menu bar application for Macs: &lt;a href=&#34;http://lightheadsw.com/caffeine/&#34;&gt;Caffeine&lt;/a&gt;, available in the &lt;a href=&#34;http://itunes.apple.com/us/app/caffeine/id411246225&#34;&gt;App store&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen.  This is especially useful when you&amp;rsquo;re giving a talk.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parachutes</title>
+      <link>/2011/10/19/parachutes/</link>
+      <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/19/parachutes/</guid>
+      <description>&lt;p&gt;I went to a great talk today by &lt;a href=&#34;http://humangenome.duke.edu/people/david-goldstein&#34;&gt;David Goldstein&lt;/a&gt;, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: &lt;a href=&#34;http://www.bmj.com/content/327/7429/1459.full.pdf&#34;&gt;Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials&lt;/a&gt;. The main conclusion:&lt;/p&gt;
+
+&lt;blockquote&gt;We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.&lt;/blockquote&gt;
+
+&lt;p&gt;Make sure to read the statement regarding the authors&amp;rsquo; contributions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Animal research</title>
+      <link>/2011/10/12/animal-research/</link>
+      <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/12/animal-research/</guid>
+      <description>&lt;p&gt;Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a &lt;a href=&#34;http://tinyurl.com/45y2jny&#34;&gt;public discussion on animal research&lt;/a&gt;.  I was really nervous, but I ended up not saying much and learning quite a lot.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ophth.wisc.edu/faculty/kaufman&#34;&gt;Paul Kaufman&lt;/a&gt;, Chair of Ophthalmology at UW-Madison, gave a 45 min talk about his research on glaucoma using monkeys.  In particular, he sought to articulate one case in which animal research had been useful, and it was a good one: the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/3477218&#34;&gt;development of prostoglandins&lt;/a&gt; for lowering interocular pressure and so preventing or delaying the onset of glaucoma.  His talk was rather technical: great for me, but perhaps not so great for the audience (about 50 people, I would think mostly non-scientists).&lt;/p&gt;
+
+&lt;p&gt;After his talk, the other two panelists and I spoke briefly: &lt;a href=&#34;http://www.law.wisc.edu/profiles/racharo@wisc.edu&#34;&gt;Alta Charo&lt;/a&gt;, a bioethicist from the Law School, talked about the protection of human subjects and its relation to protection of animal subjects, and the importance of empathy for the subjects of research; &lt;a href=&#34;http://medhist.wisc.edu/faculty/lederer/index.shtml&#34;&gt;Sue Lederer&lt;/a&gt;, Chair of Medical History and Bioethics, pointed out what Paul Kaufman hadn&amp;rsquo;t mentioned in his presentation (how the animals are actually treated) and also mentioned the ethical issues in how we choose to spend research dollars (studying glaucoma versus, for example, treating trachoma, which affects as many people worldwide but is easily treated).&lt;/p&gt;
+
+&lt;p&gt;My own comments were the following:  I have some ambivalence about animal research: I&amp;rsquo;m personally rather squeamish and I&amp;rsquo;ve seen some bad experiments, but many scientific questions can only be answered through animal experiments.  I&amp;rsquo;m often asked about experimental design and sample size determination, but I don&amp;rsquo;t enjoy that aspect of things since a proper answer requires that you know the truth.   My usual response about sample size is: use as many animals as you can afford.  If your sample size is too large, you&amp;rsquo;ll have wasted a few excess animals, but if you&amp;rsquo;re sample size is too small, you&amp;rsquo;ll learn nothing and so will have wasted all of the animals.  Finally, I said that animal experiments, on the whole, are too small, and that large collaborative studies in which each animal provides more extensive information might actually lead to an overall reduction in animal numbers.  (Malcolm Macleod &lt;a href=&#34;http://www.nature.com/news/2011/110928/full/477511a.html&#34;&gt;wrote an opinion in Nature&lt;/a&gt; 2 weeks ago indicating some of the weaknesses of current animal experiments, in particular that they are too small.)&lt;/p&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t say anything else during the next hour of discussion.  There were a couple of places where I was inclined to comment, but it didn&amp;rsquo;t really seem necessary.&lt;/p&gt;
+
+&lt;p&gt;The first member of the audience to speak pointed out that the panel had talked about the necessity of animal research but not about ethics; something may appear necessary but still be unethical.  Later, another person said that there is no humane animal experimentation.  I think the key discussion concerned the housing of the primate research subjects.  Currently, they are housed singly in cages.  Paul Kaufman said that this could be done differently (say, in groups in a natural environment), but the cost would be astronomical and so less research could be done.  But that&amp;rsquo;s the key question: should there be more research done but with the monkeys kept in unhappy conditions, or less research but with the monkeys in more humane conditions?&lt;/p&gt;
+
+&lt;p&gt;The moderator, &lt;a href=&#34;https://mywebspace.wisc.edu/rstreiffer/web/&#34;&gt;Rob Streiffer&lt;/a&gt;, made some interesting points (for example, regarding reform versus abolition).  Paul Kaufman generally responded well to the questions, so I didn&amp;rsquo;t feel a need to back him up, though he may have gone a bit over the top at some points.  His answers were not always very friendly.&lt;/p&gt;
+
+&lt;p&gt;If I were to have added anything to the discussion, it would have been to say: not all animal research is done well, and the course of experiments that Paul described were basically the ideal—most experiments don&amp;rsquo;t work out so well.&lt;/p&gt;
+
+&lt;p&gt;Someone did come up to me afterwards to ask me to expand on my point larger collaborative experiments.  That made me happy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terry on communication</title>
+      <link>/2011/10/03/terry-on-communication/</link>
+      <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/10/03/terry-on-communication/</guid>
+      <description>&lt;p&gt;Relevant to &lt;a href=&#34;http://kbroman.org/blog/2011/09/29/seminars-bad-and-good/&#34;&gt;my recent comments on seminars&lt;/a&gt;, Terry Speed&amp;rsquo;s &lt;a href=&#34;http://bulletin.imstat.org/2011/09/terence&#39;s-stuff-speaking-reading-writing/&#34;&gt;latest commentary&lt;/a&gt; in the IMS Bulletin focuses on communication (talks and papers).&lt;/p&gt;
+
+&lt;p&gt;He says: &lt;em&gt;read others&amp;rsquo; work&lt;/em&gt; (which I would expand to say, &lt;em&gt;pay attention&lt;/em&gt;) and &lt;em&gt;practice&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Seminars, bad and good</title>
+      <link>/2011/09/29/seminars-bad-and-good/</link>
+      <pubDate>Thu, 29 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/29/seminars-bad-and-good/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafael Irizarry&lt;/a&gt; &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10686092687/25-minute-seminars&#34;&gt;recently proposed&lt;/a&gt; that the standard 50 min seminar be reduced to 25 min, with the extra time devoted to discussion. I &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10686092687/25-minute-seminars#comment-320436760&#34;&gt;commented there&lt;/a&gt; but should have just written at greater length here. I&amp;rsquo;ll do so now.&lt;/p&gt;
+
+&lt;h3 id=&#34;bad-seminars&#34;&gt;Bad seminars&lt;/h3&gt;
+
+&lt;p&gt;The overriding characteristic of a bad seminar is a lack of empathy for the audience.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Skipping the motivation and jumping into a pile of theory.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Covering way too much material too quickly.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Talking about something that is boring and/or trivial.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mucking about in details, particularly regarding simulations results.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Going over time, even by a minute.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Self-censorship is important. If you don&amp;rsquo;t have something new and interesting to say, talk about something old and interesting or don&amp;rsquo;t talk.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;good-seminars&#34;&gt;Good seminars&lt;/h3&gt;
+
+&lt;p&gt;An interesting topic (particularly, interesting data with an interesting question) trumps almost all else. I can be entertained with drivel, but afterwards I&amp;rsquo;ll realize it was drivel.&lt;/p&gt;
+
+&lt;p&gt;Show the data first. Skip the outline slide and jump into the data. With the problem understood, you can then explain how you&amp;rsquo;ll spend the rest of our time.&lt;/p&gt;
+
+&lt;p&gt;Focus on one thing and explain it well. I don&amp;rsquo;t want to see everything you&amp;rsquo;ve done in the last year or two, especially if it means it&amp;rsquo;ll be too fast to be understood; I just want to understand one thing that you&amp;rsquo;ve been thinking about.&lt;/p&gt;
+
+&lt;p&gt;Know your audience. Know what you should explain and what you can leave unexplained. (If in doubt, explain it. Most people are happy to hear a nice summary of something they know well, and if you lose them, you&amp;rsquo;re not likely to ever get them back.) Know what people will find interesting and what they will want skipped over.  This will be different for different audiences.&lt;/p&gt;
+
+&lt;p&gt;Skip the details of simulations results. Since you can modify the settings to get almost anything, I don&amp;rsquo;t really want to see detailed power curves (and definitely &lt;em&gt;don&amp;rsquo;t show me tables&lt;/em&gt;); skip to the bottom line.&lt;/p&gt;
+
+&lt;p&gt;Show lots of pictures, a few words, and almost no formulas. (&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafa&lt;/a&gt; has said to use no Greek letters, and has also said to use only pictures. I say: at least find a way to dispense with the subscripts.)&lt;/p&gt;
+
+&lt;p&gt;Label your figures, and not with &lt;code&gt;x[,1]&lt;/code&gt; and &lt;code&gt;x[,2]&lt;/code&gt;.  Don&amp;rsquo;t copy-and-paste from a paper (unless perhaps it&amp;rsquo;s to demonstrate how crappy the paper is; &lt;em&gt;that&amp;rsquo;s entertainment!&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Give a succinct summary at the end, in case the audience has lost track.&lt;/p&gt;
+
+&lt;h3 id=&#34;25-minutes&#34;&gt;25 minutes?&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m warming to the 25 min concept, but I&amp;rsquo;m still cool.  I can generally see how to edit others&amp;rsquo; talks down to 25 min, but my own?  I feel like I need that time.  But perhaps that&amp;rsquo;s because&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I work on such obscure problems that I have to spend 20 min on background.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;m lazy.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;ve been trained to talk for 50 min.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I just like to talk.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Still, it&amp;rsquo;s difficult or impossible to retain audience members&amp;rsquo; attention for much more than 25 min, and I can edit even my own talks to 25 min if I make a few approximations.&lt;/p&gt;
+
+&lt;h3 id=&#34;however&#34;&gt;However&lt;/h3&gt;
+
+&lt;p&gt;If we&amp;rsquo;re going to cut seminars to 25 min, let&amp;rsquo;s not fill out the hour with questions and discussion.  Let&amp;rsquo;s just go home early (or chat over coffee).&lt;/p&gt;
+
+&lt;p&gt;The discussion period of seminars is seldom so interesting that it deserves so much time.  Of course there are exceptions, but usually it&amp;rsquo;s a few people asking lame purposeless questions.&lt;/p&gt;
+
+&lt;p&gt;Perhaps, though, the questions are lame only because we&amp;rsquo;re all tired and want to go home.  After a refreshing 25 min talk, maybe we&amp;rsquo;ll be keen to delve deeper in an unstructured way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lager yeast</title>
+      <link>/2011/09/19/lager-yeast/</link>
+      <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/19/lager-yeast/</guid>
+      <description>&lt;p&gt;Last week, I attended an excellent seminar by &lt;a href=&#34;http://hittinger.genetics.wisc.edu/&#34;&gt;Chris Hittinger&lt;/a&gt; on the identification and evolution of &lt;a href=&#34;http://hittinger.genetics.wisc.edu/#Aug22_2011&#34;&gt;lager yeast&lt;/a&gt; (see &lt;a href=&#34;http://www.pnas.org/content/early/2011/08/17/1105430108.full.pdf+html&#34;&gt;the paper&lt;/a&gt;), part of &lt;a href=&#34;http://www.evolution.wisc.edu/node/30&#34;&gt;my favorite seminar series&lt;/a&gt;, on &lt;a href=&#34;http://www.evolution.wisc.edu&#34;&gt;evolution&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[Forgive me if this description is not fully accurate.] Ales are the original (proper, better tasting) type of beer; they&amp;rsquo;re brewed at a warmer temperature, with &amp;ldquo;top-fermenting&amp;rdquo; yeast (the yeast rises to the top or is suspended throughout the column). Lagers were developed in the 15th century in Bavaria and are brewed at a colder temperature, with &amp;ldquo;bottom-fermenting&amp;rdquo; yeast (the yeast settles to the bottom). Lagers spread world-wide in the 19th century, and now are the most popular fermented beverage (but that&amp;rsquo;s mostly &lt;a href=&#34;http://www.millercoors.com&#34;&gt;swill&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;(Chris explained the top vs bottom business: it has to do with &lt;a href=&#34;http://en.wikipedia.org/wiki/Yeast_flocculation&#34;&gt;flocculation&lt;/a&gt; genes; lager yeast clumps together and drop out of the suspension. Flocculation is different than precipitation; the latter concerns the case that the substance is first dissolved in the liquid rather than merely suspended.)&lt;/p&gt;
+
+&lt;p&gt;The yeast for brewing ales is &lt;em&gt;Saccharomyces cerevisiae&lt;/em&gt;; it&amp;rsquo;s apparently long been known that lager yeast is a hybrid between the ale yeast and something else, but the origin of that something else has not been known. Previous efforts to identify it have not been successful.&lt;/p&gt;
+
+&lt;p&gt;Chris and colleagues (the &lt;a href=&#34;http://www.saccharomycessensustricto.org/cgi-bin/s3&#34;&gt;SSS Consortium&lt;/a&gt;) sought to expand the known yeast species by gathering new strains in the wild on five continents. As part of that effort, they identified a new species in Argentina, adapted to fermenting in cold temperatures, that turned out to be the missing part of the hybrid that formed lager yeast. They believe that the yeast was brought from South America to Bavaria sometime after the 15th century (when lagers were first developed) but before the 19th century (when they became widespread).&lt;/p&gt;
+
+&lt;p&gt;Who would have thought you&amp;rsquo;d have to go to Argentina to figure this out?&lt;/p&gt;
+
+&lt;p&gt;Chris mentioned that he prefers lager, while his former postdoc advisor, &lt;a href=&#34;http://www.genetics.wustl.edu/mjlab/&#34;&gt;Mark Johnston&lt;/a&gt;, prefers ales, and that they&amp;rsquo;ve had more debate on that point than on the science. I agree with Mark.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

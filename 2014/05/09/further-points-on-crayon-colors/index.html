@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Further points on crayon colors - the stupidest thing...</title>
+<meta property="og:title" content="Further points on crayon colors - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Further points on crayon colors</h1>
+
+    
+    <span class="article-date">2014/05/09</span>
+    
+
+    <div class="article-content">
+      <p>I saw <a href="http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">this great post on crayola crayon colors</a> at the <a href="http://learnr.wordpress.com">Learning R blog</a>, reproducing a <a href="http://www.datapointed.net/2010/01/crayola-crayon-color-chart/">nice graph</a> of the Crayola crayon colors over time. (Also see <a href="http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/">this even nicer version</a>.)</p>
+
+<p>The <a href="http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">Learning R post</a> shows how to grab the crayon colors from the wikipedia page, &ldquo;<a href="https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">List of Crayola crayon colors</a>,&rdquo; directly in R. Here&rsquo;s the code (after some slight modifications due to changes in the page since 2010):</p>
+
+<pre><code>library(XML)
+theurl &lt;- &quot;http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&quot;
+crayontable &lt;- readHTMLTable(theurl, stringsAsFactors = FALSE)[[1]]
+crayons &lt;- crayontable[,grep(&quot;Hex&quot;, colnames(crayontable))]
+names(crayons) &lt;- crayontable[,&quot;Color&quot;]
+</code></pre>
+
+<p>Comparing these to what I&rsquo;d grabbed, I noted one small discrepancy on the Wikipedia page: Yellow Orange was listed as <code>&quot;#FFAE42&quot;</code> but the background color for the Yellow Orange cell in the table was <code>&quot;#FFB653&quot;</code>.</p>
+
+<p>So I created a Wikipedia account and edited the Wikipedia page.</p>
+
+<p>(Then I realized that I&rsquo;d made a mistake in my edit, undid my change, thought the whole thing through again, and edited the page again.)</p>
+
+<p>The <a href="http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">Learning R post</a> also showed a different way to sort the colors: convert to HSV, and then sort by the H then S then V. So <a href="https://github.com/kbroman/broman/commit/dde305de2c3cd5f3a00f7378fefd4f73a4520599">I edited my <code>plot_crayons()</code> function again</a>, to create the following picture:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png" alt="Crayon colors, again" /></p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

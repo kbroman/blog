@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>D3.js difficulties - the stupidest thing...</title>
+<meta property="og:title" content="D3.js difficulties - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">D3.js difficulties</h1>
+
+    
+    <span class="article-date">2013/02/08</span>
+    
+
+    <div class="article-content">
+      
+
+<p>I&rsquo;m pleased with my progress learning javascript and <a href="http://d3js.org">D3</a>. (I&rsquo;m actually writing <a href="http://coffeescript.org">coffeescript</a> rather than javascript.)</p>
+
+<p>But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.</p>
+
+<h3 id="put-the-script-in-the-body">Put the script in the body</h3>
+
+<p>First, I&rsquo;d tried to make a <a href="http://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html">truly simple example</a>, making just an SVG with a little rectangle.</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Put script in body&lt;/title&gt;
+    &lt;script type=&quot;text/javascript&quot;
+        src=&quot;http://d3js.org/d3.v3.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var h=50;
+    var svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+                .attr(&quot;height&quot;, h).attr(&quot;width&quot;, h);
+    svg.append(&quot;rect&quot;).attr(&quot;x&quot;, 0).attr(&quot;y&quot;, 0)
+                .attr(&quot;height&quot;, h).attr(&quot;width&quot;,h);
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>But this gives nothing.  You need to move the script from the <code>head</code> to the <code>body</code>, <a href="http://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html">as it is here</a>.  Then it works.</p>
+
+<p>I don&rsquo;t really understand this.  Perhaps I should go back to my reading.</p>
+
+<p>[<strong>Update</strong>: I think I&rsquo;ve figured this out.  If you put the script in the <code>head</code>, the code gets run before the <code>body</code> exists, and so there&rsquo;s no <code>body</code> in which to append the SVG.  <em>Conclusion</em>: Put the link to your script at the very bottom of the html file.]</p>
+
+<h3 id="don-t-forget-enter">Don&rsquo;t forget <code>enter()</code></h3>
+
+<p>In D3, you bind data to a bunch of objects, and attributes of the objects can be controlled by features of the data.  I write code sort of like this:</p>
+
+<pre><code class="language-javascript">svg.append(&quot;g&quot;).selectAll(&quot;empty&quot;)
+   .data(thedata)
+   .enter()
+   .append(&quot;rect&quot;)
+   .attr(&quot;x&quot;, (d) -&gt; start[d])
+   .attr(&quot;y&quot;, pad.top)
+   .attr(&quot;width&quot;, (d) -&gt; end[d] - start[d])
+   .attr(&quot;height&quot;, (d) -&gt; hInner)
+   .attr(&quot;fill&quot;, (d) -&gt; color[d])
+   .attr(&quot;stroke&quot;, &quot;none&quot;)
+</code></pre>
+
+<p>My most common mistake so far: I forget the <code>.enter()</code> part.  You don&rsquo;t get a error message, but the objects don&rsquo;t get created.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

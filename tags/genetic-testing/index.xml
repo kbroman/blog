@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genetic Testing on the stupidest thing...</title>
+    <link>/tags/genetic-testing/</link>
+    <description>Recent content in Genetic Testing on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Thu, 11 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/genetic-testing/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The future of personalized medicine</title>
+      <link>/2012/10/11/the-future-of-personalized-medicine/</link>
+      <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/10/11/the-future-of-personalized-medicine/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: &lt;a href=&#34;http://well.blogs.nytimes.com/2012/10/10/are-you-likely-to-respond-to-exercise/?smid=pl-share&#34;&gt;a genetic test for exercise&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Genetic testing of sperm donors</title>
+      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <description>&lt;p&gt;A recent New York Times article &lt;a href=&#34;http://www.nytimes.com/2012/05/15/health/in-sperm-banks-a-matrix-of-untested-genetic-diseases.html&#34;&gt;discusses the potential need for genetic screening of sperm donors&lt;/a&gt;. A couple of points struck me as rather odd.&lt;/p&gt;
+
+&lt;p&gt;One, the mention of fragile X syndrome, has been corrected:&lt;/p&gt;
+
+&lt;blockquote&gt;
+An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.)
+&lt;/blockquote&gt;
+
+&lt;p&gt;The other:&lt;/p&gt;
+
+&lt;blockquote&gt;
+Sperm donors are no more likely to carry genetic diseases than anybody else, but they can father a far greater number of children: 50, 100 or even 150, each a potential inheritor of flawed genes, and each a vector for making those genes more pervasive in the general population.
+&lt;/blockquote&gt;
+
+&lt;p&gt;But the frequency of offspring of sperm donors with genetic diseases would be the same whether there were many more donors with one child each or fewer donors with many children each, and so it&amp;rsquo;s not clear how sperm donors fathering many children is an argument for genetic testing, except that with fewer donors for the same number of offspring, one would not need to perform as many genetic tests, and so there would be a considerable cost savings.&lt;/p&gt;
+
+&lt;p&gt;The article led with a story about a couple whose child, fathered by a sperm donor, has cystic fibrosis.  But the chance of that is the same whether or not the sperm came from a donor or in the usual way.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

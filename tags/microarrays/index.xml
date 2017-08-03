@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microarrays on the stupidest thing...</title>
+    <link>/tags/microarrays/</link>
+    <description>Recent content in Microarrays on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Wed, 25 Apr 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/microarrays/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Microarrays suck</title>
+      <link>/2012/04/25/microarrays-suck/</link>
+      <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/2012/04/25/microarrays-suck/</guid>
+      <description>
+
+&lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-1-what-the-hell-is-that&#34;&gt;Lesson 1: What the hell is that?&lt;/h3&gt;
+
+&lt;p&gt;Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf&#34;&gt;autozygosity in the CEPH families&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;a large, common human inversion polymorphism&lt;/a&gt;, and most recently &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf&#34;&gt;sample mixups&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, &amp;ldquo;Hmm, that&amp;rsquo;s interesting,&amp;rdquo; and so I made some more plots.  And then I saw this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.&lt;/p&gt;
+
+&lt;p&gt;Following up on this, it seems that the plaid pattern is the result of a set of bad arrays that should have been but hadn&amp;rsquo;t been detected before.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-2-look&#34;&gt;Lesson 2: Look&lt;/h3&gt;
+
+&lt;p&gt;Of course, I wouldn&amp;rsquo;t have found this array problem if I hadn&amp;rsquo;t looked.  And in my several years working on this project, I hadn&amp;rsquo;t looked.&lt;/p&gt;
+
+&lt;p&gt;I was overwhelmed by the 500 microarrays × 6 tissues × 40,000 probes, and so didn&amp;rsquo;t make the sorts of plots that I should have.&lt;/p&gt;
+
+&lt;p&gt;Plus, this is the first real microarray project I&amp;rsquo;ve been involved in, and I haven&amp;rsquo;t known what to look for.  (I should have looked at images of correlation matrices with arrays sorted by similarity as determined from hierarchical clustering.)&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/many_boxplots.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.&lt;/p&gt;
+
+&lt;p&gt;I quite like the picture.&lt;/p&gt;
+
+&lt;p&gt;The code is available within my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, though there&amp;rsquo;s not much to it.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-3-don-t-trust-anyone&#34;&gt;Lesson 3: Don&amp;rsquo;t trust anyone&lt;/h3&gt;
+
+&lt;p&gt;Don&amp;rsquo;t even trust yourself.&lt;/p&gt;
+
+&lt;p&gt;I relied on others to do the data cleaning.  I should have checked things more carefully.&lt;/p&gt;
+
+&lt;p&gt;I looked at the data quite closely a year or so ago and detected sample mix-ups.  In correcting those mistakes, I spent a lot of time looking at the array data and trying to identify bad arrays.  Clearly I didn&amp;rsquo;t look closely enough, or I just looked at the wrong things.&lt;/p&gt;
+
+&lt;h3 id=&#34;lesson-4-take-your-time&#34;&gt;Lesson 4: Take your time&lt;/h3&gt;
+
+&lt;p&gt;Scientists are under a lot of pressure to produce and often are not exploring data as thoroughly as the data deserve.&lt;/p&gt;
+
+&lt;p&gt;But if you rush through data diagnostics, you could embarrass yourself later.&lt;/p&gt;
+
+&lt;p&gt;More importantly, take the time to follow up on apparent artifacts.  For me, the unintended analyses are more interesting than the planned ones.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-basic-strategy-for-data-diagnostics&#34;&gt;My basic strategy for data diagnostics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Expect errors&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Think about what might have gone wrong and how such problems might be revealed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make lots of specially-tailored plots&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create a (potentially informal) pipeline of all of the useful diagnostics you&amp;rsquo;ve used in the past&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Make more plots just because you think they might interesting&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If something looks odd, figure out why&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

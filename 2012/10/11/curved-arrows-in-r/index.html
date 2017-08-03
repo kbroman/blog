@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Curved arrows in R - the stupidest thing...</title>
+<meta property="og:title" content="Curved arrows in R - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Curved arrows in R</h1>
+
+    
+    <span class="article-date">2012/10/11</span>
+    
+
+    <div class="article-content">
+      <p>I briefly investigated how to draw curved arrows in R. Here&rsquo;s a small piece of the figure that I ultimately created:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" alt="" />
+<!-- more --></p>
+
+<p>A google search for &ldquo;curved arrows in R&rdquo; revealed three options:</p>
+
+<ul>
+<li><p><a href="http://rgm2.lab.nig.ac.jp/RGM2/func.php?rd_id=diagram:curvedarrow"><code>curvedarrow</code></a> in the <a href="http://cran.r-project.org/web/packages/diagram/">diagram</a> package</p></li>
+
+<li><p>The internal function <code>igraph.Arrows</code> within the <a href="http://cran.r-project.org/web/packages/igraph">igraph</a> package (mentioned by Gabor Csardi <a href="http://r.789695.n4.nabble.com/Curved-arrows-td886056.html">in R help</a>)</p></li>
+
+<li><p>Using <code>xspline</code> for the shaft and adding the head &ldquo;by hand&rdquo; (<a href="http://r.789695.n4.nabble.com/Curved-arrows-tt886056.html#a886057">mentioned</a> by Greg Snow)</p></li>
+</ul>
+
+<p>I wasn&rsquo;t too happy with how the arrow heads looked using the diagram package, and I didn&rsquo;t want to have to fiddle around with <code>xspline</code>, and igraph worked quite easily, so I went with that.</p>
+
+<p>Plotting multiple arrows with different colors in a single call to <code>igraph.Arrows</code> didn&rsquo;t work right (the arrow heads were all the first color), but using a loop and plotting one arrow per call worked fine.</p>
+
+<p>Here&rsquo;s <a href="http://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R">a bit of code I played with</a>:</p>
+
+<pre><code class="language-r">library(igraph)
+par(mar=rep(1,4))
+plot(0,0, type=&quot;n&quot;,xaxt=&quot;n&quot;, yaxt=&quot;n&quot;, xlab=&quot;&quot;, ylab=&quot;&quot;,
+     xlim=c(0,11), ylim=c(1,11))
+
+x &lt;- 1:10
+y &lt;- rep(2, 10)
+
+for(k in 0:4)
+  points(x, y+k*2)
+
+iArrows &lt;- igraph:::igraph.Arrows
+
+mycolors &lt;- rep(c(&quot;green&quot;, &quot;orange&quot;, &quot;red&quot;, &quot;blue&quot;), 3)
+
+for(i in 1:9) {
+  iArrows(x[i], y[i], x[i+1], y[i+1],
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=0.5 - (i %% 2), width=1, size=0.7)
+
+  iArrows(x[i], y[i]+2, x[i+1], y[i+1]+2,
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=1 - (i %% 2), width=1, size=0.7)
+}
+
+for(i in 1:8) {
+  iArrows(x[i], y[i]+4, x[i+2], y[i+2]+4,
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=0.5 - (i %% 2), width=1, size=0.7)
+
+  iArrows(x[i], y[i]+6, x[i+2], y[i+2]+6,
+          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
+          curve=1 - 2*(i %% 2), width=1, size=0.7)
+}
+
+x1 &lt;- x[1:8]
+x2 &lt;- x[3:10]
+y &lt;- y[1:8]+8
+
+iArrows(x1, y, x2, y,
+        h.lwd=2, sh.lwd=2, sh.col=mycolors[1:8],
+        curve=1 - 2*((1:8) %% 2), width=1, size=0.7)
+</code></pre>
+
+<p>And here&rsquo;s the corresponding figure:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png" alt="" /></p>
+
+<p>Note that the arrows at the top all have green arrow heads.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

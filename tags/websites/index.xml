@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Websites on the stupidest thing...</title>
+    <link>/tags/websites/</link>
+    <description>Recent content in Websites on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Sat, 05 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/websites/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Simple web sites with GitHub Pages</title>
+      <link>/2014/04/05/simple-web-sites-with-github-pages/</link>
+      <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/04/05/simple-web-sites-with-github-pages/</guid>
+      <description>&lt;p&gt;If you love &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;, you&amp;rsquo;ll also love &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, for producing websites using &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;: you write pages in Markdown within a &lt;code&gt;gh-pages&lt;/code&gt; branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;Last night, I wrote a &lt;a href=&#34;http://kbroman.github.io/simple_site&#34;&gt;minimal tutorial&lt;/a&gt; on how I&amp;rsquo;ve been using this (for example, for the website for my &lt;a href=&#34;http://kbroman.github.io/qtlcharts&#34;&gt;R/qtlcharts package&lt;/a&gt;, on interactive graphics for QTL data).&lt;/p&gt;
+
+&lt;p&gt;In the tutorial, I wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;(For example, I don&#39;t like how simple code is rendered in red within a gray box. Ultimately I&#39;ll try to figure out how to change that, but for now I just pretend that I like it that way.)&lt;/blockquote&gt;
+
+&lt;p&gt;But this morning, I figured out how to change that: create &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/assets/themes/twitter/css/kbroman.css&#34;&gt;my own css file&lt;/a&gt; with the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;code {
+  padding: 0;
+  font-size: 90%;
+  color: black;
+  background-color: white;
+  border: 0px solid white;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/_includes/themes/twitter/default.html#L20&#34;&gt;add a line&lt;/a&gt; to the &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/_includes/themes/twitter/default.html&#34;&gt;&lt;code&gt;default.html&lt;/code&gt;&lt;/a&gt; file.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Department websites</title>
+      <link>/2013/09/11/department-websites/</link>
+      <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/09/11/department-websites/</guid>
+      <description>
+
+&lt;p&gt;I was thinking about department websites, partly because &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my own department&amp;rsquo;s website&lt;/a&gt; is terrible, and recently a colleague asked me whether I could suggest some &lt;em&gt;good&lt;/em&gt; department sites.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll describe the basic principles for a good department website, and then I&amp;rsquo;ll comment on a number of examples.&lt;/p&gt;
+
+&lt;p&gt;But first: No discussion of academic web pages is complete without referring to the &lt;a href=&#34;http://xkcd.com/773/&#34;&gt;xkcd comic&lt;/a&gt; on University websites, so let&amp;rsquo;s start with that:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://xkcd.com/773/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/university_website.png&#34; alt=&#34;xkcd comic: University Websites&#34; /&gt;&lt;/a&gt;
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;basic-principles&#34;&gt;Basic principles&lt;/h3&gt;
+
+&lt;p&gt;Here are what I see to be the basic principles for constructing a department website:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Think of the audiences and what they&amp;rsquo;d be looking for&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Prospective students&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prospective/visiting faculty&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Current students&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Collaborators&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Administrators&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Current faculty&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Department staff&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Keep the important stuff near the top; minimize bloat&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Here&amp;rsquo;s the key stuff that should be prominent:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Degree programs; courses; how to apply&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Faculty and student pages&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Staff contact information&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Seminars&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Job opportunities&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t use stock photos or (even worse!) clip art&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Avoid deep nesting of information&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Have meaningful URLs (in particular, don&amp;rsquo;t let &lt;a href=&#34;https://drupal.org/&#34;&gt;drupal&lt;/a&gt; use &lt;code&gt;node/134&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Have a consistent style across the official pages &amp;ndash; particularly in the location and layout of menus of hyperlinks&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I prefer minimalism. Think &lt;a href=&#34;http://www.google.com&#34;&gt;google&lt;/a&gt; or &lt;a href=&#34;http://www.apple.com&#34;&gt;apple&lt;/a&gt; rather than &lt;a href=&#34;http://www.microsoft.com&#34;&gt;Microsoft&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;some-examples&#34;&gt;Some examples&lt;/h3&gt;
+
+&lt;p&gt;I briefly perused a number of statistics and biostatistics department websites. Here are my first impressions. The sites for &lt;a href=&#34;http://statistics.berkeley.edu/&#34;&gt;Berkeley&lt;/a&gt;, &lt;a href=&#34;http://statistics.stanford.edu/&#34;&gt;Stanford&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.umn.edu/&#34;&gt;Minnesota&lt;/a&gt; Statistics were my favorites.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostatistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The key bits are half-way down the page, due to unnecessary (in my mind) school-related crap along the top, plus the news items. The &amp;ldquo;Quick find&amp;rdquo; looks-like-a-drop-down-menu at the top right seems to just link to a &lt;em&gt;different department&amp;rsquo;s web page&lt;/em&gt;. The news items at the top result in the menu moving upward when you click on a link (as those news items don&amp;rsquo;t appear in the subsequent pages).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.hsph.harvard.edu/biostatistics&#34;&gt;Harvard Biostatistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s too much school-related crap at the top, but it&amp;rsquo;s not as bad as the &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins site&lt;/a&gt;. I like having pages &amp;ldquo;For Prospective Students,&amp;rdquo; &amp;ldquo;For Current Students,&amp;rdquo; etc., but they pop to pages that look totally different and lose that menu, so you have to go back and then forward again. &amp;ldquo;Student Profiles&amp;rdquo; maybe should just be called &amp;ldquo;Student Profile&amp;rdquo; as there doesn&amp;rsquo;t seem to be more than one. The &amp;ldquo;BIO&amp;rdquo; in &amp;ldquo;BIO Faculty&amp;rdquo; and &amp;ldquo;BIO Researchers&amp;rdquo; was a little confusing: Is it obvious what &amp;ldquo;BIO&amp;rdquo; means, and is it really necessary?  I&amp;rsquo;d put the Faculty and Researchers links closer to the top and may try to distinguish the different classes of links: the ones that people are really there for, and then all of the &amp;ldquo;For Such-and-Such&amp;rdquo; somewhat separately.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.washington.edu/&#34;&gt;Washington Biostatistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Reasonably clean, but a bit of the &lt;code&gt;node/134&lt;/code&gt; problem. And there are two kinds of menus: tabs at the top, and a menu at the right side. I think it&amp;rsquo;s okay, but it was a bit confusing initially: It wasn&amp;rsquo;t immediately obvious that I click a different tab to get a different set of menu choices.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sph.unc.edu/department-pages/biostatistics/&#34;&gt;UNC-Chapel Hill Biostatistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The main page looks nice, but the sub-pages have a different format.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stat.ncsu.edu/&#34;&gt;NC State Statistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I generally like it, but why split the faculty list across multiple pages? I see no reason to limit the length of a web page; scrolling is our friend.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sph.umn.edu/biostatistics/&#34;&gt;Minnesota Biostatistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Way&lt;/em&gt; too much bloat at the top; links all over the place at the bottom&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stat.umn.edu/&#34;&gt;Minnesota Statistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I like this one. I&amp;rsquo;m not sure about the color choices, but the site is clean, and it&amp;rsquo;s easy to navigate. And I like the choice and order of topics in the menu at the left.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://statistics.stanford.edu/&#34;&gt;Stanford Statistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I really like this one: Just the facts, plus a picture of Sequoia Hall. There&amp;rsquo;s a little menu bar at the top that has the key stuff. You want to know about courses or degree programs? Click &amp;ldquo;Academics.&amp;rdquo; You want to know about People or Seminars? They&amp;rsquo;re right there at the top. How do you apply? Click &amp;ldquo;Admissions.&amp;rdquo; They could maybe trim the news on the left of the front page; some of it is getting old and at least one of the links doesn&amp;rsquo;t work anymore.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://statistics.berkeley.edu/&#34;&gt;Berkeley Statistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Berkeley is slightly better than Stanford. The websites, I mean. It&amp;rsquo;s simple, there&amp;rsquo;s a clean little menu at the top, and the menus at the top have clear little drop-down menus when you hover over things. I like that they use more horizontal space. I guess I wouldn&amp;rsquo;t put &amp;ldquo;Seminars&amp;rdquo; under &amp;ldquo;Research&amp;rdquo; Nor would I put &amp;ldquo;Alumni Connections&amp;rdquo; under &amp;ldquo;Industry.&amp;rdquo; So there are ways in which Stanford is better than Berkeley.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sph.umich.edu/biostat/&#34;&gt;Michigan Biostatistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The front page looks a bit cluttered. And they list University rankings front and center, which is a bit of an embarrassment. There&amp;rsquo;s a bit of school-related stuff at the top, but it&amp;rsquo;s not as bothersome as some others. There may be too many choices on the left. It&amp;rsquo;s hard to pick out the ones you want, even if they&amp;rsquo;re there. And &amp;ldquo;Students&amp;rdquo; should really be &amp;ldquo;For Students,&amp;rdquo; while &amp;ldquo;Careers&amp;rdquo; should really be &amp;ldquo;Alumni Profiles.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Of course, I could look at a ton more, but I&amp;rsquo;m sort of sick of this. Go have a look yourself, and let me know if you find good ones.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

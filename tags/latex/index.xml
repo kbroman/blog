@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on the stupidest thing...</title>
+    <link>/tags/latex/</link>
+    <description>Recent content in Latex on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Fri, 11 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/latex/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fixing a font problem for XeLaTeX</title>
+      <link>/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
+      <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
+      <description>
+
+&lt;p&gt;If the topic sounds boring, well, it is really boring. I write it down here in case it&amp;rsquo;s useful to someone.&lt;/p&gt;
+
+&lt;p&gt;I was working on a &lt;a href=&#34;http://github.com/syounkin/GitPrimer.git&#34;&gt;talk about git &amp;amp; GitHub&lt;/a&gt;, and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here&amp;rsquo;s the default:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/slide_default.png&#34; alt=&#34;Slide with default font&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here&amp;rsquo;s what I wanted:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/slide_helveticaneue.png&#34; alt=&#34;Slide with Helvetica Neue&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;but-it-didn-t-work-on-unix&#34;&gt;But it didn&amp;rsquo;t work on unix&lt;/h3&gt;
+
+&lt;p&gt;It worked fine with XeLaTeX on my Mac, but it wasn&amp;rsquo;t working in Unix, and I&amp;rsquo;d like the source to be portable to others.&lt;/p&gt;
+
+&lt;p&gt;XeLaTex was giving two errors:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Invalid fontname `Helvetica Neue&#39;, contains &#39; &#39;
+
+Font \zf@basefont=&amp;quot;Helvetica Neue&amp;quot; at 10.0pt not loadable: Metric (TFM) file
+or installed font not found.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It obviously wasn&amp;rsquo;t finding the font.&lt;/p&gt;
+
+&lt;p&gt;I futzed about for an hour, trying to figure out where fonts are located on my Mac, and where fonts are located on Unix, and doing various web searches. But no luck.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-i-solved-the-problem&#34;&gt;How I solved the problem&lt;/h3&gt;
+
+&lt;p&gt;Finally, I read &lt;a href=&#34;http://existentialtype.net/2008/07/12/fonts-in-latex-part-one-xelatex/&#34;&gt;this post on fonts in xelatex&lt;/a&gt;, and following that set of ideas, I figured out what to do.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Switch to the &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html&#34;&gt;TeX Gyre Heros&lt;/a&gt; font. It looks just like Helvetica to me.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Download &lt;code&gt;[qhv2.004otf.zip](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;On unix, unzip the file (which contains eight &lt;code&gt;[.otf](http://en.wikipedia.org/wiki/OpenType)&lt;/code&gt; files) into &lt;code&gt;~/.fonts&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;On Mac, unzip the file, double-click the &lt;code&gt;.otf&lt;/code&gt; files and select &amp;ldquo;Install font.&amp;rdquo;  This uses the &lt;a href=&#34;http://support.apple.com/kb/HT2509&#34;&gt;Font Book&lt;/a&gt; application.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In the &lt;code&gt;.tex&lt;/code&gt; file, use &lt;code&gt;\setsansfont{TeX Gyre Heros}&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not thoroughly tested, but it works on two systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>It was a really bad idea to use slides in that class</title>
+      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <description>&lt;p&gt;I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a &lt;a href=&#34;http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;blog post&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Could I quickly create usable slides using the &lt;a href=&#34;http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;LateX/Beamer template I wrote about yesterday&lt;/a&gt;?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Would it be useful to have slides in this class?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The outcome was pretty clear: It was easy to create a bunch of bullet-point-based slides. They look nice. (See the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/teaching/misc/consulting.pdf&#34;&gt;pdf here&lt;/a&gt;; &lt;a href=&#34;http://github.com/kbroman/Talk_StatConsulting.git&#34;&gt;source here&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But&lt;/strong&gt;, the slides themselves worse than useless: Unnecessary, and they interfered with the desired informal nature of the discussion.&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t be using those slides again. I&amp;rsquo;ll go back to just talking from notes.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, the students were really good and involved and asked great questions, anyway. So no real harm done.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Better-looking LaTeX/Beamer slides</title>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <description>
+
+&lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
+
+&lt;p&gt;Most people that use LaTeX to make slides seem to use &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX)&#34;&gt;Beamer&lt;/a&gt;, but the resulting slides are usually a bit busy, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html&#34;&gt;&lt;img src=&#34;http://deic.uab.es/~iblanes/beamer_gallery/large/Warsaw-default-default-01.png&#34; alt=&#34;Typical beamer slide&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I admire &lt;a href=&#34;http://en.wikipedia.org/wiki/Till_Tantau&#34;&gt;Till Tantau&lt;/a&gt; for creating Beamer; it was a great idea and it&amp;rsquo;s been widely adopted. But I don&amp;rsquo;t like talk outlines at all; I certainly don&amp;rsquo;t want to see one on every page.&lt;/p&gt;
+
+&lt;p&gt;After several days work, I&amp;rsquo;ve finally figured out how to create LaTeX/Beamer-based slides that look like what I want:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png&#34; alt=&#34;Open Access talk, title page&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this post, I&amp;rsquo;ll explain what I did.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;my-history&#34;&gt;My history&lt;/h3&gt;
+
+&lt;p&gt;Take a look at my &lt;a href=&#34;http://kbroman.org/pages/talks.html&#34;&gt;list of presentations&lt;/a&gt; (going back to 1998), and you&amp;rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.&lt;/p&gt;
+
+&lt;p&gt;My LaTeX-based slides (e.g., see &lt;a href=&#34;http://github.com/kbroman/Talk_Graphs&#34;&gt;my talks on data visualization&lt;/a&gt;) have been made using &lt;code&gt;\documentclass{article}&lt;/code&gt;, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Example 1
+\end{minipage}
+
+\vspace{30mm}
+
+\centerline{\includegraphics[height=6in]{Figs/fig1a.png}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I knew Beamer would give cleaner code, but how to also have cleaner slides?&lt;/p&gt;
+
+&lt;h3 id=&#34;a-starting-point&#34;&gt;A starting point&lt;/h3&gt;
+
+&lt;p&gt;I googled &amp;ldquo;clean Beamer slides&amp;rdquo; or something like that, and I came across &lt;a href=&#34;http://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;http://mikedewar.wordpress.com&#34;&gt;Mike Dewar&lt;/a&gt;, with a picture of a slide that looked much like what I wanted:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://mikedewar.files.wordpress.com/2009/02/beamer_screen.png&amp;amp;h=360&#34; alt=&#34;Slide from Mike Dewar&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I read his post and studied his code and played around. Then I searched for stuff on the &lt;a href=&#34;http://tex.stackexchange.com/&#34;&gt;LaTeX Stack Exchange&lt;/a&gt; and played around some more. Then I read the &lt;a href=&#34;ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf&#34;&gt;Beamer manual&lt;/a&gt; and played around some more.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s really not much to it.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-benefits-of-beamer&#34;&gt;The benefits of Beamer&lt;/h3&gt;
+
+&lt;p&gt;The main benefits of using Beamer:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Simpler code, because it will place elements in reasonable places without a lot of messing about&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple animations using less code, so you &lt;a href=&#34;http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself&#34;&gt;don&amp;rsquo;t repeat yourself&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Easy way to create handouts with notes on what you&amp;rsquo;re going to say. This is especially useful for others to learn from your presentation even if they can&amp;rsquo;t attend (which is most of the world). Here&amp;rsquo;s an example page from such a handout:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png&#34; alt=&#34;Example notes page from Open Access talk&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;here-s-what-i-did&#34;&gt;Here&amp;rsquo;s what I did&lt;/h3&gt;
+
+&lt;p&gt;I was preparing a talk on open access publishing. Here&amp;rsquo;s &lt;a href=&#34;http://github.com/kbroman/Talk_OpenAccess&#34;&gt;the source&lt;/a&gt;; &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;the pdf&lt;/a&gt;; and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;a pdf with notes on what I intend to say&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll go through the details of the code, in case it might be useful to someone.&lt;/p&gt;
+
+&lt;p&gt;Here are the first two lines of the &lt;code&gt;.tex&lt;/code&gt; file. The &lt;code&gt;12pt&lt;/code&gt; makes the default font a bit bigger, but not actually twelve point. The &lt;code&gt;t&lt;/code&gt; makes the body of each slide top-justified rather than vertically centered. You don&amp;rsquo;t need many packages, as lots of them (like &lt;code&gt;color&lt;/code&gt;) are included by default with Beamer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\documentclass[12pt,t]{beamer}
+\usepackage{graphicx}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These next two lines are for the notes pages (if you are going to use that feature); more below.  By default, the notes are hidden. I wrote a &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb&#34;&gt;ruby script&lt;/a&gt; to switch the &lt;code&gt;hide&lt;/code&gt; to &lt;code&gt;show&lt;/code&gt; and add &lt;code&gt;handout&lt;/code&gt; to the options in the &lt;code&gt;\documentclass&lt;/code&gt; command (more on that below). The &lt;code&gt;\setbeamertemplate&lt;/code&gt; command makes the note pages completely plain.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These next lines choose the default Beamer theme, get rid of all of the navigation stuff, and make it so any bookmarks are not shown when you open the PDF in Acrobat.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\usetheme{default}
+\beamertemplatenavigationsymbolsempty
+\hypersetup{pdfpagemode=UseNone} % don&#39;t show bookmarks on initial view
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These next lines change the font to Helvetica Neue, with Palatino used for the notes pages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue}
+\setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I define a bunch of colors.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\definecolor{foreground}{RGB}{255,255,255}
+\definecolor{background}{RGB}{24,24,24}
+\definecolor{title}{RGB}{107,174,214}
+\definecolor{gray}{RGB}{155,155,155}
+\definecolor{subtitle}{RGB}{102,255,204}
+\definecolor{hilight}{RGB}{102,255,204}
+\definecolor{vhilight}{RGB}{255,111,207}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I use those colors, for the titles, subtitle, institute, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{subtitle}{fg=subtitle}
+\setbeamercolor{institute}{fg=gray}
+\setbeamercolor{normal text}{fg=foreground,bg=background}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This stuff changes the color of bullets in &lt;code&gt;itemize&lt;/code&gt; environments and changes nested bullet symbols to en-dashes (-) in gray, and a bit smaller.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeamercolor{item}{fg=foreground} % color of bullets
+\setbeamercolor{subitem}{fg=gray}
+\setbeamercolor{itemize/enumerate subbody}{fg=gray}
+\setbeamertemplate{itemize subitem}{{\textendash}}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This gives me a slide number in the lower-right, in gray.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\setbeamertemplate{footline}{%
+    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This adds a bit of space between paragraphs on the notes pages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also made a few small macros to simplify some things.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\ig}{\includegraphics}
+\newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;code-for-example-slides&#34;&gt;Code for example slides&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the code to create the title slide. (The content is determined by &lt;code&gt;\title&lt;/code&gt;, &lt;code&gt;\author&lt;/code&gt;, etc., before the &lt;code&gt;\begin{document}&lt;/code&gt;.) The first line is to get rid of the page number. The text in &lt;code&gt;\note{}&lt;/code&gt; will appear on a separate page after the title slide, in the version of the PDF with notes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+\setbeamertemplate{footline}{} % no page number here
+\frame{
+  \titlepage
+  \note{These are slides for a talk I will give on 24 Oct 2013, at a
+    symposium on open access publishing, organized by the Ebling
+    Library, UW{\textendash}Madison.}
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example regular slide. &lt;code&gt;\subt&lt;/code&gt; is a macro defined above and just makes that text smaller and in a different color.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\begin{frame}{Access in action}
+\subt{Interesting reference}
+
+\bigskip
+\centerline{
+\ig[height=0.75\textheight]{Images/img01.jpg}
+}
+
+\note{I&#39;ll begin with an illustration of what I mean by
+  access.
+
+  The other day I was reading a manuscript and saw an
+  article of interest.}
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a fancier slide, with a bit of animation: codes like &lt;code&gt;&amp;lt;2-&amp;gt;&lt;/code&gt;, which means that bit is not on the first version of this slide but appears on subsequent versions. When the LaTeX file is turned into a PDF, four versions of this slide are created. But in the handout (with the notes), there&amp;rsquo;ll be just one, and the &lt;code&gt;&amp;lt;3| handout 0&amp;gt;&lt;/code&gt; bits are to control the separate look on the animated slides and on the single-slide version that shows up with the notes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\begin{frame}{It&#39;s all about money}
+\subt{(Costs in scientific publishing)}
+
+\vspace{24pt}
+
+\bi
+\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Research}
+\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Writing}
+\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Peer review, editorial oversight}
+\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Journal administration}
+\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Copy editing, typesetting}
+\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Distribution}
+\item&amp;amp;lt;2-&amp;amp;gt;{\color&amp;amp;lt;2| handout 0&amp;amp;gt;{vhilight} \color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Profit}
+\ei
+\note{ [clip] }
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;a-version-with-notes&#34;&gt;A version with notes&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s nice to have a version of one&amp;rsquo;s slides that includes notes of what you&amp;rsquo;re going to say. I like &lt;a href=&#34;http://bost.ocks.org/mike&#34;&gt;Mike Bostock&lt;/a&gt; approach, as in &lt;a href=&#34;http://bost.ocks.org/mike/d3/workshop/#0&#34;&gt;these slides&lt;/a&gt;, with little sticky notes. But I don&amp;rsquo;t want to spend time trying to implement that in LaTeX, so I went with the built-in functionality in Beamer, though selecting a very plain template and adding a bit of space between paragraphs.&lt;/p&gt;
+
+&lt;p&gt;I also chose to create a handout with just a single snapshot of the animated pages (in which I sequentially overlayed a number of images).&lt;/p&gt;
+
+&lt;p&gt;Having added a &lt;code&gt;\note{}&lt;/code&gt; to each &amp;ldquo;frame,&amp;rdquo; there are just a few simple commands to add to the &lt;code&gt;.tex&lt;/code&gt; file to get it to compile to the handout with notes. So I wrote a &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb&#34;&gt;ruby script&lt;/a&gt; to make those changes.&lt;/p&gt;
+
+&lt;p&gt;I then used &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;pdfnup&lt;/a&gt; to make the notes PDF be 2-up: the slide above and the notes below. The details are in the &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/Makefile&#34;&gt;Makefile&lt;/a&gt;; if that&amp;rsquo;s not obvious, see my &lt;a href=&#34;http://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial about GNU make&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LaTeX &#43; Unicode → XeTeX</title>
+      <link>/2013/03/19/latex-unicode--xetex/</link>
+      <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/03/19/latex-unicode--xetex/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;http://www.ctc2013.org&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
+
+&lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;http://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
+
+&lt;p&gt;I spent way too much time trying to deal with special characters.  I was looking to do a search-and-replace for all possible &lt;a href=&#34;http://en.wikipedia.org/wiki/Unicode&#34;&gt;Unicode&lt;/a&gt; characters (for example, to change &lt;code&gt;\xE9&lt;/code&gt; aka e into &lt;code&gt;\&#39;{e}&lt;/code&gt;, or &lt;code&gt;\xD7&lt;/code&gt; aka × into &lt;code&gt;$\times$&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/times_symbol.png&#34; alt=&#34;MBT/Pas × BALB/cByJ&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But then I discovered that &lt;a href=&#34;http://en.wikipedia.org/wiki/XeTeX&#34;&gt;XeTeX&lt;/a&gt; supports Unicode, so there&amp;rsquo;s no need to do these sorts of substitutions.&lt;/p&gt;
+
+&lt;p&gt;I changed &lt;code&gt;pdflatex&lt;/code&gt; to &lt;code&gt;xelatex&lt;/code&gt; in my &lt;code&gt;Makefile&lt;/code&gt;, and I&amp;rsquo;m done.  I think.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: Now that I think about it, CSV is way more convenient than XLS(X) for simple data files, as you don&amp;rsquo;t have to traverse with the whole &lt;code&gt;$cell -&amp;gt; (Val)&lt;/code&gt; business.  But working with the Excel file directly is easier when the cells may contain lots of text with commas and such, like my abstracts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My first fancy poster</title>
+      <link>/2011/09/16/my-first-fancy-poster/</link>
+      <pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/16/my-first-fancy-poster/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m preparing my first large-format poster (for the &lt;a href=&#34;http://discovery.wisc.edu/home/discovery/events/mathbio-symposia/mathbio-3-modeling/2009-mathbio-event-home.cmsx&#34;&gt;MathBio3 conference&lt;/a&gt;, here in Madison in two weeks). Previously, my posters had just been on a series of pieces of regular paper. (Consider, for example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/posters/gaw11.pdf&#34;&gt;this poster&lt;/a&gt; from September, 1998.)  But no one does that anymore, and I don&amp;rsquo;t want to stand out as being archaic.  That is, I want to pretend to be modern.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s my draft:
+&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/posters/mathbio2011.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/09/poster.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;I got a LaTeX template from &lt;a href=&#34;http://www.epibiostat.ucsf.edu/biostat/sen/&#34;&gt;Saunak Sen&lt;/a&gt;, which originally came from &lt;a href=&#34;http://www.nathanieljohnston.com/2009/08/latex-poster-template/&#34;&gt;Nathaniel Johnston&lt;/a&gt; and uses the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamer poster&lt;/a&gt; style. That made it super easy; I hardly even needed to know what I was doing.&lt;/p&gt;
+
+&lt;p&gt;Not having a good sense of how this 1m x 1m poster is actually going to look, I  used Acrobat to print it onto a bunch of pieces of paper (&amp;ldquo;Tile all pages&amp;rdquo; in the print dialog), which I then reassembled with scissors and tape.&lt;/p&gt;
+
+&lt;p&gt;It looks like it will be fine.
+&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/09/photo_of_poster.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Maybe I should save the $50 or $100 and post the black-and-white, pasted-together version?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

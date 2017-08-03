@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on the stupidest thing...</title>
+    <link>/tags/mongodb/</link>
+    <description>Recent content in Mongodb on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Mon, 22 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/mongodb/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MongoDB with D3.js</title>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
+      <description>
+
+&lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; is rough in spots, and while it works well for moderate-sized data sets, it can&amp;rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.&lt;/p&gt;
+
+&lt;p&gt;For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&amp;rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.&lt;/p&gt;
+
+&lt;p&gt;So, I&amp;rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&amp;rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb&#34;&gt;small illustration&lt;/a&gt; in my &lt;a href=&#34;https://github.com/kbroman/d3examples&#34;&gt;d3examples&lt;/a&gt; repository on GitHub.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&#34;learning-mongodb&#34;&gt;Learning MongoDB&lt;/h3&gt;
+
+&lt;p&gt;I thought &lt;a href=&#34;http://www.mongodb.org&#34;&gt;mongoDB&lt;/a&gt; seemed like a good database to try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;storage of general documents seems a good match for the sort of data I work with&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;use of JSON/BSON seems a good match for &lt;a href=&#34;http://d3js.org&#34;&gt;D3.js&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So I&amp;rsquo;ve been taking an online-course though &lt;a href=&#34;https://university.mongodb.com/&#34;&gt;MongoDB University&lt;/a&gt; &amp;ndash; the &lt;a href=&#34;https://university.mongodb.com/courses/M101JS/about&#34;&gt;one for Node.js developers&lt;/a&gt;. I should have done &lt;a href=&#34;https://university.mongodb.com/courses/M101P/about&#34;&gt;the more general one, using Python&lt;/a&gt;, but I was thinking it&amp;rsquo;d be interesting to learn &lt;a href=&#34;http://nodejs.org&#34;&gt;Node&lt;/a&gt;, which is basically command-line scripting in javascript. I guess the advantage of node is that you can just write javascript. But personally I prefer to switch to the language appropriate to the task, so I&amp;rsquo;m not too hot on node. But maybe I just haven&amp;rsquo;t come to understand how best to make use of the whole callback function business.&lt;/p&gt;
+
+&lt;p&gt;MongoDB is not all that hard. It&amp;rsquo;s just kind of boring. The MongoDB Uni class is quite well done, though a few of the lectures were frustratingly out-of-date. I have the &lt;a href=&#34;http://shop.oreilly.com/product/0636920028031.do&#34;&gt;MongoDB book&lt;/a&gt;, but it&amp;rsquo;s been rough going; the class has been good for that. (The weekly deadlines have been good for motivating me to get through the dull &amp;ndash; for me &amp;ndash; material.)&lt;/p&gt;
+
+&lt;p&gt;The obvious bits with a database: how to get stuff into it and then back out of it. And then I guess deleting or changing stuff. So that&amp;rsquo;s all fine. I also learned about making indexes, so that you can more quickly get stuff out later. I don&amp;rsquo;t think my needs for these things are all that complicated. And so I think I understand those bits.&lt;/p&gt;
+
+&lt;h3 id=&#34;getting-the-data-for-the-data-vis&#34;&gt;Getting the data for the data vis&lt;/h3&gt;
+
+&lt;p&gt;The last key step that I was pondering last night: how do I, based on some user interaction with a data visualization (clicking on a point, or some such), fire off a request to the database and get the data back?&lt;/p&gt;
+
+&lt;p&gt;I guessed some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Representational_state_transfer&#34;&gt;RESTful API&lt;/a&gt; type thing. But while I can write that down, I don&amp;rsquo;t really understand what the hell it means.&lt;/p&gt;
+
+&lt;p&gt;But then I thought, what I need is to use some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods&#34;&gt;HTTP GET request&lt;/a&gt;. I kind of know what that means, but I don&amp;rsquo;t really understand what happens on the back end.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d been poking around in &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt;, the python-based mongoDB driver. (I like it much better than the &lt;a href=&#34;https://api.mongodb.org/ruby/current/&#34;&gt;ruby&lt;/a&gt; or &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/node-js/&#34;&gt;node&lt;/a&gt; drivers.) And as part of the Mongo University class, we used &lt;a href=&#34;http://expressjs.com/&#34;&gt;express&lt;/a&gt; with Node to do some HTTP GET and PUSH. If I want to grab some bit of data, I could have a python script running on the back end, looking for an http request, and then based on some key that was passed, grabbing data from the database and sending it back as JSON.&lt;/p&gt;
+
+&lt;p&gt;So I looked around for how to do this with mongoDB, found &lt;a href=&#34;https://github.com/10gen-labs/sleepy.mongoose&#34;&gt;sleepy mongoose&lt;/a&gt;, but that seemed like more than I wanted, and then came to &lt;a href=&#34;http://bottlepy.org/docs/dev/index.html&#34;&gt;bottle&lt;/a&gt;, which seemed like what I needed to handle the http bit. The example on the front page is just what I want: take a name from a URL and use it as input to some function, and give results back.&lt;/p&gt;
+
+&lt;h3 id=&#34;mongodb-d3-illustration&#34;&gt;MongoDB/D3 illustration&lt;/h3&gt;
+
+&lt;p&gt;The goal of all this: as part of some data visualization, the user will hover over or click a point, and this will lead to a request to the database, and then a plot of the data that comes back.&lt;/p&gt;
+
+&lt;p&gt;It seemed like a simple test case would be to use the data for &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;Anscombe&amp;rsquo;s quartet&lt;/a&gt;. Put the four series into a MongoDB database, and then have four buttons that, when clicked, cause a request to the database to grab the corresponding series, which is then plotted.&lt;/p&gt;
+
+&lt;p&gt;So first I wrote an &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/grab_anscombe.R&#34;&gt;R script&lt;/a&gt; to grab the data from the table on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;wikipedia page&lt;/a&gt; and write it to a &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt; file. I&amp;rsquo;m sure there was an easier way to get the data in a suitable form, but I was really procrastinating from writing a paper at this point, so I thought I&amp;rsquo;d test my web scraping skill in a simple case.&lt;/p&gt;
+
+&lt;p&gt;I then wrote a &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_insert.py&#34;&gt;python script&lt;/a&gt; that reads in the JSON file and inserts the data into a mongoDB database. You make a database connection with &lt;code&gt;pymongo.MongoClient()&lt;/code&gt; and insert the documents with the &lt;code&gt;insert_one()&lt;/code&gt; method to a collection. I later added an index with &lt;code&gt;create_index()&lt;/code&gt;; pretty silly here, but for large problems it would be useful.&lt;/p&gt;
+
+&lt;p&gt;So, the data&amp;rsquo;s in the database. How to get it back out? I wrote a second &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py&#34;&gt;python script&lt;/a&gt; (just 8 lines, really), that uses &lt;a href=&#34;http://bottlepy.org&#34;&gt;bottle&lt;/a&gt; to create a server that connects a URL to a function call. The function then uses &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt; to find the corresponding document and send it back as JSON. One &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;tricky bit that needed some extra googling&lt;/a&gt; was getting the browser to allow the request.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee&#34;&gt;D3 code (in coffeescript&lt;/a&gt;) is pretty standard. On clicking a button, I call &lt;code&gt;d3.json&lt;/code&gt; with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.&lt;/p&gt;
+
+&lt;p&gt;This &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/&#34;&gt;MongoDB/D3 illustration&lt;/a&gt; is a toy example, but it represents an important step for me, personally. I&amp;rsquo;m rather proud of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2015/06/anscombe_2.png&#34; alt=&#34;Anscombe&#39;s quartet, set 2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

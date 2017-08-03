@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>More on Chutes &amp; Ladders - the stupidest thing...</title>
+<meta property="og:title" content="More on Chutes &amp; Ladders - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">More on Chutes &amp; Ladders</h1>
+
+    
+    <span class="article-date">2013/05/20</span>
+    
+
+    <div class="article-content">
+      
+
+<p><a href="https://twitter.com/mmaenner/status/335478612084006912">Matt Maenner asked</a> about the sawtooth pattern in the <a href="http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png">figure</a> in <a href="http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/">my last post on Chutes &amp; Ladders</a>.</p>
+
+<p>Damn you, Matt!  I thought I was done with this.  Don&rsquo;t feed my obsession.</p>
+
+<p><a href="https://twitter.com/kwbroman/status/335499296193536000">My response</a> was that if the game ends early, it&rsquo;s even more likely that it&rsquo;ll be the kid who went first who won.  <em>But</em>, my intuition was wrong: exactly the opposite is true. <em>It is</em> the advantage to the first player that causes the sawtooth pattern, but that advantage <em>increases</em> with the number of rounds rather than decreases.</p>
+
+<h3 id="numerical-results">Numerical results</h3>
+
+<p>While it&rsquo;s fast and easy to study the Chutes &amp; Ladders game by simulation, if you want to answer questions more precisely, it&rsquo;s best to switch to more exact results.</p>
+
+<p>Consider a single individual playing the game, and let Xn be his/her location at round n.  The Xn form a _<a href="http://en.wikipedia.org/wiki/Markov_chain">Markov chain</a>_, in that the future (Xn+1), given the present (Xn), is conditionally independent of the history (X1, &hellip;, Xn-1).</p>
+
+<p>It&rsquo;s relatively easy to construct the transition matrix of the chain.  (See my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)  This is a matrix P, with Pij = Pr(Xn+1 = j | Xn = i).</p>
+
+<p>Then the probability that a player has reached state 100 by round n is
+(1, 0, &hellip;, 0) Pn (0, &hellip;, 0, 1)&lsquo;.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this qn.  You can get the probability distribution by differences, say pn = qn - qn-1.</p>
+
+<p>To calculate the number of rounds to complete a game with k players, you want the minimum of k independent draws from this distribution.  The probability that a game with k players is complete by round n is 1 - (1-qn)k.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes &amp; Ladders" /></p>
+
+<h3 id="advantage-to-the-first-player">Advantage to the first player</h3>
+
+<p>Now, regarding the advantage to the first player: note that the first player wins in exactly n steps if he gets to the finish at n steps and none of the other players are done by n-1 steps.  So, with k players, the probability that the first player wins in exactly n steps is pn (1-qn-1)k-1.</p>
+
+<p>The chance that the second player wins in exactly n steps is (1-qn) pn (1-qn-1))k-2, with the last term included only if there are k &gt; 2 players.</p>
+
+<p>From this idea, it&rsquo;s straightforward to calculate the probability that the first player wins given that the game is complete at round n.  Here&rsquo;s a plot of that probability as a function of the number of players, relative to the nominal probability (<sup>1</sup>&frasl;<sub>2</sub>, <sup>1</sup>&frasl;<sub>3</sub>, <sup>1</sup>&frasl;<sub>4</sub>).</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png" alt="Advantage to the first player in Chutes &amp; Ladders" /></p>
+
+<p>Note that n=7 is the minimum number of rounds to complete the game.  I&rsquo;d thought that the first player&rsquo;s advantage went down over time, but the opposite is true.</p>
+
+<h3 id="no-spins-to-end-the-game">No. spins to end the game</h3>
+
+<p>Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of <a href="http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png">the simulation-based figure in my last post</a>:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png" alt="No. spins to complete Chutes &amp; Ladders, numerical results" /></p>
+
+<p>As you can see, the sawtooth pattern becomes more pronounced with the number of rounds, but then it gets lost in the downward slope of the distribution on the right side.  (Again, see my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

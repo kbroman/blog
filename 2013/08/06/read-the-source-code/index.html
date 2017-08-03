@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Read the source code - the stupidest thing...</title>
+<meta property="og:title" content="Read the source code - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Read the source code</h1>
+
+    
+    <span class="article-date">2013/08/06</span>
+    
+
+    <div class="article-content">
+      <p>The other day, there was a bit of <a href="https://twitter.com/hspter/status/363015797204992000">a twitter conversation about <code>qqline</code></a> in R.</p>
+
+<p>It made me think: how exactly is the line produced by <code>qqline</code> chosen? I seemed to recall that the line was through the first and third quartiles.</p>
+
+<p>An advantage of R is that you can just type the name of the function and see the code:</p>
+
+<pre><code class="language-R"># qqline
+function (y, datax = FALSE, distribution = qnorm, probs = c(0.25,
+    0.75), qtype = 7, ...)
+{
+    stopifnot(length(probs) == 2, is.function(distribution))
+    y &lt;- quantile(y, probs, names = FALSE, type = qtype, na.rm = TRUE)
+    x &lt;- distribution(probs)
+    if (datax) {
+        slope &lt;- diff(x)/diff(y)
+        int &lt;- x[1L] - slope * y[1L]
+    }
+    else {
+        slope &lt;- diff(y)/diff(x)
+        int &lt;- y[1L] - slope * x[1L]
+    }
+    abline(int, slope, ...)
+}
+</code></pre>
+
+<p>I was right: They take the 25th and 75th percentiles of the data and of the theoretical distribution, calculate the slope and y-intercept of the line that goes through those two points, and use <code>abline</code> to draw the line.</p>
+
+<p>Open source means the source is open, so why not take the time to look at it?</p>
+
+<p>Sometimes typing the name of the function doesn&rsquo;t tell you much:</p>
+
+<pre><code class="language-R"># qqnorm
+function (y, ...)
+UseMethod(&quot;qqnorm&quot;)
+</code></pre>
+
+<p>In such cases, you could try typing, for example, <code>qqnorm.default</code>.</p>
+
+<p>Still, the comments (if there were any) get stripped off, and for long functions, it&rsquo;s not pretty.  So I like to keep a copy of the source code (for example, <a href="http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz"><code>R-3.0.1.tar.gz</code></a>; extract it with <code>tar xzf R-3.0.1.tar.gz</code>). I use <code>grep</code> to find the relevant files.</p>
+
+<p>For example,</p>
+
+<pre><code>grep -r 'qqline' R-3.0.1/src/
+</code></pre>
+
+<p>shows that I should look for <code>qqline</code> in</p>
+
+<pre><code>R-3.0.1/src/library/stats/R/qqnorm.R
+</code></pre>
+
+<p>For something like <code>cor</code>, you might want to do:</p>
+
+<pre><code>grep -r 'cor &lt;-' R-3.0.1/src
+</code></pre>
+
+<p>Or maybe:</p>
+
+<pre><code>grep -r 'cor &lt;-' R-3.0.1/src/library/stats/R
+</code></pre>
+
+<p>But for <code>cor</code>, you probably also want to look at the C code, which is in</p>
+
+<pre><code>R-3.0.1/src/library/stats/src/cov.c
+</code></pre>
+
+<p>You can learn a lot about programming from the source code for R.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

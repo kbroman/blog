@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Fixing a font problem for XeLaTeX - the stupidest thing...</title>
+<meta property="og:title" content="Fixing a font problem for XeLaTeX - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Fixing a font problem for XeLaTeX</h1>
+
+    
+    <span class="article-date">2013/10/11</span>
+    
+
+    <div class="article-content">
+      
+
+<p>If the topic sounds boring, well, it is really boring. I write it down here in case it&rsquo;s useful to someone.</p>
+
+<p>I was working on a <a href="http://github.com/syounkin/GitPrimer.git">talk about git &amp; GitHub</a>, and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here&rsquo;s the default:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2013/10/slide_default.png" alt="Slide with default font" /></p>
+
+<p>And here&rsquo;s what I wanted:</p>
+
+<p><img src="http://kbroman.files.wordpress.com/2013/10/slide_helveticaneue.png" alt="Slide with Helvetica Neue" /></p>
+
+<h3 id="but-it-didn-t-work-on-unix">But it didn&rsquo;t work on unix</h3>
+
+<p>It worked fine with XeLaTeX on my Mac, but it wasn&rsquo;t working in Unix, and I&rsquo;d like the source to be portable to others.</p>
+
+<p>XeLaTex was giving two errors:</p>
+
+<pre><code>Invalid fontname `Helvetica Neue', contains ' '
+
+Font \zf@basefont=&quot;Helvetica Neue&quot; at 10.0pt not loadable: Metric (TFM) file
+or installed font not found.
+</code></pre>
+
+<p>It obviously wasn&rsquo;t finding the font.</p>
+
+<p>I futzed about for an hour, trying to figure out where fonts are located on my Mac, and where fonts are located on Unix, and doing various web searches. But no luck.</p>
+
+<h3 id="how-i-solved-the-problem">How I solved the problem</h3>
+
+<p>Finally, I read <a href="http://existentialtype.net/2008/07/12/fonts-in-latex-part-one-xelatex/">this post on fonts in xelatex</a>, and following that set of ideas, I figured out what to do.</p>
+
+<ul>
+<li><p>Switch to the <a href="http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html">TeX Gyre Heros</a> font. It looks just like Helvetica to me.</p></li>
+
+<li><p>Download <code>[qhv2.004otf.zip](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip)</code>.</p></li>
+
+<li><p>On unix, unzip the file (which contains eight <code>[.otf](http://en.wikipedia.org/wiki/OpenType)</code> files) into <code>~/.fonts</code></p></li>
+
+<li><p>On Mac, unzip the file, double-click the <code>.otf</code> files and select &ldquo;Install font.&rdquo;  This uses the <a href="http://support.apple.com/kb/HT2509">Font Book</a> application.</p></li>
+
+<li><p>In the <code>.tex</code> file, use <code>\setsansfont{TeX Gyre Heros}</code></p></li>
+</ul>
+
+<p>Not thoroughly tested, but it works on two systems.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unproductivity on the stupidest thing...</title>
+    <link>/tags/unproductivity/</link>
+    <description>Recent content in Unproductivity on the stupidest thing...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
+    <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/unproductivity/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stack Exchange: Why I dropped out</title>
+      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt; is a series of question-and-answer sites, including &lt;a href=&#34;http://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; for programming and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; for statistics.  I was &lt;a href=&#34;http://kbroman.org/blog/2011/09/26/gamified/&#34;&gt;introduced to these sites&lt;/a&gt; at a short talk by &lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.&lt;/p&gt;
+
+&lt;h3 id=&#34;additional-pros&#34;&gt;Additional pros&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;It&amp;rsquo;s good to help people.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It&amp;rsquo;s fun to rack up reputation points for helping people.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It&amp;rsquo;s good exercise, in both thinking about statistical questions and in articulating useful answers (and there are some interesting questions).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;however-some-cons&#34;&gt;However, some cons&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The reputation points thing is a bit too addictive to me.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The easy questions go fast; you have to watch constantly if you want a chance at them.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Far too many questions are either dreadfully dull or terribly sloppy.
+(See &lt;a href=&#34;http://jeromyanglim.blogspot.com/&#34;&gt;Jeromy Anglim&lt;/a&gt;&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;http://jeromyanglim.blogspot.com.au/2011/03/how-to-ask-me-statistics-question.html&#34;&gt;How to ask me a statistics question&lt;/a&gt;&amp;rdquo; and &lt;a href=&#34;http://catb.org/~esr/&#34;&gt;Eric S. Raymond&lt;/a&gt;&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;http://catb.org/~esr/faqs/smart-questions.html&#34;&gt;How to ask questions the smart way&lt;/a&gt;.&amp;ldquo;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Good answers are, at times, insufficiently appreciated.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;so-i-gave-up&#34;&gt;So I gave up&lt;/h3&gt;
+
+&lt;p&gt;I started spending time on &lt;a href=&#34;http://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt; and &lt;a href=&#34;http://stats.stackexchange.com&#34;&gt;cross-validated&lt;/a&gt; soon after returning from UseR! 2011, but I lost my patience and quit within three months.&lt;/p&gt;
+
+&lt;p&gt;One needs to treat each question with respect, and I eventually seemed to lose my ability to sustain such goodwill.  I think I take things too personally.&lt;/p&gt;
+
+&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
+
+&lt;p&gt;I should clarify: I &lt;em&gt;do&lt;/em&gt; continue to use Stack Exchange, mostly through google.  Many problems I run into have already been answered.  I just don&amp;rsquo;t have the right temperament to participate regularly in answering others&amp;rsquo; questions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gamified</title>
+      <link>/2011/09/26/gamified/</link>
+      <pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/2011/09/26/gamified/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; gave an interesting talk at &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;UseR 2011&lt;/a&gt;, &amp;ldquo;Why R-help must die!&amp;rdquo; He suggested the Q-and-A type sites &lt;a href=&#34;http://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; (on programming) and &lt;a href=&#34;http://stats.stackexchange.com&#34;&gt;Cross Validated&lt;/a&gt; (on statistics), both part of &lt;a href=&#34;http://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;An interesting feature of these sites is that, in addition to voting up and down on the questions and answers, one accrues &lt;a href=&#34;http://stats.stackexchange.com/faq#reputation&#34;&gt;reputation points&lt;/a&gt;. I&amp;rsquo;ve found this to be surprisingly addictive, and perhaps that&amp;rsquo;s the goal. Consider the O&amp;rsquo;Reilly book &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/1449397670/7210-20&#34;&gt;Gamification by design&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I agree with Barry that these sites are an excellent replacement for &lt;a href=&#34;https://www.stat.math.ethz.ch/pipermail/r-help/&#34;&gt;R-help&lt;/a&gt;, which I stopped paying attention to years ago. The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.&lt;/p&gt;
+
+&lt;p&gt;But currently &lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;the R questions at StackOverflow&lt;/a&gt; are rather advanced, and so I&amp;rsquo;ve found the general statistics site, &lt;a href=&#34;http://stats.stackexchange.com&#34;&gt;Cross Validated&lt;/a&gt;, a bit more fun (that is, I&amp;rsquo;m more able to answer the questions).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

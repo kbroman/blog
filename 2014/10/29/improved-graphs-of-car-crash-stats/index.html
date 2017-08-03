@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+<title>Improved graphs of car crash stats - the stupidest thing...</title>
+<meta property="og:title" content="Improved graphs of car crash stats - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="http://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Improved graphs of car crash stats</h1>
+
+    
+    <span class="article-date">2014/10/29</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Last week, <a href="https://twitter.com/MonaChalabi">Mona Chalabi</a> wrote <a href="http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/">an interesting post on car crash statistics by state</a>, at <a href="http://fivethirtyeight.com/">fivethirtyeight.com</a>.</p>
+
+<p>I didn&rsquo;t like the figures so much, though. There were a number of them like this:</p>
+
+<p><img src="https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png" alt="chalabi-dearmona-drinking" /></p>
+
+<p>I&rsquo;m giving a talk today about data visualization [<a href="http://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf">slides</a> | <a href="https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014">github</a>], and I thought this would make a good example, so I spent some time creating versions that I like better.
+<!-- more --></p>
+
+<p>There are two basic issues with Mona Chalabi&rsquo;s graphs. First, you almost <em>never</em> want to use alphabetical order. It&rsquo;s useful for finding particular states, but it&rsquo;s not useful for anything else. (Howard Wainer calls this &ldquo;Austria first!&rdquo; See, e.g., <a href="http://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf">this paper</a>.) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.</p>
+
+<p>Second, the separate figures make comparisons difficult. It would be better to put everything side-by-side. Even better is to do some scatterplots.</p>
+
+<p>(We shouldn&rsquo;t be too hard on Mona Chalabi, though. Yesterday <a href="https://twitter.com/MonaChalabi/status/527121946073632768">she tweeted a great illustration of the suckiness of pie charts</a>, which I&rsquo;m also using as an example in my lecture today.)</p>
+
+<h3 id="dot-plots">Dot plots</h3>
+
+<p>I started with a set of side-by-side dot plots, with states ordered by total collisions per billion miles:</p>
+
+<p><img src="https://kbroman.files.wordpress.com/2014/10/dotplots.png" alt="Dot plots of crash statistics" /></p>
+
+<p>The design was inspired by the figures in <a href="http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20">Visualizing data patterns with micromaps</a> (Carr and Pickle, 2010). (I&rsquo;m a huge <a href="http://mason.gmu.edu/~dcarr/">Dan Carr</a> fan.)</p>
+
+<p>Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes <em>with fatalities</em>.) And you can more easily see the associations among the different variables.</p>
+
+<h3 id="scatterplots">Scatterplots</h3>
+
+<p>If you&rsquo;re interested in the associations among the variables, it&rsquo;s best to look at scatterplots. Here are what I viewed to be the most interesting ones:</p>
+
+<p><img src="https://kbroman.files.wordpress.com/2014/10/scatterplots.png" alt="Scatterplots of car crash stats" /></p>
+
+<p>The association between average insurance premiums and average insurance losses is now clear. And there&rsquo;s an interesting pattern in the association between speeding-related crashes and total crashes. It&rsquo;s like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.</p>
+
+<p>You can&rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing <a href="http://www.jstor.org/stable/1269768">brushing</a>).</p>
+
+<h3 id="the-data">The data</h3>
+
+<p>It was a bit of a pain to get the data to make the revised plots. The <a href="http://www-fars.nhtsa.dot.gov/Main/index.aspx">National Highway Traffic Safety Administration</a> has a lot of data, but I didn&rsquo;t want to spend the time trying to make sense of it and extract the numbers.</p>
+
+<p>I considered trying to do some image analysis to figure out the lengths of the bars in the bar plots, but I don&rsquo;t have much experience with that, so while it&rsquo;d be a great thing to learn, it seemed like I wouldn&rsquo;t be able to get it done in time.</p>
+
+<p>So I used the old-fashioned method: print the graphs and measure the bars with a ruler.  Here&rsquo;s a scan of some of my measurements (click on it to see the larger version).</p>
+
+<p><img src="https://kbroman.files.wordpress.com/2014/10/via_ruler.png" alt="Digitizing car crash stats with a ruler" /></p>
+
+<p>Data entry was another not-quite-how-I-want-my-scientific-collaborators-to-be-doing-this aspect. The data are <a href="https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/data.R">here</a>, as R code, in the most tedious possible form. And surely there are errors.</p>
+
+<h3 id="the-code">The code</h3>
+
+<p>The code to make the dotplots is <a href="https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/plot.R">here</a>; the code to make the scatterplots is <a href="https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/scatterplots.R">here</a>. Not the prettiest, and uses base graphics not the recommended <a href="http://ggplot2.org">ggplot2</a>, and with the <code>grayplot</code> function in my <a href="https://github.com/kbroman/broman">R/broman</a> package.</p>
+
+<h3 id="update">Update</h3>
+
+<p><a href="http://fivethirtyeight.com/contributors/mona-chalabi/">Mona Chalabi</a> and <a href="http://fivethirtyeight.com/contributors/andrew-flowers/">Andrew Flowers</a> posted the data at <a href="https://github.com/fivethirtyeight/data/tree/master/bad-drivers"><code>github.com/fivethirtyeight/data</code></a>. I discuss the errors in my ruler-based measurements <a href="http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/">here</a>.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

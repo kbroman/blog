@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fst on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/fst/</link>
+    <link>/tags/fst/</link>
     <description>Recent content in Fst on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 30 Apr 2017 14:07:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/fst/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/fst/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
 &lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
 &lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
