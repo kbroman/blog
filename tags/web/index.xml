@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/web/</link>
+    <link>/tags/web/</link>
     <description>Recent content in Web on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 10 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/web/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/web/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Use meaningful URLs</title>
-      <link>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</link>
+      <link>/2013/04/10/use-meaningful-urls/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
+      <guid>/2013/04/10/use-meaningful-urls/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/natesmoyer/qr-codes-are-stupid&#34;&gt;QR codes are stupid&lt;/a&gt;.  See the well-known &lt;a href=&#34;https://twitter.com/jcolman/status/320917928881033218&#34;&gt;flowchart&lt;/a&gt;.&lt;/p&gt;

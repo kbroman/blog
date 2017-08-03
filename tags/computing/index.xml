@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computing on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/computing/</link>
+    <link>/tags/computing/</link>
     <description>Recent content in Computing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 14 Mar 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/computing/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/computing/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Startling lack of training in statistical computing</title>
-      <link>http://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
+      <link>/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
+      <guid>/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
       <description>&lt;p&gt;It is shocking to me that &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;a statistics department&lt;/a&gt; would offer a graduate-level statistical computing course only &lt;em&gt;every fourth year&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/&#34;&gt;had been arguing for a statistical programming course&lt;/a&gt;: that we supplement the usual course on the &lt;em&gt;theory&lt;/em&gt; of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the &lt;em&gt;practice&lt;/em&gt; of statistical computing.&lt;/p&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>Googling errors</title>
-      <link>http://kbroman.org/blog/2014/02/14/googling-errors/</link>
+      <link>/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/14/googling-errors/</guid>
+      <guid>/2014/02/14/googling-errors/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
@@ -76,10 +76,10 @@ SyntaxError: invalid syntax
     
     <item>
       <title>A course in statistical programming</title>
-      <link>http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</link>
+      <link>/2012/05/25/a-course-in-statistical-programming/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</guid>
+      <guid>/2012/05/25/a-course-in-statistical-programming/</guid>
       <description>&lt;p&gt;Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.&lt;/p&gt;
 
 &lt;p&gt;For example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html&#34;&gt;here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo;&lt;/a&gt; that I taught at &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Johns Hopkins&lt;/a&gt; back in 2001.&lt;/p&gt;

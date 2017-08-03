@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kids on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/kids/</link>
+    <link>/tags/kids/</link>
     <description>Recent content in Kids on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 22 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/kids/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/kids/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Randomized Hobbit</title>
-      <link>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
+      <link>/2015/06/22/randomized-hobbit-2/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
+      <guid>/2015/06/22/randomized-hobbit-2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; pointed me to his &lt;a href=&#34;http://cran.r-project.org/package=ngram&#34;&gt;ngram&lt;/a&gt; R package for constructing and simulating from n-grams from text.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.&lt;/p&gt;
@@ -71,10 +71,10 @@ already off his horse and among the goblin and the dragon, who had remained behi
     
     <item>
       <title>More on Chutes &amp; Ladders</title>
-      <link>http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</link>
+      <link>/2013/05/20/more-on-chutes-ladders/</link>
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</guid>
+      <guid>/2013/05/20/more-on-chutes-ladders/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/mmaenner/status/335478612084006912&#34;&gt;Matt Maenner asked&lt;/a&gt; about the sawtooth pattern in the &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;figure&lt;/a&gt; in &lt;a href=&#34;http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;my last post on Chutes &amp;amp; Ladders&lt;/a&gt;.&lt;/p&gt;
@@ -122,10 +122,10 @@ already off his horse and among the goblin and the dragon, who had remained behi
     
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
-      <link>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
+      <link>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
+      <guid>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
       <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;I saw an &lt;a href=&#34;http://datagenetics.com/blog/november12011/&#34;&gt;interesting mathematical analysis of the game&lt;/a&gt; a few years ago, but it seems to be offline, though &lt;a href=&#34;http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/&#34;&gt;you can read it&lt;/a&gt; via the &lt;a href=&#34;http://web.archive.org/&#34;&gt;wayback machine&lt;/a&gt;.&lt;/p&gt;

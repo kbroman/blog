@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Science on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/data-science/</link>
+    <link>/tags/data-science/</link>
     <description>Recent content in Data Science on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 08 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/data-science/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/data-science/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I am a data scientist</title>
-      <link>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
@@ -82,10 +82,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
@@ -98,10 +98,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Reform academic statistics</title>
-      <link>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
 
 &lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
@@ -172,10 +172,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Data science is statistics</title>
-      <link>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</link>
+      <link>/2013/04/05/data-science-is-statistics/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
+      <guid>/2013/04/05/data-science-is-statistics/</guid>
       <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.  You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.&lt;/p&gt;
@@ -188,10 +188,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>5/9 data journalists use Excel</title>
-      <link>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
+      <link>/2013/01/15/59-data-journalists-use-excel/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
+      <guid>/2013/01/15/59-data-journalists-use-excel/</guid>
       <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;
@@ -200,10 +200,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>NIH to hire Associate Director for Data Science</title>
-      <link>http://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
+      <link>/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
+      <guid>/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
       <description>&lt;p&gt;See &lt;a href=&#34;http://www.nih.gov/news/health/jan2013/od-10a.htm&#34;&gt;the press release&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.genome.gov/27535200&#34;&gt;Eric Green&lt;/a&gt;, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.&lt;/p&gt;

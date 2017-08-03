@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Version Control on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/version-control/</link>
+    <link>/tags/version-control/</link>
     <description>Recent content in Version Control on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/version-control/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/version-control/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
+      <link>/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>/2013/08/20/electronic-lab-notebook/</guid>
       <description>
 
 &lt;p&gt;I was interested to read &lt;a href=&#34;http://ivory.idyll.org&#34;&gt;C. Titus Brown&lt;/a&gt;&amp;rsquo;s recent post, &amp;ldquo;&lt;a href=&#34;http://ivory.idyll.org/blog/is-version-control-an-electronic-lab-notebook.html&#34;&gt;Is version control an electronic lab notebook?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
