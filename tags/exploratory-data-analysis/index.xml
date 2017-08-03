@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exploratory Data Analysis on the stupidest thing...</title>
-    <link>/tags/exploratory-data-analysis/</link>
+    <link>http://kbroman.org/blog/tags/exploratory-data-analysis/</link>
     <description>Recent content in Exploratory Data Analysis on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 03 Nov 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/exploratory-data-analysis/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/exploratory-data-analysis/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
-      <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
+      <link>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
+      <guid>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
       <description>&lt;p&gt;Last week, I &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Interactive plot of car crash stats</title>
-      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <link>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>Improved graphs of car crash stats</title>
-      <link>/2014/10/29/improved-graphs-of-car-crash-stats/</link>
+      <link>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
+      <guid>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>
 
 &lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/MonaChalabi&#34;&gt;Mona Chalabi&lt;/a&gt; wrote &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;an interesting post on car crash statistics by state&lt;/a&gt;, at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;fivethirtyeight.com&lt;/a&gt;.&lt;/p&gt;
@@ -125,10 +125,10 @@
     
     <item>
       <title>Microarrays suck</title>
-      <link>/2012/04/25/microarrays-suck/</link>
+      <link>http://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/25/microarrays-suck/</guid>
+      <guid>http://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
       <description>
 
 &lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;

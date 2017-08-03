@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Excel on the stupidest thing...</title>
-    <link>/tags/excel/</link>
+    <link>http://kbroman.org/blog/tags/excel/</link>
     <description>Recent content in Excel on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 30 Jan 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/excel/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/excel/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Microsoft Office</title>
-      <link>/2013/01/30/microsoft-office/</link>
+      <link>http://kbroman.org/blog/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/01/30/microsoft-office/</guid>
+      <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>5/9 data journalists use Excel</title>
-      <link>/2013/01/15/59-data-journalists-use-excel/</link>
+      <link>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/01/15/59-data-journalists-use-excel/</guid>
+      <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
       <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;
