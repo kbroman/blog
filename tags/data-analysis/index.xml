@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Analysis on the stupidest thing...</title>
-    <link>/tags/data-analysis/</link>
+    <link>http://kbroman.org/blog/tags/data-analysis/</link>
     <description>Recent content in Data Analysis on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 04 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/data-analysis/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/data-analysis/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>
 
 &lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
@@ -108,10 +108,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>Data science is statistics</title>
-      <link>/2013/04/05/data-science-is-statistics/</link>
+      <link>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/05/data-science-is-statistics/</guid>
+      <guid>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
       <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.  You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.&lt;/p&gt;
@@ -124,10 +124,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>5/9 data journalists use Excel</title>
-      <link>/2013/01/15/59-data-journalists-use-excel/</link>
+      <link>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/01/15/59-data-journalists-use-excel/</guid>
+      <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
       <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;

@@ -2,281 +2,281 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on the stupidest thing...</title>
-    <link>/tags/</link>
+    <link>http://kbroman.org/blog/tags/</link>
     <description>Recent content in Tags on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 12 Oct 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Animal Research</title>
-      <link>/tags/animal-research/</link>
+      <link>http://kbroman.org/blog/tags/animal-research/</link>
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/tags/animal-research/</guid>
+      <guid>http://kbroman.org/blog/tags/animal-research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Art</title>
-      <link>/tags/art/</link>
+      <link>http://kbroman.org/blog/tags/art/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/art/</guid>
+      <guid>http://kbroman.org/blog/tags/art/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Big Data</title>
-      <link>/tags/big-data/</link>
+      <link>http://kbroman.org/blog/tags/big-data/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>/tags/big-data/</guid>
+      <guid>http://kbroman.org/blog/tags/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Biking</title>
-      <link>/tags/biking/</link>
+      <link>http://kbroman.org/blog/tags/biking/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/biking/</guid>
+      <guid>http://kbroman.org/blog/tags/biking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogdown</title>
-      <link>/tags/blogdown/</link>
+      <link>http://kbroman.org/blog/tags/blogdown/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>http://kbroman.org/blog/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C</title>
-      <link>/tags/c/</link>
+      <link>http://kbroman.org/blog/tags/c/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/tags/c/</guid>
+      <guid>http://kbroman.org/blog/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Censorship</title>
-      <link>/tags/censorship/</link>
+      <link>http://kbroman.org/blog/tags/censorship/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/censorship/</guid>
+      <guid>http://kbroman.org/blog/tags/censorship/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>/tags/code/</link>
+      <link>http://kbroman.org/blog/tags/code/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/code/</guid>
+      <guid>http://kbroman.org/blog/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Comic</title>
-      <link>/tags/comic/</link>
+      <link>http://kbroman.org/blog/tags/comic/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/comic/</guid>
+      <guid>http://kbroman.org/blog/tags/comic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Computing</title>
-      <link>/tags/computing/</link>
+      <link>http://kbroman.org/blog/tags/computing/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/computing/</guid>
+      <guid>http://kbroman.org/blog/tags/computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conference</title>
-      <link>/tags/conference/</link>
+      <link>http://kbroman.org/blog/tags/conference/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>/tags/conference/</guid>
+      <guid>http://kbroman.org/blog/tags/conference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Consulting</title>
-      <link>/tags/consulting/</link>
+      <link>http://kbroman.org/blog/tags/consulting/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/tags/consulting/</guid>
+      <guid>http://kbroman.org/blog/tags/consulting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Copyright</title>
-      <link>/tags/copyright/</link>
+      <link>http://kbroman.org/blog/tags/copyright/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/copyright/</guid>
+      <guid>http://kbroman.org/blog/tags/copyright/</guid>
       <description></description>
     </item>
     
     <item>
       <title>D3</title>
-      <link>/tags/d3/</link>
+      <link>http://kbroman.org/blog/tags/d3/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>/tags/d3/</guid>
+      <guid>http://kbroman.org/blog/tags/d3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Analysis</title>
-      <link>/tags/data-analysis/</link>
+      <link>http://kbroman.org/blog/tags/data-analysis/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-analysis/</guid>
+      <guid>http://kbroman.org/blog/tags/data-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Science</title>
-      <link>/tags/data-science/</link>
+      <link>http://kbroman.org/blog/tags/data-science/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-science/</guid>
+      <guid>http://kbroman.org/blog/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Visualization</title>
-      <link>/tags/data-visualization/</link>
+      <link>http://kbroman.org/blog/tags/data-visualization/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>/tags/data-visualization/</guid>
+      <guid>http://kbroman.org/blog/tags/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data.Table</title>
-      <link>/tags/data.table/</link>
+      <link>http://kbroman.org/blog/tags/data.table/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>/tags/data.table/</guid>
+      <guid>http://kbroman.org/blog/tags/data.table/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Debugging</title>
-      <link>/tags/debugging/</link>
+      <link>http://kbroman.org/blog/tags/debugging/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/debugging/</guid>
+      <guid>http://kbroman.org/blog/tags/debugging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diagnostics</title>
-      <link>/tags/diagnostics/</link>
+      <link>http://kbroman.org/blog/tags/diagnostics/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/diagnostics/</guid>
+      <guid>http://kbroman.org/blog/tags/diagnostics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>/tags/emacs/</link>
+      <link>http://kbroman.org/blog/tags/emacs/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/emacs/</guid>
+      <guid>http://kbroman.org/blog/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email</title>
-      <link>/tags/email/</link>
+      <link>http://kbroman.org/blog/tags/email/</link>
       <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/email/</guid>
+      <guid>http://kbroman.org/blog/tags/email/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Excel</title>
-      <link>/tags/excel/</link>
+      <link>http://kbroman.org/blog/tags/excel/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>/tags/excel/</guid>
+      <guid>http://kbroman.org/blog/tags/excel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploratory Data Analysis</title>
-      <link>/tags/exploratory-data-analysis/</link>
+      <link>http://kbroman.org/blog/tags/exploratory-data-analysis/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/exploratory-data-analysis/</guid>
+      <guid>http://kbroman.org/blog/tags/exploratory-data-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Feather</title>
-      <link>/tags/feather/</link>
+      <link>http://kbroman.org/blog/tags/feather/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/tags/feather/</guid>
+      <guid>http://kbroman.org/blog/tags/feather/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fst</title>
-      <link>/tags/fst/</link>
+      <link>http://kbroman.org/blog/tags/fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/tags/fst/</guid>
+      <guid>http://kbroman.org/blog/tags/fst/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Genetic Testing</title>
-      <link>/tags/genetic-testing/</link>
+      <link>http://kbroman.org/blog/tags/genetic-testing/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/genetic-testing/</guid>
+      <guid>http://kbroman.org/blog/tags/genetic-testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>/tags/github/</link>
+      <link>http://kbroman.org/blog/tags/github/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>http://kbroman.org/blog/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google</title>
-      <link>/tags/google/</link>
+      <link>http://kbroman.org/blog/tags/google/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/google/</guid>
+      <guid>http://kbroman.org/blog/tags/google/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grants</title>
-      <link>/tags/grants/</link>
+      <link>http://kbroman.org/blog/tags/grants/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/tags/grants/</guid>
+      <guid>http://kbroman.org/blog/tags/grants/</guid>
       <description></description>
     </item>
     

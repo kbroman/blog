@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Debugging on the stupidest thing...</title>
-    <link>/tags/debugging/</link>
+    <link>http://kbroman.org/blog/tags/debugging/</link>
     <description>Recent content in Debugging on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 24 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/debugging/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/debugging/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>/2015/09/24/its-not-you-its-me/</link>
+      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/24/its-not-you-its-me/</guid>
+      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
       <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
 
 &lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
