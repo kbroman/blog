@@ -16,7 +16,7 @@
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
-      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;http://kbroman.org/blog/2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
+      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;./blog/2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
 &lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for me! So awesome.&lt;/p&gt;
 </description>
     </item>
@@ -260,7 +260,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Thu Aug  3 06:26:37 2017 --&gt;
+&lt;!-- Thu Aug  3 11:08:51 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
