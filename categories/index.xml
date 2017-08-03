@@ -38,6 +38,15 @@
     </item>
     
     <item>
+      <title>Blog</title>
+      <link>http://kbroman.org/blog/categories/blog/</link>
+      <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Genetics</title>
       <link>http://kbroman.org/blog/categories/genetics/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>

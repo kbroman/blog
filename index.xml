@@ -7,8 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 03 Aug 2017 00:01:00 -0500</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>yay, yihui!</title>
+      <link>http://kbroman.org/blog/2017/08/03/yay-yihui/</link>
+      <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
+      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
+&lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for me! So awesome.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>miner and craft</title>
@@ -249,7 +260,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Wed Aug  2 23:50:50 2017 --&gt;
+&lt;!-- Thu Aug  3 00:03:48 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1621,65 +1632,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2015/06/anscombe_2.png&#34; alt=&#34;Anscombe&#39;s quartet, set 2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Randomized Hobbit</title>
-      <link>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
-      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; pointed me to his &lt;a href=&#34;http://cran.r-project.org/package=ngram&#34;&gt;ngram&lt;/a&gt; R package for constructing and simulating from n-grams from text.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the code I used to grab the text.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(XML)
-stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot;
-hobbit &amp;lt;- NULL
-for(i in 1:74) {
-```r
-cat(i,&amp;quot;\n&amp;quot;)
-if(i==1) {
-    url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;)
-} else {
-    url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.html&amp;quot;)
-}
-
-x &amp;lt;- htmlTreeParse(url, useInternalNodes=TRUE)
-xx &amp;lt;- xpathApply(x, &amp;quot;//p&amp;quot;, xmlValue)
-hobbit &amp;lt;- c(hobbit, gsub(&amp;quot;\r&amp;quot;, &amp;quot;&amp;quot;, xx[-length(xx)]))
-Sys.sleep(0.5)
-```
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then calculate the ngrams with n=2.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(ngram)
-ng2 &amp;lt;- ngram(hobbit, n=2)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Simulate some number of words with &lt;code&gt;babble()&lt;/code&gt;. If you use the &lt;code&gt;seed&lt;/code&gt; argument, you can get the result reproducibly.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;babble(ng2, 48, seed=53482175)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-into trees, and then bore to the Mountain to go through?&#34; groaned the hobbit. &#34;Well, are you doing, And where are you doing, And where are you?&#34; it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; suggested that I &lt;a href=&#34;http://librestats.com/2014/07/01/modern-applied-statistics-in-rlyeh/&#34;&gt;mix two texts&lt;/a&gt;, so here&amp;rsquo;s a bit from the &lt;em&gt;Hobbit in the Hat&lt;/em&gt; (The Hobbit with 59× Cat in the Hat &amp;ndash; up-sampled to match lengths.) But there&amp;rsquo;s maybe not enough overlap between the two texts to get much of a mixture.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&#34;I am Gandalf,&#34; said the fish. This is no way at all!
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-already off his horse and among the goblin and the dragon, who had remained behind to guard the door. &#34;Something is outside!&#34; Bilbo&#39;s heart jumped into his boat on to sharp rocks below; but there was a good game, Said our fish No! No! Those Things should not fly.
-&lt;/blockquote&gt;
 </description>
     </item>
     

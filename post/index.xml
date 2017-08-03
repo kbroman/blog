@@ -7,8 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 03 Aug 2017 00:01:00 -0500</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>yay, yihui!</title>
+      <link>http://kbroman.org/blog/2017/08/03/yay-yihui/</link>
+      <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
+      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
+&lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for me! So awesome.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>miner and craft</title>
@@ -249,7 +260,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Wed Aug  2 23:50:50 2017 --&gt;
+&lt;!-- Thu Aug  3 00:03:48 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1657,32 +1668,6 @@ into trees, and then bore to the Mountain to go through?&#34; groaned the hobbit
 &lt;blockquote&gt;
 already off his horse and among the goblin and the dragon, who had remained behind to guard the door. &#34;Something is outside!&#34; Bilbo&#39;s heart jumped into his boat on to sharp rocks below; but there was a good game, Said our fish No! No! Those Things should not fly.
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cheat sheets for R-based Software Carpentry course</title>
-      <link>http://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
-      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
-      <description>&lt;p&gt;At the &lt;a href=&#34;http://software-carpentry.org&#34;&gt;Software Carpentry&lt;/a&gt; workshop at  &lt;a href=&#34;https://github.com/UW-Madison-ACI/boot-camps/blob/2014-08-25/README.md&#34;&gt;UW-Madison in August, 2014&lt;/a&gt;, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.&lt;/p&gt;
-
-&lt;p&gt;So at the SWC workshop at &lt;a href=&#34;http://karawoo.com/2015-04-27-wsu/&#34;&gt;Washington State University this week&lt;/a&gt;, we handed out the following five pages:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf&#34;&gt;ddplyr&lt;/a&gt; (from RStudio)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/04/ggplot2-cheatsheet.pdf&#34;&gt;ggplot2&lt;/a&gt; (from RStudio)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/&#34;&gt;unix command line&lt;/a&gt; (from Dave Child at Cheatography)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf&#34;&gt;git&lt;/a&gt; (from GitHub)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf&#34;&gt;R Markdown&lt;/a&gt; (from RStudio)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I really appreciate the work (and design sense) that were put into these.&lt;/p&gt;
 </description>
     </item>
     
