@@ -249,7 +249,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Thu Aug  3 11:08:51 2017 --&gt;
+&lt;!-- Fri Aug  4 11:01:37 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1570,7 +1570,8 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
 
-&lt;blockquote&gt;[If attendees of this weekend&#39;s intro to python workshop leave with one thing, it&#39;ll be to Google your error messages first and foremost.](https://twitter.com/roguelynn/status/431321921909968896)&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.&lt;/p&gt;&amp;mdash; __root__ (@roguelynn) &lt;a href=&#34;https://twitter.com/roguelynn/status/431321921909968896&#34;&gt;February 6, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;I had just talked about the technique in my &lt;a href=&#34;http://kbroman.github.io/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, and I had a few recent examples.&lt;/p&gt;
 
