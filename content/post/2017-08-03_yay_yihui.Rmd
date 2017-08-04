@@ -8,7 +8,7 @@ tags: ["blogdown"]
 
 When I abandoned my [wordpress site](https://kbroman.wordpress.com)
 and moved to [blogdown](https://bookdown.org/yihui/blogdown/),
-[I'd said](/blog/2017/04/30/new_blog_site/)
+[I'd said](/2017/04/30/new_blog_site/)
 that I wouldn't bother trying to move the old posts over.
 
 But [Yihui Xie](https://yihui.name) just
