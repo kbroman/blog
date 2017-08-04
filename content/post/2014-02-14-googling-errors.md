@@ -14,7 +14,7 @@ slug: googling-errors
 
 [@roguelynn](https://twitter.com/roguelynn) tweeted the other day:
 
-<blockquote>[If attendees of this weekend's intro to python workshop leave with one thing, it'll be to Google your error messages first and foremost.](https://twitter.com/roguelynn/status/431321921909968896)</blockquote>
+{{< tweet 431321921909968896>}}
 
 I had just talked about the technique in my [Tools for Reproducible Research](http://kbroman.github.io/Tools4RR/) course, and I had a few recent examples.
 

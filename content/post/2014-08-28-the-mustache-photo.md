@@ -25,9 +25,7 @@ It [appeared on the seminar board](https://twitter.com/StrictlyStat/status/49524
 
 [Hilary Parker](http://hilaryparker.com) confirmed:
 
-<blockquote>[trufax -- this photo would make its way into department events all. the. time.](https://twitter.com/hspter/status/505091094804455424)</blockquote>
-
-<blockquote>[like if there was no pizza for computing club, "no pizza" would link to this photo](https://twitter.com/hspter/status/505091356822609922)</blockquote>
+{{< tweet 505091356822609922 >}}
 
 It seems time to tell the story behind the photo. This will probably be longer than it should be. But I've included photos of cats.
 
