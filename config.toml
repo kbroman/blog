@@ -18,7 +18,7 @@ copyright="The text in this work is licensed under CC-BY-4.0, https://creativeco
 
 [[menu.main]]
     name = "about"
-    url = "/about/"
+    url = "http://kbroman.org/blog/about"
 [[menu.main]]
     name = "github"
     url = "https://github.com/kbroman"
