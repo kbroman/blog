@@ -24,4 +24,4 @@ Not having a good sense of how this 1m x 1m poster is actually going to look, I 
 It looks like it will be fine.
 ![](http://kbroman.files.wordpress.com/2011/09/photo_of_poster.jpg)
 
-Maybe I should save the $50 or $100 and post the black-and-white, pasted-together version?
+Maybe I should save the \$50 or \$100 and post the black-and-white, pasted-together version?
