@@ -7,8 +7,96 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 03 Aug 2017 00:01:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>EOF within quoted string</title>
+      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <description>---
+title: &#39;EOF within quoted string&#39;
+author: Karl
+date: &#39;2017-08-08T00:10:12-05:00&#39;
+categories: [R]
+tags: [&#34;R&#34;, &#34;data munging&#34;, &#34;read.table&#34;]
+---
+
+---
+title: &#39;EOF within quoted string&#39;
+author: Karl
+date: &#39;2017-08-08T00:10:12-05:00&#39;
+categories: [R]
+tags: [&#34;R&#34;, &#34;data munging&#34;, &#34;read.table&#34;]
+---
+
+---
+title: &#39;EOF within quoted string&#39;
+author: Karl
+date: &#39;2017-08-08T00:10:12-05:00&#39;
+categories: [R]
+tags: [&#34;R&#34;, &#34;data munging&#34;, &#34;read.table&#34;]
+---
+
+
+
+&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
+&lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
+&lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with &lt;code&gt;###&lt;/code&gt; interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s first download and unzip the file.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# download the file
+site &amp;lt;- &amp;quot;http://www.informatics.jax.org/downloads/mgigff&amp;quot;
+file &amp;lt;- &amp;quot;MGI.20170803.gff3.gz&amp;quot;
+url &amp;lt;- paste0(site, &amp;quot;/&amp;quot;, file)
+if(!file.exists(file)) download.file(url, file)
+
+# unzip to a temporary file
+file &amp;lt;- sub(&amp;quot;.gz$&amp;quot;, &amp;quot;&amp;quot;, file)
+tmpfile &amp;lt;- tempfile()
+remove_tmpfile &amp;lt;- FALSE
+if(!file.exists(file)) { # need to unzip
+    system(paste0(&amp;quot;gunzip -c &amp;quot;, file, &amp;quot;.gz &amp;gt; &amp;quot;, tmpfile))
+    remove_tmpfile &amp;lt;- TRUE
+    file &amp;lt;- tmpfile
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Okay, now to read it into R with &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tab &amp;lt;- read.table(file, sep=&amp;quot;\t&amp;quot;, header=FALSE, comment.char=&amp;quot;#&amp;quot;,
+                  na.strings=&amp;quot;.&amp;quot;, stringsAsFactors=FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This gives a warning message:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Warning message:
+In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
+  EOF within quoted string&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hmm. What does that mean? Oh, no matter, let’s move on…&lt;/p&gt;
+&lt;p&gt;Wait, there are no genes on chromosomes 5, 8, 15, 18, Y, or MT. How could that be? Something must be wrong with the file. Let’s look at another file at that site, &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20160103.gff3.gz&#34;&gt;&lt;code&gt;MGI.20160103.gff3.gz&lt;/code&gt;&lt;/a&gt;. That one’s missing chromosomes ***.&lt;/p&gt;
+&lt;p&gt;So I ask &lt;a href=&#34;https://www.jax.org/research-and-faculty/faculty/research-scientists/daniel-gatti&#34;&gt;Dan Gatti&lt;/a&gt;: “Hey, those files are corrupted. Who should I talk to about them?”&lt;/p&gt;
+&lt;p&gt;And he’s like, “That’d be a disaster, but they look fine to me [parsed with &lt;code&gt;read.delim()&lt;/code&gt;].”&lt;/p&gt;
+&lt;p&gt;So I tried using &lt;code&gt;read.delim()&lt;/code&gt; and sure enough, no warning, genes on all chromosomes, and about twice as many records. Oops.&lt;/p&gt;
+&lt;div id=&#34;read.delim-vs-read.table&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;code&gt;read.delim()&lt;/code&gt; vs &lt;code&gt;read.table()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;So what’s the difference between &lt;code&gt;read.delim()&lt;/code&gt; and &lt;code&gt;read.table()&lt;/code&gt;? Well, &lt;code&gt;read.delim()&lt;/code&gt; calls &lt;code&gt;read.table()&lt;/code&gt; with a particular set of default values for the arguments:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; read.delim
+function (file, header = TRUE, sep = &amp;quot;\\t&amp;quot;, quote = &amp;quot;\\&amp;quot;&amp;quot;, dec = &amp;quot;.&amp;quot;,
+    fill = TRUE, comment.char = &amp;quot;&amp;quot;, ...)
+read.table(file = file, header = header, sep = sep, quote = quote,
+    dec = dec, fill = fill, comment.char = comment.char, ...)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The key argument here is &lt;code&gt;quote&lt;/code&gt;, in that &lt;code&gt;read.table()&lt;/code&gt; uses &lt;code&gt;quote=&amp;quot;&#39;\&amp;quot;&amp;quot;&lt;/code&gt; while &lt;code&gt;read.delim()&lt;/code&gt; uses &lt;code&gt;quote=&amp;quot;\&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;One of the columns in the file includes some single-quotes, and so, well, my use of &lt;code&gt;read.table()&lt;/code&gt; was mucking everything up because of those single-quotes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lessons&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Lessons&lt;/h2&gt;
+&lt;p&gt;There are several lessons here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I shouldn’t have ignored the “&lt;code&gt;EOF within quote string&lt;/code&gt;” warning.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I should have compared the number of lines I read in with the number of lines in the input file. If I’d done so, I’d have seen that I had just about half as many lines as I should’ve, and so I’d clearly messed something up.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When I run into a problem like this, it’s more likely that there’s a problem with my code than that there’s a problem with the file.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;With a file of this sort, I should have used &lt;code&gt;quote=&amp;quot;&amp;quot;&lt;/code&gt; and &lt;code&gt;fill=FALSE&lt;/code&gt; in my call to &lt;code&gt;read.table()&lt;/code&gt;. I’m not expecting any quoted fields, and I’m expecting that every line will have exactly nine columns.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s good to have a friend like Dan.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>yay, yihui!</title>
@@ -260,7 +348,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Fri Aug  4 13:37:50 2017 --&gt;
+&lt;!-- Tue Aug  8 10:59:48 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1562,76 +1650,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;blockquote&gt;A good time was had at the Joint Statistical Meetings (JSM) in New York City, August 11–15, 2002. After several years of dismal locations (who can forget Dallas?), this year&#39;s JSM began a series of venues possibly even more interesting than the Meetings: in the next two years, the JSM will be in San Francisco and Toronto.&lt;/blockquote&gt;
 
 &lt;p&gt;I have other memories that I can&amp;rsquo;t share here. Find me at &lt;a href=&#34;https://twitter.com/hashtag/jsm2015&#34;&gt;#JSM2015&lt;/a&gt; next week. Seattle is sure to be great!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MongoDB with D3.js</title>
-      <link>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
-      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
-      <description>
-
-&lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; is rough in spots, and while it works well for moderate-sized data sets, it can&amp;rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.&lt;/p&gt;
-
-&lt;p&gt;For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&amp;rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.&lt;/p&gt;
-
-&lt;p&gt;So, I&amp;rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&amp;rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb&#34;&gt;small illustration&lt;/a&gt; in my &lt;a href=&#34;https://github.com/kbroman/d3examples&#34;&gt;d3examples&lt;/a&gt; repository on GitHub.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;learning-mongodb&#34;&gt;Learning MongoDB&lt;/h3&gt;
-
-&lt;p&gt;I thought &lt;a href=&#34;http://www.mongodb.org&#34;&gt;mongoDB&lt;/a&gt; seemed like a good database to try:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;storage of general documents seems a good match for the sort of data I work with&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;use of JSON/BSON seems a good match for &lt;a href=&#34;http://d3js.org&#34;&gt;D3.js&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So I&amp;rsquo;ve been taking an online-course though &lt;a href=&#34;https://university.mongodb.com/&#34;&gt;MongoDB University&lt;/a&gt; &amp;ndash; the &lt;a href=&#34;https://university.mongodb.com/courses/M101JS/about&#34;&gt;one for Node.js developers&lt;/a&gt;. I should have done &lt;a href=&#34;https://university.mongodb.com/courses/M101P/about&#34;&gt;the more general one, using Python&lt;/a&gt;, but I was thinking it&amp;rsquo;d be interesting to learn &lt;a href=&#34;http://nodejs.org&#34;&gt;Node&lt;/a&gt;, which is basically command-line scripting in javascript. I guess the advantage of node is that you can just write javascript. But personally I prefer to switch to the language appropriate to the task, so I&amp;rsquo;m not too hot on node. But maybe I just haven&amp;rsquo;t come to understand how best to make use of the whole callback function business.&lt;/p&gt;
-
-&lt;p&gt;MongoDB is not all that hard. It&amp;rsquo;s just kind of boring. The MongoDB Uni class is quite well done, though a few of the lectures were frustratingly out-of-date. I have the &lt;a href=&#34;http://shop.oreilly.com/product/0636920028031.do&#34;&gt;MongoDB book&lt;/a&gt;, but it&amp;rsquo;s been rough going; the class has been good for that. (The weekly deadlines have been good for motivating me to get through the dull &amp;ndash; for me &amp;ndash; material.)&lt;/p&gt;
-
-&lt;p&gt;The obvious bits with a database: how to get stuff into it and then back out of it. And then I guess deleting or changing stuff. So that&amp;rsquo;s all fine. I also learned about making indexes, so that you can more quickly get stuff out later. I don&amp;rsquo;t think my needs for these things are all that complicated. And so I think I understand those bits.&lt;/p&gt;
-
-&lt;h3 id=&#34;getting-the-data-for-the-data-vis&#34;&gt;Getting the data for the data vis&lt;/h3&gt;
-
-&lt;p&gt;The last key step that I was pondering last night: how do I, based on some user interaction with a data visualization (clicking on a point, or some such), fire off a request to the database and get the data back?&lt;/p&gt;
-
-&lt;p&gt;I guessed some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Representational_state_transfer&#34;&gt;RESTful API&lt;/a&gt; type thing. But while I can write that down, I don&amp;rsquo;t really understand what the hell it means.&lt;/p&gt;
-
-&lt;p&gt;But then I thought, what I need is to use some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods&#34;&gt;HTTP GET request&lt;/a&gt;. I kind of know what that means, but I don&amp;rsquo;t really understand what happens on the back end.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d been poking around in &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt;, the python-based mongoDB driver. (I like it much better than the &lt;a href=&#34;https://api.mongodb.org/ruby/current/&#34;&gt;ruby&lt;/a&gt; or &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/node-js/&#34;&gt;node&lt;/a&gt; drivers.) And as part of the Mongo University class, we used &lt;a href=&#34;http://expressjs.com/&#34;&gt;express&lt;/a&gt; with Node to do some HTTP GET and PUSH. If I want to grab some bit of data, I could have a python script running on the back end, looking for an http request, and then based on some key that was passed, grabbing data from the database and sending it back as JSON.&lt;/p&gt;
-
-&lt;p&gt;So I looked around for how to do this with mongoDB, found &lt;a href=&#34;https://github.com/10gen-labs/sleepy.mongoose&#34;&gt;sleepy mongoose&lt;/a&gt;, but that seemed like more than I wanted, and then came to &lt;a href=&#34;http://bottlepy.org/docs/dev/index.html&#34;&gt;bottle&lt;/a&gt;, which seemed like what I needed to handle the http bit. The example on the front page is just what I want: take a name from a URL and use it as input to some function, and give results back.&lt;/p&gt;
-
-&lt;h3 id=&#34;mongodb-d3-illustration&#34;&gt;MongoDB/D3 illustration&lt;/h3&gt;
-
-&lt;p&gt;The goal of all this: as part of some data visualization, the user will hover over or click a point, and this will lead to a request to the database, and then a plot of the data that comes back.&lt;/p&gt;
-
-&lt;p&gt;It seemed like a simple test case would be to use the data for &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;Anscombe&amp;rsquo;s quartet&lt;/a&gt;. Put the four series into a MongoDB database, and then have four buttons that, when clicked, cause a request to the database to grab the corresponding series, which is then plotted.&lt;/p&gt;
-
-&lt;p&gt;So first I wrote an &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/grab_anscombe.R&#34;&gt;R script&lt;/a&gt; to grab the data from the table on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;wikipedia page&lt;/a&gt; and write it to a &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt; file. I&amp;rsquo;m sure there was an easier way to get the data in a suitable form, but I was really procrastinating from writing a paper at this point, so I thought I&amp;rsquo;d test my web scraping skill in a simple case.&lt;/p&gt;
-
-&lt;p&gt;I then wrote a &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_insert.py&#34;&gt;python script&lt;/a&gt; that reads in the JSON file and inserts the data into a mongoDB database. You make a database connection with &lt;code&gt;pymongo.MongoClient()&lt;/code&gt; and insert the documents with the &lt;code&gt;insert_one()&lt;/code&gt; method to a collection. I later added an index with &lt;code&gt;create_index()&lt;/code&gt;; pretty silly here, but for large problems it would be useful.&lt;/p&gt;
-
-&lt;p&gt;So, the data&amp;rsquo;s in the database. How to get it back out? I wrote a second &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py&#34;&gt;python script&lt;/a&gt; (just 8 lines, really), that uses &lt;a href=&#34;http://bottlepy.org&#34;&gt;bottle&lt;/a&gt; to create a server that connects a URL to a function call. The function then uses &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt; to find the corresponding document and send it back as JSON. One &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;tricky bit that needed some extra googling&lt;/a&gt; was getting the browser to allow the request.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee&#34;&gt;D3 code (in coffeescript&lt;/a&gt;) is pretty standard. On clicking a button, I call &lt;code&gt;d3.json&lt;/code&gt; with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.&lt;/p&gt;
-
-&lt;p&gt;This &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/&#34;&gt;MongoDB/D3 illustration&lt;/a&gt; is a toy example, but it represents an important step for me, personally. I&amp;rsquo;m rather proud of it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2015/06/anscombe_2.png&#34; alt=&#34;Anscombe&#39;s quartet, set 2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
 </description>
     </item>
     

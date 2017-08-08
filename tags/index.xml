@@ -146,6 +146,15 @@
     </item>
     
     <item>
+      <title>Data Munging</title>
+      <link>http://kbroman.org/blog/tags/data-munging/</link>
+      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/tags/data-munging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Science</title>
       <link>http://kbroman.org/blog/tags/data-science/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
@@ -164,7 +173,7 @@
     </item>
     
     <item>
-      <title>Data.Table</title>
+      <title>Data.table</title>
       <link>http://kbroman.org/blog/tags/data.table/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
@@ -268,15 +277,6 @@
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/tags/google/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grants</title>
-      <link>http://kbroman.org/blog/tags/grants/</link>
-      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/tags/grants/</guid>
       <description></description>
     </item>
     

@@ -7,8 +7,96 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/categories/r/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>EOF within quoted string</title>
+      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
+      
+      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <description>---
+title: &#39;EOF within quoted string&#39;
+author: Karl
+date: &#39;2017-08-08T00:10:12-05:00&#39;
+categories: [R]
+tags: [&#34;R&#34;, &#34;data munging&#34;, &#34;read.table&#34;]
+---
+
+---
+title: &#39;EOF within quoted string&#39;
+author: Karl
+date: &#39;2017-08-08T00:10:12-05:00&#39;
+categories: [R]
+tags: [&#34;R&#34;, &#34;data munging&#34;, &#34;read.table&#34;]
+---
+
+---
+title: &#39;EOF within quoted string&#39;
+author: Karl
+date: &#39;2017-08-08T00:10:12-05:00&#39;
+categories: [R]
+tags: [&#34;R&#34;, &#34;data munging&#34;, &#34;read.table&#34;]
+---
+
+
+
+&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
+&lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
+&lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with &lt;code&gt;###&lt;/code&gt; interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s first download and unzip the file.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# download the file
+site &amp;lt;- &amp;quot;http://www.informatics.jax.org/downloads/mgigff&amp;quot;
+file &amp;lt;- &amp;quot;MGI.20170803.gff3.gz&amp;quot;
+url &amp;lt;- paste0(site, &amp;quot;/&amp;quot;, file)
+if(!file.exists(file)) download.file(url, file)
+
+# unzip to a temporary file
+file &amp;lt;- sub(&amp;quot;.gz$&amp;quot;, &amp;quot;&amp;quot;, file)
+tmpfile &amp;lt;- tempfile()
+remove_tmpfile &amp;lt;- FALSE
+if(!file.exists(file)) { # need to unzip
+    system(paste0(&amp;quot;gunzip -c &amp;quot;, file, &amp;quot;.gz &amp;gt; &amp;quot;, tmpfile))
+    remove_tmpfile &amp;lt;- TRUE
+    file &amp;lt;- tmpfile
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Okay, now to read it into R with &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tab &amp;lt;- read.table(file, sep=&amp;quot;\t&amp;quot;, header=FALSE, comment.char=&amp;quot;#&amp;quot;,
+                  na.strings=&amp;quot;.&amp;quot;, stringsAsFactors=FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This gives a warning message:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Warning message:
+In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
+  EOF within quoted string&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hmm. What does that mean? Oh, no matter, let’s move on…&lt;/p&gt;
+&lt;p&gt;Wait, there are no genes on chromosomes 5, 8, 15, 18, Y, or MT. How could that be? Something must be wrong with the file. Let’s look at another file at that site, &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20160103.gff3.gz&#34;&gt;&lt;code&gt;MGI.20160103.gff3.gz&lt;/code&gt;&lt;/a&gt;. That one’s missing chromosomes ***.&lt;/p&gt;
+&lt;p&gt;So I ask &lt;a href=&#34;https://www.jax.org/research-and-faculty/faculty/research-scientists/daniel-gatti&#34;&gt;Dan Gatti&lt;/a&gt;: “Hey, those files are corrupted. Who should I talk to about them?”&lt;/p&gt;
+&lt;p&gt;And he’s like, “That’d be a disaster, but they look fine to me [parsed with &lt;code&gt;read.delim()&lt;/code&gt;].”&lt;/p&gt;
+&lt;p&gt;So I tried using &lt;code&gt;read.delim()&lt;/code&gt; and sure enough, no warning, genes on all chromosomes, and about twice as many records. Oops.&lt;/p&gt;
+&lt;div id=&#34;read.delim-vs-read.table&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;code&gt;read.delim()&lt;/code&gt; vs &lt;code&gt;read.table()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;So what’s the difference between &lt;code&gt;read.delim()&lt;/code&gt; and &lt;code&gt;read.table()&lt;/code&gt;? Well, &lt;code&gt;read.delim()&lt;/code&gt; calls &lt;code&gt;read.table()&lt;/code&gt; with a particular set of default values for the arguments:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; read.delim
+function (file, header = TRUE, sep = &amp;quot;\\t&amp;quot;, quote = &amp;quot;\\&amp;quot;&amp;quot;, dec = &amp;quot;.&amp;quot;,
+    fill = TRUE, comment.char = &amp;quot;&amp;quot;, ...)
+read.table(file = file, header = header, sep = sep, quote = quote,
+    dec = dec, fill = fill, comment.char = comment.char, ...)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The key argument here is &lt;code&gt;quote&lt;/code&gt;, in that &lt;code&gt;read.table()&lt;/code&gt; uses &lt;code&gt;quote=&amp;quot;&#39;\&amp;quot;&amp;quot;&lt;/code&gt; while &lt;code&gt;read.delim()&lt;/code&gt; uses &lt;code&gt;quote=&amp;quot;\&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;One of the columns in the file includes some single-quotes, and so, well, my use of &lt;code&gt;read.table()&lt;/code&gt; was mucking everything up because of those single-quotes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lessons&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Lessons&lt;/h2&gt;
+&lt;p&gt;There are several lessons here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I shouldn’t have ignored the “&lt;code&gt;EOF within quote string&lt;/code&gt;” warning.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I should have compared the number of lines I read in with the number of lines in the input file. If I’d done so, I’d have seen that I had just about half as many lines as I should’ve, and so I’d clearly messed something up.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When I run into a problem like this, it’s more likely that there’s a problem with my code than that there’s a problem with the file.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;With a file of this sort, I should have used &lt;code&gt;quote=&amp;quot;&amp;quot;&lt;/code&gt; and &lt;code&gt;fill=FALSE&lt;/code&gt; in my call to &lt;code&gt;read.table()&lt;/code&gt;. I’m not expecting any quoted fields, and I’m expecting that every line will have exactly nine columns.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It’s good to have a friend like Dan.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>miner and craft</title>
@@ -249,7 +337,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Fri Aug  4 13:37:50 2017 --&gt;
+&lt;!-- Tue Aug  8 10:59:48 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1624,46 +1712,6 @@ SyntaxError: invalid syntax
 &lt;p&gt;I&amp;rsquo;m hoping that these tutorials, plus the other materials that I&amp;rsquo;m putting together over the course of this semester, for my &lt;a href=&#34;http://kbroman.github.io/Tools4RR&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, will help.&lt;/p&gt;
 
 &lt;p&gt;But take a look at the &lt;a href=&#34;https://github.com/DataScienceSpecialization/courses&#34;&gt;material&lt;/a&gt; that &lt;a href=&#34;http://www.biostat.jhsph.edu/~jleek/&#34;&gt;Jeff&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger&lt;/a&gt;, and &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt; are developing for their &lt;a href=&#34;http://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/&#34;&gt;Data Science MOOCs&lt;/a&gt;; you&amp;rsquo;ll see that mine are pretty humble contributions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&#34;[&#34; and &#34;[[&#34; with the apply() functions</title>
-      <link>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</link>
-      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</guid>
-      <description>&lt;p&gt;Did you know you can use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;[[&amp;quot;&lt;/code&gt; as function names for subsetting with calls to the &lt;code&gt;apply&lt;/code&gt;-type functions?&lt;/p&gt;
-
-&lt;p&gt;For example, suppose you have a bunch of identifier strings like &lt;code&gt;&amp;quot;ZYY-43S-CWA3&amp;quot;&lt;/code&gt; and you want to pull off the bit before the first hyphen (&lt;code&gt;&amp;quot;ZYY&amp;quot;&lt;/code&gt; in this case).  (For code to create random IDs like that, see the end of this post.)&lt;/p&gt;
-
-&lt;p&gt;Suppose the IDs are in a vector of character strings, &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;If I wanted to grab the bit before the first hyphen, I would typically use &lt;code&gt;strsplit&lt;/code&gt; and then &lt;code&gt;sapply&lt;/code&gt; with &lt;code&gt;function(a) a[1]&lt;/code&gt;, as so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(strsplit(id, &amp;quot;-&amp;quot;), function(a) a[1])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But in place of &lt;code&gt;function(a) a[1]&lt;/code&gt;, you can use &lt;code&gt;&amp;quot;[&amp;quot;, 1&lt;/code&gt;, as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 1)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I think that&amp;rsquo;s kind of cute. You can use &lt;code&gt;&amp;quot;[[&amp;quot;&lt;/code&gt; the same way, if you&amp;rsquo;re working with lists.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s some code to create random IDs of this form, to test out the above:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;nind &amp;lt;- 8
-lengths &amp;lt;- c(3, 3, 4)
-id &amp;lt;- NULL
-for(i in seq(along=lengths)) {
-  randchar &amp;lt;- sample(c(LETTERS, 0:9), nind*lengths[i], replace=TRUE)
-  randstring &amp;lt;- apply(matrix(randchar, ncol=lengths[i]),
-                   1, paste, collapse=&amp;quot;&amp;quot;)
-  if(is.null(id)) id &amp;lt;- randstring
-  else id &amp;lt;- paste(id, randstring, sep=&amp;quot;-&amp;quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
