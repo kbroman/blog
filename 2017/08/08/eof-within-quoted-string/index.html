@@ -73,7 +73,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     
 
     <h1 class="article-title">EOF within quoted string</h1>
@@ -83,35 +83,9 @@
     
 
     <div class="article-content">
-      ---
-title: 'EOF within quoted string'
-author: Karl
-date: '2017-08-08T00:10:12-05:00'
-categories: [R]
-tags: ["R", "data munging", "read.table"]
----
-
----
-title: 'EOF within quoted string'
-author: Karl
-date: '2017-08-08T00:10:12-05:00'
-categories: [R]
-tags: ["R", "data munging", "read.table"]
----
-
----
-title: 'EOF within quoted string'
-author: Karl
-date: '2017-08-08T00:10:12-05:00'
-categories: [R]
-tags: ["R", "data munging", "read.table"]
----
-
-
-
-<p>So I was trying to parse <a href="http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz">this gff file</a> from <a href="http://www.informatics.jax.org/">MGI</a>, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.</p>
+      <p>So I was trying to parse <a href="http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz">this gff file</a> from <a href="http://www.informatics.jax.org/">MGI</a>, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.</p>
 <p>The documentation for the file is a <a href="http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx">docx file</a> (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</p>
-<p>I’d want to use <code>fread()</code> from the <a href="https://github.com/Rdatatable/data.table/wiki">data.table package</a>, but it turns out that the file has a bunch of lines with <code>###</code> interspersed within the data, and I couldn’t see a way to skip over those in <code>fread()</code>, so I fell back to the usual base R function, <code>read.table()</code>.</p>
+<p>I’d want to use <code>fread()</code> from the <a href="https://github.com/Rdatatable/data.table/wiki">data.table package</a>, but it turns out that the file has a bunch of lines with “<code>###</code>” interspersed within the data, and I couldn’t see a way to skip over those in <code>fread()</code>, so I fell back to the usual base R function, <code>read.table()</code>.</p>
 <p>Let’s first download and unzip the file.</p>
 <pre class="r"><code># download the file
 site &lt;- &quot;http://www.informatics.jax.org/downloads/mgigff&quot;
@@ -136,7 +110,7 @@ if(!file.exists(file)) { # need to unzip
 In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
   EOF within quoted string</code></pre>
 <p>Hmm. What does that mean? Oh, no matter, let’s move on…</p>
-<p>Wait, there are no genes on chromosomes 5, 8, 15, 18, Y, or MT. How could that be? Something must be wrong with the file. Let’s look at another file at that site, <a href="http://www.informatics.jax.org/downloads/mgigff/MGI.20160103.gff3.gz"><code>MGI.20160103.gff3.gz</code></a>. That one’s missing chromosomes ***.</p>
+<p>Wait, there are no genes on chromosomes 5, 8, 15, 18, Y, or MT. How could that be? Something must be wrong with the file. Let’s look at another file at that site, <a href="http://www.informatics.jax.org/downloads/mgigff/MGI.20160103.gff3.gz"><code>MGI.20160103.gff3.gz</code></a>. That one’s missing chromosomes 8 and 13.</p>
 <p>So I ask <a href="https://www.jax.org/research-and-faculty/faculty/research-scientists/daniel-gatti">Dan Gatti</a>: “Hey, those files are corrupted. Who should I talk to about them?”</p>
 <p>And he’s like, “That’d be a disaster, but they look fine to me [parsed with <code>read.delim()</code>].”</p>
 <p>So I tried using <code>read.delim()</code> and sure enough, no warning, genes on all chromosomes, and about twice as many records. Oops.</p>
@@ -148,14 +122,18 @@ function (file, header = TRUE, sep = &quot;\\t&quot;, quote = &quot;\\&quot;&quo
     fill = TRUE, comment.char = &quot;&quot;, ...)
 read.table(file = file, header = header, sep = sep, quote = quote,
     dec = dec, fill = fill, comment.char = comment.char, ...)</code></pre>
-<p>The key argument here is <code>quote</code>, in that <code>read.table()</code> uses <code>quote=&quot;'\&quot;&quot;</code> while <code>read.delim()</code> uses <code>quote=&quot;\&quot;&quot;</code>.</p>
-<p>One of the columns in the file includes some single-quotes, and so, well, my use of <code>read.table()</code> was mucking everything up because of those single-quotes.</p>
+<p>The key argument here is <code>quote</code>, in that <code>read.table()</code> uses <code>quote=&quot;'\&quot;&quot;</code> (that is, looking for either single- or double-quotes) while <code>read.delim()</code> uses <code>quote=&quot;\&quot;&quot;</code> (just looking for double-quotes).</p>
+<p>There are no double-quotes in the file, but that ninth column includes some single-quotes, and so my use of <code>read.table()</code> was mucking everything up. And presumably there was an odd number of them, so the end-of-file (EOF) character was inside one of those quoted strings.</p>
+<p>To read the file properly, I should have used <code>quote=&quot;\&quot;&quot;</code>. Even better, I could use <code>quote=&quot;&quot;</code>, and for that matter also <code>fill=FALSE</code> (since every line is supposed to contain all nine columns).</p>
+<pre class="r"><code>tab &lt;- read.table(file, sep=&quot;\t&quot;, header=FALSE, comment.char=&quot;#&quot;,
+                  na.strings=&quot;.&quot;, stringsAsFactors=FALSE,
+                  quote=&quot;&quot;, fill=FALSE)</code></pre>
 </div>
 <div id="lessons" class="section level2">
 <h2>Lessons</h2>
 <p>There are several lessons here.</p>
 <ul>
-<li><p>I shouldn’t have ignored the “<code>EOF within quote string</code>” warning.</p></li>
+<li><p>I shouldn’t have ignored the “<code>EOF within quoted string</code>” warning.</p></li>
 <li><p>I should have compared the number of lines I read in with the number of lines in the input file. If I’d done so, I’d have seen that I had just about half as many lines as I should’ve, and so I’d clearly messed something up.</p></li>
 <li><p>When I run into a problem like this, it’s more likely that there’s a problem with my code than that there’s a problem with the file.</p></li>
 <li><p>With a file of this sort, I should have used <code>quote=&quot;&quot;</code> and <code>fill=FALSE</code> in my call to <code>read.table()</code>. I’m not expecting any quoted fields, and I’m expecting that every line will have exactly nine columns.</p></li>
