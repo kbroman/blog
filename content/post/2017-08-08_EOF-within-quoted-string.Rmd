@@ -1,0 +1,140 @@
+---
+title: 'EOF within quoted string'
+author: Karl
+date: '2017-08-08T00:10:12-05:00'
+categories: [R]
+tags: ["R", "data munging", "read.table"]
+---
+
+```{r knitr_options, include=FALSE}
+knitr::opts_chunk$set(eval=FALSE)
+```
+
+So I was trying to parse
+[this gff file](http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz)
+from [MGI](http://www.informatics.jax.org/), with mouse gene
+annotations. And, well, I'm an idiot. But in a way that is potentially
+instructive.
+
+The documentation for the file is a
+[docx file](http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx)
+(not really a recommended format for such metadata), but it seems
+rather simple, really: tab delimited, with 9 columns, the ninth column
+being a bunch of pasted attributes that needs to be further parsed,
+but we'll skip over that detail.
+
+I'd want to use `fread()` from the
+[data.table package](https://github.com/Rdatatable/data.table/wiki),
+but it turns out that the file has a bunch of lines with "`###`"
+interspersed within the data, and I couldn't see a way to skip over
+those in `fread()`, so I fell back to the usual base R function,
+`read.table()`.
+
+Let's first download and unzip the file.
+
+```{r download_file}
+# download the file
+site <- "http://www.informatics.jax.org/downloads/mgigff"
+file <- "MGI.20170803.gff3.gz"
+url <- paste0(site, "/", file)
+if(!file.exists(file)) download.file(url, file)
+
+# unzip to a temporary file
+file <- sub(".gz$", "", file)
+tmpfile <- tempfile()
+remove_tmpfile <- FALSE
+if(!file.exists(file)) { # need to unzip
+    system(paste0("gunzip -c ", file, ".gz > ", tmpfile))
+    remove_tmpfile <- TRUE
+    file <- tmpfile
+}
+```
+
+Okay, now to read it into R with `read.table()`.
+
+```{r read_file}
+tab <- read.table(file, sep="\t", header=FALSE, comment.char="#",
+                  na.strings=".", stringsAsFactors=FALSE)
+```
+
+This gives a warning message:
+
+```
+Warning message:
+In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
+  EOF within quoted string
+```
+
+Hmm. What does that mean? Oh, no matter, let's move on...
+
+Wait, there are no genes on chromosomes 5, 8, 15, 18, Y, or MT. How
+could that be? Something must be wrong with the file.  Let's look at
+another file at that site,
+[`MGI.20160103.gff3.gz`](http://www.informatics.jax.org/downloads/mgigff/MGI.20160103.gff3.gz).
+That one's missing chromosomes 8 and 13.
+
+So I ask
+[Dan Gatti](https://www.jax.org/research-and-faculty/faculty/research-scientists/daniel-gatti):
+"Hey, those files are corrupted. Who should I talk to about them?"
+
+And he's like, "That'd be a disaster, but they look fine to me [parsed with `read.delim()`]."
+
+So I tried using `read.delim()` and sure enough, no warning, genes
+on all chromosomes, and about twice as many records. Oops.
+
+## `read.delim()` vs `read.table()`
+
+So what's the difference between `read.delim()` and `read.table()`?
+Well, `read.delim()` calls `read.table()` with a particular set of
+default values for the arguments:
+
+```
+> read.delim
+function (file, header = TRUE, sep = "\\t", quote = "\\"", dec = ".",
+    fill = TRUE, comment.char = "", ...)
+read.table(file = file, header = header, sep = sep, quote = quote,
+    dec = dec, fill = fill, comment.char = comment.char, ...)
+```
+
+The key argument here is `quote`, in that `read.table()` uses `quote="'\""`
+(that is, looking for either single- or double-quotes)
+while `read.delim()` uses `quote="\""` (just looking for double-quotes).
+
+There are no double-quotes in the file, but that ninth column includes some single-quotes, and
+so my use of `read.table()` was mucking everything up.
+And presumably there was an odd number of
+them, so the end-of-file (EOF) character was inside one of those
+quoted strings.
+
+To read the file properly, I should have used `quote="\""`. Even
+better, I could use `quote=""`, and for that matter also `fill=FALSE`
+(since every line is supposed to contain all nine columns).
+
+```{r read_file}
+tab <- read.table(file, sep="\t", header=FALSE, comment.char="#",
+                  na.strings=".", stringsAsFactors=FALSE,
+                  quote="", fill=FALSE)
+```
+
+
+## Lessons
+
+There are several lessons here.
+
+- I shouldn't have ignored the "`EOF within quoted string`"
+  warning.
+
+- I should have compared the number of lines I read in with the number
+  of lines in the input file. If I'd done so, I'd have seen that I had
+  just about half as many lines as I should've, and so I'd clearly
+  messed something up.
+
+- When I run into a problem like this, it's more likely that there's a
+  problem with my code than that there's a problem with the file.
+
+- With a file of this sort, I should have used `quote=""` and
+  `fill=FALSE` in my call to `read.table()`. I'm not expecting any
+  quoted fields, and I'm expecting that every line will have exactly nine
+  columns.
+
+- It's good to have a friend like Dan.
