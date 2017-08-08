@@ -110,7 +110,7 @@ To read the file properly, I should have used `quote="\""`. Even
 better, I could use `quote=""`, and for that matter also `fill=FALSE`
 (since every line is supposed to contain all nine columns).
 
-```{r read_file}
+```{r read_file_properly}
 tab <- read.table(file, sep="\t", header=FALSE, comment.char="#",
                   na.strings=".", stringsAsFactors=FALSE,
                   quote="", fill=FALSE)
