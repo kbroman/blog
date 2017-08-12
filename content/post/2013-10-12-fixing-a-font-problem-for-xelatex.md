@@ -41,9 +41,9 @@ Finally, I read [this post on fonts in xelatex](http://existentialtype.net/2008/
 
   * Switch to the [TeX Gyre Heros](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html) font. It looks just like Helvetica to me.
 
-  * Download `[qhv2.004otf.zip](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip)`.
+  * Download [`qhv2.004otf.zip`](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip).
 
-  * On unix, unzip the file (which contains eight `[.otf](http://en.wikipedia.org/wiki/OpenType)` files) into `~/.fonts`
+  * On unix, unzip the file (which contains eight [`.otf`](http://en.wikipedia.org/wiki/OpenType) files) into `~/.fonts`
 
   * On Mac, unzip the file, double-click the `.otf` files and select "Install font."  This uses the [Font Book](http://support.apple.com/kb/HT2509) application.
 
