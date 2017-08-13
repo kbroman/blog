@@ -14,7 +14,7 @@ You just sent a long [R](http://www.r-project.org) job running. How to know when
 
 <!-- more -->
 
-### `[beepr](https://github.com/rasmusab/beepr)`
+### [`beepr`](https://github.com/rasmusab/beepr)
 
 You can use [Rasmus Baath](http://www.sumsar.net/)'s [beepr](https://github.com/rasmusab/beepr) package to have your computer play a sound.
 
@@ -35,7 +35,7 @@ beep()
 
 [beepr](https://github.com/rasmusab/beepr) is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I'm instead having my scripts send me a text or a notification via [pushbullet](http://pushbullet.com).
 
-### `[gmailR](https://github.com/trinker/gmailR)`
+### [`gmailR`](https://github.com/trinker/gmailR)
 
 There are a number of different packages for sending email from R (e.g., [sendmailR](http://cran.r-project.org/web/packages/sendmailR/index.html) and [mailR](http://cran.r-project.org/web/packages/mailR/index.html)). I tried [Tyler Rinker](http://trinkerrstuff.wordpress.com/)'s [gmailR](https://github.com/trinker/gmailR) package.
 
@@ -77,7 +77,7 @@ library(mygmailR)
 send_gmail("subject here", "body of message here")
 ````
 
-### `[RPushbullet](https://github.com/eddelbuettel/rpushbullet)`
+### [`RPushbullet`](https://github.com/eddelbuettel/rpushbullet)
 
 Another alternative (suggested to me by [Peter Hickey](https://twitter.com/PeteHaitch/status/507073412842278913) and [Jared Knowles](https://twitter.com/jknowles/status/507152898674143232)) is to use [Dirk Eddelbuettel](http://dirk.eddelbuettel.com/)'s [RPushbullet](https://github.com/eddelbuettel/rpushbullet) package to send yourself a notification via [pushbullet](http://pushbullet.com).
 
