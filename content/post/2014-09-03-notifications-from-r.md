@@ -90,52 +90,47 @@ The main advantage of this, in my mind, is that there's no gmail password sittin
   3. Go to [your pushbullet account page](https://www.pushbullet.com/account) to get your "Access Token".
 
   4. Install the [RPushbullet](https://github.com/eddelbuettel/rpushbullet) package from CRAN.
-
-````
-install.packages("RPushbullet")
-````
+  ```
+  install.packages("RPushbullet")
+  ```
 
   5. Create a `~/.rpushbullet.json` file with your api key and not much else.
-
-````
-{
-    "key": "your_api_key",
-    "devices": [],
-    "names": []
-}
-````
+  ```
+  {
+      "key": "your_api_key",
+      "devices": [],
+      "names": []
+  }
+  ```
 
   6. Install [jsonlite](http://cran.r-project.org/package=jsonlite) and use [RPushbullet](https://github.com/eddelbuettel/rpushbullet)'s `pbGetDevices()` function to get the identifiers for the devices you've registered with [pushbullet](http://pushbullet.com).
-
-````
-install.packages("jsonlite")
-library(jsonlite)
-library(RPushbullet)
-fromJSON(pbGetDevices())$devices[,c("iden", "nickname")]
-````
+  ```
+  install.packages("jsonlite")
+  library(jsonlite)
+  library(RPushbullet)
+  fromJSON(pbGetDevices())$devices[,c("iden", "nickname")]
+  ```
 
   7. Insert those device identifiers into your `~/.rpushbullet.json` file.
+  ```
+  {
+      "key": "your_api_key",
 
-````
-{
-    "key": "your_api_key",
+      "devices": [
+          "your_phone_device_id",
+          "your_tablet_device_id",
+          "your_chrome_device_id";
+      ],
 
-    "devices": [
-        "your_phone_device_id",
-        "your_tablet_device_id",
-        "your_chrome_device_id";
-    ],
-
-    "names": [
-        "phone",
-        "tablet",
-        "Chrome";
-    ]
-}
-````
+      "names": [
+          "phone",
+          "tablet",
+          "Chrome";
+      ]
+  }
+  ```
 
 Now you're set!  Use the `pbPost()` function to post a message to yourself.
-
 ````
 library(RPushbullet)
 pbPost("note", "Title of note", "Body of message")
