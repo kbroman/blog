@@ -24,10 +24,10 @@
 
 
 
-<link rel="stylesheet" href="http://kbroman.org/blog/css/fonts.css" media="all">
-<link rel="stylesheet" href="http://kbroman.org/blog/css/main.css" media="all">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
-<link rel="stylesheet" href="http://kbroman.org/blog/css/custom.css">
+<link rel="stylesheet" href="../../../../css/custom.css">
 
 
 
@@ -36,14 +36,14 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="http://kbroman.org/blog/" class="nav-logo">
-    <img src="http://kbroman.org/blog/images/karl.png"
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="http://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -159,53 +159,47 @@ send_gmail(&quot;subject here&quot;, &quot;body of message here&quot;)
 
 <li><p>Go to <a href="https://www.pushbullet.com/account">your pushbullet account page</a> to get your &ldquo;Access Token&rdquo;.</p></li>
 
-<li><p>Install the <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> package from CRAN.</p></li>
-</ol>
+<li><p>Install the <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> package from CRAN.</p>
 
 <pre><code>install.packages(&quot;RPushbullet&quot;)
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>Create a <code>~/.rpushbullet.json</code> file with your api key and not much else.</li>
-</ol>
+<li><p>Create a <code>~/.rpushbullet.json</code> file with your api key and not much else.</p>
 
 <pre><code>{
-    &quot;key&quot;: &quot;your_api_key&quot;,
-    &quot;devices&quot;: [],
-    &quot;names&quot;: []
+  &quot;key&quot;: &quot;your_api_key&quot;,
+  &quot;devices&quot;: [],
+  &quot;names&quot;: []
 }
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>Install <a href="http://cran.r-project.org/package=jsonlite">jsonlite</a> and use <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a>&rsquo;s <code>pbGetDevices()</code> function to get the identifiers for the devices you&rsquo;ve registered with <a href="http://pushbullet.com">pushbullet</a>.</li>
-</ol>
+<li><p>Install <a href="http://cran.r-project.org/package=jsonlite">jsonlite</a> and use <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a>&rsquo;s <code>pbGetDevices()</code> function to get the identifiers for the devices you&rsquo;ve registered with <a href="http://pushbullet.com">pushbullet</a>.</p>
 
 <pre><code>install.packages(&quot;jsonlite&quot;)
 library(jsonlite)
 library(RPushbullet)
 fromJSON(pbGetDevices())$devices[,c(&quot;iden&quot;, &quot;nickname&quot;)]
-</code></pre>
+</code></pre></li>
 
-<ol>
-<li>Insert those device identifiers into your <code>~/.rpushbullet.json</code> file.</li>
-</ol>
+<li><p>Insert those device identifiers into your <code>~/.rpushbullet.json</code> file.</p>
 
 <pre><code>{
-    &quot;key&quot;: &quot;your_api_key&quot;,
+  &quot;key&quot;: &quot;your_api_key&quot;,
 
-    &quot;devices&quot;: [
-        &quot;your_phone_device_id&quot;,
-        &quot;your_tablet_device_id&quot;,
-        &quot;your_chrome_device_id&quot;;
-    ],
+  &quot;devices&quot;: [
+      &quot;your_phone_device_id&quot;,
+      &quot;your_tablet_device_id&quot;,
+      &quot;your_chrome_device_id&quot;;
+  ],
 
-    &quot;names&quot;: [
-        &quot;phone&quot;,
-        &quot;tablet&quot;,
-        &quot;Chrome&quot;;
-    ]
+  &quot;names&quot;: [
+      &quot;phone&quot;,
+      &quot;tablet&quot;,
+      &quot;Chrome&quot;;
+  ]
 }
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>Now you&rsquo;re set!  Use the <code>pbPost()</code> function to post a message to yourself.</p>
 
@@ -254,7 +248,7 @@ pbPost(&quot;note&quot;, &quot;Title of note&quot;, &quot;Body of message&quot;)
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="http://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -273,7 +267,7 @@ pbPost(&quot;note&quot;, &quot;Title of note&quot;, &quot;Body of message&quot;)
 
 
     
-<script src="http://kbroman.org/js/math-code.js"></script>
+<script src="../../../../js/math-code.js"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
