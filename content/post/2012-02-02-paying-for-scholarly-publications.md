@@ -55,17 +55,17 @@ Traditionally, authors signed away copyright to a publisher, who charged librari
 
 In the distant past, the author would also purchase a bunch of paper copies of the article to give to friends or others who were interested.  I still occasionally get a postcard, mostly from overseas, asking me to send a copy of an article.  We used to get lots of those.
 
-A potential reader without access to a library with a subscription may be charged a crazy amount, like $30, for access to a single paper.  (Cambridge University Press is apparently now [charging $6 rent for 24 hours of access to an article](http://chronicle.com/blogs/wiredcampus/cambridge-u-press-would-like-to-rent-you-an-article/34500).  Who would want that?)
+A potential reader without access to a library with a subscription may be charged a crazy amount, like \$30, for access to a single paper.  (Cambridge University Press is apparently now [charging \$6 rent for 24 hours of access to an article](http://chronicle.com/blogs/wiredcampus/cambridge-u-press-would-like-to-rent-you-an-article/34500).  Who would want that?)
 
 Many journals make articles open after a year; many charge for access for forever.
 
 #### The open access model
 
-[PLoS](http://www.plos.org) and [BMC](http://www.biomedcentral.com) charge authors large fees ("page charges") to publish in their journals.  Readers can then get free access.  These page charges can be pretty hefty ([PLoS charges](http://www.plos.org/publish/pricing-policy/publication-fees/) $2900 for PLoS Biology, $2250 for PLoS Genetics, and $1350 for PLoS One.)
+[PLoS](http://www.plos.org) and [BMC](http://www.biomedcentral.com) charge authors large fees ("page charges") to publish in their journals.  Readers can then get free access.  These page charges can be pretty hefty ([PLoS charges](http://www.plos.org/publish/pricing-policy/publication-fees/) \$2900 for PLoS Biology, \$2250 for PLoS Genetics, and \$1350 for PLoS One.)
 
-Some pay journals have adopted an open access option.  For example, at [Genetics](http://www.genetics.org) the standard charges are $70/page for members of [GSA](http://www.genetics-gsa.org) plus $40/figure, and you can pay an extra $1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be $900 regular and $2100 open access.
+Some pay journals have adopted an open access option.  For example, at [Genetics](http://www.genetics.org) the standard charges are \$70/page for members of [GSA](http://www.genetics-gsa.org) plus \$40/figure, and you can pay an extra \$1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be \$900 regular and \$2100 open access.
 
-This can give you an idea of the total cost of (4-6) for a typical journal.  Imagine $2000/paper x 20 year/issue x 12 issues/year = $500k/year.
+This can give you an idea of the total cost of (4-6) for a typical journal.  Imagine \$2000/paper x 20 year/issue x 12 issues/year = \$500k/year.
 
 #### The SAGMB model
 
@@ -75,13 +75,13 @@ The journal [Statistical Applications in Genetics and Molecular Biology (SAGMB)]
 
 My postdoc advisor, Jim Weber (now at [Prevention Genetics](http://www.preventiongenetics.com/)), had the idea that particularly society-related journals might raise an endowment to cover the ongoing costs of the journal, so that it could otherwise be completely free and open.  I like that idea.
 
-These days, with something like 4% return on an endowment, you'd need $12.5 million to get $500k/year.  That seems like a lot.  But if a journal could raise half of that, they could cut page charges in half.
+These days, with something like 4% return on an endowment, you'd need \$12.5 million to get \$500k/year.  That seems like a lot.  But if a journal could raise half of that, they could cut page charges in half.
 
 ### Publishers' profit
 
 In the end, the cost for (4-6) come from research grants or other institutional funds, either indirectly (our libraries pay for subscriptions) or directly (authors pay page charges).  The main questions are how, and what cut does the publisher take?
 
-[Wikipedia](http://www.wikipedia.org) reports that [Elsevier made a profit of ~$765 million](http://en.wikipedia.org/wiki/Elsevier) in 2006.  Think of the research that might have been supported by that money.  Part of that comes from overpriced scholarly books, but still....
+[Wikipedia](http://www.wikipedia.org) reports that [Elsevier made a profit of ~\$765 million](http://en.wikipedia.org/wiki/Elsevier) in 2006.  Think of the research that might have been supported by that money.  Part of that comes from overpriced scholarly books, but still....
 
 ### PubMed Central
 
