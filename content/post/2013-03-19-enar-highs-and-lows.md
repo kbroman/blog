@@ -40,7 +40,7 @@ Also see the ENAR-related comments from [Yihui Xie](http://yihui.name/en/2013/03
 
   * They should have emphasized the cheaper shuttle from the airport (vs taxi); the information was hard to find.
 
-  * They should have emphasized that wifi was actually free; ignore the $14.95/day charge as it gets waived from your bill.
+  * They should have emphasized that wifi was actually free; ignore the \$14.95/day charge as it gets waived from your bill.
 
   * Registration on Sunday closed early, so many at the poster session were without name badges.
 
@@ -52,7 +52,7 @@ Also see the ENAR-related comments from [Yihui Xie](http://yihui.name/en/2013/03
 
   * The hotel was too expensive.
 
-  * The $85 admission to Epcot was a required part of the registration fee (23%).  The registration fee ($365) was the same as for ENAR 2012 in Washington DC, but it could have been $280.  And there's a striking difference between "It's free!" and "You already paid for it!"
+  * The \$85 admission to Epcot was a required part of the registration fee (23%).  The registration fee (\$365) was the same as for ENAR 2012 in Washington DC, but it could have been \$280.  And there's a striking difference between "It's free!" and "You already paid for it!"
 
   * The lighting in meeting rooms was not great.  We needed a ladder and a can of spray paint to "turn off" those lights shining on the screen.
 
