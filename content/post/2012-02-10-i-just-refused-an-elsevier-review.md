@@ -26,7 +26,8 @@ And so I was feeling quite unsure about turning down the review, but also unsure
 <blockquote>
 It sounds like an interesting paper, but...
 
-I recently signed a public declaration to not publish or review for Elsevier journals (<http://thecostofknowledge.com>).  I noticed at the time that Am J Hum Genet was published by Elsevier (if only it were still at U Chicago Press), which could be a problem.
+I recently signed a public declaration to not publish or review for
+Elsevier journals (<a href="http://thecostofknowledge.com">http://thecostofknowledge.com</a>).  I noticed at the time that Am J Hum Genet was published by Elsevier (if only it were still at U Chicago Press), which could be a problem.
 
 I'm having second thoughts (especially in that refusing a review for this reason seems too easy...I say no to review requests almost every day), but for now I'm sticking to my promise.
 </blockquote>
