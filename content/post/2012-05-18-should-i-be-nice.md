@@ -14,17 +14,17 @@ slug: should-i-be-nice
 I got the following email.
 
 <blockquote>
-`Subject: i have a question?
+<pre>Subject: i have a question?
 Date: May 18, 2012 7:57:56 AM CDT
 
-how can i enter the data of QTL analysis.`
+how can i enter the data of QTL analysis.</pre>
 </blockquote>
 
 That was the whole thing.
 
 I presume that the writer wishes to use my [R/qtl](http://www.rqtl.org) software.
 
-I could probably respond helpfully (for example, "See the [sample data files and code](http://www.rqtl.org/sampledata) at the R/qtl web site."), but can't I expect more from people seeking my help?
+I could probably respond helpfully (for example, &ldquo;See the [sample data files and code](http://www.rqtl.org/sampledata) at the R/qtl web site.&rdquo;), but can't I expect more from people seeking my help?
 
 I suppose there are three options:
 
@@ -43,13 +43,13 @@ I chose the third option, but I probably should have chosen the first.  [A fabul
 I responded
 
 <blockquote>
-`Your question is not answerable without further details.`
+<code>Your question is not answerable without further details.</code>
 </blockquote>
 
 to which the correspondent replied
 
 <blockquote>
-`How can i analysis data the by RQTL?`
+<code>How can i analysis data the by RQTL?</code>
 </blockquote>
 
 I responded with links to [tutorials](http://www.rqtl.org/tutorials), [sample data files](http://www.rqtl.org/sampledata), and [my book with Śaunak Sen](http://www.rqtl.org/book).
