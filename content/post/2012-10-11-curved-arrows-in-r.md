@@ -12,8 +12,7 @@ slug: curved-arrows-in-r
 
 I briefly investigated how to draw curved arrows in R. Here's a small piece of the figure that I ultimately created:
 
-![](http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png)
-<!-- more -->
+<img src="http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" style="max-width:300px;">
 
 A google search for "curved arrows in R" revealed three options:
 
