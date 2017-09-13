@@ -194,13 +194,13 @@ Here's a fancier slide, with a bit of animation: codes like `<2->`, which means 
 \vspace{24pt}
 
 \bi
-\item {\color&lt;3| handout 0&gt;{hilight} Research}
-\item {\color&lt;3| handout 0&gt;{hilight} Writing}
-\item {\color&lt;3| handout 0&gt;{hilight} Peer review, editorial oversight}
-\item {\color&lt;4| handout 0&gt;{hilight} Journal administration}
-\item {\color&lt;4| handout 0&gt;{hilight} Copy editing, typesetting}
-\item {\color&lt;4| handout 0&gt;{hilight} Distribution}
-\item&lt;2-&gt;{\color&lt;2| handout 0&gt;{vhilight} \color&lt;4| handout 0&gt;{hilight} Profit}
+\item {\color<3| handout 0>{hilight} Research}
+\item {\color<3| handout 0>{hilight} Writing}
+\item {\color<3| handout 0>{hilight} Peer review, editorial oversight}
+\item {\color<4| handout 0>{hilight} Journal administration}
+\item {\color<4| handout 0>{hilight} Copy editing, typesetting}
+\item {\color<4| handout 0>{hilight} Distribution}
+\item<2->{\color<2| handout 0>{vhilight} \color<4| handout 0>{hilight} Profit}
 \ei
 \note{ [clip] }
 \end{frame}
