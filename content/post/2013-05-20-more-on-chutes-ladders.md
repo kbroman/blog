@@ -21,28 +21,43 @@ Damn you, Matt!  I thought I was done with this.  Don't feed my obsession.
 
 While it's fast and easy to study the Chutes & Ladders game by simulation, if you want to answer questions more precisely, it's best to switch to more exact results.
 
-Consider a single individual playing the game, and let Xn be his/her location at round n.  The Xn form a _[Markov chain](http://en.wikipedia.org/wiki/Markov_chain)_, in that the future (Xn+1), given the present (Xn), is conditionally independent of the history (X1, ..., Xn-1).
+Consider a single individual playing the game, and let _X<sub>n</sub>_ be
+his/her location at round _n_. The _X<sub>n</sub>_
+form a [_Markov chain_](http://en.wikipedia.org/wiki/Markov_chain),
+in that the future (_X<sub>n+1</sub>_), given the present ($X_n$),
+is conditionally independent of the history (_X<sub>1</sub>_, ..., _X<sub>n-1</sub>_).
 
-It's relatively easy to construct the transition matrix of the chain.  (See my [R code](https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r).)  This is a matrix P, with Pij = Pr(Xn+1 = j | Xn = i).
+It's relatively easy to construct the transition matrix of the chain.  (See my [R code](https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r).)  This is a matrix _P_, with _P<sub>ij</sub>_ = Pr(_X<sub>n+1</sub>_ = _j_ | _X<sub>n</sub>_ = _i_).
 
-Then the probability that a player has reached state 100 by round n is
-(1, 0, ..., 0) Pn (0, ..., 0, 1)'.  That's the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this qn.  You can get the probability distribution by differences, say pn = qn - qn-1.
+Then the probability that a player has reached state 100 by round $n$ is
+(1, 0, ..., 0) _P<sup>n</sup>_ (0, ..., 0, 1)&rsquo;.  That's the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this $q_n$.  You can get the probability distribution by differences, say _p<sub>n</sub>_ = _q<sub>n</sub>_ - _q<sub>n-1</sub>_.
 
-To calculate the number of rounds to complete a game with k players, you want the minimum of k independent draws from this distribution.  The probability that a game with k players is complete by round n is 1 - (1-qn)k.  And again you can get the probability distributions by differences.  Here's a picture.
+To calculate the number of rounds to complete a game with _k_ players, you want the minimum of _k_ independent draws from this distribution.  The probability that a game with $k$ players is complete by round n is 1 - (1-_q<sub>n</sub>_)_<sup>k</sup>_.  And again you can get the probability distributions by differences.  Here's a picture.
 
 ![No. rounds to complete Chutes & Ladders](http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png)
 
 ### Advantage to the first player
 
-Now, regarding the advantage to the first player: note that the first player wins in exactly n steps if he gets to the finish at n steps and none of the other players are done by n-1 steps.  So, with k players, the probability that the first player wins in exactly n steps is pn (1-qn-1)k-1.
+Now, regarding the advantage to the first player: note that the first
+player wins in exactly _n_ steps if he gets to the finish at n steps
+and none of the other players are done by _n-1_ steps.  So, with _k_
+players, the probability that the first player wins in exactly _n_ steps is _p<sub>n</sub>_ (1-_q<sub>n-1</sub>_)_<sup>k-1</sup>_.
 
-The chance that the second player wins in exactly n steps is (1-qn) pn (1-qn-1))k-2, with the last term included only if there are k > 2 players.
+The chance that the second player wins in exactly n steps is
+(1-_q<sub>n</sub>_) _p<sub>n</sub>_
+(1-_q<sub>n-1</sub>_)_<sup>k-2</sup>_, with the last term included only
+if there are _k_ > 2 players.
 
-From this idea, it's straightforward to calculate the probability that the first player wins given that the game is complete at round n.  Here's a plot of that probability as a function of the number of players, relative to the nominal probability (1/2, 1/3, 1/4).
+From this idea, it's straightforward to calculate the probability that
+the first player wins given that the game is complete at round _n_.
+Here's a plot of that probability as a function of the number of
+players, relative to the nominal probability (1/2, 1/3, 1/4).
 
 ![Advantage to the first player in Chutes & Ladders](http://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png)
 
-Note that n=7 is the minimum number of rounds to complete the game.  I'd thought that the first player's advantage went down over time, but the opposite is true.
+Note that _n_=7 is the minimum number of rounds to complete the game.
+I'd thought that the first player's advantage went down over time, but
+the opposite is true.
 
 ### No. spins to end the game
 
