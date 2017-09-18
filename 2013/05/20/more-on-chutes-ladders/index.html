@@ -90,28 +90,43 @@
 
 <p>While it&rsquo;s fast and easy to study the Chutes &amp; Ladders game by simulation, if you want to answer questions more precisely, it&rsquo;s best to switch to more exact results.</p>
 
-<p>Consider a single individual playing the game, and let Xn be his/her location at round n.  The Xn form a _<a href="http://en.wikipedia.org/wiki/Markov_chain">Markov chain</a>_, in that the future (Xn+1), given the present (Xn), is conditionally independent of the history (X1, &hellip;, Xn-1).</p>
+<p>Consider a single individual playing the game, and let <em>X<sub>n</sub></em> be
+his/her location at round <em>n</em>. The <em>X<sub>n</sub></em>
+form a <a href="http://en.wikipedia.org/wiki/Markov_chain"><em>Markov chain</em></a>,
+in that the future (<em>X<sub>n+1</sub></em>), given the present ($X_n$),
+is conditionally independent of the history (<em>X<sub>1</sub></em>, &hellip;, <em>X<sub>n-1</sub></em>).</p>
 
-<p>It&rsquo;s relatively easy to construct the transition matrix of the chain.  (See my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)  This is a matrix P, with Pij = Pr(Xn+1 = j | Xn = i).</p>
+<p>It&rsquo;s relatively easy to construct the transition matrix of the chain.  (See my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)  This is a matrix <em>P</em>, with <em>P<sub>ij</sub></em> = Pr(<em>X<sub>n+1</sub></em> = <em>j</em> | <em>X<sub>n</sub></em> = <em>i</em>).</p>
 
-<p>Then the probability that a player has reached state 100 by round n is
-(1, 0, &hellip;, 0) Pn (0, &hellip;, 0, 1)&lsquo;.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this qn.  You can get the probability distribution by differences, say pn = qn - qn-1.</p>
+<p>Then the probability that a player has reached state 100 by round $n$ is
+(1, 0, &hellip;, 0) <em>P<sup>n</sup></em> (0, &hellip;, 0, 1)&rsquo;.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this $q_n$.  You can get the probability distribution by differences, say <em>p<sub>n</sub></em> = <em>q<sub>n</sub></em> - <em>q<sub>n-1</sub></em>.</p>
 
-<p>To calculate the number of rounds to complete a game with k players, you want the minimum of k independent draws from this distribution.  The probability that a game with k players is complete by round n is 1 - (1-qn)k.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
+<p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with $k$ players is complete by round n is 1 - (1-<em>q<sub>n</sub></em>)<em><sup>k</sup></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
 
 <p><img src="http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes &amp; Ladders" /></p>
 
 <h3 id="advantage-to-the-first-player">Advantage to the first player</h3>
 
-<p>Now, regarding the advantage to the first player: note that the first player wins in exactly n steps if he gets to the finish at n steps and none of the other players are done by n-1 steps.  So, with k players, the probability that the first player wins in exactly n steps is pn (1-qn-1)k-1.</p>
+<p>Now, regarding the advantage to the first player: note that the first
+player wins in exactly <em>n</em> steps if he gets to the finish at n steps
+and none of the other players are done by <em>n-1</em> steps.  So, with <em>k</em>
+players, the probability that the first player wins in exactly <em>n</em> steps is <em>p<sub>n</sub></em> (1-<em>q<sub>n-1</sub></em>)<em><sup>k-1</sup></em>.</p>
 
-<p>The chance that the second player wins in exactly n steps is (1-qn) pn (1-qn-1))k-2, with the last term included only if there are k &gt; 2 players.</p>
+<p>The chance that the second player wins in exactly n steps is
+(1-<em>q<sub>n</sub></em>) <em>p<sub>n</sub></em>
+(1-<em>q<sub>n-1</sub></em>)<em><sup>k-2</sup></em>, with the last term included only
+if there are <em>k</em> &gt; 2 players.</p>
 
-<p>From this idea, it&rsquo;s straightforward to calculate the probability that the first player wins given that the game is complete at round n.  Here&rsquo;s a plot of that probability as a function of the number of players, relative to the nominal probability (<sup>1</sup>&frasl;<sub>2</sub>, <sup>1</sup>&frasl;<sub>3</sub>, <sup>1</sup>&frasl;<sub>4</sub>).</p>
+<p>From this idea, it&rsquo;s straightforward to calculate the probability that
+the first player wins given that the game is complete at round <em>n</em>.
+Here&rsquo;s a plot of that probability as a function of the number of
+players, relative to the nominal probability (<sup>1</sup>&frasl;<sub>2</sub>, <sup>1</sup>&frasl;<sub>3</sub>, <sup>1</sup>&frasl;<sub>4</sub>).</p>
 
 <p><img src="http://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png" alt="Advantage to the first player in Chutes &amp; Ladders" /></p>
 
-<p>Note that n=7 is the minimum number of rounds to complete the game.  I&rsquo;d thought that the first player&rsquo;s advantage went down over time, but the opposite is true.</p>
+<p>Note that <em>n</em>=7 is the minimum number of rounds to complete the game.
+I&rsquo;d thought that the first player&rsquo;s advantage went down over time, but
+the opposite is true.</p>
 
 <h3 id="no-spins-to-end-the-game">No. spins to end the game</h3>
 
@@ -165,6 +180,19 @@
     
 
     
+<script src="http://kbroman.org/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 
     
   </body>
