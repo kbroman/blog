@@ -2,20 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphics on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/graphics/</link>
+    <link>/tags/graphics/</link>
     <description>Recent content in Graphics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 31 Oct 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/graphics/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
+    <atom:link href="/tags/graphics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Halloween 2017</title>
+      <link>/2017/10/31/halloween-2017/</link>
+      <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
+      
+      <guid>/2017/10/31/halloween-2017/</guid>
+      <description>&lt;p&gt;Here are our 2017 Halloween numbers; rather a weak turnout. (Compare them to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.) Twelve out of the 18 kids came in 2 minutes (a group of 8 girls followed immediately by a group of 4 girls).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
+      <link>/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
+      <guid>/2016/10/31/halloween-2016-count/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
@@ -24,10 +35,10 @@
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
@@ -94,10 +105,10 @@
     
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
-      <link>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
+      <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
+      <guid>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
       <description>&lt;p&gt;Last week, I &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
@@ -126,10 +137,10 @@
     
     <item>
       <title>Interactive plot of car crash stats</title>
-      <link>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -142,10 +153,10 @@
     
     <item>
       <title>Improved graphs of car crash stats</title>
-      <link>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</link>
+      <link>/2014/10/29/improved-graphs-of-car-crash-stats/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
+      <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>
 
 &lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/MonaChalabi&#34;&gt;Mona Chalabi&lt;/a&gt; wrote &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;an interesting post on car crash statistics by state&lt;/a&gt;, at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;fivethirtyeight.com&lt;/a&gt;.&lt;/p&gt;
@@ -207,10 +218,10 @@
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
 
 &lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
@@ -241,10 +252,10 @@
     
     <item>
       <title>2014 UseR conference, days 1-2</title>
-      <link>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
+      <link>/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <guid>/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m at UCLA for the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR Conference&lt;/a&gt;. I attended &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;once before&lt;/a&gt;, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.&lt;/p&gt;
@@ -389,10 +400,10 @@
     
     <item>
       <title>Further points on crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
+      <link>/2014/05/09/further-points-on-crayon-colors/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
+      <guid>/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>&lt;p&gt;I saw &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;this great post on crayola crayon colors&lt;/a&gt; at the &lt;a href=&#34;http://learnr.wordpress.com&#34;&gt;Learning R blog&lt;/a&gt;, reproducing a &lt;a href=&#34;http://www.datapointed.net/2010/01/crayola-crayon-color-chart/&#34;&gt;nice graph&lt;/a&gt; of the Crayola crayon colors over time. (Also see &lt;a href=&#34;http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/&#34;&gt;this even nicer version&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;List of Crayola crayon colors&lt;/a&gt;,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):&lt;/p&gt;
@@ -418,10 +429,10 @@ names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
     
     <item>
       <title>Two more points about crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
+      <link>/2014/05/08/two-more-points-about-crayon-colors/</link>
       <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
+      <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>&lt;p&gt;If you want to use &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;crayon colors in R&lt;/a&gt; but you don&amp;rsquo;t want to rely on my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, you can just grab the code. Copy the &lt;a href=&#34;https://github.com/kbroman/broman/blob/master/R/brocolors.R#L72-L204&#34;&gt;relevant lines from the &lt;code&gt;R/brocolors.R&lt;/code&gt; file&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;,
@@ -449,10 +460,10 @@ ord &amp;lt;- hclust(dist(colval))$order
     
     <item>
       <title>Crayon colors in R</title>
-      <link>http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</link>
+      <link>/2014/05/07/crayon-colors-in-r/</link>
       <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</guid>
+      <guid>/2014/05/07/crayon-colors-in-r/</guid>
       <description>&lt;p&gt;Last night I was working on a &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/tree/ictr2014&#34;&gt;talk on creating effective graphs&lt;/a&gt;. Mostly, I needed to update the colors, as there&amp;rsquo;d been some gaudy ones in &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/ictr2014.pdf&#34;&gt;its previous form&lt;/a&gt; (e.g., slide 22).&lt;/p&gt;
 
 &lt;p&gt;I usually pick colors using the crayons in the &lt;a href=&#34;https://www.robinwood.com/Catalog/Technical/OtherTuts/MacColorPicker/MacColorPicker.html&#34;&gt;Mac Color Picker&lt;/a&gt;. But that has just 40 crayons, and I wanted more choices.&lt;/p&gt;
@@ -477,10 +488,10 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Data structures are important</title>
-      <link>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
+      <link>/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
+      <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -497,10 +508,10 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
@@ -543,10 +554,10 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Interactive eQTL plot with d3.js</title>
-      <link>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -559,10 +570,10 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Interactive MA plot</title>
-      <link>http://kbroman.org/blog/2013/02/11/interactive-ma-plot/</link>
+      <link>/2013/02/11/interactive-ma-plot/</link>
       <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/11/interactive-ma-plot/</guid>
+      <guid>/2013/02/11/interactive-ma-plot/</guid>
       <description>&lt;p&gt;The New York Times has &lt;a href=&#34;http://tinyurl.com/aqa9wum&#34;&gt;an interesting interactive graphic&lt;/a&gt; on boys&amp;rsquo; and girls&amp;rsquo; average scores on a science exam, by country.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://tinyurl.com/aqa9wum&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/science_scores.png&#34; alt=&#34;Science scores&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -575,10 +586,10 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Interactive graphics with d3.js</title>
-      <link>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</link>
+      <link>/2013/02/08/interactive-graphics-with-d3-js/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</guid>
+      <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m making some progress learning &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.&lt;/p&gt;
@@ -605,10 +616,10 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Microsoft Office</title>
-      <link>http://kbroman.org/blog/2013/01/30/microsoft-office/</link>
+      <link>/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
+      <guid>/2013/01/30/microsoft-office/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
@@ -619,14 +630,13 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
     
     <item>
       <title>Curved arrows in R</title>
-      <link>http://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</link>
+      <link>/2012/10/11/curved-arrows-in-r/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</guid>
+      <guid>/2012/10/11/curved-arrows-in-r/</guid>
       <description>&lt;p&gt;I briefly investigated how to draw curved arrows in R. Here&amp;rsquo;s a small piece of the figure that I ultimately created:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png&#34; alt=&#34;&#34; /&gt;
-&lt;!-- more --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png&#34; style=&#34;max-width:300px;&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;A google search for &amp;ldquo;curved arrows in R&amp;rdquo; revealed three options:&lt;/p&gt;
 
@@ -698,10 +708,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Odd smoother</title>
-      <link>http://kbroman.org/blog/2012/09/27/odd-smoother/</link>
+      <link>/2012/09/27/odd-smoother/</link>
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
+      <guid>/2012/09/27/odd-smoother/</guid>
       <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;http://thalamus.wustl.edu/cheverudlab/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
 
 &lt;p&gt;I poked through the paper, and my eye was attracted to the following figure.  These are supposed to be functions, but some weird smoother was used, and the results are not functions.&lt;/p&gt;
@@ -712,10 +722,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Hilarious graph</title>
-      <link>http://kbroman.org/blog/2012/09/11/hilarious-graph/</link>
+      <link>/2012/09/11/hilarious-graph/</link>
       <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/11/hilarious-graph/</guid>
+      <guid>/2012/09/11/hilarious-graph/</guid>
       <description>&lt;p&gt;I read &lt;a href=&#34;http://campaignstops.blogs.nytimes.com/2012/09/10/the-unexpected-impact-of-coded-appeals/?hp&#34;&gt;an interesting post&lt;/a&gt; on the &lt;a href=&#34;http://nytimes.com&#34;&gt;NY Times&lt;/a&gt; site this morning, which said:&lt;/p&gt;
 
 &lt;blockquote&gt;Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without  college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care. For college-educated whites, however, increases in negative feelings are associated with large increases in opposition to government-provided health care.&lt;/blockquote&gt;
@@ -728,10 +738,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Learning a new language</title>
-      <link>http://kbroman.org/blog/2012/06/21/learning-a-new-language/</link>
+      <link>/2012/06/21/learning-a-new-language/</link>
       <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/06/21/learning-a-new-language/</guid>
+      <guid>/2012/06/21/learning-a-new-language/</guid>
       <description>&lt;p&gt;It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.thebird.nl/&#34;&gt;A friend&lt;/a&gt; now has me doing &lt;a href=&#34;http://dlang.org&#34;&gt;D&lt;/a&gt;, wanting to find time to learn &lt;a href=&#34;http://www.ruby-lang.org&#34;&gt;ruby&lt;/a&gt;, and, most recently, playing with &lt;a href=&#34;https://developer.mozilla.org/en/JavaScript/Reference&#34;&gt;JavaScript&lt;/a&gt; and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;.&lt;/p&gt;
@@ -754,10 +764,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Trees</title>
-      <link>http://kbroman.org/blog/2012/05/17/trees/</link>
+      <link>/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/17/trees/</guid>
+      <guid>/2012/05/17/trees/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -770,10 +780,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Microarrays suck</title>
-      <link>http://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
+      <link>/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
+      <guid>/2012/04/25/microarrays-suck/</guid>
       <description>
 
 &lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
@@ -844,10 +854,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Halloween 2011 count</title>
-      <link>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
+      <link>/2011/10/31/halloween-2011-count/</link>
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
+      <guid>/2011/10/31/halloween-2011-count/</guid>
       <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
 
 &lt;p&gt;I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.&lt;/p&gt;
@@ -882,10 +892,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Infographic</title>
-      <link>http://kbroman.org/blog/2011/09/22/infographics/</link>
+      <link>/2011/09/22/infographics/</link>
       <pubDate>Thu, 22 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/22/infographics/</guid>
+      <guid>/2011/09/22/infographics/</guid>
       <description>&lt;p&gt;I saw this great infographic at &lt;a href=&#34;http://andrewgelman.com/2011/09/meta-infographic/&#34;&gt;Andrew Gelman&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/smoy/6143338263/&#34;&gt;&lt;img src=&#34;http://farm7.static.flickr.com/6190/6143338263_d2497c02fe.jpg&#34; alt=&#34;MOST POPULAR INFOGRAPHICS&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -902,10 +912,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Quick labels within figures</title>
-      <link>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</link>
+      <link>/2011/08/26/quick-labels-within-figures-done-right/</link>
       <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</guid>
+      <guid>/2011/08/26/quick-labels-within-figures-done-right/</guid>
       <description>&lt;p&gt;One of the coolest R packages I heard about at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt;: &lt;a href=&#34;http://cbio.ensmp.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels directly next to the relevant curves or point clouds in a figure.&lt;/p&gt;
 
 &lt;p&gt;I think I first learned about this idea from &lt;a href=&#34;http://www.andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this:
@@ -960,10 +970,10 @@ direct.label(p)
     
     <item>
       <title>useR! Conference 2011 highlights</title>
-      <link>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</link>
+      <link>/2011/08/20/user-conference-2011-highlights/</link>
       <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</guid>
+      <guid>/2011/08/20/user-conference-2011-highlights/</guid>
       <description>
 
 &lt;p&gt;I was at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; at &lt;a href=&#34;http://www.warwick.ac.uk&#34;&gt;The University of Warwick&lt;/a&gt; in &lt;a href=&#34;http://maps.google.com/maps?q=Coventry,+United+Kingdom&amp;amp;hl=en&amp;amp;ll=52.40577,-1.51062&amp;amp;spn=0.772453,1.207123&amp;amp;sll=52.953395,-1.148586&amp;amp;sspn=0.095353,0.15089&amp;amp;vpsrc=6&amp;amp;z=10&#34;&gt;Coventry, UK&lt;/a&gt;, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&amp;rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &amp;ldquo;highlights&amp;rdquo;.&lt;/p&gt;

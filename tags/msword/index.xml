@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Msword on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/msword/</link>
+    <link>/tags/msword/</link>
     <description>Recent content in Msword on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 12 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/msword/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/msword/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
 
 &lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;

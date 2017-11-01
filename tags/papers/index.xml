@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Papers on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/papers/</link>
+    <link>/tags/papers/</link>
     <description>Recent content in Papers on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/papers/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/papers/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
+      <link>/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>/2015/09/09/reproducibility-is-hard/</guid>
       <description>
 
 &lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
@@ -68,10 +68,10 @@
     
     <item>
       <title>Code review</title>
-      <link>http://kbroman.org/blog/2013/09/25/code-review/</link>
+      <link>/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
+      <guid>/2013/09/25/code-review/</guid>
       <description>
 
 &lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
@@ -124,10 +124,10 @@
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>
 
 &lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
@@ -204,50 +204,50 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>
 
 &lt;p&gt;Yesterday, I saw &lt;a href=&#34;https://twitter.com/Ananyo/status/329545985149775873&#34;&gt;this tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/Ananyo&#34;&gt;@Ananyo&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball ($) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
+Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
 &lt;/blockquote&gt;
 
 &lt;p&gt;So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah.  I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;But then I thought, &amp;ldquo;Wait&amp;hellip;$18 for a two-page Nature comment?  WTF?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment?  WTF?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;So I &lt;a href=&#34;https://twitter.com/kwbroman/status/329560393922002944&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-DNA: Celebrate the unknowns, like this Nature comment, which costs $18. [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
+DNA: Celebrate the unknowns, like this Nature comment, which costs \$18. [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
 &lt;/blockquote&gt;
 
 &lt;p&gt;And thinking about it some more, I got more annoyed, and &lt;a href=&#34;https://twitter.com/kwbroman/status/329566578024775683&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-Why do publishers charge such high per-article fees? At $18/artcl, you&#39;d have to be desperate or stupid to pay; at $1-2, prob&#39;ly lots would.
+Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d have to be desperate or stupid to pay; at \$1-2, prob&#39;ly lots would.
 &lt;/blockquote&gt;
 
 &lt;p&gt;And then I thought, I&amp;rsquo;ll &lt;a href=&#34;https://twitter.com/kwbroman/status/329575795716661250&#34;&gt;ask Nature directly&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-@NatureMagazine Why is the per-article charge so high? It seems like you&#39;d make more profit at $2/article.
+@NatureMagazine Why is the per-article charge so high? It seems like you&#39;d make more profit at \$2/article.
 &lt;/blockquote&gt;
 
 &lt;p&gt;And &lt;a href=&#34;https://twitter.com/NatureMagazine&#34;&gt;they&lt;/a&gt; &lt;a href=&#34;https://twitter.com/NatureMagazine/status/329655405355614210&#34;&gt;responded&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-@kwbroman For a while now, individual papers can be rented through @readcube for $3-5. A full tablet subscription to Nature costs $35.
+@kwbroman For a while now, individual papers can be rented through @readcube for \$3-5. A full tablet subscription to Nature costs \$35.
 &lt;/blockquote&gt;
 
 &lt;p&gt;But that didn&amp;rsquo;t quite answer my question.  So I &lt;a href=&#34;https://twitter.com/kwbroman/status/329683444051365889&#34;&gt;asked&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-.@NatureMagazine So is the $18 charge for a 2 pg PDF just to discourage piracy?
+.@NatureMagazine So is the \$18 charge for a 2 pg PDF just to discourage piracy?
 &lt;/blockquote&gt;
 
 &lt;p&gt;I thought a lot about whether to put &amp;ldquo;piracy&amp;rdquo; in quotes or not, or whether to write &amp;ldquo;copyright infringement&amp;rdquo; instead.&lt;/p&gt;
@@ -262,11 +262,11 @@ Why do publishers charge such high per-article fees? At $18/artcl, you&#39;d hav
 
 &lt;h3 id=&#34;it-s-a-scam&#34;&gt;It&amp;rsquo;s a scam&lt;/h3&gt;
 
-&lt;p&gt;I still don&amp;rsquo;t understand the $18 business.  It&amp;rsquo;s not &amp;ldquo;The more you buy, the more you save.&amp;rdquo;  It&amp;rsquo;s, &amp;ldquo;Buy the whole season for $35, or buy 5 min from Episode 1 for $18.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I still don&amp;rsquo;t understand the \$18 business.  It&amp;rsquo;s not &amp;ldquo;The more you buy, the more you save.&amp;rdquo;  It&amp;rsquo;s, &amp;ldquo;Buy the whole season for \$35, or buy 5 min from Episode 1 for \$18.&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;I understand that the cover price of &lt;a href=&#34;http://www.wired.com&#34;&gt;Wired&lt;/a&gt; is $5 per issue, while I could get a year&amp;rsquo;s subscription for $15-20.  But that&amp;rsquo;s not the same as $18 for &lt;em&gt;one article&lt;/em&gt; vs $200 per year.&lt;/p&gt;
+&lt;p&gt;I understand that the cover price of &lt;a href=&#34;http://www.wired.com&#34;&gt;Wired&lt;/a&gt; is \$5 per issue, while I could get a year&amp;rsquo;s subscription for \$15-20.  But that&amp;rsquo;s not the same as \$18 for &lt;em&gt;one article&lt;/em&gt; vs \$200 per year.&lt;/p&gt;
 
-&lt;p&gt;The $18 for a two-page PDF is like 900 numbers and paycheck advances.  These are &lt;em&gt;scams&lt;/em&gt; taking advantage of desperate or stupid people.&lt;/p&gt;
+&lt;p&gt;The \$18 for a two-page PDF is like 900 numbers and paycheck advances.  These are &lt;em&gt;scams&lt;/em&gt; taking advantage of desperate or stupid people.&lt;/p&gt;
 
 &lt;p&gt;If they don&amp;rsquo;t want to sell the PDFs for individual articles for a reasonable price, they should just not sell them at all.&lt;/p&gt;
 </description>
@@ -274,10 +274,10 @@ Why do publishers charge such high per-article fees? At $18/artcl, you&#39;d hav
     
     <item>
       <title>Methods before results</title>
-      <link>http://kbroman.org/blog/2013/04/29/methods-before-results/</link>
+      <link>/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
+      <guid>/2013/04/29/methods-before-results/</guid>
       <description>
 
 &lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
@@ -353,10 +353,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>&lt;p&gt;Much has been written about &lt;a href=&#34;http://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
 
 &lt;p&gt;For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.&lt;/p&gt;
@@ -389,20 +389,20 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Wired on statistics</title>
-      <link>http://kbroman.org/blog/2012/10/23/wired-on-statistics/</link>
+      <link>/2012/10/23/wired-on-statistics/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/23/wired-on-statistics/</guid>
+      <guid>/2012/10/23/wired-on-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wired.com&#34;&gt;Wired magazine&lt;/a&gt; had a short article last month on &lt;a href=&#34;http://www.wired.com/wiredscience/2012/10/mf-learn-to-read-a-scientific-report/&#34;&gt;how to read a scientific report&lt;/a&gt;, which basically was about how to interpret the statistical results.  It&amp;rsquo;s reasonably well done.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Odd smoother</title>
-      <link>http://kbroman.org/blog/2012/09/27/odd-smoother/</link>
+      <link>/2012/09/27/odd-smoother/</link>
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
+      <guid>/2012/09/27/odd-smoother/</guid>
       <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;http://thalamus.wustl.edu/cheverudlab/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
 
 &lt;p&gt;I poked through the paper, and my eye was attracted to the following figure.  These are supposed to be functions, but some weird smoother was used, and the results are not functions.&lt;/p&gt;
@@ -413,10 +413,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Trees</title>
-      <link>http://kbroman.org/blog/2012/05/17/trees/</link>
+      <link>/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/17/trees/</guid>
+      <guid>/2012/05/17/trees/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -429,10 +429,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Collaborative Cross papers</title>
-      <link>http://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</link>
+      <link>/2012/02/16/collaborative-cross-papers/</link>
       <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</guid>
+      <guid>/2012/02/16/collaborative-cross-papers/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;http://www.genetics.org/site/misc/MouseGeneticResources.xhtml&#34;&gt;batch of 15 papers&lt;/a&gt; on the mouse Collaborative Cross appeared in &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt; today, including two of my own:&lt;/p&gt;
 
 &lt;ul&gt;

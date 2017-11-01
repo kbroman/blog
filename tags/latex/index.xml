@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/latex/</link>
+    <link>/tags/latex/</link>
     <description>Recent content in Latex on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 11 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/latex/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/latex/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Fixing a font problem for XeLaTeX</title>
-      <link>http://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
+      <link>/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
+      <guid>/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
       <description>
 
 &lt;p&gt;If the topic sounds boring, well, it is really boring. I write it down here in case it&amp;rsquo;s useful to someone.&lt;/p&gt;
@@ -51,9 +51,9 @@ or installed font not found.
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Switch to the &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html&#34;&gt;TeX Gyre Heros&lt;/a&gt; font. It looks just like Helvetica to me.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Download &lt;code&gt;[qhv2.004otf.zip](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip)&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Download &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip&#34;&gt;&lt;code&gt;qhv2.004otf.zip&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;On unix, unzip the file (which contains eight &lt;code&gt;[.otf](http://en.wikipedia.org/wiki/OpenType)&lt;/code&gt; files) into &lt;code&gt;~/.fonts&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;On unix, unzip the file (which contains eight &lt;a href=&#34;http://en.wikipedia.org/wiki/OpenType&#34;&gt;&lt;code&gt;.otf&lt;/code&gt;&lt;/a&gt; files) into &lt;code&gt;~/.fonts&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;On Mac, unzip the file, double-click the &lt;code&gt;.otf&lt;/code&gt; files and select &amp;ldquo;Install font.&amp;rdquo;  This uses the &lt;a href=&#34;http://support.apple.com/kb/HT2509&#34;&gt;Font Book&lt;/a&gt; application.&lt;/p&gt;&lt;/li&gt;
 
@@ -66,10 +66,10 @@ or installed font not found.
     
     <item>
       <title>It was a really bad idea to use slides in that class</title>
-      <link>http://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>&lt;p&gt;I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a &lt;a href=&#34;http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;blog post&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):&lt;/p&gt;
@@ -92,10 +92,10 @@ or installed font not found.
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>
 
 &lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
@@ -281,13 +281,13 @@ Example 1
 \vspace{24pt}
 
 \bi
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Research}
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Writing}
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Peer review, editorial oversight}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Journal administration}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Copy editing, typesetting}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Distribution}
-\item&amp;amp;lt;2-&amp;amp;gt;{\color&amp;amp;lt;2| handout 0&amp;amp;gt;{vhilight} \color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Profit}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Research}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Writing}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Peer review, editorial oversight}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Journal administration}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Copy editing, typesetting}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Distribution}
+\item&amp;lt;2-&amp;gt;{\color&amp;lt;2| handout 0&amp;gt;{vhilight} \color&amp;lt;4| handout 0&amp;gt;{hilight} Profit}
 \ei
 \note{ [clip] }
 \end{frame}
@@ -307,10 +307,10 @@ Example 1
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</link>
+      <link>/2013/03/19/latex-unicode--xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</guid>
+      <guid>/2013/03/19/latex-unicode--xetex/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;http://www.ctc2013.org&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
 
 &lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;http://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
@@ -329,10 +329,10 @@ Example 1
     
     <item>
       <title>My first fancy poster</title>
-      <link>http://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</link>
+      <link>/2011/09/16/my-first-fancy-poster/</link>
       <pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</guid>
+      <guid>/2011/09/16/my-first-fancy-poster/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m preparing my first large-format poster (for the &lt;a href=&#34;http://discovery.wisc.edu/home/discovery/events/mathbio-symposia/mathbio-3-modeling/2009-mathbio-event-home.cmsx&#34;&gt;MathBio3 conference&lt;/a&gt;, here in Madison in two weeks). Previously, my posters had just been on a series of pieces of regular paper. (Consider, for example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/posters/gaw11.pdf&#34;&gt;this poster&lt;/a&gt; from September, 1998.)  But no one does that anymore, and I don&amp;rsquo;t want to stand out as being archaic.  That is, I want to pretend to be modern.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s my draft:

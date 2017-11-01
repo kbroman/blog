@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>D3 on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/d3/</link>
+    <link>/tags/d3/</link>
     <description>Recent content in D3 on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 11 May 2017 16:22:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/d3/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/d3/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
@@ -79,10 +79,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
@@ -149,10 +149,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Interactive plot of car crash stats</title>
-      <link>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -165,10 +165,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
 
 &lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
@@ -199,10 +199,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Data structures are important</title>
-      <link>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
+      <link>/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
+      <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -219,10 +219,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
@@ -265,10 +265,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Interactive eQTL plot with d3.js</title>
-      <link>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -281,10 +281,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>http://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
+      <link>/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
+      <guid>/2013/03/02/charsetutf-8/</guid>
       <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
@@ -301,10 +301,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>D3.js difficulties</title>
-      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
@@ -365,10 +365,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Interactive graphics with d3.js</title>
-      <link>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</link>
+      <link>/2013/02/08/interactive-graphics-with-d3-js/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</guid>
+      <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m making some progress learning &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.&lt;/p&gt;

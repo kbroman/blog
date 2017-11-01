@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peer Review on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/peer-review/</link>
+    <link>/tags/peer-review/</link>
     <description>Recent content in Peer Review on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 09 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/peer-review/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/peer-review/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I still don&#39;t like it</title>
-      <link>http://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</link>
+      <link>/2014/02/09/i-still-dont-like-it/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</guid>
+      <guid>/2014/02/09/i-still-dont-like-it/</guid>
       <description>&lt;p&gt;I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where &lt;a href=&#34;http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/&#34;&gt;the author refused to allow me to have an electronic copy&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:&lt;/p&gt;
@@ -30,10 +30,10 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>
 
 &lt;p&gt;Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).&lt;/p&gt;
@@ -143,10 +143,10 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>Code review</title>
-      <link>http://kbroman.org/blog/2013/09/25/code-review/</link>
+      <link>/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
+      <guid>/2013/09/25/code-review/</guid>
       <description>
 
 &lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
@@ -199,10 +199,10 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>Knuth: Journal referees should assist authors</title>
-      <link>http://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
+      <link>/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
+      <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>&lt;p&gt;When serving as referee for a journal, who are you working for?&lt;/p&gt;
 
 &lt;ul&gt;
@@ -231,10 +231,10 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>What a waste of paper</title>
-      <link>http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</link>
+      <link>/2013/03/07/what-a-waste-of-paper/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</guid>
+      <guid>/2013/03/07/what-a-waste-of-paper/</guid>
       <description>&lt;p&gt;A university press asked me to review a book manuscript, and the author &amp;ldquo;has asked that we not use electronic copies.&amp;rdquo; So they&amp;rsquo;re going to send me a hard copy.&lt;/p&gt;
 
 &lt;p&gt;My response: &amp;ldquo;If you only give me a paper copy, I&amp;rsquo;m going to just scan it and toss the paper. That seems like a waste of time (and paper and postage).&amp;rdquo;&lt;/p&gt;
@@ -247,20 +247,20 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>Web-enabled publishing environment</title>
-      <link>http://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</link>
+      <link>/2012/10/23/web-enabled-publishing-environment/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</guid>
+      <guid>/2012/10/23/web-enabled-publishing-environment/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.stat.wisc.edu/~karlrohe/&#34;&gt;Karl Rohe&lt;/a&gt; has &lt;a href=&#34;http://magazine.amstat.org/blog/2012/10/01/stats-view-oct12/&#34;&gt;an interesting commentary&lt;/a&gt; in &lt;a href=&#34;http://magazine.amstat.org&#34;&gt;Amstat News&lt;/a&gt; this month, on how our current publishing system is obstructing research progress, and what a better future might look like.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>What, no coffee?</title>
-      <link>http://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
+      <link>/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
+      <guid>/2012/09/28/what-no-coffee/</guid>
       <description>&lt;p&gt;I was at a &lt;a href=&#34;http://www.cidr.jhmi.edu/about/CIDR%20Access%20Committee.pdf&#34;&gt;CIDR Access Committee&lt;/a&gt; meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the &lt;a href=&#34;http://www.cidr.jhmi.edu&#34;&gt;Center for Inherited Disease Research&lt;/a&gt;, a service funded by several of the NIH institutes.&lt;/p&gt;
 
 &lt;p&gt;We had to buy our own coffee.&lt;/p&gt;
@@ -275,10 +275,10 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>Positive comments on peer review</title>
-      <link>http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</link>
+      <link>/2012/04/27/positive-comments-on-peer-review/</link>
       <pubDate>Fri, 27 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</guid>
+      <guid>/2012/04/27/positive-comments-on-peer-review/</guid>
       <description>&lt;p&gt;We all complain about peer review, particularly when &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;our best work&lt;/a&gt; is rejected by every journal from Nature Genetics down to &lt;a href=&#34;http://www.biomedcentral.com/bmcgenet&#34;&gt;that journal that will publish anything&lt;/a&gt;, so that it finally appears in &lt;a href=&#34;http://projecteuclid.org/euclid.lnms/1215091126&#34;&gt;a volume&lt;/a&gt; to honor &lt;a href=&#34;http://www.stat.berkeley.edu/~terry/&#34;&gt;some guy&lt;/a&gt; that &lt;a href=&#34;http://kbroman.files.wordpress.com/2012/04/terry2.jpg&#34;&gt;only he will read&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;However, sometimes &lt;a href=&#34;http://medicine.yale.edu/ysph/people/hongyu_zhao.profile&#34;&gt;an anonymous reviewer&lt;/a&gt; will identify an important flaw in &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/interfer.pdf&#34;&gt;a paper&lt;/a&gt; that you can fix before it&amp;rsquo;s published, thus saving you from potential public embarrassment.&lt;/p&gt;
@@ -291,10 +291,10 @@ And then there are things that are just plain wrong. For example, &#34;We then e
     
     <item>
       <title>I just refused an Elsevier review</title>
-      <link>http://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</link>
+      <link>/2012/02/10/i-just-refused-an-elsevier-review/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</guid>
+      <guid>/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>&lt;p&gt;This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting.  AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://thecostofknowledge.com&lt;/a&gt; to not publish or review for Elsevier journals.  If only AJHG were still with the University of Chicago Press&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen recently wrote&lt;/a&gt;:&lt;/p&gt;
@@ -310,7 +310,8 @@ The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Els
 &lt;blockquote&gt;
 It sounds like an interesting paper, but...
 
-I recently signed a public declaration to not publish or review for Elsevier journals (&lt;http://thecostofknowledge.com&gt;).  I noticed at the time that Am J Hum Genet was published by Elsevier (if only it were still at U Chicago Press), which could be a problem.
+I recently signed a public declaration to not publish or review for
+Elsevier journals (&lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://thecostofknowledge.com&lt;/a&gt;).  I noticed at the time that Am J Hum Genet was published by Elsevier (if only it were still at U Chicago Press), which could be a problem.
 
 I&#39;m having second thoughts (especially in that refusing a review for this reason seems too easy...I say no to review requests almost every day), but for now I&#39;m sticking to my promise.
 &lt;/blockquote&gt;
@@ -323,10 +324,10 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
     
     <item>
       <title>Paying for scholarly publications</title>
-      <link>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
+      <link>/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
+      <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>
 
 &lt;p&gt;I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see &lt;a href=&#34;http://www.eisenlab.org/eisen/&#34;&gt;Michael Eisen&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;http://www.nytimes.com/2012/01/11/opinion/research-bought-then-paid-for.html&#34;&gt;OpEd in the New York Times&lt;/a&gt;]; the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;) has turned my thoughts to publishing generally.&lt;/p&gt;
@@ -374,17 +375,17 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
 
 &lt;p&gt;In the distant past, the author would also purchase a bunch of paper copies of the article to give to friends or others who were interested.  I still occasionally get a postcard, mostly from overseas, asking me to send a copy of an article.  We used to get lots of those.&lt;/p&gt;
 
-&lt;p&gt;A potential reader without access to a library with a subscription may be charged a crazy amount, like $30, for access to a single paper.  (Cambridge University Press is apparently now &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/cambridge-u-press-would-like-to-rent-you-an-article/34500&#34;&gt;charging $6 rent for 24 hours of access to an article&lt;/a&gt;.  Who would want that?)&lt;/p&gt;
+&lt;p&gt;A potential reader without access to a library with a subscription may be charged a crazy amount, like \$30, for access to a single paper.  (Cambridge University Press is apparently now &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/cambridge-u-press-would-like-to-rent-you-an-article/34500&#34;&gt;charging \$6 rent for 24 hours of access to an article&lt;/a&gt;.  Who would want that?)&lt;/p&gt;
 
 &lt;p&gt;Many journals make articles open after a year; many charge for access for forever.&lt;/p&gt;
 
 &lt;h4 id=&#34;the-open-access-model&#34;&gt;The open access model&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.plos.org&#34;&gt;PLoS&lt;/a&gt; and &lt;a href=&#34;http://www.biomedcentral.com&#34;&gt;BMC&lt;/a&gt; charge authors large fees (&amp;ldquo;page charges&amp;rdquo;) to publish in their journals.  Readers can then get free access.  These page charges can be pretty hefty (&lt;a href=&#34;http://www.plos.org/publish/pricing-policy/publication-fees/&#34;&gt;PLoS charges&lt;/a&gt; $2900 for PLoS Biology, $2250 for PLoS Genetics, and $1350 for PLoS One.)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.plos.org&#34;&gt;PLoS&lt;/a&gt; and &lt;a href=&#34;http://www.biomedcentral.com&#34;&gt;BMC&lt;/a&gt; charge authors large fees (&amp;ldquo;page charges&amp;rdquo;) to publish in their journals.  Readers can then get free access.  These page charges can be pretty hefty (&lt;a href=&#34;http://www.plos.org/publish/pricing-policy/publication-fees/&#34;&gt;PLoS charges&lt;/a&gt; \$2900 for PLoS Biology, \$2250 for PLoS Genetics, and \$1350 for PLoS One.)&lt;/p&gt;
 
-&lt;p&gt;Some pay journals have adopted an open access option.  For example, at &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; the standard charges are $70/page for members of &lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;GSA&lt;/a&gt; plus $40/figure, and you can pay an extra $1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be $900 regular and $2100 open access.&lt;/p&gt;
+&lt;p&gt;Some pay journals have adopted an open access option.  For example, at &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; the standard charges are \$70/page for members of &lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;GSA&lt;/a&gt; plus \$40/figure, and you can pay an extra \$1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be \$900 regular and \$2100 open access.&lt;/p&gt;
 
-&lt;p&gt;This can give you an idea of the total cost of (4-6) for a typical journal.  Imagine $2000/paper x 20 year/issue x 12 issues/year = $500k/year.&lt;/p&gt;
+&lt;p&gt;This can give you an idea of the total cost of (4-6) for a typical journal.  Imagine \$2000/paper x 20 year/issue x 12 issues/year = \$500k/year.&lt;/p&gt;
 
 &lt;h4 id=&#34;the-sagmb-model&#34;&gt;The SAGMB model&lt;/h4&gt;
 
@@ -394,13 +395,13 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
 
 &lt;p&gt;My postdoc advisor, Jim Weber (now at &lt;a href=&#34;http://www.preventiongenetics.com/&#34;&gt;Prevention Genetics&lt;/a&gt;), had the idea that particularly society-related journals might raise an endowment to cover the ongoing costs of the journal, so that it could otherwise be completely free and open.  I like that idea.&lt;/p&gt;
 
-&lt;p&gt;These days, with something like 4% return on an endowment, you&amp;rsquo;d need $12.5 million to get $500k/year.  That seems like a lot.  But if a journal could raise half of that, they could cut page charges in half.&lt;/p&gt;
+&lt;p&gt;These days, with something like 4% return on an endowment, you&amp;rsquo;d need \$12.5 million to get \$500k/year.  That seems like a lot.  But if a journal could raise half of that, they could cut page charges in half.&lt;/p&gt;
 
 &lt;h3 id=&#34;publishers-profit&#34;&gt;Publishers&amp;rsquo; profit&lt;/h3&gt;
 
 &lt;p&gt;In the end, the cost for (4-6) come from research grants or other institutional funds, either indirectly (our libraries pay for subscriptions) or directly (authors pay page charges).  The main questions are how, and what cut does the publisher take?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt; reports that &lt;a href=&#34;http://en.wikipedia.org/wiki/Elsevier&#34;&gt;Elsevier made a profit of ~$765 million&lt;/a&gt; in 2006.  Think of the research that might have been supported by that money.  Part of that comes from overpriced scholarly books, but still&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt; reports that &lt;a href=&#34;http://en.wikipedia.org/wiki/Elsevier&#34;&gt;Elsevier made a profit of ~\$765 million&lt;/a&gt; in 2006.  Think of the research that might have been supported by that money.  Part of that comes from overpriced scholarly books, but still&amp;hellip;.&lt;/p&gt;
 
 &lt;h3 id=&#34;pubmed-central&#34;&gt;PubMed Central&lt;/h3&gt;
 
@@ -450,10 +451,10 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
     
     <item>
       <title>Elsevier boycott</title>
-      <link>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
+      <link>/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
+      <guid>/2012/02/01/elsevier-boycott/</guid>
       <description>&lt;p&gt;I expect you&amp;rsquo;ve already heard about the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;, started based on comments from &lt;a href=&#34;http://gowers.wordpress.com/2012/01/21/elsevier-my-part-in-its-downfall/&#34;&gt;Timothy Gowers&lt;/a&gt;.  While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject.  On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians).  There have been a couple of articles about this in the &lt;a href=&#34;http://chronicle.com/&#34;&gt;Chronicle of Higher Education&lt;/a&gt;: &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/elsevier-publishing-boycott-gathers-steam-among-academics/35216&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://chronicle.com/article/As-Journal-Boycott-Grows/130600/?sid=wc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.  (I certainly wouldn&amp;rsquo;t send my own papers to such journals, but it&amp;rsquo;s hard to control papers on which I am one lowly author among many.)&lt;/p&gt;
@@ -513,10 +514,10 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
     
     <item>
       <title>Fund people not projects?</title>
-      <link>http://kbroman.org/blog/2011/10/19/fund-people-not-projects/</link>
+      <link>/2011/10/19/fund-people-not-projects/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/19/fund-people-not-projects/</guid>
+      <guid>/2011/10/19/fund-people-not-projects/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/John_P._A._Ioannidis&#34;&gt;John Ioannidis&lt;/a&gt;, known for &lt;a href=&#34;http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0020124&#34;&gt;his comments on medical research&lt;/a&gt; (see also &lt;a href=&#34;http://www.theatlantic.com/magazine/archive/2010/11/lies-damned-lies-and-medical-science/8269/&#34;&gt;the Atlantic article&lt;/a&gt;), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: &lt;a href=&#34;http://www.nature.com/nature/journal/v477/n7366/full/477529a.html&#34;&gt;fund people not projects&lt;/a&gt;.  As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seminars on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/seminars/</link>
+    <link>/tags/seminars/</link>
     <description>Recent content in Seminars on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 07 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/seminars/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/seminars/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>
 
 &lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
@@ -201,13 +201,13 @@ Example 1
 \vspace{24pt}
 
 \bi
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Research}
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Writing}
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Peer review, editorial oversight}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Journal administration}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Copy editing, typesetting}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Distribution}
-\item&amp;amp;lt;2-&amp;amp;gt;{\color&amp;amp;lt;2| handout 0&amp;amp;gt;{vhilight} \color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Profit}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Research}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Writing}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Peer review, editorial oversight}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Journal administration}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Copy editing, typesetting}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Distribution}
+\item&amp;lt;2-&amp;gt;{\color&amp;lt;2| handout 0&amp;gt;{vhilight} \color&amp;lt;4| handout 0&amp;gt;{hilight} Profit}
 \ei
 \note{ [clip] }
 \end{frame}
@@ -227,10 +227,10 @@ Example 1
     
     <item>
       <title>The Hopkins SPH logo, part 3: Karl&#39;s revenge</title>
-      <link>http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
+      <link>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
+      <guid>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m finally back to the story of the &lt;a href=&#34;http://www.jhsph.edu/&#34;&gt;Johns Hopkins Bloomberg School of Public Health&lt;/a&gt; &lt;a href=&#34;http://www.jhsph.edu/identity/coreIdentity/logoIntro.shtml&#34;&gt;logo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I wrote &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Part 1&lt;/a&gt; in mid-November and &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;Part 2&lt;/a&gt; a week later.  I said that Part 3 was &amp;ldquo;coming soon,&amp;rdquo; but I&amp;rsquo;ve been a bit shy about revealing this.  You&amp;rsquo;ll see why.&lt;/p&gt;
@@ -279,10 +279,10 @@ Example 1
     
     <item>
       <title>The Hopkins SPH logo, part 2</title>
-      <link>http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</link>
+      <link>/2012/11/21/the-hopkins-sph-logo-part-2/</link>
       <pubDate>Wed, 21 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
+      <guid>/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
       <description>&lt;p&gt;Last week, I wrote about the &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Johns Hopkins &lt;strong&gt;Bloomberg&lt;/strong&gt; School of Public Health logo&lt;/a&gt;.  I now present part 2 of the story.&lt;/p&gt;
 
 &lt;p&gt;Hopkins SPH had done some fancy renovations of part of the building, including an important new feature, the &amp;ldquo;&lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder&lt;/a&gt;&amp;ldquo;: a big display composed of nine LCD screens in the atrium of the building, to display various PR type stuff.  (&amp;ldquo;Wall of Wonder&amp;rdquo; (WOW) is the official name!  Consider the &lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder policies&lt;/a&gt;, inspired by the events I detail below.) Here&amp;rsquo;s a photo:&lt;/p&gt;
@@ -339,10 +339,10 @@ Example 1
     
     <item>
       <title>Practicing talks</title>
-      <link>http://kbroman.org/blog/2012/06/22/practicing-talks/</link>
+      <link>/2012/06/22/practicing-talks/</link>
       <pubDate>Fri, 22 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/06/22/practicing-talks/</guid>
+      <guid>/2012/06/22/practicing-talks/</guid>
       <description>&lt;p&gt;Clay Johnson, the author of &lt;a href=&#34;http://www.amazon.com/gp/product/1449304680&#34;&gt;The Information Diet&lt;/a&gt;, recently wrote about &lt;a href=&#34;http://lifehacker.com/5920033/how-to-prep-for-a-presentation&#34;&gt;how to prepare to give a presentation&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I was shocked.&lt;/p&gt;
@@ -369,10 +369,10 @@ Example 1
     
     <item>
       <title>ENAR 2012</title>
-      <link>http://kbroman.org/blog/2012/04/18/enar-2012/</link>
+      <link>/2012/04/18/enar-2012/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/18/enar-2012/</guid>
+      <guid>/2012/04/18/enar-2012/</guid>
       <description>
 
 &lt;p&gt;The annual &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org/&#34;&gt;eastern North America portion&lt;/a&gt; of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see &lt;a href=&#34;http://biostat.jhsph.edu&#34;&gt;old friends&lt;/a&gt;, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.&lt;/p&gt;
@@ -416,10 +416,10 @@ Example 1
     
     <item>
       <title>Caffeine</title>
-      <link>http://kbroman.org/blog/2011/10/27/caffeine/</link>
+      <link>/2011/10/27/caffeine/</link>
       <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/27/caffeine/</guid>
+      <guid>/2011/10/27/caffeine/</guid>
       <description>&lt;p&gt;A cute and useful menu bar application for Macs: &lt;a href=&#34;http://lightheadsw.com/caffeine/&#34;&gt;Caffeine&lt;/a&gt;, available in the &lt;a href=&#34;http://itunes.apple.com/us/app/caffeine/id411246225&#34;&gt;App store&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen.  This is especially useful when you&amp;rsquo;re giving a talk.&lt;/p&gt;
@@ -428,10 +428,10 @@ Example 1
     
     <item>
       <title>Parachutes</title>
-      <link>http://kbroman.org/blog/2011/10/19/parachutes/</link>
+      <link>/2011/10/19/parachutes/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/19/parachutes/</guid>
+      <guid>/2011/10/19/parachutes/</guid>
       <description>&lt;p&gt;I went to a great talk today by &lt;a href=&#34;http://humangenome.duke.edu/people/david-goldstein&#34;&gt;David Goldstein&lt;/a&gt;, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: &lt;a href=&#34;http://www.bmj.com/content/327/7429/1459.full.pdf&#34;&gt;Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials&lt;/a&gt;. The main conclusion:&lt;/p&gt;
 
 &lt;blockquote&gt;We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.&lt;/blockquote&gt;
@@ -442,10 +442,10 @@ Example 1
     
     <item>
       <title>Animal research</title>
-      <link>http://kbroman.org/blog/2011/10/12/animal-research/</link>
+      <link>/2011/10/12/animal-research/</link>
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/12/animal-research/</guid>
+      <guid>/2011/10/12/animal-research/</guid>
       <description>&lt;p&gt;Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a &lt;a href=&#34;http://tinyurl.com/45y2jny&#34;&gt;public discussion on animal research&lt;/a&gt;.  I was really nervous, but I ended up not saying much and learning quite a lot.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -470,10 +470,10 @@ Example 1
     
     <item>
       <title>Terry on communication</title>
-      <link>http://kbroman.org/blog/2011/10/03/terry-on-communication/</link>
+      <link>/2011/10/03/terry-on-communication/</link>
       <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/03/terry-on-communication/</guid>
+      <guid>/2011/10/03/terry-on-communication/</guid>
       <description>&lt;p&gt;Relevant to &lt;a href=&#34;http://kbroman.org/blog/2011/09/29/seminars-bad-and-good/&#34;&gt;my recent comments on seminars&lt;/a&gt;, Terry Speed&amp;rsquo;s &lt;a href=&#34;http://bulletin.imstat.org/2011/09/terence&#39;s-stuff-speaking-reading-writing/&#34;&gt;latest commentary&lt;/a&gt; in the IMS Bulletin focuses on communication (talks and papers).&lt;/p&gt;
 
 &lt;p&gt;He says: &lt;em&gt;read others&amp;rsquo; work&lt;/em&gt; (which I would expand to say, &lt;em&gt;pay attention&lt;/em&gt;) and &lt;em&gt;practice&lt;/em&gt;.&lt;/p&gt;
@@ -482,10 +482,10 @@ Example 1
     
     <item>
       <title>Seminars, bad and good</title>
-      <link>http://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</link>
+      <link>/2011/09/29/seminars-bad-and-good/</link>
       <pubDate>Thu, 29 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</guid>
+      <guid>/2011/09/29/seminars-bad-and-good/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafael Irizarry&lt;/a&gt; &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10686092687/25-minute-seminars&#34;&gt;recently proposed&lt;/a&gt; that the standard 50 min seminar be reduced to 25 min, with the extra time devoted to discussion. I &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10686092687/25-minute-seminars#comment-320436760&#34;&gt;commented there&lt;/a&gt; but should have just written at greater length here. I&amp;rsquo;ll do so now.&lt;/p&gt;
@@ -556,10 +556,10 @@ Example 1
     
     <item>
       <title>Lager yeast</title>
-      <link>http://kbroman.org/blog/2011/09/19/lager-yeast/</link>
+      <link>/2011/09/19/lager-yeast/</link>
       <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/19/lager-yeast/</guid>
+      <guid>/2011/09/19/lager-yeast/</guid>
       <description>&lt;p&gt;Last week, I attended an excellent seminar by &lt;a href=&#34;http://hittinger.genetics.wisc.edu/&#34;&gt;Chris Hittinger&lt;/a&gt; on the identification and evolution of &lt;a href=&#34;http://hittinger.genetics.wisc.edu/#Aug22_2011&#34;&gt;lager yeast&lt;/a&gt; (see &lt;a href=&#34;http://www.pnas.org/content/early/2011/08/17/1105430108.full.pdf+html&#34;&gt;the paper&lt;/a&gt;), part of &lt;a href=&#34;http://www.evolution.wisc.edu/node/30&#34;&gt;my favorite seminar series&lt;/a&gt;, on &lt;a href=&#34;http://www.evolution.wisc.edu&#34;&gt;evolution&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;[Forgive me if this description is not fully accurate.] Ales are the original (proper, better tasting) type of beer; they&amp;rsquo;re brewed at a warmer temperature, with &amp;ldquo;top-fermenting&amp;rdquo; yeast (the yeast rises to the top or is suspended throughout the column). Lagers were developed in the 15th century in Bavaria and are brewed at a colder temperature, with &amp;ldquo;bottom-fermenting&amp;rdquo; yeast (the yeast settles to the bottom). Lagers spread world-wide in the 19th century, and now are the most popular fermented beverage (but that&amp;rsquo;s mostly &lt;a href=&#34;http://www.millercoors.com&#34;&gt;swill&lt;/a&gt;).&lt;/p&gt;

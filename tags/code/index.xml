@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/code/</link>
+    <link>/tags/code/</link>
     <description>Recent content in Code on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/code/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/code/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
@@ -58,10 +58,10 @@
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>/2015/09/24/its-not-you-its-me/</guid>
       <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
 
 &lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
@@ -117,10 +117,10 @@
     
     <item>
       <title>Randomized Hobbit</title>
-      <link>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
+      <link>/2015/06/22/randomized-hobbit-2/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
+      <guid>/2015/06/22/randomized-hobbit-2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; pointed me to his &lt;a href=&#34;http://cran.r-project.org/package=ngram&#34;&gt;ngram&lt;/a&gt; R package for constructing and simulating from n-grams from text.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.&lt;/p&gt;
@@ -176,10 +176,10 @@ already off his horse and among the goblin and the dragon, who had remained behi
     
     <item>
       <title>Error notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
+      <link>/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
+      <guid>/2014/09/04/error-notifications-from-r/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m enthusiastic about having &lt;a href=&#34;http://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;R notify me when my script is done&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;But among my early uses of this, my script threw an error, and I never got a text or &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; about &lt;em&gt;that&lt;/em&gt;. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.&lt;/p&gt;
@@ -215,17 +215,17 @@ already off his horse and among the goblin and the dragon, who had remained behi
     
     <item>
       <title>Notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
+      <link>/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
+      <guid>/2014/09/03/notifications-from-r/</guid>
       <description>
 
 &lt;p&gt;You just sent a long &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
-&lt;h3 id=&#34;beepr-https-github-com-rasmusab-beepr&#34;&gt;&lt;code&gt;[beepr](https://github.com/rasmusab/beepr)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;beepr-https-github-com-rasmusab-beepr&#34;&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;&lt;code&gt;beepr&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;You can use &lt;a href=&#34;http://www.sumsar.net/&#34;&gt;Rasmus Baath&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; package to have your computer play a sound.&lt;/p&gt;
 
@@ -244,7 +244,7 @@ beep()
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I&amp;rsquo;m instead having my scripts send me a text or a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;gmailr-https-github-com-trinker-gmailr&#34;&gt;&lt;code&gt;[gmailR](https://github.com/trinker/gmailR)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;gmailr-https-github-com-trinker-gmailr&#34;&gt;&lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;&lt;code&gt;gmailR&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;There are a number of different packages for sending email from R (e.g., &lt;a href=&#34;http://cran.r-project.org/web/packages/sendmailR/index.html&#34;&gt;sendmailR&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/mailR/index.html&#34;&gt;mailR&lt;/a&gt;). I tried &lt;a href=&#34;http://trinkerrstuff.wordpress.com/&#34;&gt;Tyler Rinker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; package.&lt;/p&gt;
 
@@ -282,7 +282,7 @@ send_text(&amp;quot;subject here&amp;quot; &amp;quot;body of message here&amp;qu
 send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;rpushbullet-https-github-com-eddelbuettel-rpushbullet&#34;&gt;&lt;code&gt;[RPushbullet](https://github.com/eddelbuettel/rpushbullet)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;rpushbullet-https-github-com-eddelbuettel-rpushbullet&#34;&gt;&lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;&lt;code&gt;RPushbullet&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;Another alternative (suggested to me by &lt;a href=&#34;https://twitter.com/PeteHaitch/status/507073412842278913&#34;&gt;Peter Hickey&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/jknowles/status/507152898674143232&#34;&gt;Jared Knowles&lt;/a&gt;) is to use &lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package to send yourself a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
 
@@ -295,53 +295,47 @@ send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;
 
 &lt;li&gt;&lt;p&gt;Go to &lt;a href=&#34;https://www.pushbullet.com/account&#34;&gt;your pushbullet account page&lt;/a&gt; to get your &amp;ldquo;Access Token&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Install the &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package from CRAN.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Install the &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package from CRAN.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;RPushbullet&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Create a &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file with your api key and not much else.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Create a &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file with your api key and not much else.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{
-    &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
-    &amp;quot;devices&amp;quot;: [],
-    &amp;quot;names&amp;quot;: []
+  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
+  &amp;quot;devices&amp;quot;: [],
+  &amp;quot;names&amp;quot;: []
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Install &lt;a href=&#34;http://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Install &lt;a href=&#34;http://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;jsonlite&amp;quot;)
 library(jsonlite)
 library(RPushbullet)
 fromJSON(pbGetDevices())$devices[,c(&amp;quot;iden&amp;quot;, &amp;quot;nickname&amp;quot;)]
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Insert those device identifiers into your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Insert those device identifiers into your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{
-    &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
+  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
 
-    &amp;quot;devices&amp;quot;: [
-        &amp;quot;your_phone_device_id&amp;quot;,
-        &amp;quot;your_tablet_device_id&amp;quot;,
-        &amp;quot;your_chrome_device_id&amp;quot;;
-    ],
+  &amp;quot;devices&amp;quot;: [
+      &amp;quot;your_phone_device_id&amp;quot;,
+      &amp;quot;your_tablet_device_id&amp;quot;,
+      &amp;quot;your_chrome_device_id&amp;quot;;
+  ],
 
-    &amp;quot;names&amp;quot;: [
-        &amp;quot;phone&amp;quot;,
-        &amp;quot;tablet&amp;quot;,
-        &amp;quot;Chrome&amp;quot;;
-    ]
+  &amp;quot;names&amp;quot;: [
+      &amp;quot;phone&amp;quot;,
+      &amp;quot;tablet&amp;quot;,
+      &amp;quot;Chrome&amp;quot;;
+  ]
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;Now you&amp;rsquo;re set!  Use the &lt;code&gt;pbPost()&lt;/code&gt; function to post a message to yourself.&lt;/p&gt;
 
@@ -359,10 +353,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
 
 &lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
@@ -385,10 +379,10 @@ rect(u[1], u[3], u[2], u[4])
     
     <item>
       <title>hipsteR: re-educating people who learned R before it was cool</title>
-      <link>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
+      <link>/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
+      <guid>/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
       <description>&lt;p&gt;This morning, I started &lt;a href=&#34;http://kbroman.github.io/hipsteR/&#34;&gt;a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Yesterday I started reading the &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/1461468671/7210-20&#34;&gt;Rcpp book&lt;/a&gt;, and on page 4 there&amp;rsquo;s an example using the R function &lt;code&gt;replicate&lt;/code&gt;, which (a) I&amp;rsquo;d never heard before, and (b) is super useful.&lt;/p&gt;
@@ -417,10 +411,10 @@ replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
     
     <item>
       <title>Further points on crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
+      <link>/2014/05/09/further-points-on-crayon-colors/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
+      <guid>/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>&lt;p&gt;I saw &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;this great post on crayola crayon colors&lt;/a&gt; at the &lt;a href=&#34;http://learnr.wordpress.com&#34;&gt;Learning R blog&lt;/a&gt;, reproducing a &lt;a href=&#34;http://www.datapointed.net/2010/01/crayola-crayon-color-chart/&#34;&gt;nice graph&lt;/a&gt; of the Crayola crayon colors over time. (Also see &lt;a href=&#34;http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/&#34;&gt;this even nicer version&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;List of Crayola crayon colors&lt;/a&gt;,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):&lt;/p&gt;
@@ -446,10 +440,10 @@ names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
     
     <item>
       <title>Two more points about crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
+      <link>/2014/05/08/two-more-points-about-crayon-colors/</link>
       <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
+      <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>&lt;p&gt;If you want to use &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;crayon colors in R&lt;/a&gt; but you don&amp;rsquo;t want to rely on my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, you can just grab the code. Copy the &lt;a href=&#34;https://github.com/kbroman/broman/blob/master/R/brocolors.R#L72-L204&#34;&gt;relevant lines from the &lt;code&gt;R/brocolors.R&lt;/code&gt; file&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;,
@@ -477,10 +471,10 @@ ord &amp;lt;- hclust(dist(colval))$order
     
     <item>
       <title>&#34;[&#34; with the apply() functions, revisited</title>
-      <link>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</link>
+      <link>/2014/04/29/with-the-apply-functions-revisited/</link>
       <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
+      <guid>/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/&#34;&gt;mentioned in the fall&lt;/a&gt; that one could use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; in the &lt;code&gt;apply&lt;/code&gt;-type functions, like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;)
@@ -500,10 +494,10 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>
 
 &lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
@@ -689,13 +683,13 @@ Example 1
 \vspace{24pt}
 
 \bi
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Research}
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Writing}
-\item {\color&amp;amp;lt;3| handout 0&amp;amp;gt;{hilight} Peer review, editorial oversight}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Journal administration}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Copy editing, typesetting}
-\item {\color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Distribution}
-\item&amp;amp;lt;2-&amp;amp;gt;{\color&amp;amp;lt;2| handout 0&amp;amp;gt;{vhilight} \color&amp;amp;lt;4| handout 0&amp;amp;gt;{hilight} Profit}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Research}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Writing}
+\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Peer review, editorial oversight}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Journal administration}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Copy editing, typesetting}
+\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Distribution}
+\item&amp;lt;2-&amp;gt;{\color&amp;lt;2| handout 0&amp;gt;{vhilight} \color&amp;lt;4| handout 0&amp;gt;{hilight} Profit}
 \ei
 \note{ [clip] }
 \end{frame}
@@ -715,10 +709,10 @@ Example 1
     
     <item>
       <title>&#34;[&#34; and &#34;[[&#34; with the apply() functions</title>
-      <link>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</link>
+      <link>/2013/08/20/and-with-the-apply-functions/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</guid>
+      <guid>/2013/08/20/and-with-the-apply-functions/</guid>
       <description>&lt;p&gt;Did you know you can use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;[[&amp;quot;&lt;/code&gt; as function names for subsetting with calls to the &lt;code&gt;apply&lt;/code&gt;-type functions?&lt;/p&gt;
 
 &lt;p&gt;For example, suppose you have a bunch of identifier strings like &lt;code&gt;&amp;quot;ZYY-43S-CWA3&amp;quot;&lt;/code&gt; and you want to pull off the bit before the first hyphen (&lt;code&gt;&amp;quot;ZYY&amp;quot;&lt;/code&gt; in this case).  (For code to create random IDs like that, see the end of this post.)&lt;/p&gt;
@@ -755,10 +749,10 @@ for(i in seq(along=lengths)) {
     
     <item>
       <title>Read the source code</title>
-      <link>http://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
+      <link>/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
+      <guid>/2013/08/06/read-the-source-code/</guid>
       <description>&lt;p&gt;The other day, there was a bit of &lt;a href=&#34;https://twitter.com/hspter/status/363015797204992000&#34;&gt;a twitter conversation about &lt;code&gt;qqline&lt;/code&gt;&lt;/a&gt; in R.&lt;/p&gt;
 
 &lt;p&gt;It made me think: how exactly is the line produced by &lt;code&gt;qqline&lt;/code&gt; chosen? I seemed to recall that the line was through the first and third quartiles.&lt;/p&gt;
@@ -830,10 +824,10 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
     
     <item>
       <title>Beware of grep with a list</title>
-      <link>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</link>
+      <link>/2013/04/03/beware-of-grep-with-a-list/</link>
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</guid>
+      <guid>/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>&lt;p&gt;Another &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip: beware of &lt;code&gt;as.character&lt;/code&gt; applied to a list.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt; as.character( list(letters[1:3], letters[4:6]) )
@@ -854,10 +848,10 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
     
     <item>
       <title>apply vs for</title>
-      <link>http://kbroman.org/blog/2013/04/02/apply-vs-for/</link>
+      <link>/2013/04/02/apply-vs-for/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/02/apply-vs-for/</guid>
+      <guid>/2013/04/02/apply-vs-for/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s widely understood that, in &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; programming, one should avoid &lt;code&gt;for&lt;/code&gt; loops and always try to use &lt;code&gt;apply&lt;/code&gt;-type functions.&lt;/p&gt;
 
 &lt;p&gt;But this isn&amp;rsquo;t entirely true.  It may have been true for Splus, back in the day: As  I recall, that had to do with the entire environment from each iteration being retained in memory.&lt;/p&gt;
@@ -889,11 +883,11 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
     </item>
     
     <item>
-      <title>x[[c(5,3)]]</title>
-      <link>http://kbroman.org/blog/2013/04/02/xc53/</link>
+      <title>x[[(5,3)]]</title>
+      <link>/2013/04/02/xc53/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/02/xc53/</guid>
+      <guid>/2013/04/02/xc53/</guid>
       <description>&lt;p&gt;An &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip:
 Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&gt;x[[5]][[3]]&lt;/code&gt;?&lt;/p&gt;
 
@@ -902,7 +896,7 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;In the help file for &lt;code&gt;[[&lt;/code&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-`[[` can be applied recursively to lists, so that if the single index `i` is a vector of length `p`, `alist[[i]]` is equivalent to `alist[[i1]]...[[ip]]` providing all but the final indexing results in a list.
+&lt;p&gt;&lt;code&gt;[[&lt;/code&gt; can be applied recursively to lists, so that if the single index &lt;code&gt;i&lt;/code&gt; is a vector of length &lt;code&gt;p&lt;/code&gt;, &lt;code&gt;alist[[i]]&lt;/code&gt; is equivalent to &lt;code&gt;alist[[i1]]...[[ip]]&lt;/code&gt; providing all but the final indexing results in a list.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I never knew this; I came across it when playing around (i.e., not paying proper attention) in the back of the room at an R course.&lt;/p&gt;
@@ -913,10 +907,10 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
     
     <item>
       <title>D3.js difficulties</title>
-      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
@@ -977,10 +971,10 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
     
     <item>
       <title>as.character() for rownames()</title>
-      <link>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</link>
+      <link>/2012/03/22/as-character-for-rownames/</link>
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</guid>
+      <guid>/2012/03/22/as-character-for-rownames/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330&#34;&gt;Rainer pointed out&lt;/a&gt;, in response to my post, &lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/&#34;&gt;Row names in data frames: Beware of 1:nrow&lt;/a&gt;, that if I&amp;rsquo;d used &lt;code&gt;rownames(x) &amp;lt;- as.character(1:3)&lt;/code&gt; rather than &lt;code&gt;rownames(x) &amp;lt;- 1:3&lt;/code&gt;, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3)
@@ -1036,10 +1030,10 @@ F  3
     
     <item>
       <title>Row names in data frames: beware of 1:nrow</title>
-      <link>http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</link>
+      <link>/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</link>
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
+      <guid>/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
       <description>&lt;p&gt;I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, &lt;code&gt;x&lt;/code&gt;, as &lt;code&gt;1:nrow(x)&lt;/code&gt;, R will act as if you&amp;rsquo;d not assigned row names, and the names might get changed when you do &lt;code&gt;rbind&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s an illustration:&lt;/p&gt;
@@ -1076,10 +1070,10 @@ F  6
     
     <item>
       <title>Halloween 2011 count</title>
-      <link>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
+      <link>/2011/10/31/halloween-2011-count/</link>
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
+      <guid>/2011/10/31/halloween-2011-count/</guid>
       <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
 
 &lt;p&gt;I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.&lt;/p&gt;
@@ -1114,10 +1108,10 @@ F  6
     
     <item>
       <title>Quick labels within figures</title>
-      <link>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</link>
+      <link>/2011/08/26/quick-labels-within-figures-done-right/</link>
       <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</guid>
+      <guid>/2011/08/26/quick-labels-within-figures-done-right/</guid>
       <description>&lt;p&gt;One of the coolest R packages I heard about at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt;: &lt;a href=&#34;http://cbio.ensmp.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels directly next to the relevant curves or point clouds in a figure.&lt;/p&gt;
 
 &lt;p&gt;I think I first learned about this idea from &lt;a href=&#34;http://www.andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this:
@@ -1172,10 +1166,10 @@ direct.label(p)
     
     <item>
       <title>The stupidest R code ever</title>
-      <link>http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</link>
+      <link>/2011/08/17/the-stupidest-r-code-ever/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</guid>
+      <guid>/2011/08/17/the-stupidest-r-code-ever/</guid>
       <description>&lt;p&gt;Let me tell you about my stupidest R mistake.&lt;/p&gt;
 
 &lt;p&gt;In the R package that I write, &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.&lt;/p&gt;

@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 15 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Academics</title>
-      <link>http://kbroman.org/blog/categories/academics/</link>
+      <link>/categories/academics/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/academics/</guid>
+      <guid>/categories/academics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apple</title>
-      <link>http://kbroman.org/blog/categories/apple/</link>
+      <link>/categories/apple/</link>
       <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/apple/</guid>
+      <guid>/categories/apple/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Biking</title>
-      <link>http://kbroman.org/blog/categories/biking/</link>
+      <link>/categories/biking/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/biking/</guid>
+      <guid>/categories/biking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>http://kbroman.org/blog/categories/blog/</link>
+      <link>/categories/blog/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/blog/</guid>
+      <guid>/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Genetics</title>
-      <link>http://kbroman.org/blog/categories/genetics/</link>
+      <link>/categories/genetics/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/genetics/</guid>
+      <guid>/categories/genetics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>News</title>
-      <link>http://kbroman.org/blog/categories/news/</link>
+      <link>/categories/news/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/news/</guid>
+      <guid>/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>http://kbroman.org/blog/categories/programming/</link>
+      <link>/categories/programming/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/programming/</guid>
+      <guid>/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://kbroman.org/blog/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistics</title>
-      <link>http://kbroman.org/blog/categories/statistics/</link>
-      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+      <link>/categories/statistics/</link>
+      <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/statistics/</guid>
+      <guid>/categories/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Things That Annoy Me</title>
-      <link>http://kbroman.org/blog/categories/things-that-annoy-me/</link>
+      <link>/categories/things-that-annoy-me/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/categories/things-that-annoy-me/</guid>
+      <guid>/categories/things-that-annoy-me/</guid>
       <description></description>
     </item>
     

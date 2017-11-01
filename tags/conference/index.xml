@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/conference/</link>
+    <link>/tags/conference/</link>
     <description>Recent content in Conference on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 27 May 2017 12:30:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/conference/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/conference/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>/2017/05/27/ropensci-unconf-2017/</guid>
       <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
 &lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
@@ -68,10 +68,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>My JSM 2016 itinerary</title>
-      <link>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
+      <link>/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
+      <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.&lt;/p&gt;
@@ -230,10 +230,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>God-awful conference websites</title>
-      <link>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
+      <link>/2015/08/05/god-awful-conference-web-sites/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
+      <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>
 
 &lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
@@ -274,10 +274,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>Memories of past JSMs</title>
-      <link>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
+      <link>/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
+      <guid>/2015/08/03/memories-of-past-jsms/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;http://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;http://imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;http://www.tibs.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;http://www.ssc.ca&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/&#34;&gt;JSM 2015&lt;/a&gt; is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
@@ -319,10 +319,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>2015 AAAS in San Jose</title>
-      <link>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</link>
+      <link>/2015/02/13/2015-aaas-in-san-jose/</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
+      <guid>/2015/02/13/2015-aaas-in-san-jose/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;https://aaas.confex.com/aaas/2015/webprogram/start.html&#34;&gt;2015 AAAS meeting&lt;/a&gt; in San Jose, California. This is definitely not my typical meeting: too big, too broad, and I hardly know anyone here. But here&amp;rsquo;s a quick (ha ha; &lt;em&gt;yah sure&lt;/em&gt;) summary of the meeting so far.&lt;/p&gt;
@@ -379,10 +379,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>UseR 2014, days 3-4</title>
-      <link>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</link>
+      <link>/2014/07/21/user-2014-days-3-4/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
+      <guid>/2014/07/21/user-2014-days-3-4/</guid>
       <description>
 
 &lt;p&gt;Three weeks ago, I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/&#34;&gt;commented on the first two days&lt;/a&gt; of the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014 conference&lt;/a&gt;. I&amp;rsquo;m finally back to talk about the second half.&lt;/p&gt;
@@ -457,10 +457,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>2014 UseR conference, days 1-2</title>
-      <link>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
+      <link>/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <guid>/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m at UCLA for the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR Conference&lt;/a&gt;. I attended &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;once before&lt;/a&gt;, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.&lt;/p&gt;
@@ -605,10 +605,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>Hiring computational biologists</title>
-      <link>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
+      <link>/2013/09/25/hiring-computational-biologists/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
+      <guid>/2013/09/25/hiring-computational-biologists/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;http://discovery.wisc.edu/home/morgridge/morgridge.cmsx&#34;&gt;Morgridge Institute for Research&lt;/a&gt; (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. &lt;a href=&#34;http://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf&#34;&gt;One position&lt;/a&gt; is joint with my department,  &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;Biostatistics &amp;amp; Medical Informatics&lt;/a&gt;.&lt;/p&gt;
@@ -641,10 +641,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>ENAR highs and lows</title>
-      <link>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
+      <link>/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
+      <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>
 
 &lt;p&gt;I attended the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; in Orlando, Florida, last week. (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; = &amp;ldquo;Eastern North American Region&amp;rdquo; of the &lt;a href=&#34;http://www.biometricsociety.org&#34;&gt;International Biometric Society&lt;/a&gt;.)&lt;/p&gt;
@@ -680,7 +680,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;They should have emphasized the cheaper shuttle from the airport (vs taxi); the information was hard to find.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;They should have emphasized that wifi was actually free; ignore the $14.95/day charge as it gets waived from your bill.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;They should have emphasized that wifi was actually free; ignore the \$14.95/day charge as it gets waived from your bill.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Registration on Sunday closed early, so many at the poster session were without name badges.&lt;/p&gt;&lt;/li&gt;
 
@@ -692,7 +692,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
 
 &lt;li&gt;&lt;p&gt;The hotel was too expensive.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;The $85 admission to Epcot was a required part of the registration fee (23%).  The registration fee ($365) was the same as for ENAR 2012 in Washington DC, but it could have been $280.  And there&amp;rsquo;s a striking difference between &amp;ldquo;It&amp;rsquo;s free!&amp;rdquo; and &amp;ldquo;You already paid for it!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The \$85 admission to Epcot was a required part of the registration fee (23%).  The registration fee (\$365) was the same as for ENAR 2012 in Washington DC, but it could have been \$280.  And there&amp;rsquo;s a striking difference between &amp;ldquo;It&amp;rsquo;s free!&amp;rdquo; and &amp;ldquo;You already paid for it!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;The lighting in meeting rooms was not great.  We needed a ladder and a can of spray paint to &amp;ldquo;turn off&amp;rdquo; those lights shining on the screen.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -705,10 +705,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>ENAR 2012</title>
-      <link>http://kbroman.org/blog/2012/04/18/enar-2012/</link>
+      <link>/2012/04/18/enar-2012/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/18/enar-2012/</guid>
+      <guid>/2012/04/18/enar-2012/</guid>
       <description>
 
 &lt;p&gt;The annual &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org/&#34;&gt;eastern North America portion&lt;/a&gt; of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see &lt;a href=&#34;http://biostat.jhsph.edu&#34;&gt;old friends&lt;/a&gt;, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.&lt;/p&gt;
@@ -752,10 +752,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>useR! Conference 2011 highlights</title>
-      <link>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</link>
+      <link>/2011/08/20/user-conference-2011-highlights/</link>
       <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</guid>
+      <guid>/2011/08/20/user-conference-2011-highlights/</guid>
       <description>
 
 &lt;p&gt;I was at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; at &lt;a href=&#34;http://www.warwick.ac.uk&#34;&gt;The University of Warwick&lt;/a&gt; in &lt;a href=&#34;http://maps.google.com/maps?q=Coventry,+United+Kingdom&amp;amp;hl=en&amp;amp;ll=52.40577,-1.51062&amp;amp;spn=0.772453,1.207123&amp;amp;sll=52.953395,-1.148586&amp;amp;sspn=0.095353,0.15089&amp;amp;vpsrc=6&amp;amp;z=10&#34;&gt;Coventry, UK&lt;/a&gt;, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&amp;rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &amp;ldquo;highlights&amp;rdquo;.&lt;/p&gt;

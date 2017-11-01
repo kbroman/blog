@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/productivity/</link>
+    <link>/tags/productivity/</link>
     <description>Recent content in Productivity on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/productivity/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/productivity/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Error notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
+      <link>/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
+      <guid>/2014/09/04/error-notifications-from-r/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m enthusiastic about having &lt;a href=&#34;http://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;R notify me when my script is done&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;But among my early uses of this, my script threw an error, and I never got a text or &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; about &lt;em&gt;that&lt;/em&gt;. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.&lt;/p&gt;
@@ -51,17 +51,17 @@
     
     <item>
       <title>Notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
+      <link>/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
+      <guid>/2014/09/03/notifications-from-r/</guid>
       <description>
 
 &lt;p&gt;You just sent a long &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
-&lt;h3 id=&#34;beepr-https-github-com-rasmusab-beepr&#34;&gt;&lt;code&gt;[beepr](https://github.com/rasmusab/beepr)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;beepr-https-github-com-rasmusab-beepr&#34;&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;&lt;code&gt;beepr&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;You can use &lt;a href=&#34;http://www.sumsar.net/&#34;&gt;Rasmus Baath&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; package to have your computer play a sound.&lt;/p&gt;
 
@@ -80,7 +80,7 @@ beep()
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I&amp;rsquo;m instead having my scripts send me a text or a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;gmailr-https-github-com-trinker-gmailr&#34;&gt;&lt;code&gt;[gmailR](https://github.com/trinker/gmailR)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;gmailr-https-github-com-trinker-gmailr&#34;&gt;&lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;&lt;code&gt;gmailR&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;There are a number of different packages for sending email from R (e.g., &lt;a href=&#34;http://cran.r-project.org/web/packages/sendmailR/index.html&#34;&gt;sendmailR&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/mailR/index.html&#34;&gt;mailR&lt;/a&gt;). I tried &lt;a href=&#34;http://trinkerrstuff.wordpress.com/&#34;&gt;Tyler Rinker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; package.&lt;/p&gt;
 
@@ -118,7 +118,7 @@ send_text(&amp;quot;subject here&amp;quot; &amp;quot;body of message here&amp;qu
 send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;rpushbullet-https-github-com-eddelbuettel-rpushbullet&#34;&gt;&lt;code&gt;[RPushbullet](https://github.com/eddelbuettel/rpushbullet)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;rpushbullet-https-github-com-eddelbuettel-rpushbullet&#34;&gt;&lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;&lt;code&gt;RPushbullet&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;Another alternative (suggested to me by &lt;a href=&#34;https://twitter.com/PeteHaitch/status/507073412842278913&#34;&gt;Peter Hickey&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/jknowles/status/507152898674143232&#34;&gt;Jared Knowles&lt;/a&gt;) is to use &lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package to send yourself a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
 
@@ -131,53 +131,47 @@ send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;
 
 &lt;li&gt;&lt;p&gt;Go to &lt;a href=&#34;https://www.pushbullet.com/account&#34;&gt;your pushbullet account page&lt;/a&gt; to get your &amp;ldquo;Access Token&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Install the &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package from CRAN.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Install the &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package from CRAN.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;RPushbullet&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Create a &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file with your api key and not much else.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Create a &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file with your api key and not much else.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{
-    &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
-    &amp;quot;devices&amp;quot;: [],
-    &amp;quot;names&amp;quot;: []
+  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
+  &amp;quot;devices&amp;quot;: [],
+  &amp;quot;names&amp;quot;: []
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Install &lt;a href=&#34;http://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Install &lt;a href=&#34;http://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;jsonlite&amp;quot;)
 library(jsonlite)
 library(RPushbullet)
 fromJSON(pbGetDevices())$devices[,c(&amp;quot;iden&amp;quot;, &amp;quot;nickname&amp;quot;)]
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Insert those device identifiers into your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;Insert those device identifiers into your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{
-    &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
+  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
 
-    &amp;quot;devices&amp;quot;: [
-        &amp;quot;your_phone_device_id&amp;quot;,
-        &amp;quot;your_tablet_device_id&amp;quot;,
-        &amp;quot;your_chrome_device_id&amp;quot;;
-    ],
+  &amp;quot;devices&amp;quot;: [
+      &amp;quot;your_phone_device_id&amp;quot;,
+      &amp;quot;your_tablet_device_id&amp;quot;,
+      &amp;quot;your_chrome_device_id&amp;quot;;
+  ],
 
-    &amp;quot;names&amp;quot;: [
-        &amp;quot;phone&amp;quot;,
-        &amp;quot;tablet&amp;quot;,
-        &amp;quot;Chrome&amp;quot;;
-    ]
+  &amp;quot;names&amp;quot;: [
+      &amp;quot;phone&amp;quot;,
+      &amp;quot;tablet&amp;quot;,
+      &amp;quot;Chrome&amp;quot;;
+  ]
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;Now you&amp;rsquo;re set!  Use the &lt;code&gt;pbPost()&lt;/code&gt; function to post a message to yourself.&lt;/p&gt;
 
@@ -195,10 +189,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
 
 &lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
@@ -260,10 +254,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>What should I do badly?</title>
-      <link>http://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</link>
+      <link>/2012/05/23/what-should-i-do-badly/</link>
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</guid>
+      <guid>/2012/05/23/what-should-i-do-badly/</guid>
       <description>
 
 &lt;p&gt;One of the more painful things to learn as a faculty member is to accept that you will do some things badly.  There are too many things to do, so you can&amp;rsquo;t do them all well.  What should you do badly?&lt;/p&gt;
@@ -304,10 +298,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>Meetings vs work</title>
-      <link>http://kbroman.org/blog/2011/09/28/meetings-vs-work/</link>
+      <link>/2011/09/28/meetings-vs-work/</link>
       <pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/28/meetings-vs-work/</guid>
+      <guid>/2011/09/28/meetings-vs-work/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafael Irizarry&lt;/a&gt; wrote about &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10402321009/meetings&#34;&gt;how meetings at work get in the way of actual work&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I agree with his central point, that it can take some time to get back working on a project (whether data analysis, programming, or writing), and so blocks of less than a couple of hours can be inefficient.  Meetings that break up a work day can really erode one&amp;rsquo;s productivity: academics often spend too much time meeting and not enough actually working, and three hour-long meetings spaced evenly throughout the day can mean that you don&amp;rsquo;t get anything real done in the other five hours.&lt;/p&gt;
