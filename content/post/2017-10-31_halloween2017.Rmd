@@ -1,0 +1,48 @@
+---
+title: 'Halloween 2017'
+author: Karl
+date: '2017-10-31T20:05:00-05:00'
+categories: [Statistics]
+tags: ["graphics", "news"]
+---
+
+Here are our 2017 Halloween numbers; rather a weak turnout. (Compare them to
+[2016](http://kbroman.org/blog/2016/10/31/halloween-2016-count/) and
+[2011](http://kbroman.org/blog/2011/10/31/halloween-2011-count/).)
+Twelve out of the 18 kids came in 2 minutes (a group of 8 girls followed
+immediately by a group of 4 girls).
+
+```{r halloween_graph, echo=FALSE, fig.width=8, fig.height=8}
+x <- data.frame(time=   c("6:24", "7:03", "7:11", "7:24", "7:26", "7:34"),
+                n_kids= c(  1,      2,      1,      8,      4,      2),
+                stringsAsFactors=FALSE)
+
+library(timeDate)
+
+csum <- cumsum(x$n_kids)
+
+y <- strptime(x$time, "%H:%M")
+yn <- as.numeric(y)
+z <- paste(c(4,4,5,5,6,6,7,7,8), sprintf("%02d", c(0,30,0,30,0,30,0,30,0)), sep=":")
+yy <- strptime(z, "%H:%M")
+yyn <- as.numeric(yy)
+
+par(mar=c(3.4, 3.4, 1.1, 1.1), cex.axis=1.3)
+plot(0,0,type="n", xlab="", ylab="", ylim=c(0, 26.5), yaxs="i",
+     xlim=range(yyn), xaxt="n", las=1, yaxt="n")
+u <- par("usr")
+rect(u[1], u[3], u[2], u[4], col="gray90")
+axis(side=1, at=yyn, z, tick=FALSE, line=-0.8)
+axis(side=2, at=seq(0, 26, by=2), las=1, tick=FALSE, line=-0.6)
+abline(v=yyn, col="white")
+abline(h=seq(0, 26, by=2), col="white")
+abline(v=u[1:2], h=u[3:4])
+yn <- c(u[1], yn, u[2])
+csum <- c(0, csum, max(csum))
+for(i in 1:(length(yn)-1)) {
+  segments(yn[i], csum[i], yn[i+1], csum[i], lwd=2, col="blue3", lend=1, ljoin=1)
+  if(i>1) points(yn[i], csum[i], pch=16, cex=0.8, col="blue3")
+}
+mtext(side=2, "Cumulative number of kids", line=2, cex=1.5)
+mtext(side=1, "Time", line=2, cex=1.5)
+```
