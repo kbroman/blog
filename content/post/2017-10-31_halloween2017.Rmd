@@ -13,8 +13,8 @@ x <- data.frame(time=   c("6:24", "7:03", "7:11", "7:24", "7:26", "7:34"),
 ```
 
 It was easier than ever to count trick-or-treaters this year; there
-were just `r nrow(x)` groups of kids, for a total of `r
-sum(x$n_kids)`, and 12 of them came within 2 minutes (a group of 8
+were just `r nrow(x)` groups of kids, for a total of
+`r sum(x$n_kids)`, and 12 of them came within 2 minutes (a group of 8
 girls followed immediately by a group of 4 girls). Here's a graph;
 compare it to those from
 [2016](http://kbroman.org/blog/2016/10/31/halloween-2016-count/) and
