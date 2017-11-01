@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wordpress on the stupidest thing...</title>
-    <link>/tags/wordpress/</link>
+    <link>http://kbroman.org/blog/tags/wordpress/</link>
     <description>Recent content in Wordpress on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 30 Apr 2017 10:50:00 -0500</lastBuildDate>
-    <atom:link href="/tags/wordpress/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/wordpress/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>old posts</title>
-      <link>/2017/04/30/old-posts/</link>
+      <link>http://kbroman.org/blog/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>/2017/04/30/old-posts/</guid>
+      <guid>http://kbroman.org/blog/2017/04/30/old-posts/</guid>
       <description>&lt;p&gt;In moving away from my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.wordpress.com/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;Better-looking LaTeX/Beamer slides&lt;/a&gt;, 2013-10-07&lt;/p&gt;&lt;/li&gt;
@@ -72,10 +72,10 @@
     
     <item>
       <title>new blog</title>
-      <link>/2017/04/29/new-blog/</link>
+      <link>http://kbroman.org/blog/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>/2017/04/29/new-blog/</guid>
+      <guid>http://kbroman.org/blog/2017/04/29/new-blog/</guid>
       <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt; as it is and not try to figure out how to move things over.&lt;/p&gt;
 &lt;p&gt;I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which is a &lt;em&gt;joy&lt;/em&gt;. See the &lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;bookdown-based documentation&lt;/a&gt; (currently a bit thin) plus &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas’s tutorial&lt;/a&gt; and the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbind&lt;/a&gt;. Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;

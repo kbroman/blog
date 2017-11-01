@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on the stupidest thing...</title>
-    <link>/categories/blog/</link>
+    <link>http://kbroman.org/blog/categories/blog/</link>
     <description>Recent content in Blog on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 03 Aug 2017 00:01:00 -0500</lastBuildDate>
-    <atom:link href="/categories/blog/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/categories/blog/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>yay, yihui!</title>
-      <link>/2017/08/03/yay-yihui/</link>
+      <link>http://kbroman.org/blog/2017/08/03/yay-yihui/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>/2017/08/03/yay-yihui/</guid>
+      <guid>http://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
       <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;../../2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
 &lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for me! So awesome.&lt;/p&gt;
 </description>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on the stupidest thing...</title>
-    <link>/tags/software/</link>
+    <link>http://kbroman.org/blog/tags/software/</link>
     <description>Recent content in Software on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/software/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/software/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Code review</title>
-      <link>/2013/09/25/code-review/</link>
+      <link>http://kbroman.org/blog/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/25/code-review/</guid>
+      <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
       <description>
 
 &lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;

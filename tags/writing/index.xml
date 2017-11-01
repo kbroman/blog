@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on the stupidest thing...</title>
-    <link>/tags/writing/</link>
+    <link>http://kbroman.org/blog/tags/writing/</link>
     <description>Recent content in Writing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 03 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/writing/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/writing/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The value of thesis intro/discussion</title>
-      <link>/2014/12/03/the-value-of-thesis-introdiscussion/</link>
+      <link>http://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</link>
       <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
+      <guid>http://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>&lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/FuSchmu&#34;&gt;Kelly Weinersmith&lt;/a&gt; &lt;a href=&#34;https://twitter.com/FuSchmu/status/536909452457172992&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published?&lt;/blockquote&gt;
@@ -40,10 +40,10 @@
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
 
 &lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
@@ -105,10 +105,10 @@
     
     <item>
       <title>Positive comments on peer review</title>
-      <link>/2012/04/27/positive-comments-on-peer-review/</link>
+      <link>http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</link>
       <pubDate>Fri, 27 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/27/positive-comments-on-peer-review/</guid>
+      <guid>http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</guid>
       <description>&lt;p&gt;We all complain about peer review, particularly when &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;our best work&lt;/a&gt; is rejected by every journal from Nature Genetics down to &lt;a href=&#34;http://www.biomedcentral.com/bmcgenet&#34;&gt;that journal that will publish anything&lt;/a&gt;, so that it finally appears in &lt;a href=&#34;http://projecteuclid.org/euclid.lnms/1215091126&#34;&gt;a volume&lt;/a&gt; to honor &lt;a href=&#34;http://www.stat.berkeley.edu/~terry/&#34;&gt;some guy&lt;/a&gt; that &lt;a href=&#34;http://kbroman.files.wordpress.com/2012/04/terry2.jpg&#34;&gt;only he will read&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;However, sometimes &lt;a href=&#34;http://medicine.yale.edu/ysph/people/hongyu_zhao.profile&#34;&gt;an anonymous reviewer&lt;/a&gt; will identify an important flaw in &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/interfer.pdf&#34;&gt;a paper&lt;/a&gt; that you can fix before it&amp;rsquo;s published, thus saving you from potential public embarrassment.&lt;/p&gt;
@@ -121,10 +121,10 @@
     
     <item>
       <title>More on open access</title>
-      <link>/2012/02/03/more-on-open-access/</link>
+      <link>http://kbroman.org/blog/2012/02/03/more-on-open-access/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/03/more-on-open-access/</guid>
+      <guid>http://kbroman.org/blog/2012/02/03/more-on-open-access/</guid>
       <description>&lt;p&gt;I am quite persuaded by &lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen&amp;rsquo;s recent comments on open access&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -152,10 +152,10 @@ The journal is underwritten by a generous grant from the Considine Family Founda
     
     <item>
       <title>Paying for scholarly publications</title>
-      <link>/2012/02/02/paying-for-scholarly-publications/</link>
+      <link>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
+      <guid>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>
 
 &lt;p&gt;I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see &lt;a href=&#34;http://www.eisenlab.org/eisen/&#34;&gt;Michael Eisen&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;http://www.nytimes.com/2012/01/11/opinion/research-bought-then-paid-for.html&#34;&gt;OpEd in the New York Times&lt;/a&gt;]; the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;) has turned my thoughts to publishing generally.&lt;/p&gt;
@@ -279,10 +279,10 @@ The journal is underwritten by a generous grant from the Considine Family Founda
     
     <item>
       <title>Elsevier boycott</title>
-      <link>/2012/02/01/elsevier-boycott/</link>
+      <link>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/01/elsevier-boycott/</guid>
+      <guid>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
       <description>&lt;p&gt;I expect you&amp;rsquo;ve already heard about the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;, started based on comments from &lt;a href=&#34;http://gowers.wordpress.com/2012/01/21/elsevier-my-part-in-its-downfall/&#34;&gt;Timothy Gowers&lt;/a&gt;.  While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject.  On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians).  There have been a couple of articles about this in the &lt;a href=&#34;http://chronicle.com/&#34;&gt;Chronicle of Higher Education&lt;/a&gt;: &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/elsevier-publishing-boycott-gathers-steam-among-academics/35216&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://chronicle.com/article/As-Journal-Boycott-Grows/130600/?sid=wc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.  (I certainly wouldn&amp;rsquo;t send my own papers to such journals, but it&amp;rsquo;s hard to control papers on which I am one lowly author among many.)&lt;/p&gt;
@@ -342,10 +342,10 @@ The journal is underwritten by a generous grant from the Considine Family Founda
     
     <item>
       <title>Terry on communication</title>
-      <link>/2011/10/03/terry-on-communication/</link>
+      <link>http://kbroman.org/blog/2011/10/03/terry-on-communication/</link>
       <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/03/terry-on-communication/</guid>
+      <guid>http://kbroman.org/blog/2011/10/03/terry-on-communication/</guid>
       <description>&lt;p&gt;Relevant to &lt;a href=&#34;http://kbroman.org/blog/2011/09/29/seminars-bad-and-good/&#34;&gt;my recent comments on seminars&lt;/a&gt;, Terry Speed&amp;rsquo;s &lt;a href=&#34;http://bulletin.imstat.org/2011/09/terence&#39;s-stuff-speaking-reading-writing/&#34;&gt;latest commentary&lt;/a&gt; in the IMS Bulletin focuses on communication (talks and papers).&lt;/p&gt;
 
 &lt;p&gt;He says: &lt;em&gt;read others&amp;rsquo; work&lt;/em&gt; (which I would expand to say, &lt;em&gt;pay attention&lt;/em&gt;) and &lt;em&gt;practice&lt;/em&gt;.&lt;/p&gt;

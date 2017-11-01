@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on the stupidest thing...</title>
-    <link>/tags/r/</link>
+    <link>http://kbroman.org/blog/tags/r/</link>
     <description>Recent content in R on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
-    <atom:link href="/tags/r/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/r/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>EOF within quoted string</title>
-      <link>/2017/08/08/eof-within-quoted-string/</link>
+      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
       <description>&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
 &lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
 &lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with “&lt;code&gt;###&lt;/code&gt;” interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
@@ -78,10 +78,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>miner and craft</title>
-      <link>/2017/05/31/miner-and-craft/</link>
+      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>/2017/05/31/miner-and-craft/</guid>
+      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
       <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
 &lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
@@ -93,10 +93,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>omg, bookdown!</title>
-      <link>/2017/05/31/omg-bookdown/</link>
+      <link>http://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
-      <guid>/2017/05/31/omg-bookdown/</guid>
+      <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
       <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
 &lt;p&gt;I mean, from &lt;a href=&#34;https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
 &lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
@@ -126,10 +126,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>deeply nested functions</title>
-      <link>/2017/05/30/deeply-nested-functions/</link>
+      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>/2017/05/30/deeply-nested-functions/</guid>
+      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
       <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
     do.call(rbind,
@@ -150,10 +150,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>/2017/05/27/ropensci-unconf-2017/</link>
+      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
       <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
 &lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
@@ -206,10 +206,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>miniCRAN</title>
-      <link>/2017/05/23/minicran/</link>
+      <link>http://kbroman.org/blog/2017/05/23/minicran/</link>
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
-      <guid>/2017/05/23/minicran/</guid>
+      <guid>http://kbroman.org/blog/2017/05/23/minicran/</guid>
       <description>&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
 &lt;p&gt;I was chatting with &lt;a href=&#34;http://www.senresearch.org/&#34;&gt;Śaunak Sen&lt;/a&gt; about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).&lt;/p&gt;
 &lt;p&gt;Should we have participants work on a server? Should we set up &lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt; in &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt; containers on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;?&lt;/p&gt;
@@ -258,10 +258,10 @@ write_PACKAGES(&amp;quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&amp;quot;,
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to follow up on my &lt;a href=&#34;../../2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt;. One thing to emphasize is that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use &lt;code&gt;compress=FALSE&lt;/code&gt; you can skip that and it goes &lt;em&gt;much&lt;/em&gt; faster. See, for example, &lt;a href=&#34;https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/&#34;&gt;his post on “Fast csv writing for R”&lt;/a&gt;. Also see his &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf&#34;&gt;slides from a recent presentation on parallel fread&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’ll first generate the same data that I was using before. And note, as &lt;a href=&#34;https://twitter.com/shabbychef&#34;&gt;@shabbychef&lt;/a&gt; &lt;a href=&#34;https://twitter.com/shabbychef/status/858892435820130304&#34;&gt;mentioned on twitter&lt;/a&gt;, my iid simulations mean that compression isn’t likely to be useful, &lt;a href=&#34;../../2017/04/30/sqlite-feather-and-fst/&#34;&gt;as we saw in my previous post&lt;/a&gt;. So don’t assume that these results apply generally; compression is useful much of the time.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_ind &amp;lt;- 500
@@ -315,7 +315,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Tue Oct 31 20:20:39 2017 --&gt;
+&lt;!-- Wed Nov  1 13:03:07 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -480,10 +480,10 @@ fread
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
@@ -547,10 +547,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>crayon colors, simplified</title>
-      <link>/2017/05/02/crayon-colors-simplified/</link>
+      <link>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/05/02/crayon-colors-simplified/</guid>
+      <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
 &lt;p&gt;(I &lt;a href=&#34;https://kbroman.wordpress.com/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on my wordpress blog&lt;/a&gt;, and then &lt;a href=&#34;https://kbroman.wordpress.com/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;https://kbroman.wordpress.com/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;But using my package to get the crayon colors can be rather tedious.&lt;/p&gt;
@@ -584,10 +584,10 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
     
     <item>
       <title>caching blogdown</title>
-      <link>/2017/05/01/caching-blogdown/</link>
+      <link>http://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>/2017/05/01/caching-blogdown/</guid>
+      <guid>http://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.&lt;/p&gt;
 &lt;p&gt;I had the mistaken impression that blogdown would look at the timestamps on the &lt;code&gt;.Rmd&lt;/code&gt; and &lt;code&gt;.html&lt;/code&gt; and only build the &lt;code&gt;.html&lt;/code&gt; if the &lt;code&gt;.Rmd&lt;/code&gt; file is newer, but that’s not true.&lt;/p&gt;
 &lt;p&gt;My &lt;a href=&#34;http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt; is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;new blog&lt;/a&gt; would be really painful, forever more.&lt;/p&gt;
@@ -598,10 +598,10 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
 &lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
 &lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
@@ -811,10 +811,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Introduction</title>
-      <link>/2011/08/17/introduction/</link>
+      <link>http://kbroman.org/blog/2011/08/17/introduction/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/08/17/introduction/</guid>
+      <guid>http://kbroman.org/blog/2011/08/17/introduction/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.&lt;/p&gt;
 
 &lt;p&gt;Particularly interesting were the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/lightning.html&#34;&gt;Lightning talks&lt;/a&gt;: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically.  It worked extremely well; more talks should be done this way!&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Consulting on the stupidest thing...</title>
-    <link>/tags/consulting/</link>
+    <link>http://kbroman.org/blog/tags/consulting/</link>
     <description>Recent content in Consulting on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 02 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/consulting/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/consulting/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Thoughts on statistical consulting</title>
-      <link>/2013/04/02/thoughts-on-statistical-consulting/</link>
+      <link>http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/02/thoughts-on-statistical-consulting/</guid>
+      <guid>http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;Statistics Department&lt;/a&gt; at &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison&lt;/a&gt; has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.&lt;/p&gt;

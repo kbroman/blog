@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on the stupidest thing...</title>
-    <link>/tags/productivity/</link>
+    <link>http://kbroman.org/blog/tags/productivity/</link>
     <description>Recent content in Productivity on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/productivity/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/productivity/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Error notifications from R</title>
-      <link>/2014/09/04/error-notifications-from-r/</link>
+      <link>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/09/04/error-notifications-from-r/</guid>
+      <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m enthusiastic about having &lt;a href=&#34;http://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;R notify me when my script is done&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;But among my early uses of this, my script threw an error, and I never got a text or &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; about &lt;em&gt;that&lt;/em&gt;. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.&lt;/p&gt;
@@ -51,10 +51,10 @@
     
     <item>
       <title>Notifications from R</title>
-      <link>/2014/09/03/notifications-from-r/</link>
+      <link>http://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/09/03/notifications-from-r/</guid>
+      <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
       <description>
 
 &lt;p&gt;You just sent a long &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
@@ -189,10 +189,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
 
 &lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
@@ -254,10 +254,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>What should I do badly?</title>
-      <link>/2012/05/23/what-should-i-do-badly/</link>
+      <link>http://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</link>
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/23/what-should-i-do-badly/</guid>
+      <guid>http://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</guid>
       <description>
 
 &lt;p&gt;One of the more painful things to learn as a faculty member is to accept that you will do some things badly.  There are too many things to do, so you can&amp;rsquo;t do them all well.  What should you do badly?&lt;/p&gt;
@@ -298,10 +298,10 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
     
     <item>
       <title>Meetings vs work</title>
-      <link>/2011/09/28/meetings-vs-work/</link>
+      <link>http://kbroman.org/blog/2011/09/28/meetings-vs-work/</link>
       <pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/09/28/meetings-vs-work/</guid>
+      <guid>http://kbroman.org/blog/2011/09/28/meetings-vs-work/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafael Irizarry&lt;/a&gt; wrote about &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10402321009/meetings&#34;&gt;how meetings at work get in the way of actual work&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I agree with his central point, that it can take some time to get back working on a project (whether data analysis, programming, or writing), and so blocks of less than a couple of hours can be inefficient.  Meetings that break up a work day can really erode one&amp;rsquo;s productivity: academics often spend too much time meeting and not enough actually working, and three hour-long meetings spaced evenly throughout the day can mean that you don&amp;rsquo;t get anything real done in the other five hours.&lt;/p&gt;

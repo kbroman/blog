@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on the stupidest thing...</title>
-    <link>/categories/statistics/</link>
+    <link>http://kbroman.org/blog/categories/statistics/</link>
     <description>Recent content in Statistics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
-    <atom:link href="/categories/statistics/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/categories/statistics/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Halloween 2017</title>
-      <link>/2017/10/31/halloween-2017/</link>
+      <link>http://kbroman.org/blog/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>/2017/10/31/halloween-2017/</guid>
-      <description>&lt;p&gt;Here are our 2017 Halloween numbers; rather a weak turnout. (Compare them to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.) Twelve out of the 18 kids came in 2 minutes (a group of 8 girls followed immediately by a group of 4 girls).&lt;/p&gt;
+      <guid>http://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
+      <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../../post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>/2016/10/31/halloween-2016-count/</link>
+      <link>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/10/31/halloween-2016-count/</guid>
+      <guid>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>My JSM 2016 itinerary</title>
-      <link>/2016/07/27/my-jsm-2016-itinerary/</link>
+      <link>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
+      <guid>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.&lt;/p&gt;
@@ -197,10 +197,10 @@
     
     <item>
       <title>I am a data scientist</title>
-      <link>/2016/04/08/i-am-a-data-scientist/</link>
+      <link>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
       <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
@@ -267,10 +267,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
 
 &lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
@@ -307,10 +307,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>/2015/09/09/reproducibility-is-hard/</link>
+      <link>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
       <description>
 
 &lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
@@ -363,10 +363,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>God-awful conference websites</title>
-      <link>/2015/08/05/god-awful-conference-web-sites/</link>
+      <link>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
+      <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>
 
 &lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
@@ -407,10 +407,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Memories of past JSMs</title>
-      <link>/2015/08/03/memories-of-past-jsms/</link>
+      <link>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/08/03/memories-of-past-jsms/</guid>
+      <guid>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;http://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;http://imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;http://www.tibs.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;http://www.ssc.ca&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/&#34;&gt;JSM 2015&lt;/a&gt; is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
@@ -452,10 +452,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
@@ -468,10 +468,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
-      <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
+      <link>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
+      <guid>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
       <description>&lt;p&gt;Last week, I &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
@@ -500,10 +500,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Interactive plot of car crash stats</title>
-      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <link>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -516,10 +516,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Improved graphs of car crash stats</title>
-      <link>/2014/10/29/improved-graphs-of-car-crash-stats/</link>
+      <link>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
+      <guid>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>
 
 &lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/MonaChalabi&#34;&gt;Mona Chalabi&lt;/a&gt; wrote &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;an interesting post on car crash statistics by state&lt;/a&gt;, at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;fivethirtyeight.com&lt;/a&gt;.&lt;/p&gt;
@@ -581,10 +581,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>2014 UseR conference, days 1-2</title>
-      <link>/2014/07/02/2014-user-conference-days-1-2/</link>
+      <link>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m at UCLA for the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR Conference&lt;/a&gt;. I attended &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;once before&lt;/a&gt;, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.&lt;/p&gt;
@@ -729,10 +729,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Reform academic statistics</title>
-      <link>/2014/05/01/reform-academic-statistics/</link>
+      <link>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/05/01/reform-academic-statistics/</guid>
+      <guid>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
 
 &lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
@@ -803,10 +803,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>knitr in a knutshell tutorial</title>
-      <link>/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
+      <link>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
+      <guid>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
       <description>&lt;p&gt;I spent a lot of time this week writing a short tutorial on &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;: &lt;a href=&#34;http://kbroman.github.io/knitr_knutshell&#34;&gt;knitr in a knutshell&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This is my third little tutorial. (The previous ones were a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;git/github guide&lt;/a&gt; and a &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;minimal make&lt;/a&gt; tutorial.)&lt;/p&gt;
@@ -823,10 +823,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Code review</title>
-      <link>/2013/09/25/code-review/</link>
+      <link>http://kbroman.org/blog/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/25/code-review/</guid>
+      <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
       <description>
 
 &lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
@@ -879,10 +879,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Department websites</title>
-      <link>/2013/09/11/department-websites/</link>
+      <link>http://kbroman.org/blog/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/11/department-websites/</guid>
+      <guid>http://kbroman.org/blog/2013/09/11/department-websites/</guid>
       <description>
 
 &lt;p&gt;I was thinking about department websites, partly because &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my own department&amp;rsquo;s website&lt;/a&gt; is terrible, and recently a colleague asked me whether I could suggest some &lt;em&gt;good&lt;/em&gt; department sites.&lt;/p&gt;
@@ -994,10 +994,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>/2013/08/20/electronic-lab-notebook/</link>
+      <link>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
       <description>
 
 &lt;p&gt;I was interested to read &lt;a href=&#34;http://ivory.idyll.org&#34;&gt;C. Titus Brown&lt;/a&gt;&amp;rsquo;s recent post, &amp;ldquo;&lt;a href=&#34;http://ivory.idyll.org/blog/is-version-control-an-electronic-lab-notebook.html&#34;&gt;Is version control an electronic lab notebook?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
@@ -1042,10 +1042,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>More on Chutes &amp; Ladders</title>
-      <link>/2013/05/20/more-on-chutes-ladders/</link>
+      <link>http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</link>
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/20/more-on-chutes-ladders/</guid>
+      <guid>http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/mmaenner/status/335478612084006912&#34;&gt;Matt Maenner asked&lt;/a&gt; about the sawtooth pattern in the &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;figure&lt;/a&gt; in &lt;a href=&#34;http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;my last post on Chutes &amp;amp; Ladders&lt;/a&gt;.&lt;/p&gt;
@@ -1108,10 +1108,10 @@ the opposite is true.&lt;/p&gt;
     
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
-      <link>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
+      <link>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
+      <guid>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
       <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;I saw an &lt;a href=&#34;http://datagenetics.com/blog/november12011/&#34;&gt;interesting mathematical analysis of the game&lt;/a&gt; a few years ago, but it seems to be offline, though &lt;a href=&#34;http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/&#34;&gt;you can read it&lt;/a&gt; via the &lt;a href=&#34;http://web.archive.org/&#34;&gt;wayback machine&lt;/a&gt;.&lt;/p&gt;
@@ -1142,10 +1142,10 @@ the opposite is true.&lt;/p&gt;
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt; is a series of question-and-answer sites, including &lt;a href=&#34;http://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; for programming and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; for statistics.  I was &lt;a href=&#34;http://kbroman.org/blog/2011/09/26/gamified/&#34;&gt;introduced to these sites&lt;/a&gt; at a short talk by &lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;&lt;/p&gt;
@@ -1189,10 +1189,10 @@ the opposite is true.&lt;/p&gt;
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re not on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, you should be.  That&amp;rsquo;s &lt;em&gt;real&lt;/em&gt; open source.&lt;/p&gt;
@@ -1214,10 +1214,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>
 
 &lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
@@ -1294,10 +1294,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>Methods before results</title>
-      <link>/2013/04/29/methods-before-results/</link>
+      <link>http://kbroman.org/blog/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/29/methods-before-results/</guid>
+      <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
       <description>
 
 &lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
@@ -1373,10 +1373,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Data science is statistics</title>
-      <link>/2013/04/05/data-science-is-statistics/</link>
+      <link>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/05/data-science-is-statistics/</guid>
+      <guid>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
       <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.  You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.&lt;/p&gt;
@@ -1389,10 +1389,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Thoughts on statistical consulting</title>
-      <link>/2013/04/02/thoughts-on-statistical-consulting/</link>
+      <link>http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/02/thoughts-on-statistical-consulting/</guid>
+      <guid>http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;Statistics Department&lt;/a&gt; at &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison&lt;/a&gt; has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.&lt;/p&gt;
@@ -1541,10 +1541,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Data structures are important</title>
-      <link>/2013/03/19/data-structures-are-important/</link>
+      <link>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/19/data-structures-are-important/</guid>
+      <guid>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1561,10 +1561,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>ENAR highs and lows</title>
-      <link>/2013/03/19/enar-highs-and-lows/</link>
+      <link>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/19/enar-highs-and-lows/</guid>
+      <guid>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
       <description>
 
 &lt;p&gt;I attended the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; in Orlando, Florida, last week. (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; = &amp;ldquo;Eastern North American Region&amp;rdquo; of the &lt;a href=&#34;http://www.biometricsociety.org&#34;&gt;International Biometric Society&lt;/a&gt;.)&lt;/p&gt;
@@ -1625,10 +1625,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <link>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <guid>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
@@ -1671,10 +1671,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>&lt;p&gt;Much has been written about &lt;a href=&#34;http://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
 
 &lt;p&gt;For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.&lt;/p&gt;

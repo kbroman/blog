@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Websites on the stupidest thing...</title>
-    <link>/tags/websites/</link>
+    <link>http://kbroman.org/blog/tags/websites/</link>
     <description>Recent content in Websites on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 05 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/websites/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/websites/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Simple web sites with GitHub Pages</title>
-      <link>/2014/04/05/simple-web-sites-with-github-pages/</link>
+      <link>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/04/05/simple-web-sites-with-github-pages/</guid>
+      <guid>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
       <description>&lt;p&gt;If you love &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;, you&amp;rsquo;ll also love &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, for producing websites using &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;: you write pages in Markdown within a &lt;code&gt;gh-pages&lt;/code&gt; branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>Department websites</title>
-      <link>/2013/09/11/department-websites/</link>
+      <link>http://kbroman.org/blog/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/11/department-websites/</guid>
+      <guid>http://kbroman.org/blog/2013/09/11/department-websites/</guid>
       <description>
 
 &lt;p&gt;I was thinking about department websites, partly because &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my own department&amp;rsquo;s website&lt;/a&gt; is terrible, and recently a colleague asked me whether I could suggest some &lt;em&gt;good&lt;/em&gt; department sites.&lt;/p&gt;
