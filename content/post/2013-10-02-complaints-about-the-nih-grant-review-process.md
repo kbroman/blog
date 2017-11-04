@@ -18,30 +18,20 @@ NIH proposals are typically reviewed by three people and given preliminary score
 
 One of the reviewers gave our proposal an 8 for "approach" (on a scale of 1-9, with 1 being good and 9 being terrible) with the following review comments:
 
-<blockquote>
-**4. Approach:**
-**Strengths**
-
+> **4. Approach:**
 >
+> **Strengths**
 >
-
 >   * Well described details for mining of [data] and genotyping of [subjects].
 >
-
-**Weaknesses**
-
+> **Weaknesses**
 >
->
-
 >   * There is no power analysis for Aim 2. Without knowing which and how many [phenotypes] will be evaluated it is not possible to estimate the statistical power.
->
 
-</blockquote>
 
 Valid comments, but is that really all the reviewer had to say? What about Aims 1 and 3, or the other aspects of Aim 2? _That is totally fucking inadequate._
 
 Looking at this review again, I was reminded of how much I despise many aspects of the NIH review process. So it's led me, finally, to write down some of the things that annoy me.
-<!-- more -->
 
 ### The scoring system is too discrete
 
@@ -63,13 +53,11 @@ As I understand it, there were two main reasons for revising the scoring system:
 
 But as a fix for the grade inflation problem, revising the scoring system could only be a temporary solution. And as I understand it, the problem is now worse than ever.
 
-The big problem with the new scoring system is that reviewers have just 9 choices of scores, whereas before they had 41. Yes, a reviewer can't really discriminate 1.3 from 1.4. **But if you have 25 imprecise measure instruments, would it be better to
+The big problem with the new scoring system is that reviewers have just 9 choices of scores, whereas before they had 41. Yes, a reviewer can't really discriminate 1.3 from 1.4. **But if you have 25 imprecise measure instruments, would it be better to**
 
-  * _average and then round_, or
+  * **_average and then round_, or**
 
-  * _round and then average_
-
-**
+  * **_round and then average_**
 
 It's obviously better to _average and then round_, but the new scoring system _rounds and then averages_. ([Gary Churchill](http://churchill.jax.org/about/churchill.shtml) pointed this out to me.)
 
