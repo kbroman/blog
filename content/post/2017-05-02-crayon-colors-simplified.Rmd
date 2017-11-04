@@ -15,11 +15,11 @@ Wikipedia](https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)
 and made them available as part of my [R/broman](https://github.com/kbroman/broman)
 package.
 
-(I [wrote about it on my wordpress blog](https://kbroman.wordpress.com/2014/05/07/crayon-colors-in-r/),
+(I [wrote about it on previously](http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/),
 and then
-[again](https://kbroman.wordpress.com/2014/05/08/two-more-points-about-crayon-colors/)
+[again](http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/)
 and
-[again](https://kbroman.wordpress.com/2014/05/09/further-points-on-crayon-colors/).)
+[again](http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/).)
 
 But using my package to get the crayon colors can be rather tedious.
 

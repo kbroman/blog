@@ -16,7 +16,7 @@ the book on my iPad, with my feet up. And so my understanding, while
 reasonably complete, was somewhat theoretical.
 
 I mean, from [my own book writing
-experience](https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/),
+experience](http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/),
 I felt like, "Hell if _I'm_ going to be writing another book." And
 while I can see that it could be useful to reformat my [various
 tutorials](http://kbroman.org/pages/tutorials) as bookdown books, I
