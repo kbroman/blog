@@ -16,8 +16,6 @@ I got a book in the mail this week, a book I hadn't ordered and would never have
 
 Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:
 
-<blockquote>
-And then there are things that are just plain wrong. For example, "We then express our confidence in the H0 with a p-value, which might crudely be considered the probability that the H0 is true." That is not a _crude_ interpretation of the p-value; that is just _wrong_.
-</blockquote>
+> And then there are things that are just plain wrong. For example, "We then express our confidence in the H0 with a p-value, which might crudely be considered the probability that the H0 is true." That is not a _crude_ interpretation of the p-value; that is just _wrong_.
 
 It seems like if a reviewer says, "This particular book should not be adopted," the publisher can interpret that to also mean, "and whatever you do, don't send me a copy."
