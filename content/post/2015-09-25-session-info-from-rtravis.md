@@ -39,4 +39,4 @@ Here's an [example of the session info in the Travis log](https://travis-ci.org/
 
 If you have suggests about how to simplify this, I'd be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.
 
-Thanks to [Jenny Bryan](https://twitter.com/jennybryan) for [showing me how to search for instances of `session_info` in `.travis.yml` files on GitHub, and to [Carson Sievert](https://twitter.com/cpsievert) for [further moral support](https://twitter.com/cpsievert/status/647189393162178560).
+Thanks to [Jenny Bryan](https://twitter.com/jennybryan) for [showing me how to search for instances of `session_info` in `.travis.yml` files on GitHub](https://twitter.com/JennyBryan/status/647177192514785280), and to [Carson Sievert](https://twitter.com/cpsievert) for [further moral support](https://twitter.com/cpsievert/status/647189393162178560).
