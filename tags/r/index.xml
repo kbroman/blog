@@ -98,7 +98,7 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       
       <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
       <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
-&lt;p&gt;I mean, from &lt;a href=&#34;https://kbroman.wordpress.com/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
+&lt;p&gt;I mean, from &lt;a href=&#34;http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
 &lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
 &lt;p&gt;And so today I did. (You can see the working draft at &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34; class=&#34;uri&#34;&gt;https://ROpenSciLabs.github.io/miner_book&lt;/a&gt;.) And boy it was easy.&lt;/p&gt;
 &lt;ul&gt;
@@ -314,8 +314,8 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(I’m not even going to try &lt;code&gt;read.csv&lt;/code&gt; and &lt;code&gt;write.csv&lt;/code&gt;. I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
-&lt;!-- html table generated in R 3.4.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Wed Nov  1 13:03:07 2017 --&gt;
+&lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
+&lt;!-- Mon Dec 18 07:46:03 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -552,7 +552,7 @@ force = d3.forceSimulation(scaledPoints)
       
       <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
-&lt;p&gt;(I &lt;a href=&#34;https://kbroman.wordpress.com/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on my wordpress blog&lt;/a&gt;, and then &lt;a href=&#34;https://kbroman.wordpress.com/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;https://kbroman.wordpress.com/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;(I &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on previously&lt;/a&gt;, and then &lt;a href=&#34;http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;But using my package to get the crayon colors can be rather tedious.&lt;/p&gt;
 &lt;p&gt;It’s easy to view the available colors.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(broman)

@@ -42,7 +42,7 @@
 
 &lt;p&gt;If you have suggests about how to simplify this, I&amp;rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.&lt;/p&gt;
 
-&lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for [showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/JennyBryan/status/647177192514785280&#34;&gt;showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub&lt;/a&gt;, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

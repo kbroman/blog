@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.30.2" />
+<meta name="generator" content="Hugo 0.31.1" />
 
 
 <title>Emacs key bindings in MS Word - the stupidest thing...</title>
@@ -84,53 +84,46 @@
 
 <p>Following that suggestion, I was able to get these:</p>
 
-<p><code>C-b</code> – CharLeft
-<code>C-f</code> – CharRight
-<code>C-e</code> – EndOfLine
-<code>C-p</code> – LineUp
-<code>C-n</code> – LineDown
-<code>C-a</code> – StartOfLine
-<code>C-v</code> – PageDown</p>
+<ul>
+<li><code>C-b</code> – CharLeft</li>
+<li><code>C-f</code> – CharRight</li>
+<li><code>C-e</code> – EndOfLine</li>
+<li><code>C-p</code> – LineUp</li>
+<li><code>C-n</code> – LineDown</li>
+<li><code>C-a</code> – StartOfLine</li>
+<li><code>C-v</code> – PageDown</li>
+</ul>
 
 <p>I can&rsquo;t figure out how to have <code>M-v</code> for PageUp, though, because <code>M-v</code> seems permanently stuck to &ldquo;√&rdquo;.</p>
 
 <p>The procedure, in MS Word 2011 for Mac, is:</p>
 
 <ol>
-<li><p>Tools → Customize Keyboard</p></li>
-
-<li><p>Select &ldquo;All Commands&rdquo; under &ldquo;Categories:&rdquo;</p></li>
-
-<li><p>Select the command (e.g., RightChar) under &ldquo;Commands:&rdquo;</p></li>
-
-<li><p>Press the keyboard shortcut in the &ldquo;Press new keyboard shortcut&rdquo; box</p></li>
-
-<li><p>Click the Assign button</p></li>
-
-<li><p>Repeat for the other commands you want</p></li>
-
-<li><p>Click OK</p></li>
+<li>Tools → Customize Keyboard</li>
+<li>Select &ldquo;All Commands&rdquo; under &ldquo;Categories:&rdquo;</li>
+<li>Select the command (e.g., RightChar) under &ldquo;Commands:&rdquo;</li>
+<li>Press the keyboard shortcut in the &ldquo;Press new keyboard shortcut&rdquo; box</li>
+<li>Click the Assign button</li>
+<li>Repeat for the other commands you want</li>
+<li>Click OK</li>
 </ol>
 
 <p>I needed two more, <code>C-d</code> and <code>C-k</code>; it took me a while to figure out how to do it, as there didn&rsquo;t seem to be any built-in commands. But you can just record a macro. I created these:</p>
 
-<p><code>C-d</code> – <a href="as a macro">DeleteCharacter</a>
-<code>C-k</code> – <a href="as a macro">KillLine</a></p>
+<ul>
+<li><code>C-d</code> – <a href="as a macro">DeleteCharacter</a></li>
+<li><code>C-k</code> – <a href="as a macro">KillLine</a></li>
+</ul>
 
 <p>Here&rsquo;s the procedure, in MS Word 2011 for Mac.</p>
 
 <ol>
-<li><p>Tools -&gt; Macros -&gt; Record Macro</p></li>
-
-<li><p>Give it a name with no spaces</p></li>
-
-<li><p>Click the keyboard button to assign a keystroke to it</p></li>
-
-<li><p>Select OK</p></li>
-
-<li><p>Type the set of key strokes</p></li>
-
-<li><p>Tools -&gt; Macros -&gt; Stop Recording</p></li>
+<li>Tools → Macros → Record Macro</li>
+<li>Give it a name with no spaces</li>
+<li>Click the keyboard button to assign a keystroke to it</li>
+<li>Select OK</li>
+<li>Type the set of key strokes</li>
+<li>Tools → Macros → Stop Recording</li>
 </ol>
 
 <p><a href="http://sourceforge.net/apps/mediawiki/womacs/index.php">Womacs</a> is a really extensive set of Visual Basic macros that looks really useful, but I was getting Visual Basic errors and didn&rsquo;t want to spend any more time on it; grants to write&hellip;</p>
