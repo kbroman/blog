@@ -1,0 +1,34 @@
+---
+title: 'these guys'
+author: Karl
+date: '2017-12-18'
+slug: these-guys
+categories: [academics]
+tags: [conference, stupid]
+---
+
+At the
+[2016 JSM in Chicago](https://ww2.amstat.org/meetings/jsm/2016/),
+in a
+[session honoring William Cleveland](https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769),
+a speaker's repeated use of the phrase "these guys", when referring to
+programmers, made me livid.
+
+`r htmltools::HTML("{{< tweet 760881386651848708 >}}")`
+
+This led to considerable discussion about whether and how to respond,
+and ultimately Hadley Wickham and I wrote to the speaker:
+
+> Dear S____,
+>
+> We attended your talk at JSM last week, in the session honoring Bill Cleveland.
+>
+> We, and a number of other audience members, were taken aback by your repeated use of the phrase "these guys" in your talk. The use of the word "guys" is often intended as gender-neutral, and we're certain that you didn't intend to deliberately imply that only men can be software developers and data analysts. However, our experience as audience members was that your repeated usage came across as rather exclusionary---characterizing programmers and analysts as exclusively men. Given that that was likely not your intent, we hope you'll take it in consideration to change your language in the future.
+>
+> Regards,
+> Karl Broman & Hadley Wickham
+
+We didn't get a response.
+
+But I think the lesson here is: don't let these sorts of things go.
+Tip of the iceberg and all that.
