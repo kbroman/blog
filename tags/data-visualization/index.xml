@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Visualization on the stupidest thing...</title>
-    <link>/tags/data-visualization/</link>
+    <link>http://kbroman.org/blog/tags/data-visualization/</link>
     <description>Recent content in Data Visualization on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 11 May 2017 16:22:00 -0500</lastBuildDate>
-    <atom:link href="/tags/data-visualization/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/data-visualization/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
@@ -79,10 +79,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>crayon colors, simplified</title>
-      <link>/2017/05/02/crayon-colors-simplified/</link>
+      <link>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/05/02/crayon-colors-simplified/</guid>
+      <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
 &lt;p&gt;(I &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on previously&lt;/a&gt;, and then &lt;a href=&#34;http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;But using my package to get the crayon colors can be rather tedious.&lt;/p&gt;

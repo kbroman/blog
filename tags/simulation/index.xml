@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simulation on the stupidest thing...</title>
-    <link>/tags/simulation/</link>
+    <link>http://kbroman.org/blog/tags/simulation/</link>
     <description>Recent content in Simulation on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 17 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/simulation/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/simulation/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
-      <link>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
+      <link>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
+      <guid>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
       <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;I saw an &lt;a href=&#34;http://datagenetics.com/blog/november12011/&#34;&gt;interesting mathematical analysis of the game&lt;/a&gt; a few years ago, but it seems to be offline, though &lt;a href=&#34;http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/&#34;&gt;you can read it&lt;/a&gt; via the &lt;a href=&#34;http://web.archive.org/&#34;&gt;wayback machine&lt;/a&gt;.&lt;/p&gt;

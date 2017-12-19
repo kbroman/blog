@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on the stupidest thing...</title>
-    <link>/tags/statistics/</link>
+    <link>http://kbroman.org/blog/tags/statistics/</link>
     <description>Recent content in Statistics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 08 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/statistics/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/statistics/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I am a data scientist</title>
-      <link>/2016/04/08/i-am-a-data-scientist/</link>
+      <link>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
       <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
@@ -82,10 +82,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Memories of past JSMs</title>
-      <link>/2015/08/03/memories-of-past-jsms/</link>
+      <link>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/08/03/memories-of-past-jsms/</guid>
+      <guid>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;http://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;http://imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;http://www.tibs.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;http://www.ssc.ca&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/&#34;&gt;JSM 2015&lt;/a&gt; is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
@@ -127,10 +127,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Reform academic statistics</title>
-      <link>/2014/05/01/reform-academic-statistics/</link>
+      <link>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/05/01/reform-academic-statistics/</guid>
+      <guid>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
 
 &lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;

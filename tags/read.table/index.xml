@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Read.table on the stupidest thing...</title>
-    <link>/tags/read.table/</link>
+    <link>http://kbroman.org/blog/tags/read.table/</link>
     <description>Recent content in Read.table on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
-    <atom:link href="/tags/read.table/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/read.table/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>EOF within quoted string</title>
-      <link>/2017/08/08/eof-within-quoted-string/</link>
+      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
       <description>&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
 &lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
 &lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with “&lt;code&gt;###&lt;/code&gt;” interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;

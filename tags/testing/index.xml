@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Testing on the stupidest thing...</title>
-    <link>/tags/testing/</link>
+    <link>http://kbroman.org/blog/tags/testing/</link>
     <description>Recent content in Testing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/testing/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/testing/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Write unit tests!</title>
-      <link>/2015/12/07/write-unit-tests/</link>
+      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/07/write-unit-tests/</guid>
+      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
@@ -58,10 +58,10 @@
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>/2015/09/25/session-info-from-rtravis/</link>
+      <link>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
       <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
 
 &lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
@@ -94,10 +94,10 @@
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
 
 &lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;

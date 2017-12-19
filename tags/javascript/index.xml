@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on the stupidest thing...</title>
-    <link>/tags/javascript/</link>
+    <link>http://kbroman.org/blog/tags/javascript/</link>
     <description>Recent content in Javascript on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 02 Mar 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/javascript/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/javascript/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>/2013/03/02/charsetutf-8/</link>
+      <link>http://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/02/charsetutf-8/</guid>
+      <guid>http://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
       <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>D3.js difficulties</title>
-      <link>/2013/02/08/d3-js-difficulties/</link>
+      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/02/08/d3-js-difficulties/</guid>
+      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;

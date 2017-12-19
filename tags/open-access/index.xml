@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Access on the stupidest thing...</title>
-    <link>/tags/open-access/</link>
+    <link>http://kbroman.org/blog/tags/open-access/</link>
     <description>Recent content in Open Access on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 30 Oct 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/open-access/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kbroman.org/blog/tags/open-access/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Scholarly Publishing Symposium at UW-Madison</title>
-      <link>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
+      <link>http://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
+      <guid>http://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;http://go.wisc.edu/publishing-symposium&#34;&gt;Scholarly Publishing Symposium&lt;/a&gt; at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/img_3422.jpg&#34; alt=&#34;Supplemental materials from UW-Madison Scholarly Publishing Symposium&#34; /&gt;&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Copyright of video lectures</title>
-      <link>/2014/02/09/copyright-of-video-lectures/</link>
+      <link>http://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/09/copyright-of-video-lectures/</guid>
+      <guid>http://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
       <description>&lt;p&gt;Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)&lt;/p&gt;
 
 &lt;p&gt;I spoke to my &lt;a href=&#34;http://www.giso6150.com/&#34;&gt;family librarian&lt;/a&gt;, who pointed me to &lt;a href=&#34;http://www.library.wisc.edu/directory/staff/Carrie-Kruse&#34;&gt;Carrie Kruse&lt;/a&gt;, directory of the &lt;a href=&#34;https://college.library.wisc.edu/&#34;&gt;College Library&lt;/a&gt; at UW-Madison. And really, librarians are the people to talk to about this sort of thing, as they not only think a lot about copyright and fair use, but also they&amp;rsquo;re on the side of more access. (But don&amp;rsquo;t hold &lt;em&gt;Carrie&lt;/em&gt; accountable if I say anything wrong below; this is my own interpretation, 14 months after corresponding with her.)&lt;/p&gt;
@@ -70,10 +70,10 @@
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>
 
 &lt;p&gt;Yesterday, I saw &lt;a href=&#34;https://twitter.com/Ananyo/status/329545985149775873&#34;&gt;this tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/Ananyo&#34;&gt;@Ananyo&lt;/a&gt;&lt;/p&gt;
@@ -140,10 +140,10 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
     
     <item>
       <title>Open access, animated</title>
-      <link>/2012/10/25/open-access-animated/</link>
+      <link>http://kbroman.org/blog/2012/10/25/open-access-animated/</link>
       <pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/10/25/open-access-animated/</guid>
+      <guid>http://kbroman.org/blog/2012/10/25/open-access-animated/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a great interview with &lt;a href=&#34;http://phylogenomics.blogspot.com&#34;&gt;Jonathan Eisen&lt;/a&gt; and &lt;a href=&#34;http://www.arl.org/sparc/about/staff/shockey.shtml&#34;&gt;Nick Shockey&lt;/a&gt; on open access publishing, nicely animated by &lt;a href=&#34;http://www.phdcomics.com/about.htm&#34;&gt;Jorge Cham&lt;/a&gt;, who does the &lt;a href=&#34;http://www.phdcomics.com/comics.php&#34;&gt;Piled Higher and Deeper&lt;/a&gt; comic.&lt;/p&gt;
 
 
@@ -156,20 +156,20 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
     
     <item>
       <title>Web-enabled publishing environment</title>
-      <link>/2012/10/23/web-enabled-publishing-environment/</link>
+      <link>http://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/10/23/web-enabled-publishing-environment/</guid>
+      <guid>http://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.stat.wisc.edu/~karlrohe/&#34;&gt;Karl Rohe&lt;/a&gt; has &lt;a href=&#34;http://magazine.amstat.org/blog/2012/10/01/stats-view-oct12/&#34;&gt;an interesting commentary&lt;/a&gt; in &lt;a href=&#34;http://magazine.amstat.org&#34;&gt;Amstat News&lt;/a&gt; this month, on how our current publishing system is obstructing research progress, and what a better future might look like.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>UW-Madison news item about Elsevier boycott</title>
-      <link>/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</link>
+      <link>http://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</link>
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
+      <guid>http://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.news.wisc.edu/20348&#34;&gt;an article&lt;/a&gt; in the UW-Madison newsletter about the Elsevier boycott.  I&amp;rsquo;m quoted as follows:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -184,10 +184,10 @@ At this point, Broman says scientists are in control. Although Elsevier is a gia
     
     <item>
       <title>I just refused an Elsevier review</title>
-      <link>/2012/02/10/i-just-refused-an-elsevier-review/</link>
+      <link>http://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/10/i-just-refused-an-elsevier-review/</guid>
+      <guid>http://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>&lt;p&gt;This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting.  AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://thecostofknowledge.com&lt;/a&gt; to not publish or review for Elsevier journals.  If only AJHG were still with the University of Chicago Press&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen recently wrote&lt;/a&gt;:&lt;/p&gt;
@@ -217,10 +217,10 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
     
     <item>
       <title>More on open access</title>
-      <link>/2012/02/03/more-on-open-access/</link>
+      <link>http://kbroman.org/blog/2012/02/03/more-on-open-access/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/03/more-on-open-access/</guid>
+      <guid>http://kbroman.org/blog/2012/02/03/more-on-open-access/</guid>
       <description>&lt;p&gt;I am quite persuaded by &lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen&amp;rsquo;s recent comments on open access&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -248,10 +248,10 @@ The journal is underwritten by a generous grant from the Considine Family Founda
     
     <item>
       <title>Paying for scholarly publications</title>
-      <link>/2012/02/02/paying-for-scholarly-publications/</link>
+      <link>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
+      <guid>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>
 
 &lt;p&gt;I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see &lt;a href=&#34;http://www.eisenlab.org/eisen/&#34;&gt;Michael Eisen&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;http://www.nytimes.com/2012/01/11/opinion/research-bought-then-paid-for.html&#34;&gt;OpEd in the New York Times&lt;/a&gt;]; the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;) has turned my thoughts to publishing generally.&lt;/p&gt;
@@ -375,10 +375,10 @@ The journal is underwritten by a generous grant from the Considine Family Founda
     
     <item>
       <title>Elsevier boycott</title>
-      <link>/2012/02/01/elsevier-boycott/</link>
+      <link>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/01/elsevier-boycott/</guid>
+      <guid>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
       <description>&lt;p&gt;I expect you&amp;rsquo;ve already heard about the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;, started based on comments from &lt;a href=&#34;http://gowers.wordpress.com/2012/01/21/elsevier-my-part-in-its-downfall/&#34;&gt;Timothy Gowers&lt;/a&gt;.  While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject.  On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians).  There have been a couple of articles about this in the &lt;a href=&#34;http://chronicle.com/&#34;&gt;Chronicle of Higher Education&lt;/a&gt;: &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/elsevier-publishing-boycott-gathers-steam-among-academics/35216&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://chronicle.com/article/As-Journal-Boycott-Grows/130600/?sid=wc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.  (I certainly wouldn&amp;rsquo;t send my own papers to such journals, but it&amp;rsquo;s hard to control papers on which I am one lowly author among many.)&lt;/p&gt;
