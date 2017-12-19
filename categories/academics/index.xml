@@ -2,20 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Academics on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/categories/academics/</link>
+    <link>/categories/academics/</link>
     <description>Recent content in Academics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 15 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/academics/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/academics/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>these guys</title>
+      <link>/2017/12/18/these-guys/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/18/these-guys/</guid>
+      <description>&lt;p&gt;At the &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;, in a &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. &lt;a href=&#34;https://twitter.com/hashtag/JSM2016?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#JSM2016&lt;/a&gt;&lt;/p&gt;&amp;mdash; Karl Broman (@kwbroman) &lt;a href=&#34;https://twitter.com/kwbroman/status/760881386651848708?ref_src=twsrc%5Etfw&#34;&gt;August 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dear S____,&lt;/p&gt;
+&lt;p&gt;We attended your talk at JSM last week, in the session honoring Bill Cleveland.&lt;/p&gt;
+&lt;p&gt;We, and a number of other audience members, were taken aback by your repeated use of the phrase “these guys” in your talk. The use of the word “guys” is often intended as gender-neutral, and we’re certain that you didn’t intend to deliberately imply that only men can be software developers and data analysts. However, our experience as audience members was that your repeated usage came across as rather exclusionary—characterizing programmers and analysts as exclusively men. Given that that was likely not your intent, we hope you’ll take it in consideration to change your language in the future.&lt;/p&gt;
+&lt;p&gt;Regards, Karl Broman &amp;amp; Hadley Wickham&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We didn’t get a response.&lt;/p&gt;
+&lt;p&gt;But I think the lesson here is: don’t let these sorts of things go. &lt;a href=&#34;https://medium.com/@kristianlum/statistics-we-have-a-problem-304638dc5de5&#34;&gt;Tip of the iceberg&lt;/a&gt; and all that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Chris Walker at Faculty Senate</title>
-      <link>http://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</link>
+      <link>/2016/04/15/chris-walker-at-faculty-senate/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</guid>
+      <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.dance.wisc.edu/dance/people/faculty/chris-walker&#34;&gt;Chris Walker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;powerful speech&lt;/a&gt; at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/&#34;&gt;Hateful shit at UW-Madison&lt;/a&gt;&amp;rdquo;) was &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;recorded&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;You &lt;em&gt;must&lt;/em&gt; listen to it!&lt;/a&gt;&lt;/p&gt;
@@ -24,10 +46,10 @@
     
     <item>
       <title>Action items in response to hateful shit</title>
-      <link>http://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
+      <link>/2016/04/05/action-items-in-response-to-hateful-shit/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
+      <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>&lt;p&gt;UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.&lt;/p&gt;
 
 &lt;p&gt;Here are the things he had mentioned yesterday at the Faculty Senate meeting:&lt;/p&gt;
@@ -66,10 +88,10 @@
     
     <item>
       <title>Hateful shit at UW-Madison</title>
-      <link>http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
+      <link>/2016/04/04/hateful-shit-at-uw-madison/</link>
       <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
+      <guid>/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.&lt;/p&gt;
 
 &lt;p&gt;All that&amp;rsquo;s just to say that, when it comes to the ongoing hateful acts that have been happening at the University of Wisconsin-Madison, I&amp;rsquo;m really the last one that you should be listening to. You should instead listen to UW students, such as the &lt;a href=&#34;http://www.unitedcouncilofuw.org/&#34;&gt;United Council of UW Students&lt;/a&gt;, who have submitted &lt;a href=&#34;http://www.unitedcouncilofuw.org/the-student-voice/2016/2/24/blackout-uw-system-administration-press-release-1212016&#34;&gt;a list of 5 reasonable demands&lt;/a&gt;, or Vice Provost and Chief Diversity Officer &lt;a href=&#34;http://provost.wisc.edu/climate.htm&#34;&gt;Patrick Sims&lt;/a&gt;, who made an &lt;a href=&#34;https://www.youtube.com/watch?v=zMBQUzwnCL0&amp;amp;feature=youtu.be&#34;&gt;important 8-min video&lt;/a&gt; in response to a recent hateful incident that you should now go away and watch (really, stop reading what I have to say and spend 8 minutes watching that video), or &lt;a href=&#34;https://www.dance.wisc.edu/dance/people/faculty/chris-walker&#34;&gt;Chris Walker&lt;/a&gt;, Asst Prof in the dance department, who spoke movingly today at the UW-Madison Faculty Senate meeting about the shit that faculty and students of color have to put up with on campus.&lt;/p&gt;
@@ -98,10 +120,10 @@
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
+      <link>/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>/2015/09/09/reproducibility-is-hard/</guid>
       <description>
 
 &lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
@@ -154,10 +176,10 @@
     
     <item>
       <title>2015 AAAS in San Jose</title>
-      <link>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</link>
+      <link>/2015/02/13/2015-aaas-in-san-jose/</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
+      <guid>/2015/02/13/2015-aaas-in-san-jose/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;https://aaas.confex.com/aaas/2015/webprogram/start.html&#34;&gt;2015 AAAS meeting&lt;/a&gt; in San Jose, California. This is definitely not my typical meeting: too big, too broad, and I hardly know anyone here. But here&amp;rsquo;s a quick (ha ha; &lt;em&gt;yah sure&lt;/em&gt;) summary of the meeting so far.&lt;/p&gt;
@@ -214,10 +236,10 @@
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
@@ -230,10 +252,10 @@
     
     <item>
       <title>The value of thesis intro/discussion</title>
-      <link>http://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</link>
+      <link>/2014/12/03/the-value-of-thesis-introdiscussion/</link>
       <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
+      <guid>/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>&lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/FuSchmu&#34;&gt;Kelly Weinersmith&lt;/a&gt; &lt;a href=&#34;https://twitter.com/FuSchmu/status/536909452457172992&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published?&lt;/blockquote&gt;
@@ -258,10 +280,10 @@
     
     <item>
       <title>Scholarly Publishing Symposium at UW-Madison</title>
-      <link>http://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
+      <link>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
+      <guid>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;http://go.wisc.edu/publishing-symposium&#34;&gt;Scholarly Publishing Symposium&lt;/a&gt; at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/img_3422.jpg&#34; alt=&#34;Supplemental materials from UW-Madison Scholarly Publishing Symposium&#34; /&gt;&lt;/p&gt;
@@ -290,10 +312,10 @@
     
     <item>
       <title>The mustache photo</title>
-      <link>http://kbroman.org/blog/2014/08/28/the-mustache-photo/</link>
+      <link>/2014/08/28/the-mustache-photo/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/28/the-mustache-photo/</guid>
+      <guid>/2014/08/28/the-mustache-photo/</guid>
       <description>
 
 &lt;p&gt;A certain photo of me has been following me around for some time.&lt;/p&gt;
@@ -380,10 +402,10 @@
     
     <item>
       <title>Reform academic statistics</title>
-      <link>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
 
 &lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
@@ -454,10 +476,10 @@
     
     <item>
       <title>Simple web sites with GitHub Pages</title>
-      <link>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</link>
+      <link>/2014/04/05/simple-web-sites-with-github-pages/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
+      <guid>/2014/04/05/simple-web-sites-with-github-pages/</guid>
       <description>&lt;p&gt;If you love &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;, you&amp;rsquo;ll also love &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, for producing websites using &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;: you write pages in Markdown within a &lt;code&gt;gh-pages&lt;/code&gt; branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -485,10 +507,10 @@
     
     <item>
       <title>Startling lack of training in statistical computing</title>
-      <link>http://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
+      <link>/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
+      <guid>/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
       <description>&lt;p&gt;It is shocking to me that &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;a statistics department&lt;/a&gt; would offer a graduate-level statistical computing course only &lt;em&gt;every fourth year&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/&#34;&gt;had been arguing for a statistical programming course&lt;/a&gt;: that we supplement the usual course on the &lt;em&gt;theory&lt;/em&gt; of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the &lt;em&gt;practice&lt;/em&gt; of statistical computing.&lt;/p&gt;
@@ -503,10 +525,10 @@
     
     <item>
       <title>Copyright of video lectures</title>
-      <link>http://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
+      <link>/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
+      <guid>/2014/02/09/copyright-of-video-lectures/</guid>
       <description>&lt;p&gt;Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)&lt;/p&gt;
 
 &lt;p&gt;I spoke to my &lt;a href=&#34;http://www.giso6150.com/&#34;&gt;family librarian&lt;/a&gt;, who pointed me to &lt;a href=&#34;http://www.library.wisc.edu/directory/staff/Carrie-Kruse&#34;&gt;Carrie Kruse&lt;/a&gt;, directory of the &lt;a href=&#34;https://college.library.wisc.edu/&#34;&gt;College Library&lt;/a&gt; at UW-Madison. And really, librarians are the people to talk to about this sort of thing, as they not only think a lot about copyright and fair use, but also they&amp;rsquo;re on the side of more access. (But don&amp;rsquo;t hold &lt;em&gt;Carrie&lt;/em&gt; accountable if I say anything wrong below; this is my own interpretation, 14 months after corresponding with her.)&lt;/p&gt;
@@ -529,10 +551,10 @@
     
     <item>
       <title>I still don&#39;t like it</title>
-      <link>http://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</link>
+      <link>/2014/02/09/i-still-dont-like-it/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</guid>
+      <guid>/2014/02/09/i-still-dont-like-it/</guid>
       <description>&lt;p&gt;I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where &lt;a href=&#34;http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/&#34;&gt;the author refused to allow me to have an electronic copy&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:&lt;/p&gt;
@@ -547,10 +569,10 @@
     
     <item>
       <title>Things to avoid as a new faculty member</title>
-      <link>http://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
+      <link>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
       <pubDate>Thu, 05 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
+      <guid>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>&lt;p&gt;The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.&lt;/p&gt;
 
 &lt;p&gt;Here are some thoughts on things to &lt;em&gt;avoid&lt;/em&gt;.&lt;/p&gt;
@@ -571,10 +593,10 @@
     
     <item>
       <title>It was a really bad idea to use slides in that class</title>
-      <link>http://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>&lt;p&gt;I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a &lt;a href=&#34;http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;blog post&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):&lt;/p&gt;
@@ -597,10 +619,10 @@
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>
 
 &lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
@@ -812,10 +834,10 @@ Example 1
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>
 
 &lt;p&gt;Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).&lt;/p&gt;
@@ -918,10 +940,10 @@ Example 1
     
     <item>
       <title>Hiring computational biologists</title>
-      <link>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
+      <link>/2013/09/25/hiring-computational-biologists/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
+      <guid>/2013/09/25/hiring-computational-biologists/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;http://discovery.wisc.edu/home/morgridge/morgridge.cmsx&#34;&gt;Morgridge Institute for Research&lt;/a&gt; (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. &lt;a href=&#34;http://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf&#34;&gt;One position&lt;/a&gt; is joint with my department,  &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;Biostatistics &amp;amp; Medical Informatics&lt;/a&gt;.&lt;/p&gt;
@@ -954,10 +976,10 @@ Example 1
     
     <item>
       <title>Department websites</title>
-      <link>http://kbroman.org/blog/2013/09/11/department-websites/</link>
+      <link>/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/11/department-websites/</guid>
+      <guid>/2013/09/11/department-websites/</guid>
       <description>
 
 &lt;p&gt;I was thinking about department websites, partly because &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my own department&amp;rsquo;s website&lt;/a&gt; is terrible, and recently a colleague asked me whether I could suggest some &lt;em&gt;good&lt;/em&gt; department sites.&lt;/p&gt;
@@ -1069,10 +1091,10 @@ Example 1
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt; is a series of question-and-answer sites, including &lt;a href=&#34;http://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; for programming and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; for statistics.  I was &lt;a href=&#34;http://kbroman.org/blog/2011/09/26/gamified/&#34;&gt;introduced to these sites&lt;/a&gt; at a short talk by &lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;&lt;/p&gt;
@@ -1116,10 +1138,10 @@ Example 1
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>
 
 &lt;p&gt;Yesterday, I saw &lt;a href=&#34;https://twitter.com/Ananyo/status/329545985149775873&#34;&gt;this tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/Ananyo&#34;&gt;@Ananyo&lt;/a&gt;&lt;/p&gt;
@@ -1186,10 +1208,10 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
     
     <item>
       <title>Methods before results</title>
-      <link>http://kbroman.org/blog/2013/04/29/methods-before-results/</link>
+      <link>/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
+      <guid>/2013/04/29/methods-before-results/</guid>
       <description>
 
 &lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
@@ -1265,10 +1287,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Use meaningful URLs</title>
-      <link>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</link>
+      <link>/2013/04/10/use-meaningful-urls/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
+      <guid>/2013/04/10/use-meaningful-urls/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/natesmoyer/qr-codes-are-stupid&#34;&gt;QR codes are stupid&lt;/a&gt;.  See the well-known &lt;a href=&#34;https://twitter.com/jcolman/status/320917928881033218&#34;&gt;flowchart&lt;/a&gt;.&lt;/p&gt;
@@ -1311,10 +1333,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Knuth: Journal referees should assist authors</title>
-      <link>http://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
+      <link>/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
+      <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>&lt;p&gt;When serving as referee for a journal, who are you working for?&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1343,10 +1365,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>ENAR highs and lows</title>
-      <link>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
+      <link>/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
+      <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>
 
 &lt;p&gt;I attended the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; in Orlando, Florida, last week. (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; = &amp;ldquo;Eastern North American Region&amp;rdquo; of the &lt;a href=&#34;http://www.biometricsociety.org&#34;&gt;International Biometric Society&lt;/a&gt;.)&lt;/p&gt;
@@ -1407,10 +1429,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</link>
+      <link>/2013/03/19/latex-unicode--xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</guid>
+      <guid>/2013/03/19/latex-unicode--xetex/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;http://www.ctc2013.org&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
 
 &lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;http://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
@@ -1429,10 +1451,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>&lt;p&gt;Much has been written about &lt;a href=&#34;http://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
 
 &lt;p&gt;For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.&lt;/p&gt;
@@ -1465,10 +1487,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>What a waste of paper</title>
-      <link>http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</link>
+      <link>/2013/03/07/what-a-waste-of-paper/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</guid>
+      <guid>/2013/03/07/what-a-waste-of-paper/</guid>
       <description>&lt;p&gt;A university press asked me to review a book manuscript, and the author &amp;ldquo;has asked that we not use electronic copies.&amp;rdquo; So they&amp;rsquo;re going to send me a hard copy.&lt;/p&gt;
 
 &lt;p&gt;My response: &amp;ldquo;If you only give me a paper copy, I&amp;rsquo;m going to just scan it and toss the paper. That seems like a waste of time (and paper and postage).&amp;rdquo;&lt;/p&gt;
@@ -1476,58 +1498,6 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
 &lt;p&gt;I should probably have said, &amp;ldquo;Then forget it.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;Their response included, &amp;ldquo;What you do with it when it arrives I am just going to take a hear-no-evil approach to.&amp;rdquo;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Hopkins SPH logo, part 3: Karl&#39;s revenge</title>
-      <link>http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
-      <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m finally back to the story of the &lt;a href=&#34;http://www.jhsph.edu/&#34;&gt;Johns Hopkins Bloomberg School of Public Health&lt;/a&gt; &lt;a href=&#34;http://www.jhsph.edu/identity/coreIdentity/logoIntro.shtml&#34;&gt;logo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I wrote &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Part 1&lt;/a&gt; in mid-November and &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;Part 2&lt;/a&gt; a week later.  I said that Part 3 was &amp;ldquo;coming soon,&amp;rdquo; but I&amp;rsquo;ve been a bit shy about revealing this.  You&amp;rsquo;ll see why.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;In August, 2005, &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt;, &lt;a href=&#34;http://www.albany.edu/sph/19585.php&#34;&gt;Greg&lt;/a&gt;, and I were sitting in a pub in Minneapolis in the early morning hours.  I think maybe &lt;a href=&#34;http://www.bcaffo.com&#34;&gt;Brian&lt;/a&gt; was there, too.  We had a session, which Ingo had organized, at the &lt;a href=&#34;http://www.amstat.org/meetings/jsm/2005/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; the next morning (really &lt;em&gt;that&lt;/em&gt; morning), and so we should have been sleeping.  (&lt;a href=&#34;http://sunduzkeles.org&#34;&gt;Sunduz&lt;/a&gt; was also in the session, but, sensibly, she wasn&amp;rsquo;t out drinking with us.)  I think this was later in the evening on the night I&amp;rsquo;d offended the guy from Insightful when I said that anyone who still used Splus rather than R was an idiot.  And it was just after Greg and I (and perhaps Brian, if he was there) paid the waitress to &lt;em&gt;not&lt;/em&gt; bring the round of drinks that Ingo had ordered.&lt;/p&gt;
-
-&lt;p&gt;Of course, we were talking about the Hopkins SPH logo (otherwise, why would I be discussing this?) as well as an innovative alternative that Brian Caffo had devised, and Ingo bet me to include Brian&amp;rsquo;s alternative logo in my talk the next day (or really &lt;em&gt;that&lt;/em&gt; day): If I included the alternative logo in my talk, he&amp;rsquo;d buy me beer for a month.&lt;/p&gt;
-
-&lt;p&gt;So, I did, though I had to stay up quite a bit later to get the images together.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kendzior/&#34;&gt;Christina&lt;/a&gt; and &lt;a href=&#34;http://www.stat.wisc.edu/~newton/&#34;&gt;Michael&lt;/a&gt; were in the back of the room.  Ingo was sitting in the front row.  We&amp;rsquo;d used Greg&amp;rsquo;s laptop, so there was evidence.  I made a bit of fun of the Bloomberg name change, and I made a bit of fun of the logo, by showing the &lt;a href=&#34;http://www.mcusa.org/Portals/8/Images/logo_251x130.gif&#34;&gt;Missionary Church&lt;/a&gt; logo.  And then on my third slide, I paused for a bit and looked at Ingo, and he looked at me and then up at the screen, and when I saw that he&amp;rsquo;d seen it, I flipped to the next slide.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s Brian&amp;rsquo;s alternative logo, next to the original.  Well, it&amp;rsquo;s Brian&amp;rsquo;s design but my rendering.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/logo.png&#34; alt=&#34;JHBSPH logo&#34; /&gt; &lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/altlogo.png&#34; alt=&#34;Alternative logo&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/03/evidence.pdf&#34;&gt;here&amp;rsquo;s a PDF of the logos in context&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And here&amp;rsquo;s the month of beer:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/month_of_beer.jpg&#34; alt=&#34;Month of beer&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ingo was willing to restock if necessary, but that wasn&amp;rsquo;t allowed.  We still have most of those coasters; they&amp;rsquo;ve been great toys for the kids.&lt;/p&gt;
-
-&lt;p&gt;In October that year, I used the alternative logo on the &amp;ldquo;&lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder&lt;/a&gt;&amp;rdquo; itself, on a second bet, with &lt;a href=&#34;http://www.jhsph.edu/faculty/directory/profile/3980/Pineda/Fernando_J.&#34;&gt;Fernando&lt;/a&gt; this time.&lt;/p&gt;
-
-&lt;p&gt;I gave another of those informal statistics lectures, this time on &amp;ldquo;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/regression_ho.pdf&#34;&gt;What is regression?&lt;/a&gt;&amp;rdquo;  Of course, they were pre-screening slides at that point, because of the &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2&#34;&gt;first such informal talk&lt;/a&gt;.  But I gave them a last-minute substitution, with just the one logo change.&lt;/p&gt;
-
-&lt;p&gt;(I&amp;rsquo;m pretty sure that &lt;a href=&#34;http://www.biostat.jhsph.edu/people/staff/hubbard.shtml&#34;&gt;Patty&lt;/a&gt; caught me, but she didn&amp;rsquo;t turn me in.)&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the second month of beer:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/second_month_of_beer.jpg&#34; alt=&#34;Second month of beer&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It all seems a bit juvenile in retrospect.  I guess I&amp;rsquo;m getting (or &lt;em&gt;have gotten&lt;/em&gt;) old.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins&#34;&gt;Ingo&lt;/a&gt; says that &amp;ldquo;juvenile&amp;rdquo; is another word for &amp;ldquo;hip and dynamic,&amp;rdquo; so I guess it&amp;rsquo;s just that I&amp;rsquo;m no longer hip and dynamic.&lt;/p&gt;
-
-&lt;p&gt;Related posts on the Hopkins SPH logo: &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1&#34;&gt;part 1&lt;/a&gt; | &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;part 2&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

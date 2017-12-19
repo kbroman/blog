@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Comic on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/comic/</link>
+    <link>/tags/comic/</link>
     <description>Recent content in Comic on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 03 Feb 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/comic/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/comic/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I hate reading other people&#39;s code</title>
-      <link>http://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</link>
+      <link>/2012/02/03/i-hate-reading-other-peoples-code/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</guid>
+      <guid>/2012/02/03/i-hate-reading-other-peoples-code/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From &lt;a href=&#34;http://abstrusegoose.com/432&#34;&gt;Abstruse Goose&lt;/a&gt;.&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>Statistics comic</title>
-      <link>http://kbroman.org/blog/2011/11/23/statistics-comic/</link>
+      <link>/2011/11/23/statistics-comic/</link>
       <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/11/23/statistics-comic/</guid>
+      <guid>/2011/11/23/statistics-comic/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.smbc-comics.com&#34;&gt;Saturday Morning Breakfast Cereal&lt;/a&gt; has &lt;a href=&#34;http://www.smbc-comics.com&#34;&gt;a rather accurate representation of statisticians&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://www.smbc-comics.com/comics/20111123.gif&#34; alt=&#34;Saturday morning breakfast cereal comic&#34; /&gt;&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grants on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/grants/</link>
+    <link>/tags/grants/</link>
     <description>Recent content in Grants on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/grants/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/grants/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>
 
 &lt;p&gt;Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).&lt;/p&gt;
@@ -118,10 +118,10 @@
     
     <item>
       <title>What, no coffee?</title>
-      <link>http://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
+      <link>/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
+      <guid>/2012/09/28/what-no-coffee/</guid>
       <description>&lt;p&gt;I was at a &lt;a href=&#34;http://www.cidr.jhmi.edu/about/CIDR%20Access%20Committee.pdf&#34;&gt;CIDR Access Committee&lt;/a&gt; meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the &lt;a href=&#34;http://www.cidr.jhmi.edu&#34;&gt;Center for Inherited Disease Research&lt;/a&gt;, a service funded by several of the NIH institutes.&lt;/p&gt;
 
 &lt;p&gt;We had to buy our own coffee.&lt;/p&gt;
@@ -136,10 +136,10 @@
     
     <item>
       <title>Tips on grant writing</title>
-      <link>http://kbroman.org/blog/2011/10/21/grant-writing/</link>
+      <link>/2011/10/21/grant-writing/</link>
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/21/grant-writing/</guid>
+      <guid>/2011/10/21/grant-writing/</guid>
       <description>
 
 &lt;p&gt;While some may feel that grant proposals should be perfect, I think they should be good enough to be funded and no better.  Only three or so people will read the thing, and they&amp;rsquo;re not allowed to talk about it; you should be devoting yourself as much as possible to the actual work rather than the grant writing.&lt;/p&gt;
@@ -200,10 +200,10 @@
     
     <item>
       <title>Fund people not projects?</title>
-      <link>http://kbroman.org/blog/2011/10/19/fund-people-not-projects/</link>
+      <link>/2011/10/19/fund-people-not-projects/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/19/fund-people-not-projects/</guid>
+      <guid>/2011/10/19/fund-people-not-projects/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/John_P._A._Ioannidis&#34;&gt;John Ioannidis&lt;/a&gt;, known for &lt;a href=&#34;http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0020124&#34;&gt;his comments on medical research&lt;/a&gt; (see also &lt;a href=&#34;http://www.theatlantic.com/magazine/archive/2010/11/lies-damned-lies-and-medical-science/8269/&#34;&gt;the Atlantic article&lt;/a&gt;), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: &lt;a href=&#34;http://www.nature.com/nature/journal/v477/n7366/full/477529a.html&#34;&gt;fund people not projects&lt;/a&gt;.  As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;&lt;/p&gt;

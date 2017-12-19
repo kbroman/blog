@@ -2,20 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>the stupidest thing...</title>
-    <link>http://kbroman.org/blog/</link>
+    <link>/</link>
     <description>Recent content on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>these guys</title>
+      <link>/2017/12/18/these-guys/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/18/these-guys/</guid>
+      <description>&lt;p&gt;At the &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;, in a &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. &lt;a href=&#34;https://twitter.com/hashtag/JSM2016?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#JSM2016&lt;/a&gt;&lt;/p&gt;&amp;mdash; Karl Broman (@kwbroman) &lt;a href=&#34;https://twitter.com/kwbroman/status/760881386651848708?ref_src=twsrc%5Etfw&#34;&gt;August 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dear S____,&lt;/p&gt;
+&lt;p&gt;We attended your talk at JSM last week, in the session honoring Bill Cleveland.&lt;/p&gt;
+&lt;p&gt;We, and a number of other audience members, were taken aback by your repeated use of the phrase “these guys” in your talk. The use of the word “guys” is often intended as gender-neutral, and we’re certain that you didn’t intend to deliberately imply that only men can be software developers and data analysts. However, our experience as audience members was that your repeated usage came across as rather exclusionary—characterizing programmers and analysts as exclusively men. Given that that was likely not your intent, we hope you’ll take it in consideration to change your language in the future.&lt;/p&gt;
+&lt;p&gt;Regards, Karl Broman &amp;amp; Hadley Wickham&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We didn’t get a response.&lt;/p&gt;
+&lt;p&gt;But I think the lesson here is: don’t let these sorts of things go. &lt;a href=&#34;https://medium.com/@kristianlum/statistics-we-have-a-problem-304638dc5de5&#34;&gt;Tip of the iceberg&lt;/a&gt; and all that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Halloween 2017</title>
-      <link>http://kbroman.org/blog/2017/10/31/halloween-2017/</link>
+      <link>/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
+      <guid>/2017/10/31/halloween-2017/</guid>
       <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
@@ -23,10 +45,10 @@
     
     <item>
       <title>EOF within quoted string</title>
-      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <link>/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>/2017/08/08/eof-within-quoted-string/</guid>
       <description>&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
 &lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
 &lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with “&lt;code&gt;###&lt;/code&gt;” interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
@@ -89,10 +111,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>yay, yihui!</title>
-      <link>http://kbroman.org/blog/2017/08/03/yay-yihui/</link>
+      <link>/2017/08/03/yay-yihui/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
+      <guid>/2017/08/03/yay-yihui/</guid>
       <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;./2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
 &lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for me! So awesome.&lt;/p&gt;
 </description>
@@ -100,10 +122,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>miner and craft</title>
-      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>/2017/05/31/miner-and-craft/</guid>
       <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
 &lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
@@ -115,10 +137,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>omg, bookdown!</title>
-      <link>http://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
+      <link>/2017/05/31/omg-bookdown/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
+      <guid>/2017/05/31/omg-bookdown/</guid>
       <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
 &lt;p&gt;I mean, from &lt;a href=&#34;http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
 &lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
@@ -148,10 +170,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>deeply nested functions</title>
-      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <link>/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
     do.call(rbind,
@@ -172,10 +194,10 @@ read.table(file = file, header = header, sep = sep, quote = quote,
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>/2017/05/27/ropensci-unconf-2017/</guid>
       <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
 &lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
@@ -228,10 +250,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
     
     <item>
       <title>miniCRAN</title>
-      <link>http://kbroman.org/blog/2017/05/23/minicran/</link>
+      <link>/2017/05/23/minicran/</link>
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/23/minicran/</guid>
+      <guid>/2017/05/23/minicran/</guid>
       <description>&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
 &lt;p&gt;I was chatting with &lt;a href=&#34;http://www.senresearch.org/&#34;&gt;Śaunak Sen&lt;/a&gt; about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).&lt;/p&gt;
 &lt;p&gt;Should we have participants work on a server? Should we set up &lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt; in &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt; containers on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;?&lt;/p&gt;
@@ -280,10 +302,10 @@ write_PACKAGES(&amp;quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&amp;quot;,
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to follow up on my &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt;. One thing to emphasize is that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use &lt;code&gt;compress=FALSE&lt;/code&gt; you can skip that and it goes &lt;em&gt;much&lt;/em&gt; faster. See, for example, &lt;a href=&#34;https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/&#34;&gt;his post on “Fast csv writing for R”&lt;/a&gt;. Also see his &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf&#34;&gt;slides from a recent presentation on parallel fread&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’ll first generate the same data that I was using before. And note, as &lt;a href=&#34;https://twitter.com/shabbychef&#34;&gt;@shabbychef&lt;/a&gt; &lt;a href=&#34;https://twitter.com/shabbychef/status/858892435820130304&#34;&gt;mentioned on twitter&lt;/a&gt;, my iid simulations mean that compression isn’t likely to be useful, &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;as we saw in my previous post&lt;/a&gt;. So don’t assume that these results apply generally; compression is useful much of the time.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_ind &amp;lt;- 500
@@ -337,7 +359,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Mon Dec 18 07:46:03 2017 --&gt;
+&lt;!-- Mon Dec 18 08:46:42 2017 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -502,10 +524,10 @@ fread
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
@@ -569,10 +591,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>crayon colors, simplified</title>
-      <link>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
+      <link>/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
+      <guid>/2017/05/02/crayon-colors-simplified/</guid>
       <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
 &lt;p&gt;(I &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on previously&lt;/a&gt;, and then &lt;a href=&#34;http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;But using my package to get the crayon colors can be rather tedious.&lt;/p&gt;
@@ -606,10 +628,10 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
     
     <item>
       <title>caching blogdown</title>
-      <link>http://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
+      <link>/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
+      <guid>/2017/05/01/caching-blogdown/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.&lt;/p&gt;
 &lt;p&gt;I had the mistaken impression that blogdown would look at the timestamps on the &lt;code&gt;.Rmd&lt;/code&gt; and &lt;code&gt;.html&lt;/code&gt; and only build the &lt;code&gt;.html&lt;/code&gt; if the &lt;code&gt;.Rmd&lt;/code&gt; file is newer, but that’s not true.&lt;/p&gt;
 &lt;p&gt;My &lt;a href=&#34;http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt; is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;new blog&lt;/a&gt; would be really painful, forever more.&lt;/p&gt;
@@ -620,10 +642,10 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
 &lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
 &lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
@@ -833,10 +855,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>old posts</title>
-      <link>http://kbroman.org/blog/2017/04/30/old-posts/</link>
+      <link>/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/old-posts/</guid>
+      <guid>/2017/04/30/old-posts/</guid>
       <description>&lt;p&gt;In moving away from my &lt;a href=&#34;http://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;Better-looking LaTeX/Beamer slides&lt;/a&gt;, 2013-10-07&lt;/p&gt;&lt;/li&gt;
@@ -893,20 +915,20 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>→ kbroman.org/blog</title>
-      <link>http://kbroman.org/blog/2017/04/30/new_blog_site/</link>
+      <link>/2017/04/30/new_blog_site/</link>
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
+      <guid>/2017/04/30/new_blog_site/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m starting a new blog site at &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;kbroman.org/blog&lt;/a&gt;. I&amp;rsquo;m abandoning the &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;WordPress site&lt;/a&gt; as it is; I don&amp;rsquo;t want to fuss with trying to move things.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>new blog</title>
-      <link>http://kbroman.org/blog/2017/04/29/new-blog/</link>
+      <link>/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/29/new-blog/</guid>
+      <guid>/2017/04/29/new-blog/</guid>
       <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt; as it is and not try to figure out how to move things over.&lt;/p&gt;
 &lt;p&gt;I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which is a &lt;em&gt;joy&lt;/em&gt;. See the &lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;bookdown-based documentation&lt;/a&gt; (currently a bit thin) plus &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas’s tutorial&lt;/a&gt; and the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbind&lt;/a&gt;. Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;
@@ -915,10 +937,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>about</title>
-      <link>http://kbroman.org/blog/about/</link>
+      <link>/about/</link>
       <pubDate>Sat, 29 Apr 2017 08:36:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://kbroman.org&#34;&gt;Karl Broman&lt;/a&gt; is Professor in the
 &lt;a href=&#34;https://www.biostat.wisc.edu&#34;&gt;Department of Biostatistics and Medical Informatics&lt;/a&gt;
 at the &lt;a href=&#34;http://www.wisc.edu&#34;&gt;University of Wisconsin&amp;ndash;Madison&lt;/a&gt;;
@@ -938,10 +960,10 @@ research in statistical genetics; developer of
     
     <item>
       <title>I thought maybe I was being paranoid</title>
-      <link>http://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
+      <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
+      <guid>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
       <description>
 
 &lt;p&gt;An odd thing happened to me on twitter today.&lt;/p&gt;
@@ -988,10 +1010,10 @@ research in statistical genetics; developer of
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
+      <link>/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
+      <guid>/2016/10/31/halloween-2016-count/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
@@ -1000,10 +1022,10 @@ research in statistical genetics; developer of
     
     <item>
       <title>My JSM 2016 itinerary</title>
-      <link>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
+      <link>/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
+      <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>
 
 &lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.&lt;/p&gt;
@@ -1162,10 +1184,10 @@ research in statistical genetics; developer of
     
     <item>
       <title>Chris Walker at Faculty Senate</title>
-      <link>http://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</link>
+      <link>/2016/04/15/chris-walker-at-faculty-senate/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</guid>
+      <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.dance.wisc.edu/dance/people/faculty/chris-walker&#34;&gt;Chris Walker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;powerful speech&lt;/a&gt; at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/&#34;&gt;Hateful shit at UW-Madison&lt;/a&gt;&amp;rdquo;) was &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;recorded&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;You &lt;em&gt;must&lt;/em&gt; listen to it!&lt;/a&gt;&lt;/p&gt;
@@ -1174,10 +1196,10 @@ research in statistical genetics; developer of
     
     <item>
       <title>I am a data scientist</title>
-      <link>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
@@ -1244,10 +1266,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Action items in response to hateful shit</title>
-      <link>http://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
+      <link>/2016/04/05/action-items-in-response-to-hateful-shit/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
+      <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>&lt;p&gt;UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.&lt;/p&gt;
 
 &lt;p&gt;Here are the things he had mentioned yesterday at the Faculty Senate meeting:&lt;/p&gt;
@@ -1286,10 +1308,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Hateful shit at UW-Madison</title>
-      <link>http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
+      <link>/2016/04/04/hateful-shit-at-uw-madison/</link>
       <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
+      <guid>/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.&lt;/p&gt;
 
 &lt;p&gt;All that&amp;rsquo;s just to say that, when it comes to the ongoing hateful acts that have been happening at the University of Wisconsin-Madison, I&amp;rsquo;m really the last one that you should be listening to. You should instead listen to UW students, such as the &lt;a href=&#34;http://www.unitedcouncilofuw.org/&#34;&gt;United Council of UW Students&lt;/a&gt;, who have submitted &lt;a href=&#34;http://www.unitedcouncilofuw.org/the-student-voice/2016/2/24/blackout-uw-system-administration-press-release-1212016&#34;&gt;a list of 5 reasonable demands&lt;/a&gt;, or Vice Provost and Chief Diversity Officer &lt;a href=&#34;http://provost.wisc.edu/climate.htm&#34;&gt;Patrick Sims&lt;/a&gt;, who made an &lt;a href=&#34;https://www.youtube.com/watch?v=zMBQUzwnCL0&amp;amp;feature=youtu.be&#34;&gt;important 8-min video&lt;/a&gt; in response to a recent hateful incident that you should now go away and watch (really, stop reading what I have to say and spend 8 minutes watching that video), or &lt;a href=&#34;https://www.dance.wisc.edu/dance/people/faculty/chris-walker&#34;&gt;Chris Walker&lt;/a&gt;, Asst Prof in the dance department, who spoke movingly today at the UW-Madison Faculty Senate meeting about the shit that faculty and students of color have to put up with on campus.&lt;/p&gt;
@@ -1318,10 +1340,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
@@ -1364,10 +1386,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
 
 &lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
@@ -1404,10 +1426,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
       <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
 
 &lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
@@ -1440,10 +1462,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>/2015/09/24/its-not-you-its-me/</guid>
       <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
 
 &lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
@@ -1499,10 +1521,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
+      <link>/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>/2015/09/09/reproducibility-is-hard/</guid>
       <description>
 
 &lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
@@ -1550,50 +1572,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;When you write a script to convert data from one form to another, &lt;em&gt;also write some tests&lt;/em&gt;, to make sure that it worked correctly.&lt;/p&gt;
 
 &lt;p&gt;And then &lt;em&gt;document, document, document!&lt;/em&gt; As with software development, it&amp;rsquo;s hard to document data or analyses after the fact.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>God-awful conference websites</title>
-      <link>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
-      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
-      <description>
-
-&lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts. Otherwise I have to keep clicking and going back.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I want to be able to search for people. And if I&amp;rsquo;m searching for &lt;a href=&#34;http://web1.sph.emory.edu/users/hwu30/&#34;&gt;Hao Wu&lt;/a&gt;, I don&amp;rsquo;t want to look at &lt;em&gt;all&lt;/em&gt; of the Wus. Or all of the Haos. I just want the Hao Wus. If I can&amp;rsquo;t search on &lt;code&gt;&amp;quot;Hao Wu&amp;quot;&lt;/code&gt;, at least let me search on &lt;code&gt;&amp;quot;Wu, Hao&amp;quot;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If my search returns nothing and I go back, bring me back to the same search form. Don&amp;rsquo;t make me have to click &amp;ldquo;Search for people&amp;rdquo; again.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;d like to be able to form a schedule of the sessions to attend. (&lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM2015&lt;/a&gt; does that okay, but it&amp;rsquo;s not what I&amp;rsquo;d call &amp;ldquo;secure&amp;rdquo; and you have to find the damned things, first.) Really, I want to pick particular talks: this one in that session and that one in the other. But yeah, that seems a bit much to ask.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM 2015 site&lt;/a&gt; is so terrible for browsing, I was happy to get the &lt;a href=&#34;http://www.amstat.org/meetings/jsm/2015/pdfs/JSM2015_ProgramBook.pdf&#34;&gt;pdf of the program&lt;/a&gt;. (Good luck finding it on the website on your own; ASA tweeted the link to me, due to my bitching and moaning.) You can browse the pdf. That&amp;rsquo;s the way I ended up finding the sessions I wanted to attend. It also had an ad for the &lt;a href=&#34;https://twitter.com/kwbroman/status/628797267978289152&#34;&gt;JSM 2015 mobile app&lt;/a&gt;. Did you know there was one? Good luck finding a link to &lt;em&gt;that&lt;/em&gt; on their website, either.&lt;/p&gt;
-
-&lt;p&gt;The pdf is useable, but much like the website, it fails to make use of the medium. I want:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Bookmarks. I want to jump to where Monday&amp;rsquo;s sessions start without have to flip through the whole thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hyperlinks. If you don&amp;rsquo;t include the abstracts, with links from the talk titles to the abstracts, at least include links to the web page that has the abstract so I don&amp;rsquo;t have to search on the web.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;More hyperlinks. The pdf has an index, with people and page numbers. Why not link those page numbers to the corresponding page?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I helped organize a &lt;a href=&#34;http://rqtl.org/ctc2013/&#34;&gt;small meeting&lt;/a&gt; in 2013. The &lt;a href=&#34;http://rqtl.org/ctc2013/program.html&#34;&gt;program on the web&lt;/a&gt; and the &lt;a href=&#34;http://rqtl.org/ctc2013/ctc2013_program.pdf&#34;&gt;corresponding pdf&lt;/a&gt; illustrate much of what I want. (No scheduling feature, but that meeting had no simultaneous sessions.) I included gratuitous network graphs of the &lt;a href=&#34;http://rqtl.org/ctc2013/vis/authors.html&#34;&gt;authors&lt;/a&gt; and &lt;a href=&#34;http://rqtl.org/ctc2013/vis/abstracts.html&#34;&gt;abstracts&lt;/a&gt;. It&amp;rsquo;s 2015. No conference site is truly complete without interactive network graphs.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;As &lt;a href=&#34;https://www.stat.auckland.ac.nz/showperson?firstname=Thomas&amp;amp;surname=Lumley&#34;&gt;Thomas Lumley&lt;/a&gt; commented below, if you search on &amp;ldquo;Wu&amp;rdquo; you get all of the &amp;ldquo;Wu&amp;rdquo;s but also there&amp;rsquo;s one &amp;ldquo;Wulfhorst&amp;rdquo;. And if you search on &amp;ldquo;Hao&amp;rdquo; you get only people whose &lt;em&gt;last&lt;/em&gt; name is &amp;ldquo;Hao&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;He &lt;a href=&#34;https://twitter.com/tslumley/status/629096725978845185&#34;&gt;further pointed out&lt;/a&gt; that if you search for the affiliation &amp;ldquo;Auckland&amp;rdquo; the results don&amp;rsquo;t include &amp;ldquo;University of Auckland&amp;rdquo; but only &amp;ldquo;Auckland University of Technology&amp;rdquo;. And actually, if you search for &amp;ldquo;University of Auckland&amp;rdquo; you get nothing. You need to search for &amp;ldquo;&lt;em&gt;The&lt;/em&gt; University of Auckland&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Email on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/email/</link>
+    <link>/tags/email/</link>
     <description>Recent content in Email on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 18 May 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/email/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/email/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Should I be nice?</title>
-      <link>http://kbroman.org/blog/2012/05/18/should-i-be-nice/</link>
+      <link>/2012/05/18/should-i-be-nice/</link>
       <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/18/should-i-be-nice/</guid>
+      <guid>/2012/05/18/should-i-be-nice/</guid>
       <description>&lt;p&gt;I got the following email.&lt;/p&gt;
 
 &lt;blockquote&gt;

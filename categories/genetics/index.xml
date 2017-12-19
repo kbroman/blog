@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Genetics on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/categories/genetics/</link>
+    <link>/categories/genetics/</link>
     <description>Recent content in Genetics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/genetics/" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/genetics/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
 
 &lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
@@ -52,10 +52,10 @@
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>
 
 &lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
@@ -132,10 +132,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>Interactive eQTL plot with d3.js</title>
-      <link>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -148,20 +148,20 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>The future of personalized medicine</title>
-      <link>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</link>
+      <link>/2012/10/11/the-future-of-personalized-medicine/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
+      <guid>/2012/10/11/the-future-of-personalized-medicine/</guid>
       <description>&lt;p&gt;&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: &lt;a href=&#34;http://well.blogs.nytimes.com/2012/10/10/are-you-likely-to-respond-to-exercise/?smid=pl-share&#34;&gt;a genetic test for exercise&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Odd smoother</title>
-      <link>http://kbroman.org/blog/2012/09/27/odd-smoother/</link>
+      <link>/2012/09/27/odd-smoother/</link>
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
+      <guid>/2012/09/27/odd-smoother/</guid>
       <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;http://thalamus.wustl.edu/cheverudlab/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
 
 &lt;p&gt;I poked through the paper, and my eye was attracted to the following figure.  These are supposed to be functions, but some weird smoother was used, and the results are not functions.&lt;/p&gt;
@@ -172,10 +172,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>Trees</title>
-      <link>http://kbroman.org/blog/2012/05/17/trees/</link>
+      <link>/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/17/trees/</guid>
+      <guid>/2012/05/17/trees/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -188,10 +188,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
     
     <item>
       <title>Genetic testing of sperm donors</title>
-      <link>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>&lt;p&gt;A recent New York Times article &lt;a href=&#34;http://www.nytimes.com/2012/05/15/health/in-sperm-banks-a-matrix-of-untested-genetic-diseases.html&#34;&gt;discusses the potential need for genetic screening of sperm donors&lt;/a&gt;. A couple of points struck me as rather odd.&lt;/p&gt;
 
 &lt;p&gt;One, the mention of fragile X syndrome, has been corrected:&lt;/p&gt;
@@ -214,20 +214,20 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Rob Tibshirani and Andy Clark named to NAS</title>
-      <link>http://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</link>
+      <link>/2012/05/03/tibshirani-named-to-nas/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</guid>
+      <guid>/2012/05/03/tibshirani-named-to-nas/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www-stat.stanford.edu/~tibs/&#34;&gt;Rob Tibshirani&lt;/a&gt; and &lt;a href=&#34;http://mbg.cornell.edu/faculty-staff/faculty/clark.cfm&#34;&gt;Andy Clark&lt;/a&gt; are now &lt;a href=&#34;http://www.nasonline.org/news-and-multimedia/news/2012_05_01_NAS_Election.html&#34;&gt;members of the National Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Microarrays suck</title>
-      <link>http://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
+      <link>/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
+      <guid>/2012/04/25/microarrays-suck/</guid>
       <description>
 
 &lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
@@ -298,10 +298,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Collaborative Cross papers</title>
-      <link>http://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</link>
+      <link>/2012/02/16/collaborative-cross-papers/</link>
       <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</guid>
+      <guid>/2012/02/16/collaborative-cross-papers/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;http://www.genetics.org/site/misc/MouseGeneticResources.xhtml&#34;&gt;batch of 15 papers&lt;/a&gt; on the mouse Collaborative Cross appeared in &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt; today, including two of my own:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -314,10 +314,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>James Crow</title>
-      <link>http://kbroman.org/blog/2012/02/06/james-crow/</link>
+      <link>/2012/02/06/james-crow/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/02/06/james-crow/</guid>
+      <guid>/2012/02/06/james-crow/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/James_F._Crow&#34;&gt;James Crow&lt;/a&gt; died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was &lt;em&gt;the nicest person I&amp;rsquo;ve met&lt;/em&gt; . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.
 &lt;!-- more --&gt;&lt;/p&gt;
 
@@ -350,10 +350,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Parachutes</title>
-      <link>http://kbroman.org/blog/2011/10/19/parachutes/</link>
+      <link>/2011/10/19/parachutes/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/19/parachutes/</guid>
+      <guid>/2011/10/19/parachutes/</guid>
       <description>&lt;p&gt;I went to a great talk today by &lt;a href=&#34;http://humangenome.duke.edu/people/david-goldstein&#34;&gt;David Goldstein&lt;/a&gt;, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: &lt;a href=&#34;http://www.bmj.com/content/327/7429/1459.full.pdf&#34;&gt;Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials&lt;/a&gt;. The main conclusion:&lt;/p&gt;
 
 &lt;blockquote&gt;We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.&lt;/blockquote&gt;
@@ -364,10 +364,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Lager yeast</title>
-      <link>http://kbroman.org/blog/2011/09/19/lager-yeast/</link>
+      <link>/2011/09/19/lager-yeast/</link>
       <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/19/lager-yeast/</guid>
+      <guid>/2011/09/19/lager-yeast/</guid>
       <description>&lt;p&gt;Last week, I attended an excellent seminar by &lt;a href=&#34;http://hittinger.genetics.wisc.edu/&#34;&gt;Chris Hittinger&lt;/a&gt; on the identification and evolution of &lt;a href=&#34;http://hittinger.genetics.wisc.edu/#Aug22_2011&#34;&gt;lager yeast&lt;/a&gt; (see &lt;a href=&#34;http://www.pnas.org/content/early/2011/08/17/1105430108.full.pdf+html&#34;&gt;the paper&lt;/a&gt;), part of &lt;a href=&#34;http://www.evolution.wisc.edu/node/30&#34;&gt;my favorite seminar series&lt;/a&gt;, on &lt;a href=&#34;http://www.evolution.wisc.edu&#34;&gt;evolution&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;[Forgive me if this description is not fully accurate.] Ales are the original (proper, better tasting) type of beer; they&amp;rsquo;re brewed at a warmer temperature, with &amp;ldquo;top-fermenting&amp;rdquo; yeast (the yeast rises to the top or is suspended throughout the column). Lagers were developed in the 15th century in Bavaria and are brewed at a colder temperature, with &amp;ldquo;bottom-fermenting&amp;rdquo; yeast (the yeast settles to the bottom). Lagers spread world-wide in the 19th century, and now are the most popular fermented beverage (but that&amp;rsquo;s mostly &lt;a href=&#34;http://www.millercoors.com&#34;&gt;swill&lt;/a&gt;).&lt;/p&gt;

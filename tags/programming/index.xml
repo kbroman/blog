@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/programming/</link>
+    <link>/tags/programming/</link>
     <description>Recent content in Programming on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/programming/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/programming/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>miner and craft</title>
-      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>/2017/05/31/miner-and-craft/</guid>
       <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
 &lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>deeply nested functions</title>
-      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <link>/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
     do.call(rbind,
@@ -51,10 +51,10 @@
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
 &lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
 &lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
@@ -264,10 +264,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
@@ -310,10 +310,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
 
 &lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
@@ -350,10 +350,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
       <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
 
 &lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
@@ -386,10 +386,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>/2015/09/24/its-not-you-its-me/</guid>
       <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
 
 &lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
@@ -445,10 +445,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
@@ -515,10 +515,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Cheat sheets for R-based Software Carpentry course</title>
-      <link>http://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
+      <link>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
+      <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;http://software-carpentry.org&#34;&gt;Software Carpentry&lt;/a&gt; workshop at  &lt;a href=&#34;https://github.com/UW-Madison-ACI/boot-camps/blob/2014-08-25/README.md&#34;&gt;UW-Madison in August, 2014&lt;/a&gt;, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.&lt;/p&gt;
 
 &lt;p&gt;So at the SWC workshop at &lt;a href=&#34;http://karawoo.com/2015-04-27-wsu/&#34;&gt;Washington State University this week&lt;/a&gt;, we handed out the following five pages:&lt;/p&gt;
@@ -541,10 +541,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Yet another R package primer</title>
-      <link>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
+      <link>/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
+      <guid>/2014/08/28/yet-another-r-package-primer/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; is writing what will surely be a &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;great book&lt;/a&gt; about the basics of R packages. And &lt;a href=&#34;http://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; wrote a &lt;a href=&#34;https://twitter.com/ErikaMudrak/status/504732734674444288&#34;&gt;very&lt;/a&gt; &lt;a href=&#34;https://twitter.com/polesasunder/status/504785818922131456&#34;&gt;influential&lt;/a&gt; &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch&#34;&gt;post on how to write an R package&lt;/a&gt;. So it seems like that topic is well covered.&lt;/p&gt;
 
 &lt;p&gt;Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another &lt;a href=&#34;http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/&#34;&gt;minimal tutorial with an alliterative name&lt;/a&gt;, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic. (R packages are the best way to distribute R code, or just to keep track of your own personal R code, as part of a reproducible research process.)&lt;/p&gt;
@@ -557,10 +557,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
 
 &lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
@@ -591,10 +591,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
 
 &lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
@@ -617,10 +617,10 @@ rect(u[1], u[3], u[2], u[4])
     
     <item>
       <title>Googling errors</title>
-      <link>http://kbroman.org/blog/2014/02/14/googling-errors/</link>
+      <link>/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/14/googling-errors/</guid>
+      <guid>/2014/02/14/googling-errors/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
@@ -665,10 +665,10 @@ SyntaxError: invalid syntax
     
     <item>
       <title>Read the source code</title>
-      <link>http://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
+      <link>/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
+      <guid>/2013/08/06/read-the-source-code/</guid>
       <description>&lt;p&gt;The other day, there was a bit of &lt;a href=&#34;https://twitter.com/hspter/status/363015797204992000&#34;&gt;a twitter conversation about &lt;code&gt;qqline&lt;/code&gt;&lt;/a&gt; in R.&lt;/p&gt;
 
 &lt;p&gt;It made me think: how exactly is the line produced by &lt;code&gt;qqline&lt;/code&gt; chosen? I seemed to recall that the line was through the first and third quartiles.&lt;/p&gt;
@@ -740,10 +740,10 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re not on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, you should be.  That&amp;rsquo;s &lt;em&gt;real&lt;/em&gt; open source.&lt;/p&gt;
@@ -765,10 +765,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>http://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
+      <link>/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
+      <guid>/2013/03/02/charsetutf-8/</guid>
       <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
@@ -785,10 +785,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>D3.js difficulties</title>
-      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
@@ -849,10 +849,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Learning a new language</title>
-      <link>http://kbroman.org/blog/2012/06/21/learning-a-new-language/</link>
+      <link>/2012/06/21/learning-a-new-language/</link>
       <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/06/21/learning-a-new-language/</guid>
+      <guid>/2012/06/21/learning-a-new-language/</guid>
       <description>&lt;p&gt;It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.thebird.nl/&#34;&gt;A friend&lt;/a&gt; now has me doing &lt;a href=&#34;http://dlang.org&#34;&gt;D&lt;/a&gt;, wanting to find time to learn &lt;a href=&#34;http://www.ruby-lang.org&#34;&gt;ruby&lt;/a&gt;, and, most recently, playing with &lt;a href=&#34;https://developer.mozilla.org/en/JavaScript/Reference&#34;&gt;JavaScript&lt;/a&gt; and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;.&lt;/p&gt;

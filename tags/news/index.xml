@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/news/</link>
+    <link>/tags/news/</link>
     <description>Recent content in News on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/news/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/news/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Halloween 2017</title>
-      <link>http://kbroman.org/blog/2017/10/31/halloween-2017/</link>
+      <link>/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
+      <guid>/2017/10/31/halloween-2017/</guid>
       <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../../post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>old posts</title>
-      <link>http://kbroman.org/blog/2017/04/30/old-posts/</link>
+      <link>/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/old-posts/</guid>
+      <guid>/2017/04/30/old-posts/</guid>
       <description>&lt;p&gt;In moving away from my &lt;a href=&#34;http://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;Better-looking LaTeX/Beamer slides&lt;/a&gt;, 2013-10-07&lt;/p&gt;&lt;/li&gt;
@@ -83,20 +83,20 @@
     
     <item>
       <title>→ kbroman.org/blog</title>
-      <link>http://kbroman.org/blog/2017/04/30/new_blog_site/</link>
+      <link>/2017/04/30/new_blog_site/</link>
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
+      <guid>/2017/04/30/new_blog_site/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m starting a new blog site at &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;kbroman.org/blog&lt;/a&gt;. I&amp;rsquo;m abandoning the &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;WordPress site&lt;/a&gt; as it is; I don&amp;rsquo;t want to fuss with trying to move things.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>new blog</title>
-      <link>http://kbroman.org/blog/2017/04/29/new-blog/</link>
+      <link>/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/29/new-blog/</guid>
+      <guid>/2017/04/29/new-blog/</guid>
       <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt; as it is and not try to figure out how to move things over.&lt;/p&gt;
 &lt;p&gt;I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which is a &lt;em&gt;joy&lt;/em&gt;. See the &lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;bookdown-based documentation&lt;/a&gt; (currently a bit thin) plus &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas’s tutorial&lt;/a&gt; and the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbind&lt;/a&gt;. Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;
@@ -105,10 +105,10 @@
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
+      <link>/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
+      <guid>/2016/10/31/halloween-2016-count/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
@@ -117,10 +117,10 @@
     
     <item>
       <title>A bit more on the fire</title>
-      <link>http://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</link>
+      <link>/2013/03/01/a-bit-more-on-the-fire/</link>
       <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</guid>
+      <guid>/2013/03/01/a-bit-more-on-the-fire/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://host.madison.com/daily-cardinal/&#34;&gt;Daily Cardinal&lt;/a&gt; reports that &lt;a href=&#34;http://tinyurl.com/cuyhdtl&#34;&gt;there were no overhead sprinklers&lt;/a&gt; in the area of the fire yesterday.  Fire fighters thought that sprinklers had gone off, but it was really a broken water pipe.&lt;/p&gt;
 
 &lt;p&gt;And there are no sprinklers in my office, either.  I thought they were required, but I guess only in new construction.&lt;/p&gt;
@@ -135,10 +135,10 @@
     
     <item>
       <title>There&#39;s a fire in the building...</title>
-      <link>http://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</link>
+      <link>/2013/02/28/theres-a-fire-in-the-building/</link>
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</guid>
+      <guid>/2013/02/28/theres-a-fire-in-the-building/</guid>
       <description>&lt;p&gt;I was at work this morning at 8am.  At 8:45am I got a text asking what was going on in &lt;a href=&#34;http://www.map.wisc.edu/?initObj=bdg_MdScC&#34;&gt;my building&lt;/a&gt;, with this picture:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/fire_trucks.jpg&#34; alt=&#34;Fire trucks at MSC&#34; /&gt;&lt;/p&gt;
@@ -163,10 +163,10 @@
     
     <item>
       <title>Microsoft Office</title>
-      <link>http://kbroman.org/blog/2013/01/30/microsoft-office/</link>
+      <link>/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
+      <guid>/2013/01/30/microsoft-office/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
@@ -177,10 +177,10 @@
     
     <item>
       <title>NIH to hire Associate Director for Data Science</title>
-      <link>http://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
+      <link>/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
+      <guid>/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
       <description>&lt;p&gt;See &lt;a href=&#34;http://www.nih.gov/news/health/jan2013/od-10a.htm&#34;&gt;the press release&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.genome.gov/27535200&#34;&gt;Eric Green&lt;/a&gt;, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.&lt;/p&gt;
@@ -189,10 +189,10 @@
     
     <item>
       <title>Puzzling typo</title>
-      <link>http://kbroman.org/blog/2012/10/27/puzzling-typo/</link>
+      <link>/2012/10/27/puzzling-typo/</link>
       <pubDate>Sat, 27 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/27/puzzling-typo/</guid>
+      <guid>/2012/10/27/puzzling-typo/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.nytimes.com/2012/10/27/opinion/a-failed-earthquake-prediction-a-crime.html&#34;&gt;a nice op-ed&lt;/a&gt; in the &lt;a href=&#34;http://www.nytimes.com&#34;&gt;NY Times&lt;/a&gt; about the &lt;a href=&#34;http://www.nytimes.com/2012/10/23/world/europe/italy-convicts-7-for-failure-to-warn-of-quake.html&#34;&gt;crazy conviction of seven Italian scientists for failure to warn about an unpredictable earthquake&lt;/a&gt;. But I spent quite a while puzzling over the following typo:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/nytimes_article_detail.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -205,10 +205,10 @@
     
     <item>
       <title>What, no coffee?</title>
-      <link>http://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
+      <link>/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
+      <guid>/2012/09/28/what-no-coffee/</guid>
       <description>&lt;p&gt;I was at a &lt;a href=&#34;http://www.cidr.jhmi.edu/about/CIDR%20Access%20Committee.pdf&#34;&gt;CIDR Access Committee&lt;/a&gt; meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the &lt;a href=&#34;http://www.cidr.jhmi.edu&#34;&gt;Center for Inherited Disease Research&lt;/a&gt;, a service funded by several of the NIH institutes.&lt;/p&gt;
 
 &lt;p&gt;We had to buy our own coffee.&lt;/p&gt;
@@ -223,10 +223,10 @@
     
     <item>
       <title>Bottle filling station</title>
-      <link>http://kbroman.org/blog/2012/09/24/bottle-filling-station/</link>
+      <link>/2012/09/24/bottle-filling-station/</link>
       <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/24/bottle-filling-station/</guid>
+      <guid>/2012/09/24/bottle-filling-station/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.msnairport.com&#34;&gt;Madison airport&lt;/a&gt; now has a bottle-filling machine, sort of like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;../../images/bottle_filler.jpeg&#34; alt=&#34;bottle filling station&#34; /&gt;&lt;/p&gt;
@@ -239,10 +239,10 @@
     
     <item>
       <title>Hilarious graph</title>
-      <link>http://kbroman.org/blog/2012/09/11/hilarious-graph/</link>
+      <link>/2012/09/11/hilarious-graph/</link>
       <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/11/hilarious-graph/</guid>
+      <guid>/2012/09/11/hilarious-graph/</guid>
       <description>&lt;p&gt;I read &lt;a href=&#34;http://campaignstops.blogs.nytimes.com/2012/09/10/the-unexpected-impact-of-coded-appeals/?hp&#34;&gt;an interesting post&lt;/a&gt; on the &lt;a href=&#34;http://nytimes.com&#34;&gt;NY Times&lt;/a&gt; site this morning, which said:&lt;/p&gt;
 
 &lt;blockquote&gt;Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without  college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care. For college-educated whites, however, increases in negative feelings are associated with large increases in opposition to government-provided health care.&lt;/blockquote&gt;
@@ -255,10 +255,10 @@
     
     <item>
       <title>Police</title>
-      <link>http://kbroman.org/blog/2012/05/24/police/</link>
+      <link>/2012/05/24/police/</link>
       <pubDate>Thu, 24 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/24/police/</guid>
+      <guid>/2012/05/24/police/</guid>
       <description>&lt;p&gt;The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.&lt;/p&gt;
 
 &lt;p&gt;The conversation went something like this:
@@ -324,10 +324,10 @@ And then he walked off.&lt;/p&gt;
     
     <item>
       <title>Genetic testing of sperm donors</title>
-      <link>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>&lt;p&gt;A recent New York Times article &lt;a href=&#34;http://www.nytimes.com/2012/05/15/health/in-sperm-banks-a-matrix-of-untested-genetic-diseases.html&#34;&gt;discusses the potential need for genetic screening of sperm donors&lt;/a&gt;. A couple of points struck me as rather odd.&lt;/p&gt;
 
 &lt;p&gt;One, the mention of fragile X syndrome, has been corrected:&lt;/p&gt;
@@ -350,10 +350,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Halloween 2011 count</title>
-      <link>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
+      <link>/2011/10/31/halloween-2011-count/</link>
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
+      <guid>/2011/10/31/halloween-2011-count/</guid>
       <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
 
 &lt;p&gt;I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.&lt;/p&gt;
@@ -388,30 +388,30 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>New title, new look</title>
-      <link>http://kbroman.org/blog/2011/10/15/new-title-new-look/</link>
+      <link>/2011/10/15/new-title-new-look/</link>
       <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/15/new-title-new-look/</guid>
+      <guid>/2011/10/15/new-title-new-look/</guid>
       <description>&lt;p&gt;My old title was too verbose, and the old &amp;ldquo;theme&amp;rdquo; was too messy (and the font too small).  Hopefully the changes are satisfactory.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Designer of C died</title>
-      <link>http://kbroman.org/blog/2011/10/14/designer-of-c-died/</link>
+      <link>/2011/10/14/designer-of-c-died/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
+      <guid>/2011/10/14/designer-of-c-died/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://cm.bell-labs.com/who/dmr/&#34;&gt;Dennis Ritchie&lt;/a&gt;, the designer of C and co-developer of Unix, &lt;a href=&#34;http://tinyurl.com/4y38mkt&#34;&gt;died on Wednesday&lt;/a&gt;.  He arguably had more impact on my life than &lt;a href=&#34;http://tinyurl.com/3fj8llw&#34;&gt;Steve Jobs&lt;/a&gt; did.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>http://kbroman.org/blog/2011/08/17/introduction/</link>
+      <link>/2011/08/17/introduction/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/17/introduction/</guid>
+      <guid>/2011/08/17/introduction/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.&lt;/p&gt;
 
 &lt;p&gt;Particularly interesting were the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/lightning.html&#34;&gt;Lightning talks&lt;/a&gt;: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically.  It worked extremely well; more talks should be done this way!&lt;/p&gt;

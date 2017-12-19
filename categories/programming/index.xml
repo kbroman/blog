@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/categories/programming/</link>
+    <link>/categories/programming/</link>
     <description>Recent content in Programming on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 11 May 2017 16:22:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/programming/" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/programming/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
@@ -79,10 +79,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
@@ -125,10 +125,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
 
 &lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
@@ -165,10 +165,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
       <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
 
 &lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
@@ -201,10 +201,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>/2015/09/24/its-not-you-its-me/</guid>
       <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
 
 &lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
@@ -260,10 +260,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
@@ -330,10 +330,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Cheat sheets for R-based Software Carpentry course</title>
-      <link>http://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
+      <link>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
+      <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;http://software-carpentry.org&#34;&gt;Software Carpentry&lt;/a&gt; workshop at  &lt;a href=&#34;https://github.com/UW-Madison-ACI/boot-camps/blob/2014-08-25/README.md&#34;&gt;UW-Madison in August, 2014&lt;/a&gt;, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.&lt;/p&gt;
 
 &lt;p&gt;So at the SWC workshop at &lt;a href=&#34;http://karawoo.com/2015-04-27-wsu/&#34;&gt;Washington State University this week&lt;/a&gt;, we handed out the following five pages:&lt;/p&gt;
@@ -356,10 +356,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Yet another R package primer</title>
-      <link>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
+      <link>/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
+      <guid>/2014/08/28/yet-another-r-package-primer/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; is writing what will surely be a &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;great book&lt;/a&gt; about the basics of R packages. And &lt;a href=&#34;http://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; wrote a &lt;a href=&#34;https://twitter.com/ErikaMudrak/status/504732734674444288&#34;&gt;very&lt;/a&gt; &lt;a href=&#34;https://twitter.com/polesasunder/status/504785818922131456&#34;&gt;influential&lt;/a&gt; &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch&#34;&gt;post on how to write an R package&lt;/a&gt;. So it seems like that topic is well covered.&lt;/p&gt;
 
 &lt;p&gt;Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another &lt;a href=&#34;http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/&#34;&gt;minimal tutorial with an alliterative name&lt;/a&gt;, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic. (R packages are the best way to distribute R code, or just to keep track of your own personal R code, as part of a reproducible research process.)&lt;/p&gt;
@@ -372,10 +372,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
 
 &lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
@@ -406,10 +406,10 @@ force = d3.forceSimulation(scaledPoints)
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
 
 &lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
@@ -432,10 +432,10 @@ rect(u[1], u[3], u[2], u[4])
     
     <item>
       <title>Simple web sites with GitHub Pages</title>
-      <link>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</link>
+      <link>/2014/04/05/simple-web-sites-with-github-pages/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
+      <guid>/2014/04/05/simple-web-sites-with-github-pages/</guid>
       <description>&lt;p&gt;If you love &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;, you&amp;rsquo;ll also love &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, for producing websites using &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;: you write pages in Markdown within a &lt;code&gt;gh-pages&lt;/code&gt; branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -463,10 +463,10 @@ rect(u[1], u[3], u[2], u[4])
     
     <item>
       <title>Googling errors</title>
-      <link>http://kbroman.org/blog/2014/02/14/googling-errors/</link>
+      <link>/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/14/googling-errors/</guid>
+      <guid>/2014/02/14/googling-errors/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
@@ -511,10 +511,10 @@ SyntaxError: invalid syntax
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
 
 &lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
@@ -569,10 +569,10 @@ SyntaxError: invalid syntax
     
     <item>
       <title>Fixing a font problem for XeLaTeX</title>
-      <link>http://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
+      <link>/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
+      <guid>/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
       <description>
 
 &lt;p&gt;If the topic sounds boring, well, it is really boring. I write it down here in case it&amp;rsquo;s useful to someone.&lt;/p&gt;
@@ -623,10 +623,10 @@ or installed font not found.
     
     <item>
       <title>Code review</title>
-      <link>http://kbroman.org/blog/2013/09/25/code-review/</link>
+      <link>/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
+      <guid>/2013/09/25/code-review/</guid>
       <description>
 
 &lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
@@ -679,10 +679,10 @@ or installed font not found.
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
+      <link>/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>/2013/08/20/electronic-lab-notebook/</guid>
       <description>
 
 &lt;p&gt;I was interested to read &lt;a href=&#34;http://ivory.idyll.org&#34;&gt;C. Titus Brown&lt;/a&gt;&amp;rsquo;s recent post, &amp;ldquo;&lt;a href=&#34;http://ivory.idyll.org/blog/is-version-control-an-electronic-lab-notebook.html&#34;&gt;Is version control an electronic lab notebook?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
@@ -727,10 +727,10 @@ or installed font not found.
     
     <item>
       <title>Read the source code</title>
-      <link>http://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
+      <link>/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
+      <guid>/2013/08/06/read-the-source-code/</guid>
       <description>&lt;p&gt;The other day, there was a bit of &lt;a href=&#34;https://twitter.com/hspter/status/363015797204992000&#34;&gt;a twitter conversation about &lt;code&gt;qqline&lt;/code&gt;&lt;/a&gt; in R.&lt;/p&gt;
 
 &lt;p&gt;It made me think: how exactly is the line produced by &lt;code&gt;qqline&lt;/code&gt; chosen? I seemed to recall that the line was through the first and third quartiles.&lt;/p&gt;
@@ -802,10 +802,10 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt; is a series of question-and-answer sites, including &lt;a href=&#34;http://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; for programming and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; for statistics.  I was &lt;a href=&#34;http://kbroman.org/blog/2011/09/26/gamified/&#34;&gt;introduced to these sites&lt;/a&gt; at a short talk by &lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;&lt;/p&gt;
@@ -849,10 +849,10 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re not on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, you should be.  That&amp;rsquo;s &lt;em&gt;real&lt;/em&gt; open source.&lt;/p&gt;
@@ -874,10 +874,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Data structures are important</title>
-      <link>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
+      <link>/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
+      <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -894,10 +894,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</link>
+      <link>/2013/03/19/latex-unicode--xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</guid>
+      <guid>/2013/03/19/latex-unicode--xetex/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;http://www.ctc2013.org&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
 
 &lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;http://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
@@ -916,10 +916,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
@@ -962,10 +962,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Interactive eQTL plot with d3.js</title>
-      <link>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -978,10 +978,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>http://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
+      <link>/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
+      <guid>/2013/03/02/charsetutf-8/</guid>
       <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
@@ -998,10 +998,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>D3.js difficulties</title>
-      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
@@ -1062,10 +1062,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Interactive graphics with d3.js</title>
-      <link>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</link>
+      <link>/2013/02/08/interactive-graphics-with-d3-js/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</guid>
+      <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m making some progress learning &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.&lt;/p&gt;
@@ -1092,10 +1092,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Wireless router woes</title>
-      <link>http://kbroman.org/blog/2012/11/20/wireless-router-woes/</link>
+      <link>/2012/11/20/wireless-router-woes/</link>
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/11/20/wireless-router-woes/</guid>
+      <guid>/2012/11/20/wireless-router-woes/</guid>
       <description>&lt;p&gt;I had problems with my internet connection at home this morning.  The usual things didn&amp;rsquo;t work, but an unusual thing did work, so I thought I&amp;rsquo;d write about it.&lt;/p&gt;
 
 &lt;p&gt;My internet connection worked last night, but it didn&amp;rsquo;t work this morning.  I did the usual things: turn off the cable modem and the wireless router, and then turn them back on again.  Turn off the computer and then turn it back on again, and then power cycle the modem and router again.   Go to network settings and renew the DHCP.  None of that worked.&lt;/p&gt;
@@ -1116,10 +1116,10 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
     
     <item>
       <title>Curved arrows in R</title>
-      <link>http://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</link>
+      <link>/2012/10/11/curved-arrows-in-r/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</guid>
+      <guid>/2012/10/11/curved-arrows-in-r/</guid>
       <description>&lt;p&gt;I briefly investigated how to draw curved arrows in R. Here&amp;rsquo;s a small piece of the figure that I ultimately created:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png&#34; style=&#34;max-width:300px;&#34;&gt;&lt;/p&gt;
@@ -1194,10 +1194,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>Learning a new language</title>
-      <link>http://kbroman.org/blog/2012/06/21/learning-a-new-language/</link>
+      <link>/2012/06/21/learning-a-new-language/</link>
       <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/06/21/learning-a-new-language/</guid>
+      <guid>/2012/06/21/learning-a-new-language/</guid>
       <description>&lt;p&gt;It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.thebird.nl/&#34;&gt;A friend&lt;/a&gt; now has me doing &lt;a href=&#34;http://dlang.org&#34;&gt;D&lt;/a&gt;, wanting to find time to learn &lt;a href=&#34;http://www.ruby-lang.org&#34;&gt;ruby&lt;/a&gt;, and, most recently, playing with &lt;a href=&#34;https://developer.mozilla.org/en/JavaScript/Reference&#34;&gt;JavaScript&lt;/a&gt; and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;.&lt;/p&gt;
@@ -1220,10 +1220,10 @@ iArrows(x1, y, x2, y,
     
     <item>
       <title>A course in statistical programming</title>
-      <link>http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</link>
+      <link>/2012/05/25/a-course-in-statistical-programming/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</guid>
+      <guid>/2012/05/25/a-course-in-statistical-programming/</guid>
       <description>&lt;p&gt;Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.&lt;/p&gt;
 
 &lt;p&gt;For example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html&#34;&gt;here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo;&lt;/a&gt; that I taught at &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Johns Hopkins&lt;/a&gt; back in 2001.&lt;/p&gt;

@@ -2,20 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stupid on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/stupid/</link>
+    <link>/tags/stupid/</link>
     <description>Recent content in Stupid on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 30 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/stupid/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/stupid/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>these guys</title>
+      <link>/2017/12/18/these-guys/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/18/these-guys/</guid>
+      <description>&lt;p&gt;At the &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;, in a &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. &lt;a href=&#34;https://twitter.com/hashtag/JSM2016?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#JSM2016&lt;/a&gt;&lt;/p&gt;&amp;mdash; Karl Broman (@kwbroman) &lt;a href=&#34;https://twitter.com/kwbroman/status/760881386651848708?ref_src=twsrc%5Etfw&#34;&gt;August 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dear S____,&lt;/p&gt;
+&lt;p&gt;We attended your talk at JSM last week, in the session honoring Bill Cleveland.&lt;/p&gt;
+&lt;p&gt;We, and a number of other audience members, were taken aback by your repeated use of the phrase “these guys” in your talk. The use of the word “guys” is often intended as gender-neutral, and we’re certain that you didn’t intend to deliberately imply that only men can be software developers and data analysts. However, our experience as audience members was that your repeated usage came across as rather exclusionary—characterizing programmers and analysts as exclusively men. Given that that was likely not your intent, we hope you’ll take it in consideration to change your language in the future.&lt;/p&gt;
+&lt;p&gt;Regards, Karl Broman &amp;amp; Hadley Wickham&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We didn’t get a response.&lt;/p&gt;
+&lt;p&gt;But I think the lesson here is: don’t let these sorts of things go. &lt;a href=&#34;https://medium.com/@kristianlum/statistics-we-have-a-problem-304638dc5de5&#34;&gt;Tip of the iceberg&lt;/a&gt; and all that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>I thought maybe I was being paranoid</title>
-      <link>http://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
+      <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
+      <guid>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
       <description>
 
 &lt;p&gt;An odd thing happened to me on twitter today.&lt;/p&gt;
@@ -62,10 +84,10 @@
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
@@ -108,10 +130,10 @@
     
     <item>
       <title>God-awful conference websites</title>
-      <link>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
+      <link>/2015/08/05/god-awful-conference-web-sites/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
+      <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>
 
 &lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
@@ -152,10 +174,10 @@
     
     <item>
       <title>If I could do it over again, I&#39;d self-publish</title>
-      <link>http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</link>
+      <link>/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</link>
       <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</guid>
+      <guid>/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</guid>
       <description>&lt;p&gt;In 2009, &lt;a href=&#34;http://www.epibiostat.ucsf.edu/biostat/sen/&#34;&gt;Śaunak Sen&lt;/a&gt; and I wrote a &lt;a href=&#34;http://www.rqtl.org&#34;&gt;book&lt;/a&gt; about QTL mapping and the &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt; software. We started working on it in the fall of 2006, and it was a heck of a lot of work.&lt;/p&gt;
 
 &lt;p&gt;We&amp;rsquo;d talked to several publishers, and ended up publishing with &lt;a href=&#34;http://www.springer.com&#34;&gt;Springer&lt;/a&gt;. John Kimmel was the editor we worked with; I like John, and I felt that Springer (or &lt;em&gt;John&lt;/em&gt;) did a good job of keeping prices reasonable. We were able to publish in full color with a list price of \$99, so that on Amazon it was about \$65. (In April, 2013, there was a brief period where &lt;a href=&#34;https://twitter.com/kwbroman/status/321747087744184320&#34;&gt;it was just \$42 at Amazon&lt;/a&gt;!)&lt;/p&gt;
@@ -190,10 +212,10 @@
     
     <item>
       <title>I still don&#39;t like it</title>
-      <link>http://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</link>
+      <link>/2014/02/09/i-still-dont-like-it/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</guid>
+      <guid>/2014/02/09/i-still-dont-like-it/</guid>
       <description>&lt;p&gt;I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where &lt;a href=&#34;http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/&#34;&gt;the author refused to allow me to have an electronic copy&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:&lt;/p&gt;
@@ -208,10 +230,10 @@
     
     <item>
       <title>Things to avoid as a new faculty member</title>
-      <link>http://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
+      <link>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
       <pubDate>Thu, 05 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
+      <guid>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>&lt;p&gt;The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.&lt;/p&gt;
 
 &lt;p&gt;Here are some thoughts on things to &lt;em&gt;avoid&lt;/em&gt;.&lt;/p&gt;
@@ -232,10 +254,10 @@
     
     <item>
       <title>It was a really bad idea to use slides in that class</title>
-      <link>http://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>&lt;p&gt;I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a &lt;a href=&#34;http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;blog post&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):&lt;/p&gt;
@@ -258,10 +280,10 @@
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>
 
 &lt;p&gt;Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).&lt;/p&gt;
@@ -364,10 +386,10 @@
     
     <item>
       <title>Department websites</title>
-      <link>http://kbroman.org/blog/2013/09/11/department-websites/</link>
+      <link>/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/11/department-websites/</guid>
+      <guid>/2013/09/11/department-websites/</guid>
       <description>
 
 &lt;p&gt;I was thinking about department websites, partly because &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my own department&amp;rsquo;s website&lt;/a&gt; is terrible, and recently a colleague asked me whether I could suggest some &lt;em&gt;good&lt;/em&gt; department sites.&lt;/p&gt;
@@ -479,10 +501,10 @@
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>
 
 &lt;p&gt;Yesterday, I saw &lt;a href=&#34;https://twitter.com/Ananyo/status/329545985149775873&#34;&gt;this tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/Ananyo&#34;&gt;@Ananyo&lt;/a&gt;&lt;/p&gt;
@@ -549,10 +571,10 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
     
     <item>
       <title>Methods before results</title>
-      <link>http://kbroman.org/blog/2013/04/29/methods-before-results/</link>
+      <link>/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
+      <guid>/2013/04/29/methods-before-results/</guid>
       <description>
 
 &lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
@@ -628,10 +650,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Use meaningful URLs</title>
-      <link>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</link>
+      <link>/2013/04/10/use-meaningful-urls/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
+      <guid>/2013/04/10/use-meaningful-urls/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/natesmoyer/qr-codes-are-stupid&#34;&gt;QR codes are stupid&lt;/a&gt;.  See the well-known &lt;a href=&#34;https://twitter.com/jcolman/status/320917928881033218&#34;&gt;flowchart&lt;/a&gt;.&lt;/p&gt;
@@ -674,10 +696,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Beware of grep with a list</title>
-      <link>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</link>
+      <link>/2013/04/03/beware-of-grep-with-a-list/</link>
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</guid>
+      <guid>/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>&lt;p&gt;Another &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip: beware of &lt;code&gt;as.character&lt;/code&gt; applied to a list.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;gt; as.character( list(letters[1:3], letters[4:6]) )
@@ -698,10 +720,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>What a waste of paper</title>
-      <link>http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</link>
+      <link>/2013/03/07/what-a-waste-of-paper/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</guid>
+      <guid>/2013/03/07/what-a-waste-of-paper/</guid>
       <description>&lt;p&gt;A university press asked me to review a book manuscript, and the author &amp;ldquo;has asked that we not use electronic copies.&amp;rdquo; So they&amp;rsquo;re going to send me a hard copy.&lt;/p&gt;
 
 &lt;p&gt;My response: &amp;ldquo;If you only give me a paper copy, I&amp;rsquo;m going to just scan it and toss the paper. That seems like a waste of time (and paper and postage).&amp;rdquo;&lt;/p&gt;
@@ -714,10 +736,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>The Hopkins SPH logo, part 3: Karl&#39;s revenge</title>
-      <link>http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
+      <link>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
+      <guid>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m finally back to the story of the &lt;a href=&#34;http://www.jhsph.edu/&#34;&gt;Johns Hopkins Bloomberg School of Public Health&lt;/a&gt; &lt;a href=&#34;http://www.jhsph.edu/identity/coreIdentity/logoIntro.shtml&#34;&gt;logo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I wrote &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Part 1&lt;/a&gt; in mid-November and &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;Part 2&lt;/a&gt; a week later.  I said that Part 3 was &amp;ldquo;coming soon,&amp;rdquo; but I&amp;rsquo;ve been a bit shy about revealing this.  You&amp;rsquo;ll see why.&lt;/p&gt;
@@ -766,10 +788,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>D3.js difficulties</title>
-      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
@@ -830,10 +852,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Microsoft Office</title>
-      <link>http://kbroman.org/blog/2013/01/30/microsoft-office/</link>
+      <link>/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
+      <guid>/2013/01/30/microsoft-office/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
 
 &lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
@@ -844,10 +866,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>I don&#39;t want your irrelevant communications either</title>
-      <link>http://kbroman.org/blog/2012/12/12/i-dont-want-your-irrelevant-communications-either/</link>
+      <link>/2012/12/12/i-dont-want-your-irrelevant-communications-either/</link>
       <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/12/12/i-dont-want-your-irrelevant-communications-either/</guid>
+      <guid>/2012/12/12/i-dont-want-your-irrelevant-communications-either/</guid>
       <description>&lt;p&gt;I got some spam from Quintiles and clicked the &amp;ldquo;unsubscribe&amp;rdquo; button.  The form which came up said, &amp;ldquo;I would NOT like to receive future relevant communications from Quintiles.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/12/quintiles_sucks.png&#34; alt=&#34;Quintiles sucks&#34; /&gt;&lt;/p&gt;
@@ -858,10 +880,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Child abuse and neglect is cancelled today</title>
-      <link>http://kbroman.org/blog/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</link>
+      <link>/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</guid>
+      <guid>/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</guid>
       <description>&lt;p&gt;On a classroom door:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/11/neglect_cancelled.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -870,10 +892,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>The Hopkins SPH logo, part 2</title>
-      <link>http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</link>
+      <link>/2012/11/21/the-hopkins-sph-logo-part-2/</link>
       <pubDate>Wed, 21 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
+      <guid>/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
       <description>&lt;p&gt;Last week, I wrote about the &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Johns Hopkins &lt;strong&gt;Bloomberg&lt;/strong&gt; School of Public Health logo&lt;/a&gt;.  I now present part 2 of the story.&lt;/p&gt;
 
 &lt;p&gt;Hopkins SPH had done some fancy renovations of part of the building, including an important new feature, the &amp;ldquo;&lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder&lt;/a&gt;&amp;ldquo;: a big display composed of nine LCD screens in the atrium of the building, to display various PR type stuff.  (&amp;ldquo;Wall of Wonder&amp;rdquo; (WOW) is the official name!  Consider the &lt;a href=&#34;http://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html&#34;&gt;Wall of Wonder policies&lt;/a&gt;, inspired by the events I detail below.) Here&amp;rsquo;s a photo:&lt;/p&gt;
@@ -930,10 +952,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>The Hopkins SPH logo, part 1</title>
-      <link>http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/</link>
+      <link>/2012/11/16/the-hopkins-sph-logo-part-1/</link>
       <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/</guid>
+      <guid>/2012/11/16/the-hopkins-sph-logo-part-1/</guid>
       <description>&lt;p&gt;I was just telling &lt;a href=&#34;http://www.stodden.net&#34;&gt;a distinguished visitor&lt;/a&gt; a few of my various stories about the &lt;a href=&#34;http://www.jhsph.edu&#34;&gt;Johns Hopkins &lt;strong&gt;Bloomberg&lt;/strong&gt; School of Public Health&lt;/a&gt; &lt;a href=&#34;http://www.jhsph.edu/identity/coreIdentity/logoIntro.shtml&#34;&gt;logo&lt;/a&gt;. She suggested that it would be a great blog topic. And now that I&amp;rsquo;m a tenured faculty member at a &lt;a href=&#34;http://www.wisc.edu&#34;&gt;different university&lt;/a&gt; and so can&amp;rsquo;t get into any [further] trouble over this&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the logo:&lt;/p&gt;
@@ -960,10 +982,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Puzzling typo</title>
-      <link>http://kbroman.org/blog/2012/10/27/puzzling-typo/</link>
+      <link>/2012/10/27/puzzling-typo/</link>
       <pubDate>Sat, 27 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/27/puzzling-typo/</guid>
+      <guid>/2012/10/27/puzzling-typo/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.nytimes.com/2012/10/27/opinion/a-failed-earthquake-prediction-a-crime.html&#34;&gt;a nice op-ed&lt;/a&gt; in the &lt;a href=&#34;http://www.nytimes.com&#34;&gt;NY Times&lt;/a&gt; about the &lt;a href=&#34;http://www.nytimes.com/2012/10/23/world/europe/italy-convicts-7-for-failure-to-warn-of-quake.html&#34;&gt;crazy conviction of seven Italian scientists for failure to warn about an unpredictable earthquake&lt;/a&gt;. But I spent quite a while puzzling over the following typo:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/nytimes_article_detail.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -976,20 +998,20 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>The future of personalized medicine</title>
-      <link>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</link>
+      <link>/2012/10/11/the-future-of-personalized-medicine/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
+      <guid>/2012/10/11/the-future-of-personalized-medicine/</guid>
       <description>&lt;p&gt;&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: &lt;a href=&#34;http://well.blogs.nytimes.com/2012/10/10/are-you-likely-to-respond-to-exercise/?smid=pl-share&#34;&gt;a genetic test for exercise&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Hilarious graph</title>
-      <link>http://kbroman.org/blog/2012/09/11/hilarious-graph/</link>
+      <link>/2012/09/11/hilarious-graph/</link>
       <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/11/hilarious-graph/</guid>
+      <guid>/2012/09/11/hilarious-graph/</guid>
       <description>&lt;p&gt;I read &lt;a href=&#34;http://campaignstops.blogs.nytimes.com/2012/09/10/the-unexpected-impact-of-coded-appeals/?hp&#34;&gt;an interesting post&lt;/a&gt; on the &lt;a href=&#34;http://nytimes.com&#34;&gt;NY Times&lt;/a&gt; site this morning, which said:&lt;/p&gt;
 
 &lt;blockquote&gt;Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without  college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care. For college-educated whites, however, increases in negative feelings are associated with large increases in opposition to government-provided health care.&lt;/blockquote&gt;
@@ -1002,10 +1024,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>How to evaluate faculty?</title>
-      <link>http://kbroman.org/blog/2012/09/08/how-to-evaluate-faculty/</link>
+      <link>/2012/09/08/how-to-evaluate-faculty/</link>
       <pubDate>Sat, 08 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/09/08/how-to-evaluate-faculty/</guid>
+      <guid>/2012/09/08/how-to-evaluate-faculty/</guid>
       <description>&lt;p&gt;&amp;hellip;rate their departments.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://www.secfac.wisc.edu/divcomm/physical/TenureGuidelines.pdf&#34;&gt;tenure guidelines&lt;/a&gt; for the &lt;a href=&#34;http://www.secfac.wisc.edu/divcomm/physical/index.htm&#34;&gt;Physical Sciences Division&lt;/a&gt; at &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison&lt;/a&gt; include the following instructions (see section I-1 on page 11):&lt;/p&gt;
@@ -1022,10 +1044,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
     
     <item>
       <title>Genetic testing of sperm donors</title>
-      <link>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>&lt;p&gt;A recent New York Times article &lt;a href=&#34;http://www.nytimes.com/2012/05/15/health/in-sperm-banks-a-matrix-of-untested-genetic-diseases.html&#34;&gt;discusses the potential need for genetic screening of sperm donors&lt;/a&gt;. A couple of points struck me as rather odd.&lt;/p&gt;
 
 &lt;p&gt;One, the mention of fragile X syndrome, has been corrected:&lt;/p&gt;
@@ -1048,10 +1070,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Boring us to submission</title>
-      <link>http://kbroman.org/blog/2012/05/07/boring-us-to-submission/</link>
+      <link>/2012/05/07/boring-us-to-submission/</link>
       <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/07/boring-us-to-submission/</guid>
+      <guid>/2012/05/07/boring-us-to-submission/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.wisc.edu&#34;&gt;University of Wisconsin-Madison&lt;/a&gt; has embarked on a big &lt;a href=&#34;http://www.hrdesign.wisc.edu&#34;&gt;human resources redesign&lt;/a&gt;.  I think the university administration has devised the ideal strategy to ensure little faculty input in the process: they&amp;rsquo;ve made it so dreadfully dull and full of business speak that we can&amp;rsquo;t bear to read through the material or show up to one of the many &amp;ldquo;engagement sessions&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;What reasonable faculty member would seek to attend an &amp;ldquo;engagement session&amp;rdquo;?&lt;/p&gt;
@@ -1076,10 +1098,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>Microarrays suck</title>
-      <link>http://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
+      <link>/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
+      <guid>/2012/04/25/microarrays-suck/</guid>
       <description>
 
 &lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
@@ -1150,10 +1172,10 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
     
     <item>
       <title>ENAR 2012</title>
-      <link>http://kbroman.org/blog/2012/04/18/enar-2012/</link>
+      <link>/2012/04/18/enar-2012/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/18/enar-2012/</guid>
+      <guid>/2012/04/18/enar-2012/</guid>
       <description>
 
 &lt;p&gt;The annual &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org/&#34;&gt;eastern North America portion&lt;/a&gt; of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see &lt;a href=&#34;http://biostat.jhsph.edu&#34;&gt;old friends&lt;/a&gt;, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.&lt;/p&gt;
@@ -1192,65 +1214,6 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 
 &lt;li&gt;&lt;p&gt;Dull talks by famous people: (I&amp;rsquo;m not talking about &lt;em&gt;you&lt;/em&gt;, fine reader, but the other famous people.)  Biology meetings will have a few invited speakers but the bulk of the talks will be chosen based on submitted abstracts.  Statistics meetings seem more often arranged to have people submit proposals for full sessions, with a slate of pre-selected speakers, and it is those sessions that are reviewed.  That seems the perfect design if you want crappy talks by famous people.  Perhaps I&amp;rsquo;m annoyed only because I&amp;rsquo;m a non-famous person who can give a good talk.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>as.character() for rownames()</title>
-      <link>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</link>
-      <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330&#34;&gt;Rainer pointed out&lt;/a&gt;, in response to my post, &lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/&#34;&gt;Row names in data frames: Beware of 1:nrow&lt;/a&gt;, that if I&amp;rsquo;d used &lt;code&gt;rownames(x) &amp;lt;- as.character(1:3)&lt;/code&gt; rather than &lt;code&gt;rownames(x) &amp;lt;- 1:3&lt;/code&gt;, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3)
-&amp;gt; y &amp;lt;- data.frame(id=4:6)
-&amp;gt; rownames(x) &amp;lt;- 1:3
-&amp;gt; rownames(y) &amp;lt;- LETTERS[4:6]
-&amp;gt; rownames(z) &amp;lt;- as.character(1:3)
-&amp;gt; rbind(y,x)
-  id
-D  1
-E  2
-F  3
-4  1
-5  2
-6  3
-&amp;gt; rbind(y,z)
-  id
-D  1
-E  2
-F  3
-1  1
-2  2
-3  3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you type &lt;code&gt;rownames(x)&lt;/code&gt; you see the same result as &lt;code&gt;rownames(z)&lt;/code&gt;, and &lt;code&gt;is.character(rownames(x))&lt;/code&gt; and &lt;code&gt;is.character(rownames(z))&lt;/code&gt; both return TRUE, but if you look at the &lt;code&gt;&amp;quot;row.names&amp;quot;&lt;/code&gt; attribute directly, you see they are different.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; rownames(x)
-[1] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot;
-&amp;gt; rownames(z)
-[1] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot;
-&amp;gt; is.character(rownames(x))
-[1] TRUE
-&amp;gt; is.character(rownames(z))
-[1] TRUE
-&amp;gt; attr(x, &amp;quot;row.names&amp;quot;)
-[1] 1 2 3
-&amp;gt; attr(z, &amp;quot;row.names&amp;quot;)
-[1] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But why is &lt;code&gt;1:3&lt;/code&gt; treated so differently from &lt;code&gt;2:4&lt;/code&gt;?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; w &amp;lt;- data.frame(id=1:3)
-&amp;gt; rownames(w) &amp;lt;- 2:4
-&amp;gt; attr(w, &amp;quot;row.names&amp;quot;)
-[1] 2 3 4
-&amp;gt; rownames(rbind(y,w))
-[1] &amp;quot;D&amp;quot; &amp;quot;E&amp;quot; &amp;quot;F&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot; &amp;quot;4&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
