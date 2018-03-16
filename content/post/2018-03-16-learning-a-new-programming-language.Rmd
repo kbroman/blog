@@ -153,7 +153,7 @@ examples of what I've done: for
 [Ruby](https://github.com/kbroman/Rubybroman), and
 [JavaScript/CoffeeScript](https://github.com/kbroman/JSbroman).
 
-## Force yourself to use your new skills
+## Force yourself to use your new skills.
 
 Finally, if you really want to adopt the new programming language as
 part of your working toolkit, you'll need to force yourself to
