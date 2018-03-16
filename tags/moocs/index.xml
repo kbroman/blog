@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 21 Feb 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/moocs/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/moocs/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>UW-Madison joins Coursera</title>
@@ -16,14 +18,10 @@
       <pubDate>Thu, 21 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</guid>
-      <description>&lt;p&gt;UW-Madison is joining Coursera to offer four massive open online courses (MOOCs).&lt;/p&gt;
-
-&lt;p&gt;I like &lt;a href=&#34;http://eduoptimists.blogspot.com/2013/02/the-illusory-appeal-of-uw-madison-moocs.html&#34;&gt;Sara Goldrick-Rab&amp;rsquo;s comments&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;MOOCs are a good thing, but I view them as &amp;ldquo;outreach&amp;rdquo;.  There are lots of problems with universities, but MOOCs don&amp;rsquo;t seem to be a solution to any of them.&lt;/p&gt;
-
-&lt;p&gt;I like Sara&amp;rsquo;s point about MOOCs more being used more for continuing education for the already educated vs new access for the uneducated.&lt;/p&gt;
-</description>
+      <description>UW-Madison is joining Coursera to offer four massive open online courses (MOOCs).
+I like Sara Goldrick-Rab&amp;rsquo;s comments.
+MOOCs are a good thing, but I view them as &amp;ldquo;outreach&amp;rdquo;. There are lots of problems with universities, but MOOCs don&amp;rsquo;t seem to be a solution to any of them.
+I like Sara&amp;rsquo;s point about MOOCs more being used more for continuing education for the already educated vs new access for the uneducated.</description>
     </item>
     
   </channel>

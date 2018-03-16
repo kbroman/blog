@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 04 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/data-analysis/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Initial steps towards reproducible research</title>
@@ -16,14 +18,9 @@
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
-      <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
-
-&lt;p&gt;So, I spent some time today writing another of my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;minimal tutorials&lt;/a&gt;, on &lt;a href=&#34;http://kbroman.org/steps2rr&#34;&gt;initial steps towards reproducible research&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit rough, and it could &lt;em&gt;really&lt;/em&gt; use some examples, but it helped me to get my thoughts together for the &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Hackathon&lt;/a&gt; and hopefully will be useful to people (and something to build upon).&lt;/p&gt;
-</description>
+      <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
+Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
+So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
     </item>
     
     <item>
@@ -32,78 +29,8 @@
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
-      <description>
-
-&lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
-
-&lt;p&gt;I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.) Sure enough, they cited a paper of mine, but it was &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/11231899&#34;&gt;Giglo et al. (2001) Am J Hum Genet 68: 874–883&lt;/a&gt;, on &amp;ldquo;my&amp;rdquo; chr 8p inversion, and not what I&amp;rsquo;d expected, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;my autozygosity paper&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;What did the chr 8p inversion have to do with this?  Search for &amp;ldquo;[36]&amp;rdquo; and you&amp;rsquo;ll find:&lt;/p&gt;
-
-&lt;blockquote&gt;
-We find that the local density of IBD blocks of all lengths is relatively constant across the genome, but in certain regions the length distribution is systematically perturbed (see Figure S1), including around certain centromeres and the large inversion on chromosome 8 [36], also seen by [35].
-&lt;/blockquote&gt;
-
-&lt;p&gt;The chr 8p inversion presents an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;interesting data analysis story&lt;/a&gt; from my postdoc years.  In a nutshell: I was studying human crossover interference, found poor model fit for maternal chr 8 that was due to tight apparent triple-crossovers in two individuals in each of two families, hypothesized that there was an inversion in the region, but it would have to be both &lt;em&gt;long&lt;/em&gt; and with both orientations being &lt;em&gt;common&lt;/em&gt;. The inversion was confirmed via FISH, and it&amp;rsquo;s something like 5 Mbp long, with the frequencies of the two orientations being 40 and 60% in people of European ancestry.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;marshfield-maps-and-crossover-interference&#34;&gt;Marshfield maps and crossover interference&lt;/h3&gt;
-
-&lt;p&gt;I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9718341&#34;&gt;construction of human genetic maps&lt;/a&gt; using data from eight of the &lt;a href=&#34;http://www.cephb.fr/en/cephdb/&#34;&gt;CEPH&lt;/a&gt; families.  I was particularly interested in &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10801387&#34;&gt;characterizing crossover interference&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I found that the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/7713406&#34;&gt;gamma model&lt;/a&gt; fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But the model fit poorly for maternal chromosome 8:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
-
-&lt;p&gt;Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I saw these tight triple-crossovers and thought, &amp;ldquo;Oops!  I got the marker order wrong.&amp;rdquo; (Remember, this was before we had a physical map.)  But if you reverse the orientation of the region, crossovers in other individuals would become triple-crossovers.&lt;/p&gt;
-
-&lt;p&gt;So I thought, perhaps this is an inversion polymorphism: some individuals have the region in one orientation and others have it in the opposite orientation.  But it would have to be long (it was an estimated 12 cM in females: something like 5 Mbp).  And both orientations would have to be common, since they would each need to be present in the homozygous state for there to be recombination events.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-inversion&#34;&gt;The inversion&lt;/h3&gt;
-
-&lt;p&gt;Jim Weber contacted David Ledbetter, and folks in his group investigated the region and confirmed, via FISH, that there was indeed a long, common inversion polymorphisms on chromosome 8p.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_fish.jpg&#34; alt=&#34;Inversion, FISH&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They marked one side of the region in green and the other side red, and in the left panels green is above red on both chromosomes, in the right panels red is above green on both chromosomes, and in the center there is one chromosome with each orientation.  Analysis of further subjects indicated that the two orientations have allele frequencies 40 and 60% in people of European ancestry.&lt;/p&gt;
-
-&lt;h3 id=&#34;authorship-order&#34;&gt;Authorship order&lt;/h3&gt;
-
-&lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/&#34;&gt;referred to this story in passing&lt;/a&gt; in the past.  A fortuitous clinical connection was made to this chr 8p inversion, and due a dispute over author order, what should have been one paper got split into two, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;my half&lt;/a&gt; trickled down the journal chain to finally appear in &lt;a href=&#34;http://projecteuclid.org/DPubS?service=UI&amp;amp;version=1.0&amp;amp;verb=Display&amp;amp;page=toc&amp;amp;handle=euclid.lnms/1215091126&#34;&gt;Terry Speed&amp;rsquo;s Festschrift&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I try not to discuss author order anymore.  I care only about presence/absence.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-related-story-autozygosity&#34;&gt;A related story: autozygosity&lt;/h3&gt;
-
-&lt;p&gt;This wasn&amp;rsquo;t the only surprising finding to come from my efforts on the &lt;a href=&#34;http://research.marshfieldclinic.org/genetics/GeneticResearch/compMaps.asp&#34;&gt;Marshfield genetic maps&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of &lt;a href=&#34;http://compgen.rutgers.edu/old/multimap/crimap/&#34;&gt;CRI-MAP&lt;/a&gt; &lt;em&gt;chrompic&lt;/em&gt; output, to find such double crossovers.  Here&amp;rsquo;s a somewhat nicer image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozygosity.png&#34; alt=&#34;Autozygosity&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?&lt;/p&gt;
-
-&lt;p&gt;After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;turned out to be autozygosity&lt;/a&gt;: in two CEPH families, the grandparents were related, and so the parents where homozygous by descent (aka autozygous) for chunks of their genome.&lt;/p&gt;
-
-&lt;h3 id=&#34;moral&#34;&gt;Moral&lt;/h3&gt;
-
-&lt;p&gt;In both of these cases, apparent artifacts in the data led to the most interesting findings in the work. If your model doesn&amp;rsquo;t fit, or you see something odd, ask, &amp;ldquo;Why is that?&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>There was lots of discussion on twitter yesterday about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on The geography of recent genetic ancestry across Europe, particularly regarding the FAQ they&amp;rsquo;d created.
+I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.</description>
     </item>
     
     <item>
@@ -112,14 +39,10 @@ We find that the local density of IBD blocks of all lengths is relatively consta
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
-      <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.  You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.&lt;/p&gt;
-
-&lt;p&gt;If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation.  We need to define the field broadly.&lt;/p&gt;
-
-&lt;p&gt;You may not like what &lt;a href=&#34;http://amstat.org&#34;&gt;some statisticians&lt;/a&gt; do.  You may feel they don&amp;rsquo;t share your values.  They may embarrass you.  But that shouldn&amp;rsquo;t lead us to abandon the term &amp;ldquo;statistics&amp;rdquo;.&lt;/p&gt;
-</description>
+      <description>When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
+If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.
+If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation. We need to define the field broadly.
+You may not like what some statisticians do.</description>
     </item>
     
     <item>
@@ -128,10 +51,8 @@ We find that the local density of IBD blocks of all lengths is relatively consta
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
-      <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>&amp;hellip;if I&amp;rsquo;ve counted correctly.
+I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an open handbook.</description>
     </item>
     
   </channel>

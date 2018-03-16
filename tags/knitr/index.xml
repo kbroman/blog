@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 06 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/knitr/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/knitr/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>knitr in a knutshell tutorial</title>
@@ -16,18 +18,9 @@
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
-      <description>&lt;p&gt;I spent a lot of time this week writing a short tutorial on &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;: &lt;a href=&#34;http://kbroman.github.io/knitr_knutshell&#34;&gt;knitr in a knutshell&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is my third little tutorial. (The previous ones were a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;git/github guide&lt;/a&gt; and a &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;minimal make&lt;/a&gt; tutorial.)&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve gotten really excited about the tools for reproducible research. I think the main reason that statisticians have been so slow to adopt a reproducible workflow is a lack of training.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m hoping that these tutorials, plus the other materials that I&amp;rsquo;m putting together over the course of this semester, for my &lt;a href=&#34;http://kbroman.github.io/Tools4RR&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, will help.&lt;/p&gt;
-
-&lt;p&gt;But take a look at the &lt;a href=&#34;https://github.com/DataScienceSpecialization/courses&#34;&gt;material&lt;/a&gt; that &lt;a href=&#34;http://www.biostat.jhsph.edu/~jleek/&#34;&gt;Jeff&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger&lt;/a&gt;, and &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt; are developing for their &lt;a href=&#34;http://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/&#34;&gt;Data Science MOOCs&lt;/a&gt;; you&amp;rsquo;ll see that mine are pretty humble contributions.&lt;/p&gt;
-</description>
+      <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
+This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
+I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>
     </item>
     
   </channel>

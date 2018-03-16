@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/papers/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/papers/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Reproducibility is hard</title>
@@ -16,54 +18,8 @@
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
-      <description>
-
-&lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
-
-&lt;p&gt;I recently had a &lt;a href=&#34;http://g3journal.org/content/early/2015/08/21/g3.115.019778.abstract&#34;&gt;paper&lt;/a&gt; accepted at &lt;a href=&#34;http://g3journal.org/&#34;&gt;G3&lt;/a&gt;, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later. I did the bulk of the writing in October, 2012, but it wasn&amp;rsquo;t until February, 2014, that I posted a &lt;a href=&#34;http://arxiv.org/abs/1402.2633&#34;&gt;preprint&lt;/a&gt; at &lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv&lt;/a&gt;, which I then finally submitted to G3 in June this year.&lt;/p&gt;
-
-&lt;p&gt;In writing up the paper in late 2012, I re-did my entire analysis from scratch, to make the whole thing more cleanly reproducible. So with the paper now in press, I&amp;rsquo;ve placed all of that in a &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt;, but as it turned out, there was still a lot more to do. (You can tell, from the repository, that this is an old project, because there are a couple of Perl scripts in there. It&amp;rsquo;s been a long time since I&amp;rsquo;ve switched from Perl to Python and Ruby. I still can&amp;rsquo;t commit to just one of Python or Ruby&amp;hellip;want to stick with Python, as everyone else is using it, but much prefer Ruby.)&lt;/p&gt;
-
-&lt;p&gt;The basic issue is that the raw data is about 1 GB. The clean version of the data is another 1 GB. And then there are results of various intermediate calculations, some are rather slow to calculate, which take up another 100 MB. I can&amp;rsquo;t reasonably put all of that within the GitHub repository.&lt;/p&gt;
-
-&lt;p&gt;Both the raw and clean data have been &lt;a href=&#34;http://phenome.jax.org/db/q?rtn=projects/projdet&amp;amp;reqprojid=532&#34;&gt;posted in the Mouse Phenome Database&lt;/a&gt;. (Thanks to Petr Simecek, Gary Churchill, Molly Bogue, and Elissa Chesler for that!) But the data are in a form that I thought suitable for others, and not quite in the form that I actually used them.&lt;/p&gt;
-
-&lt;p&gt;So, I needed to write a script that would grab the data files from &lt;a href=&#34;http://phenome.jax.org&#34;&gt;MPD&lt;/a&gt; and reorganize them in the way that I&amp;rsquo;d been using them.&lt;/p&gt;
-
-&lt;p&gt;In working on that, I discovered some mistakes in the data posted to MPD: there were a couple of bugs in my code to convert the data from the format I was using into the format I was going to post. (So it was good to spend the time on the script that did the reverse!)&lt;/p&gt;
-
-&lt;p&gt;In addition to the raw and clean data on MPD, I posted a zip file with the 110 MB of intermediate results on &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;figshare&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the end, I&amp;rsquo;m hoping that one can clone the &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt; and just run &lt;a href=&#34;https://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt; and it will download the data and do all of the stuff. If you want to save some time, you could download the &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;zip file from figshare&lt;/a&gt; and unzip that, and then run make.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not quite there, but I think I&amp;rsquo;m close.&lt;/p&gt;
-
-&lt;h3 id=&#34;aspects-i-m-happy-with&#34;&gt;Aspects I&amp;rsquo;m happy with&lt;/h3&gt;
-
-&lt;p&gt;For the most part, my work on this project wasn&amp;rsquo;t terrible.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I wrote an R package, &lt;a href=&#34;https://github.com/kbroman/lineup&#34;&gt;R/lineup&lt;/a&gt;, with the main analysis methods.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That I re-derived the full entire analysis cleanly, in a separate, reproducible document (I used &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;AsciiDoc&lt;/a&gt; and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;) was a good thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The code for the figures and tables are all reasonably clean, and draw from either the original data files or from intermediate calculations produced by the AsciiDoc document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I automated everything with GNU Make.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;what-should-i-have-done-differently&#34;&gt;What should I have done differently?&lt;/h3&gt;
-
-&lt;p&gt;There was a lot more after-the-fact work that I would rather not have to do.&lt;/p&gt;
-
-&lt;p&gt;Making a project reproducible is easier if the data aren&amp;rsquo;t that large and so can be bundled into the GitHub repository with all of the code.&lt;/p&gt;
-
-&lt;p&gt;With a larger data set, I guess the thing to do is recognize, from the start, that the data are going to be sitting elsewhere. So then, I think one should &lt;em&gt;organize the data in the form that you expect to be made public&lt;/em&gt;, and work from those files.&lt;/p&gt;
-
-&lt;p&gt;When you write a script to convert data from one form to another, &lt;em&gt;also write some tests&lt;/em&gt;, to make sure that it worked correctly.&lt;/p&gt;
-
-&lt;p&gt;And then &lt;em&gt;document, document, document!&lt;/em&gt; As with software development, it&amp;rsquo;s hard to document data or analyses after the fact.&lt;/p&gt;
-</description>
+      <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
+I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
@@ -72,54 +28,8 @@
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
-      <description>
-
-&lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
-
-&lt;p&gt;There are very brief quotes from &lt;a href=&#34;http://ivory.idyll.org/blog/&#34;&gt;Titus Brown&lt;/a&gt; and &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger Peng&lt;/a&gt;.  I expect that the author of the item, &lt;a href=&#34;http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden&#34;&gt;Erika Check Hayden&lt;/a&gt;, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.&lt;/p&gt;
-
-&lt;p&gt;Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;That&#39;s the kind of thing that should freak any scientist out.... We don&#39;t have good processes in place to detect that kind of thing in software.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Roger is quoted at the end, as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with both of them, but my initial reaction, from the beginning of the piece, was closer to Roger&amp;rsquo;s: We often have a heck of time getting any code out of people; if we are too hard on people regarding the quality of their code, they might become even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;On the one hand, we want people to produce good code:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;that works&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s readable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s reusable&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And it would be great if, for every bit of code, there was a second programmer who studied it, verified that it was doing the right thing, and offered suggestions for improvement.&lt;/p&gt;
-
-&lt;p&gt;But, on the other hand, it seems really unlikely that journals have the resources to do this. And I worry that a study showing that much scientific software is crap will make people even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;I would like to see the code associated with scientific articles made readily available, during the review process and beyond. But I don&amp;rsquo;t think we (as a scientific community) want to enforce rigorous code review prior to publication.&lt;/p&gt;
-
-&lt;p&gt;Later, on twitter, &lt;a href=&#34;https://twitter.com/ctitusbrown/status/382862626692149248&#34;&gt;Titus took issue&lt;/a&gt; with the &amp;ldquo;not improve how it looks&amp;rdquo; part of what Roger said:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;.@kwbroman @simplystats @rdpeng Please read &lt;http://en.wikipedia.org/wiki/Code_review&gt; you are deeply, significantly, and completely wrong about code review.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks &lt;em&gt;is&lt;/em&gt; important.)&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have enough time this morning to really clean up my thoughts on this issue, and I want to get this out and move on to reading that dissertation that I have to get through by tomorrow. So, let me summarize.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;well written&lt;/em&gt;: does what it&amp;rsquo;s intended to do, readable, reusable.&lt;/p&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;available&lt;/em&gt;. (Otherwise we can&amp;rsquo;t verify that it does what it&amp;rsquo;s intended to do, or reuse it.)&lt;/p&gt;
-
-&lt;p&gt;If we&amp;rsquo;re too hard on people for writing substandard code, we&amp;rsquo;ll discourage the availability. It&amp;rsquo;s an important trade-off.&lt;/p&gt;
-</description>
+      <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
+There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
@@ -128,78 +38,8 @@
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
-      <description>
-
-&lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
-
-&lt;p&gt;I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.) Sure enough, they cited a paper of mine, but it was &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/11231899&#34;&gt;Giglo et al. (2001) Am J Hum Genet 68: 874–883&lt;/a&gt;, on &amp;ldquo;my&amp;rdquo; chr 8p inversion, and not what I&amp;rsquo;d expected, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;my autozygosity paper&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;What did the chr 8p inversion have to do with this?  Search for &amp;ldquo;[36]&amp;rdquo; and you&amp;rsquo;ll find:&lt;/p&gt;
-
-&lt;blockquote&gt;
-We find that the local density of IBD blocks of all lengths is relatively constant across the genome, but in certain regions the length distribution is systematically perturbed (see Figure S1), including around certain centromeres and the large inversion on chromosome 8 [36], also seen by [35].
-&lt;/blockquote&gt;
-
-&lt;p&gt;The chr 8p inversion presents an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;interesting data analysis story&lt;/a&gt; from my postdoc years.  In a nutshell: I was studying human crossover interference, found poor model fit for maternal chr 8 that was due to tight apparent triple-crossovers in two individuals in each of two families, hypothesized that there was an inversion in the region, but it would have to be both &lt;em&gt;long&lt;/em&gt; and with both orientations being &lt;em&gt;common&lt;/em&gt;. The inversion was confirmed via FISH, and it&amp;rsquo;s something like 5 Mbp long, with the frequencies of the two orientations being 40 and 60% in people of European ancestry.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;marshfield-maps-and-crossover-interference&#34;&gt;Marshfield maps and crossover interference&lt;/h3&gt;
-
-&lt;p&gt;I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9718341&#34;&gt;construction of human genetic maps&lt;/a&gt; using data from eight of the &lt;a href=&#34;http://www.cephb.fr/en/cephdb/&#34;&gt;CEPH&lt;/a&gt; families.  I was particularly interested in &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10801387&#34;&gt;characterizing crossover interference&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I found that the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/7713406&#34;&gt;gamma model&lt;/a&gt; fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But the model fit poorly for maternal chromosome 8:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
-
-&lt;p&gt;Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I saw these tight triple-crossovers and thought, &amp;ldquo;Oops!  I got the marker order wrong.&amp;rdquo; (Remember, this was before we had a physical map.)  But if you reverse the orientation of the region, crossovers in other individuals would become triple-crossovers.&lt;/p&gt;
-
-&lt;p&gt;So I thought, perhaps this is an inversion polymorphism: some individuals have the region in one orientation and others have it in the opposite orientation.  But it would have to be long (it was an estimated 12 cM in females: something like 5 Mbp).  And both orientations would have to be common, since they would each need to be present in the homozygous state for there to be recombination events.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-inversion&#34;&gt;The inversion&lt;/h3&gt;
-
-&lt;p&gt;Jim Weber contacted David Ledbetter, and folks in his group investigated the region and confirmed, via FISH, that there was indeed a long, common inversion polymorphisms on chromosome 8p.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_fish.jpg&#34; alt=&#34;Inversion, FISH&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They marked one side of the region in green and the other side red, and in the left panels green is above red on both chromosomes, in the right panels red is above green on both chromosomes, and in the center there is one chromosome with each orientation.  Analysis of further subjects indicated that the two orientations have allele frequencies 40 and 60% in people of European ancestry.&lt;/p&gt;
-
-&lt;h3 id=&#34;authorship-order&#34;&gt;Authorship order&lt;/h3&gt;
-
-&lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/&#34;&gt;referred to this story in passing&lt;/a&gt; in the past.  A fortuitous clinical connection was made to this chr 8p inversion, and due a dispute over author order, what should have been one paper got split into two, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;my half&lt;/a&gt; trickled down the journal chain to finally appear in &lt;a href=&#34;http://projecteuclid.org/DPubS?service=UI&amp;amp;version=1.0&amp;amp;verb=Display&amp;amp;page=toc&amp;amp;handle=euclid.lnms/1215091126&#34;&gt;Terry Speed&amp;rsquo;s Festschrift&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I try not to discuss author order anymore.  I care only about presence/absence.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-related-story-autozygosity&#34;&gt;A related story: autozygosity&lt;/h3&gt;
-
-&lt;p&gt;This wasn&amp;rsquo;t the only surprising finding to come from my efforts on the &lt;a href=&#34;http://research.marshfieldclinic.org/genetics/GeneticResearch/compMaps.asp&#34;&gt;Marshfield genetic maps&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of &lt;a href=&#34;http://compgen.rutgers.edu/old/multimap/crimap/&#34;&gt;CRI-MAP&lt;/a&gt; &lt;em&gt;chrompic&lt;/em&gt; output, to find such double crossovers.  Here&amp;rsquo;s a somewhat nicer image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozygosity.png&#34; alt=&#34;Autozygosity&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?&lt;/p&gt;
-
-&lt;p&gt;After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;turned out to be autozygosity&lt;/a&gt;: in two CEPH families, the grandparents were related, and so the parents where homozygous by descent (aka autozygous) for chunks of their genome.&lt;/p&gt;
-
-&lt;h3 id=&#34;moral&#34;&gt;Moral&lt;/h3&gt;
-
-&lt;p&gt;In both of these cases, apparent artifacts in the data led to the most interesting findings in the work. If your model doesn&amp;rsquo;t fit, or you see something odd, ask, &amp;ldquo;Why is that?&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>There was lots of discussion on twitter yesterday about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on The geography of recent genetic ancestry across Europe, particularly regarding the FAQ they&amp;rsquo;d created.
+I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.</description>
     </item>
     
     <item>
@@ -208,68 +48,11 @@ We find that the local density of IBD blocks of all lengths is relatively consta
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
-      <description>
-
-&lt;p&gt;Yesterday, I saw &lt;a href=&#34;https://twitter.com/Ananyo/status/329545985149775873&#34;&gt;this tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/Ananyo&#34;&gt;@Ananyo&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
-&lt;/blockquote&gt;
-
-&lt;p&gt;So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah.  I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment?  WTF?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So I &lt;a href=&#34;https://twitter.com/kwbroman/status/329560393922002944&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-DNA: Celebrate the unknowns, like this Nature comment, which costs \$18. [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
-&lt;/blockquote&gt;
-
-&lt;p&gt;And thinking about it some more, I got more annoyed, and &lt;a href=&#34;https://twitter.com/kwbroman/status/329566578024775683&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d have to be desperate or stupid to pay; at \$1-2, prob&#39;ly lots would.
-&lt;/blockquote&gt;
-
-&lt;p&gt;And then I thought, I&amp;rsquo;ll &lt;a href=&#34;https://twitter.com/kwbroman/status/329575795716661250&#34;&gt;ask Nature directly&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-@NatureMagazine Why is the per-article charge so high? It seems like you&#39;d make more profit at \$2/article.
-&lt;/blockquote&gt;
-
-&lt;p&gt;And &lt;a href=&#34;https://twitter.com/NatureMagazine&#34;&gt;they&lt;/a&gt; &lt;a href=&#34;https://twitter.com/NatureMagazine/status/329655405355614210&#34;&gt;responded&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-@kwbroman For a while now, individual papers can be rented through @readcube for \$3-5. A full tablet subscription to Nature costs \$35.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But that didn&amp;rsquo;t quite answer my question.  So I &lt;a href=&#34;https://twitter.com/kwbroman/status/329683444051365889&#34;&gt;asked&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-.@NatureMagazine So is the \$18 charge for a 2 pg PDF just to discourage piracy?
-&lt;/blockquote&gt;
-
-&lt;p&gt;I thought a lot about whether to put &amp;ldquo;piracy&amp;rdquo; in quotes or not, or whether to write &amp;ldquo;copyright infringement&amp;rdquo; instead.&lt;/p&gt;
-
-&lt;p&gt;But anyway, they &lt;a href=&#34;https://twitter.com/NatureMagazine/status/329692960205725696&#34;&gt;responded&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-@kwbroman just as with any product, the more you buy, the more you save. Media/publishing subscriptions have worked this way for decades.
-&lt;/blockquote&gt;
-
-&lt;p&gt;That again didn&amp;rsquo;t quite answer my question.&lt;/p&gt;
-
-&lt;h3 id=&#34;it-s-a-scam&#34;&gt;It&amp;rsquo;s a scam&lt;/h3&gt;
-
-&lt;p&gt;I still don&amp;rsquo;t understand the \$18 business.  It&amp;rsquo;s not &amp;ldquo;The more you buy, the more you save.&amp;rdquo;  It&amp;rsquo;s, &amp;ldquo;Buy the whole season for \$35, or buy 5 min from Episode 1 for \$18.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I understand that the cover price of &lt;a href=&#34;http://www.wired.com&#34;&gt;Wired&lt;/a&gt; is \$5 per issue, while I could get a year&amp;rsquo;s subscription for \$15-20.  But that&amp;rsquo;s not the same as \$18 for &lt;em&gt;one article&lt;/em&gt; vs \$200 per year.&lt;/p&gt;
-
-&lt;p&gt;The \$18 for a two-page PDF is like 900 numbers and paycheck advances.  These are &lt;em&gt;scams&lt;/em&gt; taking advantage of desperate or stupid people.&lt;/p&gt;
-
-&lt;p&gt;If they don&amp;rsquo;t want to sell the PDFs for individual articles for a reasonable price, they should just not sell them at all.&lt;/p&gt;
-</description>
+      <description>Yesterday, I saw this tweet by @Ananyo
+ Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
+But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
+So I tweeted:
+ DNA: Celebrate the unknowns, like this Nature comment, which costs \$18.</description>
     </item>
     
     <item>
@@ -278,77 +61,8 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
-      <description>
-
-&lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But couldn&amp;rsquo;t they include the Methods section in the pdf for the article?  For example, consider &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2591.html&#34;&gt;this article in Nature Genetics&lt;/a&gt;; the Methods section is only available in the html version of the paper. The PDF says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Methods and any associated references are available in the online version of the paper.
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;Methods&lt;/em&gt; are important.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be separated from the main text.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be placed after the results (as so many journals, including &lt;a href=&#34;http://www.plosbiology.org&#34;&gt;PLoS&lt;/a&gt;, do).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be in a smaller font than the main text (as &lt;a href=&#34;http://www.pnas.org&#34;&gt;PNAS&lt;/a&gt; does).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They certainly shouldn&amp;rsquo;t be endnotes (as &lt;a href=&#34;http://www.sciencemag.org/content/276/5316/1268.long&#34;&gt;Science&lt;/a&gt; used to do).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;supplements-annoy-me-too&#34;&gt;Supplements annoy me too&lt;/h3&gt;
-
-&lt;p&gt;I love supplemental material: authors can give the full details, and they can provide as many supplemental figures and tables as they want.&lt;/p&gt;
-
-&lt;p&gt;But supplements can be a real pain.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to click on &lt;a href=&#34;http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003321#s5&#34;&gt;10 different links&lt;/a&gt;.  Put it all in one document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to open Word.  Put text and figures in a PDF.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to open Excel.  Put data in a &lt;a href=&#34;http://www.caitlinrivers.com/1/post/2013/04/send-me-your-data-pdf-is-fine-said-no-one-ever-how-to-share-your-data-effectively.html&#34;&gt;plain text file&lt;/a&gt;, preferably as part of a git repository with related code.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At least supplements are now included at the journal sites!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bioinformatics.oxfordjournals.org/content/19/8/956.long&#34;&gt;This paper&lt;/a&gt; in Bioinformatics refers to a separate site for supplemental information:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Expression data and supplementary information are available at
-http://www.rii.com/publications/2003/HE_SDS.htm.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But &lt;code&gt;rii.com&lt;/code&gt; doesn&amp;rsquo;t exist anymore.  I was able to find &lt;a href=&#34;http://web.archive.org/web/20080719125540/http://www.rii.com/publications/2003/HE_SDS.html&#34;&gt;the supplement&lt;/a&gt; using the &lt;a href=&#34;http://web.archive.org&#34;&gt;Wayback Machine&lt;/a&gt;, but&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The link in the paper was wrong: It should be &lt;code&gt;.html&lt;/code&gt; not &lt;code&gt;.htm&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The final version on Wayback has a corrupted PDF, though one can go back to previous versions that are okay.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;i-like-genetics-http-www-genetics-org-and-g3-http-www-g3-journal-org&#34;&gt;I like &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3-journal.org&#34;&gt;G3&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3-journal.org&#34;&gt;G3&lt;/a&gt; put the Methods where they belong (before the results), and when you download the PDF for an article in Genetics, it includes the supplement.  For a G3 article, the supplement isn&amp;rsquo;t included in the article PDF, but at least you can the whole supplement as a single PDF.&lt;/p&gt;
-
-&lt;p&gt;For example, consider my recent Genetics articles:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org/content/190/2/403.full&#34;&gt;Genotype probabilities at intermediate generations in the construction of recombinant inbred lines&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org/content/192/1/267.full&#34;&gt;Mapping quantitative trait loci onto a phylogenetic tree&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you click on &amp;ldquo;Full Text (PDF),&amp;rdquo; you get the article plus the 3 supplemental figures and 23 supplemental tables in the former case, and article plus the 17 supplemental figures and 2 supplemental tables in the latter case.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
+ To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
@@ -357,34 +71,9 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
-      <description>&lt;p&gt;Much has been written about &lt;a href=&#34;http://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
-
-&lt;p&gt;For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.&lt;/p&gt;
-
-&lt;p&gt;For my recent papers, I have developed a sort of system so that I can reproduce the results myself.  I use a combination tools, including &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;, &lt;a href=&#34;http://www.stat.uni-muenchen.de/~leisch/Sweave/&#34;&gt;Sweave&lt;/a&gt;, &lt;a href=&#34;http://www.cpan.org&#34;&gt;perl&lt;/a&gt;, and, of course, &lt;a href=&#34;http://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;ve not been distributing the detailed code behind my papers.  It&amp;rsquo;s not always pretty, and it is not well documented.  (And &amp;ldquo;not always&amp;rdquo; is a bit of a stretch &amp;ndash; more like &amp;ldquo;seldom.&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;When &lt;a href=&#34;http://www.stodden.net&#34;&gt;Victoria Stodden&lt;/a&gt; visited Madison last fall, I was inspired to release this code, but I never carried through on that.&lt;/p&gt;
-
-&lt;p&gt;But then last night I &lt;a href=&#34;https://twitter.com/kwbroman/status/310633718551293953&#34;&gt;twittered&lt;/a&gt; an example graph from &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl.pdf&#34;&gt;a paper&lt;/a&gt;, was (appropriately) &lt;a href=&#34;https://twitter.com/fellgernon/status/310647658387734528&#34;&gt;asked to produce code&lt;/a&gt;, and so created a &lt;a href=&#34;https://github.com/kbroman/phyloQTLpaper/&#34;&gt;github repository&lt;/a&gt; with the bulk of the code for that paper.&lt;/p&gt;
-
-&lt;p&gt;The repository is incomplete: it doesn&amp;rsquo;t include the code to do the main analysis and simulations, but just to make the figures, starting from those results.  I&amp;rsquo;ll work to add those additional details.&lt;/p&gt;
-
-&lt;p&gt;And, even once complete, it will be far from perfect.  The code is (or will be) there, but it would take a bit of work for an interested reader to figure out what it is doing, since much of it is undocumented and poorly written.&lt;/p&gt;
-
-&lt;p&gt;But if we ask for perfection, we&amp;rsquo;ll get nothing.  If we ask for the minimal materials for reproducibility, we may get it.&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s my goal: to focus first on &lt;em&gt;minimal accessibility&lt;/em&gt; of the code and data behind a paper, even if it is minimally readable and so might take quite a bit of effort for someone else to follow.&lt;/p&gt;
-
-&lt;p&gt;One last point: I use local &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; repositories for my draft analyses and for the whole process of writing a paper.  I could post that whole history, but &lt;a href=&#34;http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;as I said before&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;Open source means everyone can see my stupid mistakes. Version control means everyone can see every stupid mistake I&#39;ve ever made.&lt;/blockquote&gt;
-
-&lt;p&gt;It would be easy to make my working repository public, but it would include things like referees&amp;rsquo; reports and my responses to them, as well as the gory details on all of the stupid things that I might do along the way to publication.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m more comfortable releasing just a snapshot of the final product.&lt;/p&gt;
-</description>
+      <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
+For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
+For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
     </item>
     
     <item>
@@ -393,8 +82,7 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/10/23/wired-on-statistics/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.wired.com&#34;&gt;Wired magazine&lt;/a&gt; had a short article last month on &lt;a href=&#34;http://www.wired.com/wiredscience/2012/10/mf-learn-to-read-a-scientific-report/&#34;&gt;how to read a scientific report&lt;/a&gt;, which basically was about how to interpret the statistical results.  It&amp;rsquo;s reasonably well done.&lt;/p&gt;
-</description>
+      <description>Wired magazine had a short article last month on how to read a scientific report, which basically was about how to interpret the statistical results. It&amp;rsquo;s reasonably well done.</description>
     </item>
     
     <item>
@@ -403,12 +91,8 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
-      <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;http://thalamus.wustl.edu/cheverudlab/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
-
-&lt;p&gt;I poked through the paper, and my eye was attracted to the following figure.  These are supposed to be functions, but some weird smoother was used, and the results are not functions.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://g3journal.org/content/2/9/1019/F3.large.jpg&#34;&gt;&lt;img src=&#34;http://g3journal.org/content/2/9/1019/F3.medium.gif&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>I was flipping though the contents of G3 and saw this paper, which includes Jim Cheverud as an author.
+I poked through the paper, and my eye was attracted to the following figure. These are supposed to be functions, but some weird smoother was used, and the results are not functions.</description>
     </item>
     
     <item>
@@ -417,14 +101,9 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/17/trees/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/tree.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it.  Here&amp;rsquo;s a link to &lt;a href=&#34;http://kbroman.files.wordpress.com/2012/05/trees1.pdf&#34;&gt;the full page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with &lt;a href=&#34;http://www.stat.wisc.edu/~ane&#34;&gt;considerable help&lt;/a&gt;), regarding phylogenetic trees.  It&amp;rsquo;s part of &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl_combined.pdf&#34;&gt;this paper&lt;/a&gt;, which I&amp;rsquo;m getting ready to re-submit.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
+That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
+These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>
     </item>
     
     <item>
@@ -433,14 +112,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</guid>
-      <description>&lt;p&gt;A &lt;a href=&#34;http://www.genetics.org/site/misc/MouseGeneticResources.xhtml&#34;&gt;batch of 15 papers&lt;/a&gt; on the mouse Collaborative Cross appeared in &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt; today, including two of my own:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Broman KW (2012) &lt;a href=&#34;http://www.genetics.org/content/190/2/403.full&#34;&gt;Genotype probabilities at intermediate generations in the construction of recombinant inbred lines&lt;/a&gt;. &lt;em&gt;Genetics&lt;/em&gt; 190:403-412&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Broman KW (2012) &lt;a href=&#34;http://www.g3journal.org/content/2/2/199.full&#34;&gt;Haplotype probabilities in advanced intercross populations&lt;/a&gt;. &lt;em&gt;G3&lt;/em&gt; 2:199-202&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>A batch of 15 papers on the mouse Collaborative Cross appeared in Genetics and G3 today, including two of my own:
+ Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
+ Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202
+  </description>
     </item>
     
   </channel>

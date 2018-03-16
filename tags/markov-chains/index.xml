@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 20 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/markov-chains/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/markov-chains/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>More on Chutes &amp; Ladders</title>
@@ -16,64 +18,9 @@
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/mmaenner/status/335478612084006912&#34;&gt;Matt Maenner asked&lt;/a&gt; about the sawtooth pattern in the &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;figure&lt;/a&gt; in &lt;a href=&#34;http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;my last post on Chutes &amp;amp; Ladders&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Damn you, Matt!  I thought I was done with this.  Don&amp;rsquo;t feed my obsession.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/kwbroman/status/335499296193536000&#34;&gt;My response&lt;/a&gt; was that if the game ends early, it&amp;rsquo;s even more likely that it&amp;rsquo;ll be the kid who went first who won.  &lt;em&gt;But&lt;/em&gt;, my intuition was wrong: exactly the opposite is true. &lt;em&gt;It is&lt;/em&gt; the advantage to the first player that causes the sawtooth pattern, but that advantage &lt;em&gt;increases&lt;/em&gt; with the number of rounds rather than decreases.&lt;/p&gt;
-
-&lt;h3 id=&#34;numerical-results&#34;&gt;Numerical results&lt;/h3&gt;
-
-&lt;p&gt;While it&amp;rsquo;s fast and easy to study the Chutes &amp;amp; Ladders game by simulation, if you want to answer questions more precisely, it&amp;rsquo;s best to switch to more exact results.&lt;/p&gt;
-
-&lt;p&gt;Consider a single individual playing the game, and let &lt;em&gt;X&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; be
-his/her location at round &lt;em&gt;n&lt;/em&gt;. The &lt;em&gt;X&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;
-form a &lt;a href=&#34;http://en.wikipedia.org/wiki/Markov_chain&#34;&gt;&lt;em&gt;Markov chain&lt;/em&gt;&lt;/a&gt;,
-in that the future (&lt;em&gt;X&lt;sub&gt;n+1&lt;/sub&gt;&lt;/em&gt;), given the present ($X_n$),
-is conditionally independent of the history (&lt;em&gt;X&lt;sub&gt;1&lt;/sub&gt;&lt;/em&gt;, &amp;hellip;, &lt;em&gt;X&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s relatively easy to construct the transition matrix of the chain.  (See my &lt;a href=&#34;https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r&#34;&gt;R code&lt;/a&gt;.)  This is a matrix &lt;em&gt;P&lt;/em&gt;, with &lt;em&gt;P&lt;sub&gt;ij&lt;/sub&gt;&lt;/em&gt; = Pr(&lt;em&gt;X&lt;sub&gt;n+1&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;j&lt;/em&gt; | &lt;em&gt;X&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;i&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Then the probability that a player has reached state 100 by round $n$ is
-(1, 0, &amp;hellip;, 0) &lt;em&gt;P&lt;sup&gt;n&lt;/sup&gt;&lt;/em&gt; (0, &amp;hellip;, 0, 1)&amp;rsquo;.  That&amp;rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this $q_n$.  You can get the probability distribution by differences, say &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; - &lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;To calculate the number of rounds to complete a game with &lt;em&gt;k&lt;/em&gt; players, you want the minimum of &lt;em&gt;k&lt;/em&gt; independent draws from this distribution.  The probability that a game with $k$ players is complete by round n is 1 - (1-&lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k&lt;/sup&gt;&lt;/em&gt;.  And again you can get the probability distributions by differences.  Here&amp;rsquo;s a picture.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png&#34; alt=&#34;No. rounds to complete Chutes &amp;amp; Ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;advantage-to-the-first-player&#34;&gt;Advantage to the first player&lt;/h3&gt;
-
-&lt;p&gt;Now, regarding the advantage to the first player: note that the first
-player wins in exactly &lt;em&gt;n&lt;/em&gt; steps if he gets to the finish at n steps
-and none of the other players are done by &lt;em&gt;n-1&lt;/em&gt; steps.  So, with &lt;em&gt;k&lt;/em&gt;
-players, the probability that the first player wins in exactly &lt;em&gt;n&lt;/em&gt; steps is &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; (1-&lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k-1&lt;/sup&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;The chance that the second player wins in exactly n steps is
-(1-&lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;) &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;
-(1-&lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k-2&lt;/sup&gt;&lt;/em&gt;, with the last term included only
-if there are &lt;em&gt;k&lt;/em&gt; &amp;gt; 2 players.&lt;/p&gt;
-
-&lt;p&gt;From this idea, it&amp;rsquo;s straightforward to calculate the probability that
-the first player wins given that the game is complete at round &lt;em&gt;n&lt;/em&gt;.
-Here&amp;rsquo;s a plot of that probability as a function of the number of
-players, relative to the nominal probability (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png&#34; alt=&#34;Advantage to the first player in Chutes &amp;amp; Ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that &lt;em&gt;n&lt;/em&gt;=7 is the minimum number of rounds to complete the game.
-I&amp;rsquo;d thought that the first player&amp;rsquo;s advantage went down over time, but
-the opposite is true.&lt;/p&gt;
-
-&lt;h3 id=&#34;no-spins-to-end-the-game&#34;&gt;No. spins to end the game&lt;/h3&gt;
-
-&lt;p&gt;Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;the simulation-based figure in my last post&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png&#34; alt=&#34;No. spins to complete Chutes &amp;amp; Ladders, numerical results&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see, the sawtooth pattern becomes more pronounced with the number of rounds, but then it gets lost in the downward slope of the distribution on the right side.  (Again, see my &lt;a href=&#34;https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r&#34;&gt;R code&lt;/a&gt;.)&lt;/p&gt;
-</description>
+      <description>Matt Maenner asked about the sawtooth pattern in the figure in my last post on Chutes &amp;amp; Ladders.
+Damn you, Matt! I thought I was done with this. Don&amp;rsquo;t feed my obsession.
+My response was that if the game ends early, it&amp;rsquo;s even more likely that it&amp;rsquo;ll be the kid who went first who won. But, my intuition was wrong: exactly the opposite is true. It is the advantage to the first player that causes the sawtooth pattern, but that advantage increases with the number of rounds rather than decreases.</description>
     </item>
     
     <item>
@@ -82,32 +29,10 @@ the opposite is true.&lt;/p&gt;
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
-      <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I saw an &lt;a href=&#34;http://datagenetics.com/blog/november12011/&#34;&gt;interesting mathematical analysis of the game&lt;/a&gt; a few years ago, but it seems to be offline, though &lt;a href=&#34;http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/&#34;&gt;you can read it&lt;/a&gt; via the &lt;a href=&#34;http://web.archive.org/&#34;&gt;wayback machine&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So I wrote a bit of &lt;a href=&#34;https://gist.github.com/kbroman/5600209&#34;&gt;R code to simulate the game&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the distribution of the number of spins to complete the game, by number of players:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34; alt=&#34;No. spins in chutes &amp;amp; ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With two players, the average number of spins is 52, with a 90th percentile of 88.&lt;/p&gt;
-
-&lt;p&gt;If you add a third player, the average increases to 65, and the 90th percentile increases to 103.  You&amp;rsquo;re playing fewer rounds, but each round is three times as long. If you add a fourth player, the average is 76 and the 90th percentile is 117.&lt;/p&gt;
-
-&lt;p&gt;So, in trying to minimize the agony, it seems best to not encourage my eight-year-old son to join us in the game.  If he plays with us, there&amp;rsquo;s a 63% chance that it will take longer.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s particularly true because then the chance of my daughter winning drops from about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; to about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.&lt;/p&gt;
-
-&lt;p&gt;That raises another question: if I let her go first, what advantage does that give her?  Not much.  The chance that the person who goes first will win is 50.9%, 34.4%, and 25.9%, respectively, when there are 2, 3, and 4 players.  So not a noticeable amount.  Thus I cheat (on her behalf). Really, though, I&amp;rsquo;m cheating in order to shorten the game as much as to ensure that she wins.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: There&amp;rsquo;s a close connection between this problem and my work on the multiple-strain recombinant inbred lines. (See &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/15545647&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/22345609&#34;&gt;that&lt;/a&gt;.)  I&amp;rsquo;m tempted to play around with it some more.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/&#34;&gt;Additional numerical results here.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;
+I saw an interesting mathematical analysis of the game a few years ago, but it seems to be offline, though you can read it via the wayback machine.
+But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;
+So I wrote a bit of R code to simulate the game.</description>
     </item>
     
   </channel>

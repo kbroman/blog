@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 03 Nov 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/exploratory-data-analysis/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/exploratory-data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
@@ -16,30 +18,8 @@
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
-      <description>&lt;p&gt;Last week, I &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
-
-&lt;p&gt;I later emailed &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi&#34;&gt;Mona Chalabi&lt;/a&gt;, and she and &lt;a href=&#34;http://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; quickly posted the data to &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. (That repository has a lot of interesting data, and if you see data at 538 that you&amp;rsquo;re interested in, just ask them!)&lt;/p&gt;
-
-&lt;p&gt;I was curious to look at how I&amp;rsquo;d done with my measurements and data entry. Here&amp;rsquo;s a plot of my percent errors:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png&#34; alt=&#34;Percent measurement errors in Karl&#39;s car crash stats&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Not too bad, really. Here are the biggest problems:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Mississippi, non-distracted: off by 6%, but that corresponded to 0.5 mm.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Rhode Island and Ohio, speeding: off by 40 and 35%, respectively. I&amp;rsquo;d written down 8 and 9 mm rather than 13 and 14 mm.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Maine and Indiana, alcohol: wrote 15.5 and 14.5 mm, but typed 13.5 and 13 mm. In the former, I think I just misinterpreted my writing; in the latter, I think I wrote the number for the state below (Iowa).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s also interesting to note that my &amp;ldquo;total&amp;rdquo; and &amp;ldquo;non-distracted&amp;rdquo; were almost entirely under-estimates: probably an error in the measurement of the overall width of the bar chart.&lt;/p&gt;
-
-&lt;p&gt;Also note: &lt;a href=&#34;https://twitter.com/brycem&#34;&gt;@brycem&lt;/a&gt; had recommended using &lt;a href=&#34;http://arohatgi.info/WebPlotDigitizer/&#34;&gt;WebPlotDigitizer&lt;/a&gt; for digitizing data from images.&lt;/p&gt;
-</description>
+      <description>Last week, I created revised versions of graphs of car crash statistics by state (including an interactive version), from a post by Mona Chalabi at 538.
+Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture on creating effective figures and tables, I just read the data off printed versions of the bar charts, using a ruler.</description>
     </item>
     
     <item>
@@ -48,14 +28,10 @@
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
-      <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
+      <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
 
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;See it in action &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Code &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/car_crashes&#34;&gt;on github&lt;/a&gt;.&lt;/p&gt;
-</description>
+See it in action here.
+Code on github.</description>
     </item>
     
     <item>
@@ -64,63 +40,9 @@
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
-      <description>
-
-&lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/MonaChalabi&#34;&gt;Mona Chalabi&lt;/a&gt; wrote &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;an interesting post on car crash statistics by state&lt;/a&gt;, at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;fivethirtyeight.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png&#34; alt=&#34;chalabi-dearmona-drinking&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m giving a talk today about data visualization [&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;slides&lt;/a&gt; | &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014&#34;&gt;github&lt;/a&gt;], and I thought this would make a good example, so I spent some time creating versions that I like better.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;There are two basic issues with Mona Chalabi&amp;rsquo;s graphs. First, you almost &lt;em&gt;never&lt;/em&gt; want to use alphabetical order. It&amp;rsquo;s useful for finding particular states, but it&amp;rsquo;s not useful for anything else. (Howard Wainer calls this &amp;ldquo;Austria first!&amp;rdquo; See, e.g., &lt;a href=&#34;http://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf&#34;&gt;this paper&lt;/a&gt;.) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.&lt;/p&gt;
-
-&lt;p&gt;Second, the separate figures make comparisons difficult. It would be better to put everything side-by-side. Even better is to do some scatterplots.&lt;/p&gt;
-
-&lt;p&gt;(We shouldn&amp;rsquo;t be too hard on Mona Chalabi, though. Yesterday &lt;a href=&#34;https://twitter.com/MonaChalabi/status/527121946073632768&#34;&gt;she tweeted a great illustration of the suckiness of pie charts&lt;/a&gt;, which I&amp;rsquo;m also using as an example in my lecture today.)&lt;/p&gt;
-
-&lt;h3 id=&#34;dot-plots&#34;&gt;Dot plots&lt;/h3&gt;
-
-&lt;p&gt;I started with a set of side-by-side dot plots, with states ordered by total collisions per billion miles:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/dotplots.png&#34; alt=&#34;Dot plots of crash statistics&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The design was inspired by the figures in &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;Visualizing data patterns with micromaps&lt;/a&gt; (Carr and Pickle, 2010). (I&amp;rsquo;m a huge &lt;a href=&#34;http://mason.gmu.edu/~dcarr/&#34;&gt;Dan Carr&lt;/a&gt; fan.)&lt;/p&gt;
-
-&lt;p&gt;Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes &lt;em&gt;with fatalities&lt;/em&gt;.) And you can more easily see the associations among the different variables.&lt;/p&gt;
-
-&lt;h3 id=&#34;scatterplots&#34;&gt;Scatterplots&lt;/h3&gt;
-
-&lt;p&gt;If you&amp;rsquo;re interested in the associations among the variables, it&amp;rsquo;s best to look at scatterplots. Here are what I viewed to be the most interesting ones:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/scatterplots.png&#34; alt=&#34;Scatterplots of car crash stats&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The association between average insurance premiums and average insurance losses is now clear. And there&amp;rsquo;s an interesting pattern in the association between speeding-related crashes and total crashes. It&amp;rsquo;s like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.&lt;/p&gt;
-
-&lt;p&gt;You can&amp;rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing &lt;a href=&#34;http://www.jstor.org/stable/1269768&#34;&gt;brushing&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h3 id=&#34;the-data&#34;&gt;The data&lt;/h3&gt;
-
-&lt;p&gt;It was a bit of a pain to get the data to make the revised plots. The &lt;a href=&#34;http://www-fars.nhtsa.dot.gov/Main/index.aspx&#34;&gt;National Highway Traffic Safety Administration&lt;/a&gt; has a lot of data, but I didn&amp;rsquo;t want to spend the time trying to make sense of it and extract the numbers.&lt;/p&gt;
-
-&lt;p&gt;I considered trying to do some image analysis to figure out the lengths of the bars in the bar plots, but I don&amp;rsquo;t have much experience with that, so while it&amp;rsquo;d be a great thing to learn, it seemed like I wouldn&amp;rsquo;t be able to get it done in time.&lt;/p&gt;
-
-&lt;p&gt;So I used the old-fashioned method: print the graphs and measure the bars with a ruler.  Here&amp;rsquo;s a scan of some of my measurements (click on it to see the larger version).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/via_ruler.png&#34; alt=&#34;Digitizing car crash stats with a ruler&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Data entry was another not-quite-how-I-want-my-scientific-collaborators-to-be-doing-this aspect. The data are &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/data.R&#34;&gt;here&lt;/a&gt;, as R code, in the most tedious possible form. And surely there are errors.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-code&#34;&gt;The code&lt;/h3&gt;
-
-&lt;p&gt;The code to make the dotplots is &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/plot.R&#34;&gt;here&lt;/a&gt;; the code to make the scatterplots is &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/scatterplots.R&#34;&gt;here&lt;/a&gt;. Not the prettiest, and uses base graphics not the recommended &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt;, and with the &lt;code&gt;grayplot&lt;/code&gt; function in my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; and &lt;a href=&#34;http://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; posted the data at &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. I discuss the errors in my ruler-based measurements &lt;a href=&#34;http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Last week, Mona Chalabi wrote an interesting post on car crash statistics by state, at fivethirtyeight.com.
+I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:
+I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better. There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
     </item>
     
     <item>
@@ -129,72 +51,8 @@
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
-      <description>
-
-&lt;p&gt;Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to &lt;a href=&#34;http://rafalab.jhsph.edu/&#34;&gt;Rafa&amp;rsquo;s work&lt;/a&gt; in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&amp;rsquo;ve re-learned.&lt;/p&gt;
-
-&lt;h3 id=&#34;lesson-1-what-the-hell-is-that&#34;&gt;Lesson 1: What the hell is that?&lt;/h3&gt;
-
-&lt;p&gt;Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf&#34;&gt;autozygosity in the CEPH families&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;a large, common human inversion polymorphism&lt;/a&gt;, and most recently &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf&#34;&gt;sample mixups&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, &amp;ldquo;Hmm, that&amp;rsquo;s interesting,&amp;rdquo; and so I made some more plots.  And then I saw this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.&lt;/p&gt;
-
-&lt;p&gt;Following up on this, it seems that the plaid pattern is the result of a set of bad arrays that should have been but hadn&amp;rsquo;t been detected before.&lt;/p&gt;
-
-&lt;h3 id=&#34;lesson-2-look&#34;&gt;Lesson 2: Look&lt;/h3&gt;
-
-&lt;p&gt;Of course, I wouldn&amp;rsquo;t have found this array problem if I hadn&amp;rsquo;t looked.  And in my several years working on this project, I hadn&amp;rsquo;t looked.&lt;/p&gt;
-
-&lt;p&gt;I was overwhelmed by the 500 microarrays × 6 tissues × 40,000 probes, and so didn&amp;rsquo;t make the sorts of plots that I should have.&lt;/p&gt;
-
-&lt;p&gt;Plus, this is the first real microarray project I&amp;rsquo;ve been involved in, and I haven&amp;rsquo;t known what to look for.  (I should have looked at images of correlation matrices with arrays sorted by similarity as determined from hierarchical clustering.)&lt;/p&gt;
-
-&lt;p&gt;You can&amp;rsquo;t make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/many_boxplots.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.&lt;/p&gt;
-
-&lt;p&gt;I quite like the picture.&lt;/p&gt;
-
-&lt;p&gt;The code is available within my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, though there&amp;rsquo;s not much to it.&lt;/p&gt;
-
-&lt;h3 id=&#34;lesson-3-don-t-trust-anyone&#34;&gt;Lesson 3: Don&amp;rsquo;t trust anyone&lt;/h3&gt;
-
-&lt;p&gt;Don&amp;rsquo;t even trust yourself.&lt;/p&gt;
-
-&lt;p&gt;I relied on others to do the data cleaning.  I should have checked things more carefully.&lt;/p&gt;
-
-&lt;p&gt;I looked at the data quite closely a year or so ago and detected sample mix-ups.  In correcting those mistakes, I spent a lot of time looking at the array data and trying to identify bad arrays.  Clearly I didn&amp;rsquo;t look closely enough, or I just looked at the wrong things.&lt;/p&gt;
-
-&lt;h3 id=&#34;lesson-4-take-your-time&#34;&gt;Lesson 4: Take your time&lt;/h3&gt;
-
-&lt;p&gt;Scientists are under a lot of pressure to produce and often are not exploring data as thoroughly as the data deserve.&lt;/p&gt;
-
-&lt;p&gt;But if you rush through data diagnostics, you could embarrass yourself later.&lt;/p&gt;
-
-&lt;p&gt;More importantly, take the time to follow up on apparent artifacts.  For me, the unintended analyses are more interesting than the planned ones.&lt;/p&gt;
-
-&lt;h3 id=&#34;my-basic-strategy-for-data-diagnostics&#34;&gt;My basic strategy for data diagnostics&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Expect errors&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Think about what might have gone wrong and how such problems might be revealed&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make lots of specially-tailored plots&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Create a (potentially informal) pipeline of all of the useful diagnostics you&amp;rsquo;ve used in the past&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make more plots just because you think they might interesting&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If something looks odd, figure out why&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to Rafa&amp;rsquo;s work in the past decade, but microarray data have really been kicking my ass the last few weeks. Here are a few of the lessons that I&amp;rsquo;ve re-learned.
+Lesson 1: What the hell is that? Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (autozygosity in the CEPH families, a large, common human inversion polymorphism, and most recently sample mixups).</description>
     </item>
     
   </channel>

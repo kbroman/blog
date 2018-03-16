@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 10 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/web/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Use meaningful URLs</title>
@@ -16,44 +18,11 @@
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/natesmoyer/qr-codes-are-stupid&#34;&gt;QR codes are stupid&lt;/a&gt;.  See the well-known &lt;a href=&#34;https://twitter.com/jcolman/status/320917928881033218&#34;&gt;flowchart&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And I don&amp;rsquo;t like &lt;a href=&#34;http://drupal.org&#34;&gt;Drupal&lt;/a&gt;.  Sites that use it give things URLs like &lt;a href=&#34;http://www.genetics.wisc.edu/node/577&#34;&gt;&lt;code&gt;http://www.genetics.wisc.edu/node/577&lt;/code&gt;&lt;/a&gt; for their seminar list.&lt;/p&gt;
-
-&lt;p&gt;And can we get rid of the &lt;code&gt;www&lt;/code&gt;?&lt;/p&gt;
-
-&lt;blockquote&gt;
-&#34;What&#39;s your web site?&#34;
-
-&#34;double-u double-u double-u ...&#34;
-
-&#34;Zzz...&#34;
-&lt;/blockquote&gt;
-
-&lt;p&gt;URLs should be meaningful and short.  I like deep hierarchies of folders, but it makes for long URLs.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bitly.com&#34;&gt;URL-shorteners&lt;/a&gt; help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.  And they tell you nothing about where they&amp;rsquo;re going.&lt;/p&gt;
-
-&lt;p&gt;What you want is something like &lt;a href=&#34;http://bcaffo.com&#34;&gt;&lt;code&gt;bcaffo.com&lt;/code&gt;&lt;/a&gt; or &lt;a href=&#34;http://stodden.net&#34;&gt;&lt;code&gt;stodden.net&lt;/code&gt;&lt;/a&gt;.  Or &lt;a href=&#34;http://rqtl.org&#34;&gt;&lt;code&gt;rqtl.org&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But&amp;hellip;I guess you could just say &amp;ldquo;I&amp;rsquo;ll send you an email.&amp;rdquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;and-customize-title&#34;&gt;And customize &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;And while I have your attention, note that the title of your web page shows up on Google (and at the top of the browser).&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s nice to see others make use of my html code, but you shouldn&amp;rsquo;t &lt;a href=&#34;http://darwin.cwru.edu/~iyengar/publications.html&#34;&gt;leave my name in the title of your publication page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Put the important words first (not like the title for my &amp;ldquo;&lt;a href=&#34;http://www.biostat.wisc.edu/People/faculty/broman.htm&#34;&gt;official page&lt;/a&gt;&amp;rdquo;), and perhaps nothing else. For example, the title &lt;a href=&#34;http://www.pophealth.wisc.edu/faculty/palta&#34;&gt;shouldn&amp;rsquo;t include &amp;ldquo;Drupal&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: Read this: &amp;ldquo;&lt;a href=&#34;http://www.not-implemented.com/urls-are-for-people-not-computers/&#34;&gt;URLs are for People, not Computers&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;I could have just given the URL:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.not-implemented.com/urls-are-for-people-not-computers/&#34;&gt;&lt;code&gt;http://www.not-implemented.com/urls-are-for-people-not-computers&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>QR codes are stupid. See the well-known flowchart.
+And I don&amp;rsquo;t like Drupal. Sites that use it give things URLs like http://www.genetics.wisc.edu/node/577 for their seminar list.
+And can we get rid of the www?
+ &#34;What&#39;s your web site?&#34; &#34;double-u double-u double-u ...&#34; &#34;Zzz...&#34;  URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
+URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>
     </item>
     
   </channel>

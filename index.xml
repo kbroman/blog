@@ -7,8 +7,72 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Mar 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning a new programming language</title>
+      <link>http://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</link>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
+      <description>&lt;p&gt;I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt; or &lt;a href=&#34;https://www.ruby-lang.org/en&#34;&gt;Ruby&lt;/a&gt; for Perl, but the general sentiment stands: use the language that best fits the problem at hand.&lt;/p&gt;
+&lt;div id=&#34;more-blather-about-languages&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;More blather about languages&lt;/h2&gt;
+&lt;p&gt;Long ago, I wrote a &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/perlintro/&#34;&gt;tutorial on Perl&lt;/a&gt;. I’d intended to also write tutorials on C and R, but never got around to them and just wrote resources pages (see &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/Cintro/&#34;&gt;Intro to C&lt;/a&gt; and &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/Rintro/&#34;&gt;Intro to R&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;My Perl code was always terrible: “read-only”, one-off scripts to convert data files from one format to another. I much prefer Ruby, but my Ruby coding involves a whole lot of googling. Python is more popular, and so I’d recommend that to you. (But I really don’t like the handling of regular expression in Python, and that’s like the main thing I want from that sort of language, so I’m sticking with Ruby for data file manipulation.) And these days, what with the whole &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;tidyverse&lt;/a&gt; developments, you can probably get by with R alone, for data file manipulation.&lt;/p&gt;
+&lt;p&gt;Still, sometimes a problem requires you to bring out the big guns. For lots of problems, my most pristine R code won’t be nearly as fast as my sloppiest C or C++ code. So to be fully self-sufficient, I think you want to be able to switch to a lower-level, super efficient (for calculations, not for writing the code) language. Many would advocate for &lt;a href=&#34;https://julialang.org&#34;&gt;Julia&lt;/a&gt; as a way to have one language that is simultaneously easy, readable, and fast. But I still believe in switching between languages (C++ for speed and R for interactive data analysis and graphics, and maybe data file manipulation, though I still prefer to switch again to Ruby).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://thebird.nl/&#34;&gt;Pjotr Prins&lt;/a&gt; had me writing &lt;a href=&#34;https://dlang.org/&#34;&gt;D&lt;/a&gt; for a while, and he continues to advocate for it. And boy was I ever glad to switch from C to C++ and from &lt;code&gt;.C()&lt;/code&gt; to &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt;. html and CSS go without saying. And we should probably add JavaScript, or something that compiles to JavaScript. (I like &lt;a href=&#34;http://coffeescript.org/&#34;&gt;CoffeeScript&lt;/a&gt;; in fact, CoffeeScript is probably my favorite language, presently.)&lt;/p&gt;
+&lt;p&gt;There was also SQL and MongoDB in there, for me. Data scientists need to be comfortable with accessing formal databases.&lt;/p&gt;
+&lt;p&gt;I’m now trying to learn &lt;a href=&#34;http://www.purescript.org/&#34;&gt;PureScript&lt;/a&gt;, but I’m finding it heavy going and so am taking a detour into &lt;a href=&#34;https://www.haskell.org/&#34;&gt;Haskell&lt;/a&gt; for a bit, to try to get the basics of the “purely functional programming” business. But I intend to then go back to PureScript.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-to-learn-programming-language&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How to learn programming language&lt;/h2&gt;
+&lt;p&gt;Anyway, that was a bit too much of a blathery introduction to say: I think it’s good to learn multiple programming languages, and in having tried to do so myself, I’ve got some suggestions about how to go about it (the learning), which might be useful.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set aside substantial and regular blocks of time.&lt;/li&gt;
+&lt;li&gt;Buy a good book. Or buy all the books.&lt;/li&gt;
+&lt;li&gt;Have a particular goal/application in mind.&lt;/li&gt;
+&lt;li&gt;Develop a script, with notes, illustrating key language features you’ve learned.&lt;/li&gt;
+&lt;li&gt;Force yourself to use your new skills.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-aside-substantial-and-regular-blocks-of-time.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Set aside substantial and regular blocks of time.&lt;/h2&gt;
+&lt;p&gt;Learning a new programming language takes time and regular practice. And you really need blocks of 2-4 hours, because if you’ve not touched the language in a week, it’ll take you 30 minutes to get yourself back into it. (What were you doing? What had you learned? What did you want to look at next?) You need a chunk of a couple of hours so you can get yourself back into it and then make a bit of progress.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;buy-a-book.-or-buy-all-the-books.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Buy a book. Or buy all the books.&lt;/h2&gt;
+&lt;p&gt;I recommend finding a good book and following along. Actually, I tend to buy &lt;em&gt;all&lt;/em&gt; the books. But you want at least one, maybe two. Which book is a matter of taste. I’m looking for something that is aimed at someone who can already program in something. But whether a book is the right one for me depends mostly on the types of examples that are used. After that is writing style and quality of explanations.&lt;/p&gt;
+&lt;p&gt;For example, regarding Ruby, many people recommend &lt;a href=&#34;https://www.amazon.com/gp/product/1937785491?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;&lt;em&gt;Programming Ruby&lt;/em&gt;&lt;/a&gt;, but personally I found the examples and the order of topics was just not a good fit for me. I much preferred &lt;a href=&#34;https://www.amazon.com/gp/product/0321584104?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;&lt;em&gt;Eloquent Ruby&lt;/em&gt;&lt;/a&gt; and then &lt;a href=&#34;https://www.amazon.com/gp/product/1617291692?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;&lt;em&gt;The Well-Grounded Rubyist&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ll usually start by looking for something published by &lt;a href=&#34;https://www.oreilly.com&#34;&gt;O’Reilly&lt;/a&gt;; they’re uniformly good books. But in reality my favorite books are published by others: The best book (for &lt;em&gt;me&lt;/em&gt;) on a given language is likely not from O’Reilly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;have-a-particular-goalapplication-in-mind.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Have a particular goal/application in mind.&lt;/h2&gt;
+&lt;p&gt;If you really want to make progress in learning a programming language, you need to move beyond the examples and exercises in a book and start using the language creatively to solve your own problems. Perhaps you have a particularly wonky data file that you want to parse and reorganize. Or maybe you want to write a web app that serves up local bus schedules. I like to switch back-and-forth between slowly developing an understanding of the language and its features, and then hacking away at something more substantial and &lt;em&gt;real&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;develop-a-script-with-notes.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Develop a script, with notes.&lt;/h2&gt;
+&lt;p&gt;My key piece of advice: as you’re learning, develop a bit of a script with comments and other notes that illustrates the various language features that you’ve learned.&lt;/p&gt;
+&lt;p&gt;First, you want to document the details of setting up the various language tools (compiler/interpreter and libraries and such) and how to keep them up-to-date. (This stuff is tedious, painful, and critical. So once you’ve figured it out, you’ll want a record of it so you don’t have to go through it again.) You can find various of my notes on this stuff in my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes&#34;&gt;ProgrammingNotes repository&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;p&gt;But most importantly, you want an informal script that you can quickly skim through or search, because you’ll forget stuff:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How do define a function in this language?&lt;/li&gt;
+&lt;li&gt;What do I use to indicate comments?&lt;/li&gt;
+&lt;li&gt;How do I concatenate two vectors?&lt;/li&gt;
+&lt;li&gt;How do I search for an element in a vector?&lt;/li&gt;
+&lt;li&gt;What was the syntax for list comprehensions again?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s all in that book that you bought, but it’s much easier to find that one thing you’re looking for in the succinct set of notes that you wrote yourself. Here are some examples of what I’ve done: for &lt;a href=&#34;https://github.com/kbroman/Pybroman&#34;&gt;Python&lt;/a&gt;, &lt;a href=&#34;https://github.com/kbroman/Rubybroman&#34;&gt;Ruby&lt;/a&gt;, and &lt;a href=&#34;https://github.com/kbroman/JSbroman&#34;&gt;JavaScript/CoffeeScript&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;force-yourself-to-use-your-new-skills&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Force yourself to use your new skills&lt;/h2&gt;
+&lt;p&gt;Finally, if you really want to adopt the new programming language as part of your working toolkit, you’ll need to force yourself to actually use it in real life.&lt;/p&gt;
+&lt;p&gt;There’ll come a time when you’ll say, “I should do this in Ruby. Nah, I could get it done in Perl in 15 minutes and it would take me two hours to do this in Ruby.” But you’ve got to force yourself to use the new language. In the short term, it’ll be easiest to switch back to the language you’re comfortable with, but if you want to make progress in the new language, you’ve got to put it into regular practice, and that won’t be easy. But it’ll get easier.&lt;/p&gt;
+&lt;p&gt;Ultimately, you’ll have four or five languages floating around in your head and you’ll not remember how to define a function in any of them. And then you’ll be really cool.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>these guys</title>
@@ -363,7 +427,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Tue Dec 19 15:11:18 2017 --&gt;
+&lt;!-- Fri Mar 16 17:06:13 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1520,62 +1584,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;And so then I finally installed the updated version of data.table on my Mac, and saw that there was no operating system dependence; the differences I was seeing were just because of the old vs new version of data.table.&lt;/p&gt;
 
 &lt;p&gt;So data.table was updated in a way where &lt;code&gt;sep=NULL&lt;/code&gt; was no longer working, and in my own code, I had relied on that. So six hours, &lt;a href=&#34;https://twitter.com/kwbroman/status/647125510686920705&#34;&gt;many tweets&lt;/a&gt;, lots of blaming of others, and finally I&amp;rsquo;d worked out that it was all my own fault.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reproducibility is hard</title>
-      <link>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
-      <description>
-
-&lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
-
-&lt;p&gt;I recently had a &lt;a href=&#34;http://g3journal.org/content/early/2015/08/21/g3.115.019778.abstract&#34;&gt;paper&lt;/a&gt; accepted at &lt;a href=&#34;http://g3journal.org/&#34;&gt;G3&lt;/a&gt;, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later. I did the bulk of the writing in October, 2012, but it wasn&amp;rsquo;t until February, 2014, that I posted a &lt;a href=&#34;http://arxiv.org/abs/1402.2633&#34;&gt;preprint&lt;/a&gt; at &lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv&lt;/a&gt;, which I then finally submitted to G3 in June this year.&lt;/p&gt;
-
-&lt;p&gt;In writing up the paper in late 2012, I re-did my entire analysis from scratch, to make the whole thing more cleanly reproducible. So with the paper now in press, I&amp;rsquo;ve placed all of that in a &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt;, but as it turned out, there was still a lot more to do. (You can tell, from the repository, that this is an old project, because there are a couple of Perl scripts in there. It&amp;rsquo;s been a long time since I&amp;rsquo;ve switched from Perl to Python and Ruby. I still can&amp;rsquo;t commit to just one of Python or Ruby&amp;hellip;want to stick with Python, as everyone else is using it, but much prefer Ruby.)&lt;/p&gt;
-
-&lt;p&gt;The basic issue is that the raw data is about 1 GB. The clean version of the data is another 1 GB. And then there are results of various intermediate calculations, some are rather slow to calculate, which take up another 100 MB. I can&amp;rsquo;t reasonably put all of that within the GitHub repository.&lt;/p&gt;
-
-&lt;p&gt;Both the raw and clean data have been &lt;a href=&#34;http://phenome.jax.org/db/q?rtn=projects/projdet&amp;amp;reqprojid=532&#34;&gt;posted in the Mouse Phenome Database&lt;/a&gt;. (Thanks to Petr Simecek, Gary Churchill, Molly Bogue, and Elissa Chesler for that!) But the data are in a form that I thought suitable for others, and not quite in the form that I actually used them.&lt;/p&gt;
-
-&lt;p&gt;So, I needed to write a script that would grab the data files from &lt;a href=&#34;http://phenome.jax.org&#34;&gt;MPD&lt;/a&gt; and reorganize them in the way that I&amp;rsquo;d been using them.&lt;/p&gt;
-
-&lt;p&gt;In working on that, I discovered some mistakes in the data posted to MPD: there were a couple of bugs in my code to convert the data from the format I was using into the format I was going to post. (So it was good to spend the time on the script that did the reverse!)&lt;/p&gt;
-
-&lt;p&gt;In addition to the raw and clean data on MPD, I posted a zip file with the 110 MB of intermediate results on &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;figshare&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the end, I&amp;rsquo;m hoping that one can clone the &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt; and just run &lt;a href=&#34;https://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt; and it will download the data and do all of the stuff. If you want to save some time, you could download the &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;zip file from figshare&lt;/a&gt; and unzip that, and then run make.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not quite there, but I think I&amp;rsquo;m close.&lt;/p&gt;
-
-&lt;h3 id=&#34;aspects-i-m-happy-with&#34;&gt;Aspects I&amp;rsquo;m happy with&lt;/h3&gt;
-
-&lt;p&gt;For the most part, my work on this project wasn&amp;rsquo;t terrible.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I wrote an R package, &lt;a href=&#34;https://github.com/kbroman/lineup&#34;&gt;R/lineup&lt;/a&gt;, with the main analysis methods.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That I re-derived the full entire analysis cleanly, in a separate, reproducible document (I used &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;AsciiDoc&lt;/a&gt; and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;) was a good thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The code for the figures and tables are all reasonably clean, and draw from either the original data files or from intermediate calculations produced by the AsciiDoc document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I automated everything with GNU Make.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;what-should-i-have-done-differently&#34;&gt;What should I have done differently?&lt;/h3&gt;
-
-&lt;p&gt;There was a lot more after-the-fact work that I would rather not have to do.&lt;/p&gt;
-
-&lt;p&gt;Making a project reproducible is easier if the data aren&amp;rsquo;t that large and so can be bundled into the GitHub repository with all of the code.&lt;/p&gt;
-
-&lt;p&gt;With a larger data set, I guess the thing to do is recognize, from the start, that the data are going to be sitting elsewhere. So then, I think one should &lt;em&gt;organize the data in the form that you expect to be made public&lt;/em&gt;, and work from those files.&lt;/p&gt;
-
-&lt;p&gt;When you write a script to convert data from one form to another, &lt;em&gt;also write some tests&lt;/em&gt;, to make sure that it worked correctly.&lt;/p&gt;
-
-&lt;p&gt;And then &lt;em&gt;document, document, document!&lt;/em&gt; As with software development, it&amp;rsquo;s hard to document data or analyses after the fact.&lt;/p&gt;
 </description>
     </item>
     

@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/jobs/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/jobs/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Hiring computational biologists</title>
@@ -16,34 +18,8 @@
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
-      <description>
-
-&lt;p&gt;The &lt;a href=&#34;http://discovery.wisc.edu/home/morgridge/morgridge.cmsx&#34;&gt;Morgridge Institute for Research&lt;/a&gt; (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. &lt;a href=&#34;http://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf&#34;&gt;One position&lt;/a&gt; is joint with my department,  &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;Biostatistics &amp;amp; Medical Informatics&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;yet-another-symposium&#34;&gt;Yet another symposium&lt;/h3&gt;
-
-&lt;p&gt;Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (&lt;a href=&#34;http://kbroman.files.wordpress.com/2013/09/computation-in-biology-agenda.pdf&#34;&gt;Here&amp;rsquo;s the agenda.&lt;/a&gt;) Great speakers: &lt;a href=&#34;http://faculty.biomath.ucla.edu/msuchard/&#34;&gt;Marc Suchard&lt;/a&gt;, &lt;a href=&#34;http://shoichetlab.compbio.ucsf.edu/&#34;&gt;Brian Shoichet&lt;/a&gt;, &lt;a href=&#34;http://pages.cs.wisc.edu/~dpage/&#34;&gt;David Page&lt;/a&gt;, and &lt;a href=&#34;http://www.hsph.harvard.edu/winston-hide/&#34;&gt;Winston Hide&lt;/a&gt;. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not sure what MIR was hoping to get out of the symposium, but if they were looking for guidance regarding their hiring efforts, it wasn&amp;rsquo;t effective. At the beginning, the discussion was quite heated but not terribly constructive. In the middle, it became more like the usual sort of question/answer after a seminar. I must admit I didn&amp;rsquo;t stay to the end. Perhaps some important insights were gained after I left. But it seems unlikely that the symposium provided much guidance about hiring in computational biology.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-key-issues&#34;&gt;The key issues&lt;/h3&gt;
-
-&lt;p&gt;Here are what I think the key issues are, when a scientific organization is looking to hire some computational folks.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Do you want a targeted search (for particular kinds of applications or approaches), or do you want to leave it general and just pick the best folks who apply?. (&lt;em&gt;In my experience, targeted searches don&amp;rsquo;t work as well; you miss out on some great people.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What service role is expected of the person? Do you want them to meet some particular scientists&amp;rsquo; needs, or are you going to let them do whatever they want, with the hope that they form useful (to the organization) collaborations? (&lt;em&gt;The expectations should be made explicit.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At promotion time, who is going to evaluate the person? If it&amp;rsquo;s a separate academic department (say, Statistics, or maybe Biochemistry), do they share your organization&amp;rsquo;s values? (&lt;em&gt;Some of the best applied computational scientists may not be generating the NIH grants that a traditional biological sciences department might expect, nor the JASA or Biometrics papers that a Statistics department might expect.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Will the person have appropriate mentors? Is there anyone at the institution who really understands the nature of their position and what they need to do to succeed? (&lt;em&gt;I worry particularly about computational scientists who are isolated from their computational peers.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have any great answers, but those are the issues that I&amp;rsquo;m concerned about.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: The real point I&amp;rsquo;m trying to make: academics doesn&amp;rsquo;t do a good job of rewarding tool building (eg, software tools). It&amp;rsquo;s often viewed as better to write papers with toy implementations than to make generally useful software. That&amp;rsquo;s a real problem for computational biology, and for folks seeking to hire truly useful computational biologists.&lt;/p&gt;
-</description>
+      <description>The Morgridge Institute for Research (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. One position is joint with my department, Biostatistics &amp;amp; Medical Informatics.
+Yet another symposium Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (Here&amp;rsquo;s the agenda.) Great speakers: Marc Suchard, Brian Shoichet, David Page, and Winston Hide. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.</description>
     </item>
     
   </channel>

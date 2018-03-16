@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 14 Oct 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/c/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Designer of C died</title>
@@ -16,8 +18,7 @@
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://cm.bell-labs.com/who/dmr/&#34;&gt;Dennis Ritchie&lt;/a&gt;, the designer of C and co-developer of Unix, &lt;a href=&#34;http://tinyurl.com/4y38mkt&#34;&gt;died on Wednesday&lt;/a&gt;.  He arguably had more impact on my life than &lt;a href=&#34;http://tinyurl.com/3fj8llw&#34;&gt;Steve Jobs&lt;/a&gt; did.&lt;/p&gt;
-</description>
+      <description>Dennis Ritchie, the designer of C and co-developer of Unix, died on Wednesday. He arguably had more impact on my life than Steve Jobs did.</description>
     </item>
     
   </channel>

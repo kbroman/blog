@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/code/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Write unit tests!</title>
@@ -16,44 +18,8 @@
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
-      <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve recently been working on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation of R/qtl to better handle high-dimensional data and more complex crosses, such as &lt;a href=&#34;http://www.genetics.org/content/190/2/437.short&#34;&gt;Diversity Outbred mice&lt;/a&gt;. In doing so, I&amp;rsquo;m trying to make use of the software engineering principles that I&amp;rsquo;ve learned over the last 15 years, which pretty much correspond to the ideas in &amp;ldquo;&lt;a href=&#34;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745&#34;&gt;Best Practices for Scientific Computing&lt;/a&gt;&amp;rdquo; (&lt;a href=&#34;http://www.third-bit.com/&#34;&gt;Greg Wilson&lt;/a&gt; et al., PLOS Biology 12(1): e1001745, &lt;a href=&#34;http://doi.org/10.1371/journal.pbio.1001745&#34;&gt;doi:10.1371/journal.pbio.1001745&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m still working on &amp;ldquo;Make names consistent, distinctive, and meaningful&amp;rdquo;, but I&amp;rsquo;m doing pretty well on writing shorter functions with less repeated code, and &lt;em&gt;particularly importantly&lt;/em&gt; I&amp;rsquo;m writing extensive unit tests.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;The basic idea is to break up your code into small functions that ideally do just one thing. (These are the &amp;ldquo;units&amp;rdquo;.) And then write tests that explicitly check whether those functions are giving the correct answers. That is, don&amp;rsquo;t just test that the code &lt;em&gt;runs&lt;/em&gt;; you want to know that your code is &lt;em&gt;giving the right answers&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;Last week, I was working on implementing a basic genome scan function. I included the option of doing weighted least squares with known weights, because it&amp;rsquo;s easy enough to do, and R/qtl had done that. (I&amp;rsquo;ve never actually &lt;em&gt;used&lt;/em&gt; that feature, but it&amp;rsquo;s been there.) And my results were matching those that R/qtl provided. Well, mostly: in the case of multiple phenotypes, with some phenotypes having missing values, and when doing a weighted analysis, the results from R/qtl and R/qtl2 were quite different.&lt;/p&gt;
-
-&lt;p&gt;I expect you may be questioning the logic of testing code by comparing it to software that has not been formally tested. I was thinking the same thing. And so I wrote some tests that compared results to those using &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;&amp;rsquo;s &lt;code&gt;lm()&lt;/code&gt; function. And (surprise) the results from &lt;code&gt;lm()&lt;/code&gt; matched R/qtl2 but not R/qtl. So it was R/qtl that was the problem.&lt;/p&gt;
-
-&lt;p&gt;So that had me debugging the &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scanone.R&#34;&gt;&lt;code&gt;scanone&lt;/code&gt; function in R/qtl&lt;/a&gt;, the R code for which is &lt;strong&gt;831&lt;/strong&gt; lines long and was written according to the principle, &amp;ldquo;I&amp;rsquo;ll just add this one thing and then clean things up later,&amp;rdquo; with &amp;ldquo;later&amp;rdquo; really meaning &amp;ldquo;never&amp;rdquo;, and &amp;ldquo;this one thing&amp;rdquo; really meaning &amp;ldquo;all the things.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I did, after resorting to a bunch of print/cat statements, &lt;a href=&#34;https://github.com/kbroman/qtl/commit/254a1c728&#34;&gt;find the bug&lt;/a&gt;. In subsetting the data to remove individuals with missing values, I&amp;rsquo;d forgotten to subset the weights. Back in 2012, I&amp;rsquo;d &lt;a href=&#34;https://github.com/kbroman/qtl/commit/a07c575&#34;&gt;fixed a related bug&lt;/a&gt;, but apparently it was only a partial fix. In thinking about the bug again while writing this post, and in looking back at the 2012 bug fix, I realized that I probably had the same bug in &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scantwo.R&#34;&gt;&lt;code&gt;scantwo&lt;/code&gt;&lt;/a&gt; (which is &lt;strong&gt;1443&lt;/strong&gt; lines long). Sure enough, and so now there&amp;rsquo;s &lt;a href=&#34;https://github.com/kbroman/qtl/commit/c71b3dfce9&#34;&gt;yet another bug fix&lt;/a&gt;, though not yet on &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://thebird.nl/&#34;&gt;Pjotr Prins&lt;/a&gt; was the first to encourage me towards software testing. &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/testthat&#34;&gt;testthat&lt;/a&gt; package makes it easy to do in R packages. In his &lt;a href=&#34;https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf&#34;&gt;paper about testthat&lt;/a&gt;, Hadley wrote:&lt;/p&gt;
-
-&lt;blockquote&gt;It&#39;s not that we don&#39;t test our code, it&#39;s that we don&#39;t store our tests so they can be re-run automatically.
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is my favorite comment on testing; it totally applies to (old) me.&lt;/p&gt;
-
-&lt;p&gt;The bottom line:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Write unit tests.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;When you find a bug, first write a test for it and then fix the bug.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;When you find a bug, look for other possible instances of that bug, and fix them too.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To learn more about testing in R packages, see the &lt;a href=&#34;http://r-pkgs.had.co.nz/tests.html&#34;&gt;Testing&lt;/a&gt; chapter in Hadley&amp;rsquo;s &lt;a href=&#34;amazon.com/exec/obidos/ASIN/1491910593/7210-20&#34;&gt;R packages book&lt;/a&gt;. Also see the &lt;a href=&#34;http://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf&#34;&gt;slides for my lecture on testing and debugging&lt;/a&gt; in my &lt;a href=&#34;http://kbroman.org/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course.&lt;/p&gt;
-</description>
+      <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
+It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
     </item>
     
     <item>
@@ -62,57 +28,11 @@
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
-      <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
-
-&lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
-
-&lt;p&gt;I spent the day trying to resolve a bug in my early-in-development R package, &lt;a href=&#34;https://github.com/kbroman/qtl2geno&#34;&gt;qtl2geno&lt;/a&gt;. In the process, I blamed&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;TravisCI for not handling &lt;code&gt;system.file()&lt;/code&gt; properly.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;R-devel for having broken &lt;code&gt;system.file()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;data.table::fread()&lt;/code&gt; for treating &lt;code&gt;sep=NULL&lt;/code&gt; differently on different operating systems.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Of course, none of these were true. I was just passing &lt;code&gt;sep=NULL&lt;/code&gt; to &lt;code&gt;data.table::fread()&lt;/code&gt;, and that worked in the previous version, but doesn&amp;rsquo;t work in the latest release on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, and I hadn&amp;rsquo;t yet installed the latest version of &lt;a href=&#34;https://github.com/Rdatatable/data.table&#34;&gt;data.table&lt;/a&gt; on my Mac, but Travis and my junky Windows laptop had the latest version.&lt;/p&gt;
-
-&lt;p&gt;The debugging process seems a potentially interesting case study, so I thought I&amp;rsquo;d write down some of the details.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;The whole thing started off with my &lt;a href=&#34;https://github.com/kbroman/qtl2geno&#34;&gt;qtl2geno&lt;/a&gt; package suddenly failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;TravisCI&lt;/a&gt;, even though it was still passing &lt;code&gt;R CMD check&lt;/code&gt; on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn&amp;rsquo;t realize that until the very end of the story.)&lt;/p&gt;
-
-&lt;p&gt;The problem line was in a &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd&#34;&gt;vignette&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;grav2 &amp;lt;- read_cross2( system.file(&amp;quot;extdata&amp;quot;, &amp;quot;grav2.zip&amp;quot;, package=&amp;quot;qtl2geno&amp;quot;) )
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The changes I&amp;rsquo;d been making to my package didn&amp;rsquo;t seem to have anything to do with this, so I concluded that the problem was &lt;code&gt;system.file()&lt;/code&gt;. Why that would have worked before but not now, I couldn&amp;rsquo;t say, but I figured maybe Travis was installing things differently than before.&lt;/p&gt;
-
-&lt;p&gt;I changed that code block to &lt;code&gt;eval=FALSE&lt;/code&gt;, but then a bunch of tests using &lt;code&gt;read_cross2( system.file( ... ) )&lt;/code&gt; were failing instead. Again, I figured the problem was &lt;code&gt;system.file()&lt;/code&gt;, because &lt;code&gt;R CMD check&lt;/code&gt; worked fine on my machine.&lt;/p&gt;
-
-&lt;p&gt;I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used &lt;a href=&#34;http://win-builder.r-project.org/&#34;&gt;R Win-builder&lt;/a&gt; to test my package with R-devel, and sure enough it failed there. So it wasn&amp;rsquo;t Travis. My conclusion was that R-devel had broken &lt;code&gt;system.file()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Poked around some more, and then finally used &lt;a href=&#34;http://win-builder.r-project.org/&#34;&gt;R Win-builder&lt;/a&gt; with R-release. And it failed with that, too. So it wasn&amp;rsquo;t R-devel either.&lt;/p&gt;
-
-&lt;p&gt;I then created a little tester package, &lt;a href=&#34;https://github.com/kbroman/testsysfile&#34;&gt;testsysfile&lt;/a&gt;, testing &lt;code&gt;system.file()&lt;/code&gt; with &lt;code&gt;read.csv()&lt;/code&gt; and then with &lt;code&gt;data.table::fread()&lt;/code&gt;. That all worked fine. So it seemed like it wasn&amp;rsquo;t actually &lt;code&gt;system.file()&lt;/code&gt;, but something within &lt;code&gt;read_cross2()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;So finally I poked into my own code, and then I realized that I was passing a &lt;code&gt;NULL&lt;/code&gt; value to the &lt;code&gt;sep&lt;/code&gt; argument of &lt;code&gt;fread()&lt;/code&gt;. (See &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L99-L100&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L474-L485&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;But why would &lt;code&gt;sep=NULL&lt;/code&gt; work on my Mac but not on Travis or R Win-builder? I pulled out my junky Windows laptop (purchased in order to have a better sense of what my students were dealing with), went through all of the Windows updates, then updated R, &lt;a href=&#34;https://cran.r-project.org/bin/windows/Rtools/&#34;&gt;Rtools&lt;/a&gt;, and &lt;a href=&#34;http://rstudio.com&#34;&gt;RStudio&lt;/a&gt;, and tried things out there.&lt;/p&gt;
-
-&lt;p&gt;With my &lt;a href=&#34;https://github.com/kbroman/testsysfile&#34;&gt;testsysfile&lt;/a&gt; package, I could see that &lt;code&gt;data.table::fread()&lt;/code&gt; was throwing an error with &lt;code&gt;sep=NULL&lt;/code&gt; on Windows, though it was working fine on my Mac.&lt;/p&gt;
-
-&lt;p&gt;I spent some time making a patch to &lt;code&gt;fread()&lt;/code&gt;, and I was really close to submitting a pull request. (Treating &lt;code&gt;sep=NULL&lt;/code&gt; didn&amp;rsquo;t seem important, but it did seem like it the behavior should be the same on Windows and Mac.) But then I saw, in the &lt;a href=&#34;https://github.com/Rdatatable/data.table/blob/master/README.md&#34;&gt;README&lt;/a&gt; file, that there were &lt;a href=&#34;https://github.com/Rdatatable/data.table/blob/master/Contributing.md&#34;&gt;Contribution guidelines&lt;/a&gt;. I figured I&amp;rsquo;d better go through them.&lt;/p&gt;
-
-&lt;p&gt;The guidelines say, &amp;ldquo;squash all your commits together,&amp;rdquo; so I spent some time getting my two commits combined into one. The guidelines also say to update the README file. In doing so, I realized that they&amp;rsquo;d put a new version of data.table on CRAN on 19 Sep 2015, which is precisely when my package started failing on Travis.&lt;/p&gt;
-
-&lt;p&gt;And so then I finally installed the updated version of data.table on my Mac, and saw that there was no operating system dependence; the differences I was seeing were just because of the old vs new version of data.table.&lt;/p&gt;
-
-&lt;p&gt;So data.table was updated in a way where &lt;code&gt;sep=NULL&lt;/code&gt; was no longer working, and in my own code, I had relied on that. So six hours, &lt;a href=&#34;https://twitter.com/kwbroman/status/647125510686920705&#34;&gt;many tweets&lt;/a&gt;, lots of blaming of others, and finally I&amp;rsquo;d worked out that it was all my own fault.&lt;/p&gt;
-</description>
+      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
+And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
+I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
+ TravisCI for not handling system.file() properly.
+ R-devel for having broken system.</description>
     </item>
     
     <item>
@@ -121,57 +41,10 @@
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; pointed me to his &lt;a href=&#34;http://cran.r-project.org/package=ngram&#34;&gt;ngram&lt;/a&gt; R package for constructing and simulating from n-grams from text.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the code I used to grab the text.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(XML)
-stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot;
-hobbit &amp;lt;- NULL
-for(i in 1:74) {
-```r
-cat(i,&amp;quot;\n&amp;quot;)
-if(i==1) {
-    url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;)
-} else {
-    url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.html&amp;quot;)
-}
-
-x &amp;lt;- htmlTreeParse(url, useInternalNodes=TRUE)
-xx &amp;lt;- xpathApply(x, &amp;quot;//p&amp;quot;, xmlValue)
-hobbit &amp;lt;- c(hobbit, gsub(&amp;quot;\r&amp;quot;, &amp;quot;&amp;quot;, xx[-length(xx)]))
-Sys.sleep(0.5)
-```
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then calculate the ngrams with n=2.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(ngram)
-ng2 &amp;lt;- ngram(hobbit, n=2)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Simulate some number of words with &lt;code&gt;babble()&lt;/code&gt;. If you use the &lt;code&gt;seed&lt;/code&gt; argument, you can get the result reproducibly.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;babble(ng2, 48, seed=53482175)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-into trees, and then bore to the Mountain to go through?&#34; groaned the hobbit. &#34;Well, are you doing, And where are you doing, And where are you?&#34; it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; suggested that I &lt;a href=&#34;http://librestats.com/2014/07/01/modern-applied-statistics-in-rlyeh/&#34;&gt;mix two texts&lt;/a&gt;, so here&amp;rsquo;s a bit from the &lt;em&gt;Hobbit in the Hat&lt;/em&gt; (The Hobbit with 59× Cat in the Hat &amp;ndash; up-sampled to match lengths.) But there&amp;rsquo;s maybe not enough overlap between the two texts to get much of a mixture.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&#34;I am Gandalf,&#34; said the fish. This is no way at all!
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-already off his horse and among the goblin and the dragon, who had remained behind to guard the door. &#34;Something is outside!&#34; Bilbo&#39;s heart jumped into his boat on to sharp rocks below; but there was a good game, Said our fish No! No! Those Things should not fly.
-&lt;/blockquote&gt;
-</description>
+      <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
+I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
+Here&amp;rsquo;s the code I used to grab the text.
+library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot; hobbit &amp;lt;- NULL for(i in 1:74) { ```r cat(i,&amp;quot;\n&amp;quot;) if(i==1) { url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;) } else { url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.</description>
     </item>
     
     <item>
@@ -180,37 +53,9 @@ already off his horse and among the goblin and the dragon, who had remained behi
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m enthusiastic about having &lt;a href=&#34;http://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;R notify me when my script is done&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But among my early uses of this, my script threw an error, and I never got a text or &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; about &lt;em&gt;that&lt;/em&gt;. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like &lt;code&gt;options(error = function() { } )&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Fill in the function with your notification code. If there&amp;rsquo;s an error, the error message will be printed and then that function will be called. (And then the script will halt.)&lt;/p&gt;
-
-&lt;p&gt;You can use &lt;code&gt;geterrmessage()&lt;/code&gt; to grab the error message to include in your notification.&lt;/p&gt;
-
-&lt;p&gt;For example, if you want to use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; for the notification, you could put, at the top of your script, something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;options(error = function() {
-                    library(RPushbullet)
-                    pbPost(&amp;quot;note&amp;quot;, &amp;quot;Error&amp;quot;, geterrmessage())
-                })
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then if the script gives an error, you&amp;rsquo;ll get a note with title &amp;ldquo;Error&amp;rdquo; and with the error message as the body of the note.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: I knew I&amp;rsquo;d heard about this sort of thing somewhere, but I couldn&amp;rsquo;t remember where. Duh; &lt;a href=&#34;https://twitter.com/rabaath/&#34;&gt;Rasmus&lt;/a&gt; &lt;a href=&#34;https://twitter.com/rabaath/status/507087947041357825&#34;&gt;mentioned it on twitter&lt;/a&gt; just a couple of days ago! Fortunately, he reminded me of that in the comments below.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Another update&lt;/strong&gt;: Ian Kyle pointed out in the comments that the above function, if used in a script run with &lt;code&gt;R CMD BATCH&lt;/code&gt;, won&amp;rsquo;t actually halt the script. The simplest solution is to add &lt;code&gt;stop(geterrmessage())&lt;/code&gt;, like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;options(error = function() {
-                    library(RPushbullet)
-                    pbPost(&amp;quot;note&amp;quot;, &amp;quot;Error&amp;quot;, geterrmessage())
-                    if(!interactive()) stop(geterrmessage())
-                })
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>I&amp;rsquo;m enthusiastic about having R notify me when my script is done.
+But among my early uses of this, my script threw an error, and I never got a text or pushbullet about that. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.
+It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like options(error = function() { } )</description>
     </item>
     
     <item>
@@ -219,136 +64,11 @@ already off his horse and among the goblin and the dragon, who had remained behi
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
-      <description>
-
-&lt;p&gt;You just sent a long &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;beepr-https-github-com-rasmusab-beepr&#34;&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;&lt;code&gt;beepr&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;You can use &lt;a href=&#34;http://www.sumsar.net/&#34;&gt;Rasmus Baath&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; package to have your computer play a sound.&lt;/p&gt;
-
-&lt;p&gt;Install it from &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;beepr&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, at the bottom of your script, load the package and have it beep.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(beepr)
-beep()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; comes with a bunch of different sounds (e.g., try &lt;code&gt;beep(&amp;quot;facebook&amp;quot;)&lt;/code&gt;), or use a path to any wav file. I tried &lt;a href=&#34;http://www.kessels.com/catsounds/&#34;&gt;these cat sounds&lt;/a&gt;, but they came out (with my computer&amp;rsquo;s speaker) sounding more like a really unhappy electronic lion&amp;hellip;not very pleasant.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I&amp;rsquo;m instead having my scripts send me a text or a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;gmailr-https-github-com-trinker-gmailr&#34;&gt;&lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;&lt;code&gt;gmailR&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;There are a number of different packages for sending email from R (e.g., &lt;a href=&#34;http://cran.r-project.org/web/packages/sendmailR/index.html&#34;&gt;sendmailR&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/mailR/index.html&#34;&gt;mailR&lt;/a&gt;). I tried &lt;a href=&#34;http://trinkerrstuff.wordpress.com/&#34;&gt;Tyler Rinker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; package.&lt;/p&gt;
-
-&lt;p&gt;You can send yourself an email using the &lt;code&gt;gmail()&lt;/code&gt; function. And since most cell phone companies have a method for sending a text via email, you can use this same function to send yourself a text. &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; includes a function &lt;code&gt;cell2email()&lt;/code&gt; that will help you figure out the appropriate email address to use, to send a text to your phone.&lt;/p&gt;
-
-&lt;p&gt;The only problem with &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; is that you have to pass your gmail account and password to the &lt;code&gt;gmail()&lt;/code&gt; function, and you don&amp;rsquo;t really want to have that stuff sitting in your R script.&lt;/p&gt;
-
-&lt;p&gt;So I wrote a little package &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt;, that will instead pull your private information from a file (&lt;code&gt;~/.gmail_private&lt;/code&gt;). I set up a separate &lt;a href=&#34;https://mail.google.com&#34;&gt;gmail&lt;/a&gt; account for this purpose, and I set the security settings to use &lt;a href=&#34;https://support.google.com/accounts/answer/185833?hl=en&#34;&gt;app-specific passwords&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;My &lt;code&gt;~/.gmail_private&lt;/code&gt; file looks like the following: app-specific gmail password, gmail account to be the default &amp;ldquo;from&amp;rdquo; email address (perhaps special for this purpose), the email address to use to send a text, and the default &amp;ldquo;to&amp;rdquo; email (which is my usual gmail account).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;password my_private_app_specific_password
-gmail    my_gmail_account@gmail.com
-text     0123456789@txt.att.net
-to       default_to@gmail.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need to install a few packages. &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt; are not available on &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, so you need to install &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; and use the &lt;code&gt;install_github()&lt;/code&gt; function to install them from &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(c(&amp;quot;devtools&amp;quot;, &amp;quot;rJython&amp;quot;, &amp;quot;rJava&amp;quot;, &amp;quot;rjson&amp;quot;))
-library(devtools)
-install_github(&amp;quot;trinker/gmailR&amp;quot;)
-install_github(&amp;quot;kbroman/mygmailR&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In your script, to send yourself a text, you&amp;rsquo;d write&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(mygmailR)
-send_text(&amp;quot;subject here&amp;quot; &amp;quot;body of message here&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To send yourself an email, write&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(mygmailR)
-send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;rpushbullet-https-github-com-eddelbuettel-rpushbullet&#34;&gt;&lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;&lt;code&gt;RPushbullet&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Another alternative (suggested to me by &lt;a href=&#34;https://twitter.com/PeteHaitch/status/507073412842278913&#34;&gt;Peter Hickey&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/jknowles/status/507152898674143232&#34;&gt;Jared Knowles&lt;/a&gt;) is to use &lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package to send yourself a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The main advantage of this, in my mind, is that there&amp;rsquo;s no gmail password sitting around on your system anywhere, but rather just your &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; &amp;ldquo;Access Token&amp;rdquo;, sitting in the file &lt;code&gt;~/.rpushbullet.json&lt;/code&gt;, so this is less of a security issue.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Sign up for &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;; you&amp;rsquo;ll need a &lt;a href=&#34;http://www.google.com&#34;&gt;Google&lt;/a&gt; account.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install the pushbullet app on your phone or other device, or install the chrome extension.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Go to &lt;a href=&#34;https://www.pushbullet.com/account&#34;&gt;your pushbullet account page&lt;/a&gt; to get your &amp;ldquo;Access Token&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install the &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package from CRAN.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;RPushbullet&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Create a &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file with your api key and not much else.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
-  &amp;quot;devices&amp;quot;: [],
-  &amp;quot;names&amp;quot;: []
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install &lt;a href=&#34;http://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;jsonlite&amp;quot;)
-library(jsonlite)
-library(RPushbullet)
-fromJSON(pbGetDevices())$devices[,c(&amp;quot;iden&amp;quot;, &amp;quot;nickname&amp;quot;)]
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Insert those device identifiers into your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
-
-  &amp;quot;devices&amp;quot;: [
-      &amp;quot;your_phone_device_id&amp;quot;,
-      &amp;quot;your_tablet_device_id&amp;quot;,
-      &amp;quot;your_chrome_device_id&amp;quot;;
-  ],
-
-  &amp;quot;names&amp;quot;: [
-      &amp;quot;phone&amp;quot;,
-      &amp;quot;tablet&amp;quot;,
-      &amp;quot;Chrome&amp;quot;;
-  ]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now you&amp;rsquo;re set!  Use the &lt;code&gt;pbPost()&lt;/code&gt; function to post a message to yourself.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(RPushbullet)
-pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Body of message&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;By default, the message is posted to the first device listed in your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file; to post it to a different device, use the argument &lt;code&gt;deviceind&lt;/code&gt;, which takes a positive integer.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m still somewhat inclined towards using &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt; to send myself a text, but &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; seems more secure.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The &lt;a href=&#34;https://twitter.com/hadleywickham/status/507192305816567808&#34;&gt;word from Hadley&lt;/a&gt;: we should also check out &lt;a href=&#34;https://github.com/jimhester/gmailr&#34;&gt;gmailr&lt;/a&gt;. [But you &lt;a href=&#34;https://github.com/jimhester/gmailr/issues/5&#34;&gt;can&amp;rsquo;t currently send email&lt;/a&gt; with &lt;a href=&#34;https://github.com/jimhester/gmailr&#34;&gt;gmailr&lt;/a&gt;.]&lt;/p&gt;
-</description>
+      <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
+beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
+Install it from CRAN with
+install.packages(&amp;quot;beepr&amp;quot;)  Then, at the bottom of your script, load the package and have it beep.
+library(beepr) beep()  beepr comes with a bunch of different sounds (e.</description>
     </item>
     
     <item>
@@ -357,24 +77,8 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
-
-&lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;ll write the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;u &amp;lt;- par(&amp;quot;usr&amp;quot;)
-rect(u[1], u[3], u[2], u[4])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I don&amp;rsquo;t know &lt;em&gt;how&lt;/em&gt; many times I&amp;rsquo;ve typed that! Today I realized that I should put those two lines in a function &lt;code&gt;add_border()&lt;/code&gt;. And then I added &lt;code&gt;add_border()&lt;/code&gt; to my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman package&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It was a bit more work adding the &lt;a href=&#34;https://github.com/klutometis/roxygen&#34;&gt;Roxygen2&lt;/a&gt; comments for the documentation, but now I&amp;rsquo;ve got a proper function that is easier to use and much more clear.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/tpoi&#34;&gt;@tpoi&lt;/a&gt; &lt;a href=&#34;https://twitter.com/tpoi/status/489622770398289920&#34;&gt;pointed out&lt;/a&gt; that &lt;code&gt;box()&lt;/code&gt; does the same thing as my &lt;code&gt;add_border()&lt;/code&gt;. My general point still stands, and this raises the additional point: twitter + blog -&amp;gt; education.&lt;/p&gt;
-
-&lt;p&gt;I want to add, &amp;ldquo;I&amp;rsquo;m an idiot&amp;rdquo; but I think I&amp;rsquo;ll just say that there&amp;rsquo;s always more that I can learn about R. And I&amp;rsquo;ll remove &lt;code&gt;add_border&lt;/code&gt; from R/broman and just use &lt;code&gt;box()&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.
+For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with image, the border is often obscured. I want a nice black rectangle around the outside.</description>
     </item>
     
     <item>
@@ -383,30 +87,10 @@ rect(u[1], u[3], u[2], u[4])
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
-      <description>&lt;p&gt;This morning, I started &lt;a href=&#34;http://kbroman.github.io/hipsteR/&#34;&gt;a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Yesterday I started reading the &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/1461468671/7210-20&#34;&gt;Rcpp book&lt;/a&gt;, and on page 4 there&amp;rsquo;s an example using the R function &lt;code&gt;replicate&lt;/code&gt;, which (a) I&amp;rsquo;d never heard before, and (b) is super useful.&lt;/p&gt;
-
-&lt;p&gt;I mean, I often write code like this, for a bootstrap:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;x &amp;lt;- rnorm(2500)
-sapply(1:1000, function(a) quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But I could just be writing&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;x &amp;lt;- rnorm(100)
-replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;ldquo;Oh, &lt;code&gt;replicate&lt;/code&gt; must be some new function.&amp;rdquo; Yeah, new in &lt;strong&gt;R version 1.8, in 2003!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m in serious need of some re-education (e.g., I should be using more of &lt;a href=&#34;http://github.com/hadley&#34;&gt;Hadley Wickham&amp;rsquo;s packages&lt;/a&gt;). Hence the beginnings of a tutorial.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Note: the title was suggested by &lt;a href=&#34;https://www.stat.auckland.ac.nz/showperson?firstname=Thomas&amp;amp;surname=Lumley&#34;&gt;Thomas Lumley&lt;/a&gt;. No connection to @hspter; it&amp;rsquo;s not really so hip. I probably should have written &amp;ldquo;geeksteR.&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>This morning, I started a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.
+Yesterday I started reading the Rcpp book, and on page 4 there&amp;rsquo;s an example using the R function replicate, which (a) I&amp;rsquo;d never heard before, and (b) is super useful.
+I mean, I often write code like this, for a bootstrap:
+x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TRUE), c(0.025, 0.975)))  But I could just be writing</description>
     </item>
     
     <item>
@@ -415,27 +99,9 @@ replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
-      <description>&lt;p&gt;I saw &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;this great post on crayola crayon colors&lt;/a&gt; at the &lt;a href=&#34;http://learnr.wordpress.com&#34;&gt;Learning R blog&lt;/a&gt;, reproducing a &lt;a href=&#34;http://www.datapointed.net/2010/01/crayola-crayon-color-chart/&#34;&gt;nice graph&lt;/a&gt; of the Crayola crayon colors over time. (Also see &lt;a href=&#34;http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/&#34;&gt;this even nicer version&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;List of Crayola crayon colors&lt;/a&gt;,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(XML)
-theurl &amp;lt;- &amp;quot;http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&amp;quot;
-crayontable &amp;lt;- readHTMLTable(theurl, stringsAsFactors = FALSE)[[1]]
-crayons &amp;lt;- crayontable[,grep(&amp;quot;Hex&amp;quot;, colnames(crayontable))]
-names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Comparing these to what I&amp;rsquo;d grabbed, I noted one small discrepancy on the Wikipedia page: Yellow Orange was listed as &lt;code&gt;&amp;quot;#FFAE42&amp;quot;&lt;/code&gt; but the background color for the Yellow Orange cell in the table was &lt;code&gt;&amp;quot;#FFB653&amp;quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;So I created a Wikipedia account and edited the Wikipedia page.&lt;/p&gt;
-
-&lt;p&gt;(Then I realized that I&amp;rsquo;d made a mistake in my edit, undid my change, thought the whole thing through again, and edited the page again.)&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; also showed a different way to sort the colors: convert to HSV, and then sort by the H then S then V. So &lt;a href=&#34;https://github.com/kbroman/broman/commit/dde305de2c3cd5f3a00f7378fefd4f73a4520599&#34;&gt;I edited my &lt;code&gt;plot_crayons()&lt;/code&gt; function again&lt;/a&gt;, to create the following picture:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png&#34; alt=&#34;Crayon colors, again&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>I saw this great post on crayola crayon colors at the Learning R blog, reproducing a nice graph of the Crayola crayon colors over time. (Also see this even nicer version.)
+The Learning R post shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;List of Crayola crayon colors,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):
+library(XML) theurl &amp;lt;- &amp;quot;http://en.</description>
     </item>
     
     <item>
@@ -444,29 +110,8 @@ names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
       <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
-      <description>&lt;p&gt;If you want to use &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;crayon colors in R&lt;/a&gt; but you don&amp;rsquo;t want to rely on my &lt;a href=&#34;http://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, you can just grab the code. Copy the &lt;a href=&#34;https://github.com/kbroman/broman/blob/master/R/brocolors.R#L72-L204&#34;&gt;relevant lines from the &lt;code&gt;R/brocolors.R&lt;/code&gt; file&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;,
-            &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;,
-            &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;,
-            ...
-            &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;,
-            &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I spent a bit of time thinking about &lt;a href=&#34;http://stackoverflow.com/questions/11923659/javascript-sort-rgb-values&#34;&gt;how best to sort the colors in a meaningful way&lt;/a&gt;, for the &lt;code&gt;plot_crayons()&lt;/code&gt; function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering. Here&amp;rsquo;s the code from &lt;a href=&#34;https://github.com/kbroman/broman/blob/852b0ebd84c4cfed6f21f3e26635a46a10143757/R/brocolors.R#L234-L238&#34;&gt;&lt;code&gt;plot_crayons()&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# get rgb
-colval &amp;lt;- t(col2rgb(crayons))
-
-# hclust to order the colors
-ord &amp;lt;- hclust(dist(colval))$order
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It&amp;rsquo;s not perfect, but I think it worked remarkably well:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2014/05/crayons.png&#34; alt=&#34;Crayon colors&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
+crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;)  I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
@@ -475,21 +120,9 @@ ord &amp;lt;- hclust(dist(colval))$order
       <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/&#34;&gt;mentioned in the fall&lt;/a&gt; that one could use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; in the &lt;code&gt;apply&lt;/code&gt;-type functions, like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;)
-sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2))
-lapply(z, &amp;quot;[&amp;quot;, 1, )
-lapply(z, &amp;quot;[&amp;quot;, , 3)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As you can see, my data isn&amp;rsquo;t &amp;ldquo;&lt;a href=&#34;http://vita.had.co.nz/papers/tidy-data.pdf&#34;&gt;tidy&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
+id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2)  I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
+z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3)  As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
     </item>
     
     <item>
@@ -498,213 +131,10 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
-      <description>
+      <description>I like to use LaTeX to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.
+Most people that use LaTeX to make slides seem to use Beamer, but the resulting slides are usually a bit busy, like this:
 
-&lt;p&gt;I like to use &lt;a href=&#34;http://www.latex-project.org/&#34;&gt;LaTeX&lt;/a&gt; to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.&lt;/p&gt;
-
-&lt;p&gt;Most people that use LaTeX to make slides seem to use &lt;a href=&#34;http://en.wikipedia.org/wiki/Beamer_(LaTeX)&#34;&gt;Beamer&lt;/a&gt;, but the resulting slides are usually a bit busy, like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html&#34;&gt;&lt;img src=&#34;http://deic.uab.es/~iblanes/beamer_gallery/large/Warsaw-default-default-01.png&#34; alt=&#34;Typical beamer slide&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I admire &lt;a href=&#34;http://en.wikipedia.org/wiki/Till_Tantau&#34;&gt;Till Tantau&lt;/a&gt; for creating Beamer; it was a great idea and it&amp;rsquo;s been widely adopted. But I don&amp;rsquo;t like talk outlines at all; I certainly don&amp;rsquo;t want to see one on every page.&lt;/p&gt;
-
-&lt;p&gt;After several days work, I&amp;rsquo;ve finally figured out how to create LaTeX/Beamer-based slides that look like what I want:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png&#34; alt=&#34;Open Access talk, title page&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In this post, I&amp;rsquo;ll explain what I did.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;my-history&#34;&gt;My history&lt;/h3&gt;
-
-&lt;p&gt;Take a look at my &lt;a href=&#34;http://kbroman.org/pages/talks.html&#34;&gt;list of presentations&lt;/a&gt; (going back to 1998), and you&amp;rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.&lt;/p&gt;
-
-&lt;p&gt;My LaTeX-based slides (e.g., see &lt;a href=&#34;http://github.com/kbroman/Talk_Graphs&#34;&gt;my talks on data visualization&lt;/a&gt;) have been made using &lt;code&gt;\documentclass{article}&lt;/code&gt;, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-Example 1
-\end{minipage}
-
-\vspace{30mm}
-
-\centerline{\includegraphics[height=6in]{Figs/fig1a.png}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I knew Beamer would give cleaner code, but how to also have cleaner slides?&lt;/p&gt;
-
-&lt;h3 id=&#34;a-starting-point&#34;&gt;A starting point&lt;/h3&gt;
-
-&lt;p&gt;I googled &amp;ldquo;clean Beamer slides&amp;rdquo; or something like that, and I came across &lt;a href=&#34;http://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;http://mikedewar.wordpress.com&#34;&gt;Mike Dewar&lt;/a&gt;, with a picture of a slide that looked much like what I wanted:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://mikedewar.files.wordpress.com/2009/02/beamer_screen.png&amp;amp;h=360&#34; alt=&#34;Slide from Mike Dewar&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So I read his post and studied his code and played around. Then I searched for stuff on the &lt;a href=&#34;http://tex.stackexchange.com/&#34;&gt;LaTeX Stack Exchange&lt;/a&gt; and played around some more. Then I read the &lt;a href=&#34;ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf&#34;&gt;Beamer manual&lt;/a&gt; and played around some more.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s really not much to it.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-benefits-of-beamer&#34;&gt;The benefits of Beamer&lt;/h3&gt;
-
-&lt;p&gt;The main benefits of using Beamer:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Simpler code, because it will place elements in reasonable places without a lot of messing about&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Simple animations using less code, so you &lt;a href=&#34;http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself&#34;&gt;don&amp;rsquo;t repeat yourself&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Easy way to create handouts with notes on what you&amp;rsquo;re going to say. This is especially useful for others to learn from your presentation even if they can&amp;rsquo;t attend (which is most of the world). Here&amp;rsquo;s an example page from such a handout:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png&#34; alt=&#34;Example notes page from Open Access talk&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;here-s-what-i-did&#34;&gt;Here&amp;rsquo;s what I did&lt;/h3&gt;
-
-&lt;p&gt;I was preparing a talk on open access publishing. Here&amp;rsquo;s &lt;a href=&#34;http://github.com/kbroman/Talk_OpenAccess&#34;&gt;the source&lt;/a&gt;; &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;the pdf&lt;/a&gt;; and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;a pdf with notes on what I intend to say&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll go through the details of the code, in case it might be useful to someone.&lt;/p&gt;
-
-&lt;p&gt;Here are the first two lines of the &lt;code&gt;.tex&lt;/code&gt; file. The &lt;code&gt;12pt&lt;/code&gt; makes the default font a bit bigger, but not actually twelve point. The &lt;code&gt;t&lt;/code&gt; makes the body of each slide top-justified rather than vertically centered. You don&amp;rsquo;t need many packages, as lots of them (like &lt;code&gt;color&lt;/code&gt;) are included by default with Beamer.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\documentclass[12pt,t]{beamer}
-\usepackage{graphicx}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;These next two lines are for the notes pages (if you are going to use that feature); more below.  By default, the notes are hidden. I wrote a &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb&#34;&gt;ruby script&lt;/a&gt; to switch the &lt;code&gt;hide&lt;/code&gt; to &lt;code&gt;show&lt;/code&gt; and add &lt;code&gt;handout&lt;/code&gt; to the options in the &lt;code&gt;\documentclass&lt;/code&gt; command (more on that below). The &lt;code&gt;\setbeamertemplate&lt;/code&gt; command makes the note pages completely plain.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\setbeameroption{hide notes}
-\setbeamertemplate{note page}[plain]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;These next lines choose the default Beamer theme, get rid of all of the navigation stuff, and make it so any bookmarks are not shown when you open the PDF in Acrobat.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\usetheme{default}
-\beamertemplatenavigationsymbolsempty
-\hypersetup{pdfpagemode=UseNone} % don&#39;t show bookmarks on initial view
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;These next lines change the font to Helvetica Neue, with Palatino used for the notes pages.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\usefonttheme{professionalfonts}
-\usefonttheme{serif}
-\usepackage{fontspec}
-\setmainfont{Helvetica Neue}
-\setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I define a bunch of colors.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\definecolor{foreground}{RGB}{255,255,255}
-\definecolor{background}{RGB}{24,24,24}
-\definecolor{title}{RGB}{107,174,214}
-\definecolor{gray}{RGB}{155,155,155}
-\definecolor{subtitle}{RGB}{102,255,204}
-\definecolor{hilight}{RGB}{102,255,204}
-\definecolor{vhilight}{RGB}{255,111,207}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I use those colors, for the titles, subtitle, institute, etc.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\setbeamercolor{titlelike}{fg=title}
-\setbeamercolor{subtitle}{fg=subtitle}
-\setbeamercolor{institute}{fg=gray}
-\setbeamercolor{normal text}{fg=foreground,bg=background}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This stuff changes the color of bullets in &lt;code&gt;itemize&lt;/code&gt; environments and changes nested bullet symbols to en-dashes (-) in gray, and a bit smaller.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\setbeamercolor{item}{fg=foreground} % color of bullets
-\setbeamercolor{subitem}{fg=gray}
-\setbeamercolor{itemize/enumerate subbody}{fg=gray}
-\setbeamertemplate{itemize subitem}{{\textendash}}
-\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
-\setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This gives me a slide number in the lower-right, in gray.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\setbeamertemplate{footline}{%
-    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
-          \scriptsize\insertframenumber}}}\hspace*{5pt}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This adds a bit of space between paragraphs on the notes pages.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I also made a few small macros to simplify some things.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\newcommand{\bi}{\begin{itemize}}
-\newcommand{\ei}{\end{itemize}}
-\newcommand{\ig}{\includegraphics}
-\newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;code-for-example-slides&#34;&gt;Code for example slides&lt;/h3&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the code to create the title slide. (The content is determined by &lt;code&gt;\title&lt;/code&gt;, &lt;code&gt;\author&lt;/code&gt;, etc., before the &lt;code&gt;\begin{document}&lt;/code&gt;.) The first line is to get rid of the page number. The text in &lt;code&gt;\note{}&lt;/code&gt; will appear on a separate page after the title slide, in the version of the PDF with notes.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-\setbeamertemplate{footline}{} % no page number here
-\frame{
-  \titlepage
-  \note{These are slides for a talk I will give on 24 Oct 2013, at a
-    symposium on open access publishing, organized by the Ebling
-    Library, UW{\textendash}Madison.}
-}
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an example regular slide. &lt;code&gt;\subt&lt;/code&gt; is a macro defined above and just makes that text smaller and in a different color.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\begin{frame}{Access in action}
-\subt{Interesting reference}
-
-\bigskip
-\centerline{
-\ig[height=0.75\textheight]{Images/img01.jpg}
-}
-
-\note{I&#39;ll begin with an illustration of what I mean by
-  access.
-
-  The other day I was reading a manuscript and saw an
-  article of interest.}
-\end{frame}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a fancier slide, with a bit of animation: codes like &lt;code&gt;&amp;lt;2-&amp;gt;&lt;/code&gt;, which means that bit is not on the first version of this slide but appears on subsequent versions. When the LaTeX file is turned into a PDF, four versions of this slide are created. But in the handout (with the notes), there&amp;rsquo;ll be just one, and the &lt;code&gt;&amp;lt;3| handout 0&amp;gt;&lt;/code&gt; bits are to control the separate look on the animated slides and on the single-slide version that shows up with the notes.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\begin{frame}{It&#39;s all about money}
-\subt{(Costs in scientific publishing)}
-
-\vspace{24pt}
-
-\bi
-\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Research}
-\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Writing}
-\item {\color&amp;lt;3| handout 0&amp;gt;{hilight} Peer review, editorial oversight}
-\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Journal administration}
-\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Copy editing, typesetting}
-\item {\color&amp;lt;4| handout 0&amp;gt;{hilight} Distribution}
-\item&amp;lt;2-&amp;gt;{\color&amp;lt;2| handout 0&amp;gt;{vhilight} \color&amp;lt;4| handout 0&amp;gt;{hilight} Profit}
-\ei
-\note{ [clip] }
-\end{frame}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;a-version-with-notes&#34;&gt;A version with notes&lt;/h3&gt;
-
-&lt;p&gt;It&amp;rsquo;s nice to have a version of one&amp;rsquo;s slides that includes notes of what you&amp;rsquo;re going to say. I like &lt;a href=&#34;http://bost.ocks.org/mike&#34;&gt;Mike Bostock&lt;/a&gt; approach, as in &lt;a href=&#34;http://bost.ocks.org/mike/d3/workshop/#0&#34;&gt;these slides&lt;/a&gt;, with little sticky notes. But I don&amp;rsquo;t want to spend time trying to implement that in LaTeX, so I went with the built-in functionality in Beamer, though selecting a very plain template and adding a bit of space between paragraphs.&lt;/p&gt;
-
-&lt;p&gt;I also chose to create a handout with just a single snapshot of the animated pages (in which I sequentially overlayed a number of images).&lt;/p&gt;
-
-&lt;p&gt;Having added a &lt;code&gt;\note{}&lt;/code&gt; to each &amp;ldquo;frame,&amp;rdquo; there are just a few simple commands to add to the &lt;code&gt;.tex&lt;/code&gt; file to get it to compile to the handout with notes. So I wrote a &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb&#34;&gt;ruby script&lt;/a&gt; to make those changes.&lt;/p&gt;
-
-&lt;p&gt;I then used &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;pdfnup&lt;/a&gt; to make the notes PDF be 2-up: the slide above and the notes below. The details are in the &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/Makefile&#34;&gt;Makefile&lt;/a&gt;; if that&amp;rsquo;s not obvious, see my &lt;a href=&#34;http://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial about GNU make&lt;/a&gt;.&lt;/p&gt;
-</description>
+I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s been widely adopted.</description>
     </item>
     
     <item>
@@ -713,38 +143,9 @@ Example 1
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</guid>
-      <description>&lt;p&gt;Did you know you can use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;[[&amp;quot;&lt;/code&gt; as function names for subsetting with calls to the &lt;code&gt;apply&lt;/code&gt;-type functions?&lt;/p&gt;
-
-&lt;p&gt;For example, suppose you have a bunch of identifier strings like &lt;code&gt;&amp;quot;ZYY-43S-CWA3&amp;quot;&lt;/code&gt; and you want to pull off the bit before the first hyphen (&lt;code&gt;&amp;quot;ZYY&amp;quot;&lt;/code&gt; in this case).  (For code to create random IDs like that, see the end of this post.)&lt;/p&gt;
-
-&lt;p&gt;Suppose the IDs are in a vector of character strings, &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;If I wanted to grab the bit before the first hyphen, I would typically use &lt;code&gt;strsplit&lt;/code&gt; and then &lt;code&gt;sapply&lt;/code&gt; with &lt;code&gt;function(a) a[1]&lt;/code&gt;, as so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(strsplit(id, &amp;quot;-&amp;quot;), function(a) a[1])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But in place of &lt;code&gt;function(a) a[1]&lt;/code&gt;, you can use &lt;code&gt;&amp;quot;[&amp;quot;, 1&lt;/code&gt;, as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 1)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I think that&amp;rsquo;s kind of cute. You can use &lt;code&gt;&amp;quot;[[&amp;quot;&lt;/code&gt; the same way, if you&amp;rsquo;re working with lists.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s some code to create random IDs of this form, to test out the above:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;nind &amp;lt;- 8
-lengths &amp;lt;- c(3, 3, 4)
-id &amp;lt;- NULL
-for(i in seq(along=lengths)) {
-  randchar &amp;lt;- sample(c(LETTERS, 0:9), nind*lengths[i], replace=TRUE)
-  randstring &amp;lt;- apply(matrix(randchar, ncol=lengths[i]),
-                   1, paste, collapse=&amp;quot;&amp;quot;)
-  if(is.null(id)) id &amp;lt;- randstring
-  else id &amp;lt;- paste(id, randstring, sep=&amp;quot;-&amp;quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Did you know you can use &amp;quot;[&amp;quot; and &amp;quot;[[&amp;quot; as function names for subsetting with calls to the apply-type functions?
+For example, suppose you have a bunch of identifier strings like &amp;quot;ZYY-43S-CWA3&amp;quot; and you want to pull off the bit before the first hyphen (&amp;quot;ZYY&amp;quot; in this case). (For code to create random IDs like that, see the end of this post.)
+Suppose the IDs are in a vector of character strings, id.</description>
     </item>
     
     <item>
@@ -753,73 +154,10 @@ for(i in seq(along=lengths)) {
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
-      <description>&lt;p&gt;The other day, there was a bit of &lt;a href=&#34;https://twitter.com/hspter/status/363015797204992000&#34;&gt;a twitter conversation about &lt;code&gt;qqline&lt;/code&gt;&lt;/a&gt; in R.&lt;/p&gt;
-
-&lt;p&gt;It made me think: how exactly is the line produced by &lt;code&gt;qqline&lt;/code&gt; chosen? I seemed to recall that the line was through the first and third quartiles.&lt;/p&gt;
-
-&lt;p&gt;An advantage of R is that you can just type the name of the function and see the code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;# qqline
-function (y, datax = FALSE, distribution = qnorm, probs = c(0.25,
-    0.75), qtype = 7, ...)
-{
-    stopifnot(length(probs) == 2, is.function(distribution))
-    y &amp;lt;- quantile(y, probs, names = FALSE, type = qtype, na.rm = TRUE)
-    x &amp;lt;- distribution(probs)
-    if (datax) {
-        slope &amp;lt;- diff(x)/diff(y)
-        int &amp;lt;- x[1L] - slope * y[1L]
-    }
-    else {
-        slope &amp;lt;- diff(y)/diff(x)
-        int &amp;lt;- y[1L] - slope * x[1L]
-    }
-    abline(int, slope, ...)
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I was right: They take the 25th and 75th percentiles of the data and of the theoretical distribution, calculate the slope and y-intercept of the line that goes through those two points, and use &lt;code&gt;abline&lt;/code&gt; to draw the line.&lt;/p&gt;
-
-&lt;p&gt;Open source means the source is open, so why not take the time to look at it?&lt;/p&gt;
-
-&lt;p&gt;Sometimes typing the name of the function doesn&amp;rsquo;t tell you much:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;# qqnorm
-function (y, ...)
-UseMethod(&amp;quot;qqnorm&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In such cases, you could try typing, for example, &lt;code&gt;qqnorm.default&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Still, the comments (if there were any) get stripped off, and for long functions, it&amp;rsquo;s not pretty.  So I like to keep a copy of the source code (for example, &lt;a href=&#34;http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz&#34;&gt;&lt;code&gt;R-3.0.1.tar.gz&lt;/code&gt;&lt;/a&gt;; extract it with &lt;code&gt;tar xzf R-3.0.1.tar.gz&lt;/code&gt;). I use &lt;code&gt;grep&lt;/code&gt; to find the relevant files.&lt;/p&gt;
-
-&lt;p&gt;For example,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;grep -r &#39;qqline&#39; R-3.0.1/src/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;shows that I should look for &lt;code&gt;qqline&lt;/code&gt; in&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;R-3.0.1/src/library/stats/R/qqnorm.R
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For something like &lt;code&gt;cor&lt;/code&gt;, you might want to do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;grep -r &#39;cor &amp;lt;-&#39; R-3.0.1/src
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Or maybe:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;grep -r &#39;cor &amp;lt;-&#39; R-3.0.1/src/library/stats/R
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But for &lt;code&gt;cor&lt;/code&gt;, you probably also want to look at the C code, which is in&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;R-3.0.1/src/library/stats/src/cov.c
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can learn a lot about programming from the source code for R.&lt;/p&gt;
-</description>
+      <description>The other day, there was a bit of a twitter conversation about qqline in R.
+It made me think: how exactly is the line produced by qqline chosen? I seemed to recall that the line was through the first and third quartiles.
+An advantage of R is that you can just type the name of the function and see the code:
+# qqline function (y, datax = FALSE, distribution = qnorm, probs = c(0.</description>
     </item>
     
     <item>
@@ -828,22 +166,9 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</guid>
-      <description>&lt;p&gt;Another &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip: beware of &lt;code&gt;as.character&lt;/code&gt; applied to a list.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; as.character( list(letters[1:3], letters[4:6]) )
-[1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Really, beware of &lt;code&gt;grep&lt;/code&gt; with a list:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6]))
-[1] 1 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You might have thought that the result would be just &lt;code&gt;1&lt;/code&gt;, but &lt;code&gt;grep&lt;/code&gt; expects a vector of character strings.  If the input is not that, it uses &lt;code&gt;as.character()&lt;/code&gt;.  Since the result of that starts with &lt;code&gt;&amp;quot;c(&amp;quot;&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt; finds &lt;code&gt;&amp;quot;c&amp;quot;&lt;/code&gt; in each.&lt;/p&gt;
-
-&lt;p&gt;See the &lt;a href=&#34;http://stackoverflow.com/questions/7591632/why-this-behavior-when-coercing-a-list-to-character-via-as-character&#34;&gt;related discussion&lt;/a&gt; (from Sept 2011) on &lt;a href=&#34;http://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Another R tip: beware of as.character applied to a list.
+&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot;  Really, beware of grep with a list:
+&amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6])) [1] 1 2  You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
     </item>
     
     <item>
@@ -852,34 +177,10 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/02/apply-vs-for/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s widely understood that, in &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; programming, one should avoid &lt;code&gt;for&lt;/code&gt; loops and always try to use &lt;code&gt;apply&lt;/code&gt;-type functions.&lt;/p&gt;
-
-&lt;p&gt;But this isn&amp;rsquo;t entirely true.  It may have been true for Splus, back in the day: As  I recall, that had to do with the entire environment from each iteration being retained in memory.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a simple example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; x &amp;lt;- matrix(rnorm(4000*40000), ncol=4000)
-
-&amp;gt; system.time({
-+     mx &amp;lt;- rep(NA, nrow(x))
-+     for(i in 1:nrow(x)) mx[i] &amp;lt;- max(x[i,])
-+  })
-   user  system elapsed
-  3.719   0.446   4.164
-
-&amp;gt; system.time(mx2 &amp;lt;- apply(x, 1, max))
-   user  system elapsed
-  5.548   1.783   7.333
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.r-project.org/doc/Rnews/Rnews_2008-1.pdf&#34;&gt;a great commentary on this point&lt;/a&gt; by Uwe Ligges and John Fox in the May, 2008, issue of R News (see the &amp;ldquo;R help desk&amp;rdquo;, starting on page 46, and note that R News is now the &lt;a href=&#34;http://journal.r-project.org&#34;&gt;R Journal&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Also see &lt;a href=&#34;http://stackoverflow.com/questions/7142767/why-are-loops-slow-in-r/7142982#7142982&#34;&gt;the related discussion&lt;/a&gt; at &lt;a href=&#34;http://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;They say that &lt;code&gt;apply&lt;/code&gt; can be more readable.  It can certainly be more compact, but I usually find a &lt;code&gt;for&lt;/code&gt; loop to be more readable, perhaps because I&amp;rsquo;m a C programmer first and an R programmer second.&lt;/p&gt;
-
-&lt;p&gt;A key point, from Ligges and Fox: &amp;ldquo;Initialize new objects to full length before the loop, rather than increasing their size within the loop.&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s widely understood that, in R programming, one should avoid for loops and always try to use apply-type functions.
+But this isn&amp;rsquo;t entirely true. It may have been true for Splus, back in the day: As I recall, that had to do with the entire environment from each iteration being retained in memory.
+Here&amp;rsquo;s a simple example:
+&amp;gt; x &amp;lt;- matrix(rnorm(4000*40000), ncol=4000) &amp;gt; system.time({ + mx &amp;lt;- rep(NA, nrow(x)) + for(i in 1:nrow(x)) mx[i] &amp;lt;- max(x[i,]) + }) user system elapsed 3.</description>
     </item>
     
     <item>
@@ -888,21 +189,11 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/02/xc53/</guid>
-      <description>&lt;p&gt;An &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip:
-Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&gt;x[[5]][[3]]&lt;/code&gt;?&lt;/p&gt;
-
-&lt;p&gt;I should make more thorough use of this.&lt;/p&gt;
-
-&lt;p&gt;In the help file for &lt;code&gt;[[&lt;/code&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;[[&lt;/code&gt; can be applied recursively to lists, so that if the single index &lt;code&gt;i&lt;/code&gt; is a vector of length &lt;code&gt;p&lt;/code&gt;, &lt;code&gt;alist[[i]]&lt;/code&gt; is equivalent to &lt;code&gt;alist[[i1]]...[[ip]]&lt;/code&gt; providing all but the final indexing results in a list.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I never knew this; I came across it when playing around (i.e., not paying proper attention) in the back of the room at an R course.&lt;/p&gt;
-
-&lt;p&gt;Did you know that &lt;code&gt;[[&lt;/code&gt; had a help file?  Type &lt;code&gt;?&amp;quot;[[&amp;quot;&lt;/code&gt;&lt;/p&gt;
-</description>
+      <description>An R tip: Did you know that x[[c(5,3)]] is the same as x[[5]][[3]]?
+I should make more thorough use of this.
+In the help file for [[:
+ [[ can be applied recursively to lists, so that if the single index i is a vector of length p, alist[[i]] is equivalent to alist[[i1]]...[[ip]] providing all but the final indexing results in a list.
+ I never knew this; I came across it when playing around (i.</description>
     </item>
     
     <item>
@@ -911,62 +202,10 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
-
-&lt;p&gt;But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.&lt;/p&gt;
-
-&lt;h3 id=&#34;put-the-script-in-the-body&#34;&gt;Put the script in the body&lt;/h3&gt;
-
-&lt;p&gt;First, I&amp;rsquo;d tried to make a &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html&#34;&gt;truly simple example&lt;/a&gt;, making just an SVG with a little rectangle.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt;
-    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;
-        src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-
-    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
-    var h=50;
-    var svg = d3.select(&amp;quot;body&amp;quot;).append(&amp;quot;svg&amp;quot;)
-                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;, h);
-    svg.append(&amp;quot;rect&amp;quot;).attr(&amp;quot;x&amp;quot;, 0).attr(&amp;quot;y&amp;quot;, 0)
-                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;,h);
-    &amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But this gives nothing.  You need to move the script from the &lt;code&gt;head&lt;/code&gt; to the &lt;code&gt;body&lt;/code&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html&#34;&gt;as it is here&lt;/a&gt;.  Then it works.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t really understand this.  Perhaps I should go back to my reading.&lt;/p&gt;
-
-&lt;p&gt;[&lt;strong&gt;Update&lt;/strong&gt;: I think I&amp;rsquo;ve figured this out.  If you put the script in the &lt;code&gt;head&lt;/code&gt;, the code gets run before the &lt;code&gt;body&lt;/code&gt; exists, and so there&amp;rsquo;s no &lt;code&gt;body&lt;/code&gt; in which to append the SVG.  &lt;em&gt;Conclusion&lt;/em&gt;: Put the link to your script at the very bottom of the html file.]&lt;/p&gt;
-
-&lt;h3 id=&#34;don-t-forget-enter&#34;&gt;Don&amp;rsquo;t forget &lt;code&gt;enter()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;In D3, you bind data to a bunch of objects, and attributes of the objects can be controlled by features of the data.  I write code sort of like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;svg.append(&amp;quot;g&amp;quot;).selectAll(&amp;quot;empty&amp;quot;)
-   .data(thedata)
-   .enter()
-   .append(&amp;quot;rect&amp;quot;)
-   .attr(&amp;quot;x&amp;quot;, (d) -&amp;gt; start[d])
-   .attr(&amp;quot;y&amp;quot;, pad.top)
-   .attr(&amp;quot;width&amp;quot;, (d) -&amp;gt; end[d] - start[d])
-   .attr(&amp;quot;height&amp;quot;, (d) -&amp;gt; hInner)
-   .attr(&amp;quot;fill&amp;quot;, (d) -&amp;gt; color[d])
-   .attr(&amp;quot;stroke&amp;quot;, &amp;quot;none&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My most common mistake so far: I forget the &lt;code&gt;.enter()&lt;/code&gt; part.  You don&amp;rsquo;t get a error message, but the objects don&amp;rsquo;t get created.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
+But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
+Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var h=50; var svg = d3.</description>
     </item>
     
     <item>
@@ -975,57 +214,8 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330&#34;&gt;Rainer pointed out&lt;/a&gt;, in response to my post, &lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/&#34;&gt;Row names in data frames: Beware of 1:nrow&lt;/a&gt;, that if I&amp;rsquo;d used &lt;code&gt;rownames(x) &amp;lt;- as.character(1:3)&lt;/code&gt; rather than &lt;code&gt;rownames(x) &amp;lt;- 1:3&lt;/code&gt;, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3)
-&amp;gt; y &amp;lt;- data.frame(id=4:6)
-&amp;gt; rownames(x) &amp;lt;- 1:3
-&amp;gt; rownames(y) &amp;lt;- LETTERS[4:6]
-&amp;gt; rownames(z) &amp;lt;- as.character(1:3)
-&amp;gt; rbind(y,x)
-  id
-D  1
-E  2
-F  3
-4  1
-5  2
-6  3
-&amp;gt; rbind(y,z)
-  id
-D  1
-E  2
-F  3
-1  1
-2  2
-3  3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you type &lt;code&gt;rownames(x)&lt;/code&gt; you see the same result as &lt;code&gt;rownames(z)&lt;/code&gt;, and &lt;code&gt;is.character(rownames(x))&lt;/code&gt; and &lt;code&gt;is.character(rownames(z))&lt;/code&gt; both return TRUE, but if you look at the &lt;code&gt;&amp;quot;row.names&amp;quot;&lt;/code&gt; attribute directly, you see they are different.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; rownames(x)
-[1] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot;
-&amp;gt; rownames(z)
-[1] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot;
-&amp;gt; is.character(rownames(x))
-[1] TRUE
-&amp;gt; is.character(rownames(z))
-[1] TRUE
-&amp;gt; attr(x, &amp;quot;row.names&amp;quot;)
-[1] 1 2 3
-&amp;gt; attr(z, &amp;quot;row.names&amp;quot;)
-[1] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But why is &lt;code&gt;1:3&lt;/code&gt; treated so differently from &lt;code&gt;2:4&lt;/code&gt;?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; w &amp;lt;- data.frame(id=1:3)
-&amp;gt; rownames(w) &amp;lt;- 2:4
-&amp;gt; attr(w, &amp;quot;row.names&amp;quot;)
-[1] 2 3 4
-&amp;gt; rownames(rbind(y,w))
-[1] &amp;quot;D&amp;quot; &amp;quot;E&amp;quot; &amp;quot;F&amp;quot; &amp;quot;2&amp;quot; &amp;quot;3&amp;quot; &amp;quot;4&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Rainer pointed out, in response to my post, Row names in data frames: Beware of 1:nrow, that if I&amp;rsquo;d used rownames(x) &amp;lt;- as.character(1:3) rather than rownames(x) &amp;lt;- 1:3, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.
+&amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rownames(z) &amp;lt;- as.character(1:3) &amp;gt; rbind(y,x) id D 1 E 2 F 3 4 1 5 2 6 3 &amp;gt; rbind(y,z) id D 1 E 2 F 3 1 1 2 2 3 3  If you type rownames(x) you see the same result as rownames(z), and is.</description>
     </item>
     
     <item>
@@ -1034,38 +224,9 @@ F  3
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
-      <description>&lt;p&gt;I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, &lt;code&gt;x&lt;/code&gt;, as &lt;code&gt;1:nrow(x)&lt;/code&gt;, R will act as if you&amp;rsquo;d not assigned row names, and the names might get changed when you do &lt;code&gt;rbind&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an illustration:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;&amp;gt; x &amp;lt;- data.frame(id=1:3)
-&amp;gt; y &amp;lt;- data.frame(id=4:6)
-&amp;gt; rownames(x) &amp;lt;- 1:3
-&amp;gt; rownames(y) &amp;lt;- LETTERS[4:6]
-&amp;gt; rbind(x,y)
-  id
-1  1
-2  2
-3  3
-D  4
-E  5
-F  6
-&amp;gt; rbind(y,x)
-  id
-D  4
-E  5
-F  6
-4  1
-5  2
-6  3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;As you can see, if you give &lt;code&gt;x&lt;/code&gt; the row names &lt;code&gt;1:3&lt;/code&gt;, these are treated as generic row numbers and could get changed following &lt;code&gt;rbind&lt;/code&gt; if they end up in different rows.  This doesn&amp;rsquo;t happen if &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; are matrices.&lt;/p&gt;
-
-&lt;p&gt;I often use row names as identifiers, so it seems I must be cautious to use something other than row numbers.&lt;/p&gt;
-</description>
+      <description>I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, x, as 1:nrow(x), R will act as if you&amp;rsquo;d not assigned row names, and the names might get changed when you do rbind.
+Here&amp;rsquo;s an illustration:
+&amp;gt; x &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rbind(x,y) id 1 1 2 2 3 3 D 4 E 5 F 6 &amp;gt; rbind(y,x) id D 4 E 5 F 6 4 1 5 2 6 3  As you can see, if you give x the row names 1:3, these are treated as generic row numbers and could get changed following rbind if they end up in different rows.</description>
     </item>
     
     <item>
@@ -1074,36 +235,8 @@ F  6
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
-      <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
-
-&lt;p&gt;I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/10/halloween20111.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They arrived pretty regularly from 5:50 to 7:50.&lt;/p&gt;
-
-&lt;p&gt;I comment on the figure&amp;rsquo;s style below.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;In the above graph, I&amp;rsquo;m applying ideas learned from &lt;a href=&#34;http://statistics.gmu.edu/people_pages/carr.html&#34;&gt;Dan Carr&lt;/a&gt; when I visited the &lt;a href=&#34;http://statistics.gmu.edu&#34;&gt;statistics department&lt;/a&gt; at &lt;a href=&#34;http://www.gmu.edu&#34;&gt;George Mason&lt;/a&gt; in September, to give &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/gmu2011.pdf&#34;&gt;a seminar&lt;/a&gt;.  (I had a great time at GMU, particularly talking to Dan about graphics.  I had a copy of &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;his book about micromaps&lt;/a&gt; on my iPad, but hadn&amp;rsquo;t really looked at it until after I met him.  Take a look at the first chapter; it&amp;rsquo;s full of good ideas and may convince you to read the rest.)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The gray background makes the figure stand out on the &amp;ldquo;page&amp;rdquo;.  (I had disliked this aspect of &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt; plots (for example, &lt;a href=&#34;http://had.co.nz/ggplot2/graphics/7f083a1488351d731c01ea449ee690f0.png&#34;&gt;this one&lt;/a&gt;), but Dan convinced me that it&amp;rsquo;s better.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The black border around the figure is important.  (Dan pointed out that it&amp;rsquo;s not the gray background I dislike about the default ggplot2 plots, but the lack of the border.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The white grid lines make it easy to see the details, and they still don&amp;rsquo;t get in the way of the plot.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;With the grid lines, you don&amp;rsquo;t need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no &lt;strike&gt;bristles&lt;/strike&gt; ticks.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The use of color for the actual data makes them stand out better.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The code I used for the figure is &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/blog/halloween2011.R&#34;&gt;here&lt;/a&gt;.  It&amp;rsquo;s old-fashioned and inefficient, but it works.&lt;/p&gt;
-</description>
+      <description>We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).
+I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.</description>
     </item>
     
     <item>
@@ -1112,56 +245,8 @@ F  6
       <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</guid>
-      <description>&lt;p&gt;One of the coolest R packages I heard about at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt;: &lt;a href=&#34;http://cbio.ensmp.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels directly next to the relevant curves or point clouds in a figure.&lt;/p&gt;
-
-&lt;p&gt;I think I first learned about this idea from &lt;a href=&#34;http://www.andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this:
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/direct_by_hand.png&#34; alt=&#34;&#34; /&gt;
-&lt;!-- more --&gt;rather than this:
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/legend.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here&amp;rsquo;s the code I used for the first of those pictures. (It was relatively easy here.)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;load(con &amp;lt;- url(&amp;quot;http://www.biostat.wisc.edu/~kbroman/blog/mapexpansion.RData&amp;quot;))
-close(con)
-
-plot(dat[,1], dat[,4],
-     xlab=expression(paste(&amp;quot;Generation &amp;quot;, F[k])),
-     ylab=&amp;quot;Map expansion&amp;quot;,
-     type=&amp;quot;l&amp;quot;, lwd=2, col=&amp;quot;black&amp;quot;, las=1,
-     xaxs=&amp;quot;i&amp;quot;, yaxs=&amp;quot;i&amp;quot;, ylim=c(0, 7))
-
-for(i in 2:3)
-  lines(dat[,1], dat[,i], lwd=2, col=c(&amp;quot;blue&amp;quot;, &amp;quot;red&amp;quot;)[i-1])
-
-text(17, dat[18,-1]-0.1, paste(colnames(dat)[-1], &amp;quot;-way&amp;quot;, sep=&amp;quot;&amp;quot;),
-     adj=c(0,1), col=c(&amp;quot;blue&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;black&amp;quot;))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The aim of the &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package is get this without effort.&lt;/p&gt;
-
-&lt;p&gt;I need to switch to either &lt;code&gt;lattice&lt;/code&gt; or &lt;code&gt;ggplot2&lt;/code&gt; (vs. base graphics). But I should be doing that anyway. I&amp;rsquo;ll try &lt;code&gt;lattice&lt;/code&gt; for this. I rearrange the data a bit, call &lt;code&gt;xyplot&lt;/code&gt; and then use &lt;code&gt;direct.labels&lt;/code&gt; to make the actual plot, as follows. (Note the use of &lt;code&gt;with&lt;/code&gt; and &lt;code&gt;gl&lt;/code&gt;, which I just learned about from &lt;a href=&#34;http://4dpiecharts.com/2011/08/22/more-useless-statistics/&#34;&gt;Richie Cotton&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(lattice)
-library(directlabels)
-
-dat2 &amp;lt;- with(dat, data.frame(gen=rep(gen,3),
-                             mapexpansion=c(two, four, eight),
-                             cross=gl(3, nrow(dat), labels=c(&amp;quot;two&amp;quot;,&amp;quot;four&amp;quot;,&amp;quot;eight&amp;quot;))))
-
-p &amp;lt;- xyplot(mapexpansion ~ gen, data=dat2, groups=cross, type=&amp;quot;l&amp;quot;, lwd=2)
-direct.label(p)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And here&amp;rsquo;s what I get:
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/from_directlabels.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the &amp;ldquo;real&amp;rdquo; version of the above figure, from &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf&#34;&gt;a paper under review&lt;/a&gt;, using a mixture of legend and direct labels:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/fig_in_paper.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s another figure I&amp;rsquo;m quite proud of, from a paper nearing submission.
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/phyloqtl.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>One of the coolest R packages I heard about at the useR! Conference: Toby Dylan Hocking&amp;rsquo;s directlabels package for putting labels directly next to the relevant curves or point clouds in a figure.
+I think I first learned about this idea from Andrew Gelman: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this: rather than this: I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place.</description>
     </item>
     
     <item>
@@ -1170,42 +255,9 @@ direct.label(p)
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</guid>
-      <description>&lt;p&gt;Let me tell you about my stupidest R mistake.&lt;/p&gt;
-
-&lt;p&gt;In the R package that I write, &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d gotten some reports that if there were &lt;em&gt;many&lt;/em&gt; phenotypes, the import of such a file could take an extremely long time. I ignored the problem (as it wasn&amp;rsquo;t a problem for me), but eventually it &lt;em&gt;did&lt;/em&gt; become a problem for me, and when I investigated, I found the following code.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# determine number of phenotypes based on initial blanks in row 2
-n &amp;lt;- ncol(data)
-temp &amp;lt;- rep(FALSE,n)
-for(i in 1:n) {
-  temp[i] &amp;lt;- all(data[2,1:i]==&amp;quot;&amp;quot;)
-  if(!temp[i]) break
-}
-if(!any(temp)) # no phenotypes!
-  stop(&amp;quot;You must include at least one phenotype (e.g., an index).&amp;quot;)
-n.phe &amp;lt;- max((1:n)[temp])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here &lt;code&gt;data&lt;/code&gt; is the input matrix, and I use a &lt;code&gt;for&lt;/code&gt; loop over columns, looking for the first cell for which all preceding cells were empty. If you can understand the code above, I&amp;rsquo;m sure you&amp;rsquo;ll agree that it is really stupid. I think the code was in the package for at least five years, possibly even eight.&lt;/p&gt;
-
-&lt;p&gt;For a file with 200 individuals and 1500 phenotypes, it would take about 60 seconds to load; after the fix (below), it took about 2 seconds. I spent 58 seconds looking for the first non-blank cell in the second row!&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;In April, 2009, I fixed it (see the &lt;a href=&#34;https://github.com/kbroman/qtl/commit/4cd486&#34;&gt;commit&lt;/a&gt; at the &lt;a href=&#34;https://github.com/kbroman/qtl&#34;&gt;github repository&lt;/a&gt;) by replacing the above with the following.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(data[2,1] != &amp;quot;&amp;quot;)
-  stop(&amp;quot;You must include at least one phenotype (e.g., an index).&amp;quot;)
-n.phe &amp;lt;- min(which(data[2,] != &amp;quot;&amp;quot;))-1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t quite understand what I&amp;rsquo;m talking about, here&amp;rsquo;s a picture of one of these comma-delimited files; this one has three phenotypes.
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/08/examplecsv.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open source means everyone can see my stupid mistakes.  Version control means everyone can see every stupid mistake I&amp;rsquo;ve ever made.&lt;/p&gt;
-</description>
+      <description>Let me tell you about my stupidest R mistake.
+In the R package that I write, R/qtl, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.
+I&amp;rsquo;d gotten some reports that if there were many phenotypes, the import of such a file could take an extremely long time.</description>
     </item>
     
   </channel>

@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Academics</title>
@@ -67,7 +69,7 @@
     <item>
       <title>Programming</title>
       <link>http://kbroman.org/blog/categories/programming/</link>
-      <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/categories/programming/</guid>
       <description></description>

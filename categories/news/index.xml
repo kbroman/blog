@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 27 May 2017 12:30:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/news/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ROpenSci Unconf 2017</title>
@@ -16,54 +18,8 @@
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
-&lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
-&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
-Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runconf17?src=hash&#34;&gt;#runconf17&lt;/a&gt; issue! &lt;a href=&#34;https://t.co/AqQpxVJZuk&#34;&gt;pic.twitter.com/AqQpxVJZuk&lt;/a&gt;
-&lt;/p&gt;
-— Amelia McNamara (&lt;span class=&#34;citation&#34;&gt;@AmeliaMN&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/867793745986469889&#34;&gt;May 25, 2017&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;I found the list of topics a bit forbidding. Important stuff, but a lot of them seemed technically difficult, and I didn’t really see how I could best contribute. And, jumping to the punch line, the &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;outcomes of the 2 days’ work&lt;/a&gt; are pretty awesome, for example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;A R package, &lt;a href=&#34;https://github.com/ropenscilabs/available&#34;&gt;available&lt;/a&gt;, to help name R packages. (Have others used it? Can it be viewed as offensive?)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A book on &lt;a href=&#34;https://github.com/ropenscilabs/r-security-practices&#34;&gt;best security practices for R package developers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/ropenscilabs/gramr&#34;&gt;grammar checker&lt;/a&gt; for R Markdown documents, “Write good and do good stuff.”&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ropenscilabs/testrmd&#34;&gt;testrmd&lt;/a&gt;, a package for including tests in R Markdown documents.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Awesome stuff, and that’s &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;4 of 20&lt;/a&gt;. But you know, I don’t think I’m particularly good at any of those things. And for that reason, I was super excited when &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt; posted the idea that we make an R package through which we can interact with the game Minecraft.&lt;/p&gt;
-&lt;p&gt;I’ve played a lot of Minecraft with my kids. And there’s a big community of folks writing “mods” for the game, but to do that, you need to write Java. And, well, I really don’t like Java. So I was excited, a few years ago, to see the book &lt;a href=&#34;https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;Learning to program with Minecraft&lt;/a&gt;, which uses a &lt;a href=&#34;https://github.com/py3minepi/py3minepi&#34;&gt;python module&lt;/a&gt; that allows you to interact with the game.&lt;/p&gt;
-&lt;p&gt;The book is a very nice and thorough introduction to programming, using Minecraft as all of the examples and exercises. Really, it’s the best book on programming for kids that I’ve seen, &lt;em&gt;because&lt;/em&gt; it is so full of challenging but do-able and above all &lt;em&gt;interesting&lt;/em&gt; exercises. Good exercises are really the key to learning programming, and Minecraft provides a lot of really great It’s a great way to learn programming, because a key challenge in learning to program is identifying appropriate &lt;em&gt;challenges&lt;/em&gt; to try to work on, and for people who’ve tried to&lt;/p&gt;
-&lt;p&gt;Our team of six (me, &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;, &lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario Inchiosa&lt;/a&gt;, and &lt;a href=&#34;https://github.com/akzaidi&#34;&gt;Adi Zaidi&lt;/a&gt;) set out to replicate the features of the python module as an R package. There are basically just eight functions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set a particular type of block somewhere&lt;/li&gt;
-&lt;li&gt;figure out what type of block is at some spot&lt;/li&gt;
-&lt;li&gt;figure out where a player is&lt;/li&gt;
-&lt;li&gt;move a player somewhere&lt;/li&gt;
-&lt;li&gt;figure out where a player is pointing&lt;/li&gt;
-&lt;li&gt;check whether anyone has hit something with a sword&lt;/li&gt;
-&lt;li&gt;post a message to chat&lt;/li&gt;
-&lt;li&gt;read the chat messages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We had our basic working package, &lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt;, by lunchtime on the first day and spent the next day and a half playing with it and Minecraft.&lt;/p&gt;
-&lt;p&gt;Just eight basic functions, but we did a ton of awesome things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A robot number-guessing game&lt;/li&gt;
-&lt;li&gt;Automatic creation of mazes that players can walk through (or be moved through automatically)&lt;/li&gt;
-&lt;li&gt;Replicate a photograph, or the R logo, within Minecraft using different types of blocks&lt;/li&gt;
-&lt;li&gt;Give a player Elsa (from the movie Frozen) powers, like walking on water and having it turn to ice, or creating random-sized columns of ice by hitting things&lt;/li&gt;
-&lt;li&gt;Write letters on the side of a mountain&lt;/li&gt;
-&lt;li&gt;Draw a full ggplot2-like scatterplot in the sky&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Check out &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/README.md&#34;&gt;the ReadMe file for our package&lt;/a&gt; to see a bunch of pictures and gifs.&lt;/p&gt;
-&lt;p&gt;I’ll write about some of these things in the (hopefully near) future, because I learned some cool stuff, and it was was really fun.&lt;/p&gt;
-&lt;p&gt;Just after lunch on day 2, I realized that we could use the chat feature in Minecraft to &lt;em&gt;execute R code from within Minecraft&lt;/em&gt;, using &lt;code&gt;parse&lt;/code&gt; and &lt;code&gt;eval&lt;/code&gt;. And it totally worked. So I could generate my ggplot2-style scatterplot entirely within Minecraft. (The key advantage of this, other than just being cool, is not having to keep switching back and forth between R and Minecraft.)&lt;/p&gt;
-&lt;p&gt;Watch me type a bit of R and get my scatterplot going:&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zggCAYAfjXE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;p&gt;What next? We’re thinking we’ll compile the many vignettes we developed into a &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
-</description>
+      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
@@ -72,58 +28,15 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/04/30/old-posts/</guid>
-      <description>&lt;p&gt;In moving away from my &lt;a href=&#34;http://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;Better-looking LaTeX/Beamer slides&lt;/a&gt;, 2013-10-07&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/&#34;&gt;MongoDB with D3.js&lt;/a&gt;, 2015-06-22&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;Crayon colors in R&lt;/a&gt;, 2014-05-07&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/04/02/apply-vs-for/&#34;&gt;&lt;code&gt;apply&lt;/code&gt; vs &lt;code&gt;for&lt;/code&gt;&lt;/a&gt;, 2013-04-02&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;Thoughts on statistical consulting&lt;/a&gt;, 2013-04-02&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;Notifications from R&lt;/a&gt;, 2014-09-03&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/&#34;&gt;A course in statistical programming&lt;/a&gt;, 2012-05-25&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/&#34;&gt;Row names in data frames: beware of &lt;code&gt;1:nrow&lt;/code&gt;&lt;/a&gt;, 2012-03-21&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/&#34;&gt;Interactive graphics with d3.js&lt;/a&gt;, 2013-02-08&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/&#34;&gt;I am a data scientist&lt;/a&gt;, 2016-04-08&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are a bunch of other things that I’ve written and quite like. Here’s a long list:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;The stupidest R code ever&lt;/a&gt;, 2011-04-17&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/04/25/microarrays-suck/&#34;&gt;Microarrays suck&lt;/a&gt;, 2012-04-25&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/10/11/curved-arrows-in-r/&#34;&gt;Curved arrows in R&lt;/a&gt;, 2012-10-11&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;The Hopkins SPH logo&lt;/a&gt;, parts &lt;a href=&#34;http://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;1 (2012-11-16)&lt;/a&gt;, &lt;a href=&#34;http://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;2 (2012-11-21)&lt;/a&gt;, and &lt;a href=&#34;http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;3 (2013-03-06)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/&#34;&gt;Towards making my own papers reproducible&lt;/a&gt;, 2013-03-10&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/04/29/methods-before-results/&#34;&gt;Methods before results&lt;/a&gt;, 2013-04-29&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/&#34;&gt;Knuth: Journal referees should assist authors&lt;/a&gt;, 2013-04-08&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;, 2013-04-05&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;Chutes &amp;amp; ladders: How long is this going to take?&lt;/a&gt; 2013-05-17&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/&#34;&gt;Stack exchange: why I dropped out&lt;/a&gt;, 2013-05-13&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/&#34;&gt;Hiring computational biologists&lt;/a&gt;, 2013-09-25&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/09/11/department-websites/&#34;&gt;Department websites&lt;/a&gt;, 2013-09-11&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/&#34;&gt;Complaints about the NIH grant review process&lt;/a&gt;, 2013-10-02&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/05/01/reform-academic-statistics/&#34;&gt;Reform academic statistics&lt;/a&gt;, 2014-05-01&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;If I could do it over again, I’d self-publish&lt;/a&gt;, 2014-08-12&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;Improved graphs of car crash stats&lt;/a&gt;, 2014-10-29&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/&#34;&gt;Interactive plot of car crash stats&lt;/a&gt;, 2014-10-30&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/&#34;&gt;Car crash stats revisited: My measurement errors&lt;/a&gt;, 2014-11-03&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/&#34;&gt;God-awful conference websites&lt;/a&gt;, 2015-08-05&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/&#34;&gt;Reproducibility is hard&lt;/a&gt;, 2015-09-09&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I have also written a few advice-type posts on various academic matters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2011/09/29/seminars-bad-and-good/&#34;&gt;Seminars, bad and good&lt;/a&gt;, 2011-09-29&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2011/10/21/grant-writing/&#34;&gt;Tips on grant writing&lt;/a&gt;, 2011-10-21&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2012/05/23/what-should-i-do-badly/&#34;&gt;What should I do badly?&lt;/a&gt;, 2012-05-23&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/&#34;&gt;Things to avoid as a new faculty member&lt;/a&gt; 2013-12-05&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here are a few more programming things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/&#34;&gt;Beware of &lt;code&gt;grep&lt;/code&gt; with a list&lt;/a&gt;, 2013-04-03&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/&#34;&gt;&lt;code&gt;[&lt;/code&gt; and &lt;code&gt;[[&lt;/code&gt; with the &lt;code&gt;apply()&lt;/code&gt; functions&lt;/a&gt;, 2013-08-20&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/&#34;&gt;&lt;code&gt;[&lt;/code&gt; with the &lt;code&gt;apply()&lt;/code&gt; functions, revisited&lt;/a&gt; 2014-04-29&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/08/06/read-the-source-code/&#34;&gt;Read the source code&lt;/a&gt;, 2013-08-06&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/&#34;&gt;Emacs key bindings in MS Word&lt;/a&gt;, 2014-02-12&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
+ Better-looking LaTeX/Beamer slides, 2013-10-07
+ MongoDB with D3.js, 2015-06-22
+ Crayon colors in R, 2014-05-07
+ apply vs for, 2013-04-02
+ Thoughts on statistical consulting, 2013-04-02
+ Notifications from R, 2014-09-03
+ A course in statistical programming, 2012-05-25
+ Row names in data frames: beware of 1:nrow, 2012-03-21</description>
     </item>
     
     <item>
@@ -132,8 +45,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m starting a new blog site at &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;kbroman.org/blog&lt;/a&gt;. I&amp;rsquo;m abandoning the &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;WordPress site&lt;/a&gt; as it is; I don&amp;rsquo;t want to fuss with trying to move things.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m starting a new blog site at kbroman.org/blog. I&amp;rsquo;m abandoning the WordPress site as it is; I don&amp;rsquo;t want to fuss with trying to move things.</description>
     </item>
     
     <item>
@@ -142,10 +54,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/04/29/new-blog/</guid>
-      <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt; as it is and not try to figure out how to move things over.&lt;/p&gt;
-&lt;p&gt;I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which is a &lt;em&gt;joy&lt;/em&gt;. See the &lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;bookdown-based documentation&lt;/a&gt; (currently a bit thin) plus &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas’s tutorial&lt;/a&gt; and the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbind&lt;/a&gt;. Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>This is the new site for my blog; source at github.
+I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
+I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
     </item>
     
     <item>
@@ -154,48 +65,11 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
-      <description>
+      <description>An odd thing happened to me on twitter today.
+UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
+So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
 
-&lt;p&gt;An odd thing happened to me on twitter today.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/uwsystem&#34;&gt;UW System&lt;/a&gt; had &lt;a href=&#34;https://twitter.com/UWSystem/status/826167903145775104&#34;&gt;tweeted a statement&lt;/a&gt; from system president &lt;a href=&#34;https://twitter.com/raywcross&#34;&gt;Ray Cross&lt;/a&gt; concerning Trump&amp;rsquo;s &lt;a href=&#34;https://www.nytimes.com/2017/01/27/us/politics/trump-syrian-refugees.html&#34;&gt;executive order&lt;/a&gt; banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.&lt;/p&gt;
-
-&lt;p&gt;So I &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;tweeted back&lt;/a&gt;, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2017/01/disappearedtweet.png&#34; alt=&#34;disappearedtweet&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that I mentioned not just &lt;a href=&#34;https://twitter.com/raywcross&#34;&gt;@RayWCross&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/uwsystem&#34;&gt;@UWSystem&lt;/a&gt;, but also &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@POTUS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Twenty minutes later, the tweet had gotten a couple of ❤️&amp;rsquo;s, and then one RT, but for some reason the tweet itself had disappeared from my twitter feed (in the app I use, &lt;a href=&#34;https://tapbots.com/tweetbot/&#34;&gt;Tweetbot&lt;/a&gt;). I looked at &lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;my twitter account&lt;/a&gt; in a web browser, and sure enough the tweet wasn&amp;rsquo;t there.&lt;/p&gt;
-
-&lt;p&gt;Puzzled, and knowing I hadn&amp;rsquo;t deleted the tweet, I poked around and was able to find, somehow, the URL for the original tweet, and I could see &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;the tweet&lt;/a&gt; in a browser. So it hadn&amp;rsquo;t been &lt;em&gt;deleted&lt;/em&gt;, it had just been removed from my feed.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/kerri_gilbert&#34;&gt;@Kerri_Gilbert&lt;/a&gt; then &lt;a href=&#34;https://twitter.com/Kerri_Gilbert/status/826181462567297025&#34;&gt;wrote&lt;/a&gt; that she could see it in her feed but not if she went to my timeline. So I wasn&amp;rsquo;t completely crazy.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/CFlensburg/&#34;&gt;@CFlensburg&lt;/a&gt; later &lt;a href=&#34;https://twitter.com/CFlensburg/status/826231062460129280&#34;&gt;wrote&lt;/a&gt; that he could see the tweet, but &lt;a href=&#34;https://twitter.com/CFlensburg/status/826232029549178880&#34;&gt;he&amp;rsquo;s in Australia&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now my hypothesis was: someone who looks after &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@potus&lt;/a&gt; had somehow suppressed my tweet. Or was I being paranoid?&lt;/p&gt;
-
-&lt;p&gt;A quick google search (for &amp;ldquo;tweet disappeared from feed&amp;rdquo;) revealed a &lt;a href=&#34;https://www.washingtonpost.com&#34;&gt;Washington Post&lt;/a&gt; article from 2015-10-30, &amp;ldquo;&lt;a href=&#34;https://www.washingtonpost.com/news/the-intersect/wp/2015/10/30/a-guide-to-why-some-activists-believe-their-tweets-are-being-censored-in-the-u-s/&#34;&gt;Tweets are disappearing on Twitter. Why?&lt;/a&gt;&amp;rdquo; This seems to explain what happened: my tweet was suppressed by some kind of &amp;ldquo;abuse filter.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;The article is an interesting read. It describes the experience of &lt;a href=&#34;http://members.efn.org/~paulmd/&#34;&gt;Paul Dietrich&lt;/a&gt; (&lt;a href=&#34;https://twitter.com/paulmd199&#34;&gt;@Paulmd199&lt;/a&gt;), who wrote an analysis of his situation: &amp;ldquo;&lt;a href=&#34;http://members.efn.org/~paulmd/OwnWork/AdventuresinCensorship.pdf&#34;&gt;Adventures in Twitter Censorship.&lt;/a&gt;&amp;rdquo; Also an interesting read.&lt;/p&gt;
-
-&lt;p&gt;And note that the tweet suppression is location-specific. It&amp;rsquo;s okay for &lt;a href=&#34;https://twitter.com/CFlensburg/&#34;&gt;Australians&lt;/a&gt; to read &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;the tweet&lt;/a&gt;, but Americans need to be protected from it.&lt;/p&gt;
-
-&lt;h4 id=&#34;but-why-this-tweet&#34;&gt;But why this tweet?&lt;/h4&gt;
-
-&lt;p&gt;This &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;tweet of mine&lt;/a&gt; was really a pretty bland tweet. I mean, I was directly criticizing my &lt;a href=&#34;http://www.med.wisc.edu/about/administration/robert-golden-md/38&#34;&gt;boss&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://chancellor.wisc.edu/about/&#34;&gt;boss&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://twitter.com/raywcross&#34;&gt;boss&lt;/a&gt;, and we &lt;a href=&#34;http://host.madison.com/wsj/news/local/education/university/regents-committee-passes-new-uw-madison-tenure-policy-with-changes/article_8249f119-05e7-5459-b4d8-25eab3e3882c.html&#34;&gt;just barely have tenure at Wisconsin&lt;/a&gt; anymore, so I certainly wasn&amp;rsquo;t going to be abusive. I&amp;rsquo;m not sure why I actually mentioned &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@potus&lt;/a&gt;, but I figured, &amp;ldquo;What the hell.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But what sort of abuse detection algorithm would decide that &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;this tweet&lt;/a&gt; was abusive? If there&amp;rsquo;s an abuse filter that would suppress &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;this tweet&lt;/a&gt; but not all of the actual abuse rampant on twitter&amp;hellip;well that&amp;rsquo;s bullshit.&lt;/p&gt;
-
-&lt;p&gt;Maybe it was that I wrote &amp;ldquo;Sad.&amp;rdquo; (I thought that was funny. And hardly abusive.)&lt;/p&gt;
-
-&lt;p&gt;I favor the theory that it wasn&amp;rsquo;t an algorithm but rather a person: that someone is assigned to read all mentions of &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@potus&lt;/a&gt; and if they deem something inappropriate, they flip a switch and the tweet gets suppressed.&lt;/p&gt;
-
-&lt;p&gt;So maybe I &lt;em&gt;am&lt;/em&gt; paranoid.&lt;/p&gt;
-
-&lt;p&gt;(I forgot to mention: &lt;a href=&#34;https://twitter.com/nickfleisher&#34;&gt;@NickFleisher&lt;/a&gt; had the best response to &lt;a href=&#34;https://twitter.com/UWSystem/status/826167903145775104&#34;&gt;Ray Cross&amp;rsquo;s lame statement&lt;/a&gt;: &amp;ldquo;&lt;a href=&#34;https://twitter.com/nickfleisher/status/826184115456143360&#34;&gt;Revise and resubmit&lt;/a&gt;.&amp;ldquo;)&lt;/p&gt;
-</description>
+Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
     </item>
     
     <item>
@@ -204,16 +78,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://host.madison.com/daily-cardinal/&#34;&gt;Daily Cardinal&lt;/a&gt; reports that &lt;a href=&#34;http://tinyurl.com/cuyhdtl&#34;&gt;there were no overhead sprinklers&lt;/a&gt; in the area of the fire yesterday.  Fire fighters thought that sprinklers had gone off, but it was really a broken water pipe.&lt;/p&gt;
-
-&lt;p&gt;And there are no sprinklers in my office, either.  I thought they were required, but I guess only in new construction.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s a &lt;a href=&#34;http://www.nbc15.com/home/headlines/Fire-Reported-at-UW-Medical-Science-Building-193836731.html&#34;&gt;short TV report&lt;/a&gt; (after a commercial) at the &lt;a href=&#34;http://www.nbc15.com&#34;&gt;channel 15 site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A graduate student interviewed said, &amp;ldquo;I have multiple copies of my data, but they&amp;rsquo;re all in that building.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I hope we all learn from this: Off-site backups (at least with something like &lt;a href=&#34;http://www.dropbox.com&#34;&gt;DropBox&lt;/a&gt;) are important.&lt;/p&gt;
-</description>
+      <description>The Daily Cardinal reports that there were no overhead sprinklers in the area of the fire yesterday. Fire fighters thought that sprinklers had gone off, but it was really a broken water pipe.
+And there are no sprinklers in my office, either. I thought they were required, but I guess only in new construction.
+There&amp;rsquo;s a short TV report (after a commercial) at the channel 15 site.
+A graduate student interviewed said, &amp;ldquo;I have multiple copies of my data, but they&amp;rsquo;re all in that building.</description>
     </item>
     
     <item>
@@ -222,26 +90,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</guid>
-      <description>&lt;p&gt;I was at work this morning at 8am.  At 8:45am I got a text asking what was going on in &lt;a href=&#34;http://www.map.wisc.edu/?initObj=bdg_MdScC&#34;&gt;my building&lt;/a&gt;, with this picture:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/fire_trucks.jpg&#34; alt=&#34;Fire trucks at MSC&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It was news to me.&lt;/p&gt;
-
-&lt;p&gt;At 8:55am we got an alert saying &amp;ldquo;Avoid 1300 Univ Ave.  Fire and Police on scene for working fire.&amp;rdquo;  Hey, I&amp;rsquo;m at 1300 University Avenue!&lt;/p&gt;
-
-&lt;p&gt;We could see out the window that there was a campus police officer preventing people from entering the building.  But the fire alarm had never gone off.&lt;/p&gt;
-
-&lt;p&gt;At 9:05am I called the campus police to ask what was going on.  They said all the alarms were supposed to go off.  They asked me to leave the building.  I did immediately, but afterwards I wished I&amp;rsquo;d brought my lunch and laptop with me.&lt;/p&gt;
-
-&lt;p&gt;Apparently no one was hurt, but there seems to be quite a mess.  This is on the same floor as my office, not too far away:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/smi.jpg&#34; alt=&#34;Fire-related mess, 4th floor SMI&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The fire seems to be around the corner from that shot, in the back-central part of the building.  I peaked around the corner and saw a bunch of people standing around, but I was too shy to take a picture of them.&lt;/p&gt;
-
-&lt;p&gt;There are related articles in the &lt;a href=&#34;http://tinyurl.com/ccyggdl&#34;&gt;Wisconsin State Journal&lt;/a&gt; and the &lt;a href=&#34;http://tinyurl.com/brq5taf&#34;&gt;Channel 3000 site&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>I was at work this morning at 8am. At 8:45am I got a text asking what was going on in my building, with this picture:
+It was news to me.
+At 8:55am we got an alert saying &amp;ldquo;Avoid 1300 Univ Ave. Fire and Police on scene for working fire.&amp;rdquo; Hey, I&amp;rsquo;m at 1300 University Avenue!
+We could see out the window that there was a campus police officer preventing people from entering the building.</description>
     </item>
     
     <item>
@@ -250,12 +102,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
-
-&lt;blockquote&gt;As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.&#34; As an example, he cited a feature in Excel that analyzes a batch of numbers selected by a user and automatically recommends the best way to represent the data in a chart.&lt;/blockquote&gt;
-</description>
+      <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
+There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
+As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.</description>
     </item>
     
     <item>
@@ -264,10 +113,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
-      <description>&lt;p&gt;See &lt;a href=&#34;http://www.nih.gov/news/health/jan2013/od-10a.htm&#34;&gt;the press release&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.genome.gov/27535200&#34;&gt;Eric Green&lt;/a&gt;, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.&lt;/p&gt;
-</description>
+      <description>See the press release.
+Eric Green, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.</description>
     </item>
     
     <item>
@@ -276,10 +123,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</guid>
-      <description>&lt;p&gt;On a classroom door:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/11/neglect_cancelled.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>On a classroom door:</description>
     </item>
     
     <item>
@@ -288,14 +132,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Sat, 27 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/10/27/puzzling-typo/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.nytimes.com/2012/10/27/opinion/a-failed-earthquake-prediction-a-crime.html&#34;&gt;a nice op-ed&lt;/a&gt; in the &lt;a href=&#34;http://www.nytimes.com&#34;&gt;NY Times&lt;/a&gt; about the &lt;a href=&#34;http://www.nytimes.com/2012/10/23/world/europe/italy-convicts-7-for-failure-to-warn-of-quake.html&#34;&gt;crazy conviction of seven Italian scientists for failure to warn about an unpredictable earthquake&lt;/a&gt;. But I spent quite a while puzzling over the following typo:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/10/nytimes_article_detail.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The third highlighted line should be in the middle of the fourth one, to give &amp;ldquo;&amp;hellip;who allow flimsy buildings to be built&amp;hellip;&amp;rdquo;  I&amp;rsquo;m not sure how such an error can occur.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kbroman.files.wordpress.com/2012/10/nytimes_article.pdf&#34;&gt;Here&amp;rsquo;s a PDF of the full article.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>There&amp;rsquo;s a nice op-ed in the NY Times about the crazy conviction of seven Italian scientists for failure to warn about an unpredictable earthquake. But I spent quite a while puzzling over the following typo:
+The third highlighted line should be in the middle of the fourth one, to give &amp;ldquo;&amp;hellip;who allow flimsy buildings to be built&amp;hellip;&amp;rdquo; I&amp;rsquo;m not sure how such an error can occur.
+Here&amp;rsquo;s a PDF of the full article.</description>
     </item>
     
     <item>
@@ -304,8 +143,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: &lt;a href=&#34;http://well.blogs.nytimes.com/2012/10/10/are-you-likely-to-respond-to-exercise/?smid=pl-share&#34;&gt;a genetic test for exercise&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: a genetic test for exercise.</description>
     </item>
     
     <item>
@@ -314,16 +152,10 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
-      <description>&lt;p&gt;I was at a &lt;a href=&#34;http://www.cidr.jhmi.edu/about/CIDR%20Access%20Committee.pdf&#34;&gt;CIDR Access Committee&lt;/a&gt; meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the &lt;a href=&#34;http://www.cidr.jhmi.edu&#34;&gt;Center for Inherited Disease Research&lt;/a&gt;, a service funded by several of the NIH institutes.&lt;/p&gt;
-
-&lt;p&gt;We had to buy our own coffee.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.&lt;/p&gt;
-
-&lt;p&gt;But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meeting and then chintz on the snacks?  Apparently it&amp;rsquo;s a &lt;a href=&#34;http://www.hhs.gov/asfr/ogapa/acquisition/appfundspol_att2.html&#34;&gt;new government rule&lt;/a&gt;.  (I&amp;rsquo;d thought the rule was maybe instituted following the &lt;a href=&#34;http://www.nytimes.com/2012/04/04/us/politics/gsa-las-vegas-trip-is-the-talk-of-washington.html&#34;&gt;GSA&amp;rsquo;s Las Vegas party&lt;/a&gt;, but it predates that.)&lt;/p&gt;
-
-&lt;p&gt;Without coffee, &lt;a href=&#34;http://www.freestatebrewing.com&#34;&gt;grant reviewing does not seem to go as well&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>I was at a CIDR Access Committee meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the Center for Inherited Disease Research, a service funded by several of the NIH institutes.
+We had to buy our own coffee.
+It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.
+But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meeting and then chintz on the snacks?</description>
     </item>
     
     <item>
@@ -332,14 +164,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/09/24/bottle-filling-station/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://www.msnairport.com&#34;&gt;Madison airport&lt;/a&gt; now has a bottle-filling machine, sort of like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;../../images/bottle_filler.jpeg&#34; alt=&#34;bottle filling station&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.elkayusa.com/cps/rde/xchg/elkay/hs.xsl/elkay-com-103031.aspx&#34;&gt;Bottle filler/drinking fountains&lt;/a&gt; are being installed all over the &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison campus&lt;/a&gt;, too.&lt;/p&gt;
-
-&lt;p&gt;I really love these things.  All airports should have them.&lt;/p&gt;
-</description>
+      <description>The Madison airport now has a bottle-filling machine, sort of like this:
+Bottle filler/drinking fountains are being installed all over the UW-Madison campus, too.
+I really love these things. All airports should have them.</description>
     </item>
     
     <item>
@@ -348,67 +175,13 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Thu, 24 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/24/police/</guid>
-      <description>&lt;p&gt;The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.&lt;/p&gt;
-
-&lt;p&gt;The conversation went something like this:
-&lt;table cellpadding=&#34;1&#34; &gt;
-&lt;tbody &gt;
-&lt;tr &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td width=&#34;25&#34; &gt;
-&lt;/td&gt;
-&lt;td &gt;&lt;em&gt;Police&lt;/em&gt;:
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;What&amp;rsquo;s going on?
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;
-&lt;/td&gt;
-&lt;td &gt;&lt;em&gt;Me&lt;/em&gt;:
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;I&amp;rsquo;m enjoying the day.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;
-&lt;/td&gt;
-&lt;td &gt;&lt;em&gt;Police&lt;/em&gt;:
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;Are you staff?
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;
-&lt;/td&gt;
-&lt;td &gt;&lt;em&gt;Me&lt;/em&gt;:
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;I&amp;rsquo;m faculty.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;
-&lt;/td&gt;
-&lt;td &gt;&lt;em&gt;Police&lt;/em&gt;:
-&lt;/td&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;td &gt;I&amp;rsquo;m enjoying the day, too.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-And then he walked off.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not sure who was more suspicious, him of me or me of him.  Perhaps he was thinking through the &lt;a href=&#34;http://individual.utoronto.ca/somody/quiz.html&#34;&gt;Prof or Hobo&lt;/a&gt; quiz.&lt;/p&gt;
-</description>
+      <description>The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.
+The conversation went something like this:  Police: 
+What&amp;rsquo;s going on?    Me: 
+I&amp;rsquo;m enjoying the day.    Police: 
+Are you staff?    Me: 
+I&amp;rsquo;m faculty.    Police: 
+I&amp;rsquo;m enjoying the day, too.</description>
     </item>
     
     <item>
@@ -417,8 +190,7 @@ And then he walked off.&lt;/p&gt;
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www-stat.stanford.edu/~tibs/&#34;&gt;Rob Tibshirani&lt;/a&gt; and &lt;a href=&#34;http://mbg.cornell.edu/faculty-staff/faculty/clark.cfm&#34;&gt;Andy Clark&lt;/a&gt; are now &lt;a href=&#34;http://www.nasonline.org/news-and-multimedia/news/2012_05_01_NAS_Election.html&#34;&gt;members of the National Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Rob Tibshirani and Andy Clark are now members of the National Academy of Sciences.</description>
     </item>
     
     <item>
@@ -427,17 +199,8 @@ And then he walked off.&lt;/p&gt;
       <pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/12/01/revised-bicycle-laws-in-wisconsin/</guid>
-      <description>&lt;p&gt;A newsletter from the &lt;a href=&#34;http://madison.bcycle.com/&#34;&gt;Madison B-Cycle&lt;/a&gt; folks pointed out that the biking laws in Wisconsin have been &lt;a href=&#34;https://docs.legis.wisconsin.gov/2011/related/proposals/ab265&#34;&gt;revised somewhat&lt;/a&gt;, in interesting ways (at least to me).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can now stick your arm out to the right to signal a right turn.  (I didn&amp;rsquo;t realize that this was wrong.)
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/12/bike_turn_signals.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Studded bike tires (important for riding on snow and ice) are now legal.  (I didn&amp;rsquo;t realize that they weren&amp;rsquo;t.  I wish I&amp;rsquo;d had them when I crashed and broke my elbow back in 2008; now I don&amp;rsquo;t need them as I&amp;rsquo;m not risking riding on snow in any case.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You can have a rear light in place of a rear reflector. (Again, I didn&amp;rsquo;t realize that this would be wrong.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>A newsletter from the Madison B-Cycle folks pointed out that the biking laws in Wisconsin have been revised somewhat, in interesting ways (at least to me).
+ You can now stick your arm out to the right to signal a right turn. (I didn&amp;rsquo;t realize that this was wrong.)  Studded bike tires (important for riding on snow and ice) are now legal. (I didn&amp;rsquo;t realize that they weren&amp;rsquo;t. I wish I&amp;rsquo;d had them when I crashed and broke my elbow back in 2008; now I don&amp;rsquo;t need them as I&amp;rsquo;m not risking riding on snow in any case.</description>
     </item>
     
     <item>
@@ -446,36 +209,8 @@ And then he walked off.&lt;/p&gt;
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
-      <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
-
-&lt;p&gt;I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/10/halloween20111.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They arrived pretty regularly from 5:50 to 7:50.&lt;/p&gt;
-
-&lt;p&gt;I comment on the figure&amp;rsquo;s style below.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;In the above graph, I&amp;rsquo;m applying ideas learned from &lt;a href=&#34;http://statistics.gmu.edu/people_pages/carr.html&#34;&gt;Dan Carr&lt;/a&gt; when I visited the &lt;a href=&#34;http://statistics.gmu.edu&#34;&gt;statistics department&lt;/a&gt; at &lt;a href=&#34;http://www.gmu.edu&#34;&gt;George Mason&lt;/a&gt; in September, to give &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/gmu2011.pdf&#34;&gt;a seminar&lt;/a&gt;.  (I had a great time at GMU, particularly talking to Dan about graphics.  I had a copy of &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;his book about micromaps&lt;/a&gt; on my iPad, but hadn&amp;rsquo;t really looked at it until after I met him.  Take a look at the first chapter; it&amp;rsquo;s full of good ideas and may convince you to read the rest.)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The gray background makes the figure stand out on the &amp;ldquo;page&amp;rdquo;.  (I had disliked this aspect of &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt; plots (for example, &lt;a href=&#34;http://had.co.nz/ggplot2/graphics/7f083a1488351d731c01ea449ee690f0.png&#34;&gt;this one&lt;/a&gt;), but Dan convinced me that it&amp;rsquo;s better.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The black border around the figure is important.  (Dan pointed out that it&amp;rsquo;s not the gray background I dislike about the default ggplot2 plots, but the lack of the border.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The white grid lines make it easy to see the details, and they still don&amp;rsquo;t get in the way of the plot.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;With the grid lines, you don&amp;rsquo;t need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no &lt;strike&gt;bristles&lt;/strike&gt; ticks.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The use of color for the actual data makes them stand out better.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The code I used for the figure is &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/blog/halloween2011.R&#34;&gt;here&lt;/a&gt;.  It&amp;rsquo;s old-fashioned and inefficient, but it works.&lt;/p&gt;
-</description>
+      <description>We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).
+I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.</description>
     </item>
     
     <item>
@@ -484,8 +219,7 @@ And then he walked off.&lt;/p&gt;
       <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/15/new-title-new-look/</guid>
-      <description>&lt;p&gt;My old title was too verbose, and the old &amp;ldquo;theme&amp;rdquo; was too messy (and the font too small).  Hopefully the changes are satisfactory.&lt;/p&gt;
-</description>
+      <description>My old title was too verbose, and the old &amp;ldquo;theme&amp;rdquo; was too messy (and the font too small). Hopefully the changes are satisfactory.</description>
     </item>
     
     <item>
@@ -494,8 +228,7 @@ And then he walked off.&lt;/p&gt;
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://cm.bell-labs.com/who/dmr/&#34;&gt;Dennis Ritchie&lt;/a&gt;, the designer of C and co-developer of Unix, &lt;a href=&#34;http://tinyurl.com/4y38mkt&#34;&gt;died on Wednesday&lt;/a&gt;.  He arguably had more impact on my life than &lt;a href=&#34;http://tinyurl.com/3fj8llw&#34;&gt;Steve Jobs&lt;/a&gt; did.&lt;/p&gt;
-</description>
+      <description>Dennis Ritchie, the designer of C and co-developer of Unix, died on Wednesday. He arguably had more impact on my life than Steve Jobs did.</description>
     </item>
     
     <item>
@@ -504,22 +237,9 @@ And then he walked off.&lt;/p&gt;
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/08/17/introduction/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.&lt;/p&gt;
-
-&lt;p&gt;Particularly interesting were the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/lightning.html&#34;&gt;Lightning talks&lt;/a&gt;: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically.  It worked extremely well; more talks should be done this way!&lt;/p&gt;
-
-&lt;p&gt;And particularly interesting, among the lightning talks, was one by &lt;a href=&#34;http://www.r-statistics.com&#34;&gt;Tal Galili&lt;/a&gt;, who started the &lt;a href=&#34;http://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt; blog aggregator. He encouraged the R community to blog. A particularly important point, for me, was his emphasis on not feeling a need to blog at great frequency: even once per year would be worthwhile.&lt;/p&gt;
-
-&lt;p&gt;I had a blog in the past, but I felt a constant urge to be posting, and so felt guilty for not posting.  I have enough feelings of guilt in my life, and so I decided to just drop the blog.&lt;/p&gt;
-
-&lt;p&gt;Also, my previous effort focused largely on personal matters (particularly my experiences as a new parent).  It perhaps got a bit too personal.  Here, I&amp;rsquo;m going to focus on less personal things, or at least on things that might embarrass me but aren&amp;rsquo;t likely to embarrass my family.&lt;/p&gt;
-
-&lt;p&gt;And I&amp;rsquo;ve been thinking about blogging recently.  There are a number of blogs that I read regularly and quite enjoy, particularly those of &lt;a href=&#34;http://andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;, &lt;a href=&#34;http://scienceblogs.com/pharyngula/&#34;&gt;PZ Myers&lt;/a&gt;, &lt;a href=&#34;http://genome.fieldofscience.com&#34;&gt;Steven Salzberg&lt;/a&gt;, &lt;a href=&#34;http://whyevolutionistrue.wordpress.com&#34;&gt;Jerry Coyne&lt;/a&gt;, and &lt;a href=&#34;http://www.blaghag.com&#34;&gt;Jen McCreight&lt;/a&gt;.  (Apologies to Prof. Coyne; his is a web site, &lt;a href=&#34;http://http://whyevolutionistrue.wordpress.com/2011/04/18/encomium/&#34;&gt;not a blog&lt;/a&gt;.)  I have strong opinions, I like to share them, and I&amp;rsquo;m not often asked to share them, and here I can share freely without prompting.&lt;/p&gt;
-
-&lt;p&gt;So: statistics (especially graphics and computing), genetics (especially recombination and QTL mapping), programming (particularly R), and academics (the mistakes I&amp;rsquo;ve made and what I&amp;rsquo;ve learned).&lt;/p&gt;
-
-&lt;p&gt;Since I generally still feel like an amateur in all of these matters (and I like to say: &amp;ldquo;You know you&amp;rsquo;re an expert when everyone else&amp;rsquo;s work looks just as crappy as your own.&amp;rdquo;), I won&amp;rsquo;t worry too much about getting everything right.  I certainly will want to avoid comparing myself to the people mentioned above.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m at the useR! Conference in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.
+Particularly interesting were the Lightning talks: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically. It worked extremely well; more talks should be done this way!
+And particularly interesting, among the lightning talks, was one by Tal Galili, who started the R-bloggers blog aggregator.</description>
     </item>
     
   </channel>

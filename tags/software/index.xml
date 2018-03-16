@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/software/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Code review</title>
@@ -16,54 +18,8 @@
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
-      <description>
-
-&lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
-
-&lt;p&gt;There are very brief quotes from &lt;a href=&#34;http://ivory.idyll.org/blog/&#34;&gt;Titus Brown&lt;/a&gt; and &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger Peng&lt;/a&gt;.  I expect that the author of the item, &lt;a href=&#34;http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden&#34;&gt;Erika Check Hayden&lt;/a&gt;, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.&lt;/p&gt;
-
-&lt;p&gt;Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;That&#39;s the kind of thing that should freak any scientist out.... We don&#39;t have good processes in place to detect that kind of thing in software.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Roger is quoted at the end, as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with both of them, but my initial reaction, from the beginning of the piece, was closer to Roger&amp;rsquo;s: We often have a heck of time getting any code out of people; if we are too hard on people regarding the quality of their code, they might become even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;On the one hand, we want people to produce good code:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;that works&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s readable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s reusable&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And it would be great if, for every bit of code, there was a second programmer who studied it, verified that it was doing the right thing, and offered suggestions for improvement.&lt;/p&gt;
-
-&lt;p&gt;But, on the other hand, it seems really unlikely that journals have the resources to do this. And I worry that a study showing that much scientific software is crap will make people even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;I would like to see the code associated with scientific articles made readily available, during the review process and beyond. But I don&amp;rsquo;t think we (as a scientific community) want to enforce rigorous code review prior to publication.&lt;/p&gt;
-
-&lt;p&gt;Later, on twitter, &lt;a href=&#34;https://twitter.com/ctitusbrown/status/382862626692149248&#34;&gt;Titus took issue&lt;/a&gt; with the &amp;ldquo;not improve how it looks&amp;rdquo; part of what Roger said:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;.@kwbroman @simplystats @rdpeng Please read &lt;http://en.wikipedia.org/wiki/Code_review&gt; you are deeply, significantly, and completely wrong about code review.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks &lt;em&gt;is&lt;/em&gt; important.)&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have enough time this morning to really clean up my thoughts on this issue, and I want to get this out and move on to reading that dissertation that I have to get through by tomorrow. So, let me summarize.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;well written&lt;/em&gt;: does what it&amp;rsquo;s intended to do, readable, reusable.&lt;/p&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;available&lt;/em&gt;. (Otherwise we can&amp;rsquo;t verify that it does what it&amp;rsquo;s intended to do, or reuse it.)&lt;/p&gt;
-
-&lt;p&gt;If we&amp;rsquo;re too hard on people for writing substandard code, we&amp;rsquo;ll discourage the availability. It&amp;rsquo;s an important trade-off.&lt;/p&gt;
-</description>
+      <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
+There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
   </channel>

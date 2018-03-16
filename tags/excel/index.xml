@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 30 Jan 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/excel/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Microsoft Office</title>
@@ -16,12 +18,9 @@
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s some mention of competition from &lt;a href=&#34;http://docs.google.com&#34;&gt;Google Docs&lt;/a&gt;. Why should one still use Microsoft Office? The brilliant Excel graphs!&lt;/p&gt;
-
-&lt;blockquote&gt;As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.&#34; As an example, he cited a feature in Excel that analyzes a batch of numbers selected by a user and automatically recommends the best way to represent the data in a chart.&lt;/blockquote&gt;
-</description>
+      <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
+There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
+As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.</description>
     </item>
     
     <item>
@@ -30,10 +29,8 @@
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
-      <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>&amp;hellip;if I&amp;rsquo;ve counted correctly.
+I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an open handbook.</description>
     </item>
     
   </channel>

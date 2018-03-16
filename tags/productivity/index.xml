@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/productivity/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Error notifications from R</title>
@@ -16,37 +18,9 @@
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m enthusiastic about having &lt;a href=&#34;http://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;R notify me when my script is done&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But among my early uses of this, my script threw an error, and I never got a text or &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; about &lt;em&gt;that&lt;/em&gt;. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like &lt;code&gt;options(error = function() { } )&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Fill in the function with your notification code. If there&amp;rsquo;s an error, the error message will be printed and then that function will be called. (And then the script will halt.)&lt;/p&gt;
-
-&lt;p&gt;You can use &lt;code&gt;geterrmessage()&lt;/code&gt; to grab the error message to include in your notification.&lt;/p&gt;
-
-&lt;p&gt;For example, if you want to use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; for the notification, you could put, at the top of your script, something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;options(error = function() {
-                    library(RPushbullet)
-                    pbPost(&amp;quot;note&amp;quot;, &amp;quot;Error&amp;quot;, geterrmessage())
-                })
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then if the script gives an error, you&amp;rsquo;ll get a note with title &amp;ldquo;Error&amp;rdquo; and with the error message as the body of the note.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: I knew I&amp;rsquo;d heard about this sort of thing somewhere, but I couldn&amp;rsquo;t remember where. Duh; &lt;a href=&#34;https://twitter.com/rabaath/&#34;&gt;Rasmus&lt;/a&gt; &lt;a href=&#34;https://twitter.com/rabaath/status/507087947041357825&#34;&gt;mentioned it on twitter&lt;/a&gt; just a couple of days ago! Fortunately, he reminded me of that in the comments below.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Another update&lt;/strong&gt;: Ian Kyle pointed out in the comments that the above function, if used in a script run with &lt;code&gt;R CMD BATCH&lt;/code&gt;, won&amp;rsquo;t actually halt the script. The simplest solution is to add &lt;code&gt;stop(geterrmessage())&lt;/code&gt;, like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;options(error = function() {
-                    library(RPushbullet)
-                    pbPost(&amp;quot;note&amp;quot;, &amp;quot;Error&amp;quot;, geterrmessage())
-                    if(!interactive()) stop(geterrmessage())
-                })
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>I&amp;rsquo;m enthusiastic about having R notify me when my script is done.
+But among my early uses of this, my script threw an error, and I never got a text or pushbullet about that. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.
+It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like options(error = function() { } )</description>
     </item>
     
     <item>
@@ -55,136 +29,11 @@
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
-      <description>
-
-&lt;p&gt;You just sent a long &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;beepr-https-github-com-rasmusab-beepr&#34;&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;&lt;code&gt;beepr&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;You can use &lt;a href=&#34;http://www.sumsar.net/&#34;&gt;Rasmus Baath&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; package to have your computer play a sound.&lt;/p&gt;
-
-&lt;p&gt;Install it from &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;beepr&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, at the bottom of your script, load the package and have it beep.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(beepr)
-beep()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; comes with a bunch of different sounds (e.g., try &lt;code&gt;beep(&amp;quot;facebook&amp;quot;)&lt;/code&gt;), or use a path to any wav file. I tried &lt;a href=&#34;http://www.kessels.com/catsounds/&#34;&gt;these cat sounds&lt;/a&gt;, but they came out (with my computer&amp;rsquo;s speaker) sounding more like a really unhappy electronic lion&amp;hellip;not very pleasant.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I&amp;rsquo;m instead having my scripts send me a text or a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;gmailr-https-github-com-trinker-gmailr&#34;&gt;&lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;&lt;code&gt;gmailR&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;There are a number of different packages for sending email from R (e.g., &lt;a href=&#34;http://cran.r-project.org/web/packages/sendmailR/index.html&#34;&gt;sendmailR&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/mailR/index.html&#34;&gt;mailR&lt;/a&gt;). I tried &lt;a href=&#34;http://trinkerrstuff.wordpress.com/&#34;&gt;Tyler Rinker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; package.&lt;/p&gt;
-
-&lt;p&gt;You can send yourself an email using the &lt;code&gt;gmail()&lt;/code&gt; function. And since most cell phone companies have a method for sending a text via email, you can use this same function to send yourself a text. &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; includes a function &lt;code&gt;cell2email()&lt;/code&gt; that will help you figure out the appropriate email address to use, to send a text to your phone.&lt;/p&gt;
-
-&lt;p&gt;The only problem with &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; is that you have to pass your gmail account and password to the &lt;code&gt;gmail()&lt;/code&gt; function, and you don&amp;rsquo;t really want to have that stuff sitting in your R script.&lt;/p&gt;
-
-&lt;p&gt;So I wrote a little package &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt;, that will instead pull your private information from a file (&lt;code&gt;~/.gmail_private&lt;/code&gt;). I set up a separate &lt;a href=&#34;https://mail.google.com&#34;&gt;gmail&lt;/a&gt; account for this purpose, and I set the security settings to use &lt;a href=&#34;https://support.google.com/accounts/answer/185833?hl=en&#34;&gt;app-specific passwords&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;My &lt;code&gt;~/.gmail_private&lt;/code&gt; file looks like the following: app-specific gmail password, gmail account to be the default &amp;ldquo;from&amp;rdquo; email address (perhaps special for this purpose), the email address to use to send a text, and the default &amp;ldquo;to&amp;rdquo; email (which is my usual gmail account).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;password my_private_app_specific_password
-gmail    my_gmail_account@gmail.com
-text     0123456789@txt.att.net
-to       default_to@gmail.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need to install a few packages. &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt; are not available on &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, so you need to install &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; and use the &lt;code&gt;install_github()&lt;/code&gt; function to install them from &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(c(&amp;quot;devtools&amp;quot;, &amp;quot;rJython&amp;quot;, &amp;quot;rJava&amp;quot;, &amp;quot;rjson&amp;quot;))
-library(devtools)
-install_github(&amp;quot;trinker/gmailR&amp;quot;)
-install_github(&amp;quot;kbroman/mygmailR&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In your script, to send yourself a text, you&amp;rsquo;d write&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(mygmailR)
-send_text(&amp;quot;subject here&amp;quot; &amp;quot;body of message here&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To send yourself an email, write&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(mygmailR)
-send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;rpushbullet-https-github-com-eddelbuettel-rpushbullet&#34;&gt;&lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;&lt;code&gt;RPushbullet&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;Another alternative (suggested to me by &lt;a href=&#34;https://twitter.com/PeteHaitch/status/507073412842278913&#34;&gt;Peter Hickey&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/jknowles/status/507152898674143232&#34;&gt;Jared Knowles&lt;/a&gt;) is to use &lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package to send yourself a notification via &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The main advantage of this, in my mind, is that there&amp;rsquo;s no gmail password sitting around on your system anywhere, but rather just your &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt; &amp;ldquo;Access Token&amp;rdquo;, sitting in the file &lt;code&gt;~/.rpushbullet.json&lt;/code&gt;, so this is less of a security issue.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Sign up for &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;; you&amp;rsquo;ll need a &lt;a href=&#34;http://www.google.com&#34;&gt;Google&lt;/a&gt; account.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install the pushbullet app on your phone or other device, or install the chrome extension.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Go to &lt;a href=&#34;https://www.pushbullet.com/account&#34;&gt;your pushbullet account page&lt;/a&gt; to get your &amp;ldquo;Access Token&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install the &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; package from CRAN.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;RPushbullet&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Create a &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file with your api key and not much else.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
-  &amp;quot;devices&amp;quot;: [],
-  &amp;quot;names&amp;quot;: []
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install &lt;a href=&#34;http://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;jsonlite&amp;quot;)
-library(jsonlite)
-library(RPushbullet)
-fromJSON(pbGetDevices())$devices[,c(&amp;quot;iden&amp;quot;, &amp;quot;nickname&amp;quot;)]
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Insert those device identifiers into your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &amp;quot;key&amp;quot;: &amp;quot;your_api_key&amp;quot;,
-
-  &amp;quot;devices&amp;quot;: [
-      &amp;quot;your_phone_device_id&amp;quot;,
-      &amp;quot;your_tablet_device_id&amp;quot;,
-      &amp;quot;your_chrome_device_id&amp;quot;;
-  ],
-
-  &amp;quot;names&amp;quot;: [
-      &amp;quot;phone&amp;quot;,
-      &amp;quot;tablet&amp;quot;,
-      &amp;quot;Chrome&amp;quot;;
-  ]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now you&amp;rsquo;re set!  Use the &lt;code&gt;pbPost()&lt;/code&gt; function to post a message to yourself.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;library(RPushbullet)
-pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Body of message&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;By default, the message is posted to the first device listed in your &lt;code&gt;~/.rpushbullet.json&lt;/code&gt; file; to post it to a different device, use the argument &lt;code&gt;deviceind&lt;/code&gt;, which takes a positive integer.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m still somewhat inclined towards using &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt; to send myself a text, but &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt; seems more secure.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The &lt;a href=&#34;https://twitter.com/hadleywickham/status/507192305816567808&#34;&gt;word from Hadley&lt;/a&gt;: we should also check out &lt;a href=&#34;https://github.com/jimhester/gmailr&#34;&gt;gmailr&lt;/a&gt;. [But you &lt;a href=&#34;https://github.com/jimhester/gmailr/issues/5&#34;&gt;can&amp;rsquo;t currently send email&lt;/a&gt; with &lt;a href=&#34;https://github.com/jimhester/gmailr&#34;&gt;gmailr&lt;/a&gt;.]&lt;/p&gt;
-</description>
+      <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
+beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
+Install it from CRAN with
+install.packages(&amp;quot;beepr&amp;quot;)  Then, at the bottom of your script, load the package and have it beep.
+library(beepr) beep()  beepr comes with a bunch of different sounds (e.</description>
     </item>
     
     <item>
@@ -193,56 +42,8 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
-      <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
-
-&lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
-
-&lt;p&gt;Following that suggestion, I was able to get these:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;C-b&lt;/code&gt; – CharLeft&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-f&lt;/code&gt; – CharRight&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-e&lt;/code&gt; – EndOfLine&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-p&lt;/code&gt; – LineUp&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-n&lt;/code&gt; – LineDown&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-a&lt;/code&gt; – StartOfLine&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-v&lt;/code&gt; – PageDown&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I can&amp;rsquo;t figure out how to have &lt;code&gt;M-v&lt;/code&gt; for PageUp, though, because &lt;code&gt;M-v&lt;/code&gt; seems permanently stuck to &amp;ldquo;√&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The procedure, in MS Word 2011 for Mac, is:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Tools → Customize Keyboard&lt;/li&gt;
-&lt;li&gt;Select &amp;ldquo;All Commands&amp;rdquo; under &amp;ldquo;Categories:&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Select the command (e.g., RightChar) under &amp;ldquo;Commands:&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Press the keyboard shortcut in the &amp;ldquo;Press new keyboard shortcut&amp;rdquo; box&lt;/li&gt;
-&lt;li&gt;Click the Assign button&lt;/li&gt;
-&lt;li&gt;Repeat for the other commands you want&lt;/li&gt;
-&lt;li&gt;Click OK&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I needed two more, &lt;code&gt;C-d&lt;/code&gt; and &lt;code&gt;C-k&lt;/code&gt;; it took me a while to figure out how to do it, as there didn&amp;rsquo;t seem to be any built-in commands. But you can just record a macro. I created these:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;C-d&lt;/code&gt; – &lt;a href=&#34;as a macro&#34;&gt;DeleteCharacter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C-k&lt;/code&gt; – &lt;a href=&#34;as a macro&#34;&gt;KillLine&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the procedure, in MS Word 2011 for Mac.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Tools → Macros → Record Macro&lt;/li&gt;
-&lt;li&gt;Give it a name with no spaces&lt;/li&gt;
-&lt;li&gt;Click the keyboard button to assign a keystroke to it&lt;/li&gt;
-&lt;li&gt;Select OK&lt;/li&gt;
-&lt;li&gt;Type the set of key strokes&lt;/li&gt;
-&lt;li&gt;Tools → Macros → Stop Recording&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://sourceforge.net/apps/mediawiki/womacs/index.php&#34;&gt;Womacs&lt;/a&gt; is a really extensive set of Visual Basic macros that looks really useful, but I was getting Visual Basic errors and didn&amp;rsquo;t want to spend any more time on it; grants to write&amp;hellip;&lt;/p&gt;
-</description>
+      <description>Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)
+A google search on the title of this post got me to this post.</description>
     </item>
     
     <item>
@@ -251,42 +52,8 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</guid>
-      <description>
-
-&lt;p&gt;One of the more painful things to learn as a faculty member is to accept that you will do some things badly.  There are too many things to do, so you can&amp;rsquo;t do them all well.  What should you do badly?&lt;/p&gt;
-
-&lt;p&gt;As an undergraduate, the scope of work is reasonably precisely defined, and problem sets have relatively simple solutions.  I  finished things on time or even early, and I seldom felt guilty for not studying.&lt;/p&gt;
-
-&lt;p&gt;In the first year of graduate school, problem sets are much harder, but they still all have solutions.  That there must be a short solution to every problem on an exam is generally the most important thing to recognize in attempting to solve them.&lt;/p&gt;
-
-&lt;p&gt;Later in graduate school, identifying a solvable problem becomes part of the research effort, but you can focus all of your effort on that work and so do everything well.  For me, there was little need for time management, since I had loads of time.&lt;/p&gt;
-
-&lt;p&gt;Even as a postdoc, when I&amp;rsquo;d started to do many more things at once, I still had few responsibilities aside from my own work, and so I could do everything well.  And basically what you need to get done is just defined as what you actually get done.&lt;/p&gt;
-
-&lt;p&gt;Faculty life is quite a bit different.  I&amp;rsquo;m making real commitments to people.  And then there&amp;rsquo;s teaching, and reviews of papers and grants, and committees, and letters of recommendation or evaluation.  My personal research efforts often are pushed aside in favor of rush-rush collaborative work.  Or I&amp;rsquo;ll spend weeks doing little but read and comment on others&amp;rsquo; work.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s just too much to do and not enough time to do it as well as you&amp;rsquo;d like.&lt;/p&gt;
-
-&lt;h3 id=&#34;so-what-should-i-do-badly&#34;&gt;So, what should I do badly?&lt;/h3&gt;
-
-&lt;p&gt;Well, definitely not &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications&#34;&gt;my own research papers&lt;/a&gt;; those will outlast me.  Maybe some day someone will read them.  Similarly, not &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations&#34;&gt;seminars I give&lt;/a&gt;, as through such research talks, I may gain a reader.  I suppose family, health, and sleep should be mentioned here.  And biking.&lt;/p&gt;
-
-&lt;p&gt;So:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Committee work.  If someone says, &amp;ldquo;I enjoyed reading the report you wrote&amp;rdquo;, you&amp;rsquo;ve clearly been focusing on the wrong things.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reviews of papers.  Sure, I want to help out the authors, but I can&amp;rsquo;t be doing their research for them.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Teaching.  If you try to do your best, you&amp;rsquo;ll do nothing else.  The students may notice the difference between just dusting off last year&amp;rsquo;s notes and actually preparing (and fixing past mistakes), but will they really learn much more in the latter case?  To learn, they must struggle a bit, e.g., through the errors in my notes.  Is that just a rationalization?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reviews of grants.  Someone&amp;rsquo;s livelihood is at stake, but does it really matter if the text of my review is awkwardly phrased?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;My own grant.  Some of my colleagues will start writing a grant months in advance.  I say: if you start months in advance, then you&amp;rsquo;re going to spend months on the thing!  You should start as late as possible.  A perfect score on a grant is an indication that you spent too much time on it.  The best grant score is the worst possible that still gets funded.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As I said, it&amp;rsquo;s painful to do things that you know are crap (i.e., could be much better).  It&amp;rsquo;s hard to  accept one&amp;rsquo;s limitations.&lt;/p&gt;
-</description>
+      <description>One of the more painful things to learn as a faculty member is to accept that you will do some things badly. There are too many things to do, so you can&amp;rsquo;t do them all well. What should you do badly?
+As an undergraduate, the scope of work is reasonably precisely defined, and problem sets have relatively simple solutions. I finished things on time or even early, and I seldom felt guilty for not studying.</description>
     </item>
     
     <item>
@@ -295,36 +62,8 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
       <pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/09/28/meetings-vs-work/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafael Irizarry&lt;/a&gt; wrote about &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10402321009/meetings&#34;&gt;how meetings at work get in the way of actual work&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I agree with his central point, that it can take some time to get back working on a project (whether data analysis, programming, or writing), and so blocks of less than a couple of hours can be inefficient.  Meetings that break up a work day can really erode one&amp;rsquo;s productivity: academics often spend too much time meeting and not enough actually working, and three hour-long meetings spaced evenly throughout the day can mean that you don&amp;rsquo;t get anything real done in the other five hours.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;For me, the &amp;ldquo;ramp up&amp;rdquo; time for a project is less about re-familiarizing myself with the data files (though that can be true if I&amp;rsquo;ve not kept them well organized) and is more about the procrastination barrier (ie, inertia) and not keeping a good record of small chunks of work to tackle.&lt;/p&gt;
-
-&lt;p&gt;So, in addition to Rafa&amp;rsquo;s comment, that it&amp;rsquo;s best to pack meetings onto the same day (and I&amp;rsquo;m particularly happy when multiple meetings get scheduled at the same time, so I only have to go to one of them), I would add&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Keep files organized and documented (so you don&amp;rsquo;t have to spend much time figuring out where things are)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Keep a &amp;ldquo;to do&amp;rdquo; list that is split into small chunks (like, &amp;ldquo;do this, than that, than that, than that&amp;rdquo;) rather than as whole projects (&amp;ldquo;work on project X&amp;rdquo;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There&amp;rsquo;s a dual issue: many of my colleagues (wherever I&amp;rsquo;ve been):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t show up for meetings&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t show up for seminars&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t volunteer to meet or share a meal with visiting seminar speakers&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s important to protect one&amp;rsquo;s time and actually get things done, but you shouldn&amp;rsquo;t hide in your office with your door closed all week.&lt;/p&gt;
-
-&lt;p&gt;One last point: I&amp;rsquo;m surprised that Rafa hadn&amp;rsquo;t mentioned his idea of having all meetings done with everyone standing (rather than sitting), to ensure that meetings are kept as short as possible (don&amp;rsquo;t let anyone relax).  You might extend that idea further and insist on some sort of stress position.&lt;/p&gt;
-</description>
+      <description>Rafael Irizarry wrote about how meetings at work get in the way of actual work.
+I agree with his central point, that it can take some time to get back working on a project (whether data analysis, programming, or writing), and so blocks of less than a couple of hours can be inefficient. Meetings that break up a work day can really erode one&amp;rsquo;s productivity: academics often spend too much time meeting and not enough actually working, and three hour-long meetings spaced evenly throughout the day can mean that you don&amp;rsquo;t get anything real done in the other five hours.</description>
     </item>
     
   </channel>

@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 30 Sep 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/posters/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/posters/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Poster flop</title>
@@ -16,42 +18,8 @@
       <pubDate>Fri, 30 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/09/30/poster-flop/</guid>
-      <description>&lt;p&gt;I gave &lt;a href=&#34;http://kbroman.org/blog/2011/09/16/my-first-fancy-poster/&#34;&gt;my first fancy poster&lt;/a&gt; yesterday, at &lt;a href=&#34;http://discovery.wisc.edu/home/discovery/events/mathbio-symposia/mathbio-3-modeling/2009-mathbio-event-home.cmsx&#34;&gt;MathBio3&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I was hoping to use the experience as an opportunity to talk about how great poster sessions can be, and to refer to Terry Speed&amp;rsquo;s old &lt;a href=&#34;http://bulletin.imstat.org/category/terences-stuff/&#34;&gt;IMS bulletin column&lt;/a&gt; in praise of poster sessions [&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/terry/Bulletin34_06.pdf&#34;&gt;pdf&lt;/a&gt;], and then to go on to discuss how, for me, the interpersonal interactions at poster sessions are rather awkward. (For example, if you look at someone&amp;rsquo;s poster for a while, with the presenter standing there watching you, are you obliged to ask a question, or can you slink off?)&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;However, other than two people I knew and lassoed over, I had just one person look at my poster. (He &lt;em&gt;was&lt;/em&gt; nice enough to ask me to explain it.)&lt;/p&gt;
-
-&lt;p&gt;What went wrong?  Here are some possibilities:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;There is some design flaw in my poster&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;m scary to look at&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;My poster was in a bad location (at the end rather than the middle)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;It was 5:30pm and people just wanted to drink&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;m a loser&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to conclude &lt;em&gt;location&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;As at many conferences, the posters were not treated well.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The poster abstracts were not distributed (not even titles were given)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The poster session was at the end of the day (not last, but next-to-last)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The poster session was only 1 hour long, and it started 20 min late (the talks went over time)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;They did have &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;30&lt;/sub&gt; poster presenters give a 1 minute introduction to their poster, right before the session.  That worked very well (for those 10 people).&lt;/p&gt;
-</description>
+      <description>I gave my first fancy poster yesterday, at MathBio3.
+I was hoping to use the experience as an opportunity to talk about how great poster sessions can be, and to refer to Terry Speed&amp;rsquo;s old IMS bulletin column in praise of poster sessions [pdf], and then to go on to discuss how, for me, the interpersonal interactions at poster sessions are rather awkward. (For example, if you look at someone&amp;rsquo;s poster for a while, with the presenter standing there watching you, are you obliged to ask a question, or can you slink off?</description>
     </item>
     
     <item>
@@ -60,22 +28,9 @@
       <pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m preparing my first large-format poster (for the &lt;a href=&#34;http://discovery.wisc.edu/home/discovery/events/mathbio-symposia/mathbio-3-modeling/2009-mathbio-event-home.cmsx&#34;&gt;MathBio3 conference&lt;/a&gt;, here in Madison in two weeks). Previously, my posters had just been on a series of pieces of regular paper. (Consider, for example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/posters/gaw11.pdf&#34;&gt;this poster&lt;/a&gt; from September, 1998.)  But no one does that anymore, and I don&amp;rsquo;t want to stand out as being archaic.  That is, I want to pretend to be modern.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s my draft:
-&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/posters/mathbio2011.pdf&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/09/poster.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;I got a LaTeX template from &lt;a href=&#34;http://www.epibiostat.ucsf.edu/biostat/sen/&#34;&gt;Saunak Sen&lt;/a&gt;, which originally came from &lt;a href=&#34;http://www.nathanieljohnston.com/2009/08/latex-poster-template/&#34;&gt;Nathaniel Johnston&lt;/a&gt; and uses the &lt;a href=&#34;http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php&#34;&gt;Beamer poster&lt;/a&gt; style. That made it super easy; I hardly even needed to know what I was doing.&lt;/p&gt;
-
-&lt;p&gt;Not having a good sense of how this 1m x 1m poster is actually going to look, I  used Acrobat to print it onto a bunch of pieces of paper (&amp;ldquo;Tile all pages&amp;rdquo; in the print dialog), which I then reassembled with scissors and tape.&lt;/p&gt;
-
-&lt;p&gt;It looks like it will be fine.
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/09/photo_of_poster.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Maybe I should save the \$50 or \$100 and post the black-and-white, pasted-together version?&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m preparing my first large-format poster (for the MathBio3 conference, here in Madison in two weeks). Previously, my posters had just been on a series of pieces of regular paper. (Consider, for example, this poster from September, 1998.) But no one does that anymore, and I don&amp;rsquo;t want to stand out as being archaic. That is, I want to pretend to be modern.
+Here&amp;rsquo;s my draft: 
+I got a LaTeX template from Saunak Sen, which originally came from Nathaniel Johnston and uses the Beamer poster style.</description>
     </item>
     
   </channel>

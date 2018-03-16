@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 02 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/consulting/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/consulting/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Thoughts on statistical consulting</title>
@@ -16,150 +18,8 @@
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
-      <description>
-
-&lt;p&gt;The &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;Statistics Department&lt;/a&gt; at &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison&lt;/a&gt; has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.&lt;/p&gt;
-
-&lt;p&gt;I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties.  This will be a bit rough, and long.  I&amp;rsquo;ll revert to bullet points, to be more compact (and because I&amp;rsquo;m lazy).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;my-situation&#34;&gt;My situation&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m an applied statistician at a university.  I have no defined consulting responsibilities.  Others at the university have a defined consulting role for a department or school, which pays part of their salary.  And then there are statisticians in industry (some effectively doing statistical consulting within a company), or working for a consulting company or as a contractor; I don&amp;rsquo;t know much about these things, but only about my own situation: I feel I should do my best to help colleagues who ask for my advice (though I &lt;em&gt;can&lt;/em&gt; say no, at least in theory).&lt;/p&gt;
-
-&lt;h3 id=&#34;consulting-vs-collaboration&#34;&gt;Consulting vs. collaboration&lt;/h3&gt;
-
-&lt;p&gt;To me, consulting is inherently short-term.  Someone comes to you for statistical advice, and you try to answer their questions within a week or two.  This is in contrast to collaboration, which is more long term, and gives you the opportunity to more fully understand the scientist&amp;rsquo;s grander schemes.&lt;/p&gt;
-
-&lt;h3 id=&#34;my-experience&#34;&gt;My experience&lt;/h3&gt;
-
-&lt;p&gt;In graduate school (in &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Statistics&lt;/a&gt; at UC-Berkeley), there was a statistical consulting course that involved pairs of graduate students holding weekly office hours, to give free statistical advice to anyone at the university (generally other graduate students), and then we met as a group weekly, with a faculty advisor, to discuss consultees&amp;rsquo; questions and get advice on what advice we might give.  I did the course three times, with &lt;a href=&#34;http://www.stat.columbia.edu/~gelman/&#34;&gt;Andrew Gelman&lt;/a&gt;, &lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.berkeley.edu/~freedman/&#34;&gt;David Freedman&lt;/a&gt;, who, I think, span the space of applied statistics.  (Well, the good part of the space.)  Learning by doing (or, at least, by offering advice) was how I really became an applied statistician.  And seeing Andrew, Terry, and David&amp;rsquo;s unique approaches was extremely influential.&lt;/p&gt;
-
-&lt;p&gt;After graduate school, I was a postdoc with a geneticist (Jim Weber, then at the Marshfield Medical Research Foundation, in Marshfield, Wisconsin), where I was relatively isolated, as a statistician.  There were a few other statisticians around, but we were working on rather different things.&lt;/p&gt;
-
-&lt;p&gt;Moving from postdoc to faculty member, I&amp;rsquo;ve had a relatively steady stream of statistical consulting experiences, with consultees from courses I taught, referred by my department chair or other friends/colleagues, or through my software (particularly &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt;) or publications (particularly my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/twopart.pdf&#34;&gt;two-part model&lt;/a&gt; paper).&lt;/p&gt;
-
-&lt;h3 id=&#34;why-do-it&#34;&gt;Why do it?&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m not paid to consult; there&amp;rsquo;s no requirement that I do so.  So why do it?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Learn more biology, and from the experts.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;See new data.  (I &lt;em&gt;love&lt;/em&gt; new data!)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Think about new problems.  (And it&amp;rsquo;s nice to get an easy one every once in a while.  For example, it&amp;rsquo;s nice to be able to say, &amp;ldquo;Yes, a t-test is appropriate here.&amp;rdquo;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Be useful: help people.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Publications.  (Deans may not read, but they do count. [I don&amp;rsquo;t mean you, &lt;a href=&#34;http://www.med.wisc.edu/about/administration/robert-golden-md/38&#34;&gt;Bob&lt;/a&gt;, but other Deans!])&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Can lead to long-term collaboration, and allows you to find out if you like the person.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;how-to-behave-at-the-initial-meeting&#34;&gt;How to behave at the initial meeting&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Listen.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Verify that you&amp;rsquo;re following (re-state according to your understanding).  (&lt;a href=&#34;http://www.stat.wisc.edu/~clayton/&#34;&gt;Murray Clayton&lt;/a&gt; recommended the book &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/1451663889/7210-20&#34;&gt;How to talk so kids will listen and listen so kids will talk&lt;/a&gt;, and I do, too.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t be embarrassed to admit ignorance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Focus particularly on: the scientific questions, the form of the data, where the data came from.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Unless it&amp;rsquo;s really simple, I&amp;rsquo;ll usually delay giving specific advice to a second session.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A key difficulty: both parties must admit their ignorance, and need to be very patient.  At Berkeley, often a grad student was reporting on behalf of a faculty member, I think because the faculty member didn&amp;rsquo;t want to admit his/her ignorance.&lt;/p&gt;
-
-&lt;p&gt;You generally need to force the scientist to back way up.  They&amp;rsquo;re hoping for a quick answer (they often don&amp;rsquo;t like this whole statistics business!), and so may not want to spend an hour explaining the full background.  But it can be critical.&lt;/p&gt;
-
-&lt;p&gt;Also, the scientist often mentions the use of some statistic that you&amp;rsquo;ve never heard of or that you know with a different name. For example: the G test (which is what &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/0716786044/7210-20&#34;&gt;Sokal &amp;amp; Rohlf&lt;/a&gt; call the likelihood ratio test for contingency tables), or the Hairbrainer-Warstein-Edmundsun Test (which I made up, but might actually exist).  When you admit that you don&amp;rsquo;t know this statistical method that is so widely used in their field, they may question your credentials.  Ask for a reference; you&amp;rsquo;ll be able to figure it out.&lt;/p&gt;
-
-&lt;p&gt;A very common experience: &amp;ldquo;I have a quick question&amp;hellip;&amp;rdquo;  There are no quick questions.&lt;/p&gt;
-
-&lt;h3 id=&#34;difficulties-that-arise&#34;&gt;Difficulties that arise&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Communication.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Admitting ignorance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Getting the scientist to really explain things from the beginning&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You don&amp;rsquo;t have time to do the work, the consultee can&amp;rsquo;t do it, and there&amp;rsquo;s no one else to take over.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If you think you see a major problem, be careful about how you explain this.  (I&amp;rsquo;m not known for my subtlety, so I can&amp;rsquo;t advise you on this.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Co-authorship on publications (This seems to be more of a problem if you&amp;rsquo;re being paid directly, in which case scientists, particularly MDs, seem to treat a statistical consultant like they do the person who repairs the PCR machine, or whatever.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They don&amp;rsquo;t want anything fancy, and you think it&amp;rsquo;s needed.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;An example instance requiring subtlety: As a graduate student, I was giving advice to an immunology graduate student whose experiment seemed to show a large sex effect, and since he hadn&amp;rsquo;t blocked on sex, the whole thing seemed a wash.  I stated this point rather bluntly and never saw him again.&lt;/p&gt;
-
-&lt;p&gt;The relative importance of co-authorship vs acknowledgement (vs nothing) changes over one&amp;rsquo;s career.  It&amp;rsquo;s never really been an issue for me (though there is that one paper where they should have made me a coauthor but didn&amp;rsquo;t, and then they acknowledged &amp;ldquo;Mark Broman&amp;rdquo; for statistical advice).  I feel a bit guilty being co-author on some papers, but it&amp;rsquo;s definitely been valuable to me.  And it can be that a few hours&amp;rsquo; work on a manuscript can change it from unpublishable to easily publishable.&lt;/p&gt;
-
-&lt;p&gt;For me, generally: if I created some figures and/or wrote a portion of the methods section, I feel I should be co-author.&lt;/p&gt;
-
-&lt;p&gt;The following two sentences are remarkably different:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Would you like to be a co-author?&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;We would like to include you as a co-author.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;how-to-say-no&#34;&gt;How to say no&lt;/h3&gt;
-
-&lt;p&gt;The hardest thing is to say no.  I haven&amp;rsquo;t really figured this out.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Can you find someone to take over?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Try to give at least a rough guide (something is better than nothing).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I probably shouldn&amp;rsquo;t state this publicly, but I try to apply a &amp;ldquo;two-week rule&amp;rdquo;: If someone I don&amp;rsquo;t know asks to meet with me, I&amp;rsquo;ll say, &amp;ldquo;I&amp;rsquo;m really busy right now, but I could meet with you in two weeks.&amp;rdquo;  Nothing productive occurs in the two weeks before a grant is due (which is the most common rush-rush type question).  The two-week rule seems to filter out much of the stuff that I don&amp;rsquo;t really want to help with, anyway.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;disadvantages-to-the-whole-thing&#34;&gt;Disadvantages to the whole thing&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You generally don&amp;rsquo;t have time to do things properly.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You don&amp;rsquo;t know in advance what you&amp;rsquo;re getting into.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You usually don&amp;rsquo;t get to see long-term results.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I hate power/sample size calculations, and experimental design is really hard, and a high proportion of consulting questions involve sample size calculations or experimental design.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;be-self-sufficient&#34;&gt;Be self-sufficient&lt;/h3&gt;
-
-&lt;p&gt;This doesn&amp;rsquo;t exactly fit the topic under discussion, but I like to take this opportunity to emphasize the importance of applied statisticians being self-sufficient.&lt;/p&gt;
-
-&lt;p&gt;Most importantly, one should learn to program in perl (or python or ruby), for data manipulation.  Don&amp;rsquo;t let the scientist do the data manipulation.  The answer to &amp;ldquo;How would you like to receive the data?&amp;rdquo; must always be &amp;ldquo;In it&amp;rsquo;s current form!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;R programming is obviously important (for interactive analysis and graphics).  But I also emphasize the need for a lower-level language (I use C), for intensive computations.  The crappiest C program will almost always beat the most refined R program.  (Learn &lt;a href=&#34;https://github.com/hadley/devtools/wiki/Rcpp&#34;&gt;Rcpp&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;h3 id=&#34;time-management&#34;&gt;Time management&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t let all of the small short-term things crowd out your long-term projects.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Save big blocks of time for yourself.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been reserving a full day each week to my own work, and I basically never agree to a meeting on that day.  (Don&amp;rsquo;t tell anyone I said this!)&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;Statistical consulting is a fabulous part of being an applied statistician.  I see lots of great new problems, I learn a lot of science (because I can ask questions of the experts), and I help people.&lt;/p&gt;
-
-&lt;p&gt;And I don&amp;rsquo;t feel I need to know the answer to people&amp;rsquo;s questions.  I view my role, as a statistical consultant, is to provide a connection, between the scientist with the question, and with some reasonable answer.  Once I understand the question, I&amp;rsquo;ll ask all my friends: &amp;ldquo;Say, I got this really interesting question: What would you do?&amp;rdquo;  Eventually I&amp;rsquo;ll find someone who can tell me what to say.&lt;/p&gt;
-</description>
+      <description>The Statistics Department at UW-Madison has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.
+I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties. This will be a bit rough, and long. I&amp;rsquo;ll revert to bullet points, to be more compact (and because I&amp;rsquo;m lazy).</description>
     </item>
     
   </channel>

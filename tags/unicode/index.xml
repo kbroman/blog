@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 19 Mar 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/unicode/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/unicode/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
@@ -16,20 +18,8 @@
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;http://www.ctc2013.org&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
-
-&lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;http://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
-
-&lt;p&gt;I spent way too much time trying to deal with special characters.  I was looking to do a search-and-replace for all possible &lt;a href=&#34;http://en.wikipedia.org/wiki/Unicode&#34;&gt;Unicode&lt;/a&gt; characters (for example, to change &lt;code&gt;\xE9&lt;/code&gt; aka e into &lt;code&gt;\&#39;{e}&lt;/code&gt;, or &lt;code&gt;\xD7&lt;/code&gt; aka × into &lt;code&gt;$\times$&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/times_symbol.png&#34; alt=&#34;MBT/Pas × BALB/cByJ&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But then I discovered that &lt;a href=&#34;http://en.wikipedia.org/wiki/XeTeX&#34;&gt;XeTeX&lt;/a&gt; supports Unicode, so there&amp;rsquo;s no need to do these sorts of substitutions.&lt;/p&gt;
-
-&lt;p&gt;I changed &lt;code&gt;pdflatex&lt;/code&gt; to &lt;code&gt;xelatex&lt;/code&gt; in my &lt;code&gt;Makefile&lt;/code&gt;, and I&amp;rsquo;m done.  I think.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: Now that I think about it, CSV is way more convenient than XLS(X) for simple data files, as you don&amp;rsquo;t have to traverse with the whole &lt;code&gt;$cell -&amp;gt; (Val)&lt;/code&gt; business.  But working with the Excel file directly is easier when the cells may contain lots of text with commas and such, like my abstracts.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m co-organizing a scientific meeting at the end of May. The abstracts are all in.
+We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review. (I&amp;rsquo;m using Spreadsheet:XLSX for the first time; it&amp;rsquo;s really easy. Why have I always converted Excel files to CSV before parsing them?</description>
     </item>
     
   </channel>

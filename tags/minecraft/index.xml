@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 31 May 2017 23:48:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/minecraft/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>miner and craft</title>
@@ -16,13 +18,8 @@
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
-      <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
-&lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
-&lt;p&gt;So I’m pleased to announce the &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; and &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt; packages for playing with R and Minecraft.&lt;/p&gt;
-&lt;p&gt;(I was of course tempted towards mineR and cRaft, but I didn’t want to &lt;a href=&#34;https://twitter.com/hadleywickham/status/859469052154138625&#34;&gt;disappoint Hadley&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;(&lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt; currently just contains code that I wrote, ’cause I was the only one who left dangling scripts that weren’t incorporated into a proper vignette. Functions from the others will follow.)&lt;/p&gt;
-</description>
+      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
+I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
@@ -31,54 +28,8 @@
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
-&lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
-&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
-Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runconf17?src=hash&#34;&gt;#runconf17&lt;/a&gt; issue! &lt;a href=&#34;https://t.co/AqQpxVJZuk&#34;&gt;pic.twitter.com/AqQpxVJZuk&lt;/a&gt;
-&lt;/p&gt;
-— Amelia McNamara (&lt;span class=&#34;citation&#34;&gt;@AmeliaMN&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/867793745986469889&#34;&gt;May 25, 2017&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;I found the list of topics a bit forbidding. Important stuff, but a lot of them seemed technically difficult, and I didn’t really see how I could best contribute. And, jumping to the punch line, the &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;outcomes of the 2 days’ work&lt;/a&gt; are pretty awesome, for example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;A R package, &lt;a href=&#34;https://github.com/ropenscilabs/available&#34;&gt;available&lt;/a&gt;, to help name R packages. (Have others used it? Can it be viewed as offensive?)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A book on &lt;a href=&#34;https://github.com/ropenscilabs/r-security-practices&#34;&gt;best security practices for R package developers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/ropenscilabs/gramr&#34;&gt;grammar checker&lt;/a&gt; for R Markdown documents, “Write good and do good stuff.”&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ropenscilabs/testrmd&#34;&gt;testrmd&lt;/a&gt;, a package for including tests in R Markdown documents.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Awesome stuff, and that’s &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;4 of 20&lt;/a&gt;. But you know, I don’t think I’m particularly good at any of those things. And for that reason, I was super excited when &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt; posted the idea that we make an R package through which we can interact with the game Minecraft.&lt;/p&gt;
-&lt;p&gt;I’ve played a lot of Minecraft with my kids. And there’s a big community of folks writing “mods” for the game, but to do that, you need to write Java. And, well, I really don’t like Java. So I was excited, a few years ago, to see the book &lt;a href=&#34;https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;Learning to program with Minecraft&lt;/a&gt;, which uses a &lt;a href=&#34;https://github.com/py3minepi/py3minepi&#34;&gt;python module&lt;/a&gt; that allows you to interact with the game.&lt;/p&gt;
-&lt;p&gt;The book is a very nice and thorough introduction to programming, using Minecraft as all of the examples and exercises. Really, it’s the best book on programming for kids that I’ve seen, &lt;em&gt;because&lt;/em&gt; it is so full of challenging but do-able and above all &lt;em&gt;interesting&lt;/em&gt; exercises. Good exercises are really the key to learning programming, and Minecraft provides a lot of really great It’s a great way to learn programming, because a key challenge in learning to program is identifying appropriate &lt;em&gt;challenges&lt;/em&gt; to try to work on, and for people who’ve tried to&lt;/p&gt;
-&lt;p&gt;Our team of six (me, &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;, &lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario Inchiosa&lt;/a&gt;, and &lt;a href=&#34;https://github.com/akzaidi&#34;&gt;Adi Zaidi&lt;/a&gt;) set out to replicate the features of the python module as an R package. There are basically just eight functions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set a particular type of block somewhere&lt;/li&gt;
-&lt;li&gt;figure out what type of block is at some spot&lt;/li&gt;
-&lt;li&gt;figure out where a player is&lt;/li&gt;
-&lt;li&gt;move a player somewhere&lt;/li&gt;
-&lt;li&gt;figure out where a player is pointing&lt;/li&gt;
-&lt;li&gt;check whether anyone has hit something with a sword&lt;/li&gt;
-&lt;li&gt;post a message to chat&lt;/li&gt;
-&lt;li&gt;read the chat messages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We had our basic working package, &lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt;, by lunchtime on the first day and spent the next day and a half playing with it and Minecraft.&lt;/p&gt;
-&lt;p&gt;Just eight basic functions, but we did a ton of awesome things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A robot number-guessing game&lt;/li&gt;
-&lt;li&gt;Automatic creation of mazes that players can walk through (or be moved through automatically)&lt;/li&gt;
-&lt;li&gt;Replicate a photograph, or the R logo, within Minecraft using different types of blocks&lt;/li&gt;
-&lt;li&gt;Give a player Elsa (from the movie Frozen) powers, like walking on water and having it turn to ice, or creating random-sized columns of ice by hitting things&lt;/li&gt;
-&lt;li&gt;Write letters on the side of a mountain&lt;/li&gt;
-&lt;li&gt;Draw a full ggplot2-like scatterplot in the sky&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Check out &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/README.md&#34;&gt;the ReadMe file for our package&lt;/a&gt; to see a bunch of pictures and gifs.&lt;/p&gt;
-&lt;p&gt;I’ll write about some of these things in the (hopefully near) future, because I learned some cool stuff, and it was was really fun.&lt;/p&gt;
-&lt;p&gt;Just after lunch on day 2, I realized that we could use the chat feature in Minecraft to &lt;em&gt;execute R code from within Minecraft&lt;/em&gt;, using &lt;code&gt;parse&lt;/code&gt; and &lt;code&gt;eval&lt;/code&gt;. And it totally worked. So I could generate my ggplot2-style scatterplot entirely within Minecraft. (The key advantage of this, other than just being cool, is not having to keep switching back and forth between R and Minecraft.)&lt;/p&gt;
-&lt;p&gt;Watch me type a bit of R and get my scatterplot going:&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zggCAYAfjXE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;p&gt;What next? We’re thinking we’ll compile the many vignettes we developed into a &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
-</description>
+      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
   </channel>

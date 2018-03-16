@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/reproducible-research/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Reproducibility is hard</title>
@@ -16,54 +18,8 @@
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
-      <description>
-
-&lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
-
-&lt;p&gt;I recently had a &lt;a href=&#34;http://g3journal.org/content/early/2015/08/21/g3.115.019778.abstract&#34;&gt;paper&lt;/a&gt; accepted at &lt;a href=&#34;http://g3journal.org/&#34;&gt;G3&lt;/a&gt;, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later. I did the bulk of the writing in October, 2012, but it wasn&amp;rsquo;t until February, 2014, that I posted a &lt;a href=&#34;http://arxiv.org/abs/1402.2633&#34;&gt;preprint&lt;/a&gt; at &lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv&lt;/a&gt;, which I then finally submitted to G3 in June this year.&lt;/p&gt;
-
-&lt;p&gt;In writing up the paper in late 2012, I re-did my entire analysis from scratch, to make the whole thing more cleanly reproducible. So with the paper now in press, I&amp;rsquo;ve placed all of that in a &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt;, but as it turned out, there was still a lot more to do. (You can tell, from the repository, that this is an old project, because there are a couple of Perl scripts in there. It&amp;rsquo;s been a long time since I&amp;rsquo;ve switched from Perl to Python and Ruby. I still can&amp;rsquo;t commit to just one of Python or Ruby&amp;hellip;want to stick with Python, as everyone else is using it, but much prefer Ruby.)&lt;/p&gt;
-
-&lt;p&gt;The basic issue is that the raw data is about 1 GB. The clean version of the data is another 1 GB. And then there are results of various intermediate calculations, some are rather slow to calculate, which take up another 100 MB. I can&amp;rsquo;t reasonably put all of that within the GitHub repository.&lt;/p&gt;
-
-&lt;p&gt;Both the raw and clean data have been &lt;a href=&#34;http://phenome.jax.org/db/q?rtn=projects/projdet&amp;amp;reqprojid=532&#34;&gt;posted in the Mouse Phenome Database&lt;/a&gt;. (Thanks to Petr Simecek, Gary Churchill, Molly Bogue, and Elissa Chesler for that!) But the data are in a form that I thought suitable for others, and not quite in the form that I actually used them.&lt;/p&gt;
-
-&lt;p&gt;So, I needed to write a script that would grab the data files from &lt;a href=&#34;http://phenome.jax.org&#34;&gt;MPD&lt;/a&gt; and reorganize them in the way that I&amp;rsquo;d been using them.&lt;/p&gt;
-
-&lt;p&gt;In working on that, I discovered some mistakes in the data posted to MPD: there were a couple of bugs in my code to convert the data from the format I was using into the format I was going to post. (So it was good to spend the time on the script that did the reverse!)&lt;/p&gt;
-
-&lt;p&gt;In addition to the raw and clean data on MPD, I posted a zip file with the 110 MB of intermediate results on &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;figshare&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the end, I&amp;rsquo;m hoping that one can clone the &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt; and just run &lt;a href=&#34;https://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt; and it will download the data and do all of the stuff. If you want to save some time, you could download the &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;zip file from figshare&lt;/a&gt; and unzip that, and then run make.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not quite there, but I think I&amp;rsquo;m close.&lt;/p&gt;
-
-&lt;h3 id=&#34;aspects-i-m-happy-with&#34;&gt;Aspects I&amp;rsquo;m happy with&lt;/h3&gt;
-
-&lt;p&gt;For the most part, my work on this project wasn&amp;rsquo;t terrible.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I wrote an R package, &lt;a href=&#34;https://github.com/kbroman/lineup&#34;&gt;R/lineup&lt;/a&gt;, with the main analysis methods.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That I re-derived the full entire analysis cleanly, in a separate, reproducible document (I used &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;AsciiDoc&lt;/a&gt; and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;) was a good thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The code for the figures and tables are all reasonably clean, and draw from either the original data files or from intermediate calculations produced by the AsciiDoc document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I automated everything with GNU Make.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;what-should-i-have-done-differently&#34;&gt;What should I have done differently?&lt;/h3&gt;
-
-&lt;p&gt;There was a lot more after-the-fact work that I would rather not have to do.&lt;/p&gt;
-
-&lt;p&gt;Making a project reproducible is easier if the data aren&amp;rsquo;t that large and so can be bundled into the GitHub repository with all of the code.&lt;/p&gt;
-
-&lt;p&gt;With a larger data set, I guess the thing to do is recognize, from the start, that the data are going to be sitting elsewhere. So then, I think one should &lt;em&gt;organize the data in the form that you expect to be made public&lt;/em&gt;, and work from those files.&lt;/p&gt;
-
-&lt;p&gt;When you write a script to convert data from one form to another, &lt;em&gt;also write some tests&lt;/em&gt;, to make sure that it worked correctly.&lt;/p&gt;
-
-&lt;p&gt;And then &lt;em&gt;document, document, document!&lt;/em&gt; As with software development, it&amp;rsquo;s hard to document data or analyses after the fact.&lt;/p&gt;
-</description>
+      <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
+I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
@@ -72,14 +28,9 @@
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
-      <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
-
-&lt;p&gt;So, I spent some time today writing another of my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;minimal tutorials&lt;/a&gt;, on &lt;a href=&#34;http://kbroman.org/steps2rr&#34;&gt;initial steps towards reproducible research&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit rough, and it could &lt;em&gt;really&lt;/em&gt; use some examples, but it helped me to get my thoughts together for the &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Hackathon&lt;/a&gt; and hopefully will be useful to people (and something to build upon).&lt;/p&gt;
-</description>
+      <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
+Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
+So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
     </item>
     
     <item>
@@ -88,14 +39,8 @@
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; is writing what will surely be a &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;great book&lt;/a&gt; about the basics of R packages. And &lt;a href=&#34;http://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; wrote a &lt;a href=&#34;https://twitter.com/ErikaMudrak/status/504732734674444288&#34;&gt;very&lt;/a&gt; &lt;a href=&#34;https://twitter.com/polesasunder/status/504785818922131456&#34;&gt;influential&lt;/a&gt; &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch&#34;&gt;post on how to write an R package&lt;/a&gt;. So it seems like that topic is well covered.&lt;/p&gt;
-
-&lt;p&gt;Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another &lt;a href=&#34;http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/&#34;&gt;minimal tutorial with an alliterative name&lt;/a&gt;, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic. (R packages are the best way to distribute R code, or just to keep track of your own personal R code, as part of a reproducible research process.)&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;m going ahead with it, even though it doesn&amp;rsquo;t seem necessary: the &lt;a href=&#34;http://kbroman.org/pkg_primer&#34;&gt;R package primer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not completely done, but the &lt;a href=&#34;http://kbroman.org/pkg_primer&#34;&gt;basic stuff is there&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Hadley Wickham is writing what will surely be a great book about the basics of R packages. And Hilary Parker wrote a very influential post on how to write an R package. So it seems like that topic is well covered.
+Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another minimal tutorial with an alliterative name, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic.</description>
     </item>
     
     <item>
@@ -104,18 +49,9 @@
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
-      <description>&lt;p&gt;I spent a lot of time this week writing a short tutorial on &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;: &lt;a href=&#34;http://kbroman.github.io/knitr_knutshell&#34;&gt;knitr in a knutshell&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is my third little tutorial. (The previous ones were a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;git/github guide&lt;/a&gt; and a &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;minimal make&lt;/a&gt; tutorial.)&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve gotten really excited about the tools for reproducible research. I think the main reason that statisticians have been so slow to adopt a reproducible workflow is a lack of training.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m hoping that these tutorials, plus the other materials that I&amp;rsquo;m putting together over the course of this semester, for my &lt;a href=&#34;http://kbroman.github.io/Tools4RR&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, will help.&lt;/p&gt;
-
-&lt;p&gt;But take a look at the &lt;a href=&#34;https://github.com/DataScienceSpecialization/courses&#34;&gt;material&lt;/a&gt; that &lt;a href=&#34;http://www.biostat.jhsph.edu/~jleek/&#34;&gt;Jeff&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger&lt;/a&gt;, and &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt; are developing for their &lt;a href=&#34;http://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/&#34;&gt;Data Science MOOCs&lt;/a&gt;; you&amp;rsquo;ll see that mine are pretty humble contributions.&lt;/p&gt;
-</description>
+      <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
+This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
+I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>
     </item>
     
     <item>
@@ -124,54 +60,8 @@
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
-      <description>
-
-&lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
-
-&lt;p&gt;There are very brief quotes from &lt;a href=&#34;http://ivory.idyll.org/blog/&#34;&gt;Titus Brown&lt;/a&gt; and &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger Peng&lt;/a&gt;.  I expect that the author of the item, &lt;a href=&#34;http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden&#34;&gt;Erika Check Hayden&lt;/a&gt;, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.&lt;/p&gt;
-
-&lt;p&gt;Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;That&#39;s the kind of thing that should freak any scientist out.... We don&#39;t have good processes in place to detect that kind of thing in software.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Roger is quoted at the end, as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with both of them, but my initial reaction, from the beginning of the piece, was closer to Roger&amp;rsquo;s: We often have a heck of time getting any code out of people; if we are too hard on people regarding the quality of their code, they might become even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;On the one hand, we want people to produce good code:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;that works&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s readable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s reusable&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And it would be great if, for every bit of code, there was a second programmer who studied it, verified that it was doing the right thing, and offered suggestions for improvement.&lt;/p&gt;
-
-&lt;p&gt;But, on the other hand, it seems really unlikely that journals have the resources to do this. And I worry that a study showing that much scientific software is crap will make people even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;I would like to see the code associated with scientific articles made readily available, during the review process and beyond. But I don&amp;rsquo;t think we (as a scientific community) want to enforce rigorous code review prior to publication.&lt;/p&gt;
-
-&lt;p&gt;Later, on twitter, &lt;a href=&#34;https://twitter.com/ctitusbrown/status/382862626692149248&#34;&gt;Titus took issue&lt;/a&gt; with the &amp;ldquo;not improve how it looks&amp;rdquo; part of what Roger said:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;.@kwbroman @simplystats @rdpeng Please read &lt;http://en.wikipedia.org/wiki/Code_review&gt; you are deeply, significantly, and completely wrong about code review.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks &lt;em&gt;is&lt;/em&gt; important.)&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have enough time this morning to really clean up my thoughts on this issue, and I want to get this out and move on to reading that dissertation that I have to get through by tomorrow. So, let me summarize.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;well written&lt;/em&gt;: does what it&amp;rsquo;s intended to do, readable, reusable.&lt;/p&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;available&lt;/em&gt;. (Otherwise we can&amp;rsquo;t verify that it does what it&amp;rsquo;s intended to do, or reuse it.)&lt;/p&gt;
-
-&lt;p&gt;If we&amp;rsquo;re too hard on people for writing substandard code, we&amp;rsquo;ll discourage the availability. It&amp;rsquo;s an important trade-off.&lt;/p&gt;
-</description>
+      <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
+There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
@@ -180,46 +70,9 @@
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
-      <description>
-
-&lt;p&gt;I was interested to read &lt;a href=&#34;http://ivory.idyll.org&#34;&gt;C. Titus Brown&lt;/a&gt;&amp;rsquo;s recent post, &amp;ldquo;&lt;a href=&#34;http://ivory.idyll.org/blog/is-version-control-an-electronic-lab-notebook.html&#34;&gt;Is version control an electronic lab notebook?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;I think version control &lt;em&gt;is&lt;/em&gt; really important, and I think all computational scientists &lt;em&gt;should&lt;/em&gt; have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.&lt;/p&gt;
-
-&lt;p&gt;As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance. And for protocol, version control doesn&amp;rsquo;t really matter.&lt;/p&gt;
-
-&lt;h3 id=&#34;version-control&#34;&gt;Version control&lt;/h3&gt;
-
-&lt;p&gt;I really like &lt;a href=&#34;http://git-scm.com/&#34;&gt;git&lt;/a&gt; with &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;. (See &lt;a href=&#34;http://kbroman.github.io/github_tutorial/&#34;&gt;my tutorial&lt;/a&gt;.) But for me, the basic need served by version control  is that embodied in the question, &amp;ldquo;This shit worked before; why isn&amp;rsquo;t it working now?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;You don&amp;rsquo;t want to edit working code &lt;em&gt;in place&lt;/em&gt; and so possibly break a working system. Version control lets you try things out, and to try something out in any version of your software, from any point in time.&lt;/p&gt;
-
-&lt;p&gt;The other basic use of version control is for managing projects with multiple contributors. If there are multiple programmers working on a software project, or multiple authors working on a manuscript, version control is the best way to manage things, particularly for merging everyone&amp;rsquo;s efforts.&lt;/p&gt;
-
-&lt;p&gt;These are really useful things, but version control is more about &lt;em&gt;merging&lt;/em&gt; and &lt;em&gt;history&lt;/em&gt; and not so much &lt;em&gt;reproducible research&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;make-is-the-thing&#34;&gt;Make is the thing&lt;/h3&gt;
-
-&lt;p&gt;To me, the basic tool to make research reproducible is &lt;a href=&#34;http://www.gnu.org/software/make/&#34;&gt;GNU make&lt;/a&gt; (see my &lt;a href=&#34;http://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial&lt;/a&gt;). You create a &lt;code&gt;Makefile&lt;/code&gt; that documents all analysis steps in a project. (For example, &amp;ldquo;Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;With GNU make (see also &lt;a href=&#34;http://rake.rubyforge.org/&#34;&gt;rake&lt;/a&gt;), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing &lt;code&gt;Makefile&lt;/code&gt;, the research is reproducible.&lt;/p&gt;
-
-&lt;h3 id=&#34;add-knitr-and-you-ve-got-a-notebook&#34;&gt;Add knitr, and you&amp;rsquo;ve got a notebook&lt;/h3&gt;
-
-&lt;p&gt;The other ingredient to create the computational scientist&amp;rsquo;s equivalent of a lab notebook is &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;, which allows one to combine text (e.g., in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; or &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;asciidoc&lt;/a&gt;) and code (e.g., in &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;) to make documents (e.g., in html or PDF) that both &lt;em&gt;do&lt;/em&gt; the work and &lt;em&gt;explain&lt;/em&gt; the work. Write such documents to describe what you did and what you learned, and you&amp;rsquo;ve got an electronic lab notebook.&lt;/p&gt;
-
-&lt;p&gt;You could even get rid of your &lt;code&gt;Makefile&lt;/code&gt; by having an over-arching knitr-based document that does it all.  But I still like &lt;a href=&#34;http://www.gnu.org/software/make&#34;&gt;make&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;but-it-s-so-much-work&#34;&gt;But it&amp;rsquo;s so much work!&lt;/h3&gt;
-
-&lt;p&gt;Going into a file and deleting a data point is a lot easier than writing a script that does it (and also documents &lt;em&gt;why&lt;/em&gt;). But I don&amp;rsquo;t think you should be going in and changing the data like that, even if it is being tracked by version control. (And that is the main complaint potential users have about version control: &amp;ldquo;Too time consuming!&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;I think you have to expect that writing well-documented scripts and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;-based reports that capture the totality of a data analysis project will take a lot of work: perhaps double (or more!) the effort. But it will save a ton of time later (if others care about what you did).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t really want to take this time in the midst of a bout of exploratory data analysis. I find it too inhibiting. So I tend to do a bunch of analyses, capturing the main ideas in a draft R script (or reconstructed later from the &lt;code&gt;.Rhistory&lt;/code&gt; file), and then go back later to make a clean knitr-based document that explains what I was doing and why.&lt;/p&gt;
-
-&lt;p&gt;It can be hard to force myself to do the clean-up. I wish there were an easier way. But I expect that well-organized lab scientists devote a lot of time to constructing their lab notebooks, too.&lt;/p&gt;
-</description>
+      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
+I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
+As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
     </item>
     
     <item>
@@ -228,23 +81,9 @@
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re not on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, you should be.  That&amp;rsquo;s &lt;em&gt;real&lt;/em&gt; open source.&lt;/p&gt;
-
-&lt;p&gt;To help some colleagues get started with &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, I wrote a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;minimal tutorial&lt;/a&gt;. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.&lt;/p&gt;
-
-&lt;p&gt;And for &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; folks, note that it&amp;rsquo;s easy to install R packages that are hosted on github, using &lt;a href=&#34;http://had.co.nz&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; package.  For example, to install &lt;a href=&#34;https://github.com/nachocab&#34;&gt;Nacho Caballero&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/nachocab/clickme&#34;&gt;clickme&lt;/a&gt; package:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;devtools&amp;quot;)
-library(devtools)
-install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Having written that git/github tutorial, I thought: I should write more such!&lt;/p&gt;
-
-&lt;p&gt;So I immediately wrote &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;a similar short tutorial&lt;/a&gt; on &lt;a href=&#34;http://www.gnu.org/software/make&#34;&gt;GNU make&lt;/a&gt;, which I think is the &lt;em&gt;most important tool&lt;/em&gt; for reproducible research.&lt;/p&gt;
-</description>
+      <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
+If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
+To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
     </item>
     
     <item>
@@ -253,77 +92,8 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
-      <description>
-
-&lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But couldn&amp;rsquo;t they include the Methods section in the pdf for the article?  For example, consider &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2591.html&#34;&gt;this article in Nature Genetics&lt;/a&gt;; the Methods section is only available in the html version of the paper. The PDF says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Methods and any associated references are available in the online version of the paper.
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;Methods&lt;/em&gt; are important.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be separated from the main text.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be placed after the results (as so many journals, including &lt;a href=&#34;http://www.plosbiology.org&#34;&gt;PLoS&lt;/a&gt;, do).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be in a smaller font than the main text (as &lt;a href=&#34;http://www.pnas.org&#34;&gt;PNAS&lt;/a&gt; does).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They certainly shouldn&amp;rsquo;t be endnotes (as &lt;a href=&#34;http://www.sciencemag.org/content/276/5316/1268.long&#34;&gt;Science&lt;/a&gt; used to do).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;supplements-annoy-me-too&#34;&gt;Supplements annoy me too&lt;/h3&gt;
-
-&lt;p&gt;I love supplemental material: authors can give the full details, and they can provide as many supplemental figures and tables as they want.&lt;/p&gt;
-
-&lt;p&gt;But supplements can be a real pain.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to click on &lt;a href=&#34;http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003321#s5&#34;&gt;10 different links&lt;/a&gt;.  Put it all in one document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to open Word.  Put text and figures in a PDF.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to open Excel.  Put data in a &lt;a href=&#34;http://www.caitlinrivers.com/1/post/2013/04/send-me-your-data-pdf-is-fine-said-no-one-ever-how-to-share-your-data-effectively.html&#34;&gt;plain text file&lt;/a&gt;, preferably as part of a git repository with related code.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At least supplements are now included at the journal sites!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bioinformatics.oxfordjournals.org/content/19/8/956.long&#34;&gt;This paper&lt;/a&gt; in Bioinformatics refers to a separate site for supplemental information:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Expression data and supplementary information are available at
-http://www.rii.com/publications/2003/HE_SDS.htm.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But &lt;code&gt;rii.com&lt;/code&gt; doesn&amp;rsquo;t exist anymore.  I was able to find &lt;a href=&#34;http://web.archive.org/web/20080719125540/http://www.rii.com/publications/2003/HE_SDS.html&#34;&gt;the supplement&lt;/a&gt; using the &lt;a href=&#34;http://web.archive.org&#34;&gt;Wayback Machine&lt;/a&gt;, but&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The link in the paper was wrong: It should be &lt;code&gt;.html&lt;/code&gt; not &lt;code&gt;.htm&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The final version on Wayback has a corrupted PDF, though one can go back to previous versions that are okay.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;i-like-genetics-http-www-genetics-org-and-g3-http-www-g3-journal-org&#34;&gt;I like &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3-journal.org&#34;&gt;G3&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3-journal.org&#34;&gt;G3&lt;/a&gt; put the Methods where they belong (before the results), and when you download the PDF for an article in Genetics, it includes the supplement.  For a G3 article, the supplement isn&amp;rsquo;t included in the article PDF, but at least you can the whole supplement as a single PDF.&lt;/p&gt;
-
-&lt;p&gt;For example, consider my recent Genetics articles:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org/content/190/2/403.full&#34;&gt;Genotype probabilities at intermediate generations in the construction of recombinant inbred lines&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org/content/192/1/267.full&#34;&gt;Mapping quantitative trait loci onto a phylogenetic tree&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you click on &amp;ldquo;Full Text (PDF),&amp;rdquo; you get the article plus the 3 supplemental figures and 23 supplemental tables in the former case, and article plus the 17 supplemental figures and 2 supplemental tables in the latter case.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
+ To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
@@ -332,34 +102,9 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
-      <description>&lt;p&gt;Much has been written about &lt;a href=&#34;http://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
-
-&lt;p&gt;For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.&lt;/p&gt;
-
-&lt;p&gt;For my recent papers, I have developed a sort of system so that I can reproduce the results myself.  I use a combination tools, including &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;, &lt;a href=&#34;http://www.stat.uni-muenchen.de/~leisch/Sweave/&#34;&gt;Sweave&lt;/a&gt;, &lt;a href=&#34;http://www.cpan.org&#34;&gt;perl&lt;/a&gt;, and, of course, &lt;a href=&#34;http://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;ve not been distributing the detailed code behind my papers.  It&amp;rsquo;s not always pretty, and it is not well documented.  (And &amp;ldquo;not always&amp;rdquo; is a bit of a stretch &amp;ndash; more like &amp;ldquo;seldom.&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;When &lt;a href=&#34;http://www.stodden.net&#34;&gt;Victoria Stodden&lt;/a&gt; visited Madison last fall, I was inspired to release this code, but I never carried through on that.&lt;/p&gt;
-
-&lt;p&gt;But then last night I &lt;a href=&#34;https://twitter.com/kwbroman/status/310633718551293953&#34;&gt;twittered&lt;/a&gt; an example graph from &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl.pdf&#34;&gt;a paper&lt;/a&gt;, was (appropriately) &lt;a href=&#34;https://twitter.com/fellgernon/status/310647658387734528&#34;&gt;asked to produce code&lt;/a&gt;, and so created a &lt;a href=&#34;https://github.com/kbroman/phyloQTLpaper/&#34;&gt;github repository&lt;/a&gt; with the bulk of the code for that paper.&lt;/p&gt;
-
-&lt;p&gt;The repository is incomplete: it doesn&amp;rsquo;t include the code to do the main analysis and simulations, but just to make the figures, starting from those results.  I&amp;rsquo;ll work to add those additional details.&lt;/p&gt;
-
-&lt;p&gt;And, even once complete, it will be far from perfect.  The code is (or will be) there, but it would take a bit of work for an interested reader to figure out what it is doing, since much of it is undocumented and poorly written.&lt;/p&gt;
-
-&lt;p&gt;But if we ask for perfection, we&amp;rsquo;ll get nothing.  If we ask for the minimal materials for reproducibility, we may get it.&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s my goal: to focus first on &lt;em&gt;minimal accessibility&lt;/em&gt; of the code and data behind a paper, even if it is minimally readable and so might take quite a bit of effort for someone else to follow.&lt;/p&gt;
-
-&lt;p&gt;One last point: I use local &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; repositories for my draft analyses and for the whole process of writing a paper.  I could post that whole history, but &lt;a href=&#34;http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;as I said before&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;Open source means everyone can see my stupid mistakes. Version control means everyone can see every stupid mistake I&#39;ve ever made.&lt;/blockquote&gt;
-
-&lt;p&gt;It would be easy to make my working repository public, but it would include things like referees&amp;rsquo; reports and my responses to them, as well as the gory details on all of the stupid things that I might do along the way to publication.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m more comfortable releasing just a snapshot of the final product.&lt;/p&gt;
-</description>
+      <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
+For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
+For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
     </item>
     
     <item>
@@ -368,86 +113,9 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</guid>
-      <description>&lt;p&gt;Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.&lt;/p&gt;
-
-&lt;p&gt;For example, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html&#34;&gt;here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo;&lt;/a&gt; that I taught at &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Johns Hopkins&lt;/a&gt; back in 2001.&lt;/p&gt;
-
-&lt;p&gt;Many (perhaps most) good programmers learned to code outside of formal courses.  But many statisticians are terrible programmers and would benefit by a formal course.&lt;/p&gt;
-
-&lt;p&gt;Moreover, applied statisticians spend the vast majority of their time interacting with a computer and would likely benefit from more formal presentations of how to do it well.  And I think this sort of training is particularly important for ensuring that &lt;a href=&#34;https://groups.google.com/forum/?fromgroups#!forum/reproducible-research&#34;&gt;research is reproducible&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;One really learns to code in private, struggling over problems, but I benefited enormously from a statistical computing course I took from &lt;a href=&#34;http://www.stat.berkeley.edu/~spector/&#34;&gt;Phil Spector&lt;/a&gt; at &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Berkeley&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.jhsph.edu/~bcaffo&#34;&gt;Brian Caffo&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo Ruczinski&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng&#34;&gt;Roger Peng&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~ririzarr/&#34;&gt;Rafael Irizarry&lt;/a&gt;, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman&#34;&gt;I&lt;/a&gt; developed a &lt;a href=&#34;http://www.biostat.jhsph.edu/~bcaffo/statcomp/&#34;&gt;statistical programming course&lt;/a&gt; at Hopkins that (I think) really did the job.&lt;/p&gt;
-
-&lt;p&gt;I would like to develop a similar such course at &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;Wisconsin&lt;/a&gt;: on statistical programming, in the most general sense.&lt;/p&gt;
-
-&lt;p&gt;I have in mind several basic principles:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;be self-sufficient&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;get the right answer&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;document what you did (so that you will understand what you did 6 months later)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;if primary data change, be able to re-run the analysis without a lot of work&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;are your simulation results reproducible?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;reuse of code (others&amp;rsquo; and your own) rather than starting from scratch every time&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;make methods accessible to (and used by) others&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here are my current thoughts about the topics to include in such a course.  The key aim would be to make students aware of the basic principles and issues: to give them a good base from which to learn on their own.  Homework would include interesting and realistic programming assignments plus create a Sweave-type document and an R package.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Basic unix tools (find; df; top; ps ux; grep); unix on Mac and windows&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Emacs/vim/other editors (rstudio/eclipse)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Latex (for papers; for presentations)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;slides for talks; posters; figures/tables&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Advanced R (fancy data structures; functions; object-oriented stuff)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Advanced R graphics&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;R packages&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Sweave/asciidoc/knitr&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;minimal Perl (or Python or Ruby); example of data manipulation&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Minimal C (or C++); examples of speed-up&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;version control (eg git or mercurial); backups&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;reproducible research ideas&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data management&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;managing projects: data, analyses, results, papers&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;programming style (readable, modular); general but not too general&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;debugging/profiling/testing&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;high-throughput computing; parallel computing; managing big jobs&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;finding answers to questions: man pages; documentation; web&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;more on visualization; dynamic graphics&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;making a web page; html &amp;amp; css; simple cgi-type web forms?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;writing and managing email&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;managing references to journal articles&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.
+For example, here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo; that I taught at Johns Hopkins back in 2001.
+Many (perhaps most) good programmers learned to code outside of formal courses. But many statisticians are terrible programmers and would benefit by a formal course.</description>
     </item>
     
   </channel>

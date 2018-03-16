@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/conference/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>these guys</title>
@@ -16,24 +18,9 @@
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2017/12/18/these-guys/</guid>
-      <description>&lt;p&gt;At the &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;, in a &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. &lt;a href=&#34;https://twitter.com/hashtag/JSM2016?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#JSM2016&lt;/a&gt;&lt;/p&gt;&amp;mdash; Karl Broman (@kwbroman) &lt;a href=&#34;https://twitter.com/kwbroman/status/760881386651848708?ref_src=twsrc%5Etfw&#34;&gt;August 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Dear S____,&lt;/p&gt;
-&lt;p&gt;We attended your talk at JSM last week, in the session honoring Bill Cleveland.&lt;/p&gt;
-&lt;p&gt;We, and a number of other audience members, were taken aback by your repeated use of the phrase “these guys” in your talk. The use of the word “guys” is often intended as gender-neutral, and we’re certain that you didn’t intend to deliberately imply that only men can be software developers and data analysts. However, our experience as audience members was that your repeated usage came across as rather exclusionary—characterizing programmers and analysts as exclusively men. Given that that was likely not your intent, we hope you’ll take it in consideration to change your language in the future.&lt;/p&gt;
-&lt;p&gt;Regards, Karl Broman &amp;amp; Hadley Wickham&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;We didn’t get a response.&lt;/p&gt;
-&lt;p&gt;I think the lesson here is: don’t let these sorts of things go. &lt;a href=&#34;https://medium.com/@kristianlum/statistics-we-have-a-problem-304638dc5de5&#34;&gt;Tip of the %$*@-ing iceberg&lt;/a&gt;.&lt;/p&gt;
-&lt;div id=&#34;update&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Update&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.science.smith.edu/~amcnamara/&#34;&gt;Amelia McNamara&lt;/a&gt; wrote &lt;a href=&#34;http://www.science.smith.edu/~amcnamara/blog/conferences/2017/12/19/On-Microaggressions.html&#34;&gt;an important follow up&lt;/a&gt; which you simply &lt;em&gt;&lt;strong&gt;must&lt;/strong&gt;&lt;/em&gt; go read. She fully characterizes the situation in a way that I didn’t.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
+I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
+&amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
     </item>
     
     <item>
@@ -42,54 +29,8 @@
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
-&lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
-&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
-Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runconf17?src=hash&#34;&gt;#runconf17&lt;/a&gt; issue! &lt;a href=&#34;https://t.co/AqQpxVJZuk&#34;&gt;pic.twitter.com/AqQpxVJZuk&lt;/a&gt;
-&lt;/p&gt;
-— Amelia McNamara (&lt;span class=&#34;citation&#34;&gt;@AmeliaMN&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/867793745986469889&#34;&gt;May 25, 2017&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;I found the list of topics a bit forbidding. Important stuff, but a lot of them seemed technically difficult, and I didn’t really see how I could best contribute. And, jumping to the punch line, the &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;outcomes of the 2 days’ work&lt;/a&gt; are pretty awesome, for example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;A R package, &lt;a href=&#34;https://github.com/ropenscilabs/available&#34;&gt;available&lt;/a&gt;, to help name R packages. (Have others used it? Can it be viewed as offensive?)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A book on &lt;a href=&#34;https://github.com/ropenscilabs/r-security-practices&#34;&gt;best security practices for R package developers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/ropenscilabs/gramr&#34;&gt;grammar checker&lt;/a&gt; for R Markdown documents, “Write good and do good stuff.”&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ropenscilabs/testrmd&#34;&gt;testrmd&lt;/a&gt;, a package for including tests in R Markdown documents.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Awesome stuff, and that’s &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;4 of 20&lt;/a&gt;. But you know, I don’t think I’m particularly good at any of those things. And for that reason, I was super excited when &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt; posted the idea that we make an R package through which we can interact with the game Minecraft.&lt;/p&gt;
-&lt;p&gt;I’ve played a lot of Minecraft with my kids. And there’s a big community of folks writing “mods” for the game, but to do that, you need to write Java. And, well, I really don’t like Java. So I was excited, a few years ago, to see the book &lt;a href=&#34;https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;Learning to program with Minecraft&lt;/a&gt;, which uses a &lt;a href=&#34;https://github.com/py3minepi/py3minepi&#34;&gt;python module&lt;/a&gt; that allows you to interact with the game.&lt;/p&gt;
-&lt;p&gt;The book is a very nice and thorough introduction to programming, using Minecraft as all of the examples and exercises. Really, it’s the best book on programming for kids that I’ve seen, &lt;em&gt;because&lt;/em&gt; it is so full of challenging but do-able and above all &lt;em&gt;interesting&lt;/em&gt; exercises. Good exercises are really the key to learning programming, and Minecraft provides a lot of really great It’s a great way to learn programming, because a key challenge in learning to program is identifying appropriate &lt;em&gt;challenges&lt;/em&gt; to try to work on, and for people who’ve tried to&lt;/p&gt;
-&lt;p&gt;Our team of six (me, &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;, &lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario Inchiosa&lt;/a&gt;, and &lt;a href=&#34;https://github.com/akzaidi&#34;&gt;Adi Zaidi&lt;/a&gt;) set out to replicate the features of the python module as an R package. There are basically just eight functions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set a particular type of block somewhere&lt;/li&gt;
-&lt;li&gt;figure out what type of block is at some spot&lt;/li&gt;
-&lt;li&gt;figure out where a player is&lt;/li&gt;
-&lt;li&gt;move a player somewhere&lt;/li&gt;
-&lt;li&gt;figure out where a player is pointing&lt;/li&gt;
-&lt;li&gt;check whether anyone has hit something with a sword&lt;/li&gt;
-&lt;li&gt;post a message to chat&lt;/li&gt;
-&lt;li&gt;read the chat messages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We had our basic working package, &lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt;, by lunchtime on the first day and spent the next day and a half playing with it and Minecraft.&lt;/p&gt;
-&lt;p&gt;Just eight basic functions, but we did a ton of awesome things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A robot number-guessing game&lt;/li&gt;
-&lt;li&gt;Automatic creation of mazes that players can walk through (or be moved through automatically)&lt;/li&gt;
-&lt;li&gt;Replicate a photograph, or the R logo, within Minecraft using different types of blocks&lt;/li&gt;
-&lt;li&gt;Give a player Elsa (from the movie Frozen) powers, like walking on water and having it turn to ice, or creating random-sized columns of ice by hitting things&lt;/li&gt;
-&lt;li&gt;Write letters on the side of a mountain&lt;/li&gt;
-&lt;li&gt;Draw a full ggplot2-like scatterplot in the sky&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Check out &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/README.md&#34;&gt;the ReadMe file for our package&lt;/a&gt; to see a bunch of pictures and gifs.&lt;/p&gt;
-&lt;p&gt;I’ll write about some of these things in the (hopefully near) future, because I learned some cool stuff, and it was was really fun.&lt;/p&gt;
-&lt;p&gt;Just after lunch on day 2, I realized that we could use the chat feature in Minecraft to &lt;em&gt;execute R code from within Minecraft&lt;/em&gt;, using &lt;code&gt;parse&lt;/code&gt; and &lt;code&gt;eval&lt;/code&gt;. And it totally worked. So I could generate my ggplot2-style scatterplot entirely within Minecraft. (The key advantage of this, other than just being cool, is not having to keep switching back and forth between R and Minecraft.)&lt;/p&gt;
-&lt;p&gt;Watch me type a bit of R and get my scatterplot going:&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zggCAYAfjXE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;p&gt;What next? We’re thinking we’ll compile the many vignettes we developed into a &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
-</description>
+      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
@@ -98,160 +39,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
-      <description>
-
-&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.&lt;/p&gt;
-
-&lt;p&gt;First things first: &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/spotlightchicago.cfm&#34;&gt;snacks&lt;/a&gt;. Search &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/index.cfm&#34;&gt;the program&lt;/a&gt; for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/spotlightchicago.cfm&#34;&gt;page with the full list&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;sunday&#34;&gt;Sunday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;2:00 - 3:50&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212387&#34;&gt;Open source statistical software for data science&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Skipper Seabold on &lt;em&gt;Software Engineering&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jake VanderPlas on &lt;em&gt;Python&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Doug Bates on &lt;em&gt;Julia&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Dirk Eddelbuettel on &lt;em&gt;Rcpp&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Michael Kane on &lt;em&gt;Grammars &amp;amp; structures in R, Python, and Julia&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;4:00-5:50&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212571&#34;&gt;Sequencing association studies and rare-variant analysis for complex traits&lt;/a&gt; with Gonçalo Abecasis, Xihong Lin, Seunggeun Lee, Iuliana Ionita-Laza&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212579&#34;&gt;Extraordinary impact of statistics&lt;/a&gt;, with David Siegmund, Heike Hofmann, and Sally Morton&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212531&#34;&gt;Precision medicine&lt;/a&gt; with Kim-Anh Do, Hongzhe Li, and Li Hsu (and with Bhramar Mukherjee as discussant)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212366&#34;&gt;Media and statistics&lt;/a&gt; with Howard Wainer, Barry Nussbaum, Julie Rehmeyer, and Don Berry (and Andrew Gelman as discussant)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212554&#34;&gt;Information visualization&lt;/a&gt; with Jorge Poco, Anushka Anand, Zan Armstrong, Zhicheng Liu, and Gordon Kindlmann (organized by Yihui Xie)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;6:00 - 8:00&lt;/em&gt;) Opening Mixer &amp;amp; &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=213079&#34;&gt;Invited posters&lt;/a&gt; (featuring Garrentt Grolemund, Tian Zheng, Liz Sweeney, David Robinson, Hilary Parker, Alyssa Frazee, and Jeff Leek)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;monday&#34;&gt;Monday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:30-10:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212543&#34;&gt;Applied data visualization&lt;/a&gt; (organized by Hilary Parker)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Hadley Wickham on &lt;em&gt;Linked brushing in R&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Andreas Gros on &lt;em&gt;Data vis at Facebook&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Lynn Cherny on &lt;em&gt;Cocktail party horror stories about data vis for clients&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Andrei Scheinkman on &lt;em&gt;Data vis at 538&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jeff Leek on &lt;em&gt;Teaching data vis to 100k data scientists&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Also of interest: &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212462&#34;&gt;Introductory Overview on Causal Inference by Judea Pearl&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:30 - 12:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212335&#34;&gt;Statistics in genomics and genetics&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;John Storey on &lt;em&gt;latent variable methods&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Rafael Irizarry on &lt;em&gt;overcoming bias and batch effects in RNA-seq data&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Kathryn Roeder on &lt;em&gt;testing high-dim differential matrices&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Michael Newton on &lt;em&gt;Graph-restricted mixture models&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;4:45-6:15&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212656&#34;&gt;ASA President&amp;rsquo;s invited address&lt;/a&gt;: Joe Palca (NPR) on &lt;em&gt;Science and news: A marriage of convenience&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tuesday&#34;&gt;Tuesday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:30 - 10:20&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212431&#34;&gt;Statistical genetics for large-scale genomic data&lt;/a&gt; with Mary Sara McPeek, Timothy Thornton, Michael Epstein, and Michael Wu&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212463&#34;&gt;Intro Overview on Data science&lt;/a&gt; with Philip Yu and Michael Jordon&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212804&#34;&gt;Microbiome data analysis&lt;/a&gt; with Xiang Zhan, Pixu Shi, Georg Gerber, Hyunwook Koh, and Richard Bonneau&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:30-12:20&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212466&#34;&gt;Data journalism and statistical expertise&lt;/a&gt; with Regina Nuzzo, Alberto Cairo, Mark Hansen, Carl Bialik, and Katherine Hobson&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212444&#34;&gt;Data in and outside the undergrad classroom&lt;/a&gt; with Ani Adhikari, Mark Daniel Ward, Robert Gould, and Colin Rundel (organized by Mine Cetinkaya-Rundel)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;2:05-3:50&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212483&#34;&gt;Single-cell RNA-seq&lt;/a&gt; with Raphael Gottardo, John Marioni, Rahul Satija, and Stephanie Hicks (organized by Rafael Irizarry)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212415&#34;&gt;The 3d Genome&lt;/a&gt; with Mark Segal, Zhaohui Qin, Zheng Xu, and Deepak Nag Ayyala (organized by Shili Lin)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212551&#34;&gt;Interactive visualizations&lt;/a&gt; with Vincent Nijs, Ryan Hafen, Joseph Cheng, John Muschelli, Carson Sievert, and Yihui Xie (organized by Ramnath Vaidyanathan&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212715&#34;&gt;Integrative data analyses&lt;/a&gt; with Sunduz Keles, Yuan Jiang, Yongdai Kim, and Jun Xie&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:00-9:30&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212655&#34;&gt;ASA President&amp;rsquo;s Address&lt;/a&gt;: Jessica Utts on &lt;em&gt;Appreciating statistics&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;wednesday&#34;&gt;Wednesday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:30 - 10:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212538&#34;&gt;Reproducibility in statistics and data science&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Jenny Bryan&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;me&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Karthik Ram&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Mine Cetinkaya-Rundel&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Yihui Xie (discussant)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:35 - 12:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;2016 Statistical computing and graphics award honors William S. Cleveland&lt;/a&gt; with Nicholas Fisher, Dianne Cook, Luke-Jon Tierney, Steve Scott, and Jim Harner&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;2:05 - 3:50&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212439&#34;&gt;Batch effects in genomics data&lt;/a&gt; with Claire Ruberman, Jingshu Wang, Jennifer Listgarten, Davide Risso, and Florian Buettner&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212489&#34;&gt;Genomics and epigenomics data&lt;/a&gt; with Ker-Chau Li, Yuping Zhang, Hongkai Ji, Guo-Cheng Yuan, and Hao Wu&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212826&#34;&gt;When the plot is not the end: computing and reasoning on data visualizations&lt;/a&gt; with Barrett Schloerke, Haley Jeppson, Gabriel Becker, and Hector Corrada Bravo&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;4:45-6:15&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212657&#34;&gt;Fisher Lecture&lt;/a&gt;: Alice Whittemore on Personalizing disease prevention&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;thursday&#34;&gt;Thursday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:35 - 10:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212487&#34;&gt;Julia for modern statistical computing&lt;/a&gt; with Josh Day, John Myles White, Stefan Karpinski, and Jiahao Chen (and Doug Bates as discussant)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:35-12:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212302&#34;&gt;Showcasing statistics and public policy&lt;/a&gt; with Andrew Gelman, Peter Imrey, and J. R. Lockwood (and David Banks as discussant)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
+First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
+Sunday  (2:00 - 3:50) Open source statistical software for data science</description>
     </item>
     
     <item>
@@ -260,42 +50,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
-      <description>
-
-&lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts. Otherwise I have to keep clicking and going back.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I want to be able to search for people. And if I&amp;rsquo;m searching for &lt;a href=&#34;http://web1.sph.emory.edu/users/hwu30/&#34;&gt;Hao Wu&lt;/a&gt;, I don&amp;rsquo;t want to look at &lt;em&gt;all&lt;/em&gt; of the Wus. Or all of the Haos. I just want the Hao Wus. If I can&amp;rsquo;t search on &lt;code&gt;&amp;quot;Hao Wu&amp;quot;&lt;/code&gt;, at least let me search on &lt;code&gt;&amp;quot;Wu, Hao&amp;quot;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If my search returns nothing and I go back, bring me back to the same search form. Don&amp;rsquo;t make me have to click &amp;ldquo;Search for people&amp;rdquo; again.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;d like to be able to form a schedule of the sessions to attend. (&lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM2015&lt;/a&gt; does that okay, but it&amp;rsquo;s not what I&amp;rsquo;d call &amp;ldquo;secure&amp;rdquo; and you have to find the damned things, first.) Really, I want to pick particular talks: this one in that session and that one in the other. But yeah, that seems a bit much to ask.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM 2015 site&lt;/a&gt; is so terrible for browsing, I was happy to get the &lt;a href=&#34;http://www.amstat.org/meetings/jsm/2015/pdfs/JSM2015_ProgramBook.pdf&#34;&gt;pdf of the program&lt;/a&gt;. (Good luck finding it on the website on your own; ASA tweeted the link to me, due to my bitching and moaning.) You can browse the pdf. That&amp;rsquo;s the way I ended up finding the sessions I wanted to attend. It also had an ad for the &lt;a href=&#34;https://twitter.com/kwbroman/status/628797267978289152&#34;&gt;JSM 2015 mobile app&lt;/a&gt;. Did you know there was one? Good luck finding a link to &lt;em&gt;that&lt;/em&gt; on their website, either.&lt;/p&gt;
-
-&lt;p&gt;The pdf is useable, but much like the website, it fails to make use of the medium. I want:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Bookmarks. I want to jump to where Monday&amp;rsquo;s sessions start without have to flip through the whole thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hyperlinks. If you don&amp;rsquo;t include the abstracts, with links from the talk titles to the abstracts, at least include links to the web page that has the abstract so I don&amp;rsquo;t have to search on the web.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;More hyperlinks. The pdf has an index, with people and page numbers. Why not link those page numbers to the corresponding page?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I helped organize a &lt;a href=&#34;http://rqtl.org/ctc2013/&#34;&gt;small meeting&lt;/a&gt; in 2013. The &lt;a href=&#34;http://rqtl.org/ctc2013/program.html&#34;&gt;program on the web&lt;/a&gt; and the &lt;a href=&#34;http://rqtl.org/ctc2013/ctc2013_program.pdf&#34;&gt;corresponding pdf&lt;/a&gt; illustrate much of what I want. (No scheduling feature, but that meeting had no simultaneous sessions.) I included gratuitous network graphs of the &lt;a href=&#34;http://rqtl.org/ctc2013/vis/authors.html&#34;&gt;authors&lt;/a&gt; and &lt;a href=&#34;http://rqtl.org/ctc2013/vis/abstracts.html&#34;&gt;abstracts&lt;/a&gt;. It&amp;rsquo;s 2015. No conference site is truly complete without interactive network graphs.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;As &lt;a href=&#34;https://www.stat.auckland.ac.nz/showperson?firstname=Thomas&amp;amp;surname=Lumley&#34;&gt;Thomas Lumley&lt;/a&gt; commented below, if you search on &amp;ldquo;Wu&amp;rdquo; you get all of the &amp;ldquo;Wu&amp;rdquo;s but also there&amp;rsquo;s one &amp;ldquo;Wulfhorst&amp;rdquo;. And if you search on &amp;ldquo;Hao&amp;rdquo; you get only people whose &lt;em&gt;last&lt;/em&gt; name is &amp;ldquo;Hao&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;He &lt;a href=&#34;https://twitter.com/tslumley/status/629096725978845185&#34;&gt;further pointed out&lt;/a&gt; that if you search for the affiliation &amp;ldquo;Auckland&amp;rdquo; the results don&amp;rsquo;t include &amp;ldquo;University of Auckland&amp;rdquo; but only &amp;ldquo;Auckland University of Technology&amp;rdquo;. And actually, if you search for &amp;ldquo;University of Auckland&amp;rdquo; you get nothing. You need to search for &amp;ldquo;&lt;em&gt;The&lt;/em&gt; University of Auckland&amp;rdquo;.&lt;/p&gt;
-</description>
+      <description>What do I want in a conference website? Not this.
+ I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
+ If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
     </item>
     
     <item>
@@ -304,43 +61,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;http://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;http://imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;http://www.tibs.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;http://www.ssc.ca&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/&#34;&gt;JSM 2015&lt;/a&gt; is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Berkeley&lt;/a&gt;), I got free registration in return for some small service work. I didn&amp;rsquo;t register formally, but they got a list of volunteers and printed name tags from that. My name tag said &amp;ldquo;&lt;strong&gt;Bioman&lt;/strong&gt;.&amp;rdquo; I considered changing my name, since &lt;strong&gt;Bioman&lt;/strong&gt; is so awesome.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Advice I got from a &lt;a href=&#34;https://www.stat.berkeley.edu/~evans/&#34;&gt;Berkeley faculty member&lt;/a&gt;: avoid the contributed papers sessions. Nevertheless, my office mate dragged me to one. One of the speakers showed scatterplots produced with Minitab, in glorious 80×24 ascii resolution, with &lt;code&gt;*&lt;/code&gt;&amp;rsquo;s, and digits to indicate over-plotting.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At JSM 1996 in Chicago, I shared a hotel room with Michael Camarri. He&amp;rsquo;d found the place. It had no air conditioning. That was bad.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At that &amp;lsquo;96 JSM, Michael and I went to a huge Berkeley dinner at the conference hotel. It was obnoxiously expensive so we split a personal-sized pizza, to save our money for, um, the pub. The other table was living it up with champagne and lobster. Seriously. And then they wanted to split the check evenly. Seriously. Without any consideration for students. (I pay better attention to students&amp;rsquo; needs, from that experience.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That same night, Michael and I and the considerable entourage we&amp;rsquo;d formed ran into &lt;a href=&#34;http://research.jax.org/faculty/gary-churchill.html&#34;&gt;Gary Churchill&lt;/a&gt; at the &lt;a href=&#34;http://www.rockbottom.com/locations/chicago&#34;&gt;Rock Bottom&lt;/a&gt;. He was sitting alone with a beer. I latched onto him and bent his ear about QTL mapping and &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/thesis.pdf&#34;&gt;my thesis work&lt;/a&gt;. When we got up to leave, I asked him if he&amp;rsquo;d remembered me (we&amp;rsquo;d met previously when he&amp;rsquo;d visited Berkeley). He admitted that he hadn&amp;rsquo;t, &amp;ldquo;But I&amp;rsquo;ll remember you now!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We ended up at the &lt;a href=&#34;http://www.crobar.com/crobar-chicago.html&#34;&gt;Crō*Bar&lt;/a&gt;, which featured free tattoos and body piercing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At JSM 2003 in San Francisco (I think), I spoke at a Sunday afternoon contributed papers session on statistical genetics. Many people didn&amp;rsquo;t realize that they&amp;rsquo;d added Sunday afternoon sessions. And there were two invited sessions on statistical genetics at the same time. We had just one audience member. In fact, one of the speakers didn&amp;rsquo;t even show up, and we waited through that time slot so as not to disturb the schedule. (It seemed like there was a greater risk of losing our audience member.) I went last, and when I got up to speak, a &lt;a href=&#34;http://www.calpoly.edu/~srein/&#34;&gt;friend of mine&lt;/a&gt; joined the audience. &amp;ldquo;When I got up to speak, the audience doubled!&amp;rdquo; is how I like to characterize it.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There was a session with John Chambers, Robert Gentleman, and Duncan Tempel Lang on the future of &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;, in room that seated 25 comfortably. There was crowd of like 50 people packed in a big bunch outside the door, hoping to at least hear John Chambers&amp;rsquo;s voice.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At JSM 2005 in Minneapolis, I was talking to some random statistician in a pub and made a statement like, &amp;ldquo;Does anyone still use Splus? Anyone who still uses Splus is an idiot.&amp;rdquo; It turned out that the guy worked for Insightful, or whatever the company was that owned Splus at the time. &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt; said the guy looked like he was going to punch me.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There was the bet I made with &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt;, in which I promised to &lt;a href=&#34;http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;put a certain variation on the Johns Hopkins &lt;em&gt;Bloomberg&lt;/em&gt; School of Public Health logo&lt;/a&gt; on one of the slides of my talk, in exchange for a month&amp;rsquo;s beer. I stayed up really late preparing, but I was ultimately successful.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At the end of an evening, &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt;, &lt;a href=&#34;http://www.albany.edu/sph/19585.php&#34;&gt;Greg&lt;/a&gt;, and I paid the waitress to &lt;em&gt;not&lt;/em&gt; bring us the round of drinks that Ingo was trying to buy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Actually, I think those last 3 were all on the same night.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In the &lt;a href=&#34;https://cran.r-project.org/doc/Rnews/Rnews_2002-3.pdf&#34;&gt;December, 2002 issue&lt;/a&gt; of &lt;a href=&#34;https://cran.r-project.org/doc/Rnews/&#34;&gt;R news&lt;/a&gt; (superseded by the &lt;a href=&#34;http://journal.r-project.org/&#34;&gt;R Journal&lt;/a&gt;), I poked fun at Dallas, a previous JSM site. I didn&amp;rsquo;t attend the meeting in Dallas. Here&amp;rsquo;s what I wrote:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;A good time was had at the Joint Statistical Meetings (JSM) in New York City, August 11–15, 2002. After several years of dismal locations (who can forget Dallas?), this year&#39;s JSM began a series of venues possibly even more interesting than the Meetings: in the next two years, the JSM will be in San Francisco and Toronto.&lt;/blockquote&gt;
-
-&lt;p&gt;I have other memories that I can&amp;rsquo;t share here. Find me at &lt;a href=&#34;https://twitter.com/hashtag/jsm2015&#34;&gt;#JSM2015&lt;/a&gt; next week. Seattle is sure to be great!&lt;/p&gt;
-</description>
+      <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
+JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
@@ -349,58 +71,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;https://aaas.confex.com/aaas/2015/webprogram/start.html&#34;&gt;2015 AAAS meeting&lt;/a&gt; in San Jose, California. This is definitely not my typical meeting: too big, too broad, and I hardly know anyone here. But here&amp;rsquo;s a quick (ha ha; &lt;em&gt;yah sure&lt;/em&gt;) summary of the meeting so far.&lt;/p&gt;
-
-&lt;h3 id=&#34;opening-night&#34;&gt;Opening night&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Gerald_Fink&#34;&gt;Gerald Fink&lt;/a&gt; gave the President&amp;rsquo;s Address last night. He&amp;rsquo;s the AAAS President, so I guess that&amp;rsquo;s appropriate. But after five minutes of really lame simplistic crap (for example, he said something like, &amp;ldquo;&lt;a href=&#34;https://twitter.com/c_fenster/status/566061155026624513&#34;&gt;A single picture can destroy our known understanding of the universe,&lt;/a&gt;&amp;rdquo; like innovation and improving our understanding is a bad thing), I left.&lt;/p&gt;
-
-&lt;p&gt;Oh, and before that: the emcee of the evening, who introduced &lt;a href=&#34;http://en.wikipedia.org/wiki/Janet_Napolitano&#34;&gt;Janet Napolitano&lt;/a&gt;, totally couldn&amp;rsquo;t pronounce her last name. (Her remarks, particularly her comments in support of public universities, were quite powerful.) Old dude: practice such things! Your ineptness reveals that you haven&amp;rsquo;t paid proper attention to her.&lt;/p&gt;
-
-&lt;h3 id=&#34;sightings&#34;&gt;Sightings&lt;/h3&gt;
-
-&lt;p&gt;A huge meeting, but I know next to no one here. But I ran into &lt;a href=&#34;http://faculty.mdanderson.org/Sanjay_Shete/&#34;&gt;Sanjay Shete&lt;/a&gt; in the exhibit hall, where I attempted to get two of every tchotchke. (My kids will pitch a fit if one gets something, no matter how lame the thing, and the other doesn&amp;rsquo;t.) Sanjay was named AAAS Fellow, that&amp;rsquo;s why he&amp;rsquo;s here.&lt;/p&gt;
-
-&lt;p&gt;I also ran into &lt;a href=&#34;https://med.stanford.edu/profiles/steven-goodman&#34;&gt;Steve Goodman&lt;/a&gt; (not the &lt;a href=&#34;http://en.wikipedia.org/wiki/Steve_Goodman&#34;&gt;folk singer&lt;/a&gt; who died too young, but &lt;a href=&#34;http://www.lamplighters.org/images/press/pir14/DSCF4590.jpg&#34;&gt;a singer&lt;/a&gt;, nevertheless). Gotta love Steve Goodman! He produced &lt;a href=&#34;https://www.youtube.com/watch?v=Ba5eNi0KzHk&#34;&gt;Behind the tan door&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
-
-&lt;p&gt;I went to a dozen talks. A half-dozen I &lt;em&gt;really&lt;/em&gt; liked.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://aspuru.chem.harvard.edu/&#34;&gt;Alan Aspuru-Guzik&lt;/a&gt; talked about how to find (and visualize) useful organic molecules among the 1060 (or 10180?) possible. Cool high-throughput computing and interactive graphics to produce better solar panels (particularly for developing countries) and huge batteries to store wind- and solar-based power.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://people.stanford.edu/rbaltman/&#34;&gt;Russ Altman&lt;/a&gt; talked about how to search databases, web-search histories, and social media, to identify pairs of drugs that, together, give bad (or good) side effects that wouldn&amp;rsquo;t be predicted from their on-their-own side effects.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/David_Altshuler&#34;&gt;David Altshuler&lt;/a&gt; had a &lt;a href=&#34;https://twitter.com/kwbroman/status/566328355570475008&#34;&gt;hilarious outline slide for his talk&lt;/a&gt;, but the rest was really awesome. A key point: to develop precision medicine will require hard work and there&amp;rsquo;s no magic bullet. And basic (not just translational) research is critical: we can&amp;rsquo;t make a medicine that gets to the precise cause (and that&amp;rsquo;s what precision medicine is about) if we don&amp;rsquo;t understand that basic biology.&lt;/p&gt;
-
-&lt;p&gt;I gave &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/AAAS&#34;&gt;a talk myself&lt;/a&gt;, in a &lt;a href=&#34;https://aaas.confex.com/aaas/2015/webprogram/Session9760.html&#34;&gt;session on visualization of biomedical data&lt;/a&gt;, but it was definitely &lt;em&gt;not&lt;/em&gt; the best talk in the session, nor the second best. Mine might have been the worst of the five talks in the session. But that&amp;rsquo;s okay; I think I did fine. It&amp;rsquo;s just that &lt;a href=&#34;http://physics.cancer.gov/opso/hanlon.aspx&#34;&gt;Sean Hanlon&lt;/a&gt; (brother of my UW-Madison colleague, &lt;a href=&#34;http://www.stat.wisc.edu/~hanlon/&#34;&gt;Bret Hanlon&lt;/a&gt;) put together a superb, but thinly-attended, session.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cs.utah.edu/~miriah/&#34;&gt;Miriah Meyer&lt;/a&gt;&amp;rsquo;s was my favorite talk of the day. She develops visualization tools to help scientists make sense of their data. And her approach is much like mine: specific solutions to specific data and questions. She talked about &lt;a href=&#34;http://www.cs.utah.edu/~miriah/multeesum/&#34;&gt;MulteeSum&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~miriah/pathline/Overview.html&#34;&gt;PathLine&lt;/a&gt;, and &lt;a href=&#34;http://www.cs.utah.edu/~miriah/mizbee/Overview.html&#34;&gt;MizBee&lt;/a&gt;. Favorite quote: &amp;ldquo;It&amp;rsquo;s amazing how much people like circles these days.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www-pls.llnl.gov/?url=about_pls-scientific_staff-streitz_f&#34;&gt;Frederick Streitz&lt;/a&gt; from Lawrence Livermore National Lab talked about simulating and visualizing the electrophysiology of the human heart at super-high  resolution using a frigging huge cluster, with 1.5 million cores. I loved his analogies: if you are painting your house, having a friend or two over to help will reduce the time by the expected factor, but having 1000 friends or 100k friends to help? In parallel computing, you need to rethink what you&amp;rsquo;ll use the computers for.&lt;/p&gt;
-
-&lt;p&gt;His second analogy: The DOE cluster at Livermore is 100k times a desktop computer. That&amp;rsquo;s like the difference between &lt;a href=&#34;http://en.wikipedia.org/wiki/Pac-Man&#34;&gt;PacMan&lt;/a&gt; (1980, 2.1 megaFLOPS) to &lt;a href=&#34;http://en.wikipedia.org/wiki/Assassin%27s_Creed&#34;&gt;Assassin&amp;rsquo;s Creed&lt;/a&gt; (2011, 260 GigaFLOPS). And their cluster is 100k times &lt;em&gt;that&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;At the end of the day, &lt;a href=&#34;http://en.wikipedia.org/wiki/Daphne_Koller&#34;&gt;Daphne Koller&lt;/a&gt; talked about &lt;a href=&#34;http://www.coursera.org&#34;&gt;Coursera&lt;/a&gt;. She&amp;rsquo;s awesome; Coursera&amp;rsquo;s awesome; I&amp;rsquo;m a crappy teacher. That&amp;rsquo;s my thinking at the moment, anyway. (&lt;a href=&#34;http://meetings.aaas.org/live-video-stream/?utm_source=redirect&amp;amp;utm_medium=visual-link&amp;amp;utm_campaign=opp_am15stream#x&#34;&gt;A video of her talk is online&lt;/a&gt;. Have I mentioned how much I hate it when people screw up the aspect ratio? It seems like they screwed up the aspect ratio.) University faculty exist to help people, and with Coursera and other MOOCs, we can help &lt;em&gt;a lot&lt;/em&gt; of people. Key lessons: the value of peer grading (for &lt;em&gt;learning&lt;/em&gt;), not being constrained by the classroom or the 60-min format, ability to explore possible teaching innovations, and just having a &lt;em&gt;hugely&lt;/em&gt; broad reach.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think I&amp;rsquo;d heard the quote that Daphne mentioned, &lt;a href=&#34;http://quoteinvestigator.com/2012/08/17/lecture-minds/&#34;&gt;attributed to&lt;/a&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Edwin_Emery_Slosson&#34;&gt;Edwin Emery Slosson&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;College is a place where a professor&#39;s lecture notes go straight to the students&#39; lecture notes, without passing through the brains of either.&lt;/blockquote&gt;
-
-&lt;p&gt;Still laughing!&lt;/p&gt;
-
-&lt;h3 id=&#34;food&#34;&gt;Food&lt;/h3&gt;
-
-&lt;p&gt;As I &lt;a href=&#34;https://twitter.com/kwbroman/status/566423868265353216&#34;&gt;mentioned on twitter&lt;/a&gt;, I&amp;rsquo;ve eaten &lt;em&gt;a lot&lt;/em&gt; of tacos. But I also had &lt;a href=&#34;https://twitter.com/kwbroman/status/566263267048161281&#34;&gt;some donuts&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;boy-am-i-old&#34;&gt;Boy, am I &lt;em&gt;old&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;I seem to be staying at the same hotel as the &lt;a href=&#34;http://en.wikipedia.org/wiki/American_Junior_Academy_of_Sciences&#34;&gt;American Junior Academy of Sciences (AJAS)&lt;/a&gt;. Are these high school or college students? Man, do I feel old.&lt;/p&gt;
-
-&lt;p&gt;My contribution to education, today: if all of the elevators going down are too packed to accept passengers, press the &lt;em&gt;up&lt;/em&gt; button and ride it up and then down. (Later I learned, from one of the AJAS youth, that the &amp;ldquo;alarm will sound&amp;rdquo; sign at the bottom of the stairs is a lie. You &lt;em&gt;can&lt;/em&gt; take the stairs.)&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m at the 2015 AAAS meeting in San Jose, California. This is definitely not my typical meeting: too big, too broad, and I hardly know anyone here. But here&amp;rsquo;s a quick (ha ha; yah sure) summary of the meeting so far.
+Opening night Gerald Fink gave the President&amp;rsquo;s Address last night. He&amp;rsquo;s the AAAS President, so I guess that&amp;rsquo;s appropriate. But after five minutes of really lame simplistic crap (for example, he said something like, &amp;ldquo;A single picture can destroy our known understanding of the universe,&amp;rdquo; like innovation and improving our understanding is a bad thing), I left.</description>
     </item>
     
     <item>
@@ -409,76 +81,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
-      <description>
-
-&lt;p&gt;Three weeks ago, I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/&#34;&gt;commented on the first two days&lt;/a&gt; of the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014 conference&lt;/a&gt;. I&amp;rsquo;m finally back to talk about the second half.&lt;/p&gt;
-
-&lt;h4 id=&#34;dirk-eddelbuettel-on-rcpp&#34;&gt;Dirk Eddelbuettel on Rcpp&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt; gave a keynote on &lt;a href=&#34;http://rcpp.org&#34;&gt;Rcpp&lt;/a&gt; [&lt;a href=&#34;http://dirk.eddelbuettel.com/papers/useR2014_keynote.pdf&#34;&gt;slides&lt;/a&gt;]. The goal of Rcpp is to have &amp;ldquo;the speed of C++ with the ease and clarity of R.&amp;rdquo; He gave a series of examples that left me (who still uses &lt;code&gt;.C()&lt;/code&gt; to access C code) thinking, &amp;ldquo;Holy crap this is so much easier than what I do!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Take a look at the &lt;a href=&#34;http://gallery.rcpp.org&#34;&gt;Rcpp Gallery&lt;/a&gt;, and the &lt;a href=&#34;http://dirk.eddelbuettel.com/papers/useR2014_tutorial.pdf&#34;&gt;slides from Dirk&amp;rsquo;s Rcpp tutorial&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dirk ended with a detailed discussion of &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;: a system for virtual machines as portable containers. I didn&amp;rsquo;t fully appreciate this part, but according to Dirk, Docker &amp;ldquo;changes how we build and test R&amp;hellip;.It&amp;rsquo;s like pushing to &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;h4 id=&#34;sponsors-talk&#34;&gt;Sponsors Talk&lt;/h4&gt;
-
-&lt;p&gt;After Dirk&amp;rsquo;s talk was the Sponsor&amp;rsquo;s Talk. But if I&amp;rsquo;m going to skip a session (and I strongly recommend that you skip at least some sessions at any conference), anything called &amp;ldquo;Sponsor&amp;rsquo;s Talk&amp;rdquo; is going to be high on my list to skip.&lt;/p&gt;
-
-&lt;h4 id=&#34;lunch-at-venice-beach&#34;&gt;Lunch at Venice Beach&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik Ram&lt;/a&gt; and I met up with &lt;a href=&#34;http://hilaryparker.com/&#34;&gt;Hilary Parker&lt;/a&gt; and &lt;a href=&#34;http://www.sandradgriffith.com/&#34;&gt;Sandy Griffith&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/hspter/status/484441248229367808&#34;&gt;lunch at Venice Beach&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It took us a bit longer to get back than we&amp;rsquo;d anticipated. But I did get a chance to &lt;a href=&#34;https://twitter.com/leonidkruglyak/status/484461511692152832&#34;&gt;meet up with&lt;/a&gt; &lt;a href=&#34;https://labs.genetics.ucla.edu/kruglyak/people&#34;&gt;Leonid Kruglyak&lt;/a&gt; at his office at UCLA.&lt;/p&gt;
-
-&lt;h4 id=&#34;r-and-reproducibility&#34;&gt;R and reproducibility&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/revodavid&#34;&gt;David Smith&lt;/a&gt; from &lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Joseph_J._Allaire&#34;&gt;JJ Allaire&lt;/a&gt; from &lt;a href=&#34;http://rstudio.com&#34;&gt;RStudio&lt;/a&gt; each spoke about package management systems to enhance reproducibility with R.&lt;/p&gt;
-
-&lt;p&gt;For your &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;-based project to be reproducible, the many packages that you&amp;rsquo;ve used need to be available. And future versions of those packages may not work the same way, so ideally you should keep copies of the particular versions that you used.&lt;/p&gt;
-
-&lt;p&gt;David Smith spoke about the &lt;a href=&#34;https://github.com/RevolutionAnalytics/RRT&#34;&gt;R reproducibility toolkit (RRT)&lt;/a&gt;. The focus was more on business analytics, and the need to maintain a group of versioned packages that are known to work together. &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; runs checks on all packages so that they&amp;rsquo;re all known to work together. As I understand it, RRT manages snapshots of sets of packages from CRAN.&lt;/p&gt;
-
-&lt;p&gt;JJ Alaire spoke about &lt;a href=&#34;http://www.rstudio.org&#34;&gt;RStudio&lt;/a&gt;&amp;rsquo;s solution: &lt;a href=&#34;http://rstudio.github.io/packrat/&#34;&gt;packrat&lt;/a&gt;. This seems more suitable for scientific work. It basically creates privates sets of packages, specific to a project.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve not thought much about this issue. &lt;a href=&#34;http://rstudio.github.io/packrat/&#34;&gt;packrat&lt;/a&gt; seems the best fit for my sort of work. I should start using it.&lt;/p&gt;
-
-&lt;h4 id=&#34;poster-session&#34;&gt;Poster session&lt;/h4&gt;
-
-&lt;p&gt;The second poster session was &lt;a href=&#34;https://twitter.com/kwbroman/status/484471383166967809&#34;&gt;in a different location with more space&lt;/a&gt;. It was still a bit cramped, being in a hallway, but it was &lt;em&gt;way better&lt;/em&gt; than the first day. There were a number of interesting posters, including &lt;a href=&#34;http://hilaryparker.com/&#34;&gt;Hilary&amp;rsquo;s&lt;/a&gt; on &lt;a href=&#34;https://github.com/ropensci/testdat&#34;&gt;testdat&lt;/a&gt;, for testing CSV files; &lt;a href=&#34;http://www.sandradgriffith.com/&#34;&gt;Sandy&amp;rsquo;s&lt;/a&gt; on using Shiny apps for teaching; and Mine Çetinkaya-Rundel and Andrew Bray&amp;rsquo;s poster on &amp;ldquo;Teaching data analysis in R through the lens of reproducibility&amp;rdquo; [&lt;a href=&#34;https://www.dropbox.com/s/te7o3h6ypi3ejhu/user2014_reproduce_poster.pdf&#34;&gt;pdf&lt;/a&gt;].&lt;/p&gt;
-
-&lt;h4 id=&#34;met-more-folks&#34;&gt;Met more folks&lt;/h4&gt;
-
-&lt;p&gt;The main purpose of conferences is to meet people. I was glad to be able to chat with &lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt;, &lt;a href=&#34;http://ramnathv.github.io/&#34;&gt;Ramnath Vaidyanathan&lt;/a&gt;, and also &lt;a href=&#34;https://twitter.com/timtriche&#34;&gt;Tim Triche&lt;/a&gt;. Also karaoke with &lt;a href=&#34;http://www.sandradgriffith.com/&#34;&gt;Sandy&lt;/a&gt;, &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik&lt;/a&gt;, &lt;a href=&#34;http://hilaryparker.com&#34;&gt;Hilary&lt;/a&gt;, &lt;a href=&#34;http://www.fil.lu.se/en/department/staff/RasmusBaath/&#34;&gt;Rasmus&lt;/a&gt;, and &lt;a href=&#34;http://blog.r-enthusiasts.com/&#34;&gt;Romain&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;wish-i-d-seen&#34;&gt;Wish I&amp;rsquo;d seen&lt;/h4&gt;
-
-&lt;p&gt;I had a bit of a &lt;a href=&#34;https://twitter.com/_inundata/status/484584850700005376&#34;&gt;late night on Wednesday night&lt;/a&gt;, and then I was in a hurry to get down (via &lt;a href=&#34;https://twitter.com/kwbroman/status/484750328655400960&#34;&gt;public&lt;/a&gt; &lt;a href=&#34;https://twitter.com/kwbroman/status/484759436964028416&#34;&gt;transit&lt;/a&gt;!) to the Science Center to meet up with &lt;a href=&#34;https://twitter.com/kwbroman/status/484780542169059328&#34;&gt;my family&lt;/a&gt;. So I&amp;rsquo;m sorry that I didn&amp;rsquo;t get to see &lt;a href=&#34;http://yihui.name/&#34;&gt;Yihui Xie&lt;/a&gt;&amp;rsquo;s talk on &lt;a href=&#34;https://github.com/yihui/knitr-talks/tree/master/useR2014&#34;&gt;Knitr Ninja&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Looking back through the program, there are a number of other talks I wish I&amp;rsquo;d seen:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Jan de Leeuw on the &lt;a href=&#34;http://www.jstatsoft.org/&#34;&gt;Journal of Statistical Software&lt;/a&gt; [&lt;a href=&#34;http://gifi.stat.ucla.edu/janspubs/2014/notes/deleeuw_mullen_U_14.pdf&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Romain Francois on Rcpp11 [&lt;a href=&#34;http://fr.slideshare.net/romainfrancois/rcpp11-use-r&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Rasmus Baath on Bayesian First Aid [&lt;a href=&#34;http://www.sumsar.net/files/academia/UseR2014_Bayesian_First_Aid.pdf&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jeroen Ooms on &lt;a href=&#34;https://www.opencpu.org/&#34;&gt;OpenCPU&lt;/a&gt; [&lt;a href=&#34;http://jeroenooms.github.io/opencpu-slides/&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Nicholas Reich on &lt;a href=&#34;http://statsteachr.org/&#34;&gt;statsTeachR.org&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Amelia McNamara on Teaching R to high school students (and teachers)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jeff Allen on the latest with R Markdown [&lt;a href=&#34;http://rpubs.com/trestletech/usermd&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014&lt;/a&gt; was a great meeting. In addition to the packages mentioned with &lt;a href=&#34;http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/&#34;&gt;Days 1-2&lt;/a&gt;, I need to pick up &lt;a href=&#34;http://rcpp.org&#34;&gt;Rcpp&lt;/a&gt; and &lt;a href=&#34;http://rstudio.github.io/packrat/&#34;&gt;packrat&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Slides for many of the talks and tutorials are on the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014 web site&lt;/a&gt;. If you know of others, you can add them via the &lt;a href=&#34;https://github.com/user2014/user2014.github.io&#34;&gt;site&amp;rsquo;s GitHub repository&lt;/a&gt; and make a pull request.&lt;/p&gt;
-</description>
+      <description>Three weeks ago, I&amp;rsquo;d commented on the first two days of the UseR 2014 conference. I&amp;rsquo;m finally back to talk about the second half.
+Dirk Eddelbuettel on Rcpp Dirk Eddelbuettel gave a keynote on Rcpp [slides]. The goal of Rcpp is to have &amp;ldquo;the speed of C++ with the ease and clarity of R.&amp;rdquo; He gave a series of examples that left me (who still uses .C() to access C code) thinking, &amp;ldquo;Holy crap this is so much easier than what I do!</description>
     </item>
     
     <item>
@@ -487,146 +91,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m at UCLA for the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR Conference&lt;/a&gt;. I attended &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;once before&lt;/a&gt;, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.&lt;/p&gt;
-
-&lt;p&gt;In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having &lt;a href=&#34;http://www.rqtl.org/ctc2013/&#34;&gt;co-organized a small conference last year&lt;/a&gt;, I appreciate the difficulties. I think the organizers of this meeting have done a great job, but there are some ways it which it might have been better (e.g., no tiny rooms, a better time slot for the posters, and more space for the posters).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;day-1-tutorials&#34;&gt;Day 1: Tutorials&lt;/h3&gt;
-
-&lt;p&gt;The first day was devoted to &lt;a href=&#34;http://user2014.stat.ucla.edu/#tutorials&#34;&gt;tutorials&lt;/a&gt;. I arrived later than intended and missed the morning tutorials and was just in time for the afternoon ones. But the tutorial I wanted to attend, [Ramnath Vaidyanathan&amp;rsquo;s tutorial on interactive documents]() was in a tiny room that was already filled beyond capacity. And by the time I tried to switch, the others were well underway, and I&amp;rsquo;d lost my momentum. Plus I was distracted by ice cream. And seeing &lt;a href=&#34;http://yihui.name/en/&#34;&gt;Yihui&lt;/a&gt;, &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik&lt;/a&gt;, &lt;a href=&#34;http://hilaryparker.com/&#34;&gt;Hilary&lt;/a&gt;, and &lt;a href=&#34;http://www.sandradgriffith.com/&#34;&gt;Sandy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Materials for many of the tutorials are &lt;a href=&#34;http://user2014.stat.ucla.edu/#tutorials&#34;&gt;online&lt;/a&gt;; grab them while you can.&lt;/p&gt;
-
-&lt;p&gt;The evening reception was interesting. I listened in to &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Chang&lt;/a&gt; talking to &lt;a href=&#34;http://www.talgalili.com/&#34;&gt;Tal Galili&lt;/a&gt; about the value of &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;&amp;rsquo;s pipe operator (&lt;code&gt;%&amp;gt;%&lt;/code&gt;) for data manipulation in R. Joe was quite persuasive: replace a nested series of function calls, to be read from the inside out, with a stream of pipes.&lt;/p&gt;
-
-&lt;p&gt;I was excited to meet &lt;a href=&#34;http://scottchamberlain.info/&#34;&gt;Scott Chamberlain&lt;/a&gt; and to see &lt;a href=&#34;http://www.stat.ubc.ca/~jenny/&#34;&gt;Jenny Bryan&lt;/a&gt; and &lt;a href=&#34;http://www.vince.vu/&#34;&gt;Vince Vu&lt;/a&gt;, and of course &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;day-2&#34;&gt;Day 2&lt;/h3&gt;
-
-&lt;h4 id=&#34;john-chambers&#34;&gt;John Chambers&lt;/h4&gt;
-
-&lt;p&gt;The opening talk was by &lt;a href=&#34;http://en.wikipedia.org/wiki/John_Chambers_(statistician)&#34;&gt;John Chambers&lt;/a&gt;. I&amp;rsquo;d not heard him speak before. (Back in 2005, I think, at JSM in Minneapolis, I tried to attend a session with John Chambers, &lt;a href=&#34;http://www.gene.com/scientists/our-scientists/robert-gentleman&#34;&gt;Robert Gentleman&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.ucdavis.edu/~duncan/&#34;&gt;Duncan Temple Lang&lt;/a&gt;, on the future of statistical computing, but it was assigned a room for 30 people, and by the time I got there there was a mass of more than 30 people &lt;em&gt;outside&lt;/em&gt; the room.)&lt;/p&gt;
-
-&lt;p&gt;John talked about the origin of S, including a &lt;a href=&#34;https://twitter.com/kwbroman/status/484005898965090305&#34;&gt;handwritten &amp;ldquo;viewgraph&amp;rdquo;&lt;/a&gt; from the first discussion of the idea in 1976. His basic point was that R was conceived not as a language but as an interface to algorithms: to make it easier to use Fortran-based routines for things like linear regression. And R continues to have much value in that regard:  user-friendly interfaces for statistical calculations.&lt;/p&gt;
-
-&lt;p&gt;He gave a shout out to &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt;, &lt;a href=&#34;http://www.omegahat.org/Rllvm/&#34;&gt;Rllvm&lt;/a&gt;, and &lt;a href=&#34;http://0xdata.com/&#34;&gt;h2o&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;interactive-graphics&#34;&gt;Interactive graphics&lt;/h4&gt;
-
-&lt;p&gt;The first contributed session was on interactive graphics from R.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/wch&#34;&gt;Winston Chang&lt;/a&gt; introduced &lt;a href=&#34;http://ggvis.rstudio.com/&#34;&gt;ggvis&lt;/a&gt;, which is an exciting effort at &lt;a href=&#34;http://www.rstudio.com&#34;&gt;RStudio&lt;/a&gt; to make interactive graphics readily accessible from R.  It uses a ggplot2-style syntax, but with the &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, and using &lt;a href=&#34;https://github.com/trifacta/vega/&#34;&gt;Vega&lt;/a&gt; as the underlying engine.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ramnathv.github.io/&#34;&gt;Ramnath Vaidyanathan&lt;/a&gt; spoke about &lt;a href=&#34;http://rcharts.io/&#34;&gt;rCharts&lt;/a&gt;, which makes a huge list of javascript-based visualization libraries accessible from R using a lattice-style syntax. He went through a ton of great examples, pointed to a &lt;a href=&#34;http://rcharts.io/gallery/&#34;&gt;gallery of others&lt;/a&gt;, and briefly describing the underlying strategy.&lt;/p&gt;
-
-&lt;p&gt;There were additional talks about &lt;a href=&#34;https://plot.ly/&#34;&gt;plotly&lt;/a&gt; and &lt;a href=&#34;http://user2014.stat.ucla.edu/abstracts/talks/216_Subramaniam.pdf&#34;&gt;iwPlot&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;plotly is an effort to make &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based graphs accessible from R (and python and matlab), as well as editable and collaborative. But I don&amp;rsquo;t like plotly&amp;rsquo;s &lt;a href=&#34;https://plot.ly/tou&#34;&gt;Terms of service&lt;/a&gt;, nor that it&amp;rsquo;s closed source. And the presentation was all demonstration with little exposition and so a bit hard to follow.&lt;/p&gt;
-
-&lt;p&gt;iwPlot is an effort to reimplement &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;iPlot eXtreme&lt;/a&gt; with web-based graphics, for interactive graphics with massive datasets, with everything &amp;ldquo;in the cloud&amp;rdquo; rather than on a desktop. I was surprised that they&amp;rsquo;re writing everything from scratch rather than make use of other javascript-based libraries. And the examples weren&amp;rsquo;t very compelling. I was excited about iplot eXtreme back in 2011, but it doesn&amp;rsquo;t seem to have progressed much since. Its &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;web site&lt;/a&gt; says &amp;ldquo;An official release on CRAN is expected in Sept 2011,&amp;rdquo; but that doesn&amp;rsquo;t seem to have happened.&lt;/p&gt;
-
-&lt;h4 id=&#34;web-integration&#34;&gt;Web/integration&lt;/h4&gt;
-
-&lt;p&gt;I skipped a couple of important talks in here: on &lt;a href=&#34;http://rcloud.persistent.com/rCloud&#34;&gt;RCloud&lt;/a&gt; and &lt;a href=&#34;https://www.opencpu.org/&#34;&gt;OpenCPU&lt;/a&gt;. I needed a walk and an espresso.&lt;/p&gt;
-
-&lt;p&gt;I was back for &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt;&amp;rsquo;s talk about &lt;a href=&#34;http://shiny.rstudio.com/&#34;&gt;Shiny&lt;/a&gt;, for making interactive web applications with R, with no requirement of knowledge of html, css, or javascript. It was really well presented; especially cool is the ability to include shiny apps within R Markdown documents, which is apparently even easier than creating stand-alone shiny apps.&lt;/p&gt;
-
-&lt;p&gt;And then &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik Ram&lt;/a&gt; gave a great talk about &lt;a href=&#34;http://ropensci.org/&#34;&gt;rOpenSci&lt;/a&gt;, to foster open science: a large set of packages providing access to a variety of data sources.&lt;/p&gt;
-
-&lt;h4 id=&#34;martin-machler&#34;&gt;Martin Machler&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stat.ethz.ch/people/maechler&#34;&gt;Martin Machler&lt;/a&gt; gave a superb talk on &amp;ldquo;Good practices for R programming,&amp;rdquo; including seven principles:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Work with source files (rather than just typing in the console)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Keep R source readable and maintainable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the documentation&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Learn from the masters (read others&amp;rsquo; code)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Do not copy and paste (write functions)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Strive for clarity and simplicity&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Test your code&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;He made a number of further points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Leave optimization to later, clear code is more important than optimized code, and if you &lt;em&gt;do&lt;/em&gt; optimize, measure rather than guess about speed.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write packages&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use version control&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;R CMD BATCH&lt;/code&gt; should work on your R script.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Never use &lt;code&gt;.RData&lt;/code&gt;; your code should do all of the work. But use &lt;code&gt;save&lt;/code&gt; for big computations and then &lt;code&gt;attach&lt;/code&gt;. (Later he clarified, don&amp;rsquo;t use &lt;code&gt;attach&lt;/code&gt; with data frames, but do use it with &lt;code&gt;RData&lt;/code&gt; files.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make use of the &lt;code&gt;log&lt;/code&gt; argument to density functions, to avoid underflow, and use functions like &lt;code&gt;log1p&lt;/code&gt;, for accuracy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use &lt;code&gt;drop=FALSE&lt;/code&gt; when subsetting a matrix, so that the outcome remains a matrix.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use &lt;code&gt;is.na(x)&lt;/code&gt; not &lt;code&gt;x == NA&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t use &lt;code&gt;1:n&lt;/code&gt; when &lt;code&gt;n&lt;/code&gt; is not a positive integer.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;data-manipulation&#34;&gt;Data manipulation&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; gave a persuasive and instructive talk on &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;&amp;rsquo;s pipe operator, for data manipulation tasks in R. &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt; had largely convinced me the night before, but now I&amp;rsquo;m thoroughly convinced of the value of these tools. The bottlenecks in analysis tasks are thinking, coding, and doing. For data manipulation, dplyr helps with the &lt;em&gt;thinking&lt;/em&gt; part, by having you focus on a set of basic operations: filter, select, arrange, mutate, summarize, and &amp;ldquo;group by,&amp;rdquo; and then also the left join, right join, semi-join, and anti-join. Magrittr&amp;rsquo;s pipe operator (%&amp;gt;%) helps with the &lt;em&gt;coding&lt;/em&gt;: you create a stream of pipes rather than a nasty mess of nested function calls that need to be read from the inside out. And &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt; helps with the &lt;em&gt;doing&lt;/em&gt;: dplyr is super-fast (though not quite as fast as &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;). Further, dplyr takes advantage of R&amp;rsquo;s &amp;ldquo;non-standard evaluation&amp;rdquo; in a way that makes it easy to connect to external data sources, like databases, as if they were regular objects.&lt;/p&gt;
-
-&lt;p&gt;I skipped the rest of the session, though I should have at least stayed for the Matt Dowle&amp;rsquo;s presentation on &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;. (I understand that &lt;a href=&#34;https://twitter.com/_inundata/status/484120526021881858&#34;&gt;he could have an alternate career as a leader of group meditations&lt;/a&gt;.) I&amp;rsquo;ve just found that I have to limit myself. But &lt;a href=&#34;https://twitter.com/timtriche/status/484120355254980608&#34;&gt;a tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/timtriche&#34;&gt;Tim Triche&lt;/a&gt; had a photo of a slide that showed the speed of data.table&amp;rsquo;s &lt;code&gt;fread&lt;/code&gt; function over R&amp;rsquo;s &lt;code&gt;read.csv&lt;/code&gt;. I need to adopt &lt;code&gt;fread&lt;/code&gt;!&lt;/p&gt;
-
-&lt;h4 id=&#34;posters&#34;&gt;Posters&lt;/h4&gt;
-
-&lt;p&gt;The poster sessions were a tragedy. Seriously.&lt;/p&gt;
-
-&lt;p&gt;First, it was immediately after a long session (well, for those who stuck it through), and at the slot &lt;a href=&#34;https://twitter.com/kwbroman/status/484131994708627456&#34;&gt;where one would want to eat dinner&lt;/a&gt;. (Martin&amp;rsquo;s talk was 3-4, the 3rd contributed session was 4-5:30, the posters were 5:30-7, and two panel sessions/mixers were 6:30-9.)&lt;/p&gt;
-
-&lt;p&gt;Second, the posters were arranged along a narrow hallway, and not on the walls but on stands which stuck out into the hallway. There really was no room for people to view the things.&lt;/p&gt;
-
-&lt;p&gt;It was too frustrating. I left to eat dinner.&lt;/p&gt;
-
-&lt;h4 id=&#34;her-panel&#34;&gt;heR panel&lt;/h4&gt;
-
-&lt;p&gt;It was great that the meeting included a well-attended &lt;a href=&#34;https://github.com/skoval/her2014&#34;&gt;panel discussion and mixer&lt;/a&gt; to discuss how to encourage more women R users. But I was a bit disappointed with the event.&lt;/p&gt;
-
-&lt;p&gt;We can all agree that women are underrepresented as contributors of packages to &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; and as participants in R conferences. But why? And how to change this? I didn&amp;rsquo;t gain much insight.&lt;/p&gt;
-
-&lt;p&gt;I think I just don&amp;rsquo;t like panel discussion. The five women on the panel, and the moderator, are admirable and their views interesting. But they don&amp;rsquo;t have a unique understanding of the problem or solutions. I think I would have preferred a more open discussion, to hear much more from all of the other women in the room.&lt;/p&gt;
-
-&lt;p&gt;I felt the same way about the panel discussion at &lt;a href=&#34;http://www.rqtl.org/ctc2013&#34;&gt;the meeting I co-organized in 2013&lt;/a&gt;: I would have preferred to have heard much more from the general audience and less from the panel.&lt;/p&gt;
-
-&lt;p&gt;The most shocking revelation concerned the unnecessarily extensive effort that &lt;a href=&#34;http://www.stat.ucla.edu/~amelia.mcnamara/&#34;&gt;Amelia McNamara&lt;/a&gt; had to expend in order to include a &lt;em&gt;harrassment policy&lt;/em&gt; on the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;meeting web site&lt;/a&gt;. The value of such a policy should be obvious from the &lt;a href=&#34;http://geekfeminism.wikia.com/wiki/Timeline_of_incidents&#34;&gt;history of bad behavior&lt;/a&gt; at scientific and technical conferences.&lt;/p&gt;
-
-&lt;p&gt;I would have been happier had the discussion continued for another hour. The audience was just getting going when the event ended.&lt;/p&gt;
-
-&lt;p&gt;My personal opinion is that there are a lot more women R users out there, but they aren&amp;rsquo;t contributing R packages because it has long been a very cumbersome process. (But see &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/&#34;&gt;Hilary Parker&amp;rsquo;s tutorial&lt;/a&gt;.) And they don&amp;rsquo;t necessarily identify as &amp;ldquo;R users&amp;rdquo; but rather as more general applied statisticians. And they&amp;rsquo;ve not yet learned of the great value in attending UseR conferences, for learning and networking.&lt;/p&gt;
-
-&lt;h4 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;UseR conferences are fabulous: for inspiration, learning, and networking. They&amp;rsquo;re not for gurus, but for normal people who want to share ideas and learn about new and exciting developments. (The next &lt;a href=&#34;http://user2015.org&#34;&gt;UseR meeting&lt;/a&gt; will be June 30-July 3, 2015, in Aalborg, Denmark.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The smallest meeting room shouldn&amp;rsquo;t be very small.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Poster sessions need a proper time slot, and they need a lot of space.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t much like panel discussions but rather prefer more open discussions.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I need to adopt &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; immediately. Also &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;&amp;rsquo;s &lt;code&gt;fread&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I need to learn &lt;a href=&#34;http://shiny.rstudio.com&#34;&gt;shiny&lt;/a&gt;, &lt;a href=&#34;http://ggvis.rstudio.com&#34;&gt;ggvis&lt;/a&gt;, &lt;a href=&#34;http://rcharts.io&#34;&gt;rCharts&lt;/a&gt;, and some of the &lt;a href=&#34;http://ropensci.org&#34;&gt;rOpenSci&lt;/a&gt; packages (and &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; for that matter; I still just use base graphics), at least so that I can get students using them.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I&amp;rsquo;m at UCLA for the UseR Conference. I attended once before, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.
+In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having co-organized a small conference last year, I appreciate the difficulties.</description>
     </item>
     
     <item>
@@ -635,34 +101,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
-      <description>
-
-&lt;p&gt;The &lt;a href=&#34;http://discovery.wisc.edu/home/morgridge/morgridge.cmsx&#34;&gt;Morgridge Institute for Research&lt;/a&gt; (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. &lt;a href=&#34;http://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf&#34;&gt;One position&lt;/a&gt; is joint with my department,  &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;Biostatistics &amp;amp; Medical Informatics&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;yet-another-symposium&#34;&gt;Yet another symposium&lt;/h3&gt;
-
-&lt;p&gt;Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (&lt;a href=&#34;http://kbroman.files.wordpress.com/2013/09/computation-in-biology-agenda.pdf&#34;&gt;Here&amp;rsquo;s the agenda.&lt;/a&gt;) Great speakers: &lt;a href=&#34;http://faculty.biomath.ucla.edu/msuchard/&#34;&gt;Marc Suchard&lt;/a&gt;, &lt;a href=&#34;http://shoichetlab.compbio.ucsf.edu/&#34;&gt;Brian Shoichet&lt;/a&gt;, &lt;a href=&#34;http://pages.cs.wisc.edu/~dpage/&#34;&gt;David Page&lt;/a&gt;, and &lt;a href=&#34;http://www.hsph.harvard.edu/winston-hide/&#34;&gt;Winston Hide&lt;/a&gt;. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not sure what MIR was hoping to get out of the symposium, but if they were looking for guidance regarding their hiring efforts, it wasn&amp;rsquo;t effective. At the beginning, the discussion was quite heated but not terribly constructive. In the middle, it became more like the usual sort of question/answer after a seminar. I must admit I didn&amp;rsquo;t stay to the end. Perhaps some important insights were gained after I left. But it seems unlikely that the symposium provided much guidance about hiring in computational biology.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-key-issues&#34;&gt;The key issues&lt;/h3&gt;
-
-&lt;p&gt;Here are what I think the key issues are, when a scientific organization is looking to hire some computational folks.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Do you want a targeted search (for particular kinds of applications or approaches), or do you want to leave it general and just pick the best folks who apply?. (&lt;em&gt;In my experience, targeted searches don&amp;rsquo;t work as well; you miss out on some great people.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What service role is expected of the person? Do you want them to meet some particular scientists&amp;rsquo; needs, or are you going to let them do whatever they want, with the hope that they form useful (to the organization) collaborations? (&lt;em&gt;The expectations should be made explicit.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At promotion time, who is going to evaluate the person? If it&amp;rsquo;s a separate academic department (say, Statistics, or maybe Biochemistry), do they share your organization&amp;rsquo;s values? (&lt;em&gt;Some of the best applied computational scientists may not be generating the NIH grants that a traditional biological sciences department might expect, nor the JASA or Biometrics papers that a Statistics department might expect.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Will the person have appropriate mentors? Is there anyone at the institution who really understands the nature of their position and what they need to do to succeed? (&lt;em&gt;I worry particularly about computational scientists who are isolated from their computational peers.&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have any great answers, but those are the issues that I&amp;rsquo;m concerned about.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: The real point I&amp;rsquo;m trying to make: academics doesn&amp;rsquo;t do a good job of rewarding tool building (eg, software tools). It&amp;rsquo;s often viewed as better to write papers with toy implementations than to make generally useful software. That&amp;rsquo;s a real problem for computational biology, and for folks seeking to hire truly useful computational biologists.&lt;/p&gt;
-</description>
+      <description>The Morgridge Institute for Research (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. One position is joint with my department, Biostatistics &amp;amp; Medical Informatics.
+Yet another symposium Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (Here&amp;rsquo;s the agenda.) Great speakers: Marc Suchard, Brian Shoichet, David Page, and Winston Hide. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.</description>
     </item>
     
     <item>
@@ -671,62 +111,9 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
-      <description>
-
-&lt;p&gt;I attended the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; in Orlando, Florida, last week. (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; = &amp;ldquo;Eastern North American Region&amp;rdquo; of the &lt;a href=&#34;http://www.biometricsociety.org&#34;&gt;International Biometric Society&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important.  (&lt;a href=&#34;http://www.rafalab.org&#34;&gt;Rafa&lt;/a&gt; said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;Let me tell you about the high- and lowlights, for me.&lt;/p&gt;
-
-&lt;p&gt;Also see the ENAR-related comments from &lt;a href=&#34;http://yihui.name/en/2013/03/on-enar-or-statistical-meetings-in-general/&#34;&gt;Yihui Xie&lt;/a&gt; and &lt;a href=&#34;http://alyssafrazee.wordpress.com/2013/03/18/ideas-for-super-awesome-conferences/&#34;&gt;Alyssa Frazee&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Getting to know &lt;a href=&#34;http://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt;, and the introductory part of his talk on &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Having lunch with &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostat&lt;/a&gt; students.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Twittering, particularly with &lt;a href=&#34;http://twitter.com/StrictlyStat&#34;&gt;@StrictlyStat&lt;/a&gt; and &lt;a href=&#34;http://twitter.com/hspter&#34;&gt;@hspter&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hadley Wickham&amp;rsquo;s &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; tutorial, in which I really learned how to teach.  (Can I put it into practice?)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://genes.uchicago.edu/contents/faculty/stephens-matthew.html&#34;&gt;Matthew Stephens&lt;/a&gt;&amp;rsquo;s talk, and spending time with him.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://faculty.mdanderson.org/Jeffrey_Morris/Default.asp&#34;&gt;Jeff Morris&lt;/a&gt;&amp;rsquo;s orientation to Epcot.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The large data visualization session, with &lt;a href=&#34;http://twitter.com/StrictlyStat&#34;&gt;John&lt;/a&gt;, &lt;a href=&#34;http://had.co.nz&#34;&gt;Hadley&lt;/a&gt;, &lt;a href=&#34;http://www.youtube.com/watch?v=IVdwJvQXeg4&#34;&gt;Amy Heineke&lt;/a&gt;, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman&#34;&gt;me&lt;/a&gt;.  (Thanks, &lt;a href=&#34;http://www.biostat.jhsph.edu/~bswihart/&#34;&gt;Bruce&lt;/a&gt;!)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;lowlights&#34;&gt;Lowlights&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;They should have emphasized the cheaper shuttle from the airport (vs taxi); the information was hard to find.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They should have emphasized that wifi was actually free; ignore the \$14.95/day charge as it gets waived from your bill.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Registration on Sunday closed early, so many at the poster session were without name badges.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The program guide PDF should have had bookmarks, and the schedule should have included links to the abstracts.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Realism regarding the start time for the President&amp;rsquo;s invited address.  But I guess if we knew the awards ceremony would take not 15 min but 45, &lt;em&gt;everyone&lt;/em&gt; would skipped.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The venue was too isolated.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The hotel was too expensive.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The \$85 admission to Epcot was a required part of the registration fee (23%).  The registration fee (\$365) was the same as for ENAR 2012 in Washington DC, but it could have been \$280.  And there&amp;rsquo;s a striking difference between &amp;ldquo;It&amp;rsquo;s free!&amp;rdquo; and &amp;ldquo;You already paid for it!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The lighting in meeting rooms was not great.  We needed a ladder and a can of spray paint to &amp;ldquo;turn off&amp;rdquo; those lights shining on the screen.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As I said at the beginning, I had a good time. But I worry particularly about accessibility to students paying their own way.&lt;/p&gt;
-
-&lt;p&gt;It was a really useful and inspirational meeting, right up there with the &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;UseR 2011 meeting&lt;/a&gt; in the UK, but less from talks and more from individual interactions.&lt;/p&gt;
-</description>
+      <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
+I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
+Let me tell you about the high- and lowlights, for me.</description>
     </item>
     
     <item>
@@ -735,45 +122,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/04/18/enar-2012/</guid>
-      <description>
-
-&lt;p&gt;The annual &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org/&#34;&gt;eastern North America portion&lt;/a&gt; of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see &lt;a href=&#34;http://biostat.jhsph.edu&#34;&gt;old friends&lt;/a&gt;, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.&lt;/p&gt;
-
-&lt;h3 id=&#34;ways-to-annoy-me&#34;&gt;Ways to annoy me&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Distorted aspect ratios: I&amp;rsquo;m often seeing LCD projectors set up in wide format, stretching a presentation that was developed in the old 4:3 style. Is it not obvious that preserving the aspect ratio is more important than filling the screen?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This is especially bad with photographs:&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian.jpg&#34; alt=&#34;&#34; /&gt;                 &lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian_stretch.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* It also makes fonts ugly:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian_slide.png&#34; alt=&#34;&#34; /&gt;     &lt;img src=&#34;http://kbroman.files.wordpress.com/2012/04/davidian_slide_stretch.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Outlines for talks (especially 15 min talks): If you have only 15 min, don&amp;rsquo;t waste any time telling us what you&amp;rsquo;re going to be telling us; just tell us.  And even if you&amp;rsquo;ve got 45 min, I find the &amp;ldquo;Background, Methods, Simulations, Application, Discussion&amp;rdquo; outline totally useless, and anything more complicated than that seldom makes sense until the speaker is part way through the talk.  Why try to explain terminology before you&amp;rsquo;ve gotten to the background section?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;I&amp;rsquo;m running out of time so I&amp;rsquo;m going to skip the real data analysis and go quickly through some asymptotic results.&amp;rdquo;  Someone actually said that.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Opening night poster session (and for three hours!): It actually seemed to be working, but I sure wouldn&amp;rsquo;t want to be standing next to a poster from 8-11pm.  I would prefer:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;posters available to look at throughout the meeting&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;multiple poster sessions (so presenters have some opportunity to talk to each other)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;nothing happening at the time of a poster session&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Dull talks by famous people: (I&amp;rsquo;m not talking about &lt;em&gt;you&lt;/em&gt;, fine reader, but the other famous people.)  Biology meetings will have a few invited speakers but the bulk of the talks will be chosen based on submitted abstracts.  Statistics meetings seem more often arranged to have people submit proposals for full sessions, with a slate of pre-selected speakers, and it is those sessions that are reviewed.  That seems the perfect design if you want crappy talks by famous people.  Perhaps I&amp;rsquo;m annoyed only because I&amp;rsquo;m a non-famous person who can give a good talk.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>The annual ENAR meeting (eastern North America portion of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see old friends, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.
+Ways to annoy me  Distorted aspect ratios: I&amp;rsquo;m often seeing LCD projectors set up in wide format, stretching a presentation that was developed in the old 4:3 style.</description>
     </item>
     
     <item>
@@ -782,174 +132,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</guid>
-      <description>
-
-&lt;p&gt;I was at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; at &lt;a href=&#34;http://www.warwick.ac.uk&#34;&gt;The University of Warwick&lt;/a&gt; in &lt;a href=&#34;http://maps.google.com/maps?q=Coventry,+United+Kingdom&amp;amp;hl=en&amp;amp;ll=52.40577,-1.51062&amp;amp;spn=0.772453,1.207123&amp;amp;sll=52.953395,-1.148586&amp;amp;sspn=0.095353,0.15089&amp;amp;vpsrc=6&amp;amp;z=10&#34;&gt;Coventry, UK&lt;/a&gt;, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&amp;rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &amp;ldquo;highlights&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;I left feeling that my programming skills are crap. My biggest failing is in not making sufficient use of others&amp;rsquo; packages, but rather just building what I need from scratch (with great effort) and skipping dynamic graphics completely.&lt;/p&gt;
-
-&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;
-
-&lt;p&gt;There were 440 participants from 41 countries (342 Europe; 60 North America).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.stats.ox.ac.uk/~ripley/&#34;&gt;Prof. Brian Ripley&lt;/a&gt; [&lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/user-2011/images/tuesday/img_5278.jpg&#34;&gt;picture&lt;/a&gt; taken from &lt;a href=&#34;http://www2.warwick.ac.uk/fac/sci/statistics/user-2011/images/&#34;&gt;here&lt;/a&gt;] spoke about the R development process.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;There are now &amp;gt;3000 packages on CRAN, with 110 submissions per week (of which 80 are successful), basically all handled by &lt;a href=&#34;http://statmath.wu.ac.at/~hornik/&#34;&gt;Kurt Hornik&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;CRAN will throw out binaries of packages that are more than two years old.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What&amp;rsquo;s within the base of R will shrink rather than grow.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There have been a lot of improvements in the rendering of graphics.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;R is heavily dependent on a small number of altruistic developers, many of whom feel their contributions are not treated with respect.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;library()&lt;/code&gt; is to be replaced by &lt;code&gt;use()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There will soon be a &lt;code&gt;parallel&lt;/code&gt; package for &lt;a href=&#34;http://cran.r-project.org/web/views/HighPerformanceComputing.html&#34;&gt;parallel computing&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.r-bloggers.com/author/david-smith/&#34;&gt;David Smith&lt;/a&gt; from &lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;, in &lt;a href=&#34;http://prezi.com/s1qrgfm9ko4i/the-r-ecosystem/&#34;&gt;his talk on the R Ecosystem&lt;/a&gt;, claimed that there are more than 2 million R users.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; gave a great lightning talk, &amp;ldquo;Why R-help must die!&amp;rdquo; He suggested the Q-and-A type sites &lt;a href=&#34;http://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt; (on programming) and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; (on statistics), both part of &lt;a href=&#34;http://stackexchange.com/&#34;&gt;Stack Exchange&lt;/a&gt;; they hope to create an R-specific site soon (currently R things are split between the two).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.r-statistics.com/&#34;&gt;Tal Galili&lt;/a&gt; (founder of &lt;a href=&#34;http://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt;) gave a lightning talk about blogging and R. He emphasized that one need not write frequent posts. At the &lt;a href=&#34;http://user2010.org/&#34;&gt;2010 useR! Conference&lt;/a&gt; he gave a more comprehensive introduction to blogging available &lt;a href=&#34;http://www.r-statistics.com/2010/07/blogging-about-r-presentation-and-audio/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ams.med.uni-goettingen.de/amsneu/leha-en.shtml&#34;&gt;Andreas Leha&lt;/a&gt; talked about emacs &lt;a href=&#34;http://orgmode.org/&#34;&gt;org-mode&lt;/a&gt; for reproducible research: sort of like &lt;a href=&#34;http://www.stat.uni-muenchen.de/~leisch/Sweave/&#34;&gt;Sweave&lt;/a&gt; but it will take a large number of possible languages (R, python, Java, &amp;hellip;) and can produce html as well as pdf.&lt;/p&gt;
-
-&lt;p&gt;Tobias Verbeke from &lt;a href=&#34;http://www.openanalytics.eu/&#34;&gt;OpenAnalytics&lt;/a&gt; talked about &lt;a href=&#34;http://www.walware.de/goto/statet&#34;&gt;StatET&lt;/a&gt;, an &lt;a href=&#34;http://www.eclipse.org/eclipse/&#34;&gt;Eclipse&lt;/a&gt;-based IDE for R (especially useful for debugging).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.portfolioprobe.com/blog&#34;&gt;Patrick Burns&lt;/a&gt; talked about &lt;a href=&#34;http://www.portfolioprobe.com/2011/08/23/random-input-software-testing/&#34;&gt;random input software testing&lt;/a&gt; and had a great analogy: if writing test suites is like digging ditches, random input testing is like digging in the sand (ie, fun). (I do random input testing, but with my users providing the inputs.) [&lt;a href=&#34;http://www.burns-stat.com/pages/Present/random_input_test_annotated.pdf&#34;&gt;slides (with transcript)&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;Olaf Mersmann gave a cool talk about &lt;a href=&#34;http://cran.r-project.org/web/packages/microbenchmark/index.html&#34;&gt;microbenchmark&lt;/a&gt; to get accurate nanosecond timings of R expressions. Why do that? Because if you repeat something 1000 times in a &lt;code&gt;for&lt;/code&gt; loop and then time it with &lt;code&gt;system.time()&lt;/code&gt;, you are including the overhead of the &lt;code&gt;for&lt;/code&gt; loop.&lt;/p&gt;
-
-&lt;p&gt;The next useR! Conference will be at Vanderbilt in Nashville, TN, June 12-15, 2012.&lt;/p&gt;
-
-&lt;h2 id=&#34;graphics&#34;&gt;Graphics&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cbio.ensmp.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt; had a poster about the &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels near curves or clusters of points in a plot rather than have a separate legend. I really like the technique and am eager to try out the package. For figures for a publication, one will probably want to edit things by hand, but for day-to-day, the package looks extremely useful.&lt;/p&gt;
-
-&lt;p&gt;Sina Rüeger presented &lt;a href=&#34;http://uniplot.sinarueeger.ch/&#34;&gt;uniPlot&lt;/a&gt; to reduce time to polish reports, by making base graphics, ggplot2, and lattice all use the same style (otherwise the reader may be distracted by the differences). [&lt;a href=&#34;http://cran.r-project.org/web/packages/uniPlot/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;Alexander Kowarik presented &lt;a href=&#34;http://cran.r-project.org/web/packages/sparkTable/&#34;&gt;sparkTable&lt;/a&gt; for creating html tables with very small graphs included.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://simon.urbanek.info/&#34;&gt;Simon Urbanek&lt;/a&gt; mentioned several new features in R graphics:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;R will soon include &lt;code&gt;dev.hold()&lt;/code&gt; and &lt;code&gt;dev.flush()&lt;/code&gt; (written by &lt;a href=&#34;http://www.stats.ox.ac.uk/~ripley/&#34;&gt;Prof. Brian Ripley&lt;/a&gt;) so that you can tell a graphics device when you actually want to see a plot. This should improve graphics rendering.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;rasterImage()&lt;/code&gt; is way faster than &lt;code&gt;image()&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;osmap()&lt;/code&gt; to get &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; maps in one line, with different zoom levels. [It&amp;rsquo;s in the &lt;a href=&#34;http://www.rforge.net/snippets/&#34;&gt;snippets&lt;/a&gt; package.]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;polypath()&lt;/code&gt; to plot polygons with holes.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;dynamic-graphics&#34;&gt;Dynamic graphics&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/&#34;&gt;Paul Murrell&lt;/a&gt; gave an especially cool talk on turning a PDF of a campus map of the University of Aukland into a dynamic graph where mousing over a number in the legend lights up the number at the corresponding building (and vice versa). The pdf was converted to postscript, loaded into R via &lt;a href=&#34;http://cran.r-project.org/web/packages/grImport/index.html&#34;&gt;grImport&lt;/a&gt; and written to an SVG via &lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/&#34;&gt;gridSVG&lt;/a&gt;. There was a bit of javascript to write. [&lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/Talks/UseR2011/processing.pdf&#34;&gt;slides&lt;/a&gt; | &lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/Talks/UseR2011/&#34;&gt;page with the interactive maps&lt;/a&gt; (you may need &lt;a href=&#34;http://www.mozilla.com/en-US/firefox/new/&#34;&gt;Firefox&lt;/a&gt; for the maps)]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.stats.gla.ac.uk/~adrian/&#34;&gt;Adrian Bowman&lt;/a&gt; gave a talk on modeling 3d surfaces with some great dynamic graphics using &lt;a href=&#34;http://rgl.neoscientists.org/about.shtml&#34;&gt;RGL&lt;/a&gt; and &lt;a href=&#34;http://www.stats.gla.ac.uk/~adrian/rpanel/&#34;&gt;rpanel&lt;/a&gt;. He had some cool animations in his PDF, too, developed with the &lt;a href=&#34;http://www.tug.org/texlive/Contents/live/texmf-dist/doc/latex/animate/&#34;&gt;animate&lt;/a&gt; package for LaTeX.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://simon.urbanek.info/&#34;&gt;Simon Urbanek&lt;/a&gt; talked about &lt;a href=&#34;http://www.rosuda.org/iplots/&#34;&gt;iPlots&lt;/a&gt; eXtreme (currently: codename &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;Acinonyx&lt;/a&gt;) which has fabulous and easy-to-create dynamic graphics. You basically just prefix the usual plot functions with an &amp;ldquo;i&amp;rdquo; (iplot, ihist). Super fast and can handle big data sets. It uses &lt;a href=&#34;http://www.opengl.org/&#34;&gt;OpenGL&lt;/a&gt; (a solution developed by the gaming industry).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://spotfire.tibco.com&#34;&gt;TIBCO Spotfire&lt;/a&gt; has some ways to develop interactive graphics tools, but it&amp;rsquo;s commercial and Windows only.&lt;/p&gt;
-
-&lt;p&gt;Ian Hansel talked about Rocessing, for combining &lt;a href=&#34;http://processing.org/&#34;&gt;processing&lt;/a&gt; with &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://4dpiecharts.com/&#34;&gt;Richie Cotton&lt;/a&gt; talked about the use of &lt;a href=&#34;http://cran.r-project.org/web/packages/gWidgets/index.html&#34;&gt;gWidgets&lt;/a&gt; for easy interactive graphics. [&lt;a href=&#34;http://4dpiecharts.com/2011/08/17/user2011-easy-interactive-ggplots-talk/&#34;&gt;data and code here&lt;/a&gt;; also see &lt;a href=&#34;http://4dpiecharts.com/2010/10/06/creating-guis-in-r-with-gwidgets/&#34;&gt;this blog post&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://adrian.waddell.ch/&#34;&gt;Adrian Waddell&lt;/a&gt; talked about &lt;a href=&#34;https://r-forge.r-project.org/projects/rnavgraph/&#34;&gt;RnavGraph&lt;/a&gt; for interactive graphics. He had some neat ideas about navigating among multiple scatterplots: a graph where nodes are images and where moving along an edge between two nodes involves morphing from one image to another. Moving from one scatterplot to another is like rotating a 3d scatterplot. [&lt;a href=&#34;http://cran.r-project.org/web/packages/RnavGraph/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;
-
-&lt;h2 id=&#34;simple-web-applications&#34;&gt;Simple web applications&lt;/h2&gt;
-
-&lt;p&gt;Timothee Carayol gave a lightning talk about how to use &lt;a href=&#34;http://www.omegahat.org/RGoogleDocs/&#34;&gt;RGoogleDocs&lt;/a&gt; and &lt;a href=&#34;http://rapache.net/&#34;&gt;rApache&lt;/a&gt; for quick and easy deployment of a web interface. You set up a spreadsheet, which acts as a configuration file for rApache, so RGoogleDocs handles the inputs in place of what could be complex web programming.  It sounds neat but I don&amp;rsquo;t fully understand it. But Timothee wrote to say that he would write a tutorial in the coming weeks. [&lt;a href=&#34;http://dl.dropbox.com/u/2312517/RGoogleDocs_rApache_useR2011.pdf&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.embl.de/research/units/genome_biology/huber/&#34;&gt;Wolfgang Huber&lt;/a&gt; gave a cool talk on the analysis of images of cells from a large experiment in which each gene is knocked down, one at a time, by RNAi. They are creating interactive reports that are like Sweave but using html5 to give dynamic reports viewed in a browser. He gave examples using the &lt;a href=&#34;http://www.bioconductor.org/packages/2.1/bioc/html/arrayQualityMetrics.html&#34;&gt;arrayQualityMetrics&lt;/a&gt; package. One can identify points via tooltips; multiple plots are linked; click to select/highlight; collapse/expand sections. Callback processing is in javascript. It uses the gridSVG package (which makes it mostly easy).&lt;/p&gt;
-
-&lt;p&gt;Eleni-Anthippi Chatzimichali talked about &lt;a href=&#34;http://cran.r-project.org/web/packages/iWebPlots/index.html&#34;&gt;iWebPlots&lt;/a&gt; for making dynamic, web-based scatterplots.&lt;/p&gt;
-
-&lt;h2 id=&#34;comprehensive-web-applications-and-guis&#34;&gt;Comprehensive web applications and GUIs&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stat.wvu.edu/Faculty/jharner.html&#34;&gt;E. James Harner&lt;/a&gt; spoke about &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/useR-2011/abstracts/010411-rc2.pdf&#34;&gt;Rc2&lt;/a&gt; for collaborative use of R (including shared R sessions with voice chat), aimed to support distance learning. It seems really complicated and not easily adapted for others&amp;rsquo; use.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.iplantcollaborative.org/connect/staff-collaborators/naim-matasci&#34;&gt;Naim Matasci&lt;/a&gt; had a poster about &lt;a href=&#34;http://iplantcollaborative.org&#34;&gt;iPlant&lt;/a&gt; which has a fancy web front end with interactive analysis (using R). They have something like 10 developers working on it, but he said that the source code will be available and that it could be adapted for other purposes.&lt;/p&gt;
-
-&lt;p&gt;Xavier de Pedro Puente discussed the use of &lt;a href=&#34;http://tiki.org&#34;&gt;Tiki&lt;/a&gt; with R to make comprehensive web sites with wiki-like pages including R (converted to output or graphs on the fly) or web-based forms. It uses his &lt;a href=&#34;https://doc.tiki.org/PluginR&#34;&gt;PluginR&lt;/a&gt; package. It seems a great idea, but is likely too complicated for me. The key coding is with &lt;a href=&#34;http://www.smarty.net/&#34;&gt;Smarty&lt;/a&gt;. [&lt;a href=&#34;http://ueb.ir.vhebron.net/2011+UseR&#34;&gt;slides&lt;/a&gt;]&lt;/p&gt;
-
-&lt;p&gt;Jason Waddell and Tobias Verbeke from &lt;a href=&#34;http://www.openanalytics.eu/&#34;&gt;OpenAnalytics&lt;/a&gt; talked about the use of the &lt;a href=&#34;http://www.openanalytics.eu/r-service-bus&#34;&gt;R service bus&lt;/a&gt; [&lt;a href=&#34;http://rsb.doc.openanalytics.eu/&#34;&gt;documentation&lt;/a&gt;] for lab automation.&lt;/p&gt;
-
-&lt;p&gt;David Nicolaides from &lt;a href=&#34;http://accelrys.com/&#34;&gt;Accelrys&lt;/a&gt; talked about browser-based applications using &lt;a href=&#34;http://accelrys.com/products/pipeline-pilot/&#34;&gt;Pipeline Pilot&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Sheri Gilley from &lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt; presented a GUI that they&amp;rsquo;re working on. It looks like it will be superb for the novice who wants a GUI. They&amp;rsquo;ll have a beta by the end of 2011, with the real release in 2012. Sheri spent 25 years doing UI design at SPSS (so I guess she was 10 or 15 when she started).&lt;/p&gt;
-
-&lt;h2 id=&#34;companies&#34;&gt;Companies&lt;/h2&gt;
-
-&lt;p&gt;I was surprised by the large number of companies forming around R.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;: have code for handling large datasets and parallel computing and are developing a GUI.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://rstudio.org&#34;&gt;RStudio&lt;/a&gt;: aimed to be an IDE (supporting programmers) rather than a GUI. Upcoming features (including quick traversal of code across multiple files) look cool, but I&amp;rsquo;ll probably stay with emacs.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.mango-solutions.com/index.html&#34;&gt;Mango Solutions&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.openanalytics.eu/&#34;&gt;OpenAnalytics&lt;/a&gt;: &lt;a href=&#34;http://www.openanalytics.eu/r-service-bus&#34;&gt;R service bus&lt;/a&gt; and &lt;a href=&#34;http://www.walware.de/goto/statet&#34;&gt;StatET&lt;/a&gt; (IDE via &lt;a href=&#34;http://www.eclipse.org/eclipse/&#34;&gt;Eclipse&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://spotfire.tibco.com/&#34;&gt;TIBCO&lt;/a&gt;: purchased Insightful (who had bought Splus) in 2008.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cloudnumbers.com&#34;&gt;CloudNumbers&lt;/a&gt;: cloud-based computing, including the use of R.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;talks-i-wish-i-d-seen&#34;&gt;Talks I wish I&amp;rsquo;d seen&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ablejec.nib.si/&#34;&gt;Andrej Blejec&lt;/a&gt; talked about his animatoR package for creating animations in R.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.maths.bris.ac.uk/~MAZJCR/&#34;&gt;Jonathan Rougier&lt;/a&gt; talked about nomograms (and donkeys).&lt;/p&gt;
-
-&lt;p&gt;Markus Gesmann talked about using the &lt;a href=&#34;http://code.google.com/apis/chart/index.html&#34;&gt;Google visualization API&lt;/a&gt; with R: the &lt;a href=&#34;http://cran.r-project.org/web/packages/googleVis/index.html&#34;&gt;googleVis&lt;/a&gt; package. [&lt;a href=&#34;http://code.google.com/p/google-motion-charts-with-r/&#34;&gt;detailed info&lt;/a&gt;]&lt;/p&gt;
-
-&lt;h2 id=&#34;things-particularly-packages-i-need-to-try-out&#34;&gt;Things (particularly packages) I need to try out&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Emacs &lt;a href=&#34;http://orgmode.org&#34;&gt;org-mode&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://mosaic-web.org&#34;&gt;mosaic&lt;/a&gt; package for teaching [&lt;a href=&#34;http://cran.r-project.org/web/packages/mosaic/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for automatically putting labels directly next to curves or clouds of points.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/hexbin/index.html&#34;&gt;hexbin&lt;/a&gt; package for dense scatterplots.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://iplots.org&#34;&gt;iPlots&lt;/a&gt; eXtreme (&lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;Acinonyx&lt;/a&gt;) for fast dynamic graphics&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/animation/index.html&#34;&gt;animation&lt;/a&gt; for making animations in R&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;grid and &lt;a href=&#34;http://had.co.nz/ggplot2/&#34;&gt;ggplot2&lt;/a&gt; (I&amp;rsquo;m still just using base graphics)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://r-forge.r-project.org/R/?group_id=761&#34;&gt;gWidgets&lt;/a&gt; and &lt;a href=&#34;http://www.stats.gla.ac.uk/~adrian/rpanel/&#34;&gt;rpanel&lt;/a&gt; for making simple dynamic graphics&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.stat.auckland.ac.nz/~paul/&#34;&gt;gridSVG&lt;/a&gt; for making complex web-based dynamic graphics&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/sparkTable/&#34;&gt;sparkTable&lt;/a&gt; for making html tables with small figures inserted&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://uniplot.sinarueeger.ch/&#34;&gt;uniPlot&lt;/a&gt; for making base graphics, ggplot2, and lattice all use the same style. [&lt;a href=&#34;http://cran.r-project.org/web/packages/uniPlot/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/compareGroups/index.html&#34;&gt;compareGroups&lt;/a&gt; for making complex tables with confidence intervals and p-values and such, like epidemiologists (and my collaborators) often want&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.cranfield.ac.uk/health/researchareas/bioinformatics/page53292.html&#34;&gt;iWebPlots&lt;/a&gt; for making web-based plots [&lt;a href=&#34;http://cran.r-project.org/web/packages/iWebPlots/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.bioconductor.org/packages/2.1/bioc/html/arrayQualityMetrics.html&#34;&gt;arrayQualityMetrics&lt;/a&gt; which creates fancy web-based dynamic reports&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;osmap (contained in &lt;a href=&#34;http://www.rforge.net/snippets/&#34;&gt;snippets&lt;/a&gt;) for making maps.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;animatoR for making animations&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://code.google.com/p/google-motion-charts-with-r/&#34;&gt;googlevis&lt;/a&gt; package [&lt;a href=&#34;http://cran.r-project.org/web/packages/googleVis/index.html&#34;&gt;CRAN&lt;/a&gt;]&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I was at the useR! Conference at The University of Warwick in Coventry, UK, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&amp;rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &amp;ldquo;highlights&amp;rdquo;.</description>
     </item>
     
   </channel>

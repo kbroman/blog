@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 03 May 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/people/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/people/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Rob Tibshirani and Andy Clark named to NAS</title>
@@ -16,8 +18,7 @@
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www-stat.stanford.edu/~tibs/&#34;&gt;Rob Tibshirani&lt;/a&gt; and &lt;a href=&#34;http://mbg.cornell.edu/faculty-staff/faculty/clark.cfm&#34;&gt;Andy Clark&lt;/a&gt; are now &lt;a href=&#34;http://www.nasonline.org/news-and-multimedia/news/2012_05_01_NAS_Election.html&#34;&gt;members of the National Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Rob Tibshirani and Andy Clark are now members of the National Academy of Sciences.</description>
     </item>
     
     <item>
@@ -26,34 +27,7 @@
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/06/james-crow/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/James_F._Crow&#34;&gt;James Crow&lt;/a&gt; died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was &lt;em&gt;the nicest person I&amp;rsquo;ve met&lt;/em&gt; . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;There have been a number of obituaries: &lt;a href=&#34;http://www.nytimes.com/2012/01/11/science/james-f-crow-population-genetics-pioneer-dies-at-95.html&#34;&gt;New York Times&lt;/a&gt;, &lt;a href=&#34;http://www.nature.com/nature/journal/v481/n7382/full/481444a.html&#34;&gt;Nature&lt;/a&gt;, &lt;a href=&#34;http://www.genetics.org/site/misc/genet138610.pdf&#34;&gt;Genetics&lt;/a&gt;. Also see &lt;a href=&#34;http://whyevolutionistrue.wordpress.com/2012/01/05/jim-crow-died/&#34;&gt;Jerry Coyne&amp;rsquo;s comments&lt;/a&gt;.  The one in Nature, by &lt;a href=&#34;http://en.wikipedia.org/wiki/Alexey_Kondrashov&#34;&gt;Alexey Kondrashov&lt;/a&gt;, is my favorite: it really captures his humor. Here are a couple of quotes from the final paragraph:&lt;/p&gt;
-
-&lt;blockquote&gt;When asked about his religious views, he always cheerfully replied that the Bible is &#34;important if true&#34;.&lt;/blockquote&gt;
-
-&lt;blockquote&gt;Crow also explained to an insistent advocate of a healthy lifestyle that exercise prolongs life only by as much time as one spends exercising, so he did not see a point in it.&lt;/blockquote&gt;
-
-&lt;p&gt;Another of Jim&amp;rsquo;s jokes: at the end of his recent talks, on the standard acknowledgement slide, he thanked the Social Security Administration for its financial support.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; is also publishing a series of commentaries on Jim&amp;rsquo;s life and work, commissioned to celebrate his 95th birthday. Dan Hartl &lt;a href=&#34;http://www.genetics.org/content/189/4/1129.full&#34;&gt;wrote about his teaching&lt;/a&gt;; Seymour Abrahamson &lt;a href=&#34;http://www.genetics.org/content/190/1/1.full&#34;&gt;wrote about his public service&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Last summer, I sent him a couple of papers that I was writing. In response to, &amp;ldquo;I think you&amp;rsquo;ll find this interesting,&amp;rdquo; he said, &amp;ldquo;You are right. I did find it interesting.&amp;rdquo; He also wrote, &amp;ldquo;This is a masterful paper.&amp;rdquo; And later, &amp;ldquo;While I am writing let me mention something I forgot to say yesterday.  Your diagrams are very neat and very useful, both the chromosomes and the dominos.  The latter are particularly useful.  One picture is worth many words in this case.&amp;rdquo; I cherish those comments.&lt;/p&gt;
-
-&lt;p&gt;The dominos he&amp;rsquo;s referring to are in the 20+ supplemental tables to one of the papers. Here&amp;rsquo;s an example:
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/dominos.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In August, I sat with Jim in his office, discussing the two papers. I asked him for advice on how to maintain a balanced life, referring particularly to my obsession, over several weeks, with the calculations in those papers. He did not offer any advice, but expressed that he had also experienced such intense periods of concentration and obsession about a problem, with a mixture of pleasure and pain, though in hindsight mostly pleasure.&lt;/p&gt;
-
-&lt;p&gt;A few years ago, I gave a talk in the &lt;a href=&#34;http://www.evolution.wisc.edu/&#34;&gt;Evolution seminar series&lt;/a&gt;. Jim wasn&amp;rsquo;t able to attend, but later he mentioned that he enjoyed listening to the recording of my talk, though it was a bit hard to follow without the visuals. To think of Jim sitting at a computer listening to me speak without access to the slides&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;I wish I could be more like him. In particular, I wish I paid as much attention to others&amp;rsquo;  work, and to science generally, as I do to my own work.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://www.genetics.wisc.edu&#34;&gt;Laboratory of Genetics&lt;/a&gt; at UW-Madison is raising money for a &lt;a href=&#34;http://www.genetics.wisc.edu/node/691&#34;&gt;James F. Crow Endowed Professorship&lt;/a&gt;. Consider &lt;a href=&#34;https://secure.supportuw.org/MultiPage/processStep1.do?seq=6949&#34;&gt;making a donation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>James Crow died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was the nicest person I&amp;rsquo;ve met . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.</description>
     </item>
     
   </channel>

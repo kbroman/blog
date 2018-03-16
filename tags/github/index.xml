@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 05 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/github/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Simple web sites with GitHub Pages</title>
@@ -16,29 +18,8 @@
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
-      <description>&lt;p&gt;If you love &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;, you&amp;rsquo;ll also love &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, for producing websites using &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;: you write pages in Markdown within a &lt;code&gt;gh-pages&lt;/code&gt; branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;Last night, I wrote a &lt;a href=&#34;http://kbroman.github.io/simple_site&#34;&gt;minimal tutorial&lt;/a&gt; on how I&amp;rsquo;ve been using this (for example, for the website for my &lt;a href=&#34;http://kbroman.github.io/qtlcharts&#34;&gt;R/qtlcharts package&lt;/a&gt;, on interactive graphics for QTL data).&lt;/p&gt;
-
-&lt;p&gt;In the tutorial, I wrote:&lt;/p&gt;
-
-&lt;blockquote&gt;(For example, I don&#39;t like how simple code is rendered in red within a gray box. Ultimately I&#39;ll try to figure out how to change that, but for now I just pretend that I like it that way.)&lt;/blockquote&gt;
-
-&lt;p&gt;But this morning, I figured out how to change that: create &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/assets/themes/twitter/css/kbroman.css&#34;&gt;my own css file&lt;/a&gt; with the following code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;code {
-  padding: 0;
-  font-size: 90%;
-  color: black;
-  background-color: white;
-  border: 0px solid white;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And then &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/_includes/themes/twitter/default.html#L20&#34;&gt;add a line&lt;/a&gt; to the &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/_includes/themes/twitter/default.html&#34;&gt;&lt;code&gt;default.html&lt;/code&gt;&lt;/a&gt; file.&lt;/p&gt;
-</description>
+      <description>If you love git and GitHub, you&amp;rsquo;ll also love GitHub Pages, for producing websites using Markdown and git: you write pages in Markdown within a gh-pages branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.
+Last night, I wrote a minimal tutorial on how I&amp;rsquo;ve been using this (for example, for the website for my R/qtlcharts package, on interactive graphics for QTL data).</description>
     </item>
     
   </channel>

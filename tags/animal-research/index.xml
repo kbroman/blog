@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 12 Oct 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/animal-research/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/animal-research/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Animal research</title>
@@ -16,26 +18,8 @@
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/12/animal-research/</guid>
-      <description>&lt;p&gt;Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a &lt;a href=&#34;http://tinyurl.com/45y2jny&#34;&gt;public discussion on animal research&lt;/a&gt;.  I was really nervous, but I ended up not saying much and learning quite a lot.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ophth.wisc.edu/faculty/kaufman&#34;&gt;Paul Kaufman&lt;/a&gt;, Chair of Ophthalmology at UW-Madison, gave a 45 min talk about his research on glaucoma using monkeys.  In particular, he sought to articulate one case in which animal research had been useful, and it was a good one: the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/3477218&#34;&gt;development of prostoglandins&lt;/a&gt; for lowering interocular pressure and so preventing or delaying the onset of glaucoma.  His talk was rather technical: great for me, but perhaps not so great for the audience (about 50 people, I would think mostly non-scientists).&lt;/p&gt;
-
-&lt;p&gt;After his talk, the other two panelists and I spoke briefly: &lt;a href=&#34;http://www.law.wisc.edu/profiles/racharo@wisc.edu&#34;&gt;Alta Charo&lt;/a&gt;, a bioethicist from the Law School, talked about the protection of human subjects and its relation to protection of animal subjects, and the importance of empathy for the subjects of research; &lt;a href=&#34;http://medhist.wisc.edu/faculty/lederer/index.shtml&#34;&gt;Sue Lederer&lt;/a&gt;, Chair of Medical History and Bioethics, pointed out what Paul Kaufman hadn&amp;rsquo;t mentioned in his presentation (how the animals are actually treated) and also mentioned the ethical issues in how we choose to spend research dollars (studying glaucoma versus, for example, treating trachoma, which affects as many people worldwide but is easily treated).&lt;/p&gt;
-
-&lt;p&gt;My own comments were the following:  I have some ambivalence about animal research: I&amp;rsquo;m personally rather squeamish and I&amp;rsquo;ve seen some bad experiments, but many scientific questions can only be answered through animal experiments.  I&amp;rsquo;m often asked about experimental design and sample size determination, but I don&amp;rsquo;t enjoy that aspect of things since a proper answer requires that you know the truth.   My usual response about sample size is: use as many animals as you can afford.  If your sample size is too large, you&amp;rsquo;ll have wasted a few excess animals, but if you&amp;rsquo;re sample size is too small, you&amp;rsquo;ll learn nothing and so will have wasted all of the animals.  Finally, I said that animal experiments, on the whole, are too small, and that large collaborative studies in which each animal provides more extensive information might actually lead to an overall reduction in animal numbers.  (Malcolm Macleod &lt;a href=&#34;http://www.nature.com/news/2011/110928/full/477511a.html&#34;&gt;wrote an opinion in Nature&lt;/a&gt; 2 weeks ago indicating some of the weaknesses of current animal experiments, in particular that they are too small.)&lt;/p&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t say anything else during the next hour of discussion.  There were a couple of places where I was inclined to comment, but it didn&amp;rsquo;t really seem necessary.&lt;/p&gt;
-
-&lt;p&gt;The first member of the audience to speak pointed out that the panel had talked about the necessity of animal research but not about ethics; something may appear necessary but still be unethical.  Later, another person said that there is no humane animal experimentation.  I think the key discussion concerned the housing of the primate research subjects.  Currently, they are housed singly in cages.  Paul Kaufman said that this could be done differently (say, in groups in a natural environment), but the cost would be astronomical and so less research could be done.  But that&amp;rsquo;s the key question: should there be more research done but with the monkeys kept in unhappy conditions, or less research but with the monkeys in more humane conditions?&lt;/p&gt;
-
-&lt;p&gt;The moderator, &lt;a href=&#34;https://mywebspace.wisc.edu/rstreiffer/web/&#34;&gt;Rob Streiffer&lt;/a&gt;, made some interesting points (for example, regarding reform versus abolition).  Paul Kaufman generally responded well to the questions, so I didn&amp;rsquo;t feel a need to back him up, though he may have gone a bit over the top at some points.  His answers were not always very friendly.&lt;/p&gt;
-
-&lt;p&gt;If I were to have added anything to the discussion, it would have been to say: not all animal research is done well, and the course of experiments that Paul described were basically the ideal—most experiments don&amp;rsquo;t work out so well.&lt;/p&gt;
-
-&lt;p&gt;Someone did come up to me afterwards to ask me to expand on my point larger collaborative experiments.  That made me happy.&lt;/p&gt;
-</description>
+      <description>Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a public discussion on animal research. I was really nervous, but I ended up not saying much and learning quite a lot.
+Paul Kaufman, Chair of Ophthalmology at UW-Madison, gave a 45 min talk about his research on glaucoma using monkeys. In particular, he sought to articulate one case in which animal research had been useful, and it was a good one: the development of prostoglandins for lowering interocular pressure and so preventing or delaying the onset of glaucoma.</description>
     </item>
     
   </channel>

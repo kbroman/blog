@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 09 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/copyright/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Copyright of video lectures</title>
@@ -16,24 +18,8 @@
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
-      <description>&lt;p&gt;Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)&lt;/p&gt;
-
-&lt;p&gt;I spoke to my &lt;a href=&#34;http://www.giso6150.com/&#34;&gt;family librarian&lt;/a&gt;, who pointed me to &lt;a href=&#34;http://www.library.wisc.edu/directory/staff/Carrie-Kruse&#34;&gt;Carrie Kruse&lt;/a&gt;, directory of the &lt;a href=&#34;https://college.library.wisc.edu/&#34;&gt;College Library&lt;/a&gt; at UW-Madison. And really, librarians are the people to talk to about this sort of thing, as they not only think a lot about copyright and fair use, but also they&amp;rsquo;re on the side of more access. (But don&amp;rsquo;t hold &lt;em&gt;Carrie&lt;/em&gt; accountable if I say anything wrong below; this is my own interpretation, 14 months after corresponding with her.)&lt;/p&gt;
-
-&lt;p&gt;In most jobs, the product of your work is owned by the company, even if they didn&amp;rsquo;t have anything to do with it. But universities have a different tradition. Typically, the university doesn&amp;rsquo;t assert any rights over a faculty member&amp;rsquo;s instructional materials. For example, if you write a textbook, you don&amp;rsquo;t have to negotiate with the university over its publication, nor do you have to give the university a cut of the royalty income. That&amp;rsquo;s different than patents.&lt;/p&gt;
-
-&lt;p&gt;UW-Madison has &lt;a href=&#34;http://www.uwsa.edu/fadmin/gapp/gapp27.htm&#34;&gt;an explicit policy about faculty instructional materials&lt;/a&gt;. (Really, it&amp;rsquo;s a UW System policy.) As I understand it, the university will assert some rights over your instructional materials only if they had contributed special resources or support to their creation (for example, if university staff assisted you with the recording and editing of a video).&lt;/p&gt;
-
-&lt;p&gt;Returning to the video issue: since the university wasn&amp;rsquo;t involved in the production of the video, I didn&amp;rsquo;t have to get their okay.&lt;/p&gt;
-
-&lt;p&gt;Carrie mentioned another important thing to pay attention to: if I had used any photos or other media to which I don&amp;rsquo;t have rights, I need to be careful about their inclusion in videos posted online. Within a classroom, or in a video posted online but only made accessible to a defined group of students, inclusion of such material could fall under &lt;a href=&#34;http://en.wikipedia.org/wiki/Fair_use&#34;&gt;fair use&lt;/a&gt;. But if such material is included in a video that is posted online for general viewing, others may question my fair use claim.&lt;/p&gt;
-
-&lt;p&gt;That may explain why so many instructors here are using password-protected sites, like &lt;a href=&#34;https://learnuw.wisc.edu/&#34;&gt;Learn@UW&lt;/a&gt; and &lt;a href=&#34;https://courses.moodle.wisc.edu&#34;&gt;Moodle&lt;/a&gt;. I can&amp;rsquo;t even look at my colleagues&amp;rsquo; course material.&lt;/p&gt;
-
-&lt;p&gt;I dislike web pages via online forms. (Well, except for you, wordpress; I wish I&amp;rsquo;d started this blog with &lt;a href=&#34;http://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt;, but you&amp;rsquo;re okay.)&lt;/p&gt;
-
-&lt;p&gt;And I &lt;em&gt;despise&lt;/em&gt; the password protection of instructional materials. If I spend a bunch of time preparing material, I want to distribute it as widely as possible. If another instructor uses it in their own class, I consider that a Good Thing.&lt;/p&gt;
-</description>
+      <description>Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)
+I spoke to my family librarian, who pointed me to Carrie Kruse, directory of the College Library at UW-Madison.</description>
     </item>
     
   </channel>

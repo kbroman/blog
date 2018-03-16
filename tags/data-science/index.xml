@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 08 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/data-science/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>I am a data scientist</title>
@@ -16,68 +18,9 @@
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
-      <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
-
-&lt;blockquote&gt;When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math.
-
-If you&#39;re analyzing data, you&#39;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&#39;s still statistics.
-
-If you say that one kind of data analysis is statistics and another kind is not, you&#39;re not allowing innovation. We need to define the field broadly.
-
-You may not like what some statisticians do. You may feel they don&#39;t share your values. They may embarrass you. But that shouldn&#39;t lead us to abandon the term &#34;statistics&#34;.&lt;/blockquote&gt;
-
-&lt;p&gt;I still sort of feel that way, but I must admit that &lt;em&gt;my&lt;/em&gt; definition of &amp;ldquo;statistics&amp;rdquo; is rather different than most others&amp;rsquo; definition. In my view, a good statistician will consider &lt;em&gt;all&lt;/em&gt; aspects of the data analysis process:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;the broader context of a scientific question&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;study design&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data handling, organization, and integration&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data cleaning&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data visualization&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;exploratory data analysis&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;formal inference methods&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;clear communication of results&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;development of useful and trustworthy software tools&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;actually answering real questions&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;m sure I missed some things there, but my main point is that most academic statisticians focus solely on developing &amp;ldquo;sophisticated&amp;rdquo; methods for formal inference, and while I agree that that is an important piece, in my experience as an applied statistician, the other aspects are often of vastly greater importance. In many cases, we don&amp;rsquo;t need to develop sophisticated new methods, and most of my effort is devoted to the other aspects, and these are generally treated as being unworthy of consideration by academic statisticians.&lt;/p&gt;
-
-&lt;p&gt;As I wrote in a later post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2014/05/01/reform-academic-statistics/&#34;&gt;Reform academic statistics&lt;/a&gt;&amp;rdquo;, we as a field appear satisfied with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Papers that report new methods with no usable software&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Applications that focus on toy problems&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Talks that skip the details of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Data visualizations that are both ugly and ineffective&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Discussions of &lt;em&gt;Data Science&lt;/em&gt; generally recognize the full range of activities that are required for the analysis of data, and place greater value on such things as data visualization and software tools which are &lt;em&gt;obviously&lt;/em&gt; important but not viewed so by many statisticians.&lt;/p&gt;
-
-&lt;p&gt;And so I&amp;rsquo;ve come to &lt;em&gt;embrace&lt;/em&gt; the term Data Science.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Data Science&lt;/em&gt; is also a much more straightforward and understandable label for what I do. I don&amp;rsquo;t think we should &lt;em&gt;need&lt;/em&gt; a new term, and I think we should argue against misunderstandings of Statistics rather than slink off to a new &amp;ldquo;brand&amp;rdquo;. But in general, when I talk about Data Science, I feel I can better trust that folks will understand that I am talking about the broad set of activities required in good data analysis.&lt;/p&gt;
-
-&lt;p&gt;If people ask me what I do, I&amp;rsquo;ll continue to say that I&amp;rsquo;m a Statistician, even though I do tend to stumble over the word. But I am also a &lt;em&gt;Data Scientist&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;One last thing: I&amp;rsquo;ve also come to realize that computer science folks working in computational biology are really just like me. They have expertise in a somewhat different set of tools, but then that&amp;rsquo;s true for pretty much every statistician, too: they&amp;rsquo;re much like me but they have expertise in a somewhat different set of tools. And it&amp;rsquo;s nice to be able to say that &lt;em&gt;we&amp;rsquo;re all data scientists&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;It should be recognized, too, that academic computer science suffers from many of the same problems that academic statistics has suffered: an overemphasis on novelty, sophistication, and toy applications, and an under-appreciation for solving real problems, for data visualization, and for useful software tools.&lt;/p&gt;
-</description>
+      <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
+It was a short post, so I might as well quote the whole thing:
+When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
     </item>
     
     <item>
@@ -86,14 +29,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
-      <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
-
-&lt;p&gt;So, I spent some time today writing another of my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;minimal tutorials&lt;/a&gt;, on &lt;a href=&#34;http://kbroman.org/steps2rr&#34;&gt;initial steps towards reproducible research&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit rough, and it could &lt;em&gt;really&lt;/em&gt; use some examples, but it helped me to get my thoughts together for the &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Hackathon&lt;/a&gt; and hopefully will be useful to people (and something to build upon).&lt;/p&gt;
-</description>
+      <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
+Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
+So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
     </item>
     
     <item>
@@ -102,72 +40,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
-
-&lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
-
-&lt;p&gt;Following the &lt;a href=&#34;http://www.rss.org.uk/&#34;&gt;RSS&lt;/a&gt; &lt;a href=&#34;http://www.worldofstatistics.org/presentations-and-panelists&#34;&gt;Future of the Statistical Sciences Workshop&lt;/a&gt;, Rafael was &lt;a href=&#34;http://simplystatistics.org/2013/11/18/feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop&#34;&gt;quite optimistic&lt;/a&gt; about the prospects for academic statistics, as he noted considerable consensus on the following points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We need to engage in real present-day problems&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Computing should be a big part of our PhD curriculum&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We need to deliver solutions&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We need to improve our communication skills&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Jeff said, &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/&#34;&gt;Data science only poses a threat to (bio)statistics if we don&amp;rsquo;t adapt,&lt;/a&gt;&amp;rdquo; and made the following series of proposals:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Remove some theoretical requirements and add computing requirements to statistics curricula.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Focus on statistical writing, presentation, and communication as a main part of the curriculum.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Focus on positive interactions with collaborators (being a scientist) rather than immediately going to the referee attitude.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Add a unit on translating scientific problems to statistical problems.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Add a unit on data munging and getting data from databases.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Integrating real and live data analyses into our curricula.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make all our students create an R package (a data product) before they graduate.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Most important of all have a &amp;ldquo;big tent&amp;rdquo; attitude about what constitutes statistics.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I agree strongly with what they&amp;rsquo;ve written. To make it happen, we ultimately need to reform our &lt;em&gt;values&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Currently, we (as a field) appear satisfied with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Papers that report new methods with no usable software&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Applications that focus on toy problems&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Talks that skip the details of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Data visualizations that are both ugly and ineffective&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Further, we tend to get more excited about the &lt;em&gt;fanciness&lt;/em&gt; of a method than its &lt;em&gt;usefulness&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;We &lt;em&gt;should&lt;/em&gt; value&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Usefulness above fanciness&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Tool building (e.g., usable software)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Data visualization&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In-depth knowledge of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In evaluating (bio)statistics faculty, we should consider not just the number of &lt;em&gt;JASA&lt;/em&gt; or &lt;em&gt;Biometrics&lt;/em&gt; papers they&amp;rsquo;ve published, but also whether they&amp;rsquo;ve made themselves useful, and to the scientific community and well as to other statisticians.&lt;/p&gt;
-</description>
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
     <item>
@@ -176,14 +50,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
-      <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.  You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.&lt;/p&gt;
-
-&lt;p&gt;If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation.  We need to define the field broadly.&lt;/p&gt;
-
-&lt;p&gt;You may not like what &lt;a href=&#34;http://amstat.org&#34;&gt;some statisticians&lt;/a&gt; do.  You may feel they don&amp;rsquo;t share your values.  They may embarrass you.  But that shouldn&amp;rsquo;t lead us to abandon the term &amp;ldquo;statistics&amp;rdquo;.&lt;/p&gt;
-</description>
+      <description>When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
+If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.
+If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation. We need to define the field broadly.
+You may not like what some statisticians do.</description>
     </item>
     
     <item>
@@ -192,10 +62,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
-      <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>&amp;hellip;if I&amp;rsquo;ve counted correctly.
+I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an open handbook.</description>
     </item>
     
     <item>
@@ -204,10 +72,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
-      <description>&lt;p&gt;See &lt;a href=&#34;http://www.nih.gov/news/health/jan2013/od-10a.htm&#34;&gt;the press release&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.genome.gov/27535200&#34;&gt;Eric Green&lt;/a&gt;, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.&lt;/p&gt;
-</description>
+      <description>See the press release.
+Eric Green, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.</description>
     </item>
     
   </channel>

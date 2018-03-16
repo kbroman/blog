@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 11 May 2017 16:22:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/d3/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/d3/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
@@ -16,65 +18,9 @@
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
-      <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
-&lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
-&lt;p&gt;I like the changes in D3 version 4, but trying to figure them out feels a bit like being back in 2012, when I was first trying to understand D3: I’ve not found many tutorials that explain how to use the new version, so I mostly focused on reading the &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;API documentation&lt;/a&gt;, which isn’t easy for me to understand, or to walk through the code for some of [Michael Bostock]’s &lt;a href=&#34;https://bl.ocks.org/mbostock&#34;&gt;examples&lt;/a&gt;. There are loads of books and tutorials on D3, but they’re almost all still talking about D3 version 3. (This will change shortly. For example, the 2nd edition of &lt;a href=&#34;http://alignedleft.com/&#34;&gt;Scott Murray&lt;/a&gt;’s excellent &lt;a href=&#34;http://shop.oreilly.com/product/0636920037316.do&#34;&gt;Interactive Data Visualization for the Web&lt;/a&gt; is at the printer, and covers D3 version 4.)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.ireneros.com/&#34;&gt;Irene Ros&lt;/a&gt;’s &lt;a href=&#34;https://iros.github.io/d3-v4-whats-new/#1&#34;&gt;slides on what’s new in D3 V4&lt;/a&gt; were super helpful. (Also I just saw &lt;a href=&#34;http://www.puzzlr.org/sample-page/&#34;&gt;Tom Roth&lt;/a&gt;’s nice &lt;a href=&#34;http://www.puzzlr.org/force-graphs-with-d3/&#34;&gt;tutorial on d3-force&lt;/a&gt;, linked on the &lt;a href=&#34;https://github.com/d3/d3/wiki/Tutorials&#34;&gt;D3 tutorials page&lt;/a&gt;; duh.)&lt;/p&gt;
-&lt;p&gt;My D3 code isn’t particularly fancy. (And note that I’m still writing in &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;; I toyed with the idea of switching to &lt;a href=&#34;https://www.ecma-international.org/ecma-262/6.0/&#34;&gt;ES6&lt;/a&gt;, particularly because we can now use &lt;code&gt;(d) =&amp;gt; d.x&lt;/code&gt;. But I love CoffeeScript and don’t want to lose list comprehensions, and actually my favorite thing is:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;some_option = chartOpts?.some_option ? the_default&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I do fight with the indentation at times, but I’ve grown accustomed to it.&lt;/p&gt;
-&lt;p&gt;Anyway, back to the point of this: what did I have to change to get &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; to work with D3 version 4?&lt;/p&gt;
-&lt;div id=&#34;simple-replacements&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Simple replacements&lt;/h2&gt;
-&lt;p&gt;The bulk of the changes were simple replacements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;d3.scale.linear()&lt;/code&gt; → &lt;code&gt;d3.scaleLinear()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;d3.svg.line()&lt;/code&gt; → &lt;code&gt;d3.line()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;d3.scale.category20().range()&lt;/code&gt; → &lt;code&gt;d3.schemeCategory20&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;d3.random.normal(10,3)&lt;/code&gt; → &lt;code&gt;d3.randomNormal(10,3)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Slightly more tricky: &lt;code&gt;d3.scale.ordinal().rangeBands([0,w],0,0)&lt;/code&gt; became &lt;code&gt;d3.scaleBand().range([0,w])&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Also, I had written (well, borrowed from somewhere) methods &lt;code&gt;.moveToFront()&lt;/code&gt; and &lt;code&gt;.moveToBack()&lt;/code&gt;, which I can omit as D3 version 4 has &lt;code&gt;.raise()&lt;/code&gt; and &lt;code&gt;.lower()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;So really, the majority of the changes were made by for &lt;code&gt;d3.&lt;/code&gt;, making some tiny edit, and then seeing if my tests were working.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;d3-force&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;My D3 code is rather primitive. I’m basically just drawing and then adding some &lt;code&gt;.on(&amp;quot;mouseover&amp;quot;, something)&lt;/code&gt; or &lt;code&gt;.on(&amp;quot;click&amp;quot;, something_else)&lt;/code&gt; for interactivity.&lt;/p&gt;
-&lt;p&gt;But force-directed graphics are pretty awesome, particularly for &lt;a href=&#34;http://www.cbs.dtu.dk/~eklund/beeswarm/&#34;&gt;beeswarm&lt;/a&gt;-type plots, so I did make use of &lt;code&gt;d3.layout.force&lt;/code&gt; in two places.&lt;/p&gt;
-&lt;p&gt;But I didn’t really know what I was doing before, and that made the change to &lt;code&gt;d3.forceSimulation&lt;/code&gt; a bit more puzzling. My &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/1.1.4/src/dotchart.coffee#L181-L246&#34;&gt;code implementing a beeswarm-type dot chart&lt;/a&gt; is really ugly and so not worth looking at or discussing. The &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/src/dotchart.coffee#L181-L201&#34;&gt;new version&lt;/a&gt; is just 21 lines (vs 65 lines before), and way easier to read.&lt;/p&gt;
-&lt;p&gt;For &lt;a href=&#34;http://kbroman.org/d3panels/assets/test/dotchart/&#34;&gt;&lt;code&gt;d3panels.dotchart&lt;/code&gt;&lt;/a&gt;, the main bit looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;d3.range(scaledPoints.length).map( (i) -&amp;gt;
-    scaledPoints[i].fy = scaledPoints[i].y)
-
-force = d3.forceSimulation(scaledPoints)
-      .force(&amp;quot;x&amp;quot;, d3.forceX((d) -&amp;gt; d.x))
-      .force(&amp;quot;collide&amp;quot;, d3.forceCollide(pointsize*1.1))
-      .on(&amp;quot;tick&amp;quot;, ticked)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I have a data set &lt;code&gt;scaledPoints&lt;/code&gt; which is an array of objects with &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; values for point locations. I add &lt;code&gt;.fy&lt;/code&gt; to each element of the array, to prevent the &lt;code&gt;y&lt;/code&gt; values from being changed. (This is a beeswarm-type chart where the x-axis is a category, and I want those values to be dynamically adjusted using &lt;em&gt;the force&lt;/em&gt;, but the y-axis is the quantitative value, and I don’t want those values to change.)&lt;/p&gt;
-&lt;p&gt;Next I use &lt;code&gt;d3.forceSimulation&lt;/code&gt;, pass in my data, and then add a force that makes the points want to go towards their x value another another force that makes them not collide with each other.&lt;/p&gt;
-&lt;p&gt;Finally, I have the &lt;code&gt;ticked&lt;/code&gt; function that does the updating of the point locations.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ticked = () -&amp;gt;
-    points.attr(&amp;quot;cx&amp;quot;, (d) -&amp;gt; d.x)
-          .attr(&amp;quot;cy&amp;quot;, (d) -&amp;gt; d.y)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And that’s that. There’s a bit more code since I want the option of having the opposite orientation, with the categories on the y-axis and the quantitative values on the x-axis, but really it’s just those 9 lines of code plus a couple of blank lines.&lt;/p&gt;
-&lt;p&gt;It was hard work figuring them out, but only because I was spending too much time hacking away without understanding, rather than trying to come to some understanding before doing any hacking.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;d3-brush&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The last major thing I had to figure out was d3-brush. I’ve not implemented any actual brushing in either &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; or &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, but I did use &lt;code&gt;d3.svg.brush&lt;/code&gt; in one my tests of &lt;a href=&#34;http://kbroman.org/d3panels/assets/test/scatterplot/&#34;&gt;&lt;code&gt;d3panels.scatterplot&lt;/code&gt;&lt;/a&gt;, to show that it could be done.&lt;/p&gt;
-&lt;p&gt;In my &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/1.1.4/test/scatterplot/test_scatterplot.coffee#L66-L99&#34;&gt;original brush code&lt;/a&gt;, which was applied for a matrix of three scatterplots, I was creating a separate brush for each of the three scatterplots. And with the old &lt;code&gt;d3.svg.brush()&lt;/code&gt;, you’d pass x- and y-axis scales with &lt;code&gt;.x()&lt;/code&gt; and &lt;code&gt;.y()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You don’t pass scales to the new &lt;code&gt;d3.brush()&lt;/code&gt;. Instead, you use &lt;code&gt;d3.event.selection&lt;/code&gt; to grab the current selection in screen coordinates and then have to convert them back to plot coordinates with your scales’ inverses.&lt;/p&gt;
-&lt;p&gt;But I revised my code to what I thought should be working, and which was actually working for the first of the three scatterplots, but I got cryptic errors if I tried to brush the other two scatterplots. And so finally, in the &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/test/scatterplot/test_scatterplot.coffee#L66-L102&#34;&gt;revised code&lt;/a&gt;, I decided to use a single brush that was applied across the three scatterplots. (It seems that you &lt;a href=&#34;http://bl.ocks.org/ludwigschubert/0236fa8594c4b02711b2606a8f95f605&#34;&gt;can implement multiple brushes&lt;/a&gt;, but it’s complicated.) The single-brush solution is perfectly fine for my test case, and actually it’s maybe easier to understand.&lt;/p&gt;
-&lt;p&gt;So the conversion from &lt;code&gt;d3.svg.brush&lt;/code&gt; to &lt;code&gt;d3.brush&lt;/code&gt; was really pretty easy. I needed to abandon the multiple brushes, and then the back-calculation from screen coordinates to plot coordinates is slightly tedious but not a big deal.&lt;/p&gt;
-&lt;p&gt;So that was the last thing, and I now have both &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; working for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; version 4.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;whats-the-point&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;What’s the point?&lt;/h2&gt;
-&lt;p&gt;The point of all this is that I have ideas for further plots I want to make in &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, such as a tool for exploring pleiotropy (that is, whether two traits are affected by a common genetic locus, or instead are each controlled by separate but closely linked loci). For that thing, I wanted a double-slider, and it seemed best to implement it using D3 version 4, &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/d3doubleslider/&#34;&gt;which I did&lt;/a&gt;. But I want to use my slider with &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt;, and really I want to incorporate it into &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, so it was clear that I needed to spend some time refactoring.&lt;/p&gt;
-&lt;p&gt;And actually, I was surprised at how easy it was. (I thought it would be considerably more than a day’s work.) And I feel like I now kind of understand d3-force and d3-brush, so the effort involved was definitely worthwhile.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
+(Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
+I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
     </item>
     
     <item>
@@ -83,68 +29,8 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
-      <description>
-
-&lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; is rough in spots, and while it works well for moderate-sized data sets, it can&amp;rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.&lt;/p&gt;
-
-&lt;p&gt;For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&amp;rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.&lt;/p&gt;
-
-&lt;p&gt;So, I&amp;rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&amp;rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb&#34;&gt;small illustration&lt;/a&gt; in my &lt;a href=&#34;https://github.com/kbroman/d3examples&#34;&gt;d3examples&lt;/a&gt; repository on GitHub.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;learning-mongodb&#34;&gt;Learning MongoDB&lt;/h3&gt;
-
-&lt;p&gt;I thought &lt;a href=&#34;http://www.mongodb.org&#34;&gt;mongoDB&lt;/a&gt; seemed like a good database to try:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;storage of general documents seems a good match for the sort of data I work with&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;use of JSON/BSON seems a good match for &lt;a href=&#34;http://d3js.org&#34;&gt;D3.js&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So I&amp;rsquo;ve been taking an online-course though &lt;a href=&#34;https://university.mongodb.com/&#34;&gt;MongoDB University&lt;/a&gt; &amp;ndash; the &lt;a href=&#34;https://university.mongodb.com/courses/M101JS/about&#34;&gt;one for Node.js developers&lt;/a&gt;. I should have done &lt;a href=&#34;https://university.mongodb.com/courses/M101P/about&#34;&gt;the more general one, using Python&lt;/a&gt;, but I was thinking it&amp;rsquo;d be interesting to learn &lt;a href=&#34;http://nodejs.org&#34;&gt;Node&lt;/a&gt;, which is basically command-line scripting in javascript. I guess the advantage of node is that you can just write javascript. But personally I prefer to switch to the language appropriate to the task, so I&amp;rsquo;m not too hot on node. But maybe I just haven&amp;rsquo;t come to understand how best to make use of the whole callback function business.&lt;/p&gt;
-
-&lt;p&gt;MongoDB is not all that hard. It&amp;rsquo;s just kind of boring. The MongoDB Uni class is quite well done, though a few of the lectures were frustratingly out-of-date. I have the &lt;a href=&#34;http://shop.oreilly.com/product/0636920028031.do&#34;&gt;MongoDB book&lt;/a&gt;, but it&amp;rsquo;s been rough going; the class has been good for that. (The weekly deadlines have been good for motivating me to get through the dull &amp;ndash; for me &amp;ndash; material.)&lt;/p&gt;
-
-&lt;p&gt;The obvious bits with a database: how to get stuff into it and then back out of it. And then I guess deleting or changing stuff. So that&amp;rsquo;s all fine. I also learned about making indexes, so that you can more quickly get stuff out later. I don&amp;rsquo;t think my needs for these things are all that complicated. And so I think I understand those bits.&lt;/p&gt;
-
-&lt;h3 id=&#34;getting-the-data-for-the-data-vis&#34;&gt;Getting the data for the data vis&lt;/h3&gt;
-
-&lt;p&gt;The last key step that I was pondering last night: how do I, based on some user interaction with a data visualization (clicking on a point, or some such), fire off a request to the database and get the data back?&lt;/p&gt;
-
-&lt;p&gt;I guessed some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Representational_state_transfer&#34;&gt;RESTful API&lt;/a&gt; type thing. But while I can write that down, I don&amp;rsquo;t really understand what the hell it means.&lt;/p&gt;
-
-&lt;p&gt;But then I thought, what I need is to use some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods&#34;&gt;HTTP GET request&lt;/a&gt;. I kind of know what that means, but I don&amp;rsquo;t really understand what happens on the back end.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d been poking around in &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt;, the python-based mongoDB driver. (I like it much better than the &lt;a href=&#34;https://api.mongodb.org/ruby/current/&#34;&gt;ruby&lt;/a&gt; or &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/node-js/&#34;&gt;node&lt;/a&gt; drivers.) And as part of the Mongo University class, we used &lt;a href=&#34;http://expressjs.com/&#34;&gt;express&lt;/a&gt; with Node to do some HTTP GET and PUSH. If I want to grab some bit of data, I could have a python script running on the back end, looking for an http request, and then based on some key that was passed, grabbing data from the database and sending it back as JSON.&lt;/p&gt;
-
-&lt;p&gt;So I looked around for how to do this with mongoDB, found &lt;a href=&#34;https://github.com/10gen-labs/sleepy.mongoose&#34;&gt;sleepy mongoose&lt;/a&gt;, but that seemed like more than I wanted, and then came to &lt;a href=&#34;http://bottlepy.org/docs/dev/index.html&#34;&gt;bottle&lt;/a&gt;, which seemed like what I needed to handle the http bit. The example on the front page is just what I want: take a name from a URL and use it as input to some function, and give results back.&lt;/p&gt;
-
-&lt;h3 id=&#34;mongodb-d3-illustration&#34;&gt;MongoDB/D3 illustration&lt;/h3&gt;
-
-&lt;p&gt;The goal of all this: as part of some data visualization, the user will hover over or click a point, and this will lead to a request to the database, and then a plot of the data that comes back.&lt;/p&gt;
-
-&lt;p&gt;It seemed like a simple test case would be to use the data for &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;Anscombe&amp;rsquo;s quartet&lt;/a&gt;. Put the four series into a MongoDB database, and then have four buttons that, when clicked, cause a request to the database to grab the corresponding series, which is then plotted.&lt;/p&gt;
-
-&lt;p&gt;So first I wrote an &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/grab_anscombe.R&#34;&gt;R script&lt;/a&gt; to grab the data from the table on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34;&gt;wikipedia page&lt;/a&gt; and write it to a &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt; file. I&amp;rsquo;m sure there was an easier way to get the data in a suitable form, but I was really procrastinating from writing a paper at this point, so I thought I&amp;rsquo;d test my web scraping skill in a simple case.&lt;/p&gt;
-
-&lt;p&gt;I then wrote a &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_insert.py&#34;&gt;python script&lt;/a&gt; that reads in the JSON file and inserts the data into a mongoDB database. You make a database connection with &lt;code&gt;pymongo.MongoClient()&lt;/code&gt; and insert the documents with the &lt;code&gt;insert_one()&lt;/code&gt; method to a collection. I later added an index with &lt;code&gt;create_index()&lt;/code&gt;; pretty silly here, but for large problems it would be useful.&lt;/p&gt;
-
-&lt;p&gt;So, the data&amp;rsquo;s in the database. How to get it back out? I wrote a second &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py&#34;&gt;python script&lt;/a&gt; (just 8 lines, really), that uses &lt;a href=&#34;http://bottlepy.org&#34;&gt;bottle&lt;/a&gt; to create a server that connects a URL to a function call. The function then uses &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;pymongo&lt;/a&gt; to find the corresponding document and send it back as JSON. One &lt;a href=&#34;http://api.mongodb.org/python/current/tutorial.html&#34;&gt;tricky bit that needed some extra googling&lt;/a&gt; was getting the browser to allow the request.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee&#34;&gt;D3 code (in coffeescript&lt;/a&gt;) is pretty standard. On clicking a button, I call &lt;code&gt;d3.json&lt;/code&gt; with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.&lt;/p&gt;
-
-&lt;p&gt;This &lt;a href=&#34;https://github.com/kbroman/d3examples/blob/master/mongodb/&#34;&gt;MongoDB/D3 illustration&lt;/a&gt; is a toy example, but it represents an important step for me, personally. I&amp;rsquo;m rather proud of it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2015/06/anscombe_2.png&#34; alt=&#34;Anscombe&#39;s quartet, set 2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
-</description>
+      <description>I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.
+That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (D3 and CoffeeScript) and developing some new tools, particularly the R package R/qtlcharts, which provides interactive versions of the many data visualizations in R/qtl, my long-in-development R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.</description>
     </item>
     
     <item>
@@ -153,14 +39,10 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
-      <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
+      <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
 
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;See it in action &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Code &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/car_crashes&#34;&gt;on github&lt;/a&gt;.&lt;/p&gt;
-</description>
+See it in action here.
+Code on github.</description>
     </item>
     
     <item>
@@ -169,32 +51,8 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
-
-&lt;p&gt;Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much &lt;em&gt;have&lt;/em&gt; to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.&lt;/p&gt;
-
-&lt;p&gt;But if I want to post the package to &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, it seems (from the &lt;a href=&#34;http://cran.r-project.org/web/packages/policies.html&#34;&gt;CRAN policy&lt;/a&gt;) that the examples in the &lt;code&gt;.Rd&lt;/code&gt; files shouldn&amp;rsquo;t be opening a web browser. Thus, I need to surround the example code with &lt;code&gt;\dontrun{}&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;But I was using those examples, and &lt;code&gt;R CMD check&lt;/code&gt;, to open the series of examples for manual checking.&lt;/p&gt;
-
-&lt;p&gt;So, what I&amp;rsquo;ve decided to do:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Include examples opening a browser, but within &lt;code&gt;\dontrun{}&lt;/code&gt; so the browser isn&amp;rsquo;t opened in &lt;code&gt;R CMD check&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Also include examples that don&amp;rsquo;t open the browser, within &lt;code&gt;\dontshow{}&lt;/code&gt;, so that &lt;code&gt;R CMD check&lt;/code&gt; will at least check the basics.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write a &lt;a href=&#34;http://ruby-lang.org&#34;&gt;ruby&lt;/a&gt; script that pulls out all of the examples from the &lt;code&gt;.Rd&lt;/code&gt; files, stripping off the &lt;code&gt;\dontrun{}&lt;/code&gt; and &lt;code&gt;\dontshow{}&lt;/code&gt; and pasting it all into a &lt;code&gt;.R&lt;/code&gt; file.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Periodically run &lt;code&gt;R CMD BATCH&lt;/code&gt; on that set of examples, to do the manual checking of the interactive graphs.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham/status/495535873711431681&#34;&gt;pointed me&lt;/a&gt; to &lt;strong&gt;&lt;code&gt;\donttest{}&lt;/code&gt;&lt;/strong&gt;, added in R ver 2.7 (in 2008). (More value from blog + twitter!)&lt;/p&gt;
-
-&lt;p&gt;So I replaced my &lt;code&gt;\dontrun{}&lt;/code&gt; bits with &lt;code&gt;\donttest{}&lt;/code&gt;. And I can use &lt;code&gt;devtools::run_examples()&lt;/code&gt; to run all of the examples, for my manual checks.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve been working on an R package, R/qtlcharts, with D3-based interactive graphs for quantitative trait locus mapping experiments.
+Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much have to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.</description>
     </item>
     
     <item>
@@ -203,18 +61,10 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
+      <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
 
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The code is on &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/lod_by_time&#34;&gt;github&lt;/a&gt;. It took me about a day.&lt;/p&gt;
-
-&lt;p&gt;The hardest part was figuring out the right data structures.  A pixel here is linked to curves over there and over there and over there.  You need to set things up so it&amp;rsquo;s easy to traverse such linkages.&lt;/p&gt;
-
-&lt;p&gt;If you hover over a point in the top-left image, you get views of the vertical and horizontal cross-sections.  If you click on a point, pointwise confidence bands are added to the &amp;ldquo;QTL effect&amp;rdquo; plot.  (You have to click, because if I included those confidence bands automatically, the graph became painfully slow to refresh.)&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not completely happy with the layout of the graph; it&amp;rsquo;s not particularly intuitive.&lt;/p&gt;
-</description>
+The code is on github. It took me about a day.
+The hardest part was figuring out the right data structures. A pixel here is linked to curves over there and over there and over there. You need to set things up so it&amp;rsquo;s easy to traverse such linkages.</description>
     </item>
     
     <item>
@@ -223,44 +73,8 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
-
-&lt;p&gt;We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard.  This was a primary contributor to &lt;a href=&#34;http://kbroman.org/blog/2012/04/25/microarrays-suck/&#34;&gt;my recent embarrassments&lt;/a&gt;, in which clear problems in the data were not discovered when they should have been.&lt;/p&gt;
-
-&lt;p&gt;I gave &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs&#34;&gt;a talk on interactive graphs (with the title above)&lt;/a&gt; at Johns Hopkins last fall, and then &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;a related talk&lt;/a&gt; at ENAR earlier this week, and I have a few thoughts to add here.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-brief-digression&#34;&gt;A brief digression&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m giving a talk at a plant breeding symposium at Kansas State in a couple of weeks, and I&amp;rsquo;ve been pondering what to talk about.  A principal problem is that I don&amp;rsquo;t really work on plant breeding.  My most relevant talks are a bit too technical, and my more interesting talks are not relevant.&lt;/p&gt;
-
-&lt;p&gt;Then I had the idea to talk about some of my recent work with my graduate student, Il-youp Kwak, on the genetic analysis of phenotypes measured over time.&lt;/p&gt;
-
-&lt;p&gt;I realized that I could incorporate some interactive graphs into the talk.  Initially I was just thinking that the interactive graphs would make the talk more interesting and would allow me to talk about things that weren&amp;rsquo;t necessarily relevant but were interesting to me.&lt;/p&gt;
-
-&lt;p&gt;But then I realized that this work really cries out for interactive graphs.  And as I begin to construct one of them, I thought of a whole bunch more I might create.  More importantly, I realized that these interactive graphs are extremely useful teaching tools.&lt;/p&gt;
-
-&lt;h3 id=&#34;more-d3-http-d3js-org-examples&#34;&gt;More &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; examples&lt;/h3&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an image of first graph I created for the talk; click on it to jump to the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manycurves&#34;&gt;interactive version&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Statisticians are often confronted with a large set of curves.  We&amp;rsquo;d like to show the individual curves, but there are too many.  The resulting &lt;a href=&#34;http://www.ats.ucla.edu/stat/stata/faq/spagplot.htm&#34;&gt;spaghetti plot&lt;/a&gt; is a total mess.  An image plot (like the &lt;a href=&#34;http://journals.lww.com/epidem/Fulltext/2010/09000/Lasagna_Plots__A_Saucy_Alternative_to_Spaghetti.15.aspx&#34;&gt;lasagna plot&lt;/a&gt;) allows us to see all of the curves, but it can be hard to get a sense of what the actual curves look like.  The interactive version solves the problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manycurves&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/manycurves2.png&#34; alt=&#34;Many curves&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a second example; again click on the image to jump to the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;interactive version&lt;/a&gt;. (I&amp;rsquo;ve shown this before, but I want to use it to make another point.)&lt;/p&gt;
-
-&lt;p&gt;Typically, in a lecture on complex trait analysis, I&amp;rsquo;d show one LOD curve (like the top panel in the image below) and a few different plots of phenotype vs genotype (the lower-right panel in the image).  I think the exploratory tool will be much more effective, in a lecture, for explaining what it all means.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_and_effect.png&#34; alt=&#34;LOD and QTL effects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;statisticians-need-to-be-doing-this-routinely&#34;&gt;Statisticians need to be doing this routinely&lt;/h3&gt;
-
-&lt;p&gt;In constructing a graph, one must make some difficult choices.  For high-dimensional data, one must greatly compress the available information.  The resulting summaries, while potentially informative, take one far away from the original data.&lt;/p&gt;
-
-&lt;p&gt;Interactive graphs provide a means through which one may view the overall summary but have immediate access to the underlying details.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
+We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
     </item>
     
     <item>
@@ -269,14 +83,10 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
-      <description>&lt;p&gt;I just finished an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
+      <description>I just finished an interactive eQTL plot using D3, in preparation for my talk on interactive graphics at the ENAR meeting next week.
 
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The code (in &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) is available at &lt;a href=&#34;https://github.com/kbroman/JSbroman/tree/master/cistrans&#34;&gt;github&lt;/a&gt;.  But beware: it&amp;rsquo;s pretty awful.&lt;/p&gt;
-
-&lt;p&gt;The hardest part was setting up the data files.  Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.&lt;/p&gt;
-</description>
+The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
+The hardest part was setting up the data files. Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.</description>
     </item>
     
     <item>
@@ -285,18 +95,10 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
-      <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.&lt;/p&gt;
-
-&lt;p&gt;I figured out that I needed to add &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt;, like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script charset=&amp;quot;utf-8&amp;quot; type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;js/d3.js&amp;quot;&amp;gt;
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>To use the latest version of D3, you need to use charset=&amp;quot;utf-8&amp;quot; in the call to &amp;lt;script&amp;gt;.
+I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
+The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
+I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</description>
     </item>
     
     <item>
@@ -305,62 +107,10 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
-
-&lt;p&gt;But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.&lt;/p&gt;
-
-&lt;h3 id=&#34;put-the-script-in-the-body&#34;&gt;Put the script in the body&lt;/h3&gt;
-
-&lt;p&gt;First, I&amp;rsquo;d tried to make a &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html&#34;&gt;truly simple example&lt;/a&gt;, making just an SVG with a little rectangle.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt;
-    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;
-        src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-
-    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
-    var h=50;
-    var svg = d3.select(&amp;quot;body&amp;quot;).append(&amp;quot;svg&amp;quot;)
-                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;, h);
-    svg.append(&amp;quot;rect&amp;quot;).attr(&amp;quot;x&amp;quot;, 0).attr(&amp;quot;y&amp;quot;, 0)
-                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;,h);
-    &amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But this gives nothing.  You need to move the script from the &lt;code&gt;head&lt;/code&gt; to the &lt;code&gt;body&lt;/code&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html&#34;&gt;as it is here&lt;/a&gt;.  Then it works.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t really understand this.  Perhaps I should go back to my reading.&lt;/p&gt;
-
-&lt;p&gt;[&lt;strong&gt;Update&lt;/strong&gt;: I think I&amp;rsquo;ve figured this out.  If you put the script in the &lt;code&gt;head&lt;/code&gt;, the code gets run before the &lt;code&gt;body&lt;/code&gt; exists, and so there&amp;rsquo;s no &lt;code&gt;body&lt;/code&gt; in which to append the SVG.  &lt;em&gt;Conclusion&lt;/em&gt;: Put the link to your script at the very bottom of the html file.]&lt;/p&gt;
-
-&lt;h3 id=&#34;don-t-forget-enter&#34;&gt;Don&amp;rsquo;t forget &lt;code&gt;enter()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;In D3, you bind data to a bunch of objects, and attributes of the objects can be controlled by features of the data.  I write code sort of like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;svg.append(&amp;quot;g&amp;quot;).selectAll(&amp;quot;empty&amp;quot;)
-   .data(thedata)
-   .enter()
-   .append(&amp;quot;rect&amp;quot;)
-   .attr(&amp;quot;x&amp;quot;, (d) -&amp;gt; start[d])
-   .attr(&amp;quot;y&amp;quot;, pad.top)
-   .attr(&amp;quot;width&amp;quot;, (d) -&amp;gt; end[d] - start[d])
-   .attr(&amp;quot;height&amp;quot;, (d) -&amp;gt; hInner)
-   .attr(&amp;quot;fill&amp;quot;, (d) -&amp;gt; color[d])
-   .attr(&amp;quot;stroke&amp;quot;, &amp;quot;none&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My most common mistake so far: I forget the &lt;code&gt;.enter()&lt;/code&gt; part.  You don&amp;rsquo;t get a error message, but the objects don&amp;rsquo;t get created.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
+But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
+Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var h=50; var svg = d3.</description>
     </item>
     
     <item>
@@ -369,28 +119,8 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m making some progress learning &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.&lt;/p&gt;
-
-&lt;h3 id=&#34;many-box-plots&#34;&gt;Many box plots&lt;/h3&gt;
-
-&lt;p&gt;First, an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manyboxplots&#34;&gt;example for displaying many distributions&lt;/a&gt;.  Here I&amp;rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements.  It&amp;rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&amp;rsquo;t give enough information about the tails.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manyboxplots&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/manyboxplots.png&#34; alt=&#34;Many box plots&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In the top figure, the 500 arrays are aligned next to each other, sorted by their median, and then I show the 1, 5, 10, 25 50, &amp;hellip;, 99th percentiles.  The advantage of the interactive plot is that you can hover over a given array on the top and see a more detailed histogram below.  And if you click on an array, its histogram will be retained below, for easy comparison to other arrays.&lt;/p&gt;
-
-&lt;h3 id=&#34;lod-curves-and-qtl-effects&#34;&gt;LOD curves and QTL effects&lt;/h3&gt;
-
-&lt;p&gt;As a &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;second example&lt;/a&gt;, I plot the LOD curves from QTL analysis across the genome; click on a chromosome above and you get a more detailed view of that chromosome in the bottom-left; click on a marker position in the bottom-left, and you get a view of the QTL effect on the bottom-right.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/02/lod_and_effect1.png&#34; alt=&#34;LOD curves and QTL effects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Likely none of that is understandable; let me try to explain.  QTL stands for &amp;ldquo;quantitative trait locus,&amp;rdquo; a region of the genome (i.e., locus) that influences some quantitative trait (like insulin level in serum).  To identify QTL, we look at the association between the quantitative trait and genotype at each of many genetic markers across the genome.  We&amp;rsquo;re basically doing analysis of variance, but we express the results as a log10 likelihood ratio, called the LOD score.&lt;/p&gt;
-
-&lt;p&gt;The advantage of this interactive graph is that you have some ability to look at the underlying genotype/phenotype association, rather than just rely on LOD curves.  It would be nice to include the option of a dot-plot on the lower right, rather than just the within-group averages.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m making some progress learning D3 (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.
+Many box plots First, an example for displaying many distributions. Here I&amp;rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements. It&amp;rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&amp;rsquo;t give enough information about the tails.</description>
     </item>
     
   </channel>

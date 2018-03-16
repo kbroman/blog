@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 14 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/google/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Googling errors</title>
@@ -16,46 +18,10 @@
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/14/googling-errors/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.&lt;/p&gt;&amp;mdash; __root__ (@roguelynn) &lt;a href=&#34;https://twitter.com/roguelynn/status/431321921909968896?ref_src=twsrc%5Etfw&#34;&gt;February 6, 2014&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-
-&lt;p&gt;I had just talked about the technique in my &lt;a href=&#34;http://kbroman.github.io/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, and I had a few recent examples.&lt;/p&gt;
-
-&lt;h3 id=&#34;gtk-warning-cannot-open-display&#34;&gt;Gtk-WARNING **: cannot open display:&lt;/h3&gt;
-
-&lt;p&gt;I was logged into a department server, trying to clone a private repository from GitHub, and got an error like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(gnome-ssh-askpass:1731): Gtk-WARNING **: cannot open display:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I googled that, and the first item was a &lt;a href=&#34;http://stackoverflow.com/questions/16077971/git-push-produces-gtk-warning&#34;&gt;stackoverflow question&lt;/a&gt;, whose answer said &amp;ldquo;&lt;code&gt;unset SSH_ASKPASS&lt;/code&gt;&amp;rdquo;, which totally worked.&lt;/p&gt;
-
-&lt;h3 id=&#34;except-keyerror-k-raise-attributeerror-k&#34;&gt;except KeyError, k: raise AttributeError, k&lt;/h3&gt;
-
-&lt;p&gt;AsciiDoc was giving me this error:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;asciidoc -a data-uri -a toc -a toclevels=4 -a num example2.txt
-  File &amp;quot;/usr/local/bin/asciidoc&amp;quot;, line 101
-    except KeyError, k: raise AttributeError, k
-                   ^
-SyntaxError: invalid syntax
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Google the &amp;ldquo;&lt;code&gt;except KeyError&lt;/code&gt;&amp;rdquo; line, and you get to a &lt;a href=&#34;https://groups.google.com/forum/#!topic/asciidoc/7ICtOReZJ74&#34;&gt;Q&amp;amp;A on the AsciiDoc google group&lt;/a&gt;, which says &amp;ldquo;Asciidoc is Python 2, not 3.&amp;rdquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;mclapply-isn-t-working-in-windows&#34;&gt;mclapply isn&amp;rsquo;t working in windows&lt;/h3&gt;
-
-&lt;p&gt;I got a report that parallel processing in my &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt; package wasn&amp;rsquo;t working in Windows.&lt;/p&gt;
-
-&lt;p&gt;I googled &amp;ldquo;mclapply isn&amp;rsquo;t working windows&amp;rdquo; (because mclapply was the function I was using) and got &lt;a href=&#34;http://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r&#34;&gt;this stackoverflow page&lt;/a&gt;, which says:&lt;/p&gt;
-
-&lt;blockquote&gt;since Windows does not have fork(), it will run standard lapply instead - no parallelization&lt;/blockquote&gt;
-</description>
+      <description>@roguelynn tweeted the other day:
+If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
+&amp;mdash; __root__ (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
+Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     
   </channel>

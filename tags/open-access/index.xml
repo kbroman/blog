@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 30 Oct 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/open-access/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/open-access/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Scholarly Publishing Symposium at UW-Madison</title>
@@ -16,30 +18,14 @@
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
-      <description>&lt;p&gt;At the &lt;a href=&#34;http://go.wisc.edu/publishing-symposium&#34;&gt;Scholarly Publishing Symposium&lt;/a&gt; at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/img_3422.jpg&#34; alt=&#34;Supplemental materials from UW-Madison Scholarly Publishing Symposium&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So here they are electronically.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/l7k7vt&#34;&gt;Know your Copy Rights, Association of Research Libraries&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/181xyi&#34;&gt;Optimize Your Publishing, The Right to Research Coalition&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/904z4t&#34;&gt;Right to Research, The Right to Research Coalition&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/39ef9o&#34;&gt;About SPARC (Scholarly Publishing and Academic Research Coalition)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/74guz3&#34;&gt;Open Data Factsheet, SPARC&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/9980c2&#34;&gt;Open Education Factsheet, SPARC&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/iqg0jj&#34;&gt;Open Access to Scholarly and Scientific Research Articles, SPARC&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://go.wisc.edu/fl0kop&#34;&gt;SPARC Author Addendum&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>At the Scholarly Publishing Symposium at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
+So here they are electronically.
+ Know your Copy Rights, Association of Research Libraries
+ Optimize Your Publishing, The Right to Research Coalition
+ Right to Research, The Right to Research Coalition
+ About SPARC (Scholarly Publishing and Academic Research Coalition)
+ Open Data Factsheet, SPARC
+ Open Education Factsheet, SPARC</description>
     </item>
     
     <item>
@@ -48,24 +34,8 @@
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
-      <description>&lt;p&gt;Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)&lt;/p&gt;
-
-&lt;p&gt;I spoke to my &lt;a href=&#34;http://www.giso6150.com/&#34;&gt;family librarian&lt;/a&gt;, who pointed me to &lt;a href=&#34;http://www.library.wisc.edu/directory/staff/Carrie-Kruse&#34;&gt;Carrie Kruse&lt;/a&gt;, directory of the &lt;a href=&#34;https://college.library.wisc.edu/&#34;&gt;College Library&lt;/a&gt; at UW-Madison. And really, librarians are the people to talk to about this sort of thing, as they not only think a lot about copyright and fair use, but also they&amp;rsquo;re on the side of more access. (But don&amp;rsquo;t hold &lt;em&gt;Carrie&lt;/em&gt; accountable if I say anything wrong below; this is my own interpretation, 14 months after corresponding with her.)&lt;/p&gt;
-
-&lt;p&gt;In most jobs, the product of your work is owned by the company, even if they didn&amp;rsquo;t have anything to do with it. But universities have a different tradition. Typically, the university doesn&amp;rsquo;t assert any rights over a faculty member&amp;rsquo;s instructional materials. For example, if you write a textbook, you don&amp;rsquo;t have to negotiate with the university over its publication, nor do you have to give the university a cut of the royalty income. That&amp;rsquo;s different than patents.&lt;/p&gt;
-
-&lt;p&gt;UW-Madison has &lt;a href=&#34;http://www.uwsa.edu/fadmin/gapp/gapp27.htm&#34;&gt;an explicit policy about faculty instructional materials&lt;/a&gt;. (Really, it&amp;rsquo;s a UW System policy.) As I understand it, the university will assert some rights over your instructional materials only if they had contributed special resources or support to their creation (for example, if university staff assisted you with the recording and editing of a video).&lt;/p&gt;
-
-&lt;p&gt;Returning to the video issue: since the university wasn&amp;rsquo;t involved in the production of the video, I didn&amp;rsquo;t have to get their okay.&lt;/p&gt;
-
-&lt;p&gt;Carrie mentioned another important thing to pay attention to: if I had used any photos or other media to which I don&amp;rsquo;t have rights, I need to be careful about their inclusion in videos posted online. Within a classroom, or in a video posted online but only made accessible to a defined group of students, inclusion of such material could fall under &lt;a href=&#34;http://en.wikipedia.org/wiki/Fair_use&#34;&gt;fair use&lt;/a&gt;. But if such material is included in a video that is posted online for general viewing, others may question my fair use claim.&lt;/p&gt;
-
-&lt;p&gt;That may explain why so many instructors here are using password-protected sites, like &lt;a href=&#34;https://learnuw.wisc.edu/&#34;&gt;Learn@UW&lt;/a&gt; and &lt;a href=&#34;https://courses.moodle.wisc.edu&#34;&gt;Moodle&lt;/a&gt;. I can&amp;rsquo;t even look at my colleagues&amp;rsquo; course material.&lt;/p&gt;
-
-&lt;p&gt;I dislike web pages via online forms. (Well, except for you, wordpress; I wish I&amp;rsquo;d started this blog with &lt;a href=&#34;http://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt;, but you&amp;rsquo;re okay.)&lt;/p&gt;
-
-&lt;p&gt;And I &lt;em&gt;despise&lt;/em&gt; the password protection of instructional materials. If I spend a bunch of time preparing material, I want to distribute it as widely as possible. If another instructor uses it in their own class, I consider that a Good Thing.&lt;/p&gt;
-</description>
+      <description>Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)
+I spoke to my family librarian, who pointed me to Carrie Kruse, directory of the College Library at UW-Madison.</description>
     </item>
     
     <item>
@@ -74,68 +44,11 @@
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
-      <description>
-
-&lt;p&gt;Yesterday, I saw &lt;a href=&#34;https://twitter.com/Ananyo/status/329545985149775873&#34;&gt;this tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/Ananyo&#34;&gt;@Ananyo&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
-&lt;/blockquote&gt;
-
-&lt;p&gt;So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah.  I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment?  WTF?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So I &lt;a href=&#34;https://twitter.com/kwbroman/status/329560393922002944&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-DNA: Celebrate the unknowns, like this Nature comment, which costs \$18. [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
-&lt;/blockquote&gt;
-
-&lt;p&gt;And thinking about it some more, I got more annoyed, and &lt;a href=&#34;https://twitter.com/kwbroman/status/329566578024775683&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d have to be desperate or stupid to pay; at \$1-2, prob&#39;ly lots would.
-&lt;/blockquote&gt;
-
-&lt;p&gt;And then I thought, I&amp;rsquo;ll &lt;a href=&#34;https://twitter.com/kwbroman/status/329575795716661250&#34;&gt;ask Nature directly&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-@NatureMagazine Why is the per-article charge so high? It seems like you&#39;d make more profit at \$2/article.
-&lt;/blockquote&gt;
-
-&lt;p&gt;And &lt;a href=&#34;https://twitter.com/NatureMagazine&#34;&gt;they&lt;/a&gt; &lt;a href=&#34;https://twitter.com/NatureMagazine/status/329655405355614210&#34;&gt;responded&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-@kwbroman For a while now, individual papers can be rented through @readcube for \$3-5. A full tablet subscription to Nature costs \$35.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But that didn&amp;rsquo;t quite answer my question.  So I &lt;a href=&#34;https://twitter.com/kwbroman/status/329683444051365889&#34;&gt;asked&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-.@NatureMagazine So is the \$18 charge for a 2 pg PDF just to discourage piracy?
-&lt;/blockquote&gt;
-
-&lt;p&gt;I thought a lot about whether to put &amp;ldquo;piracy&amp;rdquo; in quotes or not, or whether to write &amp;ldquo;copyright infringement&amp;rdquo; instead.&lt;/p&gt;
-
-&lt;p&gt;But anyway, they &lt;a href=&#34;https://twitter.com/NatureMagazine/status/329692960205725696&#34;&gt;responded&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-@kwbroman just as with any product, the more you buy, the more you save. Media/publishing subscriptions have worked this way for decades.
-&lt;/blockquote&gt;
-
-&lt;p&gt;That again didn&amp;rsquo;t quite answer my question.&lt;/p&gt;
-
-&lt;h3 id=&#34;it-s-a-scam&#34;&gt;It&amp;rsquo;s a scam&lt;/h3&gt;
-
-&lt;p&gt;I still don&amp;rsquo;t understand the \$18 business.  It&amp;rsquo;s not &amp;ldquo;The more you buy, the more you save.&amp;rdquo;  It&amp;rsquo;s, &amp;ldquo;Buy the whole season for \$35, or buy 5 min from Episode 1 for \$18.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I understand that the cover price of &lt;a href=&#34;http://www.wired.com&#34;&gt;Wired&lt;/a&gt; is \$5 per issue, while I could get a year&amp;rsquo;s subscription for \$15-20.  But that&amp;rsquo;s not the same as \$18 for &lt;em&gt;one article&lt;/em&gt; vs \$200 per year.&lt;/p&gt;
-
-&lt;p&gt;The \$18 for a two-page PDF is like 900 numbers and paycheck advances.  These are &lt;em&gt;scams&lt;/em&gt; taking advantage of desperate or stupid people.&lt;/p&gt;
-
-&lt;p&gt;If they don&amp;rsquo;t want to sell the PDFs for individual articles for a reasonable price, they should just not sell them at all.&lt;/p&gt;
-</description>
+      <description>Yesterday, I saw this tweet by @Ananyo
+ Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
+But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
+So I tweeted:
+ DNA: Celebrate the unknowns, like this Nature comment, which costs \$18.</description>
     </item>
     
     <item>
@@ -144,14 +57,8 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
       <pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/10/25/open-access-animated/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a great interview with &lt;a href=&#34;http://phylogenomics.blogspot.com&#34;&gt;Jonathan Eisen&lt;/a&gt; and &lt;a href=&#34;http://www.arl.org/sparc/about/staff/shockey.shtml&#34;&gt;Nick Shockey&lt;/a&gt; on open access publishing, nicely animated by &lt;a href=&#34;http://www.phdcomics.com/about.htm&#34;&gt;Jorge Cham&lt;/a&gt;, who does the &lt;a href=&#34;http://www.phdcomics.com/comics.php&#34;&gt;Piled Higher and Deeper&lt;/a&gt; comic.&lt;/p&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/L5rVH1KGBCY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
-</description>
+      <description>Here&amp;rsquo;s a great interview with Jonathan Eisen and Nick Shockey on open access publishing, nicely animated by Jorge Cham, who does the Piled Higher and Deeper comic.
+  </description>
     </item>
     
     <item>
@@ -160,8 +67,7 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.stat.wisc.edu/~karlrohe/&#34;&gt;Karl Rohe&lt;/a&gt; has &lt;a href=&#34;http://magazine.amstat.org/blog/2012/10/01/stats-view-oct12/&#34;&gt;an interesting commentary&lt;/a&gt; in &lt;a href=&#34;http://magazine.amstat.org&#34;&gt;Amstat News&lt;/a&gt; this month, on how our current publishing system is obstructing research progress, and what a better future might look like.&lt;/p&gt;
-</description>
+      <description>Karl Rohe has an interesting commentary in Amstat News this month, on how our current publishing system is obstructing research progress, and what a better future might look like.</description>
     </item>
     
     <item>
@@ -170,16 +76,8 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.news.wisc.edu/20348&#34;&gt;an article&lt;/a&gt; in the UW-Madison newsletter about the Elsevier boycott.  I&amp;rsquo;m quoted as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&#34;The main issue is that scientists want their papers to be read and available, and not just to scientists at well-funded universities. We are spending, collectively, a good amount of money that goes toward profit for these journal companies, and that could be redirected.&#34;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-At this point, Broman says scientists are in control. Although Elsevier is a giant among publishers,  &#34;Authors have complete control over where they decide to send their papers. If one day, everybody decides not to send to Elsevier, but to open access journals instead, it would be done.&#34;
-&lt;/blockquote&gt;
-</description>
+      <description>There&amp;rsquo;s an article in the UW-Madison newsletter about the Elsevier boycott. I&amp;rsquo;m quoted as follows:
+ &#34;The main issue is that scientists want their papers to be read and available, and not just to scientists at well-funded universities. We are spending, collectively, a good amount of money that goes toward profit for these journal companies, and that could be redirected.&#34;   At this point, Broman says scientists are in control.</description>
     </item>
     
     <item>
@@ -188,31 +86,9 @@ At this point, Broman says scientists are in control. Although Elsevier is a gia
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</guid>
-      <description>&lt;p&gt;This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting.  AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://thecostofknowledge.com&lt;/a&gt; to not publish or review for Elsevier journals.  If only AJHG were still with the University of Chicago Press&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen recently wrote&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Elsevier – they are hardly the only bad actors in the field. And it&#39;s crucial that the focus be on papers. Nobody views turning down invitations to review to be a big sacrifice – and publishers will just find someone else. Same thing with editors. But papers are their lifeblood.
-&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with him.  It&amp;rsquo;s easy to turn down a review. (I do so several times a week.)&lt;/p&gt;
-
-&lt;p&gt;And so I was feeling quite unsure about turning down the review, but also unsure about breaking the pledge regarding Elsevier.  Nevertheless, I came down on the side of the pledge, and responded to AJHG with the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-It sounds like an interesting paper, but...
-
-I recently signed a public declaration to not publish or review for
-Elsevier journals (&lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://thecostofknowledge.com&lt;/a&gt;).  I noticed at the time that Am J Hum Genet was published by Elsevier (if only it were still at U Chicago Press), which could be a problem.
-
-I&#39;m having second thoughts (especially in that refusing a review for this reason seems too easy...I say no to review requests almost every day), but for now I&#39;m sticking to my promise.
-&lt;/blockquote&gt;
-
-&lt;p&gt;I&amp;rsquo;m not sure whether it was the right decision.&lt;/p&gt;
-
-&lt;p&gt;I think the most important thing for me to do is to work to get &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; to become open-access, or at least encourage  discussion along those lines at the &lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;Genetics Society of America&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting. AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at http://thecostofknowledge.com to not publish or review for Elsevier journals. If only AJHG were still with the University of Chicago Press&amp;hellip;
+Michael Eisen recently wrote:
+ The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Elsevier – they are hardly the only bad actors in the field.</description>
     </item>
     
     <item>
@@ -221,29 +97,8 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/03/more-on-open-access/</guid>
-      <description>&lt;p&gt;I am quite persuaded by &lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen&amp;rsquo;s recent comments on open access&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-...it is simply unacceptable for any scientist who decries Elsevier&#39;s actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But how can I do that if &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; isn&amp;rsquo;t fully open?  Genetics charges an extra \$1200 to make an article open access.  Would it really cost \$1200 per article to make the journal fully open?
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Another follow-up to &lt;a href=&#34;http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/&#34;&gt;my comments yesterday&lt;/a&gt;: I had suggested that copyright law might be changed to make papers coming from federal research grants fully open.  I later found an interesting paper in the &lt;a href=&#34;http://jla.oxfordjournals.org&#34;&gt;Journal of Legal Analysis&lt;/a&gt;, &lt;a href=&#34;http://jla.oxfordjournals.org/content/2/1/301.abstract&#34;&gt;Should copyright of academic works be abolished?&lt;/a&gt;  The author concludes:&lt;/p&gt;
-
-&lt;blockquote&gt;
-...if publication fees would be largely defrayed by universities and grantors, as I suggest would be to their advantage, then the elimination of copyright of academic works would likely be socially desirable: it would not compromise academic publication activity and would yield the social benefits of a copyright-free regime.
-&lt;/blockquote&gt;
-
-&lt;p&gt;I haven&amp;rsquo;t read the whole paper, and there&amp;rsquo;s a bit of quantitative analysis that I don&amp;rsquo;t think I&amp;rsquo;ll like, but it does provide a thorough argument for what I see as the real need: to change copyright law.  Still, I&amp;rsquo;m not sure that monographs should be treated the same as journal articles.&lt;/p&gt;
-
-&lt;p&gt;Another interesting point: The &lt;a href=&#34;http://jla.oxfordjournals.org&#34;&gt;Journal of Legal Analysis&lt;/a&gt; is open access (articles are published under the &lt;a href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons Attribution-Non Commercial licence&lt;/a&gt;), and it seems to be funded in part through the endowment model I&amp;rsquo;d mentioned:&lt;/p&gt;
-
-&lt;blockquote&gt;
-The journal is underwritten by a generous grant from the Considine Family Foundation, and continues to enjoy the strong support of the Harvard Law School and the John M. Olin Center for Law, Economics, and Business.
-&lt;/blockquote&gt;
-</description>
+      <description>I am quite persuaded by Michael Eisen&amp;rsquo;s recent comments on open access:
+ ...it is simply unacceptable for any scientist who decries Elsevier&#39;s actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.  But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra \$1200 to make an article open access.</description>
     </item>
     
     <item>
@@ -252,125 +107,8 @@ The journal is underwritten by a generous grant from the Considine Family Founda
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
-      <description>
-
-&lt;p&gt;I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see &lt;a href=&#34;http://www.eisenlab.org/eisen/&#34;&gt;Michael Eisen&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;http://www.nytimes.com/2012/01/11/opinion/research-bought-then-paid-for.html&#34;&gt;OpEd in the New York Times&lt;/a&gt;]; the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;) has turned my thoughts to publishing generally.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;ll take some time out (way &lt;em&gt;too much&lt;/em&gt; time out) to comment on the value and costs of publishing and peer review, how to pay for it, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pmc/&#34;&gt;PubMedCentral&lt;/a&gt;, etc.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;the-value-of-publishing&#34;&gt;The value of publishing&lt;/h3&gt;
-
-&lt;p&gt;Obviously the most important thing is to communicate the results of research. If you don&amp;rsquo;t publish your work (in a way that it gets seen and understood), there wasn&amp;rsquo;t much point in doing it. Write, and write well.&lt;/p&gt;
-
-&lt;p&gt;Secondly, publications are central for evaluating a researcher&amp;rsquo;s value and productivity, both for grants and promotions.&lt;/p&gt;
-
-&lt;p&gt;In any case, broad and easy access to publications is important, particularly for the former aspect: so that other researchers (or ordinary people) can study the work.  And we don&amp;rsquo;t want to have to wait a year.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-costs-of-publishing&#34;&gt;The costs of publishing&lt;/h3&gt;
-
-&lt;p&gt;The cost of producing a paper comes from&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Conducting the research&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Writing the paper&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Peer review (including by editors) of the paper&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Administration of the journal&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Copy editing and typesetting&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Distribution&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;how-to-pay-for-it&#34;&gt;How to pay for it&lt;/h3&gt;
-
-&lt;p&gt;(1) and (2) are paid by research grants or institutional funds, and are definitely (most of the time) the bulk of the cost.&lt;/p&gt;
-
-&lt;p&gt;(3) is generally provided by other researchers&amp;rsquo; volunteer services (and so are also paid, indirectly, by research grants or institutional funds).&lt;/p&gt;
-
-&lt;p&gt;(4-6) are what the arguments are about.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-traditional-model&#34;&gt;The traditional model&lt;/h4&gt;
-
-&lt;p&gt;Traditionally, authors signed away copyright to a publisher, who charged libraries or individual researchers for subscriptions.  Part of the cost may be covered by a fee (&amp;ldquo;page charges&amp;rdquo;) to the authors.&lt;/p&gt;
-
-&lt;p&gt;In the distant past, the author would also purchase a bunch of paper copies of the article to give to friends or others who were interested.  I still occasionally get a postcard, mostly from overseas, asking me to send a copy of an article.  We used to get lots of those.&lt;/p&gt;
-
-&lt;p&gt;A potential reader without access to a library with a subscription may be charged a crazy amount, like \$30, for access to a single paper.  (Cambridge University Press is apparently now &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/cambridge-u-press-would-like-to-rent-you-an-article/34500&#34;&gt;charging \$6 rent for 24 hours of access to an article&lt;/a&gt;.  Who would want that?)&lt;/p&gt;
-
-&lt;p&gt;Many journals make articles open after a year; many charge for access for forever.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-open-access-model&#34;&gt;The open access model&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.plos.org&#34;&gt;PLoS&lt;/a&gt; and &lt;a href=&#34;http://www.biomedcentral.com&#34;&gt;BMC&lt;/a&gt; charge authors large fees (&amp;ldquo;page charges&amp;rdquo;) to publish in their journals.  Readers can then get free access.  These page charges can be pretty hefty (&lt;a href=&#34;http://www.plos.org/publish/pricing-policy/publication-fees/&#34;&gt;PLoS charges&lt;/a&gt; \$2900 for PLoS Biology, \$2250 for PLoS Genetics, and \$1350 for PLoS One.)&lt;/p&gt;
-
-&lt;p&gt;Some pay journals have adopted an open access option.  For example, at &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; the standard charges are \$70/page for members of &lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;GSA&lt;/a&gt; plus \$40/figure, and you can pay an extra \$1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be \$900 regular and \$2100 open access.&lt;/p&gt;
-
-&lt;p&gt;This can give you an idea of the total cost of (4-6) for a typical journal.  Imagine \$2000/paper x 20 year/issue x 12 issues/year = \$500k/year.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-sagmb-model&#34;&gt;The SAGMB model&lt;/h4&gt;
-
-&lt;p&gt;The journal &lt;a href=&#34;http://www.degruyter.com/view/j/sagmb&#34;&gt;Statistical Applications in Genetics and Molecular Biology (SAGMB)&lt;/a&gt; had some sort of point system where you would get points for reviewing articles and you had to have so many points in order to submit (and subsequently publish) an article with them; otherwise, you paid a fee.  But the journal seems to have moved from &lt;a href=&#34;http://www.bepress.com&#34;&gt;BePress&lt;/a&gt; to &lt;a href=&#34;http://www.degruyter.com&#34;&gt;De Gruyter&lt;/a&gt; and I can no longer find the details.  And it&amp;rsquo;s definitely not an open access journal.  (And I once had a painful argument with them over a point for a review that soured me on the whole business.)&lt;/p&gt;
-
-&lt;h4 id=&#34;endowments&#34;&gt;Endowments&lt;/h4&gt;
-
-&lt;p&gt;My postdoc advisor, Jim Weber (now at &lt;a href=&#34;http://www.preventiongenetics.com/&#34;&gt;Prevention Genetics&lt;/a&gt;), had the idea that particularly society-related journals might raise an endowment to cover the ongoing costs of the journal, so that it could otherwise be completely free and open.  I like that idea.&lt;/p&gt;
-
-&lt;p&gt;These days, with something like 4% return on an endowment, you&amp;rsquo;d need \$12.5 million to get \$500k/year.  That seems like a lot.  But if a journal could raise half of that, they could cut page charges in half.&lt;/p&gt;
-
-&lt;h3 id=&#34;publishers-profit&#34;&gt;Publishers&amp;rsquo; profit&lt;/h3&gt;
-
-&lt;p&gt;In the end, the cost for (4-6) come from research grants or other institutional funds, either indirectly (our libraries pay for subscriptions) or directly (authors pay page charges).  The main questions are how, and what cut does the publisher take?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt; reports that &lt;a href=&#34;http://en.wikipedia.org/wiki/Elsevier&#34;&gt;Elsevier made a profit of ~\$765 million&lt;/a&gt; in 2006.  Think of the research that might have been supported by that money.  Part of that comes from overpriced scholarly books, but still&amp;hellip;.&lt;/p&gt;
-
-&lt;h3 id=&#34;pubmed-central&#34;&gt;PubMed Central&lt;/h3&gt;
-
-&lt;p&gt;People seem to make a big deal about &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pmc/&#34;&gt;PubMed Central&lt;/a&gt;, like it&amp;rsquo;s been this great big thing for open access to research articles.  But I don&amp;rsquo;t see it.  I make good use of PubMed (for finding articles), but PubMed Central seems like a pain.&lt;/p&gt;
-
-&lt;p&gt;Most of the journals I publish in send the articles straight to PMC, but the articles aren&amp;rsquo;t open until a year after publication, and there&amp;rsquo;s been no attempt to deal with the copyright release business.  And if you publish in a journal that doesn&amp;rsquo;t ship the things to PMC automatically, it&amp;rsquo;s really confusing what you need to do (a) with respect to the copyright release and (b) to actually get the appropriate version of the manuscript in there.&lt;/p&gt;
-
-&lt;p&gt;I generally just go back to my university library website to get an article, and if I can&amp;rsquo;t get immediate access, I order it through interlibrary loan.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://publicaccess.nih.gov/&#34;&gt;NIH public access policy&lt;/a&gt; seems like a good thing, but it&amp;rsquo;s not enough to actually help me in any way.  They could have done more, and since they didn&amp;rsquo;t, I&amp;rsquo;m annoyed at what little they did do.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-about-peer-review-and-impact-factors-and-all-that&#34;&gt;What about peer-review and impact factors and all that?&lt;/h3&gt;
-
-&lt;p&gt;The cost of publishing and access to research articles has gotten tied up with the whole peer-review model for publishing, plus the use of things like the ISI Impact Factor to measure the quality of a journal and then to measure the quality of the papers in a journal.  People seem to be saying, &amp;ldquo;Screw the whole page charges business; let&amp;rsquo;s just put articles in &lt;a href=&#34;http://arxiv.org&#34;&gt;arXiv&lt;/a&gt; and develop another system for finding relevant articles and measuring their quality.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;To me, the value of standard peer review versus post-publication measures of quality is a completely separate issue (which I hope to comment on more thoroughly soon).  Switching to an arXiv/tech report/working paper system just pushes the cost of (5) [copy editing] to the author (or, worse, to the reader); we still have to pay for (4) and (6) somehow.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;To summarize my thoughts: there are real costs of publishing, and in the end they all get paid for from the same pots (research grants or institutional funds).  The question is how (page charges or subscriptions or something else), and should for-profit publishers be making big bucks in the process?&lt;/p&gt;
-
-&lt;p&gt;I personally prefer journals that are associated with a scientific society (as &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; is with the &lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;Genetics Society of America&lt;/a&gt;), and while I would like those societies to raise endowments to cover the full ongoing costs of their journals, in the meantime I prefer the open access model, where the publications costs are charged directly to the author and subsequently to the authors&amp;rsquo; research grants.  It&amp;rsquo;s simpler that way.&lt;/p&gt;
-
-&lt;h3 id=&#34;how-to-change-the-world&#34;&gt;How to change the world?&lt;/h3&gt;
-
-&lt;p&gt;I would like to see journals become fully open, with costs either charged to research grants (through page charges to the authors), directly to granting agencies, or covered by endowments. If we continue to rely on subscriptions, then there will be uneven access to researchers and little access to ordinary people.&lt;/p&gt;
-
-&lt;p&gt;But the most important thing is to remove the profit-driven bloated middlemen from the system. The &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt; is one step towards that: it seeks to cut out one particularly bloated but basically useless player.&lt;/p&gt;
-
-&lt;p&gt;But researchers (particularly junior researchers) have little incentive to participate in such efforts.  They want their masterly (or crappy) manuscript to be in a high-impact journal, since its status on their CV matters more than it actually being read.  In particular, why devote their limited start-up or grant dollars towards page charges when the cost can be pushed down to the (possibly nonexistent) reader?&lt;/p&gt;
-
-&lt;p&gt;This requires considerable thought, but here are my preliminary ideas:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If senior researchers send their best manuscripts to open access journals (&lt;a href=&#34;http://www.plosbiology.org&#34;&gt;PLoS Biology&lt;/a&gt; rather than Nature; &lt;a href=&#34;http://www.plosgenetics.org&#34;&gt;PLoS Genetics&lt;/a&gt; rather than Nature Genetics), those journals will become more influential and junior researchers will follow.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Scientific societies might develop further awards or publication scholarships (or endowments!) to enable junior researchers to cover page charges (and further enhance their CVs).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If institutions care about open access, they might cut back on subscriptions to evil journals and use the savings to support researchers&amp;rsquo; page charges to open journals.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Promotion committees and such might do more to actually read candidates&amp;rsquo; papers rather than relying on journal reputation.  (Might they also take access into account?  Probably not.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Copyright law might be changed to insist that publications coming from government-funded research be treated as are publications coming from government employees (namely, open: as I understand it, government employees aren&amp;rsquo;t allowed to sign over copyright).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
+So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>
@@ -379,61 +117,8 @@ The journal is underwritten by a generous grant from the Considine Family Founda
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
-      <description>&lt;p&gt;I expect you&amp;rsquo;ve already heard about the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;, started based on comments from &lt;a href=&#34;http://gowers.wordpress.com/2012/01/21/elsevier-my-part-in-its-downfall/&#34;&gt;Timothy Gowers&lt;/a&gt;.  While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject.  On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians).  There have been a couple of articles about this in the &lt;a href=&#34;http://chronicle.com/&#34;&gt;Chronicle of Higher Education&lt;/a&gt;: &lt;a href=&#34;http://chronicle.com/blogs/wiredcampus/elsevier-publishing-boycott-gathers-steam-among-academics/35216&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://chronicle.com/article/As-Journal-Boycott-Grows/130600/?sid=wc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.  (I certainly wouldn&amp;rsquo;t send my own papers to such journals, but it&amp;rsquo;s hard to control papers on which I am one lowly author among many.)&lt;/p&gt;
-
-&lt;p&gt;Most important to me is that the journals are expensive and publishing companies are reaping an enormous profit.  The former head of the library at UW-Madison mentioned recently that they spend $4 million per year on electronic resources (books and journals), and that they are &amp;ldquo;struggling to pay that Elsevier bill&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;I prefer society-related journals.  These days, my own papers all go to my favorite journal, &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt;, which is associated with the &lt;a href=&#34;http://www.genetics-gsa.org/&#34;&gt;Genetics Society of America&lt;/a&gt;.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;I looked back at my reviews of journal articles in 2011.  I did 23.  They were for:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Various &lt;a href=&#34;http://www.biomedcentral.com&#34;&gt;BMC&lt;/a&gt; journals (open access but mostly crappy)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.nature.com/ejhg/index.html&#34;&gt;European Journal of Human Genetics&lt;/a&gt; (&lt;a href=&#34;https://www.eshg.org/&#34;&gt;ESHG&lt;/a&gt;; published by Nature)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.wiley.com/bw/journal.asp?ref=1601-1848&#34;&gt;Genes, Brain and Behavior&lt;/a&gt; (&lt;a href=&#34;http://www.ibangs.org/&#34;&gt;IBANGS&lt;/a&gt;; published by Wiley)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; (&lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;GSA&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.nrcresearchpress.com/journal/gen&#34;&gt;Genome&lt;/a&gt; (&lt;a href=&#34;http://www.nrcresearchpress.com&#34;&gt;National Research Council of Canada&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://genome.cshlp.org/&#34;&gt;Genome Research&lt;/a&gt; (Cold Spring Harbor)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jag.igr.poznan.pl/&#34;&gt;Journal of Applied Genetics&lt;/a&gt; (Springer)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Journal of Statistical Planning and Inference (Elsevier!)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.jstatsoft.org/&#34;&gt;Journal of Statistical Software&lt;/a&gt; (&lt;a href=&#34;http://www.amstat.org&#34;&gt;ASA&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.nature.com/nprot/index.html&#34;&gt;Nature Protocols&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Various &lt;a href=&#34;http://www.plos.org/&#34;&gt;PLoS&lt;/a&gt; journals (open access)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I did okay.  I am down on Springer and Wiley, too, in spite of the fact that I published &lt;a href=&#34;http://www.rqtl.org/book&#34;&gt;a book with Springer&lt;/a&gt; (and I like many of their books), but most of the above are society or open-access journals and there&amp;rsquo;s just one Elsevier journal.&lt;/p&gt;
-
-&lt;p&gt;In the list of mathematics/statistics journals published by Elsevier, I only recognize &lt;em&gt;Computational Statistics &amp;amp; Data Analysis&lt;/em&gt; and &lt;em&gt;Journal of Statistical Planning and Inference&lt;/em&gt;.  &lt;em&gt;Genomics&lt;/em&gt; and &lt;em&gt;Trends in Genetics&lt;/em&gt; are their only genetics journals that I recognize, but I didn&amp;rsquo;t look so closely.  [I later realized that the American Journal of Human Genetics is published by Elsevier; that&amp;rsquo;s a big one.]&lt;/p&gt;
-
-&lt;p&gt;In terms of &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/&#34;&gt;my publications&lt;/a&gt;, looking at 2011, 2012 and in press articles, I have 13.  Several of the journals were listed above: &lt;a href=&#34;http://www.plos.org&#34;&gt;PLoS&lt;/a&gt;, &lt;a href=&#34;http://genome.cshlp.org/&#34;&gt;Genome Research&lt;/a&gt;, &lt;a href=&#34;http://www.biomedcentral.com&#34;&gt;BMC&lt;/a&gt;, &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt;/&lt;a href=&#34;http://www.g3journal.org/&#34;&gt;G3&lt;/a&gt;.  In addition:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.wiley.com/bw/journal.asp?ref=0962-1083&#34;&gt;Molecular Ecology&lt;/a&gt; (Wiley)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://neuro-oncology.oxfordjournals.org/&#34;&gt;Neuro-Oncology&lt;/a&gt; (&lt;a href=&#34;http://www.soc-neuro-onc.org/&#34;&gt;SNO&lt;/a&gt;; published by Oxford UP)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://physiolgenomics.physiology.org/&#34;&gt;Physiological Genomics&lt;/a&gt; (&lt;a href=&#34;http://www.the-aps.org/&#34;&gt;APS&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.springer.com/life+sciences/cell+biology/journal/335&#34;&gt;Mammalian Genome&lt;/a&gt; (&lt;a href=&#34;http://imgs.org&#34;&gt;IMGS&lt;/a&gt;; published by Springer)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bioinformatics.oxfordjournals.org/&#34;&gt;Bioinformatics&lt;/a&gt; (&lt;a href=&#34;http://www.iscb.org/&#34;&gt;ISCB&lt;/a&gt;; published by Oxford UP)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So, again, I did okay.&lt;/p&gt;
-</description>
+      <description>I expect you&amp;rsquo;ve already heard about the Elsevier boycott, started based on comments from Timothy Gowers. While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject. On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians). There have been a couple of articles about this in the Chronicle of Higher Education: here and here.
+I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.</description>
     </item>
     
   </channel>

@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/r/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>EOF within quoted string</title>
@@ -16,64 +18,8 @@
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
-      <description>&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
-&lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
-&lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with “&lt;code&gt;###&lt;/code&gt;” interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Let’s first download and unzip the file.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# download the file
-site &amp;lt;- &amp;quot;http://www.informatics.jax.org/downloads/mgigff&amp;quot;
-file &amp;lt;- &amp;quot;MGI.20170803.gff3.gz&amp;quot;
-url &amp;lt;- paste0(site, &amp;quot;/&amp;quot;, file)
-if(!file.exists(file)) download.file(url, file)
-
-# unzip to a temporary file
-file &amp;lt;- sub(&amp;quot;.gz$&amp;quot;, &amp;quot;&amp;quot;, file)
-tmpfile &amp;lt;- tempfile()
-remove_tmpfile &amp;lt;- FALSE
-if(!file.exists(file)) { # need to unzip
-    system(paste0(&amp;quot;gunzip -c &amp;quot;, file, &amp;quot;.gz &amp;gt; &amp;quot;, tmpfile))
-    remove_tmpfile &amp;lt;- TRUE
-    file &amp;lt;- tmpfile
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Okay, now to read it into R with &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tab &amp;lt;- read.table(file, sep=&amp;quot;\t&amp;quot;, header=FALSE, comment.char=&amp;quot;#&amp;quot;,
-                  na.strings=&amp;quot;.&amp;quot;, stringsAsFactors=FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This gives a warning message:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Warning message:
-In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
-  EOF within quoted string&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Hmm. What does that mean? Oh, no matter, let’s move on…&lt;/p&gt;
-&lt;p&gt;Wait, there are no genes on chromosomes 5, 8, 15, 18, Y, or MT. How could that be? Something must be wrong with the file. Let’s look at another file at that site, &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20160103.gff3.gz&#34;&gt;&lt;code&gt;MGI.20160103.gff3.gz&lt;/code&gt;&lt;/a&gt;. That one’s missing chromosomes 8 and 13.&lt;/p&gt;
-&lt;p&gt;So I ask &lt;a href=&#34;https://www.jax.org/research-and-faculty/faculty/research-scientists/daniel-gatti&#34;&gt;Dan Gatti&lt;/a&gt;: “Hey, those files are corrupted. Who should I talk to about them?”&lt;/p&gt;
-&lt;p&gt;And he’s like, “That’d be a disaster, but they look fine to me [parsed with &lt;code&gt;read.delim()&lt;/code&gt;].”&lt;/p&gt;
-&lt;p&gt;So I tried using &lt;code&gt;read.delim()&lt;/code&gt; and sure enough, no warning, genes on all chromosomes, and about twice as many records. Oops.&lt;/p&gt;
-&lt;div id=&#34;read.delim-vs-read.table&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;code&gt;read.delim()&lt;/code&gt; vs &lt;code&gt;read.table()&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;So what’s the difference between &lt;code&gt;read.delim()&lt;/code&gt; and &lt;code&gt;read.table()&lt;/code&gt;? Well, &lt;code&gt;read.delim()&lt;/code&gt; calls &lt;code&gt;read.table()&lt;/code&gt; with a particular set of default values for the arguments:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; read.delim
-function (file, header = TRUE, sep = &amp;quot;\\t&amp;quot;, quote = &amp;quot;\\&amp;quot;&amp;quot;, dec = &amp;quot;.&amp;quot;,
-    fill = TRUE, comment.char = &amp;quot;&amp;quot;, ...)
-read.table(file = file, header = header, sep = sep, quote = quote,
-    dec = dec, fill = fill, comment.char = comment.char, ...)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The key argument here is &lt;code&gt;quote&lt;/code&gt;, in that &lt;code&gt;read.table()&lt;/code&gt; uses &lt;code&gt;quote=&amp;quot;&#39;\&amp;quot;&amp;quot;&lt;/code&gt; (that is, looking for either single- or double-quotes) while &lt;code&gt;read.delim()&lt;/code&gt; uses &lt;code&gt;quote=&amp;quot;\&amp;quot;&amp;quot;&lt;/code&gt; (just looking for double-quotes).&lt;/p&gt;
-&lt;p&gt;There are no double-quotes in the file, but that ninth column includes some single-quotes, and so my use of &lt;code&gt;read.table()&lt;/code&gt; was mucking everything up. And presumably there was an odd number of them, so the end-of-file (EOF) character was inside one of those quoted strings.&lt;/p&gt;
-&lt;p&gt;To read the file properly, I should have used &lt;code&gt;quote=&amp;quot;\&amp;quot;&amp;quot;&lt;/code&gt;. Even better, I could use &lt;code&gt;quote=&amp;quot;&amp;quot;&lt;/code&gt;, and for that matter also &lt;code&gt;fill=FALSE&lt;/code&gt; (since every line is supposed to contain all nine columns).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tab &amp;lt;- read.table(file, sep=&amp;quot;\t&amp;quot;, header=FALSE, comment.char=&amp;quot;#&amp;quot;,
-                  na.strings=&amp;quot;.&amp;quot;, stringsAsFactors=FALSE,
-                  quote=&amp;quot;&amp;quot;, fill=FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;lessons&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Lessons&lt;/h2&gt;
-&lt;p&gt;There are several lessons here.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I shouldn’t have ignored the “&lt;code&gt;EOF within quoted string&lt;/code&gt;” warning.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;I should have compared the number of lines I read in with the number of lines in the input file. If I’d done so, I’d have seen that I had just about half as many lines as I should’ve, and so I’d clearly messed something up.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;When I run into a problem like this, it’s more likely that there’s a problem with my code than that there’s a problem with the file.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;With a file of this sort, I should have used &lt;code&gt;quote=&amp;quot;&amp;quot;&lt;/code&gt; and &lt;code&gt;fill=FALSE&lt;/code&gt; in my call to &lt;code&gt;read.table()&lt;/code&gt;. I’m not expecting any quoted fields, and I’m expecting that every line will have exactly nine columns.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;It’s good to have a friend like Dan.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-</description>
+      <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
+The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
     </item>
     
     <item>
@@ -82,13 +28,8 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
-      <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
-&lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
-&lt;p&gt;So I’m pleased to announce the &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; and &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt; packages for playing with R and Minecraft.&lt;/p&gt;
-&lt;p&gt;(I was of course tempted towards mineR and cRaft, but I didn’t want to &lt;a href=&#34;https://twitter.com/hadleywickham/status/859469052154138625&#34;&gt;disappoint Hadley&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;(&lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt; currently just contains code that I wrote, ’cause I was the only one who left dangling scripts that weren’t incorporated into a proper vignette. Functions from the others will follow.)&lt;/p&gt;
-</description>
+      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
+I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
@@ -97,31 +38,8 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
-      <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
-&lt;p&gt;I mean, from &lt;a href=&#34;http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
-&lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
-&lt;p&gt;And so today I did. (You can see the working draft at &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34; class=&#34;uri&#34;&gt;https://ROpenSciLabs.github.io/miner_book&lt;/a&gt;.) And boy it was easy.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Made a &lt;a href=&#34;https://github.com/ropenscilabs/miner_book&#34;&gt;github repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Created a &lt;code&gt;index.Rmd&lt;/code&gt; file and a &lt;code&gt;_bookdown.yml&lt;/code&gt; file.&lt;/li&gt;
-&lt;li&gt;Copied over all of our extra &lt;code&gt;.Rmd&lt;/code&gt; files from &lt;code&gt;miner/extra_vignettes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Replaced the YAML in those &lt;code&gt;.Rmd&lt;/code&gt; files with “&lt;code&gt;# [chapter title]&lt;/code&gt;”&lt;/li&gt;
-&lt;li&gt;Copied over our screen shots&lt;/li&gt;
-&lt;li&gt;Added references in &lt;code&gt;book.bib&lt;/code&gt; (and &lt;code&gt;packages.bib&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Screwed around making a cover&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Oh, plus &lt;code&gt;README&lt;/code&gt; and &lt;code&gt;LICENSE&lt;/code&gt; files.&lt;/p&gt;
-&lt;p&gt;Okay, so I admit there was one glitch. I opened the thing in RStudio and said&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“Now I just click the Build Book button. Wait, where is that? I just see the cutest-button-ever knit button. And clicking that doesn’t work properly.”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;More time than I care to admit passes, with me doing all kinds of crazy shit.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“Oh, he said the Build Book button on the &lt;em&gt;Build&lt;/em&gt; tab. I see it now.”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;And done.&lt;/p&gt;
-&lt;p&gt;(Note that I also used his suggestion to have &lt;code&gt;output_dir: &amp;quot;docs&amp;quot;&lt;/code&gt; and then use GitHub Pages to host the book-in-progress, which was also easy.)&lt;/p&gt;
-</description>
+      <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
+I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
     </item>
     
     <item>
@@ -130,22 +48,8 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
-      <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
-    do.call(rbind,
-            sapply(
-                X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE),
-                FUN = strsplit,
-                split = &amp;#39;|&amp;#39;, fixed=TRUE,
-                USE.NAMES = FALSE)),
-    stringsAsFactors=FALSE),
-    colnames)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This turns a character string like &lt;code&gt;&amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot;&lt;/code&gt; into a data frame like&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;##   player        message
-## 1    121 hello everyone
-## 2   4734    R mc_plot()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That’s six functions deep: &lt;code&gt;strsplit %&amp;gt;% sub %&amp;gt;% sapply %&amp;gt;% do.call %&amp;gt;% data.frame %&amp;gt;% setNames&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
@@ -154,54 +58,8 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
-&lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
-&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
-Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runconf17?src=hash&#34;&gt;#runconf17&lt;/a&gt; issue! &lt;a href=&#34;https://t.co/AqQpxVJZuk&#34;&gt;pic.twitter.com/AqQpxVJZuk&lt;/a&gt;
-&lt;/p&gt;
-— Amelia McNamara (&lt;span class=&#34;citation&#34;&gt;@AmeliaMN&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/AmeliaMN/status/867793745986469889&#34;&gt;May 25, 2017&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;I found the list of topics a bit forbidding. Important stuff, but a lot of them seemed technically difficult, and I didn’t really see how I could best contribute. And, jumping to the punch line, the &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;outcomes of the 2 days’ work&lt;/a&gt; are pretty awesome, for example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;A R package, &lt;a href=&#34;https://github.com/ropenscilabs/available&#34;&gt;available&lt;/a&gt;, to help name R packages. (Have others used it? Can it be viewed as offensive?)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A book on &lt;a href=&#34;https://github.com/ropenscilabs/r-security-practices&#34;&gt;best security practices for R package developers&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A &lt;a href=&#34;https://github.com/ropenscilabs/gramr&#34;&gt;grammar checker&lt;/a&gt; for R Markdown documents, “Write good and do good stuff.”&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ropenscilabs/testrmd&#34;&gt;testrmd&lt;/a&gt;, a package for including tests in R Markdown documents.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Awesome stuff, and that’s &lt;a href=&#34;https://ropenscilabs.github.io/runconf17-projects/&#34;&gt;4 of 20&lt;/a&gt;. But you know, I don’t think I’m particularly good at any of those things. And for that reason, I was super excited when &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt; posted the idea that we make an R package through which we can interact with the game Minecraft.&lt;/p&gt;
-&lt;p&gt;I’ve played a lot of Minecraft with my kids. And there’s a big community of folks writing “mods” for the game, but to do that, you need to write Java. And, well, I really don’t like Java. So I was excited, a few years ago, to see the book &lt;a href=&#34;https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;Learning to program with Minecraft&lt;/a&gt;, which uses a &lt;a href=&#34;https://github.com/py3minepi/py3minepi&#34;&gt;python module&lt;/a&gt; that allows you to interact with the game.&lt;/p&gt;
-&lt;p&gt;The book is a very nice and thorough introduction to programming, using Minecraft as all of the examples and exercises. Really, it’s the best book on programming for kids that I’ve seen, &lt;em&gt;because&lt;/em&gt; it is so full of challenging but do-able and above all &lt;em&gt;interesting&lt;/em&gt; exercises. Good exercises are really the key to learning programming, and Minecraft provides a lot of really great It’s a great way to learn programming, because a key challenge in learning to program is identifying appropriate &lt;em&gt;challenges&lt;/em&gt; to try to work on, and for people who’ve tried to&lt;/p&gt;
-&lt;p&gt;Our team of six (me, &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;, &lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario Inchiosa&lt;/a&gt;, and &lt;a href=&#34;https://github.com/akzaidi&#34;&gt;Adi Zaidi&lt;/a&gt;) set out to replicate the features of the python module as an R package. There are basically just eight functions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;set a particular type of block somewhere&lt;/li&gt;
-&lt;li&gt;figure out what type of block is at some spot&lt;/li&gt;
-&lt;li&gt;figure out where a player is&lt;/li&gt;
-&lt;li&gt;move a player somewhere&lt;/li&gt;
-&lt;li&gt;figure out where a player is pointing&lt;/li&gt;
-&lt;li&gt;check whether anyone has hit something with a sword&lt;/li&gt;
-&lt;li&gt;post a message to chat&lt;/li&gt;
-&lt;li&gt;read the chat messages&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We had our basic working package, &lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt;, by lunchtime on the first day and spent the next day and a half playing with it and Minecraft.&lt;/p&gt;
-&lt;p&gt;Just eight basic functions, but we did a ton of awesome things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A robot number-guessing game&lt;/li&gt;
-&lt;li&gt;Automatic creation of mazes that players can walk through (or be moved through automatically)&lt;/li&gt;
-&lt;li&gt;Replicate a photograph, or the R logo, within Minecraft using different types of blocks&lt;/li&gt;
-&lt;li&gt;Give a player Elsa (from the movie Frozen) powers, like walking on water and having it turn to ice, or creating random-sized columns of ice by hitting things&lt;/li&gt;
-&lt;li&gt;Write letters on the side of a mountain&lt;/li&gt;
-&lt;li&gt;Draw a full ggplot2-like scatterplot in the sky&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Check out &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/README.md&#34;&gt;the ReadMe file for our package&lt;/a&gt; to see a bunch of pictures and gifs.&lt;/p&gt;
-&lt;p&gt;I’ll write about some of these things in the (hopefully near) future, because I learned some cool stuff, and it was was really fun.&lt;/p&gt;
-&lt;p&gt;Just after lunch on day 2, I realized that we could use the chat feature in Minecraft to &lt;em&gt;execute R code from within Minecraft&lt;/em&gt;, using &lt;code&gt;parse&lt;/code&gt; and &lt;code&gt;eval&lt;/code&gt;. And it totally worked. So I could generate my ggplot2-style scatterplot entirely within Minecraft. (The key advantage of this, other than just being cool, is not having to keep switching back and forth between R and Minecraft.)&lt;/p&gt;
-&lt;p&gt;Watch me type a bit of R and get my scatterplot going:&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zggCAYAfjXE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;p&gt;What next? We’re thinking we’ll compile the many vignettes we developed into a &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
-</description>
+      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
@@ -210,50 +68,8 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/23/minicran/</guid>
-      <description>&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
-&lt;p&gt;I was chatting with &lt;a href=&#34;http://www.senresearch.org/&#34;&gt;Śaunak Sen&lt;/a&gt; about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).&lt;/p&gt;
-&lt;p&gt;Should we have participants work on a server? Should we set up &lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt; in &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt; containers on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;?&lt;/p&gt;
-&lt;p&gt;Śaunak said, “What we need is a mini-CRAN.” A google search brought us to the package &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; from &lt;a href=&#34;http://blog.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;, which looks to be the perfect solution.&lt;/p&gt;
-&lt;p&gt;As it turns out, to make your own &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; you “just” need to put all of the requisite packages (source plus windows and mac binaries) into a specific directory structure, with each directory having special files (&lt;code&gt;PACKAGE&lt;/code&gt;, &lt;code&gt;PACKAGE.gz&lt;/code&gt;, and &lt;code&gt;PACKAGE.rds&lt;/code&gt;) that describe the contents.&lt;/p&gt;
-&lt;p&gt;The main trick is ensuring that you have all of the required dependencies, and that’s where &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; is especially helpful.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; has several useful vignettes, plus a nice &lt;a href=&#34;http://blog.revolutionanalytics.com/2014/10/introducing-minicran.html&#34;&gt;blog post&lt;/a&gt; that explains the goal and basic use.&lt;/p&gt;
-&lt;p&gt;After installing miniCRAN, the first thing was to define the set of packages that my &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; packages depend on, and then use &lt;code&gt;miniCRAN::pkgDep&lt;/code&gt; to find all of the packages that those depend on.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(miniCRAN)
-repo &amp;lt;- &amp;quot;https://cran.rstudio.com&amp;quot;
-pkgs &amp;lt;- c(&amp;quot;Rcpp&amp;quot;, &amp;quot;RcppEigen&amp;quot;, &amp;quot;yaml&amp;quot;, &amp;quot;jsonlite&amp;quot;, &amp;quot;data.table&amp;quot;,
-          &amp;quot;knitr&amp;quot;, &amp;quot;rmarkdown&amp;quot;, &amp;quot;qtl&amp;quot;, &amp;quot;qtlcharts&amp;quot;)
-pkgList &amp;lt;- pkgDep(pkgs, repos=repo, type=&amp;quot;source&amp;quot;, suggests=FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here &lt;code&gt;pkgs&lt;/code&gt; is a vector containing the main packages that we’ll need (other than the R/qtl2 packages), and &lt;code&gt;pkgList&lt;/code&gt; is a longer vector that includes all packages that &lt;em&gt;they&lt;/em&gt; depend on.&lt;/p&gt;
-&lt;p&gt;We then use &lt;code&gt;miniCRAN::makeRepo&lt;/code&gt; to download all of those packages and place them in the required directory structure, with the main directory being &lt;code&gt;qtl2cran&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;makeRepo(pkgList, path=&amp;quot;qtl2cran&amp;quot;, repos=repo,
-         type=c(&amp;quot;source&amp;quot;, &amp;quot;win.binary&amp;quot;, &amp;quot;mac.binary.el-capitan&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The only issue here is that the version of miniCRAN on CRAN doesn’t handle &lt;code&gt;mac.binary.el-capitan&lt;/code&gt; properly, nor does the &lt;a href=&#34;https://github.com/revolutionAnalytics/miniCRAN&#34;&gt;version on GitHub&lt;/a&gt;. But there’s a &lt;a href=&#34;https://github.com/RevolutionAnalytics/miniCRAN/pull/84&#34;&gt;pull request&lt;/a&gt; from &lt;a href=&#34;https://github.com/vnijs&#34;&gt;Vincent Nijs&lt;/a&gt; that fixes that, so I used &lt;code&gt;devtools::install_github(&amp;quot;vnijs/miniCRAN&amp;quot;)&lt;/code&gt; to use his version.&lt;/p&gt;
-&lt;p&gt;I then needed to add my &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; packages:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;source &lt;code&gt;.tar.gz&lt;/code&gt; files in &lt;code&gt;qtl2cran/src/contrib&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Windows &lt;code&gt;.zip&lt;/code&gt; files in &lt;code&gt;qtl2cran/bin/windows/contrib/3.4&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Mac &lt;code&gt;.tgz&lt;/code&gt; files in &lt;code&gt;qtl2cran/bin/macosx/el-capitan/contrib/3.4&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I’m working on a Mac (with OS X Sierra) so I could create the Mac binaries by installing the packages, going to the package directory, and using for example&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;tar czvf qtl2geno_0.5-21.tgz qtl2geno&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For the windows binaries, I untarred the source files on my &lt;a href=&#34;https://twitter.com/kwbroman/status/540250068360916994&#34;&gt;windows laptop&lt;/a&gt; and used, for example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;R CMD INSTALL --build qtl2geno&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This makes the &lt;code&gt;qtl2geno_0.5-21.zip&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;The last step is to create those &lt;code&gt;PACKAGE*&lt;/code&gt; files. A bit of poking around in the &lt;a href=&#34;https://github.com/RevolutionAnalytics/miniCRAN&#34;&gt;miniCRAN source&lt;/a&gt; pointed me to &lt;code&gt;tools::write_PACKAGES()&lt;/code&gt;, and so I used:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tools)
-write_PACKAGES(&amp;quot;qtl2cran/src/contrib&amp;quot;, type=&amp;quot;source&amp;quot;)
-write_PACKAGES(&amp;quot;qtl2cran/bin/windows/contrib/3.4&amp;quot;, type=&amp;quot;win.binary&amp;quot;)
-write_PACKAGES(&amp;quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&amp;quot;,
-               type=&amp;quot;mac.binary&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I then put them on my website at UW-Madison plus at &lt;a href=&#34;http://rqtl.org&#34;&gt;rqtl.org&lt;/a&gt;, so now people can install &lt;a href=&#34;http://kbroman.org&#34;&gt;R/qtl2&lt;/a&gt; using either&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(paste0(&amp;quot;qtl2&amp;quot;, c(&amp;quot;geno&amp;quot;, &amp;quot;scan&amp;quot;, &amp;quot;plot&amp;quot;, &amp;quot;convert&amp;quot;)),
-                 repos=&amp;quot;http://rqtl.org/qtl2cran&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;or&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(paste0(&amp;quot;qtl2&amp;quot;, c(&amp;quot;geno&amp;quot;, &amp;quot;scan&amp;quot;, &amp;quot;plot&amp;quot;, &amp;quot;convert&amp;quot;)),
-                 repos=&amp;quot;https://www.biostat.wisc.edu/~kbroman/qtl2cran&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We just need to make sure that everyone has R version 3.4.0. And the Mac users will need a relatively recent version of Mac OS X (El Capitan or Sierra).&lt;/p&gt;
-&lt;p&gt;Long term, I need to get my packages on the proper &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, but I really don’t want to have to deal with that in the next three weeks, and so I’m glad for &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt;, as it helped me towards this short-term solution.&lt;/p&gt;
-</description>
+      <description>Next month, I’m teaching a workshop on R/qtl and R/qtl2 at the joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017) meeting in Memphis.
+I was chatting with Śaunak Sen about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on CRAN. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</description>
     </item>
     
     <item>
@@ -262,220 +78,8 @@ write_PACKAGES(&amp;quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&amp;quot;,
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to follow up on my &lt;a href=&#34;../../2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt;. One thing to emphasize is that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use &lt;code&gt;compress=FALSE&lt;/code&gt; you can skip that and it goes &lt;em&gt;much&lt;/em&gt; faster. See, for example, &lt;a href=&#34;https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/&#34;&gt;his post on “Fast csv writing for R”&lt;/a&gt;. Also see his &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf&#34;&gt;slides from a recent presentation on parallel fread&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I’ll first generate the same data that I was using before. And note, as &lt;a href=&#34;https://twitter.com/shabbychef&#34;&gt;@shabbychef&lt;/a&gt; &lt;a href=&#34;https://twitter.com/shabbychef/status/858892435820130304&#34;&gt;mentioned on twitter&lt;/a&gt;, my iid simulations mean that compression isn’t likely to be useful, &lt;a href=&#34;../../2017/04/30/sqlite-feather-and-fst/&#34;&gt;as we saw in my previous post&lt;/a&gt;. So don’t assume that these results apply generally; compression is useful much of the time.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_ind &amp;lt;- 500
-n_snps &amp;lt;- 1e5
-ind_names &amp;lt;- paste0(&amp;quot;ind&amp;quot;, 1:n_ind)
-snp_names &amp;lt;- paste0(&amp;quot;snp&amp;quot;, 1:n_snps)
-sigX &amp;lt;- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
-sigY &amp;lt;- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
-dimnames(sigX) &amp;lt;- list(ind_names, paste0(snp_names, &amp;quot;.X&amp;quot;))
-dimnames(sigY) &amp;lt;- list(ind_names, paste0(snp_names, &amp;quot;.Y&amp;quot;))
-db &amp;lt;- cbind(data.frame(id=ind_names, stringsAsFactors=FALSE),
-            sigX, sigY)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, let’s look at the time to write an RDS file, when compressed and when not. I’m again going to cache my results and just tell you what happened.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rds_file &amp;lt;- &amp;quot;db.rds&amp;quot;
-saveRDS(db, rds_file, compress=FALSE)
-rds_comp_file &amp;lt;- &amp;quot;db_comp.rds&amp;quot;
-saveRDS(db, rds_comp_file)
-db_copy1 &amp;lt;- readRDS(rds_file)
-db_copy2 &amp;lt;- readRDS(rds_comp_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Writing the data to an RDS file took 5.5 sec when uncompressed and 51.4 sec when compressed. Reading them back in took 2.4 sec for the uncompressed file and 11.0 sec for the compressed file. The uncompressed RDS file was 805 MB, while the compressed one was 769 MB.&lt;/p&gt;
-&lt;p&gt;So, &lt;em&gt;holy crap&lt;/em&gt; reading and writing the RDS files is fast when you use &lt;code&gt;compress=FALSE&lt;/code&gt;. Don’t tell your system administrator I said this, but if you’re working on a server with loads of disk space, for sure go with &lt;code&gt;compress=FALSE&lt;/code&gt; with your RDS files. On your laptop where uncompressed RDS files might get in the way of your music and movie libraries, you might want to use the compression.&lt;/p&gt;
-&lt;div id=&#34;how-about-csv&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;How about CSV?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt; suggested that I might just use a plain CSV file, since &lt;code&gt;data.table::fread&lt;/code&gt; and &lt;code&gt;data.table::fwrite&lt;/code&gt; are so fast. How fast?&lt;/p&gt;
-&lt;p&gt;To make use of the multi-threaded version of &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table&lt;/a&gt;’s &lt;code&gt;fread&lt;/code&gt;, I need version 1.10.5 which is &lt;a href=&#34;https://github.com/rdatatable/data.table&#34;&gt;on GitHub&lt;/a&gt;. The version on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; (&lt;a href=&#34;https://cran.r-project.org/package=data.table&#34;&gt;1.10.4&lt;/a&gt;) has multi-threaded &lt;code&gt;fwrite&lt;/code&gt; but only single-threaded &lt;code&gt;fread&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;But the GitHub version needs to be compiled with OpenMP, and after a lot of screwing around to do that, I ended up getting segfaults from &lt;code&gt;fwrite&lt;/code&gt;, so I just dumped this plan.&lt;/p&gt;
-&lt;p&gt;So we’ll look at multi-threaded &lt;code&gt;fwrite&lt;/code&gt; but only single-threaded &lt;code&gt;fread&lt;/code&gt;. But we can all look forward to the multi-threaded &lt;code&gt;fread&lt;/code&gt; in the near future.&lt;/p&gt;
-&lt;p&gt;For &lt;code&gt;fwrite&lt;/code&gt;, the number of threads is controlled by the argument &lt;code&gt;nThread&lt;/code&gt;. The default is to call &lt;code&gt;data.table::getDTthreads()&lt;/code&gt; which detects the maximum number of cores. On my Mac desktop at work, that’s 24. I’m going to hard-code it in.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;csv_file &amp;lt;- &amp;quot;db.csv&amp;quot;
-library(data.table)
-fwrite(db, csv_file, quote=FALSE)
-db_copy3 &amp;lt;- data.table::fread(csv_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That took 41.6 sec to write and 55.0 sec to read, and the file size is 1818 MB.&lt;/p&gt;
-&lt;p&gt;How about if I set &lt;code&gt;nThread=1&lt;/code&gt; with &lt;code&gt;fwrite&lt;/code&gt;?&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fwrite(db, csv_file, quote=FALSE, nThread=1)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Single-threaded, &lt;code&gt;fwrite&lt;/code&gt; took 69.1 sec.&lt;/p&gt;
-&lt;p&gt;But the data set is 500 rows by 200k columns. How about if I used the transpose?&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t_db &amp;lt;- cbind(data.frame(snp=rep(snp_names, 2),
-                         signal=rep(c(&amp;quot;X&amp;quot;, &amp;quot;Y&amp;quot;), each=n_snps),
-                         stringsAsFactors=FALSE),
-              rbind(t(sigX), t(sigY)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now to write and read this.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;csv_t_file &amp;lt;- &amp;quot;db_t.csv&amp;quot;
-fwrite(t_db, csv_t_file, quote=FALSE, nThread=24)
-t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That took 8.3 sec to write and 26.6 sec to read, and the file size is 1818 MB.&lt;/p&gt;
-&lt;p&gt;And how about if I do &lt;code&gt;fwrite&lt;/code&gt; single-threaded?&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fwrite(t_db, csv_t_file, quote=FALSE, nThread=1)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Single-threaded, the transposed data took 30.2 sec to write.&lt;/p&gt;
-&lt;p&gt;(I’m not even going to try &lt;code&gt;read.csv&lt;/code&gt; and &lt;code&gt;write.csv&lt;/code&gt;. I’ll leave that to the reader.)&lt;/p&gt;
-&lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
-&lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
-&lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Tue Dec 19 15:11:18 2017 --&gt;
-&lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
-&lt;tr&gt;
-&lt;th&gt;
-function
-&lt;/th&gt;
-&lt;th&gt;
-method
-&lt;/th&gt;
-&lt;th&gt;
-data size
-&lt;/th&gt;
-&lt;th&gt;
-time (s)
-&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-saveRDS
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-not compressed
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-500 × 200k
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-5.5
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-saveRDS
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-compressed
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-500 × 200k
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-51.4
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-fwrite
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-24 threads
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-500 × 200k
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-41.6
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-fwrite
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-1 thread
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-500 × 200k
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-69.1
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-fwrite
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-24 threads
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-200k × 500
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-8.3
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-fwrite
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-1 thread
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-200k × 500
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-30.2
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-readRDS
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-not compressed
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-500 × 200k
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-2.4
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-readRDS
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-compressed
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-200k × 500
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-11.0
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-fread
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-1 thread
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-500 × 200k
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-55.0
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;
-fread
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-1 thread
-&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;
-200k × 500
-&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;
-26.6
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;For sure, &lt;code&gt;fread&lt;/code&gt; and &lt;code&gt;fwrite&lt;/code&gt; are impressive. And I’d never have thought you could get advantage from parallel reads and writes.&lt;/p&gt;
-&lt;p&gt;I’m going to stick with RDS (making use of &lt;code&gt;compress=FALSE&lt;/code&gt; when I don’t care much about disk space) when I want to read/write whole files from R. And I’ll go with SQLite, feather, or fst when I want super fast access to a single row or column. But I also do a lot of reading and writing of CSV files, and I’ve enjoyed &lt;code&gt;data.table::fread&lt;/code&gt; and will now be using &lt;code&gt;data.table::fwrite&lt;/code&gt;, too.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
+I’ll first generate the same data that I was using before.</description>
     </item>
     
     <item>
@@ -484,65 +88,9 @@ fread
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
-      <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
-&lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
-&lt;p&gt;I like the changes in D3 version 4, but trying to figure them out feels a bit like being back in 2012, when I was first trying to understand D3: I’ve not found many tutorials that explain how to use the new version, so I mostly focused on reading the &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;API documentation&lt;/a&gt;, which isn’t easy for me to understand, or to walk through the code for some of [Michael Bostock]’s &lt;a href=&#34;https://bl.ocks.org/mbostock&#34;&gt;examples&lt;/a&gt;. There are loads of books and tutorials on D3, but they’re almost all still talking about D3 version 3. (This will change shortly. For example, the 2nd edition of &lt;a href=&#34;http://alignedleft.com/&#34;&gt;Scott Murray&lt;/a&gt;’s excellent &lt;a href=&#34;http://shop.oreilly.com/product/0636920037316.do&#34;&gt;Interactive Data Visualization for the Web&lt;/a&gt; is at the printer, and covers D3 version 4.)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.ireneros.com/&#34;&gt;Irene Ros&lt;/a&gt;’s &lt;a href=&#34;https://iros.github.io/d3-v4-whats-new/#1&#34;&gt;slides on what’s new in D3 V4&lt;/a&gt; were super helpful. (Also I just saw &lt;a href=&#34;http://www.puzzlr.org/sample-page/&#34;&gt;Tom Roth&lt;/a&gt;’s nice &lt;a href=&#34;http://www.puzzlr.org/force-graphs-with-d3/&#34;&gt;tutorial on d3-force&lt;/a&gt;, linked on the &lt;a href=&#34;https://github.com/d3/d3/wiki/Tutorials&#34;&gt;D3 tutorials page&lt;/a&gt;; duh.)&lt;/p&gt;
-&lt;p&gt;My D3 code isn’t particularly fancy. (And note that I’m still writing in &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;; I toyed with the idea of switching to &lt;a href=&#34;https://www.ecma-international.org/ecma-262/6.0/&#34;&gt;ES6&lt;/a&gt;, particularly because we can now use &lt;code&gt;(d) =&amp;gt; d.x&lt;/code&gt;. But I love CoffeeScript and don’t want to lose list comprehensions, and actually my favorite thing is:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;some_option = chartOpts?.some_option ? the_default&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I do fight with the indentation at times, but I’ve grown accustomed to it.&lt;/p&gt;
-&lt;p&gt;Anyway, back to the point of this: what did I have to change to get &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; to work with D3 version 4?&lt;/p&gt;
-&lt;div id=&#34;simple-replacements&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Simple replacements&lt;/h2&gt;
-&lt;p&gt;The bulk of the changes were simple replacements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;d3.scale.linear()&lt;/code&gt; → &lt;code&gt;d3.scaleLinear()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;d3.svg.line()&lt;/code&gt; → &lt;code&gt;d3.line()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;d3.scale.category20().range()&lt;/code&gt; → &lt;code&gt;d3.schemeCategory20&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;d3.random.normal(10,3)&lt;/code&gt; → &lt;code&gt;d3.randomNormal(10,3)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Slightly more tricky: &lt;code&gt;d3.scale.ordinal().rangeBands([0,w],0,0)&lt;/code&gt; became &lt;code&gt;d3.scaleBand().range([0,w])&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Also, I had written (well, borrowed from somewhere) methods &lt;code&gt;.moveToFront()&lt;/code&gt; and &lt;code&gt;.moveToBack()&lt;/code&gt;, which I can omit as D3 version 4 has &lt;code&gt;.raise()&lt;/code&gt; and &lt;code&gt;.lower()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;So really, the majority of the changes were made by for &lt;code&gt;d3.&lt;/code&gt;, making some tiny edit, and then seeing if my tests were working.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;d3-force&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;My D3 code is rather primitive. I’m basically just drawing and then adding some &lt;code&gt;.on(&amp;quot;mouseover&amp;quot;, something)&lt;/code&gt; or &lt;code&gt;.on(&amp;quot;click&amp;quot;, something_else)&lt;/code&gt; for interactivity.&lt;/p&gt;
-&lt;p&gt;But force-directed graphics are pretty awesome, particularly for &lt;a href=&#34;http://www.cbs.dtu.dk/~eklund/beeswarm/&#34;&gt;beeswarm&lt;/a&gt;-type plots, so I did make use of &lt;code&gt;d3.layout.force&lt;/code&gt; in two places.&lt;/p&gt;
-&lt;p&gt;But I didn’t really know what I was doing before, and that made the change to &lt;code&gt;d3.forceSimulation&lt;/code&gt; a bit more puzzling. My &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/1.1.4/src/dotchart.coffee#L181-L246&#34;&gt;code implementing a beeswarm-type dot chart&lt;/a&gt; is really ugly and so not worth looking at or discussing. The &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/src/dotchart.coffee#L181-L201&#34;&gt;new version&lt;/a&gt; is just 21 lines (vs 65 lines before), and way easier to read.&lt;/p&gt;
-&lt;p&gt;For &lt;a href=&#34;http://kbroman.org/d3panels/assets/test/dotchart/&#34;&gt;&lt;code&gt;d3panels.dotchart&lt;/code&gt;&lt;/a&gt;, the main bit looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;d3.range(scaledPoints.length).map( (i) -&amp;gt;
-    scaledPoints[i].fy = scaledPoints[i].y)
-
-force = d3.forceSimulation(scaledPoints)
-      .force(&amp;quot;x&amp;quot;, d3.forceX((d) -&amp;gt; d.x))
-      .force(&amp;quot;collide&amp;quot;, d3.forceCollide(pointsize*1.1))
-      .on(&amp;quot;tick&amp;quot;, ticked)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I have a data set &lt;code&gt;scaledPoints&lt;/code&gt; which is an array of objects with &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; values for point locations. I add &lt;code&gt;.fy&lt;/code&gt; to each element of the array, to prevent the &lt;code&gt;y&lt;/code&gt; values from being changed. (This is a beeswarm-type chart where the x-axis is a category, and I want those values to be dynamically adjusted using &lt;em&gt;the force&lt;/em&gt;, but the y-axis is the quantitative value, and I don’t want those values to change.)&lt;/p&gt;
-&lt;p&gt;Next I use &lt;code&gt;d3.forceSimulation&lt;/code&gt;, pass in my data, and then add a force that makes the points want to go towards their x value another another force that makes them not collide with each other.&lt;/p&gt;
-&lt;p&gt;Finally, I have the &lt;code&gt;ticked&lt;/code&gt; function that does the updating of the point locations.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ticked = () -&amp;gt;
-    points.attr(&amp;quot;cx&amp;quot;, (d) -&amp;gt; d.x)
-          .attr(&amp;quot;cy&amp;quot;, (d) -&amp;gt; d.y)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And that’s that. There’s a bit more code since I want the option of having the opposite orientation, with the categories on the y-axis and the quantitative values on the x-axis, but really it’s just those 9 lines of code plus a couple of blank lines.&lt;/p&gt;
-&lt;p&gt;It was hard work figuring them out, but only because I was spending too much time hacking away without understanding, rather than trying to come to some understanding before doing any hacking.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;d3-brush&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The last major thing I had to figure out was d3-brush. I’ve not implemented any actual brushing in either &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; or &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, but I did use &lt;code&gt;d3.svg.brush&lt;/code&gt; in one my tests of &lt;a href=&#34;http://kbroman.org/d3panels/assets/test/scatterplot/&#34;&gt;&lt;code&gt;d3panels.scatterplot&lt;/code&gt;&lt;/a&gt;, to show that it could be done.&lt;/p&gt;
-&lt;p&gt;In my &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/1.1.4/test/scatterplot/test_scatterplot.coffee#L66-L99&#34;&gt;original brush code&lt;/a&gt;, which was applied for a matrix of three scatterplots, I was creating a separate brush for each of the three scatterplots. And with the old &lt;code&gt;d3.svg.brush()&lt;/code&gt;, you’d pass x- and y-axis scales with &lt;code&gt;.x()&lt;/code&gt; and &lt;code&gt;.y()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You don’t pass scales to the new &lt;code&gt;d3.brush()&lt;/code&gt;. Instead, you use &lt;code&gt;d3.event.selection&lt;/code&gt; to grab the current selection in screen coordinates and then have to convert them back to plot coordinates with your scales’ inverses.&lt;/p&gt;
-&lt;p&gt;But I revised my code to what I thought should be working, and which was actually working for the first of the three scatterplots, but I got cryptic errors if I tried to brush the other two scatterplots. And so finally, in the &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/test/scatterplot/test_scatterplot.coffee#L66-L102&#34;&gt;revised code&lt;/a&gt;, I decided to use a single brush that was applied across the three scatterplots. (It seems that you &lt;a href=&#34;http://bl.ocks.org/ludwigschubert/0236fa8594c4b02711b2606a8f95f605&#34;&gt;can implement multiple brushes&lt;/a&gt;, but it’s complicated.) The single-brush solution is perfectly fine for my test case, and actually it’s maybe easier to understand.&lt;/p&gt;
-&lt;p&gt;So the conversion from &lt;code&gt;d3.svg.brush&lt;/code&gt; to &lt;code&gt;d3.brush&lt;/code&gt; was really pretty easy. I needed to abandon the multiple brushes, and then the back-calculation from screen coordinates to plot coordinates is slightly tedious but not a big deal.&lt;/p&gt;
-&lt;p&gt;So that was the last thing, and I now have both &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; working for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; version 4.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;whats-the-point&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;What’s the point?&lt;/h2&gt;
-&lt;p&gt;The point of all this is that I have ideas for further plots I want to make in &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, such as a tool for exploring pleiotropy (that is, whether two traits are affected by a common genetic locus, or instead are each controlled by separate but closely linked loci). For that thing, I wanted a double-slider, and it seemed best to implement it using D3 version 4, &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/d3doubleslider/&#34;&gt;which I did&lt;/a&gt;. But I want to use my slider with &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt;, and really I want to incorporate it into &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, so it was clear that I needed to spend some time refactoring.&lt;/p&gt;
-&lt;p&gt;And actually, I was surprised at how easy it was. (I thought it would be considerably more than a day’s work.) And I feel like I now kind of understand d3-force and d3-brush, so the effort involved was definitely worthwhile.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
+(Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
+I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
     </item>
     
     <item>
@@ -551,35 +99,12 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
-      <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
-&lt;p&gt;(I &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on previously&lt;/a&gt;, and then &lt;a href=&#34;http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;But using my package to get the crayon colors can be rather tedious.&lt;/p&gt;
-&lt;p&gt;It’s easy to view the available colors.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(broman)
-plot_crayons()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../post/2017-05-02-crayon-colors-simplified_files/figure-html/plot_crayons-1.png&#34; width=&#34;700&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;But grabbing a color, say “Purple Mountain’s Majesty”, requires rather verbose code.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majesty&amp;quot;]
-## Purple Mountain&amp;#39;s Majesty 
-##                 &amp;quot;#9d81ba&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This morning, it was just too much for me. So I wrote a simpler function &lt;code&gt;crayons()&lt;/code&gt;, which accepts partial matches, using &lt;code&gt;grep&lt;/code&gt;. So you can write things like:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crayons(&amp;quot;purple m&amp;quot;)
-## Purple Mountain&amp;#39;s Majesty 
-##                 &amp;quot;#9d81ba&amp;quot;
-crayons(&amp;quot;tickle&amp;quot;)
-## Tickle Me Pink 
-##      &amp;quot;#fc89ac&amp;quot;
-crayons(c(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;))
-## Purple Mountain&amp;#39;s Majesty            Tickle Me Pink 
-##                 &amp;quot;#9d81ba&amp;quot;                 &amp;quot;#fc89ac&amp;quot;
-crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
-## Purple Mountain&amp;#39;s Majesty            Tickle Me Pink 
-##                 &amp;quot;#9d81ba&amp;quot;                 &amp;quot;#fc89ac&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Why didn’t I think of this before?&lt;/p&gt;
-&lt;p&gt;The new version of the package is not yet on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, but you can install it from &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;GitHub&lt;/a&gt; using &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;kbroman/broman&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Or you can ignore the rest of the package and just &lt;a href=&#34;https://github.com/kbroman/broman/blob/master/R/brocolors.R&#34;&gt;grab the code&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Back in 2014, I’d grabbed the Crayola crayon colors from Wikipedia and made them available as part of my R/broman package.
+(I wrote about it on previously, and then again and again.)
+But using my package to get the crayon colors can be rather tedious.
+It’s easy to view the available colors.
+library(broman) plot_crayons() But grabbing a color, say “Purple Mountain’s Majesty”, requires rather verbose code.
+brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majesty&amp;quot;] ## Purple Mountain&amp;#39;s Majesty ## &amp;quot;#9d81ba&amp;quot; This morning, it was just too much for me.</description>
     </item>
     
     <item>
@@ -588,12 +113,8 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.&lt;/p&gt;
-&lt;p&gt;I had the mistaken impression that blogdown would look at the timestamps on the &lt;code&gt;.Rmd&lt;/code&gt; and &lt;code&gt;.html&lt;/code&gt; and only build the &lt;code&gt;.html&lt;/code&gt; if the &lt;code&gt;.Rmd&lt;/code&gt; file is newer, but that’s not true.&lt;/p&gt;
-&lt;p&gt;My &lt;a href=&#34;http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt; is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;new blog&lt;/a&gt; would be really painful, forever more.&lt;/p&gt;
-&lt;p&gt;Thus, I spent a bunch of time reworking the post to cache the times rather than running things every time the &lt;code&gt;.Rmd&lt;/code&gt; file was built. &lt;a href=&#34;https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd&#34;&gt;It’s not pretty&lt;/a&gt;, and my method is &lt;em&gt;not&lt;/em&gt; generally recommended, but it seems to work.&lt;/p&gt;
-&lt;p&gt;I expect &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; has a better solution to this.&lt;/p&gt;
-</description>
+      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
+I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
     </item>
     
     <item>
@@ -602,211 +123,8 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
-      <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
-&lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
-&lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
-&lt;div id=&#34;data-rds&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;data, rds&lt;/h3&gt;
-&lt;p&gt;Let me start by simulating some data. I’m mostly thinking about the case of 500 100k-SNP arrays. So the data are pairs of intensity measures for the two alleles at each of 100k SNPs in 500 samples. And typically I want to grab the 500 pairs of intensities for a given SNP. I’m going to just simulate IID noise, because for these illustrations I don’t really care about the contents so much as the storage size and I/O speed.&lt;/p&gt;
-&lt;p&gt;(&lt;em&gt;Note: this stuff takes a long time to run, so the &lt;a href=&#34;https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd&#34;&gt;actual code behind the scenes&lt;/a&gt; is more complicated, with me having cached the timings and skipped the actual runs.&lt;/em&gt;)&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_ind &amp;lt;- 500
-n_snps &amp;lt;- 1e5
-ind_names &amp;lt;- paste0(&amp;quot;ind&amp;quot;, 1:n_ind)
-snp_names &amp;lt;- paste0(&amp;quot;snp&amp;quot;, 1:n_snps)
-sigX &amp;lt;- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
-sigY &amp;lt;- matrix(rnorm(n_ind*n_snps), nrow=n_ind)
-dimnames(sigX) &amp;lt;- list(ind_names, paste0(snp_names, &amp;quot;.X&amp;quot;))
-dimnames(sigY) &amp;lt;- list(ind_names, paste0(snp_names, &amp;quot;.Y&amp;quot;))
-db &amp;lt;- cbind(data.frame(id=ind_names, stringsAsFactors=FALSE),
-            sigX, sigY)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;My typical approach with data like this is to save it in an RDS file and just read the whole thing into memory if I want to work with it. But it’s rather slow to write and read such a big data set.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rds_file &amp;lt;- &amp;quot;db.rds&amp;quot;
-saveRDS(db, rds_file)
-db_copy &amp;lt;- readRDS(rds_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It was like 49 sec to write the RDS file, and 7.0 sec to read it. The file itself is 769 MB.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;sqlite&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;sqlite&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.mongodb.com&#34;&gt;Mongo&lt;/a&gt; is cool, and I think ultimately it will be useful to me, but &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; has the advantage of being a single file that you can hand to others. And installation is easy: you just need &lt;a href=&#34;https://cran.rstudio.com/package=RSQLite/&#34;&gt;&lt;code&gt;install.packages(&amp;quot;RSQLite&amp;quot;)&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;SQLite won’t take more than &lt;a href=&#34;https://sqlite.org/limits.html&#34;&gt;2000 columns&lt;/a&gt; (or maybe 32,767 if you change a compile-time parameter), so we need to take the transpose of our data frame.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t_db &amp;lt;- cbind(data.frame(snp=rep(snp_names, 2),
-                         signal=rep(c(&amp;quot;X&amp;quot;, &amp;quot;Y&amp;quot;), each=n_snps),
-                         stringsAsFactors=FALSE),
-              rbind(t(sigX), t(sigY)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let’s rearrange it so that the two rows for a given SNP are next to each other.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;db_rows &amp;lt;- as.numeric(matrix(1:nrow(t_db), byrow=TRUE, nrow=2))
-t_db &amp;lt;- t_db[db_rows,]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To write to a SQLite file, we use &lt;code&gt;dbConnect&lt;/code&gt; to create a database connection, and then &lt;code&gt;dbWriteTable&lt;/code&gt;. We can use &lt;code&gt;dbDisconnect&lt;/code&gt; to disconnect afterwards, if we’re done.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(RSQLite)
-sqlite_file &amp;lt;- &amp;quot;t_db.sqlite&amp;quot;
-sqldb &amp;lt;- dbConnect(SQLite(), dbname=sqlite_file)
-dbWriteTable(sqldb, &amp;quot;snps&amp;quot;, t_db, row.names=FALSE, overwrite=TRUE,
-             append=FALSE, field.types=NULL)
-dbDisconnect(sqldb)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The writing took 35 sec, and the resulting file is 923 MB.&lt;/p&gt;
-&lt;p&gt;A key advantage of SQLite is to be able to quickly access a portion of the data, for example to grab the two rows for a particular SNP. You’d need to know the SNP names, first, which you can get by grabbing that column (or &lt;em&gt;field&lt;/em&gt;) with &lt;code&gt;dbGetQuery&lt;/code&gt;. A data frame is returned, so we select the first column.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sqldb &amp;lt;- dbConnect(SQLite(), dbname=sqlite_file)
-snp_names &amp;lt;- dbGetQuery(sqldb, &amp;#39;select snp from snps&amp;#39;)[,1]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We can call &lt;code&gt;dbGetQuery&lt;/code&gt; again to get the two rows of data for a given SNP.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
-query &amp;lt;- paste0(&amp;#39;select * from snps where snp == &amp;quot;&amp;#39;, random_snp, &amp;#39;&amp;quot;&amp;#39;)
-system.time(z &amp;lt;- dbGetQuery(sqldb, query))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
-##   0.353   0.485   0.838&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Such queries are faster if we first add an index on the SNP names.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dbGetQuery(sqldb, &amp;quot;CREATE INDEX snp ON snps(snp)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The file is basically the same size, 926 MB, and queries are now all but instantaneous.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
-query &amp;lt;- paste0(&amp;#39;select * from snps where snp == &amp;quot;&amp;#39;, random_snp, &amp;#39;&amp;quot;&amp;#39;)
-system.time(z &amp;lt;- dbGetQuery(sqldb, query))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
-##   0.004   0.000   0.004&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;feather&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;feather&lt;/h3&gt;
-&lt;p&gt;I’d understood &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; to be a quick way of transferring data between python and R; &lt;a href=&#34;https://simecek.github.io/&#34;&gt;Petr Simacek&lt;/a&gt; convinced me of its more-broad uses, such as to take the place of a single-table database.&lt;/p&gt;
-&lt;p&gt;Writing a feather file is surprisingly fast, and reading it back in is even faster.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(feather)
-feather_file &amp;lt;- &amp;quot;t_db.feather&amp;quot;
-write_feather(t_db, feather_file)
-t_db_clone &amp;lt;- read_feather(feather_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That took about 3 sec to write, and 1.0 sec to read, and the file is about 803 MB.&lt;/p&gt;
-&lt;p&gt;But queries of particular columns or rows are fast, too. So you can basically use feather like a database.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;db_f &amp;lt;- feather(feather_file)
-snp_names &amp;lt;- unlist(db_f[,&amp;quot;snp&amp;quot;])
-random_snp &amp;lt;- sample(snp_names, 1)
-system.time(z &amp;lt;- db_f[snp_names==random_snp,])&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
-##   0.381   0.353   0.735&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In this particular case, it’s actually quite a bit faster to work with feather the other way around; that is, in the original format of 500 arrays x 100k SNPs.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;feather_file_2 &amp;lt;- &amp;quot;db.feather&amp;quot;
-write_feather(db, feather_file_2)
-db_clone &amp;lt;- read_feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That took about 3 sec to write, and 1.8 sec to read, and the file is about 815 MB.&lt;/p&gt;
-&lt;p&gt;Accessing particular rows is just as easy. First a bit of code to grab the SNP names by grabbing the column names, getting rid of the &lt;code&gt;&amp;quot;.X&amp;quot;&lt;/code&gt; or &lt;code&gt;&amp;quot;.Y&amp;quot;&lt;/code&gt; bits at the end, and then taking the first half.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;db_f_2 &amp;lt;- feather(feather_file_2)
-snp_names &amp;lt;- sub(&amp;quot;\\.[XY]$&amp;quot;, &amp;quot;&amp;quot;, colnames(db_f_2))
-snp_names &amp;lt;- snp_names[1:(length(snp_names)/2)]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, we grab the data for a random SNP by pasting &lt;code&gt;&amp;quot;.X&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;.Y&amp;quot;&lt;/code&gt; back onto the SNP name.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
-system.time(z &amp;lt;- db_f_2[,c(&amp;quot;id&amp;quot;, paste0(random_snp, c(&amp;quot;.X&amp;quot;, &amp;quot;.Y&amp;quot;)))])&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
-##   0.045   0.000   0.045&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note that you can also use &lt;a href=&#34;https://github.com/tidyverse/dplyr&#34;&gt;dplyr&lt;/a&gt; with &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; as if you’ve got an in-memory data frame.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;fst&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;fst&lt;/h3&gt;
-&lt;p&gt;After &lt;a href=&#34;https://twitter.com/kwbroman/status/855112575373148162&#34;&gt;tweeting about feather&lt;/a&gt;, &lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt; suggested that I look at the &lt;a href=&#34;http://www.fstpackage.org/&#34;&gt;fst package&lt;/a&gt;. It’s not quite as slick to take data slices, but it’s potentially faster and you can write a compressed file to save disk space.&lt;/p&gt;
-&lt;p&gt;Like SQLite, it’s best not to have &lt;em&gt;too&lt;/em&gt; many columns, so we’ll work with the transposed version of the data frame, with SNPs as rows. Writing and reading are fast.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(fst)
-fst_file &amp;lt;- &amp;quot;db.fst&amp;quot;
-write.fst(t_db, fst_file)
-t_db_clone &amp;lt;- read.fst(fst_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That took 3.0 sec to write, 1.1 sec to read, and the file is about 803 MB.&lt;/p&gt;
-&lt;p&gt;Writing a compressed file is quite a bit slower. Here at 80% compression.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fstcomp_file &amp;lt;- &amp;quot;db_comp.fst&amp;quot;
-write.fst(t_db, fstcomp_file, 80)
-t_db_clone &amp;lt;- read.fst(fstcomp_file)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That took 6.7 sec to write, 2.7 sec to read, and the file is about 781 MB.&lt;/p&gt;
-&lt;p&gt;Doing queries on an &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; file is not quite as slick as for &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt;, but it’s fast. The &lt;code&gt;read.fst&lt;/code&gt; function has a &lt;code&gt;columns&lt;/code&gt; argument to grab particular columns, and &lt;code&gt;from&lt;/code&gt; and &lt;code&gt;to&lt;/code&gt; arguments to grab a slice of rows.&lt;/p&gt;
-&lt;p&gt;We’ll first grab the &lt;code&gt;snp&lt;/code&gt; column to get the SNP names. And let’s just work with the compressed version of the file. Since &lt;code&gt;read.fst&lt;/code&gt; will return a one-column data frame, we grab the first column to make it a vector.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;snp_names &amp;lt;- read.fst(fstcomp_file, &amp;quot;snp&amp;quot;)[,1]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now we can choose a random SNP, find the corresponding rows, and then use &lt;code&gt;from&lt;/code&gt; and &lt;code&gt;to&lt;/code&gt; to grab those two rows. You can see it’s useful to have the the pairs of rows for each SNP be contiguous.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
-wh_rows &amp;lt;- which(random_snp == snp_names)
-system.time(z &amp;lt;- read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2]))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
-##   0.078   0.011   0.089&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;timings&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;timings&lt;/h3&gt;
-&lt;p&gt;Let’s use the &lt;a href=&#34;https://cran.r-project.org/package=microbenchmark&#34;&gt;microbenchmark&lt;/a&gt; package to compare timings for grabbing a random SNP. First a bit of set-up.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
-library(microbenchmark)
-sqlite_file &amp;lt;- &amp;quot;t_db.sqlite&amp;quot;
-sqldb &amp;lt;- dbConnect(SQLite(), dbname=sqlite_file)
-query &amp;lt;- paste0(&amp;#39;select * from snps where snp == &amp;quot;&amp;#39;, random_snp, &amp;#39;&amp;quot;&amp;#39;)
-db_f &amp;lt;- feather(feather_file)
-db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now the timings.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;microbenchmark(sqlite=dbGetQuery(sqldb, query),
-               feather=db_f[snp_names==random_snp,],
-               feather_t=db_f_2[,c(&amp;quot;id&amp;quot;, paste0(random_snp, c(&amp;quot;.X&amp;quot;,&amp;quot;.Y&amp;quot;)))],
-               fst={wh_rows &amp;lt;- which(random_snp == snp_names)
-                    read.fst(fst_file, from=wh_rows[1], to=wh_rows[2])},
-               fstcomp={wh_rows &amp;lt;- which(random_snp == snp_names)
-                    read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
-               times=100)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
-##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
-##    fstcomp  91  95  117     95  97  691   100    d&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here’s a summary of all of the results:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::kable(results, digits=c(1,1,0,1),
-             col.names=c(&amp;quot;write time (s)&amp;quot;, &amp;quot;read time (s)&amp;quot;,
-                         &amp;quot;file size (MB)&amp;quot;, &amp;quot;access time (ms)&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;write time (s)&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;read time (s)&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;file size (MB)&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;access time (ms)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;rds&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;49.3&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;7.0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;769&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;NA&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;sqlite&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;34.7&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;NA&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;923&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3.7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;feather&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3.0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1.0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;803&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;716.5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;feather (tr)&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3.3&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1.8&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;815&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;48.3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;fst&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3.0&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1.1&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;803&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;79.9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;fst (compr)&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;6.7&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2.7&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;781&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;116.7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;I don’t think we can draw general conclusions about the relative speed and file size of the three approaches from these results. And I think they’re all really useful and interesting.&lt;/p&gt;
-&lt;p&gt;But in this particular case, the file compression didn’t really help with &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; and slowed things down. When accessing the data, &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; was considerably faster than &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; when the data were organized with the SNPs as columns, but was considerably slower when the data were in the opposite orientation. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; has much faster access times, but with a larger file size that takes longer to write.&lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
+But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
     <item>
@@ -815,22 +133,9 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/08/17/introduction/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.&lt;/p&gt;
-
-&lt;p&gt;Particularly interesting were the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/lightning.html&#34;&gt;Lightning talks&lt;/a&gt;: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically.  It worked extremely well; more talks should be done this way!&lt;/p&gt;
-
-&lt;p&gt;And particularly interesting, among the lightning talks, was one by &lt;a href=&#34;http://www.r-statistics.com&#34;&gt;Tal Galili&lt;/a&gt;, who started the &lt;a href=&#34;http://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt; blog aggregator. He encouraged the R community to blog. A particularly important point, for me, was his emphasis on not feeling a need to blog at great frequency: even once per year would be worthwhile.&lt;/p&gt;
-
-&lt;p&gt;I had a blog in the past, but I felt a constant urge to be posting, and so felt guilty for not posting.  I have enough feelings of guilt in my life, and so I decided to just drop the blog.&lt;/p&gt;
-
-&lt;p&gt;Also, my previous effort focused largely on personal matters (particularly my experiences as a new parent).  It perhaps got a bit too personal.  Here, I&amp;rsquo;m going to focus on less personal things, or at least on things that might embarrass me but aren&amp;rsquo;t likely to embarrass my family.&lt;/p&gt;
-
-&lt;p&gt;And I&amp;rsquo;ve been thinking about blogging recently.  There are a number of blogs that I read regularly and quite enjoy, particularly those of &lt;a href=&#34;http://andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;, &lt;a href=&#34;http://scienceblogs.com/pharyngula/&#34;&gt;PZ Myers&lt;/a&gt;, &lt;a href=&#34;http://genome.fieldofscience.com&#34;&gt;Steven Salzberg&lt;/a&gt;, &lt;a href=&#34;http://whyevolutionistrue.wordpress.com&#34;&gt;Jerry Coyne&lt;/a&gt;, and &lt;a href=&#34;http://www.blaghag.com&#34;&gt;Jen McCreight&lt;/a&gt;.  (Apologies to Prof. Coyne; his is a web site, &lt;a href=&#34;http://http://whyevolutionistrue.wordpress.com/2011/04/18/encomium/&#34;&gt;not a blog&lt;/a&gt;.)  I have strong opinions, I like to share them, and I&amp;rsquo;m not often asked to share them, and here I can share freely without prompting.&lt;/p&gt;
-
-&lt;p&gt;So: statistics (especially graphics and computing), genetics (especially recombination and QTL mapping), programming (particularly R), and academics (the mistakes I&amp;rsquo;ve made and what I&amp;rsquo;ve learned).&lt;/p&gt;
-
-&lt;p&gt;Since I generally still feel like an amateur in all of these matters (and I like to say: &amp;ldquo;You know you&amp;rsquo;re an expert when everyone else&amp;rsquo;s work looks just as crappy as your own.&amp;rdquo;), I won&amp;rsquo;t worry too much about getting everything right.  I certainly will want to avoid comparing myself to the people mentioned above.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m at the useR! Conference in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.
+Particularly interesting were the Lightning talks: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically. It worked extremely well; more talks should be done this way!
+And particularly interesting, among the lightning talks, was one by Tal Galili, who started the R-bloggers blog aggregator.</description>
     </item>
     
   </channel>

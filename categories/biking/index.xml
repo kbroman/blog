@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 23 Oct 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/biking/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/categories/biking/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Helmets and bike sharing programs</title>
@@ -16,14 +18,7 @@
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/10/23/helmets-and-bike-sharing-programs/</guid>
-      <description>&lt;p&gt;There was an interesting article in the New York Times several weeks ago about &lt;a href=&#34;http://www.nytimes.com/2012/09/30/sunday-review/to-encourage-biking-cities-forget-about-helmets.html&#34;&gt;helmets and bike sharing programs&lt;/a&gt;: That cities are giving up on encouraging people to wear helmets as that will just discourage people from biking.  One point that&amp;rsquo;s made is that promotion of helmets suggests &amp;ldquo;a sense of danger that just isn&amp;rsquo;t justified.&amp;rdquo;  And, of course, there&amp;rsquo;s discussion of the higher frequency of biking and lower frequency of helmet-wearing in Europe.&lt;/p&gt;
-
-&lt;p&gt;My wife and I each bought extra helmets to keep in our offices, so that we could always have a helmet when we use the local bike sharing system, &lt;a href=&#34;http://bcycle.com&#34;&gt;Madison Bcycle&lt;/a&gt;.  But I must admit that I sometimes use a Bcycle without a helmet.  To me, it&amp;rsquo;s not about the sense of danger, but that lugging about a helmet can be inconvenient.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.nytimes.com/2012/09/30/sunday-review/to-encourage-biking-cities-forget-about-helmets.html&#34;&gt;The article&lt;/a&gt; would have been better if there had been more precise information about the risks and about the protection helmets provide.&lt;/p&gt;
-
-&lt;p&gt;Several years ago I&amp;rsquo;d read an article about how helmet use might actually make biking less safe, as people might adopt less safe behaviors with a helmet.  I&amp;rsquo;m not convinced, though I have observed that people bike much more slowly in Europe and especially China.  If we were in less of a hurry, biking would be inherently safer.&lt;/p&gt;
-</description>
+      <description>There was an interesting article in the New York Times several weeks ago about helmets and bike sharing programs: That cities are giving up on encouraging people to wear helmets as that will just discourage people from biking. One point that&amp;rsquo;s made is that promotion of helmets suggests &amp;ldquo;a sense of danger that just isn&amp;rsquo;t justified.&amp;rdquo; And, of course, there&amp;rsquo;s discussion of the higher frequency of biking and lower frequency of helmet-wearing in Europe.</description>
     </item>
     
     <item>
@@ -32,12 +27,8 @@
       <pubDate>Tue, 08 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/05/08/no-commuter-bikes-on-sidewalk/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m pretty sure you won&amp;rsquo;t find a street sign like this in Baltimore:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2012/05/bike_sign.jpg&#34; alt=&#34;&amp;quot;No commuter bikes on sidewalk&amp;quot;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;http://g.co/maps/rwjdy&#34;&gt;on my usual commute&lt;/a&gt; to campus.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m pretty sure you won&amp;rsquo;t find a street sign like this in Baltimore:
+It&amp;rsquo;s on my usual commute to campus.</description>
     </item>
     
     <item>
@@ -46,10 +37,7 @@
       <pubDate>Fri, 23 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/12/23/12-deg-f-but-still-good-biking/</guid>
-      <description>&lt;p&gt;My last day biking to work for a while&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/12/20111223-081837.jpg&#34; alt=&#34;20111223-081837.jpg&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>My last day biking to work for a while&amp;hellip;</description>
     </item>
     
     <item>
@@ -58,10 +46,7 @@
       <pubDate>Tue, 13 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/12/13/heres-what-i-need/</guid>
-      <description>&lt;p&gt;for riding in Wisconsin in the winter, the &lt;a href=&#34;http://surlybikes.com/bikes/moonlander&#34;&gt;Surly Moonlander&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/12/moonlander.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>for riding in Wisconsin in the winter, the Surly Moonlander:</description>
     </item>
     
     <item>
@@ -70,17 +55,8 @@
       <pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/12/01/revised-bicycle-laws-in-wisconsin/</guid>
-      <description>&lt;p&gt;A newsletter from the &lt;a href=&#34;http://madison.bcycle.com/&#34;&gt;Madison B-Cycle&lt;/a&gt; folks pointed out that the biking laws in Wisconsin have been &lt;a href=&#34;https://docs.legis.wisconsin.gov/2011/related/proposals/ab265&#34;&gt;revised somewhat&lt;/a&gt;, in interesting ways (at least to me).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You can now stick your arm out to the right to signal a right turn.  (I didn&amp;rsquo;t realize that this was wrong.)
-&lt;img src=&#34;http://kbroman.files.wordpress.com/2011/12/bike_turn_signals.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Studded bike tires (important for riding on snow and ice) are now legal.  (I didn&amp;rsquo;t realize that they weren&amp;rsquo;t.  I wish I&amp;rsquo;d had them when I crashed and broke my elbow back in 2008; now I don&amp;rsquo;t need them as I&amp;rsquo;m not risking riding on snow in any case.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You can have a rear light in place of a rear reflector. (Again, I didn&amp;rsquo;t realize that this would be wrong.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>A newsletter from the Madison B-Cycle folks pointed out that the biking laws in Wisconsin have been revised somewhat, in interesting ways (at least to me).
+ You can now stick your arm out to the right to signal a right turn. (I didn&amp;rsquo;t realize that this was wrong.)  Studded bike tires (important for riding on snow and ice) are now legal. (I didn&amp;rsquo;t realize that they weren&amp;rsquo;t. I wish I&amp;rsquo;d had them when I crashed and broke my elbow back in 2008; now I don&amp;rsquo;t need them as I&amp;rsquo;m not risking riding on snow in any case.</description>
     </item>
     
     <item>
@@ -89,12 +65,9 @@
       <pubDate>Tue, 25 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/25/suv-driving-bastards/</guid>
-      <description>&lt;p&gt;On my bike ride to work, in the rain, I was stopped at &lt;a href=&#34;http://g.co/maps/dpgfr&#34;&gt;stop light&lt;/a&gt;, in the bike lane, when a big black SUV pulled up behind me and honked, wanting to turn right.  Three seconds later the light turned green.  As the guy turned behind me, he yelled out his window, &amp;ldquo;Get the hell out of the way!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Who would not flip him off?&lt;/p&gt;
-
-&lt;p&gt;Madison can be great for biking, but it is not without assholes, though I suppose that is &lt;a href=&#34;http://walker.wi.gov/&#34;&gt;obvious&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>On my bike ride to work, in the rain, I was stopped at stop light, in the bike lane, when a big black SUV pulled up behind me and honked, wanting to turn right. Three seconds later the light turned green. As the guy turned behind me, he yelled out his window, &amp;ldquo;Get the hell out of the way!&amp;rdquo;
+Who would not flip him off?
+Madison can be great for biking, but it is not without assholes, though I suppose that is obvious.</description>
     </item>
     
   </channel>

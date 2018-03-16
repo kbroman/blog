@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 02 Mar 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/javascript/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
@@ -16,18 +18,10 @@
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
-      <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m giving a talk at &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR&lt;/a&gt; in just over a week, on interactive graphics.  My slides (still in preparation) are &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;on the web&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.&lt;/p&gt;
-
-&lt;p&gt;I figured out that I needed to add &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt;, like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script charset=&amp;quot;utf-8&amp;quot; type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;js/d3.js&amp;quot;&amp;gt;
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>To use the latest version of D3, you need to use charset=&amp;quot;utf-8&amp;quot; in the call to &amp;lt;script&amp;gt;.
+I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
+The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
+I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</description>
     </item>
     
     <item>
@@ -36,62 +30,10 @@
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m pleased with my progress learning javascript and &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;. (I&amp;rsquo;m actually writing &lt;a href=&#34;http://coffeescript.org&#34;&gt;coffeescript&lt;/a&gt; rather than javascript.)&lt;/p&gt;
-
-&lt;p&gt;But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.&lt;/p&gt;
-
-&lt;h3 id=&#34;put-the-script-in-the-body&#34;&gt;Put the script in the body&lt;/h3&gt;
-
-&lt;p&gt;First, I&amp;rsquo;d tried to make a &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html&#34;&gt;truly simple example&lt;/a&gt;, making just an SVG with a little rectangle.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt;
-    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;
-        src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-
-    &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
-    var h=50;
-    var svg = d3.select(&amp;quot;body&amp;quot;).append(&amp;quot;svg&amp;quot;)
-                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;, h);
-    svg.append(&amp;quot;rect&amp;quot;).attr(&amp;quot;x&amp;quot;, 0).attr(&amp;quot;y&amp;quot;, 0)
-                .attr(&amp;quot;height&amp;quot;, h).attr(&amp;quot;width&amp;quot;,h);
-    &amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But this gives nothing.  You need to move the script from the &lt;code&gt;head&lt;/code&gt; to the &lt;code&gt;body&lt;/code&gt;, &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html&#34;&gt;as it is here&lt;/a&gt;.  Then it works.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t really understand this.  Perhaps I should go back to my reading.&lt;/p&gt;
-
-&lt;p&gt;[&lt;strong&gt;Update&lt;/strong&gt;: I think I&amp;rsquo;ve figured this out.  If you put the script in the &lt;code&gt;head&lt;/code&gt;, the code gets run before the &lt;code&gt;body&lt;/code&gt; exists, and so there&amp;rsquo;s no &lt;code&gt;body&lt;/code&gt; in which to append the SVG.  &lt;em&gt;Conclusion&lt;/em&gt;: Put the link to your script at the very bottom of the html file.]&lt;/p&gt;
-
-&lt;h3 id=&#34;don-t-forget-enter&#34;&gt;Don&amp;rsquo;t forget &lt;code&gt;enter()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;In D3, you bind data to a bunch of objects, and attributes of the objects can be controlled by features of the data.  I write code sort of like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;svg.append(&amp;quot;g&amp;quot;).selectAll(&amp;quot;empty&amp;quot;)
-   .data(thedata)
-   .enter()
-   .append(&amp;quot;rect&amp;quot;)
-   .attr(&amp;quot;x&amp;quot;, (d) -&amp;gt; start[d])
-   .attr(&amp;quot;y&amp;quot;, pad.top)
-   .attr(&amp;quot;width&amp;quot;, (d) -&amp;gt; end[d] - start[d])
-   .attr(&amp;quot;height&amp;quot;, (d) -&amp;gt; hInner)
-   .attr(&amp;quot;fill&amp;quot;, (d) -&amp;gt; color[d])
-   .attr(&amp;quot;stroke&amp;quot;, &amp;quot;none&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My most common mistake so far: I forget the &lt;code&gt;.enter()&lt;/code&gt; part.  You don&amp;rsquo;t get a error message, but the objects don&amp;rsquo;t get created.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
+But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
+Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var h=50; var svg = d3.</description>
     </item>
     
   </channel>

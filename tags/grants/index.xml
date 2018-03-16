@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/grants/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/grants/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Complaints about the NIH grant review process</title>
@@ -16,104 +18,8 @@
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
-      <description>
-
-&lt;p&gt;Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).&lt;/p&gt;
-
-&lt;p&gt;NIH proposals are typically reviewed by three people and given preliminary scores on five aspects (significance, approach, investigators, environment, innovation) and overall, and the top proposals based on those scores are discussed and scored by the larger panel.&lt;/p&gt;
-
-&lt;p&gt;One of the reviewers gave our proposal an 8 for &amp;ldquo;approach&amp;rdquo; (on a scale of 1-9, with 1 being good and 9 being terrible) with the following review comments:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;4. Approach:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Well described details for mining of [data] and genotyping of [subjects].&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Weaknesses&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;There is no power analysis for Aim 2. Without knowing which and how many [phenotypes] will be evaluated it is not possible to estimate the statistical power.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Valid comments, but is that really all the reviewer had to say? What about Aims 1 and 3, or the other aspects of Aim 2? &lt;em&gt;That is totally fucking inadequate.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Looking at this review again, I was reminded of how much I despise many aspects of the NIH review process. So it&amp;rsquo;s led me, finally, to write down some of the things that annoy me.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-scoring-system-is-too-discrete&#34;&gt;The scoring system is too discrete&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been involved in reviewing NIH grants for 15 years. A bunch of changes were made in about 2009 or so, with a few things for the better (like having the review order of grants based on preliminary score) but many for the worse.&lt;/p&gt;
-
-&lt;p&gt;The worst change was to the scoring system. In the old system, reviewers scored grants on a scale of 1-5, in tenths (1.0, 1.1, 1.2, &amp;hellip;), with 1 being best and 5 being worst. Scores were averaged and multiplied by 100, so the best possible score was 100 and the worst was 500. (And note that the middle value was 300 not 250, a point of confusion for many.)&lt;/p&gt;
-
-&lt;p&gt;In the new system, reviewers score grants on a scale of 1-9, in single digits, with 1 being best and 9 being worst (and 5 being the middle value). Scores are averaged and multiplied by ten, so the best possible score is 10 and the worst is 90.&lt;/p&gt;
-
-&lt;p&gt;When the new scale was introduced, we were given the following handy chart:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/10/nih_score_chart.png&#34; alt=&#34;NIH 9-point score chart&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As I understand it, there were two main reasons for revising the scoring system:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Fix the &amp;ldquo;grade inflation&amp;rdquo; problem (too many good scores)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reviewers can&amp;rsquo;t score grants with 0.1 precision.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But as a fix for the grade inflation problem, revising the scoring system could only be a temporary solution. And as I understand it, the problem is now worse than ever.&lt;/p&gt;
-
-&lt;p&gt;The big problem with the new scoring system is that reviewers have just 9 choices of scores, whereas before they had 41. Yes, a reviewer can&amp;rsquo;t really discriminate 1.3 from 1.4. &lt;strong&gt;But if you have 25 imprecise measure instruments, would it be better to&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;average and then round&lt;/em&gt;, or&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;round and then average&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s obviously better to &lt;em&gt;average and then round&lt;/em&gt;, but the new scoring system &lt;em&gt;rounds and then averages&lt;/em&gt;. (&lt;a href=&#34;http://churchill.jax.org/about/churchill.shtml&#34;&gt;Gary Churchill&lt;/a&gt; pointed this out to me.)&lt;/p&gt;
-
-&lt;p&gt;This leads to the frequent statements like, &amp;ldquo;I&amp;rsquo;d put this somewhere between a 1 and a 2.&amp;rdquo; And with line (or &amp;ldquo;band&amp;rdquo;) between funded and not funded being well above 20, it seems like, in many cases, &lt;em&gt;whether a grant is funded has to do with the proportion of reviewers that give it a 1&lt;/em&gt; rather than a 2.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-bullet-point-based-reviews-lead-to-superficial-and-incomplete-comments&#34;&gt;The bullet-point-based reviews lead to superficial and incomplete comments&lt;/h3&gt;
-
-&lt;p&gt;It used to be that the written reviews of grant proposals were much like reviews of journal articles: for each aspect of a proposal (significance, approach, etc.), we&amp;rsquo;d write a few paragraphs, in some cases a full page. Such reviews were hard to write, were often long, and sometimes didn&amp;rsquo;t do a good job of making clear what were the really important issues and what were the less important ones.&lt;/p&gt;
-
-&lt;p&gt;With the big review change in 2009, reviewers were asked to write bullet points for &amp;ldquo;Strengths&amp;rdquo; and &amp;ldquo;Weaknesses.&amp;rdquo; (And in a Microsoft Word template!)&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a lot easier to write a few bullet points than to construct coherent prose, but the bullet points that reviewers produce are generally shallow and incomplete. In some cases, a reviewer&amp;rsquo;s thinking about a proposal may be left in a shallow and incomplete state.&lt;/p&gt;
-
-&lt;p&gt;The review at the top of this post is the best (or really &lt;em&gt;worst&lt;/em&gt;) instance of this problem.&lt;/p&gt;
-
-&lt;h3 id=&#34;don-t-drop-the-proposal-summary-from-the-beginning-of-the-discussion&#34;&gt;Don&amp;rsquo;t drop the proposal summary from the beginning of the discussion&lt;/h3&gt;
-
-&lt;p&gt;In the old days, the discussion of a proposal would begin with the primary reviewer giving a brief summary: what are the investigators proposing to do? This is critical, as only 3 of the 25 or so people on the panel will have read the proposal.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t know if they&amp;rsquo;re still doing this, but with the other changes to the review process, we were asked to skip the summary of proposal and just discuss the significance of the work. But how on earth can you talk about the significance of the work without some mention of what the work actually is?&lt;/p&gt;
-
-&lt;h3 id=&#34;the-electronic-grant-format-is-often-not-human-readable&#34;&gt;The electronic grant format is often not human readable.&lt;/h3&gt;
-
-&lt;p&gt;When I first reviewed NIH grant proposals, we each got a copy-paper-sized box with all of the proposals (and when proposals were triaged, all 25 reviewers would simultaneously throw the proposal into a big pile). It was great to move to electronic versions of grants (initially scanned, then fully electronic), but the electronic versions of proposals are not constructed in a way that has a human reader in mind.&lt;/p&gt;
-
-&lt;p&gt;The front page of grants used to be quite clear and informative, but now all of the form-generated pages are a design mess. For example, the pages listing the key personnel and their institutions are really hard to parse.&lt;/p&gt;
-
-&lt;p&gt;Also, there are loads of useless pages describing what documents were included. Couldn&amp;rsquo;t the reviewers get a version without all of that crap?&lt;/p&gt;
-
-&lt;p&gt;Finally, the PDF bookmarks are often off by a page. If you want to go to the biosketches, you need to click the biosketch bookmark and then page down one.&lt;/p&gt;
-
-&lt;p&gt;These things aren&amp;rsquo;t &lt;em&gt;that&lt;/em&gt; big of a deal, but they&amp;rsquo;re a constant annoyance, and they should be easy to fix.&lt;/p&gt;
-
-&lt;p&gt;Tony Scarpa, the former director of the &lt;a href=&#34;http://public.csr.nih.gov/Pages/default.aspx&#34;&gt;NIH Center for Scientific Review (CSR)&lt;/a&gt; who was responsible for the big change in the NIH review system, once visited U Wisconsin, and I asked him about whether these electronic proposals could be improved, and he said, &amp;ldquo;Oh, that&amp;rsquo;s not us; that&amp;rsquo;s grants.gov.&amp;rdquo; So I asked who I should talk to about the issue, and he said, &amp;ldquo;Call your Congressman.&amp;rdquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;there-needs-to-be-some-review-of-reviewers&#34;&gt;There needs to be some review of reviewers&lt;/h3&gt;
-
-&lt;p&gt;One final comment: there needs to be some formal way for reviewers to comment on other reviewers. I think most reviewers are very careful and responsible, but there&amp;rsquo;s often at least one total jerk on a review panel: didn&amp;rsquo;t read the proposal carefully, didn&amp;rsquo;t write a coherent review, didn&amp;rsquo;t pay any attention to what the other reviewers said, gave completely unfair scores.&lt;/p&gt;
-
-&lt;p&gt;There should be some system for other reviewers to say, &amp;ldquo;So-and-so on the panel was a complete jerk and shouldn&amp;rsquo;t be brought back.&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).
+NIH proposals are typically reviewed by three people and given preliminary scores on five aspects (significance, approach, investigators, environment, innovation) and overall, and the top proposals based on those scores are discussed and scored by the larger panel.</description>
     </item>
     
     <item>
@@ -122,16 +28,10 @@
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
-      <description>&lt;p&gt;I was at a &lt;a href=&#34;http://www.cidr.jhmi.edu/about/CIDR%20Access%20Committee.pdf&#34;&gt;CIDR Access Committee&lt;/a&gt; meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the &lt;a href=&#34;http://www.cidr.jhmi.edu&#34;&gt;Center for Inherited Disease Research&lt;/a&gt;, a service funded by several of the NIH institutes.&lt;/p&gt;
-
-&lt;p&gt;We had to buy our own coffee.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.&lt;/p&gt;
-
-&lt;p&gt;But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meeting and then chintz on the snacks?  Apparently it&amp;rsquo;s a &lt;a href=&#34;http://www.hhs.gov/asfr/ogapa/acquisition/appfundspol_att2.html&#34;&gt;new government rule&lt;/a&gt;.  (I&amp;rsquo;d thought the rule was maybe instituted following the &lt;a href=&#34;http://www.nytimes.com/2012/04/04/us/politics/gsa-las-vegas-trip-is-the-talk-of-washington.html&#34;&gt;GSA&amp;rsquo;s Las Vegas party&lt;/a&gt;, but it predates that.)&lt;/p&gt;
-
-&lt;p&gt;Without coffee, &lt;a href=&#34;http://www.freestatebrewing.com&#34;&gt;grant reviewing does not seem to go as well&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>I was at a CIDR Access Committee meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the Center for Inherited Disease Research, a service funded by several of the NIH institutes.
+We had to buy our own coffee.
+It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.
+But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meeting and then chintz on the snacks?</description>
     </item>
     
     <item>
@@ -140,62 +40,8 @@
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/21/grant-writing/</guid>
-      <description>
-
-&lt;p&gt;While some may feel that grant proposals should be perfect, I think they should be good enough to be funded and no better.  Only three or so people will read the thing, and they&amp;rsquo;re not allowed to talk about it; you should be devoting yourself as much as possible to the actual work rather than the grant writing.&lt;/p&gt;
-
-&lt;p&gt;Having read many grants (some good, many bad), I&amp;rsquo;ve formed quite strong opinions about what constitutes a good grant.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;the-ideas-are-most-important&#34;&gt;The ideas are most important&lt;/h3&gt;
-
-&lt;p&gt;Perhaps this is obvious, but in many grants, the real ideas are not apparent.  Don&amp;rsquo;t hide them (thinking the reviewers might steal them), and don&amp;rsquo;t just describe an important problem.  (We can all mostly agree on what problems are important; the question is: can you solve any of them?)  Focus more on what you will do than on what has been done.&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t have a very good idea, it might be best to wait until you do.&lt;/p&gt;
-
-&lt;h3 id=&#34;understand-the-process&#34;&gt;Understand the process&lt;/h3&gt;
-
-&lt;p&gt;It is useful to know what happens to your grant once it is submitted: Who will read it?  What are they looking for?&lt;/p&gt;
-
-&lt;p&gt;Talk to senior colleagues who are familiar with the funding agency.  Enroll in a grant writing course.  Read the material provided by the funding agency (such as on the web).&lt;/p&gt;
-
-&lt;h3 id=&#34;get-feedback&#34;&gt;Get feedback&lt;/h3&gt;
-
-&lt;p&gt;Write your proposal early enough that you can get feedback from colleagues and still have time to make use of their comments.&lt;/p&gt;
-
-&lt;h3 id=&#34;reviewers-are-tired-and-scatterbrained-and-not-necessarily-experts-in-your-sub-discipline&#34;&gt;Reviewers are tired and scatterbrained and not necessarily experts in your sub-discipline&lt;/h3&gt;
-
-&lt;p&gt;You may wish that the reviewers would spend a quiet day devoted to reading your grant front-to-back, but that won&amp;rsquo;t happen.  They may have ten grants to read and are still trying to do their real work.  They&amp;rsquo;re likely to read your grant in bits at a time, out of order, maybe on a plane. And they&amp;rsquo;re often old and wear glasses.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Include plenty of white space&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use large fonts&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use simple, blunt text (simple sentences, simple words)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Ensure that the organization of the proposal is absolutely clear&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Repeat text verbatim (e.g., of the aims) so there&amp;rsquo;s no question what you&amp;rsquo;re talking about&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Define jargon&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;write-their-review-for-them&#34;&gt;Write their review for them&lt;/h3&gt;
-
-&lt;p&gt;If the reviewers can borrow your text to explain how the work is important and innovative and why you are the right person (or team) in the right place to do it, they&amp;rsquo;ll be happy and thus you&amp;rsquo;ll be happy.&lt;/p&gt;
-
-&lt;h3 id=&#34;include-nice-illustrations&#34;&gt;Include nice illustrations&lt;/h3&gt;
-
-&lt;p&gt;Illustrations can be a lot of work but can bring clarity to complicated things.  But they can be a waste of space.  Include some meaningful ones and omit those empty of content.&lt;/p&gt;
-
-&lt;h3 id=&#34;pay-attention-to-details&#34;&gt;Pay attention to details&lt;/h3&gt;
-
-&lt;p&gt;Avoid typos, misspellings, missing words, messed up figure numbers, missing letters of support, incomplete or out-of-date biosketches (especially those from collaborators), and inaccurate or missing references.&lt;/p&gt;
-
-&lt;p&gt;If the reviewers are annoyed, confused, or sense sloppiness, they won&amp;rsquo;t write a good review (and some of this may not be conscious on their part).&lt;/p&gt;
-</description>
+      <description>While some may feel that grant proposals should be perfect, I think they should be good enough to be funded and no better. Only three or so people will read the thing, and they&amp;rsquo;re not allowed to talk about it; you should be devoting yourself as much as possible to the actual work rather than the grant writing.
+Having read many grants (some good, many bad), I&amp;rsquo;ve formed quite strong opinions about what constitutes a good grant.</description>
     </item>
     
     <item>
@@ -204,82 +50,8 @@
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/19/fund-people-not-projects/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/John_P._A._Ioannidis&#34;&gt;John Ioannidis&lt;/a&gt;, known for &lt;a href=&#34;http://www.plosmedicine.org/article/info:doi/10.1371/journal.pmed.0020124&#34;&gt;his comments on medical research&lt;/a&gt; (see also &lt;a href=&#34;http://www.theatlantic.com/magazine/archive/2010/11/lies-damned-lies-and-medical-science/8269/&#34;&gt;the Atlantic article&lt;/a&gt;), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: &lt;a href=&#34;http://www.nature.com/nature/journal/v477/n7366/full/477529a.html&#34;&gt;fund people not projects&lt;/a&gt;.  As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work.  Lots of people complain about peer review, but I think it largely works well and none of the proposed alternatives would actually be better.  Here are my thoughts.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h4 id=&#34;we-pretty-much-already-do-this-in-part&#34;&gt;We pretty much already do this, in part&lt;/h4&gt;
-
-&lt;p&gt;Prominent scientists can get sketchy ideas funded, while obscure researchers have to make an extremely strong case.  But obscure researchers with a fantastic idea &lt;em&gt;can&lt;/em&gt; get funding.&lt;/p&gt;
-
-&lt;h4 id=&#34;spread-equally-or-at-random&#34;&gt;Spread equally or at random?&lt;/h4&gt;
-
-&lt;p&gt;Ioannidis says, &amp;ldquo;the imperfections of peer review mean that as many as one-third of current grants are effectively being awarded at random.&amp;rdquo;  So why not use &amp;ldquo;aleatoric allocation&amp;rdquo;?&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d never seen the word &amp;ldquo;aleatoric&amp;rdquo; before.  I suppose now I&amp;rsquo;ll see it all the time.&lt;/p&gt;
-
-&lt;p&gt;The idea of funding science via a lottery seems too crazy to consider further.&lt;/p&gt;
-
-&lt;h4 id=&#34;merit&#34;&gt;Merit?&lt;/h4&gt;
-
-&lt;p&gt;We could fund people on merit versus fund particular proposals.  Ioannidis points out that the MacArthur foundation does this.  He didn&amp;rsquo;t mention that the NIH also does this to some extent (MERIT awards, for &amp;ldquo;Method to Extend Research In Time&amp;rdquo;).&lt;/p&gt;
-
-&lt;p&gt;Ioannidis suggests maybe doing this in an automated or semi-automated way: &amp;ldquo;The system could use indices that exclude self-citations and capture quality rather than quantity (such as average citations per paper instead of number of papers).&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Blech.&lt;/p&gt;
-
-&lt;h4 id=&#34;reward-good-scientific-citizenship-practices&#34;&gt;&amp;ldquo;Reward good scientific citizenship practices&amp;rdquo;?&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger&lt;/a&gt; would be interested to see this comment from Ioannidis: &amp;ldquo;Researchers might be rewarded for publishing reproducible data, protocols and algorithms.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But Ioannidis further says, &amp;ldquo;Some citizenship practices are difficult to capture in automated databases, so would be subject to the disadvantages of peer assessment.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s an understatement.&lt;/p&gt;
-
-&lt;h4 id=&#34;simplify-application&#34;&gt;Simplify application?&lt;/h4&gt;
-
-&lt;p&gt;&amp;ldquo;Researchers could be asked, for example, to submit short summaries of their intended research, describing broad goals only.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;The NIH has moved in that direction.  But the problem is: we can all generally agree on the important problems.  The question is: who is going to solve them and how?&lt;/p&gt;
-
-&lt;h4 id=&#34;judging-quality&#34;&gt;Judging quality&lt;/h4&gt;
-
-&lt;p&gt;&amp;ldquo;Many institutions use the size of a scientist&amp;rsquo;s grant portfolio as a basis for tenure and promotion&amp;hellip;.Judging scientists by the size of their portfolio is equivalent to judging art by how much money was spent on paint and brushes, rather than the quality of the paintings.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Who could disagree?  Similarly, counting publications (perhaps considering the &amp;ldquo;impact factor&amp;rdquo; of the journals) is a poor measure of quality.&lt;/p&gt;
-
-&lt;p&gt;The only alternative is to actually &lt;em&gt;read&lt;/em&gt; the papers.&lt;/p&gt;
-
-&lt;h4 id=&#34;how-to-spread-out-the-money&#34;&gt;How to spread out the money?&lt;/h4&gt;
-
-&lt;p&gt;&amp;ldquo;All funding options face a tension over how many scientists should receive awards, and there is no good evidence on whether it is better to give fewer scientists more money or to distribute smaller amounts between more researchers.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;The NIH has indeed struggled over this.  But I think they do reasonably well.  There are some groups with a ton of funding and some that are struggling.  How to decide how much to give each?  Well, you could focus on the proposed projects rather than the researchers&amp;hellip;&lt;/p&gt;
-
-&lt;h4 id=&#34;randomized-trials&#34;&gt;Randomized trials?&lt;/h4&gt;
-
-&lt;p&gt;&amp;ldquo;Controlled trials could randomize consenting scientists to different funding schemes, then compare surrogate metrics and long-term successes.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s hard to see anyone really doing this.  It would require a long study and the risk of destruction of individual careers.&lt;/p&gt;
-
-&lt;h4 id=&#34;scandal&#34;&gt;Scandal?&lt;/h4&gt;
-
-&lt;p&gt;&amp;ldquo;It is a scandal that billions of dollars are spent on research without knowing the best way to distribute that money.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Similarly, Richard Smith wrote an interesting &lt;a href=&#34;http://breast-cancer-research.com/content/12/S4/S13&#34;&gt;opinion on peer-review&lt;/a&gt; (focusing on journal articles), in which he notes the lack of empirical evidence for the efficacy of peer review.&lt;/p&gt;
-
-&lt;p&gt;But is it a scandal?  Do we know the best way to distribute money for anything?&lt;/p&gt;
-
-&lt;h4 id=&#34;my-conclusions&#34;&gt;My conclusions&lt;/h4&gt;
-
-&lt;p&gt;I would like to spend less time writing and reviewing grants, and I think the current system favors shorter, fashionable, less innovative projects.  However, while it is hard to gauge the value of proposed work, I still think it&amp;rsquo;s easier to evaluate proposed projects than it is to evaluate people.  What&amp;rsquo;s done at the NIH is a bit of a mixture (evaluating the individual investigator and their past work as well as the particular proposed project), and while I don&amp;rsquo;t always like it, I think it&amp;rsquo;s hard to improve upon.&lt;/p&gt;
-
-&lt;p&gt;The biggest problem is the low level of current funding.  When only about 10% of proposals are funded, chance seems to play a larger role in what gets funded, and many more grants are submitted, which gives reviewers much more work.  We need to get it back up to 20% for the review process to be healthy again.&lt;/p&gt;
-</description>
+      <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
+It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work.</description>
     </item>
     
   </channel>

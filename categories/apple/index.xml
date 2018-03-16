@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 26 Jan 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/apple/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/categories/apple/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Muted startup</title>
@@ -16,20 +18,9 @@
       <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2012/01/26/muted-startup/</guid>
-      <description>&lt;p&gt;It annoys me when my computer (or, even more, someone else&amp;rsquo;s computer) makes a gratuitous noise upon startup.&lt;/p&gt;
-
-&lt;p&gt;While I know that, on my Mac, I can avoid the sound by either muting before shutdown or holding down the mute button while starting it up, I often forget. And I am especially prone to forgetting when it&amp;rsquo;s most important that the computer be quiet.&lt;/p&gt;
-
-&lt;p&gt;So, I was very interested to read &lt;a href=&#34;http://lifehacker.com/5873140/how-to-silence-your-computers-startup-sound-and-boot-like-a-ninja&#34;&gt;how to disable the start up sound&lt;/a&gt; at &lt;a href=&#34;http://lifehacker.com&#34;&gt;lifehacker&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s nice and easy. Here are the scripts I use; the instructions are in the comments at the top of each file.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/scripts/mute.sh&#34;&gt;mute.sh&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/scripts/unmute.sh&#34;&gt;unmute.sh&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>It annoys me when my computer (or, even more, someone else&amp;rsquo;s computer) makes a gratuitous noise upon startup.
+While I know that, on my Mac, I can avoid the sound by either muting before shutdown or holding down the mute button while starting it up, I often forget. And I am especially prone to forgetting when it&amp;rsquo;s most important that the computer be quiet.
+So, I was very interested to read how to disable the start up sound at lifehacker.</description>
     </item>
     
     <item>
@@ -38,10 +29,8 @@
       <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/27/caffeine/</guid>
-      <description>&lt;p&gt;A cute and useful menu bar application for Macs: &lt;a href=&#34;http://lightheadsw.com/caffeine/&#34;&gt;Caffeine&lt;/a&gt;, available in the &lt;a href=&#34;http://itunes.apple.com/us/app/caffeine/id411246225&#34;&gt;App store&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen.  This is especially useful when you&amp;rsquo;re giving a talk.&lt;/p&gt;
-</description>
+      <description>A cute and useful menu bar application for Macs: Caffeine, available in the App store.
+If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen. This is especially useful when you&amp;rsquo;re giving a talk.</description>
     </item>
     
     <item>
@@ -50,10 +39,8 @@
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2011/10/14/resizing-windows-in-lion/</guid>
-      <description>&lt;p&gt;I upgraded my Macs to &lt;a href=&#34;http://www.apple.com/lion&#34;&gt;Lion&lt;/a&gt;; my favorite improvement is that we can now resize windows from any edge or corner.&lt;/p&gt;
-
-&lt;p&gt;(Previously, you could only change the size from the lower-right corner, so I often found myself resizing and moving and then resizing and moving and then&amp;hellip;.  Why did it take so long for them to do it properly?)&lt;/p&gt;
-</description>
+      <description>I upgraded my Macs to Lion; my favorite improvement is that we can now resize windows from any edge or corner.
+(Previously, you could only change the size from the lower-right corner, so I often found myself resizing and moving and then resizing and moving and then&amp;hellip;. Why did it take so long for them to do it properly?)</description>
     </item>
     
   </channel>

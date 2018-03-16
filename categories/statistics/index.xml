@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/categories/statistics/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Halloween 2017</title>
@@ -16,9 +18,7 @@
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
       <guid>http://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
-      <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to 2016 and 2011.</description>
     </item>
     
     <item>
@@ -27,10 +27,7 @@
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our 2011 experience.)</description>
     </item>
     
     <item>
@@ -39,160 +36,9 @@
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
-      <description>
-
-&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/&#34;&gt;Joint Statistical Meetings&lt;/a&gt; are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.&lt;/p&gt;
-
-&lt;p&gt;First things first: &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/spotlightchicago.cfm&#34;&gt;snacks&lt;/a&gt;. Search &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/index.cfm&#34;&gt;the program&lt;/a&gt; for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/spotlightchicago.cfm&#34;&gt;page with the full list&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;sunday&#34;&gt;Sunday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;2:00 - 3:50&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212387&#34;&gt;Open source statistical software for data science&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Skipper Seabold on &lt;em&gt;Software Engineering&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jake VanderPlas on &lt;em&gt;Python&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Doug Bates on &lt;em&gt;Julia&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Dirk Eddelbuettel on &lt;em&gt;Rcpp&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Michael Kane on &lt;em&gt;Grammars &amp;amp; structures in R, Python, and Julia&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;4:00-5:50&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212571&#34;&gt;Sequencing association studies and rare-variant analysis for complex traits&lt;/a&gt; with Gonçalo Abecasis, Xihong Lin, Seunggeun Lee, Iuliana Ionita-Laza&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212579&#34;&gt;Extraordinary impact of statistics&lt;/a&gt;, with David Siegmund, Heike Hofmann, and Sally Morton&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212531&#34;&gt;Precision medicine&lt;/a&gt; with Kim-Anh Do, Hongzhe Li, and Li Hsu (and with Bhramar Mukherjee as discussant)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212366&#34;&gt;Media and statistics&lt;/a&gt; with Howard Wainer, Barry Nussbaum, Julie Rehmeyer, and Don Berry (and Andrew Gelman as discussant)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212554&#34;&gt;Information visualization&lt;/a&gt; with Jorge Poco, Anushka Anand, Zan Armstrong, Zhicheng Liu, and Gordon Kindlmann (organized by Yihui Xie)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;6:00 - 8:00&lt;/em&gt;) Opening Mixer &amp;amp; &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=213079&#34;&gt;Invited posters&lt;/a&gt; (featuring Garrentt Grolemund, Tian Zheng, Liz Sweeney, David Robinson, Hilary Parker, Alyssa Frazee, and Jeff Leek)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;monday&#34;&gt;Monday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:30-10:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212543&#34;&gt;Applied data visualization&lt;/a&gt; (organized by Hilary Parker)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Hadley Wickham on &lt;em&gt;Linked brushing in R&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Andreas Gros on &lt;em&gt;Data vis at Facebook&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Lynn Cherny on &lt;em&gt;Cocktail party horror stories about data vis for clients&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Andrei Scheinkman on &lt;em&gt;Data vis at 538&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jeff Leek on &lt;em&gt;Teaching data vis to 100k data scientists&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Also of interest: &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212462&#34;&gt;Introductory Overview on Causal Inference by Judea Pearl&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:30 - 12:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212335&#34;&gt;Statistics in genomics and genetics&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;John Storey on &lt;em&gt;latent variable methods&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Rafael Irizarry on &lt;em&gt;overcoming bias and batch effects in RNA-seq data&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Kathryn Roeder on &lt;em&gt;testing high-dim differential matrices&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Michael Newton on &lt;em&gt;Graph-restricted mixture models&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;4:45-6:15&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212656&#34;&gt;ASA President&amp;rsquo;s invited address&lt;/a&gt;: Joe Palca (NPR) on &lt;em&gt;Science and news: A marriage of convenience&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tuesday&#34;&gt;Tuesday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:30 - 10:20&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212431&#34;&gt;Statistical genetics for large-scale genomic data&lt;/a&gt; with Mary Sara McPeek, Timothy Thornton, Michael Epstein, and Michael Wu&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212463&#34;&gt;Intro Overview on Data science&lt;/a&gt; with Philip Yu and Michael Jordon&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212804&#34;&gt;Microbiome data analysis&lt;/a&gt; with Xiang Zhan, Pixu Shi, Georg Gerber, Hyunwook Koh, and Richard Bonneau&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:30-12:20&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212466&#34;&gt;Data journalism and statistical expertise&lt;/a&gt; with Regina Nuzzo, Alberto Cairo, Mark Hansen, Carl Bialik, and Katherine Hobson&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212444&#34;&gt;Data in and outside the undergrad classroom&lt;/a&gt; with Ani Adhikari, Mark Daniel Ward, Robert Gould, and Colin Rundel (organized by Mine Cetinkaya-Rundel)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;2:05-3:50&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212483&#34;&gt;Single-cell RNA-seq&lt;/a&gt; with Raphael Gottardo, John Marioni, Rahul Satija, and Stephanie Hicks (organized by Rafael Irizarry)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212415&#34;&gt;The 3d Genome&lt;/a&gt; with Mark Segal, Zhaohui Qin, Zheng Xu, and Deepak Nag Ayyala (organized by Shili Lin)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212551&#34;&gt;Interactive visualizations&lt;/a&gt; with Vincent Nijs, Ryan Hafen, Joseph Cheng, John Muschelli, Carson Sievert, and Yihui Xie (organized by Ramnath Vaidyanathan&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212715&#34;&gt;Integrative data analyses&lt;/a&gt; with Sunduz Keles, Yuan Jiang, Yongdai Kim, and Jun Xie&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:00-9:30&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212655&#34;&gt;ASA President&amp;rsquo;s Address&lt;/a&gt;: Jessica Utts on &lt;em&gt;Appreciating statistics&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;wednesday&#34;&gt;Wednesday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:30 - 10:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212538&#34;&gt;Reproducibility in statistics and data science&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Jenny Bryan&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;me&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Karthik Ram&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Mine Cetinkaya-Rundel&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Yihui Xie (discussant)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:35 - 12:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;2016 Statistical computing and graphics award honors William S. Cleveland&lt;/a&gt; with Nicholas Fisher, Dianne Cook, Luke-Jon Tierney, Steve Scott, and Jim Harner&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;2:05 - 3:50&lt;/em&gt;) Hard choice:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212439&#34;&gt;Batch effects in genomics data&lt;/a&gt; with Claire Ruberman, Jingshu Wang, Jennifer Listgarten, Davide Risso, and Florian Buettner&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212489&#34;&gt;Genomics and epigenomics data&lt;/a&gt; with Ker-Chau Li, Yuping Zhang, Hongkai Ji, Guo-Cheng Yuan, and Hao Wu&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212826&#34;&gt;When the plot is not the end: computing and reasoning on data visualizations&lt;/a&gt; with Barrett Schloerke, Haley Jeppson, Gabriel Becker, and Hector Corrada Bravo&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;4:45-6:15&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212657&#34;&gt;Fisher Lecture&lt;/a&gt;: Alice Whittemore on Personalizing disease prevention&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;thursday&#34;&gt;Thursday&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;8:35 - 10:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212487&#34;&gt;Julia for modern statistical computing&lt;/a&gt; with Josh Day, John Myles White, Stefan Karpinski, and Jiahao Chen (and Doug Bates as discussant)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;(&lt;em&gt;10:35-12:20&lt;/em&gt;) &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212302&#34;&gt;Showcasing statistics and public policy&lt;/a&gt; with Andrew Gelman, Peter Imrey, and J. R. Lockwood (and David Banks as discussant)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
+First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
+Sunday  (2:00 - 3:50) Open source statistical software for data science</description>
     </item>
     
     <item>
@@ -201,68 +47,9 @@
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
-      <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;It was a short post, so I might as well quote the whole thing:&lt;/p&gt;
-
-&lt;blockquote&gt;When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math.
-
-If you&#39;re analyzing data, you&#39;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&#39;s still statistics.
-
-If you say that one kind of data analysis is statistics and another kind is not, you&#39;re not allowing innovation. We need to define the field broadly.
-
-You may not like what some statisticians do. You may feel they don&#39;t share your values. They may embarrass you. But that shouldn&#39;t lead us to abandon the term &#34;statistics&#34;.&lt;/blockquote&gt;
-
-&lt;p&gt;I still sort of feel that way, but I must admit that &lt;em&gt;my&lt;/em&gt; definition of &amp;ldquo;statistics&amp;rdquo; is rather different than most others&amp;rsquo; definition. In my view, a good statistician will consider &lt;em&gt;all&lt;/em&gt; aspects of the data analysis process:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;the broader context of a scientific question&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;study design&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data handling, organization, and integration&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data cleaning&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;data visualization&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;exploratory data analysis&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;formal inference methods&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;clear communication of results&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;development of useful and trustworthy software tools&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;actually answering real questions&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;m sure I missed some things there, but my main point is that most academic statisticians focus solely on developing &amp;ldquo;sophisticated&amp;rdquo; methods for formal inference, and while I agree that that is an important piece, in my experience as an applied statistician, the other aspects are often of vastly greater importance. In many cases, we don&amp;rsquo;t need to develop sophisticated new methods, and most of my effort is devoted to the other aspects, and these are generally treated as being unworthy of consideration by academic statisticians.&lt;/p&gt;
-
-&lt;p&gt;As I wrote in a later post, &amp;ldquo;&lt;a href=&#34;http://kbroman.org/blog/2014/05/01/reform-academic-statistics/&#34;&gt;Reform academic statistics&lt;/a&gt;&amp;rdquo;, we as a field appear satisfied with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Papers that report new methods with no usable software&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Applications that focus on toy problems&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Talks that skip the details of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Data visualizations that are both ugly and ineffective&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Discussions of &lt;em&gt;Data Science&lt;/em&gt; generally recognize the full range of activities that are required for the analysis of data, and place greater value on such things as data visualization and software tools which are &lt;em&gt;obviously&lt;/em&gt; important but not viewed so by many statisticians.&lt;/p&gt;
-
-&lt;p&gt;And so I&amp;rsquo;ve come to &lt;em&gt;embrace&lt;/em&gt; the term Data Science.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Data Science&lt;/em&gt; is also a much more straightforward and understandable label for what I do. I don&amp;rsquo;t think we should &lt;em&gt;need&lt;/em&gt; a new term, and I think we should argue against misunderstandings of Statistics rather than slink off to a new &amp;ldquo;brand&amp;rdquo;. But in general, when I talk about Data Science, I feel I can better trust that folks will understand that I am talking about the broad set of activities required in good data analysis.&lt;/p&gt;
-
-&lt;p&gt;If people ask me what I do, I&amp;rsquo;ll continue to say that I&amp;rsquo;m a Statistician, even though I do tend to stumble over the word. But I am also a &lt;em&gt;Data Scientist&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;One last thing: I&amp;rsquo;ve also come to realize that computer science folks working in computational biology are really just like me. They have expertise in a somewhat different set of tools, but then that&amp;rsquo;s true for pretty much every statistician, too: they&amp;rsquo;re much like me but they have expertise in a somewhat different set of tools. And it&amp;rsquo;s nice to be able to say that &lt;em&gt;we&amp;rsquo;re all data scientists&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;It should be recognized, too, that academic computer science suffers from many of the same problems that academic statistics has suffered: an overemphasis on novelty, sophistication, and toy applications, and an under-appreciation for solving real problems, for data visualization, and for useful software tools.&lt;/p&gt;
-</description>
+      <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
+It was a short post, so I might as well quote the whole thing:
+When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
     </item>
     
     <item>
@@ -271,38 +58,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
-      <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
-
-&lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
-
-&lt;p&gt;But I now finally understand LMMs, or at least a particular, simple LMM, and I&amp;rsquo;ve been able to write an implementation: the R package &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It seemed worthwhile to write down some of the details.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;The model I want to fit is &lt;em&gt;y = X b + e&lt;/em&gt;, where var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;sK + tI&lt;/em&gt;, where &lt;em&gt;K&lt;/em&gt; is a known kinship matrix and &lt;em&gt;I&lt;/em&gt; is the identity matrix. Think of &lt;em&gt;y&lt;/em&gt; as a vector of phenotypes and &lt;em&gt;X&lt;/em&gt; as a matrix of covariates. Let &lt;em&gt;v = s+t&lt;/em&gt; be the residual variance, and let &lt;em&gt;h = s/(s+t) = s/v&lt;/em&gt; be the heritability.&lt;/p&gt;
-
-&lt;p&gt;First, a shout to &lt;a href=&#34;https://github.com/lomereiter&#34;&gt;Artem Tarasov&lt;/a&gt;, who wrote a &lt;a href=&#34;http://lomereiter.github.io/2015/02/16/lmm_cov.html&#34;&gt;series of blog posts&lt;/a&gt; walking through and explaining the source code for &lt;a href=&#34;https://github.com/MicrosoftGenomics/FaST-LMM&#34;&gt;FaST-LMM&lt;/a&gt; and &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;, and to &lt;a href=&#34;http://whatmind.com/&#34;&gt;Nick Furlotte&lt;/a&gt;, whose &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt; code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.&lt;/p&gt;
-
-&lt;p&gt;Back to the model fit:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For a fixed value of the heritability, &lt;em&gt;h&lt;/em&gt;, we have var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;v[hK + (1-h)I] = vV&lt;/em&gt; where &lt;em&gt;V&lt;/em&gt; is known. And so we end up with a general least squares problem, which we can fit in order to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;And actually, if you take the eigen decomposition of &lt;em&gt;K&lt;/em&gt;, say &lt;em&gt;K = UDU&amp;rsquo;&lt;/em&gt;, it turns out that you can write &lt;em&gt;hK + (1-h)I = hUDU&amp;rsquo; + (1-h)UU&amp;rsquo; = U[hD + (1-h)I]U&amp;rsquo;&lt;/em&gt;. That is, the eigenvectors of &lt;em&gt;K&lt;/em&gt; are the same as the eigenvectors of &lt;em&gt;hK + (1-h)I&lt;/em&gt;. And so if you pre-multiply &lt;em&gt;y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; by &lt;em&gt;U&amp;rsquo;&lt;/em&gt;, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Having fit the weighted least squares problem to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;, you can then calculate the corresponding log likelihood (or, better, the restricted log likelihood, if you want to do REML).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You&amp;rsquo;re then left with a one-dimensional optimization problem (optimizing the log likelihood over &lt;em&gt;h&lt;/em&gt;), which you can solve by &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34;&gt;Brent&amp;rsquo;s method&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It seems quite obvious in retrospect. It&amp;rsquo;s a bit embarrassing that it&amp;rsquo;s taken me so long to come to this understanding.&lt;/p&gt;
-
-&lt;p&gt;In &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
-</description>
+      <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
+In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
     <item>
@@ -311,54 +68,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
-      <description>
-
-&lt;p&gt;Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.&lt;/p&gt;
-
-&lt;p&gt;I recently had a &lt;a href=&#34;http://g3journal.org/content/early/2015/08/21/g3.115.019778.abstract&#34;&gt;paper&lt;/a&gt; accepted at &lt;a href=&#34;http://g3journal.org/&#34;&gt;G3&lt;/a&gt;, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later. I did the bulk of the writing in October, 2012, but it wasn&amp;rsquo;t until February, 2014, that I posted a &lt;a href=&#34;http://arxiv.org/abs/1402.2633&#34;&gt;preprint&lt;/a&gt; at &lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv&lt;/a&gt;, which I then finally submitted to G3 in June this year.&lt;/p&gt;
-
-&lt;p&gt;In writing up the paper in late 2012, I re-did my entire analysis from scratch, to make the whole thing more cleanly reproducible. So with the paper now in press, I&amp;rsquo;ve placed all of that in a &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt;, but as it turned out, there was still a lot more to do. (You can tell, from the repository, that this is an old project, because there are a couple of Perl scripts in there. It&amp;rsquo;s been a long time since I&amp;rsquo;ve switched from Perl to Python and Ruby. I still can&amp;rsquo;t commit to just one of Python or Ruby&amp;hellip;want to stick with Python, as everyone else is using it, but much prefer Ruby.)&lt;/p&gt;
-
-&lt;p&gt;The basic issue is that the raw data is about 1 GB. The clean version of the data is another 1 GB. And then there are results of various intermediate calculations, some are rather slow to calculate, which take up another 100 MB. I can&amp;rsquo;t reasonably put all of that within the GitHub repository.&lt;/p&gt;
-
-&lt;p&gt;Both the raw and clean data have been &lt;a href=&#34;http://phenome.jax.org/db/q?rtn=projects/projdet&amp;amp;reqprojid=532&#34;&gt;posted in the Mouse Phenome Database&lt;/a&gt;. (Thanks to Petr Simecek, Gary Churchill, Molly Bogue, and Elissa Chesler for that!) But the data are in a form that I thought suitable for others, and not quite in the form that I actually used them.&lt;/p&gt;
-
-&lt;p&gt;So, I needed to write a script that would grab the data files from &lt;a href=&#34;http://phenome.jax.org&#34;&gt;MPD&lt;/a&gt; and reorganize them in the way that I&amp;rsquo;d been using them.&lt;/p&gt;
-
-&lt;p&gt;In working on that, I discovered some mistakes in the data posted to MPD: there were a couple of bugs in my code to convert the data from the format I was using into the format I was going to post. (So it was good to spend the time on the script that did the reverse!)&lt;/p&gt;
-
-&lt;p&gt;In addition to the raw and clean data on MPD, I posted a zip file with the 110 MB of intermediate results on &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;figshare&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the end, I&amp;rsquo;m hoping that one can clone the &lt;a href=&#34;https://github.com/kbroman/Paper_SampleMixups&#34;&gt;GitHub repository&lt;/a&gt; and just run &lt;a href=&#34;https://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt; and it will download the data and do all of the stuff. If you want to save some time, you could download the &lt;a href=&#34;http://figshare.com/account/projects/4842&#34;&gt;zip file from figshare&lt;/a&gt; and unzip that, and then run make.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not quite there, but I think I&amp;rsquo;m close.&lt;/p&gt;
-
-&lt;h3 id=&#34;aspects-i-m-happy-with&#34;&gt;Aspects I&amp;rsquo;m happy with&lt;/h3&gt;
-
-&lt;p&gt;For the most part, my work on this project wasn&amp;rsquo;t terrible.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I wrote an R package, &lt;a href=&#34;https://github.com/kbroman/lineup&#34;&gt;R/lineup&lt;/a&gt;, with the main analysis methods.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That I re-derived the full entire analysis cleanly, in a separate, reproducible document (I used &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;AsciiDoc&lt;/a&gt; and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;) was a good thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The code for the figures and tables are all reasonably clean, and draw from either the original data files or from intermediate calculations produced by the AsciiDoc document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I automated everything with GNU Make.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;what-should-i-have-done-differently&#34;&gt;What should I have done differently?&lt;/h3&gt;
-
-&lt;p&gt;There was a lot more after-the-fact work that I would rather not have to do.&lt;/p&gt;
-
-&lt;p&gt;Making a project reproducible is easier if the data aren&amp;rsquo;t that large and so can be bundled into the GitHub repository with all of the code.&lt;/p&gt;
-
-&lt;p&gt;With a larger data set, I guess the thing to do is recognize, from the start, that the data are going to be sitting elsewhere. So then, I think one should &lt;em&gt;organize the data in the form that you expect to be made public&lt;/em&gt;, and work from those files.&lt;/p&gt;
-
-&lt;p&gt;When you write a script to convert data from one form to another, &lt;em&gt;also write some tests&lt;/em&gt;, to make sure that it worked correctly.&lt;/p&gt;
-
-&lt;p&gt;And then &lt;em&gt;document, document, document!&lt;/em&gt; As with software development, it&amp;rsquo;s hard to document data or analyses after the fact.&lt;/p&gt;
-</description>
+      <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
+I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
@@ -367,42 +78,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
-      <description>
-
-&lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts. Otherwise I have to keep clicking and going back.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I want to be able to search for people. And if I&amp;rsquo;m searching for &lt;a href=&#34;http://web1.sph.emory.edu/users/hwu30/&#34;&gt;Hao Wu&lt;/a&gt;, I don&amp;rsquo;t want to look at &lt;em&gt;all&lt;/em&gt; of the Wus. Or all of the Haos. I just want the Hao Wus. If I can&amp;rsquo;t search on &lt;code&gt;&amp;quot;Hao Wu&amp;quot;&lt;/code&gt;, at least let me search on &lt;code&gt;&amp;quot;Wu, Hao&amp;quot;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If my search returns nothing and I go back, bring me back to the same search form. Don&amp;rsquo;t make me have to click &amp;ldquo;Search for people&amp;rdquo; again.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;d like to be able to form a schedule of the sessions to attend. (&lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM2015&lt;/a&gt; does that okay, but it&amp;rsquo;s not what I&amp;rsquo;d call &amp;ldquo;secure&amp;rdquo; and you have to find the damned things, first.) Really, I want to pick particular talks: this one in that session and that one in the other. But yeah, that seems a bit much to ask.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM 2015 site&lt;/a&gt; is so terrible for browsing, I was happy to get the &lt;a href=&#34;http://www.amstat.org/meetings/jsm/2015/pdfs/JSM2015_ProgramBook.pdf&#34;&gt;pdf of the program&lt;/a&gt;. (Good luck finding it on the website on your own; ASA tweeted the link to me, due to my bitching and moaning.) You can browse the pdf. That&amp;rsquo;s the way I ended up finding the sessions I wanted to attend. It also had an ad for the &lt;a href=&#34;https://twitter.com/kwbroman/status/628797267978289152&#34;&gt;JSM 2015 mobile app&lt;/a&gt;. Did you know there was one? Good luck finding a link to &lt;em&gt;that&lt;/em&gt; on their website, either.&lt;/p&gt;
-
-&lt;p&gt;The pdf is useable, but much like the website, it fails to make use of the medium. I want:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Bookmarks. I want to jump to where Monday&amp;rsquo;s sessions start without have to flip through the whole thing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hyperlinks. If you don&amp;rsquo;t include the abstracts, with links from the talk titles to the abstracts, at least include links to the web page that has the abstract so I don&amp;rsquo;t have to search on the web.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;More hyperlinks. The pdf has an index, with people and page numbers. Why not link those page numbers to the corresponding page?&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I helped organize a &lt;a href=&#34;http://rqtl.org/ctc2013/&#34;&gt;small meeting&lt;/a&gt; in 2013. The &lt;a href=&#34;http://rqtl.org/ctc2013/program.html&#34;&gt;program on the web&lt;/a&gt; and the &lt;a href=&#34;http://rqtl.org/ctc2013/ctc2013_program.pdf&#34;&gt;corresponding pdf&lt;/a&gt; illustrate much of what I want. (No scheduling feature, but that meeting had no simultaneous sessions.) I included gratuitous network graphs of the &lt;a href=&#34;http://rqtl.org/ctc2013/vis/authors.html&#34;&gt;authors&lt;/a&gt; and &lt;a href=&#34;http://rqtl.org/ctc2013/vis/abstracts.html&#34;&gt;abstracts&lt;/a&gt;. It&amp;rsquo;s 2015. No conference site is truly complete without interactive network graphs.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;As &lt;a href=&#34;https://www.stat.auckland.ac.nz/showperson?firstname=Thomas&amp;amp;surname=Lumley&#34;&gt;Thomas Lumley&lt;/a&gt; commented below, if you search on &amp;ldquo;Wu&amp;rdquo; you get all of the &amp;ldquo;Wu&amp;rdquo;s but also there&amp;rsquo;s one &amp;ldquo;Wulfhorst&amp;rdquo;. And if you search on &amp;ldquo;Hao&amp;rdquo; you get only people whose &lt;em&gt;last&lt;/em&gt; name is &amp;ldquo;Hao&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;He &lt;a href=&#34;https://twitter.com/tslumley/status/629096725978845185&#34;&gt;further pointed out&lt;/a&gt; that if you search for the affiliation &amp;ldquo;Auckland&amp;rdquo; the results don&amp;rsquo;t include &amp;ldquo;University of Auckland&amp;rdquo; but only &amp;ldquo;Auckland University of Technology&amp;rdquo;. And actually, if you search for &amp;ldquo;University of Auckland&amp;rdquo; you get nothing. You need to search for &amp;ldquo;&lt;em&gt;The&lt;/em&gt; University of Auckland&amp;rdquo;.&lt;/p&gt;
-</description>
+      <description>What do I want in a conference website? Not this.
+ I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
+ If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
     </item>
     
     <item>
@@ -411,43 +89,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;http://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;http://imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;http://www.tibs.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;http://www.ssc.ca&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/&#34;&gt;JSM 2015&lt;/a&gt; is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Berkeley&lt;/a&gt;), I got free registration in return for some small service work. I didn&amp;rsquo;t register formally, but they got a list of volunteers and printed name tags from that. My name tag said &amp;ldquo;&lt;strong&gt;Bioman&lt;/strong&gt;.&amp;rdquo; I considered changing my name, since &lt;strong&gt;Bioman&lt;/strong&gt; is so awesome.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Advice I got from a &lt;a href=&#34;https://www.stat.berkeley.edu/~evans/&#34;&gt;Berkeley faculty member&lt;/a&gt;: avoid the contributed papers sessions. Nevertheless, my office mate dragged me to one. One of the speakers showed scatterplots produced with Minitab, in glorious 80×24 ascii resolution, with &lt;code&gt;*&lt;/code&gt;&amp;rsquo;s, and digits to indicate over-plotting.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At JSM 1996 in Chicago, I shared a hotel room with Michael Camarri. He&amp;rsquo;d found the place. It had no air conditioning. That was bad.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At that &amp;lsquo;96 JSM, Michael and I went to a huge Berkeley dinner at the conference hotel. It was obnoxiously expensive so we split a personal-sized pizza, to save our money for, um, the pub. The other table was living it up with champagne and lobster. Seriously. And then they wanted to split the check evenly. Seriously. Without any consideration for students. (I pay better attention to students&amp;rsquo; needs, from that experience.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That same night, Michael and I and the considerable entourage we&amp;rsquo;d formed ran into &lt;a href=&#34;http://research.jax.org/faculty/gary-churchill.html&#34;&gt;Gary Churchill&lt;/a&gt; at the &lt;a href=&#34;http://www.rockbottom.com/locations/chicago&#34;&gt;Rock Bottom&lt;/a&gt;. He was sitting alone with a beer. I latched onto him and bent his ear about QTL mapping and &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/thesis.pdf&#34;&gt;my thesis work&lt;/a&gt;. When we got up to leave, I asked him if he&amp;rsquo;d remembered me (we&amp;rsquo;d met previously when he&amp;rsquo;d visited Berkeley). He admitted that he hadn&amp;rsquo;t, &amp;ldquo;But I&amp;rsquo;ll remember you now!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We ended up at the &lt;a href=&#34;http://www.crobar.com/crobar-chicago.html&#34;&gt;Crō*Bar&lt;/a&gt;, which featured free tattoos and body piercing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At JSM 2003 in San Francisco (I think), I spoke at a Sunday afternoon contributed papers session on statistical genetics. Many people didn&amp;rsquo;t realize that they&amp;rsquo;d added Sunday afternoon sessions. And there were two invited sessions on statistical genetics at the same time. We had just one audience member. In fact, one of the speakers didn&amp;rsquo;t even show up, and we waited through that time slot so as not to disturb the schedule. (It seemed like there was a greater risk of losing our audience member.) I went last, and when I got up to speak, a &lt;a href=&#34;http://www.calpoly.edu/~srein/&#34;&gt;friend of mine&lt;/a&gt; joined the audience. &amp;ldquo;When I got up to speak, the audience doubled!&amp;rdquo; is how I like to characterize it.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There was a session with John Chambers, Robert Gentleman, and Duncan Tempel Lang on the future of &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;, in room that seated 25 comfortably. There was crowd of like 50 people packed in a big bunch outside the door, hoping to at least hear John Chambers&amp;rsquo;s voice.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At JSM 2005 in Minneapolis, I was talking to some random statistician in a pub and made a statement like, &amp;ldquo;Does anyone still use Splus? Anyone who still uses Splus is an idiot.&amp;rdquo; It turned out that the guy worked for Insightful, or whatever the company was that owned Splus at the time. &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt; said the guy looked like he was going to punch me.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;There was the bet I made with &lt;a href=&#34;http://www.biostat.jhsph.edu/~iruczins/&#34;&gt;Ingo&lt;/a&gt;, in which I promised to &lt;a href=&#34;http://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;put a certain variation on the Johns Hopkins &lt;em&gt;Bloomberg&lt;/em&gt; School of Public Health logo&lt;/a&gt; on one of the slides of my talk, in exchange for a month&amp;rsquo;s beer. I stayed up really late preparing, but I was ultimately successful.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At the end of an evening, &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt;, &lt;a href=&#34;http://www.albany.edu/sph/19585.php&#34;&gt;Greg&lt;/a&gt;, and I paid the waitress to &lt;em&gt;not&lt;/em&gt; bring us the round of drinks that Ingo was trying to buy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Actually, I think those last 3 were all on the same night.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In the &lt;a href=&#34;https://cran.r-project.org/doc/Rnews/Rnews_2002-3.pdf&#34;&gt;December, 2002 issue&lt;/a&gt; of &lt;a href=&#34;https://cran.r-project.org/doc/Rnews/&#34;&gt;R news&lt;/a&gt; (superseded by the &lt;a href=&#34;http://journal.r-project.org/&#34;&gt;R Journal&lt;/a&gt;), I poked fun at Dallas, a previous JSM site. I didn&amp;rsquo;t attend the meeting in Dallas. Here&amp;rsquo;s what I wrote:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;A good time was had at the Joint Statistical Meetings (JSM) in New York City, August 11–15, 2002. After several years of dismal locations (who can forget Dallas?), this year&#39;s JSM began a series of venues possibly even more interesting than the Meetings: in the next two years, the JSM will be in San Francisco and Toronto.&lt;/blockquote&gt;
-
-&lt;p&gt;I have other memories that I can&amp;rsquo;t share here. Find me at &lt;a href=&#34;https://twitter.com/hashtag/jsm2015&#34;&gt;#JSM2015&lt;/a&gt; next week. Seattle is sure to be great!&lt;/p&gt;
-</description>
+      <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
+JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
@@ -456,14 +99,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
-      <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;http://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.&lt;/p&gt;
-
-&lt;p&gt;So, I spent some time today writing another of my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;minimal tutorials&lt;/a&gt;, on &lt;a href=&#34;http://kbroman.org/steps2rr&#34;&gt;initial steps towards reproducible research&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit rough, and it could &lt;em&gt;really&lt;/em&gt; use some examples, but it helped me to get my thoughts together for the &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Hackathon&lt;/a&gt; and hopefully will be useful to people (and something to build upon).&lt;/p&gt;
-</description>
+      <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
+Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
+So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
     </item>
     
     <item>
@@ -472,30 +110,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
-      <description>&lt;p&gt;Last week, I &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
-
-&lt;p&gt;I later emailed &lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi&#34;&gt;Mona Chalabi&lt;/a&gt;, and she and &lt;a href=&#34;http://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; quickly posted the data to &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. (That repository has a lot of interesting data, and if you see data at 538 that you&amp;rsquo;re interested in, just ask them!)&lt;/p&gt;
-
-&lt;p&gt;I was curious to look at how I&amp;rsquo;d done with my measurements and data entry. Here&amp;rsquo;s a plot of my percent errors:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png&#34; alt=&#34;Percent measurement errors in Karl&#39;s car crash stats&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Not too bad, really. Here are the biggest problems:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Mississippi, non-distracted: off by 6%, but that corresponded to 0.5 mm.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Rhode Island and Ohio, speeding: off by 40 and 35%, respectively. I&amp;rsquo;d written down 8 and 9 mm rather than 13 and 14 mm.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Maine and Indiana, alcohol: wrote 15.5 and 14.5 mm, but typed 13.5 and 13 mm. In the former, I think I just misinterpreted my writing; in the latter, I think I wrote the number for the state below (Iowa).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s also interesting to note that my &amp;ldquo;total&amp;rdquo; and &amp;ldquo;non-distracted&amp;rdquo; were almost entirely under-estimates: probably an error in the measurement of the overall width of the bar chart.&lt;/p&gt;
-
-&lt;p&gt;Also note: &lt;a href=&#34;https://twitter.com/brycem&#34;&gt;@brycem&lt;/a&gt; had recommended using &lt;a href=&#34;http://arohatgi.info/WebPlotDigitizer/&#34;&gt;WebPlotDigitizer&lt;/a&gt; for digitizing data from images.&lt;/p&gt;
-</description>
+      <description>Last week, I created revised versions of graphs of car crash statistics by state (including an interactive version), from a post by Mona Chalabi at 538.
+Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture on creating effective figures and tables, I just read the data off printed versions of the bar charts, using a ruler.</description>
     </item>
     
     <item>
@@ -504,14 +120,10 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
-      <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
+      <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
 
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/interactive_car_crashes.png&#34; alt=&#34;Screen shot of interactive graph of car crash statistics&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;See it in action &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Code &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/car_crashes&#34;&gt;on github&lt;/a&gt;.&lt;/p&gt;
-</description>
+See it in action here.
+Code on github.</description>
     </item>
     
     <item>
@@ -520,63 +132,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
-      <description>
-
-&lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/MonaChalabi&#34;&gt;Mona Chalabi&lt;/a&gt; wrote &lt;a href=&#34;http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;an interesting post on car crash statistics by state&lt;/a&gt;, at &lt;a href=&#34;http://fivethirtyeight.com/&#34;&gt;fivethirtyeight.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png&#34; alt=&#34;chalabi-dearmona-drinking&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m giving a talk today about data visualization [&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;slides&lt;/a&gt; | &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014&#34;&gt;github&lt;/a&gt;], and I thought this would make a good example, so I spent some time creating versions that I like better.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;There are two basic issues with Mona Chalabi&amp;rsquo;s graphs. First, you almost &lt;em&gt;never&lt;/em&gt; want to use alphabetical order. It&amp;rsquo;s useful for finding particular states, but it&amp;rsquo;s not useful for anything else. (Howard Wainer calls this &amp;ldquo;Austria first!&amp;rdquo; See, e.g., &lt;a href=&#34;http://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf&#34;&gt;this paper&lt;/a&gt;.) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.&lt;/p&gt;
-
-&lt;p&gt;Second, the separate figures make comparisons difficult. It would be better to put everything side-by-side. Even better is to do some scatterplots.&lt;/p&gt;
-
-&lt;p&gt;(We shouldn&amp;rsquo;t be too hard on Mona Chalabi, though. Yesterday &lt;a href=&#34;https://twitter.com/MonaChalabi/status/527121946073632768&#34;&gt;she tweeted a great illustration of the suckiness of pie charts&lt;/a&gt;, which I&amp;rsquo;m also using as an example in my lecture today.)&lt;/p&gt;
-
-&lt;h3 id=&#34;dot-plots&#34;&gt;Dot plots&lt;/h3&gt;
-
-&lt;p&gt;I started with a set of side-by-side dot plots, with states ordered by total collisions per billion miles:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/dotplots.png&#34; alt=&#34;Dot plots of crash statistics&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The design was inspired by the figures in &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;Visualizing data patterns with micromaps&lt;/a&gt; (Carr and Pickle, 2010). (I&amp;rsquo;m a huge &lt;a href=&#34;http://mason.gmu.edu/~dcarr/&#34;&gt;Dan Carr&lt;/a&gt; fan.)&lt;/p&gt;
-
-&lt;p&gt;Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes &lt;em&gt;with fatalities&lt;/em&gt;.) And you can more easily see the associations among the different variables.&lt;/p&gt;
-
-&lt;h3 id=&#34;scatterplots&#34;&gt;Scatterplots&lt;/h3&gt;
-
-&lt;p&gt;If you&amp;rsquo;re interested in the associations among the variables, it&amp;rsquo;s best to look at scatterplots. Here are what I viewed to be the most interesting ones:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/scatterplots.png&#34; alt=&#34;Scatterplots of car crash stats&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The association between average insurance premiums and average insurance losses is now clear. And there&amp;rsquo;s an interesting pattern in the association between speeding-related crashes and total crashes. It&amp;rsquo;s like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.&lt;/p&gt;
-
-&lt;p&gt;You can&amp;rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing &lt;a href=&#34;http://www.jstor.org/stable/1269768&#34;&gt;brushing&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h3 id=&#34;the-data&#34;&gt;The data&lt;/h3&gt;
-
-&lt;p&gt;It was a bit of a pain to get the data to make the revised plots. The &lt;a href=&#34;http://www-fars.nhtsa.dot.gov/Main/index.aspx&#34;&gt;National Highway Traffic Safety Administration&lt;/a&gt; has a lot of data, but I didn&amp;rsquo;t want to spend the time trying to make sense of it and extract the numbers.&lt;/p&gt;
-
-&lt;p&gt;I considered trying to do some image analysis to figure out the lengths of the bars in the bar plots, but I don&amp;rsquo;t have much experience with that, so while it&amp;rsquo;d be a great thing to learn, it seemed like I wouldn&amp;rsquo;t be able to get it done in time.&lt;/p&gt;
-
-&lt;p&gt;So I used the old-fashioned method: print the graphs and measure the bars with a ruler.  Here&amp;rsquo;s a scan of some of my measurements (click on it to see the larger version).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/via_ruler.png&#34; alt=&#34;Digitizing car crash stats with a ruler&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Data entry was another not-quite-how-I-want-my-scientific-collaborators-to-be-doing-this aspect. The data are &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/data.R&#34;&gt;here&lt;/a&gt;, as R code, in the most tedious possible form. And surely there are errors.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-code&#34;&gt;The code&lt;/h3&gt;
-
-&lt;p&gt;The code to make the dotplots is &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/plot.R&#34;&gt;here&lt;/a&gt;; the code to make the scatterplots is &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/scatterplots.R&#34;&gt;here&lt;/a&gt;. Not the prettiest, and uses base graphics not the recommended &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt;, and with the &lt;code&gt;grayplot&lt;/code&gt; function in my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; and &lt;a href=&#34;http://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; posted the data at &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. I discuss the errors in my ruler-based measurements &lt;a href=&#34;http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Last week, Mona Chalabi wrote an interesting post on car crash statistics by state, at fivethirtyeight.com.
+I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:
+I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better. There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
     </item>
     
     <item>
@@ -585,146 +143,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m at UCLA for the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR Conference&lt;/a&gt;. I attended &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;once before&lt;/a&gt;, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.&lt;/p&gt;
-
-&lt;p&gt;In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having &lt;a href=&#34;http://www.rqtl.org/ctc2013/&#34;&gt;co-organized a small conference last year&lt;/a&gt;, I appreciate the difficulties. I think the organizers of this meeting have done a great job, but there are some ways it which it might have been better (e.g., no tiny rooms, a better time slot for the posters, and more space for the posters).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;day-1-tutorials&#34;&gt;Day 1: Tutorials&lt;/h3&gt;
-
-&lt;p&gt;The first day was devoted to &lt;a href=&#34;http://user2014.stat.ucla.edu/#tutorials&#34;&gt;tutorials&lt;/a&gt;. I arrived later than intended and missed the morning tutorials and was just in time for the afternoon ones. But the tutorial I wanted to attend, [Ramnath Vaidyanathan&amp;rsquo;s tutorial on interactive documents]() was in a tiny room that was already filled beyond capacity. And by the time I tried to switch, the others were well underway, and I&amp;rsquo;d lost my momentum. Plus I was distracted by ice cream. And seeing &lt;a href=&#34;http://yihui.name/en/&#34;&gt;Yihui&lt;/a&gt;, &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik&lt;/a&gt;, &lt;a href=&#34;http://hilaryparker.com/&#34;&gt;Hilary&lt;/a&gt;, and &lt;a href=&#34;http://www.sandradgriffith.com/&#34;&gt;Sandy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Materials for many of the tutorials are &lt;a href=&#34;http://user2014.stat.ucla.edu/#tutorials&#34;&gt;online&lt;/a&gt;; grab them while you can.&lt;/p&gt;
-
-&lt;p&gt;The evening reception was interesting. I listened in to &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Chang&lt;/a&gt; talking to &lt;a href=&#34;http://www.talgalili.com/&#34;&gt;Tal Galili&lt;/a&gt; about the value of &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;&amp;rsquo;s pipe operator (&lt;code&gt;%&amp;gt;%&lt;/code&gt;) for data manipulation in R. Joe was quite persuasive: replace a nested series of function calls, to be read from the inside out, with a stream of pipes.&lt;/p&gt;
-
-&lt;p&gt;I was excited to meet &lt;a href=&#34;http://scottchamberlain.info/&#34;&gt;Scott Chamberlain&lt;/a&gt; and to see &lt;a href=&#34;http://www.stat.ubc.ca/~jenny/&#34;&gt;Jenny Bryan&lt;/a&gt; and &lt;a href=&#34;http://www.vince.vu/&#34;&gt;Vince Vu&lt;/a&gt;, and of course &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;day-2&#34;&gt;Day 2&lt;/h3&gt;
-
-&lt;h4 id=&#34;john-chambers&#34;&gt;John Chambers&lt;/h4&gt;
-
-&lt;p&gt;The opening talk was by &lt;a href=&#34;http://en.wikipedia.org/wiki/John_Chambers_(statistician)&#34;&gt;John Chambers&lt;/a&gt;. I&amp;rsquo;d not heard him speak before. (Back in 2005, I think, at JSM in Minneapolis, I tried to attend a session with John Chambers, &lt;a href=&#34;http://www.gene.com/scientists/our-scientists/robert-gentleman&#34;&gt;Robert Gentleman&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.ucdavis.edu/~duncan/&#34;&gt;Duncan Temple Lang&lt;/a&gt;, on the future of statistical computing, but it was assigned a room for 30 people, and by the time I got there there was a mass of more than 30 people &lt;em&gt;outside&lt;/em&gt; the room.)&lt;/p&gt;
-
-&lt;p&gt;John talked about the origin of S, including a &lt;a href=&#34;https://twitter.com/kwbroman/status/484005898965090305&#34;&gt;handwritten &amp;ldquo;viewgraph&amp;rdquo;&lt;/a&gt; from the first discussion of the idea in 1976. His basic point was that R was conceived not as a language but as an interface to algorithms: to make it easier to use Fortran-based routines for things like linear regression. And R continues to have much value in that regard:  user-friendly interfaces for statistical calculations.&lt;/p&gt;
-
-&lt;p&gt;He gave a shout out to &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt;, &lt;a href=&#34;http://www.omegahat.org/Rllvm/&#34;&gt;Rllvm&lt;/a&gt;, and &lt;a href=&#34;http://0xdata.com/&#34;&gt;h2o&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;interactive-graphics&#34;&gt;Interactive graphics&lt;/h4&gt;
-
-&lt;p&gt;The first contributed session was on interactive graphics from R.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/wch&#34;&gt;Winston Chang&lt;/a&gt; introduced &lt;a href=&#34;http://ggvis.rstudio.com/&#34;&gt;ggvis&lt;/a&gt;, which is an exciting effort at &lt;a href=&#34;http://www.rstudio.com&#34;&gt;RStudio&lt;/a&gt; to make interactive graphics readily accessible from R.  It uses a ggplot2-style syntax, but with the &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, and using &lt;a href=&#34;https://github.com/trifacta/vega/&#34;&gt;Vega&lt;/a&gt; as the underlying engine.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ramnathv.github.io/&#34;&gt;Ramnath Vaidyanathan&lt;/a&gt; spoke about &lt;a href=&#34;http://rcharts.io/&#34;&gt;rCharts&lt;/a&gt;, which makes a huge list of javascript-based visualization libraries accessible from R using a lattice-style syntax. He went through a ton of great examples, pointed to a &lt;a href=&#34;http://rcharts.io/gallery/&#34;&gt;gallery of others&lt;/a&gt;, and briefly describing the underlying strategy.&lt;/p&gt;
-
-&lt;p&gt;There were additional talks about &lt;a href=&#34;https://plot.ly/&#34;&gt;plotly&lt;/a&gt; and &lt;a href=&#34;http://user2014.stat.ucla.edu/abstracts/talks/216_Subramaniam.pdf&#34;&gt;iwPlot&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;plotly is an effort to make &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt;-based graphs accessible from R (and python and matlab), as well as editable and collaborative. But I don&amp;rsquo;t like plotly&amp;rsquo;s &lt;a href=&#34;https://plot.ly/tou&#34;&gt;Terms of service&lt;/a&gt;, nor that it&amp;rsquo;s closed source. And the presentation was all demonstration with little exposition and so a bit hard to follow.&lt;/p&gt;
-
-&lt;p&gt;iwPlot is an effort to reimplement &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;iPlot eXtreme&lt;/a&gt; with web-based graphics, for interactive graphics with massive datasets, with everything &amp;ldquo;in the cloud&amp;rdquo; rather than on a desktop. I was surprised that they&amp;rsquo;re writing everything from scratch rather than make use of other javascript-based libraries. And the examples weren&amp;rsquo;t very compelling. I was excited about iplot eXtreme back in 2011, but it doesn&amp;rsquo;t seem to have progressed much since. Its &lt;a href=&#34;http://rforge.net/Acinonyx/&#34;&gt;web site&lt;/a&gt; says &amp;ldquo;An official release on CRAN is expected in Sept 2011,&amp;rdquo; but that doesn&amp;rsquo;t seem to have happened.&lt;/p&gt;
-
-&lt;h4 id=&#34;web-integration&#34;&gt;Web/integration&lt;/h4&gt;
-
-&lt;p&gt;I skipped a couple of important talks in here: on &lt;a href=&#34;http://rcloud.persistent.com/rCloud&#34;&gt;RCloud&lt;/a&gt; and &lt;a href=&#34;https://www.opencpu.org/&#34;&gt;OpenCPU&lt;/a&gt;. I needed a walk and an espresso.&lt;/p&gt;
-
-&lt;p&gt;I was back for &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt;&amp;rsquo;s talk about &lt;a href=&#34;http://shiny.rstudio.com/&#34;&gt;Shiny&lt;/a&gt;, for making interactive web applications with R, with no requirement of knowledge of html, css, or javascript. It was really well presented; especially cool is the ability to include shiny apps within R Markdown documents, which is apparently even easier than creating stand-alone shiny apps.&lt;/p&gt;
-
-&lt;p&gt;And then &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik Ram&lt;/a&gt; gave a great talk about &lt;a href=&#34;http://ropensci.org/&#34;&gt;rOpenSci&lt;/a&gt;, to foster open science: a large set of packages providing access to a variety of data sources.&lt;/p&gt;
-
-&lt;h4 id=&#34;martin-machler&#34;&gt;Martin Machler&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stat.ethz.ch/people/maechler&#34;&gt;Martin Machler&lt;/a&gt; gave a superb talk on &amp;ldquo;Good practices for R programming,&amp;rdquo; including seven principles:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Work with source files (rather than just typing in the console)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Keep R source readable and maintainable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the documentation&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Learn from the masters (read others&amp;rsquo; code)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Do not copy and paste (write functions)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Strive for clarity and simplicity&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Test your code&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;He made a number of further points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Leave optimization to later, clear code is more important than optimized code, and if you &lt;em&gt;do&lt;/em&gt; optimize, measure rather than guess about speed.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write packages&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use version control&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;R CMD BATCH&lt;/code&gt; should work on your R script.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Never use &lt;code&gt;.RData&lt;/code&gt;; your code should do all of the work. But use &lt;code&gt;save&lt;/code&gt; for big computations and then &lt;code&gt;attach&lt;/code&gt;. (Later he clarified, don&amp;rsquo;t use &lt;code&gt;attach&lt;/code&gt; with data frames, but do use it with &lt;code&gt;RData&lt;/code&gt; files.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make use of the &lt;code&gt;log&lt;/code&gt; argument to density functions, to avoid underflow, and use functions like &lt;code&gt;log1p&lt;/code&gt;, for accuracy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use &lt;code&gt;drop=FALSE&lt;/code&gt; when subsetting a matrix, so that the outcome remains a matrix.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use &lt;code&gt;is.na(x)&lt;/code&gt; not &lt;code&gt;x == NA&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t use &lt;code&gt;1:n&lt;/code&gt; when &lt;code&gt;n&lt;/code&gt; is not a positive integer.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;data-manipulation&#34;&gt;Data manipulation&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; gave a persuasive and instructive talk on &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;&amp;rsquo;s pipe operator, for data manipulation tasks in R. &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt; had largely convinced me the night before, but now I&amp;rsquo;m thoroughly convinced of the value of these tools. The bottlenecks in analysis tasks are thinking, coding, and doing. For data manipulation, dplyr helps with the &lt;em&gt;thinking&lt;/em&gt; part, by having you focus on a set of basic operations: filter, select, arrange, mutate, summarize, and &amp;ldquo;group by,&amp;rdquo; and then also the left join, right join, semi-join, and anti-join. Magrittr&amp;rsquo;s pipe operator (%&amp;gt;%) helps with the &lt;em&gt;coding&lt;/em&gt;: you create a stream of pipes rather than a nasty mess of nested function calls that need to be read from the inside out. And &lt;a href=&#34;http://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt; helps with the &lt;em&gt;doing&lt;/em&gt;: dplyr is super-fast (though not quite as fast as &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;). Further, dplyr takes advantage of R&amp;rsquo;s &amp;ldquo;non-standard evaluation&amp;rdquo; in a way that makes it easy to connect to external data sources, like databases, as if they were regular objects.&lt;/p&gt;
-
-&lt;p&gt;I skipped the rest of the session, though I should have at least stayed for the Matt Dowle&amp;rsquo;s presentation on &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;. (I understand that &lt;a href=&#34;https://twitter.com/_inundata/status/484120526021881858&#34;&gt;he could have an alternate career as a leader of group meditations&lt;/a&gt;.) I&amp;rsquo;ve just found that I have to limit myself. But &lt;a href=&#34;https://twitter.com/timtriche/status/484120355254980608&#34;&gt;a tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/timtriche&#34;&gt;Tim Triche&lt;/a&gt; had a photo of a slide that showed the speed of data.table&amp;rsquo;s &lt;code&gt;fread&lt;/code&gt; function over R&amp;rsquo;s &lt;code&gt;read.csv&lt;/code&gt;. I need to adopt &lt;code&gt;fread&lt;/code&gt;!&lt;/p&gt;
-
-&lt;h4 id=&#34;posters&#34;&gt;Posters&lt;/h4&gt;
-
-&lt;p&gt;The poster sessions were a tragedy. Seriously.&lt;/p&gt;
-
-&lt;p&gt;First, it was immediately after a long session (well, for those who stuck it through), and at the slot &lt;a href=&#34;https://twitter.com/kwbroman/status/484131994708627456&#34;&gt;where one would want to eat dinner&lt;/a&gt;. (Martin&amp;rsquo;s talk was 3-4, the 3rd contributed session was 4-5:30, the posters were 5:30-7, and two panel sessions/mixers were 6:30-9.)&lt;/p&gt;
-
-&lt;p&gt;Second, the posters were arranged along a narrow hallway, and not on the walls but on stands which stuck out into the hallway. There really was no room for people to view the things.&lt;/p&gt;
-
-&lt;p&gt;It was too frustrating. I left to eat dinner.&lt;/p&gt;
-
-&lt;h4 id=&#34;her-panel&#34;&gt;heR panel&lt;/h4&gt;
-
-&lt;p&gt;It was great that the meeting included a well-attended &lt;a href=&#34;https://github.com/skoval/her2014&#34;&gt;panel discussion and mixer&lt;/a&gt; to discuss how to encourage more women R users. But I was a bit disappointed with the event.&lt;/p&gt;
-
-&lt;p&gt;We can all agree that women are underrepresented as contributors of packages to &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; and as participants in R conferences. But why? And how to change this? I didn&amp;rsquo;t gain much insight.&lt;/p&gt;
-
-&lt;p&gt;I think I just don&amp;rsquo;t like panel discussion. The five women on the panel, and the moderator, are admirable and their views interesting. But they don&amp;rsquo;t have a unique understanding of the problem or solutions. I think I would have preferred a more open discussion, to hear much more from all of the other women in the room.&lt;/p&gt;
-
-&lt;p&gt;I felt the same way about the panel discussion at &lt;a href=&#34;http://www.rqtl.org/ctc2013&#34;&gt;the meeting I co-organized in 2013&lt;/a&gt;: I would have preferred to have heard much more from the general audience and less from the panel.&lt;/p&gt;
-
-&lt;p&gt;The most shocking revelation concerned the unnecessarily extensive effort that &lt;a href=&#34;http://www.stat.ucla.edu/~amelia.mcnamara/&#34;&gt;Amelia McNamara&lt;/a&gt; had to expend in order to include a &lt;em&gt;harrassment policy&lt;/em&gt; on the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;meeting web site&lt;/a&gt;. The value of such a policy should be obvious from the &lt;a href=&#34;http://geekfeminism.wikia.com/wiki/Timeline_of_incidents&#34;&gt;history of bad behavior&lt;/a&gt; at scientific and technical conferences.&lt;/p&gt;
-
-&lt;p&gt;I would have been happier had the discussion continued for another hour. The audience was just getting going when the event ended.&lt;/p&gt;
-
-&lt;p&gt;My personal opinion is that there are a lot more women R users out there, but they aren&amp;rsquo;t contributing R packages because it has long been a very cumbersome process. (But see &lt;a href=&#34;http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/&#34;&gt;Hilary Parker&amp;rsquo;s tutorial&lt;/a&gt;.) And they don&amp;rsquo;t necessarily identify as &amp;ldquo;R users&amp;rdquo; but rather as more general applied statisticians. And they&amp;rsquo;ve not yet learned of the great value in attending UseR conferences, for learning and networking.&lt;/p&gt;
-
-&lt;h4 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;UseR conferences are fabulous: for inspiration, learning, and networking. They&amp;rsquo;re not for gurus, but for normal people who want to share ideas and learn about new and exciting developments. (The next &lt;a href=&#34;http://user2015.org&#34;&gt;UseR meeting&lt;/a&gt; will be June 30-July 3, 2015, in Aalborg, Denmark.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The smallest meeting room shouldn&amp;rsquo;t be very small.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Poster sessions need a proper time slot, and they need a lot of space.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t much like panel discussions but rather prefer more open discussions.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I need to adopt &lt;a href=&#34;https://github.com/hadley/dplyr&#34;&gt;dplyr&lt;/a&gt; and &lt;a href=&#34;http://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; immediately. Also &lt;a href=&#34;http://datatable.r-forge.r-project.org/&#34;&gt;data.table&lt;/a&gt;&amp;rsquo;s &lt;code&gt;fread&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I need to learn &lt;a href=&#34;http://shiny.rstudio.com&#34;&gt;shiny&lt;/a&gt;, &lt;a href=&#34;http://ggvis.rstudio.com&#34;&gt;ggvis&lt;/a&gt;, &lt;a href=&#34;http://rcharts.io&#34;&gt;rCharts&lt;/a&gt;, and some of the &lt;a href=&#34;http://ropensci.org&#34;&gt;rOpenSci&lt;/a&gt; packages (and &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; for that matter; I still just use base graphics), at least so that I can get students using them.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I&amp;rsquo;m at UCLA for the UseR Conference. I attended once before, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.
+In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having co-organized a small conference last year, I appreciate the difficulties.</description>
     </item>
     
     <item>
@@ -733,72 +153,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
-
-&lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
-
-&lt;p&gt;Following the &lt;a href=&#34;http://www.rss.org.uk/&#34;&gt;RSS&lt;/a&gt; &lt;a href=&#34;http://www.worldofstatistics.org/presentations-and-panelists&#34;&gt;Future of the Statistical Sciences Workshop&lt;/a&gt;, Rafael was &lt;a href=&#34;http://simplystatistics.org/2013/11/18/feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop&#34;&gt;quite optimistic&lt;/a&gt; about the prospects for academic statistics, as he noted considerable consensus on the following points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;We need to engage in real present-day problems&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Computing should be a big part of our PhD curriculum&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We need to deliver solutions&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;We need to improve our communication skills&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Jeff said, &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/&#34;&gt;Data science only poses a threat to (bio)statistics if we don&amp;rsquo;t adapt,&lt;/a&gt;&amp;rdquo; and made the following series of proposals:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Remove some theoretical requirements and add computing requirements to statistics curricula.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Focus on statistical writing, presentation, and communication as a main part of the curriculum.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Focus on positive interactions with collaborators (being a scientist) rather than immediately going to the referee attitude.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Add a unit on translating scientific problems to statistical problems.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Add a unit on data munging and getting data from databases.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Integrating real and live data analyses into our curricula.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Make all our students create an R package (a data product) before they graduate.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Most important of all have a &amp;ldquo;big tent&amp;rdquo; attitude about what constitutes statistics.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I agree strongly with what they&amp;rsquo;ve written. To make it happen, we ultimately need to reform our &lt;em&gt;values&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Currently, we (as a field) appear satisfied with&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Papers that report new methods with no usable software&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Applications that focus on toy problems&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Talks that skip the details of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Data visualizations that are both ugly and ineffective&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Further, we tend to get more excited about the &lt;em&gt;fanciness&lt;/em&gt; of a method than its &lt;em&gt;usefulness&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;We &lt;em&gt;should&lt;/em&gt; value&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Usefulness above fanciness&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Tool building (e.g., usable software)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Data visualization&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In-depth knowledge of the scientific context of a problem&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In evaluating (bio)statistics faculty, we should consider not just the number of &lt;em&gt;JASA&lt;/em&gt; or &lt;em&gt;Biometrics&lt;/em&gt; papers they&amp;rsquo;ve published, but also whether they&amp;rsquo;ve made themselves useful, and to the scientific community and well as to other statisticians.&lt;/p&gt;
-</description>
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
     <item>
@@ -807,18 +163,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
-      <description>&lt;p&gt;I spent a lot of time this week writing a short tutorial on &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;: &lt;a href=&#34;http://kbroman.github.io/knitr_knutshell&#34;&gt;knitr in a knutshell&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is my third little tutorial. (The previous ones were a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;git/github guide&lt;/a&gt; and a &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;minimal make&lt;/a&gt; tutorial.)&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve gotten really excited about the tools for reproducible research. I think the main reason that statisticians have been so slow to adopt a reproducible workflow is a lack of training.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m hoping that these tutorials, plus the other materials that I&amp;rsquo;m putting together over the course of this semester, for my &lt;a href=&#34;http://kbroman.github.io/Tools4RR&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, will help.&lt;/p&gt;
-
-&lt;p&gt;But take a look at the &lt;a href=&#34;https://github.com/DataScienceSpecialization/courses&#34;&gt;material&lt;/a&gt; that &lt;a href=&#34;http://www.biostat.jhsph.edu/~jleek/&#34;&gt;Jeff&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger&lt;/a&gt;, and &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt; are developing for their &lt;a href=&#34;http://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/&#34;&gt;Data Science MOOCs&lt;/a&gt;; you&amp;rsquo;ll see that mine are pretty humble contributions.&lt;/p&gt;
-</description>
+      <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
+This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
+I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>
     </item>
     
     <item>
@@ -827,54 +174,8 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/25/code-review/</guid>
-      <description>
-
-&lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
-
-&lt;p&gt;There are very brief quotes from &lt;a href=&#34;http://ivory.idyll.org/blog/&#34;&gt;Titus Brown&lt;/a&gt; and &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger Peng&lt;/a&gt;.  I expect that the author of the item, &lt;a href=&#34;http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden&#34;&gt;Erika Check Hayden&lt;/a&gt;, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.&lt;/p&gt;
-
-&lt;p&gt;Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;That&#39;s the kind of thing that should freak any scientist out.... We don&#39;t have good processes in place to detect that kind of thing in software.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Roger is quoted at the end, as follows:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with both of them, but my initial reaction, from the beginning of the piece, was closer to Roger&amp;rsquo;s: We often have a heck of time getting any code out of people; if we are too hard on people regarding the quality of their code, they might become even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;On the one hand, we want people to produce good code:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;that works&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s readable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;that&amp;rsquo;s reusable&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And it would be great if, for every bit of code, there was a second programmer who studied it, verified that it was doing the right thing, and offered suggestions for improvement.&lt;/p&gt;
-
-&lt;p&gt;But, on the other hand, it seems really unlikely that journals have the resources to do this. And I worry that a study showing that much scientific software is crap will make people even less willing to share.&lt;/p&gt;
-
-&lt;p&gt;I would like to see the code associated with scientific articles made readily available, during the review process and beyond. But I don&amp;rsquo;t think we (as a scientific community) want to enforce rigorous code review prior to publication.&lt;/p&gt;
-
-&lt;p&gt;Later, on twitter, &lt;a href=&#34;https://twitter.com/ctitusbrown/status/382862626692149248&#34;&gt;Titus took issue&lt;/a&gt; with the &amp;ldquo;not improve how it looks&amp;rdquo; part of what Roger said:&lt;/p&gt;
-
-&lt;blockquote&gt;&#34;.@kwbroman @simplystats @rdpeng Please read &lt;http://en.wikipedia.org/wiki/Code_review&gt; you are deeply, significantly, and completely wrong about code review.&#34;&lt;/blockquote&gt;
-
-&lt;p&gt;Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks &lt;em&gt;is&lt;/em&gt; important.)&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have enough time this morning to really clean up my thoughts on this issue, and I want to get this out and move on to reading that dissertation that I have to get through by tomorrow. So, let me summarize.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;well written&lt;/em&gt;: does what it&amp;rsquo;s intended to do, readable, reusable.&lt;/p&gt;
-
-&lt;p&gt;We want scientific code to be &lt;em&gt;available&lt;/em&gt;. (Otherwise we can&amp;rsquo;t verify that it does what it&amp;rsquo;s intended to do, or reuse it.)&lt;/p&gt;
-
-&lt;p&gt;If we&amp;rsquo;re too hard on people for writing substandard code, we&amp;rsquo;ll discourage the availability. It&amp;rsquo;s an important trade-off.&lt;/p&gt;
-</description>
+      <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
+There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
@@ -883,113 +184,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/09/11/department-websites/</guid>
-      <description>
-
-&lt;p&gt;I was thinking about department websites, partly because &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my own department&amp;rsquo;s website&lt;/a&gt; is terrible, and recently a colleague asked me whether I could suggest some &lt;em&gt;good&lt;/em&gt; department sites.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll describe the basic principles for a good department website, and then I&amp;rsquo;ll comment on a number of examples.&lt;/p&gt;
-
-&lt;p&gt;But first: No discussion of academic web pages is complete without referring to the &lt;a href=&#34;http://xkcd.com/773/&#34;&gt;xkcd comic&lt;/a&gt; on University websites, so let&amp;rsquo;s start with that:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://xkcd.com/773/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/university_website.png&#34; alt=&#34;xkcd comic: University Websites&#34; /&gt;&lt;/a&gt;
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;basic-principles&#34;&gt;Basic principles&lt;/h3&gt;
-
-&lt;p&gt;Here are what I see to be the basic principles for constructing a department website:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Think of the audiences and what they&amp;rsquo;d be looking for&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Prospective students&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Prospective/visiting faculty&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Current students&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Collaborators&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Administrators&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Current faculty&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Department staff&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Keep the important stuff near the top; minimize bloat&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Here&amp;rsquo;s the key stuff that should be prominent:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Degree programs; courses; how to apply&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Faculty and student pages&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Staff contact information&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Seminars&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Job opportunities&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t use stock photos or (even worse!) clip art&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Avoid deep nesting of information&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Have meaningful URLs (in particular, don&amp;rsquo;t let &lt;a href=&#34;https://drupal.org/&#34;&gt;drupal&lt;/a&gt; use &lt;code&gt;node/134&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Have a consistent style across the official pages &amp;ndash; particularly in the location and layout of menus of hyperlinks&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I prefer minimalism. Think &lt;a href=&#34;http://www.google.com&#34;&gt;google&lt;/a&gt; or &lt;a href=&#34;http://www.apple.com&#34;&gt;apple&lt;/a&gt; rather than &lt;a href=&#34;http://www.microsoft.com&#34;&gt;Microsoft&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;some-examples&#34;&gt;Some examples&lt;/h3&gt;
-
-&lt;p&gt;I briefly perused a number of statistics and biostatistics department websites. Here are my first impressions. The sites for &lt;a href=&#34;http://statistics.berkeley.edu/&#34;&gt;Berkeley&lt;/a&gt;, &lt;a href=&#34;http://statistics.stanford.edu/&#34;&gt;Stanford&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.umn.edu/&#34;&gt;Minnesota&lt;/a&gt; Statistics were my favorites.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostatistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The key bits are half-way down the page, due to unnecessary (in my mind) school-related crap along the top, plus the news items. The &amp;ldquo;Quick find&amp;rdquo; looks-like-a-drop-down-menu at the top right seems to just link to a &lt;em&gt;different department&amp;rsquo;s web page&lt;/em&gt;. The news items at the top result in the menu moving upward when you click on a link (as those news items don&amp;rsquo;t appear in the subsequent pages).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.hsph.harvard.edu/biostatistics&#34;&gt;Harvard Biostatistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s too much school-related crap at the top, but it&amp;rsquo;s not as bad as the &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins site&lt;/a&gt;. I like having pages &amp;ldquo;For Prospective Students,&amp;rdquo; &amp;ldquo;For Current Students,&amp;rdquo; etc., but they pop to pages that look totally different and lose that menu, so you have to go back and then forward again. &amp;ldquo;Student Profiles&amp;rdquo; maybe should just be called &amp;ldquo;Student Profile&amp;rdquo; as there doesn&amp;rsquo;t seem to be more than one. The &amp;ldquo;BIO&amp;rdquo; in &amp;ldquo;BIO Faculty&amp;rdquo; and &amp;ldquo;BIO Researchers&amp;rdquo; was a little confusing: Is it obvious what &amp;ldquo;BIO&amp;rdquo; means, and is it really necessary?  I&amp;rsquo;d put the Faculty and Researchers links closer to the top and may try to distinguish the different classes of links: the ones that people are really there for, and then all of the &amp;ldquo;For Such-and-Such&amp;rdquo; somewhat separately.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.washington.edu/&#34;&gt;Washington Biostatistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Reasonably clean, but a bit of the &lt;code&gt;node/134&lt;/code&gt; problem. And there are two kinds of menus: tabs at the top, and a menu at the right side. I think it&amp;rsquo;s okay, but it was a bit confusing initially: It wasn&amp;rsquo;t immediately obvious that I click a different tab to get a different set of menu choices.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://sph.unc.edu/department-pages/biostatistics/&#34;&gt;UNC-Chapel Hill Biostatistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The main page looks nice, but the sub-pages have a different format.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.stat.ncsu.edu/&#34;&gt;NC State Statistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I generally like it, but why split the faculty list across multiple pages? I see no reason to limit the length of a web page; scrolling is our friend.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://sph.umn.edu/biostatistics/&#34;&gt;Minnesota Biostatistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Way&lt;/em&gt; too much bloat at the top; links all over the place at the bottom&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.stat.umn.edu/&#34;&gt;Minnesota Statistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I like this one. I&amp;rsquo;m not sure about the color choices, but the site is clean, and it&amp;rsquo;s easy to navigate. And I like the choice and order of topics in the menu at the left.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://statistics.stanford.edu/&#34;&gt;Stanford Statistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I really like this one: Just the facts, plus a picture of Sequoia Hall. There&amp;rsquo;s a little menu bar at the top that has the key stuff. You want to know about courses or degree programs? Click &amp;ldquo;Academics.&amp;rdquo; You want to know about People or Seminars? They&amp;rsquo;re right there at the top. How do you apply? Click &amp;ldquo;Admissions.&amp;rdquo; They could maybe trim the news on the left of the front page; some of it is getting old and at least one of the links doesn&amp;rsquo;t work anymore.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://statistics.berkeley.edu/&#34;&gt;Berkeley Statistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Berkeley is slightly better than Stanford. The websites, I mean. It&amp;rsquo;s simple, there&amp;rsquo;s a clean little menu at the top, and the menus at the top have clear little drop-down menus when you hover over things. I like that they use more horizontal space. I guess I wouldn&amp;rsquo;t put &amp;ldquo;Seminars&amp;rdquo; under &amp;ldquo;Research&amp;rdquo; Nor would I put &amp;ldquo;Alumni Connections&amp;rdquo; under &amp;ldquo;Industry.&amp;rdquo; So there are ways in which Stanford is better than Berkeley.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sph.umich.edu/biostat/&#34;&gt;Michigan Biostatistics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The front page looks a bit cluttered. And they list University rankings front and center, which is a bit of an embarrassment. There&amp;rsquo;s a bit of school-related stuff at the top, but it&amp;rsquo;s not as bothersome as some others. There may be too many choices on the left. It&amp;rsquo;s hard to pick out the ones you want, even if they&amp;rsquo;re there. And &amp;ldquo;Students&amp;rdquo; should really be &amp;ldquo;For Students,&amp;rdquo; while &amp;ldquo;Careers&amp;rdquo; should really be &amp;ldquo;Alumni Profiles.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Of course, I could look at a ton more, but I&amp;rsquo;m sort of sick of this. Go have a look yourself, and let me know if you find good ones.&lt;/p&gt;
-</description>
+      <description>I was thinking about department websites, partly because my own department&amp;rsquo;s website is terrible, and recently a colleague asked me whether I could suggest some good department sites.
+I&amp;rsquo;ll describe the basic principles for a good department website, and then I&amp;rsquo;ll comment on a number of examples.
+But first: No discussion of academic web pages is complete without referring to the xkcd comic on University websites, so let&amp;rsquo;s start with that:</description>
     </item>
     
     <item>
@@ -998,46 +195,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
-      <description>
-
-&lt;p&gt;I was interested to read &lt;a href=&#34;http://ivory.idyll.org&#34;&gt;C. Titus Brown&lt;/a&gt;&amp;rsquo;s recent post, &amp;ldquo;&lt;a href=&#34;http://ivory.idyll.org/blog/is-version-control-an-electronic-lab-notebook.html&#34;&gt;Is version control an electronic lab notebook?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;I think version control &lt;em&gt;is&lt;/em&gt; really important, and I think all computational scientists &lt;em&gt;should&lt;/em&gt; have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.&lt;/p&gt;
-
-&lt;p&gt;As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance. And for protocol, version control doesn&amp;rsquo;t really matter.&lt;/p&gt;
-
-&lt;h3 id=&#34;version-control&#34;&gt;Version control&lt;/h3&gt;
-
-&lt;p&gt;I really like &lt;a href=&#34;http://git-scm.com/&#34;&gt;git&lt;/a&gt; with &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;. (See &lt;a href=&#34;http://kbroman.github.io/github_tutorial/&#34;&gt;my tutorial&lt;/a&gt;.) But for me, the basic need served by version control  is that embodied in the question, &amp;ldquo;This shit worked before; why isn&amp;rsquo;t it working now?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;You don&amp;rsquo;t want to edit working code &lt;em&gt;in place&lt;/em&gt; and so possibly break a working system. Version control lets you try things out, and to try something out in any version of your software, from any point in time.&lt;/p&gt;
-
-&lt;p&gt;The other basic use of version control is for managing projects with multiple contributors. If there are multiple programmers working on a software project, or multiple authors working on a manuscript, version control is the best way to manage things, particularly for merging everyone&amp;rsquo;s efforts.&lt;/p&gt;
-
-&lt;p&gt;These are really useful things, but version control is more about &lt;em&gt;merging&lt;/em&gt; and &lt;em&gt;history&lt;/em&gt; and not so much &lt;em&gt;reproducible research&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;make-is-the-thing&#34;&gt;Make is the thing&lt;/h3&gt;
-
-&lt;p&gt;To me, the basic tool to make research reproducible is &lt;a href=&#34;http://www.gnu.org/software/make/&#34;&gt;GNU make&lt;/a&gt; (see my &lt;a href=&#34;http://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial&lt;/a&gt;). You create a &lt;code&gt;Makefile&lt;/code&gt; that documents all analysis steps in a project. (For example, &amp;ldquo;Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;With GNU make (see also &lt;a href=&#34;http://rake.rubyforge.org/&#34;&gt;rake&lt;/a&gt;), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing &lt;code&gt;Makefile&lt;/code&gt;, the research is reproducible.&lt;/p&gt;
-
-&lt;h3 id=&#34;add-knitr-and-you-ve-got-a-notebook&#34;&gt;Add knitr, and you&amp;rsquo;ve got a notebook&lt;/h3&gt;
-
-&lt;p&gt;The other ingredient to create the computational scientist&amp;rsquo;s equivalent of a lab notebook is &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;, which allows one to combine text (e.g., in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; or &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;asciidoc&lt;/a&gt;) and code (e.g., in &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;) to make documents (e.g., in html or PDF) that both &lt;em&gt;do&lt;/em&gt; the work and &lt;em&gt;explain&lt;/em&gt; the work. Write such documents to describe what you did and what you learned, and you&amp;rsquo;ve got an electronic lab notebook.&lt;/p&gt;
-
-&lt;p&gt;You could even get rid of your &lt;code&gt;Makefile&lt;/code&gt; by having an over-arching knitr-based document that does it all.  But I still like &lt;a href=&#34;http://www.gnu.org/software/make&#34;&gt;make&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;but-it-s-so-much-work&#34;&gt;But it&amp;rsquo;s so much work!&lt;/h3&gt;
-
-&lt;p&gt;Going into a file and deleting a data point is a lot easier than writing a script that does it (and also documents &lt;em&gt;why&lt;/em&gt;). But I don&amp;rsquo;t think you should be going in and changing the data like that, even if it is being tracked by version control. (And that is the main complaint potential users have about version control: &amp;ldquo;Too time consuming!&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;I think you have to expect that writing well-documented scripts and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;-based reports that capture the totality of a data analysis project will take a lot of work: perhaps double (or more!) the effort. But it will save a ton of time later (if others care about what you did).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t really want to take this time in the midst of a bout of exploratory data analysis. I find it too inhibiting. So I tend to do a bunch of analyses, capturing the main ideas in a draft R script (or reconstructed later from the &lt;code&gt;.Rhistory&lt;/code&gt; file), and then go back later to make a clean knitr-based document that explains what I was doing and why.&lt;/p&gt;
-
-&lt;p&gt;It can be hard to force myself to do the clean-up. I wish there were an easier way. But I expect that well-organized lab scientists devote a lot of time to constructing their lab notebooks, too.&lt;/p&gt;
-</description>
+      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
+I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
+As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
     </item>
     
     <item>
@@ -1046,64 +206,9 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/mmaenner/status/335478612084006912&#34;&gt;Matt Maenner asked&lt;/a&gt; about the sawtooth pattern in the &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;figure&lt;/a&gt; in &lt;a href=&#34;http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;my last post on Chutes &amp;amp; Ladders&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Damn you, Matt!  I thought I was done with this.  Don&amp;rsquo;t feed my obsession.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/kwbroman/status/335499296193536000&#34;&gt;My response&lt;/a&gt; was that if the game ends early, it&amp;rsquo;s even more likely that it&amp;rsquo;ll be the kid who went first who won.  &lt;em&gt;But&lt;/em&gt;, my intuition was wrong: exactly the opposite is true. &lt;em&gt;It is&lt;/em&gt; the advantage to the first player that causes the sawtooth pattern, but that advantage &lt;em&gt;increases&lt;/em&gt; with the number of rounds rather than decreases.&lt;/p&gt;
-
-&lt;h3 id=&#34;numerical-results&#34;&gt;Numerical results&lt;/h3&gt;
-
-&lt;p&gt;While it&amp;rsquo;s fast and easy to study the Chutes &amp;amp; Ladders game by simulation, if you want to answer questions more precisely, it&amp;rsquo;s best to switch to more exact results.&lt;/p&gt;
-
-&lt;p&gt;Consider a single individual playing the game, and let &lt;em&gt;X&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; be
-his/her location at round &lt;em&gt;n&lt;/em&gt;. The &lt;em&gt;X&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;
-form a &lt;a href=&#34;http://en.wikipedia.org/wiki/Markov_chain&#34;&gt;&lt;em&gt;Markov chain&lt;/em&gt;&lt;/a&gt;,
-in that the future (&lt;em&gt;X&lt;sub&gt;n+1&lt;/sub&gt;&lt;/em&gt;), given the present ($X_n$),
-is conditionally independent of the history (&lt;em&gt;X&lt;sub&gt;1&lt;/sub&gt;&lt;/em&gt;, &amp;hellip;, &lt;em&gt;X&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s relatively easy to construct the transition matrix of the chain.  (See my &lt;a href=&#34;https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r&#34;&gt;R code&lt;/a&gt;.)  This is a matrix &lt;em&gt;P&lt;/em&gt;, with &lt;em&gt;P&lt;sub&gt;ij&lt;/sub&gt;&lt;/em&gt; = Pr(&lt;em&gt;X&lt;sub&gt;n+1&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;j&lt;/em&gt; | &lt;em&gt;X&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;i&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Then the probability that a player has reached state 100 by round $n$ is
-(1, 0, &amp;hellip;, 0) &lt;em&gt;P&lt;sup&gt;n&lt;/sup&gt;&lt;/em&gt; (0, &amp;hellip;, 0, 1)&amp;rsquo;.  That&amp;rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this $q_n$.  You can get the probability distribution by differences, say &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; - &lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;To calculate the number of rounds to complete a game with &lt;em&gt;k&lt;/em&gt; players, you want the minimum of &lt;em&gt;k&lt;/em&gt; independent draws from this distribution.  The probability that a game with $k$ players is complete by round n is 1 - (1-&lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k&lt;/sup&gt;&lt;/em&gt;.  And again you can get the probability distributions by differences.  Here&amp;rsquo;s a picture.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png&#34; alt=&#34;No. rounds to complete Chutes &amp;amp; Ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;advantage-to-the-first-player&#34;&gt;Advantage to the first player&lt;/h3&gt;
-
-&lt;p&gt;Now, regarding the advantage to the first player: note that the first
-player wins in exactly &lt;em&gt;n&lt;/em&gt; steps if he gets to the finish at n steps
-and none of the other players are done by &lt;em&gt;n-1&lt;/em&gt; steps.  So, with &lt;em&gt;k&lt;/em&gt;
-players, the probability that the first player wins in exactly &lt;em&gt;n&lt;/em&gt; steps is &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; (1-&lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k-1&lt;/sup&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;The chance that the second player wins in exactly n steps is
-(1-&lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;) &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;
-(1-&lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k-2&lt;/sup&gt;&lt;/em&gt;, with the last term included only
-if there are &lt;em&gt;k&lt;/em&gt; &amp;gt; 2 players.&lt;/p&gt;
-
-&lt;p&gt;From this idea, it&amp;rsquo;s straightforward to calculate the probability that
-the first player wins given that the game is complete at round &lt;em&gt;n&lt;/em&gt;.
-Here&amp;rsquo;s a plot of that probability as a function of the number of
-players, relative to the nominal probability (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;, &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png&#34; alt=&#34;Advantage to the first player in Chutes &amp;amp; Ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that &lt;em&gt;n&lt;/em&gt;=7 is the minimum number of rounds to complete the game.
-I&amp;rsquo;d thought that the first player&amp;rsquo;s advantage went down over time, but
-the opposite is true.&lt;/p&gt;
-
-&lt;h3 id=&#34;no-spins-to-end-the-game&#34;&gt;No. spins to end the game&lt;/h3&gt;
-
-&lt;p&gt;Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of &lt;a href=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;the simulation-based figure in my last post&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png&#34; alt=&#34;No. spins to complete Chutes &amp;amp; Ladders, numerical results&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see, the sawtooth pattern becomes more pronounced with the number of rounds, but then it gets lost in the downward slope of the distribution on the right side.  (Again, see my &lt;a href=&#34;https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r&#34;&gt;R code&lt;/a&gt;.)&lt;/p&gt;
-</description>
+      <description>Matt Maenner asked about the sawtooth pattern in the figure in my last post on Chutes &amp;amp; Ladders.
+Damn you, Matt! I thought I was done with this. Don&amp;rsquo;t feed my obsession.
+My response was that if the game ends early, it&amp;rsquo;s even more likely that it&amp;rsquo;ll be the kid who went first who won. But, my intuition was wrong: exactly the opposite is true. It is the advantage to the first player that causes the sawtooth pattern, but that advantage increases with the number of rounds rather than decreases.</description>
     </item>
     
     <item>
@@ -1112,32 +217,10 @@ the opposite is true.&lt;/p&gt;
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
-      <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I saw an &lt;a href=&#34;http://datagenetics.com/blog/november12011/&#34;&gt;interesting mathematical analysis of the game&lt;/a&gt; a few years ago, but it seems to be offline, though &lt;a href=&#34;http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/&#34;&gt;you can read it&lt;/a&gt; via the &lt;a href=&#34;http://web.archive.org/&#34;&gt;wayback machine&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So I wrote a bit of &lt;a href=&#34;https://gist.github.com/kbroman/5600209&#34;&gt;R code to simulate the game&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the distribution of the number of spins to complete the game, by number of players:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34; alt=&#34;No. spins in chutes &amp;amp; ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With two players, the average number of spins is 52, with a 90th percentile of 88.&lt;/p&gt;
-
-&lt;p&gt;If you add a third player, the average increases to 65, and the 90th percentile increases to 103.  You&amp;rsquo;re playing fewer rounds, but each round is three times as long. If you add a fourth player, the average is 76 and the 90th percentile is 117.&lt;/p&gt;
-
-&lt;p&gt;So, in trying to minimize the agony, it seems best to not encourage my eight-year-old son to join us in the game.  If he plays with us, there&amp;rsquo;s a 63% chance that it will take longer.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s particularly true because then the chance of my daughter winning drops from about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; to about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.&lt;/p&gt;
-
-&lt;p&gt;That raises another question: if I let her go first, what advantage does that give her?  Not much.  The chance that the person who goes first will win is 50.9%, 34.4%, and 25.9%, respectively, when there are 2, 3, and 4 players.  So not a noticeable amount.  Thus I cheat (on her behalf). Really, though, I&amp;rsquo;m cheating in order to shorten the game as much as to ensure that she wins.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: There&amp;rsquo;s a close connection between this problem and my work on the multiple-strain recombinant inbred lines. (See &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/15545647&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/22345609&#34;&gt;that&lt;/a&gt;.)  I&amp;rsquo;m tempted to play around with it some more.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/&#34;&gt;Additional numerical results here.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;
+I saw an interesting mathematical analysis of the game a few years ago, but it seems to be offline, though you can read it via the wayback machine.
+But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;
+So I wrote a bit of R code to simulate the game.</description>
     </item>
     
     <item>
@@ -1146,45 +229,8 @@ the opposite is true.&lt;/p&gt;
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt; is a series of question-and-answer sites, including &lt;a href=&#34;http://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; for programming and &lt;a href=&#34;http://stats.stackexchange.com/&#34;&gt;Cross Validated&lt;/a&gt; for statistics.  I was &lt;a href=&#34;http://kbroman.org/blog/2011/09/26/gamified/&#34;&gt;introduced to these sites&lt;/a&gt; at a short talk by &lt;a href=&#34;http://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.&lt;/p&gt;
-
-&lt;h3 id=&#34;additional-pros&#34;&gt;Additional pros&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;It&amp;rsquo;s good to help people.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;It&amp;rsquo;s fun to rack up reputation points for helping people.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;It&amp;rsquo;s good exercise, in both thinking about statistical questions and in articulating useful answers (and there are some interesting questions).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;however-some-cons&#34;&gt;However, some cons&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The reputation points thing is a bit too addictive to me.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The easy questions go fast; you have to watch constantly if you want a chance at them.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Far too many questions are either dreadfully dull or terribly sloppy.
-(See &lt;a href=&#34;http://jeromyanglim.blogspot.com/&#34;&gt;Jeromy Anglim&lt;/a&gt;&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;http://jeromyanglim.blogspot.com.au/2011/03/how-to-ask-me-statistics-question.html&#34;&gt;How to ask me a statistics question&lt;/a&gt;&amp;rdquo; and &lt;a href=&#34;http://catb.org/~esr/&#34;&gt;Eric S. Raymond&lt;/a&gt;&amp;rsquo;s &amp;ldquo;&lt;a href=&#34;http://catb.org/~esr/faqs/smart-questions.html&#34;&gt;How to ask questions the smart way&lt;/a&gt;.&amp;ldquo;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Good answers are, at times, insufficiently appreciated.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;so-i-gave-up&#34;&gt;So I gave up&lt;/h3&gt;
-
-&lt;p&gt;I started spending time on &lt;a href=&#34;http://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt; and &lt;a href=&#34;http://stats.stackexchange.com&#34;&gt;cross-validated&lt;/a&gt; soon after returning from UseR! 2011, but I lost my patience and quit within three months.&lt;/p&gt;
-
-&lt;p&gt;One needs to treat each question with respect, and I eventually seemed to lose my ability to sustain such goodwill.  I think I take things too personally.&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;I should clarify: I &lt;em&gt;do&lt;/em&gt; continue to use Stack Exchange, mostly through google.  Many problems I run into have already been answered.  I just don&amp;rsquo;t have the right temperament to participate regularly in answering others&amp;rsquo; questions.&lt;/p&gt;
-</description>
+      <description>Stack Exchange is a series of question-and-answer sites, including Stack Overflow for programming and Cross Validated for statistics. I was introduced to these sites at a short talk by Barry Rowlingson at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;
+These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.</description>
     </item>
     
     <item>
@@ -1193,23 +239,9 @@ the opposite is true.&lt;/p&gt;
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re not on &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, you should be.  That&amp;rsquo;s &lt;em&gt;real&lt;/em&gt; open source.&lt;/p&gt;
-
-&lt;p&gt;To help some colleagues get started with &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;, I wrote a &lt;a href=&#34;http://kbroman.github.io/github_tutorial&#34;&gt;minimal tutorial&lt;/a&gt;. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.&lt;/p&gt;
-
-&lt;p&gt;And for &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; folks, note that it&amp;rsquo;s easy to install R packages that are hosted on github, using &lt;a href=&#34;http://had.co.nz&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; package.  For example, to install &lt;a href=&#34;https://github.com/nachocab&#34;&gt;Nacho Caballero&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/nachocab/clickme&#34;&gt;clickme&lt;/a&gt; package:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;devtools&amp;quot;)
-library(devtools)
-install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Having written that git/github tutorial, I thought: I should write more such!&lt;/p&gt;
-
-&lt;p&gt;So I immediately wrote &lt;a href=&#34;http://kbroman.github.io/minimal_make&#34;&gt;a similar short tutorial&lt;/a&gt; on &lt;a href=&#34;http://www.gnu.org/software/make&#34;&gt;GNU make&lt;/a&gt;, which I think is the &lt;em&gt;most important tool&lt;/em&gt; for reproducible research.&lt;/p&gt;
-</description>
+      <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
+If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
+To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
     </item>
     
     <item>
@@ -1218,78 +250,8 @@ install_github(&amp;quot;clickme&amp;quot;, &amp;quot;nachocab&amp;quot;)
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
-      <description>
-
-&lt;p&gt;There was &lt;a href=&#34;https://twitter.com/Graham_Coop/status/331882743900303360&#34;&gt;lots of discussion on twitter yesterday&lt;/a&gt; about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on &lt;a href=&#34;http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555&#34;&gt;The geography of recent genetic ancestry across Europe&lt;/a&gt;, particularly regarding the &lt;a href=&#34;http://gcbias.org/european-genealogy-faq/&#34;&gt;FAQ&lt;/a&gt; they&amp;rsquo;d created.&lt;/p&gt;
-
-&lt;p&gt;I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.) Sure enough, they cited a paper of mine, but it was &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/11231899&#34;&gt;Giglo et al. (2001) Am J Hum Genet 68: 874–883&lt;/a&gt;, on &amp;ldquo;my&amp;rdquo; chr 8p inversion, and not what I&amp;rsquo;d expected, &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;my autozygosity paper&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;What did the chr 8p inversion have to do with this?  Search for &amp;ldquo;[36]&amp;rdquo; and you&amp;rsquo;ll find:&lt;/p&gt;
-
-&lt;blockquote&gt;
-We find that the local density of IBD blocks of all lengths is relatively constant across the genome, but in certain regions the length distribution is systematically perturbed (see Figure S1), including around certain centromeres and the large inversion on chromosome 8 [36], also seen by [35].
-&lt;/blockquote&gt;
-
-&lt;p&gt;The chr 8p inversion presents an &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;interesting data analysis story&lt;/a&gt; from my postdoc years.  In a nutshell: I was studying human crossover interference, found poor model fit for maternal chr 8 that was due to tight apparent triple-crossovers in two individuals in each of two families, hypothesized that there was an inversion in the region, but it would have to be both &lt;em&gt;long&lt;/em&gt; and with both orientations being &lt;em&gt;common&lt;/em&gt;. The inversion was confirmed via FISH, and it&amp;rsquo;s something like 5 Mbp long, with the frequencies of the two orientations being 40 and 60% in people of European ancestry.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;marshfield-maps-and-crossover-interference&#34;&gt;Marshfield maps and crossover interference&lt;/h3&gt;
-
-&lt;p&gt;I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9718341&#34;&gt;construction of human genetic maps&lt;/a&gt; using data from eight of the &lt;a href=&#34;http://www.cephb.fr/en/cephdb/&#34;&gt;CEPH&lt;/a&gt; families.  I was particularly interested in &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10801387&#34;&gt;characterizing crossover interference&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I found that the &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/7713406&#34;&gt;gamma model&lt;/a&gt; fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But the model fit poorly for maternal chromosome 8:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
-
-&lt;p&gt;Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I saw these tight triple-crossovers and thought, &amp;ldquo;Oops!  I got the marker order wrong.&amp;rdquo; (Remember, this was before we had a physical map.)  But if you reverse the orientation of the region, crossovers in other individuals would become triple-crossovers.&lt;/p&gt;
-
-&lt;p&gt;So I thought, perhaps this is an inversion polymorphism: some individuals have the region in one orientation and others have it in the opposite orientation.  But it would have to be long (it was an estimated 12 cM in females: something like 5 Mbp).  And both orientations would have to be common, since they would each need to be present in the homozygous state for there to be recombination events.&lt;/p&gt;
-
-&lt;h3 id=&#34;the-inversion&#34;&gt;The inversion&lt;/h3&gt;
-
-&lt;p&gt;Jim Weber contacted David Ledbetter, and folks in his group investigated the region and confirmed, via FISH, that there was indeed a long, common inversion polymorphisms on chromosome 8p.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/inversion_fish.jpg&#34; alt=&#34;Inversion, FISH&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They marked one side of the region in green and the other side red, and in the left panels green is above red on both chromosomes, in the right panels red is above green on both chromosomes, and in the center there is one chromosome with each orientation.  Analysis of further subjects indicated that the two orientations have allele frequencies 40 and 60% in people of European ancestry.&lt;/p&gt;
-
-&lt;h3 id=&#34;authorship-order&#34;&gt;Authorship order&lt;/h3&gt;
-
-&lt;p&gt;I &lt;a href=&#34;http://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/&#34;&gt;referred to this story in passing&lt;/a&gt; in the past.  A fortuitous clinical connection was made to this chr 8p inversion, and due a dispute over author order, what should have been one paper got split into two, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;my half&lt;/a&gt; trickled down the journal chain to finally appear in &lt;a href=&#34;http://projecteuclid.org/DPubS?service=UI&amp;amp;version=1.0&amp;amp;verb=Display&amp;amp;page=toc&amp;amp;handle=euclid.lnms/1215091126&#34;&gt;Terry Speed&amp;rsquo;s Festschrift&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I try not to discuss author order anymore.  I care only about presence/absence.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-related-story-autozygosity&#34;&gt;A related story: autozygosity&lt;/h3&gt;
-
-&lt;p&gt;This wasn&amp;rsquo;t the only surprising finding to come from my efforts on the &lt;a href=&#34;http://research.marshfieldclinic.org/genetics/GeneticResearch/compMaps.asp&#34;&gt;Marshfield genetic maps&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of &lt;a href=&#34;http://compgen.rutgers.edu/old/multimap/crimap/&#34;&gt;CRI-MAP&lt;/a&gt; &lt;em&gt;chrompic&lt;/em&gt; output, to find such double crossovers.  Here&amp;rsquo;s a somewhat nicer image:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozygosity.png&#34; alt=&#34;Autozygosity&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?&lt;/p&gt;
-
-&lt;p&gt;After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;turned out to be autozygosity&lt;/a&gt;: in two CEPH families, the grandparents were related, and so the parents where homozygous by descent (aka autozygous) for chunks of their genome.&lt;/p&gt;
-
-&lt;h3 id=&#34;moral&#34;&gt;Moral&lt;/h3&gt;
-
-&lt;p&gt;In both of these cases, apparent artifacts in the data led to the most interesting findings in the work. If your model doesn&amp;rsquo;t fit, or you see something odd, ask, &amp;ldquo;Why is that?&amp;rdquo;&lt;/p&gt;
-</description>
+      <description>There was lots of discussion on twitter yesterday about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on The geography of recent genetic ancestry across Europe, particularly regarding the FAQ they&amp;rsquo;d created.
+I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.</description>
     </item>
     
     <item>
@@ -1298,77 +260,8 @@ We find that the local density of IBD blocks of all lengths is relatively consta
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
-      <description>
-
-&lt;p&gt;It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html&#34;&gt;removing page limits on Methods sections&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But couldn&amp;rsquo;t they include the Methods section in the pdf for the article?  For example, consider &lt;a href=&#34;http://www.nature.com/ng/journal/v45/n5/full/ng.2591.html&#34;&gt;this article in Nature Genetics&lt;/a&gt;; the Methods section is only available in the html version of the paper. The PDF says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Methods and any associated references are available in the online version of the paper.
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;Methods&lt;/em&gt; are important.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be separated from the main text.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be placed after the results (as so many journals, including &lt;a href=&#34;http://www.plosbiology.org&#34;&gt;PLoS&lt;/a&gt;, do).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They shouldn&amp;rsquo;t be in a smaller font than the main text (as &lt;a href=&#34;http://www.pnas.org&#34;&gt;PNAS&lt;/a&gt; does).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They certainly shouldn&amp;rsquo;t be endnotes (as &lt;a href=&#34;http://www.sciencemag.org/content/276/5316/1268.long&#34;&gt;Science&lt;/a&gt; used to do).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;supplements-annoy-me-too&#34;&gt;Supplements annoy me too&lt;/h3&gt;
-
-&lt;p&gt;I love supplemental material: authors can give the full details, and they can provide as many supplemental figures and tables as they want.&lt;/p&gt;
-
-&lt;p&gt;But supplements can be a real pain.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to click on &lt;a href=&#34;http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1003321#s5&#34;&gt;10 different links&lt;/a&gt;.  Put it all in one document.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to open Word.  Put text and figures in a PDF.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I don&amp;rsquo;t want to have to open Excel.  Put data in a &lt;a href=&#34;http://www.caitlinrivers.com/1/post/2013/04/send-me-your-data-pdf-is-fine-said-no-one-ever-how-to-share-your-data-effectively.html&#34;&gt;plain text file&lt;/a&gt;, preferably as part of a git repository with related code.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At least supplements are now included at the journal sites!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bioinformatics.oxfordjournals.org/content/19/8/956.long&#34;&gt;This paper&lt;/a&gt; in Bioinformatics refers to a separate site for supplemental information:&lt;/p&gt;
-
-&lt;blockquote&gt;
-Expression data and supplementary information are available at
-http://www.rii.com/publications/2003/HE_SDS.htm.
-&lt;/blockquote&gt;
-
-&lt;p&gt;But &lt;code&gt;rii.com&lt;/code&gt; doesn&amp;rsquo;t exist anymore.  I was able to find &lt;a href=&#34;http://web.archive.org/web/20080719125540/http://www.rii.com/publications/2003/HE_SDS.html&#34;&gt;the supplement&lt;/a&gt; using the &lt;a href=&#34;http://web.archive.org&#34;&gt;Wayback Machine&lt;/a&gt;, but&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The link in the paper was wrong: It should be &lt;code&gt;.html&lt;/code&gt; not &lt;code&gt;.htm&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The final version on Wayback has a corrupted PDF, though one can go back to previous versions that are okay.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;i-like-genetics-http-www-genetics-org-and-g3-http-www-g3-journal-org&#34;&gt;I like &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3-journal.org&#34;&gt;G3&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3-journal.org&#34;&gt;G3&lt;/a&gt; put the Methods where they belong (before the results), and when you download the PDF for an article in Genetics, it includes the supplement.  For a G3 article, the supplement isn&amp;rsquo;t included in the article PDF, but at least you can the whole supplement as a single PDF.&lt;/p&gt;
-
-&lt;p&gt;For example, consider my recent Genetics articles:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org/content/190/2/403.full&#34;&gt;Genotype probabilities at intermediate generations in the construction of recombinant inbred lines&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.genetics.org/content/192/1/267.full&#34;&gt;Mapping quantitative trait loci onto a phylogenetic tree&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you click on &amp;ldquo;Full Text (PDF),&amp;rdquo; you get the article plus the 3 supplemental figures and 23 supplemental tables in the former case, and article plus the 17 supplemental figures and 2 supplemental tables in the latter case.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
+ To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
@@ -1377,14 +270,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
-      <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.  You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.&lt;/p&gt;
-
-&lt;p&gt;If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation.  We need to define the field broadly.&lt;/p&gt;
-
-&lt;p&gt;You may not like what &lt;a href=&#34;http://amstat.org&#34;&gt;some statisticians&lt;/a&gt; do.  You may feel they don&amp;rsquo;t share your values.  They may embarrass you.  But that shouldn&amp;rsquo;t lead us to abandon the term &amp;ldquo;statistics&amp;rdquo;.&lt;/p&gt;
-</description>
+      <description>When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
+If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.
+If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation. We need to define the field broadly.
+You may not like what some statisticians do.</description>
     </item>
     
     <item>
@@ -1393,150 +282,8 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
-      <description>
-
-&lt;p&gt;The &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;Statistics Department&lt;/a&gt; at &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison&lt;/a&gt; has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.&lt;/p&gt;
-
-&lt;p&gt;I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties.  This will be a bit rough, and long.  I&amp;rsquo;ll revert to bullet points, to be more compact (and because I&amp;rsquo;m lazy).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;my-situation&#34;&gt;My situation&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m an applied statistician at a university.  I have no defined consulting responsibilities.  Others at the university have a defined consulting role for a department or school, which pays part of their salary.  And then there are statisticians in industry (some effectively doing statistical consulting within a company), or working for a consulting company or as a contractor; I don&amp;rsquo;t know much about these things, but only about my own situation: I feel I should do my best to help colleagues who ask for my advice (though I &lt;em&gt;can&lt;/em&gt; say no, at least in theory).&lt;/p&gt;
-
-&lt;h3 id=&#34;consulting-vs-collaboration&#34;&gt;Consulting vs. collaboration&lt;/h3&gt;
-
-&lt;p&gt;To me, consulting is inherently short-term.  Someone comes to you for statistical advice, and you try to answer their questions within a week or two.  This is in contrast to collaboration, which is more long term, and gives you the opportunity to more fully understand the scientist&amp;rsquo;s grander schemes.&lt;/p&gt;
-
-&lt;h3 id=&#34;my-experience&#34;&gt;My experience&lt;/h3&gt;
-
-&lt;p&gt;In graduate school (in &lt;a href=&#34;http://www.stat.berkeley.edu&#34;&gt;Statistics&lt;/a&gt; at UC-Berkeley), there was a statistical consulting course that involved pairs of graduate students holding weekly office hours, to give free statistical advice to anyone at the university (generally other graduate students), and then we met as a group weekly, with a faculty advisor, to discuss consultees&amp;rsquo; questions and get advice on what advice we might give.  I did the course three times, with &lt;a href=&#34;http://www.stat.columbia.edu/~gelman/&#34;&gt;Andrew Gelman&lt;/a&gt;, &lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt;, and &lt;a href=&#34;http://www.stat.berkeley.edu/~freedman/&#34;&gt;David Freedman&lt;/a&gt;, who, I think, span the space of applied statistics.  (Well, the good part of the space.)  Learning by doing (or, at least, by offering advice) was how I really became an applied statistician.  And seeing Andrew, Terry, and David&amp;rsquo;s unique approaches was extremely influential.&lt;/p&gt;
-
-&lt;p&gt;After graduate school, I was a postdoc with a geneticist (Jim Weber, then at the Marshfield Medical Research Foundation, in Marshfield, Wisconsin), where I was relatively isolated, as a statistician.  There were a few other statisticians around, but we were working on rather different things.&lt;/p&gt;
-
-&lt;p&gt;Moving from postdoc to faculty member, I&amp;rsquo;ve had a relatively steady stream of statistical consulting experiences, with consultees from courses I taught, referred by my department chair or other friends/colleagues, or through my software (particularly &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt;) or publications (particularly my &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/twopart.pdf&#34;&gt;two-part model&lt;/a&gt; paper).&lt;/p&gt;
-
-&lt;h3 id=&#34;why-do-it&#34;&gt;Why do it?&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m not paid to consult; there&amp;rsquo;s no requirement that I do so.  So why do it?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Learn more biology, and from the experts.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;See new data.  (I &lt;em&gt;love&lt;/em&gt; new data!)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Think about new problems.  (And it&amp;rsquo;s nice to get an easy one every once in a while.  For example, it&amp;rsquo;s nice to be able to say, &amp;ldquo;Yes, a t-test is appropriate here.&amp;rdquo;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Be useful: help people.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Publications.  (Deans may not read, but they do count. [I don&amp;rsquo;t mean you, &lt;a href=&#34;http://www.med.wisc.edu/about/administration/robert-golden-md/38&#34;&gt;Bob&lt;/a&gt;, but other Deans!])&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Can lead to long-term collaboration, and allows you to find out if you like the person.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;how-to-behave-at-the-initial-meeting&#34;&gt;How to behave at the initial meeting&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Listen.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Verify that you&amp;rsquo;re following (re-state according to your understanding).  (&lt;a href=&#34;http://www.stat.wisc.edu/~clayton/&#34;&gt;Murray Clayton&lt;/a&gt; recommended the book &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/1451663889/7210-20&#34;&gt;How to talk so kids will listen and listen so kids will talk&lt;/a&gt;, and I do, too.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t be embarrassed to admit ignorance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Focus particularly on: the scientific questions, the form of the data, where the data came from.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Unless it&amp;rsquo;s really simple, I&amp;rsquo;ll usually delay giving specific advice to a second session.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A key difficulty: both parties must admit their ignorance, and need to be very patient.  At Berkeley, often a grad student was reporting on behalf of a faculty member, I think because the faculty member didn&amp;rsquo;t want to admit his/her ignorance.&lt;/p&gt;
-
-&lt;p&gt;You generally need to force the scientist to back way up.  They&amp;rsquo;re hoping for a quick answer (they often don&amp;rsquo;t like this whole statistics business!), and so may not want to spend an hour explaining the full background.  But it can be critical.&lt;/p&gt;
-
-&lt;p&gt;Also, the scientist often mentions the use of some statistic that you&amp;rsquo;ve never heard of or that you know with a different name. For example: the G test (which is what &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/0716786044/7210-20&#34;&gt;Sokal &amp;amp; Rohlf&lt;/a&gt; call the likelihood ratio test for contingency tables), or the Hairbrainer-Warstein-Edmundsun Test (which I made up, but might actually exist).  When you admit that you don&amp;rsquo;t know this statistical method that is so widely used in their field, they may question your credentials.  Ask for a reference; you&amp;rsquo;ll be able to figure it out.&lt;/p&gt;
-
-&lt;p&gt;A very common experience: &amp;ldquo;I have a quick question&amp;hellip;&amp;rdquo;  There are no quick questions.&lt;/p&gt;
-
-&lt;h3 id=&#34;difficulties-that-arise&#34;&gt;Difficulties that arise&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Communication.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Admitting ignorance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Getting the scientist to really explain things from the beginning&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You don&amp;rsquo;t have time to do the work, the consultee can&amp;rsquo;t do it, and there&amp;rsquo;s no one else to take over.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If you think you see a major problem, be careful about how you explain this.  (I&amp;rsquo;m not known for my subtlety, so I can&amp;rsquo;t advise you on this.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Co-authorship on publications (This seems to be more of a problem if you&amp;rsquo;re being paid directly, in which case scientists, particularly MDs, seem to treat a statistical consultant like they do the person who repairs the PCR machine, or whatever.)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They don&amp;rsquo;t want anything fancy, and you think it&amp;rsquo;s needed.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;An example instance requiring subtlety: As a graduate student, I was giving advice to an immunology graduate student whose experiment seemed to show a large sex effect, and since he hadn&amp;rsquo;t blocked on sex, the whole thing seemed a wash.  I stated this point rather bluntly and never saw him again.&lt;/p&gt;
-
-&lt;p&gt;The relative importance of co-authorship vs acknowledgement (vs nothing) changes over one&amp;rsquo;s career.  It&amp;rsquo;s never really been an issue for me (though there is that one paper where they should have made me a coauthor but didn&amp;rsquo;t, and then they acknowledged &amp;ldquo;Mark Broman&amp;rdquo; for statistical advice).  I feel a bit guilty being co-author on some papers, but it&amp;rsquo;s definitely been valuable to me.  And it can be that a few hours&amp;rsquo; work on a manuscript can change it from unpublishable to easily publishable.&lt;/p&gt;
-
-&lt;p&gt;For me, generally: if I created some figures and/or wrote a portion of the methods section, I feel I should be co-author.&lt;/p&gt;
-
-&lt;p&gt;The following two sentences are remarkably different:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&amp;ldquo;Would you like to be a co-author?&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&amp;ldquo;We would like to include you as a co-author.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;how-to-say-no&#34;&gt;How to say no&lt;/h3&gt;
-
-&lt;p&gt;The hardest thing is to say no.  I haven&amp;rsquo;t really figured this out.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Can you find someone to take over?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Try to give at least a rough guide (something is better than nothing).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I probably shouldn&amp;rsquo;t state this publicly, but I try to apply a &amp;ldquo;two-week rule&amp;rdquo;: If someone I don&amp;rsquo;t know asks to meet with me, I&amp;rsquo;ll say, &amp;ldquo;I&amp;rsquo;m really busy right now, but I could meet with you in two weeks.&amp;rdquo;  Nothing productive occurs in the two weeks before a grant is due (which is the most common rush-rush type question).  The two-week rule seems to filter out much of the stuff that I don&amp;rsquo;t really want to help with, anyway.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;disadvantages-to-the-whole-thing&#34;&gt;Disadvantages to the whole thing&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You generally don&amp;rsquo;t have time to do things properly.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You don&amp;rsquo;t know in advance what you&amp;rsquo;re getting into.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You usually don&amp;rsquo;t get to see long-term results.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I hate power/sample size calculations, and experimental design is really hard, and a high proportion of consulting questions involve sample size calculations or experimental design.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;be-self-sufficient&#34;&gt;Be self-sufficient&lt;/h3&gt;
-
-&lt;p&gt;This doesn&amp;rsquo;t exactly fit the topic under discussion, but I like to take this opportunity to emphasize the importance of applied statisticians being self-sufficient.&lt;/p&gt;
-
-&lt;p&gt;Most importantly, one should learn to program in perl (or python or ruby), for data manipulation.  Don&amp;rsquo;t let the scientist do the data manipulation.  The answer to &amp;ldquo;How would you like to receive the data?&amp;rdquo; must always be &amp;ldquo;In it&amp;rsquo;s current form!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;R programming is obviously important (for interactive analysis and graphics).  But I also emphasize the need for a lower-level language (I use C), for intensive computations.  The crappiest C program will almost always beat the most refined R program.  (Learn &lt;a href=&#34;https://github.com/hadley/devtools/wiki/Rcpp&#34;&gt;Rcpp&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;h3 id=&#34;time-management&#34;&gt;Time management&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Don&amp;rsquo;t let all of the small short-term things crowd out your long-term projects.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Save big blocks of time for yourself.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been reserving a full day each week to my own work, and I basically never agree to a meeting on that day.  (Don&amp;rsquo;t tell anyone I said this!)&lt;/p&gt;
-
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;Statistical consulting is a fabulous part of being an applied statistician.  I see lots of great new problems, I learn a lot of science (because I can ask questions of the experts), and I help people.&lt;/p&gt;
-
-&lt;p&gt;And I don&amp;rsquo;t feel I need to know the answer to people&amp;rsquo;s questions.  I view my role, as a statistical consultant, is to provide a connection, between the scientist with the question, and with some reasonable answer.  Once I understand the question, I&amp;rsquo;ll ask all my friends: &amp;ldquo;Say, I got this really interesting question: What would you do?&amp;rdquo;  Eventually I&amp;rsquo;ll find someone who can tell me what to say.&lt;/p&gt;
-</description>
+      <description>The Statistics Department at UW-Madison has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.
+I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties. This will be a bit rough, and long. I&amp;rsquo;ll revert to bullet points, to be more compact (and because I&amp;rsquo;m lazy).</description>
     </item>
     
     <item>
@@ -1545,18 +292,10 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
+      <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
 
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The code is on &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/lod_by_time&#34;&gt;github&lt;/a&gt;. It took me about a day.&lt;/p&gt;
-
-&lt;p&gt;The hardest part was figuring out the right data structures.  A pixel here is linked to curves over there and over there and over there.  You need to set things up so it&amp;rsquo;s easy to traverse such linkages.&lt;/p&gt;
-
-&lt;p&gt;If you hover over a point in the top-left image, you get views of the vertical and horizontal cross-sections.  If you click on a point, pointwise confidence bands are added to the &amp;ldquo;QTL effect&amp;rdquo; plot.  (You have to click, because if I included those confidence bands automatically, the graph became painfully slow to refresh.)&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not completely happy with the layout of the graph; it&amp;rsquo;s not particularly intuitive.&lt;/p&gt;
-</description>
+The code is on github. It took me about a day.
+The hardest part was figuring out the right data structures. A pixel here is linked to curves over there and over there and over there. You need to set things up so it&amp;rsquo;s easy to traverse such linkages.</description>
     </item>
     
     <item>
@@ -1565,62 +304,9 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
-      <description>
-
-&lt;p&gt;I attended the &lt;a href=&#34;http://www.enar.org/meetings.cfm&#34;&gt;ENAR meeting&lt;/a&gt; in Orlando, Florida, last week. (&lt;a href=&#34;http://www.enar.org&#34;&gt;ENAR&lt;/a&gt; = &amp;ldquo;Eastern North American Region&amp;rdquo; of the &lt;a href=&#34;http://www.biometricsociety.org&#34;&gt;International Biometric Society&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important.  (&lt;a href=&#34;http://www.rafalab.org&#34;&gt;Rafa&lt;/a&gt; said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;Let me tell you about the high- and lowlights, for me.&lt;/p&gt;
-
-&lt;p&gt;Also see the ENAR-related comments from &lt;a href=&#34;http://yihui.name/en/2013/03/on-enar-or-statistical-meetings-in-general/&#34;&gt;Yihui Xie&lt;/a&gt; and &lt;a href=&#34;http://alyssafrazee.wordpress.com/2013/03/18/ideas-for-super-awesome-conferences/&#34;&gt;Alyssa Frazee&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Getting to know &lt;a href=&#34;http://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt;, and the introductory part of his talk on &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Having lunch with &lt;a href=&#34;http://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostat&lt;/a&gt; students.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Twittering, particularly with &lt;a href=&#34;http://twitter.com/StrictlyStat&#34;&gt;@StrictlyStat&lt;/a&gt; and &lt;a href=&#34;http://twitter.com/hspter&#34;&gt;@hspter&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hadley Wickham&amp;rsquo;s &lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; tutorial, in which I really learned how to teach.  (Can I put it into practice?)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://genes.uchicago.edu/contents/faculty/stephens-matthew.html&#34;&gt;Matthew Stephens&lt;/a&gt;&amp;rsquo;s talk, and spending time with him.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://faculty.mdanderson.org/Jeffrey_Morris/Default.asp&#34;&gt;Jeff Morris&lt;/a&gt;&amp;rsquo;s orientation to Epcot.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The large data visualization session, with &lt;a href=&#34;http://twitter.com/StrictlyStat&#34;&gt;John&lt;/a&gt;, &lt;a href=&#34;http://had.co.nz&#34;&gt;Hadley&lt;/a&gt;, &lt;a href=&#34;http://www.youtube.com/watch?v=IVdwJvQXeg4&#34;&gt;Amy Heineke&lt;/a&gt;, and &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman&#34;&gt;me&lt;/a&gt;.  (Thanks, &lt;a href=&#34;http://www.biostat.jhsph.edu/~bswihart/&#34;&gt;Bruce&lt;/a&gt;!)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;lowlights&#34;&gt;Lowlights&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;They should have emphasized the cheaper shuttle from the airport (vs taxi); the information was hard to find.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;They should have emphasized that wifi was actually free; ignore the \$14.95/day charge as it gets waived from your bill.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Registration on Sunday closed early, so many at the poster session were without name badges.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The program guide PDF should have had bookmarks, and the schedule should have included links to the abstracts.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Realism regarding the start time for the President&amp;rsquo;s invited address.  But I guess if we knew the awards ceremony would take not 15 min but 45, &lt;em&gt;everyone&lt;/em&gt; would skipped.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The venue was too isolated.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The hotel was too expensive.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The \$85 admission to Epcot was a required part of the registration fee (23%).  The registration fee (\$365) was the same as for ENAR 2012 in Washington DC, but it could have been \$280.  And there&amp;rsquo;s a striking difference between &amp;ldquo;It&amp;rsquo;s free!&amp;rdquo; and &amp;ldquo;You already paid for it!&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The lighting in meeting rooms was not great.  We needed a ladder and a can of spray paint to &amp;ldquo;turn off&amp;rdquo; those lights shining on the screen.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As I said at the beginning, I had a good time. But I worry particularly about accessibility to students paying their own way.&lt;/p&gt;
-
-&lt;p&gt;It was a really useful and inspirational meeting, right up there with the &lt;a href=&#34;http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;UseR 2011 meeting&lt;/a&gt; in the UK, but less from talks and more from individual interactions.&lt;/p&gt;
-</description>
+      <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
+I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
+Let me tell you about the high- and lowlights, for me.</description>
     </item>
     
     <item>
@@ -1629,44 +315,8 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.&lt;/p&gt;
-
-&lt;p&gt;We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard.  This was a primary contributor to &lt;a href=&#34;http://kbroman.org/blog/2012/04/25/microarrays-suck/&#34;&gt;my recent embarrassments&lt;/a&gt;, in which clear problems in the data were not discovered when they should have been.&lt;/p&gt;
-
-&lt;p&gt;I gave &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs&#34;&gt;a talk on interactive graphs (with the title above)&lt;/a&gt; at Johns Hopkins last fall, and then &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2&#34;&gt;a related talk&lt;/a&gt; at ENAR earlier this week, and I have a few thoughts to add here.&lt;/p&gt;
-
-&lt;h3 id=&#34;a-brief-digression&#34;&gt;A brief digression&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m giving a talk at a plant breeding symposium at Kansas State in a couple of weeks, and I&amp;rsquo;ve been pondering what to talk about.  A principal problem is that I don&amp;rsquo;t really work on plant breeding.  My most relevant talks are a bit too technical, and my more interesting talks are not relevant.&lt;/p&gt;
-
-&lt;p&gt;Then I had the idea to talk about some of my recent work with my graduate student, Il-youp Kwak, on the genetic analysis of phenotypes measured over time.&lt;/p&gt;
-
-&lt;p&gt;I realized that I could incorporate some interactive graphs into the talk.  Initially I was just thinking that the interactive graphs would make the talk more interesting and would allow me to talk about things that weren&amp;rsquo;t necessarily relevant but were interesting to me.&lt;/p&gt;
-
-&lt;p&gt;But then I realized that this work really cries out for interactive graphs.  And as I begin to construct one of them, I thought of a whole bunch more I might create.  More importantly, I realized that these interactive graphs are extremely useful teaching tools.&lt;/p&gt;
-
-&lt;h3 id=&#34;more-d3-http-d3js-org-examples&#34;&gt;More &lt;a href=&#34;http://d3js.org&#34;&gt;D3&lt;/a&gt; examples&lt;/h3&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an image of first graph I created for the talk; click on it to jump to the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manycurves&#34;&gt;interactive version&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Statisticians are often confronted with a large set of curves.  We&amp;rsquo;d like to show the individual curves, but there are too many.  The resulting &lt;a href=&#34;http://www.ats.ucla.edu/stat/stata/faq/spagplot.htm&#34;&gt;spaghetti plot&lt;/a&gt; is a total mess.  An image plot (like the &lt;a href=&#34;http://journals.lww.com/epidem/Fulltext/2010/09000/Lasagna_Plots__A_Saucy_Alternative_to_Spaghetti.15.aspx&#34;&gt;lasagna plot&lt;/a&gt;) allows us to see all of the curves, but it can be hard to get a sense of what the actual curves look like.  The interactive version solves the problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/manycurves&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/manycurves2.png&#34; alt=&#34;Many curves&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a second example; again click on the image to jump to the &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;interactive version&lt;/a&gt;. (I&amp;rsquo;ve shown this before, but I want to use it to make another point.)&lt;/p&gt;
-
-&lt;p&gt;Typically, in a lecture on complex trait analysis, I&amp;rsquo;d show one LOD curve (like the top panel in the image below) and a few different plots of phenotype vs genotype (the lower-right panel in the image).  I think the exploratory tool will be much more effective, in a lecture, for explaining what it all means.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect&#34;&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/03/lod_and_effect.png&#34; alt=&#34;LOD and QTL effects&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;statisticians-need-to-be-doing-this-routinely&#34;&gt;Statisticians need to be doing this routinely&lt;/h3&gt;
-
-&lt;p&gt;In constructing a graph, one must make some difficult choices.  For high-dimensional data, one must greatly compress the available information.  The resulting summaries, while potentially informative, take one far away from the original data.&lt;/p&gt;
-
-&lt;p&gt;Interactive graphs provide a means through which one may view the overall summary but have immediate access to the underlying details.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
+We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
     </item>
     
     <item>
@@ -1675,34 +325,9 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
-      <description>&lt;p&gt;Much has been written about &lt;a href=&#34;http://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
-
-&lt;p&gt;For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.&lt;/p&gt;
-
-&lt;p&gt;For my recent papers, I have developed a sort of system so that I can reproduce the results myself.  I use a combination tools, including &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;, &lt;a href=&#34;http://www.stat.uni-muenchen.de/~leisch/Sweave/&#34;&gt;Sweave&lt;/a&gt;, &lt;a href=&#34;http://www.cpan.org&#34;&gt;perl&lt;/a&gt;, and, of course, &lt;a href=&#34;http://www.gnu.org/software/make/&#34;&gt;make&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;ve not been distributing the detailed code behind my papers.  It&amp;rsquo;s not always pretty, and it is not well documented.  (And &amp;ldquo;not always&amp;rdquo; is a bit of a stretch &amp;ndash; more like &amp;ldquo;seldom.&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;When &lt;a href=&#34;http://www.stodden.net&#34;&gt;Victoria Stodden&lt;/a&gt; visited Madison last fall, I was inspired to release this code, but I never carried through on that.&lt;/p&gt;
-
-&lt;p&gt;But then last night I &lt;a href=&#34;https://twitter.com/kwbroman/status/310633718551293953&#34;&gt;twittered&lt;/a&gt; an example graph from &lt;a href=&#34;http://www.biostat.wisc.edu/~kbroman/publications/phyloqtl.pdf&#34;&gt;a paper&lt;/a&gt;, was (appropriately) &lt;a href=&#34;https://twitter.com/fellgernon/status/310647658387734528&#34;&gt;asked to produce code&lt;/a&gt;, and so created a &lt;a href=&#34;https://github.com/kbroman/phyloQTLpaper/&#34;&gt;github repository&lt;/a&gt; with the bulk of the code for that paper.&lt;/p&gt;
-
-&lt;p&gt;The repository is incomplete: it doesn&amp;rsquo;t include the code to do the main analysis and simulations, but just to make the figures, starting from those results.  I&amp;rsquo;ll work to add those additional details.&lt;/p&gt;
-
-&lt;p&gt;And, even once complete, it will be far from perfect.  The code is (or will be) there, but it would take a bit of work for an interested reader to figure out what it is doing, since much of it is undocumented and poorly written.&lt;/p&gt;
-
-&lt;p&gt;But if we ask for perfection, we&amp;rsquo;ll get nothing.  If we ask for the minimal materials for reproducibility, we may get it.&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s my goal: to focus first on &lt;em&gt;minimal accessibility&lt;/em&gt; of the code and data behind a paper, even if it is minimally readable and so might take quite a bit of effort for someone else to follow.&lt;/p&gt;
-
-&lt;p&gt;One last point: I use local &lt;a href=&#34;http://git-scm.com&#34;&gt;git&lt;/a&gt; repositories for my draft analyses and for the whole process of writing a paper.  I could post that whole history, but &lt;a href=&#34;http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;as I said before&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;Open source means everyone can see my stupid mistakes. Version control means everyone can see every stupid mistake I&#39;ve ever made.&lt;/blockquote&gt;
-
-&lt;p&gt;It would be easy to make my working repository public, but it would include things like referees&amp;rsquo; reports and my responses to them, as well as the gory details on all of the stupid things that I might do along the way to publication.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m more comfortable releasing just a snapshot of the final product.&lt;/p&gt;
-</description>
+      <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
+For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
+For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
     </item>
     
   </channel>

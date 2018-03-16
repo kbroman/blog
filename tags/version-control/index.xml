@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/version-control/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Electronic lab notebook</title>
@@ -16,46 +18,9 @@
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
-      <description>
-
-&lt;p&gt;I was interested to read &lt;a href=&#34;http://ivory.idyll.org&#34;&gt;C. Titus Brown&lt;/a&gt;&amp;rsquo;s recent post, &amp;ldquo;&lt;a href=&#34;http://ivory.idyll.org/blog/is-version-control-an-electronic-lab-notebook.html&#34;&gt;Is version control an electronic lab notebook?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;I think version control &lt;em&gt;is&lt;/em&gt; really important, and I think all computational scientists &lt;em&gt;should&lt;/em&gt; have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.&lt;/p&gt;
-
-&lt;p&gt;As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance. And for protocol, version control doesn&amp;rsquo;t really matter.&lt;/p&gt;
-
-&lt;h3 id=&#34;version-control&#34;&gt;Version control&lt;/h3&gt;
-
-&lt;p&gt;I really like &lt;a href=&#34;http://git-scm.com/&#34;&gt;git&lt;/a&gt; with &lt;a href=&#34;http://github.com&#34;&gt;github&lt;/a&gt;. (See &lt;a href=&#34;http://kbroman.github.io/github_tutorial/&#34;&gt;my tutorial&lt;/a&gt;.) But for me, the basic need served by version control  is that embodied in the question, &amp;ldquo;This shit worked before; why isn&amp;rsquo;t it working now?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;You don&amp;rsquo;t want to edit working code &lt;em&gt;in place&lt;/em&gt; and so possibly break a working system. Version control lets you try things out, and to try something out in any version of your software, from any point in time.&lt;/p&gt;
-
-&lt;p&gt;The other basic use of version control is for managing projects with multiple contributors. If there are multiple programmers working on a software project, or multiple authors working on a manuscript, version control is the best way to manage things, particularly for merging everyone&amp;rsquo;s efforts.&lt;/p&gt;
-
-&lt;p&gt;These are really useful things, but version control is more about &lt;em&gt;merging&lt;/em&gt; and &lt;em&gt;history&lt;/em&gt; and not so much &lt;em&gt;reproducible research&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;make-is-the-thing&#34;&gt;Make is the thing&lt;/h3&gt;
-
-&lt;p&gt;To me, the basic tool to make research reproducible is &lt;a href=&#34;http://www.gnu.org/software/make/&#34;&gt;GNU make&lt;/a&gt; (see my &lt;a href=&#34;http://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial&lt;/a&gt;). You create a &lt;code&gt;Makefile&lt;/code&gt; that documents all analysis steps in a project. (For example, &amp;ldquo;Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;With GNU make (see also &lt;a href=&#34;http://rake.rubyforge.org/&#34;&gt;rake&lt;/a&gt;), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing &lt;code&gt;Makefile&lt;/code&gt;, the research is reproducible.&lt;/p&gt;
-
-&lt;h3 id=&#34;add-knitr-and-you-ve-got-a-notebook&#34;&gt;Add knitr, and you&amp;rsquo;ve got a notebook&lt;/h3&gt;
-
-&lt;p&gt;The other ingredient to create the computational scientist&amp;rsquo;s equivalent of a lab notebook is &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;, which allows one to combine text (e.g., in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; or &lt;a href=&#34;http://www.methods.co.nz/asciidoc/&#34;&gt;asciidoc&lt;/a&gt;) and code (e.g., in &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;) to make documents (e.g., in html or PDF) that both &lt;em&gt;do&lt;/em&gt; the work and &lt;em&gt;explain&lt;/em&gt; the work. Write such documents to describe what you did and what you learned, and you&amp;rsquo;ve got an electronic lab notebook.&lt;/p&gt;
-
-&lt;p&gt;You could even get rid of your &lt;code&gt;Makefile&lt;/code&gt; by having an over-arching knitr-based document that does it all.  But I still like &lt;a href=&#34;http://www.gnu.org/software/make&#34;&gt;make&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;but-it-s-so-much-work&#34;&gt;But it&amp;rsquo;s so much work!&lt;/h3&gt;
-
-&lt;p&gt;Going into a file and deleting a data point is a lot easier than writing a script that does it (and also documents &lt;em&gt;why&lt;/em&gt;). But I don&amp;rsquo;t think you should be going in and changing the data like that, even if it is being tracked by version control. (And that is the main complaint potential users have about version control: &amp;ldquo;Too time consuming!&amp;rdquo;)&lt;/p&gt;
-
-&lt;p&gt;I think you have to expect that writing well-documented scripts and &lt;a href=&#34;http://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;-based reports that capture the totality of a data analysis project will take a lot of work: perhaps double (or more!) the effort. But it will save a ton of time later (if others care about what you did).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t really want to take this time in the midst of a bout of exploratory data analysis. I find it too inhibiting. So I tend to do a bunch of analyses, capturing the main ideas in a draft R script (or reconstructed later from the &lt;code&gt;.Rhistory&lt;/code&gt; file), and then go back later to make a clean knitr-based document that explains what I was doing and why.&lt;/p&gt;
-
-&lt;p&gt;It can be hard to force myself to do the clean-up. I wish there were an easier way. But I expect that well-organized lab scientists devote a lot of time to constructing their lab notebooks, too.&lt;/p&gt;
-</description>
+      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
+I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
+As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
     </item>
     
   </channel>

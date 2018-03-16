@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 17 May 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/simulation/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
@@ -16,32 +18,10 @@
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
-      <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I saw an &lt;a href=&#34;http://datagenetics.com/blog/november12011/&#34;&gt;interesting mathematical analysis of the game&lt;/a&gt; a few years ago, but it seems to be offline, though &lt;a href=&#34;http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/&#34;&gt;you can read it&lt;/a&gt; via the &lt;a href=&#34;http://web.archive.org/&#34;&gt;wayback machine&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So I wrote a bit of &lt;a href=&#34;https://gist.github.com/kbroman/5600209&#34;&gt;R code to simulate the game&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the distribution of the number of spins to complete the game, by number of players:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34; alt=&#34;No. spins in chutes &amp;amp; ladders&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With two players, the average number of spins is 52, with a 90th percentile of 88.&lt;/p&gt;
-
-&lt;p&gt;If you add a third player, the average increases to 65, and the 90th percentile increases to 103.  You&amp;rsquo;re playing fewer rounds, but each round is three times as long. If you add a fourth player, the average is 76 and the 90th percentile is 117.&lt;/p&gt;
-
-&lt;p&gt;So, in trying to minimize the agony, it seems best to not encourage my eight-year-old son to join us in the game.  If he plays with us, there&amp;rsquo;s a 63% chance that it will take longer.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s particularly true because then the chance of my daughter winning drops from about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; to about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.&lt;/p&gt;
-
-&lt;p&gt;That raises another question: if I let her go first, what advantage does that give her?  Not much.  The chance that the person who goes first will win is 50.9%, 34.4%, and 25.9%, respectively, when there are 2, 3, and 4 players.  So not a noticeable amount.  Thus I cheat (on her behalf). Really, though, I&amp;rsquo;m cheating in order to shorten the game as much as to ensure that she wins.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: There&amp;rsquo;s a close connection between this problem and my work on the multiple-strain recombinant inbred lines. (See &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/15545647&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/22345609&#34;&gt;that&lt;/a&gt;.)  I&amp;rsquo;m tempted to play around with it some more.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/&#34;&gt;Additional numerical results here.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;
+I saw an interesting mathematical analysis of the game a few years ago, but it seems to be offline, though you can read it via the wayback machine.
+But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;
+So I wrote a bit of R code to simulate the game.</description>
     </item>
     
   </channel>

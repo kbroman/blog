@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 30 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://kbroman.org/blog/tags/censorship/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://kbroman.org/blog/tags/censorship/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>I thought maybe I was being paranoid</title>
@@ -16,48 +18,11 @@
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
-      <description>
+      <description>An odd thing happened to me on twitter today.
+UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
+So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
 
-&lt;p&gt;An odd thing happened to me on twitter today.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/uwsystem&#34;&gt;UW System&lt;/a&gt; had &lt;a href=&#34;https://twitter.com/UWSystem/status/826167903145775104&#34;&gt;tweeted a statement&lt;/a&gt; from system president &lt;a href=&#34;https://twitter.com/raywcross&#34;&gt;Ray Cross&lt;/a&gt; concerning Trump&amp;rsquo;s &lt;a href=&#34;https://www.nytimes.com/2017/01/27/us/politics/trump-syrian-refugees.html&#34;&gt;executive order&lt;/a&gt; banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.&lt;/p&gt;
-
-&lt;p&gt;So I &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;tweeted back&lt;/a&gt;, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2017/01/disappearedtweet.png&#34; alt=&#34;disappearedtweet&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that I mentioned not just &lt;a href=&#34;https://twitter.com/raywcross&#34;&gt;@RayWCross&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/uwsystem&#34;&gt;@UWSystem&lt;/a&gt;, but also &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@POTUS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Twenty minutes later, the tweet had gotten a couple of ❤️&amp;rsquo;s, and then one RT, but for some reason the tweet itself had disappeared from my twitter feed (in the app I use, &lt;a href=&#34;https://tapbots.com/tweetbot/&#34;&gt;Tweetbot&lt;/a&gt;). I looked at &lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;my twitter account&lt;/a&gt; in a web browser, and sure enough the tweet wasn&amp;rsquo;t there.&lt;/p&gt;
-
-&lt;p&gt;Puzzled, and knowing I hadn&amp;rsquo;t deleted the tweet, I poked around and was able to find, somehow, the URL for the original tweet, and I could see &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;the tweet&lt;/a&gt; in a browser. So it hadn&amp;rsquo;t been &lt;em&gt;deleted&lt;/em&gt;, it had just been removed from my feed.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/kerri_gilbert&#34;&gt;@Kerri_Gilbert&lt;/a&gt; then &lt;a href=&#34;https://twitter.com/Kerri_Gilbert/status/826181462567297025&#34;&gt;wrote&lt;/a&gt; that she could see it in her feed but not if she went to my timeline. So I wasn&amp;rsquo;t completely crazy.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/CFlensburg/&#34;&gt;@CFlensburg&lt;/a&gt; later &lt;a href=&#34;https://twitter.com/CFlensburg/status/826231062460129280&#34;&gt;wrote&lt;/a&gt; that he could see the tweet, but &lt;a href=&#34;https://twitter.com/CFlensburg/status/826232029549178880&#34;&gt;he&amp;rsquo;s in Australia&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now my hypothesis was: someone who looks after &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@potus&lt;/a&gt; had somehow suppressed my tweet. Or was I being paranoid?&lt;/p&gt;
-
-&lt;p&gt;A quick google search (for &amp;ldquo;tweet disappeared from feed&amp;rdquo;) revealed a &lt;a href=&#34;https://www.washingtonpost.com&#34;&gt;Washington Post&lt;/a&gt; article from 2015-10-30, &amp;ldquo;&lt;a href=&#34;https://www.washingtonpost.com/news/the-intersect/wp/2015/10/30/a-guide-to-why-some-activists-believe-their-tweets-are-being-censored-in-the-u-s/&#34;&gt;Tweets are disappearing on Twitter. Why?&lt;/a&gt;&amp;rdquo; This seems to explain what happened: my tweet was suppressed by some kind of &amp;ldquo;abuse filter.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;The article is an interesting read. It describes the experience of &lt;a href=&#34;http://members.efn.org/~paulmd/&#34;&gt;Paul Dietrich&lt;/a&gt; (&lt;a href=&#34;https://twitter.com/paulmd199&#34;&gt;@Paulmd199&lt;/a&gt;), who wrote an analysis of his situation: &amp;ldquo;&lt;a href=&#34;http://members.efn.org/~paulmd/OwnWork/AdventuresinCensorship.pdf&#34;&gt;Adventures in Twitter Censorship.&lt;/a&gt;&amp;rdquo; Also an interesting read.&lt;/p&gt;
-
-&lt;p&gt;And note that the tweet suppression is location-specific. It&amp;rsquo;s okay for &lt;a href=&#34;https://twitter.com/CFlensburg/&#34;&gt;Australians&lt;/a&gt; to read &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;the tweet&lt;/a&gt;, but Americans need to be protected from it.&lt;/p&gt;
-
-&lt;h4 id=&#34;but-why-this-tweet&#34;&gt;But why this tweet?&lt;/h4&gt;
-
-&lt;p&gt;This &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;tweet of mine&lt;/a&gt; was really a pretty bland tweet. I mean, I was directly criticizing my &lt;a href=&#34;http://www.med.wisc.edu/about/administration/robert-golden-md/38&#34;&gt;boss&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://chancellor.wisc.edu/about/&#34;&gt;boss&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://twitter.com/raywcross&#34;&gt;boss&lt;/a&gt;, and we &lt;a href=&#34;http://host.madison.com/wsj/news/local/education/university/regents-committee-passes-new-uw-madison-tenure-policy-with-changes/article_8249f119-05e7-5459-b4d8-25eab3e3882c.html&#34;&gt;just barely have tenure at Wisconsin&lt;/a&gt; anymore, so I certainly wasn&amp;rsquo;t going to be abusive. I&amp;rsquo;m not sure why I actually mentioned &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@potus&lt;/a&gt;, but I figured, &amp;ldquo;What the hell.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But what sort of abuse detection algorithm would decide that &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;this tweet&lt;/a&gt; was abusive? If there&amp;rsquo;s an abuse filter that would suppress &lt;a href=&#34;https://twitter.com/kwbroman/status/826174494096109568&#34;&gt;this tweet&lt;/a&gt; but not all of the actual abuse rampant on twitter&amp;hellip;well that&amp;rsquo;s bullshit.&lt;/p&gt;
-
-&lt;p&gt;Maybe it was that I wrote &amp;ldquo;Sad.&amp;rdquo; (I thought that was funny. And hardly abusive.)&lt;/p&gt;
-
-&lt;p&gt;I favor the theory that it wasn&amp;rsquo;t an algorithm but rather a person: that someone is assigned to read all mentions of &lt;a href=&#34;https://twitter.com/potus&#34;&gt;@potus&lt;/a&gt; and if they deem something inappropriate, they flip a switch and the tweet gets suppressed.&lt;/p&gt;
-
-&lt;p&gt;So maybe I &lt;em&gt;am&lt;/em&gt; paranoid.&lt;/p&gt;
-
-&lt;p&gt;(I forgot to mention: &lt;a href=&#34;https://twitter.com/nickfleisher&#34;&gt;@NickFleisher&lt;/a&gt; had the best response to &lt;a href=&#34;https://twitter.com/UWSystem/status/826167903145775104&#34;&gt;Ray Cross&amp;rsquo;s lame statement&lt;/a&gt;: &amp;ldquo;&lt;a href=&#34;https://twitter.com/nickfleisher/status/826184115456143360&#34;&gt;Revise and resubmit&lt;/a&gt;.&amp;ldquo;)&lt;/p&gt;
-</description>
+Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
     </item>
     
   </channel>
