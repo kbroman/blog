@@ -30,7 +30,7 @@ convert data files from one format to another. I much prefer Ruby, but my
 Ruby coding involves a whole lot of googling. Python is more popular,
 and so I'd recommend that to you. (But I really don't like the
 handling of regular expression in Python, and that's like the main
-think I want from that sort of language, so I'm sticking with Ruby
+think I want from that sort of langugage, so I'm sticking with Ruby
 for data file manipulation.) And these days, what with the whole
 [tidyverse](https://www.tidyverse.org/) developments, you can probably
 get by R alone, for data file manipulation.
@@ -65,7 +65,7 @@ go back to PureScript.
 
 ## How to learn programming language
 
-Anyway, that was a bit too much of a blathery introduction to say: I
+Anyway, that ws a bit too much of a blathery introduction to say: I
 think it's good to learn multiple programming languages, and in having
 tried to do so myself, I've got some suggestions about how to go about
 it (the learning) that might be useful.
