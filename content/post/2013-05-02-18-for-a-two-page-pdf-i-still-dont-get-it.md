@@ -16,7 +16,8 @@ slug: 18-for-a-two-page-pdf-i-still-dont-get-it
 Yesterday, I saw [this tweet](https://twitter.com/Ananyo/status/329545985149775873) by [@Ananyo](https://twitter.com/Ananyo)
 
 <blockquote>
-Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
+Time that biologists stopped telling the public oversimplistic fairy
+tales on Darwinian evolution, says P Ball (\$) <a href="http://www.nature.com/nature/journal/v496/n7446/full/496419a.html">nature.com/nature/journal...</a>
 </blockquote>
 
 So I clicked the link to the Nature paper and realized, "Oh, yeah.  I've got to enter through the UW library website."
@@ -26,7 +27,8 @@ But then I thought, "Wait...\$18 for a two-page Nature comment?  WTF?"
 So I [tweeted](https://twitter.com/kwbroman/status/329560393922002944):
 
 <blockquote>
-DNA: Celebrate the unknowns, like this Nature comment, which costs \$18. [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
+DNA: Celebrate the unknowns, like this Nature comment, which costs
+\$18. <a href="http://www.nature.com/nature/journal/v496/n7446/full/496419a.html">nature.com/nature/journal...</a>
 </blockquote>
 
 And thinking about it some more, I got more annoyed, and [tweeted](https://twitter.com/kwbroman/status/329566578024775683):
