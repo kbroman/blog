@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unproductivity on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/unproductivity/</link>
+    <link>https://kbroman.org/blog/tags/unproductivity/</link>
     <description>Recent content in Unproductivity on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/unproductivity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/unproductivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>Stack Exchange is a series of question-and-answer sites, including Stack Overflow for programming and Cross Validated for statistics. I was introduced to these sites at a short talk by Barry Rowlingson at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;
 These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.</description>
     </item>
     
     <item>
       <title>Gamified</title>
-      <link>http://kbroman.org/blog/2011/09/26/gamified/</link>
+      <link>https://kbroman.org/blog/2011/09/26/gamified/</link>
       <pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/09/26/gamified/</guid>
+      <guid>https://kbroman.org/blog/2011/09/26/gamified/</guid>
       <description>Barry Rowlingson gave an interesting talk at UseR 2011, &amp;ldquo;Why R-help must die!&amp;rdquo; He suggested the Q-and-A type sites Stack Overflow (on programming) and Cross Validated (on statistics), both part of Stack Exchange.
 An interesting feature of these sites is that, in addition to voting up and down on the questions and answers, one accrues reputation points. I&amp;rsquo;ve found this to be surprisingly addictive, and perhaps that&amp;rsquo;s the goal. Consider the O&amp;rsquo;Reilly book Gamification by design.</description>
     </item>

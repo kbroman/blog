@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/c/</link>
+    <link>https://kbroman.org/blog/tags/c/</link>
     <description>Recent content in C on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 14 Oct 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Designer of C died</title>
-      <link>http://kbroman.org/blog/2011/10/14/designer-of-c-died/</link>
+      <link>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
+      <guid>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
       <description>Dennis Ritchie, the designer of C and co-developer of Unix, died on Wednesday. He arguably had more impact on my life than Steve Jobs did.</description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Genetic Testing on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/genetic-testing/</link>
+    <link>https://kbroman.org/blog/tags/genetic-testing/</link>
     <description>Recent content in Genetic Testing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 11 Oct 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/genetic-testing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/genetic-testing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The future of personalized medicine</title>
-      <link>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</link>
+      <link>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
+      <guid>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
       <description>&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: a genetic test for exercise.</description>
     </item>
     
     <item>
       <title>Genetic testing of sperm donors</title>
-      <link>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <link>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <guid>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
  An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>

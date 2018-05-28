@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Media on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/media/</link>
+    <link>https://kbroman.org/blog/tags/media/</link>
     <description>Recent content in Media on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 23 Oct 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/media/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/media/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wired on statistics</title>
-      <link>http://kbroman.org/blog/2012/10/23/wired-on-statistics/</link>
+      <link>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/10/23/wired-on-statistics/</guid>
+      <guid>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</guid>
       <description>Wired magazine had a short article last month on how to read a scientific report, which basically was about how to interpret the statistical results. It&amp;rsquo;s reasonably well done.</description>
     </item>
     

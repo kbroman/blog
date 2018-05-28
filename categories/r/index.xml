@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/categories/r/</link>
+    <link>https://kbroman.org/blog/categories/r/</link>
     <description>Recent content in R on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EOF within quoted string</title>
-      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <link>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
       <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
 The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
     </item>
     
     <item>
       <title>miner and craft</title>
-      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>https://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
       <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
 I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
       <title>omg, bookdown!</title>
-      <link>http://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
+      <link>https://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
+      <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
       <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
 I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
     </item>
     
     <item>
       <title>deeply nested functions</title>
-      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <link>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
 setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
       <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
 This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
       <title>miniCRAN</title>
-      <link>http://kbroman.org/blog/2017/05/23/minicran/</link>
+      <link>https://kbroman.org/blog/2017/05/23/minicran/</link>
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/23/minicran/</guid>
+      <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
       <description>Next month, I’m teaching a workshop on R/qtl and R/qtl2 at the joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017) meeting in Memphis.
 I was chatting with Śaunak Sen about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on CRAN. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</description>
     </item>
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
     </item>
     
     <item>
       <title>crayon colors, simplified</title>
-      <link>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
+      <link>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
+      <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>Back in 2014, I’d grabbed the Crayola crayon colors from Wikipedia and made them available as part of my R/broman package.
 (I wrote about it on previously, and then again and again.)
 But using my package to get the crayon colors can be rather tedious.
@@ -98,60 +98,60 @@ brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majes
     
     <item>
       <title>caching blogdown</title>
-      <link>http://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
+      <link>https://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
+      <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
       <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
 I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
     </item>
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
 But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
       <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
 It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
     </item>
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
+      <link>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
       <description>For the problem I reported yesterday, in which my R package was working fine locally but failing on Travis, the key solution is to run update.packages(ask=FALSE) locally, and maybe even update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;) to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
 In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis.</description>
     </item>
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
@@ -161,10 +161,10 @@ I spent the day trying to resolve a bug in my early-in-development R package, qt
     
     <item>
       <title>Randomized Hobbit</title>
-      <link>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
+      <link>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
+      <guid>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
       <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
 I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 Here&amp;rsquo;s the code I used to grab the text.
@@ -173,10 +173,10 @@ library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
 Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
 So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
@@ -184,10 +184,10 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
     
     <item>
       <title>Error notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
+      <link>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
+      <guid>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
       <description>I&amp;rsquo;m enthusiastic about having R notify me when my script is done.
 But among my early uses of this, my script threw an error, and I never got a text or pushbullet about that. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.
 It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like options(error = function() { } )</description>
@@ -195,10 +195,10 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
     
     <item>
       <title>Notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
+      <link>https://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
+      <guid>https://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
@@ -208,60 +208,60 @@ library(beepr) beep()  beepr comes with a bunch of different sounds (e.</descrip
     
     <item>
       <title>Yet another R package primer</title>
-      <link>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
+      <link>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
+      <guid>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
       <description>Hadley Wickham is writing what will surely be a great book about the basics of R packages. And Hilary Parker wrote a very influential post on how to write an R package. So it seems like that topic is well covered.
 Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another minimal tutorial with an alliterative name, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic.</description>
     </item>
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>I&amp;rsquo;ve been working on an R package, R/qtlcharts, with D3-based interactive graphs for quantitative trait locus mapping experiments.
 Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much have to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.</description>
     </item>
     
     <item>
       <title>UseR 2014, days 3-4</title>
-      <link>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</link>
+      <link>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
+      <guid>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
       <description>Three weeks ago, I&amp;rsquo;d commented on the first two days of the UseR 2014 conference. I&amp;rsquo;m finally back to talk about the second half.
 Dirk Eddelbuettel on Rcpp Dirk Eddelbuettel gave a keynote on Rcpp [slides]. The goal of Rcpp is to have &amp;ldquo;the speed of C++ with the ease and clarity of R.&amp;rdquo; He gave a series of examples that left me (who still uses .C() to access C code) thinking, &amp;ldquo;Holy crap this is so much easier than what I do!</description>
     </item>
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.
 For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with image, the border is often obscured. I want a nice black rectangle around the outside.</description>
     </item>
     
     <item>
       <title>2014 UseR conference, days 1-2</title>
-      <link>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
+      <link>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <guid>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>I&amp;rsquo;m at UCLA for the UseR Conference. I attended once before, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.
 In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having co-organized a small conference last year, I appreciate the difficulties.</description>
     </item>
     
     <item>
       <title>hipsteR: re-educating people who learned R before it was cool</title>
-      <link>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
+      <link>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
+      <guid>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
       <description>This morning, I started a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.
 Yesterday I started reading the Rcpp book, and on page 4 there&amp;rsquo;s an example using the R function replicate, which (a) I&amp;rsquo;d never heard before, and (b) is super useful.
 I mean, I often write code like this, for a bootstrap:
@@ -270,10 +270,10 @@ x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TR
     
     <item>
       <title>Further points on crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
+      <link>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
+      <guid>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>I saw this great post on crayola crayon colors at the Learning R blog, reproducing a nice graph of the Crayola crayon colors over time. (Also see this even nicer version.)
 The Learning R post shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;List of Crayola crayon colors,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):
 library(XML) theurl &amp;lt;- &amp;quot;http://en.</description>
@@ -281,20 +281,20 @@ library(XML) theurl &amp;lt;- &amp;quot;http://en.</description>
     
     <item>
       <title>Two more points about crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
+      <link>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
       <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
+      <guid>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
 crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;)  I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
       <title>Crayon colors in R</title>
-      <link>http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</link>
+      <link>https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</link>
       <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</guid>
+      <guid>https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</guid>
       <description>Last night I was working on a talk on creating effective graphs. Mostly, I needed to update the colors, as there&amp;rsquo;d been some gaudy ones in its previous form (e.g., slide 22).
 I usually pick colors using the crayons in the Mac Color Picker. But that has just 40 crayons, and I wanted more choices.
 That led me to the list of Crayola crayon colors on wikipedia. I wrote a ruby script to grab the color names and codes and added them to my R/broman package.</description>
@@ -302,10 +302,10 @@ That led me to the list of Crayola crayon colors on wikipedia. I wrote a ruby sc
     
     <item>
       <title>&#34;[&#34; with the apply() functions, revisited</title>
-      <link>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</link>
+      <link>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</link>
       <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
+      <guid>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
 id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2)  I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
 z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3)  As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
@@ -313,10 +313,10 @@ z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quo
     
     <item>
       <title>Googling errors</title>
-      <link>http://kbroman.org/blog/2014/02/14/googling-errors/</link>
+      <link>https://kbroman.org/blog/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/14/googling-errors/</guid>
+      <guid>https://kbroman.org/blog/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
 &amp;mdash; __root__ (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
@@ -325,10 +325,10 @@ Gtk-WARNING **: cannot open display: I was logged into a department server, tryi
     
     <item>
       <title>knitr in a knutshell tutorial</title>
-      <link>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
+      <link>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
+      <guid>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
       <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
 This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
 I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>

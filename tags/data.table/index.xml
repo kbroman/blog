@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data.table on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/data.table/</link>
+    <link>https://kbroman.org/blog/tags/data.table/</link>
     <description>Recent content in Data.table on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 11 May 2017 23:50:00 -0500</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/data.table/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/data.table/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
     </item>

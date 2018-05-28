@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/code/</link>
+    <link>https://kbroman.org/blog/tags/code/</link>
     <description>Recent content in Code on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Write unit tests!</title>
-      <link>http://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
       <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
 It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
     </item>
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
@@ -37,10 +37,10 @@ I spent the day trying to resolve a bug in my early-in-development R package, qt
     
     <item>
       <title>Randomized Hobbit</title>
-      <link>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
+      <link>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
+      <guid>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
       <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
 I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 Here&amp;rsquo;s the code I used to grab the text.
@@ -49,10 +49,10 @@ library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;
     
     <item>
       <title>Error notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
+      <link>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
+      <guid>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
       <description>I&amp;rsquo;m enthusiastic about having R notify me when my script is done.
 But among my early uses of this, my script threw an error, and I never got a text or pushbullet about that. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.
 It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like options(error = function() { } )</description>
@@ -60,10 +60,10 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
     
     <item>
       <title>Notifications from R</title>
-      <link>http://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
+      <link>https://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
+      <guid>https://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
@@ -73,20 +73,20 @@ library(beepr) beep()  beepr comes with a bunch of different sounds (e.</descrip
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.
 For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with image, the border is often obscured. I want a nice black rectangle around the outside.</description>
     </item>
     
     <item>
       <title>hipsteR: re-educating people who learned R before it was cool</title>
-      <link>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
+      <link>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
+      <guid>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
       <description>This morning, I started a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.
 Yesterday I started reading the Rcpp book, and on page 4 there&amp;rsquo;s an example using the R function replicate, which (a) I&amp;rsquo;d never heard before, and (b) is super useful.
 I mean, I often write code like this, for a bootstrap:
@@ -95,10 +95,10 @@ x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TR
     
     <item>
       <title>Further points on crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
+      <link>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
+      <guid>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>I saw this great post on crayola crayon colors at the Learning R blog, reproducing a nice graph of the Crayola crayon colors over time. (Also see this even nicer version.)
 The Learning R post shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;List of Crayola crayon colors,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):
 library(XML) theurl &amp;lt;- &amp;quot;http://en.</description>
@@ -106,20 +106,20 @@ library(XML) theurl &amp;lt;- &amp;quot;http://en.</description>
     
     <item>
       <title>Two more points about crayon colors</title>
-      <link>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
+      <link>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
       <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
+      <guid>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
 crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;)  I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
       <title>&#34;[&#34; with the apply() functions, revisited</title>
-      <link>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</link>
+      <link>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</link>
       <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
+      <guid>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
 id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2)  I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
 z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3)  As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
@@ -127,10 +127,10 @@ z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quo
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>I like to use LaTeX to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.
 Most people that use LaTeX to make slides seem to use Beamer, but the resulting slides are usually a bit busy, like this:
 
@@ -139,10 +139,10 @@ I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s
     
     <item>
       <title>&#34;[&#34; and &#34;[[&#34; with the apply() functions</title>
-      <link>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</link>
+      <link>https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</guid>
+      <guid>https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</guid>
       <description>Did you know you can use &amp;quot;[&amp;quot; and &amp;quot;[[&amp;quot; as function names for subsetting with calls to the apply-type functions?
 For example, suppose you have a bunch of identifier strings like &amp;quot;ZYY-43S-CWA3&amp;quot; and you want to pull off the bit before the first hyphen (&amp;quot;ZYY&amp;quot; in this case). (For code to create random IDs like that, see the end of this post.)
 Suppose the IDs are in a vector of character strings, id.</description>
@@ -150,10 +150,10 @@ Suppose the IDs are in a vector of character strings, id.</description>
     
     <item>
       <title>Read the source code</title>
-      <link>http://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
+      <link>https://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
+      <guid>https://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
       <description>The other day, there was a bit of a twitter conversation about qqline in R.
 It made me think: how exactly is the line produced by qqline chosen? I seemed to recall that the line was through the first and third quartiles.
 An advantage of R is that you can just type the name of the function and see the code:
@@ -162,10 +162,10 @@ An advantage of R is that you can just type the name of the function and see the
     
     <item>
       <title>Beware of grep with a list</title>
-      <link>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</link>
+      <link>https://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</link>
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</guid>
+      <guid>https://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>Another R tip: beware of as.character applied to a list.
 &amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot;  Really, beware of grep with a list:
 &amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6])) [1] 1 2  You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
@@ -173,10 +173,10 @@ An advantage of R is that you can just type the name of the function and see the
     
     <item>
       <title>apply vs for</title>
-      <link>http://kbroman.org/blog/2013/04/02/apply-vs-for/</link>
+      <link>https://kbroman.org/blog/2013/04/02/apply-vs-for/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/02/apply-vs-for/</guid>
+      <guid>https://kbroman.org/blog/2013/04/02/apply-vs-for/</guid>
       <description>It&amp;rsquo;s widely understood that, in R programming, one should avoid for loops and always try to use apply-type functions.
 But this isn&amp;rsquo;t entirely true. It may have been true for Splus, back in the day: As I recall, that had to do with the entire environment from each iteration being retained in memory.
 Here&amp;rsquo;s a simple example:
@@ -185,10 +185,10 @@ Here&amp;rsquo;s a simple example:
     
     <item>
       <title>x[[c(5,3)]]</title>
-      <link>http://kbroman.org/blog/2013/04/02/xc53/</link>
+      <link>https://kbroman.org/blog/2013/04/02/xc53/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/04/02/xc53/</guid>
+      <guid>https://kbroman.org/blog/2013/04/02/xc53/</guid>
       <description>An R tip: Did you know that x[[c(5,3)]] is the same as x[[5]][[3]]?
 I should make more thorough use of this.
 In the help file for [[:
@@ -198,10 +198,10 @@ In the help file for [[:
     
     <item>
       <title>D3.js difficulties</title>
-      <link>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
       <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
@@ -210,20 +210,20 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
     
     <item>
       <title>as.character() for rownames()</title>
-      <link>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</link>
+      <link>https://kbroman.org/blog/2012/03/22/as-character-for-rownames/</link>
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/03/22/as-character-for-rownames/</guid>
+      <guid>https://kbroman.org/blog/2012/03/22/as-character-for-rownames/</guid>
       <description>Rainer pointed out, in response to my post, Row names in data frames: Beware of 1:nrow, that if I&amp;rsquo;d used rownames(x) &amp;lt;- as.character(1:3) rather than rownames(x) &amp;lt;- 1:3, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.
 &amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rownames(z) &amp;lt;- as.character(1:3) &amp;gt; rbind(y,x) id D 1 E 2 F 3 4 1 5 2 6 3 &amp;gt; rbind(y,z) id D 1 E 2 F 3 1 1 2 2 3 3  If you type rownames(x) you see the same result as rownames(z), and is.</description>
     </item>
     
     <item>
       <title>Row names in data frames: beware of 1:nrow</title>
-      <link>http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</link>
+      <link>https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</link>
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
+      <guid>https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
       <description>I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, x, as 1:nrow(x), R will act as if you&amp;rsquo;d not assigned row names, and the names might get changed when you do rbind.
 Here&amp;rsquo;s an illustration:
 &amp;gt; x &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rbind(x,y) id 1 1 2 2 3 3 D 4 E 5 F 6 &amp;gt; rbind(y,x) id D 4 E 5 F 6 4 1 5 2 6 3  As you can see, if you give x the row names 1:3, these are treated as generic row numbers and could get changed following rbind if they end up in different rows.</description>
@@ -231,30 +231,30 @@ Here&amp;rsquo;s an illustration:
     
     <item>
       <title>Halloween 2011 count</title>
-      <link>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
+      <link>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
+      <guid>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
       <description>We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).
 I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.</description>
     </item>
     
     <item>
       <title>Quick labels within figures</title>
-      <link>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</link>
+      <link>https://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</link>
       <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</guid>
+      <guid>https://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</guid>
       <description>One of the coolest R packages I heard about at the useR! Conference: Toby Dylan Hocking&amp;rsquo;s directlabels package for putting labels directly next to the relevant curves or point clouds in a figure.
 I think I first learned about this idea from Andrew Gelman: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this: rather than this: I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place.</description>
     </item>
     
     <item>
       <title>The stupidest R code ever</title>
-      <link>http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</link>
+      <link>https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</guid>
+      <guid>https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</guid>
       <description>Let me tell you about my stupidest R mistake.
 In the R package that I write, R/qtl, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.
 I&amp;rsquo;d gotten some reports that if there were many phenotypes, the import of such a file could take an extremely long time.</description>

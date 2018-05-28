@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/conference/</link>
+    <link>https://kbroman.org/blog/tags/conference/</link>
     <description>Recent content in Conference on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/conference/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>these guys</title>
-      <link>http://kbroman.org/blog/2017/12/18/these-guys/</link>
+      <link>https://kbroman.org/blog/2017/12/18/these-guys/</link>
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/12/18/these-guys/</guid>
+      <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
       <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
 I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
 &amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
@@ -25,20 +25,20 @@ I’ve just become ACUTELY aware that we should not say “these guys” when re
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
       <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
 This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
       <title>My JSM 2016 itinerary</title>
-      <link>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
+      <link>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
+      <guid>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
 First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
 Sunday  (2:00 - 3:50) Open source statistical software for data science</description>
@@ -46,10 +46,10 @@ Sunday  (2:00 - 3:50) Open source statistical software for data science</descrip
     
     <item>
       <title>God-awful conference websites</title>
-      <link>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
+      <link>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
+      <guid>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>What do I want in a conference website? Not this.
  I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
  If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
@@ -57,60 +57,60 @@ Sunday  (2:00 - 3:50) Open source statistical software for data science</descrip
     
     <item>
       <title>Memories of past JSMs</title>
-      <link>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
+      <link>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
+      <guid>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
       <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
 JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
       <title>2015 AAAS in San Jose</title>
-      <link>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</link>
+      <link>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
+      <guid>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
       <description>I&amp;rsquo;m at the 2015 AAAS meeting in San Jose, California. This is definitely not my typical meeting: too big, too broad, and I hardly know anyone here. But here&amp;rsquo;s a quick (ha ha; yah sure) summary of the meeting so far.
 Opening night Gerald Fink gave the President&amp;rsquo;s Address last night. He&amp;rsquo;s the AAAS President, so I guess that&amp;rsquo;s appropriate. But after five minutes of really lame simplistic crap (for example, he said something like, &amp;ldquo;A single picture can destroy our known understanding of the universe,&amp;rdquo; like innovation and improving our understanding is a bad thing), I left.</description>
     </item>
     
     <item>
       <title>UseR 2014, days 3-4</title>
-      <link>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</link>
+      <link>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
+      <guid>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
       <description>Three weeks ago, I&amp;rsquo;d commented on the first two days of the UseR 2014 conference. I&amp;rsquo;m finally back to talk about the second half.
 Dirk Eddelbuettel on Rcpp Dirk Eddelbuettel gave a keynote on Rcpp [slides]. The goal of Rcpp is to have &amp;ldquo;the speed of C++ with the ease and clarity of R.&amp;rdquo; He gave a series of examples that left me (who still uses .C() to access C code) thinking, &amp;ldquo;Holy crap this is so much easier than what I do!</description>
     </item>
     
     <item>
       <title>2014 UseR conference, days 1-2</title>
-      <link>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
+      <link>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <guid>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>I&amp;rsquo;m at UCLA for the UseR Conference. I attended once before, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.
 In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having co-organized a small conference last year, I appreciate the difficulties.</description>
     </item>
     
     <item>
       <title>Hiring computational biologists</title>
-      <link>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
+      <link>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
+      <guid>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
       <description>The Morgridge Institute for Research (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. One position is joint with my department, Biostatistics &amp;amp; Medical Informatics.
 Yet another symposium Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (Here&amp;rsquo;s the agenda.) Great speakers: Marc Suchard, Brian Shoichet, David Page, and Winston Hide. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.</description>
     </item>
     
     <item>
       <title>ENAR highs and lows</title>
-      <link>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
+      <link>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
+      <guid>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
 I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
 Let me tell you about the high- and lowlights, for me.</description>
@@ -118,20 +118,20 @@ Let me tell you about the high- and lowlights, for me.</description>
     
     <item>
       <title>ENAR 2012</title>
-      <link>http://kbroman.org/blog/2012/04/18/enar-2012/</link>
+      <link>https://kbroman.org/blog/2012/04/18/enar-2012/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/04/18/enar-2012/</guid>
+      <guid>https://kbroman.org/blog/2012/04/18/enar-2012/</guid>
       <description>The annual ENAR meeting (eastern North America portion of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see old friends, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.
 Ways to annoy me  Distorted aspect ratios: I&amp;rsquo;m often seeing LCD projectors set up in wide format, stretching a presentation that was developed in the old 4:3 style.</description>
     </item>
     
     <item>
       <title>useR! Conference 2011 highlights</title>
-      <link>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</link>
+      <link>https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</link>
       <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</guid>
+      <guid>https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</guid>
       <description>I was at the useR! Conference at The University of Warwick in Coventry, UK, last week. My goal in going was to learn the latest things regarding (simple) dynamic graphics, (simple) web-based apps, parallel computing, and memory management (dealing with big data sets). I got just what I was hoping for and more. There are a lot of useful tools available that I want to adopt. I&amp;rsquo;ll summarize the high points below, with the particular areas of interest to me covered more exhaustively than just &amp;ldquo;highlights&amp;rdquo;.</description>
     </item>
     

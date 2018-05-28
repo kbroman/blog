@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.39" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <title>sqlite, feather, and fst - the stupidest thing...</title>
@@ -26,10 +26,10 @@
 
 
 
-<link rel="stylesheet" href="http://kbroman.org/blog/css/fonts.css" media="all">
-<link rel="stylesheet" href="http://kbroman.org/blog/css/main.css" media="all">
+<link rel="stylesheet" href="https://kbroman.org/blog/css/fonts.css" media="all">
+<link rel="stylesheet" href="https://kbroman.org/blog/css/main.css" media="all">
 
-<link rel="stylesheet" href="http://kbroman.org/blog/css/custom.css">
+<link rel="stylesheet" href="https://kbroman.org/blog/css/custom.css">
 
 
 
@@ -38,18 +38,18 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="http://kbroman.org/blog/" class="nav-logo">
-    <img src="http://kbroman.org/blog/images/karl.png"
+  <a href="https://kbroman.org/blog/" class="nav-logo">
+    <img src="https://kbroman.org/blog/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="http://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
-    <li><a href="http://kbroman.org/blog/about">
+    <li><a href="https://kbroman.org/blog/about">
             <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
             </a></li>
     
@@ -61,7 +61,7 @@
             <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
-    <li><a href="http://kbroman.org">
+    <li><a href="https://kbroman.org">
             <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
             </a></li>
     
@@ -221,12 +221,12 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
                     read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
                times=100)</code></pre>
 <pre><code>## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
-##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
-##    fstcomp  91  95  117     95  97  691   100    d</code></pre>
+##       expr min  lq mean median  uq  max neval
+##     sqlite   3   4    4      4   4    4   100
+##    feather 618 641  717    660 766 1215   100
+##  feather_t  43  47   48     48  49   54   100
+##        fst  61  63   80     64  65  341   100
+##    fstcomp  91  95  117     95  97  691   100</code></pre>
 <p>Here’s a summary of all of the results:</p>
 <pre class="r"><code>knitr::kable(results, digits=c(1,1,0,1),
              col.names=c(&quot;write time (s)&quot;, &quot;read time (s)&quot;,
@@ -299,7 +299,7 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
   <script>
   
   var disqus_config = function () {
-    this.page.url = "http:\/\/kbroman.org\/blog" + location.pathname;
+    this.page.url = "https:\/\/kbroman.org\/blog" + location.pathname;
   };
   
   (function() {
@@ -325,7 +325,7 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="http://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -344,7 +344,7 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
 
 
     
-<script src="http://kbroman.org/js/math-code.js"></script>
+<script src="https://kbroman.org/js/math-code.js"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {

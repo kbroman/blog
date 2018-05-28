@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Excel on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/excel/</link>
+    <link>https://kbroman.org/blog/tags/excel/</link>
     <description>Recent content in Excel on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 30 Jan 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/excel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Microsoft Office</title>
-      <link>http://kbroman.org/blog/2013/01/30/microsoft-office/</link>
+      <link>https://kbroman.org/blog/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
+      <guid>https://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
 There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
 As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.</description>
@@ -25,10 +25,10 @@ As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34
     
     <item>
       <title>5/9 data journalists use Excel</title>
-      <link>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
+      <link>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
+      <guid>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
       <description>&amp;hellip;if I&amp;rsquo;ve counted correctly.
 I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an open handbook.</description>
     </item>

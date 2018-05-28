@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/r/</link>
+    <link>https://kbroman.org/blog/tags/r/</link>
     <description>Recent content in R on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EOF within quoted string</title>
-      <link>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <link>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
       <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
 The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
     </item>
     
     <item>
       <title>miner and craft</title>
-      <link>http://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>https://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
       <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
 I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
       <title>omg, bookdown!</title>
-      <link>http://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
+      <link>https://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
+      <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
       <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
 I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
     </item>
     
     <item>
       <title>deeply nested functions</title>
-      <link>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <link>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
 setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
       <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
 This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
       <title>miniCRAN</title>
-      <link>http://kbroman.org/blog/2017/05/23/minicran/</link>
+      <link>https://kbroman.org/blog/2017/05/23/minicran/</link>
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/23/minicran/</guid>
+      <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
       <description>Next month, I’m teaching a workshop on R/qtl and R/qtl2 at the joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017) meeting in Memphis.
 I was chatting with Śaunak Sen about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on CRAN. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</description>
     </item>
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
     </item>
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
 (Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
 I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
@@ -95,10 +95,10 @@ I was very glad that I’d written a bunch of tests, because I could use those t
     
     <item>
       <title>crayon colors, simplified</title>
-      <link>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
+      <link>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
+      <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>Back in 2014, I’d grabbed the Crayola crayon colors from Wikipedia and made them available as part of my R/broman package.
 (I wrote about it on previously, and then again and again.)
 But using my package to get the crayon colors can be rather tedious.
@@ -109,30 +109,30 @@ brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majes
     
     <item>
       <title>caching blogdown</title>
-      <link>http://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
+      <link>https://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
+      <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
       <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
 I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
     </item>
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
 But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>http://kbroman.org/blog/2011/08/17/introduction/</link>
+      <link>https://kbroman.org/blog/2011/08/17/introduction/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2011/08/17/introduction/</guid>
+      <guid>https://kbroman.org/blog/2011/08/17/introduction/</guid>
       <description>I&amp;rsquo;m at the useR! Conference in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.
 Particularly interesting were the Lightning talks: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically. It worked extremely well; more talks should be done this way!
 And particularly interesting, among the lightning talks, was one by Tal Galili, who started the R-bloggers blog aggregator.</description>

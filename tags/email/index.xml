@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Email on the stupidest thing...</title>
-    <link>http://kbroman.org/blog/tags/email/</link>
+    <link>https://kbroman.org/blog/tags/email/</link>
     <description>Recent content in Email on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 18 May 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://kbroman.org/blog/tags/email/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/email/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Should I be nice?</title>
-      <link>http://kbroman.org/blog/2012/05/18/should-i-be-nice/</link>
+      <link>https://kbroman.org/blog/2012/05/18/should-i-be-nice/</link>
       <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://kbroman.org/blog/2012/05/18/should-i-be-nice/</guid>
+      <guid>https://kbroman.org/blog/2012/05/18/should-i-be-nice/</guid>
       <description>I got the following email.
  Subject: i have a question? Date: May 18, 2012 7:57:56 AM CDT how can i enter the data of QTL analysis.  That was the whole thing.
 I presume that the writer wishes to use my R/qtl software.
