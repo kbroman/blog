@@ -426,8 +426,8 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(I’m not even going to try &lt;code&gt;read.csv&lt;/code&gt; and &lt;code&gt;write.csv&lt;/code&gt;. I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
-&lt;!-- html table generated in R 3.5.0 by xtable 1.8-2 package --&gt;
-&lt;!-- Mon May 28 06:42:23 2018 --&gt;
+&lt;!-- html table generated in R 3.5.1 by xtable 1.8-2 package --&gt;
+&lt;!-- Wed Aug 29 09:48:33 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1018,7 +1018,6 @@ research in statistical genetics; developer of
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://kbroman.org&#34;&gt;Website&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/kbroman&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;Old wordpress site&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
