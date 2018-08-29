@@ -23,9 +23,6 @@ copyright="The text in this work is licensed under CC-BY-4.0, https://creativeco
     name = "github"
     url = "https://github.com/kbroman"
 [[menu.main]]
-    name = "twitter"
-    url = "https://twitter.com/kwbroman"
-[[menu.main]]
     name = "web"
     url = "https://kbroman.org"
 
