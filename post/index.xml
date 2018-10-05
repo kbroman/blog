@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 16 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Twitter break</title>
+      <link>https://kbroman.org/blog/2018/10/05/twitter-break/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
+      <description>What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible reearch.
+But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it’s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone’s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I’ve been working on for five years with little apparent progress.</description>
+    </item>
     
     <item>
       <title>Learning a new programming language</title>
@@ -320,16 +330,6 @@ And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (henc
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
  TravisCI for not handling system.file() properly.
  R-devel for having broken system.</description>
-    </item>
-    
-    <item>
-      <title>Reproducibility is hard</title>
-      <link>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
-      <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
-I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
   </channel>

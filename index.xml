@@ -7,8 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 16 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Twitter break</title>
+      <link>https://kbroman.org/blog/2018/10/05/twitter-break/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
+      <description>&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible reearch.&lt;/p&gt;
+&lt;p&gt;But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it’s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone’s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I’ve been working on for five years with little apparent progress.&lt;/p&gt;
+&lt;p&gt;So I took a two-month break from Twitter. But I can’t say that I really felt better for it. And going back I see I’ve missed like 100 tweets about my &lt;a href=&#34;https://doi.org/10.1080/00031305.2017.1375989&#34;&gt;paper&lt;/a&gt; with &lt;a href=&#34;https://twitter.com/kara_woo&#34;&gt;Kara Woo&lt;/a&gt; on &lt;a href=&#34;https://doi.org/10.1080/00031305.2017.1375989&#34;&gt;data organization in spreadsheets&lt;/a&gt;. And I was mentioned among &lt;a href=&#34;https://news.wisc.edu/uws-most-interesting-twitter-accounts-you-need-to-follow/&#34;&gt;UW-Madison’s most interesting Twitter acccounts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So I’m coming back to Twitter, but maybe in a more scaled-back way.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Learning a new programming language</title>
@@ -426,8 +439,8 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(I’m not even going to try &lt;code&gt;read.csv&lt;/code&gt; and &lt;code&gt;write.csv&lt;/code&gt;. I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
-&lt;!-- html table generated in R 3.5.1 by xtable 1.8-2 package --&gt;
-&lt;!-- Wed Aug 29 09:48:33 2018 --&gt;
+&lt;!-- html table generated in R 3.5.1 by xtable 1.8-3 package --&gt;
+&lt;!-- Fri Oct  5 07:44:02 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1524,65 +1537,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;If you have suggests about how to simplify this, I&amp;rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.&lt;/p&gt;
 
 &lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/JennyBryan/status/647177192514785280&#34;&gt;showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub&lt;/a&gt;, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>It&#39;s not you, it&#39;s me</title>
-      <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
-      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
-      <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
-
-&lt;p&gt;And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).&lt;/p&gt;
-
-&lt;p&gt;I spent the day trying to resolve a bug in my early-in-development R package, &lt;a href=&#34;https://github.com/kbroman/qtl2geno&#34;&gt;qtl2geno&lt;/a&gt;. In the process, I blamed&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;TravisCI for not handling &lt;code&gt;system.file()&lt;/code&gt; properly.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;R-devel for having broken &lt;code&gt;system.file()&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;data.table::fread()&lt;/code&gt; for treating &lt;code&gt;sep=NULL&lt;/code&gt; differently on different operating systems.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Of course, none of these were true. I was just passing &lt;code&gt;sep=NULL&lt;/code&gt; to &lt;code&gt;data.table::fread()&lt;/code&gt;, and that worked in the previous version, but doesn&amp;rsquo;t work in the latest release on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, and I hadn&amp;rsquo;t yet installed the latest version of &lt;a href=&#34;https://github.com/Rdatatable/data.table&#34;&gt;data.table&lt;/a&gt; on my Mac, but Travis and my junky Windows laptop had the latest version.&lt;/p&gt;
-
-&lt;p&gt;The debugging process seems a potentially interesting case study, so I thought I&amp;rsquo;d write down some of the details.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;The whole thing started off with my &lt;a href=&#34;https://github.com/kbroman/qtl2geno&#34;&gt;qtl2geno&lt;/a&gt; package suddenly failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;TravisCI&lt;/a&gt;, even though it was still passing &lt;code&gt;R CMD check&lt;/code&gt; on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn&amp;rsquo;t realize that until the very end of the story.)&lt;/p&gt;
-
-&lt;p&gt;The problem line was in a &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd&#34;&gt;vignette&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;grav2 &amp;lt;- read_cross2( system.file(&amp;quot;extdata&amp;quot;, &amp;quot;grav2.zip&amp;quot;, package=&amp;quot;qtl2geno&amp;quot;) )
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The changes I&amp;rsquo;d been making to my package didn&amp;rsquo;t seem to have anything to do with this, so I concluded that the problem was &lt;code&gt;system.file()&lt;/code&gt;. Why that would have worked before but not now, I couldn&amp;rsquo;t say, but I figured maybe Travis was installing things differently than before.&lt;/p&gt;
-
-&lt;p&gt;I changed that code block to &lt;code&gt;eval=FALSE&lt;/code&gt;, but then a bunch of tests using &lt;code&gt;read_cross2( system.file( ... ) )&lt;/code&gt; were failing instead. Again, I figured the problem was &lt;code&gt;system.file()&lt;/code&gt;, because &lt;code&gt;R CMD check&lt;/code&gt; worked fine on my machine.&lt;/p&gt;
-
-&lt;p&gt;I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used &lt;a href=&#34;http://win-builder.r-project.org/&#34;&gt;R Win-builder&lt;/a&gt; to test my package with R-devel, and sure enough it failed there. So it wasn&amp;rsquo;t Travis. My conclusion was that R-devel had broken &lt;code&gt;system.file()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Poked around some more, and then finally used &lt;a href=&#34;http://win-builder.r-project.org/&#34;&gt;R Win-builder&lt;/a&gt; with R-release. And it failed with that, too. So it wasn&amp;rsquo;t R-devel either.&lt;/p&gt;
-
-&lt;p&gt;I then created a little tester package, &lt;a href=&#34;https://github.com/kbroman/testsysfile&#34;&gt;testsysfile&lt;/a&gt;, testing &lt;code&gt;system.file()&lt;/code&gt; with &lt;code&gt;read.csv()&lt;/code&gt; and then with &lt;code&gt;data.table::fread()&lt;/code&gt;. That all worked fine. So it seemed like it wasn&amp;rsquo;t actually &lt;code&gt;system.file()&lt;/code&gt;, but something within &lt;code&gt;read_cross2()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;So finally I poked into my own code, and then I realized that I was passing a &lt;code&gt;NULL&lt;/code&gt; value to the &lt;code&gt;sep&lt;/code&gt; argument of &lt;code&gt;fread()&lt;/code&gt;. (See &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L99-L100&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L474-L485&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;But why would &lt;code&gt;sep=NULL&lt;/code&gt; work on my Mac but not on Travis or R Win-builder? I pulled out my junky Windows laptop (purchased in order to have a better sense of what my students were dealing with), went through all of the Windows updates, then updated R, &lt;a href=&#34;https://cran.r-project.org/bin/windows/Rtools/&#34;&gt;Rtools&lt;/a&gt;, and &lt;a href=&#34;http://rstudio.com&#34;&gt;RStudio&lt;/a&gt;, and tried things out there.&lt;/p&gt;
-
-&lt;p&gt;With my &lt;a href=&#34;https://github.com/kbroman/testsysfile&#34;&gt;testsysfile&lt;/a&gt; package, I could see that &lt;code&gt;data.table::fread()&lt;/code&gt; was throwing an error with &lt;code&gt;sep=NULL&lt;/code&gt; on Windows, though it was working fine on my Mac.&lt;/p&gt;
-
-&lt;p&gt;I spent some time making a patch to &lt;code&gt;fread()&lt;/code&gt;, and I was really close to submitting a pull request. (Treating &lt;code&gt;sep=NULL&lt;/code&gt; didn&amp;rsquo;t seem important, but it did seem like it the behavior should be the same on Windows and Mac.) But then I saw, in the &lt;a href=&#34;https://github.com/Rdatatable/data.table/blob/master/README.md&#34;&gt;README&lt;/a&gt; file, that there were &lt;a href=&#34;https://github.com/Rdatatable/data.table/blob/master/Contributing.md&#34;&gt;Contribution guidelines&lt;/a&gt;. I figured I&amp;rsquo;d better go through them.&lt;/p&gt;
-
-&lt;p&gt;The guidelines say, &amp;ldquo;squash all your commits together,&amp;rdquo; so I spent some time getting my two commits combined into one. The guidelines also say to update the README file. In doing so, I realized that they&amp;rsquo;d put a new version of data.table on CRAN on 19 Sep 2015, which is precisely when my package started failing on Travis.&lt;/p&gt;
-
-&lt;p&gt;And so then I finally installed the updated version of data.table on my Mac, and saw that there was no operating system dependence; the differences I was seeing were just because of the old vs new version of data.table.&lt;/p&gt;
-
-&lt;p&gt;So data.table was updated in a way where &lt;code&gt;sep=NULL&lt;/code&gt; was no longer working, and in my own code, I had relied on that. So six hours, &lt;a href=&#34;https://twitter.com/kwbroman/status/647125510686920705&#34;&gt;many tweets&lt;/a&gt;, lots of blaming of others, and finally I&amp;rsquo;d worked out that it was all my own fault.&lt;/p&gt;
 </description>
     </item>
     
