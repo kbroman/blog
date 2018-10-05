@@ -10,7 +10,7 @@ tags: [twitter]
 What I've liked most about Twitter is that it's helped me to feel less
 isolated, as I've been able to connect with distant folks who share my
 interests and values, particularly regarding open science and
-reproducible reearch.
+reproducible research.
 
 But somehow, lately, Twitter had me feeling less rather than more
 connected. I think maybe it's been that conference effect: scientific
@@ -26,6 +26,6 @@ tweets about my [paper](https://doi.org/10.1080/00031305.2017.1375989)
 with [Kara Woo](https://twitter.com/kara_woo) on [data organization in
 spreadsheets](https://doi.org/10.1080/00031305.2017.1375989). And I
 was mentioned among [UW-Madison's most interesting Twitter
-acccounts](https://news.wisc.edu/uws-most-interesting-twitter-accounts-you-need-to-follow/).
+accounts](https://news.wisc.edu/uws-most-interesting-twitter-accounts-you-need-to-follow/).
 
 So I'm coming back to Twitter, but maybe in a more scaled-back way.
