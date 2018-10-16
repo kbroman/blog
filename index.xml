@@ -440,7 +440,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.1 by xtable 1.8-3 package --&gt;
-&lt;!-- Fri Oct  5 07:46:18 2018 --&gt;
+&lt;!-- Tue Oct 16 08:39:18 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1031,6 +1031,7 @@ research in statistical genetics; developer of
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://kbroman.org&#34;&gt;Website&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/kbroman&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;Old wordpress site&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
