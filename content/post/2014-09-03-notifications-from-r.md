@@ -31,7 +31,7 @@ library(beepr)
 beep()
 ````
 
-[beepr](https://github.com/rasmusab/beepr) comes with a bunch of different sounds (e.g., try `beep("facebook")`), or use a path to any wav file. I tried [these cat sounds](http://www.kessels.com/catsounds/), but they came out (with my computer's speaker) sounding more like a really unhappy electronic lion...not very pleasant.
+[beepr](https://github.com/rasmusab/beepr) comes with a bunch of different sounds (e.g., try `beep("facebook")`), or use a path to any wav file. I tried [these cat sounds](http://www.kessels.com/CatSounds/), but they came out (with my computer's speaker) sounding more like a really unhappy electronic lion...not very pleasant.
 
 [beepr](https://github.com/rasmusab/beepr) is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I'm instead having my scripts send me a text or a notification via [pushbullet](http://pushbullet.com).
 
