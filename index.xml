@@ -440,7 +440,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.1 by xtable 1.8-3 package --&gt;
-&lt;!-- Tue Oct 16 08:39:18 2018 --&gt;
+&lt;!-- Tue Oct 23 15:00:48 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -863,12 +863,12 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
                     read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
                times=100)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval
-##     sqlite   3   4    4      4   4    4   100
-##    feather 618 641  717    660 766 1215   100
-##  feather_t  43  47   48     48  49   54   100
-##        fst  61  63   80     64  65  341   100
-##    fstcomp  91  95  117     95  97  691   100&lt;/code&gt;&lt;/pre&gt;
+##       expr min  lq mean median  uq  max neval   cld
+##     sqlite   3   4    4      4   4    4   100 a    
+##    feather 618 641  717    660 766 1215   100     e
+##  feather_t  43  47   48     48  49   54   100  b   
+##        fst  61  63   80     64  65  341   100   c  
+##    fstcomp  91  95  117     95  97  691   100    d&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of all of the results:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::kable(results, digits=c(1,1,0,1),
              col.names=c(&amp;quot;write time (s)&amp;quot;, &amp;quot;read time (s)&amp;quot;,
