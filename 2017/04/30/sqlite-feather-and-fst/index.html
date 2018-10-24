@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.49.2" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <title>sqlite, feather, and fst - the stupidest thing...</title>
@@ -221,12 +221,12 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
                     read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
                times=100)</code></pre>
 <pre><code>## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
-##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
-##    fstcomp  91  95  117     95  97  691   100    d</code></pre>
+##       expr min  lq mean median  uq  max neval
+##     sqlite   3   4    4      4   4    4   100
+##    feather 618 641  717    660 766 1215   100
+##  feather_t  43  47   48     48  49   54   100
+##        fst  61  63   80     64  65  341   100
+##    fstcomp  91  95  117     95  97  691   100</code></pre>
 <p>Here’s a summary of all of the results:</p>
 <pre class="r"><code>knitr::kable(results, digits=c(1,1,0,1),
              col.names=c(&quot;write time (s)&quot;, &quot;read time (s)&quot;,
