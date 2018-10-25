@@ -83,16 +83,16 @@
     
 
     <div class="article-content">
-      <p>One of the coolest R packages I heard about at the <a href="http://www.warwick.ac.uk/statsdept/user-2011/">useR! Conference</a>: <a href="http://cbio.ensmp.fr/~thocking/">Toby Dylan Hocking</a>&rsquo;s <a href="http://directlabels.r-forge.r-project.org/">directlabels</a> package for putting labels directly next to the relevant curves or point clouds in a figure.</p>
+      <p>One of the coolest R packages I heard about at the <a href="http://www.warwick.ac.uk/statsdept/user-2011/">useR! Conference</a>: <a href="http://members.cbio.mines-paristech.fr/~thocking/">Toby Dylan Hocking</a>&rsquo;s <a href="http://directlabels.r-forge.r-project.org/">directlabels</a> package for putting labels directly next to the relevant curves or point clouds in a figure.</p>
 
-<p>I think I first learned about this idea from <a href="http://www.andrewgelman.com">Andrew Gelman</a>: that a separate legend requires a lot of back-and-forth glances, so it&rsquo;s better to put the labels right by the relevant bits. For example, like this:
-<img src="http://kbroman.files.wordpress.com/2011/08/direct_by_hand.png" alt="" />
+<p>I think I first learned about this idea from <a href="https://www.andrewgelman.com">Andrew Gelman</a>: that a separate legend requires a lot of back-and-forth glances, so it&rsquo;s better to put the labels right by the relevant bits. For example, like this:
+<img src="https://kbroman.files.wordpress.com/2011/08/direct_by_hand.png" alt="" />
 <!-- more -->rather than this:
-<img src="http://kbroman.files.wordpress.com/2011/08/legend.png" alt="" /></p>
+<img src="https://kbroman.files.wordpress.com/2011/08/legend.png" alt="" /></p>
 
 <p>I&rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here&rsquo;s the code I used for the first of those pictures. (It was relatively easy here.)</p>
 
-<pre><code>load(con &lt;- url(&quot;http://www.biostat.wisc.edu/~kbroman/blog/mapexpansion.RData&quot;))
+<pre><code>load(con &lt;- url(&quot;https://www.biostat.wisc.edu/~kbroman/blog/mapexpansion.RData&quot;))
 close(con)
 
 plot(dat[,1], dat[,4],
@@ -110,7 +110,7 @@ text(17, dat[18,-1]-0.1, paste(colnames(dat)[-1], &quot;-way&quot;, sep=&quot;&q
 
 <p>The aim of the <a href="http://directlabels.r-forge.r-project.org/">directlabels</a> package is get this without effort.</p>
 
-<p>I need to switch to either <code>lattice</code> or <code>ggplot2</code> (vs. base graphics). But I should be doing that anyway. I&rsquo;ll try <code>lattice</code> for this. I rearrange the data a bit, call <code>xyplot</code> and then use <code>direct.labels</code> to make the actual plot, as follows. (Note the use of <code>with</code> and <code>gl</code>, which I just learned about from <a href="http://4dpiecharts.com/2011/08/22/more-useless-statistics/">Richie Cotton</a>.)</p>
+<p>I need to switch to either <code>lattice</code> or <code>ggplot2</code> (vs. base graphics). But I should be doing that anyway. I&rsquo;ll try <code>lattice</code> for this. I rearrange the data a bit, call <code>xyplot</code> and then use <code>direct.labels</code> to make the actual plot, as follows. (Note the use of <code>with</code> and <code>gl</code>, which I just learned about from <a href="https://4dpiecharts.com/2011/08/22/more-useless-statistics/">Richie Cotton</a>.)</p>
 
 <pre><code>library(lattice)
 library(directlabels)
@@ -124,14 +124,14 @@ direct.label(p)
 </code></pre>
 
 <p>And here&rsquo;s what I get:
-<img src="http://kbroman.files.wordpress.com/2011/08/from_directlabels.png" alt="" /></p>
+<img src="https://kbroman.files.wordpress.com/2011/08/from_directlabels.png" alt="" /></p>
 
-<p>For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the &ldquo;real&rdquo; version of the above figure, from <a href="http://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf">a paper under review</a>, using a mixture of legend and direct labels:</p>
+<p>For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the &ldquo;real&rdquo; version of the above figure, from <a href="https://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf">a paper under review</a>, using a mixture of legend and direct labels:</p>
 
-<p><img src="http://kbroman.files.wordpress.com/2011/08/fig_in_paper.png" alt="" /></p>
+<p><img src="https://kbroman.files.wordpress.com/2011/08/fig_in_paper.png" alt="" /></p>
 
 <p>Here&rsquo;s another figure I&rsquo;m quite proud of, from a paper nearing submission.
-<img src="http://kbroman.files.wordpress.com/2011/08/phyloqtl.png" alt="" /></p>
+<img src="https://kbroman.files.wordpress.com/2011/08/phyloqtl.png" alt="" /></p>
 
     </div>
   </article>
