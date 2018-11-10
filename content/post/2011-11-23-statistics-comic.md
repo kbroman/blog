@@ -9,6 +9,6 @@ tags:
 slug: statistics-comic
 ---
 
-[Saturday Morning Breakfast Cereal](http://www.smbc-comics.com) has [a rather accurate representation of statisticians](http://www.smbc-comics.com):
+[Saturday Morning Breakfast Cereal](https://www.smbc-comics.com) has [a rather accurate representation of statisticians](https://www.smbc-comics.com):
 
-![Saturday morning breakfast cereal comic](http://www.smbc-comics.com/comics/20111123.gif)
+![Saturday morning breakfast cereal comic](https://www.smbc-comics.com/comics/20111123.gif)
