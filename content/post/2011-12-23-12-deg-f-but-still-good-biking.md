@@ -11,4 +11,4 @@ slug: 12-deg-f-but-still-good-biking
 
 My last day biking to work for a while...
 
-![20111223-081837.jpg](http://kbroman.files.wordpress.com/2011/12/20111223-081837.jpg)
+![20111223-081837.jpg](https://kbroman.files.wordpress.com/2011/12/20111223-081837.jpg)
