@@ -9,6 +9,6 @@ tags:
 slug: i-hate-reading-other-peoples-code
 ---
 
-![](http://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png)
+![](https://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png)
 
-From [Abstruse Goose](http://abstrusegoose.com/432).
+From [Abstruse Goose](https://abstrusegoose.com/432).
