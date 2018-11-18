@@ -80,15 +80,15 @@
     <div class="article-content">
       
 
-<p>Maybe it&rsquo;s just that I&rsquo;m stupid and haven&rsquo;t been paying proper attention to <a href="http://rafalab.jhsph.edu/">Rafa&rsquo;s work</a> in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&rsquo;ve re-learned.</p>
+<p>Maybe it&rsquo;s just that I&rsquo;m stupid and haven&rsquo;t been paying proper attention to <a href="https://rafalab.github.io/">Rafa&rsquo;s work</a> in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&rsquo;ve re-learned.</p>
 
 <h3 id="lesson-1-what-the-hell-is-that">Lesson 1: What the hell is that?</h3>
 
-<p>Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (<a href="http://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf">autozygosity in the CEPH families</a>, <a href="http://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf">a large, common human inversion polymorphism</a>, and most recently <a href="http://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf">sample mixups</a>).</p>
+<p>Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (<a href="https://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf">autozygosity in the CEPH families</a>, <a href="https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf">a large, common human inversion polymorphism</a>, and most recently <a href="https://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf">sample mixups</a>).</p>
 
 <p>A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, &ldquo;Hmm, that&rsquo;s interesting,&rdquo; and so I made some more plots.  And then I saw this:</p>
 
-<p><img src="http://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png" alt="" /></p>
+<p><img src="https://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png" alt="" /></p>
 
 <p>This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.</p>
 
@@ -104,13 +104,13 @@
 
 <p>You can&rsquo;t make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:</p>
 
-<p><img src="http://kbroman.files.wordpress.com/2012/04/many_boxplots.png" alt="" /></p>
+<p><img src="https://kbroman.files.wordpress.com/2012/04/many_boxplots.png" alt="" /></p>
 
 <p>There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.</p>
 
 <p>I quite like the picture.</p>
 
-<p>The code is available within my <a href="https://github.com/kbroman/broman">R/broman</a> package on <a href="http://github.com">github</a>, though there&rsquo;s not much to it.</p>
+<p>The code is available within my <a href="https://github.com/kbroman/broman">R/broman</a> package on <a href="https://github.com">github</a>, though there&rsquo;s not much to it.</p>
 
 <h3 id="lesson-3-don-t-trust-anyone">Lesson 3: Don&rsquo;t trust anyone</h3>
 
