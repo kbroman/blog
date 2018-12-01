@@ -12,13 +12,13 @@ slug: curved-arrows-in-r
 
 I briefly investigated how to draw curved arrows in R. Here's a small piece of the figure that I ultimately created:
 
-<img src="http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" style="max-width:300px;">
+<img src="https://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" style="max-width:300px;">
 
 A google search for "curved arrows in R" revealed three options:
 
-  * [`curvedarrow`](http://rgm2.lab.nig.ac.jp/RGM2/func.php?rd_id=diagram:curvedarrow) in the [diagram](http://cran.r-project.org/web/packages/diagram/) package
+  * `curvedarrow` in the [diagram](https://cran.r-project.org/package=diagram) package
 
-  * The internal function `igraph.Arrows` within the [igraph](http://cran.r-project.org/web/packages/igraph) package (mentioned by Gabor Csardi [in R help](http://r.789695.n4.nabble.com/Curved-arrows-td886056.html))
+  * The internal function `igraph.Arrows` within the [igraph](https://cran.r-project.org/package=igraph) package (mentioned by Gabor Csardi [in R help](http://r.789695.n4.nabble.com/Curved-arrows-td886056.html))
 
   * Using `xspline` for the shaft and adding the head "by hand" ([mentioned](http://r.789695.n4.nabble.com/Curved-arrows-tt886056.html#a886057) by Greg Snow)
 
@@ -26,7 +26,7 @@ I wasn't too happy with how the arrow heads looked using the diagram package, an
 
 Plotting multiple arrows with different colors in a single call to `igraph.Arrows` didn't work right (the arrow heads were all the first color), but using a loop and plotting one arrow per call worked fine.
 
-Here's [a bit of code I played with](http://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R):
+Here's [a bit of code I played with](https://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R):
 
 ````r
 library(igraph)
@@ -75,6 +75,6 @@ iArrows(x1, y, x2, y,
 
 And here's the corresponding figure:
 
-![](http://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png)
+![](https://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png)
 
 Note that the arrows at the top all have green arrow heads.
