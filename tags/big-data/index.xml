@@ -14,10 +14,10 @@
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>https://kbroman.org/blog/2017/05/11/reading-writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/reading-writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
     </item>

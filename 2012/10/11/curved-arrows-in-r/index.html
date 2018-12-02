@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.51" />
 
 
 <title>Curved arrows in R - the stupidest thing...</title>
@@ -85,14 +85,14 @@
     <div class="article-content">
       <p>I briefly investigated how to draw curved arrows in R. Here&rsquo;s a small piece of the figure that I ultimately created:</p>
 
-<p><img src="http://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" style="max-width:300px;"></p>
+<p><img src="https://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" style="max-width:300px;"></p>
 
 <p>A google search for &ldquo;curved arrows in R&rdquo; revealed three options:</p>
 
 <ul>
-<li><p><a href="http://rgm2.lab.nig.ac.jp/RGM2/func.php?rd_id=diagram:curvedarrow"><code>curvedarrow</code></a> in the <a href="http://cran.r-project.org/web/packages/diagram/">diagram</a> package</p></li>
+<li><p><code>curvedarrow</code> in the <a href="https://cran.r-project.org/package=diagram">diagram</a> package</p></li>
 
-<li><p>The internal function <code>igraph.Arrows</code> within the <a href="http://cran.r-project.org/web/packages/igraph">igraph</a> package (mentioned by Gabor Csardi <a href="http://r.789695.n4.nabble.com/Curved-arrows-td886056.html">in R help</a>)</p></li>
+<li><p>The internal function <code>igraph.Arrows</code> within the <a href="https://cran.r-project.org/package=igraph">igraph</a> package (mentioned by Gabor Csardi <a href="http://r.789695.n4.nabble.com/Curved-arrows-td886056.html">in R help</a>)</p></li>
 
 <li><p>Using <code>xspline</code> for the shaft and adding the head &ldquo;by hand&rdquo; (<a href="http://r.789695.n4.nabble.com/Curved-arrows-tt886056.html#a886057">mentioned</a> by Greg Snow)</p></li>
 </ul>
@@ -101,7 +101,7 @@
 
 <p>Plotting multiple arrows with different colors in a single call to <code>igraph.Arrows</code> didn&rsquo;t work right (the arrow heads were all the first color), but using a loop and plotting one arrow per call worked fine.</p>
 
-<p>Here&rsquo;s <a href="http://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R">a bit of code I played with</a>:</p>
+<p>Here&rsquo;s <a href="https://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R">a bit of code I played with</a>:</p>
 
 <pre><code class="language-r">library(igraph)
 par(mar=rep(1,4))
@@ -149,7 +149,7 @@ iArrows(x1, y, x2, y,
 
 <p>And here&rsquo;s the corresponding figure:</p>
 
-<p><img src="http://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png" alt="" /></p>
+<p><img src="https://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png" alt="" /></p>
 
 <p>Note that the arrows at the top all have green arrow heads.</p>
 

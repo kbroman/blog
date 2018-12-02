@@ -48,10 +48,10 @@ I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>https://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</link>
+      <link>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/latex-unicode--xetex/</guid>
+      <guid>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</guid>
       <description>I&amp;rsquo;m co-organizing a scientific meeting at the end of May. The abstracts are all in.
 We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review. (I&amp;rsquo;m using Spreadsheet:XLSX for the first time; it&amp;rsquo;s really easy. Why have I always converted Excel files to CSV before parsing them?</description>
     </item>
