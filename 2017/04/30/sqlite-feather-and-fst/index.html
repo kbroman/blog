@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.51" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <title>sqlite, feather, and fst - the stupidest thing...</title>
@@ -85,10 +85,7 @@
     
 
     <div class="article-content">
-      
-
-
-<p>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.</p>
+      <p>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.</p>
 <p>But I’ve finally entered the modern era of biggish data. (Why do they call it <em>big</em> data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about <a href="https://www.nap.edu/read/5505/chapter/1"><em>massive</em> data</a>.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.</p>
 <p>So I’ve been playing with <a href="https://www.sqlite.org/">SQLite</a> and <a href="https://www.mongodb.com/">MongoDB</a>, and more recently <a href="https://github.com/wesm/feather">feather</a> and <a href="http://www.fstpackage.org">fst</a>. And I thought I’d show a few examples. I’m interested mostly in quick access, from <a href="https://www.r-project.org">R</a>, to small portions of a large file.</p>
 <div id="data-rds" class="section level3">
@@ -224,12 +221,12 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
                     read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
                times=100)</code></pre>
 <pre><code>## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
-##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
-##    fstcomp  91  95  117     95  97  691   100    d</code></pre>
+##       expr min  lq mean median  uq  max neval
+##     sqlite   3   4    4      4   4    4   100
+##    feather 618 641  717    660 766 1215   100
+##  feather_t  43  47   48     48  49   54   100
+##        fst  61  63   80     64  65  341   100
+##    fstcomp  91  95  117     95  97  691   100</code></pre>
 <p>Here’s a summary of all of the results:</p>
 <pre class="r"><code>knitr::kable(results, digits=c(1,1,0,1),
              col.names=c(&quot;write time (s)&quot;, &quot;read time (s)&quot;,

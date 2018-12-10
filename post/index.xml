@@ -124,20 +124,20 @@ I was chatting with Śaunak Sen about preparations: the main problem is installa
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>https://kbroman.org/blog/2017/05/11/reading-writing-biggish-data-revisited/</link>
+      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/reading-writing-biggish-data-revisited/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
     </item>
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r-qtlcharts-for-d3-version-4/</link>
+      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r-qtlcharts-for-d3-version-4/</guid>
+      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
 (Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
 I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>

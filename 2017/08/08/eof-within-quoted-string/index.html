@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.51" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <title>EOF within quoted string - the stupidest thing...</title>
@@ -83,10 +83,7 @@
     
 
     <div class="article-content">
-      
-
-
-<p>So I was trying to parse <a href="http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz">this gff file</a> from <a href="http://www.informatics.jax.org/">MGI</a>, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.</p>
+      <p>So I was trying to parse <a href="http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz">this gff file</a> from <a href="http://www.informatics.jax.org/">MGI</a>, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.</p>
 <p>The documentation for the file is a <a href="http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx">docx file</a> (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</p>
 <p>I’d want to use <code>fread()</code> from the <a href="https://github.com/Rdatatable/data.table/wiki">data.table package</a>, but it turns out that the file has a bunch of lines with “<code>###</code>” interspersed within the data, and I couldn’t see a way to skip over those in <code>fread()</code>, so I fell back to the usual base R function, <code>read.table()</code>.</p>
 <p>Let’s first download and unzip the file.</p>

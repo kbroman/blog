@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.51" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <title>deeply nested functions - the stupidest thing...</title>
@@ -83,10 +83,7 @@
     
 
     <div class="article-content">
-      
-
-
-<p>If, in teaching folks about the <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a> pipe operator, <code>%&gt;%</code>, you’re looking for an in-the-wild example of deeply nested functions, our <a href="https://github.com/ROpenSciLabs/miner">miner</a> package (for connecting <a href="https://www.r-project.org">R</a> to <a href="https://minecraft.net">Minecraft</a>, developed at the <a href="https://ropensci.org">ROpenSci</a> <a href="http://unconf17.ropensci.org">2017 Unconference</a>) has <a href="https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41">a good one</a>:</p>
+      <p>If, in teaching folks about the <a href="https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html">magrittr</a> pipe operator, <code>%&gt;%</code>, you’re looking for an in-the-wild example of deeply nested functions, our <a href="https://github.com/ROpenSciLabs/miner">miner</a> package (for connecting <a href="https://www.r-project.org">R</a> to <a href="https://minecraft.net">Minecraft</a>, developed at the <a href="https://ropensci.org">ROpenSci</a> <a href="http://unconf17.ropensci.org">2017 Unconference</a>) has <a href="https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41">a good one</a>:</p>
 <pre class="r"><code>setNames(data.frame(
     do.call(rbind,
             sapply(

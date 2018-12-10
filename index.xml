@@ -16,10 +16,7 @@
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
-      <description>
-
-
-&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible research.&lt;/p&gt;
+      <description>&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible research.&lt;/p&gt;
 &lt;p&gt;But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it’s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone’s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I’ve been working on for five years with little apparent progress.&lt;/p&gt;
 &lt;p&gt;So I took a two-month break from Twitter. But I can’t say that I really felt better for it. And going back I see I’ve missed like 100 tweets about my &lt;a href=&#34;https://doi.org/10.1080/00031305.2017.1375989&#34;&gt;paper&lt;/a&gt; with &lt;a href=&#34;https://twitter.com/kara_woo&#34;&gt;Kara Woo&lt;/a&gt; on &lt;a href=&#34;https://doi.org/10.1080/00031305.2017.1375989&#34;&gt;data organization in spreadsheets&lt;/a&gt;. And I was mentioned among &lt;a href=&#34;https://news.wisc.edu/uws-most-interesting-twitter-accounts-you-need-to-follow/&#34;&gt;UW-Madison’s most interesting Twitter accounts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So I’m coming back to Twitter, but maybe in a more scaled-back way.&lt;/p&gt;
@@ -32,10 +29,7 @@
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
-      <description>
-
-
-&lt;p&gt;I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt; or &lt;a href=&#34;https://www.ruby-lang.org/en&#34;&gt;Ruby&lt;/a&gt; for Perl, but the general sentiment stands: use the language that best fits the problem at hand.&lt;/p&gt;
+      <description>&lt;p&gt;I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt; or &lt;a href=&#34;https://www.ruby-lang.org/en&#34;&gt;Ruby&lt;/a&gt; for Perl, but the general sentiment stands: use the language that best fits the problem at hand.&lt;/p&gt;
 &lt;div id=&#34;more-blather-about-languages&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;More blather about languages&lt;/h2&gt;
 &lt;p&gt;Long ago, I wrote a &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/perlintro/&#34;&gt;tutorial on Perl&lt;/a&gt;. I’d intended to also write tutorials on C and R, but never got around to them and just wrote resources pages (see &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/Cintro/&#34;&gt;Intro to C&lt;/a&gt; and &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/Rintro/&#34;&gt;Intro to R&lt;/a&gt;).&lt;/p&gt;
@@ -99,10 +93,7 @@
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
-      <description>
-
-
-&lt;p&gt;At the &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;, in a &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.&lt;/p&gt;
+      <description>&lt;p&gt;At the &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;, in a &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. &lt;a href=&#34;https://twitter.com/hashtag/JSM2016?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#JSM2016&lt;/a&gt;&lt;/p&gt;&amp;mdash; Karl Broman (@kwbroman) &lt;a href=&#34;https://twitter.com/kwbroman/status/760881386651848708?ref_src=twsrc%5Etfw&#34;&gt;August 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -128,10 +119,7 @@
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
-      <description>
-
-
-&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
@@ -142,10 +130,7 @@
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
-      <description>
-
-
-&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
+      <description>&lt;p&gt;So I was trying to parse &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt; from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.&lt;/p&gt;
 &lt;p&gt;The documentation for the file is a &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI_GFF_Spec.docx&#34;&gt;docx file&lt;/a&gt; (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.&lt;/p&gt;
 &lt;p&gt;I’d want to use &lt;code&gt;fread()&lt;/code&gt; from the &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki&#34;&gt;data.table package&lt;/a&gt;, but it turns out that the file has a bunch of lines with “&lt;code&gt;###&lt;/code&gt;” interspersed within the data, and I couldn’t see a way to skip over those in &lt;code&gt;fread()&lt;/code&gt;, so I fell back to the usual base R function, &lt;code&gt;read.table()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Let’s first download and unzip the file.&lt;/p&gt;
@@ -211,10 +196,7 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
-      <description>
-
-
-&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;./2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
+      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt; and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, &lt;a href=&#34;./2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt; that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
 &lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for me! So awesome.&lt;/p&gt;
 </description>
     </item>
@@ -225,10 +207,7 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
-      <description>
-
-
-&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown book&lt;/a&gt;, the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had created a bunch of other useful code for interacting with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, which we’re putting into a &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;second package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt;.”&lt;/p&gt;
 &lt;p&gt;And I used the &lt;a href=&#34;https://github.com/ROpenSciLabs/available&#34;&gt;available&lt;/a&gt; package, also developed at last week’s unconference, and verified that indeed &lt;em&gt;craft&lt;/em&gt; is available. A bit of indecision about taking such a great name for this secondary package, but after checking with &lt;a href=&#34;https://twitter.com/daroczig&#34;&gt;Gergely&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gbwanderson&#34;&gt;Brooke&lt;/a&gt;, went ahead with it.&lt;/p&gt;
 &lt;p&gt;So I’m pleased to announce the &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; and &lt;a href=&#34;https://github.com/ROpenSciLabs/craft&#34;&gt;craft&lt;/a&gt; packages for playing with R and Minecraft.&lt;/p&gt;
@@ -243,10 +222,7 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
-      <description>
-
-
-&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
+      <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
 &lt;p&gt;I mean, from &lt;a href=&#34;http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
 &lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
 &lt;p&gt;And so today I did. (You can see the working draft at &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34; class=&#34;uri&#34;&gt;https://ROpenSciLabs.github.io/miner_book&lt;/a&gt;.) And boy it was easy.&lt;/p&gt;
@@ -279,10 +255,7 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
-      <description>
-
-
-&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
+      <description>&lt;p&gt;If, in teaching folks about the &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt; pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of deeply nested functions, our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package (for connecting &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good one&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setNames(data.frame(
     do.call(rbind,
             sapply(
@@ -306,10 +279,7 @@ read.table(file = file, header = header, sep = sep, quote = quote,
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>
-
-
-&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
+      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two days of R programming and, ur, playing &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
 &lt;p&gt;This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects &lt;a href=&#34;https://github.com/ropensci/unconf17/issues&#34;&gt;in advance on GitHub&lt;/a&gt;, and then the first morning we voted on what we were interested in doing via stickers:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;
 &lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
@@ -365,10 +335,7 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
-      <description>
-
-
-&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
+      <description>&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
 &lt;p&gt;I was chatting with &lt;a href=&#34;http://www.senresearch.org/&#34;&gt;Śaunak Sen&lt;/a&gt; about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).&lt;/p&gt;
 &lt;p&gt;Should we have participants work on a server? Should we set up &lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt; in &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt; containers on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;?&lt;/p&gt;
 &lt;p&gt;Śaunak said, “What we need is a mini-CRAN.” A google search brought us to the package &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; from &lt;a href=&#34;http://blog.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;, which looks to be the perfect solution.&lt;/p&gt;
@@ -416,14 +383,11 @@ write_PACKAGES(&amp;quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&amp;quot;,
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>https://kbroman.org/blog/2017/05/11/reading-writing-biggish-data-revisited/</link>
+      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/reading-writing-biggish-data-revisited/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to follow up on my &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt;. One thing to emphasize is that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use &lt;code&gt;compress=FALSE&lt;/code&gt; you can skip that and it goes &lt;em&gt;much&lt;/em&gt; faster. See, for example, &lt;a href=&#34;https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/&#34;&gt;his post on “Fast csv writing for R”&lt;/a&gt;. Also see his &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf&#34;&gt;slides from a recent presentation on parallel fread&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to follow up on my &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt;. One thing to emphasize is that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use &lt;code&gt;compress=FALSE&lt;/code&gt; you can skip that and it goes &lt;em&gt;much&lt;/em&gt; faster. See, for example, &lt;a href=&#34;https://blog.h2o.ai/2016/04/fast-csv-writing-for-r/&#34;&gt;his post on “Fast csv writing for R”&lt;/a&gt;. Also see his &lt;a href=&#34;https://github.com/Rdatatable/data.table/wiki/talks/BARUG_201704_ParallelFread.pdf&#34;&gt;slides from a recent presentation on parallel fread&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’ll first generate the same data that I was using before. And note, as &lt;a href=&#34;https://twitter.com/shabbychef&#34;&gt;@shabbychef&lt;/a&gt; &lt;a href=&#34;https://twitter.com/shabbychef/status/858892435820130304&#34;&gt;mentioned on twitter&lt;/a&gt;, my iid simulations mean that compression isn’t likely to be useful, &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;as we saw in my previous post&lt;/a&gt;. So don’t assume that these results apply generally; compression is useful much of the time.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;n_ind &amp;lt;- 500
 n_snps &amp;lt;- 1e5
@@ -476,7 +440,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.1 by xtable 1.8-3 package --&gt;
-&lt;!-- Sun Dec  9 20:19:54 2018 --&gt;
+&lt;!-- Mon Dec 10 08:36:37 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -641,14 +605,11 @@ fread
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r-qtlcharts-for-d3-version-4/</link>
+      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r-qtlcharts-for-d3-version-4/</guid>
-      <description>
-
-
-&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <description>&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
 &lt;p&gt;I like the changes in D3 version 4, but trying to figure them out feels a bit like being back in 2012, when I was first trying to understand D3: I’ve not found many tutorials that explain how to use the new version, so I mostly focused on reading the &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;API documentation&lt;/a&gt;, which isn’t easy for me to understand, or to walk through the code for some of [Michael Bostock]’s &lt;a href=&#34;https://bl.ocks.org/mbostock&#34;&gt;examples&lt;/a&gt;. There are loads of books and tutorials on D3, but they’re almost all still talking about D3 version 3. (This will change shortly. For example, the 2nd edition of &lt;a href=&#34;http://alignedleft.com/&#34;&gt;Scott Murray&lt;/a&gt;’s excellent &lt;a href=&#34;http://shop.oreilly.com/product/0636920037316.do&#34;&gt;Interactive Data Visualization for the Web&lt;/a&gt; is at the printer, and covers D3 version 4.)&lt;/p&gt;
@@ -715,10 +676,7 @@ force = d3.forceSimulation(scaledPoints)
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
-      <description>
-
-
-&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
+      <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from Wikipedia&lt;/a&gt; and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package.&lt;/p&gt;
 &lt;p&gt;(I &lt;a href=&#34;http://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;wrote about it on previously&lt;/a&gt;, and then &lt;a href=&#34;http://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;again&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/&#34;&gt;again&lt;/a&gt;.)&lt;/p&gt;
 &lt;p&gt;But using my package to get the crayon colors can be rather tedious.&lt;/p&gt;
 &lt;p&gt;It’s easy to view the available colors.&lt;/p&gt;
@@ -755,10 +713,7 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.&lt;/p&gt;
 &lt;p&gt;I had the mistaken impression that blogdown would look at the timestamps on the &lt;code&gt;.Rmd&lt;/code&gt; and &lt;code&gt;.html&lt;/code&gt; and only build the &lt;code&gt;.html&lt;/code&gt; if the &lt;code&gt;.Rmd&lt;/code&gt; file is newer, but that’s not true.&lt;/p&gt;
 &lt;p&gt;My &lt;a href=&#34;http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt; is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;new blog&lt;/a&gt; would be really painful, forever more.&lt;/p&gt;
 &lt;p&gt;Thus, I spent a bunch of time reworking the post to cache the times rather than running things every time the &lt;code&gt;.Rmd&lt;/code&gt; file was built. &lt;a href=&#34;https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd&#34;&gt;It’s not pretty&lt;/a&gt;, and my method is &lt;em&gt;not&lt;/em&gt; generally recommended, but it seems to work.&lt;/p&gt;
@@ -772,10 +727,7 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
-      <description>
-
-
-&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
+      <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.&lt;/p&gt;
 &lt;p&gt;But I’ve finally entered the modern era of biggish data. (Why do they call it &lt;em&gt;big&lt;/em&gt; data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about &lt;a href=&#34;https://www.nap.edu/read/5505/chapter/1&#34;&gt;&lt;em&gt;massive&lt;/em&gt; data&lt;/a&gt;.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.&lt;/p&gt;
 &lt;p&gt;So I’ve been playing with &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt; and &lt;a href=&#34;https://www.mongodb.com/&#34;&gt;MongoDB&lt;/a&gt;, and more recently &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; and &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt;. And I thought I’d show a few examples. I’m interested mostly in quick access, from &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;, to small portions of a large file.&lt;/p&gt;
 &lt;div id=&#34;data-rds&#34; class=&#34;section level3&#34;&gt;
@@ -911,12 +863,12 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
                     read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
                times=100)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
-##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
-##    fstcomp  91  95  117     95  97  691   100    d&lt;/code&gt;&lt;/pre&gt;
+##       expr min  lq mean median  uq  max neval
+##     sqlite   3   4    4      4   4    4   100
+##    feather 618 641  717    660 766 1215   100
+##  feather_t  43  47   48     48  49   54   100
+##        fst  61  63   80     64  65  341   100
+##    fstcomp  91  95  117     95  97  691   100&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of all of the results:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::kable(results, digits=c(1,1,0,1),
              col.names=c(&amp;quot;write time (s)&amp;quot;, &amp;quot;read time (s)&amp;quot;,
@@ -988,10 +940,7 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
-      <description>
-
-
-&lt;p&gt;In moving away from my &lt;a href=&#34;http://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
+      <description>&lt;p&gt;In moving away from my &lt;a href=&#34;http://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/&#34;&gt;Better-looking LaTeX/Beamer slides&lt;/a&gt;, 2013-10-07&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/&#34;&gt;MongoDB with D3.js&lt;/a&gt;, 2015-06-22&lt;/p&gt;&lt;/li&gt;
@@ -1061,10 +1010,7 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
-      <description>
-
-
-&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress site&lt;/a&gt; as it is and not try to figure out how to move things over.&lt;/p&gt;
 &lt;p&gt;I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which is a &lt;em&gt;joy&lt;/em&gt;. See the &lt;a href=&#34;https://bookdown.org/yihui/blogdown&#34;&gt;bookdown-based documentation&lt;/a&gt; (currently a bit thin) plus &lt;a href=&#34;https://proquestionasker.github.io/blog/Making_Site/&#34;&gt;Amber Thomas’s tutorial&lt;/a&gt; and the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbind&lt;/a&gt;. Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;
 </description>
