@@ -12,4 +12,4 @@ slug: child-abuse-and-neglect-is-cancelled-today
 
 On a classroom door:
 
-![](http://kbroman.files.wordpress.com/2012/11/neglect_cancelled.jpeg)
+![](https://kbroman.files.wordpress.com/2012/11/neglect_cancelled.jpeg)
