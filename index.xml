@@ -440,7 +440,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.1 by xtable 1.8-3 package --&gt;
-&lt;!-- Thu Dec 13 05:28:14 2018 --&gt;
+&lt;!-- Sat Dec 15 09:45:16 2018 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
