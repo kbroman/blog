@@ -80,21 +80,21 @@
     <div class="article-content">
       
 
-<p>I&rsquo;m making some progress learning <a href="http://d3js.org">D3</a> (for interactive graphics), by which I mean I&rsquo;ve gotten a couple of examples to work.</p>
+<p>I&rsquo;m making some progress learning <a href="https://d3js.org">D3</a> (for interactive graphics), by which I mean I&rsquo;ve gotten a couple of examples to work.</p>
 
 <h3 id="many-box-plots">Many box plots</h3>
 
-<p>First, an <a href="http://www.biostat.wisc.edu/~kbroman/D3/manyboxplots">example for displaying many distributions</a>.  Here I&rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements.  It&rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&rsquo;t give enough information about the tails.</p>
+<p>First, an <a href="https://www.biostat.wisc.edu/~kbroman/D3/manyboxplots">example for displaying many distributions</a>.  Here I&rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements.  It&rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&rsquo;t give enough information about the tails.</p>
 
-<p><a href="http://www.biostat.wisc.edu/~kbroman/D3/manyboxplots"><img src="http://kbroman.files.wordpress.com/2013/02/manyboxplots.png" alt="Many box plots" /></a></p>
+<p><a href="https://www.biostat.wisc.edu/~kbroman/D3/manyboxplots"><img src="https://kbroman.files.wordpress.com/2013/02/manyboxplots.png" alt="Many box plots" /></a></p>
 
 <p>In the top figure, the 500 arrays are aligned next to each other, sorted by their median, and then I show the 1, 5, 10, 25 50, &hellip;, 99th percentiles.  The advantage of the interactive plot is that you can hover over a given array on the top and see a more detailed histogram below.  And if you click on an array, its histogram will be retained below, for easy comparison to other arrays.</p>
 
 <h3 id="lod-curves-and-qtl-effects">LOD curves and QTL effects</h3>
 
-<p>As a <a href="http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect">second example</a>, I plot the LOD curves from QTL analysis across the genome; click on a chromosome above and you get a more detailed view of that chromosome in the bottom-left; click on a marker position in the bottom-left, and you get a view of the QTL effect on the bottom-right.</p>
+<p>As a <a href="https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect">second example</a>, I plot the LOD curves from QTL analysis across the genome; click on a chromosome above and you get a more detailed view of that chromosome in the bottom-left; click on a marker position in the bottom-left, and you get a view of the QTL effect on the bottom-right.</p>
 
-<p><a href="http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect"><img src="http://kbroman.files.wordpress.com/2013/02/lod_and_effect1.png" alt="LOD curves and QTL effects" /></a></p>
+<p><a href="https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect"><img src="https://kbroman.files.wordpress.com/2013/02/lod_and_effect1.png" alt="LOD curves and QTL effects" /></a></p>
 
 <p>Likely none of that is understandable; let me try to explain.  QTL stands for &ldquo;quantitative trait locus,&rdquo; a region of the genome (i.e., locus) that influences some quantitative trait (like insulin level in serum).  To identify QTL, we look at the association between the quantitative trait and genotype at each of many genetic markers across the genome.  We&rsquo;re basically doing analysis of variance, but we express the results as a log10 likelihood ratio, called the LOD score.</p>
 
