@@ -9,9 +9,9 @@ tags:
 slug: theres-a-fire-in-the-building
 ---
 
-I was at work this morning at 8am.  At 8:45am I got a text asking what was going on in [my building](http://www.map.wisc.edu/?initObj=bdg_MdScC), with this picture:
+I was at work this morning at 8am.  At 8:45am I got a text asking what was going on in [my building](https://www.map.wisc.edu/?initObj=bdg_MdScC), with this picture:
 
-![Fire trucks at MSC](http://kbroman.files.wordpress.com/2013/02/fire_trucks.jpg)
+![Fire trucks at MSC](https://kbroman.files.wordpress.com/2013/02/fire_trucks.jpg)
 
 It was news to me.
 
@@ -23,8 +23,8 @@ At 9:05am I called the campus police to ask what was going on.  They said all th
 
 Apparently no one was hurt, but there seems to be quite a mess.  This is on the same floor as my office, not too far away:
 
-![Fire-related mess, 4th floor SMI](http://kbroman.files.wordpress.com/2013/02/smi.jpg)
+![Fire-related mess, 4th floor SMI](https://kbroman.files.wordpress.com/2013/02/smi.jpg)
 
 The fire seems to be around the corner from that shot, in the back-central part of the building.  I peaked around the corner and saw a bunch of people standing around, but I was too shy to take a picture of them.
 
-There are related articles in the [Wisconsin State Journal](http://tinyurl.com/ccyggdl) and the [Channel 3000 site](http://tinyurl.com/brq5taf).
+There is a related article in the [Wisconsin State Journal](https://tinyurl.com/ccyggdl).
