@@ -11,9 +11,9 @@ tags:
 slug: data-structures-are-important
 ---
 
-I've created another [D3](http://d3js.org) example, of QTL analysis for a phenotype measured over time. (Click on the image for the [interactive version](http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time).)
+I've created another [D3](https://d3js.org) example, of QTL analysis for a phenotype measured over time. (Click on the image for the [interactive version](https://www.biostat.wisc.edu/~kbroman/D3/lod_by_time).)
 
-[![QTL analysis with phenotype over time](http://kbroman.files.wordpress.com/2013/03/lod_by_time.png)](http://www.biostat.wisc.edu/~kbroman/D3/lod_by_time)
+[![QTL analysis with phenotype over time](https://kbroman.files.wordpress.com/2013/03/lod_by_time.png)](https://www.biostat.wisc.edu/~kbroman/D3/lod_by_time)
 
 The code is on [github](https://github.com/kbroman/d3examples/tree/master/lod_by_time). It took me about a day.
 
