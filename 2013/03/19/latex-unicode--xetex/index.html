@@ -78,15 +78,15 @@
     
 
     <div class="article-content">
-      <p>I&rsquo;m co-organizing <a href="http://www.ctc2013.org">a scientific meeting</a> at the end of May.  The abstracts are all in.</p>
+      <p>I&rsquo;m co-organizing <a href="http://rqtl.org/ctc2013">a scientific meeting</a> at the end of May.  The abstracts are all in.</p>
 
-<p>We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&rsquo;m using <a href="http://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm">Spreadsheet:XLSX</a> for the first time; it&rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)</p>
+<p>We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&rsquo;m using <a href="https://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm">Spreadsheet:XLSX</a> for the first time; it&rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)</p>
 
-<p>I spent way too much time trying to deal with special characters.  I was looking to do a search-and-replace for all possible <a href="http://en.wikipedia.org/wiki/Unicode">Unicode</a> characters (for example, to change <code>\xE9</code> aka e into <code>\'{e}</code>, or <code>\xD7</code> aka × into <code>$\times$</code>).</p>
+<p>I spent way too much time trying to deal with special characters.  I was looking to do a search-and-replace for all possible <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters (for example, to change <code>\xE9</code> aka e into <code>\'{e}</code>, or <code>\xD7</code> aka × into <code>$\times$</code>).</p>
 
-<p><img src="http://kbroman.files.wordpress.com/2013/03/times_symbol.png" alt="MBT/Pas × BALB/cByJ" /></p>
+<p><img src="https://kbroman.files.wordpress.com/2013/03/times_symbol.png" alt="MBT/Pas × BALB/cByJ" /></p>
 
-<p>But then I discovered that <a href="http://en.wikipedia.org/wiki/XeTeX">XeTeX</a> supports Unicode, so there&rsquo;s no need to do these sorts of substitutions.</p>
+<p>But then I discovered that <a href="https://en.wikipedia.org/wiki/XeTeX">XeTeX</a> supports Unicode, so there&rsquo;s no need to do these sorts of substitutions.</p>
 
 <p>I changed <code>pdflatex</code> to <code>xelatex</code> in my <code>Makefile</code>, and I&rsquo;m done.  I think.</p>
 
