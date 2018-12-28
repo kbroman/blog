@@ -14,7 +14,7 @@ slug: chutes-ladders-how-long-is-this-going-to-take
 
 I was playing Chutes & Ladders with my four-year-old daughter yesterday, and I thought, "How long is this going to take?"
 
-I saw an [interesting mathematical analysis of the game](http://datagenetics.com/blog/november12011/) a few years ago, but it seems to be offline, though [you can read it](http://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/) via the [wayback machine](http://web.archive.org/).
+I saw an [interesting mathematical analysis of the game](https://datagenetics.com/blog/november12011/) a few years ago, but it seems to be offline, though [you can read it](https://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/) via the [wayback machine](https://web.archive.org/).
 
 But that didn't answer my specific question, namely, "How long is this going to take?"
 
@@ -22,7 +22,7 @@ So I wrote a bit of [R code to simulate the game](https://gist.github.com/kbroma
 
 Here's the distribution of the number of spins to complete the game, by number of players:
 
-![No. spins in chutes & ladders](http://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png)
+![No. spins in chutes & ladders](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png)
 
 With two players, the average number of spins is 52, with a 90th percentile of 88.
 
@@ -34,6 +34,6 @@ And that's particularly true because then the chance of my daughter winning drop
 
 That raises another question: if I let her go first, what advantage does that give her?  Not much.  The chance that the person who goes first will win is 50.9%, 34.4%, and 25.9%, respectively, when there are 2, 3, and 4 players.  So not a noticeable amount.  Thus I cheat (on her behalf). Really, though, I'm cheating in order to shorten the game as much as to ensure that she wins.
 
-_Note_: There's a close connection between this problem and my work on the multiple-strain recombinant inbred lines. (See [this](http://www.ncbi.nlm.nih.gov/pubmed/15545647) and [that](http://www.ncbi.nlm.nih.gov/pubmed/22345609).)  I'm tempted to play around with it some more.
+_Note_: There's a close connection between this problem and my work on the multiple-strain recombinant inbred lines. (See [this](https://www.ncbi.nlm.nih.gov/pubmed/15545647) and [that](https://www.ncbi.nlm.nih.gov/pubmed/22345609).)  I'm tempted to play around with it some more.
 
-[Additional numerical results here.](http://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/)
+[Additional numerical results here.](https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/)
