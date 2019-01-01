@@ -43,7 +43,7 @@ In the new system, reviewers score grants on a scale of 1-9, in single digits, w
 
 When the new scale was introduced, we were given the following handy chart:
 
-![NIH 9-point score chart](http://kbroman.files.wordpress.com/2013/10/nih_score_chart.png)
+![NIH 9-point score chart](https://kbroman.files.wordpress.com/2013/10/nih_score_chart.png)
 
 As I understand it, there were two main reasons for revising the scoring system:
 
@@ -59,7 +59,7 @@ The big problem with the new scoring system is that reviewers have just 9 choice
 
   * **_round and then average_**
 
-It's obviously better to _average and then round_, but the new scoring system _rounds and then averages_. ([Gary Churchill](http://churchill.jax.org/about/churchill.shtml) pointed this out to me.)
+It's obviously better to _average and then round_, but the new scoring system _rounds and then averages_. ([Gary Churchill](https://www.jax.org/research-and-faculty/faculty/gary-churchill) pointed this out to me.)
 
 This leads to the frequent statements like, "I'd put this somewhere between a 1 and a 2." And with line (or "band") between funded and not funded being well above 20, it seems like, in many cases, _whether a grant is funded has to do with the proportion of reviewers that give it a 1_ rather than a 2.
 
@@ -91,7 +91,7 @@ Finally, the PDF bookmarks are often off by a page. If you want to go to the bio
 
 These things aren't _that_ big of a deal, but they're a constant annoyance, and they should be easy to fix.
 
-Tony Scarpa, the former director of the [NIH Center for Scientific Review (CSR)](http://public.csr.nih.gov/Pages/default.aspx) who was responsible for the big change in the NIH review system, once visited U Wisconsin, and I asked him about whether these electronic proposals could be improved, and he said, "Oh, that's not us; that's grants.gov." So I asked who I should talk to about the issue, and he said, "Call your Congressman."
+Tony Scarpa, the former director of the [NIH Center for Scientific Review (CSR)](https://public.csr.nih.gov) who was responsible for the big change in the NIH review system, once visited U Wisconsin, and I asked him about whether these electronic proposals could be improved, and he said, "Oh, that's not us; that's grants.gov." So I asked who I should talk to about the issue, and he said, "Call your Congressman."
 
 ### There needs to be some review of reviewers
 
