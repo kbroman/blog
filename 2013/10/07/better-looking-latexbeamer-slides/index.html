@@ -85,17 +85,17 @@
     <div class="article-content">
       
 
-<p>I like to use <a href="http://www.latex-project.org/">LaTeX</a> to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.</p>
+<p>I like to use <a href="https://www.latex-project.org/">LaTeX</a> to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.</p>
 
-<p>Most people that use LaTeX to make slides seem to use <a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX)">Beamer</a>, but the resulting slides are usually a bit busy, like this:</p>
+<p>Most people that use LaTeX to make slides seem to use <a href="https://en.wikipedia.org/wiki/Beamer_(LaTeX)">Beamer</a>, but the resulting slides are usually a bit busy, like this:</p>
 
-<p><a href="http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html"><img src="http://deic.uab.es/~iblanes/beamer_gallery/large/Warsaw-default-default-01.png" alt="Typical beamer slide" /></a></p>
+<p><a href="http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html"><img src="https://www.biostat.wisc.edu/~kbroman/blog/Warsaw-default-default-01.png" alt="Typical beamer slide" /></a></p>
 
-<p>I admire <a href="http://en.wikipedia.org/wiki/Till_Tantau">Till Tantau</a> for creating Beamer; it was a great idea and it&rsquo;s been widely adopted. But I don&rsquo;t like talk outlines at all; I certainly don&rsquo;t want to see one on every page.</p>
+<p>I admire <a href="https://en.wikipedia.org/wiki/Till_Tantau">Till Tantau</a> for creating Beamer; it was a great idea and it&rsquo;s been widely adopted. But I don&rsquo;t like talk outlines at all; I certainly don&rsquo;t want to see one on every page.</p>
 
 <p>After several days work, I&rsquo;ve finally figured out how to create LaTeX/Beamer-based slides that look like what I want:</p>
 
-<p><a href="http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf"><img src="http://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png" alt="Open Access talk, title page" /></a></p>
+<p><a href="https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf"><img src="https://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png" alt="Open Access talk, title page" /></a></p>
 
 <p>In this post, I&rsquo;ll explain what I did.</p>
 
@@ -103,9 +103,9 @@
 
 <h3 id="my-history">My history</h3>
 
-<p>Take a look at my <a href="http://kbroman.org/pages/talks.html">list of presentations</a> (going back to 1998), and you&rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.</p>
+<p>Take a look at my <a href="https://kbroman.org/pages/talks.html">list of presentations</a> (going back to 1998), and you&rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.</p>
 
-<p>My LaTeX-based slides (e.g., see <a href="http://github.com/kbroman/Talk_Graphs">my talks on data visualization</a>) have been made using <code>\documentclass{article}</code>, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:</p>
+<p>My LaTeX-based slides (e.g., see <a href="https://github.com/kbroman/Talk_Graphs">my talks on data visualization</a>) have been made using <code>\documentclass{article}</code>, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:</p>
 
 <pre><code>\headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -122,11 +122,11 @@ Example 1
 
 <h3 id="a-starting-point">A starting point</h3>
 
-<p>I googled &ldquo;clean Beamer slides&rdquo; or something like that, and I came across <a href="http://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/">this post</a> by <a href="http://mikedewar.wordpress.com">Mike Dewar</a>, with a picture of a slide that looked much like what I wanted:</p>
+<p>I googled &ldquo;clean Beamer slides&rdquo; or something like that, and I came across <a href="https://mikedewar.wordpress.com/2009/02/25/latex-beamer-python-beauty/">this post</a> by <a href="https://mikedewar.wordpress.com">Mike Dewar</a>, with a picture of a slide that looked much like what I wanted:</p>
 
-<p><img src="http://mikedewar.files.wordpress.com/2009/02/beamer_screen.png&amp;h=360" alt="Slide from Mike Dewar" /></p>
+<p><img src="https://mikedewar.files.wordpress.com/2009/02/beamer_screen.png&amp;h=360" alt="Slide from Mike Dewar" /></p>
 
-<p>So I read his post and studied his code and played around. Then I searched for stuff on the <a href="http://tex.stackexchange.com/">LaTeX Stack Exchange</a> and played around some more. Then I read the <a href="ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf">Beamer manual</a> and played around some more.</p>
+<p>So I read his post and studied his code and played around. Then I searched for stuff on the <a href="https://tex.stackexchange.com/">LaTeX Stack Exchange</a> and played around some more. Then I read the <a href="ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf">Beamer manual</a> and played around some more.</p>
 
 <p>There&rsquo;s really not much to it.</p>
 
@@ -137,16 +137,16 @@ Example 1
 <ul>
 <li><p>Simpler code, because it will place elements in reasonable places without a lot of messing about</p></li>
 
-<li><p>Simple animations using less code, so you <a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">don&rsquo;t repeat yourself</a>.</p></li>
+<li><p>Simple animations using less code, so you <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">don&rsquo;t repeat yourself</a>.</p></li>
 
 <li><p>Easy way to create handouts with notes on what you&rsquo;re going to say. This is especially useful for others to learn from your presentation even if they can&rsquo;t attend (which is most of the world). Here&rsquo;s an example page from such a handout:</p></li>
 </ul>
 
-<p><a href="http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf"><img src="http://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png" alt="Example notes page from Open Access talk" /></a></p>
+<p><a href="https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf"><img src="https://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png" alt="Example notes page from Open Access talk" /></a></p>
 
 <h3 id="here-s-what-i-did">Here&rsquo;s what I did</h3>
 
-<p>I was preparing a talk on open access publishing. Here&rsquo;s <a href="http://github.com/kbroman/Talk_OpenAccess">the source</a>; <a href="http://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf">the pdf</a>; and <a href="http://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf">a pdf with notes on what I intend to say</a>.</p>
+<p>I was preparing a talk on open access publishing. Here&rsquo;s <a href="https://github.com/kbroman/Talk_OpenAccess">the source</a>; <a href="https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf">the pdf</a>; and <a href="https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf">a pdf with notes on what I intend to say</a>.</p>
 
 <p>I&rsquo;ll go through the details of the code, in case it might be useful to someone.</p>
 
@@ -282,13 +282,13 @@ Example 1
 
 <h3 id="a-version-with-notes">A version with notes</h3>
 
-<p>It&rsquo;s nice to have a version of one&rsquo;s slides that includes notes of what you&rsquo;re going to say. I like <a href="http://bost.ocks.org/mike">Mike Bostock</a> approach, as in <a href="http://bost.ocks.org/mike/d3/workshop/#0">these slides</a>, with little sticky notes. But I don&rsquo;t want to spend time trying to implement that in LaTeX, so I went with the built-in functionality in Beamer, though selecting a very plain template and adding a bit of space between paragraphs.</p>
+<p>It&rsquo;s nice to have a version of one&rsquo;s slides that includes notes of what you&rsquo;re going to say. I like <a href="https://bost.ocks.org/mike">Mike Bostock</a> approach, as in <a href="https://bost.ocks.org/mike/d3/workshop/#0">these slides</a>, with little sticky notes. But I don&rsquo;t want to spend time trying to implement that in LaTeX, so I went with the built-in functionality in Beamer, though selecting a very plain template and adding a bit of space between paragraphs.</p>
 
 <p>I also chose to create a handout with just a single snapshot of the animated pages (in which I sequentially overlayed a number of images).</p>
 
 <p>Having added a <code>\note{}</code> to each &ldquo;frame,&rdquo; there are just a few simple commands to add to the <code>.tex</code> file to get it to compile to the handout with notes. So I wrote a <a href="https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb">ruby script</a> to make those changes.</p>
 
-<p>I then used <a href="http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/">pdfnup</a> to make the notes PDF be 2-up: the slide above and the notes below. The details are in the <a href="https://github.com/kbroman/Talk_OpenAccess/blob/master/Makefile">Makefile</a>; if that&rsquo;s not obvious, see my <a href="http://kbroman.github.io/minimal_make/">minimal tutorial about GNU make</a>.</p>
+<p>I then used <a href="https://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/">pdfnup</a> to make the notes PDF be 2-up: the slide above and the notes below. The details are in the <a href="https://github.com/kbroman/Talk_OpenAccess/blob/master/Makefile">Makefile</a>; if that&rsquo;s not obvious, see my <a href="https://kbroman.github.io/minimal_make/">minimal tutorial about GNU make</a>.</p>
 
     </div>
   </article>
