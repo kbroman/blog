@@ -12,13 +12,13 @@ slug: fixing-a-font-problem-for-xelatex
 
 If the topic sounds boring, well, it is really boring. I write it down here in case it's useful to someone.
 
-I was working on a [talk about git & GitHub](http://github.com/syounkin/GitPrimer.git), and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here's the default:
+I was working on a [talk about git & GitHub](https://github.com/syounkin/GitPrimer.git), and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here's the default:
 
-![Slide with default font](http://kbroman.files.wordpress.com/2013/10/slide_default.png)
+![Slide with default font](https://kbroman.files.wordpress.com/2013/10/slide_default.png)
 
 And here's what I wanted:
 
-![Slide with Helvetica Neue](http://kbroman.files.wordpress.com/2013/10/slide_helveticaneue.png)
+![Slide with Helvetica Neue](https://kbroman.files.wordpress.com/2013/10/slide_helveticaneue.png)
 
 ### But it didn't work on unix
 
@@ -43,9 +43,9 @@ Finally, I read [this post on fonts in xelatex](http://existentialtype.net/2008/
 
   * Download [`qhv2.004otf.zip`](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip).
 
-  * On unix, unzip the file (which contains eight [`.otf`](http://en.wikipedia.org/wiki/OpenType) files) into `~/.fonts`
+  * On unix, unzip the file (which contains eight [`.otf`](https://en.wikipedia.org/wiki/OpenType) files) into `~/.fonts`
 
-  * On Mac, unzip the file, double-click the `.otf` files and select "Install font."  This uses the [Font Book](http://support.apple.com/kb/HT2509) application.
+  * On Mac, unzip the file, double-click the `.otf` files and select "Install font."  This uses the [Font Book](https://support.apple.com/kb/HT2509) application.
 
   * In the `.tex` file, use `\setsansfont{TeX Gyre Heros}`
 
