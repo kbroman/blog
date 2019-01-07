@@ -933,13 +933,13 @@
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/biking/</loc>
+    <loc>https://kbroman.org/blog/categories/biking/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/biking/</loc>
+    <loc>https://kbroman.org/blog/tags/biking/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1227,14 +1227,14 @@
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/news/</loc>
-    <lastmod>2017-10-31T20:05:00-05:00</lastmod>
+    <loc>https://kbroman.org/blog/categories/news/</loc>
+    <lastmod>2017-05-27T12:30:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/news/</loc>
-    <lastmod>2017-05-27T12:30:00-05:00</lastmod>
+    <loc>https://kbroman.org/blog/tags/news/</loc>
+    <lastmod>2017-10-31T20:05:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1281,13 +1281,13 @@
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/programming/</loc>
+    <loc>https://kbroman.org/blog/categories/programming/</loc>
     <lastmod>2018-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/programming/</loc>
+    <loc>https://kbroman.org/blog/tags/programming/</loc>
     <lastmod>2018-03-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1305,13 +1305,13 @@
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/r/</loc>
+    <loc>https://kbroman.org/blog/categories/r/</loc>
     <lastmod>2017-08-08T00:10:12-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/r/</loc>
+    <loc>https://kbroman.org/blog/tags/r/</loc>
     <lastmod>2017-08-08T00:10:12-05:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1365,14 +1365,14 @@
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/statistics/</loc>
-    <lastmod>2016-04-08T00:00:00+00:00</lastmod>
+    <loc>https://kbroman.org/blog/categories/statistics/</loc>
+    <lastmod>2017-10-31T20:05:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/statistics/</loc>
-    <lastmod>2017-10-31T20:05:00-05:00</lastmod>
+    <loc>https://kbroman.org/blog/tags/statistics/</loc>
+    <lastmod>2016-04-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1437,13 +1437,13 @@
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/twitter/</loc>
+    <loc>https://kbroman.org/blog/categories/twitter/</loc>
     <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/twitter/</loc>
+    <loc>https://kbroman.org/blog/tags/twitter/</loc>
     <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
