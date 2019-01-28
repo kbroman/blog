@@ -440,7 +440,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Wed Jan  9 09:38:51 2019 --&gt;
+&lt;!-- Mon Jan 28 05:57:21 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1022,14 +1022,14 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sat, 29 Apr 2017 08:36:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/about/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://kbroman.org&#34;&gt;Karl Broman&lt;/a&gt; is Professor in the
+      <description>&lt;p&gt;&lt;a href=&#34;https://kbroman.org&#34;&gt;Karl Broman&lt;/a&gt; is Professor in the
 &lt;a href=&#34;https://www.biostat.wisc.edu&#34;&gt;Department of Biostatistics and Medical Informatics&lt;/a&gt;
-at the &lt;a href=&#34;http://www.wisc.edu&#34;&gt;University of Wisconsin&amp;ndash;Madison&lt;/a&gt;;
+at the &lt;a href=&#34;https://www.wisc.edu&#34;&gt;University of Wisconsin&amp;ndash;Madison&lt;/a&gt;;
 research in statistical genetics; developer of
 &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; (for &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;).&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://kbroman.org&#34;&gt;Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kbroman.org&#34;&gt;Website&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/kbroman&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;Old wordpress site&lt;/a&gt;&lt;/li&gt;
