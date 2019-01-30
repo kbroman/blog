@@ -78,8 +78,18 @@
     
 
     <div class="article-content">
-      <p>I’m back from the <a href="https://ropensci.org">ROpenSci</a> <a href="http://unconf17.ropensci.org">Unconference</a> in LA. A fabulous two days of R programming and, ur, playing <a href="https://minecraft.net">Minecraft</a>. As one does.</p>
-<p>This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects <a href="https://github.com/ropensci/unconf17/issues">in advance on GitHub</a>, and then the first morning we voted on what we were interested in doing via stickers:</p>
+      <p>I’m back from the <a href="https://ropensci.org">ROpenSci</a>
+<a href="http://unconf17.ropensci.org">Unconference</a> in LA. A fabulous two
+days of R programming and, ur, playing
+<a href="https://minecraft.net">Minecraft</a>. As one does.</p>
+<p>This was ROpenSci’s 4th unconference; the first I could attend. There
+were like 70 participants, nearly double what they had last year. The
+scheme is that people break up into groups and work on different
+projects that might be useful to the ROpenSci community. There was
+discussion about potential projects <a href="https://github.com/ropensci/unconf17/issues">in advance on
+GitHub</a>, and then the
+first morning we voted on what we were interested in doing via
+stickers:</p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
 Love the sticker interest in my <a href="https://twitter.com/hashtag/runconf17?src=hash">#runconf17</a> issue! <a href="https://t.co/AqQpxVJZuk">pic.twitter.com/AqQpxVJZuk</a>
@@ -87,17 +97,50 @@ Love the sticker interest in my <a href="https://twitter.com/hashtag/runconf17?s
 — Amelia McNamara (<span class="citation">@AmeliaMN</span>) <a href="https://twitter.com/AmeliaMN/status/867793745986469889">May 25, 2017</a>
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>I found the list of topics a bit forbidding. Important stuff, but a lot of them seemed technically difficult, and I didn’t really see how I could best contribute. And, jumping to the punch line, the <a href="https://ropenscilabs.github.io/runconf17-projects/">outcomes of the 2 days’ work</a> are pretty awesome, for example:</p>
+<p>I found the list of topics a bit forbidding. Important stuff, but a
+lot of them seemed technically difficult, and I didn’t really see how
+I could best contribute. And, jumping to the punch line, the <a href="https://ropenscilabs.github.io/runconf17-projects/">outcomes
+of the 2 days’ work</a> are pretty awesome, for example:</p>
 <ul>
-<li><p>A R package, <a href="https://github.com/ropenscilabs/available">available</a>, to help name R packages. (Have others used it? Can it be viewed as offensive?)</p></li>
-<li><p>A book on <a href="https://github.com/ropenscilabs/r-security-practices">best security practices for R package developers</a></p></li>
-<li><p>A <a href="https://github.com/ropenscilabs/gramr">grammar checker</a> for R Markdown documents, “Write good and do good stuff.”</p></li>
-<li><p><a href="https://github.com/ropenscilabs/testrmd">testrmd</a>, a package for including tests in R Markdown documents.</p></li>
+<li><p>A R package, <a href="https://github.com/ropenscilabs/available">available</a>,
+to help name R packages. (Have others used it? Can it be viewed as
+offensive?)</p></li>
+<li><p>A book on <a href="https://github.com/ropenscilabs/r-security-practices">best security practices for R package
+developers</a></p></li>
+<li><p>A <a href="https://github.com/ropenscilabs/gramr">grammar checker</a> for R
+Markdown documents, “Write good and do good stuff.”</p></li>
+<li><p><a href="https://github.com/ropenscilabs/testrmd">testrmd</a>, a package for
+including tests in R Markdown documents.</p></li>
 </ul>
-<p>Awesome stuff, and that’s <a href="https://ropenscilabs.github.io/runconf17-projects/">4 of 20</a>. But you know, I don’t think I’m particularly good at any of those things. And for that reason, I was super excited when <a href="https://github.com/daroczig">Gergely Daróczi</a> posted the idea that we make an R package through which we can interact with the game Minecraft.</p>
-<p>I’ve played a lot of Minecraft with my kids. And there’s a big community of folks writing “mods” for the game, but to do that, you need to write Java. And, well, I really don’t like Java. So I was excited, a few years ago, to see the book <a href="https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;tag=7210-20">Learning to program with Minecraft</a>, which uses a <a href="https://github.com/py3minepi/py3minepi">python module</a> that allows you to interact with the game.</p>
-<p>The book is a very nice and thorough introduction to programming, using Minecraft as all of the examples and exercises. Really, it’s the best book on programming for kids that I’ve seen, <em>because</em> it is so full of challenging but do-able and above all <em>interesting</em> exercises. Good exercises are really the key to learning programming, and Minecraft provides a lot of really great It’s a great way to learn programming, because a key challenge in learning to program is identifying appropriate <em>challenges</em> to try to work on, and for people who’ve tried to</p>
-<p>Our team of six (me, <a href="https://github.com/daroczig">Gergely Daróczi</a>, <a href="https://github.com/geanders">Brooke Anderson</a>, <a href="https://github.com/revodavid">David Smith</a>, <a href="https://github.com/inchiosa">Mario Inchiosa</a>, and <a href="https://github.com/akzaidi">Adi Zaidi</a>) set out to replicate the features of the python module as an R package. There are basically just eight functions:</p>
+<p>Awesome stuff, and that’s <a href="https://ropenscilabs.github.io/runconf17-projects/">4 of
+20</a>. But you know,
+I don’t think I’m particularly good at any of those things. And for
+that reason, I was super excited when <a href="https://github.com/daroczig">Gergely
+Daróczi</a> posted the idea that we make an
+R package through which we can interact with the game Minecraft.</p>
+<p>I’ve played a lot of Minecraft with my kids. And there’s a big
+community of folks writing “mods” for the game, but to do that, you
+need to write Java. And, well, I really don’t like Java. So I was
+excited, a few years ago, to see the book <a href="https://www.amazon.com/gp/product/1593276702?ie=UTF8&amp;tag=7210-20">Learning to program with
+Minecraft</a>,
+which uses a <a href="https://github.com/py3minepi/py3minepi">python module</a>
+that allows you to interact with the game.</p>
+<p>The book is a very nice and thorough introduction to
+programming, using Minecraft as all of the examples and exercises.
+Really, it’s the best book on programming for kids that I’ve seen,
+<em>because</em> it is so full of challenging but do-able and above all
+<em>interesting</em> exercises. Good exercises are really the key to learning
+programming, and Minecraft provides a lot of really great
+It’s a great way to learn programming, because a key challenge in
+learning to program is identifying appropriate <em>challenges</em> to try to
+work on, and for people who’ve tried to</p>
+<p>Our team of six (me, <a href="https://github.com/daroczig">Gergely Daróczi</a>,
+<a href="https://github.com/geanders">Brooke Anderson</a>, <a href="https://github.com/revodavid">David
+Smith</a>, <a href="https://github.com/inchiosa">Mario
+Inchiosa</a>, and <a href="https://github.com/akzaidi">Adi
+Zaidi</a>) set out to replicate the features
+of the python module as an R package. There are basically just eight
+functions:</p>
 <ul>
 <li>set a particular type of block somewhere</li>
 <li>figure out what type of block is at some spot</li>
@@ -108,23 +151,40 @@ Love the sticker interest in my <a href="https://twitter.com/hashtag/runconf17?s
 <li>post a message to chat</li>
 <li>read the chat messages</li>
 </ul>
-<p>We had our basic working package, <a href="https://github.com/ropenscilabs/miner">miner</a>, by lunchtime on the first day and spent the next day and a half playing with it and Minecraft.</p>
+<p>We had our basic working package,
+<a href="https://github.com/ropenscilabs/miner">miner</a>, by lunchtime on the
+first day and spent the next day and a half playing with it and
+Minecraft.</p>
 <p>Just eight basic functions, but we did a ton of awesome things:</p>
 <ul>
 <li>A robot number-guessing game</li>
-<li>Automatic creation of mazes that players can walk through (or be moved through automatically)</li>
-<li>Replicate a photograph, or the R logo, within Minecraft using different types of blocks</li>
-<li>Give a player Elsa (from the movie Frozen) powers, like walking on water and having it turn to ice, or creating random-sized columns of ice by hitting things</li>
+<li>Automatic creation of mazes that players can walk through (or be moved
+through automatically)</li>
+<li>Replicate a photograph, or the R logo, within Minecraft using
+different types of blocks</li>
+<li>Give a player Elsa (from the movie Frozen) powers, like walking on
+water and having it turn to ice, or creating random-sized columns of
+ice by hitting things</li>
 <li>Write letters on the side of a mountain</li>
 <li>Draw a full ggplot2-like scatterplot in the sky</li>
 </ul>
-<p>Check out <a href="https://github.com/ropenscilabs/miner/blob/master/README.md">the ReadMe file for our package</a> to see a bunch of pictures and gifs.</p>
-<p>I’ll write about some of these things in the (hopefully near) future, because I learned some cool stuff, and it was was really fun.</p>
-<p>Just after lunch on day 2, I realized that we could use the chat feature in Minecraft to <em>execute R code from within Minecraft</em>, using <code>parse</code> and <code>eval</code>. And it totally worked. So I could generate my ggplot2-style scatterplot entirely within Minecraft. (The key advantage of this, other than just being cool, is not having to keep switching back and forth between R and Minecraft.)</p>
+<p>Check out <a href="https://github.com/ropenscilabs/miner/blob/master/README.md">the ReadMe file for our
+package</a>
+to see a bunch of pictures and gifs.</p>
+<p>I’ll write about some of these things in the (hopefully near) future,
+because I learned some cool stuff, and it was was really fun.</p>
+<p>Just after lunch on day 2, I realized that we could use the chat
+feature in Minecraft to <em>execute R code from within Minecraft</em>, using
+<code>parse</code> and <code>eval</code>. And it totally worked. So I could generate my
+ggplot2-style scatterplot entirely within Minecraft. (The key
+advantage of this, other than just being cool, is not having to keep
+switching back and forth between R and Minecraft.)</p>
 <p>Watch me type a bit of R and get my scatterplot going:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zggCAYAfjXE" frameborder="0" allowfullscreen>
 </iframe>
-<p>What next? We’re thinking we’ll compile the many vignettes we developed into a <a href="https://bookdown.org/yihui/bookdown/">bookdown book</a>. Stay tuned.</p>
+<p>What next? We’re thinking we’ll compile the many vignettes we
+developed into a <a href="https://bookdown.org/yihui/bookdown/">bookdown
+book</a>. Stay tuned.</p>
 
     </div>
   </article>

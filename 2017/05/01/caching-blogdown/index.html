@@ -78,10 +78,22 @@
     
 
     <div class="article-content">
-      <p><a href="https://github.com/rstudio/blogdown">blogdown</a> is cool, but it seems that it builds every <code>.Rmd</code> file every time you run <code>build_site()</code>, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.</p>
-<p>I had the mistaken impression that blogdown would look at the timestamps on the <code>.Rmd</code> and <code>.html</code> and only build the <code>.html</code> if the <code>.Rmd</code> file is newer, but that’s not true.</p>
-<p>My <a href="http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/">post about sqlite, feather, and fst</a> is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my <a href="http://kbroman.org/blog">new blog</a> would be really painful, forever more.</p>
-<p>Thus, I spent a bunch of time reworking the post to cache the times rather than running things every time the <code>.Rmd</code> file was built. <a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">It’s not pretty</a>, and my method is <em>not</em> generally recommended, but it seems to work.</p>
+      <p><a href="https://github.com/rstudio/blogdown">blogdown</a> is cool, but it seems
+that it builds every <code>.Rmd</code> file every time you run <code>build_site()</code>, so
+if your site includes an analysis that takes a while…well, every
+time you build the site it’s going to take a while.</p>
+<p>I had the mistaken impression that blogdown would look at the
+timestamps on the <code>.Rmd</code> and <code>.html</code> and only build the <code>.html</code> if the
+<code>.Rmd</code> file is newer, but that’s not true.</p>
+<p>My <a href="http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/">post about sqlite, feather, and fst</a>
+is rather slow, because I’m writing and reading rather big files and
+measuring access times. So it was looking like building my
+<a href="http://kbroman.org/blog">new blog</a> would be really painful, forever
+more.</p>
+<p>Thus, I spent a bunch of time reworking the post to cache the times
+rather than running things every time the <code>.Rmd</code> file was built.
+<a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">It’s not pretty</a>,
+and my method is <em>not</em> generally recommended, but it seems to work.</p>
 <p>I expect <a href="https://yihui.name">Yihui</a> has a better solution to this.</p>
 
     </div>
