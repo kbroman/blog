@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Another new laptop</title>
+      <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/02/02/another_new_laptop/</guid>
+      <description>I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them. My favorites were the 17&amp;rdquo; ones. Heavy, but that big screen was great for data analysis, programming, and writing papers.
+Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it seems like Apple is now designing with someone totally different in mind. I mean, my MacPro desktop is on its last legs but hell if I&amp;rsquo;m going to buy one of their new ones which are basically like a laptop that you sit on your desk.</description>
+    </item>
     
     <item>
       <title>Twitter break</title>
@@ -317,19 +327,6 @@ In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensio
       <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
       <description>For the problem I reported yesterday, in which my R package was working fine locally but failing on Travis, the key solution is to run update.packages(ask=FALSE) locally, and maybe even update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;) to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
 In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis.</description>
-    </item>
-    
-    <item>
-      <title>It&#39;s not you, it&#39;s me</title>
-      <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
-      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
-      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
-And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
-I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
- TravisCI for not handling system.file() properly.
- R-devel for having broken system.</description>
     </item>
     
   </channel>

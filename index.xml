@@ -7,8 +7,118 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Another new laptop</title>
+      <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/02/02/another_new_laptop/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them.
+My favorites were the 17&amp;rdquo; ones. Heavy, but that big screen was great
+for data analysis, programming, and writing papers.&lt;/p&gt;
+
+&lt;p&gt;Mac OSX seemed designed just for me: unix minus the trouble, plus
+Word. But it seems like Apple is now designing with someone totally
+different in mind. I mean, my MacPro desktop is on its last legs but
+hell if I&amp;rsquo;m going to buy one of their new ones which are basically
+like a laptop that you sit on your desk. I want to be able to open the
+thing and slide hard drives and memory and graphics cards in and out.
+And these latest MacBook Pros: still limited to 16 GB RAM and smallish
+SSD drives, and no real escape key because of that damned touch bar.
+And only USB-C ports. The new MacBook Air at least has a proper escape
+key, but again just one kind of port.&lt;/p&gt;
+
+&lt;h2 id=&#34;last-year-s-new-laptop&#34;&gt;Last year&amp;rsquo;s new laptop&lt;/h2&gt;
+
+&lt;p&gt;So a year ago, needing a new laptop, I bought a linux laptop from
+&lt;a href=&#34;https://system76.com&#34;&gt;System76&lt;/a&gt;. And in what turned out to be an
+over-reaction of anti-Mac fervor, I got their &lt;a href=&#34;https://system76.com/laptops/oryx&#34;&gt;Oryx
+Pro&lt;/a&gt; monster, fully loading with a
+15&amp;rdquo; HiDPI screen with a NVIDIA GTX 1070 graphics card, 64 GB RAM, a 2
+TB SSD and another 2 TB hard drive for backup and extra space. The
+thing weighs 6.5 lbs (2.9 kb), but really not &lt;em&gt;that&lt;/em&gt; much heavier than
+my previous MacBook; just a bit thicker.&lt;/p&gt;
+
+&lt;p&gt;This thing has been a joy to work on. Beautiful screen, and all the RAM
+and nearly the power of my desktop.
+Oh and it has all of the ports. 3 USB-A, 2 USB-C, 2 mini display ports,
+hdmi, ethernet, SD card.&lt;/p&gt;
+
+&lt;p&gt;And linux has been a dream. Managing ubuntu is nothing like
+managing RedHat as I did back in 1999. Everything just works (except
+for the screen mirroring with this particular machine). The occasional
+installation woes are actually easier than on a Mac, I think because it&amp;rsquo;s all
+as intended rather being a homebrew
+great-but-kind-of-hacky-outside-the-OS deal.&lt;/p&gt;
+
+&lt;p&gt;But, two important downsides. First, the battery really sucks. The
+fan&amp;rsquo;s going essentially all the time while I&amp;rsquo;m working, and the battery
+lasts only than an hour for me, if that. So you essentially need
+to have it plugged in all of the time. Which means you can&amp;rsquo;t even use
+it for the occasional meeting without lugging along the power adapter (which
+weights 1.7 lbs ie 750 g) and being near an outlet.&lt;/p&gt;
+
+&lt;p&gt;Second, the HiDPI screen is awesome, but I&amp;rsquo;ve still not figured out
+how to mirror the screen when giving a presentation. I can use it to
+show slides (provided I stay plugged in), but I can&amp;rsquo;t use it for
+teaching where I need to be able to demonstrate something in
+&lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt;. So I&amp;rsquo;ve been teaching using a
+chromebook, and at times in the last year I&amp;rsquo;ve traveled with both my
+laptop and a chromebook.&lt;/p&gt;
+
+&lt;p&gt;So really, the Oryx Pro is an awesome machine and I love it but it
+just doesn&amp;rsquo;t fit my traveling/teaching needs.&lt;/p&gt;
+
+&lt;h2 id=&#34;so-yet-another-new-laptop&#34;&gt;So yet another new laptop&lt;/h2&gt;
+
+&lt;p&gt;So I needed something new. I want power and RAM and ports, and I don&amp;rsquo;t
+care about weight, but I don&amp;rsquo;t want to be completely tied to a power
+outlet, and I want to be able to easily mirror to an LCD projector.&lt;/p&gt;
+
+&lt;p&gt;I looked at the Dell XPS 13 developer edition, but no more than 16 GB
+RAM and just USB-C ports. If I wanted to run linux on a Mac-like
+thing I would buy a Mac and run linux on it. And I don&amp;rsquo;t want to touch
+Lenovo.&lt;/p&gt;
+
+&lt;p&gt;So I decided to get another System76, the &lt;a href=&#34;https://system76.com/laptops/galago&#34;&gt;Galago
+Pro&lt;/a&gt;. I got the 14&amp;rdquo; 1920x1080
+screen (avoid the HiDPI because of the screen mirroring issue and
+indeed this one works fine mirroring to an LCD projector). 32 GB RAM
+(I&amp;rsquo;ll miss the 64 GB but what can you do) and 2x 2 TB SSDs. And all the
+ports I want: 2 USB-A, USB-C, mini display, hdmi, SD card, ethernet.&lt;/p&gt;
+
+&lt;p&gt;Reviews tend to mention that the battery sucks, but they&amp;rsquo;re saying the
+battery sucks because it only lasts 3-4 hours rather than the battery
+sucks because it only lasts 30 minutes. Yeah 10 hour batteries are
+great but I&amp;rsquo;m okay with 3 hours if I can have proper ports. I just got
+it yesterday, but working with it today I can tell that the battery
+is sufficient for my needs.&lt;/p&gt;
+
+&lt;p&gt;The screen is a bit smaller than I want, and it&amp;rsquo;s not so sharp as my
+other, but I&amp;rsquo;m fine with the 1080p and I think it&amp;rsquo;s big and sharp
+enough to code and write on.&lt;/p&gt;
+
+&lt;p&gt;Oh, and this laptop weighs 3 lbs 6 oz (1.5 kg), and the power adapter
+is just 5 oz (150 g), so jointly like 3.6 lbs vs 8.1 lbs for the Oryx
+Pro and adapter. But who cares about weight, really? I&amp;rsquo;m all about RAM,
+ports, SSDs moderate battery, and easy projecting.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a picture of my Galago Pro, sitting on top of my Oryx Pro.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;./images/system76_laptops.png&#34;&gt;&lt;img src=&#34;./images/system76_laptops_small.png&#34; alt=&#34;system76
+laptops&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And here&amp;rsquo;s a picture of the two power adapters.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;./images/system76_power_adapters.png&#34;&gt;&lt;img src=&#34;./images/system76_power_adapters_small.png&#34; alt=&#34;system76 laptop power
+adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Twitter break</title>
@@ -16,7 +126,10 @@
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
-      <description>&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less
+      <description>
+
+
+&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less
 isolated, as I’ve been able to connect with distant folks who share my
 interests and values, particularly regarding open science and
 reproducible research.&lt;/p&gt;
@@ -44,7 +157,10 @@ accounts&lt;/a&gt;.&lt;/p&gt;
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
-      <description>&lt;p&gt;I’ve long been an advocate for statisticians (and other data
+      <description>
+
+
+&lt;p&gt;I’ve long been an advocate for statisticians (and other data
 scientists) to become proficient in multiple programming languages.
 Fifteen years ago, I said, “Think CPR: C for speed, R for
 interactive data analysis and graphics, and Perl for manipulating data
@@ -206,7 +322,10 @@ them. And then you’ll be really cool.&lt;/p&gt;
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
-      <description>&lt;p&gt;At the
+      <description>
+
+
+&lt;p&gt;At the
 &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;,
 in a
 &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;,
@@ -243,7 +362,10 @@ situation in a way that I didn’t.&lt;/p&gt;
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
-      <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there
+      <description>
+
+
+&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there
 were just 6 groups of kids, for a total of
 18, and 12 of them came within 2 minutes (a group of 8
 girls followed immediately by a group of 4 girls). Here’s a graph;
@@ -260,7 +382,10 @@ compare it to
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
-      <description>&lt;p&gt;So I was trying to parse
+      <description>
+
+
+&lt;p&gt;So I was trying to parse
 &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt;
 from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene
 annotations. And, well, I’m an idiot. But in a way that is potentially
@@ -365,7 +490,10 @@ columns.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
-      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt;
+      <description>
+
+
+&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt;
 and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;,
 &lt;a href=&#34;./2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt;
 that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
@@ -381,7 +509,10 @@ me! So awesome.&lt;/p&gt;
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
-      <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt;
+      <description>
+
+
+&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt;
 package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown
 book&lt;/a&gt;, the R/minecraft team from the
 &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt;
@@ -420,7 +551,10 @@ Functions from the others will follow.)&lt;/p&gt;
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
-      <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about
+      <description>
+
+
+&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about
 &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable
 excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;.
 (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at
@@ -477,7 +611,10 @@ easy.)&lt;/p&gt;
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
-      <description>&lt;p&gt;If, in teaching folks about the
+      <description>
+
+
+&lt;p&gt;If, in teaching folks about the
 &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;
 pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of
 deeply nested functions, our
@@ -511,7 +648,10 @@ into a data frame like&lt;/p&gt;
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt;
+      <description>
+
+
+&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt;
 &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two
 days of R programming and, ur, playing
 &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
@@ -627,7 +767,10 @@ book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
-      <description>&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and
+      <description>
+
+
+&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and
 &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the
 &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting
 (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
@@ -733,7 +876,10 @@ me towards this short-term solution.&lt;/p&gt;
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to
 follow up on my &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and
 fst&lt;/a&gt;. One thing to emphasize is
 that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use
@@ -836,7 +982,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Thu Jan 31 00:08:58 2019 --&gt;
+&lt;!-- Sat Feb  2 13:09:26 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1011,7 +1157,10 @@ and will now be using &lt;code&gt;data.table::fwrite&lt;/code&gt;, too.&lt;/p&gt
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
-      <description>&lt;p&gt;I just spent some time updating my
+      <description>
+
+
+&lt;p&gt;I just spent some time updating my
 &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and
 &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for
 &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version
@@ -1187,7 +1336,10 @@ effort involved was definitely worthwhile.&lt;/p&gt;
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
-      <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from
+      <description>
+
+
+&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from
 Wikipedia&lt;/a&gt;
 and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt;
 package.&lt;/p&gt;
@@ -1238,7 +1390,10 @@ code&lt;/a&gt;.&lt;/p&gt;
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems
 that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so
 if your site includes an analysis that takes a while…well, every
 time you build the site it’s going to take a while.&lt;/p&gt;
@@ -1264,7 +1419,10 @@ and my method is &lt;em&gt;not&lt;/em&gt; generally recommended, but it seems to
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
-      <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided
+      <description>
+
+
+&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided
 working directly with databases for much of my career. The data for my
 projects have been reasonably small. (In fact, basically all of the
 data for my 20 years of projects are on my laptop’s drive.) Flat files
@@ -1569,7 +1727,10 @@ longer to write.&lt;/p&gt;
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
-      <description>&lt;p&gt;In moving away from my
+      <description>
+
+
+&lt;p&gt;In moving away from my
 &lt;a href=&#34;https://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d
 look back at some of my old posts there. Here are the most frequently
 visited ones.&lt;/p&gt;
@@ -1687,7 +1848,10 @@ various academic matters:&lt;/p&gt;
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
-      <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+      <description>
+
+
+&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress
 site&lt;/a&gt; as it is and not try to figure
 out how to move things over.&lt;/p&gt;
@@ -2189,42 +2353,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;It seems quite obvious in retrospect. It&amp;rsquo;s a bit embarrassing that it&amp;rsquo;s taken me so long to come to this understanding.&lt;/p&gt;
 
 &lt;p&gt;In &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Session info from R/Travis</title>
-      <link>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
-      <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
-      <description>&lt;p&gt;For the problem &lt;a href=&#34;http://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;http://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
-
-&lt;p&gt;In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t want to go with a fully custom Travis script, your &lt;a href=&#34;http://docs.travis-ci.com/user/customizing-the-build/&#34;&gt;customization options&lt;/a&gt; are limited. We really only care about the case of a failure, so &lt;code&gt;after_success&lt;/code&gt; is not of interest, and &lt;code&gt;after_script&lt;/code&gt; seems not to be run if there&amp;rsquo;s a Travis fail. Moreover, &lt;code&gt;script&lt;/code&gt; and &lt;code&gt;after_failure&lt;/code&gt; are defined by the main &lt;code&gt;language: r&lt;/code&gt; script, so you can&amp;rsquo;t change them without going all-custom.&lt;/p&gt;
-
-&lt;p&gt;What&amp;rsquo;s left is &lt;code&gt;before_script&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I want to see the result of &lt;code&gt;devtools::session_info()&lt;/code&gt; with the package of interest loaded, but the package actually gets built &lt;em&gt;after&lt;/em&gt; &lt;code&gt;before_script&lt;/code&gt; is run, so we&amp;rsquo;ll need to build and install it, even though it&amp;rsquo;ll be built and installed again afterwards. The best I could work out is in &lt;a href=&#34;https://github.com/kbroman/testsysfile/blob/master/.travis.yml#L12-L19&#34;&gt;this example &lt;code&gt;.travis.yml&lt;/code&gt; file&lt;/a&gt;, with the key bits being:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;before_script:
-  - export PKG_NAME=$(Rscript -e &#39;cat(paste0(devtools::as.package(&amp;quot;.&amp;quot;)$package))&#39;)
-  - export PKG_TARBALL=$(Rscript -e &#39;pkg &amp;lt;- devtools::as.package(&amp;quot;.&amp;quot;); cat(paste0(pkg$package,&amp;quot;_&amp;quot;,pkg$version,&amp;quot;.tar.gz&amp;quot;))&#39;)
-  - R CMD build --no-build-vignettes .
-  - R CMD INSTALL ${PKG_TARBALL}
-  - rm ${PKG_TARBALL}
-  - echo &amp;quot;Session info:&amp;quot;
-  - Rscript -e &amp;quot;library(${PKG_NAME});devtools::session_info(&#39;${PKG_NAME}&#39;)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I use &lt;code&gt;--no-build-vignettes&lt;/code&gt; in &lt;code&gt;R CMD build&lt;/code&gt; as otherwise the package would be built and installed yet another time. And I remove the &lt;code&gt;.tar.gz&lt;/code&gt; file afterwards, to avoid having the later check complain about the extra file.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an &lt;a href=&#34;https://travis-ci.org/kbroman/testsysfile#L850-L864&#34;&gt;example of the session info in the Travis log&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you have suggests about how to simplify this, I&amp;rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.&lt;/p&gt;
-
-&lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/JennyBryan/status/647177192514785280&#34;&gt;showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub&lt;/a&gt;, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
