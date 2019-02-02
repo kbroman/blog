@@ -52,7 +52,7 @@ great-but-kind-of-hacky-outside-the-OS deal.
 
 But, two important downsides. First, the battery really sucks. The
 fan's going essentially all the time while I'm working, and the battery
-lasts only than an hour for me, if that. So you essentially need
+lasts only an hour for me, if that. So you essentially need
 to have it plugged in all of the time. Which means you can't even use
 it for the occasional meeting without lugging along the power adapter (which
 weights 1.7 lbs ie 750 g) and being near an outlet.
@@ -100,7 +100,7 @@ enough to code and write on.
 Oh, and this laptop weighs 3 lbs 6 oz (1.5 kg), and the power adapter
 is just 5 oz (150 g), so jointly like 3.6 lbs vs 8.1 lbs for the Oryx
 Pro and adapter. But who cares about weight, really? I'm all about RAM,
-ports, SSDs moderate battery, and easy projecting.
+ports, SSDs, moderate battery, and easy projecting.
 
 Here's a picture of my Galago Pro, sitting on top of my Oryx Pro.
 
