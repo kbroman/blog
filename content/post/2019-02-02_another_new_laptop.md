@@ -35,7 +35,7 @@ over-reaction of anti-Mac fervor, I got their [Oryx
 Pro](https://system76.com/laptops/oryx) monster, fully loading with a
 15" HiDPI screen with a NVIDIA GTX 1070 graphics card, 64 GB RAM, a 2
 TB SSD and another 2 TB hard drive for backup and extra space. The
-thing weighs 6.5 lbs (2.9 kb), but really not _that_ much heavier than
+thing weighs 6.5 lbs (2.9 kg), but really not _that_ much heavier than
 my previous MacBook; just a bit thicker.
 
 This thing has been a joy to work on. Beautiful screen, and all the RAM
