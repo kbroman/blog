@@ -126,10 +126,7 @@ adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
-      <description>
-
-
-&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less
+      <description>&lt;p&gt;What I’ve liked most about Twitter is that it’s helped me to feel less
 isolated, as I’ve been able to connect with distant folks who share my
 interests and values, particularly regarding open science and
 reproducible research.&lt;/p&gt;
@@ -157,10 +154,7 @@ accounts&lt;/a&gt;.&lt;/p&gt;
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
-      <description>
-
-
-&lt;p&gt;I’ve long been an advocate for statisticians (and other data
+      <description>&lt;p&gt;I’ve long been an advocate for statisticians (and other data
 scientists) to become proficient in multiple programming languages.
 Fifteen years ago, I said, “Think CPR: C for speed, R for
 interactive data analysis and graphics, and Perl for manipulating data
@@ -322,10 +316,7 @@ them. And then you’ll be really cool.&lt;/p&gt;
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
-      <description>
-
-
-&lt;p&gt;At the
+      <description>&lt;p&gt;At the
 &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/&#34;&gt;2016 JSM in Chicago&lt;/a&gt;,
 in a
 &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;,
@@ -362,10 +353,7 @@ situation in a way that I didn’t.&lt;/p&gt;
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
-      <description>
-
-
-&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there
+      <description>&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there
 were just 6 groups of kids, for a total of
 18, and 12 of them came within 2 minutes (a group of 8
 girls followed immediately by a group of 4 girls). Here’s a graph;
@@ -382,10 +370,7 @@ compare it to
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
-      <description>
-
-
-&lt;p&gt;So I was trying to parse
+      <description>&lt;p&gt;So I was trying to parse
 &lt;a href=&#34;http://www.informatics.jax.org/downloads/mgigff/MGI.20170803.gff3.gz&#34;&gt;this gff file&lt;/a&gt;
 from &lt;a href=&#34;http://www.informatics.jax.org/&#34;&gt;MGI&lt;/a&gt;, with mouse gene
 annotations. And, well, I’m an idiot. But in a way that is potentially
@@ -490,10 +475,7 @@ columns.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
-      <description>
-
-
-&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt;
+      <description>&lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt;
 and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;,
 &lt;a href=&#34;./2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt;
 that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
@@ -509,10 +491,7 @@ me! So awesome.&lt;/p&gt;
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
-      <description>
-
-
-&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt;
+      <description>&lt;p&gt;In addition to our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt;
 package and our &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34;&gt;in-development bookdown
 book&lt;/a&gt;, the R/minecraft team from the
 &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt;
@@ -551,10 +530,7 @@ Functions from the others will follow.)&lt;/p&gt;
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
-      <description>
-
-
-&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about
+      <description>&lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about
 &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable
 excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;.
 (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at
@@ -611,10 +587,7 @@ easy.)&lt;/p&gt;
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
-      <description>
-
-
-&lt;p&gt;If, in teaching folks about the
+      <description>&lt;p&gt;If, in teaching folks about the
 &lt;a href=&#34;https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html&#34;&gt;magrittr&lt;/a&gt;
 pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you’re looking for an in-the-wild example of
 deeply nested functions, our
@@ -648,10 +621,7 @@ into a data frame like&lt;/p&gt;
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>
-
-
-&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt;
+      <description>&lt;p&gt;I’m back from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt;
 &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; in LA. A fabulous two
 days of R programming and, ur, playing
 &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;. As one does.&lt;/p&gt;
@@ -704,9 +674,7 @@ Really, it’s the best book on programming for kids that I’ve seen,
 &lt;em&gt;because&lt;/em&gt; it is so full of challenging but do-able and above all
 &lt;em&gt;interesting&lt;/em&gt; exercises. Good exercises are really the key to learning
 programming, and Minecraft provides a lot of really great
-It’s a great way to learn programming, because a key challenge in
-learning to program is identifying appropriate &lt;em&gt;challenges&lt;/em&gt; to try to
-work on, and for people who’ve tried to&lt;/p&gt;
+and varied challenges.&lt;/p&gt;
 &lt;p&gt;Our team of six (me, &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;,
 &lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David
 Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario
@@ -767,10 +735,7 @@ book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
-      <description>
-
-
-&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and
+      <description>&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and
 &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the
 &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting
 (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
@@ -876,10 +841,7 @@ me towards this short-term solution.&lt;/p&gt;
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to
 follow up on my &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and
 fst&lt;/a&gt;. One thing to emphasize is
 that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use
@@ -982,7 +944,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Sat Feb  2 13:27:30 2019 --&gt;
+&lt;!-- Sun Feb  3 22:36:03 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1157,10 +1119,7 @@ and will now be using &lt;code&gt;data.table::fwrite&lt;/code&gt;, too.&lt;/p&gt
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
-      <description>
-
-
-&lt;p&gt;I just spent some time updating my
+      <description>&lt;p&gt;I just spent some time updating my
 &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and
 &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for
 &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version
@@ -1336,10 +1295,7 @@ effort involved was definitely worthwhile.&lt;/p&gt;
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
-      <description>
-
-
-&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from
+      <description>&lt;p&gt;Back in 2014, I’d grabbed the &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;&gt;Crayola crayon colors from
 Wikipedia&lt;/a&gt;
 and made them available as part of my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt;
 package.&lt;/p&gt;
@@ -1390,10 +1346,7 @@ code&lt;/a&gt;.&lt;/p&gt;
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems
 that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so
 if your site includes an analysis that takes a while…well, every
 time you build the site it’s going to take a while.&lt;/p&gt;
@@ -1419,10 +1372,7 @@ and my method is &lt;em&gt;not&lt;/em&gt; generally recommended, but it seems to
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
-      <description>
-
-
-&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided
+      <description>&lt;p&gt;I don’t think I’m unusual among statisticians in having avoided
 working directly with databases for much of my career. The data for my
 projects have been reasonably small. (In fact, basically all of the
 data for my 20 years of projects are on my laptop’s drive.) Flat files
@@ -1727,10 +1677,7 @@ longer to write.&lt;/p&gt;
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
-      <description>
-
-
-&lt;p&gt;In moving away from my
+      <description>&lt;p&gt;In moving away from my
 &lt;a href=&#34;https://kbroman.org/blog/&#34;&gt;old wordpress site&lt;/a&gt;, I thought I’d
 look back at some of my old posts there. Here are the most frequently
 visited ones.&lt;/p&gt;
@@ -1848,10 +1795,7 @@ various academic matters:&lt;/p&gt;
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
-      <description>
-
-
-&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This is the new site for my blog; source at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m going to leave my &lt;a href=&#34;https://kbroman.wordpress.com/&#34;&gt;old wordpress
 site&lt;/a&gt; as it is and not try to figure
 out how to move things over.&lt;/p&gt;
