@@ -62,9 +62,7 @@ Really, it's the best book on programming for kids that I've seen,
 _because_ it is so full of challenging but do-able and above all
 _interesting_ exercises. Good exercises are really the key to learning
 programming, and Minecraft provides a lot of really great
-It's a great way to learn programming, because a key challenge in
-learning to program is identifying appropriate _challenges_ to try to
-work on, and for people who've tried to
+and varied challenges.
 
 Our team of six (me, [Gergely Daróczi](https://github.com/daroczig),
 [Brooke Anderson](https://github.com/geanders), [David
