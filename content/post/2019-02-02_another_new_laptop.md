@@ -86,6 +86,13 @@ indeed this one works fine mirroring to an LCD projector). 32 GB RAM
 (I'll miss the 64 GB but what can you do) and 2x 2 TB SSDs. And all the
 ports I want: 2 USB-A, USB-C, mini display, hdmi, SD card, ethernet.
 
+(**Note**: [System76](https://system76.com) just released the [Darter
+Pro](https://system76.com/laptops/darter) which is similar but has a
+larger battery (55 Wh rather than 35 Wh), plus also a larger 15.6"
+screen and keyboard with number keypad. To make room for
+the larger battery, it takes just one SSD drive. Overall it's
+probably an even better fit for me.)
+
 Reviews tend to mention that the battery sucks, but they're saying the
 battery sucks because it only lasts 3-4 hours rather than the battery
 sucks because it only lasts 30 minutes. Yeah 10 hour batteries are
