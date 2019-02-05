@@ -92,6 +92,13 @@ indeed this one works fine mirroring to an LCD projector). 32 GB RAM
 (I&amp;rsquo;ll miss the 64 GB but what can you do) and 2x 2 TB SSDs. And all the
 ports I want: 2 USB-A, USB-C, mini display, hdmi, SD card, ethernet.&lt;/p&gt;
 
+&lt;p&gt;(&lt;strong&gt;Note&lt;/strong&gt;: &lt;a href=&#34;https://system76.com&#34;&gt;System76&lt;/a&gt; just released the &lt;a href=&#34;https://system76.com/laptops/darter&#34;&gt;Darter
+Pro&lt;/a&gt; which is similar but has a
+larger battery (55 Wh rather than 35 Wh), plus also a larger 15.6&amp;rdquo;
+screen and keyboard with number keypad. To make room for
+the larger battery, it takes just one SSD drive. Overall it&amp;rsquo;s
+probably an even better fit for me.)&lt;/p&gt;
+
 &lt;p&gt;Reviews tend to mention that the battery sucks, but they&amp;rsquo;re saying the
 battery sucks because it only lasts 3-4 hours rather than the battery
 sucks because it only lasts 30 minutes. Yeah 10 hour batteries are
@@ -586,7 +593,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Tue Feb  5 07:35:56 2019 --&gt;
+&lt;!-- Tue Feb  5 11:01:40 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
