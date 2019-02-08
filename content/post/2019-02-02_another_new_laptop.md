@@ -76,8 +76,8 @@ outlet, and I want to be able to easily mirror to an LCD projector.
 
 I looked at the Dell XPS 13 developer edition, but no more than 16 GB
 RAM and just USB-C ports. If I wanted to run linux on a Mac-like
-thing I would buy a Mac and run linux on it. And I don't want to touch
-Lenovo.
+thing I would buy a Mac and run linux on it. And I [don't want to touch
+Lenovo](https://en.wikipedia.org/wiki/Superfish#Lenovo_security_incident).
 
 So I decided to get another System76, the [Galago
 Pro](https://system76.com/laptops/galago). I got the 14" 1920x1080
