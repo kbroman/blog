@@ -57,7 +57,7 @@ part would be the axis labels: being able to write text in Minecraft.
 (I mean, you can probably guess that I first tried saving a graph to
 an image file and then rendering that in Minecraft. But it looked
 terrible because the points in the scatterplot wouldn't be captured
-well, and the text in the axis labels were especially terrible.)
+well, and the text in the axis labels was especially terrible.)
 
 ## Pixel-based fonts
 
