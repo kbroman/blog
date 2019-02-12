@@ -67,7 +67,7 @@ well, and the text in the axis labels was especially terrible.)&lt;/p&gt;
 
 &lt;h2 id=&#34;pixel-based-fonts&#34;&gt;Pixel-based fonts&lt;/h2&gt;
 
-&lt;p&gt;It seems like I just needed some old-style, pixelated fonts. You know,
+&lt;p&gt;It seemed like I just needed some old-style, pixelated fonts. You know,
 like the ones used on LCD displays. It took a lot of googling, but I
 finally found this &lt;a href=&#34;http://uzebox.org/wiki/index.php?title=Font_Bitmaps&#34;&gt;font
 bitmaps&lt;/a&gt; page at
@@ -121,7 +121,7 @@ using &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/setBlo
 
 &lt;h2 id=&#34;rotating-the-text&#34;&gt;Rotating the text&lt;/h2&gt;
 
-&lt;p&gt;The only tricky bit is figuring out which direction to draw the text. And
+&lt;p&gt;The other tricky bit was figuring out which direction to draw the text. And
 like, how many different directions can you draw text in 3d space?
 Really, I have a terrible spatial sense. And I refuse to admit how
 long it took me to work through that.&lt;/p&gt;
@@ -135,10 +135,10 @@ wrote an internal function
 to check compatibility. (That&amp;rsquo;s &amp;ldquo;check dir top&amp;rdquo; not &amp;ldquo;check dirt op&amp;rdquo;, by
 the way.)&lt;/p&gt;
 
-&lt;p&gt;And that was pretty much that. It doesn&amp;rsquo;t seem like it was that hard.
-There were some important conceptual puzzles that took like &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; of
-my time on this, but in the end the code to grab the font information
-is just about 80 lines, and the code to render text in minecraft is
+&lt;p&gt;And that was pretty much that. It doesn&amp;rsquo;t seem like it was that hard,
+but there were some important conceptual puzzles that took like &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; of
+my time on this. In the end the code to grab the font information
+is just about 80 lines, and the code to render text in Minecraft is
 just about 160 lines. And it allowed me to do stuff like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;./images/rqtl2_3d.png&#34; alt=&#34;&amp;quot;R/qtl now in 3d&amp;quot;, rendered within Minecraft&#34; /&gt;&lt;/p&gt;
@@ -728,7 +728,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 11 20:38:06 2019 --&gt;
+&lt;!-- Mon Feb 11 20:42:13 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
