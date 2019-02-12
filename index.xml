@@ -7,8 +7,143 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Writing text in Minecraft with R</title>
+      <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s been nearly two years since I attended the &lt;a href=&#34;https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/&#34;&gt;RopenSci UnConf
+2017&lt;/a&gt; in LA
+and worked with &lt;a href=&#34;https://github.com/daroczig&#34;&gt;Gergely Daróczi&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/geanders&#34;&gt;Brooke Anderson&lt;/a&gt;, &lt;a href=&#34;https://github.com/revodavid&#34;&gt;David
+Smith&lt;/a&gt;, &lt;a href=&#34;https://github.com/inchiosa&#34;&gt;Mario
+Inchiosa&lt;/a&gt;, and &lt;a href=&#34;https://github.com/akzaidi&#34;&gt;Adi
+Zaidi&lt;/a&gt; to create the
+&lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt; package for interacting
+with &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt; from
+&lt;a href=&#34;https://r-project.org&#34;&gt;R&lt;/a&gt;. We spent a half-day writing the package
+and then a day and a half playing, with a bunch of our ideas
+implemented in the &lt;a href=&#34;https://github.com/ropenscilabs/craft&#34;&gt;craft&lt;/a&gt;
+package and illustrated in the &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt; book,
+&lt;a href=&#34;https://ropenscilabs.github.io/miner_book&#34;&gt;R programming with
+Minecraft&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d meant to follow up with a bunch more on the stuff we&amp;rsquo;d done, and
+to really finish up and polish the book. But, well, I didn&amp;rsquo;t. But I&amp;rsquo;m
+going to try to do so now. I&amp;rsquo;ll start by explaining how I was able to
+write text in Minecraft, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./images/rOpenSci_sign.png&#34; alt=&#34;rOpenSci on a hill in Minecraft&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;my-goal-was-to-make-a-ggplot-scatterplot&#34;&gt;My goal was to make a ggplot scatterplot&lt;/h2&gt;
+
+&lt;p&gt;Once we had &lt;a href=&#34;https://github.com/ropenscilabs/miner&#34;&gt;miner&lt;/a&gt; up and
+running, the first thing I wanted to do was &lt;a href=&#34;https://ropenscilabs.github.io/miner_book/rendering-an-image-in-minecraft.html&#34;&gt;render a picture out of
+blocks&lt;/a&gt;.
+Specifically, I wanted to create a picture of
+&lt;a href=&#34;http://inundata.org&#34;&gt;Karthik&lt;/a&gt; in Minecraft. And so I
+did:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./images/karthik_minecraft.png&#34; alt=&#34;Karthik in Minecraft&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My next goal was to make a &lt;code&gt;ggplot2::theme_gray()&lt;/code&gt;-styled scatterplot
+within Minecraft. Like, I wasn&amp;rsquo;t so ambitious that I wanted to add a
+&lt;code&gt;geom_minecraft()&lt;/code&gt; or a ggplot2 Minecraft plugin, but I thought it&amp;rsquo;d
+be cool to make an image of a ggplot2-style graph in Minecraft and
+then pretend that I&amp;rsquo;d done it properly. If I can create an image in
+Minecraft, then of course I can create a scatterplot. The only tricky
+part would be the axis labels: being able to write text in Minecraft.&lt;/p&gt;
+
+&lt;p&gt;(I mean, you can probably guess that I first tried saving a graph to
+an image file and then rendering that in Minecraft. But it looked
+terrible because the points in the scatterplot wouldn&amp;rsquo;t be captured
+well, and the text in the axis labels were especially terrible.)&lt;/p&gt;
+
+&lt;h2 id=&#34;pixel-based-fonts&#34;&gt;Pixel-based fonts&lt;/h2&gt;
+
+&lt;p&gt;It seems like I just needed some old-style, pixelated fonts. You know,
+like the ones used on LCD displays. It took a lot of googling, but I
+finally found this &lt;a href=&#34;http://uzebox.org/wiki/index.php?title=Font_Bitmaps&#34;&gt;font
+bitmaps&lt;/a&gt; page at
+&lt;a href=&#34;http://uzebox.org&#34;&gt;uzebox.org&lt;/a&gt;, which has a big list of font sizes,
+and then for each font size there&amp;rsquo;s a bunch of PNG images with
+different fonts in that size. For example, here&amp;rsquo;s the one I&amp;rsquo;m using
+for the 6x8 font:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png&#34;&gt;&lt;img src=&#34;./images/Sebasic_charset_192w.png&#34; alt=&#34;6x8 font bitmap&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yeah so that&amp;rsquo;s great. I could see these images of the fonts, with the
+available characters, but what I wanted was like a bitmap: for
+example, for each character in a 6x8 font, I wanted 0s and 1s
+indicating which bits need to be dark versus light.&lt;/p&gt;
+
+&lt;p&gt;Ugh, I spent a couple of hours googling and puzzling over this. Why
+would they provide these images and not provide a bitmap, so that you
+could actually make the font? I mean, the title of &lt;a href=&#34;http://uzebox.org/wiki/index.php?title=Font_Bitmaps&#34;&gt;that
+page&lt;/a&gt; was &amp;ldquo;&lt;em&gt;Font
+Bitmaps&lt;/em&gt;&amp;rdquo;!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Finally&lt;/em&gt; I realized that, just like the picture of Karthik that I
+had made, the PNG images I was looking at &lt;em&gt;were&lt;/em&gt; the bitmaps. I could
+load them into R with the
+&lt;a href=&#34;https://cran.r-project.org/package=imager&#34;&gt;imager&lt;/a&gt; package and then
+grab the 0s and 1s there. The only thing I needed to do was look at
+the images and type in the sets of characters that were inside the
+images. For example, for the 6x8 image above, the PNG file is 192 x 24
+pixels: 24 pixels tall because there are three rows of characters and
+they each are 8 characters tall, and 192 pixels wide because there are
+32 columns of characters and they are each 6 pixels wide.&lt;/p&gt;
+
+&lt;p&gt;The script I used to set up the fonts is &lt;a href=&#34;https://github.com/ropenscilabs/craft/blob/master/inst/scripts/grab_fonts.R&#34;&gt;hiding inside the craft
+package&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;rendering-text&#34;&gt;Rendering text&lt;/h2&gt;
+
+&lt;p&gt;For text I want to write in Minecraft, I first split it into
+the individual characters. Then I convert each character into a
+bitmap.&lt;/p&gt;
+
+&lt;p&gt;For each size font, we basically have a matrix of available characters
+and then a matrix that is the font image bitmap. I find the character
+in the font, and then pull out the corresponding chunk of the font
+bitmap. I then paste those bitmaps back together, to get a bitmap for
+the full text.&lt;/p&gt;
+
+&lt;p&gt;Finally, I render it in Minecraft by looping over the elements of the
+bitmap matrix of 0s and 1s and adding a block wherever there&amp;rsquo;s a 1,
+using &lt;a href=&#34;https://github.com/ropenscilabs/miner/blob/master/R/setBlock.R&#34;&gt;&lt;code&gt;miner::setBlock()&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;rotating-the-text&#34;&gt;Rotating the text&lt;/h2&gt;
+
+&lt;p&gt;The only tricky bit is figuring out which direction to draw the text. And
+like, how many different directions can you draw text in 3d space?
+Really, I have a terrible spatial sense. And I refuse to admit how
+long it took me to work through that.&lt;/p&gt;
+
+&lt;p&gt;Suffice it to say, there are six directions in Minecraft: north,
+south, east, west, up, and down. Your text could go in any of those
+directions, but then for each such direction, the top of the text
+could be oriented in one of four of the other possible directions. I
+wrote an internal function
+&lt;a href=&#34;https://github.com/ropenscilabs/craft/blob/master/R/write_text.R#L153-L164&#34;&gt;&lt;code&gt;craft::check_dirtop()&lt;/code&gt;&lt;/a&gt;
+to check compatibility. (That&amp;rsquo;s &amp;ldquo;check dir top&amp;rdquo; not &amp;ldquo;check dirt op&amp;rdquo;, by
+the way.)&lt;/p&gt;
+
+&lt;p&gt;And that was pretty much that. It doesn&amp;rsquo;t seem like it was that hard.
+There were some important conceptual puzzles that took like &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; of
+my time on this, but in the end the code to grab the font information
+is just about 80 lines, and the code to render text in minecraft is
+just about 160 lines. And it allowed me to do stuff like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;./images/rqtl2_3d.png&#34; alt=&#34;&amp;quot;R/qtl now in 3d&amp;quot;, rendered within Minecraft&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Another new laptop</title>
@@ -38,7 +173,7 @@ key, but again just one kind of port.&lt;/p&gt;
 &lt;p&gt;So a year ago, needing a new laptop, I bought a linux laptop from
 &lt;a href=&#34;https://system76.com&#34;&gt;System76&lt;/a&gt;. And in what turned out to be an
 over-reaction of anti-Mac fervor, I got their &lt;a href=&#34;https://system76.com/laptops/oryx&#34;&gt;Oryx
-Pro&lt;/a&gt; monster, fully loading with a
+Pro&lt;/a&gt; monster, fully loaded with a
 15&amp;rdquo; HiDPI screen with a NVIDIA GTX 1070 graphics card, 64 GB RAM, a 2
 TB SSD and another 2 TB hard drive for backup and extra space. The
 thing weighs 6.5 lbs (2.9 kg), but really not &lt;em&gt;that&lt;/em&gt; much heavier than
@@ -82,8 +217,8 @@ outlet, and I want to be able to easily mirror to an LCD projector.&lt;/p&gt;
 
 &lt;p&gt;I looked at the Dell XPS 13 developer edition, but no more than 16 GB
 RAM and just USB-C ports. If I wanted to run linux on a Mac-like
-thing I would buy a Mac and run linux on it. And I don&amp;rsquo;t want to touch
-Lenovo.&lt;/p&gt;
+thing I would buy a Mac and run linux on it. And I &lt;a href=&#34;https://en.wikipedia.org/wiki/Superfish#Lenovo_security_incident&#34;&gt;don&amp;rsquo;t want to touch
+Lenovo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;So I decided to get another System76, the &lt;a href=&#34;https://system76.com/laptops/galago&#34;&gt;Galago
 Pro&lt;/a&gt;. I got the 14&amp;rdquo; 1920x1080
@@ -593,7 +728,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Tue Feb  5 11:01:40 2019 --&gt;
+&lt;!-- Mon Feb 11 19:34:41 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1633,46 +1768,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;/ul&gt;
 
 &lt;p&gt;To learn more about testing in R packages, see the &lt;a href=&#34;http://r-pkgs.had.co.nz/tests.html&#34;&gt;Testing&lt;/a&gt; chapter in Hadley&amp;rsquo;s &lt;a href=&#34;amazon.com/exec/obidos/ASIN/1491910593/7210-20&#34;&gt;R packages book&lt;/a&gt;. Also see the &lt;a href=&#34;http://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf&#34;&gt;slides for my lecture on testing and debugging&lt;/a&gt; in my &lt;a href=&#34;http://kbroman.org/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fitting linear mixed models for QTL mapping</title>
-      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
-      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
-      <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
-
-&lt;p&gt;In my efforts on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs. But while &lt;a href=&#34;http://www.jstatsoft.org/article/view/v067i01&#34;&gt;papers explaining the fit of LMMs&lt;/a&gt; seem quite explicit and clear, I&amp;rsquo;d never quite turned the corner to actually seeing how I&amp;rsquo;d implement it. In both reading papers and studying code (e.g., &lt;a href=&#34;https://github.com/lme4/lme4/&#34;&gt;lme4&lt;/a&gt;), I&amp;rsquo;d be going along fine and then get completely lost part-way through.&lt;/p&gt;
-
-&lt;p&gt;But I now finally understand LMMs, or at least a particular, simple LMM, and I&amp;rsquo;ve been able to write an implementation: the R package &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It seemed worthwhile to write down some of the details.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;The model I want to fit is &lt;em&gt;y = X b + e&lt;/em&gt;, where var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;sK + tI&lt;/em&gt;, where &lt;em&gt;K&lt;/em&gt; is a known kinship matrix and &lt;em&gt;I&lt;/em&gt; is the identity matrix. Think of &lt;em&gt;y&lt;/em&gt; as a vector of phenotypes and &lt;em&gt;X&lt;/em&gt; as a matrix of covariates. Let &lt;em&gt;v = s+t&lt;/em&gt; be the residual variance, and let &lt;em&gt;h = s/(s+t) = s/v&lt;/em&gt; be the heritability.&lt;/p&gt;
-
-&lt;p&gt;First, a shout to &lt;a href=&#34;https://github.com/lomereiter&#34;&gt;Artem Tarasov&lt;/a&gt;, who wrote a &lt;a href=&#34;http://lomereiter.github.io/2015/02/16/lmm_cov.html&#34;&gt;series of blog posts&lt;/a&gt; walking through and explaining the source code for &lt;a href=&#34;https://github.com/MicrosoftGenomics/FaST-LMM&#34;&gt;FaST-LMM&lt;/a&gt; and &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;, and to &lt;a href=&#34;http://whatmind.com/&#34;&gt;Nick Furlotte&lt;/a&gt;, whose &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt; code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.&lt;/p&gt;
-
-&lt;p&gt;Back to the model fit:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For a fixed value of the heritability, &lt;em&gt;h&lt;/em&gt;, we have var(&lt;em&gt;e&lt;/em&gt;) = &lt;em&gt;v[hK + (1-h)I] = vV&lt;/em&gt; where &lt;em&gt;V&lt;/em&gt; is known. And so we end up with a general least squares problem, which we can fit in order to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;And actually, if you take the eigen decomposition of &lt;em&gt;K&lt;/em&gt;, say &lt;em&gt;K = UDU&amp;rsquo;&lt;/em&gt;, it turns out that you can write &lt;em&gt;hK + (1-h)I = hUDU&amp;rsquo; + (1-h)UU&amp;rsquo; = U[hD + (1-h)I]U&amp;rsquo;&lt;/em&gt;. That is, the eigenvectors of &lt;em&gt;K&lt;/em&gt; are the same as the eigenvectors of &lt;em&gt;hK + (1-h)I&lt;/em&gt;. And so if you pre-multiply &lt;em&gt;y&lt;/em&gt; and &lt;em&gt;X&lt;/em&gt; by &lt;em&gt;U&amp;rsquo;&lt;/em&gt;, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Having fit the weighted least squares problem to estimate &lt;em&gt;b&lt;/em&gt; and &lt;em&gt;v&lt;/em&gt;, you can then calculate the corresponding log likelihood (or, better, the restricted log likelihood, if you want to do REML).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;You&amp;rsquo;re then left with a one-dimensional optimization problem (optimizing the log likelihood over &lt;em&gt;h&lt;/em&gt;), which you can solve by &lt;a href=&#34;https://en.wikipedia.org/wiki/Brent%27s_method&#34;&gt;Brent&amp;rsquo;s method&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;That&amp;rsquo;s it!&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It seems quite obvious in retrospect. It&amp;rsquo;s a bit embarrassing that it&amp;rsquo;s taken me so long to come to this understanding.&lt;/p&gt;
-
-&lt;p&gt;In &lt;a href=&#34;http://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;http://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
 </description>
     </item>
     

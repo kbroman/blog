@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing text in Minecraft with R</title>
+      <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</guid>
+      <description>It&amp;rsquo;s been nearly two years since I attended the RopenSci UnConf 2017 in LA and worked with Gergely Daróczi, Brooke Anderson, David Smith, Mario Inchiosa, and Adi Zaidi to create the miner package for interacting with Minecraft from R. We spent a half-day writing the package and then a day and a half playing, with a bunch of our ideas implemented in the craft package and illustrated in the bookdown book, R programming with Minecraft.</description>
+    </item>
     
     <item>
       <title>EOF within quoted string</title>
@@ -321,17 +330,6 @@ z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quo
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
 &amp;mdash; __root__ (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
 Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
-    </item>
-    
-    <item>
-      <title>knitr in a knutshell tutorial</title>
-      <link>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
-      <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
-      <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
-This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
-I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>
     </item>
     
   </channel>
