@@ -61,7 +61,7 @@ well, and the text in the axis labels was especially terrible.)
 
 ## Pixel-based fonts
 
-It seems like I just needed some old-style, pixelated fonts. You know,
+It seemed like I just needed some old-style, pixelated fonts. You know,
 like the ones used on LCD displays. It took a lot of googling, but I
 finally found this [font
 bitmaps](http://uzebox.org/wiki/index.php?title=Font_Bitmaps) page at
@@ -116,7 +116,7 @@ using [`miner::setBlock()`](https://github.com/ropenscilabs/miner/blob/master/R/
 
 ## Rotating the text
 
-The only tricky bit is figuring out which direction to draw the text. And
+The other tricky bit was figuring out which direction to draw the text. And
 like, how many different directions can you draw text in 3d space?
 Really, I have a terrible spatial sense. And I refuse to admit how
 long it took me to work through that.
@@ -130,10 +130,10 @@ wrote an internal function
 to check compatibility. (That's "check dir top" not "check dirt op", by
 the way.)
 
-And that was pretty much that. It doesn't seem like it was that hard.
-There were some important conceptual puzzles that took like 2/3 of
-my time on this, but in the end the code to grab the font information
-is just about 80 lines, and the code to render text in minecraft is
+And that was pretty much that. It doesn't seem like it was that hard,
+but there were some important conceptual puzzles that took like 2/3 of
+my time on this. In the end the code to grab the font information
+is just about 80 lines, and the code to render text in Minecraft is
 just about 160 lines. And it allowed me to do stuff like this:
 
 !["R/qtl now in 3d", rendered within Minecraft](/images/rqtl2_3d.png)
