@@ -63,7 +63,7 @@ part would be the axis labels: being able to write text in Minecraft.&lt;/p&gt;
 &lt;p&gt;(I mean, you can probably guess that I first tried saving a graph to
 an image file and then rendering that in Minecraft. But it looked
 terrible because the points in the scatterplot wouldn&amp;rsquo;t be captured
-well, and the text in the axis labels were especially terrible.)&lt;/p&gt;
+well, and the text in the axis labels was especially terrible.)&lt;/p&gt;
 
 &lt;h2 id=&#34;pixel-based-fonts&#34;&gt;Pixel-based fonts&lt;/h2&gt;
 
@@ -728,7 +728,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 11 19:34:56 2019 --&gt;
+&lt;!-- Mon Feb 11 20:38:06 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
