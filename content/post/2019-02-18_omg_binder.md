@@ -46,11 +46,11 @@ versions of packages. Ugh, this is all getting a bit hard.
 
 Back up, with binder. You've put your code and data in a github
 repository. Other people maybe want to try it out and peruse the work.
-The click on the "launch binder" badge in your ReadMe file, and it
+They click on the "launch binder" badge in your ReadMe file, and it
 opens RStudio in their browser, with all the right packages installed
 and with your code and data sitting there, ready to work with.
 
-Click this to see mine example in action:
+Click this to see my example in action:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio)
 
 Open the `fruit_snacks.Rmd` file in the `R/` directory and click the
@@ -72,7 +72,7 @@ how simple it is, because you just need three things:
 
 ## Initial reorganization
 
-Okay, so what did I need to do to make my use binder with my [Fruit
+Okay, so what did I need to do to use binder with my [Fruit
 Snacks project](https://kbroman.org/FruitSnacks)?
 
 First, I made a copy of the [GitHub
@@ -120,7 +120,7 @@ This puts me at a nice clean state. The repository has
 
 The R Markdown files automatically install my
 [R/broman](https://github.com/kbroman/broman) package, if it's not
-available. This isn't a recommended behavior, and we won't need it for
+available. This isn't recommended behavior, and we won't need this
 with binder, so I removed the lines like
 
 ```r
@@ -153,7 +153,7 @@ from a particular date.
 
 **2**. Specify the R packages that you want installed by creating a file called
 [`install.R`](https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R)
-that contains a one or more `install.packages()` calls, like this:
+that contains one or more `install.packages()` calls, like this:
 
 ```r
 install.packages(c("broman",
@@ -161,7 +161,7 @@ install.packages(c("broman",
                    "caTools", "bitops", "rprojroot"))
 ```
 
-**3**. The last thing is to make a badge, or any way the URL that will
+**3**. The last thing is to make a badge, or anyway the URL that will
 have binder open your repository in RStudio in a browser.
 The url is like this:
 
@@ -207,9 +207,9 @@ Imports:
     rprojroot
 ```
 
-They two approaches do the same thing. I think the `install.R` approach
+The two approaches do the same thing. I think the `install.R` approach
 seems easier, but the `DESCRIPTION` approach maybe seems more natural for
-R package developers, and would allow the repository to both use this
+R package developers, and would allow the repository to use this
 binder business and also be a proper R package.
 
 The [master branch of my FruitSnacksBinder
@@ -230,7 +230,7 @@ To use binder with a non-master branch in your repository, you edit
 Yes, that was it.
 
 1. An `runtime.txt` file with a line like `r-2019-02-14`
-2. Either and `install.R` file or a `DESCRIPTION` file. The key thing
+2. Either an `install.R` file or a `DESCRIPTION` file. The key thing
    here is specifying what packages to install.
 3. Make a badge with the correct URL.
 
@@ -238,17 +238,18 @@ Yes, that was it.
 
 There are some important limitations of binder.
 
-- It's a pilot; it's not likely to continue long term the way it is.
+- It's a pilot; it's not likely to continue long term the way it is now
+  (totally free).
 - You get just 1-2 GB RAM for your project.
 
 
 ## Conclusions
 
-Putting the code and data a for a project or paper on GitHub is an
+Putting the code and data for a project or paper on GitHub is an
 awesome thing. People can grab it and explore it and test it and
 modify it for other purposes.
 
-But there are some hassles: including getting all of the packages
+But there are some hassles, including getting all of the packages
 installed, and installing the right versions of packages.
 
 Docker containers are a clear and important solution to this problem,
