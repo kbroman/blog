@@ -20,7 +20,7 @@
 
 &lt;p&gt;At his &lt;a href=&#34;https://github.com/karthik/rstudio2019&#34;&gt;talk at
 RStudio::conf&lt;/a&gt;, &lt;a href=&#34;http://inundata.org&#34;&gt;Karthik
-Ram&lt;/a&gt; mentioned
+Ram&lt;/a&gt; discussed
 &lt;a href=&#34;https://mybinder.readthedocs.io/en/latest/index.html&#34;&gt;binder&lt;/a&gt; as a
 useful solution for reproducible research (see &lt;a href=&#34;https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r&#34;&gt;the
 video&lt;/a&gt;),
@@ -980,7 +980,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 18 03:16:21 2019 --&gt;
+&lt;!-- Mon Feb 18 03:30:28 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
