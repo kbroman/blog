@@ -18,7 +18,7 @@
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
-      <description>At his talk at RStudio::conf, Karthik Ram discussed binder as a useful solution for reproducible research (see the video), and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small configuration file in your GitHub repository and suddenly you can open it live in RStudio on some cloud server somewhere. Now this has got to be too good to be true. But I trusted him, mentioned it in my talk at AAAS today, and talked it up to Jeff Leek.</description>
+      <description>At his talk at RStudio::conf, Karthik Ram discussed binder as a useful solution for reproducible research (see the video), and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small configuration file in your GitHub repository and suddenly you can open it live in RStudio on some cloud server somewhere. Seems too good to be true. But I trusted him, mentioned it in my talk at AAAS yesterday, and talked it up to Jeff Leek.</description>
     </item>
     
     <item>
