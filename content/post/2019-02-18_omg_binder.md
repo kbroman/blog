@@ -140,83 +140,99 @@ library(broman)
 
 Okay, now on to the real bit. We need to do three things:
 
-1. Create a file called
-   [`runtime.txt`](https://github.com/kbroman/FruitSnacksBinder/blob/master/runtime.txt)
-   that has just one line like:
+**1**. Create a file called
+[`runtime.txt`](https://github.com/kbroman/FruitSnacksBinder/blob/master/runtime.txt)
+that has just one line like:
 
-   ```
-   r-2019-02-14
-   ```
+```
+r-2019-02-14
+```
 
-   This tells Binder that you want R, and that you want R packages
-   from a particular date.
+This tells Binder that you want R, and that you want R packages
+from a particular date.
 
-2. Specify the R packages that you want installed. There are two
-   different ways to do this.
+**2**. Specify the R packages that you want installed by creating a file called
+[`install.R`](https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R)
+that contains a one or more `install.packages()` calls, like this:
 
-   First, you could create a file called
-   [`install.R`](https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R)
-   that contains a bunch of `install.packages()` calls, like this:
+```r
+install.packages(c("broman",
+                   "knitr", "rmarkdown",
+                   "caTools", "bitops", "rprojroot"))
+```
 
-   ```r
-   install.packages(c("broman",
-                      "knitr", "rmarkdown",
-                      "caTools", "bitops", "rprojroot"))
-   ```
+**3**. The last thing is to make a badge, or any way the URL that will
+have Binder open your repository in RStudio in a browser.
+The url is like this:
 
-   Alternatively, you can make a
-   [`DESCRIPTION`](https://github.com/kbroman/FruitSnacksBinder/blob/description/DESCRIPTION)
-   file, sort of like an R package, like this:
+<https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio>
 
-   ```
-   Package: FruitSnacks
-   Version: 0.1
-   Date: 2019-02-18
-   Description: Fruit Snacks project arranged for myBinder.org
-   Author: Karl W Broman <broman@wisc.edu>
-   Depends:
-       R (>= 3.5.0)
-   Imports:
-       broman,
-       knitr,
-       rmarkdown,
-       caTools,
-       bitops,
-       rprojroot
-   ```
+The `?urlpath=rstudio` at the end of the URL is what makes the
+RStudio aspect happen.
 
-   They seem to do the same thing. I think the `install.R` approach
-   seems easier, but the `DESCRIPTION` approach seems more natural for
-   R package developers.
+To make a proper badge, you put a line like the following in your
+`README.md` file:
 
-   The [master branch of my FruitSnacksBinder
-   repository](https://github.com/kbroman/FruitSnacksBinder) uses the
-   `install.R` approach.
+```
+[![Binder](https://mybinder.org/badge_logo.svg)]( put_url_here )
+```
 
-   I tried out the `DESCRIPTION` file approach in the [description
-   branch of that repository](https://github.com/kbroman/FruitSnacksBinder/tree/description).
+The first time you launch binder, it'll be quite slow to load as it
+has to create the container and install R and RStudio and all of
+the packages and everything. Subsequent times it'll be much
+faster, though not particularly fast.
 
-3. The last thing is to make a badge, or any way the URL that will
-   have Binder open your repository in RStudio in a browser.
-   The url is like this:
+## An alternative
 
-   <https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio>
+There's an alternative to step 2 above, where you created the
+`install.R` file. Instead of making that file, you
+can make a
+[`DESCRIPTION`](https://github.com/kbroman/FruitSnacksBinder/blob/description/DESCRIPTION)
+file, sort of like an R package, like this:
 
-   Change `master` to `description` to have it open that other branch.
-   To make a proper badge, you put a line like the following in your
-   `README.md` file:
+```
+Package: FruitSnacks
+Version: 0.1
+Date: 2019-02-18
+Description: Fruit Snacks project arranged for myBinder.org
+Author: Karl W Broman <broman@wisc.edu>
+Depends:
+    R (>= 3.5.0)
+Imports:
+    broman,
+    knitr,
+    rmarkdown,
+    caTools,
+    bitops,
+    rprojroot
+```
 
-   ```
-   [![Binder](https://mybinder.org/badge_logo.svg)]( put_url_here )
-   ```
+They two appraoches do the same thing. I think the `install.R` approach
+seems easier, but the `DESCRIPTION` approach maybe seems more natural for
+R package developers, and would allow the repository to both use this
+Binder business and also be a proper R package.
 
-   The `?urlpath=rstudio` at the end of the URL is what makes the
-   RStudio aspect happen.
+The [master branch of my FruitSnacksBinder
+repository](https://github.com/kbroman/FruitSnacksBinder) uses the
+`install.R` approach.
 
-   The first time you launch binder, it'll be quite slow to load as it
-   has to create the container and install R and RStudio and all of
-   the packages and everything. Subsequent times it'll be much
-   faster, though not particularly fast.
+I tried out the `DESCRIPTION` file approach in the [description
+branch of that repository](https://github.com/kbroman/FruitSnacksBinder/tree/description).
+
+To use Binder with a non-master branch in your repository, you edit
+`master` in the URL to the name of the branch you want to use, like this:
+
+<https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/description?urlpath=rstudio>
+
+
+## Wait, was that it?
+
+Yes, that was it.
+
+1. An `runtime.txt` file with a line like `r-2019-02-14`
+2. Either and `install.R` file or a `DESCRIPTION` file. The key thing
+   here is specifying what packages to install.
+3. Make a badge with the correct URL.
 
 ## Limitations
 
