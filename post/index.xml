@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OMG binder</title>
+      <link>https://kbroman.org/blog/2019/02/18/omg_binder/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
+      <description>At his talk at RStudio::conf, Karthik Ram mentioned binder as a useful solution for reproducible research (see the video), and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small configuration file in your GitHub repo and suddenly you can open it live in RStudio on some cloud server somewhere. Now this has got to be too good to be true. But I trusted him, mentioned it in my talk at AAAS today, and talked it up to Jeff Leek.</description>
+    </item>
     
     <item>
       <title>Writing text in Minecraft with R</title>
@@ -316,16 +325,6 @@ Here are the things he had mentioned yesterday at the Faculty Senate meeting:
       <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
       <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
 It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
-    </item>
-    
-    <item>
-      <title>Fitting linear mixed models for QTL mapping</title>
-      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
-      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
-      <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
-In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
   </channel>

@@ -7,8 +7,259 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>OMG binder</title>
+      <link>https://kbroman.org/blog/2019/02/18/omg_binder/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
+      <description>
+
+&lt;p&gt;At his &lt;a href=&#34;https://github.com/karthik/rstudio2019&#34;&gt;talk at
+RStudio::conf&lt;/a&gt;, &lt;a href=&#34;http://inundata.org&#34;&gt;Karthik
+Ram&lt;/a&gt; mentioned
+&lt;a href=&#34;https://mybinder.readthedocs.io/en/latest/index.html&#34;&gt;binder&lt;/a&gt; as a
+useful solution for reproducible research (see &lt;a href=&#34;https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r&#34;&gt;the
+video&lt;/a&gt;),
+and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small
+configuration file in your GitHub repo and suddenly you can open it
+live in RStudio on some cloud server somewhere. Now &lt;em&gt;this&lt;/em&gt; has got to
+be too good to be true. But I trusted him, mentioned it in &lt;a href=&#34;https://bit.ly/rrcollab&#34;&gt;my talk at
+AAAS today&lt;/a&gt;, and talked it up to &lt;a href=&#34;http://jtleek.com&#34;&gt;Jeff
+Leek&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I spent the afternoon walking around DC, and then when it started to
+rain I came in and decided I&amp;rsquo;d give binder a try. I figured my &lt;a href=&#34;https://kbroman.org/FruitSnacks&#34;&gt;Fruit
+Snacks project&lt;/a&gt; would make a good
+example.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://mybinder.readthedocs.io/en/latest/index.html&#34;&gt;documentation for
+binder&lt;/a&gt; is quite
+comprehensive, but I found it rather confusing. So it took me a bit of
+experimentation to figure things out. And I&amp;rsquo;m eager to try to
+explain what I learned in the simplest possible terms.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-s-the-point&#34;&gt;What&amp;rsquo;s the point?&lt;/h2&gt;
+
+&lt;p&gt;First, let me explain make the awesomeness a bit more concrete.&lt;/p&gt;
+
+&lt;p&gt;Say you have some code and data for a paper that you&amp;rsquo;ve just written,
+and you want to share it with the world. You put it all in a GitHub
+repository, and people can pull it down to their laptop to work with
+it, but maybe they&amp;rsquo;ll need to install a bunch of packages, and maybe
+they&amp;rsquo;ll need to do a bit of work to make sure they have just the right
+versions of packages. Ugh, this is all getting a bit hard.&lt;/p&gt;
+
+&lt;p&gt;Back up, with binder. You&amp;rsquo;ve put your code and data in a github
+repository. Other people maybe want to try it out and peruse the work.
+The click on the &amp;ldquo;launch binder&amp;rdquo; badge in your ReadMe file, and it
+opens RStudio in their browser, with all the right packages installed
+and with your code and data sitting there, ready to work with.&lt;/p&gt;
+
+&lt;p&gt;Click this to see mine example in action:
+&lt;a href=&#34;https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio&#34;&gt;&lt;img src=&#34;https://mybinder.org/badge_logo.svg&#34; alt=&#34;Binder&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Open the &lt;code&gt;fruit_snacks.Rmd&lt;/code&gt; file in the &lt;code&gt;R/&lt;/code&gt; directory and click the
+&amp;ldquo;Knit&amp;rdquo; button, and it will run my permutation tests and open the
+compiled report.&lt;/p&gt;
+
+&lt;p&gt;And what do you need to do to make this happen? You&amp;rsquo;ll be surprised by
+how simple it is, because you just need three things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tell binder you want R, using the
+&lt;a href=&#34;https://mran.microsoft.com/&#34;&gt;MRAN&lt;/a&gt; snapshot of
+&lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; from a particular date&lt;/li&gt;
+&lt;li&gt;tell binder what packages to install&lt;/li&gt;
+&lt;li&gt;use the right URL, to have binder open your project in RStudio in a
+browser (namely with &amp;ldquo;&lt;code&gt;?urlpath=rstudio&lt;/code&gt;&amp;rdquo; at the end)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;initial-reorganization&#34;&gt;Initial reorganization&lt;/h2&gt;
+
+&lt;p&gt;Okay, so what did I need to do to make my use binder with my &lt;a href=&#34;https://kbroman.org/FruitSnacks&#34;&gt;Fruit
+Snacks project&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;First, I made a copy of the &lt;a href=&#34;https://github.com/kbroman/FruitSnacks&#34;&gt;GitHub
+repository&lt;/a&gt; and deleted a
+bunch of stuff, because it&amp;rsquo;s a bit bloated with pictures of fruit
+snacks.&lt;/p&gt;
+
+&lt;p&gt;Specifically:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone git://github.com/kbroman/FruitSnacks FruitSnacksBinder
+cd FruitSnacksBinder
+\rm -rf .git
+\rm -r Photos
+\rm PhotoGallery.md Makefile
+\rm R/create_thumbnails.R R/generate_photo_gallery.R
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then I initialized it as a new git repository.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quot;Initial commit&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I created a &lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder&#34;&gt;new repository on
+GitHub&lt;/a&gt;, and push the
+local repository there.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git remote add origin git@github.com:kbroman/FruitSnacksBinder
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Note, I always use the ssh method of connecting to GitHub. You might
+want &lt;code&gt;https://github.com/&lt;/code&gt; where I&amp;rsquo;m using &lt;code&gt;git@github.com:&lt;/code&gt;.)&lt;/p&gt;
+
+&lt;p&gt;This puts me at a nice clean state. The repository has&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ReadMe and License files&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;Data/&lt;/code&gt; directory containing a few CSVs, a couple of PDFs, and a
+couple of xlsx files&lt;/li&gt;
+&lt;li&gt;An &lt;code&gt;R/&lt;/code&gt; directory with an R script that defines a few functions plus
+a couple of R Markdown files that contain my analyses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The R Markdown files automatically install my
+&lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, if it&amp;rsquo;s not
+available. This isn&amp;rsquo;t a recommended behavior, and we won&amp;rsquo;t need it for
+with binder, so I removed the lines like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(!require(broman)) {
+    install.packages(&amp;quot;broman&amp;quot;, repos=&amp;quot;https://cran.rstudio.com&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and replaced them with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(broman)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;how-to-use-binder-with-r&#34;&gt;How to use binder with R&lt;/h2&gt;
+
+&lt;p&gt;Okay, now on to the real bit. We need to do three things:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;. Create a file called
+&lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder/blob/master/runtime.txt&#34;&gt;&lt;code&gt;runtime.txt&lt;/code&gt;&lt;/a&gt;
+that has just one line like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;r-2019-02-14
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This tells binder that you want R, and that you want R packages
+from a particular date.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;. Specify the R packages that you want installed by creating a file called
+&lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R&#34;&gt;&lt;code&gt;install.R&lt;/code&gt;&lt;/a&gt;
+that contains a one or more &lt;code&gt;install.packages()&lt;/code&gt; calls, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(c(&amp;quot;broman&amp;quot;,
+                   &amp;quot;knitr&amp;quot;, &amp;quot;rmarkdown&amp;quot;,
+                   &amp;quot;caTools&amp;quot;, &amp;quot;bitops&amp;quot;, &amp;quot;rprojroot&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;. The last thing is to make a badge, or any way the URL that will
+have binder open your repository in RStudio in a browser.
+The url is like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio&#34;&gt;https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;?urlpath=rstudio&lt;/code&gt; at the end of the URL is what makes the
+RStudio aspect happen.&lt;/p&gt;
+
+&lt;p&gt;To make a proper badge, you put a line like the following in your
+&lt;code&gt;README.md&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[![Binder](https://mybinder.org/badge_logo.svg)]( put_url_here )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first time you launch binder, it&amp;rsquo;ll be quite slow to load as it
+has to create the container and install R and RStudio and all of
+the packages and everything. Subsequent times it&amp;rsquo;ll be much
+faster, though not particularly fast.&lt;/p&gt;
+
+&lt;h2 id=&#34;an-alternative&#34;&gt;An alternative&lt;/h2&gt;
+
+&lt;p&gt;There&amp;rsquo;s an alternative to step 2 above, where you created the
+&lt;code&gt;install.R&lt;/code&gt; file. Instead of making that file, you
+can make a
+&lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder/blob/description/DESCRIPTION&#34;&gt;&lt;code&gt;DESCRIPTION&lt;/code&gt;&lt;/a&gt;
+file, sort of like an R package, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Package: FruitSnacks
+Version: 0.1
+Date: 2019-02-18
+Description: Fruit Snacks project arranged for myBinder.org
+Author: Karl W Broman &amp;lt;broman@wisc.edu&amp;gt;
+Depends:
+    R (&amp;gt;= 3.5.0)
+Imports:
+    broman,
+    knitr,
+    rmarkdown,
+    caTools,
+    bitops,
+    rprojroot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;They two appraoches do the same thing. I think the &lt;code&gt;install.R&lt;/code&gt; approach
+seems easier, but the &lt;code&gt;DESCRIPTION&lt;/code&gt; approach maybe seems more natural for
+R package developers, and would allow the repository to both use this
+binder business and also be a proper R package.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder&#34;&gt;master branch of my FruitSnacksBinder
+repository&lt;/a&gt; uses the
+&lt;code&gt;install.R&lt;/code&gt; approach.&lt;/p&gt;
+
+&lt;p&gt;I tried out the &lt;code&gt;DESCRIPTION&lt;/code&gt; file approach in the &lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder/tree/description&#34;&gt;description
+branch of that repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To use binder with a non-master branch in your repository, you edit
+&lt;code&gt;master&lt;/code&gt; in the URL to the name of the branch you want to use, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/description?urlpath=rstudio&#34;&gt;https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/description?urlpath=rstudio&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;wait-was-that-it&#34;&gt;Wait, was that it?&lt;/h2&gt;
+
+&lt;p&gt;Yes, that was it.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;An &lt;code&gt;runtime.txt&lt;/code&gt; file with a line like &lt;code&gt;r-2019-02-14&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Either and &lt;code&gt;install.R&lt;/code&gt; file or a &lt;code&gt;DESCRIPTION&lt;/code&gt; file. The key thing
+here is specifying what packages to install.&lt;/li&gt;
+&lt;li&gt;Make a badge with the correct URL.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+
+&lt;p&gt;There are some important limitations of binder.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It&amp;rsquo;s a pilot; it&amp;rsquo;s not likely to continue long term the way it is.&lt;/li&gt;
+&lt;li&gt;You get just 1-2 GB RAM for your project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;Putting the code and data a for a project or paper on GitHub is an
+awesome thing. People can grab it and explore it and test it and
+modify it for other purposes.&lt;/p&gt;
+
+&lt;p&gt;But there are some hassles: including getting all of the packages
+installed, and installing the right versions of packages.&lt;/p&gt;
+
+&lt;p&gt;Docker containers are a clear and important solution to this problem,
+but many of us still find them a bit complicated and scary.&lt;/p&gt;
+
+&lt;p&gt;Binder can bring that docker magic to all of our github repositories,
+with just three small steps.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Writing text in Minecraft with R</title>
@@ -728,7 +979,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 11 20:42:13 2019 --&gt;
+&lt;!-- Mon Feb 18 01:35:46 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1722,52 +1973,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;&lt;strong&gt;Correction&lt;/strong&gt;: There&amp;rsquo;s an error in my email; Chris Walker is Associate Professor, and has been for a couple of years.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Chris Walker&amp;rsquo;s speech at the 4 Apr 2016 Faculty Senate meeting was &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;recorded&lt;/a&gt;! Must listen.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Write unit tests!</title>
-      <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
-      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
-      <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve recently been working on &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt;, a reimplementation of R/qtl to better handle high-dimensional data and more complex crosses, such as &lt;a href=&#34;http://www.genetics.org/content/190/2/437.short&#34;&gt;Diversity Outbred mice&lt;/a&gt;. In doing so, I&amp;rsquo;m trying to make use of the software engineering principles that I&amp;rsquo;ve learned over the last 15 years, which pretty much correspond to the ideas in &amp;ldquo;&lt;a href=&#34;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745&#34;&gt;Best Practices for Scientific Computing&lt;/a&gt;&amp;rdquo; (&lt;a href=&#34;http://www.third-bit.com/&#34;&gt;Greg Wilson&lt;/a&gt; et al., PLOS Biology 12(1): e1001745, &lt;a href=&#34;http://doi.org/10.1371/journal.pbio.1001745&#34;&gt;doi:10.1371/journal.pbio.1001745&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m still working on &amp;ldquo;Make names consistent, distinctive, and meaningful&amp;rdquo;, but I&amp;rsquo;m doing pretty well on writing shorter functions with less repeated code, and &lt;em&gt;particularly importantly&lt;/em&gt; I&amp;rsquo;m writing extensive unit tests.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;The basic idea is to break up your code into small functions that ideally do just one thing. (These are the &amp;ldquo;units&amp;rdquo;.) And then write tests that explicitly check whether those functions are giving the correct answers. That is, don&amp;rsquo;t just test that the code &lt;em&gt;runs&lt;/em&gt;; you want to know that your code is &lt;em&gt;giving the right answers&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;Last week, I was working on implementing a basic genome scan function. I included the option of doing weighted least squares with known weights, because it&amp;rsquo;s easy enough to do, and R/qtl had done that. (I&amp;rsquo;ve never actually &lt;em&gt;used&lt;/em&gt; that feature, but it&amp;rsquo;s been there.) And my results were matching those that R/qtl provided. Well, mostly: in the case of multiple phenotypes, with some phenotypes having missing values, and when doing a weighted analysis, the results from R/qtl and R/qtl2 were quite different.&lt;/p&gt;
-
-&lt;p&gt;I expect you may be questioning the logic of testing code by comparing it to software that has not been formally tested. I was thinking the same thing. And so I wrote some tests that compared results to those using &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt;&amp;rsquo;s &lt;code&gt;lm()&lt;/code&gt; function. And (surprise) the results from &lt;code&gt;lm()&lt;/code&gt; matched R/qtl2 but not R/qtl. So it was R/qtl that was the problem.&lt;/p&gt;
-
-&lt;p&gt;So that had me debugging the &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scanone.R&#34;&gt;&lt;code&gt;scanone&lt;/code&gt; function in R/qtl&lt;/a&gt;, the R code for which is &lt;strong&gt;831&lt;/strong&gt; lines long and was written according to the principle, &amp;ldquo;I&amp;rsquo;ll just add this one thing and then clean things up later,&amp;rdquo; with &amp;ldquo;later&amp;rdquo; really meaning &amp;ldquo;never&amp;rdquo;, and &amp;ldquo;this one thing&amp;rdquo; really meaning &amp;ldquo;all the things.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I did, after resorting to a bunch of print/cat statements, &lt;a href=&#34;https://github.com/kbroman/qtl/commit/254a1c728&#34;&gt;find the bug&lt;/a&gt;. In subsetting the data to remove individuals with missing values, I&amp;rsquo;d forgotten to subset the weights. Back in 2012, I&amp;rsquo;d &lt;a href=&#34;https://github.com/kbroman/qtl/commit/a07c575&#34;&gt;fixed a related bug&lt;/a&gt;, but apparently it was only a partial fix. In thinking about the bug again while writing this post, and in looking back at the 2012 bug fix, I realized that I probably had the same bug in &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scantwo.R&#34;&gt;&lt;code&gt;scantwo&lt;/code&gt;&lt;/a&gt; (which is &lt;strong&gt;1443&lt;/strong&gt; lines long). Sure enough, and so now there&amp;rsquo;s &lt;a href=&#34;https://github.com/kbroman/qtl/commit/c71b3dfce9&#34;&gt;yet another bug fix&lt;/a&gt;, though not yet on &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://thebird.nl/&#34;&gt;Pjotr Prins&lt;/a&gt; was the first to encourage me towards software testing. &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/testthat&#34;&gt;testthat&lt;/a&gt; package makes it easy to do in R packages. In his &lt;a href=&#34;https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf&#34;&gt;paper about testthat&lt;/a&gt;, Hadley wrote:&lt;/p&gt;
-
-&lt;blockquote&gt;It&#39;s not that we don&#39;t test our code, it&#39;s that we don&#39;t store our tests so they can be re-run automatically.
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is my favorite comment on testing; it totally applies to (old) me.&lt;/p&gt;
-
-&lt;p&gt;The bottom line:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Write unit tests.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;When you find a bug, first write a test for it and then fix the bug.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;When you find a bug, look for other possible instances of that bug, and fix them too.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To learn more about testing in R packages, see the &lt;a href=&#34;http://r-pkgs.had.co.nz/tests.html&#34;&gt;Testing&lt;/a&gt; chapter in Hadley&amp;rsquo;s &lt;a href=&#34;amazon.com/exec/obidos/ASIN/1491910593/7210-20&#34;&gt;R packages book&lt;/a&gt;. Also see the &lt;a href=&#34;http://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf&#34;&gt;slides for my lecture on testing and debugging&lt;/a&gt; in my &lt;a href=&#34;http://kbroman.org/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course.&lt;/p&gt;
 </description>
     </item>
     
