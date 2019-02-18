@@ -85,8 +85,8 @@ Snacks project&lt;/a&gt;?&lt;/p&gt;
 
 &lt;p&gt;First, I made a copy of the &lt;a href=&#34;https://github.com/kbroman/FruitSnacks&#34;&gt;GitHub
 repository&lt;/a&gt; and deleted a
-bunch of stuff, because it&amp;rsquo;s a bit bloated with pictures of fruit
-snacks.&lt;/p&gt;
+bunch of stuff, because it&amp;rsquo;s a bit bloated with &lt;a href=&#34;https://github.com/kbroman/FruitSnacks/blob/master/PhotoGallery.md&#34;&gt;pictures of fruit
+snacks&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Specifically:&lt;/p&gt;
 
@@ -980,7 +980,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 18 01:52:27 2019 --&gt;
+&lt;!-- Mon Feb 18 03:16:21 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
