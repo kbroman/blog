@@ -11,7 +11,7 @@ slug: omg_binder
 
 At his [talk at
 RStudio::conf](https://github.com/karthik/rstudio2019), [Karthik
-Ram](http://inundata.org) mentioned
+Ram](http://inundata.org) discussed
 [binder](https://mybinder.readthedocs.io/en/latest/index.html) as a
 useful solution for reproducible research (see [the
 video](https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r)),
