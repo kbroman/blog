@@ -122,11 +122,11 @@ versions of packages. Ugh, this is all getting a bit hard.</p>
 
 <p>Back up, with binder. You&rsquo;ve put your code and data in a github
 repository. Other people maybe want to try it out and peruse the work.
-The click on the &ldquo;launch binder&rdquo; badge in your ReadMe file, and it
+They click on the &ldquo;launch binder&rdquo; badge in your ReadMe file, and it
 opens RStudio in their browser, with all the right packages installed
 and with your code and data sitting there, ready to work with.</p>
 
-<p>Click this to see mine example in action:
+<p>Click this to see my example in action:
 <a href="https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
 
 <p>Open the <code>fruit_snacks.Rmd</code> file in the <code>R/</code> directory and click the
@@ -147,7 +147,7 @@ browser (namely with &ldquo;<code>?urlpath=rstudio</code>&rdquo; at the end)</li
 
 <h2 id="initial-reorganization">Initial reorganization</h2>
 
-<p>Okay, so what did I need to do to make my use binder with my <a href="https://kbroman.org/FruitSnacks">Fruit
+<p>Okay, so what did I need to do to use binder with my <a href="https://kbroman.org/FruitSnacks">Fruit
 Snacks project</a>?</p>
 
 <p>First, I made a copy of the <a href="https://github.com/kbroman/FruitSnacks">GitHub
@@ -194,7 +194,7 @@ a couple of R Markdown files that contain my analyses.</li>
 
 <p>The R Markdown files automatically install my
 <a href="https://github.com/kbroman/broman">R/broman</a> package, if it&rsquo;s not
-available. This isn&rsquo;t a recommended behavior, and we won&rsquo;t need it for
+available. This isn&rsquo;t recommended behavior, and we won&rsquo;t need this
 with binder, so I removed the lines like</p>
 
 <pre><code class="language-r">if(!require(broman)) {
@@ -223,14 +223,14 @@ from a particular date.</p>
 
 <p><strong>2</strong>. Specify the R packages that you want installed by creating a file called
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R"><code>install.R</code></a>
-that contains a one or more <code>install.packages()</code> calls, like this:</p>
+that contains one or more <code>install.packages()</code> calls, like this:</p>
 
 <pre><code class="language-r">install.packages(c(&quot;broman&quot;,
                    &quot;knitr&quot;, &quot;rmarkdown&quot;,
                    &quot;caTools&quot;, &quot;bitops&quot;, &quot;rprojroot&quot;))
 </code></pre>
 
-<p><strong>3</strong>. The last thing is to make a badge, or any way the URL that will
+<p><strong>3</strong>. The last thing is to make a badge, or anyway the URL that will
 have binder open your repository in RStudio in a browser.
 The url is like this:</p>
 
@@ -274,9 +274,9 @@ Imports:
     rprojroot
 </code></pre>
 
-<p>They two approaches do the same thing. I think the <code>install.R</code> approach
+<p>The two approaches do the same thing. I think the <code>install.R</code> approach
 seems easier, but the <code>DESCRIPTION</code> approach maybe seems more natural for
-R package developers, and would allow the repository to both use this
+R package developers, and would allow the repository to use this
 binder business and also be a proper R package.</p>
 
 <p>The <a href="https://github.com/kbroman/FruitSnacksBinder">master branch of my FruitSnacksBinder
@@ -297,7 +297,7 @@ branch of that repository</a>.</p>
 
 <ol>
 <li>An <code>runtime.txt</code> file with a line like <code>r-2019-02-14</code></li>
-<li>Either and <code>install.R</code> file or a <code>DESCRIPTION</code> file. The key thing
+<li>Either an <code>install.R</code> file or a <code>DESCRIPTION</code> file. The key thing
 here is specifying what packages to install.</li>
 <li>Make a badge with the correct URL.</li>
 </ol>
@@ -307,17 +307,18 @@ here is specifying what packages to install.</li>
 <p>There are some important limitations of binder.</p>
 
 <ul>
-<li>It&rsquo;s a pilot; it&rsquo;s not likely to continue long term the way it is.</li>
+<li>It&rsquo;s a pilot; it&rsquo;s not likely to continue long term the way it is now
+(totally free).</li>
 <li>You get just 1-2 GB RAM for your project.</li>
 </ul>
 
 <h2 id="conclusions">Conclusions</h2>
 
-<p>Putting the code and data a for a project or paper on GitHub is an
+<p>Putting the code and data for a project or paper on GitHub is an
 awesome thing. People can grab it and explore it and test it and
 modify it for other purposes.</p>
 
-<p>But there are some hassles: including getting all of the packages
+<p>But there are some hassles, including getting all of the packages
 installed, and installing the right versions of packages.</p>
 
 <p>Docker containers are a clear and important solution to this problem,

@@ -55,11 +55,11 @@ versions of packages. Ugh, this is all getting a bit hard.&lt;/p&gt;
 
 &lt;p&gt;Back up, with binder. You&amp;rsquo;ve put your code and data in a github
 repository. Other people maybe want to try it out and peruse the work.
-The click on the &amp;ldquo;launch binder&amp;rdquo; badge in your ReadMe file, and it
+They click on the &amp;ldquo;launch binder&amp;rdquo; badge in your ReadMe file, and it
 opens RStudio in their browser, with all the right packages installed
 and with your code and data sitting there, ready to work with.&lt;/p&gt;
 
-&lt;p&gt;Click this to see mine example in action:
+&lt;p&gt;Click this to see my example in action:
 &lt;a href=&#34;https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio&#34;&gt;&lt;img src=&#34;https://mybinder.org/badge_logo.svg&#34; alt=&#34;Binder&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Open the &lt;code&gt;fruit_snacks.Rmd&lt;/code&gt; file in the &lt;code&gt;R/&lt;/code&gt; directory and click the
@@ -80,7 +80,7 @@ browser (namely with &amp;ldquo;&lt;code&gt;?urlpath=rstudio&lt;/code&gt;&amp;rd
 
 &lt;h2 id=&#34;initial-reorganization&#34;&gt;Initial reorganization&lt;/h2&gt;
 
-&lt;p&gt;Okay, so what did I need to do to make my use binder with my &lt;a href=&#34;https://kbroman.org/FruitSnacks&#34;&gt;Fruit
+&lt;p&gt;Okay, so what did I need to do to use binder with my &lt;a href=&#34;https://kbroman.org/FruitSnacks&#34;&gt;Fruit
 Snacks project&lt;/a&gt;?&lt;/p&gt;
 
 &lt;p&gt;First, I made a copy of the &lt;a href=&#34;https://github.com/kbroman/FruitSnacks&#34;&gt;GitHub
@@ -127,7 +127,7 @@ a couple of R Markdown files that contain my analyses.&lt;/li&gt;
 
 &lt;p&gt;The R Markdown files automatically install my
 &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, if it&amp;rsquo;s not
-available. This isn&amp;rsquo;t a recommended behavior, and we won&amp;rsquo;t need it for
+available. This isn&amp;rsquo;t recommended behavior, and we won&amp;rsquo;t need this
 with binder, so I removed the lines like&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(!require(broman)) {
@@ -156,14 +156,14 @@ from a particular date.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;. Specify the R packages that you want installed by creating a file called
 &lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R&#34;&gt;&lt;code&gt;install.R&lt;/code&gt;&lt;/a&gt;
-that contains a one or more &lt;code&gt;install.packages()&lt;/code&gt; calls, like this:&lt;/p&gt;
+that contains one or more &lt;code&gt;install.packages()&lt;/code&gt; calls, like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(c(&amp;quot;broman&amp;quot;,
                    &amp;quot;knitr&amp;quot;, &amp;quot;rmarkdown&amp;quot;,
                    &amp;quot;caTools&amp;quot;, &amp;quot;bitops&amp;quot;, &amp;quot;rprojroot&amp;quot;))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;. The last thing is to make a badge, or any way the URL that will
+&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;. The last thing is to make a badge, or anyway the URL that will
 have binder open your repository in RStudio in a browser.
 The url is like this:&lt;/p&gt;
 
@@ -207,9 +207,9 @@ Imports:
     rprojroot
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;They two approaches do the same thing. I think the &lt;code&gt;install.R&lt;/code&gt; approach
+&lt;p&gt;The two approaches do the same thing. I think the &lt;code&gt;install.R&lt;/code&gt; approach
 seems easier, but the &lt;code&gt;DESCRIPTION&lt;/code&gt; approach maybe seems more natural for
-R package developers, and would allow the repository to both use this
+R package developers, and would allow the repository to use this
 binder business and also be a proper R package.&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&#34;https://github.com/kbroman/FruitSnacksBinder&#34;&gt;master branch of my FruitSnacksBinder
@@ -230,7 +230,7 @@ branch of that repository&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;An &lt;code&gt;runtime.txt&lt;/code&gt; file with a line like &lt;code&gt;r-2019-02-14&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Either and &lt;code&gt;install.R&lt;/code&gt; file or a &lt;code&gt;DESCRIPTION&lt;/code&gt; file. The key thing
+&lt;li&gt;Either an &lt;code&gt;install.R&lt;/code&gt; file or a &lt;code&gt;DESCRIPTION&lt;/code&gt; file. The key thing
 here is specifying what packages to install.&lt;/li&gt;
 &lt;li&gt;Make a badge with the correct URL.&lt;/li&gt;
 &lt;/ol&gt;
@@ -240,17 +240,18 @@ here is specifying what packages to install.&lt;/li&gt;
 &lt;p&gt;There are some important limitations of binder.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;It&amp;rsquo;s a pilot; it&amp;rsquo;s not likely to continue long term the way it is.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s a pilot; it&amp;rsquo;s not likely to continue long term the way it is now
+(totally free).&lt;/li&gt;
 &lt;li&gt;You get just 1-2 GB RAM for your project.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
 
-&lt;p&gt;Putting the code and data a for a project or paper on GitHub is an
+&lt;p&gt;Putting the code and data for a project or paper on GitHub is an
 awesome thing. People can grab it and explore it and test it and
 modify it for other purposes.&lt;/p&gt;
 
-&lt;p&gt;But there are some hassles: including getting all of the packages
+&lt;p&gt;But there are some hassles, including getting all of the packages
 installed, and installing the right versions of packages.&lt;/p&gt;
 
 &lt;p&gt;Docker containers are a clear and important solution to this problem,
@@ -979,7 +980,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 18 01:42:51 2019 --&gt;
+&lt;!-- Mon Feb 18 01:52:27 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
