@@ -77,8 +77,8 @@ Snacks project](https://kbroman.org/FruitSnacks)?
 
 First, I made a copy of the [GitHub
 repository](https://github.com/kbroman/FruitSnacks) and deleted a
-bunch of stuff, because it's a bit bloated with pictures of fruit
-snacks.
+bunch of stuff, because it's a bit bloated with [pictures of fruit
+snacks](https://github.com/kbroman/FruitSnacks/blob/master/PhotoGallery.md).
 
 Specifically:
 
