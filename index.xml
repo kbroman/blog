@@ -25,7 +25,7 @@ Ram&lt;/a&gt; mentioned
 useful solution for reproducible research (see &lt;a href=&#34;https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r&#34;&gt;the
 video&lt;/a&gt;),
 and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small
-configuration file in your GitHub repo and suddenly you can open it
+configuration file in your GitHub repository and suddenly you can open it
 live in RStudio on some cloud server somewhere. Now &lt;em&gt;this&lt;/em&gt; has got to
 be too good to be true. But I trusted him, mentioned it in &lt;a href=&#34;https://bit.ly/rrcollab&#34;&gt;my talk at
 AAAS today&lt;/a&gt;, and talked it up to &lt;a href=&#34;http://jtleek.com&#34;&gt;Jeff
@@ -44,7 +44,7 @@ explain what I learned in the simplest possible terms.&lt;/p&gt;
 
 &lt;h2 id=&#34;what-s-the-point&#34;&gt;What&amp;rsquo;s the point?&lt;/h2&gt;
 
-&lt;p&gt;First, let me explain make the awesomeness a bit more concrete.&lt;/p&gt;
+&lt;p&gt;First, let me make the awesomeness a bit more concrete.&lt;/p&gt;
 
 &lt;p&gt;Say you have some code and data for a paper that you&amp;rsquo;ve just written,
 and you want to share it with the world. You put it all in a GitHub
@@ -207,7 +207,7 @@ Imports:
     rprojroot
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;They two appraoches do the same thing. I think the &lt;code&gt;install.R&lt;/code&gt; approach
+&lt;p&gt;They two approaches do the same thing. I think the &lt;code&gt;install.R&lt;/code&gt; approach
 seems easier, but the &lt;code&gt;DESCRIPTION&lt;/code&gt; approach maybe seems more natural for
 R package developers, and would allow the repository to both use this
 binder business and also be a proper R package.&lt;/p&gt;
@@ -979,7 +979,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 18 01:37:48 2019 --&gt;
+&lt;!-- Mon Feb 18 01:42:51 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
