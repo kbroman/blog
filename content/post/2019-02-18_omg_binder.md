@@ -17,9 +17,9 @@ useful solution for reproducible research (see [the
 video](https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r)),
 and I thought, "What is this dark magic?" You put a small
 configuration file in your GitHub repository and suddenly you can open it
-live in RStudio on some cloud server somewhere. Now _this_ has got to
-be too good to be true. But I trusted him, mentioned it in [my talk at
-AAAS today](https://bit.ly/rrcollab), and talked it up to [Jeff
+live in RStudio on some cloud server somewhere. Seems too good to be true.
+But I trusted him, mentioned it in [my talk at
+AAAS yesterday](https://bit.ly/rrcollab), and talked it up to [Jeff
 Leek](http://jtleek.com).
 
 I spent the afternoon walking around DC, and then when it started to
