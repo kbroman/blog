@@ -1,5 +1,5 @@
 ---
-title: "OMG binder"
+title: "omg, binder!"
 author: Karl Broman
 date: "2019-02-18"
 categories:
