@@ -16,7 +16,7 @@ Ram](http://inundata.org) mentioned
 useful solution for reproducible research (see [the
 video](https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r)),
 and I thought, "What is this dark magic?" You put a small
-configuration file in your GitHub repo and suddenly you can open it
+configuration file in your GitHub repository and suddenly you can open it
 live in RStudio on some cloud server somewhere. Now _this_ has got to
 be too good to be true. But I trusted him, mentioned it in [my talk at
 AAAS today](https://bit.ly/rrcollab), and talked it up to [Jeff
@@ -35,7 +35,7 @@ explain what I learned in the simplest possible terms.
 
 ## What's the point?
 
-First, let me explain make the awesomeness a bit more concrete.
+First, let me make the awesomeness a bit more concrete.
 
 Say you have some code and data for a paper that you've just written,
 and you want to share it with the world. You put it all in a GitHub
@@ -207,7 +207,7 @@ Imports:
     rprojroot
 ```
 
-They two appraoches do the same thing. I think the `install.R` approach
+They two approaches do the same thing. I think the `install.R` approach
 seems easier, but the `DESCRIPTION` approach maybe seems more natural for
 R package developers, and would allow the repository to both use this
 binder business and also be a proper R package.
