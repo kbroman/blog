@@ -12,7 +12,7 @@ slug: omg_binder
 At his [talk at
 RStudio::conf](https://github.com/karthik/rstudio2019), [Karthik
 Ram](http://inundata.org) mentioned
-[Binder](https://mybinder.readthedocs.io/en/latest/index.html) as a
+[binder](https://mybinder.readthedocs.io/en/latest/index.html) as a
 useful solution for reproducible research (see [the
 video](https://resources.rstudio.com/rstudio-conf-2019/a-guide-to-modern-reproducible-data-science-with-r)),
 and I thought, "What is this dark magic?" You put a small
@@ -64,7 +64,7 @@ how simple it is, because you just need three things:
   [MRAN](https://mran.microsoft.com/) snapshot of
   [CRAN](https://cran.r-project.org) from a particular date
 - tell binder what packages to install
-- use the right URL, to have Binder open your project in RStudio in a
+- use the right URL, to have binder open your project in RStudio in a
   browser (namely with "`?urlpath=rstudio`" at the end)
 
 
@@ -72,7 +72,7 @@ how simple it is, because you just need three things:
 
 ## Initial reorganization
 
-Okay, so what did I need to do to make my use Binder with my [Fruit
+Okay, so what did I need to do to make my use binder with my [Fruit
 Snacks project](https://kbroman.org/FruitSnacks)?
 
 First, I made a copy of the [GitHub
@@ -121,7 +121,7 @@ This puts me at a nice clean state. The repository has
 The R Markdown files automatically install my
 [R/broman](https://github.com/kbroman/broman) package, if it's not
 available. This isn't a recommended behavior, and we won't need it for
-with Binder, so I removed the lines like
+with binder, so I removed the lines like
 
 ```r
 if(!require(broman)) {
@@ -148,7 +148,7 @@ that has just one line like:
 r-2019-02-14
 ```
 
-This tells Binder that you want R, and that you want R packages
+This tells binder that you want R, and that you want R packages
 from a particular date.
 
 **2**. Specify the R packages that you want installed by creating a file called
@@ -162,7 +162,7 @@ install.packages(c("broman",
 ```
 
 **3**. The last thing is to make a badge, or any way the URL that will
-have Binder open your repository in RStudio in a browser.
+have binder open your repository in RStudio in a browser.
 The url is like this:
 
 <https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio>
@@ -210,7 +210,7 @@ Imports:
 They two appraoches do the same thing. I think the `install.R` approach
 seems easier, but the `DESCRIPTION` approach maybe seems more natural for
 R package developers, and would allow the repository to both use this
-Binder business and also be a proper R package.
+binder business and also be a proper R package.
 
 The [master branch of my FruitSnacksBinder
 repository](https://github.com/kbroman/FruitSnacksBinder) uses the
@@ -219,7 +219,7 @@ repository](https://github.com/kbroman/FruitSnacksBinder) uses the
 I tried out the `DESCRIPTION` file approach in the [description
 branch of that repository](https://github.com/kbroman/FruitSnacksBinder/tree/description).
 
-To use Binder with a non-master branch in your repository, you edit
+To use binder with a non-master branch in your repository, you edit
 `master` in the URL to the name of the branch you want to use, like this:
 
 <https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/description?urlpath=rstudio>
@@ -242,4 +242,17 @@ There are some important limitations of binder.
 - You get just 1-2 GB RAM for your project.
 
 
-## Conclusion
+## Conclusions
+
+Putting the code and data a for a project or paper on GitHub is an
+awesome thing. People can grab it and explore it and test it and
+modify it for other purposes.
+
+But there are some hassles: including getting all of the packages
+installed, and installing the right versions of packages.
+
+Docker containers are a clear and important solution to this problem,
+but many of us still find them a bit complicated and scary.
+
+Binder can bring that docker magic to all of our github repositories,
+with just three small steps.
