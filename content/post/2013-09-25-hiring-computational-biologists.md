@@ -10,11 +10,11 @@ tags:
 slug: hiring-computational-biologists
 ---
 
-The [Morgridge Institute for Research](http://discovery.wisc.edu/home/morgridge/morgridge.cmsx) (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. [One position](http://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf) is joint with my department,  [Biostatistics & Medical Informatics](http://www.biostat.wisc.edu).
+The [Morgridge Institute for Research](https://morgridge.org) (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. [One position](https://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf) is joint with my department,  [Biostatistics & Medical Informatics](https://www.biostat.wisc.edu).
 
 ### Yet another symposium
 
-Yesterday afternoon, they held a symposium on "Computation in Biology" ([Here's the agenda.](http://kbroman.files.wordpress.com/2013/09/computation-in-biology-agenda.pdf)) Great speakers: [Marc Suchard](http://faculty.biomath.ucla.edu/msuchard/), [Brian Shoichet](http://shoichetlab.compbio.ucsf.edu/), [David Page](http://pages.cs.wisc.edu/~dpage/), and [Winston Hide](http://www.hsph.harvard.edu/winston-hide/). They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.
+Yesterday afternoon, they held a symposium on "Computation in Biology" ([Here's the agenda.](https://kbroman.files.wordpress.com/2013/09/computation-in-biology-agenda.pdf)) Great speakers: [Marc Suchard](http://faculty.biomath.ucla.edu/msuchard/), [Brian Shoichet](http://shoichetlab.compbio.ucsf.edu/), [David Page](http://pages.cs.wisc.edu/~dpage/), and [Winston Hide](https://hsci.harvard.edu/people/winston-hide-phd). They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.
 
 I'm not sure what MIR was hoping to get out of the symposium, but if they were looking for guidance regarding their hiring efforts, it wasn't effective. At the beginning, the discussion was quite heated but not terribly constructive. In the middle, it became more like the usual sort of question/answer after a seminar. I must admit I didn't stay to the end. Perhaps some important insights were gained after I left. But it seems unlikely that the symposium provided much guidance about hiring in computational biology.
 
