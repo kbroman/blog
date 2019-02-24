@@ -11,11 +11,11 @@ tags:
 slug: simple-web-sites-with-github-pages
 ---
 
-If you love [git](http://git-scm.com) and [GitHub](http://github.com), you'll also love [GitHub Pages](http://pages.github.com), for producing websites using [Markdown](https://daringfireball.net/projects/markdown/) and [git](http://git-scm.com): you write pages in Markdown within a `gh-pages` branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.
+If you love [git](https://git-scm.com) and [GitHub](https://github.com), you'll also love [GitHub Pages](https://pages.github.com), for producing websites using [Markdown](https://daringfireball.net/projects/markdown/) and [git](https://git-scm.com): you write pages in Markdown within a `gh-pages` branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.
 
 <!-- more -->
 
-Last night, I wrote a [minimal tutorial](http://kbroman.github.io/simple_site) on how I've been using this (for example, for the website for my [R/qtlcharts package](http://kbroman.github.io/qtlcharts), on interactive graphics for QTL data).
+Last night, I wrote a [minimal tutorial](https://kbroman.org/simple_site) on how I've been using this (for example, for the website for my [R/qtlcharts package](https://kbroman.org/qtlcharts), on interactive graphics for QTL data).
 
 In the tutorial, I wrote:
 
