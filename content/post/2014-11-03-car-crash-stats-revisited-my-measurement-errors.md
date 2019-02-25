@@ -10,11 +10,11 @@ tags:
 slug: car-crash-stats-revisited-my-measurement-errors
 ---
 
-Last week, I [created revised versions](http://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/) of graphs of car crash statistics by state (including [an interactive version](https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/)), from [a post](http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/) by [Mona Chalabi](http://fivethirtyeight.com/contributors/mona-chalabi/) at [538](http://fivethirtyeight.com/).
+Last week, I [created revised versions](https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/) of graphs of car crash statistics by state (including [an interactive version](https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/)), from [a post](https://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/) by [Mona Chalabi](https://fivethirtyeight.com/contributors/mona-chalabi/) at [538](https://fivethirtyeight.com/).
 
 Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture [on creating effective figures and tables](https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf), I just read the data off printed versions of the bar charts, using a ruler.
 
-I later emailed [Mona Chalabi](http://fivethirtyeight.com/contributors/mona-chalabi), and she and [Andrew Flowers](http://fivethirtyeight.com/contributors/andrew-flowers/) quickly posted the data to [`github.com/fivethirtyeight/data`](https://github.com/fivethirtyeight/data/tree/master/bad-drivers). (That repository has a lot of interesting data, and if you see data at 538 that you're interested in, just ask them!)
+I later emailed [Mona Chalabi](https://fivethirtyeight.com/contributors/mona-chalabi), and she and [Andrew Flowers](https://fivethirtyeight.com/contributors/andrew-flowers/) quickly posted the data to [`github.com/fivethirtyeight/data`](https://github.com/fivethirtyeight/data/tree/master/bad-drivers). (That repository has a lot of interesting data, and if you see data at 538 that you're interested in, just ask them!)
 
 I was curious to look at how I'd done with my measurements and data entry. Here's a plot of my percent errors:
 
@@ -30,4 +30,4 @@ Not too bad, really. Here are the biggest problems:
 
 It's also interesting to note that my "total" and "non-distracted" were almost entirely under-estimates: probably an error in the measurement of the overall width of the bar chart.
 
-Also note: [@brycem](https://twitter.com/brycem) had recommended using [WebPlotDigitizer](http://arohatgi.info/WebPlotDigitizer/) for digitizing data from images.
+Also note: [@brycem](https://twitter.com/brycem) had recommended using [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) for digitizing data from images.
