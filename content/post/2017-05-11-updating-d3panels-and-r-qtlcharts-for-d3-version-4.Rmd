@@ -7,8 +7,8 @@ tags: ['D3', 'R', 'data visualization']
 ---
 
 I just spent some time updating my
-[d3panels](http://kbroman.org/d3panels) library and
-[R/qtlcharts](http://kbroman.org/qtlcharts) package for
+[d3panels](https://kbroman.org/d3panels) library and
+[R/qtlcharts](https://kbroman.org/qtlcharts) package for
 [D3](https://d3js.org) [version
 4](https://github.com/d3/d3/blob/master/API.md). It took just about a
 day, and the majority of the time was spent puzzling over
@@ -34,21 +34,21 @@ isn't easy for me to understand, or to walk through the code for some
 of [Michael Bostock]'s [examples](https://bl.ocks.org/mbostock). There
 are loads of books and tutorials on D3, but they're almost all still
 talking about D3 version 3. (This will change shortly. For example,
-the 2nd edition of [Scott Murray](http://alignedleft.com/)'s
+the 2nd edition of [Scott Murray](https://alignedleft.com/)'s
 excellent [Interactive Data Visualization for the
-Web](http://shop.oreilly.com/product/0636920037316.do) is at the
+Web](https://shop.oreilly.com/product/0636920037316.do) is at the
 printer, and covers D3 version 4.)
 
-[Irene Ros](http://www.ireneros.com/)'s [slides on what's new in D3
+[Irene Ros](https://twitter.com/ireneros)'s [slides on what's new in D3
 V4](https://iros.github.io/d3-v4-whats-new/#1) were super helpful.
-(Also I just saw [Tom Roth](http://www.puzzlr.org/sample-page/)'s
+(Also I just saw [Tom Roth](https://www.puzzlr.org/sample-page/)'s
 nice [tutorial on
-d3-force](http://www.puzzlr.org/force-graphs-with-d3/), linked on the
+d3-force](https://www.puzzlr.org/force-graphs-with-d3/), linked on the
 [D3 tutorials page](https://github.com/d3/d3/wiki/Tutorials); duh.)
 
 
 My D3 code isn't particularly fancy. (And note that I'm still writing
-in [CoffeeScript](http://coffeescript.org); I toyed with the idea of
+in [CoffeeScript](https://coffeescript.org); I toyed with the idea of
 switching to [ES6](https://www.ecma-international.org/ecma-262/6.0/),
 particularly because we can now use `(d) => d.x`.
 But I love CoffeeScript and don't want to lose list comprehensions,
@@ -62,7 +62,7 @@ I do fight with the indentation at times, but I've grown accustomed to
 it.
 
 Anyway, back to the point of this: what did I have to change to get
-[d3panels](http://kbroman.org/d3panels) and
+[d3panels](https://kbroman.org/d3panels) and
 [R/qtlcharts](https://kbroman.org/qtlcharts) to work with D3 version
 4?
 
@@ -93,7 +93,7 @@ adding some `.on("mouseover", something)` or `.on("click",
 something_else)` for interactivity.
 
 But force-directed graphics are pretty awesome, particularly for
-[beeswarm](http://www.cbs.dtu.dk/~eklund/beeswarm/)-type plots, so I
+[beeswarm](https://www.cbs.dtu.dk/~eklund/beeswarm/)-type plots, so I
 did make use of `d3.layout.force` in two places.
 
 But I didn't really know what I was doing before, and that made the
@@ -105,7 +105,7 @@ version](https://github.com/kbroman/d3panels/blob/master/src/dotchart.coffee#L18
 is just 21 lines (vs 65 lines before), and way easier to read.
 
 For
-[`d3panels.dotchart`](http://kbroman.org/d3panels/assets/test/dotchart/),
+[`d3panels.dotchart`](https://kbroman.org/d3panels/assets/test/dotchart/),
 the main bit looks like this:
 
 ```
@@ -151,10 +151,10 @@ to come to some understanding before doing any hacking.
 
 The last major thing I had to figure out was d3-brush. I've not
 implemented any actual brushing in either
-[d3panels](http://kbroman.org/d3panels) or
-[R/qtlcharts](http://kbroman.org/qtlcharts), but I did use
+[d3panels](https://kbroman.org/d3panels) or
+[R/qtlcharts](https://kbroman.org/qtlcharts), but I did use
 `d3.svg.brush` in one my tests of
-[`d3panels.scatterplot`](http://kbroman.org/d3panels/assets/test/scatterplot/),
+[`d3panels.scatterplot`](https://kbroman.org/d3panels/assets/test/scatterplot/),
 to show that it could be done.
 
 In my [original brush
@@ -176,7 +176,7 @@ And so finally, in the [revised
 code](https://github.com/kbroman/d3panels/blob/master/test/scatterplot/test_scatterplot.coffee#L66-L102),
 I decided to use a single brush that was applied across the three
 scatterplots. (It seems that you [can implement multiple
-brushes](http://bl.ocks.org/ludwigschubert/0236fa8594c4b02711b2606a8f95f605),
+brushes](https://bl.ocks.org/ludwigschubert/0236fa8594c4b02711b2606a8f95f605),
 but it's complicated.) The single-brush solution is perfectly fine for
 my test case, and actually it's maybe easier to understand.
 
@@ -185,22 +185,22 @@ easy. I needed to abandon the multiple brushes, and then the
 back-calculation from screen coordinates to plot coordinates is
 slightly tedious but not a big deal.
 
-So that was the last thing, and I now have both [d3panels](http://kbroman.org/d3panels) and
-[R/qtlcharts](http://kbroman.org/qtlcharts) working for
+So that was the last thing, and I now have both [d3panels](https://kbroman.org/d3panels) and
+[R/qtlcharts](https://kbroman.org/qtlcharts) working for
 [D3](https://d3js.org) version 4.
 
 ## What's the point?
 
 The point of all this is that I have ideas for further plots I want to
-make in [R/qtlcharts](http://kbroman.org/qtlcharts), such as a tool
+make in [R/qtlcharts](https://kbroman.org/qtlcharts), such as a tool
 for exploring pleiotropy (that is, whether two traits are affected by
 a common genetic locus, or instead are each controlled by separate but
 closely linked loci). For that thing, I wanted a double-slider, and it
 seemed best to implement it using D3 version 4, [which I
 did](https://www.biostat.wisc.edu/~kbroman/D3/d3doubleslider/). But I
-want to use my slider with [d3panels](http://kbroman.org/d3panels), and
+want to use my slider with [d3panels](https://kbroman.org/d3panels), and
 really I want to incorporate it into
-[R/qtlcharts](http://kbroman.org/qtlcharts), so it was clear that I
+[R/qtlcharts](https://kbroman.org/qtlcharts), so it was clear that I
 needed to spend some time refactoring.
 
 And actually, I was surprised at how easy it was. (I thought it would
