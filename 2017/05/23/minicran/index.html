@@ -86,14 +86,14 @@
       
 
 
-<p>Next month, I’m teaching a workshop on <a href="http://rqtl.org">R/qtl</a> and <a href="http://kbroman.org/qtl2">R/qtl2</a> at the <a href="http://www.complextrait.org/ctc2017">joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)</a> meeting in Memphis.</p>
+<p>Next month, I’m teaching a workshop on <a href="http://rqtl.org">R/qtl</a> and <a href="https://kbroman.org/qtl2">R/qtl2</a> at the <a href="http://www.complextrait.org/ctc2017">joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)</a> meeting in Memphis.</p>
 <p>I was chatting with <a href="http://www.senresearch.org/">Śaunak Sen</a> about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on <a href="https://cran.r-project.org">CRAN</a>. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</p>
 <p>Should we have participants work on a server? Should we set up <a href="https://rstudio.com">RStudio</a> in <a href="https://www.docker.com/">Docker</a> containers on <a href="https://www.digitalocean.com">Digital Ocean</a>?</p>
-<p>Śaunak said, “What we need is a mini-CRAN.” A google search brought us to the package <a href="https://cran.r-project.org/package=miniCRAN">miniCRAN</a> from <a href="http://blog.revolutionanalytics.com/">Revolution Analytics</a>, which looks to be the perfect solution.</p>
+<p>Śaunak said, “What we need is a mini-CRAN.” A google search brought us to the package <a href="https://cran.r-project.org/package=miniCRAN">miniCRAN</a> from <a href="https://blog.revolutionanalytics.com/">Revolution Analytics</a>, which looks to be the perfect solution.</p>
 <p>As it turns out, to make your own <a href="https://cran.r-project.org">CRAN</a> you “just” need to put all of the requisite packages (source plus windows and mac binaries) into a specific directory structure, with each directory having special files (<code>PACKAGE</code>, <code>PACKAGE.gz</code>, and <code>PACKAGE.rds</code>) that describe the contents.</p>
 <p>The main trick is ensuring that you have all of the required dependencies, and that’s where <a href="https://cran.r-project.org/package=miniCRAN">miniCRAN</a> is especially helpful.</p>
-<p><a href="https://cran.r-project.org/package=miniCRAN">miniCRAN</a> has several useful vignettes, plus a nice <a href="http://blog.revolutionanalytics.com/2014/10/introducing-minicran.html">blog post</a> that explains the goal and basic use.</p>
-<p>After installing miniCRAN, the first thing was to define the set of packages that my <a href="http://kbroman.org/qtl2">R/qtl2</a> packages depend on, and then use <code>miniCRAN::pkgDep</code> to find all of the packages that those depend on.</p>
+<p><a href="https://cran.r-project.org/package=miniCRAN">miniCRAN</a> has several useful vignettes, plus a nice <a href="https://blog.revolutionanalytics.com/2014/10/introducing-minicran.html">blog post</a> that explains the goal and basic use.</p>
+<p>After installing miniCRAN, the first thing was to define the set of packages that my <a href="https://kbroman.org/qtl2">R/qtl2</a> packages depend on, and then use <code>miniCRAN::pkgDep</code> to find all of the packages that those depend on.</p>
 <pre class="r"><code>library(miniCRAN)
 repo &lt;- &quot;https://cran.rstudio.com&quot;
 pkgs &lt;- c(&quot;Rcpp&quot;, &quot;RcppEigen&quot;, &quot;yaml&quot;, &quot;jsonlite&quot;, &quot;data.table&quot;,
@@ -104,7 +104,7 @@ pkgList &lt;- pkgDep(pkgs, repos=repo, type=&quot;source&quot;, suggests=FALSE)<
 <pre class="r"><code>makeRepo(pkgList, path=&quot;qtl2cran&quot;, repos=repo,
          type=c(&quot;source&quot;, &quot;win.binary&quot;, &quot;mac.binary.el-capitan&quot;))</code></pre>
 <p>The only issue here is that the version of miniCRAN on CRAN doesn’t handle <code>mac.binary.el-capitan</code> properly, nor does the <a href="https://github.com/revolutionAnalytics/miniCRAN">version on GitHub</a>. But there’s a <a href="https://github.com/RevolutionAnalytics/miniCRAN/pull/84">pull request</a> from <a href="https://github.com/vnijs">Vincent Nijs</a> that fixes that, so I used <code>devtools::install_github(&quot;vnijs/miniCRAN&quot;)</code> to use his version.</p>
-<p>I then needed to add my <a href="http://kbroman.org/qtl2">R/qtl2</a> packages:</p>
+<p>I then needed to add my <a href="https://kbroman.org/qtl2">R/qtl2</a> packages:</p>
 <ul>
 <li>source <code>.tar.gz</code> files in <code>qtl2cran/src/contrib</code></li>
 <li>Windows <code>.zip</code> files in <code>qtl2cran/bin/windows/contrib/3.4</code></li>
@@ -121,7 +121,7 @@ write_PACKAGES(&quot;qtl2cran/src/contrib&quot;, type=&quot;source&quot;)
 write_PACKAGES(&quot;qtl2cran/bin/windows/contrib/3.4&quot;, type=&quot;win.binary&quot;)
 write_PACKAGES(&quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&quot;,
                type=&quot;mac.binary&quot;)</code></pre>
-<p>I then put them on my website at UW-Madison plus at <a href="http://rqtl.org">rqtl.org</a>, so now people can install <a href="http://kbroman.org">R/qtl2</a> using either</p>
+<p>I then put them on my website at UW-Madison plus at <a href="http://rqtl.org">rqtl.org</a>, so now people can install <a href="https://kbroman.org">R/qtl2</a> using either</p>
 <pre class="r"><code>install.packages(paste0(&quot;qtl2&quot;, c(&quot;geno&quot;, &quot;scan&quot;, &quot;plot&quot;, &quot;convert&quot;)),
                  repos=&quot;http://rqtl.org/qtl2cran&quot;)</code></pre>
 <p>or</p>
