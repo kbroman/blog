@@ -11,7 +11,7 @@ knitr::opts_chunk$set(eval=FALSE)
 ```
 
 Next month, I'm teaching a workshop on [R/qtl](http://rqtl.org) and
-[R/qtl2](http://kbroman.org/qtl2) at the
+[R/qtl2](https://kbroman.org/qtl2) at the
 [joint Complex Trait Community and Rat Genomics Community meeting
 (CTC-RG2017)](http://www.complextrait.org/ctc2017) meeting in Memphis.
 
@@ -30,7 +30,7 @@ Ocean](https://www.digitalocean.com)?
 &#346;aunak said, "What we need is a mini-CRAN." A google search
 brought us to the package
 [miniCRAN](https://cran.r-project.org/package=miniCRAN)
-from [Revolution Analytics](http://blog.revolutionanalytics.com/),
+from [Revolution Analytics](https://blog.revolutionanalytics.com/),
 which looks to be the perfect solution.
 
 As it turns out, to make your own
@@ -47,11 +47,11 @@ helpful.
 
 [miniCRAN](https://cran.r-project.org/package=miniCRAN) has several
 useful vignettes, plus a nice [blog
-post](http://blog.revolutionanalytics.com/2014/10/introducing-minicran.html)
+post](https://blog.revolutionanalytics.com/2014/10/introducing-minicran.html)
 that explains the goal and basic use.
 
 After installing miniCRAN, the first thing was to define the set of
-packages that my [R/qtl2](http://kbroman.org/qtl2) packages depend on,
+packages that my [R/qtl2](https://kbroman.org/qtl2) packages depend on,
 and then use `miniCRAN::pkgDep` to find all of the packages that those
 depend on.
 
@@ -84,7 +84,7 @@ request](https://github.com/RevolutionAnalytics/miniCRAN/pull/84) from
 [Vincent Nijs](https://github.com/vnijs) that fixes that, so I used
 `devtools::install_github("vnijs/miniCRAN")` to use his version.
 
-I then needed to add my [R/qtl2](http://kbroman.org/qtl2) packages:
+I then needed to add my [R/qtl2](https://kbroman.org/qtl2) packages:
 
 - source `.tar.gz` files in `qtl2cran/src/contrib`
 - Windows `.zip` files in `qtl2cran/bin/windows/contrib/3.4`
@@ -123,7 +123,7 @@ write_PACKAGES("qtl2cran/bin/macosx/el-capitan/contrib/3.4",
 
 I then put them on my website at UW-Madison plus at
 [rqtl.org](http://rqtl.org), so now people can install
-[R/qtl2](http://kbroman.org) using either
+[R/qtl2](https://kbroman.org) using either
 
 ```{r cran_rqtl}
 install.packages(paste0("qtl2", c("geno", "scan", "plot", "convert")),
