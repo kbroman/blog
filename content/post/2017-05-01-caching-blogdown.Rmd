@@ -15,10 +15,10 @@ I had the mistaken impression that blogdown would look at the
 timestamps on the `.Rmd` and `.html` and only build the `.html` if the
 `.Rmd` file is newer, but that's not true.
 
-My [post about sqlite, feather, and fst](http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/)
+My [post about sqlite, feather, and fst](https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/)
 is rather slow, because I'm writing and reading rather big files and
 measuring access times. So it was looking like building my
-[new blog](http://kbroman.org/blog) would be really painful, forever
+[new blog](https://kbroman.org/blog) would be really painful, forever
 more.
 
 Thus, I spent a bunch of time reworking the post to cache the times
