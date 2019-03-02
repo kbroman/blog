@@ -16,14 +16,14 @@ the book on my iPad, with my feet up. And so my understanding, while
 reasonably complete, was somewhat theoretical.
 
 I mean, from [my own book writing
-experience](http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/),
+experience](https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/),
 I felt like, "Hell if _I'm_ going to be writing another book." And
 while I can see that it could be useful to reformat my [various
-tutorials](http://kbroman.org/pages/tutorials) as bookdown books, I
+tutorials](https://kbroman.org/pages/tutorials) as bookdown books, I
 wasn't in a hurry to do that.
 
 But the R/minecraft team from the [ROpenSci](https://ropensci.org)
-[Unconference](http://unconf17.ropensci.org) had such a great time
+[Unconference](https://unconf17.ropensci.org) had such a great time
 last week, and we developed such cool stuff, that we thought it would
 be good, in addition to polishing our
 [miner](https://github.com/ROpenSciLabs/miner) package, to compile our
