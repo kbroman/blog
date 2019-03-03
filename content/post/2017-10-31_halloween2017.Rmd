@@ -17,8 +17,8 @@ were just `r nrow(x)` groups of kids, for a total of
 `r sum(x$n_kids)`, and 12 of them came within 2 minutes (a group of 8
 girls followed immediately by a group of 4 girls). Here's a graph;
 compare it to
-[2016](http://kbroman.org/blog/2016/10/31/halloween-2016-count/) and
-[2011](http://kbroman.org/blog/2011/10/31/halloween-2011-count/).
+[2016](https://kbroman.org/blog/2016/10/31/halloween-2016-count/) and
+[2011](https://kbroman.org/blog/2011/10/31/halloween-2011-count/).
 
 ```{r halloween_graph, echo=FALSE, fig.width=8, fig.height=8}
 library(timeDate)
