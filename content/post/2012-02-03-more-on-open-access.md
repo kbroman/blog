@@ -20,7 +20,7 @@ I am quite persuaded by [Michael Eisen's recent comments on open access](http://
 But how can I do that if [Genetics](http://www.genetics.org) isn't fully open?  Genetics charges an extra \$1200 to make an article open access.  Would it really cost \$1200 per article to make the journal fully open?
 <!-- more -->
 
-Another follow-up to [my comments yesterday](http://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/): I had suggested that copyright law might be changed to make papers coming from federal research grants fully open.  I later found an interesting paper in the [Journal of Legal Analysis](http://jla.oxfordjournals.org), [Should copyright of academic works be abolished?](http://jla.oxfordjournals.org/content/2/1/301.abstract)  The author concludes:
+Another follow-up to [my comments yesterday](https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/): I had suggested that copyright law might be changed to make papers coming from federal research grants fully open.  I later found an interesting paper in the [Journal of Legal Analysis](https://jla.oxfordjournals.org), [Should copyright of academic works be abolished?](https://jla.oxfordjournals.org/content/2/1/301.abstract)  The author concludes:
 
 <blockquote>
 ...if publication fees would be largely defrayed by universities and grantors, as I suggest would be to their advantage, then the elimination of copyright of academic works would likely be socially desirable: it would not compromise academic publication activity and would yield the social benefits of a copyright-free regime.
@@ -28,7 +28,7 @@ Another follow-up to [my comments yesterday](http://kbroman.org/blog/2012/02/02/
 
 I haven't read the whole paper, and there's a bit of quantitative analysis that I don't think I'll like, but it does provide a thorough argument for what I see as the real need: to change copyright law.  Still, I'm not sure that monographs should be treated the same as journal articles.
 
-Another interesting point: The [Journal of Legal Analysis](http://jla.oxfordjournals.org) is open access (articles are published under the [Creative Commons Attribution-Non Commercial licence](http://creativecommons.org/licenses/by-nc/3.0/)), and it seems to be funded in part through the endowment model I'd mentioned:
+Another interesting point: The [Journal of Legal Analysis](https://jla.oxfordjournals.org) is open access (articles are published under the [Creative Commons Attribution-Non Commercial licence](https://creativecommons.org/licenses/by-nc/3.0/)), and it seems to be funded in part through the endowment model I'd mentioned:
 
 <blockquote>
 The journal is underwritten by a generous grant from the Considine Family Foundation, and continues to enjoy the strong support of the Harvard Law School and the John M. Olin Center for Law, Economics, and Business.
