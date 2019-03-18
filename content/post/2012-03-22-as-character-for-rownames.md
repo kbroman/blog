@@ -10,7 +10,7 @@ tags:
 slug: as-character-for-rownames
 ---
 
-[Rainer pointed out](http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330), in response to my post, [Row names in data frames: Beware of 1:nrow](http://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/), that if I'd used `rownames(x) <- as.character(1:3)` rather than `rownames(x) <- 1:3`, I wouldn't have had the problem I'd seen.
+[Rainer pointed out](https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330), in response to my post, [Row names in data frames: Beware of 1:nrow](https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/), that if I'd used `rownames(x) <- as.character(1:3)` rather than `rownames(x) <- 1:3`, I wouldn't have had the problem I'd seen.
 
 ````r
 > x <- z <- data.frame(id=1:3)
