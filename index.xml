@@ -11,7 +11,7 @@
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Reproducibility guidelines</title>
+      <title>reproducibility guidelines</title>
       <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -280,7 +280,7 @@ with just three small steps.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Writing text in Minecraft with R</title>
+      <title>writing text in Minecraft with R</title>
       <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -415,7 +415,7 @@ just about 160 lines. And it allowed me to do stuff like this:&lt;/p&gt;
     </item>
     
     <item>
-      <title>Another new laptop</title>
+      <title>another new laptop</title>
       <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -532,7 +532,7 @@ adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Twitter break</title>
+      <title>twitter break</title>
       <link>https://kbroman.org/blog/2018/10/05/twitter-break/</link>
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -548,7 +548,7 @@ adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Learning a new programming language</title>
+      <title>learning a new programming language</title>
       <link>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
@@ -644,7 +644,7 @@ adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Halloween 2017</title>
+      <title>halloween 2017</title>
       <link>https://kbroman.org/blog/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
@@ -997,7 +997,7 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.5.3 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Apr  1 10:02:55 2019 --&gt;
+&lt;!-- Mon Apr  1 11:53:37 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
