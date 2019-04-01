@@ -10,31 +10,31 @@ tags:
 slug: enar-highs-and-lows
 ---
 
-I attended the [ENAR meeting](http://www.enar.org/meetings.cfm) in Orlando, Florida, last week. ([ENAR](http://www.enar.org) = "Eastern North American Region" of the [International Biometric Society](http://www.biometricsociety.org).)
+I attended the [ENAR meeting](http://www.enar.org/meetings) in Orlando, Florida, last week. ([ENAR](https://www.enar.org) = "Eastern North American Region" of the [International Biometric Society](https://www.biometricsociety.org).)
 
-I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important.  ([Rafa](http://www.rafalab.org) said, incredulously, "You knew that already!")
+I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important.  ([Rafa](https://rafalab.github.io) said, incredulously, "You knew that already!")
 
 Let me tell you about the high- and lowlights, for me.
 
-Also see the ENAR-related comments from [Yihui Xie](http://yihui.name/en/2013/03/on-enar-or-statistical-meetings-in-general/) and [Alyssa Frazee](http://alyssafrazee.wordpress.com/2013/03/18/ideas-for-super-awesome-conferences/).
+Also see the ENAR-related comments from [Yihui Xie](https://yihui.name/en/2013/03/on-enar-or-statistical-meetings-in-general/) and [Alyssa Frazee](https://alyssafrazee.wordpress.com/2013/03/18/ideas-for-super-awesome-conferences/).
 
 <!-- more -->
 
 ### Highlights
 
-  * Getting to know [Yihui Xie](http://yihui.name), and the introductory part of his talk on [knitr](http://yihui.name/knitr/).
+  * Getting to know [Yihui Xie](https://yihui.name), and the introductory part of his talk on [knitr](https://yihui.name/knitr/).
 
   * Having lunch with [Hopkins Biostat](http://www.biostat.jhsph.edu) students.
 
-  * Twittering, particularly with [@StrictlyStat](http://twitter.com/StrictlyStat) and [@hspter](http://twitter.com/hspter).
+  * Twittering, particularly with [@StrictlyStat](https://twitter.com/StrictlyStat) and [@hspter](https://twitter.com/hspter).
 
-  * Hadley Wickham's [ggplot2](http://ggplot2.org) tutorial, in which I really learned how to teach.  (Can I put it into practice?)
+  * Hadley Wickham's [ggplot2](http://ggplot2.tidyverse.org) tutorial, in which I really learned how to teach.  (Can I put it into practice?)
 
-  * [Matthew Stephens](http://genes.uchicago.edu/contents/faculty/stephens-matthew.html)'s talk, and spending time with him.
+  * [Matthew Stephens](http://stephenslab.uchicago.edu)'s talk, and spending time with him.
 
-  * [Jeff Morris](http://faculty.mdanderson.org/Jeffrey_Morris/Default.asp)'s orientation to Epcot.
+  * [Jeff Morris](https://faculty.mdanderson.org/Jeffrey_Morris/Default.asp)'s orientation to Epcot.
 
-  * The large data visualization session, with [John](http://twitter.com/StrictlyStat), [Hadley](http://had.co.nz), [Amy Heineke](http://www.youtube.com/watch?v=IVdwJvQXeg4), and [me](http://www.biostat.wisc.edu/~kbroman).  (Thanks, [Bruce](http://www.biostat.jhsph.edu/~bswihart/)!)
+  * The large data visualization session, with [John](https://twitter.com/StrictlyStat), [Hadley](http://hadley.nz), Amy Heineke, and [me](https://kbroman.org).  (Thanks, [Bruce](http://www.biostat.jhsph.edu/~bswihart/)!)
 
 ### Lowlights
 
@@ -58,4 +58,4 @@ Also see the ENAR-related comments from [Yihui Xie](http://yihui.name/en/2013/03
 
 As I said at the beginning, I had a good time. But I worry particularly about accessibility to students paying their own way.
 
-It was a really useful and inspirational meeting, right up there with the [UseR 2011 meeting](http://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/) in the UK, but less from talks and more from individual interactions.
+It was a really useful and inspirational meeting, right up there with the [UseR 2011 meeting](https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/) in the UK, but less from talks and more from individual interactions.
