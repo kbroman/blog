@@ -1,5 +1,5 @@
 ---
-title: 'Halloween 2017'
+title: 'halloween 2017'
 author: Karl
 date: '2017-10-31T20:05:00-05:00'
 categories: [Statistics]

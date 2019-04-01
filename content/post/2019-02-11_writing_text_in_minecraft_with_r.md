@@ -1,5 +1,5 @@
 ---
-title: "Writing text in Minecraft with R"
+title: "writing text in Minecraft with R"
 author: Karl Broman
 date: "2019-02-11"
 categories:

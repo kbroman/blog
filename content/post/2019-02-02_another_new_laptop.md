@@ -1,5 +1,5 @@
 ---
-title: "Another new laptop"
+title: "another new laptop"
 author: Karl Broman
 date: "2019-02-02"
 categories:

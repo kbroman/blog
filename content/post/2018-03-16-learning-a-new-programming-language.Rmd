@@ -1,5 +1,5 @@
 ---
-title: "Learning a new programming language"
+title: "learning a new programming language"
 author: Karl
 date: "2018-03-16"
 slug: learning-a-new-programming-language

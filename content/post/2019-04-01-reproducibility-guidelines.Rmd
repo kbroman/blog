@@ -1,5 +1,5 @@
 ---
-title: "Reproducibility guidelines"
+title: "reproducibility guidelines"
 author: Karl
 date: '2019-04-01'
 slug: reproducibility-guidelines
