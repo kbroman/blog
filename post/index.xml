@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reproducibility guidelines</title>
+      <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
+      <description>I’m in Delft, The Netherlands, for a few days this week, at a workshop to develop guidelines for reproducibility for AGILE conference papers. I’m here as one of the outside “experts”. (It’s always a bit disconcerting to be considered an expert.) The leaders of this effort wrote an interesting PeerJ paper last year, evaluating the reproducibility of previous AGILE papers.
+There will be a community webinar tomorrow (2019-04-02) at 16:00 CEST (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.</description>
+    </item>
     
     <item>
       <title>omg, binder!</title>
@@ -315,16 +325,6 @@ Here are the things he had mentioned yesterday at the Faculty Senate meeting:
       
       <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.</description>
-    </item>
-    
-    <item>
-      <title>Write unit tests!</title>
-      <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
-      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
-      <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
-It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
     </item>
     
   </channel>

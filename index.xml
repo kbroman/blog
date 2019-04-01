@@ -7,8 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reproducibility guidelines</title>
+      <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
+      <description>
+
+
+&lt;p&gt;I’m in Delft, The Netherlands, for a few days this week, at a &lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/&#34;&gt;workshop&lt;/a&gt; to develop guidelines for reproducibility for &lt;a href=&#34;https://agile-online.org/&#34;&gt;AGILE&lt;/a&gt; conference papers. I’m here as one of the outside “&lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/#expert-meeting&#34;&gt;experts&lt;/a&gt;”. (It’s always a bit disconcerting to be considered an expert.) The &lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/#initiative-members&#34;&gt;leaders of this effort&lt;/a&gt; wrote an interesting &lt;a href=&#34;https://doi.org/10.7717/peerj.5072&#34;&gt;PeerJ paper&lt;/a&gt; last year, evaluating the reproducibility of previous AGILE papers.&lt;/p&gt;
+&lt;p&gt;There will be a &lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/#community-webinar&#34;&gt;community webinar&lt;/a&gt; tomorrow (2019-04-02) at &lt;a href=&#34;https://www.timeanddate.com/worldclock/meetingdetails.html?year=2019&amp;amp;month=4&amp;amp;day=2&amp;amp;hour=14&amp;amp;min=0&amp;amp;sec=0&amp;amp;p1=16&#34;&gt;16:00 CEST&lt;/a&gt; (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.&lt;/p&gt;
+&lt;p&gt;I’m particularly interested in developing these guidelines and using what I learn to further reproduciblity of work published in the journals &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt;. These journals have been doing a great job of enforcing their policy that data be made publicly available. They’ve also had a policy that software be made available, but there has not been much effort to enforce that, and it’s clear that many authors need further pressure (or &lt;em&gt;encouragement&lt;/em&gt;) before they will comply.&lt;/p&gt;
+&lt;p&gt;I’ve done a better job with reproducibility of my recent papers (about &lt;a href=&#34;https://github.com/kbroman/Paper_Rqtl2&#34;&gt;R/qtl2&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/Paper_MPPdiag&#34;&gt;genotype diagnostics&lt;/a&gt;), but it remains a challenge to keep things well-organized and well-documented.&lt;/p&gt;
+&lt;p&gt;Regarding these reproducibility guidelines, I think authors will benefit from very specific suggestions that can accommodate different levels of computational “sophistication.” And I think what will be particularly helpful will be a variety of specific examples that authors might use as templates. I’ve been impressed with the care that &lt;a href=&#34;http://valdarlab.unc.edu&#34;&gt;Will Valdar&lt;/a&gt;’s group has been devoting to reproducibility. For example, the &lt;a href=&#34;https://doi.org/10.1534/g3.118.200847&#34;&gt;recent paper by Shorter et al.&lt;/a&gt; is accompanied by a proper &lt;a href=&#34;https://github.com/mauriziopaul/litterDiallel&#34;&gt;R Compendium&lt;/a&gt;. Will’s student &lt;a href=&#34;https://github.com/rcorty/&#34;&gt;Roberty Corty&lt;/a&gt; has github repositories for his recent papers on variance QTL, including &lt;a href=&#34;https://github.com/rcorty/qtl_mapping_with_BVH_supporting_files&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;https://github.com/rcorty/mvqtl_reanalyses_Bailey_Kumar_supporting_files&#34;&gt;that&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>omg, binder!</title>
@@ -635,7 +652,7 @@ adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
       <description>
 
 
-&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;http://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to &lt;a href=&#34;https://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
@@ -751,8 +768,8 @@ read.table(file = file, header = header, sep = sep, quote = quote,
 
 
 &lt;p&gt;So I heard &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; talk about &lt;a href=&#34;https://bookdown.org&#34;&gt;bookdown&lt;/a&gt;, and I read, with considerable excitement, his &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdown book&lt;/a&gt;. (There’s a &lt;a href=&#34;https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;amp;tag=7210-20&#34;&gt;blurb from me at Amazon&lt;/a&gt; saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.&lt;/p&gt;
-&lt;p&gt;I mean, from &lt;a href=&#34;http://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;http://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
-&lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
+&lt;p&gt;I mean, from &lt;a href=&#34;https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/&#34;&gt;my own book writing experience&lt;/a&gt;, I felt like, “Hell if &lt;em&gt;I’m&lt;/em&gt; going to be writing another book.” And while I can see that it could be useful to reformat my &lt;a href=&#34;https://kbroman.org/pages/tutorials&#34;&gt;various tutorials&lt;/a&gt; as bookdown books, I wasn’t in a hurry to do that.&lt;/p&gt;
+&lt;p&gt;But the R/minecraft team from the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;https://unconf17.ropensci.org&#34;&gt;Unconference&lt;/a&gt; had such a great time last week, and we developed such cool stuff, that we thought it would be good, in addition to polishing our &lt;a href=&#34;https://github.com/ROpenSciLabs/miner&#34;&gt;miner&lt;/a&gt; package, to compile our varied set of vignettes into a bookdown book.&lt;/p&gt;
 &lt;p&gt;And so today I did. (You can see the working draft at &lt;a href=&#34;https://ROpenSciLabs.github.io/miner_book&#34; class=&#34;uri&#34;&gt;https://ROpenSciLabs.github.io/miner_book&lt;/a&gt;.) And boy it was easy.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Made a &lt;a href=&#34;https://github.com/ropenscilabs/miner_book&#34;&gt;github repository&lt;/a&gt;&lt;/li&gt;
@@ -872,14 +889,14 @@ Love the sticker interest in my &lt;a href=&#34;https://twitter.com/hashtag/runc
       <description>
 
 
-&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
+&lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the &lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
 &lt;p&gt;I was chatting with &lt;a href=&#34;http://www.senresearch.org/&#34;&gt;Śaunak Sen&lt;/a&gt; about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).&lt;/p&gt;
 &lt;p&gt;Should we have participants work on a server? Should we set up &lt;a href=&#34;https://rstudio.com&#34;&gt;RStudio&lt;/a&gt; in &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt; containers on &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;?&lt;/p&gt;
-&lt;p&gt;Śaunak said, “What we need is a mini-CRAN.” A google search brought us to the package &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; from &lt;a href=&#34;http://blog.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;, which looks to be the perfect solution.&lt;/p&gt;
+&lt;p&gt;Śaunak said, “What we need is a mini-CRAN.” A google search brought us to the package &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; from &lt;a href=&#34;https://blog.revolutionanalytics.com/&#34;&gt;Revolution Analytics&lt;/a&gt;, which looks to be the perfect solution.&lt;/p&gt;
 &lt;p&gt;As it turns out, to make your own &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; you “just” need to put all of the requisite packages (source plus windows and mac binaries) into a specific directory structure, with each directory having special files (&lt;code&gt;PACKAGE&lt;/code&gt;, &lt;code&gt;PACKAGE.gz&lt;/code&gt;, and &lt;code&gt;PACKAGE.rds&lt;/code&gt;) that describe the contents.&lt;/p&gt;
 &lt;p&gt;The main trick is ensuring that you have all of the required dependencies, and that’s where &lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; is especially helpful.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; has several useful vignettes, plus a nice &lt;a href=&#34;http://blog.revolutionanalytics.com/2014/10/introducing-minicran.html&#34;&gt;blog post&lt;/a&gt; that explains the goal and basic use.&lt;/p&gt;
-&lt;p&gt;After installing miniCRAN, the first thing was to define the set of packages that my &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; packages depend on, and then use &lt;code&gt;miniCRAN::pkgDep&lt;/code&gt; to find all of the packages that those depend on.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/package=miniCRAN&#34;&gt;miniCRAN&lt;/a&gt; has several useful vignettes, plus a nice &lt;a href=&#34;https://blog.revolutionanalytics.com/2014/10/introducing-minicran.html&#34;&gt;blog post&lt;/a&gt; that explains the goal and basic use.&lt;/p&gt;
+&lt;p&gt;After installing miniCRAN, the first thing was to define the set of packages that my &lt;a href=&#34;https://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; packages depend on, and then use &lt;code&gt;miniCRAN::pkgDep&lt;/code&gt; to find all of the packages that those depend on.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(miniCRAN)
 repo &amp;lt;- &amp;quot;https://cran.rstudio.com&amp;quot;
 pkgs &amp;lt;- c(&amp;quot;Rcpp&amp;quot;, &amp;quot;RcppEigen&amp;quot;, &amp;quot;yaml&amp;quot;, &amp;quot;jsonlite&amp;quot;, &amp;quot;data.table&amp;quot;,
@@ -890,7 +907,7 @@ pkgList &amp;lt;- pkgDep(pkgs, repos=repo, type=&amp;quot;source&amp;quot;, sugg
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;makeRepo(pkgList, path=&amp;quot;qtl2cran&amp;quot;, repos=repo,
          type=c(&amp;quot;source&amp;quot;, &amp;quot;win.binary&amp;quot;, &amp;quot;mac.binary.el-capitan&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The only issue here is that the version of miniCRAN on CRAN doesn’t handle &lt;code&gt;mac.binary.el-capitan&lt;/code&gt; properly, nor does the &lt;a href=&#34;https://github.com/revolutionAnalytics/miniCRAN&#34;&gt;version on GitHub&lt;/a&gt;. But there’s a &lt;a href=&#34;https://github.com/RevolutionAnalytics/miniCRAN/pull/84&#34;&gt;pull request&lt;/a&gt; from &lt;a href=&#34;https://github.com/vnijs&#34;&gt;Vincent Nijs&lt;/a&gt; that fixes that, so I used &lt;code&gt;devtools::install_github(&amp;quot;vnijs/miniCRAN&amp;quot;)&lt;/code&gt; to use his version.&lt;/p&gt;
-&lt;p&gt;I then needed to add my &lt;a href=&#34;http://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; packages:&lt;/p&gt;
+&lt;p&gt;I then needed to add my &lt;a href=&#34;https://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; packages:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;source &lt;code&gt;.tar.gz&lt;/code&gt; files in &lt;code&gt;qtl2cran/src/contrib&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Windows &lt;code&gt;.zip&lt;/code&gt; files in &lt;code&gt;qtl2cran/bin/windows/contrib/3.4&lt;/code&gt;&lt;/li&gt;
@@ -907,7 +924,7 @@ write_PACKAGES(&amp;quot;qtl2cran/src/contrib&amp;quot;, type=&amp;quot;source&a
 write_PACKAGES(&amp;quot;qtl2cran/bin/windows/contrib/3.4&amp;quot;, type=&amp;quot;win.binary&amp;quot;)
 write_PACKAGES(&amp;quot;qtl2cran/bin/macosx/el-capitan/contrib/3.4&amp;quot;,
                type=&amp;quot;mac.binary&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I then put them on my website at UW-Madison plus at &lt;a href=&#34;http://rqtl.org&#34;&gt;rqtl.org&lt;/a&gt;, so now people can install &lt;a href=&#34;http://kbroman.org&#34;&gt;R/qtl2&lt;/a&gt; using either&lt;/p&gt;
+&lt;p&gt;I then put them on my website at UW-Madison plus at &lt;a href=&#34;http://rqtl.org&#34;&gt;rqtl.org&lt;/a&gt;, so now people can install &lt;a href=&#34;https://kbroman.org&#34;&gt;R/qtl2&lt;/a&gt; using either&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(paste0(&amp;quot;qtl2&amp;quot;, c(&amp;quot;geno&amp;quot;, &amp;quot;scan&amp;quot;, &amp;quot;plot&amp;quot;, &amp;quot;convert&amp;quot;)),
                  repos=&amp;quot;http://rqtl.org/qtl2cran&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;or&lt;/p&gt;
@@ -979,8 +996,8 @@ t_db_copy &amp;lt;- fread(csv_t_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(I’m not even going to try &lt;code&gt;read.csv&lt;/code&gt; and &lt;code&gt;write.csv&lt;/code&gt;. I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
-&lt;!-- html table generated in R 3.5.2 by xtable 1.8-3 package --&gt;
-&lt;!-- Mon Feb 18 13:46:19 2019 --&gt;
+&lt;!-- html table generated in R 3.5.3 by xtable 1.8-3 package --&gt;
+&lt;!-- Mon Apr  1 10:02:55 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1152,15 +1169,15 @@ fread
       <description>
 
 
-&lt;p&gt;I just spent some time updating my &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I just spent some time updating my &lt;a href=&#34;https://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; library and &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; package for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;version 4&lt;/a&gt;. It took just about a day, and the majority of the time was spent puzzling over &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt; and &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Note that I just barely know what I’m doing, by which I mean I &lt;em&gt;don’t&lt;/em&gt; know what I’m doing. I’m able to get things to work, but I don’t always know why.)&lt;/p&gt;
 &lt;p&gt;I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective. &lt;em&gt;Tests, test, tests.&lt;/em&gt; There’s nothing better than tests for this sort of refactoring business.&lt;/p&gt;
-&lt;p&gt;I like the changes in D3 version 4, but trying to figure them out feels a bit like being back in 2012, when I was first trying to understand D3: I’ve not found many tutorials that explain how to use the new version, so I mostly focused on reading the &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;API documentation&lt;/a&gt;, which isn’t easy for me to understand, or to walk through the code for some of [Michael Bostock]’s &lt;a href=&#34;https://bl.ocks.org/mbostock&#34;&gt;examples&lt;/a&gt;. There are loads of books and tutorials on D3, but they’re almost all still talking about D3 version 3. (This will change shortly. For example, the 2nd edition of &lt;a href=&#34;http://alignedleft.com/&#34;&gt;Scott Murray&lt;/a&gt;’s excellent &lt;a href=&#34;http://shop.oreilly.com/product/0636920037316.do&#34;&gt;Interactive Data Visualization for the Web&lt;/a&gt; is at the printer, and covers D3 version 4.)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.ireneros.com/&#34;&gt;Irene Ros&lt;/a&gt;’s &lt;a href=&#34;https://iros.github.io/d3-v4-whats-new/#1&#34;&gt;slides on what’s new in D3 V4&lt;/a&gt; were super helpful. (Also I just saw &lt;a href=&#34;http://www.puzzlr.org/sample-page/&#34;&gt;Tom Roth&lt;/a&gt;’s nice &lt;a href=&#34;http://www.puzzlr.org/force-graphs-with-d3/&#34;&gt;tutorial on d3-force&lt;/a&gt;, linked on the &lt;a href=&#34;https://github.com/d3/d3/wiki/Tutorials&#34;&gt;D3 tutorials page&lt;/a&gt;; duh.)&lt;/p&gt;
-&lt;p&gt;My D3 code isn’t particularly fancy. (And note that I’m still writing in &lt;a href=&#34;http://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;; I toyed with the idea of switching to &lt;a href=&#34;https://www.ecma-international.org/ecma-262/6.0/&#34;&gt;ES6&lt;/a&gt;, particularly because we can now use &lt;code&gt;(d) =&amp;gt; d.x&lt;/code&gt;. But I love CoffeeScript and don’t want to lose list comprehensions, and actually my favorite thing is:&lt;/p&gt;
+&lt;p&gt;I like the changes in D3 version 4, but trying to figure them out feels a bit like being back in 2012, when I was first trying to understand D3: I’ve not found many tutorials that explain how to use the new version, so I mostly focused on reading the &lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md&#34;&gt;API documentation&lt;/a&gt;, which isn’t easy for me to understand, or to walk through the code for some of [Michael Bostock]’s &lt;a href=&#34;https://bl.ocks.org/mbostock&#34;&gt;examples&lt;/a&gt;. There are loads of books and tutorials on D3, but they’re almost all still talking about D3 version 3. (This will change shortly. For example, the 2nd edition of &lt;a href=&#34;https://alignedleft.com/&#34;&gt;Scott Murray&lt;/a&gt;’s excellent &lt;a href=&#34;https://shop.oreilly.com/product/0636920037316.do&#34;&gt;Interactive Data Visualization for the Web&lt;/a&gt; is at the printer, and covers D3 version 4.)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/ireneros&#34;&gt;Irene Ros&lt;/a&gt;’s &lt;a href=&#34;https://iros.github.io/d3-v4-whats-new/#1&#34;&gt;slides on what’s new in D3 V4&lt;/a&gt; were super helpful. (Also I just saw &lt;a href=&#34;https://www.puzzlr.org/sample-page/&#34;&gt;Tom Roth&lt;/a&gt;’s nice &lt;a href=&#34;https://www.puzzlr.org/force-graphs-with-d3/&#34;&gt;tutorial on d3-force&lt;/a&gt;, linked on the &lt;a href=&#34;https://github.com/d3/d3/wiki/Tutorials&#34;&gt;D3 tutorials page&lt;/a&gt;; duh.)&lt;/p&gt;
+&lt;p&gt;My D3 code isn’t particularly fancy. (And note that I’m still writing in &lt;a href=&#34;https://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;; I toyed with the idea of switching to &lt;a href=&#34;https://www.ecma-international.org/ecma-262/6.0/&#34;&gt;ES6&lt;/a&gt;, particularly because we can now use &lt;code&gt;(d) =&amp;gt; d.x&lt;/code&gt;. But I love CoffeeScript and don’t want to lose list comprehensions, and actually my favorite thing is:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;some_option = chartOpts?.some_option ? the_default&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I do fight with the indentation at times, but I’ve grown accustomed to it.&lt;/p&gt;
-&lt;p&gt;Anyway, back to the point of this: what did I have to change to get &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; to work with D3 version 4?&lt;/p&gt;
+&lt;p&gt;Anyway, back to the point of this: what did I have to change to get &lt;a href=&#34;https://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; to work with D3 version 4?&lt;/p&gt;
 &lt;div id=&#34;simple-replacements&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Simple replacements&lt;/h2&gt;
 &lt;p&gt;The bulk of the changes were simple replacements:&lt;/p&gt;
@@ -1177,9 +1194,9 @@ fread
 &lt;div id=&#34;d3-force&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#forces-d3-force&#34;&gt;d3-force&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;My D3 code is rather primitive. I’m basically just drawing and then adding some &lt;code&gt;.on(&amp;quot;mouseover&amp;quot;, something)&lt;/code&gt; or &lt;code&gt;.on(&amp;quot;click&amp;quot;, something_else)&lt;/code&gt; for interactivity.&lt;/p&gt;
-&lt;p&gt;But force-directed graphics are pretty awesome, particularly for &lt;a href=&#34;http://www.cbs.dtu.dk/~eklund/beeswarm/&#34;&gt;beeswarm&lt;/a&gt;-type plots, so I did make use of &lt;code&gt;d3.layout.force&lt;/code&gt; in two places.&lt;/p&gt;
+&lt;p&gt;But force-directed graphics are pretty awesome, particularly for &lt;a href=&#34;https://www.cbs.dtu.dk/~eklund/beeswarm/&#34;&gt;beeswarm&lt;/a&gt;-type plots, so I did make use of &lt;code&gt;d3.layout.force&lt;/code&gt; in two places.&lt;/p&gt;
 &lt;p&gt;But I didn’t really know what I was doing before, and that made the change to &lt;code&gt;d3.forceSimulation&lt;/code&gt; a bit more puzzling. My &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/1.1.4/src/dotchart.coffee#L181-L246&#34;&gt;code implementing a beeswarm-type dot chart&lt;/a&gt; is really ugly and so not worth looking at or discussing. The &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/src/dotchart.coffee#L181-L201&#34;&gt;new version&lt;/a&gt; is just 21 lines (vs 65 lines before), and way easier to read.&lt;/p&gt;
-&lt;p&gt;For &lt;a href=&#34;http://kbroman.org/d3panels/assets/test/dotchart/&#34;&gt;&lt;code&gt;d3panels.dotchart&lt;/code&gt;&lt;/a&gt;, the main bit looks like this:&lt;/p&gt;
+&lt;p&gt;For &lt;a href=&#34;https://kbroman.org/d3panels/assets/test/dotchart/&#34;&gt;&lt;code&gt;d3panels.dotchart&lt;/code&gt;&lt;/a&gt;, the main bit looks like this:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;d3.range(scaledPoints.length).map( (i) -&amp;gt;
     scaledPoints[i].fy = scaledPoints[i].y)
 
@@ -1198,16 +1215,16 @@ force = d3.forceSimulation(scaledPoints)
 &lt;/div&gt;
 &lt;div id=&#34;d3-brush&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://github.com/d3/d3/blob/master/API.md#brushes-d3-brush&#34;&gt;d3-brush&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The last major thing I had to figure out was d3-brush. I’ve not implemented any actual brushing in either &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; or &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, but I did use &lt;code&gt;d3.svg.brush&lt;/code&gt; in one my tests of &lt;a href=&#34;http://kbroman.org/d3panels/assets/test/scatterplot/&#34;&gt;&lt;code&gt;d3panels.scatterplot&lt;/code&gt;&lt;/a&gt;, to show that it could be done.&lt;/p&gt;
+&lt;p&gt;The last major thing I had to figure out was d3-brush. I’ve not implemented any actual brushing in either &lt;a href=&#34;https://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; or &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, but I did use &lt;code&gt;d3.svg.brush&lt;/code&gt; in one my tests of &lt;a href=&#34;https://kbroman.org/d3panels/assets/test/scatterplot/&#34;&gt;&lt;code&gt;d3panels.scatterplot&lt;/code&gt;&lt;/a&gt;, to show that it could be done.&lt;/p&gt;
 &lt;p&gt;In my &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/1.1.4/test/scatterplot/test_scatterplot.coffee#L66-L99&#34;&gt;original brush code&lt;/a&gt;, which was applied for a matrix of three scatterplots, I was creating a separate brush for each of the three scatterplots. And with the old &lt;code&gt;d3.svg.brush()&lt;/code&gt;, you’d pass x- and y-axis scales with &lt;code&gt;.x()&lt;/code&gt; and &lt;code&gt;.y()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You don’t pass scales to the new &lt;code&gt;d3.brush()&lt;/code&gt;. Instead, you use &lt;code&gt;d3.event.selection&lt;/code&gt; to grab the current selection in screen coordinates and then have to convert them back to plot coordinates with your scales’ inverses.&lt;/p&gt;
-&lt;p&gt;But I revised my code to what I thought should be working, and which was actually working for the first of the three scatterplots, but I got cryptic errors if I tried to brush the other two scatterplots. And so finally, in the &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/test/scatterplot/test_scatterplot.coffee#L66-L102&#34;&gt;revised code&lt;/a&gt;, I decided to use a single brush that was applied across the three scatterplots. (It seems that you &lt;a href=&#34;http://bl.ocks.org/ludwigschubert/0236fa8594c4b02711b2606a8f95f605&#34;&gt;can implement multiple brushes&lt;/a&gt;, but it’s complicated.) The single-brush solution is perfectly fine for my test case, and actually it’s maybe easier to understand.&lt;/p&gt;
+&lt;p&gt;But I revised my code to what I thought should be working, and which was actually working for the first of the three scatterplots, but I got cryptic errors if I tried to brush the other two scatterplots. And so finally, in the &lt;a href=&#34;https://github.com/kbroman/d3panels/blob/master/test/scatterplot/test_scatterplot.coffee#L66-L102&#34;&gt;revised code&lt;/a&gt;, I decided to use a single brush that was applied across the three scatterplots. (It seems that you &lt;a href=&#34;https://bl.ocks.org/ludwigschubert/0236fa8594c4b02711b2606a8f95f605&#34;&gt;can implement multiple brushes&lt;/a&gt;, but it’s complicated.) The single-brush solution is perfectly fine for my test case, and actually it’s maybe easier to understand.&lt;/p&gt;
 &lt;p&gt;So the conversion from &lt;code&gt;d3.svg.brush&lt;/code&gt; to &lt;code&gt;d3.brush&lt;/code&gt; was really pretty easy. I needed to abandon the multiple brushes, and then the back-calculation from screen coordinates to plot coordinates is slightly tedious but not a big deal.&lt;/p&gt;
-&lt;p&gt;So that was the last thing, and I now have both &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; working for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; version 4.&lt;/p&gt;
+&lt;p&gt;So that was the last thing, and I now have both &lt;a href=&#34;https://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt; and &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; working for &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; version 4.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;whats-the-point&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;What’s the point?&lt;/h2&gt;
-&lt;p&gt;The point of all this is that I have ideas for further plots I want to make in &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, such as a tool for exploring pleiotropy (that is, whether two traits are affected by a common genetic locus, or instead are each controlled by separate but closely linked loci). For that thing, I wanted a double-slider, and it seemed best to implement it using D3 version 4, &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/d3doubleslider/&#34;&gt;which I did&lt;/a&gt;. But I want to use my slider with &lt;a href=&#34;http://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt;, and really I want to incorporate it into &lt;a href=&#34;http://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, so it was clear that I needed to spend some time refactoring.&lt;/p&gt;
+&lt;p&gt;The point of all this is that I have ideas for further plots I want to make in &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, such as a tool for exploring pleiotropy (that is, whether two traits are affected by a common genetic locus, or instead are each controlled by separate but closely linked loci). For that thing, I wanted a double-slider, and it seemed best to implement it using D3 version 4, &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/d3doubleslider/&#34;&gt;which I did&lt;/a&gt;. But I want to use my slider with &lt;a href=&#34;https://kbroman.org/d3panels&#34;&gt;d3panels&lt;/a&gt;, and really I want to incorporate it into &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, so it was clear that I needed to spend some time refactoring.&lt;/p&gt;
 &lt;p&gt;And actually, I was surprised at how easy it was. (I thought it would be considerably more than a day’s work.) And I feel like I now kind of understand d3-force and d3-brush, so the effort involved was definitely worthwhile.&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -1264,7 +1281,7 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt; is cool, but it seems that it builds every &lt;code&gt;.Rmd&lt;/code&gt; file every time you run &lt;code&gt;build_site()&lt;/code&gt;, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.&lt;/p&gt;
 &lt;p&gt;I had the mistaken impression that blogdown would look at the timestamps on the &lt;code&gt;.Rmd&lt;/code&gt; and &lt;code&gt;.html&lt;/code&gt; and only build the &lt;code&gt;.html&lt;/code&gt; if the &lt;code&gt;.Rmd&lt;/code&gt; file is newer, but that’s not true.&lt;/p&gt;
-&lt;p&gt;My &lt;a href=&#34;http://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt; is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;new blog&lt;/a&gt; would be really painful, forever more.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&#34;https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and fst&lt;/a&gt; is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my &lt;a href=&#34;https://kbroman.org/blog&#34;&gt;new blog&lt;/a&gt; would be really painful, forever more.&lt;/p&gt;
 &lt;p&gt;Thus, I spent a bunch of time reworking the post to cache the times rather than running things every time the &lt;code&gt;.Rmd&lt;/code&gt; file was built. &lt;a href=&#34;https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd&#34;&gt;It’s not pretty&lt;/a&gt;, and my method is &lt;em&gt;not&lt;/em&gt; generally recommended, but it seems to work.&lt;/p&gt;
 &lt;p&gt;I expect &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; has a better solution to this.&lt;/p&gt;
 </description>
@@ -1555,7 +1572,7 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m starting a new blog site at &lt;a href=&#34;http://kbroman.org/blog&#34;&gt;kbroman.org/blog&lt;/a&gt;. I&amp;rsquo;m abandoning the &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;WordPress site&lt;/a&gt; as it is; I don&amp;rsquo;t want to fuss with trying to move things.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m starting a new blog site at &lt;a href=&#34;https://kbroman.org/blog&#34;&gt;kbroman.org/blog&lt;/a&gt;. I&amp;rsquo;m abandoning the &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;WordPress site&lt;/a&gt; as it is; I don&amp;rsquo;t want to fuss with trying to move things.&lt;/p&gt;
 </description>
     </item>
     
@@ -1942,38 +1959,6 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;/ul&gt;
 
 &lt;p&gt;I got a reasonably positive response to &lt;a href=&#34;http://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/&#34;&gt;my email to my faculty colleagues&lt;/a&gt; suggesting that we all commit to cultural competency training. But the training from the &lt;a href=&#34;http://www.library.wisc.edu/lcice/&#34;&gt;LCICE&lt;/a&gt; mentioned above looks to be semester-long, Tuesdays 4:30-7:30pm. I think I&amp;rsquo;ll have a difficult time convincing my colleagues of that. We need something in between nothing and 45 hours.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hateful shit at UW-Madison</title>
-      <link>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
-      <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.&lt;/p&gt;
-
-&lt;p&gt;All that&amp;rsquo;s just to say that, when it comes to the ongoing hateful acts that have been happening at the University of Wisconsin-Madison, I&amp;rsquo;m really the last one that you should be listening to. You should instead listen to UW students, such as the &lt;a href=&#34;http://www.unitedcouncilofuw.org/&#34;&gt;United Council of UW Students&lt;/a&gt;, who have submitted &lt;a href=&#34;http://www.unitedcouncilofuw.org/the-student-voice/2016/2/24/blackout-uw-system-administration-press-release-1212016&#34;&gt;a list of 5 reasonable demands&lt;/a&gt;, or Vice Provost and Chief Diversity Officer &lt;a href=&#34;http://provost.wisc.edu/climate.htm&#34;&gt;Patrick Sims&lt;/a&gt;, who made an &lt;a href=&#34;https://www.youtube.com/watch?v=zMBQUzwnCL0&amp;amp;feature=youtu.be&#34;&gt;important 8-min video&lt;/a&gt; in response to a recent hateful incident that you should now go away and watch (really, stop reading what I have to say and spend 8 minutes watching that video), or &lt;a href=&#34;https://www.dance.wisc.edu/dance/people/faculty/chris-walker&#34;&gt;Chris Walker&lt;/a&gt;, Asst Prof in the dance department, who spoke movingly today at the UW-Madison Faculty Senate meeting about the shit that faculty and students of color have to put up with on campus.&lt;/p&gt;
-
-&lt;p&gt;Lot&amp;rsquo;s of crap has been happening in Wisconsin lately. My focus has been on what Scott Walker and company have been doing to the state and to the University of Wisconsin, most recently by making huge cuts to state support to the UW System and by weakening tenure and shared governance.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s all been an embarrassment, and depressing, but in comparison to the hateful racist shit that&amp;rsquo;s been happening on campus, and Vice Provost Sims reported that there have been &amp;gt;30 &lt;em&gt;reported&lt;/em&gt; hate or bias incidents on campus this year, tenure and funding just don&amp;rsquo;t seem that important.&lt;/p&gt;
-
-&lt;p&gt;Chris Walker&amp;rsquo;s speech at the Faculty Senate today really hammered this home. As a black man on campus, he&amp;rsquo;s experienced a lot of shit: worse shit then we&amp;rsquo;re seeing in the papers. And if we don&amp;rsquo;t fix this, our students can&amp;rsquo;t be successful. We &lt;em&gt;must&lt;/em&gt; fix this.&lt;/p&gt;
-
-&lt;p&gt;What can a biostatistics professor do? I&amp;rsquo;m open to suggestions.&lt;/p&gt;
-
-&lt;p&gt;But for now, I&amp;rsquo;ll follow Patrick Sims&amp;rsquo;s suggestion and start with one of the &lt;a href=&#34;http://www.unitedcouncilofuw.org/the-student-voice/2016/2/24/blackout-uw-system-administration-press-release-1212016&#34;&gt;United Council of UW Students&amp;rsquo; demands&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;We demand that the University of Wisconsin System creates and enforces comprehensive racial awareness and inclusion curriculum and trainings throughout all 26 UW Institution departments, mandatory for all students, faculty, staff, campus &amp; system administration, and regents. This curriculum and training must be vetted, maintained, and overseen by a board comprised of students, staff, and faculty of color.&lt;/blockquote&gt;
-
-&lt;p&gt;I&amp;rsquo;ve written an email to the faculty in &lt;a href=&#34;http://www.biostat.wisc.edu&#34;&gt;my department&lt;/a&gt;, asking that we, as a department, &lt;em&gt;volunteer&lt;/em&gt; to participate in such racial awareness training:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/04/email_to_dept1.png&#34; alt=&#34;email_to_dept&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Correction&lt;/strong&gt;: There&amp;rsquo;s an error in my email; Chris Walker is Associate Professor, and has been for a couple of years.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Chris Walker&amp;rsquo;s speech at the 4 Apr 2016 Faculty Senate meeting was &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;recorded&lt;/a&gt;! Must listen.&lt;/p&gt;
 </description>
     </item>
     

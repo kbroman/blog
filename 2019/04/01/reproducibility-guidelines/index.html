@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>Reproducibility guidelines - the stupidest thing...</title>
+<meta property="og:title" content="Reproducibility guidelines - the stupidest thing...">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://kbroman.org/blog/css/fonts.css" media="all">
+<link rel="stylesheet" href="https://kbroman.org/blog/css/main.css" media="all">
+
+<link rel="stylesheet" href="https://kbroman.org/blog/css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://kbroman.org/blog/" class="nav-logo">
+    <img src="https://kbroman.org/blog/images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://kbroman.org/blog/about">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Reproducibility guidelines</h1>
+
+    
+    <span class="article-date">2019/04/01</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>I’m in Delft, The Netherlands, for a few days this week, at a <a href="https://o2r.info/reproducible-agile/initiative/">workshop</a> to develop guidelines for reproducibility for <a href="https://agile-online.org/">AGILE</a> conference papers. I’m here as one of the outside “<a href="https://o2r.info/reproducible-agile/initiative/#expert-meeting">experts</a>”. (It’s always a bit disconcerting to be considered an expert.) The <a href="https://o2r.info/reproducible-agile/initiative/#initiative-members">leaders of this effort</a> wrote an interesting <a href="https://doi.org/10.7717/peerj.5072">PeerJ paper</a> last year, evaluating the reproducibility of previous AGILE papers.</p>
+<p>There will be a <a href="https://o2r.info/reproducible-agile/initiative/#community-webinar">community webinar</a> tomorrow (2019-04-02) at <a href="https://www.timeanddate.com/worldclock/meetingdetails.html?year=2019&amp;month=4&amp;day=2&amp;hour=14&amp;min=0&amp;sec=0&amp;p1=16">16:00 CEST</a> (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.</p>
+<p>I’m particularly interested in developing these guidelines and using what I learn to further reproduciblity of work published in the journals <a href="http://www.genetics.org">Genetics</a> and <a href="http://www.g3journal.org">G3</a>. These journals have been doing a great job of enforcing their policy that data be made publicly available. They’ve also had a policy that software be made available, but there has not been much effort to enforce that, and it’s clear that many authors need further pressure (or <em>encouragement</em>) before they will comply.</p>
+<p>I’ve done a better job with reproducibility of my recent papers (about <a href="https://github.com/kbroman/Paper_Rqtl2">R/qtl2</a> and <a href="https://github.com/kbroman/Paper_MPPdiag">genotype diagnostics</a>), but it remains a challenge to keep things well-organized and well-documented.</p>
+<p>Regarding these reproducibility guidelines, I think authors will benefit from very specific suggestions that can accommodate different levels of computational “sophistication.” And I think what will be particularly helpful will be a variety of specific examples that authors might use as templates. I’ve been impressed with the care that <a href="http://valdarlab.unc.edu">Will Valdar</a>’s group has been devoting to reproducibility. For example, the <a href="https://doi.org/10.1534/g3.118.200847">recent paper by Shorter et al.</a> is accompanied by a proper <a href="https://github.com/mauriziopaul/litterDiallel">R Compendium</a>. Will’s student <a href="https://github.com/rcorty/">Roberty Corty</a> has github repositories for his recent papers on variance QTL, including <a href="https://github.com/rcorty/qtl_mapping_with_BVH_supporting_files">this</a> and <a href="https://github.com/rcorty/mvqtl_reanalyses_Bailey_Kumar_supporting_files">that</a>.</p>
+
+    </div>
+  </article>
+
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  
+  var disqus_config = function () {
+    this.page.url = "https:\/\/kbroman.org\/blog" + location.pathname;
+  };
+  
+  (function() {
+   var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var d = document, s = d.createElement('script');
+    s.src = '//kbroman-blog.disqus.com/embed.js'; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

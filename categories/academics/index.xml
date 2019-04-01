@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/categories/academics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reproducibility guidelines</title>
+      <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
+      <description>I’m in Delft, The Netherlands, for a few days this week, at a workshop to develop guidelines for reproducibility for AGILE conference papers. I’m here as one of the outside “experts”. (It’s always a bit disconcerting to be considered an expert.) The leaders of this effort wrote an interesting PeerJ paper last year, evaluating the reproducibility of previous AGILE papers.
+There will be a community webinar tomorrow (2019-04-02) at 16:00 CEST (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.</description>
+    </item>
     
     <item>
       <title>these guys</title>
@@ -333,18 +343,6 @@ We get them in an Excel file, and I was working on a Perl script to parse the fi
       <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
 For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
 For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
-    </item>
-    
-    <item>
-      <title>What a waste of paper</title>
-      <link>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</link>
-      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</guid>
-      <description>A university press asked me to review a book manuscript, and the author &amp;ldquo;has asked that we not use electronic copies.&amp;rdquo; So they&amp;rsquo;re going to send me a hard copy.
-My response: &amp;ldquo;If you only give me a paper copy, I&amp;rsquo;m going to just scan it and toss the paper. That seems like a waste of time (and paper and postage).&amp;rdquo;
-I should probably have said, &amp;ldquo;Then forget it.&amp;rdquo;
-Their response included, &amp;ldquo;What you do with it when it arrives I am just going to take a hear-no-evil approach to.</description>
     </item>
     
   </channel>
