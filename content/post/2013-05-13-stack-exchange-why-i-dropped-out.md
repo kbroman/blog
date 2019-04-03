@@ -12,7 +12,7 @@ tags:
 slug: stack-exchange-why-i-dropped-out
 ---
 
-[Stack Exchange](http://stackexchange.com) is a series of question-and-answer sites, including [Stack Overflow](http://stackoverflow.com) for programming and [Cross Validated](http://stats.stackexchange.com/) for statistics.  I was [introduced to these sites](http://kbroman.org/blog/2011/09/26/gamified/) at a short talk by [Barry Rowlingson](http://geospaced.blogspot.com/) at the 2011 UseR! meeting, "Why R-help must die!"
+[Stack Exchange](https://stackexchange.com) is a series of question-and-answer sites, including [Stack Overflow](https://stackoverflow.com) for programming and [Cross Validated](https://stats.stackexchange.com/) for statistics.  I was [introduced to these sites](https://kbroman.org/blog/2011/09/26/gamified/) at a short talk by [Barry Rowlingson](https://geospaced.blogspot.com/) at the 2011 UseR! meeting, "Why R-help must die!"
 
 These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.
 
@@ -31,13 +31,13 @@ These sites have a lot of advantages over R-help: The format is easier to read, 
   * The easy questions go fast; you have to watch constantly if you want a chance at them.
 
   * Far too many questions are either dreadfully dull or terribly sloppy.
-(See [Jeromy Anglim](http://jeromyanglim.blogspot.com/)'s "[How to ask me a statistics question](http://jeromyanglim.blogspot.com.au/2011/03/how-to-ask-me-statistics-question.html)" and [Eric S. Raymond](http://catb.org/~esr/)'s "[How to ask questions the smart way](http://catb.org/~esr/faqs/smart-questions.html).")
+(See [Jeromy Anglim](https://jeromyanglim.blogspot.com/)'s "[How to ask me a statistics question](https://jeromyanglim.blogspot.com.au/2011/03/how-to-ask-me-statistics-question.html)" and [Eric S. Raymond](http://catb.org/~esr/)'s "[How to ask questions the smart way](http://catb.org/~esr/faqs/smart-questions.html).")
 
   * Good answers are, at times, insufficiently appreciated.
 
 ### So I gave up
 
-I started spending time on [stackoverflow](http://stackoverflow.com) and [cross-validated](http://stats.stackexchange.com) soon after returning from UseR! 2011, but I lost my patience and quit within three months.
+I started spending time on [stackoverflow](https://stackoverflow.com) and [cross-validated](https://stats.stackexchange.com) soon after returning from UseR! 2011, but I lost my patience and quit within three months.
 
 One needs to treat each question with respect, and I eventually seemed to lose my ability to sustain such goodwill.  I think I take things too personally.
 
