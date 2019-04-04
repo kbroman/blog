@@ -20,7 +20,7 @@ As Titus points out, a traditional lab notebook serves two purposes: provenance 
 
 ### Version control
 
-I really like [git](http://git-scm.com/) with [github](http://github.com). (See [my tutorial](http://kbroman.github.io/github_tutorial/).) But for me, the basic need served by version control  is that embodied in the question, "This shit worked before; why isn't it working now?"
+I really like [git](https://git-scm.com/) with [github](https://github.com). (See [my tutorial](https://kbroman.github.io/github_tutorial/).) But for me, the basic need served by version control  is that embodied in the question, "This shit worked before; why isn't it working now?"
 
 You don't want to edit working code _in place_ and so possibly break a working system. Version control lets you try things out, and to try something out in any version of your software, from any point in time.
 
@@ -30,21 +30,21 @@ These are really useful things, but version control is more about _merging_ and 
 
 ### Make is the thing
 
-To me, the basic tool to make research reproducible is [GNU make](http://www.gnu.org/software/make/) (see my [minimal tutorial](http://kbroman.github.io/minimal_make/)). You create a `Makefile` that documents all analysis steps in a project. (For example, "Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.")
+To me, the basic tool to make research reproducible is [GNU make](https://www.gnu.org/software/make/) (see my [minimal tutorial](https://kbroman.github.io/minimal_make/)). You create a `Makefile` that documents all analysis steps in a project. (For example, "Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.")
 
 With GNU make (see also [rake](http://rake.rubyforge.org/)), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing `Makefile`, the research is reproducible.
 
 ### Add knitr, and you've got a notebook
 
-The other ingredient to create the computational scientist's equivalent of a lab notebook is [knitr](http://yihui.name/knitr/), which allows one to combine text (e.g., in [Markdown](http://daringfireball.net/projects/markdown/) or [asciidoc](http://www.methods.co.nz/asciidoc/)) and code (e.g., in [R](http://www.r-project.org)) to make documents (e.g., in html or PDF) that both _do_ the work and _explain_ the work. Write such documents to describe what you did and what you learned, and you've got an electronic lab notebook.
+The other ingredient to create the computational scientist's equivalent of a lab notebook is [knitr](https://yihui.name/knitr/), which allows one to combine text (e.g., in [Markdown](https://daringfireball.net/projects/markdown/) or [asciidoc](https://www.methods.co.nz/asciidoc/)) and code (e.g., in [R](https://www.r-project.org)) to make documents (e.g., in html or PDF) that both _do_ the work and _explain_ the work. Write such documents to describe what you did and what you learned, and you've got an electronic lab notebook.
 
-You could even get rid of your `Makefile` by having an over-arching knitr-based document that does it all.  But I still like [make](http://www.gnu.org/software/make).
+You could even get rid of your `Makefile` by having an over-arching knitr-based document that does it all.  But I still like [make](https://www.gnu.org/software/make).
 
 ### But it's so much work!
 
 Going into a file and deleting a data point is a lot easier than writing a script that does it (and also documents _why_). But I don't think you should be going in and changing the data like that, even if it is being tracked by version control. (And that is the main complaint potential users have about version control: "Too time consuming!")
 
-I think you have to expect that writing well-documented scripts and [knitr](http://yihui.name/knitr/)-based reports that capture the totality of a data analysis project will take a lot of work: perhaps double (or more!) the effort. But it will save a ton of time later (if others care about what you did).
+I think you have to expect that writing well-documented scripts and [knitr](https://yihui.name/knitr/)-based reports that capture the totality of a data analysis project will take a lot of work: perhaps double (or more!) the effort. But it will save a ton of time later (if others care about what you did).
 
 I don't really want to take this time in the midst of a bout of exploratory data analysis. I find it too inhibiting. So I tend to do a bunch of analyses, capturing the main ideas in a draft R script (or reconstructed later from the `.Rhistory` file), and then go back later to make a clean knitr-based document that explains what I was doing and why.
 
