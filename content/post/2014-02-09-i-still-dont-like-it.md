@@ -12,7 +12,7 @@ tags:
 slug: i-still-dont-like-it
 ---
 
-I got a book in the mail this week, a book I hadn't ordered and would never have ordered. The publisher sent me a complimentary copy, as I'd reviewed the book proposal last year. (It's the one where [the author refused to allow me to have an electronic copy](http://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/).)
+I got a book in the mail this week, a book I hadn't ordered and would never have ordered. The publisher sent me a complimentary copy, as I'd reviewed the book proposal last year. (It's the one where [the author refused to allow me to have an electronic copy](https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/).)
 
 Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:
 
