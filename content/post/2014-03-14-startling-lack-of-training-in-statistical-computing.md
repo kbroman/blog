@@ -12,7 +12,7 @@ slug: startling-lack-of-training-in-statistical-computing
 
 It is shocking to me that [a statistics department](http://www.stat.wisc.edu) would offer a graduate-level statistical computing course only _every fourth year_.
 
-I [had been arguing for a statistical programming course](http://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/): that we supplement the usual course on the _theory_ of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the _practice_ of statistical computing.
+I [had been arguing for a statistical programming course](https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/): that we supplement the usual course on the _theory_ of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the _practice_ of statistical computing.
 
 But I was assuming that the more theoretical statistical computing course was _actually being taught_.
 
