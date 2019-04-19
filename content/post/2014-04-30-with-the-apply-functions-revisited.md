@@ -9,7 +9,7 @@ tags:
 slug: with-the-apply-functions-revisited
 ---
 
-I'd [mentioned in the fall](http://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/) that one could use `"["` in the `apply`-type functions, like this:
+I'd [mentioned in the fall](https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/) that one could use `"["` in the `apply`-type functions, like this:
 
 ````
 id <- c("ZYY-43S-CWA3", "6YU-F4B-VD2I")
@@ -24,4 +24,4 @@ lapply(z, "[", 1, )
 lapply(z, "[", , 3)
 ````
 
-As you can see, my data isn't "[tidy](http://vita.had.co.nz/papers/tidy-data.pdf)."
+As you can see, my data isn't "[tidy](https://www.jstatsoft.org/article/view/v059i10)."
