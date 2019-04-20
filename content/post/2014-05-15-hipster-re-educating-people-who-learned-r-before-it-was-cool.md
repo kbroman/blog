@@ -9,9 +9,9 @@ tags:
 slug: hipster-re-educating-people-who-learned-r-before-it-was-cool
 ---
 
-This morning, I started [a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.](http://kbroman.github.io/hipsteR/)
+This morning, I started [a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.](https://kbroman.org/hipsteR/)
 
-Yesterday I started reading the [Rcpp book](http://www.amazon.com/exec/obidos/ASIN/1461468671/7210-20), and on page 4 there's an example using the R function `replicate`, which (a) I'd never heard before, and (b) is super useful.
+Yesterday I started reading the [Rcpp book](https://www.amazon.com/exec/obidos/ASIN/1461468671/7210-20), and on page 4 there's an example using the R function `replicate`, which (a) I'd never heard before, and (b) is super useful.
 
 I mean, I often write code like this, for a bootstrap:
 
@@ -29,7 +29,7 @@ replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
 
 "Oh, `replicate` must be some new function." Yeah, new in **R version 1.8, in 2003!**
 
-I'm in serious need of some re-education (e.g., I should be using more of [Hadley Wickham's packages](http://github.com/hadley)). Hence the beginnings of a tutorial.
+I'm in serious need of some re-education (e.g., I should be using more of [Hadley Wickham's packages](https://github.com/hadley)). Hence the beginnings of a tutorial.
 
 * * *
 
