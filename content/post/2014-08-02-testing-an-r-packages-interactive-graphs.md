@@ -13,11 +13,11 @@ tags:
 slug: testing-an-r-packages-interactive-graphs
 ---
 
-I've been working on an R package, [R/qtlcharts](http://kbroman.org/qtlcharts), with [D3](http://d3js.org)-based interactive graphs for quantitative trait locus mapping experiments.
+I've been working on an R package, [R/qtlcharts](https://kbroman.org/qtlcharts), with [D3](https://d3js.org)-based interactive graphs for quantitative trait locus mapping experiments.
 
 Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much _have_ to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they're not giving any sort of errors.
 
-But if I want to post the package to [CRAN](http://cran.r-project.org), it seems (from the [CRAN policy](http://cran.r-project.org/web/packages/policies.html)) that the examples in the `.Rd` files shouldn't be opening a web browser. Thus, I need to surround the example code with `\dontrun{}`.
+But if I want to post the package to [CRAN](https://cran.r-project.org), it seems (from the [CRAN policy](https://cran.r-project.org/web/packages/policies.html)) that the examples in the `.Rd` files shouldn't be opening a web browser. Thus, I need to surround the example code with `\dontrun{}`.
 
 But I was using those examples, and `R CMD check`, to open the series of examples for manual checking.
 
