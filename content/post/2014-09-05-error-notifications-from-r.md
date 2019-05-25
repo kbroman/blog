@@ -10,9 +10,9 @@ tags:
 slug: error-notifications-from-r
 ---
 
-I'm enthusiastic about having [R notify me when my script is done](http://kbroman.org/blog/2014/09/03/notifications-from-r/).
+I'm enthusiastic about having [R notify me when my script is done](https://kbroman.org/blog/2014/09/03/notifications-from-r/).
 
-But among my early uses of this, my script threw an error, and I never got a text or [pushbullet](http://pushbullet.com) about _that_. And really, I'm even more interested in being notified about such errors than anything else.
+But among my early uses of this, my script threw an error, and I never got a text or [pushbullet](https://pushbullet.com) about _that_. And really, I'm even more interested in being notified about such errors than anything else.
 
 It's relatively easy to get notified of errors. At the top of your script, include code like `options(error = function() { } )`
 
