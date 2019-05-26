@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <title>Improved graphs of car crash stats - the stupidest thing...</title>
@@ -80,16 +80,16 @@
     <div class="article-content">
       
 
-<p>Last week, <a href="https://twitter.com/MonaChalabi">Mona Chalabi</a> wrote <a href="http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/">an interesting post on car crash statistics by state</a>, at <a href="http://fivethirtyeight.com/">fivethirtyeight.com</a>.</p>
+<p>Last week, <a href="https://twitter.com/MonaChalabi">Mona Chalabi</a> wrote <a href="https://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/">an interesting post on car crash statistics by state</a>, at <a href="https://fivethirtyeight.com/">fivethirtyeight.com</a>.</p>
 
 <p>I didn&rsquo;t like the figures so much, though. There were a number of them like this:</p>
 
 <p><img src="https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png" alt="chalabi-dearmona-drinking" /></p>
 
-<p>I&rsquo;m giving a talk today about data visualization [<a href="http://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf">slides</a> | <a href="https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014">github</a>], and I thought this would make a good example, so I spent some time creating versions that I like better.
+<p>I&rsquo;m giving a talk today about data visualization [<a href="https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf">slides</a> | <a href="https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014">github</a>], and I thought this would make a good example, so I spent some time creating versions that I like better.
 <!-- more --></p>
 
-<p>There are two basic issues with Mona Chalabi&rsquo;s graphs. First, you almost <em>never</em> want to use alphabetical order. It&rsquo;s useful for finding particular states, but it&rsquo;s not useful for anything else. (Howard Wainer calls this &ldquo;Austria first!&rdquo; See, e.g., <a href="http://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf">this paper</a>.) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.</p>
+<p>There are two basic issues with Mona Chalabi&rsquo;s graphs. First, you almost <em>never</em> want to use alphabetical order. It&rsquo;s useful for finding particular states, but it&rsquo;s not useful for anything else. (Howard Wainer calls this &ldquo;Austria first!&rdquo; See, e.g., <a href="https://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf">this paper</a>.) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.</p>
 
 <p>Second, the separate figures make comparisons difficult. It would be better to put everything side-by-side. Even better is to do some scatterplots.</p>
 
@@ -101,7 +101,7 @@
 
 <p><img src="https://kbroman.files.wordpress.com/2014/10/dotplots.png" alt="Dot plots of crash statistics" /></p>
 
-<p>The design was inspired by the figures in <a href="http://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20">Visualizing data patterns with micromaps</a> (Carr and Pickle, 2010). (I&rsquo;m a huge <a href="http://mason.gmu.edu/~dcarr/">Dan Carr</a> fan.)</p>
+<p>The design was inspired by the figures in <a href="https://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20">Visualizing data patterns with micromaps</a> (Carr and Pickle, 2010). (I&rsquo;m a huge <a href="https://mason.gmu.edu/~dcarr/">Dan Carr</a> fan.)</p>
 
 <p>Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes <em>with fatalities</em>.) And you can more easily see the associations among the different variables.</p>
 
@@ -113,11 +113,11 @@
 
 <p>The association between average insurance premiums and average insurance losses is now clear. And there&rsquo;s an interesting pattern in the association between speeding-related crashes and total crashes. It&rsquo;s like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.</p>
 
-<p>You can&rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing <a href="http://www.jstor.org/stable/1269768">brushing</a>).</p>
+<p>You can&rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing <a href="https://www.jstor.org/stable/1269768">brushing</a>).</p>
 
 <h3 id="the-data">The data</h3>
 
-<p>It was a bit of a pain to get the data to make the revised plots. The <a href="http://www-fars.nhtsa.dot.gov/Main/index.aspx">National Highway Traffic Safety Administration</a> has a lot of data, but I didn&rsquo;t want to spend the time trying to make sense of it and extract the numbers.</p>
+<p>It was a bit of a pain to get the data to make the revised plots. The <a href="https://www-fars.nhtsa.dot.gov/Main/index.aspx">National Highway Traffic Safety Administration</a> has a lot of data, but I didn&rsquo;t want to spend the time trying to make sense of it and extract the numbers.</p>
 
 <p>I considered trying to do some image analysis to figure out the lengths of the bars in the bar plots, but I don&rsquo;t have much experience with that, so while it&rsquo;d be a great thing to learn, it seemed like I wouldn&rsquo;t be able to get it done in time.</p>
 
@@ -133,7 +133,7 @@
 
 <h3 id="update">Update</h3>
 
-<p><a href="http://fivethirtyeight.com/contributors/mona-chalabi/">Mona Chalabi</a> and <a href="http://fivethirtyeight.com/contributors/andrew-flowers/">Andrew Flowers</a> posted the data at <a href="https://github.com/fivethirtyeight/data/tree/master/bad-drivers"><code>github.com/fivethirtyeight/data</code></a>. I discuss the errors in my ruler-based measurements <a href="http://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/">here</a>.</p>
+<p><a href="https://fivethirtyeight.com/contributors/mona-chalabi/">Mona Chalabi</a> and <a href="https://fivethirtyeight.com/contributors/andrew-flowers/">Andrew Flowers</a> posted the data at <a href="https://github.com/fivethirtyeight/data/tree/master/bad-drivers"><code>github.com/fivethirtyeight/data</code></a>. I discuss the errors in my ruler-based measurements <a href="https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/">here</a>.</p>
 
     </div>
   </article>
