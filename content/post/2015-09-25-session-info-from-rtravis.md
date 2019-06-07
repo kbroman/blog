@@ -12,11 +12,11 @@ tags:
 slug: session-info-from-rtravis
 ---
 
-For the problem [I reported yesterday](http://kbroman.org/blog/2015/09/24/its-not-you-its-me), in which my R package was working fine locally but failing on [Travis](http://travis-ci.org), the key solution is to run `update.packages(ask=FALSE)` locally, and maybe even `update.packages(ask=FALSE, type="source")` to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
+For the problem [I reported yesterday](https://kbroman.org/blog/2015/09/24/its-not-you-its-me), in which my R package was working fine locally but failing on [Travis](https://travis-ci.org), the key solution is to run `update.packages(ask=FALSE)` locally, and maybe even `update.packages(ask=FALSE, type="source")` to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
 
 In addition, it'd be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.
 
-If you don't want to go with a fully custom Travis script, your [customization options](http://docs.travis-ci.com/user/customizing-the-build/) are limited. We really only care about the case of a failure, so `after_success` is not of interest, and `after_script` seems not to be run if there's a Travis fail. Moreover, `script` and `after_failure` are defined by the main `language: r` script, so you can't change them without going all-custom.
+If you don't want to go with a fully custom Travis script, your [customization options](https://docs.travis-ci.com/user/customizing-the-build/) are limited. We really only care about the case of a failure, so `after_success` is not of interest, and `after_script` seems not to be run if there's a Travis fail. Moreover, `script` and `after_failure` are defined by the main `language: r` script, so you can't change them without going all-custom.
 
 What's left is `before_script`.
 
