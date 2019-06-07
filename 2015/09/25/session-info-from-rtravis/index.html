@@ -83,11 +83,11 @@
     
 
     <div class="article-content">
-      <p>For the problem <a href="http://kbroman.org/blog/2015/09/24/its-not-you-its-me">I reported yesterday</a>, in which my R package was working fine locally but failing on <a href="http://travis-ci.org">Travis</a>, the key solution is to run <code>update.packages(ask=FALSE)</code> locally, and maybe even <code>update.packages(ask=FALSE, type=&quot;source&quot;)</code> to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.</p>
+      <p>For the problem <a href="https://kbroman.org/blog/2015/09/24/its-not-you-its-me">I reported yesterday</a>, in which my R package was working fine locally but failing on <a href="https://travis-ci.org">Travis</a>, the key solution is to run <code>update.packages(ask=FALSE)</code> locally, and maybe even <code>update.packages(ask=FALSE, type=&quot;source&quot;)</code> to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.</p>
 
 <p>In addition, it&rsquo;d be useful to have session information (R and package versions) in the results from Travis. This has proven a bit tricky.</p>
 
-<p>If you don&rsquo;t want to go with a fully custom Travis script, your <a href="http://docs.travis-ci.com/user/customizing-the-build/">customization options</a> are limited. We really only care about the case of a failure, so <code>after_success</code> is not of interest, and <code>after_script</code> seems not to be run if there&rsquo;s a Travis fail. Moreover, <code>script</code> and <code>after_failure</code> are defined by the main <code>language: r</code> script, so you can&rsquo;t change them without going all-custom.</p>
+<p>If you don&rsquo;t want to go with a fully custom Travis script, your <a href="https://docs.travis-ci.com/user/customizing-the-build/">customization options</a> are limited. We really only care about the case of a failure, so <code>after_success</code> is not of interest, and <code>after_script</code> seems not to be run if there&rsquo;s a Travis fail. Moreover, <code>script</code> and <code>after_failure</code> are defined by the main <code>language: r</code> script, so you can&rsquo;t change them without going all-custom.</p>
 
 <p>What&rsquo;s left is <code>before_script</code>.</p>
 
