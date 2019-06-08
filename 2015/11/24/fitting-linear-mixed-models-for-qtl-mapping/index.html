@@ -80,9 +80,9 @@
     <div class="article-content">
       <p>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.</p>
 
-<p>In my efforts on <a href="http://kbroman.org/qtl2">R/qtl2</a>, a reimplementation <a href="http://rqtl.org">R/qtl</a> to better handle high-dimensional data and more complex cross designs, it was clear that I&rsquo;d need to figure out LMMs. But while <a href="http://www.jstatsoft.org/article/view/v067i01">papers explaining the fit of LMMs</a> seem quite explicit and clear, I&rsquo;d never quite turned the corner to actually seeing how I&rsquo;d implement it. In both reading papers and studying code (e.g., <a href="https://github.com/lme4/lme4/">lme4</a>), I&rsquo;d be going along fine and then get completely lost part-way through.</p>
+<p>In my efforts on <a href="https://kbroman.org/qtl2">R/qtl2</a>, a reimplementation <a href="http://rqtl.org">R/qtl</a> to better handle high-dimensional data and more complex cross designs, it was clear that I&rsquo;d need to figure out LMMs. But while <a href="https://www.jstatsoft.org/article/view/v067i01">papers explaining the fit of LMMs</a> seem quite explicit and clear, I&rsquo;d never quite turned the corner to actually seeing how I&rsquo;d implement it. In both reading papers and studying code (e.g., <a href="https://github.com/lme4/lme4/">lme4</a>), I&rsquo;d be going along fine and then get completely lost part-way through.</p>
 
-<p>But I now finally understand LMMs, or at least a particular, simple LMM, and I&rsquo;ve been able to write an implementation: the R package <a href="http://kbroman.org/lmmlite">lmmlite</a>.</p>
+<p>But I now finally understand LMMs, or at least a particular, simple LMM, and I&rsquo;ve been able to write an implementation: the R package <a href="https://kbroman.org/lmmlite">lmmlite</a>.</p>
 
 <p>It seemed worthwhile to write down some of the details.</p>
 
@@ -90,7 +90,7 @@
 
 <p>The model I want to fit is <em>y = X b + e</em>, where var(<em>e</em>) = <em>sK + tI</em>, where <em>K</em> is a known kinship matrix and <em>I</em> is the identity matrix. Think of <em>y</em> as a vector of phenotypes and <em>X</em> as a matrix of covariates. Let <em>v = s+t</em> be the residual variance, and let <em>h = s/(s+t) = s/v</em> be the heritability.</p>
 
-<p>First, a shout to <a href="https://github.com/lomereiter">Artem Tarasov</a>, who wrote a <a href="http://lomereiter.github.io/2015/02/16/lmm_cov.html">series of blog posts</a> walking through and explaining the source code for <a href="https://github.com/MicrosoftGenomics/FaST-LMM">FaST-LMM</a> and <a href="https://github.com/nickFurlotte/pylmm">pylmm</a>, and to <a href="http://whatmind.com/">Nick Furlotte</a>, whose <a href="https://github.com/nickFurlotte/pylmm">pylmm</a> code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.</p>
+<p>First, a shout to <a href="https://github.com/lomereiter">Artem Tarasov</a>, who wrote a <a href="https://lomereiter.github.io/2015/02/16/lmm_cov.html">series of blog posts</a> walking through and explaining the source code for <a href="https://github.com/MicrosoftGenomics/FaST-LMM">FaST-LMM</a> and <a href="https://github.com/nickFurlotte/pylmm">pylmm</a>, and to <a href="http://whatmind.com/">Nick Furlotte</a>, whose <a href="https://github.com/nickFurlotte/pylmm">pylmm</a> code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.</p>
 
 <p>Back to the model fit:</p>
 
@@ -108,7 +108,7 @@
 
 <p>It seems quite obvious in retrospect. It&rsquo;s a bit embarrassing that it&rsquo;s taken me so long to come to this understanding.</p>
 
-<p>In <a href="http://kbroman.org/lmmlite">lmmlite</a>, I implemented this algorithm (closely following the code in <a href="https://github.com/nickFurlotte/pylmm">pylmm</a>) twice: in plain R, and then in C++ (using <a href="https://github.com/RcppCore/RcppEigen">RcppEigen</a>, which is an interface to the <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a> C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&rsquo;s done, the rest is super quick.</p>
+<p>In <a href="https://kbroman.org/lmmlite">lmmlite</a>, I implemented this algorithm (closely following the code in <a href="https://github.com/nickFurlotte/pylmm">pylmm</a>) twice: in plain R, and then in C++ (using <a href="https://github.com/RcppCore/RcppEigen">RcppEigen</a>, which is an interface to the <a href="https://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a> C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&rsquo;s done, the rest is super quick.</p>
 
     </div>
   </article>
