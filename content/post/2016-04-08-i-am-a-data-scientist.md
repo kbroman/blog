@@ -10,7 +10,7 @@ tags:
 slug: i-am-a-data-scientist
 ---
 
-Three years ago this week, I wrote a blog post, "[Data science is statistics](http://kbroman.org/blog/2013/04/05/data-science-is-statistics/)". I was fiercely against the term at that time, as I felt that we already had a _data science_, and it was called _Statistics_.
+Three years ago this week, I wrote a blog post, "[Data science is statistics](https://kbroman.org/blog/2013/04/05/data-science-is-statistics/)". I was fiercely against the term at that time, as I felt that we already had a _data science_, and it was called _Statistics_.
 
 It was a short post, so I might as well quote the whole thing:
 
@@ -46,7 +46,7 @@ I still sort of feel that way, but I must admit that _my_ definition of "statist
 
 I'm sure I missed some things there, but my main point is that most academic statisticians focus solely on developing "sophisticated" methods for formal inference, and while I agree that that is an important piece, in my experience as an applied statistician, the other aspects are often of vastly greater importance. In many cases, we don't need to develop sophisticated new methods, and most of my effort is devoted to the other aspects, and these are generally treated as being unworthy of consideration by academic statisticians.
 
-As I wrote in a later post, "[Reform academic statistics](http://kbroman.org/blog/2014/05/01/reform-academic-statistics/)", we as a field appear satisfied with
+As I wrote in a later post, "[Reform academic statistics](https://kbroman.org/blog/2014/05/01/reform-academic-statistics/)", we as a field appear satisfied with
 
   * Papers that report new methods with no usable software
 
