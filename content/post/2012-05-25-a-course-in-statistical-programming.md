@@ -15,7 +15,7 @@ slug: a-course-in-statistical-programming
 
 Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.
 
-For example, [here's a course in "advanced statistical computing"](http://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html) that I taught at [Johns Hopkins](http://www.biostat.jhsph.edu) back in 2001.
+For example, [here's a course in "advanced statistical computing"](https://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html) that I taught at [Johns Hopkins](https://www.biostat.jhsph.edu) back in 2001.
 
 Many (perhaps most) good programmers learned to code outside of formal courses.  But many statisticians are terrible programmers and would benefit by a formal course.
 
@@ -23,9 +23,9 @@ Moreover, applied statisticians spend the vast majority of their time interactin
 
 One really learns to code in private, struggling over problems, but I benefited enormously from a statistical computing course I took from [Phil Spector](http://www.stat.berkeley.edu/~spector/) at [Berkeley](http://www.stat.berkeley.edu).
 
-[Brian Caffo](http://www.biostat.jhsph.edu/~bcaffo), [Ingo Ruczinski](http://www.biostat.jhsph.edu/~iruczins/), [Roger Peng](http://www.biostat.jhsph.edu/~rpeng), [Rafael Irizarry](http://www.biostat.jhsph.edu/~ririzarr/), and [I](http://www.biostat.wisc.edu/~kbroman) developed a [statistical programming course](http://www.biostat.jhsph.edu/~bcaffo/statcomp/) at Hopkins that (I think) really did the job.
+[Brian Caffo](http://www.biostat.jhsph.edu/~bcaffo), [Ingo Ruczinski](http://www.biostat.jhsph.edu/~iruczins/), [Roger Peng](http://www.biostat.jhsph.edu/~rpeng), [Rafael Irizarry](http://www.biostat.jhsph.edu/~ririzarr/), and [I](https://kbroman.org) developed a [statistical programming course](http://www.biostat.jhsph.edu/~bcaffo/statcomp/) at Hopkins that (I think) really did the job.
 
-I would like to develop a similar such course at [Wisconsin](http://www.biostat.wisc.edu): on statistical programming, in the most general sense.
+I would like to develop a similar such course at [Wisconsin](https://www.biostat.wisc.edu): on statistical programming, in the most general sense.
 
 I have in mind several basic principles:
 
