@@ -13,13 +13,13 @@ tags:
 slug: d3-js-difficulties
 ---
 
-I'm pleased with my progress learning javascript and [D3](http://d3js.org). (I'm actually writing [coffeescript](http://coffeescript.org) rather than javascript.)
+I'm pleased with my progress learning javascript and [D3](https://d3js.org). (I'm actually writing [coffeescript](https://coffeescript.org) rather than javascript.)
 
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 
 ### Put the script in the body
 
-First, I'd tried to make a [truly simple example](http://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html), making just an SVG with a little rectangle.
+First, I'd tried to make a [truly simple example](https://www.biostat.wisc.edu/~kbroman/D3/error1/error1.html), making just an SVG with a little rectangle.
 
 ````html
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ First, I'd tried to make a [truly simple example](http://www.biostat.wisc.edu/~k
 </html>
 ````
 
-But this gives nothing.  You need to move the script from the `head` to the `body`, [as it is here](http://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html).  Then it works.
+But this gives nothing.  You need to move the script from the `head` to the `body`, [as it is here](https://www.biostat.wisc.edu/~kbroman/D3/error1/error1b.html).  Then it works.
 
 I don't really understand this.  Perhaps I should go back to my reading.
 
