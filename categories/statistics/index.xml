@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/categories/statistics/</link>
+    <link>/categories/statistics/</link>
     <description>Recent content in Statistics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>halloween 2017</title>
-      <link>https://kbroman.org/blog/2017/10/31/halloween-2017/</link>
+      <link>/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
+      <guid>/2017/10/31/halloween-2017/</guid>
       <description>It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to 2016 and 2011.</description>
     </item>
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
+      <link>/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
+      <guid>/2016/10/31/halloween-2016-count/</guid>
       <description>Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our 2011 experience.)</description>
     </item>
     
     <item>
       <title>My JSM 2016 itinerary</title>
-      <link>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
+      <link>/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
+      <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
 First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
 Sunday  (2:00 - 3:50) Open source statistical software for data science</description>
@@ -43,10 +43,10 @@ Sunday  (2:00 - 3:50) Open source statistical software for data science</descrip
     
     <item>
       <title>I am a data scientist</title>
-      <link>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
 When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
@@ -54,30 +54,30 @@ When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
+      <link>/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>/2015/09/09/reproducibility-is-hard/</guid>
       <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
 I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
       <title>God-awful conference websites</title>
-      <link>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
+      <link>/2015/08/05/god-awful-conference-web-sites/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
+      <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>What do I want in a conference website? Not this.
  I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
  If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
@@ -85,20 +85,20 @@ I recently had a paper accepted at G3, concerning a huge set of sample mix-ups i
     
     <item>
       <title>Memories of past JSMs</title>
-      <link>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
+      <link>/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
+      <guid>/2015/08/03/memories-of-past-jsms/</guid>
       <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
 JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
 Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
 So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
@@ -106,20 +106,20 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
     
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
-      <link>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
+      <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
+      <guid>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
       <description>Last week, I created revised versions of graphs of car crash statistics by state (including an interactive version), from a post by Mona Chalabi at 538.
 Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture on creating effective figures and tables, I just read the data off printed versions of the bar charts, using a ruler.</description>
     </item>
     
     <item>
       <title>Interactive plot of car crash stats</title>
-      <link>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
 
 See it in action here.
@@ -128,10 +128,10 @@ Code on github.</description>
     
     <item>
       <title>Improved graphs of car crash stats</title>
-      <link>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</link>
+      <link>/2014/10/29/improved-graphs-of-car-crash-stats/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
+      <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>Last week, Mona Chalabi wrote an interesting post on car crash statistics by state, at fivethirtyeight.com.
 I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:
 I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better. There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
@@ -139,30 +139,30 @@ I&amp;rsquo;m giving a talk today about data visualization [slides | github], an
     
     <item>
       <title>2014 UseR conference, days 1-2</title>
-      <link>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
+      <link>/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
+      <guid>/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>I&amp;rsquo;m at UCLA for the UseR Conference. I attended once before, and I really enjoyed it. And I&amp;rsquo;m really enjoying this one. I&amp;rsquo;m learning a ton, and I find the talks very inspiring.
 In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I&amp;rsquo;m critical in some places about the conference organization. Having co-organized a small conference last year, I appreciate the difficulties.</description>
     </item>
     
     <item>
       <title>Reform academic statistics</title>
-      <link>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
     <item>
       <title>knitr in a knutshell tutorial</title>
-      <link>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
+      <link>/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
+      <guid>/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
       <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
 This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
 I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>
@@ -170,20 +170,20 @@ I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it
     
     <item>
       <title>Code review</title>
-      <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
+      <link>/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
+      <guid>/2013/09/25/code-review/</guid>
       <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
       <title>Department websites</title>
-      <link>https://kbroman.org/blog/2013/09/11/department-websites/</link>
+      <link>/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/09/11/department-websites/</guid>
+      <guid>/2013/09/11/department-websites/</guid>
       <description>I was thinking about department websites, partly because my own department&amp;rsquo;s website is terrible, and recently a colleague asked me whether I could suggest some good department sites.
 I&amp;rsquo;ll describe the basic principles for a good department website, and then I&amp;rsquo;ll comment on a number of examples.
 But first: No discussion of academic web pages is complete without referring to the xkcd comic on University websites, so let&amp;rsquo;s start with that:</description>
@@ -191,10 +191,10 @@ But first: No discussion of academic web pages is complete without referring to 
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
+      <link>/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>/2013/08/20/electronic-lab-notebook/</guid>
       <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
 I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
 As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
@@ -202,10 +202,10 @@ As Titus points out, a traditional lab notebook serves two purposes: provenance 
     
     <item>
       <title>More on Chutes &amp; Ladders</title>
-      <link>https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</link>
+      <link>/2013/05/20/more-on-chutes-ladders/</link>
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</guid>
+      <guid>/2013/05/20/more-on-chutes-ladders/</guid>
       <description>Matt Maenner asked about the sawtooth pattern in the figure in my last post on Chutes &amp;amp; Ladders.
 Damn you, Matt! I thought I was done with this. Don&amp;rsquo;t feed my obsession.
 My response was that if the game ends early, it&amp;rsquo;s even more likely that it&amp;rsquo;ll be the kid who went first who won. But, my intuition was wrong: exactly the opposite is true. It is the advantage to the first player that causes the sawtooth pattern, but that advantage increases with the number of rounds rather than decreases.</description>
@@ -213,10 +213,10 @@ My response was that if the game ends early, it&amp;rsquo;s even more likely tha
     
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
-      <link>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
+      <link>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
+      <guid>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
       <description>I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;
 I saw an interesting mathematical analysis of the game a few years ago, but it seems to be offline, though you can read it via the wayback machine.
 But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;
@@ -225,20 +225,20 @@ So I wrote a bit of R code to simulate the game.</description>
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>Stack Exchange is a series of question-and-answer sites, including Stack Overflow for programming and Cross Validated for statistics. I was introduced to these sites at a short talk by Barry Rowlingson at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;
 These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.</description>
     </item>
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
 If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
 To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
@@ -246,30 +246,30 @@ To help some colleagues get started with git and github, I wrote a minimal tutor
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>There was lots of discussion on twitter yesterday about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on The geography of recent genetic ancestry across Europe, particularly regarding the FAQ they&amp;rsquo;d created.
 I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.</description>
     </item>
     
     <item>
       <title>Methods before results</title>
-      <link>https://kbroman.org/blog/2013/04/29/methods-before-results/</link>
+      <link>/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
+      <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
  To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
       <title>Data science is statistics</title>
-      <link>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</link>
+      <link>/2013/04/05/data-science-is-statistics/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
+      <guid>/2013/04/05/data-science-is-statistics/</guid>
       <description>When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
 If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.
 If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation. We need to define the field broadly.
@@ -278,20 +278,20 @@ You may not like what some statisticians do.</description>
     
     <item>
       <title>Thoughts on statistical consulting</title>
-      <link>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</link>
+      <link>/2013/04/02/thoughts-on-statistical-consulting/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
+      <guid>/2013/04/02/thoughts-on-statistical-consulting/</guid>
       <description>The Statistics Department at UW-Madison has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.
 I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties. This will be a bit rough, and long. I&amp;rsquo;ll revert to bullet points, to be more compact (and because I&amp;rsquo;m lazy).</description>
     </item>
     
     <item>
       <title>Data structures are important</title>
-      <link>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
+      <link>/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
+      <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
 
 The code is on github. It took me about a day.
@@ -300,10 +300,10 @@ The hardest part was figuring out the right data structures. A pixel here is lin
     
     <item>
       <title>ENAR highs and lows</title>
-      <link>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
+      <link>/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
+      <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
 I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
 Let me tell you about the high- and lowlights, for me.</description>
@@ -311,20 +311,20 @@ Let me tell you about the high- and lowlights, for me.</description>
     
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
 We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
     </item>
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
 For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
 For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>

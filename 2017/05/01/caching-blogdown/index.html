@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 
 <title>caching blogdown - the stupidest thing...</title>
 <meta property="og:title" content="caching blogdown - the stupidest thing...">
+
 
 
 
@@ -19,10 +20,10 @@
 
 
 
-<link rel="stylesheet" href="https://kbroman.org/blog/css/fonts.css" media="all">
-<link rel="stylesheet" href="https://kbroman.org/blog/css/main.css" media="all">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
-<link rel="stylesheet" href="https://kbroman.org/blog/css/custom.css">
+<link rel="stylesheet" href="../../../../css/custom.css">
 
 
 
@@ -31,14 +32,14 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="https://kbroman.org/blog/" class="nav-logo">
-    <img src="https://kbroman.org/blog/images/karl.png"
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -74,17 +75,29 @@
     <h1 class="article-title">caching blogdown</h1>
 
     
-    <span class="article-date">2017/05/01</span>
+    <span class="article-date">2017-05-01</span>
     
 
     <div class="article-content">
       
 
 
-<p><a href="https://github.com/rstudio/blogdown">blogdown</a> is cool, but it seems that it builds every <code>.Rmd</code> file every time you run <code>build_site()</code>, so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.</p>
-<p>I had the mistaken impression that blogdown would look at the timestamps on the <code>.Rmd</code> and <code>.html</code> and only build the <code>.html</code> if the <code>.Rmd</code> file is newer, but that’s not true.</p>
-<p>My <a href="https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/">post about sqlite, feather, and fst</a> is rather slow, because I’m writing and reading rather big files and measuring access times. So it was looking like building my <a href="https://kbroman.org/blog">new blog</a> would be really painful, forever more.</p>
-<p>Thus, I spent a bunch of time reworking the post to cache the times rather than running things every time the <code>.Rmd</code> file was built. <a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">It’s not pretty</a>, and my method is <em>not</em> generally recommended, but it seems to work.</p>
+<p><a href="https://github.com/rstudio/blogdown">blogdown</a> is cool, but it seems
+that it builds every <code>.Rmd</code> file every time you run <code>build_site()</code>, so
+if your site includes an analysis that takes a while…well, every
+time you build the site it’s going to take a while.</p>
+<p>I had the mistaken impression that blogdown would look at the
+timestamps on the <code>.Rmd</code> and <code>.html</code> and only build the <code>.html</code> if the
+<code>.Rmd</code> file is newer, but that’s not true.</p>
+<p>My <a href="https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/">post about sqlite, feather, and fst</a>
+is rather slow, because I’m writing and reading rather big files and
+measuring access times. So it was looking like building my
+<a href="https://kbroman.org/blog">new blog</a> would be really painful, forever
+more.</p>
+<p>Thus, I spent a bunch of time reworking the post to cache the times
+rather than running things every time the <code>.Rmd</code> file was built.
+<a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">It’s not pretty</a>,
+and my method is <em>not</em> generally recommended, but it seems to work.</p>
 <p>I expect <a href="https://yihui.name">Yihui</a> has a better solution to this.</p>
 
     </div>
@@ -122,7 +135,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

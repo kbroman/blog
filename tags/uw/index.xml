@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Uw on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/uw/</link>
-    <description>Recent content in Uw on the stupidest thing...</description>
+    <title>UW on the stupidest thing...</title>
+    <link>/tags/uw/</link>
+    <description>Recent content in UW on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 15 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/uw/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/uw/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chris Walker at Faculty Senate</title>
-      <link>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</link>
+      <link>/2016/04/15/chris-walker-at-faculty-senate/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</guid>
+      <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>Chris Walker&amp;rsquo;s powerful speech at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;Hateful shit at UW-Madison&amp;rdquo;) was recorded!
 You must listen to it!</description>
     </item>
     
     <item>
       <title>Action items in response to hateful shit</title>
-      <link>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
+      <link>/2016/04/05/action-items-in-response-to-hateful-shit/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
+      <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
 Here are the things he had mentioned yesterday at the Faculty Senate meeting:
  Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
@@ -36,10 +36,10 @@ Here are the things he had mentioned yesterday at the Faculty Senate meeting:
     
     <item>
       <title>Hateful shit at UW-Madison</title>
-      <link>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
+      <link>/2016/04/04/hateful-shit-at-uw-madison/</link>
       <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
+      <guid>/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.</description>
     </item>
     

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Travel on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/travel/</link>
-    <description>Recent content in Travel on the stupidest thing...</description>
+    <title>travel on the stupidest thing...</title>
+    <link>/tags/travel/</link>
+    <description>Recent content in travel on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 24 Sep 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bottle filling station</title>
-      <link>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</link>
+      <link>/2012/09/24/bottle-filling-station/</link>
       <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</guid>
+      <guid>/2012/09/24/bottle-filling-station/</guid>
       <description>The Madison airport now has a bottle-filling machine, sort of like this:
 Bottle filler/drinking fountains are being installed all over the UW-Madison campus, too.
 I really love these things. All airports should have them.</description>

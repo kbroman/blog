@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 
 <title>sqlite, feather, and fst - the stupidest thing...</title>
 <meta property="og:title" content="sqlite, feather, and fst - the stupidest thing...">
+
 
 
 
@@ -22,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="https://kbroman.org/blog/css/fonts.css" media="all">
-<link rel="stylesheet" href="https://kbroman.org/blog/css/main.css" media="all">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
-<link rel="stylesheet" href="https://kbroman.org/blog/css/custom.css">
+<link rel="stylesheet" href="../../../../css/custom.css">
 
 
 
@@ -38,14 +39,14 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="https://kbroman.org/blog/" class="nav-logo">
-    <img src="https://kbroman.org/blog/images/karl.png"
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -81,20 +82,43 @@
     <h1 class="article-title">sqlite, feather, and fst</h1>
 
     
-    <span class="article-date">2017/04/30</span>
+    <span class="article-date">2017-04-30</span>
     
 
     <div class="article-content">
       
 
 
-<p>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.</p>
-<p>But I’ve finally entered the modern era of biggish data. (Why do they call it <em>big</em> data? That doesn’t leave us much room for gradations of size. In the 90’s, statisticians talked about <a href="https://www.nap.edu/read/5505/chapter/1"><em>massive</em> data</a>.) And particularly for visualization of large-scale data, I don’t want to load everything in advance, and I want rapid access to slices of data.</p>
-<p>So I’ve been playing with <a href="https://www.sqlite.org/">SQLite</a> and <a href="https://www.mongodb.com/">MongoDB</a>, and more recently <a href="https://github.com/wesm/feather">feather</a> and <a href="http://www.fstpackage.org">fst</a>. And I thought I’d show a few examples. I’m interested mostly in quick access, from <a href="https://www.r-project.org">R</a>, to small portions of a large file.</p>
+<p>I don’t think I’m unusual among statisticians in having avoided
+working directly with databases for much of my career. The data for my
+projects have been reasonably small. (In fact, basically all of the
+data for my 20 years of projects are on my laptop’s drive.) Flat files
+(such as CSV files) were sufficient.</p>
+<p>But I’ve finally entered the modern era of biggish data. (Why do they
+call it <em>big</em> data? That doesn’t leave us much room for gradations of
+size. In the 90’s, statisticians talked about <a href="https://www.nap.edu/read/5505/chapter/1"><em>massive</em>
+data</a>.) And particularly for
+visualization of large-scale data, I don’t want to load everything in
+advance, and I want rapid access to slices of data.</p>
+<p>So I’ve been playing with <a href="https://www.sqlite.org/">SQLite</a> and
+<a href="https://www.mongodb.com/">MongoDB</a>, and more recently
+<a href="https://github.com/wesm/feather">feather</a> and
+<a href="http://www.fstpackage.org">fst</a>. And I thought I’d show a few
+examples. I’m interested mostly in quick access, from
+<a href="https://www.r-project.org">R</a>, to small portions of a large file.</p>
 <div id="data-rds" class="section level3">
 <h3>data, rds</h3>
-<p>Let me start by simulating some data. I’m mostly thinking about the case of 500 100k-SNP arrays. So the data are pairs of intensity measures for the two alleles at each of 100k SNPs in 500 samples. And typically I want to grab the 500 pairs of intensities for a given SNP. I’m going to just simulate IID noise, because for these illustrations I don’t really care about the contents so much as the storage size and I/O speed.</p>
-<p>(<em>Note: this stuff takes a long time to run, so the <a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">actual code behind the scenes</a> is more complicated, with me having cached the timings and skipped the actual runs.</em>)</p>
+<p>Let me start by simulating some data. I’m mostly thinking about the
+case of 500 100k-SNP arrays. So the data are pairs of intensity
+measures for the two alleles at each of 100k SNPs in 500 samples. And
+typically I want to grab the 500 pairs of intensities for a given SNP.
+I’m going to just simulate IID noise, because for these illustrations
+I don’t really care about the contents so much as the storage size and
+I/O speed.</p>
+<p>(<em>Note: this stuff takes a long time to run, so the
+<a href="https://github.com/kbroman/blog/blob/source/content/post/2017-04-30-sqlite-feather-and-fst.Rmd">actual code behind the scenes</a>
+is more complicated, with me having cached the timings and
+skipped the actual runs.</em>)</p>
 <pre class="r"><code>n_ind &lt;- 500
 n_snps &lt;- 1e5
 ind_names &lt;- paste0(&quot;ind&quot;, 1:n_ind)
@@ -105,32 +129,51 @@ dimnames(sigX) &lt;- list(ind_names, paste0(snp_names, &quot;.X&quot;))
 dimnames(sigY) &lt;- list(ind_names, paste0(snp_names, &quot;.Y&quot;))
 db &lt;- cbind(data.frame(id=ind_names, stringsAsFactors=FALSE),
             sigX, sigY)</code></pre>
-<p>My typical approach with data like this is to save it in an RDS file and just read the whole thing into memory if I want to work with it. But it’s rather slow to write and read such a big data set.</p>
+<p>My typical approach with data like this is to save it in an RDS file and
+just read the whole thing into memory if I want to work with it. But
+it’s rather slow to write and read such a big data set.</p>
 <pre class="r"><code>rds_file &lt;- &quot;db.rds&quot;
 saveRDS(db, rds_file)
 db_copy &lt;- readRDS(rds_file)</code></pre>
-<p>It was like 49 sec to write the RDS file, and 7.0 sec to read it. The file itself is 769 MB.</p>
+<p>It was like 49 sec to write the RDS
+file, and 7.0 sec to read it. The file
+itself is 769 MB.</p>
 </div>
 <div id="sqlite" class="section level3">
 <h3>sqlite</h3>
-<p><a href="https://www.mongodb.com">Mongo</a> is cool, and I think ultimately it will be useful to me, but <a href="https://www.sqlite.org/">SQLite</a> has the advantage of being a single file that you can hand to others. And installation is easy: you just need <a href="https://cran.rstudio.com/package=RSQLite/"><code>install.packages(&quot;RSQLite&quot;)</code></a>.</p>
-<p>SQLite won’t take more than <a href="https://sqlite.org/limits.html">2000 columns</a> (or maybe 32,767 if you change a compile-time parameter), so we need to take the transpose of our data frame.</p>
+<p><a href="https://www.mongodb.com">Mongo</a> is cool, and I think ultimately it
+will be useful to me, but <a href="https://www.sqlite.org/">SQLite</a> has the
+advantage of being a single file that you can hand to others. And
+installation is easy: you just need
+<a href="https://cran.rstudio.com/package=RSQLite/"><code>install.packages(&quot;RSQLite&quot;)</code></a>.</p>
+<p>SQLite won’t take more than <a href="https://sqlite.org/limits.html">2000
+columns</a> (or maybe 32,767 if you
+change a compile-time parameter), so we need to take the transpose of
+our data frame.</p>
 <pre class="r"><code>t_db &lt;- cbind(data.frame(snp=rep(snp_names, 2),
                          signal=rep(c(&quot;X&quot;, &quot;Y&quot;), each=n_snps),
                          stringsAsFactors=FALSE),
               rbind(t(sigX), t(sigY)))</code></pre>
-<p>Let’s rearrange it so that the two rows for a given SNP are next to each other.</p>
+<p>Let’s rearrange it so that the two rows for a given SNP are next to
+each other.</p>
 <pre class="r"><code>db_rows &lt;- as.numeric(matrix(1:nrow(t_db), byrow=TRUE, nrow=2))
 t_db &lt;- t_db[db_rows,]</code></pre>
-<p>To write to a SQLite file, we use <code>dbConnect</code> to create a database connection, and then <code>dbWriteTable</code>. We can use <code>dbDisconnect</code> to disconnect afterwards, if we’re done.</p>
+<p>To write to a SQLite file, we use <code>dbConnect</code> to create a database
+connection, and then <code>dbWriteTable</code>. We can use <code>dbDisconnect</code> to
+disconnect afterwards, if we’re done.</p>
 <pre class="r"><code>library(RSQLite)
 sqlite_file &lt;- &quot;t_db.sqlite&quot;
 sqldb &lt;- dbConnect(SQLite(), dbname=sqlite_file)
 dbWriteTable(sqldb, &quot;snps&quot;, t_db, row.names=FALSE, overwrite=TRUE,
              append=FALSE, field.types=NULL)
 dbDisconnect(sqldb)</code></pre>
-<p>The writing took 35 sec, and the resulting file is 923 MB.</p>
-<p>A key advantage of SQLite is to be able to quickly access a portion of the data, for example to grab the two rows for a particular SNP. You’d need to know the SNP names, first, which you can get by grabbing that column (or <em>field</em>) with <code>dbGetQuery</code>. A data frame is returned, so we select the first column.</p>
+<p>The writing took 35 sec, and the
+resulting file is 923 MB.</p>
+<p>A key advantage of SQLite is to be able to quickly access a portion of
+the data, for example to grab the two rows for a particular SNP. You’d
+need to know the SNP names, first, which you can get by grabbing that
+column (or <em>field</em>) with <code>dbGetQuery</code>. A data frame is returned, so we
+select the first column.</p>
 <pre class="r"><code>sqldb &lt;- dbConnect(SQLite(), dbname=sqlite_file)
 snp_names &lt;- dbGetQuery(sqldb, &#39;select snp from snps&#39;)[,1]</code></pre>
 <p>We can call <code>dbGetQuery</code> again to get the two rows of data for a given SNP.</p>
@@ -141,7 +184,9 @@ system.time(z &lt;- dbGetQuery(sqldb, query))</code></pre>
 ##   0.353   0.485   0.838</code></pre>
 <p>Such queries are faster if we first add an index on the SNP names.</p>
 <pre class="r"><code>dbGetQuery(sqldb, &quot;CREATE INDEX snp ON snps(snp)&quot;)</code></pre>
-<p>The file is basically the same size, 926 MB, and queries are now all but instantaneous.</p>
+<p>The file is basically the same size,
+926 MB, and queries
+are now all but instantaneous.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 query &lt;- paste0(&#39;select * from snps where snp == &quot;&#39;, random_snp, &#39;&quot;&#39;)
 system.time(z &lt;- dbGetQuery(sqldb, query))</code></pre>
@@ -150,54 +195,91 @@ system.time(z &lt;- dbGetQuery(sqldb, query))</code></pre>
 </div>
 <div id="feather" class="section level3">
 <h3>feather</h3>
-<p>I’d understood <a href="https://github.com/wesm/feather">feather</a> to be a quick way of transferring data between python and R; <a href="https://simecek.github.io/">Petr Simacek</a> convinced me of its more-broad uses, such as to take the place of a single-table database.</p>
-<p>Writing a feather file is surprisingly fast, and reading it back in is even faster.</p>
+<p>I’d understood <a href="https://github.com/wesm/feather">feather</a> to be a
+quick way of transferring data between python and R; <a href="https://simecek.github.io/">Petr
+Simacek</a> convinced me of its more-broad
+uses, such as to take the place of a single-table database.</p>
+<p>Writing a feather file is surprisingly fast, and reading it back in is
+even faster.</p>
 <pre class="r"><code>library(feather)
 feather_file &lt;- &quot;t_db.feather&quot;
 write_feather(t_db, feather_file)
 t_db_clone &lt;- read_feather(feather_file)</code></pre>
-<p>That took about 3 sec to write, and 1.0 sec to read, and the file is about 803 MB.</p>
-<p>But queries of particular columns or rows are fast, too. So you can basically use feather like a database.</p>
+<p>That took about 3 sec to write, and
+1.0 sec to read, and the file is
+about 803 MB.</p>
+<p>But queries of particular columns or rows are fast, too. So you can
+basically use feather like a database.</p>
 <pre class="r"><code>db_f &lt;- feather(feather_file)
 snp_names &lt;- unlist(db_f[,&quot;snp&quot;])
 random_snp &lt;- sample(snp_names, 1)
 system.time(z &lt;- db_f[snp_names==random_snp,])</code></pre>
 <pre><code>##    user  system elapsed 
 ##   0.381   0.353   0.735</code></pre>
-<p>In this particular case, it’s actually quite a bit faster to work with feather the other way around; that is, in the original format of 500 arrays x 100k SNPs.</p>
+<p>In this particular case, it’s actually quite a bit faster to work with
+feather the other way around; that is, in the original format of 500
+arrays x 100k SNPs.</p>
 <pre class="r"><code>feather_file_2 &lt;- &quot;db.feather&quot;
 write_feather(db, feather_file_2)
 db_clone &lt;- read_feather(feather_file_2)</code></pre>
-<p>That took about 3 sec to write, and 1.8 sec to read, and the file is about 815 MB.</p>
-<p>Accessing particular rows is just as easy. First a bit of code to grab the SNP names by grabbing the column names, getting rid of the <code>&quot;.X&quot;</code> or <code>&quot;.Y&quot;</code> bits at the end, and then taking the first half.</p>
+<p>That took about 3 sec to write, and
+1.8 sec to read, and the file is
+about 815 MB.</p>
+<p>Accessing particular rows is just as easy. First a bit of code to grab
+the SNP names by grabbing the column names,
+getting rid of the <code>&quot;.X&quot;</code> or <code>&quot;.Y&quot;</code> bits at the end, and then taking
+the first half.</p>
 <pre class="r"><code>db_f_2 &lt;- feather(feather_file_2)
 snp_names &lt;- sub(&quot;\\.[XY]$&quot;, &quot;&quot;, colnames(db_f_2))
 snp_names &lt;- snp_names[1:(length(snp_names)/2)]</code></pre>
-<p>Now, we grab the data for a random SNP by pasting <code>&quot;.X&quot;</code> and <code>&quot;.Y&quot;</code> back onto the SNP name.</p>
+<p>Now, we grab the data for a random SNP by pasting <code>&quot;.X&quot;</code> and <code>&quot;.Y&quot;</code>
+back onto the SNP name.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 system.time(z &lt;- db_f_2[,c(&quot;id&quot;, paste0(random_snp, c(&quot;.X&quot;, &quot;.Y&quot;)))])</code></pre>
 <pre><code>##    user  system elapsed 
 ##   0.045   0.000   0.045</code></pre>
-<p>Note that you can also use <a href="https://github.com/tidyverse/dplyr">dplyr</a> with <a href="https://github.com/wesm/feather">feather</a> as if you’ve got an in-memory data frame.</p>
+<p>Note that you can also use <a href="https://github.com/tidyverse/dplyr">dplyr</a>
+with <a href="https://github.com/wesm/feather">feather</a> as if you’ve got an
+in-memory data frame.</p>
 </div>
 <div id="fst" class="section level3">
 <h3>fst</h3>
-<p>After <a href="https://twitter.com/kwbroman/status/855112575373148162">tweeting about feather</a>, <a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a> suggested that I look at the <a href="http://www.fstpackage.org/">fst package</a>. It’s not quite as slick to take data slices, but it’s potentially faster and you can write a compressed file to save disk space.</p>
-<p>Like SQLite, it’s best not to have <em>too</em> many columns, so we’ll work with the transposed version of the data frame, with SNPs as rows. Writing and reading are fast.</p>
+<p>After <a href="https://twitter.com/kwbroman/status/855112575373148162">tweeting about feather</a>,
+<a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a> suggested that I
+look at the <a href="http://www.fstpackage.org/">fst package</a>. It’s not quite
+as slick to take data slices, but it’s potentially faster and you can write a
+compressed file to save disk space.</p>
+<p>Like SQLite, it’s best not to have <em>too</em> many columns, so we’ll work
+with the transposed version of the data frame, with SNPs as rows.
+Writing and reading are fast.</p>
 <pre class="r"><code>library(fst)
 fst_file &lt;- &quot;db.fst&quot;
 write.fst(t_db, fst_file)
 t_db_clone &lt;- read.fst(fst_file)</code></pre>
-<p>That took 3.0 sec to write, 1.1 sec to read, and the file is about 803 MB.</p>
-<p>Writing a compressed file is quite a bit slower. Here at 80% compression.</p>
+<p>That took 3.0 sec to write,
+1.1 sec to read, and the file is about
+803 MB.</p>
+<p>Writing a compressed file is quite a bit slower. Here at 80%
+compression.</p>
 <pre class="r"><code>fstcomp_file &lt;- &quot;db_comp.fst&quot;
 write.fst(t_db, fstcomp_file, 80)
 t_db_clone &lt;- read.fst(fstcomp_file)</code></pre>
-<p>That took 6.7 sec to write, 2.7 sec to read, and the file is about 781 MB.</p>
-<p>Doing queries on an <a href="http://www.fstpackage.org">fst</a> file is not quite as slick as for <a href="https://github.com/wesm/feather">feather</a>, but it’s fast. The <code>read.fst</code> function has a <code>columns</code> argument to grab particular columns, and <code>from</code> and <code>to</code> arguments to grab a slice of rows.</p>
-<p>We’ll first grab the <code>snp</code> column to get the SNP names. And let’s just work with the compressed version of the file. Since <code>read.fst</code> will return a one-column data frame, we grab the first column to make it a vector.</p>
+<p>That took 6.7 sec to write,
+2.7 sec to read, and the file is about
+781 MB.</p>
+<p>Doing queries on an <a href="http://www.fstpackage.org">fst</a> file is not quite
+as slick as for <a href="https://github.com/wesm/feather">feather</a>, but it’s
+fast. The <code>read.fst</code> function has a <code>columns</code> argument to grab
+particular columns, and <code>from</code> and <code>to</code> arguments to grab a slice of
+rows.</p>
+<p>We’ll first grab the <code>snp</code> column to get the SNP names. And let’s just
+work with the compressed version of the file. Since <code>read.fst</code> will
+return a one-column data frame, we grab the first column to make it a
+vector.</p>
 <pre class="r"><code>snp_names &lt;- read.fst(fstcomp_file, &quot;snp&quot;)[,1]</code></pre>
-<p>Now we can choose a random SNP, find the corresponding rows, and then use <code>from</code> and <code>to</code> to grab those two rows. You can see it’s useful to have the the pairs of rows for each SNP be contiguous.</p>
+<p>Now we can choose a random SNP, find the corresponding rows, and
+then use <code>from</code> and <code>to</code> to grab those two rows. You can see it’s
+useful to have the the pairs of rows for each SNP be contiguous.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 wh_rows &lt;- which(random_snp == snp_names)
 system.time(z &lt;- read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2]))</code></pre>
@@ -206,7 +288,8 @@ system.time(z &lt;- read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2]))</cod
 </div>
 <div id="timings" class="section level3">
 <h3>timings</h3>
-<p>Let’s use the <a href="https://cran.r-project.org/package=microbenchmark">microbenchmark</a> package to compare timings for grabbing a random SNP. First a bit of set-up.</p>
+<p>Let’s use the <a href="https://cran.r-project.org/package=microbenchmark">microbenchmark</a>
+package to compare timings for grabbing a random SNP. First a bit of set-up.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 library(microbenchmark)
 sqlite_file &lt;- &quot;t_db.sqlite&quot;
@@ -224,12 +307,12 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
                     read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2])},
                times=100)</code></pre>
 <pre><code>## Unit: milliseconds
-##       expr min  lq mean median  uq  max neval
-##     sqlite   3   4    4      4   4    4   100
-##    feather 618 641  717    660 766 1215   100
-##  feather_t  43  47   48     48  49   54   100
-##        fst  61  63   80     64  65  341   100
-##    fstcomp  91  95  117     95  97  691   100</code></pre>
+##       expr min  lq mean median  uq  max neval   cld
+##     sqlite   3   4    4      4   4    4   100 a    
+##    feather 618 641  717    660 766 1215   100     e
+##  feather_t  43  47   48     48  49   54   100  b   
+##        fst  61  63   80     64  65  341   100   c  
+##    fstcomp  91  95  117     95  97  691   100    d</code></pre>
 <p>Here’s a summary of all of the results:</p>
 <pre class="r"><code>knitr::kable(results, digits=c(1,1,0,1),
              col.names=c(&quot;write time (s)&quot;, &quot;read time (s)&quot;,
@@ -289,8 +372,18 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
 </tr>
 </tbody>
 </table>
-<p>I don’t think we can draw general conclusions about the relative speed and file size of the three approaches from these results. And I think they’re all really useful and interesting.</p>
-<p>But in this particular case, the file compression didn’t really help with <a href="http://www.fstpackage.org">fst</a> and slowed things down. When accessing the data, <a href="https://github.com/wesm/feather">feather</a> was considerably faster than <a href="http://www.fstpackage.org">fst</a> when the data were organized with the SNPs as columns, but was considerably slower when the data were in the opposite orientation. <a href="https://www.sqlite.org/">SQLite</a> has much faster access times, but with a larger file size that takes longer to write.</p>
+<p>I don’t think we can draw general conclusions about the relative speed
+and file size of the three approaches from these results. And I think
+they’re all really useful and interesting.</p>
+<p>But in this particular case, the file compression didn’t really help
+with <a href="http://www.fstpackage.org">fst</a> and slowed things down.
+When accessing the data,
+<a href="https://github.com/wesm/feather">feather</a> was considerably faster
+than <a href="http://www.fstpackage.org">fst</a> when the data were organized
+with the SNPs as columns, but was considerably slower when the data
+were in the opposite orientation. <a href="https://www.sqlite.org/">SQLite</a>
+has much faster access times, but with a larger file size that takes
+longer to write.</p>
 </div>
 
     </div>
@@ -328,7 +421,7 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -340,6 +433,8 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
 
 <script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
 
+
+
 <script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
@@ -347,18 +442,8 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
 
 
     
-<script src="https://kbroman.org/js/math-code.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
-<script async type="text/javascript"
-  src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<script src="../../../../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
     

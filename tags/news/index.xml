@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/news/</link>
-    <description>Recent content in News on the stupidest thing...</description>
+    <title>news on the stupidest thing...</title>
+    <link>/tags/news/</link>
+    <description>Recent content in news on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>another new laptop</title>
-      <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
+      <link>/2019/02/02/another_new_laptop/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/02/another_new_laptop/</guid>
+      <guid>/2019/02/02/another_new_laptop/</guid>
       <description>I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them. My favorites were the 17&amp;rdquo; ones. Heavy, but that big screen was great for data analysis, programming, and writing papers.
 Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it seems like Apple is now designing with someone totally different in mind. I mean, my MacPro desktop is on its last legs but hell if I&amp;rsquo;m going to buy one of their new ones which are basically like a laptop that you sit on your desk.</description>
     </item>
     
     <item>
       <title>halloween 2017</title>
-      <link>https://kbroman.org/blog/2017/10/31/halloween-2017/</link>
+      <link>/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
+      <guid>/2017/10/31/halloween-2017/</guid>
       <description>It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to 2016 and 2011.</description>
     </item>
     
     <item>
       <title>old posts</title>
-      <link>https://kbroman.org/blog/2017/04/30/old-posts/</link>
+      <link>/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
+      <guid>/2017/04/30/old-posts/</guid>
       <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
  Better-looking LaTeX/Beamer slides, 2013-10-07
  MongoDB with D3.js, 2015-06-22
@@ -50,19 +50,19 @@ Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it s
     
     <item>
       <title>→ kbroman.org/blog</title>
-      <link>https://kbroman.org/blog/2017/04/30/new_blog_site/</link>
+      <link>/2017/04/30/new_blog_site/</link>
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
+      <guid>/2017/04/30/new_blog_site/</guid>
       <description>I&amp;rsquo;m starting a new blog site at kbroman.org/blog. I&amp;rsquo;m abandoning the WordPress site as it is; I don&amp;rsquo;t want to fuss with trying to move things.</description>
     </item>
     
     <item>
       <title>new blog</title>
-      <link>https://kbroman.org/blog/2017/04/29/new-blog/</link>
+      <link>/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
+      <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
@@ -70,19 +70,19 @@ I’m not been writing much recently, in part because Wordpress is such a drag t
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
+      <link>/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
+      <guid>/2016/10/31/halloween-2016-count/</guid>
       <description>Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our 2011 experience.)</description>
     </item>
     
     <item>
       <title>A bit more on the fire</title>
-      <link>https://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</link>
+      <link>/2013/03/01/a-bit-more-on-the-fire/</link>
       <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</guid>
+      <guid>/2013/03/01/a-bit-more-on-the-fire/</guid>
       <description>The Daily Cardinal reports that there were no overhead sprinklers in the area of the fire yesterday. Fire fighters thought that sprinklers had gone off, but it was really a broken water pipe.
 And there are no sprinklers in my office, either. I thought they were required, but I guess only in new construction.
 There&amp;rsquo;s a short TV report (after a commercial) at the channel 15 site.
@@ -91,10 +91,10 @@ A graduate student interviewed said, &amp;ldquo;I have multiple copies of my dat
     
     <item>
       <title>There&#39;s a fire in the building...</title>
-      <link>https://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</link>
+      <link>/2013/02/28/theres-a-fire-in-the-building/</link>
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</guid>
+      <guid>/2013/02/28/theres-a-fire-in-the-building/</guid>
       <description>I was at work this morning at 8am. At 8:45am I got a text asking what was going on in my building, with this picture:
 It was news to me.
 At 8:55am we got an alert saying &amp;ldquo;Avoid 1300 Univ Ave. Fire and Police on scene for working fire.&amp;rdquo; Hey, I&amp;rsquo;m at 1300 University Avenue!
@@ -103,10 +103,10 @@ We could see out the window that there was a campus police officer preventing pe
     
     <item>
       <title>Microsoft Office</title>
-      <link>https://kbroman.org/blog/2013/01/30/microsoft-office/</link>
+      <link>/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
+      <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
 There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
 As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.</description>
@@ -114,20 +114,20 @@ As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34
     
     <item>
       <title>NIH to hire Associate Director for Data Science</title>
-      <link>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
+      <link>/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
+      <guid>/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
       <description>See the press release.
 Eric Green, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.</description>
     </item>
     
     <item>
       <title>Puzzling typo</title>
-      <link>https://kbroman.org/blog/2012/10/27/puzzling-typo/</link>
+      <link>/2012/10/27/puzzling-typo/</link>
       <pubDate>Sat, 27 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/10/27/puzzling-typo/</guid>
+      <guid>/2012/10/27/puzzling-typo/</guid>
       <description>There&amp;rsquo;s a nice op-ed in the NY Times about the crazy conviction of seven Italian scientists for failure to warn about an unpredictable earthquake. But I spent quite a while puzzling over the following typo:
 The third highlighted line should be in the middle of the fourth one, to give &amp;ldquo;&amp;hellip;who allow flimsy buildings to be built&amp;hellip;&amp;rdquo; I&amp;rsquo;m not sure how such an error can occur.
 Here&amp;rsquo;s a PDF of the full article.</description>
@@ -135,10 +135,10 @@ Here&amp;rsquo;s a PDF of the full article.</description>
     
     <item>
       <title>What, no coffee?</title>
-      <link>https://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
+      <link>/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
+      <guid>/2012/09/28/what-no-coffee/</guid>
       <description>I was at a CIDR Access Committee meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the Center for Inherited Disease Research, a service funded by several of the NIH institutes.
 We had to buy our own coffee.
 It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.
@@ -147,10 +147,10 @@ But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meetin
     
     <item>
       <title>Bottle filling station</title>
-      <link>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</link>
+      <link>/2012/09/24/bottle-filling-station/</link>
       <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</guid>
+      <guid>/2012/09/24/bottle-filling-station/</guid>
       <description>The Madison airport now has a bottle-filling machine, sort of like this:
 Bottle filler/drinking fountains are being installed all over the UW-Madison campus, too.
 I really love these things. All airports should have them.</description>
@@ -158,20 +158,20 @@ I really love these things. All airports should have them.</description>
     
     <item>
       <title>Hilarious graph</title>
-      <link>https://kbroman.org/blog/2012/09/11/hilarious-graph/</link>
+      <link>/2012/09/11/hilarious-graph/</link>
       <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/09/11/hilarious-graph/</guid>
+      <guid>/2012/09/11/hilarious-graph/</guid>
       <description>I read an interesting post on the NY Times site this morning, which said:
 Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
     </item>
     
     <item>
       <title>Police</title>
-      <link>https://kbroman.org/blog/2012/05/24/police/</link>
+      <link>/2012/05/24/police/</link>
       <pubDate>Thu, 24 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/05/24/police/</guid>
+      <guid>/2012/05/24/police/</guid>
       <description>The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.
 The conversation went something like this:  Police: 
 What&amp;rsquo;s going on?    Me: 
@@ -183,10 +183,10 @@ I&amp;rsquo;m enjoying the day, too.</description>
     
     <item>
       <title>Genetic testing of sperm donors</title>
-      <link>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
  An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
@@ -194,38 +194,38 @@ One, the mention of fragile X syndrome, has been corrected:
     
     <item>
       <title>Halloween 2011 count</title>
-      <link>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
+      <link>/2011/10/31/halloween-2011-count/</link>
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
+      <guid>/2011/10/31/halloween-2011-count/</guid>
       <description>We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).
 I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.</description>
     </item>
     
     <item>
       <title>New title, new look</title>
-      <link>https://kbroman.org/blog/2011/10/15/new-title-new-look/</link>
+      <link>/2011/10/15/new-title-new-look/</link>
       <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/10/15/new-title-new-look/</guid>
+      <guid>/2011/10/15/new-title-new-look/</guid>
       <description>My old title was too verbose, and the old &amp;ldquo;theme&amp;rdquo; was too messy (and the font too small). Hopefully the changes are satisfactory.</description>
     </item>
     
     <item>
       <title>Designer of C died</title>
-      <link>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</link>
+      <link>/2011/10/14/designer-of-c-died/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
+      <guid>/2011/10/14/designer-of-c-died/</guid>
       <description>Dennis Ritchie, the designer of C and co-developer of Unix, died on Wednesday. He arguably had more impact on my life than Steve Jobs did.</description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>https://kbroman.org/blog/2011/08/17/introduction/</link>
+      <link>/2011/08/17/introduction/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/08/17/introduction/</guid>
+      <guid>/2011/08/17/introduction/</guid>
       <description>I&amp;rsquo;m at the useR! Conference in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.
 Particularly interesting were the Lightning talks: a series of 5 minute presentations with one minute in between, with each presentation having 15 slides of 20 sec each, moved forward automatically. It worked extremely well; more talks should be done this way!
 And particularly interesting, among the lightning talks, was one by Tal Galili, who started the R-bloggers blog aggregator.</description>

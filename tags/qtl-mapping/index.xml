@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qtl Mapping on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/qtl-mapping/</link>
-    <description>Recent content in Qtl Mapping on the stupidest thing...</description>
+    <title>QTL mapping on the stupidest thing...</title>
+    <link>/tags/qtl-mapping/</link>
+    <description>Recent content in QTL mapping on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/qtl-mapping/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/qtl-mapping/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>

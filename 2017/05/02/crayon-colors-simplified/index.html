@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 
 <title>crayon colors, simplified - the stupidest thing...</title>
 <meta property="og:title" content="crayon colors, simplified - the stupidest thing...">
+
 
 
 
@@ -20,14 +21,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="https://kbroman.org/blog/css/fonts.css" media="all">
-<link rel="stylesheet" href="https://kbroman.org/blog/css/main.css" media="all">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
-<link rel="stylesheet" href="https://kbroman.org/blog/css/custom.css">
+<link rel="stylesheet" href="../../../../css/custom.css">
 
 
 
@@ -36,14 +37,14 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="https://kbroman.org/blog/" class="nav-logo">
-    <img src="https://kbroman.org/blog/images/karl.png"
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -79,25 +80,35 @@
     <h1 class="article-title">crayon colors, simplified</h1>
 
     
-    <span class="article-date">2017/05/02</span>
+    <span class="article-date">2017-05-02</span>
     
 
     <div class="article-content">
       
 
 
-<p>Back in 2014, I’d grabbed the <a href="https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">Crayola crayon colors from Wikipedia</a> and made them available as part of my <a href="https://github.com/kbroman/broman">R/broman</a> package.</p>
-<p>(I <a href="https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/">wrote about it on previously</a>, and then <a href="https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/">again</a> and <a href="https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/">again</a>.)</p>
+<p>Back in 2014, I’d grabbed the <a href="https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">Crayola crayon colors from
+Wikipedia</a>
+and made them available as part of my <a href="https://github.com/kbroman/broman">R/broman</a>
+package.</p>
+<p>(I <a href="https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/">wrote about it on previously</a>,
+and then
+<a href="https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/">again</a>
+and
+<a href="https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/">again</a>.)</p>
 <p>But using my package to get the crayon colors can be rather tedious.</p>
 <p>It’s easy to view the available colors.</p>
 <pre class="r"><code>library(broman)
 plot_crayons()</code></pre>
 <p><img src="../../../../post/2017-05-02-crayon-colors-simplified_files/figure-html/plot_crayons-1.png" width="700" /></p>
-<p>But grabbing a color, say “Purple Mountain’s Majesty”, requires rather verbose code.</p>
+<p>But grabbing a color, say “Purple Mountain’s Majesty”, requires rather
+verbose code.</p>
 <pre class="r"><code>brocolors(&quot;crayons&quot;)[&quot;Purple Mountain&#39;s Majesty&quot;]
 ## Purple Mountain&#39;s Majesty 
 ##                 &quot;#9d81ba&quot;</code></pre>
-<p>This morning, it was just too much for me. So I wrote a simpler function <code>crayons()</code>, which accepts partial matches, using <code>grep</code>. So you can write things like:</p>
+<p>This morning, it was just too much for me. So I wrote a simpler
+function <code>crayons()</code>, which accepts partial matches, using <code>grep</code>.
+So you can write things like:</p>
 <pre class="r"><code>crayons(&quot;purple m&quot;)
 ## Purple Mountain&#39;s Majesty 
 ##                 &quot;#9d81ba&quot;
@@ -111,9 +122,13 @@ crayons(&quot;purple m&quot;, &quot;tickle&quot;)
 ## Purple Mountain&#39;s Majesty            Tickle Me Pink 
 ##                 &quot;#9d81ba&quot;                 &quot;#fc89ac&quot;</code></pre>
 <p>Why didn’t I think of this before?</p>
-<p>The new version of the package is not yet on <a href="https://cran.r-project.org">CRAN</a>, but you can install it from <a href="https://github.com/kbroman/broman">GitHub</a> using <a href="https://github.com/hadley/devtools">devtools</a>:</p>
+<p>The new version of the package is not yet on
+<a href="https://cran.r-project.org">CRAN</a>, but you can install it from
+<a href="https://github.com/kbroman/broman">GitHub</a> using
+<a href="https://github.com/hadley/devtools">devtools</a>:</p>
 <pre class="r"><code>devtools::install_github(&quot;kbroman/broman&quot;)</code></pre>
-<p>Or you can ignore the rest of the package and just <a href="https://github.com/kbroman/broman/blob/master/R/brocolors.R">grab the code</a>.</p>
+<p>Or you can ignore the rest of the package and just <a href="https://github.com/kbroman/broman/blob/master/R/brocolors.R">grab the
+code</a>.</p>
 
     </div>
   </article>
@@ -150,7 +165,7 @@ crayons(&quot;purple m&quot;, &quot;tickle&quot;)
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -161,6 +176,8 @@ crayons(&quot;purple m&quot;, &quot;tickle&quot;)
 
 
 <script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+
 
 <script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>

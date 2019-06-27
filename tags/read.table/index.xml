@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Read.table on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/read.table/</link>
-    <description>Recent content in Read.table on the stupidest thing...</description>
+    <title>read.table on the stupidest thing...</title>
+    <link>/tags/read.table/</link>
+    <description>Recent content in read.table on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/read.table/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/read.table/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EOF within quoted string</title>
-      <link>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <link>/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>/2017/08/08/eof-within-quoted-string/</guid>
       <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
 The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
     </item>

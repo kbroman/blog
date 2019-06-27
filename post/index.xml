@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reproducibility guidelines</title>
-      <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
+      <link>/2019/04/01/reproducibility-guidelines/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
+      <guid>/2019/04/01/reproducibility-guidelines/</guid>
       <description>I’m in Delft, The Netherlands, for a few days this week, at a workshop to develop guidelines for reproducibility for AGILE conference papers. I’m here as one of the outside “experts”. (It’s always a bit disconcerting to be considered an expert.) The leaders of this effort wrote an interesting PeerJ paper last year, evaluating the reproducibility of previous AGILE papers.
 There will be a community webinar tomorrow (2019-04-02) at 16:00 CEST (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.</description>
     </item>
     
     <item>
       <title>omg, binder!</title>
-      <link>https://kbroman.org/blog/2019/02/18/omg_binder/</link>
+      <link>/2019/02/18/omg_binder/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
+      <guid>/2019/02/18/omg_binder/</guid>
       <description>At his talk at RStudio::conf, Karthik Ram discussed binder as a useful solution for reproducible research (see the video), and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small configuration file in your GitHub repository and suddenly you can open it live in RStudio on some cloud server somewhere. Seems too good to be true. But I trusted him, mentioned it in my talk at AAAS yesterday, and talked it up to Jeff Leek.</description>
     </item>
     
     <item>
       <title>writing text in Minecraft with R</title>
-      <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
+      <link>/2019/02/11/writing_text_in_minecraft_with_r/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</guid>
+      <guid>/2019/02/11/writing_text_in_minecraft_with_r/</guid>
       <description>It&amp;rsquo;s been nearly two years since I attended the RopenSci UnConf 2017 in LA and worked with Gergely Daróczi, Brooke Anderson, David Smith, Mario Inchiosa, and Adi Zaidi to create the miner package for interacting with Minecraft from R. We spent a half-day writing the package and then a day and a half playing, with a bunch of our ideas implemented in the craft package and illustrated in the bookdown book, R programming with Minecraft.</description>
     </item>
     
     <item>
       <title>another new laptop</title>
-      <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
+      <link>/2019/02/02/another_new_laptop/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/02/another_new_laptop/</guid>
+      <guid>/2019/02/02/another_new_laptop/</guid>
       <description>I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them. My favorites were the 17&amp;rdquo; ones. Heavy, but that big screen was great for data analysis, programming, and writing papers.
 Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it seems like Apple is now designing with someone totally different in mind. I mean, my MacPro desktop is on its last legs but hell if I&amp;rsquo;m going to buy one of their new ones which are basically like a laptop that you sit on your desk.</description>
     </item>
     
     <item>
       <title>twitter break</title>
-      <link>https://kbroman.org/blog/2018/10/05/twitter-break/</link>
+      <link>/2018/10/05/twitter-break/</link>
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
+      <guid>/2018/10/05/twitter-break/</guid>
       <description>What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible research.
 But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it’s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone’s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I’ve been working on for five years with little apparent progress.</description>
     </item>
     
     <item>
       <title>learning a new programming language</title>
-      <link>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</link>
+      <link>/2018/03/16/learning-a-new-programming-language/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
+      <guid>/2018/03/16/learning-a-new-programming-language/</guid>
       <description>I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
 More blather about languages Long ago, I wrote a tutorial on Perl.</description>
     </item>
     
     <item>
       <title>these guys</title>
-      <link>https://kbroman.org/blog/2017/12/18/these-guys/</link>
+      <link>/2017/12/18/these-guys/</link>
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
+      <guid>/2017/12/18/these-guys/</guid>
       <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
 I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
 &amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
@@ -83,99 +83,99 @@ I’ve just become ACUTELY aware that we should not say “these guys” when re
     
     <item>
       <title>halloween 2017</title>
-      <link>https://kbroman.org/blog/2017/10/31/halloween-2017/</link>
+      <link>/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
+      <guid>/2017/10/31/halloween-2017/</guid>
       <description>It was easier than ever to count trick-or-treaters this year; there were just 6 groups of kids, for a total of 18, and 12 of them came within 2 minutes (a group of 8 girls followed immediately by a group of 4 girls). Here’s a graph; compare it to 2016 and 2011.</description>
     </item>
     
     <item>
       <title>EOF within quoted string</title>
-      <link>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
+      <link>/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
+      <guid>/2017/08/08/eof-within-quoted-string/</guid>
       <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
 The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
     </item>
     
     <item>
       <title>yay, yihui!</title>
-      <link>https://kbroman.org/blog/2017/08/03/yay-yihui/</link>
+      <link>/2017/08/03/yay-yihui/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
+      <guid>/2017/08/03/yay-yihui/</guid>
       <description>When I abandoned my wordpress site and moved to blogdown, I’d said that I wouldn’t bother trying to move the old posts over.
 But Yihui Xie just transferred everything for me! So awesome.</description>
     </item>
     
     <item>
       <title>miner and craft</title>
-      <link>https://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>/2017/05/31/miner-and-craft/</guid>
       <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
 I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
       <title>omg, bookdown!</title>
-      <link>https://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
+      <link>/2017/05/31/omg-bookdown/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
+      <guid>/2017/05/31/omg-bookdown/</guid>
       <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
 I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
     </item>
     
     <item>
       <title>deeply nested functions</title>
-      <link>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
+      <link>/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
+      <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
 setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>/2017/05/27/ropensci-unconf-2017/</guid>
       <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
 This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>
       <title>miniCRAN</title>
-      <link>https://kbroman.org/blog/2017/05/23/minicran/</link>
+      <link>/2017/05/23/minicran/</link>
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
+      <guid>/2017/05/23/minicran/</guid>
       <description>Next month, I’m teaching a workshop on R/qtl and R/qtl2 at the joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017) meeting in Memphis.
 I was chatting with Śaunak Sen about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on CRAN. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</description>
     </item>
     
     <item>
       <title>reading/writing biggish data, revisited</title>
-      <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
+      <link>/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
+      <guid>/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
     </item>
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
 (Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
 I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
@@ -183,10 +183,10 @@ I was very glad that I’d written a bunch of tests, because I could use those t
     
     <item>
       <title>crayon colors, simplified</title>
-      <link>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
+      <link>/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
+      <guid>/2017/05/02/crayon-colors-simplified/</guid>
       <description>Back in 2014, I’d grabbed the Crayola crayon colors from Wikipedia and made them available as part of my R/broman package.
 (I wrote about it on previously, and then again and again.)
 But using my package to get the crayon colors can be rather tedious.
@@ -197,30 +197,30 @@ brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majes
     
     <item>
       <title>caching blogdown</title>
-      <link>https://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
+      <link>/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
+      <guid>/2017/05/01/caching-blogdown/</guid>
       <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
 I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
     </item>
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
 But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
     <item>
       <title>old posts</title>
-      <link>https://kbroman.org/blog/2017/04/30/old-posts/</link>
+      <link>/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
+      <guid>/2017/04/30/old-posts/</guid>
       <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
  Better-looking LaTeX/Beamer slides, 2013-10-07
  MongoDB with D3.js, 2015-06-22
@@ -234,19 +234,19 @@ But I’ve finally entered the modern era of biggish data. (Why do they call it 
     
     <item>
       <title>→ kbroman.org/blog</title>
-      <link>https://kbroman.org/blog/2017/04/30/new_blog_site/</link>
+      <link>/2017/04/30/new_blog_site/</link>
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
+      <guid>/2017/04/30/new_blog_site/</guid>
       <description>I&amp;rsquo;m starting a new blog site at kbroman.org/blog. I&amp;rsquo;m abandoning the WordPress site as it is; I don&amp;rsquo;t want to fuss with trying to move things.</description>
     </item>
     
     <item>
       <title>new blog</title>
-      <link>https://kbroman.org/blog/2017/04/29/new-blog/</link>
+      <link>/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
+      <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
@@ -254,10 +254,10 @@ I’m not been writing much recently, in part because Wordpress is such a drag t
     
     <item>
       <title>I thought maybe I was being paranoid</title>
-      <link>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
+      <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
+      <guid>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
       <description>An odd thing happened to me on twitter today.
 UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
 So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
@@ -267,19 +267,19 @@ Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</descr
     
     <item>
       <title>Halloween 2016 count</title>
-      <link>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
+      <link>/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
+      <guid>/2016/10/31/halloween-2016-count/</guid>
       <description>Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our 2011 experience.)</description>
     </item>
     
     <item>
       <title>My JSM 2016 itinerary</title>
-      <link>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
+      <link>/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
+      <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
 First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
 Sunday  (2:00 - 3:50) Open source statistical software for data science</description>
@@ -287,20 +287,20 @@ Sunday  (2:00 - 3:50) Open source statistical software for data science</descrip
     
     <item>
       <title>Chris Walker at Faculty Senate</title>
-      <link>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</link>
+      <link>/2016/04/15/chris-walker-at-faculty-senate/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</guid>
+      <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>Chris Walker&amp;rsquo;s powerful speech at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;Hateful shit at UW-Madison&amp;rdquo;) was recorded!
 You must listen to it!</description>
     </item>
     
     <item>
       <title>I am a data scientist</title>
-      <link>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
 When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
@@ -308,10 +308,10 @@ When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number
     
     <item>
       <title>Action items in response to hateful shit</title>
-      <link>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
+      <link>/2016/04/05/action-items-in-response-to-hateful-shit/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
+      <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
 Here are the things he had mentioned yesterday at the Faculty Senate meeting:
  Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
@@ -320,10 +320,10 @@ Here are the things he had mentioned yesterday at the Faculty Senate meeting:
     
     <item>
       <title>Hateful shit at UW-Madison</title>
-      <link>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
+      <link>/2016/04/04/hateful-shit-at-uw-madison/</link>
       <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
+      <guid>/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.</description>
     </item>
     

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Productivity on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/productivity/</link>
-    <description>Recent content in Productivity on the stupidest thing...</description>
+    <title>productivity on the stupidest thing...</title>
+    <link>/tags/productivity/</link>
+    <description>Recent content in productivity on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Error notifications from R</title>
-      <link>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
+      <link>/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
+      <guid>/2014/09/04/error-notifications-from-r/</guid>
       <description>I&amp;rsquo;m enthusiastic about having R notify me when my script is done.
 But among my early uses of this, my script threw an error, and I never got a text or pushbullet about that. And really, I&amp;rsquo;m even more interested in being notified about such errors than anything else.
 It&amp;rsquo;s relatively easy to get notified of errors. At the top of your script, include code like options(error = function() { } )</description>
@@ -25,10 +25,10 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
     
     <item>
       <title>Notifications from R</title>
-      <link>https://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
+      <link>/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
+      <guid>/2014/09/03/notifications-from-r/</guid>
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
@@ -38,30 +38,30 @@ library(beepr) beep()  beepr comes with a bunch of different sounds (e.</descrip
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)
 A google search on the title of this post got me to this post.</description>
     </item>
     
     <item>
       <title>What should I do badly?</title>
-      <link>https://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</link>
+      <link>/2012/05/23/what-should-i-do-badly/</link>
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</guid>
+      <guid>/2012/05/23/what-should-i-do-badly/</guid>
       <description>One of the more painful things to learn as a faculty member is to accept that you will do some things badly. There are too many things to do, so you can&amp;rsquo;t do them all well. What should you do badly?
 As an undergraduate, the scope of work is reasonably precisely defined, and problem sets have relatively simple solutions. I finished things on time or even early, and I seldom felt guilty for not studying.</description>
     </item>
     
     <item>
       <title>Meetings vs work</title>
-      <link>https://kbroman.org/blog/2011/09/28/meetings-vs-work/</link>
+      <link>/2011/09/28/meetings-vs-work/</link>
       <pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/09/28/meetings-vs-work/</guid>
+      <guid>/2011/09/28/meetings-vs-work/</guid>
       <description>Rafael Irizarry wrote about how meetings at work get in the way of actual work.
 I agree with his central point, that it can take some time to get back working on a project (whether data analysis, programming, or writing), and so blocks of less than a couple of hours can be inefficient. Meetings that break up a work day can really erode one&amp;rsquo;s productivity: academics often spend too much time meeting and not enough actually working, and three hour-long meetings spaced evenly throughout the day can mean that you don&amp;rsquo;t get anything real done in the other five hours.</description>
     </item>

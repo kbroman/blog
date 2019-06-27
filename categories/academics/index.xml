@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academics on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/categories/academics/</link>
-    <description>Recent content in Academics on the stupidest thing...</description>
+    <title>academics on the stupidest thing...</title>
+    <link>/categories/academics/</link>
+    <description>Recent content in academics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reproducibility guidelines</title>
-      <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
+      <link>/2019/04/01/reproducibility-guidelines/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
+      <guid>/2019/04/01/reproducibility-guidelines/</guid>
       <description>I’m in Delft, The Netherlands, for a few days this week, at a workshop to develop guidelines for reproducibility for AGILE conference papers. I’m here as one of the outside “experts”. (It’s always a bit disconcerting to be considered an expert.) The leaders of this effort wrote an interesting PeerJ paper last year, evaluating the reproducibility of previous AGILE papers.
 There will be a community webinar tomorrow (2019-04-02) at 16:00 CEST (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.</description>
     </item>
     
     <item>
       <title>these guys</title>
-      <link>https://kbroman.org/blog/2017/12/18/these-guys/</link>
+      <link>/2017/12/18/these-guys/</link>
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
+      <guid>/2017/12/18/these-guys/</guid>
       <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
 I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
 &amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
@@ -35,20 +35,20 @@ I’ve just become ACUTELY aware that we should not say “these guys” when re
     
     <item>
       <title>Chris Walker at Faculty Senate</title>
-      <link>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</link>
+      <link>/2016/04/15/chris-walker-at-faculty-senate/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</guid>
+      <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>Chris Walker&amp;rsquo;s powerful speech at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;Hateful shit at UW-Madison&amp;rdquo;) was recorded!
 You must listen to it!</description>
     </item>
     
     <item>
       <title>Action items in response to hateful shit</title>
-      <link>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
+      <link>/2016/04/05/action-items-in-response-to-hateful-shit/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
+      <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
 Here are the things he had mentioned yesterday at the Faculty Senate meeting:
  Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
@@ -57,39 +57,39 @@ Here are the things he had mentioned yesterday at the Faculty Senate meeting:
     
     <item>
       <title>Hateful shit at UW-Madison</title>
-      <link>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
+      <link>/2016/04/04/hateful-shit-at-uw-madison/</link>
       <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
+      <guid>/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.</description>
     </item>
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
+      <link>/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>/2015/09/09/reproducibility-is-hard/</guid>
       <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
 I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
       <title>2015 AAAS in San Jose</title>
-      <link>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</link>
+      <link>/2015/02/13/2015-aaas-in-san-jose/</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
+      <guid>/2015/02/13/2015-aaas-in-san-jose/</guid>
       <description>I&amp;rsquo;m at the 2015 AAAS meeting in San Jose, California. This is definitely not my typical meeting: too big, too broad, and I hardly know anyone here. But here&amp;rsquo;s a quick (ha ha; yah sure) summary of the meeting so far.
 Opening night Gerald Fink gave the President&amp;rsquo;s Address last night. He&amp;rsquo;s the AAAS President, so I guess that&amp;rsquo;s appropriate. But after five minutes of really lame simplistic crap (for example, he said something like, &amp;ldquo;A single picture can destroy our known understanding of the universe,&amp;rdquo; like innovation and improving our understanding is a bad thing), I left.</description>
     </item>
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
 Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
 So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
@@ -97,10 +97,10 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
     
     <item>
       <title>The value of thesis intro/discussion</title>
-      <link>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</link>
+      <link>/2014/12/03/the-value-of-thesis-introdiscussion/</link>
       <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
+      <guid>/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>Last week, Kelly Weinersmith tweeted:
 Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published? I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won&amp;rsquo;t be read?
 My response was:
@@ -109,10 +109,10 @@ Intro &amp; disc of thesis get the student to think about the broader context of
     
     <item>
       <title>Scholarly Publishing Symposium at UW-Madison</title>
-      <link>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
+      <link>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
+      <guid>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>At the Scholarly Publishing Symposium at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
 So here they are electronically.
  Know your Copy Rights, Association of Research Libraries
@@ -125,10 +125,10 @@ So here they are electronically.
     
     <item>
       <title>The mustache photo</title>
-      <link>https://kbroman.org/blog/2014/08/28/the-mustache-photo/</link>
+      <link>/2014/08/28/the-mustache-photo/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/08/28/the-mustache-photo/</guid>
+      <guid>/2014/08/28/the-mustache-photo/</guid>
       <description>A certain photo of me has been following me around for some time.
 Karl with a mustache, 15 Nov 2002
 The thing is sitting on my website, so I suppose I have only myself to blame. I actually quite like the photo. I look happy. I was happy. I&amp;rsquo;m not always happy.
@@ -138,30 +138,30 @@ It appeared on the seminar board at Hopkins Biostat earlier this month.</descrip
     
     <item>
       <title>Reform academic statistics</title>
-      <link>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
     <item>
       <title>Simple web sites with GitHub Pages</title>
-      <link>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</link>
+      <link>/2014/04/05/simple-web-sites-with-github-pages/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
+      <guid>/2014/04/05/simple-web-sites-with-github-pages/</guid>
       <description>If you love git and GitHub, you&amp;rsquo;ll also love GitHub Pages, for producing websites using Markdown and git: you write pages in Markdown within a gh-pages branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.
 Last night, I wrote a minimal tutorial on how I&amp;rsquo;ve been using this (for example, for the website for my R/qtlcharts package, on interactive graphics for QTL data).</description>
     </item>
     
     <item>
       <title>Startling lack of training in statistical computing</title>
-      <link>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
+      <link>/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
+      <guid>/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
       <description>It is shocking to me that a statistics department would offer a graduate-level statistical computing course only every fourth year.
 I had been arguing for a statistical programming course: that we supplement the usual course on the theory of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the practice of statistical computing.
 But I was assuming that the more theoretical statistical computing course was actually being taught.</description>
@@ -169,20 +169,20 @@ But I was assuming that the more theoretical statistical computing course was ac
     
     <item>
       <title>Copyright of video lectures</title>
-      <link>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
+      <link>/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
+      <guid>/2014/02/09/copyright-of-video-lectures/</guid>
       <description>Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)
 I spoke to my family librarian, who pointed me to Carrie Kruse, directory of the College Library at UW-Madison.</description>
     </item>
     
     <item>
       <title>I still don&#39;t like it</title>
-      <link>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</link>
+      <link>/2014/02/09/i-still-dont-like-it/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</guid>
+      <guid>/2014/02/09/i-still-dont-like-it/</guid>
       <description>I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where the author refused to allow me to have an electronic copy.)
 Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:
  And then there are things that are just plain wrong.</description>
@@ -190,10 +190,10 @@ Actually, I soundly trashed the proposal in my review. In the nicest possible wa
     
     <item>
       <title>Things to avoid as a new faculty member</title>
-      <link>https://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
+      <link>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
       <pubDate>Thu, 05 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
+      <guid>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.
 Here are some thoughts on things to avoid.
  You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
@@ -202,20 +202,20 @@ Here are some thoughts on things to avoid.
     
     <item>
       <title>It was a really bad idea to use slides in that class</title>
-      <link>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a blog post.)
 This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):</description>
     </item>
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>I like to use LaTeX to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.
 Most people that use LaTeX to make slides seem to use Beamer, but the resulting slides are usually a bit busy, like this:
 
@@ -224,30 +224,30 @@ I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).
 NIH proposals are typically reviewed by three people and given preliminary scores on five aspects (significance, approach, investigators, environment, innovation) and overall, and the top proposals based on those scores are discussed and scored by the larger panel.</description>
     </item>
     
     <item>
       <title>Hiring computational biologists</title>
-      <link>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
+      <link>/2013/09/25/hiring-computational-biologists/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
+      <guid>/2013/09/25/hiring-computational-biologists/</guid>
       <description>The Morgridge Institute for Research (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. One position is joint with my department, Biostatistics &amp;amp; Medical Informatics.
 Yet another symposium Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (Here&amp;rsquo;s the agenda.) Great speakers: Marc Suchard, Brian Shoichet, David Page, and Winston Hide. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.</description>
     </item>
     
     <item>
       <title>Department websites</title>
-      <link>https://kbroman.org/blog/2013/09/11/department-websites/</link>
+      <link>/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/09/11/department-websites/</guid>
+      <guid>/2013/09/11/department-websites/</guid>
       <description>I was thinking about department websites, partly because my own department&amp;rsquo;s website is terrible, and recently a colleague asked me whether I could suggest some good department sites.
 I&amp;rsquo;ll describe the basic principles for a good department website, and then I&amp;rsquo;ll comment on a number of examples.
 But first: No discussion of academic web pages is complete without referring to the xkcd comic on University websites, so let&amp;rsquo;s start with that:</description>
@@ -255,20 +255,20 @@ But first: No discussion of academic web pages is complete without referring to 
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>Stack Exchange is a series of question-and-answer sites, including Stack Overflow for programming and Cross Validated for statistics. I was introduced to these sites at a short talk by Barry Rowlingson at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;
 These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.</description>
     </item>
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
  Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) nature.com/nature/journal...  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
 But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
@@ -278,20 +278,20 @@ So I tweeted:
     
     <item>
       <title>Methods before results</title>
-      <link>https://kbroman.org/blog/2013/04/29/methods-before-results/</link>
+      <link>/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
+      <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
  To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
       <title>Use meaningful URLs</title>
-      <link>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</link>
+      <link>/2013/04/10/use-meaningful-urls/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
+      <guid>/2013/04/10/use-meaningful-urls/</guid>
       <description>QR codes are stupid. See the well-known flowchart.
 And I don&amp;rsquo;t like Drupal. Sites that use it give things URLs like http://www.genetics.wisc.edu/node/577 for their seminar list.
 And can we get rid of the www?
@@ -301,10 +301,10 @@ URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) o
     
     <item>
       <title>Knuth: Journal referees should assist authors</title>
-      <link>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
+      <link>/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
+      <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>When serving as referee for a journal, who are you working for?
  The editor: Will the paper add to the journal&amp;rsquo;s prestige?
  The reader: Is it worth reading?
@@ -315,10 +315,10 @@ But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should f
     
     <item>
       <title>ENAR highs and lows</title>
-      <link>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
+      <link>/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
+      <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
 I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
 Let me tell you about the high- and lowlights, for me.</description>
@@ -326,20 +326,20 @@ Let me tell you about the high- and lowlights, for me.</description>
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</link>
+      <link>/2013/03/19/latex-unicode-xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</guid>
+      <guid>/2013/03/19/latex-unicode-xetex/</guid>
       <description>I&amp;rsquo;m co-organizing a scientific meeting at the end of May. The abstracts are all in.
 We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review. (I&amp;rsquo;m using Spreadsheet:XLSX for the first time; it&amp;rsquo;s really easy. Why have I always converted Excel files to CSV before parsing them?</description>
     </item>
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
 For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
 For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>

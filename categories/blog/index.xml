@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/categories/blog/</link>
-    <description>Recent content in Blog on the stupidest thing...</description>
+    <title>blog on the stupidest thing...</title>
+    <link>/categories/blog/</link>
+    <description>Recent content in blog on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 03 Aug 2017 00:01:00 -0500</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>yay, yihui!</title>
-      <link>https://kbroman.org/blog/2017/08/03/yay-yihui/</link>
+      <link>/2017/08/03/yay-yihui/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
+      <guid>/2017/08/03/yay-yihui/</guid>
       <description>When I abandoned my wordpress site and moved to blogdown, I’d said that I wouldn’t bother trying to move the old posts over.
 But Yihui Xie just transferred everything for me! So awesome.</description>
     </item>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Open Access on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/open-access/</link>
-    <description>Recent content in Open Access on the stupidest thing...</description>
+    <title>open access on the stupidest thing...</title>
+    <link>/tags/open-access/</link>
+    <description>Recent content in open access on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 30 Oct 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/open-access/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/open-access/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scholarly Publishing Symposium at UW-Madison</title>
-      <link>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
+      <link>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
+      <guid>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>At the Scholarly Publishing Symposium at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
 So here they are electronically.
  Know your Copy Rights, Association of Research Libraries
@@ -30,20 +30,20 @@ So here they are electronically.
     
     <item>
       <title>Copyright of video lectures</title>
-      <link>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
+      <link>/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
+      <guid>/2014/02/09/copyright-of-video-lectures/</guid>
       <description>Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)
 I spoke to my family librarian, who pointed me to Carrie Kruse, directory of the College Library at UW-Madison.</description>
     </item>
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
  Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) nature.com/nature/journal...  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
 But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
@@ -53,39 +53,39 @@ So I tweeted:
     
     <item>
       <title>Open access, animated</title>
-      <link>https://kbroman.org/blog/2012/10/25/open-access-animated/</link>
+      <link>/2012/10/25/open-access-animated/</link>
       <pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/10/25/open-access-animated/</guid>
+      <guid>/2012/10/25/open-access-animated/</guid>
       <description>Here&amp;rsquo;s a great interview with Jonathan Eisen and Nick Shockey on open access publishing, nicely animated by Jorge Cham, who does the Piled Higher and Deeper comic.
   </description>
     </item>
     
     <item>
       <title>Web-enabled publishing environment</title>
-      <link>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</link>
+      <link>/2012/10/23/web-enabled-publishing-environment/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</guid>
+      <guid>/2012/10/23/web-enabled-publishing-environment/</guid>
       <description>Karl Rohe has an interesting commentary in Amstat News this month, on how our current publishing system is obstructing research progress, and what a better future might look like.</description>
     </item>
     
     <item>
       <title>UW-Madison news item about Elsevier boycott</title>
-      <link>https://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</link>
+      <link>/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</link>
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
+      <guid>/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
       <description>There&amp;rsquo;s an article in the UW-Madison newsletter about the Elsevier boycott. I&amp;rsquo;m quoted as follows:
  &#34;The main issue is that scientists want their papers to be read and available, and not just to scientists at well-funded universities. We are spending, collectively, a good amount of money that goes toward profit for these journal companies, and that could be redirected.&#34;   At this point, Broman says scientists are in control.</description>
     </item>
     
     <item>
       <title>I just refused an Elsevier review</title>
-      <link>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</link>
+      <link>/2012/02/10/i-just-refused-an-elsevier-review/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</guid>
+      <guid>/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting. AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at http://thecostofknowledge.com to not publish or review for Elsevier journals. If only AJHG were still with the University of Chicago Press&amp;hellip;
 Michael Eisen recently wrote:
  The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Elsevier – they are hardly the only bad actors in the field.</description>
@@ -93,30 +93,30 @@ Michael Eisen recently wrote:
     
     <item>
       <title>More on open access</title>
-      <link>https://kbroman.org/blog/2012/02/03/more-on-open-access/</link>
+      <link>/2012/02/03/more-on-open-access/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/03/more-on-open-access/</guid>
+      <guid>/2012/02/03/more-on-open-access/</guid>
       <description>I am quite persuaded by Michael Eisen&amp;rsquo;s recent comments on open access:
  ...it is simply unacceptable for any scientist who decries Elsevier&#39;s actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.  But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra \$1200 to make an article open access.</description>
     </item>
     
     <item>
       <title>Paying for scholarly publications</title>
-      <link>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
+      <link>/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
+      <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
 So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>
       <title>Elsevier boycott</title>
-      <link>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
+      <link>/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
+      <guid>/2012/02/01/elsevier-boycott/</guid>
       <description>I expect you&amp;rsquo;ve already heard about the Elsevier boycott, started based on comments from Timothy Gowers. While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject. On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians). There have been a couple of articles about this in the Chronicle of Higher Education: here and here.
 I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.</description>
     </item>

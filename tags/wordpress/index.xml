@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wordpress on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/wordpress/</link>
-    <description>Recent content in Wordpress on the stupidest thing...</description>
+    <title>wordpress on the stupidest thing...</title>
+    <link>/tags/wordpress/</link>
+    <description>Recent content in wordpress on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 30 Apr 2017 10:50:00 -0500</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>old posts</title>
-      <link>https://kbroman.org/blog/2017/04/30/old-posts/</link>
+      <link>/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
+      <guid>/2017/04/30/old-posts/</guid>
       <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
  Better-looking LaTeX/Beamer slides, 2013-10-07
  MongoDB with D3.js, 2015-06-22
@@ -31,10 +31,10 @@
     
     <item>
       <title>new blog</title>
-      <link>https://kbroman.org/blog/2017/04/29/new-blog/</link>
+      <link>/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
+      <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>

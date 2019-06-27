@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Peer Review on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/peer-review/</link>
-    <description>Recent content in Peer Review on the stupidest thing...</description>
+    <title>peer review on the stupidest thing...</title>
+    <link>/tags/peer-review/</link>
+    <description>Recent content in peer review on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 09 Feb 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/peer-review/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/peer-review/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I still don&#39;t like it</title>
-      <link>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</link>
+      <link>/2014/02/09/i-still-dont-like-it/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</guid>
+      <guid>/2014/02/09/i-still-dont-like-it/</guid>
       <description>I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where the author refused to allow me to have an electronic copy.)
 Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:
  And then there are things that are just plain wrong.</description>
@@ -25,30 +25,30 @@ Actually, I soundly trashed the proposal in my review. In the nicest possible wa
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).
 NIH proposals are typically reviewed by three people and given preliminary scores on five aspects (significance, approach, investigators, environment, innovation) and overall, and the top proposals based on those scores are discussed and scored by the larger panel.</description>
     </item>
     
     <item>
       <title>Code review</title>
-      <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
+      <link>/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
+      <guid>/2013/09/25/code-review/</guid>
       <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
       <title>Knuth: Journal referees should assist authors</title>
-      <link>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
+      <link>/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
+      <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>When serving as referee for a journal, who are you working for?
  The editor: Will the paper add to the journal&amp;rsquo;s prestige?
  The reader: Is it worth reading?
@@ -59,10 +59,10 @@ But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should f
     
     <item>
       <title>What a waste of paper</title>
-      <link>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</link>
+      <link>/2013/03/07/what-a-waste-of-paper/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</guid>
+      <guid>/2013/03/07/what-a-waste-of-paper/</guid>
       <description>A university press asked me to review a book manuscript, and the author &amp;ldquo;has asked that we not use electronic copies.&amp;rdquo; So they&amp;rsquo;re going to send me a hard copy.
 My response: &amp;ldquo;If you only give me a paper copy, I&amp;rsquo;m going to just scan it and toss the paper. That seems like a waste of time (and paper and postage).&amp;rdquo;
 I should probably have said, &amp;ldquo;Then forget it.&amp;rdquo;
@@ -71,19 +71,19 @@ Their response included, &amp;ldquo;What you do with it when it arrives I am jus
     
     <item>
       <title>Web-enabled publishing environment</title>
-      <link>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</link>
+      <link>/2012/10/23/web-enabled-publishing-environment/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</guid>
+      <guid>/2012/10/23/web-enabled-publishing-environment/</guid>
       <description>Karl Rohe has an interesting commentary in Amstat News this month, on how our current publishing system is obstructing research progress, and what a better future might look like.</description>
     </item>
     
     <item>
       <title>What, no coffee?</title>
-      <link>https://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
+      <link>/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
+      <guid>/2012/09/28/what-no-coffee/</guid>
       <description>I was at a CIDR Access Committee meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the Center for Inherited Disease Research, a service funded by several of the NIH institutes.
 We had to buy our own coffee.
 It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.
@@ -92,20 +92,20 @@ But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meetin
     
     <item>
       <title>Positive comments on peer review</title>
-      <link>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</link>
+      <link>/2012/04/27/positive-comments-on-peer-review/</link>
       <pubDate>Fri, 27 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</guid>
+      <guid>/2012/04/27/positive-comments-on-peer-review/</guid>
       <description>We all complain about peer review, particularly when our best work is rejected by every journal from Nature Genetics down to that journal that will publish anything, so that it finally appears in a volume to honor some guy that only he will read.
 However, sometimes an anonymous reviewer will identify an important flaw in a paper that you can fix before it&amp;rsquo;s published, thus saving you from potential public embarrassment.</description>
     </item>
     
     <item>
       <title>I just refused an Elsevier review</title>
-      <link>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</link>
+      <link>/2012/02/10/i-just-refused-an-elsevier-review/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</guid>
+      <guid>/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting. AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at http://thecostofknowledge.com to not publish or review for Elsevier journals. If only AJHG were still with the University of Chicago Press&amp;hellip;
 Michael Eisen recently wrote:
  The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Elsevier – they are hardly the only bad actors in the field.</description>
@@ -113,30 +113,30 @@ Michael Eisen recently wrote:
     
     <item>
       <title>Paying for scholarly publications</title>
-      <link>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
+      <link>/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
+      <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
 So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>
       <title>Elsevier boycott</title>
-      <link>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
+      <link>/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
+      <guid>/2012/02/01/elsevier-boycott/</guid>
       <description>I expect you&amp;rsquo;ve already heard about the Elsevier boycott, started based on comments from Timothy Gowers. While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject. On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians). There have been a couple of articles about this in the Chronicle of Higher Education: here and here.
 I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.</description>
     </item>
     
     <item>
       <title>Fund people not projects?</title>
-      <link>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</link>
+      <link>/2011/10/19/fund-people-not-projects/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</guid>
+      <guid>/2011/10/19/fund-people-not-projects/</guid>
       <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
 It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work.</description>
     </item>
