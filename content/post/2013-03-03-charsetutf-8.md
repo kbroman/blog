@@ -11,9 +11,9 @@ tags:
 slug: charsetutf-8
 ---
 
-To use the latest version of [D3](http://d3js.org), you need to use `charset="utf-8"` in the call to `<script>`.
+To use the latest version of [D3](https://d3js.org), you need to use `charset="utf-8"` in the call to `<script>`.
 
-I'm giving a talk at [ENAR](http://www.enar.org/meetings.cfm) in just over a week, on interactive graphics.  My slides (still in preparation) are [on the web](http://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2).
+I'm giving a talk at [ENAR](https://www.enar.org/meetings) in just over a week, on interactive graphics.  My slides (still in preparation) are [on the web](https://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2).
 
 The slides were working fine locally on my laptop, but they weren't working on my web server...I was getting a syntax error regarding an illegal character.
 
