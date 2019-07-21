@@ -39,7 +39,7 @@ Here's a second example; again click on the image to jump to the [interactive ve
 
 Typically, in a lecture on complex trait analysis, I'd show one LOD curve (like the top panel in the image below) and a few different plots of phenotype vs genotype (the lower-right panel in the image).  I think the exploratory tool will be much more effective, in a lecture, for explaining what it all means.
 
-[![LOD and QTL effects](https://kbroman.files.wordpress.com/2013/03/lod_and_effect.png)](http://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect)
+[![LOD and QTL effects](https://kbroman.files.wordpress.com/2013/03/lod_and_effect.png)](https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect)
 
 ### Statisticians need to be doing this routinely
 
