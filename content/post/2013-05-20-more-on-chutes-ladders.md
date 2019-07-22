@@ -24,15 +24,15 @@ While it's fast and easy to study the Chutes & Ladders game by simulation, if yo
 Consider a single individual playing the game, and let _X<sub>n</sub>_ be
 his/her location at round _n_. The _X<sub>n</sub>_
 form a [_Markov chain_](https://en.wikipedia.org/wiki/Markov_chain),
-in that the future (_X<sub>n+1</sub>_), given the present ($X_n$),
+in that the future (_X<sub>n+1</sub>_), given the present (_X<sub>n</sub>_),
 is conditionally independent of the history (_X<sub>1</sub>_, ..., _X<sub>n-1</sub>_).
 
 It's relatively easy to construct the transition matrix of the chain.  (See my [R code](https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r).)  This is a matrix _P_, with _P<sub>ij</sub>_ = Pr(_X<sub>n+1</sub>_ = _j_ | _X<sub>n</sub>_ = _i_).
 
-Then the probability that a player has reached state 100 by round $n$ is
-(1, 0, ..., 0) _P<sup>n</sup>_ (0, ..., 0, 1)&rsquo;.  That's the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this $q_n$.  You can get the probability distribution by differences, say _p<sub>n</sub>_ = _q<sub>n</sub>_ - _q<sub>n-1</sub>_.
+Then the probability that a player has reached state 100 by round _n_ is
+(1, 0, ..., 0) _P<sup>n</sup>_ (0, ..., 0, 1)&rsquo;.  That's the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this _q<sub>n</sub>_.  You can get the probability distribution by differences, say _p<sub>n</sub>_ = _q<sub>n</sub>_ - _q<sub>n-1</sub>_.
 
-To calculate the number of rounds to complete a game with _k_ players, you want the minimum of _k_ independent draws from this distribution.  The probability that a game with $k$ players is complete by round n is 1 - (1-_q<sub>n</sub>_)_<sup>k</sup>_.  And again you can get the probability distributions by differences.  Here's a picture.
+To calculate the number of rounds to complete a game with _k_ players, you want the minimum of _k_ independent draws from this distribution.  The probability that a game with _k_ players is complete by round n is 1 - (1-_q<sub>n</sub>_)_<sup>k</sup>_.  And again you can get the probability distributions by differences.  Here's a picture.
 
 ![No. rounds to complete Chutes & Ladders](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png)
 
