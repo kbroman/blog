@@ -9,7 +9,7 @@ tags:
 slug: thoughts-on-statistical-consulting
 ---
 
-The [Statistics Department](http://www.stat.wisc.edu) at [UW-Madison](http://www.wisc.edu) has a course on statistical consulting, offered each semester. I'm often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.
+The [Statistics Department](https://www.stat.wisc.edu) at [UW-Madison](https://www.wisc.edu) has a course on statistical consulting, offered each semester. I'm often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.
 
 I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties.  This will be a bit rough, and long.  I'll revert to bullet points, to be more compact (and because I'm lazy).
 
@@ -25,11 +25,11 @@ To me, consulting is inherently short-term.  Someone comes to you for statistica
 
 ### My experience
 
-In graduate school (in [Statistics](http://www.stat.berkeley.edu) at UC-Berkeley), there was a statistical consulting course that involved pairs of graduate students holding weekly office hours, to give free statistical advice to anyone at the university (generally other graduate students), and then we met as a group weekly, with a faculty advisor, to discuss consultees' questions and get advice on what advice we might give.  I did the course three times, with [Andrew Gelman](http://www.stat.columbia.edu/~gelman/), [Terry Speed](http://www.wehi.edu.au/faculty_members/professor_terry_speed), and [David Freedman](http://www.stat.berkeley.edu/~freedman/), who, I think, span the space of applied statistics.  (Well, the good part of the space.)  Learning by doing (or, at least, by offering advice) was how I really became an applied statistician.  And seeing Andrew, Terry, and David's unique approaches was extremely influential.
+In graduate school (in [Statistics](https://www.stat.berkeley.edu) at UC-Berkeley), there was a statistical consulting course that involved pairs of graduate students holding weekly office hours, to give free statistical advice to anyone at the university (generally other graduate students), and then we met as a group weekly, with a faculty advisor, to discuss consultees' questions and get advice on what advice we might give.  I did the course three times, with [Andrew Gelman](https://www.stat.columbia.edu/~gelman/), [Terry Speed](https://www.wehi.edu.au/faculty_members/professor_terry_speed), and [David Freedman](https://www.stat.berkeley.edu/~freedman/), who, I think, span the space of applied statistics.  (Well, the good part of the space.)  Learning by doing (or, at least, by offering advice) was how I really became an applied statistician.  And seeing Andrew, Terry, and David's unique approaches was extremely influential.
 
 After graduate school, I was a postdoc with a geneticist (Jim Weber, then at the Marshfield Medical Research Foundation, in Marshfield, Wisconsin), where I was relatively isolated, as a statistician.  There were a few other statisticians around, but we were working on rather different things.
 
-Moving from postdoc to faculty member, I've had a relatively steady stream of statistical consulting experiences, with consultees from courses I taught, referred by my department chair or other friends/colleagues, or through my software (particularly [R/qtl](http://www.rqtl.org)) or publications (particularly my [two-part model](http://www.biostat.wisc.edu/~kbroman/publications/twopart.pdf) paper).
+Moving from postdoc to faculty member, I've had a relatively steady stream of statistical consulting experiences, with consultees from courses I taught, referred by my department chair or other friends/colleagues, or through my software (particularly [R/qtl](http://rqtl.org)) or publications (particularly my [two-part model](https://www.biostat.wisc.edu/~kbroman/publications/twopart.pdf) paper).
 
 ### Why do it?
 
@@ -43,7 +43,7 @@ I'm not paid to consult; there's no requirement that I do so.  So why do it?
 
   * Be useful: help people.
 
-  * Publications.  (Deans may not read, but they do count. [I don't mean you, [Bob](http://www.med.wisc.edu/about/administration/robert-golden-md/38), but other Deans!])
+  * Publications.  (Deans may not read, but they do count. [I don't mean you, [Bob](https://www.med.wisc.edu/about/administration/robert-golden-md/38), but other Deans!])
 
   * Can lead to long-term collaboration, and allows you to find out if you like the person.
 
@@ -51,7 +51,7 @@ I'm not paid to consult; there's no requirement that I do so.  So why do it?
 
   * Listen.
 
-  * Verify that you're following (re-state according to your understanding).  ([Murray Clayton](http://www.stat.wisc.edu/~clayton/) recommended the book [How to talk so kids will listen and listen so kids will talk](http://www.amazon.com/exec/obidos/ASIN/1451663889/7210-20), and I do, too.)
+  * Verify that you're following (re-state according to your understanding).  ([Murray Clayton](https://www.stat.wisc.edu/~clayton/) recommended the book [How to talk so kids will listen and listen so kids will talk](https://www.amazon.com/exec/obidos/ASIN/1451663889/7210-20), and I do, too.)
 
   * Don't be embarrassed to admit ignorance.
 
@@ -63,7 +63,7 @@ A key difficulty: both parties must admit their ignorance, and need to be very p
 
 You generally need to force the scientist to back way up.  They're hoping for a quick answer (they often don't like this whole statistics business!), and so may not want to spend an hour explaining the full background.  But it can be critical.
 
-Also, the scientist often mentions the use of some statistic that you've never heard of or that you know with a different name. For example: the G test (which is what [Sokal & Rohlf](http://www.amazon.com/exec/obidos/ASIN/0716786044/7210-20) call the likelihood ratio test for contingency tables), or the Hairbrainer-Warstein-Edmundsun Test (which I made up, but might actually exist).  When you admit that you don't know this statistical method that is so widely used in their field, they may question your credentials.  Ask for a reference; you'll be able to figure it out.
+Also, the scientist often mentions the use of some statistic that you've never heard of or that you know with a different name. For example: the G test (which is what [Sokal & Rohlf](https://www.amazon.com/exec/obidos/ASIN/0716786044/7210-20) call the likelihood ratio test for contingency tables), or the Hairbrainer-Warstein-Edmundsun Test (which I made up, but might actually exist).  When you admit that you don't know this statistical method that is so widely used in their field, they may question your credentials.  Ask for a reference; you'll be able to figure it out.
 
 A very common experience: "I have a quick question..."  There are no quick questions.
 
