@@ -44,8 +44,9 @@ It's nice to see others make use of my html code, but you shouldn't leave my nam
 
 Put the important words first, and perhaps nothing else. For example, the title shouldn't include "Drupal".
 
-_Update_: Read this: "[URLs are for People, not Computers](http://www.not-implemented.com/urls-are-for-people-not-computers/)"
+_Update_: Read this: "[URLs are for People, not Computers](http://web.archive.org/web/20130416035126/http://www.not-implemented.com/urls-are-for-people-not-computers/)"
 
-I could have just given the URL:
+I could have just given the URL (though it's now dead so I'm linking
+to archive.org.
 
-[`http://www.not-implemented.com/urls-are-for-people-not-computers`](http://www.not-implemented.com/urls-are-for-people-not-computers/)
+[`http://www.not-implemented.com/urls-are-for-people-not-computers`](http://web.archive.org/web/20130416035126/http://www.not-implemented.com/urls-are-for-people-not-computers)
