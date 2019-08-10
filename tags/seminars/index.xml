@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>seminars on the stupidest thing...</title>
-    <link>/tags/seminars/</link>
+    <link>https://kbroman.org/blog/tags/seminars/</link>
     <description>Recent content in seminars on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 07 Oct 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/seminars/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/seminars/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>I like to use LaTeX to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.
 Most people that use LaTeX to make slides seem to use Beamer, but the resulting slides are usually a bit busy, like this:
 
@@ -26,10 +26,10 @@ I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s
     
     <item>
       <title>The Hopkins SPH logo, part 3: Karl&#39;s revenge</title>
-      <link>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
+      <link>https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
+      <guid>https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
       <description>I&amp;rsquo;m finally back to the story of the Johns Hopkins Bloomberg School of Public Health logo.
 I wrote Part 1 in mid-November and Part 2 a week later. I said that Part 3 was &amp;ldquo;coming soon,&amp;rdquo; but I&amp;rsquo;ve been a bit shy about revealing this. You&amp;rsquo;ll see why.
 In August, 2005, Ingo, Greg, and I were sitting in a pub in Minneapolis in the early morning hours. I think maybe Brian was there, too.</description>
@@ -37,20 +37,20 @@ In August, 2005, Ingo, Greg, and I were sitting in a pub in Minneapolis in the e
     
     <item>
       <title>The Hopkins SPH logo, part 2</title>
-      <link>/2012/11/21/the-hopkins-sph-logo-part-2/</link>
+      <link>https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</link>
       <pubDate>Wed, 21 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
+      <guid>https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
       <description>Last week, I wrote about the Johns Hopkins Bloomberg School of Public Health logo. I now present part 2 of the story.
 Hopkins SPH had done some fancy renovations of part of the building, including an important new feature, the &amp;ldquo;Wall of Wonder&amp;ldquo;: a big display composed of nine LCD screens in the atrium of the building, to display various PR type stuff. (&amp;ldquo;Wall of Wonder&amp;rdquo; (WOW) is the official name!</description>
     </item>
     
     <item>
       <title>Practicing talks</title>
-      <link>/2012/06/22/practicing-talks/</link>
+      <link>https://kbroman.org/blog/2012/06/22/practicing-talks/</link>
       <pubDate>Fri, 22 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/06/22/practicing-talks/</guid>
+      <guid>https://kbroman.org/blog/2012/06/22/practicing-talks/</guid>
       <description>Clay Johnson, the author of The Information Diet, recently wrote about how to prepare to give a presentation.
 I was shocked.
 First, he says
@@ -59,60 +59,60 @@ When I started writing my book, I knew that authors generally make more money fr
     
     <item>
       <title>ENAR 2012</title>
-      <link>/2012/04/18/enar-2012/</link>
+      <link>https://kbroman.org/blog/2012/04/18/enar-2012/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/18/enar-2012/</guid>
+      <guid>https://kbroman.org/blog/2012/04/18/enar-2012/</guid>
       <description>The annual ENAR meeting (eastern North America portion of International Biometric Society) was a few weeks ago in Washington, DC. It was great to see old friends, and I learned a number of things outside of the sessions, but mostly I was annoyed by the meeting.
 Ways to annoy me  Distorted aspect ratios: I&amp;rsquo;m often seeing LCD projectors set up in wide format, stretching a presentation that was developed in the old 4:3 style.</description>
     </item>
     
     <item>
       <title>Caffeine</title>
-      <link>/2011/10/27/caffeine/</link>
+      <link>https://kbroman.org/blog/2011/10/27/caffeine/</link>
       <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/27/caffeine/</guid>
+      <guid>https://kbroman.org/blog/2011/10/27/caffeine/</guid>
       <description>A cute and useful menu bar application for Macs: Caffeine, available in the App store.
 If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen. This is especially useful when you&amp;rsquo;re giving a talk.</description>
     </item>
     
     <item>
       <title>Parachutes</title>
-      <link>/2011/10/19/parachutes/</link>
+      <link>https://kbroman.org/blog/2011/10/19/parachutes/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/19/parachutes/</guid>
+      <guid>https://kbroman.org/blog/2011/10/19/parachutes/</guid>
       <description>I went to a great talk today by David Goldstein, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials. The main conclusion:
 We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.</description>
     </item>
     
     <item>
       <title>Animal research</title>
-      <link>/2011/10/12/animal-research/</link>
+      <link>https://kbroman.org/blog/2011/10/12/animal-research/</link>
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/12/animal-research/</guid>
+      <guid>https://kbroman.org/blog/2011/10/12/animal-research/</guid>
       <description>Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a public discussion on animal research. I was really nervous, but I ended up not saying much and learning quite a lot.
 Paul Kaufman, Chair of Ophthalmology at UW-Madison, gave a 45 min talk about his research on glaucoma using monkeys. In particular, he sought to articulate one case in which animal research had been useful, and it was a good one: the development of prostoglandins for lowering interocular pressure and so preventing or delaying the onset of glaucoma.</description>
     </item>
     
     <item>
       <title>Terry on communication</title>
-      <link>/2011/10/03/terry-on-communication/</link>
+      <link>https://kbroman.org/blog/2011/10/03/terry-on-communication/</link>
       <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/03/terry-on-communication/</guid>
+      <guid>https://kbroman.org/blog/2011/10/03/terry-on-communication/</guid>
       <description>Relevant to my recent comments on seminars, Terry Speed&amp;rsquo;s latest commentary in the IMS Bulletin focuses on communication (talks and papers).
 He says: read others&amp;rsquo; work (which I would expand to say, pay attention) and practice.</description>
     </item>
     
     <item>
       <title>Seminars, bad and good</title>
-      <link>/2011/09/29/seminars-bad-and-good/</link>
+      <link>https://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</link>
       <pubDate>Thu, 29 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/09/29/seminars-bad-and-good/</guid>
+      <guid>https://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</guid>
       <description>Rafael Irizarry recently proposed that the standard 50 min seminar be reduced to 25 min, with the extra time devoted to discussion. I commented there but should have just written at greater length here. I&amp;rsquo;ll do so now.
 Bad seminars The overriding characteristic of a bad seminar is a lack of empathy for the audience.
  Skipping the motivation and jumping into a pile of theory.
@@ -121,10 +121,10 @@ Bad seminars The overriding characteristic of a bad seminar is a lack of empathy
     
     <item>
       <title>Lager yeast</title>
-      <link>/2011/09/19/lager-yeast/</link>
+      <link>https://kbroman.org/blog/2011/09/19/lager-yeast/</link>
       <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/09/19/lager-yeast/</guid>
+      <guid>https://kbroman.org/blog/2011/09/19/lager-yeast/</guid>
       <description>Last week, I attended an excellent seminar by Chris Hittinger on the identification and evolution of lager yeast (see the paper), part of my favorite seminar series, on evolution.
 [Forgive me if this description is not fully accurate.] Ales are the original (proper, better tasting) type of beer; they&amp;rsquo;re brewed at a warmer temperature, with &amp;ldquo;top-fermenting&amp;rdquo; yeast (the yeast rises to the top or is suspended throughout the column). Lagers were developed in the 15th century in Bavaria and are brewed at a colder temperature, with &amp;ldquo;bottom-fermenting&amp;rdquo; yeast (the yeast settles to the bottom).</description>
     </item>

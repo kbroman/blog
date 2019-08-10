@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>copyright on the stupidest thing...</title>
-    <link>/tags/copyright/</link>
+    <link>https://kbroman.org/blog/tags/copyright/</link>
     <description>Recent content in copyright on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 09 Feb 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Copyright of video lectures</title>
-      <link>/2014/02/09/copyright-of-video-lectures/</link>
+      <link>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/09/copyright-of-video-lectures/</guid>
+      <guid>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
       <description>Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)
 I spoke to my family librarian, who pointed me to Carrie Kruse, directory of the College Library at UW-Madison.</description>
     </item>

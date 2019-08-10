@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>knitr on the stupidest thing...</title>
-    <link>/tags/knitr/</link>
+    <link>https://kbroman.org/blog/tags/knitr/</link>
     <description>Recent content in knitr on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 06 Feb 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/knitr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/knitr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>knitr in a knutshell tutorial</title>
-      <link>/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
+      <link>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
+      <guid>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
       <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
 This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
 I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>

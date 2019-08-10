@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>writing on the stupidest thing...</title>
-    <link>/tags/writing/</link>
+    <link>https://kbroman.org/blog/tags/writing/</link>
     <description>Recent content in writing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 03 Dec 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The value of thesis intro/discussion</title>
-      <link>/2014/12/03/the-value-of-thesis-introdiscussion/</link>
+      <link>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</link>
       <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
+      <guid>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>Last week, Kelly Weinersmith tweeted:
 Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published? I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won&amp;rsquo;t be read?
 My response was:
@@ -26,60 +26,60 @@ Intro &amp; disc of thesis get the student to think about the broader context of
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)
 A google search on the title of this post got me to this post.</description>
     </item>
     
     <item>
       <title>Positive comments on peer review</title>
-      <link>/2012/04/27/positive-comments-on-peer-review/</link>
+      <link>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</link>
       <pubDate>Fri, 27 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/27/positive-comments-on-peer-review/</guid>
+      <guid>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</guid>
       <description>We all complain about peer review, particularly when our best work is rejected by every journal from Nature Genetics down to that journal that will publish anything, so that it finally appears in a volume to honor some guy that only he will read.
 However, sometimes an anonymous reviewer will identify an important flaw in a paper that you can fix before it&amp;rsquo;s published, thus saving you from potential public embarrassment.</description>
     </item>
     
     <item>
       <title>More on open access</title>
-      <link>/2012/02/03/more-on-open-access/</link>
+      <link>https://kbroman.org/blog/2012/02/03/more-on-open-access/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/03/more-on-open-access/</guid>
+      <guid>https://kbroman.org/blog/2012/02/03/more-on-open-access/</guid>
       <description>I am quite persuaded by Michael Eisen&amp;rsquo;s recent comments on open access:
  ...it is simply unacceptable for any scientist who decries Elsevier&#39;s actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.  But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra \$1200 to make an article open access.</description>
     </item>
     
     <item>
       <title>Paying for scholarly publications</title>
-      <link>/2012/02/02/paying-for-scholarly-publications/</link>
+      <link>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
+      <guid>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
 So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>
       <title>Elsevier boycott</title>
-      <link>/2012/02/01/elsevier-boycott/</link>
+      <link>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/01/elsevier-boycott/</guid>
+      <guid>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
       <description>I expect you&amp;rsquo;ve already heard about the Elsevier boycott, started based on comments from Timothy Gowers. While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject. On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians). There have been a couple of articles about this in the Chronicle of Higher Education: here and here.
 I signed the boycott, and will refuse to review papers for Evilsevier journals, and will try to steer my coauthors away from them.</description>
     </item>
     
     <item>
       <title>Terry on communication</title>
-      <link>/2011/10/03/terry-on-communication/</link>
+      <link>https://kbroman.org/blog/2011/10/03/terry-on-communication/</link>
       <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/03/terry-on-communication/</guid>
+      <guid>https://kbroman.org/blog/2011/10/03/terry-on-communication/</guid>
       <description>Relevant to my recent comments on seminars, Terry Speed&amp;rsquo;s latest commentary in the IMS Bulletin focuses on communication (talks and papers).
 He says: read others&amp;rsquo; work (which I would expand to say, pay attention) and practice.</description>
     </item>

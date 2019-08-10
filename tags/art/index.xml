@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>art on the stupidest thing...</title>
-    <link>/tags/art/</link>
+    <link>https://kbroman.org/blog/tags/art/</link>
     <description>Recent content in art on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 17 May 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/art/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/art/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Trees</title>
-      <link>/2012/05/17/trees/</link>
+      <link>https://kbroman.org/blog/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/17/trees/</guid>
+      <guid>https://kbroman.org/blog/2012/05/17/trees/</guid>
       <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
 That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
 These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>

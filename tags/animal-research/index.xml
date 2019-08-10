@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>animal research on the stupidest thing...</title>
-    <link>/tags/animal-research/</link>
+    <link>https://kbroman.org/blog/tags/animal-research/</link>
     <description>Recent content in animal research on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 12 Oct 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/animal-research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/animal-research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Animal research</title>
-      <link>/2011/10/12/animal-research/</link>
+      <link>https://kbroman.org/blog/2011/10/12/animal-research/</link>
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/12/animal-research/</guid>
+      <guid>https://kbroman.org/blog/2011/10/12/animal-research/</guid>
       <description>Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a public discussion on animal research. I was really nervous, but I ended up not saying much and learning quite a lot.
 Paul Kaufman, Chair of Ophthalmology at UW-Madison, gave a 45 min talk about his research on glaucoma using monkeys. In particular, he sought to articulate one case in which animal research had been useful, and it was a good one: the development of prostoglandins for lowering interocular pressure and so preventing or delaying the onset of glaucoma.</description>
     </item>

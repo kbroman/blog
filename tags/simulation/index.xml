@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>simulation on the stupidest thing...</title>
-    <link>/tags/simulation/</link>
+    <link>https://kbroman.org/blog/tags/simulation/</link>
     <description>Recent content in simulation on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 17 May 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
-      <link>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
+      <link>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
+      <guid>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
       <description>I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;
 I saw an interesting mathematical analysis of the game a few years ago, but it seems to be offline, though you can read it via the wayback machine.
 But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;

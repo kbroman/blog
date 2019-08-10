@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>version control on the stupidest thing...</title>
-    <link>/tags/version-control/</link>
+    <link>https://kbroman.org/blog/tags/version-control/</link>
     <description>Recent content in version control on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 20 Aug 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>/2013/08/20/electronic-lab-notebook/</link>
+      <link>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
       <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
 I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
 As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>

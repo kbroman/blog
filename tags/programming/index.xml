@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>programming on the stupidest thing...</title>
-    <link>/tags/programming/</link>
+    <link>https://kbroman.org/blog/tags/programming/</link>
     <description>Recent content in programming on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 16 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>learning a new programming language</title>
-      <link>/2018/03/16/learning-a-new-programming-language/</link>
+      <link>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/03/16/learning-a-new-programming-language/</guid>
+      <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
       <description>I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
 More blather about languages Long ago, I wrote a tutorial on Perl.</description>
     </item>
     
     <item>
       <title>miner and craft</title>
-      <link>/2017/05/31/miner-and-craft/</link>
+      <link>https://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>/2017/05/31/miner-and-craft/</guid>
+      <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
       <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
 I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
       <title>deeply nested functions</title>
-      <link>/2017/05/30/deeply-nested-functions/</link>
+      <link>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
-      <guid>/2017/05/30/deeply-nested-functions/</guid>
+      <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
 setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
 But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
     <item>
       <title>Write unit tests!</title>
-      <link>/2015/12/07/write-unit-tests/</link>
+      <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/07/write-unit-tests/</guid>
+      <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
       <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
 It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
     </item>
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>/2015/09/25/session-info-from-rtravis/</link>
+      <link>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
       <description>For the problem I reported yesterday, in which my R package was working fine locally but failing on Travis, the key solution is to run update.packages(ask=FALSE) locally, and maybe even update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;) to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
 In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis.</description>
     </item>
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>/2015/09/24/its-not-you-its-me/</link>
+      <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/24/its-not-you-its-me/</guid>
+      <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
@@ -97,20 +97,20 @@ I spent the day trying to resolve a bug in my early-in-development R package, qt
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>/2015/06/22/mongodb-with-d3-js/</link>
+      <link>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
       <description>I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.
 That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (D3 and CoffeeScript) and developing some new tools, particularly the R package R/qtlcharts, which provides interactive versions of the many data visualizations in R/qtl, my long-in-development R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.</description>
     </item>
     
     <item>
       <title>Cheat sheets for R-based Software Carpentry course</title>
-      <link>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
+      <link>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
+      <guid>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
  ddplyr (from RStudio)
@@ -121,40 +121,40 @@ So at the SWC workshop at Washington State University this week, we handed out t
     
     <item>
       <title>Yet another R package primer</title>
-      <link>/2014/08/28/yet-another-r-package-primer/</link>
+      <link>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/08/28/yet-another-r-package-primer/</guid>
+      <guid>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
       <description>Hadley Wickham is writing what will surely be a great book about the basics of R packages. And Hilary Parker wrote a very influential post on how to write an R package. So it seems like that topic is well covered.
 Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another minimal tutorial with an alliterative name, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic.</description>
     </item>
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>I&amp;rsquo;ve been working on an R package, R/qtlcharts, with D3-based interactive graphs for quantitative trait locus mapping experiments.
 Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much have to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.</description>
     </item>
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.
 For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with image, the border is often obscured. I want a nice black rectangle around the outside.</description>
     </item>
     
     <item>
       <title>Googling errors</title>
-      <link>/2014/02/14/googling-errors/</link>
+      <link>https://kbroman.org/blog/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/14/googling-errors/</guid>
+      <guid>https://kbroman.org/blog/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
 &amp;mdash; __root__ (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
@@ -163,10 +163,10 @@ Gtk-WARNING **: cannot open display: I was logged into a department server, tryi
     
     <item>
       <title>Read the source code</title>
-      <link>/2013/08/06/read-the-source-code/</link>
+      <link>https://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/08/06/read-the-source-code/</guid>
+      <guid>https://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
       <description>The other day, there was a bit of a twitter conversation about qqline in R.
 It made me think: how exactly is the line produced by qqline chosen? I seemed to recall that the line was through the first and third quartiles.
 An advantage of R is that you can just type the name of the function and see the code:
@@ -175,10 +175,10 @@ An advantage of R is that you can just type the name of the function and see the
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
 If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
 To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
@@ -186,10 +186,10 @@ To help some colleagues get started with git and github, I wrote a minimal tutor
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>/2013/03/02/charsetutf-8/</link>
+      <link>https://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/02/charsetutf-8/</guid>
+      <guid>https://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
       <description>To use the latest version of D3, you need to use charset=&amp;quot;utf-8&amp;quot; in the call to &amp;lt;script&amp;gt;.
 I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
 The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
@@ -198,10 +198,10 @@ I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</
     
     <item>
       <title>D3.js difficulties</title>
-      <link>/2013/02/08/d3-js-difficulties/</link>
+      <link>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/02/08/d3-js-difficulties/</guid>
+      <guid>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
       <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
@@ -210,10 +210,10 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
     
     <item>
       <title>Learning a new language</title>
-      <link>/2012/06/21/learning-a-new-language/</link>
+      <link>https://kbroman.org/blog/2012/06/21/learning-a-new-language/</link>
       <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/06/21/learning-a-new-language/</guid>
+      <guid>https://kbroman.org/blog/2012/06/21/learning-a-new-language/</guid>
       <description>It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.
 A friend now has me doing D, wanting to find time to learn ruby, and, most recently, playing with JavaScript and D3.
 I&amp;rsquo;m really excited about D3. It&amp;rsquo;s long past time for dynamic, interactive graphics to be routine.</description>

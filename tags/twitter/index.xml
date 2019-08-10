@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>twitter on the stupidest thing...</title>
-    <link>/tags/twitter/</link>
+    <link>https://kbroman.org/blog/tags/twitter/</link>
     <description>Recent content in twitter on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 05 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>twitter break</title>
-      <link>/2018/10/05/twitter-break/</link>
+      <link>https://kbroman.org/blog/2018/10/05/twitter-break/</link>
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/10/05/twitter-break/</guid>
+      <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
       <description>What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible research.
 But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it’s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone’s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I’ve been working on for five years with little apparent progress.</description>
     </item>
     
     <item>
       <title>I thought maybe I was being paranoid</title>
-      <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
+      <link>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
+      <guid>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
       <description>An odd thing happened to me on twitter today.
 UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
 So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.

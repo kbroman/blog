@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>textmining on the stupidest thing...</title>
-    <link>/tags/textmining/</link>
+    <link>https://kbroman.org/blog/tags/textmining/</link>
     <description>Recent content in textmining on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 22 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/textmining/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/textmining/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Randomized Hobbit</title>
-      <link>/2015/06/22/randomized-hobbit-2/</link>
+      <link>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/06/22/randomized-hobbit-2/</guid>
+      <guid>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
       <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
 I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 Here&amp;rsquo;s the code I used to grab the text.

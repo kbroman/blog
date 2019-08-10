@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web on the stupidest thing...</title>
-    <link>/tags/web/</link>
+    <link>https://kbroman.org/blog/tags/web/</link>
     <description>Recent content in web on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 10 Apr 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use meaningful URLs</title>
-      <link>/2013/04/10/use-meaningful-urls/</link>
+      <link>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/10/use-meaningful-urls/</guid>
+      <guid>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
       <description>QR codes are stupid. See the well-known flowchart.
-And I don&amp;rsquo;t like Drupal. Sites that use it give things URLs like http://www.genetics.wisc.edu/node/577 for their seminar list.
+And I don&amp;rsquo;t like Drupal. Sites that use it often give things URLs like https://www.genetics.wisc.edu/node/577 for their seminar list.
 And can we get rid of the www?
  &#34;What&#39;s your web site?&#34; &#34;double-u double-u double-u ...&#34; &#34;Zzz...&#34;  URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
 URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>

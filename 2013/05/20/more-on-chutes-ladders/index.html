@@ -20,10 +20,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="../../../../blog/css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../blog/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="../../../../blog/css/custom.css">
 
 
 
@@ -32,14 +32,14 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="https://kbroman.org/blog/" class="nav-logo">
+    <img src="https://kbroman.org/blog/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -94,15 +94,15 @@
 <p>Consider a single individual playing the game, and let <em>X<sub>n</sub></em> be
 his/her location at round <em>n</em>. The <em>X<sub>n</sub></em>
 form a <a href="https://en.wikipedia.org/wiki/Markov_chain"><em>Markov chain</em></a>,
-in that the future (<em>X<sub>n+1</sub></em>), given the present ($X_n$),
+in that the future (<em>X<sub>n+1</sub></em>), given the present (<em>X<sub>n</sub></em>),
 is conditionally independent of the history (<em>X<sub>1</sub></em>, &hellip;, <em>X<sub>n-1</sub></em>).</p>
 
 <p>It&rsquo;s relatively easy to construct the transition matrix of the chain.  (See my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)  This is a matrix <em>P</em>, with <em>P<sub>ij</sub></em> = Pr(<em>X<sub>n+1</sub></em> = <em>j</em> | <em>X<sub>n</sub></em> = <em>i</em>).</p>
 
-<p>Then the probability that a player has reached state 100 by round $n$ is
-(1, 0, &hellip;, 0) <em>P<sup>n</sup></em> (0, &hellip;, 0, 1)&rsquo;.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this $q_n$.  You can get the probability distribution by differences, say <em>p<sub>n</sub></em> = <em>q<sub>n</sub></em> - <em>q<sub>n-1</sub></em>.</p>
+<p>Then the probability that a player has reached state 100 by round <em>n</em> is
+(1, 0, &hellip;, 0) <em>P<sup>n</sup></em> (0, &hellip;, 0, 1)&rsquo;.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this <em>q<sub>n</sub></em>.  You can get the probability distribution by differences, say <em>p<sub>n</sub></em> = <em>q<sub>n</sub></em> - <em>q<sub>n-1</sub></em>.</p>
 
-<p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with $k$ players is complete by round n is 1 - (1-<em>q<sub>n</sub></em>)<em><sup>k</sup></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
+<p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with <em>k</em> players is complete by round n is 1 - (1-<em>q<sub>n</sub></em>)<em><sup>k</sup></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
 
 <p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes &amp; Ladders" /></p>
 
@@ -172,7 +172,7 @@ the opposite is true.</p>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -181,9 +181,6 @@ the opposite is true.</p>
     
 
     
-<script src="../../../../js/math-code.js"></script>
-<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 
     
   </body>

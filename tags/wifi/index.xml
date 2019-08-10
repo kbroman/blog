@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wifi on the stupidest thing...</title>
-    <link>/tags/wifi/</link>
+    <link>https://kbroman.org/blog/tags/wifi/</link>
     <description>Recent content in wifi on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 20 Nov 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/wifi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wireless router woes</title>
-      <link>/2012/11/20/wireless-router-woes/</link>
+      <link>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</link>
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/11/20/wireless-router-woes/</guid>
+      <guid>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</guid>
       <description>I had problems with my internet connection at home this morning. The usual things didn&amp;rsquo;t work, but an unusual thing did work, so I thought I&amp;rsquo;d write about it.
 My internet connection worked last night, but it didn&amp;rsquo;t work this morning. I did the usual things: turn off the cable modem and the wireless router, and then turn them back on again. Turn off the computer and then turn it back on again, and then power cycle the modem and router again.</description>
     </item>
