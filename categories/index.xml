@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://kbroman.org/blog/categories/statistics/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/categories/statistics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Academics</title>
@@ -63,15 +72,6 @@
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/categories/twitter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
-      <link>https://kbroman.org/blog/categories/statistics/</link>
-      <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
-      
-      <guid>https://kbroman.org/blog/categories/statistics/</guid>
       <description></description>
     </item>
     

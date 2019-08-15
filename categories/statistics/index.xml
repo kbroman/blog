@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 31 Oct 2017 20:05:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data analysis principles</title>
+      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <description>I was looking through some of my old notes and came across this list of “data analysis principles”.
+ answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson’s paradox  I also found this list of “key statistics concepts”.</description>
+    </item>
+    
+    <item>
+      <title>data analysis principles</title>
+      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
+ answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>halloween 2017</title>
@@ -307,27 +327,6 @@ The hardest part was figuring out the right data structures. A pixel here is lin
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
 I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
 Let me tell you about the high- and lowlights, for me.</description>
-    </item>
-    
-    <item>
-      <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
-      <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
-      <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
-We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
-    </item>
-    
-    <item>
-      <title>Towards making my own papers reproducible</title>
-      <link>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
-      <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
-      <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
-For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
-For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
     </item>
     
   </channel>

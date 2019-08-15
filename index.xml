@@ -6,8 +6,84 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>data analysis principles</title>
+      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <description>
+
+
+&lt;p&gt;I was looking through some of my old notes and came across this list
+of “data analysis principles”.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;answer the question&lt;/li&gt;
+&lt;li&gt;understand where the data came from&lt;/li&gt;
+&lt;li&gt;make a graph&lt;/li&gt;
+&lt;li&gt;does the result make sense?&lt;/li&gt;
+&lt;li&gt;if it seems too good to be true, it probably is&lt;/li&gt;
+&lt;li&gt;form a diagnostic checklist: think of ways things could go wrong and
+how they might be revealed&lt;/li&gt;
+&lt;li&gt;follow up on all aberrations&lt;/li&gt;
+&lt;li&gt;every estimate needs an SE&lt;/li&gt;
+&lt;li&gt;consider taking logs&lt;/li&gt;
+&lt;li&gt;consider taking differences&lt;/li&gt;
+&lt;li&gt;use common axis scales&lt;/li&gt;
+&lt;li&gt;avoid normality assumptions&lt;/li&gt;
+&lt;li&gt;remember Simpson’s paradox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I also found this list of “key statistics concepts”.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;separate the population and the sample, the parameter and the
+estimate&lt;/li&gt;
+&lt;li&gt;imagine doing it again: estimates have distributions&lt;/li&gt;
+&lt;li&gt;suppose there were no effect; are the observed data unusual?&lt;/li&gt;
+&lt;li&gt;scatterplots&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>data analysis principles</title>
+      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <description>&lt;p&gt;I was looking through some of my old notes and came across this list
+of &amp;ldquo;data analysis principles&amp;rdquo;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;answer the question&lt;/li&gt;
+&lt;li&gt;understand where the data came from&lt;/li&gt;
+&lt;li&gt;make a graph&lt;/li&gt;
+&lt;li&gt;does the result make sense?&lt;/li&gt;
+&lt;li&gt;if it seems too good to be true, it probably is&lt;/li&gt;
+&lt;li&gt;form a diagnostic checklist: think of ways things could go wrong and
+how they might be revealed&lt;/li&gt;
+&lt;li&gt;follow up on all aberrations&lt;/li&gt;
+&lt;li&gt;every estimate needs an SE&lt;/li&gt;
+&lt;li&gt;consider taking logs&lt;/li&gt;
+&lt;li&gt;consider taking differences&lt;/li&gt;
+&lt;li&gt;use common axis scales&lt;/li&gt;
+&lt;li&gt;avoid normality assumptions&lt;/li&gt;
+&lt;li&gt;remember Simpson&amp;rsquo;s paradox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;separate the population and the sample, the parameter and the
+estimate&lt;/li&gt;
+&lt;li&gt;imagine doing it again: estimates have distributions&lt;/li&gt;
+&lt;li&gt;suppose there were no effect; are the observed data unusual?&lt;/li&gt;
+&lt;li&gt;scatterplots&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>reproducibility guidelines</title>
@@ -1427,7 +1503,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Sat Aug 10 16:33:09 2019 --&gt;
+&lt;!-- Thu Aug 15 14:38:03 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;

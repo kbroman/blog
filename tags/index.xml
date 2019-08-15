@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data analysis</title>
+      <link>https://kbroman.org/blog/tags/data-analysis/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://kbroman.org/blog/tags/data-science/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>https://kbroman.org/blog/tags/statistics/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/tags/statistics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>reproducible research</title>
@@ -252,33 +279,6 @@
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/tags/uw/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data science</title>
-      <link>https://kbroman.org/blog/tags/data-science/</link>
-      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>statistics</title>
-      <link>https://kbroman.org/blog/tags/statistics/</link>
-      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/tags/statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code</title>
-      <link>https://kbroman.org/blog/tags/code/</link>
-      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/tags/code/</guid>
       <description></description>
     </item>
     

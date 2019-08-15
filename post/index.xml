@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbroman.org/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data analysis principles</title>
+      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <description>I was looking through some of my old notes and came across this list of “data analysis principles”.
+ answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson’s paradox  I also found this list of “key statistics concepts”.</description>
+    </item>
+    
+    <item>
+      <title>data analysis principles</title>
+      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
+ answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>reproducibility guidelines</title>
@@ -304,27 +324,6 @@ You must listen to it!</description>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
 When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
-    </item>
-    
-    <item>
-      <title>Action items in response to hateful shit</title>
-      <link>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
-      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
-      <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
-Here are the things he had mentioned yesterday at the Faculty Senate meeting:
- Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
- Look at &amp;ldquo;bullying&amp;rdquo; language as a way to address possible hate/bias incidents in the classroom.</description>
-    </item>
-    
-    <item>
-      <title>Hateful shit at UW-Madison</title>
-      <link>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
-      <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
-      <description>I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.</description>
     </item>
     
   </channel>
