@@ -1,10 +1,14 @@
 ---
-title: 'data analysis principles'
+title: "data analysis principles"
 author: Karl
-date: '2019-08-15'
+date: "2019-08-15"
+categories:
+  - statistics
+tags:
+  - data analysis
+  - data science
+  - statistics
 slug: data-analysis-principles
-categories: [statistics]
-tags: [data analysis,data science,statistics]
 ---
 
 I was looking through some of my old notes and came across this list
