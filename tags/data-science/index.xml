@@ -2,42 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data science on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/data-science/</link>
+    <link>/tags/data-science/</link>
     <description>Recent content in data science on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>data analysis principles</title>
-      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <link>/2019/08/15/data-analysis-principles/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
-      <description>I was looking through some of my old notes and came across this list of “data analysis principles”.
- answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson’s paradox  I also found this list of “key statistics concepts”.</description>
-    </item>
-    
-    <item>
-      <title>data analysis principles</title>
-      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <guid>/2019/08/15/data-analysis-principles/</guid>
       <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
  answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>I am a data scientist</title>
-      <link>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
 When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
@@ -45,10 +35,10 @@ When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
 Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
 So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
@@ -56,20 +46,20 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
     
     <item>
       <title>Reform academic statistics</title>
-      <link>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
     <item>
       <title>Data science is statistics</title>
-      <link>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</link>
+      <link>/2013/04/05/data-science-is-statistics/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
+      <guid>/2013/04/05/data-science-is-statistics/</guid>
       <description>When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
 If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.
 If you say that one kind of data analysis is statistics and another kind is not, you&amp;rsquo;re not allowing innovation. We need to define the field broadly.
@@ -78,20 +68,20 @@ You may not like what some statisticians do.</description>
     
     <item>
       <title>5/9 data journalists use Excel</title>
-      <link>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
+      <link>/2013/01/15/59-data-journalists-use-excel/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
+      <guid>/2013/01/15/59-data-journalists-use-excel/</guid>
       <description>&amp;hellip;if I&amp;rsquo;ve counted correctly.
 I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an open handbook.</description>
     </item>
     
     <item>
       <title>NIH to hire Associate Director for Data Science</title>
-      <link>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
+      <link>/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
+      <guid>/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
       <description>See the press release.
 Eric Green, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.</description>
     </item>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>feather on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/feather/</link>
+    <link>/tags/feather/</link>
     <description>Recent content in feather on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sun, 30 Apr 2017 14:07:00 -0500</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/feather/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/feather/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>sqlite, feather, and fst</title>
-      <link>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
+      <link>/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
+      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
 But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>

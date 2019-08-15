@@ -2,283 +2,283 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>data analysis</title>
-      <link>https://kbroman.org/blog/tags/data-analysis/</link>
+      <link>/tags/data-analysis/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/data-analysis/</guid>
+      <guid>/tags/data-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data science</title>
-      <link>https://kbroman.org/blog/tags/data-science/</link>
+      <link>/tags/data-science/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/data-science/</guid>
+      <guid>/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistics</title>
-      <link>https://kbroman.org/blog/tags/statistics/</link>
+      <link>/tags/statistics/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/statistics/</guid>
+      <guid>/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reproducible research</title>
-      <link>https://kbroman.org/blog/tags/reproducible-research/</link>
+      <link>/tags/reproducible-research/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/reproducible-research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Minecraft</title>
-      <link>https://kbroman.org/blog/tags/minecraft/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/tags/minecraft/</guid>
+      <guid>/tags/reproducible-research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://kbroman.org/blog/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>conference</title>
-      <link>https://kbroman.org/blog/tags/conference/</link>
+      <link>/tags/conference/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/conference/</guid>
+      <guid>/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minecraft</title>
+      <link>/tags/minecraft/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/minecraft/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mac</title>
-      <link>https://kbroman.org/blog/tags/mac/</link>
+      <link>/tags/mac/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/mac/</guid>
+      <guid>/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computing</title>
-      <link>https://kbroman.org/blog/tags/computing/</link>
+      <link>/tags/computing/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/computing/</guid>
+      <guid>/tags/computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>news</title>
-      <link>https://kbroman.org/blog/tags/news/</link>
+      <link>/tags/news/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/news/</guid>
+      <guid>/tags/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>twitter</title>
-      <link>https://kbroman.org/blog/tags/twitter/</link>
+      <link>/tags/twitter/</link>
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/twitter/</guid>
+      <guid>/tags/twitter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>https://kbroman.org/blog/tags/programming/</link>
+      <link>/tags/programming/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/programming/</guid>
+      <guid>/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>stupid</title>
-      <link>https://kbroman.org/blog/tags/stupid/</link>
+      <link>/tags/stupid/</link>
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/stupid/</guid>
+      <guid>/tags/stupid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>graphics</title>
-      <link>https://kbroman.org/blog/tags/graphics/</link>
+      <link>/tags/graphics/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/graphics/</guid>
+      <guid>/tags/graphics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data munging</title>
-      <link>https://kbroman.org/blog/tags/data-munging/</link>
+      <link>/tags/data-munging/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/data-munging/</guid>
+      <guid>/tags/data-munging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>read.table</title>
-      <link>https://kbroman.org/blog/tags/read.table/</link>
+      <link>/tags/read.table/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/read.table/</guid>
+      <guid>/tags/read.table/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blogdown</title>
-      <link>https://kbroman.org/blog/tags/blogdown/</link>
+      <link>/tags/blogdown/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/blogdown/</guid>
+      <guid>/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>publishing</title>
-      <link>https://kbroman.org/blog/tags/publishing/</link>
+      <link>/tags/publishing/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/publishing/</guid>
+      <guid>/tags/publishing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RDS</title>
-      <link>https://kbroman.org/blog/tags/rds/</link>
+      <link>/tags/rds/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/rds/</guid>
+      <guid>/tags/rds/</guid>
       <description></description>
     </item>
     
     <item>
       <title>big data</title>
-      <link>https://kbroman.org/blog/tags/big-data/</link>
+      <link>/tags/big-data/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/big-data/</guid>
+      <guid>/tags/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data.table</title>
-      <link>https://kbroman.org/blog/tags/data.table/</link>
+      <link>/tags/data.table/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/data.table/</guid>
+      <guid>/tags/data.table/</guid>
       <description></description>
     </item>
     
     <item>
       <title>D3</title>
-      <link>https://kbroman.org/blog/tags/d3/</link>
+      <link>/tags/d3/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/d3/</guid>
+      <guid>/tags/d3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data visualization</title>
-      <link>https://kbroman.org/blog/tags/data-visualization/</link>
+      <link>/tags/data-visualization/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/data-visualization/</guid>
+      <guid>/tags/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SQL</title>
-      <link>https://kbroman.org/blog/tags/sql/</link>
+      <link>/tags/sql/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/sql/</guid>
+      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>feather</title>
-      <link>https://kbroman.org/blog/tags/feather/</link>
+      <link>/tags/feather/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/feather/</guid>
+      <guid>/tags/feather/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fst</title>
-      <link>https://kbroman.org/blog/tags/fst/</link>
+      <link>/tags/fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/fst/</guid>
+      <guid>/tags/fst/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wordpress</title>
-      <link>https://kbroman.org/blog/tags/wordpress/</link>
+      <link>/tags/wordpress/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/wordpress/</guid>
+      <guid>/tags/wordpress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>censorship</title>
-      <link>https://kbroman.org/blog/tags/censorship/</link>
+      <link>/tags/censorship/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/censorship/</guid>
+      <guid>/tags/censorship/</guid>
       <description></description>
     </item>
     
     <item>
       <title>trump</title>
-      <link>https://kbroman.org/blog/tags/trump/</link>
+      <link>/tags/trump/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/trump/</guid>
+      <guid>/tags/trump/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UW</title>
-      <link>https://kbroman.org/blog/tags/uw/</link>
+      <link>/tags/uw/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/tags/uw/</guid>
+      <guid>/tags/uw/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/javascript/</link>
+    <link>/tags/javascript/</link>
     <description>Recent content in javascript on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 02 Mar 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>https://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
+      <link>/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
+      <guid>/2013/03/02/charsetutf-8/</guid>
       <description>To use the latest version of D3, you need to use charset=&amp;quot;utf-8&amp;quot; in the call to &amp;lt;script&amp;gt;.
 I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
 The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
@@ -26,10 +26,10 @@ I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</
     
     <item>
       <title>D3.js difficulties</title>
-      <link>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.

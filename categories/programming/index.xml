@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/categories/programming/</link>
+    <link>/categories/programming/</link>
     <description>Recent content in Programming on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>omg, binder!</title>
-      <link>https://kbroman.org/blog/2019/02/18/omg_binder/</link>
+      <link>/2019/02/18/omg_binder/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
+      <guid>/2019/02/18/omg_binder/</guid>
       <description>At his talk at RStudio::conf, Karthik Ram discussed binder as a useful solution for reproducible research (see the video), and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small configuration file in your GitHub repository and suddenly you can open it live in RStudio on some cloud server somewhere. Seems too good to be true. But I trusted him, mentioned it in my talk at AAAS yesterday, and talked it up to Jeff Leek.</description>
     </item>
     
     <item>
       <title>writing text in Minecraft with R</title>
-      <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
+      <link>/2019/02/11/writing_text_in_minecraft_with_r/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</guid>
+      <guid>/2019/02/11/writing_text_in_minecraft_with_r/</guid>
       <description>It&amp;rsquo;s been nearly two years since I attended the RopenSci UnConf 2017 in LA and worked with Gergely Daróczi, Brooke Anderson, David Smith, Mario Inchiosa, and Adi Zaidi to create the miner package for interacting with Minecraft from R. We spent a half-day writing the package and then a day and a half playing, with a bunch of our ideas implemented in the craft package and illustrated in the bookdown book, R programming with Minecraft.</description>
     </item>
     
     <item>
       <title>learning a new programming language</title>
-      <link>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</link>
+      <link>/2018/03/16/learning-a-new-programming-language/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
+      <guid>/2018/03/16/learning-a-new-programming-language/</guid>
       <description>I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
 More blather about languages Long ago, I wrote a tutorial on Perl.</description>
     </item>
     
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
+      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
+      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
 (Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
 I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
@@ -53,40 +53,40 @@ I was very glad that I’d written a bunch of tests, because I could use those t
     
     <item>
       <title>Write unit tests!</title>
-      <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
+      <link>/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
+      <guid>/2015/12/07/write-unit-tests/</guid>
       <description>Since 2000, I&amp;rsquo;ve been working on R/qtl, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The Bioinformatics paper about it is my most cited; also see my 2014 JORS paper, &amp;ldquo;Fourteen years of R/qtl: Just barely sustainable.&amp;rdquo;
 It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests.</description>
     </item>
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
       <description>For the problem I reported yesterday, in which my R package was working fine locally but failing on Travis, the key solution is to run update.packages(ask=FALSE) locally, and maybe even update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;) to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
 In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis.</description>
     </item>
     
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
-      <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
+      <link>/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
+      <guid>/2015/09/24/its-not-you-its-me/</guid>
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
@@ -96,20 +96,20 @@ I spent the day trying to resolve a bug in my early-in-development R package, qt
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
       <description>I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.
 That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (D3 and CoffeeScript) and developing some new tools, particularly the R package R/qtlcharts, which provides interactive versions of the many data visualizations in R/qtl, my long-in-development R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.</description>
     </item>
     
     <item>
       <title>Cheat sheets for R-based Software Carpentry course</title>
-      <link>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
+      <link>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
+      <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
  ddplyr (from RStudio)
@@ -120,50 +120,50 @@ So at the SWC workshop at Washington State University this week, we handed out t
     
     <item>
       <title>Yet another R package primer</title>
-      <link>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
+      <link>/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
+      <guid>/2014/08/28/yet-another-r-package-primer/</guid>
       <description>Hadley Wickham is writing what will surely be a great book about the basics of R packages. And Hilary Parker wrote a very influential post on how to write an R package. So it seems like that topic is well covered.
 Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another minimal tutorial with an alliterative name, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic.</description>
     </item>
     
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
-      <link>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
+      <link>/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
+      <guid>/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>I&amp;rsquo;ve been working on an R package, R/qtlcharts, with D3-based interactive graphs for quantitative trait locus mapping experiments.
 Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much have to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&amp;rsquo;re not giving any sort of errors.</description>
     </item>
     
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
-      <link>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
+      <link>/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
+      <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.
 For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with image, the border is often obscured. I want a nice black rectangle around the outside.</description>
     </item>
     
     <item>
       <title>Simple web sites with GitHub Pages</title>
-      <link>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</link>
+      <link>/2014/04/05/simple-web-sites-with-github-pages/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
+      <guid>/2014/04/05/simple-web-sites-with-github-pages/</guid>
       <description>If you love git and GitHub, you&amp;rsquo;ll also love GitHub Pages, for producing websites using Markdown and git: you write pages in Markdown within a gh-pages branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.
 Last night, I wrote a minimal tutorial on how I&amp;rsquo;ve been using this (for example, for the website for my R/qtlcharts package, on interactive graphics for QTL data).</description>
     </item>
     
     <item>
       <title>Googling errors</title>
-      <link>https://kbroman.org/blog/2014/02/14/googling-errors/</link>
+      <link>/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/14/googling-errors/</guid>
+      <guid>/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
 &amp;mdash; __root__ (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
@@ -172,20 +172,20 @@ Gtk-WARNING **: cannot open display: I was logged into a department server, tryi
     
     <item>
       <title>Emacs key bindings in MS Word</title>
-      <link>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
+      <link>/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
+      <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)
 A google search on the title of this post got me to this post.</description>
     </item>
     
     <item>
       <title>Fixing a font problem for XeLaTeX</title>
-      <link>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
+      <link>/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
+      <guid>/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
       <description>If the topic sounds boring, well, it is really boring. I write it down here in case it&amp;rsquo;s useful to someone.
 I was working on a talk about git &amp;amp; GitHub, and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here&amp;rsquo;s the default:
 And here&amp;rsquo;s what I wanted:
@@ -194,20 +194,20 @@ But it didn&amp;rsquo;t work on unix It worked fine with XeLaTeX on my Mac, but 
     
     <item>
       <title>Code review</title>
-      <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
+      <link>/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
+      <guid>/2013/09/25/code-review/</guid>
       <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
+      <link>/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>/2013/08/20/electronic-lab-notebook/</guid>
       <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
 I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
 As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
@@ -215,10 +215,10 @@ As Titus points out, a traditional lab notebook serves two purposes: provenance 
     
     <item>
       <title>Read the source code</title>
-      <link>https://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
+      <link>/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
+      <guid>/2013/08/06/read-the-source-code/</guid>
       <description>The other day, there was a bit of a twitter conversation about qqline in R.
 It made me think: how exactly is the line produced by qqline chosen? I seemed to recall that the line was through the first and third quartiles.
 An advantage of R is that you can just type the name of the function and see the code:
@@ -227,20 +227,20 @@ An advantage of R is that you can just type the name of the function and see the
     
     <item>
       <title>Stack Exchange: Why I dropped out</title>
-      <link>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
+      <link>/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
+      <guid>/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>Stack Exchange is a series of question-and-answer sites, including Stack Overflow for programming and Cross Validated for statistics. I was introduced to these sites at a short talk by Barry Rowlingson at the 2011 UseR! meeting, &amp;ldquo;Why R-help must die!&amp;rdquo;
 These sites have a lot of advantages over R-help: The format is easier to read, math and code can be nicely formatted, the questions are tagged, search is easier, and there should be less redundancy.</description>
     </item>
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
 If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
 To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
@@ -248,10 +248,10 @@ To help some colleagues get started with git and github, I wrote a minimal tutor
     
     <item>
       <title>Data structures are important</title>
-      <link>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
+      <link>/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
+      <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
 
 The code is on github. It took me about a day.
@@ -260,30 +260,30 @@ The hardest part was figuring out the right data structures. A pixel here is lin
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</link>
+      <link>/2013/03/19/latex-unicode-xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</guid>
+      <guid>/2013/03/19/latex-unicode-xetex/</guid>
       <description>I&amp;rsquo;m co-organizing a scientific meeting at the end of May. The abstracts are all in.
 We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review. (I&amp;rsquo;m using Spreadsheet:XLSX for the first time; it&amp;rsquo;s really easy. Why have I always converted Excel files to CSV before parsing them?</description>
     </item>
     
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
-      <link>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
+      <link>/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
+      <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
 We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
     </item>
     
     <item>
       <title>Interactive eQTL plot with d3.js</title>
-      <link>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>I just finished an interactive eQTL plot using D3, in preparation for my talk on interactive graphics at the ENAR meeting next week.
 
 The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
@@ -292,10 +292,10 @@ The hardest part was setting up the data files. Well, that plus the fact that I 
     
     <item>
       <title>charset=&#34;utf-8&#34;</title>
-      <link>https://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
+      <link>/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
+      <guid>/2013/03/02/charsetutf-8/</guid>
       <description>To use the latest version of D3, you need to use charset=&amp;quot;utf-8&amp;quot; in the call to &amp;lt;script&amp;gt;.
 I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
 The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
@@ -304,10 +304,10 @@ I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</
     
     <item>
       <title>D3.js difficulties</title>
-      <link>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
+      <link>/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
+      <guid>/2013/02/08/d3-js-difficulties/</guid>
       <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
@@ -316,20 +316,20 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
     
     <item>
       <title>Interactive graphics with d3.js</title>
-      <link>https://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</link>
+      <link>/2013/02/08/interactive-graphics-with-d3-js/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</guid>
+      <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
       <description>I&amp;rsquo;m making some progress learning D3 (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.
 Many box plots First, an example for displaying many distributions. Here I&amp;rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements. It&amp;rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&amp;rsquo;t give enough information about the tails.</description>
     </item>
     
     <item>
       <title>Wireless router woes</title>
-      <link>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</link>
+      <link>/2012/11/20/wireless-router-woes/</link>
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</guid>
+      <guid>/2012/11/20/wireless-router-woes/</guid>
       <description>I had problems with my internet connection at home this morning. The usual things didn&amp;rsquo;t work, but an unusual thing did work, so I thought I&amp;rsquo;d write about it.
 My internet connection worked last night, but it didn&amp;rsquo;t work this morning. I did the usual things: turn off the cable modem and the wireless router, and then turn them back on again. Turn off the computer and then turn it back on again, and then power cycle the modem and router again.</description>
     </item>

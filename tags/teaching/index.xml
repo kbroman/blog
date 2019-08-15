@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>teaching on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/teaching/</link>
+    <link>/tags/teaching/</link>
     <description>Recent content in teaching on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 29 Apr 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cheat sheets for R-based Software Carpentry course</title>
-      <link>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
+      <link>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
+      <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
  ddplyr (from RStudio)
@@ -28,20 +28,20 @@ So at the SWC workshop at Washington State University this week, we handed out t
     
     <item>
       <title>Reform academic statistics</title>
-      <link>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
     <item>
       <title>Startling lack of training in statistical computing</title>
-      <link>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
+      <link>/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
+      <guid>/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
       <description>It is shocking to me that a statistics department would offer a graduate-level statistical computing course only every fourth year.
 I had been arguing for a statistical programming course: that we supplement the usual course on the theory of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the practice of statistical computing.
 But I was assuming that the more theoretical statistical computing course was actually being taught.</description>
@@ -49,30 +49,30 @@ But I was assuming that the more theoretical statistical computing course was ac
     
     <item>
       <title>Copyright of video lectures</title>
-      <link>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
+      <link>/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
+      <guid>/2014/02/09/copyright-of-video-lectures/</guid>
       <description>Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)
 I spoke to my family librarian, who pointed me to Carrie Kruse, directory of the College Library at UW-Madison.</description>
     </item>
     
     <item>
       <title>It was a really bad idea to use slides in that class</title>
-      <link>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a blog post.)
 This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):</description>
     </item>
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
 If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
 To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
@@ -80,10 +80,10 @@ To help some colleagues get started with git and github, I wrote a minimal tutor
     
     <item>
       <title>UW-Madison joins Coursera</title>
-      <link>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</link>
+      <link>/2013/02/21/uw-madison-joins-coursera/</link>
       <pubDate>Thu, 21 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</guid>
+      <guid>/2013/02/21/uw-madison-joins-coursera/</guid>
       <description>UW-Madison is joining Coursera to offer four massive open online courses (MOOCs).
 I like Sara Goldrick-Rab&amp;rsquo;s comments.
 MOOCs are a good thing, but I view them as &amp;ldquo;outreach&amp;rdquo;. There are lots of problems with universities, but MOOCs don&amp;rsquo;t seem to be a solution to any of them.
@@ -92,10 +92,10 @@ I like Sara&amp;rsquo;s point about MOOCs more being used more for continuing ed
     
     <item>
       <title>A course in statistical programming</title>
-      <link>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</link>
+      <link>/2012/05/25/a-course-in-statistical-programming/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</guid>
+      <guid>/2012/05/25/a-course-in-statistical-programming/</guid>
       <description>Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.
 For example, here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo; that I taught at Johns Hopkins back in 2001.
 Many (perhaps most) good programmers learned to code outside of formal courses. But many statisticians are terrible programmers and would benefit by a formal course.</description>
@@ -103,10 +103,10 @@ Many (perhaps most) good programmers learned to code outside of formal courses. 
     
     <item>
       <title>Sports statistics</title>
-      <link>https://kbroman.org/blog/2011/11/07/sports-statistics/</link>
+      <link>/2011/11/07/sports-statistics/</link>
       <pubDate>Mon, 07 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/11/07/sports-statistics/</guid>
+      <guid>/2011/11/07/sports-statistics/</guid>
       <description>There was an article in the New York Times on Sunday about teaching statistics through sports examples.
 I personally would avoid sports entirely, as I view the subject to be insufficiently serious. Maybe that&amp;rsquo;s an indication of my being a terrible instructor of introductory statistics: I don&amp;rsquo;t care that much what the students are interested in.
 Certainly lots of statisticians are interested in sports. David Brillinger told me he&amp;rsquo;d learned a lot of statistics from studying sports.</description>
