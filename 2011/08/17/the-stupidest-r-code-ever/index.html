@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.56.3" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 
 <title>The stupidest R code ever - the stupidest thing...</title>
@@ -25,10 +25,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="../../../../blog/css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../blog/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="../../../../blog/css/custom.css">
 
 
 
@@ -37,14 +37,14 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="https://kbroman.org/blog/" class="nav-logo">
+    <img src="https://kbroman.org/blog/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -86,7 +86,7 @@
     <div class="article-content">
       <p>Let me tell you about my stupidest R mistake.</p>
 
-<p>In the R package that I write, <a href="http://www.rqtl.org">R/qtl</a>, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.</p>
+<p>In the R package that I write, <a href="https://rqtl.org">R/qtl</a>, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.</p>
 
 <p>I&rsquo;d gotten some reports that if there were <em>many</em> phenotypes, the import of such a file could take an extremely long time. I ignored the problem (as it wasn&rsquo;t a problem for me), but eventually it <em>did</em> become a problem for me, and when I investigated, I found the following code.</p>
 
@@ -155,7 +155,7 @@ n.phe &lt;- min(which(data[2,] != &quot;&quot;))-1
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
