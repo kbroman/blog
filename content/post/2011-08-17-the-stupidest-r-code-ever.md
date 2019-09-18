@@ -13,7 +13,7 @@ slug: the-stupidest-r-code-ever
 
 Let me tell you about my stupidest R mistake.
 
-In the R package that I write, [R/qtl](http://www.rqtl.org), one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.
+In the R package that I write, [R/qtl](https://rqtl.org), one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.
 
 I'd gotten some reports that if there were _many_ phenotypes, the import of such a file could take an extremely long time. I ignored the problem (as it wasn't a problem for me), but eventually it _did_ become a problem for me, and when I investigated, I found the following code.
 
