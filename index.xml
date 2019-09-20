@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Thu Aug 15 14:49:38 2019 --&gt;
+&lt;!-- Fri Sep 20 00:12:25 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -8514,7 +8514,7 @@ The journal is underwritten by a generous grant from the Considine Family Founda
       <pubDate>Tue, 27 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>/2011/09/27/ghastly-r-code/</guid>
-      <description>&lt;p&gt;My R package, &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, contains about 33k lines of R code (and 21k lines of C code).  Some of it is quite good; &lt;a href=&#34;https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;some of it is terrible&lt;/a&gt;.  Here&amp;rsquo;s another example of the terrible.&lt;/p&gt;
+      <description>&lt;p&gt;My R package, &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, contains about 33k lines of R code (and 21k lines of C code).  Some of it is quite good; &lt;a href=&#34;https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;some of it is terrible&lt;/a&gt;.  Here&amp;rsquo;s another example of the terrible.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve long needed to revise the function &lt;a href=&#34;https://github.com/kbroman/qtl/blob/master/R/scantwo.R&#34;&gt;&lt;code&gt;scantwo&lt;/code&gt;&lt;/a&gt;, for performing a two-dimensional genome scan for pairs of loci.  I was looking at the function today, and was aghast to find that it&amp;rsquo;s 1354 lines long.  That&amp;rsquo;s &lt;strong&gt;4%&lt;/strong&gt; of the R code in the package!&lt;/p&gt;
 
@@ -8872,7 +8872,7 @@ direct.label(p)
       <guid>/2011/08/17/the-stupidest-r-code-ever/</guid>
       <description>&lt;p&gt;Let me tell you about my stupidest R mistake.&lt;/p&gt;
 
-&lt;p&gt;In the R package that I write, &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.&lt;/p&gt;
+&lt;p&gt;In the R package that I write, &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d gotten some reports that if there were &lt;em&gt;many&lt;/em&gt; phenotypes, the import of such a file could take an extremely long time. I ignored the problem (as it wasn&amp;rsquo;t a problem for me), but eventually it &lt;em&gt;did&lt;/em&gt; become a problem for me, and when I investigated, I found the following code.&lt;/p&gt;
 
