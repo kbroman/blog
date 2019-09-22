@@ -29,7 +29,7 @@ The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) 
 
   * At JSM 2003 in San Francisco (I think), I spoke at a Sunday afternoon contributed papers session on statistical genetics. Many people didn't realize that they'd added Sunday afternoon sessions. And there were two invited sessions on statistical genetics at the same time. We had just one audience member. In fact, one of the speakers didn't even show up, and we waited through that time slot so as not to disturb the schedule. (It seemed like there was a greater risk of losing our audience member.) I went last, and when I got up to speak, a [friend of mine](http://statistics.calpoly.edu/steve-rein/) joined the audience. "When I got up to speak, the audience doubled!" is how I like to characterize it.
 
-  * There was a session with John Chambers, Robert Gentleman, and Duncan Tempel Lang on the future of [R](https://www.r-project.org), in room that seated 25 comfortably. There was crowd of like 50 people packed in a big bunch outside the door, hoping to at least hear John Chambers's voice.
+  * There was a session with John Chambers, Robert Gentleman, and Duncan Temple Lang on the future of [R](https://www.r-project.org), in room that seated 25 comfortably. There was crowd of like 50 people packed in a big bunch outside the door, hoping to at least hear John Chambers's voice.
 
   * At JSM 2005 in Minneapolis, I was talking to some random statistician in a pub and made a statement like, "Does anyone still use Splus? Anyone who still uses Splus is an idiot." It turned out that the guy worked for Insightful, or whatever the company was that owned Splus at the time. [Ingo](http://www.biostat.jhsph.edu/~iruczins/) said the guy looked like he was going to punch me.
 
