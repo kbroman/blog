@@ -45,7 +45,7 @@ I looked back at my reviews of journal articles in 2011.  I did 23.  They were f
 
   * Various [PLoS](https://www.plos.org/) journals (open access)
 
-I did okay.  I am down on Springer and Wiley, too, in spite of the fact that I published [a book with Springer](http://www.rqtl.org/book) (and I like many of their books), but most of the above are society or open-access journals and there's just one Elsevier journal.
+I did okay.  I am down on Springer and Wiley, too, in spite of the fact that I published [a book with Springer](https://rqtl.org/book) (and I like many of their books), but most of the above are society or open-access journals and there's just one Elsevier journal.
 
 In the list of mathematics/statistics journals published by Elsevier, I only recognize _Computational Statistics & Data Analysis_ and _Journal of Statistical Planning and Inference_.  _Genomics_ and _Trends in Genetics_ are their only genetics journals that I recognize, but I didn't look so closely.  [I later realized that the American Journal of Human Genetics is published by Elsevier; that's a big one.]
 
