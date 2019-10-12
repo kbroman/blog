@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Mon Sep 23 06:06:39 2019 --&gt;
+&lt;!-- Fri Oct 11 21:03:50 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -7260,9 +7260,9 @@ how can i enter the data of QTL analysis.&lt;/pre&gt;
 
 &lt;p&gt;That was the whole thing.&lt;/p&gt;
 
-&lt;p&gt;I presume that the writer wishes to use my &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt; software.&lt;/p&gt;
+&lt;p&gt;I presume that the writer wishes to use my &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; software.&lt;/p&gt;
 
-&lt;p&gt;I could probably respond helpfully (for example, &amp;ldquo;See the &lt;a href=&#34;http://www.rqtl.org/sampledata&#34;&gt;sample data files and code&lt;/a&gt; at the R/qtl web site.&amp;rdquo;), but can&amp;rsquo;t I expect more from people seeking my help?&lt;/p&gt;
+&lt;p&gt;I could probably respond helpfully (for example, &amp;ldquo;See the &lt;a href=&#34;https://rqtl.org/sampledata&#34;&gt;sample data files and code&lt;/a&gt; at the R/qtl web site.&amp;rdquo;), but can&amp;rsquo;t I expect more from people seeking my help?&lt;/p&gt;
 
 &lt;p&gt;I suppose there are three options:&lt;/p&gt;
 
@@ -7274,7 +7274,7 @@ how can i enter the data of QTL analysis.&lt;/pre&gt;
 &lt;li&gt;&lt;p&gt;Ask the writer to provide further details.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I chose the third option, but I probably should have chosen the first.  &lt;a href=&#34;http://www.stats.ox.ac.uk/~ripley/&#34;&gt;A fabulously useful person who I greatly admire&lt;/a&gt; is well known for his use of the middle option.&lt;/p&gt;
+&lt;p&gt;I chose the third option, but I probably should have chosen the first.  &lt;a href=&#34;https://www.stats.ox.ac.uk/~ripley/&#34;&gt;A fabulously useful person who I greatly admire&lt;/a&gt; is well known for his use of the middle option.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -7292,7 +7292,7 @@ how can i enter the data of QTL analysis.&lt;/pre&gt;
 &lt;code&gt;How can i analysis data the by RQTL?&lt;/code&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I responded with links to &lt;a href=&#34;http://www.rqtl.org/tutorials&#34;&gt;tutorials&lt;/a&gt;, &lt;a href=&#34;http://www.rqtl.org/sampledata&#34;&gt;sample data files&lt;/a&gt;, and &lt;a href=&#34;http://www.rqtl.org/book&#34;&gt;my book with Śaunak Sen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I responded with links to &lt;a href=&#34;https://rqtl.org/tutorials&#34;&gt;tutorials&lt;/a&gt;, &lt;a href=&#34;https://rqtl.org/sampledata&#34;&gt;sample data files&lt;/a&gt;, and &lt;a href=&#34;https://rqtl.org/book&#34;&gt;my book with Śaunak Sen&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
