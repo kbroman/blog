@@ -11,7 +11,7 @@ tags:
 slug: latex-unicode-%e2%86%92-xetex
 ---
 
-I'm co-organizing [a scientific meeting](http://rqtl.org/ctc2013) at the end of May.  The abstracts are all in.
+I'm co-organizing [a scientific meeting](https://rqtl.org/ctc2013) at the end of May.  The abstracts are all in.
 
 We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I'm using [Spreadsheet:XLSX](https://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm) for the first time; it's really easy.  Why have I always converted Excel files to CSV before parsing them?)
 
