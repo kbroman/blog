@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Fri Oct 11 21:03:50 2019 --&gt;
+&lt;!-- Sun Oct 13 00:04:40 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -6196,7 +6196,7 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>/2013/03/19/latex-unicode-xetex/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;http://rqtl.org/ctc2013&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;https://rqtl.org/ctc2013&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
 
 &lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;https://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
 
