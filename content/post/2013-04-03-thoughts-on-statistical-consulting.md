@@ -29,7 +29,7 @@ In graduate school (in [Statistics](https://www.stat.berkeley.edu) at UC-Berkele
 
 After graduate school, I was a postdoc with a geneticist (Jim Weber, then at the Marshfield Medical Research Foundation, in Marshfield, Wisconsin), where I was relatively isolated, as a statistician.  There were a few other statisticians around, but we were working on rather different things.
 
-Moving from postdoc to faculty member, I've had a relatively steady stream of statistical consulting experiences, with consultees from courses I taught, referred by my department chair or other friends/colleagues, or through my software (particularly [R/qtl](http://rqtl.org)) or publications (particularly my [two-part model](https://www.biostat.wisc.edu/~kbroman/publications/twopart.pdf) paper).
+Moving from postdoc to faculty member, I've had a relatively steady stream of statistical consulting experiences, with consultees from courses I taught, referred by my department chair or other friends/colleagues, or through my software (particularly [R/qtl](https://rqtl.org)) or publications (particularly my [two-part model](https://www.biostat.wisc.edu/~kbroman/publications/twopart.pdf) paper).
 
 ### Why do it?
 
