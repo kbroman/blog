@@ -32,7 +32,7 @@ URLs should be meaningful and short.  I like deep hierarchies of folders, but it
 
 [URL-shorteners](https://bitly.com) help, but you don't really want to read out (or type) one of those short URLs.  And they tell you nothing about where they're going.
 
-What you want is something like [`bcaffo.com`](http://bcaffo.com) or [`stodden.net`](http://stodden.net).  Or [`rqtl.org`](http://rqtl.org).
+What you want is something like [`bcaffo.com`](http://bcaffo.com) or [`stodden.net`](http://stodden.net).  Or [`rqtl.org`](https://rqtl.org).
 
 But...I guess you could just say "I'll send you an email."
 
