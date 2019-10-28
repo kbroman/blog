@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Tue Oct 15 06:59:51 2019 --&gt;
+&lt;!-- Mon Oct 28 08:51:13 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -5802,7 +5802,7 @@ for their seminar list.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://bitly.com&#34;&gt;URL-shorteners&lt;/a&gt; help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.  And they tell you nothing about where they&amp;rsquo;re going.&lt;/p&gt;
 
-&lt;p&gt;What you want is something like &lt;a href=&#34;http://bcaffo.com&#34;&gt;&lt;code&gt;bcaffo.com&lt;/code&gt;&lt;/a&gt; or &lt;a href=&#34;http://stodden.net&#34;&gt;&lt;code&gt;stodden.net&lt;/code&gt;&lt;/a&gt;.  Or &lt;a href=&#34;http://rqtl.org&#34;&gt;&lt;code&gt;rqtl.org&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What you want is something like &lt;a href=&#34;http://bcaffo.com&#34;&gt;&lt;code&gt;bcaffo.com&lt;/code&gt;&lt;/a&gt; or &lt;a href=&#34;http://stodden.net&#34;&gt;&lt;code&gt;stodden.net&lt;/code&gt;&lt;/a&gt;.  Or &lt;a href=&#34;https://rqtl.org&#34;&gt;&lt;code&gt;rqtl.org&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;But&amp;hellip;I guess you could just say &amp;ldquo;I&amp;rsquo;ll send you an email.&amp;rdquo;&lt;/p&gt;
 
