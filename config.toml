@@ -4,7 +4,6 @@ languageCode = "en-us"
 title = "the stupidest thing..."
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
-disqusShortname = "kbroman-blog"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "drafts/"]
 rssLimit = 30
 
@@ -31,7 +30,6 @@ copyright="The text in this work is licensed under CC-BY-4.0, https://creativeco
 
 [params]
     description = "Karl Broman's blog: The stupidest thing... statistics, genetics, programming, academics."
-    disqusURL = "https://kbroman.org/blog"
     fullURL = "https://kbroman.org/blog"
     githubContentURL = "https://github.com/kbroman/blog/edit/source/content/"
     customCSS = ["css/custom.css"]
