@@ -4,6 +4,7 @@ languageCode = "en-us"
 title = "the stupidest thing..."
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
+disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "drafts/"]
 rssLimit = 30
 
