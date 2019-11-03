@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Wed Oct 30 08:16:07 2019 --&gt;
+&lt;!-- Sat Nov  2 17:17:41 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -3772,15 +3772,15 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
       <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</guid>
-      <description>&lt;p&gt;In 2009, &lt;a href=&#34;http://www.epibiostat.ucsf.edu/biostat/sen/&#34;&gt;Śaunak Sen&lt;/a&gt; and I wrote a &lt;a href=&#34;http://www.rqtl.org&#34;&gt;book&lt;/a&gt; about QTL mapping and the &lt;a href=&#34;http://www.rqtl.org&#34;&gt;R/qtl&lt;/a&gt; software. We started working on it in the fall of 2006, and it was a heck of a lot of work.&lt;/p&gt;
+      <description>&lt;p&gt;In 2009, &lt;a href=&#34;http://www.epibiostat.ucsf.edu/biostat/sen/&#34;&gt;Śaunak Sen&lt;/a&gt; and I wrote a &lt;a href=&#34;https://rqtl.org&#34;&gt;book&lt;/a&gt; about QTL mapping and the &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; software. We started working on it in the fall of 2006, and it was a heck of a lot of work.&lt;/p&gt;
 
-&lt;p&gt;We&amp;rsquo;d talked to several publishers, and ended up publishing with &lt;a href=&#34;http://www.springer.com&#34;&gt;Springer&lt;/a&gt;. John Kimmel was the editor we worked with; I like John, and I felt that Springer (or &lt;em&gt;John&lt;/em&gt;) did a good job of keeping prices reasonable. We were able to publish in full color with a list price of \$99, so that on Amazon it was about \$65. (In April, 2013, there was a brief period where &lt;a href=&#34;https://twitter.com/kwbroman/status/321747087744184320&#34;&gt;it was just \$42 at Amazon&lt;/a&gt;!)&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d talked to several publishers, and ended up publishing with &lt;a href=&#34;https://springer.com&#34;&gt;Springer&lt;/a&gt;. John Kimmel was the editor we worked with; I like John, and I felt that Springer (or &lt;em&gt;John&lt;/em&gt;) did a good job of keeping prices reasonable. We were able to publish in full color with a list price of \$99, so that on Amazon it was about \$65. (In April, 2013, there was a brief period where &lt;a href=&#34;https://twitter.com/kwbroman/status/321747087744184320&#34;&gt;it was just \$42 at Amazon&lt;/a&gt;!)&lt;/p&gt;
 
 &lt;p&gt;Springer did arrange several rounds of reviews; they typically pay reviewers \$100 or a few books. But the copy editing was terrible (at the very least, you want a copy editor to &lt;em&gt;read&lt;/em&gt; the book, and it was pretty clear that our copy editor &lt;em&gt;hadn&amp;rsquo;t&lt;/em&gt;), and the actual type-setting and construction of the index was left to us, the authors.&lt;/p&gt;
 
 &lt;p&gt;It feels nice to have written a proper book, but I don&amp;rsquo;t think it makes that big of a difference, for me or for readers.&lt;/p&gt;
 
-&lt;p&gt;And John Kimmel has since left Springer to go to Chapman &amp;amp; Hall/CRC, and Springer has raised the price of our book to &lt;a href=&#34;http://www.springer.com/life+sciences/systems+biology+and+bioinformatics/book/978-0-387-92124-2&#34;&gt;\$169&lt;/a&gt;, so it&amp;rsquo;s now selling for &lt;a href=&#34;http://www.amazon.com/exec/obidos/ASIN/0387921249/7210-20&#34;&gt;\$130 at Amazon&lt;/a&gt;. I think that&amp;rsquo;s &lt;em&gt;obnoxious&lt;/em&gt;. It&amp;rsquo;s not like they&amp;rsquo;ve gone back and printed extra copies, so it&amp;rsquo;s hard to see how their costs could have gone up. But in the publishing agreement we signed, we gave Springer full rights to set the price of the book.&lt;/p&gt;
+&lt;p&gt;And John Kimmel has since left Springer to go to Chapman &amp;amp; Hall/CRC, and Springer has raised the price of our book to &lt;a href=&#34;https://www.springer.com/life+sciences/systems+biology+and+bioinformatics/book/978-0-387-92124-2&#34;&gt;\$169&lt;/a&gt;, so it&amp;rsquo;s now selling for &lt;a href=&#34;https://www.amazon.com/exec/obidos/ASIN/0387921249/7210-20&#34;&gt;\$130 at Amazon&lt;/a&gt;. I think that&amp;rsquo;s &lt;em&gt;obnoxious&lt;/em&gt;. It&amp;rsquo;s not like they&amp;rsquo;ve gone back and printed extra copies, so it&amp;rsquo;s hard to see how their costs could have gone up. But in the publishing agreement we signed, we gave Springer full rights to set the price of the book.&lt;/p&gt;
 
 &lt;p&gt;(&lt;strong&gt;Update&lt;/strong&gt;: it&amp;rsquo;s now listed at \$199, though it&amp;rsquo;s still about \$130 at Amazon.)&lt;/p&gt;
 
@@ -3796,9 +3796,9 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;li&gt;&lt;p&gt;Our book is available electronically, for purchase by chapter as well.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Purchase by chapter? Yeah, for &lt;a href=&#34;http://link.springer.com/book/10.1007/978-0-387-92125-9&#34;&gt;\$30 per chapter!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Purchase by chapter? Yeah, for &lt;a href=&#34;https://link.springer.com/book/10.1007/978-0-387-92125-9&#34;&gt;\$30 per chapter!&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Springer has &lt;a href=&#34;http://statweb.stanford.edu/~tibs/ElemStatLearn/&#34;&gt;published books and allowed the authors to post a PDF&lt;/a&gt;, but only for really big sellers, and ours is definitely not in that category.&lt;/p&gt;
+&lt;p&gt;Springer has &lt;a href=&#34;https://statweb.stanford.edu/~tibs/ElemStatLearn/&#34;&gt;published books and allowed the authors to post a PDF&lt;/a&gt;, but only for really big sellers, and ours is definitely not in that category.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m both disgusted and embarrassed by this situation. If I could do it all over again, I&amp;rsquo;d self-publish: post everything on the web, and arrange some way for folks to have it printed cheaply.&lt;/p&gt;
 </description>
