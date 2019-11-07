@@ -14,7 +14,7 @@ slug: mongodb-with-d3-js
 
 I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.
 
-That's led me to spend a good amount of time in the last few years learning some new skills ([D3](https://d3js.org) and [CoffeeScript](https://coffeescript.org)) and developing some new tools, particularly the R package [R/qtlcharts](https://kbroman.org/qtlcharts), which provides interactive versions of the many data visualizations in [R/qtl](http://rqtl.org), my [long-in-development](https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf) R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.
+That's led me to spend a good amount of time in the last few years learning some new skills ([D3](https://d3js.org) and [CoffeeScript](https://coffeescript.org)) and developing some new tools, particularly the R package [R/qtlcharts](https://kbroman.org/qtlcharts), which provides interactive versions of the many data visualizations in [R/qtl](https://rqtl.org), my [long-in-development](https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf) R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.
 
 [R/qtlcharts](https://kbroman.org/qtlcharts) is rough in spots, and while it works well for moderate-sized data sets, it can't well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.
 
