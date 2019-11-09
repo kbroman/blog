@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Sat Nov  2 17:17:41 2019 --&gt;
+&lt;!-- Thu Nov  7 13:01:55 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -3089,7 +3089,7 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 
 &lt;p&gt;I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.&lt;/p&gt;
 
-&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;https://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (&lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; and &lt;a href=&#34;https://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) and developing some new tools, particularly the R package &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, which provides interactive versions of the many data visualizations in &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;long-in-development&lt;/a&gt; R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt; is rough in spots, and while it works well for moderate-sized data sets, it can&amp;rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.&lt;/p&gt;
 
