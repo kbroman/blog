@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Thu Nov  7 13:01:55 2019 --&gt;
+&lt;!-- Sat Nov  9 06:58:07 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -2998,21 +2998,21 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>
 
-&lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What do I want in a conference website? Not &lt;a href=&#34;https://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts. Otherwise I have to keep clicking and going back.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;I want to be able to search for people. And if I&amp;rsquo;m searching for &lt;a href=&#34;http://web1.sph.emory.edu/users/hwu30/&#34;&gt;Hao Wu&lt;/a&gt;, I don&amp;rsquo;t want to look at &lt;em&gt;all&lt;/em&gt; of the Wus. Or all of the Haos. I just want the Hao Wus. If I can&amp;rsquo;t search on &lt;code&gt;&amp;quot;Hao Wu&amp;quot;&lt;/code&gt;, at least let me search on &lt;code&gt;&amp;quot;Wu, Hao&amp;quot;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I want to be able to search for people. And if I&amp;rsquo;m searching for &lt;a href=&#34;http://www.haowulab.org&#34;&gt;Hao Wu&lt;/a&gt;, I don&amp;rsquo;t want to look at &lt;em&gt;all&lt;/em&gt; of the Wus. Or all of the Haos. I just want the Hao Wus. If I can&amp;rsquo;t search on &lt;code&gt;&amp;quot;Hao Wu&amp;quot;&lt;/code&gt;, at least let me search on &lt;code&gt;&amp;quot;Wu, Hao&amp;quot;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;If my search returns nothing and I go back, bring me back to the same search form. Don&amp;rsquo;t make me have to click &amp;ldquo;Search for people&amp;rdquo; again.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;d like to be able to form a schedule of the sessions to attend. (&lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM2015&lt;/a&gt; does that okay, but it&amp;rsquo;s not what I&amp;rsquo;d call &amp;ldquo;secure&amp;rdquo; and you have to find the damned things, first.) Really, I want to pick particular talks: this one in that session and that one in the other. But yeah, that seems a bit much to ask.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I&amp;rsquo;d like to be able to form a schedule of the sessions to attend. (&lt;a href=&#34;https://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM2015&lt;/a&gt; does that okay, but it&amp;rsquo;s not what I&amp;rsquo;d call &amp;ldquo;secure&amp;rdquo; and you have to find the damned things, first.) Really, I want to pick particular talks: this one in that session and that one in the other. But yeah, that seems a bit much to ask.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM 2015 site&lt;/a&gt; is so terrible for browsing, I was happy to get the &lt;a href=&#34;http://www.amstat.org/meetings/jsm/2015/pdfs/JSM2015_ProgramBook.pdf&#34;&gt;pdf of the program&lt;/a&gt;. (Good luck finding it on the website on your own; ASA tweeted the link to me, due to my bitching and moaning.) You can browse the pdf. That&amp;rsquo;s the way I ended up finding the sessions I wanted to attend. It also had an ad for the &lt;a href=&#34;https://twitter.com/kwbroman/status/628797267978289152&#34;&gt;JSM 2015 mobile app&lt;/a&gt;. Did you know there was one? Good luck finding a link to &lt;em&gt;that&lt;/em&gt; on their website, either.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/JSM/2015/onlineprogram/index.cfm&#34;&gt;JSM 2015 site&lt;/a&gt; is so terrible for browsing, I was happy to get the &lt;a href=&#34;https://www.amstat.org/meetings/jsm/2015/pdfs/JSM2015_ProgramBook.pdf&#34;&gt;pdf of the program&lt;/a&gt;. (Good luck finding it on the website on your own; ASA tweeted the link to me, due to my bitching and moaning.) You can browse the pdf. That&amp;rsquo;s the way I ended up finding the sessions I wanted to attend. It also had an ad for the &lt;a href=&#34;https://twitter.com/kwbroman/status/628797267978289152&#34;&gt;JSM 2015 mobile app&lt;/a&gt;. Did you know there was one? Good luck finding a link to &lt;em&gt;that&lt;/em&gt; on their website, either.&lt;/p&gt;
 
 &lt;p&gt;The pdf is useable, but much like the website, it fails to make use of the medium. I want:&lt;/p&gt;
 
@@ -3024,7 +3024,7 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;li&gt;&lt;p&gt;More hyperlinks. The pdf has an index, with people and page numbers. Why not link those page numbers to the corresponding page?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I helped organize a &lt;a href=&#34;http://rqtl.org/ctc2013/&#34;&gt;small meeting&lt;/a&gt; in 2013. The &lt;a href=&#34;http://rqtl.org/ctc2013/program.html&#34;&gt;program on the web&lt;/a&gt; and the &lt;a href=&#34;http://rqtl.org/ctc2013/ctc2013_program.pdf&#34;&gt;corresponding pdf&lt;/a&gt; illustrate much of what I want. (No scheduling feature, but that meeting had no simultaneous sessions.) I included gratuitous network graphs of the &lt;a href=&#34;http://rqtl.org/ctc2013/vis/authors.html&#34;&gt;authors&lt;/a&gt; and &lt;a href=&#34;http://rqtl.org/ctc2013/vis/abstracts.html&#34;&gt;abstracts&lt;/a&gt;. It&amp;rsquo;s 2015. No conference site is truly complete without interactive network graphs.&lt;/p&gt;
+&lt;p&gt;I helped organize a &lt;a href=&#34;https://rqtl.org/ctc2013/&#34;&gt;small meeting&lt;/a&gt; in 2013. The &lt;a href=&#34;https://rqtl.org/ctc2013/program.html&#34;&gt;program on the web&lt;/a&gt; and the &lt;a href=&#34;https://rqtl.org/ctc2013/ctc2013_program.pdf&#34;&gt;corresponding pdf&lt;/a&gt; illustrate much of what I want. (No scheduling feature, but that meeting had no simultaneous sessions.) I included gratuitous network graphs of the &lt;a href=&#34;https://rqtl.org/ctc2013/vis/authors.html&#34;&gt;authors&lt;/a&gt; and &lt;a href=&#34;https://rqtl.org/ctc2013/vis/abstracts.html&#34;&gt;abstracts&lt;/a&gt;. It&amp;rsquo;s 2015. No conference site is truly complete without interactive network graphs.&lt;/p&gt;
 
 &lt;h3 id=&#34;update&#34;&gt;Update&lt;/h3&gt;
 
