@@ -16,7 +16,7 @@ slug: fitting-linear-mixed-models-for-qtl-mapping
 
 Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they're becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 
-In my efforts on [R/qtl2](https://kbroman.org/qtl2), a reimplementation [R/qtl](http://rqtl.org) to better handle high-dimensional data and more complex cross designs, it was clear that I'd need to figure out LMMs. But while [papers explaining the fit of LMMs](https://www.jstatsoft.org/article/view/v067i01) seem quite explicit and clear, I'd never quite turned the corner to actually seeing how I'd implement it. In both reading papers and studying code (e.g., [lme4](https://github.com/lme4/lme4/)), I'd be going along fine and then get completely lost part-way through.
+In my efforts on [R/qtl2](https://kbroman.org/qtl2), a reimplementation [R/qtl](https://rqtl.org) to better handle high-dimensional data and more complex cross designs, it was clear that I'd need to figure out LMMs. But while [papers explaining the fit of LMMs](https://www.jstatsoft.org/article/view/v067i01) seem quite explicit and clear, I'd never quite turned the corner to actually seeing how I'd implement it. In both reading papers and studying code (e.g., [lme4](https://github.com/lme4/lme4/)), I'd be going along fine and then get completely lost part-way through.
 
 But I now finally understand LMMs, or at least a particular, simple LMM, and I've been able to write an implementation: the R package [lmmlite](https://kbroman.org/lmmlite).
 
