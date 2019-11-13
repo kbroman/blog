@@ -13,7 +13,7 @@ tags:
 slug: write-unit-tests
 ---
 
-Since 2000, I've been working on [R/qtl](http://rqtl.org), an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The [Bioinformatics paper about it](https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf) is my most cited; also see my 2014 JORS paper, "[Fourteen years of R/qtl: Just barely sustainable](https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf)."
+Since 2000, I've been working on [R/qtl](https://rqtl.org), an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The [Bioinformatics paper about it](https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf) is my most cited; also see my 2014 JORS paper, "[Fourteen years of R/qtl: Just barely sustainable](https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf)."
 
 It's a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don't produce any errors that halt the code.
 
