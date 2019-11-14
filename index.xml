@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Mon Nov 11 00:56:21 2019 --&gt;
+&lt;!-- Wed Nov 13 09:56:23 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -2759,7 +2759,7 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>/2015/12/07/write-unit-tests/</guid>
-      <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
+      <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&amp;rsquo;t produce any errors that halt the code.&lt;/p&gt;
 
