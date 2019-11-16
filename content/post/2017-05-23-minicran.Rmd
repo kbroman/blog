@@ -10,7 +10,7 @@ tags: ['R']
 knitr::opts_chunk$set(eval=FALSE)
 ```
 
-Next month, I'm teaching a workshop on [R/qtl](http://rqtl.org) and
+Next month, I'm teaching a workshop on [R/qtl](https://rqtl.org) and
 [R/qtl2](https://kbroman.org/qtl2) at the
 [joint Complex Trait Community and Rat Genomics Community meeting
 (CTC-RG2017)](http://www.complextrait.org/ctc2017) meeting in Memphis.
@@ -122,12 +122,12 @@ write_PACKAGES("qtl2cran/bin/macosx/el-capitan/contrib/3.4",
 ```
 
 I then put them on my website at UW-Madison plus at
-[rqtl.org](http://rqtl.org), so now people can install
+[rqtl.org](https://rqtl.org), so now people can install
 [R/qtl2](https://kbroman.org) using either
 
 ```{r cran_rqtl}
 install.packages(paste0("qtl2", c("geno", "scan", "plot", "convert")),
-                 repos="http://rqtl.org/qtl2cran")
+                 repos="https://rqtl.org/qtl2cran")
 ```
 
 or
