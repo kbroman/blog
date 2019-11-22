@@ -40,7 +40,7 @@ Google the "`except KeyError`" line, and you get to a [Q&A on the AsciiDoc googl
 
 ### mclapply isn't working in windows
 
-I got a report that parallel processing in my [R/qtl](http://rqtl.org) package wasn't working in Windows.
+I got a report that parallel processing in my [R/qtl](https://rqtl.org) package wasn't working in Windows.
 
 I googled "mclapply isn't working windows" (because mclapply was the function I was using) and got [this stackoverflow page](https://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r), which says:
 
