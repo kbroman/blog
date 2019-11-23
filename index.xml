@@ -1465,7 +1465,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Sat Nov 16 10:02:07 2019 --&gt;
+&lt;!-- Fri Nov 22 00:25:29 2019 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -4397,7 +4397,7 @@ SyntaxError: invalid syntax
 
 &lt;h3 id=&#34;mclapply-isn-t-working-in-windows&#34;&gt;mclapply isn&amp;rsquo;t working in windows&lt;/h3&gt;
 
-&lt;p&gt;I got a report that parallel processing in my &lt;a href=&#34;http://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; package wasn&amp;rsquo;t working in Windows.&lt;/p&gt;
+&lt;p&gt;I got a report that parallel processing in my &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; package wasn&amp;rsquo;t working in Windows.&lt;/p&gt;
 
 &lt;p&gt;I googled &amp;ldquo;mclapply isn&amp;rsquo;t working windows&amp;rdquo; (because mclapply was the function I was using) and got &lt;a href=&#34;https://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r&#34;&gt;this stackoverflow page&lt;/a&gt;, which says:&lt;/p&gt;
 
