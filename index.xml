@@ -57,7 +57,7 @@ save(resultA, resultB, resultC, file=summary_file)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The first time you compile the report, your abstract would have a
-bunch of &lt;code&gt;NA&lt;/code&gt; values in it. But then if you run the compile the report
+bunch of &lt;code&gt;NA&lt;/code&gt; values in it. But then if you compile the report
 a second time, you&amp;rsquo;d pull in the results from the previous run.&lt;/p&gt;
 
 &lt;p&gt;Is there a better way? Let me know &lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;on twitter&lt;/a&gt;.&lt;/p&gt;
