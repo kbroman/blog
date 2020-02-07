@@ -51,6 +51,17 @@
   </url>
   
   <url>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2020/02/07/reproducible-abstract/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/reproducible-research/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>

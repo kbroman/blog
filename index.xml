@@ -10,6 +10,61 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>reproducible abstract</title>
+      <link>/2020/02/07/reproducible-abstract/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/07/reproducible-abstract/</guid>
+      <description>&lt;p&gt;A student asked me about how to include summary results in the abstract or
+executive summary at the top of an R Markdown report when they don&amp;rsquo;t get
+calculated until somewhere below.&lt;/p&gt;
+
+&lt;p&gt;I feel like I&amp;rsquo;ve seen a generally accepted solution to this, but I
+can&amp;rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his
+&lt;a href=&#34;https://github.com/SISBID/Module3/blob/master/2017_SISBID_3_12_good_reports.pdf&#34;&gt;slides about good reproducible
+reports&lt;/a&gt;,
+but he doesn&amp;rsquo;t seem to. I did find &lt;a href=&#34;https://community.rstudio.com/t/best-practices-for-organizing-rmarkdown-projects/914&#34;&gt;this RStudio Community
+discussion&lt;/a&gt;
+that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.&lt;/p&gt;
+
+&lt;p&gt;My suggestion would be to include a code chunk something like this
+before the abstract:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```{r load_summary_results, echo=FALSE}
+summary_file &amp;lt;- &amp;quot;_cache/summary_results.RData&amp;quot;
+if(file.exists(summary_file)) {
+    load(summary_file)
+} else {
+  resultA &amp;lt;- NA
+  resultB &amp;lt;- NA
+  resultC &amp;lt;- NA
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then use &lt;code&gt;resultA&lt;/code&gt;, &lt;code&gt;resultB&lt;/code&gt;, and &lt;code&gt;resultC&lt;/code&gt; in the abstract.&lt;/p&gt;
+
+&lt;p&gt;At the bottom of your document, save the results to a file with
+something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```{r save_summary_results, echo=FALSE}
+resultA &amp;lt;- [some calculation]
+resultB &amp;lt;- [some other calculation]
+resultC &amp;lt;- [a third calculation]
+
+save(resultA, resultB, resultC, file=summary_file)
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first time you compile the report, your abstract would have a
+bunch of &lt;code&gt;NA&lt;/code&gt; values in it. But then if you run the compile the report
+a second time, you&amp;rsquo;d pull in the results from the previous run.&lt;/p&gt;
+
+&lt;p&gt;Is there a better way? Let me know &lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;on twitter&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ten year reproducibility challenge</title>
       <link>/2020/02/07/ten-year-challenge/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
@@ -1652,7 +1707,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Fri Feb  7 06:46:13 2020 --&gt;
+&lt;!-- Fri Feb  7 12:47:47 2020 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;

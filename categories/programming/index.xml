@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>reproducible abstract</title>
+      <link>/2020/02/07/reproducible-abstract/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/07/reproducible-abstract/</guid>
+      <description>A student asked me about how to include summary results in the abstract or executive summary at the top of an R Markdown report when they don&amp;rsquo;t get calculated until somewhere below.
+I feel like I&amp;rsquo;ve seen a generally accepted solution to this, but I can&amp;rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his slides about good reproducible reports, but he doesn&amp;rsquo;t seem to. I did find this RStudio Community discussion that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.</description>
+    </item>
+    
+    <item>
       <title>ten year reproducibility challenge</title>
       <link>/2020/02/07/ten-year-challenge/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
@@ -322,16 +332,6 @@ I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var h=50; var svg = d3.</description>
-    </item>
-    
-    <item>
-      <title>Interactive graphics with d3.js</title>
-      <link>/2013/02/08/interactive-graphics-with-d3-js/</link>
-      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
-      <description>I&amp;rsquo;m making some progress learning D3 (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.
-Many box plots First, an example for displaying many distributions. Here I&amp;rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements. It&amp;rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&amp;rsquo;t give enough information about the tails.</description>
     </item>
     
   </channel>

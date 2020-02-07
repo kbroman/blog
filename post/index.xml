@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>reproducible abstract</title>
+      <link>/2020/02/07/reproducible-abstract/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/07/reproducible-abstract/</guid>
+      <description>A student asked me about how to include summary results in the abstract or executive summary at the top of an R Markdown report when they don&amp;rsquo;t get calculated until somewhere below.
+I feel like I&amp;rsquo;ve seen a generally accepted solution to this, but I can&amp;rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his slides about good reproducible reports, but he doesn&amp;rsquo;t seem to. I did find this RStudio Community discussion that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.</description>
+    </item>
+    
+    <item>
       <title>ten year reproducibility challenge</title>
       <link>/2020/02/07/ten-year-challenge/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
@@ -313,17 +323,6 @@ Sunday  (2:00 - 3:50) Open source statistical software for data science</descrip
       <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>Chris Walker&amp;rsquo;s powerful speech at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;Hateful shit at UW-Madison&amp;rdquo;) was recorded!
 You must listen to it!</description>
-    </item>
-    
-    <item>
-      <title>I am a data scientist</title>
-      <link>/2016/04/08/i-am-a-data-scientist/</link>
-      <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
-      <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
-It was a short post, so I might as well quote the whole thing:
-When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
     </item>
     
   </channel>
