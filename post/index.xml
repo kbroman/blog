@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ten year reproducibility challenge</title>
+      <link>/2020/02/07/ten-year-challenge/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/07/ten-year-challenge/</guid>
+      <description>In October I agreed to participate in the ReScience Ten Years Reproducibility Challenge. The idea is to take a paper that you published at least ten years ago and try to re-run the code. Brilliant!
+I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on the analysis of a transposon mutagenesis experiment in M. tuberculosis. I picked that one in part because I figured the analyses were reasonably compact and not super time consuming.</description>
+    </item>
     
     <item>
       <title>data analysis principles</title>
@@ -314,18 +324,6 @@ You must listen to it!</description>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
 When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
-    </item>
-    
-    <item>
-      <title>Action items in response to hateful shit</title>
-      <link>/2016/04/05/action-items-in-response-to-hateful-shit/</link>
-      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
-      <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
-Here are the things he had mentioned yesterday at the Faculty Senate meeting:
- Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
- Look at &amp;ldquo;bullying&amp;rdquo; language as a way to address possible hate/bias incidents in the classroom.</description>
     </item>
     
   </channel>

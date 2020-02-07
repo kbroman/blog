@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ten year reproducibility challenge</title>
+      <link>/2020/02/07/ten-year-challenge/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/07/ten-year-challenge/</guid>
+      <description>In October I agreed to participate in the ReScience Ten Years Reproducibility Challenge. The idea is to take a paper that you published at least ten years ago and try to re-run the code. Brilliant!
+I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on the analysis of a transposon mutagenesis experiment in M. tuberculosis. I picked that one in part because I figured the analyses were reasonably compact and not super time consuming.</description>
+    </item>
     
     <item>
       <title>omg, binder!</title>
@@ -322,16 +332,6 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
       <guid>/2013/02/08/interactive-graphics-with-d3-js/</guid>
       <description>I&amp;rsquo;m making some progress learning D3 (for interactive graphics), by which I mean I&amp;rsquo;ve gotten a couple of examples to work.
 Many box plots First, an example for displaying many distributions. Here I&amp;rsquo;m considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements. It&amp;rsquo;s hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don&amp;rsquo;t give enough information about the tails.</description>
-    </item>
-    
-    <item>
-      <title>Wireless router woes</title>
-      <link>/2012/11/20/wireless-router-woes/</link>
-      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/2012/11/20/wireless-router-woes/</guid>
-      <description>I had problems with my internet connection at home this morning. The usual things didn&amp;rsquo;t work, but an unusual thing did work, so I thought I&amp;rsquo;d write about it.
-My internet connection worked last night, but it didn&amp;rsquo;t work this morning. I did the usual things: turn off the cable modem and the wireless router, and then turn them back on again. Turn off the computer and then turn it back on again, and then power cycle the modem and router again.</description>
     </item>
     
   </channel>

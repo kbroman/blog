@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 07 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ten year reproducibility challenge</title>
+      <link>/2020/02/07/ten-year-challenge/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/02/07/ten-year-challenge/</guid>
+      <description>In October I agreed to participate in the ReScience Ten Years Reproducibility Challenge. The idea is to take a paper that you published at least ten years ago and try to re-run the code. Brilliant!
+I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on the analysis of a transposon mutagenesis experiment in M. tuberculosis. I picked that one in part because I figured the analyses were reasonably compact and not super time consuming.</description>
+    </item>
     
     <item>
       <title>Write unit tests!</title>

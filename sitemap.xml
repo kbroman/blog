@@ -4,24 +4,71 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/statistics/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+    <loc>/categories/programming/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/code/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/papers/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reproducible-research/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2020/02/07/ten-year-challenge/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/statistics/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -50,12 +97,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/academics/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -67,30 +108,18 @@
   </url>
   
   <url>
-    <loc>/tags/reproducible-research/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/programming/</loc>
-    <lastmod>2019-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/2019/02/18/omg_binder/</loc>
     <lastmod>2019-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/tags/minecraft/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -102,24 +131,12 @@
   </url>
   
   <url>
-    <loc>/tags/minecraft/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/2019/02/11/writing_text_in_minecraft_with_r/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/apple/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mac/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -137,6 +154,12 @@
   
   <url>
     <loc>/tags/computing/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mac/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -167,12 +190,6 @@
   <url>
     <loc>/2018/03/16/learning-a-new-programming-language/</loc>
     <lastmod>2018-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/programming/</loc>
-    <lastmod>2018-03-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -426,12 +443,6 @@
   </url>
   
   <url>
-    <loc>/tags/code/</loc>
-    <lastmod>2015-12-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/testing/</loc>
     <lastmod>2015-12-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -485,12 +496,6 @@
   <url>
     <loc>/2015/09/09/reproducibility-is-hard/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/papers/</loc>
-    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
