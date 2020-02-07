@@ -54,7 +54,7 @@ something like this:
     ```
 
 The first time you compile the report, your abstract would have a
-bunch of `NA` values in it. But then if you run the compile the report
+bunch of `NA` values in it. But then if you compile the report
 a second time, you'd pull in the results from the previous run.
 
 Is there a better way? Let me know [on twitter](https://twitter.com/kwbroman).
