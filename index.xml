@@ -76,8 +76,8 @@ exploreSeq.pl*
 &lt;p&gt;I&amp;rsquo;m pleased to report that I &lt;em&gt;was&lt;/em&gt; able to reproduce my analyses.
 (Well, mostly. I can&amp;rsquo;t find the code that was used to do the
 simulations for &lt;a href=&#34;https://bit.ly/lamichhane2003_fig3&#34;&gt;Figure 3&lt;/a&gt;, just
-the results and the code to use them to make the figure, which doesn&amp;rsquo;t
-really count.) My work reproducing the analysis in the paper is &lt;a href=&#34;https://github.com/kbroman/Paper_ReScience2020&#34;&gt;on
+the results and the code that used them to make the figure, which doesn&amp;rsquo;t
+fully count.) My work reproducing the analysis in the paper is &lt;a href=&#34;https://github.com/kbroman/Paper_ReScience2020&#34;&gt;on
 GitHub&lt;/a&gt;; now I just
 need to write the paper. But whoa it would have been a lot easier if
 I&amp;rsquo;d left myself a bit of documentation.&lt;/p&gt;
@@ -1652,7 +1652,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Fri Feb  7 06:27:07 2020 --&gt;
+&lt;!-- Fri Feb  7 06:46:13 2020 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
