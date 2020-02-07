@@ -26,7 +26,7 @@ but he doesn't seem to. I did find [this RStudio Community
 discussion](https://community.rstudio.com/t/best-practices-for-organizing-rmarkdown-projects/914)
 that is relevant, but it doesn't have quite the solution I would want.
 
-My suggestion would be to include a code chunk something like this
+My suggestion was to include a code chunk something like this
 before the abstract:
 
     ```{r load_summary_results, echo=FALSE}
