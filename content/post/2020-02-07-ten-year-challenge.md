@@ -75,8 +75,8 @@ exploreSeq.pl*
 I'm pleased to report that I _was_ able to reproduce my analyses.
 (Well, mostly. I can't find the code that was used to do the
 simulations for [Figure 3](https://bit.ly/lamichhane2003_fig3), just
-the results and the code to use them to make the figure, which doesn't
-really count.) My work reproducing the analysis in the paper is [on
+the results and the code that used them to make the figure, which doesn't
+fully count.) My work reproducing the analysis in the paper is [on
 GitHub](https://github.com/kbroman/Paper_ReScience2020); now I just
 need to write the paper. But whoa it would have been a lot easier if
 I'd left myself a bit of documentation.
