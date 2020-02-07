@@ -27,7 +27,7 @@ but he doesn&amp;rsquo;t seem to. I did find &lt;a href=&#34;https://community.r
 discussion&lt;/a&gt;
 that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.&lt;/p&gt;
 
-&lt;p&gt;My suggestion would be to include a code chunk something like this
+&lt;p&gt;My suggestion was to include a code chunk something like this
 before the abstract:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;```{r load_summary_results, echo=FALSE}
