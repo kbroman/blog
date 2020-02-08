@@ -223,7 +223,7 @@ scripts into single scripts that did all the things that we ended up
 including in the paper.&lt;/p&gt;
 
 &lt;p&gt;There was only one real R change that posed a problem. The output of
-&lt;code&gt;table()&lt;/code&gt; used to just be a vector and now it as object of class
+&lt;code&gt;table()&lt;/code&gt; used to just be a vector and now it is an object of class
 &lt;code&gt;&amp;quot;table&amp;quot;&lt;/code&gt; and so a couple of scripts throw errors if I don&amp;rsquo;t toss in
 an &lt;code&gt;as.numeric()&lt;/code&gt;.&lt;/p&gt;
 
@@ -1707,7 +1707,7 @@ I’ll leave that to the reader.)&lt;/p&gt;
 &lt;p&gt;Here’s a summary of the times:&lt;/p&gt;
 &lt;style type=&#34;text/css&#34;&gt;.table { width: 100%; }&lt;/style&gt;
 &lt;!-- html table generated in R 3.6.1 by xtable 1.8-4 package --&gt;
-&lt;!-- Fri Feb  7 22:22:54 2020 --&gt;
+&lt;!-- Sat Feb  8 01:31:37 2020 --&gt;
 &lt;table border=&#34;0&#34; width=&#34;100%&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
