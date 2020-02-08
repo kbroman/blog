@@ -165,7 +165,7 @@ scripts into single scripts that did all the things that we ended up
 including in the paper.
 
 There was only one real R change that posed a problem. The output of
-`table()` used to just be a vector and now it as object of class
+`table()` used to just be a vector and now it is an object of class
 `"table"` and so a couple of scripts throw errors if I don't toss in
 an `as.numeric()`.
 
