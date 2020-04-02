@@ -107,7 +107,7 @@ In addition, it&amp;rsquo;d be useful to have session information (R and package
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/2015/09/24/its-not-you-its-me/</guid>
-      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
+      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;rdquo;)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
  TravisCI for not handling system.file() properly.
