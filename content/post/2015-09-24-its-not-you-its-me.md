@@ -12,7 +12,7 @@ tags:
 slug: its-not-you-its-me
 ---
 
-Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. ("It's not _me_, it's _you_.")
+Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&ldquo;It's not _me_, it's _you_.&rdquo;)
 
 And almost always, it's my own code that's the problem (hence the title of this post).
 
