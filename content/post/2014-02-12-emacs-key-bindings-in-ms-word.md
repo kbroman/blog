@@ -40,8 +40,8 @@ The procedure, in MS Word 2011 for Mac, is:
 
 I needed two more, `C-d` and `C-k`; it took me a while to figure out how to do it, as there didn't seem to be any built-in commands. But you can just record a macro. I created these:
 
-- `C-d` – [DeleteCharacter] (as a macro)
-- `C-k` – [KillLine] (as a macro)
+- `C-d` – \[DeleteCharacter\] (as a macro)
+- `C-k` – \[KillLine\] (as a macro)
 
 Here's the procedure, in MS Word 2011 for Mac.
 
