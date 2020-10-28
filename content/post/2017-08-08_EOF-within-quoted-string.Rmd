@@ -23,7 +23,7 @@ rather simple, really: tab delimited, with 9 columns, the ninth column
 being a bunch of pasted attributes that needs to be further parsed,
 but we'll skip over that detail.
 
-I'd want to use `fread()` from the
+I'd wanted to use `fread()` from the
 [data.table package](https://github.com/Rdatatable/data.table/wiki),
 but it turns out that the file has a bunch of lines with "`###`"
 interspersed within the data, and I couldn't see a way to skip over
