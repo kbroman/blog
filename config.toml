@@ -5,7 +5,7 @@ title = "the stupidest thing..."
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "drafts/"]
+ignoreFiles = ["\\.Rmd$", "_cache$", "drafts/", "\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 rssLimit = 30
 
 copyright="The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License"
