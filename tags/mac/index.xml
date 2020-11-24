@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mac on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/mac/</link>
-    <description>Recent content in Mac on the stupidest thing...</description>
+    <title>mac on the stupidest thing...</title>
+    <link>/tags/mac/</link>
+    <description>Recent content in mac on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>another new laptop</title>
-      <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
+      <link>/2019/02/02/another_new_laptop/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/02/another_new_laptop/</guid>
+      <guid>/2019/02/02/another_new_laptop/</guid>
       <description>I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them. My favorites were the 17&amp;rdquo; ones. Heavy, but that big screen was great for data analysis, programming, and writing papers.
 Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it seems like Apple is now designing with someone totally different in mind. I mean, my MacPro desktop is on its last legs but hell if I&amp;rsquo;m going to buy one of their new ones which are basically like a laptop that you sit on your desk.</description>
     </item>
     
     <item>
       <title>Muted startup</title>
-      <link>https://kbroman.org/blog/2012/01/26/muted-startup/</link>
+      <link>/2012/01/26/muted-startup/</link>
       <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/01/26/muted-startup/</guid>
+      <guid>/2012/01/26/muted-startup/</guid>
       <description>It annoys me when my computer (or, even more, someone else&amp;rsquo;s computer) makes a gratuitous noise upon startup.
 While I know that, on my Mac, I can avoid the sound by either muting before shutdown or holding down the mute button while starting it up, I often forget. And I am especially prone to forgetting when it&amp;rsquo;s most important that the computer be quiet.
 So, I was very interested to read how to disable the start up sound at lifehacker.</description>
@@ -35,20 +35,20 @@ So, I was very interested to read how to disable the start up sound at lifehacke
     
     <item>
       <title>Caffeine</title>
-      <link>https://kbroman.org/blog/2011/10/27/caffeine/</link>
+      <link>/2011/10/27/caffeine/</link>
       <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/10/27/caffeine/</guid>
+      <guid>/2011/10/27/caffeine/</guid>
       <description>A cute and useful menu bar application for Macs: Caffeine, available in the App store.
 If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen. This is especially useful when you&amp;rsquo;re giving a talk.</description>
     </item>
     
     <item>
       <title>Resizing windows in Lion</title>
-      <link>https://kbroman.org/blog/2011/10/14/resizing-windows-in-lion/</link>
+      <link>/2011/10/14/resizing-windows-in-lion/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2011/10/14/resizing-windows-in-lion/</guid>
+      <guid>/2011/10/14/resizing-windows-in-lion/</guid>
       <description>I upgraded my Macs to Lion; my favorite improvement is that we can now resize windows from any edge or corner.
 (Previously, you could only change the size from the lower-right corner, so I often found myself resizing and moving and then resizing and moving and then&amp;hellip;. Why did it take so long for them to do it properly?)</description>
     </item>

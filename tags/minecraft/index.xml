@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>minecraft on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/minecraft/</link>
-    <description>Recent content in minecraft on the stupidest thing...</description>
+    <title>Minecraft on the stupidest thing...</title>
+    <link>/tags/minecraft/</link>
+    <description>Recent content in Minecraft on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>writing text in Minecraft with R</title>
-      <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
+      <link>/2019/02/11/writing_text_in_minecraft_with_r/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</guid>
+      <guid>/2019/02/11/writing_text_in_minecraft_with_r/</guid>
       <description>It&amp;rsquo;s been nearly two years since I attended the RopenSci UnConf 2017 in LA and worked with Gergely Daróczi, Brooke Anderson, David Smith, Mario Inchiosa, and Adi Zaidi to create the miner package for interacting with Minecraft from R. We spent a half-day writing the package and then a day and a half playing, with a bunch of our ideas implemented in the craft package and illustrated in the bookdown book, R programming with Minecraft.</description>
     </item>
     
     <item>
       <title>miner and craft</title>
-      <link>https://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
+      <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
+      <guid>/2017/05/31/miner-and-craft/</guid>
       <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
 I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
     </item>
     
     <item>
       <title>ROpenSci Unconf 2017</title>
-      <link>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
+      <link>/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
-      <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
+      <guid>/2017/05/27/ropensci-unconf-2017/</guid>
       <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
 This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>

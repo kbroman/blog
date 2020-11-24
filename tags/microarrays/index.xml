@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>microarrays on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/microarrays/</link>
+    <link>/tags/microarrays/</link>
     <description>Recent content in microarrays on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 25 Apr 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/microarrays/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/microarrays/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Microarrays suck</title>
-      <link>https://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
+      <link>/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
+      <guid>/2012/04/25/microarrays-suck/</guid>
       <description>Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to Rafa&amp;rsquo;s work in the past decade, but microarray data have really been kicking my ass the last few weeks. Here are a few of the lessons that I&amp;rsquo;ve re-learned.
 Lesson 1: What the hell is that? Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (autozygosity in the CEPH families, a large, common human inversion polymorphism, and most recently sample mixups).</description>
     </item>

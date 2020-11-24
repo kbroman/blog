@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>exploratory data analysis on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/exploratory-data-analysis/</link>
+    <link>/tags/exploratory-data-analysis/</link>
     <description>Recent content in exploratory data analysis on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 03 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/exploratory-data-analysis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/exploratory-data-analysis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
-      <link>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
+      <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
+      <guid>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
       <description>Last week, I created revised versions of graphs of car crash statistics by state (including an interactive version), from a post by Mona Chalabi at 538.
 Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture on creating effective figures and tables, I just read the data off printed versions of the bar charts, using a ruler.</description>
     </item>
     
     <item>
       <title>Interactive plot of car crash stats</title>
-      <link>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
+      <link>/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
+      <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
 
 See it in action here.
@@ -36,10 +36,10 @@ Code on github.</description>
     
     <item>
       <title>Improved graphs of car crash stats</title>
-      <link>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</link>
+      <link>/2014/10/29/improved-graphs-of-car-crash-stats/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
+      <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>Last week, Mona Chalabi wrote an interesting post on car crash statistics by state, at fivethirtyeight.com.
 I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:
 I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better. There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
@@ -47,10 +47,10 @@ I&amp;rsquo;m giving a talk today about data visualization [slides | github], an
     
     <item>
       <title>Microarrays suck</title>
-      <link>https://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
+      <link>/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
+      <guid>/2012/04/25/microarrays-suck/</guid>
       <description>Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to Rafa&amp;rsquo;s work in the past decade, but microarray data have really been kicking my ass the last few weeks. Here are a few of the lessons that I&amp;rsquo;ve re-learned.
 Lesson 1: What the hell is that? Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (autozygosity in the CEPH families, a large, common human inversion polymorphism, and most recently sample mixups).</description>
     </item>

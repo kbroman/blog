@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>consulting on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/consulting/</link>
+    <link>/tags/consulting/</link>
     <description>Recent content in consulting on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 02 Apr 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/consulting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/consulting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Thoughts on statistical consulting</title>
-      <link>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</link>
+      <link>/2013/04/02/thoughts-on-statistical-consulting/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
+      <guid>/2013/04/02/thoughts-on-statistical-consulting/</guid>
       <description>The Statistics Department at UW-Madison has a course on statistical consulting, offered each semester. I&amp;rsquo;m often asked to give a lecture, which I do in an informal way: summarizing my experiences and answering questions.
 I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties. This will be a bit rough, and long. I&amp;rsquo;ll revert to bullet points, to be more compact (and because I&amp;rsquo;m lazy).</description>
     </item>

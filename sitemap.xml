@@ -3,1538 +3,1555 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kbroman.org/blog/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/programming/</loc>
+    <loc>/categories/programming/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/code/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/papers/</loc>
+    <loc>/tags/code/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/programming/</loc>
+    <loc>/tags/papers/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/r/</loc>
+    <loc>/tags/programming/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/r-markdown/</loc>
+    <loc>/tags/r-markdown/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</loc>
+    <loc>/2020/02/07/reproducible-abstract/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/reproducible-research/</loc>
-    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</loc>
-    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/</loc>
+    <loc>/tags/reproducible-research/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/statistics/</loc>
+    <loc>/2020/02/07/ten-year-challenge/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/statistics/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/data-analysis/</loc>
+    <loc>/tags/data-analysis/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</loc>
+    <loc>/2019/08/15/data-analysis-principles/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/data-science/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/statistics/</loc>
+    <loc>/tags/data-science/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/academics/</loc>
+    <loc>/tags/statistics/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/academics/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</loc>
+    <loc>/2019/04/01/reproducibility-guidelines/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2019/02/18/omg_binder/</loc>
+    <loc>/2019/02/18/omg_binder/</loc>
     <lastmod>2019-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/r/</loc>
+    <loc>/tags/minecraft/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/conference/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/minecraft/</loc>
+    <loc>/tags/conference/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</loc>
+    <loc>/2019/02/11/writing_text_in_minecraft_with_r/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/apple/</loc>
+    <loc>/categories/apple/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/mac/</loc>
+    <loc>/categories/news/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/news/</loc>
+    <loc>/2019/02/02/another_new_laptop/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/computing/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2019/02/02/another_new_laptop/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/computing/</loc>
+    <loc>/tags/mac/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/news/</loc>
+    <loc>/tags/news/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/twitter/</loc>
+    <loc>/categories/twitter/</loc>
     <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/twitter/</loc>
+    <loc>/tags/twitter/</loc>
     <lastmod>2018-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2018/10/05/twitter-break/</loc>
+    <loc>/2018/10/05/twitter-break/</loc>
     <lastmod>2018-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</loc>
+    <loc>/2018/03/16/learning-a-new-programming-language/</loc>
     <lastmod>2018-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/stupid/</loc>
+    <loc>/tags/stupid/</loc>
     <lastmod>2017-12-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/12/18/these-guys/</loc>
+    <loc>/2017/12/18/these-guys/</loc>
     <lastmod>2017-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/graphics/</loc>
+    <loc>/tags/graphics/</loc>
     <lastmod>2017-10-31T20:05:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/10/31/halloween-2017/</loc>
+    <loc>/2017/10/31/halloween-2017/</loc>
     <lastmod>2017-10-31T20:05:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/blog/</loc>
+    <loc>/2017/08/08/eof-within-quoted-string/</loc>
+    <lastmod>2017-08-08T00:10:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-munging/</loc>
+    <lastmod>2017-08-08T00:10:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/read.table/</loc>
+    <lastmod>2017-08-08T00:10:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/blog/</loc>
     <lastmod>2017-08-03T00:01:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/blogdown/</loc>
+    <loc>/tags/blogdown/</loc>
     <lastmod>2017-08-03T00:01:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/08/03/yay-yihui/</loc>
+    <loc>/2017/08/03/yay-yihui/</loc>
     <lastmod>2017-08-03T00:01:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/31/miner-and-craft/</loc>
+    <loc>/2017/05/31/miner-and-craft/</loc>
     <lastmod>2017-05-31T23:48:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/31/omg-bookdown/</loc>
+    <loc>/2017/05/31/omg-bookdown/</loc>
     <lastmod>2017-05-31T23:16:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/publishing/</loc>
+    <loc>/tags/publishing/</loc>
     <lastmod>2017-05-31T23:16:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</loc>
+    <loc>/2017/05/30/deeply-nested-functions/</loc>
     <lastmod>2017-05-30T10:41:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</loc>
+    <loc>/2017/05/27/ropensci-unconf-2017/</loc>
     <lastmod>2017-05-27T12:30:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/23/minicran/</loc>
+    <loc>/2017/05/23/minicran/</loc>
     <lastmod>2017-05-23T23:42:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/rds/</loc>
+    <loc>/tags/rds/</loc>
     <lastmod>2017-05-11T23:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/big-data/</loc>
+    <loc>/tags/big-data/</loc>
     <lastmod>2017-05-11T23:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/data.table/</loc>
+    <loc>/tags/data.table/</loc>
     <lastmod>2017-05-11T23:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</loc>
+    <loc>/2017/05/11/reading/writing-biggish-data-revisited/</loc>
     <lastmod>2017-05-11T23:50:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/d3/</loc>
+    <loc>/tags/d3/</loc>
     <lastmod>2017-05-11T16:22:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/data-visualization/</loc>
+    <loc>/tags/data-visualization/</loc>
     <lastmod>2017-05-11T16:22:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</loc>
+    <loc>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</loc>
     <lastmod>2017-05-11T16:22:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</loc>
+    <loc>/2017/05/02/crayon-colors-simplified/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/05/01/caching-blogdown/</loc>
+    <loc>/2017/05/01/caching-blogdown/</loc>
     <lastmod>2017-05-01T00:10:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/sql/</loc>
+    <loc>/tags/sql/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/feather/</loc>
+    <loc>/tags/feather/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/fst/</loc>
+    <loc>/tags/fst/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</loc>
+    <loc>/2017/04/30/sqlite-feather-and-fst/</loc>
     <lastmod>2017-04-30T14:07:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/04/30/old-posts/</loc>
+    <loc>/2017/04/30/old-posts/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/wordpress/</loc>
+    <loc>/tags/wordpress/</loc>
     <lastmod>2017-04-30T10:50:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/04/30/new_blog_site/</loc>
+    <loc>/2017/04/30/new_blog_site/</loc>
     <lastmod>2017-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/04/29/new-blog/</loc>
+    <loc>/2017/04/29/new-blog/</loc>
     <lastmod>2017-04-29T08:37:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2017-04-29T08:36:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</loc>
+    <loc>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/things-that-annoy-me/</loc>
-    <lastmod>2017-01-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/censorship/</loc>
+    <loc>/categories/things-that-annoy-me/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/trump/</loc>
+    <loc>/tags/censorship/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</loc>
+    <loc>/tags/trump/</loc>
+    <lastmod>2017-01-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2016/10/31/halloween-2016-count/</loc>
     <lastmod>2016-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</loc>
+    <loc>/2016/07/27/my-jsm-2016-itinerary/</loc>
     <lastmod>2016-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</loc>
+    <loc>/2016/04/15/chris-walker-at-faculty-senate/</loc>
     <lastmod>2016-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/uw/</loc>
+    <loc>/tags/uw/</loc>
     <lastmod>2016-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</loc>
+    <loc>/2016/04/08/i-am-a-data-scientist/</loc>
     <lastmod>2016-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</loc>
+    <loc>/2016/04/05/action-items-in-response-to-hateful-shit/</loc>
     <lastmod>2016-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</loc>
+    <loc>/2016/04/04/hateful-shit-at-uw-madison/</loc>
     <lastmod>2016-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/12/07/write-unit-tests/</loc>
+    <loc>/2015/12/07/write-unit-tests/</loc>
     <lastmod>2015-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/testing/</loc>
+    <loc>/tags/testing/</loc>
     <lastmod>2015-12-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</loc>
+    <loc>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</loc>
     <lastmod>2015-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/genetics/</loc>
-    <lastmod>2015-11-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/qtl-mapping/</loc>
+    <loc>/categories/genetics/</loc>
     <lastmod>2015-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/mixed-models/</loc>
+    <loc>/tags/qtl-mapping/</loc>
     <lastmod>2015-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</loc>
+    <loc>/tags/mixed-models/</loc>
+    <lastmod>2015-11-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2015/09/25/session-info-from-rtravis/</loc>
     <lastmod>2015-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/travisci/</loc>
+    <loc>/tags/travisci/</loc>
     <lastmod>2015-09-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</loc>
+    <loc>/2015/09/24/its-not-you-its-me/</loc>
     <lastmod>2015-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/debugging/</loc>
+    <loc>/tags/debugging/</loc>
     <lastmod>2015-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</loc>
+    <loc>/2015/09/09/reproducibility-is-hard/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</loc>
+    <loc>/2015/08/05/god-awful-conference-web-sites/</loc>
     <lastmod>2015-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</loc>
+    <loc>/2015/08/03/memories-of-past-jsms/</loc>
     <lastmod>2015-08-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</loc>
+    <loc>/2015/06/22/mongodb-with-d3-js/</loc>
     <lastmod>2015-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</loc>
+    <loc>/2015/06/22/randomized-hobbit-2/</loc>
     <lastmod>2015-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/kids/</loc>
-    <lastmod>2015-06-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/mongodb/</loc>
+    <loc>/tags/kids/</loc>
     <lastmod>2015-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/textmining/</loc>
+    <loc>/tags/mongodb/</loc>
     <lastmod>2015-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</loc>
+    <loc>/tags/textmining/</loc>
+    <lastmod>2015-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</loc>
     <lastmod>2015-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/teaching/</loc>
+    <loc>/tags/teaching/</loc>
     <lastmod>2015-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</loc>
+    <loc>/2015/02/13/2015-aaas-in-san-jose/</loc>
     <lastmod>2015-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</loc>
+    <loc>/2014/12/04/initial-steps-towards-reproducible-research/</loc>
     <lastmod>2014-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</loc>
+    <loc>/2014/12/03/the-value-of-thesis-introdiscussion/</loc>
     <lastmod>2014-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/writing/</loc>
+    <loc>/tags/writing/</loc>
     <lastmod>2014-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</loc>
+    <loc>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</loc>
     <lastmod>2014-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/exploratory-data-analysis/</loc>
+    <loc>/tags/exploratory-data-analysis/</loc>
     <lastmod>2014-11-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</loc>
+    <loc>/2014/10/30/interactive-plot-of-car-crash-stats/</loc>
     <lastmod>2014-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</loc>
+    <loc>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</loc>
     <lastmod>2014-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/open-access/</loc>
+    <loc>/tags/open-access/</loc>
     <lastmod>2014-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</loc>
+    <loc>/2014/10/29/improved-graphs-of-car-crash-stats/</loc>
     <lastmod>2014-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</loc>
+    <loc>/2014/09/04/error-notifications-from-r/</loc>
     <lastmod>2014-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/productivity/</loc>
+    <loc>/tags/productivity/</loc>
     <lastmod>2014-09-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/09/03/notifications-from-r/</loc>
+    <loc>/2014/09/03/notifications-from-r/</loc>
     <lastmod>2014-09-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/08/28/the-mustache-photo/</loc>
+    <loc>/2014/08/28/the-mustache-photo/</loc>
     <lastmod>2014-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</loc>
+    <loc>/2014/08/28/yet-another-r-package-primer/</loc>
     <lastmod>2014-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/history/</loc>
+    <loc>/tags/history/</loc>
     <lastmod>2014-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</loc>
+    <loc>/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</loc>
     <lastmod>2014-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</loc>
+    <loc>/2014/08/01/testing-an-r-packages-interactive-graphs/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</loc>
+    <loc>/2014/07/21/user-2014-days-3-4/</loc>
     <lastmod>2014-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</loc>
+    <loc>/2014/07/16/why-hadnt-i-written-a-function-for-that/</loc>
     <lastmod>2014-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</loc>
+    <loc>/2014/07/02/2014-user-conference-days-1-2/</loc>
     <lastmod>2014-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</loc>
+    <loc>/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</loc>
     <lastmod>2014-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</loc>
+    <loc>/2014/05/09/further-points-on-crayon-colors/</loc>
     <lastmod>2014-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</loc>
+    <loc>/2014/05/08/two-more-points-about-crayon-colors/</loc>
     <lastmod>2014-05-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</loc>
+    <loc>/2014/05/07/crayon-colors-in-r/</loc>
     <lastmod>2014-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</loc>
+    <loc>/2014/05/01/reform-academic-statistics/</loc>
     <lastmod>2014-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</loc>
+    <loc>/2014/04/29/with-the-apply-functions-revisited/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</loc>
+    <loc>/2014/04/05/simple-web-sites-with-github-pages/</loc>
     <lastmod>2014-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/github/</loc>
-    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/websites/</loc>
+    <loc>/tags/github/</loc>
     <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</loc>
+    <loc>/tags/websites/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2014/03/14/startling-lack-of-training-in-statistical-computing/</loc>
     <lastmod>2014-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/02/14/googling-errors/</loc>
+    <loc>/2014/02/14/googling-errors/</loc>
     <lastmod>2014-02-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/google/</loc>
+    <loc>/tags/google/</loc>
     <lastmod>2014-02-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</loc>
+    <loc>/2014/02/12/emacs-key-bindings-in-ms-word/</loc>
     <lastmod>2014-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/msword/</loc>
-    <lastmod>2014-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/emacs/</loc>
+    <loc>/tags/msword/</loc>
     <lastmod>2014-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</loc>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2014-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2014/02/09/copyright-of-video-lectures/</loc>
     <lastmod>2014-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</loc>
+    <loc>/2014/02/09/i-still-dont-like-it/</loc>
     <lastmod>2014-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/copyright/</loc>
+    <loc>/tags/copyright/</loc>
     <lastmod>2014-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/peer-review/</loc>
+    <loc>/tags/peer-review/</loc>
     <lastmod>2014-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/knitr/</loc>
+    <loc>/tags/knitr/</loc>
     <lastmod>2014-02-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</loc>
+    <loc>/2014/02/06/knitr-in-a-knutshell-tutorial/</loc>
     <lastmod>2014-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</loc>
+    <loc>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</loc>
     <lastmod>2013-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/tenure/</loc>
+    <loc>/tags/tenure/</loc>
     <lastmod>2013-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/11/19/omics-keynote-no/</loc>
+    <loc>/2013/11/19/omics-keynote-no/</loc>
     <lastmod>2013-11-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</loc>
+    <loc>/2013/10/11/fixing-a-font-problem-for-xelatex/</loc>
     <lastmod>2013-10-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/latex/</loc>
+    <loc>/tags/latex/</loc>
     <lastmod>2013-10-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</loc>
+    <loc>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</loc>
     <lastmod>2013-10-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</loc>
+    <loc>/2013/10/07/better-looking-latexbeamer-slides/</loc>
     <lastmod>2013-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/seminars/</loc>
+    <loc>/tags/seminars/</loc>
     <lastmod>2013-10-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</loc>
+    <loc>/2013/10/02/complaints-about-the-nih-grant-review-process/</loc>
     <lastmod>2013-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/grants/</loc>
+    <loc>/tags/grants/</loc>
     <lastmod>2013-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/09/25/code-review/</loc>
+    <loc>/2013/09/25/code-review/</loc>
     <lastmod>2013-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</loc>
+    <loc>/2013/09/25/hiring-computational-biologists/</loc>
     <lastmod>2013-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/jobs/</loc>
-    <lastmod>2013-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/software/</loc>
+    <loc>/tags/jobs/</loc>
     <lastmod>2013-09-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/09/11/department-websites/</loc>
+    <loc>/tags/software/</loc>
+    <lastmod>2013-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2013/09/11/department-websites/</loc>
     <lastmod>2013-09-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</loc>
+    <loc>/2013/08/20/and-with-the-apply-functions/</loc>
     <lastmod>2013-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</loc>
+    <loc>/2013/08/20/electronic-lab-notebook/</loc>
     <lastmod>2013-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/version-control/</loc>
+    <loc>/tags/version-control/</loc>
     <lastmod>2013-08-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/08/06/read-the-source-code/</loc>
+    <loc>/2013/08/06/read-the-source-code/</loc>
     <lastmod>2013-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/markov-chains/</loc>
+    <loc>/tags/markov-chains/</loc>
     <lastmod>2013-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</loc>
+    <loc>/2013/05/20/more-on-chutes-ladders/</loc>
     <lastmod>2013-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</loc>
+    <loc>/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</loc>
     <lastmod>2013-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/simulation/</loc>
+    <loc>/tags/simulation/</loc>
     <lastmod>2013-05-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</loc>
+    <loc>/2013/05/13/stack-exchange-why-i-dropped-out/</loc>
     <lastmod>2013-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/unproductivity/</loc>
+    <loc>/tags/unproductivity/</loc>
     <lastmod>2013-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</loc>
+    <loc>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</loc>
     <lastmod>2013-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</loc>
+    <loc>/2013/05/08/my-chromosome-8p-inversion/</loc>
     <lastmod>2013-05-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</loc>
+    <loc>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</loc>
     <lastmod>2013-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/29/methods-before-results/</loc>
+    <loc>/2013/04/29/methods-before-results/</loc>
     <lastmod>2013-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</loc>
+    <loc>/2013/04/10/use-meaningful-urls/</loc>
     <lastmod>2013-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/web/</loc>
+    <loc>/tags/web/</loc>
     <lastmod>2013-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</loc>
+    <loc>/2013/04/08/knuth-journal-referees-should-assist-authors/</loc>
     <lastmod>2013-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</loc>
+    <loc>/2013/04/05/data-science-is-statistics/</loc>
     <lastmod>2013-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</loc>
+    <loc>/2013/04/03/beware-of-grep-with-a-list/</loc>
     <lastmod>2013-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</loc>
+    <loc>/2013/04/02/thoughts-on-statistical-consulting/</loc>
     <lastmod>2013-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/02/apply-vs-for/</loc>
+    <loc>/2013/04/02/apply-vs-for/</loc>
     <lastmod>2013-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/consulting/</loc>
+    <loc>/tags/consulting/</loc>
     <lastmod>2013-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/04/02/xc53/</loc>
+    <loc>/2013/04/02/xc53/</loc>
     <lastmod>2013-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</loc>
+    <loc>/2013/03/19/data-structures-are-important/</loc>
     <lastmod>2013-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</loc>
+    <loc>/2013/03/19/enar-highs-and-lows/</loc>
     <lastmod>2013-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</loc>
+    <loc>/2013/03/19/latex-unicode-xetex/</loc>
     <lastmod>2013-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/unicode/</loc>
+    <loc>/tags/unicode/</loc>
     <lastmod>2013-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</loc>
+    <loc>/2013/03/16/why-arent-all-of-our-graphs-interactive/</loc>
     <lastmod>2013-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</loc>
+    <loc>/2013/03/10/towards-making-my-own-papers-reproducible/</loc>
     <lastmod>2013-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</loc>
+    <loc>/2013/03/07/what-a-waste-of-paper/</loc>
     <lastmod>2013-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</loc>
+    <loc>/2013/03/06/interactive-eqtl-plot-with-d3-js/</loc>
     <lastmod>2013-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</loc>
+    <loc>/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</loc>
     <lastmod>2013-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/02/charsetutf-8/</loc>
+    <loc>/2013/03/02/charsetutf-8/</loc>
     <lastmod>2013-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/javascript/</loc>
+    <loc>/tags/javascript/</loc>
     <lastmod>2013-03-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</loc>
+    <loc>/2013/03/01/a-bit-more-on-the-fire/</loc>
     <lastmod>2013-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</loc>
+    <loc>/2013/02/28/theres-a-fire-in-the-building/</loc>
     <lastmod>2013-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/moocs/</loc>
+    <loc>/tags/moocs/</loc>
     <lastmod>2013-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</loc>
+    <loc>/2013/02/21/uw-madison-joins-coursera/</loc>
     <lastmod>2013-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/02/11/interactive-ma-plot/</loc>
+    <loc>/2013/02/11/interactive-ma-plot/</loc>
     <lastmod>2013-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</loc>
+    <loc>/2013/02/08/d3-js-difficulties/</loc>
     <lastmod>2013-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</loc>
+    <loc>/2013/02/08/interactive-graphics-with-d3-js/</loc>
     <lastmod>2013-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/excel/</loc>
+    <loc>/tags/excel/</loc>
     <lastmod>2013-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/01/30/microsoft-office/</loc>
+    <loc>/2013/01/30/microsoft-office/</loc>
     <lastmod>2013-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</loc>
+    <loc>/2013/01/15/59-data-journalists-use-excel/</loc>
     <lastmod>2013-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</loc>
+    <loc>/2013/01/15/nih-to-hire-associate-director-for-data-science/</loc>
     <lastmod>2013-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/12/12/i-dont-want-your-irrelevant-communications-either/</loc>
+    <loc>/2012/12/12/i-dont-want-your-irrelevant-communications-either/</loc>
     <lastmod>2012-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</loc>
+    <loc>/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</loc>
     <lastmod>2012-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</loc>
+    <loc>/2012/11/21/the-hopkins-sph-logo-part-2/</loc>
     <lastmod>2012-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</loc>
+    <loc>/2012/11/20/wireless-router-woes/</loc>
     <lastmod>2012-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/hardware/</loc>
-    <lastmod>2012-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/router/</loc>
+    <loc>/tags/hardware/</loc>
     <lastmod>2012-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/wifi/</loc>
+    <loc>/tags/router/</loc>
     <lastmod>2012-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/</loc>
+    <loc>/tags/wifi/</loc>
+    <lastmod>2012-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2012/11/16/the-hopkins-sph-logo-part-1/</loc>
     <lastmod>2012-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/27/puzzling-typo/</loc>
+    <loc>/2012/10/27/puzzling-typo/</loc>
     <lastmod>2012-10-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/25/open-access-animated/</loc>
+    <loc>/2012/10/25/open-access-animated/</loc>
     <lastmod>2012-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/categories/biking/</loc>
+    <loc>/categories/biking/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/23/helmets-and-bike-sharing-programs/</loc>
+    <loc>/2012/10/23/helmets-and-bike-sharing-programs/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</loc>
+    <loc>/2012/10/23/web-enabled-publishing-environment/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</loc>
+    <loc>/2012/10/23/wired-on-statistics/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/biking/</loc>
-    <lastmod>2012-10-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/media/</loc>
+    <loc>/tags/biking/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</loc>
+    <loc>/tags/media/</loc>
+    <lastmod>2012-10-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2012/10/11/curved-arrows-in-r/</loc>
     <lastmod>2012-10-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</loc>
+    <loc>/2012/10/11/the-future-of-personalized-medicine/</loc>
     <lastmod>2012-10-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/genetic-testing/</loc>
+    <loc>/tags/genetic-testing/</loc>
     <lastmod>2012-10-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/09/28/what-no-coffee/</loc>
+    <loc>/2012/09/28/what-no-coffee/</loc>
     <lastmod>2012-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/09/27/odd-smoother/</loc>
+    <loc>/2012/09/27/odd-smoother/</loc>
     <lastmod>2012-09-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</loc>
+    <loc>/2012/09/24/bottle-filling-station/</loc>
     <lastmod>2012-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/travel/</loc>
+    <loc>/tags/travel/</loc>
     <lastmod>2012-09-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/09/11/hilarious-graph/</loc>
+    <loc>/2012/09/11/hilarious-graph/</loc>
     <lastmod>2012-09-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/09/08/how-to-evaluate-faculty/</loc>
+    <loc>/2012/09/08/how-to-evaluate-faculty/</loc>
     <lastmod>2012-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/06/22/practicing-talks/</loc>
+    <loc>/2012/06/22/practicing-talks/</loc>
     <lastmod>2012-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/06/21/learning-a-new-language/</loc>
+    <loc>/2012/06/21/learning-a-new-language/</loc>
     <lastmod>2012-06-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</loc>
+    <loc>/2012/05/25/a-course-in-statistical-programming/</loc>
     <lastmod>2012-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/24/police/</loc>
+    <loc>/2012/05/24/police/</loc>
     <lastmod>2012-05-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</loc>
+    <loc>/2012/05/23/what-should-i-do-badly/</loc>
     <lastmod>2012-05-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/18/should-i-be-nice/</loc>
+    <loc>/2012/05/18/should-i-be-nice/</loc>
     <lastmod>2012-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/email/</loc>
-    <lastmod>2012-05-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/users/</loc>
+    <loc>/tags/email/</loc>
     <lastmod>2012-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/17/trees/</loc>
+    <loc>/tags/users/</loc>
+    <lastmod>2012-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2012/05/17/trees/</loc>
     <lastmod>2012-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/art/</loc>
+    <loc>/tags/art/</loc>
     <lastmod>2012-05-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</loc>
+    <loc>/2012/05/16/genetic-testing-of-sperm-donors/</loc>
     <lastmod>2012-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/08/no-commuter-bikes-on-sidewalk/</loc>
+    <loc>/2012/05/08/no-commuter-bikes-on-sidewalk/</loc>
     <lastmod>2012-05-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/07/boring-us-to-submission/</loc>
+    <loc>/2012/05/07/boring-us-to-submission/</loc>
     <lastmod>2012-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</loc>
+    <loc>/2012/05/03/tibshirani-named-to-nas/</loc>
     <lastmod>2012-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/people/</loc>
+    <loc>/tags/people/</loc>
     <lastmod>2012-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</loc>
+    <loc>/2012/04/27/positive-comments-on-peer-review/</loc>
     <lastmod>2012-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/04/25/microarrays-suck/</loc>
+    <loc>/2012/04/25/microarrays-suck/</loc>
     <lastmod>2012-04-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/diagnostics/</loc>
-    <lastmod>2012-04-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kbroman.org/blog/tags/microarrays/</loc>
+    <loc>/tags/diagnostics/</loc>
     <lastmod>2012-04-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/04/18/enar-2012/</loc>
+    <loc>/tags/microarrays/</loc>
+    <lastmod>2012-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2012/04/18/enar-2012/</loc>
     <lastmod>2012-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/03/22/as-character-for-rownames/</loc>
+    <loc>/2012/03/22/as-character-for-rownames/</loc>
     <lastmod>2012-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</loc>
+    <loc>/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</loc>
     <lastmod>2012-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</loc>
+    <loc>/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</loc>
     <lastmod>2012-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</loc>
+    <loc>/2012/02/16/collaborative-cross-papers/</loc>
     <lastmod>2012-02-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</loc>
+    <loc>/2012/02/10/i-just-refused-an-elsevier-review/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/06/james-crow/</loc>
+    <loc>/2012/02/06/james-crow/</loc>
     <lastmod>2012-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</loc>
+    <loc>/2012/02/03/i-hate-reading-other-peoples-code/</loc>
     <lastmod>2012-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/03/more-on-open-access/</loc>
+    <loc>/2012/02/03/more-on-open-access/</loc>
     <lastmod>2012-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/comic/</loc>
+    <loc>/tags/comic/</loc>
     <lastmod>2012-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</loc>
+    <loc>/2012/02/02/paying-for-scholarly-publications/</loc>
     <lastmod>2012-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</loc>
+    <loc>/2012/02/01/elsevier-boycott/</loc>
     <lastmod>2012-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2012/01/26/muted-startup/</loc>
+    <loc>/2012/01/26/muted-startup/</loc>
     <lastmod>2012-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/12/23/12-deg-f-but-still-good-biking/</loc>
+    <loc>/2011/12/23/12-deg-f-but-still-good-biking/</loc>
     <lastmod>2011-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/12/13/heres-what-i-need/</loc>
+    <loc>/2011/12/13/heres-what-i-need/</loc>
     <lastmod>2011-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/12/01/revised-bicycle-laws-in-wisconsin/</loc>
+    <loc>/2011/12/01/revised-bicycle-laws-in-wisconsin/</loc>
     <lastmod>2011-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/11/23/statistics-comic/</loc>
+    <loc>/2011/11/23/statistics-comic/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/11/07/sports-statistics/</loc>
+    <loc>/2011/11/07/sports-statistics/</loc>
     <lastmod>2011-11-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</loc>
+    <loc>/2011/10/31/halloween-2011-count/</loc>
     <lastmod>2011-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/27/caffeine/</loc>
+    <loc>/2011/10/27/caffeine/</loc>
     <lastmod>2011-10-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/25/suv-driving-bastards/</loc>
+    <loc>/2011/10/25/suv-driving-bastards/</loc>
     <lastmod>2011-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/21/grant-writing/</loc>
+    <loc>/2011/10/21/grant-writing/</loc>
     <lastmod>2011-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</loc>
+    <loc>/2011/10/19/fund-people-not-projects/</loc>
     <lastmod>2011-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/19/parachutes/</loc>
+    <loc>/2011/10/19/parachutes/</loc>
     <lastmod>2011-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/15/new-title-new-look/</loc>
+    <loc>/2011/10/15/new-title-new-look/</loc>
     <lastmod>2011-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/c/</loc>
+    <loc>/tags/c/</loc>
     <lastmod>2011-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</loc>
+    <loc>/2011/10/14/designer-of-c-died/</loc>
     <lastmod>2011-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/14/resizing-windows-in-lion/</loc>
+    <loc>/2011/10/14/resizing-windows-in-lion/</loc>
     <lastmod>2011-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/12/animal-research/</loc>
+    <loc>/2011/10/12/animal-research/</loc>
     <lastmod>2011-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/animal-research/</loc>
+    <loc>/tags/animal-research/</loc>
     <lastmod>2011-10-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/10/03/terry-on-communication/</loc>
+    <loc>/2011/10/03/terry-on-communication/</loc>
     <lastmod>2011-10-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/30/poster-flop/</loc>
+    <loc>/2011/09/30/poster-flop/</loc>
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/tags/posters/</loc>
+    <loc>/tags/posters/</loc>
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</loc>
+    <loc>/2011/09/29/seminars-bad-and-good/</loc>
     <lastmod>2011-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/28/meetings-vs-work/</loc>
+    <loc>/2011/09/28/meetings-vs-work/</loc>
     <lastmod>2011-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/27/ghastly-r-code/</loc>
+    <loc>/2011/09/27/ghastly-r-code/</loc>
     <lastmod>2011-09-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/26/gamified/</loc>
+    <loc>/2011/09/26/gamified/</loc>
     <lastmod>2011-09-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/22/infographics/</loc>
+    <loc>/2011/09/22/infographics/</loc>
     <lastmod>2011-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/19/lager-yeast/</loc>
+    <loc>/2011/09/19/lager-yeast/</loc>
     <lastmod>2011-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</loc>
+    <loc>/2011/09/16/my-first-fancy-poster/</loc>
     <lastmod>2011-09-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</loc>
+    <loc>/2011/08/26/quick-labels-within-figures-done-right/</loc>
     <lastmod>2011-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</loc>
+    <loc>/2011/08/20/user-conference-2011-highlights/</loc>
     <lastmod>2011-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/08/17/introduction/</loc>
+    <loc>/2011/08/17/introduction/</loc>
     <lastmod>2011-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</loc>
+    <loc>/2011/08/17/the-stupidest-r-code-ever/</loc>
     <lastmod>2011-08-17T00:00:00+00:00</lastmod>
   </url>
   

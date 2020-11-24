@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mongoDB on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/mongodb/</link>
+    <link>/tags/mongodb/</link>
     <description>Recent content in mongoDB on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Mon, 22 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MongoDB with D3.js</title>
-      <link>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
+      <link>/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
+      <guid>/2015/06/22/mongodb-with-d3-js/</guid>
       <description>I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.
 That&amp;rsquo;s led me to spend a good amount of time in the last few years learning some new skills (D3 and CoffeeScript) and developing some new tools, particularly the R package R/qtlcharts, which provides interactive versions of the many data visualizations in R/qtl, my long-in-development R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.</description>
     </item>

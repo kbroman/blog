@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravisCI on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/travisci/</link>
+    <link>/tags/travisci/</link>
     <description>Recent content in TravisCI on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 25 Sep 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/travisci/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/travisci/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Session info from R/Travis</title>
-      <link>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
+      <link>/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
+      <guid>/2015/09/25/session-info-from-rtravis/</guid>
       <description>For the problem I reported yesterday, in which my R package was working fine locally but failing on Travis, the key solution is to run update.packages(ask=FALSE) locally, and maybe even update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;) to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.
 In addition, it&amp;rsquo;d be useful to have session information (R and package versions) in the results from Travis.</description>
     </item>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>people on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/people/</link>
+    <link>/tags/people/</link>
     <description>Recent content in people on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 03 May 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/people/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/people/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rob Tibshirani and Andy Clark named to NAS</title>
-      <link>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</link>
+      <link>/2012/05/03/tibshirani-named-to-nas/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</guid>
+      <guid>/2012/05/03/tibshirani-named-to-nas/</guid>
       <description>Rob Tibshirani and Andy Clark are now members of the National Academy of Sciences.</description>
     </item>
     
     <item>
       <title>James Crow</title>
-      <link>https://kbroman.org/blog/2012/02/06/james-crow/</link>
+      <link>/2012/02/06/james-crow/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2012/02/06/james-crow/</guid>
+      <guid>/2012/02/06/james-crow/</guid>
       <description>James Crow died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was the nicest person I&amp;rsquo;ve met . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.</description>
     </item>
     

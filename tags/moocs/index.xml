@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MOOCs on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/moocs/</link>
+    <link>/tags/moocs/</link>
     <description>Recent content in MOOCs on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 21 Feb 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/moocs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/moocs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>UW-Madison joins Coursera</title>
-      <link>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</link>
+      <link>/2013/02/21/uw-madison-joins-coursera/</link>
       <pubDate>Thu, 21 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</guid>
+      <guid>/2013/02/21/uw-madison-joins-coursera/</guid>
       <description>UW-Madison is joining Coursera to offer four massive open online courses (MOOCs).
 I like Sara Goldrick-Rab&amp;rsquo;s comments.
 MOOCs are a good thing, but I view them as &amp;ldquo;outreach&amp;rdquo;. There are lots of problems with universities, but MOOCs don&amp;rsquo;t seem to be a solution to any of them.

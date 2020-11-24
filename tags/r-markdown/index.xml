@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>r markdown on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/r-markdown/</link>
+    <link>/tags/r-markdown/</link>
     <description>Recent content in r markdown on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reproducible abstract</title>
-      <link>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</link>
+      <link>/2020/02/07/reproducible-abstract/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</guid>
+      <guid>/2020/02/07/reproducible-abstract/</guid>
       <description>A student asked me about how to include summary results in the abstract or executive summary at the top of an R Markdown report when they don&amp;rsquo;t get calculated until somewhere below.
 I feel like I&amp;rsquo;ve seen a generally accepted solution to this, but I can&amp;rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his slides about good reproducible reports, but he doesn&amp;rsquo;t seem to. I did find this RStudio Community discussion that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.</description>
     </item>

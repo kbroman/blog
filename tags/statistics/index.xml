@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>statistics on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/statistics/</link>
+    <link>/tags/statistics/</link>
     <description>Recent content in statistics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kbroman.org/blog/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>data analysis principles</title>
-      <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
+      <link>/2019/08/15/data-analysis-principles/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
+      <guid>/2019/08/15/data-analysis-principles/</guid>
       <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
  answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>I am a data scientist</title>
-      <link>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
+      <link>/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
+      <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
 When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
@@ -35,20 +35,20 @@ When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number
     
     <item>
       <title>Memories of past JSMs</title>
-      <link>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
+      <link>/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
+      <guid>/2015/08/03/memories-of-past-jsms/</guid>
       <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
 JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
       <title>Reform academic statistics</title>
-      <link>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
+      <link>/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
+      <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
