@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software on the stupidest thing...</title>
-    <link>/tags/software/</link>
+    <link>https://kbroman.org/blog/tags/software/</link>
     <description>Recent content in software on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Code review</title>
-      <link>/2013/09/25/code-review/</link>
+      <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/25/code-review/</guid>
+      <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
       <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>

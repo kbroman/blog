@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jobs on the stupidest thing...</title>
-    <link>/tags/jobs/</link>
+    <link>https://kbroman.org/blog/tags/jobs/</link>
     <description>Recent content in jobs on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 25 Sep 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/jobs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hiring computational biologists</title>
-      <link>/2013/09/25/hiring-computational-biologists/</link>
+      <link>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/25/hiring-computational-biologists/</guid>
+      <guid>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
       <description>The Morgridge Institute for Research (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. One position is joint with my department, Biostatistics &amp;amp; Medical Informatics.
 Yet another symposium Yesterday afternoon, they held a symposium on &amp;ldquo;Computation in Biology&amp;rdquo; (Here&amp;rsquo;s the agenda.) Great speakers: Marc Suchard, Brian Shoichet, David Page, and Winston Hide. They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.</description>
     </item>

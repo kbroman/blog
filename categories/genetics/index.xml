@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Genetics on the stupidest thing...</title>
-    <link>/categories/genetics/</link>
+    <link>https://kbroman.org/blog/categories/genetics/</link>
     <description>Recent content in Genetics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/genetics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/categories/genetics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
-      <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
+      <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
+      <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.
 In my efforts on R/qtl2, a reimplementation R/qtl to better handle high-dimensional data and more complex cross designs, it was clear that I&amp;rsquo;d need to figure out LMMs.</description>
     </item>
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>There was lots of discussion on twitter yesterday about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on The geography of recent genetic ancestry across Europe, particularly regarding the FAQ they&amp;rsquo;d created.
 I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.</description>
     </item>
     
     <item>
       <title>Interactive eQTL plot with d3.js</title>
-      <link>/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
+      <link>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
+      <guid>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>I just finished an interactive eQTL plot using D3, in preparation for my talk on interactive graphics at the ENAR meeting next week.
 
 The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
@@ -46,29 +46,29 @@ The hardest part was setting up the data files. Well, that plus the fact that I 
     
     <item>
       <title>The future of personalized medicine</title>
-      <link>/2012/10/11/the-future-of-personalized-medicine/</link>
+      <link>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/10/11/the-future-of-personalized-medicine/</guid>
+      <guid>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
       <description>&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: a genetic test for exercise.</description>
     </item>
     
     <item>
       <title>Odd smoother</title>
-      <link>/2012/09/27/odd-smoother/</link>
+      <link>https://kbroman.org/blog/2012/09/27/odd-smoother/</link>
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/09/27/odd-smoother/</guid>
+      <guid>https://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
       <description>I was flipping though the contents of G3 and saw this paper, which includes Jim Cheverud as an author.
 I poked through the paper, and my eye was attracted to the following figure. These are supposed to be functions, but some weird smoother was used, and the results are not functions.</description>
     </item>
     
     <item>
       <title>Trees</title>
-      <link>/2012/05/17/trees/</link>
+      <link>https://kbroman.org/blog/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/17/trees/</guid>
+      <guid>https://kbroman.org/blog/2012/05/17/trees/</guid>
       <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
 That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
 These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>
@@ -76,10 +76,10 @@ These scratchings are related to a bit of theory I&amp;rsquo;ve been working on 
     
     <item>
       <title>Genetic testing of sperm donors</title>
-      <link>/2012/05/16/genetic-testing-of-sperm-donors/</link>
+      <link>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
+      <guid>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
  An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
@@ -87,29 +87,29 @@ One, the mention of fragile X syndrome, has been corrected:
     
     <item>
       <title>Rob Tibshirani and Andy Clark named to NAS</title>
-      <link>/2012/05/03/tibshirani-named-to-nas/</link>
+      <link>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/03/tibshirani-named-to-nas/</guid>
+      <guid>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</guid>
       <description>Rob Tibshirani and Andy Clark are now members of the National Academy of Sciences.</description>
     </item>
     
     <item>
       <title>Microarrays suck</title>
-      <link>/2012/04/25/microarrays-suck/</link>
+      <link>https://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/04/25/microarrays-suck/</guid>
+      <guid>https://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
       <description>Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to Rafa&amp;rsquo;s work in the past decade, but microarray data have really been kicking my ass the last few weeks. Here are a few of the lessons that I&amp;rsquo;ve re-learned.
 Lesson 1: What the hell is that? Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (autozygosity in the CEPH families, a large, common human inversion polymorphism, and most recently sample mixups).</description>
     </item>
     
     <item>
       <title>Collaborative Cross papers</title>
-      <link>/2012/02/16/collaborative-cross-papers/</link>
+      <link>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</link>
       <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/16/collaborative-cross-papers/</guid>
+      <guid>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</guid>
       <description>A batch of 15 papers on the mouse Collaborative Cross appeared in Genetics and G3 today, including two of my own:
  Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
  Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202
@@ -118,29 +118,29 @@ Lesson 1: What the hell is that? Many (or all) of my interesting findings have b
     
     <item>
       <title>James Crow</title>
-      <link>/2012/02/06/james-crow/</link>
+      <link>https://kbroman.org/blog/2012/02/06/james-crow/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/06/james-crow/</guid>
+      <guid>https://kbroman.org/blog/2012/02/06/james-crow/</guid>
       <description>James Crow died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was the nicest person I&amp;rsquo;ve met . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.</description>
     </item>
     
     <item>
       <title>Parachutes</title>
-      <link>/2011/10/19/parachutes/</link>
+      <link>https://kbroman.org/blog/2011/10/19/parachutes/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/19/parachutes/</guid>
+      <guid>https://kbroman.org/blog/2011/10/19/parachutes/</guid>
       <description>I went to a great talk today by David Goldstein, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials. The main conclusion:
 We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.</description>
     </item>
     
     <item>
       <title>Lager yeast</title>
-      <link>/2011/09/19/lager-yeast/</link>
+      <link>https://kbroman.org/blog/2011/09/19/lager-yeast/</link>
       <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/09/19/lager-yeast/</guid>
+      <guid>https://kbroman.org/blog/2011/09/19/lager-yeast/</guid>
       <description>Last week, I attended an excellent seminar by Chris Hittinger on the identification and evolution of lager yeast (see the paper), part of my favorite seminar series, on evolution.
 [Forgive me if this description is not fully accurate.] Ales are the original (proper, better tasting) type of beer; they&amp;rsquo;re brewed at a warmer temperature, with &amp;ldquo;top-fermenting&amp;rdquo; yeast (the yeast rises to the top or is suspended throughout the column). Lagers were developed in the 15th century in Bavaria and are brewed at a colder temperature, with &amp;ldquo;bottom-fermenting&amp;rdquo; yeast (the yeast settles to the bottom).</description>
     </item>

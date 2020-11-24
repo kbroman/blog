@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reproducible research on the stupidest thing...</title>
-    <link>/tags/reproducible-research/</link>
+    <link>https://kbroman.org/blog/tags/reproducible-research/</link>
     <description>Recent content in reproducible research on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reproducible abstract</title>
-      <link>/2020/02/07/reproducible-abstract/</link>
+      <link>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/07/reproducible-abstract/</guid>
+      <guid>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</guid>
       <description>A student asked me about how to include summary results in the abstract or executive summary at the top of an R Markdown report when they don&amp;rsquo;t get calculated until somewhere below.
 I feel like I&amp;rsquo;ve seen a generally accepted solution to this, but I can&amp;rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his slides about good reproducible reports, but he doesn&amp;rsquo;t seem to. I did find this RStudio Community discussion that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.</description>
     </item>
     
     <item>
       <title>ten year reproducibility challenge</title>
-      <link>/2020/02/07/ten-year-challenge/</link>
+      <link>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/07/ten-year-challenge/</guid>
+      <guid>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</guid>
       <description>In October I agreed to participate in the ReScience Ten Years Reproducibility Challenge. The idea is to take a paper that you published at least ten years ago and try to re-run the code. Brilliant!
 I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on the analysis of a transposon mutagenesis experiment in M. tuberculosis. I picked that one in part because I figured the analyses were reasonably compact and not super time consuming.</description>
     </item>
     
     <item>
       <title>reproducibility guidelines</title>
-      <link>/2019/04/01/reproducibility-guidelines/</link>
+      <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/04/01/reproducibility-guidelines/</guid>
+      <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
       <description>I’m in Delft, The Netherlands, for a few days this week, at a workshop to develop guidelines for reproducibility for AGILE conference papers. I’m here as one of the outside “experts”. (It’s always a bit disconcerting to be considered an expert.) The leaders of this effort wrote an interesting PeerJ paper last year, evaluating the reproducibility of previous AGILE papers.
 There will be a community webinar tomorrow (2019-04-02) at 16:00 CEST (which is 9:00am US central daylight time), to report our initial thoughts and get community feedback.</description>
     </item>
     
     <item>
       <title>omg, binder!</title>
-      <link>/2019/02/18/omg_binder/</link>
+      <link>https://kbroman.org/blog/2019/02/18/omg_binder/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/02/18/omg_binder/</guid>
+      <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
       <description>At his talk at RStudio::conf, Karthik Ram discussed binder as a useful solution for reproducible research (see the video), and I thought, &amp;ldquo;What is this dark magic?&amp;rdquo; You put a small configuration file in your GitHub repository and suddenly you can open it live in RStudio on some cloud server somewhere. Seems too good to be true. But I trusted him, mentioned it in my talk at AAAS yesterday, and talked it up to Jeff Leek.</description>
     </item>
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>/2015/09/09/reproducibility-is-hard/</link>
+      <link>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
       <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
 I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
       <title>Initial steps towards reproducible research</title>
-      <link>/2014/12/04/initial-steps-towards-reproducible-research/</link>
+      <link>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/12/04/initial-steps-towards-reproducible-research/</guid>
+      <guid>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>In anticipation of next week&amp;rsquo;s Reproducible Science Hackathon at NESCent, I was thinking about Christie Bahlai&amp;rsquo;s post on &amp;ldquo;Baby steps for the open-curious.&amp;rdquo;
 Moving from Ye Olde Standard Computational Science Practice to a fully reproducible workflow seems a monumental task, but partially reproducible is better than not-at-all reproducible, and it&amp;rsquo;d be good to give people some advice on how to get started - to encourage them to get started.
 So, I spent some time today writing another of my minimal tutorials, on initial steps towards reproducible research.</description>
@@ -74,20 +74,20 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
     
     <item>
       <title>Yet another R package primer</title>
-      <link>/2014/08/28/yet-another-r-package-primer/</link>
+      <link>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/08/28/yet-another-r-package-primer/</guid>
+      <guid>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
       <description>Hadley Wickham is writing what will surely be a great book about the basics of R packages. And Hilary Parker wrote a very influential post on how to write an R package. So it seems like that topic is well covered.
 Nevertheless, I&amp;rsquo;d been thinking for some time that I should write another minimal tutorial with an alliterative name, on how to turn R code into a package. And it does seem valuable to have a diversity of resources on such an important topic.</description>
     </item>
     
     <item>
       <title>knitr in a knutshell tutorial</title>
-      <link>/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
+      <link>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
+      <guid>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
       <description>I spent a lot of time this week writing a short tutorial on knitr: knitr in a knutshell.
 This is my third little tutorial. (The previous ones were a git/github guide and a minimal make tutorial.)
 I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it can be hard to get started. My goal was to provide the initial motivation and orientation, and then links to other resources. I think they are effective in that regard.</description>
@@ -95,20 +95,20 @@ I&amp;rsquo;m pleased with these tutorials. In learning new computing skills, it
     
     <item>
       <title>Code review</title>
-      <link>/2013/09/25/code-review/</link>
+      <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/25/code-review/</guid>
+      <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
       <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
       <title>Electronic lab notebook</title>
-      <link>/2013/08/20/electronic-lab-notebook/</link>
+      <link>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/08/20/electronic-lab-notebook/</guid>
+      <guid>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
       <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
 I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
 As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
@@ -116,10 +116,10 @@ As Titus points out, a traditional lab notebook serves two purposes: provenance 
     
     <item>
       <title>Tutorials on git/github and GNU make</title>
-      <link>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
+      <link>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
+      <guid>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>If you&amp;rsquo;re not using version control, you should be. Learn git.
 If you&amp;rsquo;re not on github, you should be. That&amp;rsquo;s real open source.
 To help some colleagues get started with git and github, I wrote a minimal tutorial. There are lots of git and github resources available, but I thought I&amp;rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</description>
@@ -127,20 +127,20 @@ To help some colleagues get started with git and github, I wrote a minimal tutor
     
     <item>
       <title>Methods before results</title>
-      <link>/2013/04/29/methods-before-results/</link>
+      <link>https://kbroman.org/blog/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/29/methods-before-results/</guid>
+      <guid>https://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
  To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
 For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
 For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
@@ -148,10 +148,10 @@ For my recent papers, I have developed a sort of system so that I can reproduce 
     
     <item>
       <title>A course in statistical programming</title>
-      <link>/2012/05/25/a-course-in-statistical-programming/</link>
+      <link>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/25/a-course-in-statistical-programming/</guid>
+      <guid>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</guid>
       <description>Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.
 For example, here&amp;rsquo;s a course in &amp;ldquo;advanced statistical computing&amp;rdquo; that I taught at Johns Hopkins back in 2001.
 Many (perhaps most) good programmers learned to code outside of formal courses. But many statisticians are terrible programmers and would benefit by a formal course.</description>

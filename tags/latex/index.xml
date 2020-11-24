@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on the stupidest thing...</title>
-    <link>/tags/latex/</link>
+    <link>https://kbroman.org/blog/tags/latex/</link>
     <description>Recent content in Latex on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 11 Oct 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fixing a font problem for XeLaTeX</title>
-      <link>/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
+      <link>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
+      <guid>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
       <description>If the topic sounds boring, well, it is really boring. I write it down here in case it&amp;rsquo;s useful to someone.
 I was working on a talk about git &amp;amp; GitHub, and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here&amp;rsquo;s the default:
 And here&amp;rsquo;s what I wanted:
@@ -26,20 +26,20 @@ But it didn&amp;rsquo;t work on unix It worked fine with XeLaTeX on my Mac, but 
     
     <item>
       <title>It was a really bad idea to use slides in that class</title>
-      <link>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
+      <link>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
+      <guid>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a blog post.)
 This year, just 45 min before the class, I thought I&amp;rsquo;d quickly create some slides to present. I thought it&amp;rsquo;d be an interesting &amp;ldquo;experiment&amp;rdquo; (not in the formal sense):</description>
     </item>
     
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
-      <link>/2013/10/07/better-looking-latexbeamer-slides/</link>
+      <link>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
+      <guid>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>I like to use LaTeX to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.
 Most people that use LaTeX to make slides seem to use Beamer, but the resulting slides are usually a bit busy, like this:
 
@@ -48,20 +48,20 @@ I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>/2013/03/19/latex-unicode-xetex/</link>
+      <link>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/19/latex-unicode-xetex/</guid>
+      <guid>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</guid>
       <description>I&amp;rsquo;m co-organizing a scientific meeting at the end of May. The abstracts are all in.
 We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review. (I&amp;rsquo;m using Spreadsheet:XLSX for the first time; it&amp;rsquo;s really easy. Why have I always converted Excel files to CSV before parsing them?</description>
     </item>
     
     <item>
       <title>My first fancy poster</title>
-      <link>/2011/09/16/my-first-fancy-poster/</link>
+      <link>https://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</link>
       <pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/09/16/my-first-fancy-poster/</guid>
+      <guid>https://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</guid>
       <description>I&amp;rsquo;m preparing my first large-format poster (for the MathBio3 conference, here in Madison in two weeks). Previously, my posters had just been on a series of pieces of regular paper. (Consider, for example, this poster from September, 1998.) But no one does that anymore, and I don&amp;rsquo;t want to stand out as being archaic. That is, I want to pretend to be modern.
 Here&amp;rsquo;s my draft: 
 I got a LaTeX template from &amp;#346;aunak Sen, which originally came from Nathaniel Johnston and uses the Beamer poster style.</description>

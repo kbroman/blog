@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>papers on the stupidest thing...</title>
-    <link>/tags/papers/</link>
+    <link>https://kbroman.org/blog/tags/papers/</link>
     <description>Recent content in papers on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/papers/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/papers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>reproducible abstract</title>
-      <link>/2020/02/07/reproducible-abstract/</link>
+      <link>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/07/reproducible-abstract/</guid>
+      <guid>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</guid>
       <description>A student asked me about how to include summary results in the abstract or executive summary at the top of an R Markdown report when they don&amp;rsquo;t get calculated until somewhere below.
 I feel like I&amp;rsquo;ve seen a generally accepted solution to this, but I can&amp;rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his slides about good reproducible reports, but he doesn&amp;rsquo;t seem to. I did find this RStudio Community discussion that is relevant, but it doesn&amp;rsquo;t have quite the solution I would want.</description>
     </item>
     
     <item>
       <title>ten year reproducibility challenge</title>
-      <link>/2020/02/07/ten-year-challenge/</link>
+      <link>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/02/07/ten-year-challenge/</guid>
+      <guid>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</guid>
       <description>In October I agreed to participate in the ReScience Ten Years Reproducibility Challenge. The idea is to take a paper that you published at least ten years ago and try to re-run the code. Brilliant!
 I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on the analysis of a transposon mutagenesis experiment in M. tuberculosis. I picked that one in part because I figured the analyses were reasonably compact and not super time consuming.</description>
     </item>
     
     <item>
       <title>Reproducibility is hard</title>
-      <link>/2015/09/09/reproducibility-is-hard/</link>
+      <link>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/09/reproducibility-is-hard/</guid>
+      <guid>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
       <description>Reproducibility is hard. It will probably always be hard, because it&amp;rsquo;s hard keeping things organized.
 I recently had a paper accepted at G3, concerning a huge set of sample mix-ups in a large eQTL study. I&amp;rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&amp;rsquo;t write it up until much later.</description>
     </item>
     
     <item>
       <title>Code review</title>
-      <link>/2013/09/25/code-review/</link>
+      <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/09/25/code-review/</guid>
+      <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
       <description>There was an interesting news item in Nature on code review. It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 There are very brief quotes from Titus Brown and Roger Peng. I expect that the author of the item, Erika Check Hayden, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.</description>
     </item>
     
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
-      <link>/2013/05/08/my-chromosome-8p-inversion/</link>
+      <link>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/08/my-chromosome-8p-inversion/</guid>
+      <guid>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>There was lots of discussion on twitter yesterday about Graham Coop&amp;rsquo;s paper with Peter Ralph (or vice versa), on The geography of recent genetic ancestry across Europe, particularly regarding the FAQ they&amp;rsquo;d created.
 I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I first did a search to see if they&amp;rsquo;d made a connection to any of my work. (I&amp;rsquo;m probably not the only one to do that.</description>
     </item>
     
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
-      <link>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
+      <link>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
+      <guid>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
  Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) nature.com/nature/journal...  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
 But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
@@ -77,20 +77,20 @@ So I tweeted:
     
     <item>
       <title>Methods before results</title>
-      <link>/2013/04/29/methods-before-results/</link>
+      <link>https://kbroman.org/blog/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/04/29/methods-before-results/</guid>
+      <guid>https://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
  To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
       <title>Towards making my own papers reproducible</title>
-      <link>/2013/03/10/towards-making-my-own-papers-reproducible/</link>
+      <link>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
+      <guid>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>Much has been written about reproducible research: that scientific papers should be accompanied by the data and software sufficient to reproduce the results. It&amp;rsquo;s obviously a Good Thing. But it can be hard to stick to this ideal in practice.
 For my early papers, I&amp;rsquo;m not sure I can find the materials anymore, and that&amp;rsquo;s just 15 years back.
 For my recent papers, I have developed a sort of system so that I can reproduce the results myself.</description>
@@ -98,29 +98,29 @@ For my recent papers, I have developed a sort of system so that I can reproduce 
     
     <item>
       <title>Wired on statistics</title>
-      <link>/2012/10/23/wired-on-statistics/</link>
+      <link>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/10/23/wired-on-statistics/</guid>
+      <guid>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</guid>
       <description>Wired magazine had a short article last month on how to read a scientific report, which basically was about how to interpret the statistical results. It&amp;rsquo;s reasonably well done.</description>
     </item>
     
     <item>
       <title>Odd smoother</title>
-      <link>/2012/09/27/odd-smoother/</link>
+      <link>https://kbroman.org/blog/2012/09/27/odd-smoother/</link>
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/09/27/odd-smoother/</guid>
+      <guid>https://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
       <description>I was flipping though the contents of G3 and saw this paper, which includes Jim Cheverud as an author.
 I poked through the paper, and my eye was attracted to the following figure. These are supposed to be functions, but some weird smoother was used, and the results are not functions.</description>
     </item>
     
     <item>
       <title>Trees</title>
-      <link>/2012/05/17/trees/</link>
+      <link>https://kbroman.org/blog/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/05/17/trees/</guid>
+      <guid>https://kbroman.org/blog/2012/05/17/trees/</guid>
       <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
 That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
 These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>
@@ -128,10 +128,10 @@ These scratchings are related to a bit of theory I&amp;rsquo;ve been working on 
     
     <item>
       <title>Collaborative Cross papers</title>
-      <link>/2012/02/16/collaborative-cross-papers/</link>
+      <link>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</link>
       <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/16/collaborative-cross-papers/</guid>
+      <guid>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</guid>
       <description>A batch of 15 papers on the mouse Collaborative Cross appeared in Genetics and G3 today, including two of my own:
  Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
  Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202

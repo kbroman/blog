@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>grants on the stupidest thing...</title>
-    <link>/tags/grants/</link>
+    <link>https://kbroman.org/blog/tags/grants/</link>
     <description>Recent content in grants on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/grants/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/grants/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Complaints about the NIH grant review process</title>
-      <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
+      <link>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
+      <guid>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>Earlier this week, I met with a collaborator to discuss what to do with our NIH grant proposal, whose &amp;ldquo;A1&amp;rdquo; was &amp;ldquo;unscored&amp;rdquo; (ie, the revised version, and you don&amp;rsquo;t get a third try, received a &amp;ldquo;preliminary score&amp;rdquo; in the lower half and so was not discussed by the review panel and couldn&amp;rsquo;t be funded).
 NIH proposals are typically reviewed by three people and given preliminary scores on five aspects (significance, approach, investigators, environment, innovation) and overall, and the top proposals based on those scores are discussed and scored by the larger panel.</description>
     </item>
     
     <item>
       <title>What, no coffee?</title>
-      <link>/2012/09/28/what-no-coffee/</link>
+      <link>https://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/09/28/what-no-coffee/</guid>
+      <guid>https://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
       <description>I was at a CIDR Access Committee meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the Center for Inherited Disease Research, a service funded by several of the NIH institutes.
 We had to buy our own coffee.
 It&amp;rsquo;s silly to complain. There was a coffee shop across the hall from the meeting room, and the coffee there was suitable.
@@ -36,20 +36,20 @@ But isn&amp;rsquo;t it silly to pay airfare for a dozen people for a 3 hr meetin
     
     <item>
       <title>Tips on grant writing</title>
-      <link>/2011/10/21/grant-writing/</link>
+      <link>https://kbroman.org/blog/2011/10/21/grant-writing/</link>
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/21/grant-writing/</guid>
+      <guid>https://kbroman.org/blog/2011/10/21/grant-writing/</guid>
       <description>While some may feel that grant proposals should be perfect, I think they should be good enough to be funded and no better. Only three or so people will read the thing, and they&amp;rsquo;re not allowed to talk about it; you should be devoting yourself as much as possible to the actual work rather than the grant writing.
 Having read many grants (some good, many bad), I&amp;rsquo;ve formed quite strong opinions about what constitutes a good grant.</description>
     </item>
     
     <item>
       <title>Fund people not projects?</title>
-      <link>/2011/10/19/fund-people-not-projects/</link>
+      <link>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/10/19/fund-people-not-projects/</guid>
+      <guid>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</guid>
       <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
 It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work.</description>
     </item>

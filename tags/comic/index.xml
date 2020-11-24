@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>comic on the stupidest thing...</title>
-    <link>/tags/comic/</link>
+    <link>https://kbroman.org/blog/tags/comic/</link>
     <description>Recent content in comic on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 03 Feb 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/comic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbroman.org/blog/tags/comic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I hate reading other people&#39;s code</title>
-      <link>/2012/02/03/i-hate-reading-other-peoples-code/</link>
+      <link>https://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>/2012/02/03/i-hate-reading-other-peoples-code/</guid>
+      <guid>https://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</guid>
       <description>From Abstruse Goose.</description>
     </item>
     
     <item>
       <title>Statistics comic</title>
-      <link>/2011/11/23/statistics-comic/</link>
+      <link>https://kbroman.org/blog/2011/11/23/statistics-comic/</link>
       <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>/2011/11/23/statistics-comic/</guid>
+      <guid>https://kbroman.org/blog/2011/11/23/statistics-comic/</guid>
       <description>Saturday Morning Breakfast Cereal has a rather accurate representation of statisticians:</description>
     </item>
     
