@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>R</title>
-      <link>https://kbroman.org/blog/tags/r/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbroman.org/blog/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>code</title>
       <link>https://kbroman.org/blog/tags/code/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
@@ -45,6 +36,15 @@
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kbroman.org/blog/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r</title>
+      <link>https://kbroman.org/blog/tags/r/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbroman.org/blog/tags/r/</guid>
       <description></description>
     </item>
     
