@@ -12,7 +12,7 @@
 
 
 
-  
+
 
 
 
@@ -47,23 +47,23 @@
   <a href="../../../../" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
-    
+
     <li><a href="https://kbroman.org/blog/about">
             <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
             </a></li>
-    
+
     <li><a href="https://github.com/kbroman">
             <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
             </a></li>
-    
+
     <li><a href="https://twitter.com/kwbroman">
             <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
             </a></li>
-    
+
     <li><a href="https://kbroman.org">
             <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
             </a></li>
-    
+
   </ul>
 </nav>
 
@@ -73,15 +73,15 @@
 <main class="content" role="main">
 
   <article class="article">
-    
+
     <span class="article-duration">2 min read</span>
-    
+
 
     <h1 class="article-title">Randomized Hobbit</h1>
 
-    
+
     <span class="article-date">2015-06-22</span>
-    
+
 
     <div class="article-content">
       <p><a href="https://twitter.com/wrathematics">@wrathematics</a> pointed me to his <a href="http://cran.r-project.org/package=ngram">ngram</a> R package for constructing and simulating from n-grams from text.</p>
@@ -94,19 +94,17 @@
 stem &lt;- &quot;http://www.5novels.com/classics/u5688&quot;
 hobbit &lt;- NULL
 for(i in 1:74) {
-```r
-cat(i,&quot;\n&quot;)
-if(i==1) {
-    url &lt;- paste0(stem, &quot;.html&quot;)
-} else {
-    url &lt;- paste0(stem, &quot;_&quot;, i, &quot;.html&quot;)
-}
+    cat(i,&quot;\n&quot;)
+    if(i==1) {
+        url &lt;- paste0(stem, &quot;.html&quot;)
+    } else {
+        url &lt;- paste0(stem, &quot;_&quot;, i, &quot;.html&quot;)
+    }
 
-x &lt;- htmlTreeParse(url, useInternalNodes=TRUE)
-xx &lt;- xpathApply(x, &quot;//p&quot;, xmlValue)
-hobbit &lt;- c(hobbit, gsub(&quot;\r&quot;, &quot;&quot;, xx[-length(xx)]))
-Sys.sleep(0.5)
-```
+    x &lt;- htmlTreeParse(url, useInternalNodes=TRUE)
+    xx &lt;- xpathApply(x, &quot;//p&quot;, xmlValue)
+    hobbit &lt;- c(hobbit, gsub(&quot;\r&quot;, &quot;&quot;, xx[-length(xx)]))
+    Sys.sleep(0.5)
 }
 </code></pre>
 
@@ -138,7 +136,7 @@ already off his horse and among the goblin and the dragon, who had remained behi
     </div>
   </article>
 
-  
+
 
 
 </main>
@@ -152,7 +150,7 @@ already off his horse and among the goblin and the dragon, who had remained behi
       </footer>
 
     </div>
-    
+
 
 
 
@@ -166,12 +164,11 @@ already off his horse and among the goblin and the dragon, who had remained behi
 
 
 
-    
+
 <script src="../../../../js/math-code.js"></script>
 <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
-    
+
   </body>
 </html>
-
