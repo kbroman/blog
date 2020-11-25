@@ -17,39 +17,37 @@ I'd recently grabbed the text of the hobbit, and so I applied it to that text, w
 
 Here's the code I used to grab the text.
 
-````
+```
 library(XML)
 stem <- "http://www.5novels.com/classics/u5688"
 hobbit <- NULL
 for(i in 1:74) {
-```r
-cat(i,"\n")
-if(i==1) {
-    url <- paste0(stem, ".html")
-} else {
-    url <- paste0(stem, "_", i, ".html")
-}
+    cat(i,"\n")
+    if(i==1) {
+        url <- paste0(stem, ".html")
+    } else {
+        url <- paste0(stem, "_", i, ".html")
+    }
 
-x <- htmlTreeParse(url, useInternalNodes=TRUE)
-xx <- xpathApply(x, "//p", xmlValue)
-hobbit <- c(hobbit, gsub("\r", "", xx[-length(xx)]))
-Sys.sleep(0.5)
-```
+    x <- htmlTreeParse(url, useInternalNodes=TRUE)
+    xx <- xpathApply(x, "//p", xmlValue)
+    hobbit <- c(hobbit, gsub("\r", "", xx[-length(xx)]))
+    Sys.sleep(0.5)
 }
-````
+```
 
 Then calculate the ngrams with n=2.
 
-````
+```
 library(ngram)
 ng2 <- ngram(hobbit, n=2)
-````
+```
 
 Simulate some number of words with `babble()`. If you use the `seed` argument, you can get the result reproducibly.
 
-````
+```
 babble(ng2, 48, seed=53482175)
-````
+```
 
 <blockquote>
 into trees, and then bore to the Mountain to go through?" groaned the hobbit. "Well, are you doing, And where are you doing, And where are you?" it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes
