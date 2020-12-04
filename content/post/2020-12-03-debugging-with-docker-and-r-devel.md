@@ -45,11 +45,13 @@ pretty simple.
    ```
 
 2. _Create a `Dockerfile`_ which builds off [rocker/r-devel](https://hub.docker.com/r/rocker/r-devel/)
-   and installs the package to be tested.
+   and installs the package to be tested. (In this rocker image, `R`
+   is the current version of R and `RD` is the devel version, so we
+   need to use `RD` to install the package.)
 
    ```
    FROM rocker/r-devel
-   RUN R -e "install.packages('qtl')"
+   RUN RD -e "install.packages('qtl')"
    ```
 
 3. _Build the docker image_.
