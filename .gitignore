@@ -3,3 +3,4 @@ content/post/*.html
 static/post/
 _cache/
 drafts/
+.Rproj.user
