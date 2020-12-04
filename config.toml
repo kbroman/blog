@@ -1,17 +1,16 @@
-baseurl = "https://kbroman.org/blog/"
-relativeurls = true
+baseurl = "/"
 languageCode = "en-us"
 title = "the stupidest thing..."
-theme = "hugo-lithium-theme"
+theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_cache$", "drafts/", "\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 rssLimit = 30
 
-copyright="The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License"
+copyright = "The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license"
 
 [author]
-    name="Karl Broman"
+    name = "Karl Broman"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -31,15 +30,21 @@ copyright="The text in this work is licensed under CC-BY-4.0, https://creativeco
 
 [params]
     description = "Karl Broman's blog: The stupidest thing... statistics, genetics, programming, academics."
-    fullURL = "https://kbroman.org/blog"
-    githubContentURL = "https://github.com/kbroman/blog/edit/source/content/"
+    fullUrl = "https://kbroman.org/blog"
+    githubContentUrl = "https://github.com/kbroman/blog/edit/source/content/"
     customCSS = ["css/custom.css"]
 
     # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "favicon.ico"
 
     [params.logo]
     url = "karl.png"
