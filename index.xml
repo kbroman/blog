@@ -22,7 +22,7 @@ for continuous testing of R packages. I&amp;rsquo;m so glad for the
 help&lt;/a&gt;, but
 it&amp;rsquo;s a bit of work to figure it out.&lt;/p&gt;
 
-&lt;p&gt;But that&amp;rsquo;s not what I&amp;rsquo;m writing about today. Today I want to talk
+&lt;p&gt;But that&amp;rsquo;s not what I&amp;rsquo;m talking about today. Today I want to talk
 about using &lt;a href=&#34;https://www.docker.com/&#34;&gt;docker&lt;/a&gt; to debug an R package
 that is throwing an error in the development version of R. This came
 up because with the new GitHub Actions infrastructure, I can now test
@@ -32,8 +32,8 @@ R-devel&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you look at the &lt;a href=&#34;https://github.com/kbroman/qtl/actions&#34;&gt;test history&lt;/a&gt;, you&amp;rsquo;ll see I was mostly screwing
 around trying to get LaTeX installed and then trying to get all of the
-needed LaTeX packages for a **-year-old Sweave-based vignette.
-But I got through that only to find that there was a different actual
+needed LaTeX packages for a 10-year-old Sweave-based vignette.
+And I got through that only to find that there was a different actual
 R problem that needed to be fixed.&lt;/p&gt;
 
 &lt;p&gt;Not wanting to install the development version of R on my machine, I
@@ -43,69 +43,77 @@ with R-devel, install R/qtl, and then try it out.&amp;rdquo; And well, it was
 pretty simple.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Install Docker&lt;/em&gt;. See the &lt;a href=&#34;https://docs.docker.com/get-docker/&#34;&gt;official
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Install Docker&lt;/em&gt;. See the &lt;a href=&#34;https://docs.docker.com/get-docker/&#34;&gt;official
 instructions&lt;/a&gt;.
-I&amp;rsquo;m working on a Ubuntu laptop, so I did:&lt;/li&gt;
-&lt;/ol&gt;
+I&amp;rsquo;m working on a Ubuntu laptop, so I did:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&amp;quot;
-   sudo apt update
-   sudo apt install docker-ce docker-ce-cli containerd.io
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Create a &lt;code&gt;Dockerfile&lt;/code&gt;&lt;/em&gt; which builds off &lt;a href=&#34;https://hub.docker.com/r/rocker/r-devel/&#34;&gt;rocker/r-devel&lt;/a&gt;
-and installs the package to be tested.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
-RUN R -e &amp;quot;install.packages(&#39;qtl&#39;)&amp;quot;
+&lt;pre&gt;&lt;code&gt;sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&amp;quot;
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Build the docker image&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Create a &lt;code&gt;Dockerfile&lt;/code&gt;&lt;/em&gt; which builds off &lt;a href=&#34;https://hub.docker.com/r/rocker/r-devel/&#34;&gt;rocker/r-devel&lt;/a&gt;
+and installs the package to be tested. (In this rocker image, &lt;code&gt;R&lt;/code&gt;
+is the current version of R and &lt;code&gt;RD&lt;/code&gt; is the devel version, so we
+need to use &lt;code&gt;RD&lt;/code&gt; to install the package.)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   sudo docker build -t rdevel-qtl .
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
+RUN RD -e &amp;quot;install.packages(&#39;qtl&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Fire up that image in a container&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Build the docker image&lt;/em&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   sudo docker run -it rdevel-qtl bash
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;sudo docker build -t rdevel-qtl .
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Run R and load the package&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Fire up that image in a container&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo docker run -it rdevel-qtl bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Run R and load the package&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;The above puts you into a bash shell within the container. Type
-   &lt;code&gt;RD&lt;/code&gt; to fire up the devel version of R, and then load your package
-   and mess about. I quickly saw &lt;a href=&#34;https://github.com/kbroman/qtl/commit/6c10baaa8a73549f7cf87f0c7b22dcb2ac920790#diff-bd1e6b48d6a49a8b35315f434a590f3e30d5ef5f6dabd1c7d900e35c0a17d549L336-R340&#34;&gt;where I went
-   wrong&lt;/a&gt;.&lt;/p&gt;
+&lt;code&gt;RD&lt;/code&gt; to fire up the devel version of R, and then load your package
+and mess about. I quickly saw &lt;a href=&#34;https://bit.ly/3qujHRV&#34;&gt;where I went wrong&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;em&gt;Fix the problem and test it&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Fix the problem and test it&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I &lt;em&gt;should&lt;/em&gt; add a formal test of this bug, and I &lt;em&gt;should also&lt;/em&gt; look
-   for all other possible instances of this problem. (I blanche
-   to think of them.)&lt;/p&gt;
+for all other possible instances of this problem. (I blanche
+to think of them.)&lt;/p&gt;
 
 &lt;p&gt;But for now I just plunged in and fixed it, pushed the change to
-   GitHub, and then tested it out in my container by installing the
-   repaired version with the &lt;a href=&#34;https://remotes.r-lib.org&#34;&gt;remotes&lt;/a&gt;
-   package.&lt;/p&gt;
+GitHub, and then tested it out in my container by installing the
+repaired version with the &lt;a href=&#34;https://remotes.r-lib.org&#34;&gt;remotes&lt;/a&gt;
+package.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;   install.packages(&amp;quot;remotes&amp;quot;)
-   remotes::install_github(&amp;quot;kbroman/qtl&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;kbroman/qtl&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;There&amp;rsquo;s a lot more that one can do with Docker, but this was a pretty
 quick and satisfying experience poking around in the development
 version of R to fix a bug in my &lt;a href=&#34;https://doi.org/10.5334/jors.at&#34;&gt;ancient and
 creaky&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;I gave a talk about docker in my &lt;a href=&#34;https://kbroman.org/AdvData/&#34;&gt;Advanced Data
+Analysis&lt;/a&gt; course last spring. You can
+look at the &lt;a href=&#34;https://kbroman.org/AdvData/26_containers.pdf&#34;&gt;slides&lt;/a&gt;,
+including &lt;a href=&#34;https://kbroman.org/AdvData/26_containers_notes.pdf&#34;&gt;a version with notes of what I
+said&lt;/a&gt;, and &lt;a href=&#34;https://us-lti.bbcollab.com/recording/0fc7d7a1d7ac472084798e61c43e4a63&#34;&gt;watch
+the
+lecture&lt;/a&gt;.
+(It&amp;rsquo;s
+&lt;a href=&#34;https://twitter.com/KenButler12/status/1334656652650405888&#34;&gt;recommended&lt;/a&gt;
+that you do so on fast-forward.) The course &lt;a href=&#34;https://kbroman.org/AdvData/resources.html&#34;&gt;resources
+page&lt;/a&gt; points to &lt;a href=&#34;https://kbroman.org/AdvData/resources.html#docker-containers&#34;&gt;other
+resources on
+docker&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
+
 
     <item>
       <title>reproducible abstract</title>

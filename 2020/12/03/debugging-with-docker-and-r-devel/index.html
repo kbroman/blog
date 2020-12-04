@@ -122,10 +122,12 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 </code></pre></li>
 
 <li><p><em>Create a <code>Dockerfile</code></em> which builds off <a href="https://hub.docker.com/r/rocker/r-devel/">rocker/r-devel</a>
-and installs the package to be tested.</p>
+and installs the package to be tested. (In this rocker image, <code>R</code>
+is the current version of R and <code>RD</code> is the devel version, so we
+need to use <code>RD</code> to install the package.)</p>
 
 <pre><code>FROM rocker/r-devel
-RUN R -e &quot;install.packages('qtl')&quot;
+RUN RD -e &quot;install.packages('qtl')&quot;
 </code></pre></li>
 
 <li><p><em>Build the docker image</em>.</p>
