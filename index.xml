@@ -8,12 +8,110 @@
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
     <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kbroman.org/blog/" rel="self" type="application/rss+xml" />
-    
+
+    <item>
+      <title>debugging with docker and r-devel</title>
+      <link>https://kbroman.org/blog/2020/12/03/debugging-with-docker-and-r-devel/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+
+      <guid>https://kbroman.org/blog/2020/12/03/debugging-with-docker-and-r-devel/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve not heard, there&amp;rsquo;s a big &lt;a href=&#34;https://ropensci.org/technotes/2020/11/19/moving-away-travis/&#34;&gt;move away from Travis to GitHub
+Actions&lt;/a&gt;
+for continuous testing of R packages. I&amp;rsquo;m so glad for the
+&lt;a href=&#34;https://usethis.r-lib.org/reference/use_github_action.html&#34;&gt;infrastructure to
+help&lt;/a&gt;, but
+it&amp;rsquo;s a bit of work to figure it out.&lt;/p&gt;
+
+&lt;p&gt;But that&amp;rsquo;s not what I&amp;rsquo;m writing about today. Today I want to talk
+about using &lt;a href=&#34;https://www.docker.com/&#34;&gt;docker&lt;/a&gt; to debug an R package
+that is throwing an error in the development version of R. This came
+up because with the new GitHub Actions infrastructure, I can now test
+my R packages on multiple OSs and with multiple versions of R, and
+today &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; was shown to &lt;a href=&#34;https://github.com/kbroman/qtl/runs/1495378157?check_suite_focus=true&#34;&gt;throw an error in
+R-devel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you look at the &lt;a href=&#34;https://github.com/kbroman/qtl/actions&#34;&gt;test history&lt;/a&gt;, you&amp;rsquo;ll see I was mostly screwing
+around trying to get LaTeX installed and then trying to get all of the
+needed LaTeX packages for a **-year-old Sweave-based vignette.
+But I got through that only to find that there was a different actual
+R problem that needed to be fixed.&lt;/p&gt;
+
+&lt;p&gt;Not wanting to install the development version of R on my machine, I
+pondered cloud installations, and then thought, &amp;ldquo;Hmm, this seems like
+a good application for docker. I just need to find a docker container
+with R-devel, install R/qtl, and then try it out.&amp;rdquo; And well, it was
+pretty simple.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Install Docker&lt;/em&gt;. See the &lt;a href=&#34;https://docs.docker.com/get-docker/&#34;&gt;official
+instructions&lt;/a&gt;.
+I&amp;rsquo;m working on a Ubuntu laptop, so I did:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   sudo add-apt-repository &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&amp;quot;
+   sudo apt update
+   sudo apt install docker-ce docker-ce-cli containerd.io
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Create a &lt;code&gt;Dockerfile&lt;/code&gt;&lt;/em&gt; which builds off &lt;a href=&#34;https://hub.docker.com/r/rocker/r-devel/&#34;&gt;rocker/r-devel&lt;/a&gt;
+and installs the package to be tested.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
+RUN R -e &amp;quot;install.packages(&#39;qtl&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Build the docker image&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   sudo docker build -t rdevel-qtl .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Fire up that image in a container&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;   sudo docker run -it rdevel-qtl bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Run R and load the package&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The above puts you into a bash shell within the container. Type
+   &lt;code&gt;RD&lt;/code&gt; to fire up the devel version of R, and then load your package
+   and mess about. I quickly saw &lt;a href=&#34;https://github.com/kbroman/qtl/commit/6c10baaa8a73549f7cf87f0c7b22dcb2ac920790#diff-bd1e6b48d6a49a8b35315f434a590f3e30d5ef5f6dabd1c7d900e35c0a17d549L336-R340&#34;&gt;where I went
+   wrong&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Fix the problem and test it&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I &lt;em&gt;should&lt;/em&gt; add a formal test of this bug, and I &lt;em&gt;should also&lt;/em&gt; look
+   for all other possible instances of this problem. (I blanche
+   to think of them.)&lt;/p&gt;
+
+&lt;p&gt;But for now I just plunged in and fixed it, pushed the change to
+   GitHub, and then tested it out in my container by installing the
+   repaired version with the &lt;a href=&#34;https://remotes.r-lib.org&#34;&gt;remotes&lt;/a&gt;
+   package.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;   install.packages(&amp;quot;remotes&amp;quot;)
+   remotes::install_github(&amp;quot;kbroman/qtl&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot more that one can do with Docker, but this was a pretty
+quick and satisfying experience poking around in the development
+version of R to fix a bug in my &lt;a href=&#34;https://doi.org/10.5334/jors.at&#34;&gt;ancient and
+creaky&lt;/a&gt; package.&lt;/p&gt;
+</description>
+    </item>
+
     <item>
       <title>reproducible abstract</title>
       <link>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2020/02/07/reproducible-abstract/</guid>
       <description>&lt;p&gt;A student asked me about how to include summary results in the abstract or
 executive summary at the top of an R Markdown report when they don&amp;rsquo;t get
@@ -63,12 +161,12 @@ a second time, you&amp;rsquo;d pull in the results from the previous run.&lt;/p&
 &lt;p&gt;Is there a better way? Let me know &lt;a href=&#34;https://twitter.com/kwbroman&#34;&gt;on twitter&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>ten year reproducibility challenge</title>
       <link>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2020/02/07/ten-year-challenge/</guid>
       <description>&lt;p&gt;In October I agreed to participate in the
 &lt;a href=&#34;https://rescience.github.io&#34;&gt;ReScience&lt;/a&gt; &lt;a href=&#34;https://rescience.github.io/ten-years&#34;&gt;Ten Years Reproducibility
@@ -250,12 +348,12 @@ mean, if you open up a script and you see &lt;a href=&#34;https://github.com/kbr
 what it even is, really. Well let&amp;rsquo;s just leave that for another day.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>data analysis principles</title>
       <link>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2019/08/15/data-analysis-principles/</guid>
       <description>&lt;p&gt;I was looking through some of my old notes and came across this list
 of &amp;ldquo;data analysis principles&amp;rdquo;.&lt;/p&gt;
@@ -288,12 +386,12 @@ estimate&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>reproducibility guidelines</title>
       <link>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2019/04/01/reproducibility-guidelines/</guid>
       <description>
 
@@ -342,12 +440,12 @@ repositories for his recent papers on variance QTL, including
 and &lt;a href=&#34;https://github.com/rcorty/mvqtl_reanalyses_Bailey_Kumar_supporting_files&#34;&gt;that&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>omg, binder!</title>
       <link>https://kbroman.org/blog/2019/02/18/omg_binder/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2019/02/18/omg_binder/</guid>
       <description>
 
@@ -594,12 +692,12 @@ but many of us still find them a bit complicated and scary.&lt;/p&gt;
 with just three small steps.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>writing text in Minecraft with R</title>
       <link>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/</guid>
       <description>
 
@@ -729,12 +827,12 @@ just about 160 lines. And it allowed me to do stuff like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/rqtl2_3d.png&#34; alt=&#34;&amp;quot;R/qtl now in 3d&amp;quot;, rendered within Minecraft&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>another new laptop</title>
       <link>https://kbroman.org/blog/2019/02/02/another_new_laptop/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2019/02/02/another_new_laptop/</guid>
       <description>
 
@@ -846,12 +944,12 @@ laptops&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 adapters&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>twitter break</title>
       <link>https://kbroman.org/blog/2018/10/05/twitter-break/</link>
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2018/10/05/twitter-break/</guid>
       <description>
 
@@ -877,12 +975,12 @@ accounts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So I’m coming back to Twitter, but maybe in a more scaled-back way.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>learning a new programming language</title>
       <link>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</link>
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2018/03/16/learning-a-new-programming-language/</guid>
       <description>
 
@@ -1042,12 +1140,12 @@ them. And then you’ll be really cool.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>these guys</title>
       <link>https://kbroman.org/blog/2017/12/18/these-guys/</link>
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/12/18/these-guys/</guid>
       <description>
 
@@ -1082,12 +1180,12 @@ situation in a way that I didn’t.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>halloween 2017</title>
       <link>https://kbroman.org/blog/2017/10/31/halloween-2017/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/10/31/halloween-2017/</guid>
       <description>
 
@@ -1102,12 +1200,12 @@ compare it to
 &lt;p&gt;&lt;img src=&#34;./post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>EOF within quoted string</title>
       <link>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</link>
       <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/08/08/eof-within-quoted-string/</guid>
       <description>
 
@@ -1210,12 +1308,12 @@ columns.&lt;/p&gt;&lt;/li&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>yay, yihui!</title>
       <link>https://kbroman.org/blog/2017/08/03/yay-yihui/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/08/03/yay-yihui/</guid>
       <description>
 
@@ -1229,12 +1327,12 @@ that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
 me! So awesome.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>miner and craft</title>
       <link>https://kbroman.org/blog/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/31/miner-and-craft/</guid>
       <description>
 
@@ -1271,12 +1369,12 @@ scripts that weren’t incorporated into a proper vignette.
 Functions from the others will follow.)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>omg, bookdown!</title>
       <link>https://kbroman.org/blog/2017/05/31/omg-bookdown/</link>
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/31/omg-bookdown/</guid>
       <description>
 
@@ -1331,12 +1429,12 @@ then use GitHub Pages to host the book-in-progress, which was also
 easy.)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>deeply nested functions</title>
       <link>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/30/deeply-nested-functions/</guid>
       <description>
 
@@ -1368,12 +1466,12 @@ into a data frame like&lt;/p&gt;
 &lt;code&gt;strsplit %&amp;gt;% sub %&amp;gt;% sapply %&amp;gt;% do.call %&amp;gt;% data.frame %&amp;gt;% setNames&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>ROpenSci Unconf 2017</title>
       <link>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</link>
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/</guid>
       <description>
 
@@ -1485,12 +1583,12 @@ developed into a &lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bo
 book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>miniCRAN</title>
       <link>https://kbroman.org/blog/2017/05/23/minicran/</link>
       <pubDate>Tue, 23 May 2017 23:42:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/23/minicran/</guid>
       <description>
 
@@ -1594,12 +1692,12 @@ deal with that in the next three weeks, and so I’m glad for
 me towards this short-term solution.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>reading/writing biggish data, revisited</title>
       <link>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</link>
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>
 
@@ -1875,12 +1973,12 @@ and will now be using &lt;code&gt;data.table::fwrite&lt;/code&gt;, too.&lt;/p&gt
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>updating d3panels and R/qtlcharts for D3 version 4</title>
       <link>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>
 
@@ -2054,12 +2152,12 @@ effort involved was definitely worthwhile.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>crayon colors, simplified</title>
       <link>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/02/crayon-colors-simplified/</guid>
       <description>
 
@@ -2081,22 +2179,22 @@ plot_crayons()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;But grabbing a color, say “Purple Mountain’s Majesty”, requires rather
 verbose code.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majesty&amp;quot;]
-## Purple Mountain&amp;#39;s Majesty 
+## Purple Mountain&amp;#39;s Majesty
 ##                 &amp;quot;#9d81ba&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This morning, it was just too much for me. So I wrote a simpler
 function &lt;code&gt;crayons()&lt;/code&gt;, which accepts partial matches, using &lt;code&gt;grep&lt;/code&gt;.
 So you can write things like:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;crayons(&amp;quot;purple m&amp;quot;)
-## Purple Mountain&amp;#39;s Majesty 
+## Purple Mountain&amp;#39;s Majesty
 ##                 &amp;quot;#9d81ba&amp;quot;
 crayons(&amp;quot;tickle&amp;quot;)
-## Tickle Me Pink 
+## Tickle Me Pink
 ##      &amp;quot;#fc89ac&amp;quot;
 crayons(c(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;))
-## Purple Mountain&amp;#39;s Majesty            Tickle Me Pink 
+## Purple Mountain&amp;#39;s Majesty            Tickle Me Pink
 ##                 &amp;quot;#9d81ba&amp;quot;                 &amp;quot;#fc89ac&amp;quot;
 crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
-## Purple Mountain&amp;#39;s Majesty            Tickle Me Pink 
+## Purple Mountain&amp;#39;s Majesty            Tickle Me Pink
 ##                 &amp;quot;#9d81ba&amp;quot;                 &amp;quot;#fc89ac&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Why didn’t I think of this before?&lt;/p&gt;
 &lt;p&gt;The new version of the package is not yet on
@@ -2108,12 +2206,12 @@ crayons(&amp;quot;purple m&amp;quot;, &amp;quot;tickle&amp;quot;)
 code&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>caching blogdown</title>
       <link>https://kbroman.org/blog/2017/05/01/caching-blogdown/</link>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/05/01/caching-blogdown/</guid>
       <description>
 
@@ -2137,12 +2235,12 @@ and my method is &lt;em&gt;not&lt;/em&gt; generally recommended, but it seems to
 &lt;p&gt;I expect &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui&lt;/a&gt; has a better solution to this.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>sqlite, feather, and fst</title>
       <link>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</link>
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>
 
@@ -2238,7 +2336,7 @@ snp_names &amp;lt;- dbGetQuery(sqldb, &amp;#39;select snp from snps&amp;#39;)[,1
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
 query &amp;lt;- paste0(&amp;#39;select * from snps where snp == &amp;quot;&amp;#39;, random_snp, &amp;#39;&amp;quot;&amp;#39;)
 system.time(z &amp;lt;- dbGetQuery(sqldb, query))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
+&lt;pre&gt;&lt;code&gt;##    user  system elapsed
 ##   0.353   0.485   0.838&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Such queries are faster if we first add an index on the SNP names.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dbGetQuery(sqldb, &amp;quot;CREATE INDEX snp ON snps(snp)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
@@ -2248,7 +2346,7 @@ are now all but instantaneous.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
 query &amp;lt;- paste0(&amp;#39;select * from snps where snp == &amp;quot;&amp;#39;, random_snp, &amp;#39;&amp;quot;&amp;#39;)
 system.time(z &amp;lt;- dbGetQuery(sqldb, query))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
+&lt;pre&gt;&lt;code&gt;##    user  system elapsed
 ##   0.004   0.000   0.004&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;feather&#34; class=&#34;section level3&#34;&gt;
@@ -2272,7 +2370,7 @@ basically use feather like a database.&lt;/p&gt;
 snp_names &amp;lt;- unlist(db_f[,&amp;quot;snp&amp;quot;])
 random_snp &amp;lt;- sample(snp_names, 1)
 system.time(z &amp;lt;- db_f[snp_names==random_snp,])&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
+&lt;pre&gt;&lt;code&gt;##    user  system elapsed
 ##   0.381   0.353   0.735&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In this particular case, it’s actually quite a bit faster to work with
 feather the other way around; that is, in the original format of 500
@@ -2294,7 +2392,7 @@ snp_names &amp;lt;- snp_names[1:(length(snp_names)/2)]&lt;/code&gt;&lt;/pre&gt;
 back onto the SNP name.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
 system.time(z &amp;lt;- db_f_2[,c(&amp;quot;id&amp;quot;, paste0(random_snp, c(&amp;quot;.X&amp;quot;, &amp;quot;.Y&amp;quot;)))])&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
+&lt;pre&gt;&lt;code&gt;##    user  system elapsed
 ##   0.045   0.000   0.045&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Note that you can also use &lt;a href=&#34;https://github.com/tidyverse/dplyr&#34;&gt;dplyr&lt;/a&gt;
 with &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; as if you’ve got an
@@ -2341,7 +2439,7 @@ useful to have the the pairs of rows for each SNP be contiguous.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;random_snp &amp;lt;- sample(snp_names, 1)
 wh_rows &amp;lt;- which(random_snp == snp_names)
 system.time(z &amp;lt;- read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2]))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    user  system elapsed 
+&lt;pre&gt;&lt;code&gt;##    user  system elapsed
 ##   0.078   0.011   0.089&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;timings&#34; class=&#34;section level3&#34;&gt;
@@ -2366,10 +2464,10 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
                times=100)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Unit: milliseconds
 ##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
+##     sqlite   3   4    4      4   4    4   100 a
 ##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
+##  feather_t  43  47   48     48  49   54   100  b
+##        fst  61  63   80     64  65  341   100   c
 ##    fstcomp  91  95  117     95  97  691   100    d&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s a summary of all of the results:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::kable(results, digits=c(1,1,0,1),
@@ -2445,12 +2543,12 @@ longer to write.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>old posts</title>
       <link>https://kbroman.org/blog/2017/04/30/old-posts/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/04/30/old-posts/</guid>
       <description>
 
@@ -2556,22 +2654,22 @@ various academic matters:&lt;/p&gt;
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>→ kbroman.org/blog</title>
       <link>https://kbroman.org/blog/2017/04/30/new_blog_site/</link>
       <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/04/30/new_blog_site/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m starting a new blog site at &lt;a href=&#34;https://kbroman.org/blog&#34;&gt;kbroman.org/blog&lt;/a&gt;. I&amp;rsquo;m abandoning the &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;WordPress site&lt;/a&gt; as it is; I don&amp;rsquo;t want to fuss with trying to move things.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>new blog</title>
       <link>https://kbroman.org/blog/2017/04/29/new-blog/</link>
       <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/04/29/new-blog/</guid>
       <description>
 
@@ -2591,12 +2689,12 @@ the examples at &lt;a href=&#34;https://github.com/rbind&#34;&gt;github.com/rbin
 Also see my &lt;a href=&#34;https://github.com/kbroman/ProgrammingNotes/blob/master/blogdown.md&#34;&gt;notes on how I constructed this site&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>about</title>
       <link>https://kbroman.org/blog/about/</link>
       <pubDate>Sat, 29 Apr 2017 08:36:00 -0500</pubDate>
-      
+
       <guid>https://kbroman.org/blog/about/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kbroman.org&#34;&gt;Karl Broman&lt;/a&gt; is Professor in the
 &lt;a href=&#34;https://www.biostat.wisc.edu&#34;&gt;Department of Biostatistics and Medical Informatics&lt;/a&gt;
@@ -2614,12 +2712,12 @@ research in statistical genetics; developer of
 &lt;p&gt;The source for this site is at &lt;a href=&#34;https://github.com/kbroman/blog&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>I thought maybe I was being paranoid</title>
       <link>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
       <description>
 
@@ -2664,24 +2762,24 @@ research in statistical genetics; developer of
 &lt;p&gt;(I forgot to mention: &lt;a href=&#34;https://twitter.com/nickfleisher&#34;&gt;@NickFleisher&lt;/a&gt; had the best response to &lt;a href=&#34;https://twitter.com/UWSystem/status/826167903145775104&#34;&gt;Ray Cross&amp;rsquo;s lame statement&lt;/a&gt;: &amp;ldquo;&lt;a href=&#34;https://twitter.com/nickfleisher/status/826184115456143360&#34;&gt;Revise and resubmit&lt;/a&gt;.&amp;ldquo;)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Halloween 2016 count</title>
       <link>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</link>
       <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2016/10/31/halloween-2016-count/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our &lt;a href=&#34;https://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011 experience&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2016/10/halloween20161.png&#34; alt=&#34;Halloween 2016 count&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>My JSM 2016 itinerary</title>
       <link>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>
 
@@ -2838,24 +2936,24 @@ research in statistical genetics; developer of
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Chris Walker at Faculty Senate</title>
       <link>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</link>
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2016/04/15/chris-walker-at-faculty-senate/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.dance.wisc.edu/dance/people/faculty/chris-walker&#34;&gt;Chris Walker&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;powerful speech&lt;/a&gt; at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;&lt;a href=&#34;https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/&#34;&gt;Hateful shit at UW-Madison&lt;/a&gt;&amp;rdquo;) was &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;recorded&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;You &lt;em&gt;must&lt;/em&gt; listen to it!&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>I am a data scientist</title>
       <link>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</link>
       <pubDate>Fri, 08 Apr 2016 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2016/04/08/i-am-a-data-scientist/</guid>
       <description>&lt;p&gt;Three years ago this week, I wrote a blog post, &amp;ldquo;&lt;a href=&#34;https://kbroman.org/blog/2013/04/05/data-science-is-statistics/&#34;&gt;Data science is statistics&lt;/a&gt;&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a &lt;em&gt;data science&lt;/em&gt;, and it was called &lt;em&gt;Statistics&lt;/em&gt;.&lt;/p&gt;
 
@@ -2920,12 +3018,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;It should be recognized, too, that academic computer science suffers from many of the same problems that academic statistics has suffered: an overemphasis on novelty, sophistication, and toy applications, and an under-appreciation for solving real problems, for data visualization, and for useful software tools.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Action items in response to hateful shit</title>
       <link>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>&lt;p&gt;UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.&lt;/p&gt;
 
@@ -2962,12 +3060,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;I got a reasonably positive response to &lt;a href=&#34;https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/&#34;&gt;my email to my faculty colleagues&lt;/a&gt; suggesting that we all commit to cultural competency training. But the training from the &lt;a href=&#34;https://www.library.wisc.edu/lcice/&#34;&gt;LCICE&lt;/a&gt; mentioned above looks to be semester-long, Tuesdays 4:30-7:30pm. I think I&amp;rsquo;ll have a difficult time convincing my colleagues of that. We need something in between nothing and 45 hours.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Hateful shit at UW-Madison</title>
       <link>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</link>
       <pubDate>Mon, 04 Apr 2016 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2016/04/04/hateful-shit-at-uw-madison/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a privileged white male university professor. As privileged as they come, really. My father was a professor of chemistry; my mother also has an advanced degree in chemistry. The jobs I&amp;rsquo;ve held have been more about personal fulfillment than money: dancer, dance teacher, secretary for intellectual property lawyers, research and teaching assistant, professor. People assume I know what I&amp;rsquo;m talking about, even if I&amp;rsquo;m in shorts and a t-shirt.&lt;/p&gt;
 
@@ -2994,12 +3092,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Chris Walker&amp;rsquo;s speech at the 4 Apr 2016 Faculty Senate meeting was &lt;a href=&#34;https://mediaspace.wisc.edu/media/Professor+Chris+Walker/1_5k9npnxs&#34;&gt;recorded&lt;/a&gt;! Must listen.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Write unit tests!</title>
       <link>https://kbroman.org/blog/2015/12/07/write-unit-tests/</link>
       <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/12/07/write-unit-tests/</guid>
       <description>&lt;p&gt;Since 2000, I&amp;rsquo;ve been working on &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf&#34;&gt;Bioinformatics paper about it&lt;/a&gt; is my most cited; also see my 2014 JORS paper, &amp;ldquo;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf&#34;&gt;Fourteen years of R/qtl: Just barely sustainable&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
@@ -3040,12 +3138,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;To learn more about testing in R packages, see the &lt;a href=&#34;http://r-pkgs.had.co.nz/tests.html&#34;&gt;Testing&lt;/a&gt; chapter in Hadley&amp;rsquo;s &lt;a href=&#34;amazon.com/exec/obidos/ASIN/1491910593/7210-20&#34;&gt;R packages book&lt;/a&gt;. Also see the &lt;a href=&#34;https://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf&#34;&gt;slides for my lecture on testing and debugging&lt;/a&gt; in my &lt;a href=&#34;https://kbroman.org/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
       <link>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</guid>
       <description>&lt;p&gt;Linear mixed models (LMMs) have become widely used for dealing with population structure in human GWAS, and they&amp;rsquo;re becoming increasing important for QTL mapping in model organisms, particularly for the analysis of advanced intercross lines (AIL), which often exhibit variation in the relationships among individuals.&lt;/p&gt;
 
@@ -3080,12 +3178,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;In &lt;a href=&#34;https://kbroman.org/lmmlite&#34;&gt;lmmlite&lt;/a&gt;, I implemented this algorithm (closely following the code in &lt;a href=&#34;https://github.com/nickFurlotte/pylmm&#34;&gt;pylmm&lt;/a&gt;) twice: in plain R, and then in C++ (using &lt;a href=&#34;https://github.com/RcppCore/RcppEigen&#34;&gt;RcppEigen&lt;/a&gt;, which is an interface to the &lt;a href=&#34;https://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; C++ linear algebra library). The plain R code is a bit slower then pylmm; the C++ code is a bit faster. In the C++ code, almost all of the computation time is devoted to the eigen decomposition of the kinship matrix. Once that&amp;rsquo;s done, the rest is super quick.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Session info from R/Travis</title>
       <link>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</link>
       <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/09/25/session-info-from-rtravis/</guid>
       <description>&lt;p&gt;For the problem &lt;a href=&#34;https://kbroman.org/blog/2015/09/24/its-not-you-its-me&#34;&gt;I reported yesterday&lt;/a&gt;, in which my R package was working fine locally but failing on &lt;a href=&#34;https://travis-ci.org&#34;&gt;Travis&lt;/a&gt;, the key solution is to run &lt;code&gt;update.packages(ask=FALSE)&lt;/code&gt; locally, and maybe even &lt;code&gt;update.packages(ask=FALSE, type=&amp;quot;source&amp;quot;)&lt;/code&gt; to be sure to grab the source of packages for which binaries are not yet available. I now know to do that.&lt;/p&gt;
 
@@ -3116,12 +3214,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jennybryan&#34;&gt;Jenny Bryan&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/JennyBryan/status/647177192514785280&#34;&gt;showing me how to search for instances of &lt;code&gt;session_info&lt;/code&gt; in &lt;code&gt;.travis.yml&lt;/code&gt; files on GitHub&lt;/a&gt;, and to &lt;a href=&#34;https://twitter.com/cpsievert&#34;&gt;Carson Sievert&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/cpsievert/status/647189393162178560&#34;&gt;further moral support&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>It&#39;s not you, it&#39;s me</title>
       <link>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</link>
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/09/24/its-not-you-its-me/</guid>
       <description>&lt;p&gt;Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not &lt;em&gt;me&lt;/em&gt;, it&amp;rsquo;s &lt;em&gt;you&lt;/em&gt;.&amp;ldquo;)&lt;/p&gt;
 
@@ -3175,12 +3273,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;So data.table was updated in a way where &lt;code&gt;sep=NULL&lt;/code&gt; was no longer working, and in my own code, I had relied on that. So six hours, &lt;a href=&#34;https://twitter.com/kwbroman/status/647125510686920705&#34;&gt;many tweets&lt;/a&gt;, lots of blaming of others, and finally I&amp;rsquo;d worked out that it was all my own fault.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Reproducibility is hard</title>
       <link>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/09/09/reproducibility-is-hard/</guid>
       <description>
 
@@ -3231,12 +3329,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;And then &lt;em&gt;document, document, document!&lt;/em&gt; As with software development, it&amp;rsquo;s hard to document data or analyses after the fact.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>God-awful conference websites</title>
       <link>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</link>
       <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>
 
@@ -3275,12 +3373,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;He &lt;a href=&#34;https://twitter.com/tslumley/status/629096725978845185&#34;&gt;further pointed out&lt;/a&gt; that if you search for the affiliation &amp;ldquo;Auckland&amp;rdquo; the results don&amp;rsquo;t include &amp;ldquo;University of Auckland&amp;rdquo; but only &amp;ldquo;Auckland University of Technology&amp;rdquo;. And actually, if you search for &amp;ldquo;University of Auckland&amp;rdquo; you get nothing. You need to search for &amp;ldquo;&lt;em&gt;The&lt;/em&gt; University of Auckland&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Memories of past JSMs</title>
       <link>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</link>
       <pubDate>Mon, 03 Aug 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/08/03/memories-of-past-jsms/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;Joint Statistical Meetings (JSM)&lt;/a&gt; are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the &lt;a href=&#34;https://amstat.org&#34;&gt;American Statistical Association&lt;/a&gt;, &lt;a href=&#34;https://www.imstat.org&#34;&gt;Institute of Mathematical Statistics&lt;/a&gt;, &lt;a href=&#34;https://www.biometricsociety.org&#34;&gt;International Biometric Society&lt;/a&gt; (&lt;a href=&#34;https://www.enar.org&#34;&gt;ENAR&lt;/a&gt; and &lt;a href=&#34;http://www.wnar.org&#34;&gt;WNAR&lt;/a&gt;), &lt;a href=&#34;https://ssc.ca/en&#34;&gt;Statistical Society of Canada&lt;/a&gt;, and others.&lt;/p&gt;
 
@@ -3320,12 +3418,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;I have other memories that I can&amp;rsquo;t share here. Find me at &lt;a href=&#34;https://twitter.com/hashtag/jsm2015&#34;&gt;#JSM2015&lt;/a&gt; next week. Seattle is sure to be great!&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>MongoDB with D3.js</title>
       <link>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/06/22/mongodb-with-d3-js/</guid>
       <description>
 
@@ -3390,12 +3488,12 @@ You may not like what some statisticians do. You may feel they don&#39;t share y
 &lt;p&gt;I don&amp;rsquo;t actually have a live example of this. That&amp;rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Randomized Hobbit</title>
       <link>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/06/22/randomized-hobbit-2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/wrathematics&#34;&gt;@wrathematics&lt;/a&gt; pointed me to his &lt;a href=&#34;http://cran.r-project.org/package=ngram&#34;&gt;ngram&lt;/a&gt; R package for constructing and simulating from n-grams from text.&lt;/p&gt;
 
@@ -3449,12 +3547,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;/blockquote&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Cheat sheets for R-based Software Carpentry course</title>
       <link>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;http://software-carpentry.org&#34;&gt;Software Carpentry&lt;/a&gt; workshop at  &lt;a href=&#34;https://github.com/UW-Madison-ACI/boot-camps/blob/2014-08-25/README.md&#34;&gt;UW-Madison in August, 2014&lt;/a&gt;, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.&lt;/p&gt;
 
@@ -3475,12 +3573,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;I really appreciate the work (and design sense) that were put into these.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>2015 AAAS in San Jose</title>
       <link>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</link>
       <pubDate>Fri, 13 Feb 2015 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2015/02/13/2015-aaas-in-san-jose/</guid>
       <description>
 
@@ -3535,12 +3633,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;My contribution to education, today: if all of the elevators going down are too packed to accept passengers, press the &lt;em&gt;up&lt;/em&gt; button and ride it up and then down. (Later I learned, from one of the AJAS youth, that the &amp;ldquo;alarm will sound&amp;rdquo; sign at the bottom of the stairs is a lie. You &lt;em&gt;can&lt;/em&gt; take the stairs.)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Initial steps towards reproducible research</title>
       <link>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/12/04/initial-steps-towards-reproducible-research/</guid>
       <description>&lt;p&gt;In anticipation of next week&amp;rsquo;s &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Reproducible Science Hackathon&lt;/a&gt; at &lt;a href=&#34;https://www.nescent.org/&#34;&gt;NESCent&lt;/a&gt;, I was thinking about &lt;a href=&#34;https://twitter.com/cbahlai&#34;&gt;Christie Bahlai&lt;/a&gt;&amp;rsquo;s post on &amp;ldquo;&lt;a href=&#34;https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/&#34;&gt;Baby steps for the open-curious&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 
@@ -3551,12 +3649,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;It&amp;rsquo;s a bit rough, and it could &lt;em&gt;really&lt;/em&gt; use some examples, but it helped me to get my thoughts together for the &lt;a href=&#34;https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014&#34;&gt;Hackathon&lt;/a&gt; and hopefully will be useful to people (and something to build upon).&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The value of thesis intro/discussion</title>
       <link>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</link>
       <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>&lt;p&gt;Last week, &lt;a href=&#34;https://twitter.com/FuSchmu&#34;&gt;Kelly Weinersmith&lt;/a&gt; &lt;a href=&#34;https://twitter.com/FuSchmu/status/536909452457172992&#34;&gt;tweeted&lt;/a&gt;:&lt;/p&gt;
 
@@ -3579,12 +3677,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;I don&amp;rsquo;t want students wasting time on &amp;ldquo;busy work,&amp;rdquo; and writing a thesis &lt;em&gt;does&lt;/em&gt; seem like busy work. But I think a thesis deserves more than a ten-paragraph introduction. And the value of that introduction is not so much in demonstrating the student&amp;rsquo;s knowledge, but in being part of the development of that knowledge.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
       <link>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</guid>
       <description>&lt;p&gt;Last week, I &lt;a href=&#34;https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;created revised versions&lt;/a&gt; of graphs of car crash statistics by state (including &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/&#34;&gt;an interactive version&lt;/a&gt;), from &lt;a href=&#34;https://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;a post&lt;/a&gt; by &lt;a href=&#34;https://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; at &lt;a href=&#34;https://fivethirtyeight.com/&#34;&gt;538&lt;/a&gt;.&lt;/p&gt;
 
@@ -3611,12 +3709,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;Also note: &lt;a href=&#34;https://twitter.com/brycem&#34;&gt;@brycem&lt;/a&gt; had recommended using &lt;a href=&#34;https://automeris.io/WebPlotDigitizer/&#34;&gt;WebPlotDigitizer&lt;/a&gt; for digitizing data from images.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Interactive plot of car crash stats</title>
       <link>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>&lt;p&gt;I spent the afternoon making a &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt;-based &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/car_crashes&#34;&gt;interactive version&lt;/a&gt; of the graphs of car crash statistics by state that I&amp;rsquo;d &lt;a href=&#34;https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/&#34;&gt;discussed yesterday&lt;/a&gt;: my attempt to improve on the graphs in &lt;a href=&#34;https://twitter.com/monachalabi&#34;&gt;Mona Chalabi&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/&#34;&gt;post at 538&lt;/a&gt;.&lt;/p&gt;
 
@@ -3627,12 +3725,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;Code &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/car_crashes&#34;&gt;on github&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Scholarly Publishing Symposium at UW-Madison</title>
       <link>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</link>
       <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;http://go.wisc.edu/publishing-symposium&#34;&gt;Scholarly Publishing Symposium&lt;/a&gt; at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:&lt;/p&gt;
 
@@ -3659,12 +3757,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Improved graphs of car crash stats</title>
       <link>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>
 
@@ -3724,12 +3822,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;p&gt;&lt;a href=&#34;https://fivethirtyeight.com/contributors/mona-chalabi/&#34;&gt;Mona Chalabi&lt;/a&gt; and &lt;a href=&#34;https://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; posted the data at &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. I discuss the errors in my ruler-based measurements &lt;a href=&#34;https://kbroman.org/blog/2014/11/03/car-crash-stats-revisited-my-measurement-errors/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Error notifications from R</title>
       <link>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</link>
       <pubDate>Thu, 04 Sep 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/09/04/error-notifications-from-r/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m enthusiastic about having &lt;a href=&#34;https://kbroman.org/blog/2014/09/03/notifications-from-r/&#34;&gt;R notify me when my script is done&lt;/a&gt;.&lt;/p&gt;
 
@@ -3763,12 +3861,12 @@ already off his horse and among the goblin and the dragon, who had remained behi
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Notifications from R</title>
       <link>https://kbroman.org/blog/2014/09/03/notifications-from-r/</link>
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/09/03/notifications-from-r/</guid>
       <description>
 
@@ -3901,12 +3999,12 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The &lt;a href=&#34;https://twitter.com/hadleywickham/status/507192305816567808&#34;&gt;word from Hadley&lt;/a&gt;: we should also check out &lt;a href=&#34;https://github.com/jimhester/gmailr&#34;&gt;gmailr&lt;/a&gt;. [But you &lt;a href=&#34;https://github.com/jimhester/gmailr/issues/5&#34;&gt;can&amp;rsquo;t currently send email&lt;/a&gt; with &lt;a href=&#34;https://github.com/jimhester/gmailr&#34;&gt;gmailr&lt;/a&gt;.]&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The mustache photo</title>
       <link>https://kbroman.org/blog/2014/08/28/the-mustache-photo/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/08/28/the-mustache-photo/</guid>
       <description>
 
@@ -3991,12 +4089,12 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;I&amp;rsquo;m just glad to have people thinking of me, even if I&amp;rsquo;m not entire sure what they&amp;rsquo;re thinking.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Yet another R package primer</title>
       <link>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</link>
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/08/28/yet-another-r-package-primer/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; is writing what will surely be a &lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;great book&lt;/a&gt; about the basics of R packages. And &lt;a href=&#34;https://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; wrote a &lt;a href=&#34;https://twitter.com/ErikaMudrak/status/504732734674444288&#34;&gt;very&lt;/a&gt; &lt;a href=&#34;https://twitter.com/polesasunder/status/504785818922131456&#34;&gt;influential&lt;/a&gt; &lt;a href=&#34;https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch&#34;&gt;post on how to write an R package&lt;/a&gt;. So it seems like that topic is well covered.&lt;/p&gt;
 
@@ -4007,12 +4105,12 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;It&amp;rsquo;s not completely done, but the &lt;a href=&#34;https://kbroman.org/pkg_primer&#34;&gt;basic stuff is there&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>If I could do it over again, I&#39;d self-publish</title>
       <link>https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</link>
       <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/</guid>
       <description>&lt;p&gt;In 2009, &lt;a href=&#34;http://www.epibiostat.ucsf.edu/biostat/sen/&#34;&gt;Śaunak Sen&lt;/a&gt; and I wrote a &lt;a href=&#34;https://rqtl.org&#34;&gt;book&lt;/a&gt; about QTL mapping and the &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; software. We started working on it in the fall of 2006, and it was a heck of a lot of work.&lt;/p&gt;
 
@@ -4045,12 +4143,12 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;I&amp;rsquo;m both disgusted and embarrassed by this situation. If I could do it all over again, I&amp;rsquo;d self-publish: post everything on the web, and arrange some way for folks to have it printed cheaply.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Testing an R package&#39;s interactive graphs</title>
       <link>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/08/01/testing-an-r-packages-interactive-graphs/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been working on an R package, &lt;a href=&#34;https://kbroman.org/qtlcharts&#34;&gt;R/qtlcharts&lt;/a&gt;, with &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt;-based interactive graphs for quantitative trait locus mapping experiments.&lt;/p&gt;
 
@@ -4079,12 +4177,12 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;So I replaced my &lt;code&gt;\dontrun{}&lt;/code&gt; bits with &lt;code&gt;\donttest{}&lt;/code&gt;. And I can use &lt;code&gt;devtools::run_examples()&lt;/code&gt; to run all of the examples, for my manual checks.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>UseR 2014, days 3-4</title>
       <link>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/07/21/user-2014-days-3-4/</guid>
       <description>
 
@@ -4157,12 +4255,12 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;Slides for many of the talks and tutorials are on the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014 web site&lt;/a&gt;. If you know of others, you can add them via the &lt;a href=&#34;https://github.com/user2014/user2014.github.io&#34;&gt;site&amp;rsquo;s GitHub repository&lt;/a&gt; and make a pull request.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Why hadn&#39;t I written a function for that?</title>
       <link>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</link>
       <pubDate>Wed, 16 Jul 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
 
@@ -4183,12 +4281,12 @@ rect(u[1], u[3], u[2], u[4])
 &lt;p&gt;I want to add, &amp;ldquo;I&amp;rsquo;m an idiot&amp;rdquo; but I think I&amp;rsquo;ll just say that there&amp;rsquo;s always more that I can learn about R. And I&amp;rsquo;ll remove &lt;code&gt;add_border&lt;/code&gt; from R/broman and just use &lt;code&gt;box()&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>2014 UseR conference, days 1-2</title>
       <link>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/</guid>
       <description>
 
@@ -4332,12 +4430,12 @@ for that matter; I still just use base graphics), at least so that I can get stu
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>hipsteR: re-educating people who learned R before it was cool</title>
       <link>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</link>
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/05/15/hipster-re-educating-people-who-learned-r-before-it-was-cool/</guid>
       <description>&lt;p&gt;This morning, I started &lt;a href=&#34;https://kbroman.org/hipsteR/&#34;&gt;a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.&lt;/a&gt;&lt;/p&gt;
 
@@ -4364,12 +4462,12 @@ replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
 &lt;p&gt;Note: the title was suggested by &lt;a href=&#34;https://www.stat.auckland.ac.nz/showperson?firstname=Thomas&amp;amp;surname=Lumley&#34;&gt;Thomas Lumley&lt;/a&gt;. No connection to @hspter; it&amp;rsquo;s not really so hip. I probably should have written &amp;ldquo;geeksteR.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Further points on crayon colors</title>
       <link>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>&lt;p&gt;I saw &lt;a href=&#34;https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;this great post on crayola crayon colors&lt;/a&gt; at the &lt;a href=&#34;https://learnr.wordpress.com&#34;&gt;Learning R blog&lt;/a&gt;, reproducing a &lt;a href=&#34;https://www.datapointed.net/2010/01/crayola-crayon-color-chart/&#34;&gt;nice graph&lt;/a&gt; of the Crayola crayon colors over time. (Also see &lt;a href=&#34;http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/&#34;&gt;this even nicer version&lt;/a&gt;.)&lt;/p&gt;
 
@@ -4393,12 +4491,12 @@ names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png&#34; alt=&#34;Crayon colors, again&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Two more points about crayon colors</title>
       <link>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</link>
       <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>&lt;p&gt;If you want to use &lt;a href=&#34;https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/&#34;&gt;crayon colors in R&lt;/a&gt; but you don&amp;rsquo;t want to rely on my &lt;a href=&#34;https://github.com/kbroman/broman&#34;&gt;R/broman&lt;/a&gt; package, you can just grab the code. Copy the &lt;a href=&#34;https://github.com/kbroman/broman/blob/master/R/brocolors.R#L72-L204&#34;&gt;relevant lines from the &lt;code&gt;R/brocolors.R&lt;/code&gt; file&lt;/a&gt;:&lt;/p&gt;
 
@@ -4424,12 +4522,12 @@ ord &amp;lt;- hclust(dist(colval))$order
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/05/crayons.png&#34; alt=&#34;Crayon colors&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Crayon colors in R</title>
       <link>https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</link>
       <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/</guid>
       <description>&lt;p&gt;Last night I was working on a &lt;a href=&#34;https://github.com/kbroman/Talk_Graphs/tree/ictr2014&#34;&gt;talk on creating effective graphs&lt;/a&gt;. Mostly, I needed to update the colors, as there&amp;rsquo;d been some gaudy ones in &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/ictr2014.pdf&#34;&gt;its previous form&lt;/a&gt; (e.g., slide 22).&lt;/p&gt;
 
@@ -4452,12 +4550,12 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: See also &lt;a href=&#34;https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;Two more points about crayon colors&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Reform academic statistics</title>
       <link>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</link>
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/05/01/reform-academic-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wehi.edu.au/faculty_members/professor_terry_speed&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;http://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;http://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the &lt;a href=&#34;http://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
 
@@ -4526,12 +4624,12 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
 &lt;p&gt;In evaluating (bio)statistics faculty, we should consider not just the number of &lt;em&gt;JASA&lt;/em&gt; or &lt;em&gt;Biometrics&lt;/em&gt; papers they&amp;rsquo;ve published, but also whether they&amp;rsquo;ve made themselves useful, and to the scientific community and well as to other statisticians.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>&#34;[&#34; with the apply() functions, revisited</title>
       <link>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</link>
       <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d &lt;a href=&#34;https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/&#34;&gt;mentioned in the fall&lt;/a&gt; that one could use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; in the &lt;code&gt;apply&lt;/code&gt;-type functions, like this:&lt;/p&gt;
 
@@ -4549,12 +4647,12 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
 &lt;p&gt;As you can see, my data isn&amp;rsquo;t &amp;ldquo;&lt;a href=&#34;https://www.jstatsoft.org/article/view/v059i10&#34;&gt;tidy&lt;/a&gt;.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Simple web sites with GitHub Pages</title>
       <link>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/04/05/simple-web-sites-with-github-pages/</guid>
       <description>&lt;p&gt;If you love &lt;a href=&#34;https://git-scm.com&#34;&gt;git&lt;/a&gt; and &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;, you&amp;rsquo;ll also love &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;, for producing websites using &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; and &lt;a href=&#34;https://git-scm.com&#34;&gt;git&lt;/a&gt;: you write pages in Markdown within a &lt;code&gt;gh-pages&lt;/code&gt; branch in a git repository; when you push to GitHub, a corresponding site is automatically constructed.&lt;/p&gt;
 
@@ -4580,12 +4678,12 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
 &lt;p&gt;And then &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/_includes/themes/twitter/default.html#L20&#34;&gt;add a line&lt;/a&gt; to the &lt;a href=&#34;https://github.com/kbroman/simple_site/blob/gh-pages/_includes/themes/twitter/default.html&#34;&gt;&lt;code&gt;default.html&lt;/code&gt;&lt;/a&gt; file.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Startling lack of training in statistical computing</title>
       <link>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
       <description>&lt;p&gt;It is shocking to me that &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;a statistics department&lt;/a&gt; would offer a graduate-level statistical computing course only &lt;em&gt;every fourth year&lt;/em&gt;.&lt;/p&gt;
 
@@ -4598,12 +4696,12 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
 &lt;p&gt;Update: As you might have anticipated, I&amp;rsquo;ve been asked to teach the course.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Googling errors</title>
       <link>https://kbroman.org/blog/2014/02/14/googling-errors/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/02/14/googling-errors/</guid>
       <description>
 
@@ -4646,12 +4744,12 @@ SyntaxError: invalid syntax
 &lt;blockquote&gt;since Windows does not have fork(), it will run standard lapply instead - no parallelization&lt;/blockquote&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Emacs key bindings in MS Word</title>
       <link>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</link>
       <pubDate>Wed, 12 Feb 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
 
@@ -4704,12 +4802,12 @@ SyntaxError: invalid syntax
 &lt;p&gt;&lt;a href=&#34;http://sourceforge.net/apps/mediawiki/womacs/index.php&#34;&gt;Womacs&lt;/a&gt; is a really extensive set of Visual Basic macros that looks really useful, but I was getting Visual Basic errors and didn&amp;rsquo;t want to spend any more time on it; grants to write&amp;hellip;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Copyright of video lectures</title>
       <link>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/02/09/copyright-of-video-lectures/</guid>
       <description>&lt;p&gt;Quite a while back, I was wondering about copyright of video lectures produced by university faculty. In particular, did I need to get the university to sign some sort of waiver in order for the Jackson Laboratory to post a video of a lecture I&amp;rsquo;d given for a course there? (The Jackson Lab lawyers wanted that.)&lt;/p&gt;
 
@@ -4730,12 +4828,12 @@ SyntaxError: invalid syntax
 &lt;p&gt;And I &lt;em&gt;despise&lt;/em&gt; the password protection of instructional materials. If I spend a bunch of time preparing material, I want to distribute it as widely as possible. If another instructor uses it in their own class, I consider that a Good Thing.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>I still don&#39;t like it</title>
       <link>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</link>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/02/09/i-still-dont-like-it/</guid>
       <description>&lt;p&gt;I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where &lt;a href=&#34;https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/&#34;&gt;the author refused to allow me to have an electronic copy&lt;/a&gt;.)&lt;/p&gt;
 
@@ -4748,12 +4846,12 @@ SyntaxError: invalid syntax
 &lt;p&gt;It seems like if a reviewer says, &amp;ldquo;This particular book should not be adopted,&amp;rdquo; the publisher can interpret that to also mean, &amp;ldquo;and whatever you do, don&amp;rsquo;t send me a copy.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>knitr in a knutshell tutorial</title>
       <link>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2014/02/06/knitr-in-a-knutshell-tutorial/</guid>
       <description>&lt;p&gt;I spent a lot of time this week writing a short tutorial on &lt;a href=&#34;https://yihui.name/knitr/&#34;&gt;knitr&lt;/a&gt;: &lt;a href=&#34;https://kbroman.org/knitr_knutshell&#34;&gt;knitr in a knutshell&lt;/a&gt;.&lt;/p&gt;
 
@@ -4768,12 +4866,12 @@ SyntaxError: invalid syntax
 &lt;p&gt;But take a look at the &lt;a href=&#34;https://github.com/DataScienceSpecialization/courses&#34;&gt;material&lt;/a&gt; that &lt;a href=&#34;http://jtleek.com&#34;&gt;Jeff&lt;/a&gt;, &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger&lt;/a&gt;, and &lt;a href=&#34;http://www.bcaffo.com/&#34;&gt;Brian&lt;/a&gt; are developing for their &lt;a href=&#34;https://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/&#34;&gt;Data Science MOOCs&lt;/a&gt;; you&amp;rsquo;ll see that mine are pretty humble contributions.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Things to avoid as a new faculty member</title>
       <link>https://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
       <pubDate>Thu, 05 Dec 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>&lt;p&gt;The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.&lt;/p&gt;
 
@@ -4792,12 +4890,12 @@ SyntaxError: invalid syntax
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>OMICS Keynote? No!</title>
       <link>https://kbroman.org/blog/2013/11/19/omics-keynote-no/</link>
       <pubDate>Tue, 19 Nov 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/11/19/omics-keynote-no/</guid>
       <description>&lt;p&gt;I got the following email:&lt;/p&gt;
 
@@ -4840,12 +4938,12 @@ karl&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Fixing a font problem for XeLaTeX</title>
       <link>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
       <description>
 
@@ -4894,12 +4992,12 @@ or installed font not found.
 &lt;p&gt;Not thoroughly tested, but it works on two systems.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>It was a really bad idea to use slides in that class</title>
       <link>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/10/08/it-was-a-really-bad-idea-to-use-slides-in-that-class/</guid>
       <description>&lt;p&gt;I gave a presentation in the Statistical Consulting course at UW-Madison today. I&amp;rsquo;ve done so a number of times in the past 6 years. Until today, I&amp;rsquo;d just spoken informally from a few pages of notes. (Earlier this year, I wrote up those notes as a &lt;a href=&#34;https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/&#34;&gt;blog post&lt;/a&gt;.)&lt;/p&gt;
 
@@ -4920,12 +5018,12 @@ or installed font not found.
 &lt;p&gt;Fortunately, the students were really good and involved and asked great questions, anyway. So no real harm done.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Better-looking LaTeX/Beamer slides</title>
       <link>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</link>
       <pubDate>Mon, 07 Oct 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>
 
@@ -5135,12 +5233,12 @@ Example 1
 &lt;p&gt;I then used &lt;a href=&#34;https://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/&#34;&gt;pdfnup&lt;/a&gt; to make the notes PDF be 2-up: the slide above and the notes below. The details are in the &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess/blob/master/Makefile&#34;&gt;Makefile&lt;/a&gt;; if that&amp;rsquo;s not obvious, see my &lt;a href=&#34;https://kbroman.github.io/minimal_make/&#34;&gt;minimal tutorial about GNU make&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Complaints about the NIH grant review process</title>
       <link>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/10/02/complaints-about-the-nih-grant-review-process/</guid>
       <description>
 
@@ -5241,12 +5339,12 @@ Example 1
 &lt;p&gt;There should be some system for other reviewers to say, &amp;ldquo;So-and-so on the panel was a complete jerk and shouldn&amp;rsquo;t be brought back.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Code review</title>
       <link>https://kbroman.org/blog/2013/09/25/code-review/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/09/25/code-review/</guid>
       <description>
 
@@ -5297,12 +5395,12 @@ Example 1
 &lt;p&gt;If we&amp;rsquo;re too hard on people for writing substandard code, we&amp;rsquo;ll discourage the availability. It&amp;rsquo;s an important trade-off.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Hiring computational biologists</title>
       <link>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</link>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/09/25/hiring-computational-biologists/</guid>
       <description>
 
@@ -5333,12 +5431,12 @@ Example 1
 &lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: The real point I&amp;rsquo;m trying to make: academics doesn&amp;rsquo;t do a good job of rewarding tool building (eg, software tools). It&amp;rsquo;s often viewed as better to write papers with toy implementations than to make generally useful software. That&amp;rsquo;s a real problem for computational biology, and for folks seeking to hire truly useful computational biologists.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Department websites</title>
       <link>https://kbroman.org/blog/2013/09/11/department-websites/</link>
       <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/09/11/department-websites/</guid>
       <description>
 
@@ -5448,12 +5546,12 @@ Example 1
 &lt;p&gt;Of course, I could look at a ton more, but I&amp;rsquo;m sort of sick of this. Go have a look yourself, and let me know if you find good ones.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>&#34;[&#34; and &#34;[[&#34; with the apply() functions</title>
       <link>https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/</guid>
       <description>&lt;p&gt;Did you know you can use &lt;code&gt;&amp;quot;[&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;[[&amp;quot;&lt;/code&gt; as function names for subsetting with calls to the &lt;code&gt;apply&lt;/code&gt;-type functions?&lt;/p&gt;
 
@@ -5488,12 +5586,12 @@ for(i in seq(along=lengths)) {
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Electronic lab notebook</title>
       <link>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</link>
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/08/20/electronic-lab-notebook/</guid>
       <description>
 
@@ -5536,12 +5634,12 @@ for(i in seq(along=lengths)) {
 &lt;p&gt;It can be hard to force myself to do the clean-up. I wish there were an easier way. But I expect that well-organized lab scientists devote a lot of time to constructing their lab notebooks, too.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Read the source code</title>
       <link>https://kbroman.org/blog/2013/08/06/read-the-source-code/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/08/06/read-the-source-code/</guid>
       <description>&lt;p&gt;The other day, there was a bit of &lt;a href=&#34;https://twitter.com/hspter/status/363015797204992000&#34;&gt;a twitter conversation about &lt;code&gt;qqline&lt;/code&gt;&lt;/a&gt; in R.&lt;/p&gt;
 
@@ -5611,12 +5709,12 @@ UseMethod(&amp;quot;qqnorm&amp;quot;)
 &lt;p&gt;You can learn a lot about programming from the source code for R.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>More on Chutes &amp; Ladders</title>
       <link>https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</link>
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/</guid>
       <description>
 
@@ -5677,12 +5775,12 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;As you can see, the sawtooth pattern becomes more pronounced with the number of rounds, but then it gets lost in the downward slope of the distribution on the right side.  (Again, see my &lt;a href=&#34;https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r&#34;&gt;R code&lt;/a&gt;.)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Chutes &amp; ladders: How long is this going to take?</title>
       <link>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</link>
       <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/</guid>
       <description>&lt;p&gt;I was playing Chutes &amp;amp; Ladders with my four-year-old daughter yesterday, and I thought, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
 
@@ -5711,12 +5809,12 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/&#34;&gt;Additional numerical results here.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Stack Exchange: Why I dropped out</title>
       <link>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/05/13/stack-exchange-why-i-dropped-out/</guid>
       <description>
 
@@ -5758,12 +5856,12 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;I should clarify: I &lt;em&gt;do&lt;/em&gt; continue to use Stack Exchange, mostly through google.  Many problems I run into have already been answered.  I just don&amp;rsquo;t have the right temperament to participate regularly in answering others&amp;rsquo; questions.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Tutorials on git/github and GNU make</title>
       <link>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</link>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/05/10/tutorials-on-gitgithub-and-gnu-make/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re not using version control, you should be.  &lt;em&gt;Learn &lt;a href=&#34;https://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
@@ -5783,12 +5881,12 @@ install_github(&amp;quot;nachocab/clickme&amp;quot;)
 &lt;p&gt;So I immediately wrote &lt;a href=&#34;https://kbroman.org/minimal_make&#34;&gt;a similar short tutorial&lt;/a&gt; on &lt;a href=&#34;https://www.gnu.org/software/make&#34;&gt;GNU make&lt;/a&gt;, which I think is the &lt;em&gt;most important tool&lt;/em&gt; for reproducible research.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>&#34;My&#34; chromosome 8p inversion</title>
       <link>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</link>
       <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/05/08/my-chromosome-8p-inversion/</guid>
       <description>
 
@@ -5863,12 +5961,12 @@ We find that the local density of IBD blocks of all lengths is relatively consta
 &lt;p&gt;In both of these cases, apparent artifacts in the data led to the most interesting findings in the work. If your model doesn&amp;rsquo;t fit, or you see something odd, ask, &amp;ldquo;Why is that?&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>$18 for a two page PDF? I still don&#39;t get it.</title>
       <link>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</link>
       <pubDate>Thu, 02 May 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>
 
@@ -5935,12 +6033,12 @@ Why do publishers charge such high per-article fees? At \$18/artcl, you&#39;d ha
 &lt;p&gt;If they don&amp;rsquo;t want to sell the PDFs for individual articles for a reasonable price, they should just not sell them at all.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Methods before results</title>
       <link>https://kbroman.org/blog/2013/04/29/methods-before-results/</link>
       <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/29/methods-before-results/</guid>
       <description>
 
@@ -6014,12 +6112,12 @@ http://www.rii.com/publications/2003/HE_SDS.htm.
 &lt;p&gt;If you click on &amp;ldquo;Full Text (PDF),&amp;rdquo; you get the article plus the 3 supplemental figures and 23 supplemental tables in the former case, and article plus the 17 supplemental figures and 2 supplemental tables in the latter case.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Use meaningful URLs</title>
       <link>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/10/use-meaningful-urls/</guid>
       <description>
 
@@ -6064,12 +6162,12 @@ to archive.org.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://web.archive.org/web/20130416035126/http://www.not-implemented.com/urls-are-for-people-not-computers&#34;&gt;&lt;code&gt;http://www.not-implemented.com/urls-are-for-people-not-computers&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Knuth: Journal referees should assist authors</title>
       <link>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
       <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>&lt;p&gt;When serving as referee for a journal, who are you working for?&lt;/p&gt;
 
@@ -6096,12 +6194,12 @@ to archive.org.&lt;/p&gt;
 &lt;p&gt;And I&amp;rsquo;ve learned to use the &amp;ldquo;Comments to the editor&amp;rdquo; as my opportunity to vent. (I would pity the poor editor on the other end, but she/he sent the thing to me!) I&amp;rsquo;d give an example of my venting, but I think I&amp;rsquo;ll leave that to another time.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Data science is statistics</title>
       <link>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/05/data-science-is-statistics/</guid>
       <description>&lt;p&gt;When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;.  They&amp;rsquo;re doing math.&lt;/p&gt;
 
@@ -6112,12 +6210,12 @@ to archive.org.&lt;/p&gt;
 &lt;p&gt;You may not like what &lt;a href=&#34;http://amstat.org&#34;&gt;some statisticians&lt;/a&gt; do.  You may feel they don&amp;rsquo;t share your values.  They may embarrass you.  But that shouldn&amp;rsquo;t lead us to abandon the term &amp;ldquo;statistics&amp;rdquo;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Beware of grep with a list</title>
       <link>https://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</link>
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>&lt;p&gt;Another &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip: beware of &lt;code&gt;as.character&lt;/code&gt; applied to a list.&lt;/p&gt;
 
@@ -6136,12 +6234,12 @@ to archive.org.&lt;/p&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://stackoverflow.com/questions/7591632/why-this-behavior-when-coercing-a-list-to-character-via-as-character&#34;&gt;related discussion&lt;/a&gt; (from Sept 2011) on &lt;a href=&#34;http://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Thoughts on statistical consulting</title>
       <link>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/02/thoughts-on-statistical-consulting/</guid>
       <description>
 
@@ -6288,12 +6386,12 @@ to archive.org.&lt;/p&gt;
 &lt;p&gt;And I don&amp;rsquo;t feel I need to know the answer to people&amp;rsquo;s questions.  I view my role, as a statistical consultant, is to provide a connection, between the scientist with the question, and with some reasonable answer.  Once I understand the question, I&amp;rsquo;ll ask all my friends: &amp;ldquo;Say, I got this really interesting question: What would you do?&amp;rdquo;  Eventually I&amp;rsquo;ll find someone who can tell me what to say.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>apply vs for</title>
       <link>https://kbroman.org/blog/2013/04/02/apply-vs-for/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/02/apply-vs-for/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s widely understood that, in &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; programming, one should avoid &lt;code&gt;for&lt;/code&gt; loops and always try to use &lt;code&gt;apply&lt;/code&gt;-type functions.&lt;/p&gt;
 
@@ -6324,12 +6422,12 @@ to archive.org.&lt;/p&gt;
 &lt;p&gt;A key point, from Ligges and Fox: &amp;ldquo;Initialize new objects to full length before the loop, rather than increasing their size within the loop.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>x[[c(5,3)]]</title>
       <link>https://kbroman.org/blog/2013/04/02/xc53/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/04/02/xc53/</guid>
       <description>&lt;p&gt;An &lt;a href=&#34;http://r-project.org&#34;&gt;R&lt;/a&gt; tip:
 Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&gt;x[[5]][[3]]&lt;/code&gt;?&lt;/p&gt;
@@ -6347,12 +6445,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Did you know that &lt;code&gt;[[&lt;/code&gt; had a help file?  Type &lt;code&gt;?&amp;quot;[[&amp;quot;&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Data structures are important</title>
       <link>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/19/data-structures-are-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
 
@@ -6367,12 +6465,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;I&amp;rsquo;m not completely happy with the layout of the graph; it&amp;rsquo;s not particularly intuitive.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>ENAR highs and lows</title>
       <link>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/19/enar-highs-and-lows/</guid>
       <description>
 
@@ -6431,12 +6529,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;It was a really useful and inspirational meeting, right up there with the &lt;a href=&#34;https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;UseR 2011 meeting&lt;/a&gt; in the UK, but less from talks and more from individual interactions.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
       <link>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/19/latex-unicode-xetex/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;https://rqtl.org/ctc2013&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
 
@@ -6453,12 +6551,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;&lt;em&gt;Update&lt;/em&gt;: Now that I think about it, CSV is way more convenient than XLS(X) for simple data files, as you don&amp;rsquo;t have to traverse with the whole &lt;code&gt;$cell -&amp;gt; (Val)&lt;/code&gt; business.  But working with the Excel file directly is easier when the cells may contain lots of text with commas and such, like my abstracts.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Why aren&#39;t all of our graphs interactive?</title>
       <link>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</link>
       <pubDate>Sat, 16 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>
 
@@ -6499,12 +6597,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Interactive graphs provide a means through which one may view the overall summary but have immediate access to the underlying details.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Towards making my own papers reproducible</title>
       <link>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</link>
       <pubDate>Sun, 10 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/10/towards-making-my-own-papers-reproducible/</guid>
       <description>&lt;p&gt;Much has been written about &lt;a href=&#34;https://magazine.amstat.org/blog/2011/01/01/scipolicyjan11/&#34;&gt;reproducible research&lt;/a&gt;: that scientific papers should be accompanied by the data and software sufficient to reproduce the results.  It&amp;rsquo;s obviously a &lt;em&gt;Good Thing&lt;/em&gt;.  But it can be hard to stick to this ideal in practice.&lt;/p&gt;
 
@@ -6535,12 +6633,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;I&amp;rsquo;m more comfortable releasing just a snapshot of the final product.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>What a waste of paper</title>
       <link>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/07/what-a-waste-of-paper/</guid>
       <description>&lt;p&gt;A university press asked me to review a book manuscript, and the author &amp;ldquo;has asked that we not use electronic copies.&amp;rdquo; So they&amp;rsquo;re going to send me a hard copy.&lt;/p&gt;
 
@@ -6551,12 +6649,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Their response included, &amp;ldquo;What you do with it when it arrives I am just going to take a hear-no-evil approach to.&amp;rdquo;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Interactive eQTL plot with d3.js</title>
       <link>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>&lt;p&gt;I just finished an &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;https://www.enar.org/meetings/index.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
 
@@ -6567,12 +6665,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;The hardest part was setting up the data files.  Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The Hopkins SPH logo, part 3: Karl&#39;s revenge</title>
       <link>https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</link>
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m finally back to the story of the &lt;a href=&#34;https://www.jhsph.edu/&#34;&gt;Johns Hopkins Bloomberg School of Public Health&lt;/a&gt; logo.&lt;/p&gt;
 
@@ -6619,12 +6717,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Related posts on the Hopkins SPH logo: &lt;a href=&#34;https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1&#34;&gt;part 1&lt;/a&gt; | &lt;a href=&#34;https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;part 2&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>charset=&#34;utf-8&#34;</title>
       <link>https://kbroman.org/blog/2013/03/02/charsetutf-8/</link>
       <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/02/charsetutf-8/</guid>
       <description>&lt;p&gt;To use the latest version of &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt;, you need to use &lt;code&gt;charset=&amp;quot;utf-8&amp;quot;&lt;/code&gt; in the call to &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
@@ -6639,12 +6737,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
-    
+
     <item>
       <title>A bit more on the fire</title>
       <link>https://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</link>
       <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/03/01/a-bit-more-on-the-fire/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://host.madison.com/daily-cardinal/&#34;&gt;Daily Cardinal&lt;/a&gt; reports that &lt;a href=&#34;http://tinyurl.com/cuyhdtl&#34;&gt;there were no overhead sprinklers&lt;/a&gt; in the area of the fire yesterday.  Fire fighters thought that sprinklers had gone off, but it was really a broken water pipe.&lt;/p&gt;
 
@@ -6657,12 +6755,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;I hope we all learn from this: Off-site backups (at least with something like &lt;a href=&#34;http://www.dropbox.com&#34;&gt;DropBox&lt;/a&gt;) are important.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>There&#39;s a fire in the building...</title>
       <link>https://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</link>
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/02/28/theres-a-fire-in-the-building/</guid>
       <description>&lt;p&gt;I was at work this morning at 8am.  At 8:45am I got a text asking what was going on in &lt;a href=&#34;https://www.map.wisc.edu/?initObj=bdg_MdScC&#34;&gt;my building&lt;/a&gt;, with this picture:&lt;/p&gt;
 
@@ -6685,12 +6783,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;There is a related article in the &lt;a href=&#34;https://tinyurl.com/ccyggdl&#34;&gt;Wisconsin State Journal&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>UW-Madison joins Coursera</title>
       <link>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</link>
       <pubDate>Thu, 21 Feb 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/02/21/uw-madison-joins-coursera/</guid>
       <description>&lt;p&gt;UW-Madison is joining Coursera to offer four massive open online courses (MOOCs).&lt;/p&gt;
 
@@ -6701,12 +6799,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;I like Sara&amp;rsquo;s point about MOOCs more being used more for continuing education for the already educated vs new access for the uneducated.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Interactive MA plot</title>
       <link>https://kbroman.org/blog/2013/02/11/interactive-ma-plot/</link>
       <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/02/11/interactive-ma-plot/</guid>
       <description>&lt;p&gt;The New York Times has &lt;a href=&#34;https://tinyurl.com/aqa9wum&#34;&gt;an interesting interactive graphic&lt;/a&gt; on boys&amp;rsquo; and girls&amp;rsquo; average scores on a science exam, by country.&lt;/p&gt;
 
@@ -6717,12 +6815,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;The wikipedia entry for &lt;a href=&#34;https://en.wikipedia.org/wiki/MA_plot&#34;&gt;MA plot&lt;/a&gt; says such a plot of difference vs average is in medical statistics known as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Bland-Altman_plot&#34;&gt;Bland-Altman plot&lt;/a&gt; and in other fields is known as a Tukey mean-difference plot.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>D3.js difficulties</title>
       <link>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/02/08/d3-js-difficulties/</guid>
       <description>
 
@@ -6781,12 +6879,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;My most common mistake so far: I forget the &lt;code&gt;.enter()&lt;/code&gt; part.  You don&amp;rsquo;t get a error message, but the objects don&amp;rsquo;t get created.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Interactive graphics with d3.js</title>
       <link>https://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/02/08/interactive-graphics-with-d3-js/</guid>
       <description>
 
@@ -6811,12 +6909,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;The advantage of this interactive graph is that you have some ability to look at the underlying genotype/phenotype association, rather than just rely on LOD curves.  It would be nice to include the option of a dot-plot on the lower right, rather than just the within-group averages.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Microsoft Office</title>
       <link>https://kbroman.org/blog/2013/01/30/microsoft-office/</link>
       <pubDate>Wed, 30 Jan 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/01/30/microsoft-office/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.nytimes.com&#34;&gt;New York Times&lt;/a&gt; has &lt;a href=&#34;http://nyti.ms/WdR6ya&#34;&gt;an article&lt;/a&gt; about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.&lt;/p&gt;
 
@@ -6825,36 +6923,36 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;blockquote&gt;As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.&#34; As an example, he cited a feature in Excel that analyzes a batch of numbers selected by a user and automatically recommends the best way to represent the data in a chart.&lt;/blockquote&gt;
 </description>
     </item>
-    
+
     <item>
       <title>5/9 data journalists use Excel</title>
       <link>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/01/15/59-data-journalists-use-excel/</guid>
       <description>&lt;p&gt;&amp;hellip;if I&amp;rsquo;ve &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/understanding_data_6.html&#34;&gt;counted correctly.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d not heard the term &amp;ldquo;data journalist&amp;rdquo; before. It&amp;rsquo;s nice that they have an &lt;a href=&#34;http://datajournalismhandbook.org/1.0/en/index.html&#34;&gt;open handbook&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>NIH to hire Associate Director for Data Science</title>
       <link>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</link>
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2013/01/15/nih-to-hire-associate-director-for-data-science/</guid>
       <description>&lt;p&gt;See &lt;a href=&#34;http://www.nih.gov/news/health/jan2013/od-10a.htm&#34;&gt;the press release&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.genome.gov/27535200&#34;&gt;Eric Green&lt;/a&gt;, currently head of NHGRI, has been appointed the Acting Associate Director for Data Science.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>I don&#39;t want your irrelevant communications either</title>
       <link>https://kbroman.org/blog/2012/12/12/i-dont-want-your-irrelevant-communications-either/</link>
       <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/12/12/i-dont-want-your-irrelevant-communications-either/</guid>
       <description>&lt;p&gt;I got some spam from Quintiles and clicked the &amp;ldquo;unsubscribe&amp;rdquo; button.  The form which came up said, &amp;ldquo;I would NOT like to receive future relevant communications from Quintiles.&amp;rdquo;&lt;/p&gt;
 
@@ -6863,24 +6961,24 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;I should just forget about it, but the thought of some marketing jerk writing that while preparing their crap spam just really pisses me off.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Child abuse and neglect is cancelled today</title>
       <link>https://kbroman.org/blog/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/11/29/child-abuse-and-neglect-is-cancelled-today/</guid>
       <description>&lt;p&gt;On a classroom door:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2012/11/neglect_cancelled.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The Hopkins SPH logo, part 2</title>
       <link>https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</link>
       <pubDate>Wed, 21 Nov 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
       <description>&lt;p&gt;Last week, I wrote about the &lt;a href=&#34;https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/&#34;&gt;Johns Hopkins &lt;strong&gt;Bloomberg&lt;/strong&gt; School of Public Health logo&lt;/a&gt;.  I now present part 2 of the story.&lt;/p&gt;
 
@@ -6935,12 +7033,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Related posts on the Hopkins SPH logo: &lt;a href=&#34;https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1&#34;&gt;part 1&lt;/a&gt; | &lt;a href=&#34;https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;part 3&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Wireless router woes</title>
       <link>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</link>
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/11/20/wireless-router-woes/</guid>
       <description>&lt;p&gt;I had problems with my internet connection at home this morning.  The usual things didn&amp;rsquo;t work, but an unusual thing did work, so I thought I&amp;rsquo;d write about it.&lt;/p&gt;
 
@@ -6959,12 +7057,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;What a fun way to spend two hours!  At least, in the end, I cut 25% off my monthly cable bill.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The Hopkins SPH logo, part 1</title>
       <link>https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/</link>
       <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/</guid>
       <description>&lt;p&gt;I was just telling &lt;a href=&#34;http://www.stodden.net&#34;&gt;a distinguished visitor&lt;/a&gt; a few of my various stories about the &lt;a href=&#34;https://www.jhsph.edu&#34;&gt;Johns Hopkins &lt;strong&gt;Bloomberg&lt;/strong&gt; School of Public Health&lt;/a&gt; &lt;a href=&#34;https://www.jhsph.edu/identity/coreIdentity/logoIntro.shtml&#34;&gt;logo&lt;/a&gt;. She suggested that it would be a great blog topic. And now that I&amp;rsquo;m a tenured faculty member at a &lt;a href=&#34;https://www.wisc.edu&#34;&gt;different university&lt;/a&gt; and so can&amp;rsquo;t get into any [further] trouble over this&amp;hellip;&lt;/p&gt;
 
@@ -6989,12 +7087,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Related posts on the Hopkins SPH logo: &lt;a href=&#34;https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/&#34;&gt;part 2&lt;/a&gt; | &lt;a href=&#34;https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/&#34;&gt;part 3&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Puzzling typo</title>
       <link>https://kbroman.org/blog/2012/10/27/puzzling-typo/</link>
       <pubDate>Sat, 27 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/27/puzzling-typo/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;https://www.nytimes.com/2012/10/27/opinion/a-failed-earthquake-prediction-a-crime.html&#34;&gt;a nice op-ed&lt;/a&gt; in the &lt;a href=&#34;https://www.nytimes.com&#34;&gt;NY Times&lt;/a&gt; about the &lt;a href=&#34;https://www.nytimes.com/2012/10/23/world/europe/italy-convicts-7-for-failure-to-warn-of-quake.html&#34;&gt;crazy conviction of seven Italian scientists for failure to warn about an unpredictable earthquake&lt;/a&gt;. But I spent quite a while puzzling over the following typo:&lt;/p&gt;
 
@@ -7005,12 +7103,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;&lt;a href=&#34;https://kbroman.files.wordpress.com/2012/10/nytimes_article.pdf&#34;&gt;Here&amp;rsquo;s a PDF of the full article.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Open access, animated</title>
       <link>https://kbroman.org/blog/2012/10/25/open-access-animated/</link>
       <pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/25/open-access-animated/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a great interview with &lt;a href=&#34;http://phylogenomics.blogspot.com&#34;&gt;Jonathan Eisen&lt;/a&gt; and &lt;a href=&#34;http://www.arl.org/sparc/about/staff/shockey.shtml&#34;&gt;Nick Shockey&lt;/a&gt; on open access publishing, nicely animated by &lt;a href=&#34;http://www.phdcomics.com/about.htm&#34;&gt;Jorge Cham&lt;/a&gt;, who does the &lt;a href=&#34;http://www.phdcomics.com/comics.php&#34;&gt;Piled Higher and Deeper&lt;/a&gt; comic.&lt;/p&gt;
 
@@ -7019,12 +7117,12 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Helmets and bike sharing programs</title>
       <link>https://kbroman.org/blog/2012/10/23/helmets-and-bike-sharing-programs/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/23/helmets-and-bike-sharing-programs/</guid>
       <description>&lt;p&gt;There was an interesting article in the New York Times several weeks ago about &lt;a href=&#34;http://www.nytimes.com/2012/09/30/sunday-review/to-encourage-biking-cities-forget-about-helmets.html&#34;&gt;helmets and bike sharing programs&lt;/a&gt;: That cities are giving up on encouraging people to wear helmets as that will just discourage people from biking.  One point that&amp;rsquo;s made is that promotion of helmets suggests &amp;ldquo;a sense of danger that just isn&amp;rsquo;t justified.&amp;rdquo;  And, of course, there&amp;rsquo;s discussion of the higher frequency of biking and lower frequency of helmet-wearing in Europe.&lt;/p&gt;
 
@@ -7035,32 +7133,32 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
 &lt;p&gt;Several years ago I&amp;rsquo;d read an article about how helmet use might actually make biking less safe, as people might adopt less safe behaviors with a helmet.  I&amp;rsquo;m not convinced, though I have observed that people bike much more slowly in Europe and especially China.  If we were in less of a hurry, biking would be inherently safer.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Web-enabled publishing environment</title>
       <link>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/23/web-enabled-publishing-environment/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.stat.wisc.edu/~karlrohe/&#34;&gt;Karl Rohe&lt;/a&gt; has &lt;a href=&#34;http://magazine.amstat.org/blog/2012/10/01/stats-view-oct12/&#34;&gt;an interesting commentary&lt;/a&gt; in &lt;a href=&#34;http://magazine.amstat.org&#34;&gt;Amstat News&lt;/a&gt; this month, on how our current publishing system is obstructing research progress, and what a better future might look like.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Wired on statistics</title>
       <link>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</link>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/23/wired-on-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.wired.com&#34;&gt;Wired magazine&lt;/a&gt; had a short article last month on &lt;a href=&#34;http://www.wired.com/wiredscience/2012/10/mf-learn-to-read-a-scientific-report/&#34;&gt;how to read a scientific report&lt;/a&gt;, which basically was about how to interpret the statistical results.  It&amp;rsquo;s reasonably well done.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Curved arrows in R</title>
       <link>https://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/11/curved-arrows-in-r/</guid>
       <description>&lt;p&gt;I briefly investigated how to draw curved arrows in R. Here&amp;rsquo;s a small piece of the figure that I ultimately created:&lt;/p&gt;
 
@@ -7133,22 +7231,22 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;Note that the arrows at the top all have green arrow heads.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The future of personalized medicine</title>
       <link>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</link>
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/10/11/the-future-of-personalized-medicine/</guid>
       <description>&lt;p&gt;&amp;ldquo;Scientists&amp;rdquo; ripping people off by selling them basically useless genetic information with a bullshit report: &lt;a href=&#34;http://well.blogs.nytimes.com/2012/10/10/are-you-likely-to-respond-to-exercise/?smid=pl-share&#34;&gt;a genetic test for exercise&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>What, no coffee?</title>
       <link>https://kbroman.org/blog/2012/09/28/what-no-coffee/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/09/28/what-no-coffee/</guid>
       <description>&lt;p&gt;I was at a &lt;a href=&#34;http://www.cidr.jhmi.edu/about/CIDR%20Access%20Committee.pdf&#34;&gt;CIDR Access Committee&lt;/a&gt; meeting in DC a few weeks ago. We review proposals for genotyping or sequencing by the &lt;a href=&#34;http://www.cidr.jhmi.edu&#34;&gt;Center for Inherited Disease Research&lt;/a&gt;, a service funded by several of the NIH institutes.&lt;/p&gt;
 
@@ -7161,12 +7259,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;Without coffee, &lt;a href=&#34;http://www.freestatebrewing.com&#34;&gt;grant reviewing does not seem to go as well&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Odd smoother</title>
       <link>https://kbroman.org/blog/2012/09/27/odd-smoother/</link>
       <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/09/27/odd-smoother/</guid>
       <description>&lt;p&gt;I was flipping though the contents of &lt;a href=&#34;http://g3journal.org&#34;&gt;G3&lt;/a&gt; and saw &lt;a href=&#34;http://g3journal.org/content/2/9/1019.abstract&#34;&gt;this paper&lt;/a&gt;, which includes &lt;a href=&#34;https://www.luc.edu/biology/aboutus/facultyresearch/jamesmcheverud/&#34;&gt;Jim Cheverud&lt;/a&gt; as an author.&lt;/p&gt;
 
@@ -7175,12 +7273,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;&lt;a href=&#34;http://g3journal.org/content/2/9/1019/F3.large.jpg&#34;&gt;&lt;img src=&#34;https://www.biostat.wisc.edu/~kbroman/blog/F3.medium.gif&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Bottle filling station</title>
       <link>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</link>
       <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/09/24/bottle-filling-station/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.msnairport.com&#34;&gt;Madison airport&lt;/a&gt; now has a bottle-filling machine, sort of like this:&lt;/p&gt;
 
@@ -7191,12 +7289,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;I really love these things.  All airports should have them.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Hilarious graph</title>
       <link>https://kbroman.org/blog/2012/09/11/hilarious-graph/</link>
       <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/09/11/hilarious-graph/</guid>
       <description>&lt;p&gt;I read &lt;a href=&#34;https://campaignstops.blogs.nytimes.com/2012/09/10/the-unexpected-impact-of-coded-appeals/?hp&#34;&gt;an interesting post&lt;/a&gt; on the &lt;a href=&#34;https://nytimes.com&#34;&gt;NY Times&lt;/a&gt; site this morning, which said:&lt;/p&gt;
 
@@ -7207,12 +7305,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;They must be right; they have a graph!&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>How to evaluate faculty?</title>
       <link>https://kbroman.org/blog/2012/09/08/how-to-evaluate-faculty/</link>
       <pubDate>Sat, 08 Sep 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/09/08/how-to-evaluate-faculty/</guid>
       <description>&lt;p&gt;&amp;hellip;rate their departments.&lt;/p&gt;
 
@@ -7227,12 +7325,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;I like the analogy of measuring the importance of an academic paper by the &amp;ldquo;impact factor&amp;rdquo; of the journal in which it appeared, with measuring the quality of a researcher by the quality of his/her institution.  I thought the absurdity of the latter would, by association, make plain the absurdity of the former.  I hadn&amp;rsquo;t thought that the absurdity of the latter might be in question.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Practicing talks</title>
       <link>https://kbroman.org/blog/2012/06/22/practicing-talks/</link>
       <pubDate>Fri, 22 Jun 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/06/22/practicing-talks/</guid>
       <description>&lt;p&gt;Clay Johnson, the author of &lt;a href=&#34;https://www.amazon.com/gp/product/1449304680&#34;&gt;The Information Diet&lt;/a&gt;, recently wrote about &lt;a href=&#34;https://lifehacker.com/5920033/how-to-prep-for-a-presentation&#34;&gt;how to prepare to give a presentation&lt;/a&gt;.&lt;/p&gt;
 
@@ -7257,12 +7355,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;Also, I think if I give a talk too much, by practicing or otherwise, I&amp;rsquo;ll be less excited and interested in the material.  Without practice, I&amp;rsquo;m not so polished, but I&amp;rsquo;m more enthusiastic.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Learning a new language</title>
       <link>https://kbroman.org/blog/2012/06/21/learning-a-new-language/</link>
       <pubDate>Thu, 21 Jun 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/06/21/learning-a-new-language/</guid>
       <description>&lt;p&gt;It had been a very long time since I&amp;rsquo;d tried to learn a new programming language. I started C in 1987, S in 1992, and Perl in 1997, but nothing really new in the subsequent 15 years.&lt;/p&gt;
 
@@ -7283,12 +7381,12 @@ iArrows(x1, y, x2, y,
 &lt;p&gt;PS: I really like &lt;a href=&#34;http://alignedleft.com/tutorials/d3/&#34;&gt;Scott Murray&amp;rsquo;s tutorials on D3&lt;/a&gt;. After working through those, &lt;a href=&#34;https://github.com/mbostock/d3/wiki/Tutorials&#34;&gt;other tutorials&lt;/a&gt; became much more understandable.  &lt;a href=&#34;http://eloquentjavascript.net/&#34;&gt;Eloquent JavaScript&lt;/a&gt; is a super-cool, open source, interactive text on JavaScript; also take a look at the &amp;ldquo;fork&amp;rdquo; for &lt;a href=&#34;https://coffeescript.org/&#34;&gt;CoffeeScript&lt;/a&gt;, &lt;a href=&#34;http://autotelicum.github.com/Smooth-CoffeeScript/&#34;&gt;Smooth CoffeeScript&lt;/a&gt;.  (I&amp;rsquo;m thinking I&amp;rsquo;ll switch to CoffeeScript once I&amp;rsquo;ve learned a bit of JavaScript; the useful libraries and examples are mostly in JavaScript.)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>A course in statistical programming</title>
       <link>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/</guid>
       <description>&lt;p&gt;Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.&lt;/p&gt;
 
@@ -7371,12 +7469,12 @@ iArrows(x1, y, x2, y,
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Police</title>
       <link>https://kbroman.org/blog/2012/05/24/police/</link>
       <pubDate>Thu, 24 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/24/police/</guid>
       <description>&lt;p&gt;The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.&lt;/p&gt;
 
@@ -7440,12 +7538,12 @@ And then he walked off.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m not sure who was more suspicious, him of me or me of him.  Perhaps he was thinking through the &lt;a href=&#34;http://individual.utoronto.ca/somody/quiz.html&#34;&gt;Prof or Hobo&lt;/a&gt; quiz.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>What should I do badly?</title>
       <link>https://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</link>
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/23/what-should-i-do-badly/</guid>
       <description>
 
@@ -7484,12 +7582,12 @@ And then he walked off.&lt;/p&gt;
 &lt;p&gt;As I said, it&amp;rsquo;s painful to do things that you know are crap (i.e., could be much better).  It&amp;rsquo;s hard to  accept one&amp;rsquo;s limitations.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Should I be nice?</title>
       <link>https://kbroman.org/blog/2012/05/18/should-i-be-nice/</link>
       <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/18/should-i-be-nice/</guid>
       <description>&lt;p&gt;I got the following email.&lt;/p&gt;
 
@@ -7537,12 +7635,12 @@ how can i enter the data of QTL analysis.&lt;/pre&gt;
 &lt;p&gt;I responded with links to &lt;a href=&#34;https://rqtl.org/tutorials&#34;&gt;tutorials&lt;/a&gt;, &lt;a href=&#34;https://rqtl.org/sampledata&#34;&gt;sample data files&lt;/a&gt;, and &lt;a href=&#34;https://rqtl.org/book&#34;&gt;my book with Śaunak Sen&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Trees</title>
       <link>https://kbroman.org/blog/2012/05/17/trees/</link>
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/17/trees/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork.  Today I found one with this:&lt;/p&gt;
 
@@ -7553,12 +7651,12 @@ how can i enter the data of QTL analysis.&lt;/pre&gt;
 &lt;p&gt;These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with &lt;a href=&#34;https://www.stat.wisc.edu/~ane&#34;&gt;considerable help&lt;/a&gt;), regarding phylogenetic trees.  It&amp;rsquo;s part of &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/phyloqtl_combined.pdf&#34;&gt;this paper&lt;/a&gt;, which I&amp;rsquo;m getting ready to re-submit.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Genetic testing of sperm donors</title>
       <link>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</link>
       <pubDate>Wed, 16 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>&lt;p&gt;A recent New York Times article &lt;a href=&#34;http://www.nytimes.com/2012/05/15/health/in-sperm-banks-a-matrix-of-untested-genetic-diseases.html&#34;&gt;discusses the potential need for genetic screening of sperm donors&lt;/a&gt;. A couple of points struck me as rather odd.&lt;/p&gt;
 
@@ -7579,12 +7677,12 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 &lt;p&gt;The article led with a story about a couple whose child, fathered by a sperm donor, has cystic fibrosis.  But the chance of that is the same whether or not the sperm came from a donor or in the usual way.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>No commuter bikes on sidewalk</title>
       <link>https://kbroman.org/blog/2012/05/08/no-commuter-bikes-on-sidewalk/</link>
       <pubDate>Tue, 08 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/08/no-commuter-bikes-on-sidewalk/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m pretty sure you won&amp;rsquo;t find a street sign like this in Baltimore:&lt;/p&gt;
 
@@ -7593,12 +7691,12 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 &lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://g.co/maps/rwjdy&#34;&gt;on my usual commute&lt;/a&gt; to campus.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Boring us to submission</title>
       <link>https://kbroman.org/blog/2012/05/07/boring-us-to-submission/</link>
       <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/07/boring-us-to-submission/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://www.wisc.edu&#34;&gt;University of Wisconsin-Madison&lt;/a&gt; has embarked on a big &lt;a href=&#34;https://www.hrdesign.wisc.edu&#34;&gt;human resources redesign&lt;/a&gt;.  I think the university administration has devised the ideal strategy to ensure little faculty input in the process: they&amp;rsquo;ve made it so dreadfully dull and full of business speak that we can&amp;rsquo;t bear to read through the material or show up to one of the many &amp;ldquo;engagement sessions&amp;rdquo;.&lt;/p&gt;
 
@@ -7621,22 +7719,22 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 &lt;p&gt;That I&amp;rsquo;ve been introduced to &lt;a href=&#34;https://eduoptimists.blogspot.com&#34;&gt;Sara&amp;rsquo;s blog&lt;/a&gt; may be viewed as an early positive outcome of the process.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Rob Tibshirani and Andy Clark named to NAS</title>
       <link>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/05/03/tibshirani-named-to-nas/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www-stat.stanford.edu/~tibs/&#34;&gt;Rob Tibshirani&lt;/a&gt; and &lt;a href=&#34;http://mbg.cornell.edu/faculty-staff/faculty/clark.cfm&#34;&gt;Andy Clark&lt;/a&gt; are now &lt;a href=&#34;http://www.nasonline.org/news-and-multimedia/news/2012_05_01_NAS_Election.html&#34;&gt;members of the National Academy of Sciences&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Positive comments on peer review</title>
       <link>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</link>
       <pubDate>Fri, 27 Apr 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/04/27/positive-comments-on-peer-review/</guid>
       <description>&lt;p&gt;We all complain about peer review, particularly when &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf&#34;&gt;our best work&lt;/a&gt; is rejected by every journal from Nature Genetics down to &lt;a href=&#34;https://www.biomedcentral.com/bmcgenet&#34;&gt;that journal that will publish anything&lt;/a&gt;, so that it finally appears in &lt;a href=&#34;https://projecteuclid.org/euclid.lnms/1215091126&#34;&gt;a volume&lt;/a&gt; to honor &lt;a href=&#34;https://www.stat.berkeley.edu/~terry/&#34;&gt;some guy&lt;/a&gt; that &lt;a href=&#34;https://kbroman.files.wordpress.com/2012/04/terry2.jpg&#34;&gt;only he will read&lt;/a&gt;.&lt;/p&gt;
 
@@ -7647,12 +7745,12 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 &lt;p&gt;Complaints about the peer review process are not unlike a common complaint about statisticians: that we are a barrier to scientists publishing what they know to be true.  That is sometimes the case, but at other times, both reviewers and statisticians can help you to avoid embarrassing yourself.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Microarrays suck</title>
       <link>https://kbroman.org/blog/2012/04/25/microarrays-suck/</link>
       <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/04/25/microarrays-suck/</guid>
       <description>
 
@@ -7721,12 +7819,12 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>ENAR 2012</title>
       <link>https://kbroman.org/blog/2012/04/18/enar-2012/</link>
       <pubDate>Wed, 18 Apr 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/04/18/enar-2012/</guid>
       <description>
 
@@ -7767,12 +7865,12 @@ Sperm donors are no more likely to carry genetic diseases than anybody else, but
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>as.character() for rownames()</title>
       <link>https://kbroman.org/blog/2012/03/22/as-character-for-rownames/</link>
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/03/22/as-character-for-rownames/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330&#34;&gt;Rainer pointed out&lt;/a&gt;, in response to my post, &lt;a href=&#34;https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/&#34;&gt;Row names in data frames: Beware of 1:nrow&lt;/a&gt;, that if I&amp;rsquo;d used &lt;code&gt;rownames(x) &amp;lt;- as.character(1:3)&lt;/code&gt; rather than &lt;code&gt;rownames(x) &amp;lt;- 1:3&lt;/code&gt;, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.&lt;/p&gt;
 
@@ -7826,12 +7924,12 @@ F  3
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Row names in data frames: beware of 1:nrow</title>
       <link>https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</link>
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
       <description>&lt;p&gt;I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, &lt;code&gt;x&lt;/code&gt;, as &lt;code&gt;1:nrow(x)&lt;/code&gt;, R will act as if you&amp;rsquo;d not assigned row names, and the names might get changed when you do &lt;code&gt;rbind&lt;/code&gt;.&lt;/p&gt;
 
@@ -7866,12 +7964,12 @@ F  6
 &lt;p&gt;I often use row names as identifiers, so it seems I must be cautious to use something other than row numbers.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>UW-Madison news item about Elsevier boycott</title>
       <link>https://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</link>
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s &lt;a href=&#34;http://www.news.wisc.edu/20348&#34;&gt;an article&lt;/a&gt; in the UW-Madison newsletter about the Elsevier boycott.  I&amp;rsquo;m quoted as follows:&lt;/p&gt;
 
@@ -7884,12 +7982,12 @@ At this point, Broman says scientists are in control. Although Elsevier is a gia
 &lt;/blockquote&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Collaborative Cross papers</title>
       <link>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</link>
       <pubDate>Thu, 16 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/16/collaborative-cross-papers/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;http://www.genetics.org/site/misc/MouseGeneticResources.xhtml&#34;&gt;batch of 15 papers&lt;/a&gt; on the mouse Collaborative Cross appeared in &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and &lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt; today, including two of my own:&lt;/p&gt;
 
@@ -7900,12 +7998,12 @@ At this point, Broman says scientists are in control. Although Elsevier is a gia
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>I just refused an Elsevier review</title>
       <link>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>&lt;p&gt;This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting.  AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://thecostofknowledge.com&lt;/a&gt; to not publish or review for Elsevier journals.  If only AJHG were still with the University of Chicago Press&amp;hellip;&lt;/p&gt;
 
@@ -7933,12 +8031,12 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
 &lt;p&gt;I think the most important thing for me to do is to work to get &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; to become open-access, or at least encourage  discussion along those lines at the &lt;a href=&#34;http://www.genetics-gsa.org&#34;&gt;Genetics Society of America&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>James Crow</title>
       <link>https://kbroman.org/blog/2012/02/06/james-crow/</link>
       <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/06/james-crow/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/James_F._Crow&#34;&gt;James Crow&lt;/a&gt; died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I&amp;rsquo;m sad to think that I won&amp;rsquo;t talk to him again. Jim was &lt;em&gt;the nicest person I&amp;rsquo;ve met&lt;/em&gt; . It&amp;rsquo;s been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.
 &lt;!-- more --&gt;&lt;/p&gt;
@@ -7969,24 +8067,24 @@ I&#39;m having second thoughts (especially in that refusing a review for this re
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>I hate reading other people&#39;s code</title>
       <link>https://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/03/i-hate-reading-other-peoples-code/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From &lt;a href=&#34;https://abstrusegoose.com/432&#34;&gt;Abstruse Goose&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>More on open access</title>
       <link>https://kbroman.org/blog/2012/02/03/more-on-open-access/</link>
       <pubDate>Fri, 03 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/03/more-on-open-access/</guid>
       <description>&lt;p&gt;I am quite persuaded by &lt;a href=&#34;http://www.michaeleisen.org/blog/?p=890&#34;&gt;Michael Eisen&amp;rsquo;s recent comments on open access&lt;/a&gt;:&lt;/p&gt;
 
@@ -8012,12 +8110,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;/blockquote&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Paying for scholarly publications</title>
       <link>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</link>
       <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>
 
@@ -8139,12 +8237,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Elsevier boycott</title>
       <link>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/02/01/elsevier-boycott/</guid>
       <description>&lt;p&gt;I expect you&amp;rsquo;ve already heard about the &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;Elsevier boycott&lt;/a&gt;, started based on comments from &lt;a href=&#34;http://gowers.wordpress.com/2012/01/21/elsevier-my-part-in-its-downfall/&#34;&gt;Timothy Gowers&lt;/a&gt;.  While he focused on his own discipline (mathematics), the boycott site now has people broken down by subject.  On 1 Feb, there were 2700+ signatories, including 600+ mathematicians (but only 15 statisticians).  There have been a couple of articles about this in the &lt;a href=&#34;https://chronicle.com/&#34;&gt;Chronicle of Higher Education&lt;/a&gt;: &lt;a href=&#34;https://chronicle.com/blogs/wiredcampus/elsevier-publishing-boycott-gathers-steam-among-academics/35216&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://chronicle.com/article/As-Journal-Boycott-Grows/130600/?sid=wc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -8202,12 +8300,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;So, again, I did okay.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Muted startup</title>
       <link>https://kbroman.org/blog/2012/01/26/muted-startup/</link>
       <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2012/01/26/muted-startup/</guid>
       <description>&lt;p&gt;It annoys me when my computer (or, even more, someone else&amp;rsquo;s computer) makes a gratuitous noise upon startup.&lt;/p&gt;
 
@@ -8224,36 +8322,36 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>12 deg F, but still good biking</title>
       <link>https://kbroman.org/blog/2011/12/23/12-deg-f-but-still-good-biking/</link>
       <pubDate>Fri, 23 Dec 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/12/23/12-deg-f-but-still-good-biking/</guid>
       <description>&lt;p&gt;My last day biking to work for a while&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2011/12/20111223-081837.jpg&#34; alt=&#34;20111223-081837.jpg&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Here&#39;s what I need</title>
       <link>https://kbroman.org/blog/2011/12/13/heres-what-i-need/</link>
       <pubDate>Tue, 13 Dec 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/12/13/heres-what-i-need/</guid>
       <description>&lt;p&gt;for riding in Wisconsin in the winter, the Surly Moonlander:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2011/12/moonlander.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Revised bicycle laws in Wisconsin</title>
       <link>https://kbroman.org/blog/2011/12/01/revised-bicycle-laws-in-wisconsin/</link>
       <pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/12/01/revised-bicycle-laws-in-wisconsin/</guid>
       <description>&lt;p&gt;A newsletter from the &lt;a href=&#34;https://madison.bcycle.com/&#34;&gt;Madison B-Cycle&lt;/a&gt; folks pointed out that the biking laws in Wisconsin have been &lt;a href=&#34;https://docs.legis.wisconsin.gov/2011/related/proposals/ab265&#34;&gt;revised somewhat&lt;/a&gt;, in interesting ways (at least to me).&lt;/p&gt;
 
@@ -8267,24 +8365,24 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Statistics comic</title>
       <link>https://kbroman.org/blog/2011/11/23/statistics-comic/</link>
       <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/11/23/statistics-comic/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.smbc-comics.com&#34;&gt;Saturday Morning Breakfast Cereal&lt;/a&gt; has &lt;a href=&#34;https://www.smbc-comics.com&#34;&gt;a rather accurate representation of statisticians&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://www.smbc-comics.com/comics/20111123.gif&#34; alt=&#34;Saturday morning breakfast cereal comic&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Sports statistics</title>
       <link>https://kbroman.org/blog/2011/11/07/sports-statistics/</link>
       <pubDate>Mon, 07 Nov 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/11/07/sports-statistics/</guid>
       <description>&lt;p&gt;There was &lt;a href=&#34;http://www.nytimes.com/2011/11/06/education/edlife/at-moneyball-u-what-are-the-odds.html&#34;&gt;an article&lt;/a&gt; in the New York Times on Sunday about teaching statistics through sports examples.&lt;/p&gt;
 
@@ -8295,12 +8393,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;But statistics about sports?  Yawn.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Halloween 2011 count</title>
       <link>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</link>
       <pubDate>Mon, 31 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/31/halloween-2011-count/</guid>
       <description>&lt;p&gt;We don&amp;rsquo;t get many kids seeking candy at our house. I&amp;rsquo;m not sure if there just aren&amp;rsquo;t many kids in the neighborhood, or if it&amp;rsquo;s our location (next to the pond, with a big gap before the next house).&lt;/p&gt;
 
@@ -8333,24 +8431,24 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: The code I used for the figure is &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/blog/halloween2011.R&#34;&gt;here&lt;/a&gt;.  It&amp;rsquo;s old-fashioned and inefficient, but it works.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Caffeine</title>
       <link>https://kbroman.org/blog/2011/10/27/caffeine/</link>
       <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/27/caffeine/</guid>
       <description>&lt;p&gt;A cute and useful menu bar application for Macs: &lt;a href=&#34;http://lightheadsw.com/caffeine/&#34;&gt;Caffeine&lt;/a&gt;, available in the &lt;a href=&#34;http://itunes.apple.com/us/app/caffeine/id411246225&#34;&gt;App store&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you click the little coffee cup in your menu bar (so that it&amp;rsquo;s full), it will prevent your Mac from displaying its screen saver or dimming its screen.  This is especially useful when you&amp;rsquo;re giving a talk.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>SUV-driving bastards</title>
       <link>https://kbroman.org/blog/2011/10/25/suv-driving-bastards/</link>
       <pubDate>Tue, 25 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/25/suv-driving-bastards/</guid>
       <description>&lt;p&gt;On my bike ride to work, in the rain, I was stopped at &lt;a href=&#34;http://g.co/maps/dpgfr&#34;&gt;stop light&lt;/a&gt;, in the bike lane, when a big black SUV pulled up behind me and honked, wanting to turn right.  Three seconds later the light turned green.  As the guy turned behind me, he yelled out his window, &amp;ldquo;Get the hell out of the way!&amp;rdquo;&lt;/p&gt;
 
@@ -8359,12 +8457,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Madison can be great for biking, but it is not without assholes, though I suppose that is &lt;a href=&#34;http://walker.wi.gov/&#34;&gt;obvious&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Tips on grant writing</title>
       <link>https://kbroman.org/blog/2011/10/21/grant-writing/</link>
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/21/grant-writing/</guid>
       <description>
 
@@ -8423,12 +8521,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;If the reviewers are annoyed, confused, or sense sloppiness, they won&amp;rsquo;t write a good review (and some of this may not be conscious on their part).&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Fund people not projects?</title>
       <link>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/19/fund-people-not-projects/</guid>
       <description>
 
@@ -8507,12 +8605,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;The biggest problem is the low level of current funding.  When only about 10% of proposals are funded, chance seems to play a larger role in what gets funded, and many more grants are submitted, which gives reviewers much more work.  We need to get it back up to 20% for the review process to be healthy again.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Parachutes</title>
       <link>https://kbroman.org/blog/2011/10/19/parachutes/</link>
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/19/parachutes/</guid>
       <description>&lt;p&gt;I went to a great talk today by &lt;a href=&#34;http://humangenome.duke.edu/people/david-goldstein&#34;&gt;David Goldstein&lt;/a&gt;, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: &lt;a href=&#34;http://www.bmj.com/content/327/7429/1459.full.pdf&#34;&gt;Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials&lt;/a&gt;. The main conclusion:&lt;/p&gt;
 
@@ -8521,44 +8619,44 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Make sure to read the statement regarding the authors&amp;rsquo; contributions.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>New title, new look</title>
       <link>https://kbroman.org/blog/2011/10/15/new-title-new-look/</link>
       <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/15/new-title-new-look/</guid>
       <description>&lt;p&gt;My old title was too verbose, and the old &amp;ldquo;theme&amp;rdquo; was too messy (and the font too small).  Hopefully the changes are satisfactory.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Designer of C died</title>
       <link>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/14/designer-of-c-died/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://cm.bell-labs.com/who/dmr/&#34;&gt;Dennis Ritchie&lt;/a&gt;, the designer of C and co-developer of Unix, &lt;a href=&#34;http://tinyurl.com/4y38mkt&#34;&gt;died on Wednesday&lt;/a&gt;.  He arguably had more impact on my life than &lt;a href=&#34;http://tinyurl.com/3fj8llw&#34;&gt;Steve Jobs&lt;/a&gt; did.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Resizing windows in Lion</title>
       <link>https://kbroman.org/blog/2011/10/14/resizing-windows-in-lion/</link>
       <pubDate>Fri, 14 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/14/resizing-windows-in-lion/</guid>
       <description>&lt;p&gt;I upgraded my Macs to &lt;a href=&#34;http://www.apple.com/lion&#34;&gt;Lion&lt;/a&gt;; my favorite improvement is that we can now resize windows from any edge or corner.&lt;/p&gt;
 
 &lt;p&gt;(Previously, you could only change the size from the lower-right corner, so I often found myself resizing and moving and then resizing and moving and then&amp;hellip;.  Why did it take so long for them to do it properly?)&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Animal research</title>
       <link>https://kbroman.org/blog/2011/10/12/animal-research/</link>
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/12/animal-research/</guid>
       <description>&lt;p&gt;Last night, I was an &amp;ldquo;expert&amp;rdquo; on a panel at a &lt;a href=&#34;http://tinyurl.com/45y2jny&#34;&gt;public discussion on animal research&lt;/a&gt;.  I was really nervous, but I ended up not saying much and learning quite a lot.&lt;/p&gt;
 
@@ -8581,24 +8679,24 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Someone did come up to me afterwards to ask me to expand on my point larger collaborative experiments.  That made me happy.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Terry on communication</title>
       <link>https://kbroman.org/blog/2011/10/03/terry-on-communication/</link>
       <pubDate>Mon, 03 Oct 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/10/03/terry-on-communication/</guid>
       <description>&lt;p&gt;Relevant to &lt;a href=&#34;https://kbroman.org/blog/2011/09/29/seminars-bad-and-good/&#34;&gt;my recent comments on seminars&lt;/a&gt;, Terry Speed&amp;rsquo;s &lt;a href=&#34;http://bulletin.imstat.org/2011/09/terence%e2%80%99s-stuff-speaking-reading-writing/&#34;&gt;latest commentary&lt;/a&gt; in the IMS Bulletin focuses on communication (talks and papers).&lt;/p&gt;
 
 &lt;p&gt;He says: &lt;em&gt;read others&amp;rsquo; work&lt;/em&gt; (which I would expand to say, &lt;em&gt;pay attention&lt;/em&gt;) and &lt;em&gt;practice&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Poster flop</title>
       <link>https://kbroman.org/blog/2011/09/30/poster-flop/</link>
       <pubDate>Fri, 30 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/30/poster-flop/</guid>
       <description>&lt;p&gt;I gave &lt;a href=&#34;https://kbroman.org/blog/2011/09/16/my-first-fancy-poster/&#34;&gt;my first fancy poster&lt;/a&gt; yesterday, at MathBio3.&lt;/p&gt;
 
@@ -8637,12 +8735,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;They did have &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;30&lt;/sub&gt; poster presenters give a 1 minute introduction to their poster, right before the session.  That worked very well (for those 10 people).&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Seminars, bad and good</title>
       <link>https://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</link>
       <pubDate>Thu, 29 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/29/seminars-bad-and-good/</guid>
       <description>
 
@@ -8711,12 +8809,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Perhaps, though, the questions are lame only because we&amp;rsquo;re all tired and want to go home.  After a refreshing 25 min talk, maybe we&amp;rsquo;ll be keen to delve deeper in an unstructured way.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Meetings vs work</title>
       <link>https://kbroman.org/blog/2011/09/28/meetings-vs-work/</link>
       <pubDate>Wed, 28 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/28/meetings-vs-work/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://rafalab.jhsph.edu&#34;&gt;Rafael Irizarry&lt;/a&gt; wrote about &lt;a href=&#34;http://simplystatistics.tumblr.com/post/10402321009/meetings&#34;&gt;how meetings at work get in the way of actual work&lt;/a&gt;.&lt;/p&gt;
 
@@ -8749,12 +8847,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;One last point: I&amp;rsquo;m surprised that Rafa hadn&amp;rsquo;t mentioned his idea of having all meetings done with everyone standing (rather than sitting), to ensure that meetings are kept as short as possible (don&amp;rsquo;t let anyone relax).  You might extend that idea further and insist on some sort of stress position.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Ghastly R code</title>
       <link>https://kbroman.org/blog/2011/09/27/ghastly-r-code/</link>
       <pubDate>Tue, 27 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/27/ghastly-r-code/</guid>
       <description>&lt;p&gt;My R package, &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt;, contains about 33k lines of R code (and 21k lines of C code).  Some of it is quite good; &lt;a href=&#34;https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/&#34;&gt;some of it is terrible&lt;/a&gt;.  Here&amp;rsquo;s another example of the terrible.&lt;/p&gt;
 
@@ -8765,12 +8863,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Yuck.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Gamified</title>
       <link>https://kbroman.org/blog/2011/09/26/gamified/</link>
       <pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/26/gamified/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://geospaced.blogspot.com/&#34;&gt;Barry Rowlingson&lt;/a&gt; gave an interesting talk at &lt;a href=&#34;https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/&#34;&gt;UseR 2011&lt;/a&gt;, &amp;ldquo;Why R-help must die!&amp;rdquo; He suggested the Q-and-A type sites &lt;a href=&#34;https://stackoverflow.com&#34;&gt;Stack Overflow&lt;/a&gt; (on programming) and &lt;a href=&#34;https://stats.stackexchange.com&#34;&gt;Cross Validated&lt;/a&gt; (on statistics), both part of &lt;a href=&#34;https://stackexchange.com&#34;&gt;Stack Exchange&lt;/a&gt;.&lt;/p&gt;
 
@@ -8781,12 +8879,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;But currently &lt;a href=&#34;https://stackoverflow.com/questions/tagged/r&#34;&gt;the R questions at StackOverflow&lt;/a&gt; are rather advanced, and so I&amp;rsquo;ve found the general statistics site, &lt;a href=&#34;https://stats.stackexchange.com&#34;&gt;Cross Validated&lt;/a&gt;, a bit more fun (that is, I&amp;rsquo;m more able to answer the questions).&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Infographic</title>
       <link>https://kbroman.org/blog/2011/09/22/infographics/</link>
       <pubDate>Thu, 22 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/22/infographics/</guid>
       <description>&lt;p&gt;I saw this great infographic at Andrew Gelman&amp;rsquo;s blog:&lt;/p&gt;
 
@@ -8801,12 +8899,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2011/09/amstatnews.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Lager yeast</title>
       <link>https://kbroman.org/blog/2011/09/19/lager-yeast/</link>
       <pubDate>Mon, 19 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/19/lager-yeast/</guid>
       <description>&lt;p&gt;Last week, I attended an excellent seminar by &lt;a href=&#34;http://hittinger.genetics.wisc.edu/&#34;&gt;Chris Hittinger&lt;/a&gt; on the identification and evolution of &lt;a href=&#34;http://hittinger.genetics.wisc.edu/#Aug22_2011&#34;&gt;lager yeast&lt;/a&gt; (see &lt;a href=&#34;http://www.pnas.org/content/early/2011/08/17/1105430108.full.pdf+html&#34;&gt;the paper&lt;/a&gt;), part of &lt;a href=&#34;http://www.evolution.wisc.edu/node/30&#34;&gt;my favorite seminar series&lt;/a&gt;, on &lt;a href=&#34;http://www.evolution.wisc.edu&#34;&gt;evolution&lt;/a&gt;.&lt;/p&gt;
 
@@ -8823,12 +8921,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Chris mentioned that he prefers lager, while his former postdoc advisor, &lt;a href=&#34;http://www.genetics.wustl.edu/mjlab/&#34;&gt;Mark Johnston&lt;/a&gt;, prefers ales, and that they&amp;rsquo;ve had more debate on that point than on the science. I agree with Mark.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>My first fancy poster</title>
       <link>https://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</link>
       <pubDate>Fri, 16 Sep 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/09/16/my-first-fancy-poster/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m preparing my first large-format poster (for the MathBio3 conference, here in Madison in two weeks). Previously, my posters had just been on a series of pieces of regular paper. (Consider, for example, &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/posters/gaw11.pdf&#34;&gt;this poster&lt;/a&gt; from September, 1998.)  But no one does that anymore, and I don&amp;rsquo;t want to stand out as being archaic.  That is, I want to pretend to be modern.&lt;/p&gt;
 
@@ -8847,12 +8945,12 @@ The journal is underwritten by a generous grant from the Considine Family Founda
 &lt;p&gt;Maybe I should save the \$50 or \$100 and post the black-and-white, pasted-together version?&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Quick labels within figures</title>
       <link>https://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</link>
       <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/08/26/quick-labels-within-figures-done-right/</guid>
       <description>&lt;p&gt;One of the coolest R packages I heard about at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt;: &lt;a href=&#34;http://members.cbio.mines-paristech.fr/~thocking/&#34;&gt;Toby Dylan Hocking&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://directlabels.r-forge.r-project.org/&#34;&gt;directlabels&lt;/a&gt; package for putting labels directly next to the relevant curves or point clouds in a figure.&lt;/p&gt;
 
@@ -8905,12 +9003,12 @@ direct.label(p)
 &lt;img src=&#34;https://kbroman.files.wordpress.com/2011/08/phyloqtl.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>useR! Conference 2011 highlights</title>
       <link>https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</link>
       <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/08/20/user-conference-2011-highlights/</guid>
       <description>
 
@@ -9081,12 +9179,12 @@ direct.label(p)
 &lt;/ul&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Introduction</title>
       <link>https://kbroman.org/blog/2011/08/17/introduction/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/08/17/introduction/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m at the &lt;a href=&#34;http://www.warwick.ac.uk/statsdept/user-2011/&#34;&gt;useR! Conference&lt;/a&gt; in Coventry, UK, this week. It&amp;rsquo;s been every bit as inspiring, interesting and useful as I&amp;rsquo;d hoped.&lt;/p&gt;
 
@@ -9105,12 +9203,12 @@ direct.label(p)
 &lt;p&gt;Since I generally still feel like an amateur in all of these matters (and I like to say: &amp;ldquo;You know you&amp;rsquo;re an expert when everyone else&amp;rsquo;s work looks just as crappy as your own.&amp;rdquo;), I won&amp;rsquo;t worry too much about getting everything right.  I certainly will want to avoid comparing myself to the people mentioned above.&lt;/p&gt;
 </description>
     </item>
-    
+
     <item>
       <title>The stupidest R code ever</title>
       <link>https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</link>
       <pubDate>Wed, 17 Aug 2011 00:00:00 +0000</pubDate>
-      
+
       <guid>https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/</guid>
       <description>&lt;p&gt;Let me tell you about my stupidest R mistake.&lt;/p&gt;
 
@@ -9149,6 +9247,6 @@ n.phe &amp;lt;- min(which(data[2,] != &amp;quot;&amp;quot;))-1
 &lt;p&gt;Open source means everyone can see my stupid mistakes.  Version control means everyone can see every stupid mistake I&amp;rsquo;ve ever made.&lt;/p&gt;
 </description>
     </item>
-    
+
   </channel>
 </rss>

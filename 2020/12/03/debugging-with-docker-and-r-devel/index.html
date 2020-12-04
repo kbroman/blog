@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>debugging with docker and r-devel - the stupidest thing...</title>
+<meta property="og:title" content="debugging with docker and r-devel - the stupidest thing...">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://kbroman.org/blog/" class="nav-logo">
+    <img src="https://kbroman.org/blog/images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="https://kbroman.org/blog/" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+
+    <li><a href="https://kbroman.org/blog/about">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+
+    <li><a href="https://twitter.com/kwbroman">
+            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            </a></li>
+
+    <li><a href="https://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+
+    <span class="article-duration">3 min read</span>
+
+
+    <h1 class="article-title">debugging with docker and r-devel</h1>
+
+
+    <span class="article-date">2020-12-03</span>
+
+
+    <div class="article-content">
+      <p>If you&rsquo;ve not heard, there&rsquo;s a big <a href="https://ropensci.org/technotes/2020/11/19/moving-away-travis/">move away from Travis to GitHub
+Actions</a>
+for continuous testing of R packages. I&rsquo;m so glad for the
+<a href="https://usethis.r-lib.org/reference/use_github_action.html">infrastructure to
+help</a>, but
+it&rsquo;s a bit of work to figure it out.</p>
+
+<p>But that&rsquo;s not what I&rsquo;m talking about today. Today I want to talk
+about using <a href="https://www.docker.com/">docker</a> to debug an R package
+that is throwing an error in the development version of R. This came
+up because with the new GitHub Actions infrastructure, I can now test
+my R packages on multiple OSs and with multiple versions of R, and
+today <a href="https://rqtl.org">R/qtl</a> was shown to <a href="https://github.com/kbroman/qtl/runs/1495378157?check_suite_focus=true">throw an error in
+R-devel</a>.</p>
+
+<p>If you look at the <a href="https://github.com/kbroman/qtl/actions">test history</a>, you&rsquo;ll see I was mostly screwing
+around trying to get LaTeX installed and then trying to get all of the
+needed LaTeX packages for a 10-year-old Sweave-based vignette.
+And I got through that only to find that there was a different actual
+R problem that needed to be fixed.</p>
+
+<p>Not wanting to install the development version of R on my machine, I
+pondered cloud installations, and then thought, &ldquo;Hmm, this seems like
+a good application for docker. I just need to find a docker container
+with R-devel, install R/qtl, and then try it out.&rdquo; And well, it was
+pretty simple.</p>
+
+<ol>
+<li><p><em>Install Docker</em>. See the <a href="https://docs.docker.com/get-docker/">official
+instructions</a>.
+I&rsquo;m working on a Ubuntu laptop, so I did:</p>
+
+<pre><code>sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&quot;
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+</code></pre></li>
+
+<li><p><em>Create a <code>Dockerfile</code></em> which builds off <a href="https://hub.docker.com/r/rocker/r-devel/">rocker/r-devel</a>
+and installs the package to be tested.</p>
+
+<pre><code>FROM rocker/r-devel
+RUN R -e &quot;install.packages('qtl')&quot;
+</code></pre></li>
+
+<li><p><em>Build the docker image</em>.</p>
+
+<pre><code>sudo docker build -t rdevel-qtl .
+</code></pre></li>
+
+<li><p><em>Fire up that image in a container</em>.</p>
+
+<pre><code>sudo docker run -it rdevel-qtl bash
+</code></pre></li>
+
+<li><p><em>Run R and load the package</em>.</p>
+
+<p>The above puts you into a bash shell within the container. Type
+<code>RD</code> to fire up the devel version of R, and then load your package
+and mess about. I quickly saw <a href="https://bit.ly/3qujHRV">where I went wrong</a>.</p></li>
+
+<li><p><em>Fix the problem and test it</em>.</p>
+
+<p>I <em>should</em> add a formal test of this bug, and I <em>should also</em> look
+for all other possible instances of this problem. (I blanche
+to think of them.)</p>
+
+<p>But for now I just plunged in and fixed it, pushed the change to
+GitHub, and then tested it out in my container by installing the
+repaired version with the <a href="https://remotes.r-lib.org">remotes</a>
+package.</p>
+
+<pre><code>install.packages(&quot;remotes&quot;)
+remotes::install_github(&quot;kbroman/qtl&quot;)
+</code></pre></li>
+</ol>
+
+<p>There&rsquo;s a lot more that one can do with Docker, but this was a pretty
+quick and satisfying experience poking around in the development
+version of R to fix a bug in my <a href="https://doi.org/10.5334/jors.at">ancient and
+creaky</a> package.</p>
+
+    </div>
+  </article>
+
+
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="https://kbroman.org/blog/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+  </body>
+</html>
