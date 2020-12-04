@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in Statistics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>data analysis principles</title>
       <link>/2019/08/15/data-analysis-principles/</link>
@@ -48,7 +44,7 @@
       <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
 First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
-Sunday  (2:00 - 3:50) Open source statistical software for data science</description>
+Sunday   (2:00 - 3:50) Open source statistical software for data science</description>
     </item>
     
     <item>
@@ -59,7 +55,7 @@ Sunday  (2:00 - 3:50) Open source statistical software for data science</descrip
       <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
-When physicists do mathematics, they don&#39;t say they&#39;re doing &#34;number science&#34;. They&#39;re doing math. If you&#39;re analyzing data, you&#39;re doing statistics.</description>
+If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.</description>
     </item>
     
     <item>
@@ -89,8 +85,8 @@ I recently had a paper accepted at G3, concerning a huge set of sample mix-ups i
       
       <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>What do I want in a conference website? Not this.
- I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
- If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
+  I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
+  If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
     </item>
     
     <item>
@@ -100,7 +96,8 @@ I recently had a paper accepted at G3, concerning a huge set of sample mix-ups i
       
       <guid>/2015/08/03/memories-of-past-jsms/</guid>
       <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
-JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
+JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
+  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
@@ -144,7 +141,8 @@ Code on github.</description>
       <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>Last week, Mona Chalabi wrote an interesting post on car crash statistics by state, at fivethirtyeight.com.
 I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:
-I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better. There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
+I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better.
+There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
     </item>
     
     <item>
@@ -163,7 +161,7 @@ In my comments below, I give short shrift to some speakers (largely by not havin
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/05/01/reform-academic-statistics/</guid>
-      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&#39; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
@@ -205,7 +203,7 @@ But first: No discussion of academic web pages is complete without referring to 
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>/2013/08/20/electronic-lab-notebook/</guid>
-      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
+      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;rdquo;
 I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
 As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
     </item>
@@ -271,7 +269,10 @@ I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I 
       
       <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
- To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
+But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper. The PDF says:
+Methods are important.
+  They shouldn&amp;rsquo;t be separated from the main text.
+  They shouldn&amp;rsquo;t be placed after the results (as so many journals, including PLoS, do).</description>
     </item>
     
     <item>
@@ -315,7 +316,7 @@ The hardest part was figuring out the right data structures. A pixel here is lin
       
       <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
-I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
+I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;quot;)
 Let me tell you about the high- and lowlights, for me.</description>
     </item>
     
@@ -326,7 +327,8 @@ Let me tell you about the high- and lowlights, for me.</description>
       
       <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
-We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
+We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.
+I gave a talk on interactive graphs (with the title above) at Johns Hopkins last fall, and then a related talk at ENAR earlier this week, and I have a few thoughts to add here.</description>
     </item>
     
   </channel>

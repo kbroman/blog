@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>as.character() for rownames() - the stupidest thing...</title>
 <meta property="og:title" content="as.character() for rownames() - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,56 +87,48 @@
 
     <div class="article-content">
       <p><a href="https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/#comment-330">Rainer pointed out</a>, in response to my post, <a href="https://kbroman.org/blog/2012/03/21/row-names-in-data-frames-beware-of-1nrow/">Row names in data frames: Beware of 1:nrow</a>, that if I&rsquo;d used <code>rownames(x) &lt;- as.character(1:3)</code> rather than <code>rownames(x) &lt;- 1:3</code>, I wouldn&rsquo;t have had the problem I&rsquo;d seen.</p>
-
-<pre><code class="language-r">&gt; x &lt;- z &lt;- data.frame(id=1:3)
-&gt; y &lt;- data.frame(id=4:6)
-&gt; rownames(x) &lt;- 1:3
-&gt; rownames(y) &lt;- LETTERS[4:6]
-&gt; rownames(z) &lt;- as.character(1:3)
-&gt; rbind(y,x)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">&lt;-</span> z <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>)
+<span style="color:#f92672">&gt;</span> y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>)
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(x) <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(y) <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">LETTERS</span>[4<span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>]
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(z) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.character</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>)
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(y,x)
   id
-D  1
-E  2
-F  3
-4  1
-5  2
-6  3
-&gt; rbind(y,z)
+D  <span style="color:#ae81ff">1</span>
+E  <span style="color:#ae81ff">2</span>
+F  <span style="color:#ae81ff">3</span>
+<span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">2</span>
+<span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">3</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(y,z)
   id
-D  1
-E  2
-F  3
-1  1
-2  2
-3  3
-</code></pre>
-
-<p>If you type <code>rownames(x)</code> you see the same result as <code>rownames(z)</code>, and <code>is.character(rownames(x))</code> and <code>is.character(rownames(z))</code> both return TRUE, but if you look at the <code>&quot;row.names&quot;</code> attribute directly, you see they are different.</p>
-
-<pre><code class="language-r">&gt; rownames(x)
-[1] &quot;1&quot; &quot;2&quot; &quot;3&quot;
-&gt; rownames(z)
-[1] &quot;1&quot; &quot;2&quot; &quot;3&quot;
-&gt; is.character(rownames(x))
-[1] TRUE
-&gt; is.character(rownames(z))
-[1] TRUE
-&gt; attr(x, &quot;row.names&quot;)
-[1] 1 2 3
-&gt; attr(z, &quot;row.names&quot;)
-[1] &quot;1&quot; &quot;2&quot; &quot;3&quot;
-</code></pre>
-
-<p>But why is <code>1:3</code> treated so differently from <code>2:4</code>?</p>
-
-<pre><code class="language-r">&gt; w &lt;- data.frame(id=1:3)
-&gt; rownames(w) &lt;- 2:4
-&gt; attr(w, &quot;row.names&quot;)
-[1] 2 3 4
-&gt; rownames(rbind(y,w))
-[1] &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot;
-</code></pre>
-
+D  <span style="color:#ae81ff">1</span>
+E  <span style="color:#ae81ff">2</span>
+F  <span style="color:#ae81ff">3</span>
+<span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">2</span>
+<span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">3</span>
+</code></pre></div><p>If you type <code>rownames(x)</code> you see the same result as <code>rownames(z)</code>, and <code>is.character(rownames(x))</code> and <code>is.character(rownames(z))</code> both return TRUE, but if you look at the <code>&quot;row.names&quot;</code> attribute directly, you see they are different.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(x)
+[1] <span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#e6db74">&#34;3&#34;</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(z)
+[1] <span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#e6db74">&#34;3&#34;</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">is.character</span>(<span style="color:#a6e22e">rownames</span>(x))
+[1] <span style="color:#66d9ef">TRUE</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">is.character</span>(<span style="color:#a6e22e">rownames</span>(z))
+[1] <span style="color:#66d9ef">TRUE</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">attr</span>(x, <span style="color:#e6db74">&#34;row.names&#34;</span>)
+[1] <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">attr</span>(z, <span style="color:#e6db74">&#34;row.names&#34;</span>)
+[1] <span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#e6db74">&#34;3&#34;</span>
+</code></pre></div><p>But why is <code>1:3</code> treated so differently from <code>2:4</code>?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">&gt;</span> w <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>)
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(w) <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">attr</span>(w, <span style="color:#e6db74">&#34;row.names&#34;</span>)
+[1] <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(<span style="color:#a6e22e">rbind</span>(y,w))
+[1] <span style="color:#e6db74">&#34;D&#34;</span> <span style="color:#e6db74">&#34;E&#34;</span> <span style="color:#e6db74">&#34;F&#34;</span> <span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#e6db74">&#34;3&#34;</span> <span style="color:#e6db74">&#34;4&#34;</span>
+</code></pre></div>
     </div>
   </article>
 
@@ -146,7 +140,7 @@ F  3
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -156,12 +150,12 @@ F  3
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

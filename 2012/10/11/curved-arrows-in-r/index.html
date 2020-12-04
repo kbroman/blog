@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Curved arrows in R - the stupidest thing...</title>
 <meta property="og:title" content="Curved arrows in R - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,73 +87,66 @@
 
     <div class="article-content">
       <p>I briefly investigated how to draw curved arrows in R. Here&rsquo;s a small piece of the figure that I ultimately created:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png" style="max-width:300px;"></p>
-
+<!-- raw HTML omitted -->
 <p>A google search for &ldquo;curved arrows in R&rdquo; revealed three options:</p>
-
 <ul>
-<li><p><code>curvedarrow</code> in the <a href="https://cran.r-project.org/package=diagram">diagram</a> package</p></li>
-
-<li><p>The internal function <code>igraph.Arrows</code> within the <a href="https://cran.r-project.org/package=igraph">igraph</a> package (mentioned by Gabor Csardi <a href="http://r.789695.n4.nabble.com/Curved-arrows-td886056.html">in R help</a>)</p></li>
-
-<li><p>Using <code>xspline</code> for the shaft and adding the head &ldquo;by hand&rdquo; (<a href="http://r.789695.n4.nabble.com/Curved-arrows-tt886056.html#a886057">mentioned</a> by Greg Snow)</p></li>
+<li>
+<p><code>curvedarrow</code> in the <a href="https://cran.r-project.org/package=diagram">diagram</a> package</p>
+</li>
+<li>
+<p>The internal function <code>igraph.Arrows</code> within the <a href="https://cran.r-project.org/package=igraph">igraph</a> package (mentioned by Gabor Csardi <a href="http://r.789695.n4.nabble.com/Curved-arrows-td886056.html">in R help</a>)</p>
+</li>
+<li>
+<p>Using <code>xspline</code> for the shaft and adding the head &ldquo;by hand&rdquo; (<a href="http://r.789695.n4.nabble.com/Curved-arrows-tt886056.html#a886057">mentioned</a> by Greg Snow)</p>
+</li>
 </ul>
-
 <p>I wasn&rsquo;t too happy with how the arrow heads looked using the diagram package, and I didn&rsquo;t want to have to fiddle around with <code>xspline</code>, and igraph worked quite easily, so I went with that.</p>
-
 <p>Plotting multiple arrows with different colors in a single call to <code>igraph.Arrows</code> didn&rsquo;t work right (the arrow heads were all the first color), but using a loop and plotting one arrow per call worked fine.</p>
-
 <p>Here&rsquo;s <a href="https://www.biostat.wisc.edu/~kbroman/blog/igraph_arrows.R">a bit of code I played with</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(igraph)
+<span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">4</span>))
+<span style="color:#a6e22e">plot</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;n&#34;</span>,xaxt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;n&#34;</span>, yaxt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;n&#34;</span>, xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,
+     xlim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">11</span>), ylim<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">11</span>))
 
-<pre><code class="language-r">library(igraph)
-par(mar=rep(1,4))
-plot(0,0, type=&quot;n&quot;,xaxt=&quot;n&quot;, yaxt=&quot;n&quot;, xlab=&quot;&quot;, ylab=&quot;&quot;,
-     xlim=c(0,11), ylim=c(1,11))
+x <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>
+y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">10</span>)
 
-x &lt;- 1:10
-y &lt;- rep(2, 10)
+<span style="color:#a6e22e">for</span>(k in <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>)
+  <span style="color:#a6e22e">points</span>(x, y<span style="color:#f92672">+</span>k<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>)
 
-for(k in 0:4)
-  points(x, y+k*2)
+iArrows <span style="color:#f92672">&lt;-</span> igraph<span style="color:#f92672">:::</span>igraph.Arrows
 
-iArrows &lt;- igraph:::igraph.Arrows
+mycolors <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;green&#34;</span>, <span style="color:#e6db74">&#34;orange&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, <span style="color:#e6db74">&#34;blue&#34;</span>), <span style="color:#ae81ff">3</span>)
 
-mycolors &lt;- rep(c(&quot;green&quot;, &quot;orange&quot;, &quot;red&quot;, &quot;blue&quot;), 3)
+<span style="color:#a6e22e">for</span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">9</span>) {
+  <span style="color:#a6e22e">iArrows</span>(x[i], y[i], x[i<span style="color:#ae81ff">+1</span>], y[i<span style="color:#ae81ff">+1</span>],
+          h.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.col<span style="color:#f92672">=</span>mycolors[i],
+          curve<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span> <span style="color:#f92672">-</span> (i <span style="color:#f92672">%%</span> <span style="color:#ae81ff">2</span>), width<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
 
-for(i in 1:9) {
-  iArrows(x[i], y[i], x[i+1], y[i+1],
-          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
-          curve=0.5 - (i %% 2), width=1, size=0.7)
-
-  iArrows(x[i], y[i]+2, x[i+1], y[i+1]+2,
-          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
-          curve=1 - (i %% 2), width=1, size=0.7)
+  <span style="color:#a6e22e">iArrows</span>(x[i], y[i]<span style="color:#ae81ff">+2</span>, x[i<span style="color:#ae81ff">+1</span>], y[i<span style="color:#ae81ff">+1</span>]<span style="color:#ae81ff">+2</span>,
+          h.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.col<span style="color:#f92672">=</span>mycolors[i],
+          curve<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> (i <span style="color:#f92672">%%</span> <span style="color:#ae81ff">2</span>), width<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
 }
 
-for(i in 1:8) {
-  iArrows(x[i], y[i]+4, x[i+2], y[i+2]+4,
-          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
-          curve=0.5 - (i %% 2), width=1, size=0.7)
+<span style="color:#a6e22e">for</span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>) {
+  <span style="color:#a6e22e">iArrows</span>(x[i], y[i]<span style="color:#ae81ff">+4</span>, x[i<span style="color:#ae81ff">+2</span>], y[i<span style="color:#ae81ff">+2</span>]<span style="color:#ae81ff">+4</span>,
+          h.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.col<span style="color:#f92672">=</span>mycolors[i],
+          curve<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span> <span style="color:#f92672">-</span> (i <span style="color:#f92672">%%</span> <span style="color:#ae81ff">2</span>), width<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
 
-  iArrows(x[i], y[i]+6, x[i+2], y[i+2]+6,
-          h.lwd=2, sh.lwd=2, sh.col=mycolors[i],
-          curve=1 - 2*(i %% 2), width=1, size=0.7)
+  <span style="color:#a6e22e">iArrows</span>(x[i], y[i]<span style="color:#ae81ff">+6</span>, x[i<span style="color:#ae81ff">+2</span>], y[i<span style="color:#ae81ff">+2</span>]<span style="color:#ae81ff">+6</span>,
+          h.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.col<span style="color:#f92672">=</span>mycolors[i],
+          curve<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>(i <span style="color:#f92672">%%</span> <span style="color:#ae81ff">2</span>), width<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
 }
 
-x1 &lt;- x[1:8]
-x2 &lt;- x[3:10]
-y &lt;- y[1:8]+8
+x1 <span style="color:#f92672">&lt;-</span> x[1<span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>]
+x2 <span style="color:#f92672">&lt;-</span> x[3<span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>]
+y <span style="color:#f92672">&lt;-</span> y[1<span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>]<span style="color:#ae81ff">+8</span>
 
-iArrows(x1, y, x2, y,
-        h.lwd=2, sh.lwd=2, sh.col=mycolors[1:8],
-        curve=1 - 2*((1:8) %% 2), width=1, size=0.7)
-</code></pre>
-
-<p>And here&rsquo;s the corresponding figure:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png" alt="" /></p>
-
+<span style="color:#a6e22e">iArrows</span>(x1, y, x2, y,
+        h.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.lwd<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, sh.col<span style="color:#f92672">=</span>mycolors[1<span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>],
+        curve<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>((<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>) <span style="color:#f92672">%%</span> <span style="color:#ae81ff">2</span>), width<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.7</span>)
+</code></pre></div><p>And here&rsquo;s the corresponding figure:</p>
+<p><img src="https://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png" alt=""></p>
 <p>Note that the arrows at the top all have green arrow heads.</p>
 
     </div>
@@ -165,7 +160,7 @@ iArrows(x1, y, x2, y,
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -175,12 +170,12 @@ iArrows(x1, y, x2, y,
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

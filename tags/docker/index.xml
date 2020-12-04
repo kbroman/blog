@@ -1,25 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on the stupidest thing...</title>
-    <link>https://kbroman.org/blog/tags/docker/</link>
+    <link>/tags/docker/</link>
     <description>Recent content in docker on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://kbroman.org/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>debugging with docker and r-devel</title>
-      <link>https://kbroman.org/blog/2020/12/03/debugging-with-docker-and-r-devel/</link>
+      <link>/2020/12/03/debugging-with-docker-and-r-devel/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kbroman.org/blog/2020/12/03/debugging-with-docker-and-r-devel/</guid>
+      <guid>/2020/12/03/debugging-with-docker-and-r-devel/</guid>
       <description>If you&amp;rsquo;ve not heard, there&amp;rsquo;s a big move away from Travis to GitHub Actions for continuous testing of R packages. I&amp;rsquo;m so glad for the infrastructure to help, but it&amp;rsquo;s a bit of work to figure it out.
-But that&amp;rsquo;s not what I&amp;rsquo;m writing about today. Today I want to talk about using docker to debug an R package that is throwing an error in the development version of R. This came up because with the new GitHub Actions infrastructure, I can now test my R packages on multiple OSs and with multiple versions of R, and today R/qtl was shown to throw an error in R-devel.</description>
+But that&amp;rsquo;s not what I&amp;rsquo;m talking about today. Today I want to talk about using docker to debug an R package that is throwing an error in the development version of R. This came up because with the new GitHub Actions infrastructure, I can now test my R packages on multiple OSs and with multiple versions of R, and today R/qtl was shown to throw an error in R-devel.</description>
     </item>
     
   </channel>

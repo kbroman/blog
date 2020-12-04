@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Reproducibility is hard - the stupidest thing...</title>
 <meta property="og:title" content="Reproducibility is hard - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -79,52 +81,37 @@
     
 
     <div class="article-content">
-      
-
-<p>Reproducibility is hard. It will probably always be hard, because it&rsquo;s hard keeping things organized.</p>
-
+      <p>Reproducibility is hard. It will probably always be hard, because it&rsquo;s hard keeping things organized.</p>
 <p>I recently had a <a href="http://g3journal.org/content/early/2015/08/21/g3.115.019778.abstract">paper</a> accepted at <a href="http://g3journal.org/">G3</a>, concerning a huge set of sample mix-ups in a large eQTL study. I&rsquo;d discovered and worked out the issue back in December, 2010. I gave a talk about it at the Mouse Genetics meeting in Washington, DC, in June, 2011. But for reasons that I will leave unexplained, I didn&rsquo;t write it up until much later. I did the bulk of the writing in October, 2012, but it wasn&rsquo;t until February, 2014, that I posted a <a href="http://arxiv.org/abs/1402.2633">preprint</a> at <a href="http://arxiv.org/">arXiv</a>, which I then finally submitted to G3 in June this year.</p>
-
 <p>In writing up the paper in late 2012, I re-did my entire analysis from scratch, to make the whole thing more cleanly reproducible. So with the paper now in press, I&rsquo;ve placed all of that in a <a href="https://github.com/kbroman/Paper_SampleMixups">GitHub repository</a>, but as it turned out, there was still a lot more to do. (You can tell, from the repository, that this is an old project, because there are a couple of Perl scripts in there. It&rsquo;s been a long time since I&rsquo;ve switched from Perl to Python and Ruby. I still can&rsquo;t commit to just one of Python or Ruby&hellip;want to stick with Python, as everyone else is using it, but much prefer Ruby.)</p>
-
 <p>The basic issue is that the raw data is about 1 GB. The clean version of the data is another 1 GB. And then there are results of various intermediate calculations, some are rather slow to calculate, which take up another 100 MB. I can&rsquo;t reasonably put all of that within the GitHub repository.</p>
-
 <p>Both the raw and clean data have been <a href="http://phenome.jax.org/db/q?rtn=projects/projdet&amp;reqprojid=532">posted in the Mouse Phenome Database</a>. (Thanks to Petr Simecek, Gary Churchill, Molly Bogue, and Elissa Chesler for that!) But the data are in a form that I thought suitable for others, and not quite in the form that I actually used them.</p>
-
 <p>So, I needed to write a script that would grab the data files from <a href="http://phenome.jax.org">MPD</a> and reorganize them in the way that I&rsquo;d been using them.</p>
-
 <p>In working on that, I discovered some mistakes in the data posted to MPD: there were a couple of bugs in my code to convert the data from the format I was using into the format I was going to post. (So it was good to spend the time on the script that did the reverse!)</p>
-
 <p>In addition to the raw and clean data on MPD, I posted a zip file with the 110 MB of intermediate results on <a href="http://figshare.com/account/projects/4842">figshare</a>.</p>
-
 <p>In the end, I&rsquo;m hoping that one can clone the <a href="https://github.com/kbroman/Paper_SampleMixups">GitHub repository</a> and just run <a href="https://www.gnu.org/software/make/">make</a> and it will download the data and do all of the stuff. If you want to save some time, you could download the <a href="http://figshare.com/account/projects/4842">zip file from figshare</a> and unzip that, and then run make.</p>
-
 <p>I&rsquo;m not quite there, but I think I&rsquo;m close.</p>
-
-<h3 id="aspects-i-m-happy-with">Aspects I&rsquo;m happy with</h3>
-
+<h3 id="aspects-im-happy-with">Aspects I&rsquo;m happy with</h3>
 <p>For the most part, my work on this project wasn&rsquo;t terrible.</p>
-
 <ul>
-<li><p>I wrote an R package, <a href="https://github.com/kbroman/lineup">R/lineup</a>, with the main analysis methods.</p></li>
-
-<li><p>That I re-derived the full entire analysis cleanly, in a separate, reproducible document (I used <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> and <a href="http://yihui.name/knitr/">knitr</a>) was a good thing.</p></li>
-
-<li><p>The code for the figures and tables are all reasonably clean, and draw from either the original data files or from intermediate calculations produced by the AsciiDoc document.</p></li>
-
-<li><p>I automated everything with GNU Make.</p></li>
+<li>
+<p>I wrote an R package, <a href="https://github.com/kbroman/lineup">R/lineup</a>, with the main analysis methods.</p>
+</li>
+<li>
+<p>That I re-derived the full entire analysis cleanly, in a separate, reproducible document (I used <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> and <a href="http://yihui.name/knitr/">knitr</a>) was a good thing.</p>
+</li>
+<li>
+<p>The code for the figures and tables are all reasonably clean, and draw from either the original data files or from intermediate calculations produced by the AsciiDoc document.</p>
+</li>
+<li>
+<p>I automated everything with GNU Make.</p>
+</li>
 </ul>
-
 <h3 id="what-should-i-have-done-differently">What should I have done differently?</h3>
-
 <p>There was a lot more after-the-fact work that I would rather not have to do.</p>
-
 <p>Making a project reproducible is easier if the data aren&rsquo;t that large and so can be bundled into the GitHub repository with all of the code.</p>
-
 <p>With a larger data set, I guess the thing to do is recognize, from the start, that the data are going to be sitting elsewhere. So then, I think one should <em>organize the data in the form that you expect to be made public</em>, and work from those files.</p>
-
 <p>When you write a script to convert data from one form to another, <em>also write some tests</em>, to make sure that it worked correctly.</p>
-
 <p>And then <em>document, document, document!</em> As with software development, it&rsquo;s hard to document data or analyses after the fact.</p>
 
     </div>
@@ -138,7 +125,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

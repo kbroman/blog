@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>peer review on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in peer review on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Sun, 09 Feb 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/peer-review/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Sun, 09 Feb 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/peer-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I still don&#39;t like it</title>
       <link>/2014/02/09/i-still-dont-like-it/</link>
@@ -50,9 +46,9 @@ There are very brief quotes from Titus Brown and Roger Peng. I expect that the a
       
       <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>When serving as referee for a journal, who are you working for?
- The editor: Will the paper add to the journal&amp;rsquo;s prestige?
- The reader: Is it worth reading?
- The author: How can it be improved?
+  The editor: Will the paper add to the journal&amp;rsquo;s prestige?
+  The reader: Is it worth reading?
+  The author: How can it be improved?
   I&amp;rsquo;d long thought that the referee&amp;rsquo;s duty was to the journal editors and then to the readers.
 But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should focus primarily on helping the author to improve the manuscript.</description>
     </item>
@@ -108,7 +104,7 @@ However, sometimes an anonymous reviewer will identify an important flaw in a pa
       <guid>/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting. AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at http://thecostofknowledge.com to not publish or review for Elsevier journals. If only AJHG were still with the University of Chicago Press&amp;hellip;
 Michael Eisen recently wrote:
- The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Elsevier – they are hardly the only bad actors in the field.</description>
+I agree with him. It&amp;rsquo;s easy to turn down a review. (I do so several times a week.</description>
     </item>
     
     <item>
@@ -118,7 +114,8 @@ Michael Eisen recently wrote:
       
       <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
-So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
+So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc.
+The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>
@@ -137,8 +134,8 @@ I signed the boycott, and will refuse to review papers for Evilsevier journals, 
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>/2011/10/19/fund-people-not-projects/</guid>
-      <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
-It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work.</description>
+      <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&#39; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
+It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work. Lots of people complain about peer review, but I think it largely works well and none of the proposed alternatives would actually be better.</description>
     </item>
     
   </channel>

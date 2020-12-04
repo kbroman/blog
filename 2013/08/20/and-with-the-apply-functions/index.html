@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>&#34;[&#34; and &#34;[[&#34; with the apply() functions - the stupidest thing...</title>
 <meta property="og:title" content="&#34;[&#34; and &#34;[[&#34; with the apply() functions - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,37 +87,25 @@
 
     <div class="article-content">
       <p>Did you know you can use <code>&quot;[&quot;</code> and <code>&quot;[[&quot;</code> as function names for subsetting with calls to the <code>apply</code>-type functions?</p>
-
 <p>For example, suppose you have a bunch of identifier strings like <code>&quot;ZYY-43S-CWA3&quot;</code> and you want to pull off the bit before the first hyphen (<code>&quot;ZYY&quot;</code> in this case).  (For code to create random IDs like that, see the end of this post.)</p>
-
 <p>Suppose the IDs are in a vector of character strings, <code>id</code>.</p>
-
 <p>If I wanted to grab the bit before the first hyphen, I would typically use <code>strsplit</code> and then <code>sapply</code> with <code>function(a) a[1]</code>, as so:</p>
-
-<pre><code class="language-r">sapply(strsplit(id, &quot;-&quot;), function(a) a[1])
-</code></pre>
-
-<p>But in place of <code>function(a) a[1]</code>, you can use <code>&quot;[&quot;, 1</code>, as follows:</p>
-
-<pre><code class="language-r">sapply(strsplit(id, &quot;-&quot;), &quot;[&quot;, 1)
-</code></pre>
-
-<p>I think that&rsquo;s kind of cute. You can use <code>&quot;[[&quot;</code> the same way, if you&rsquo;re working with lists.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">sapply</span>(<span style="color:#a6e22e">strsplit</span>(id, <span style="color:#e6db74">&#34;-&#34;</span>), <span style="color:#a6e22e">function</span>(a) a[1])
+</code></pre></div><p>But in place of <code>function(a) a[1]</code>, you can use <code>&quot;[&quot;, 1</code>, as follows:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">sapply</span>(<span style="color:#a6e22e">strsplit</span>(id, <span style="color:#e6db74">&#34;-&#34;</span>), <span style="color:#e6db74">&#34;[&#34;</span>, <span style="color:#ae81ff">1</span>)
+</code></pre></div><p>I think that&rsquo;s kind of cute. You can use <code>&quot;[[&quot;</code> the same way, if you&rsquo;re working with lists.</p>
 <p>Here&rsquo;s some code to create random IDs of this form, to test out the above:</p>
-
-<pre><code class="language-r">nind &lt;- 8
-lengths &lt;- c(3, 3, 4)
-id &lt;- NULL
-for(i in seq(along=lengths)) {
-  randchar &lt;- sample(c(LETTERS, 0:9), nind*lengths[i], replace=TRUE)
-  randstring &lt;- apply(matrix(randchar, ncol=lengths[i]),
-                   1, paste, collapse=&quot;&quot;)
-  if(is.null(id)) id &lt;- randstring
-  else id &lt;- paste(id, randstring, sep=&quot;-&quot;)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">nind <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">8</span>
+lengths <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>)
+id <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">NULL</span>
+<span style="color:#a6e22e">for</span>(i in <span style="color:#a6e22e">seq</span>(along<span style="color:#f92672">=</span>lengths)) {
+  randchar <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">c</span>(<span style="color:#66d9ef">LETTERS</span>, <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span><span style="color:#ae81ff">9</span>), nind<span style="color:#f92672">*</span>lengths[i], replace<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+  randstring <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">apply</span>(<span style="color:#a6e22e">matrix</span>(randchar, ncol<span style="color:#f92672">=</span>lengths[i]),
+                   <span style="color:#ae81ff">1</span>, paste, collapse<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+  <span style="color:#a6e22e">if</span>(<span style="color:#a6e22e">is.null</span>(id)) id <span style="color:#f92672">&lt;-</span> randstring
+  else id <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">paste</span>(id, randstring, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-&#34;</span>)
 }
-</code></pre>
-
+</code></pre></div>
     </div>
   </article>
 
@@ -127,7 +117,7 @@ for(i in seq(along=lengths)) {
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -137,12 +127,12 @@ for(i in seq(along=lengths)) {
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

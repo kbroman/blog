@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Emacs key bindings in MS Word - the stupidest thing...</title>
 <meta property="og:title" content="Emacs key bindings in MS Word - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,11 +82,8 @@
 
     <div class="article-content">
       <p>Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&rsquo;ve also been doing.)</p>
-
 <p>A google search on the title of this post got me <a href="http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/">to this post</a>. I should have looked before.</p>
-
 <p>Following that suggestion, I was able to get these:</p>
-
 <ul>
 <li><code>C-b</code> – CharLeft</li>
 <li><code>C-f</code> – CharRight</li>
@@ -94,11 +93,8 @@
 <li><code>C-a</code> – StartOfLine</li>
 <li><code>C-v</code> – PageDown</li>
 </ul>
-
 <p>I can&rsquo;t figure out how to have <code>M-v</code> for PageUp, though, because <code>M-v</code> seems permanently stuck to &ldquo;√&rdquo;.</p>
-
 <p>The procedure, in MS Word 2011 for Mac, is:</p>
-
 <ol>
 <li>Tools → Customize Keyboard</li>
 <li>Select &ldquo;All Commands&rdquo; under &ldquo;Categories:&rdquo;</li>
@@ -108,16 +104,12 @@
 <li>Repeat for the other commands you want</li>
 <li>Click OK</li>
 </ol>
-
 <p>I needed two more, <code>C-d</code> and <code>C-k</code>; it took me a while to figure out how to do it, as there didn&rsquo;t seem to be any built-in commands. But you can just record a macro. I created these:</p>
-
 <ul>
 <li><code>C-d</code> – [DeleteCharacter] (as a macro)</li>
 <li><code>C-k</code> – [KillLine] (as a macro)</li>
 </ul>
-
 <p>Here&rsquo;s the procedure, in MS Word 2011 for Mac.</p>
-
 <ol>
 <li>Tools → Macros → Record Macro</li>
 <li>Give it a name with no spaces</li>
@@ -126,7 +118,6 @@
 <li>Type the set of key strokes</li>
 <li>Tools → Macros → Stop Recording</li>
 </ol>
-
 <p><a href="http://sourceforge.net/apps/mediawiki/womacs/index.php">Womacs</a> is a really extensive set of Visual Basic macros that looks really useful, but I was getting Visual Basic errors and didn&rsquo;t want to spend any more time on it; grants to write&hellip;</p>
 
     </div>
@@ -140,7 +131,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

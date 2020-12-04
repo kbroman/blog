@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>A course in statistical programming - the stupidest thing...</title>
 <meta property="og:title" content="A course in statistical programming - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,83 +82,104 @@
 
     <div class="article-content">
       <p>Graduate students in statistics often take (or at least have the opportunity to take) a statistical computing course, but often such courses are focused on methods (like numerical linear algebra, the EM algorithm, and MCMC) and not on actual coding.</p>
-
 <p>For example, <a href="https://www.biostat.wisc.edu/~kbroman/teaching/statcomp/index.html">here&rsquo;s a course in &ldquo;advanced statistical computing&rdquo;</a> that I taught at <a href="https://www.biostat.jhsph.edu">Johns Hopkins</a> back in 2001.</p>
-
 <p>Many (perhaps most) good programmers learned to code outside of formal courses.  But many statisticians are terrible programmers and would benefit by a formal course.</p>
-
 <p>Moreover, applied statisticians spend the vast majority of their time interacting with a computer and would likely benefit from more formal presentations of how to do it well.  And I think this sort of training is particularly important for ensuring that <a href="https://groups.google.com/forum/?fromgroups#!forum/reproducible-research">research is reproducible</a>.</p>
-
 <p>One really learns to code in private, struggling over problems, but I benefited enormously from a statistical computing course I took from <a href="http://www.stat.berkeley.edu/~spector/">Phil Spector</a> at <a href="http://www.stat.berkeley.edu">Berkeley</a>.</p>
-
 <p><a href="http://www.biostat.jhsph.edu/~bcaffo">Brian Caffo</a>, <a href="http://www.biostat.jhsph.edu/~iruczins/">Ingo Ruczinski</a>, <a href="http://www.biostat.jhsph.edu/~rpeng">Roger Peng</a>, <a href="http://www.biostat.jhsph.edu/~ririzarr/">Rafael Irizarry</a>, and <a href="https://kbroman.org">I</a> developed a <a href="http://www.biostat.jhsph.edu/~bcaffo/statcomp/">statistical programming course</a> at Hopkins that (I think) really did the job.</p>
-
 <p>I would like to develop a similar such course at <a href="https://www.biostat.wisc.edu">Wisconsin</a>: on statistical programming, in the most general sense.</p>
-
 <p>I have in mind several basic principles:</p>
-
 <ul>
-<li><p>be self-sufficient</p></li>
-
-<li><p>get the right answer</p></li>
-
-<li><p>document what you did (so that you will understand what you did 6 months later)</p></li>
-
-<li><p>if primary data change, be able to re-run the analysis without a lot of work</p></li>
-
-<li><p>are your simulation results reproducible?</p></li>
-
-<li><p>reuse of code (others&rsquo; and your own) rather than starting from scratch every time</p></li>
-
-<li><p>make methods accessible to (and used by) others</p></li>
+<li>
+<p>be self-sufficient</p>
+</li>
+<li>
+<p>get the right answer</p>
+</li>
+<li>
+<p>document what you did (so that you will understand what you did 6 months later)</p>
+</li>
+<li>
+<p>if primary data change, be able to re-run the analysis without a lot of work</p>
+</li>
+<li>
+<p>are your simulation results reproducible?</p>
+</li>
+<li>
+<p>reuse of code (others' and your own) rather than starting from scratch every time</p>
+</li>
+<li>
+<p>make methods accessible to (and used by) others</p>
+</li>
 </ul>
-
 <p>Here are my current thoughts about the topics to include in such a course.  The key aim would be to make students aware of the basic principles and issues: to give them a good base from which to learn on their own.  Homework would include interesting and realistic programming assignments plus create a Sweave-type document and an R package.</p>
-
 <ul>
-<li><p>Basic unix tools (find; df; top; ps ux; grep); unix on Mac and windows</p></li>
-
-<li><p>Emacs/vim/other editors (rstudio/eclipse)</p></li>
-
-<li><p>Latex (for papers; for presentations)</p></li>
-
-<li><p>slides for talks; posters; figures/tables</p></li>
-
-<li><p>Advanced R (fancy data structures; functions; object-oriented stuff)</p></li>
-
-<li><p>Advanced R graphics</p></li>
-
-<li><p>R packages</p></li>
-
-<li><p>Sweave/asciidoc/knitr</p></li>
-
-<li><p>minimal Perl (or Python or Ruby); example of data manipulation</p></li>
-
-<li><p>Minimal C (or C++); examples of speed-up</p></li>
-
-<li><p>version control (eg git or mercurial); backups</p></li>
-
-<li><p>reproducible research ideas</p></li>
-
-<li><p>data management</p></li>
-
-<li><p>managing projects: data, analyses, results, papers</p></li>
-
-<li><p>programming style (readable, modular); general but not too general</p></li>
-
-<li><p>debugging/profiling/testing</p></li>
-
-<li><p>high-throughput computing; parallel computing; managing big jobs</p></li>
-
-<li><p>finding answers to questions: man pages; documentation; web</p></li>
-
-<li><p>more on visualization; dynamic graphics</p></li>
-
-<li><p>making a web page; html &amp; css; simple cgi-type web forms?</p></li>
-
-<li><p>writing and managing email</p></li>
-
-<li><p>managing references to journal articles</p></li>
+<li>
+<p>Basic unix tools (find; df; top; ps ux; grep); unix on Mac and windows</p>
+</li>
+<li>
+<p>Emacs/vim/other editors (rstudio/eclipse)</p>
+</li>
+<li>
+<p>Latex (for papers; for presentations)</p>
+</li>
+<li>
+<p>slides for talks; posters; figures/tables</p>
+</li>
+<li>
+<p>Advanced R (fancy data structures; functions; object-oriented stuff)</p>
+</li>
+<li>
+<p>Advanced R graphics</p>
+</li>
+<li>
+<p>R packages</p>
+</li>
+<li>
+<p>Sweave/asciidoc/knitr</p>
+</li>
+<li>
+<p>minimal Perl (or Python or Ruby); example of data manipulation</p>
+</li>
+<li>
+<p>Minimal C (or C++); examples of speed-up</p>
+</li>
+<li>
+<p>version control (eg git or mercurial); backups</p>
+</li>
+<li>
+<p>reproducible research ideas</p>
+</li>
+<li>
+<p>data management</p>
+</li>
+<li>
+<p>managing projects: data, analyses, results, papers</p>
+</li>
+<li>
+<p>programming style (readable, modular); general but not too general</p>
+</li>
+<li>
+<p>debugging/profiling/testing</p>
+</li>
+<li>
+<p>high-throughput computing; parallel computing; managing big jobs</p>
+</li>
+<li>
+<p>finding answers to questions: man pages; documentation; web</p>
+</li>
+<li>
+<p>more on visualization; dynamic graphics</p>
+</li>
+<li>
+<p>making a web page; html &amp; css; simple cgi-type web forms?</p>
+</li>
+<li>
+<p>writing and managing email</p>
+</li>
+<li>
+<p>managing references to journal articles</p>
+</li>
 </ul>
 
     </div>
@@ -170,7 +193,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

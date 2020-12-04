@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tenure on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in tenure on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 05 Dec 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/tenure/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 05 Dec 2013 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tenure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Things to avoid as a new faculty member</title>
       <link>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</link>
@@ -20,8 +16,8 @@
       <guid>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.
 Here are some thoughts on things to avoid.
- You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
- You may see needs for many new courses. Don&amp;rsquo;t try to develop all of them.</description>
+  You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
+  You may see needs for many new courses. Don&amp;rsquo;t try to develop all of them.</description>
     </item>
     
     <item>
@@ -32,7 +28,9 @@ Here are some thoughts on things to avoid.
       <guid>/2012/09/08/how-to-evaluate-faculty/</guid>
       <description>&amp;hellip;rate their departments.
 The tenure guidelines for the Physical Sciences Division at UW-Madison include the following instructions (see section I-1 on page 11):
-Provide a list of the five leading institutions for research (and outreach/extension activities) in the candidate&#39;s discipline. The committee recognizes that the best work in the candidate&#39;s specialty may not be carried out at the top ranked institutions in the broader discipline. However, it will look for a balance of evaluations from referees at the leading institutions who can evaluate the research and its impact on the broader field, and from the leaders in the subfield if they are at different institutions.</description>
+They use the ranking of a referee&amp;rsquo;s institution as an indication of his/her ability to evaluate the importance of a candidate&amp;rsquo;s work.
+This disgusts me.
+I like the analogy of measuring the importance of an academic paper by the &amp;ldquo;impact factor&amp;rdquo; of the journal in which it appeared, with measuring the quality of a researcher by the quality of his/her institution.</description>
     </item>
     
   </channel>

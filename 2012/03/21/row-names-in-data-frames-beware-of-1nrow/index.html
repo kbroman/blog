@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Row names in data frames: beware of 1:nrow - the stupidest thing...</title>
 <meta property="og:title" content="Row names in data frames: beware of 1:nrow - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,35 +87,29 @@
 
     <div class="article-content">
       <p>I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, <code>x</code>, as <code>1:nrow(x)</code>, R will act as if you&rsquo;d not assigned row names, and the names might get changed when you do <code>rbind</code>.</p>
-
 <p>Here&rsquo;s an illustration:</p>
-
-<pre><code class="language-r">&gt; x &lt;- data.frame(id=1:3)
-&gt; y &lt;- data.frame(id=4:6)
-&gt; rownames(x) &lt;- 1:3
-&gt; rownames(y) &lt;- LETTERS[4:6]
-&gt; rbind(x,y)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>)
+<span style="color:#f92672">&gt;</span> y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>)
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(x) <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(y) <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">LETTERS</span>[4<span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>]
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(x,y)
   id
-1  1
-2  2
-3  3
-D  4
-E  5
-F  6
-&gt; rbind(y,x)
+<span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">2</span>
+<span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">3</span>
+D  <span style="color:#ae81ff">4</span>
+E  <span style="color:#ae81ff">5</span>
+F  <span style="color:#ae81ff">6</span>
+<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(y,x)
   id
-D  4
-E  5
-F  6
-4  1
-5  2
-6  3
-</code></pre>
-
-<!-- more -->
-
+D  <span style="color:#ae81ff">4</span>
+E  <span style="color:#ae81ff">5</span>
+F  <span style="color:#ae81ff">6</span>
+<span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">2</span>
+<span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">3</span>
+</code></pre></div><!-- raw HTML omitted -->
 <p>As you can see, if you give <code>x</code> the row names <code>1:3</code>, these are treated as generic row numbers and could get changed following <code>rbind</code> if they end up in different rows.  This doesn&rsquo;t happen if <code>x</code> and <code>y</code> are matrices.</p>
-
 <p>I often use row names as identifiers, so it seems I must be cautious to use something other than row numbers.</p>
 
     </div>
@@ -127,7 +123,7 @@ F  6
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -137,12 +133,12 @@ F  6
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

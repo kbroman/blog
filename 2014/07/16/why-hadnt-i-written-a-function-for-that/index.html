@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Why hadn&#39;t I written a function for that? - the stupidest thing...</title>
 <meta property="og:title" content="Why hadn&#39;t I written a function for that? - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,21 +87,13 @@
 
     <div class="article-content">
       <p>I&rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.</p>
-
 <p>For example, I&rsquo;m still using base graphics. (<a href="http://ggplot2.org">ggplot2</a> is on my &ldquo;to do&rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with <code>image</code>, the border is often obscured. I want a nice black rectangle around the outside.</p>
-
 <p>So I&rsquo;ll write the following:</p>
-
 <pre><code>u &lt;- par(&quot;usr&quot;)
 rect(u[1], u[3], u[2], u[4])
-</code></pre>
-
-<p>I don&rsquo;t know <em>how</em> many times I&rsquo;ve typed that! Today I realized that I should put those two lines in a function <code>add_border()</code>. And then I added <code>add_border()</code> to my <a href="http://github.com/kbroman/broman">R/broman package</a>.</p>
-
+</code></pre><p>I don&rsquo;t know <em>how</em> many times I&rsquo;ve typed that! Today I realized that I should put those two lines in a function <code>add_border()</code>. And then I added <code>add_border()</code> to my <a href="http://github.com/kbroman/broman">R/broman package</a>.</p>
 <p>It was a bit more work adding the <a href="https://github.com/klutometis/roxygen">Roxygen2</a> comments for the documentation, but now I&rsquo;ve got a proper function that is easier to use and much more clear.</p>
-
 <p><strong>Update</strong>: <a href="https://twitter.com/tpoi">@tpoi</a> <a href="https://twitter.com/tpoi/status/489622770398289920">pointed out</a> that <code>box()</code> does the same thing as my <code>add_border()</code>. My general point still stands, and this raises the additional point: twitter + blog -&gt; education.</p>
-
 <p>I want to add, &ldquo;I&rsquo;m an idiot&rdquo; but I think I&rsquo;ll just say that there&rsquo;s always more that I can learn about R. And I&rsquo;ll remove <code>add_border</code> from R/broman and just use <code>box()</code>.</p>
 
     </div>
@@ -113,7 +107,7 @@ rect(u[1], u[3], u[2], u[4])
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -123,12 +117,12 @@ rect(u[1], u[3], u[2], u[4])
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

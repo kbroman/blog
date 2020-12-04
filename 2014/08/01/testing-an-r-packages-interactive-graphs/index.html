@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Testing an R package&#39;s interactive graphs - the stupidest thing...</title>
 <meta property="og:title" content="Testing an R package&#39;s interactive graphs - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,29 +82,26 @@
 
     <div class="article-content">
       <p>I&rsquo;ve been working on an R package, <a href="https://kbroman.org/qtlcharts">R/qtlcharts</a>, with <a href="https://d3js.org">D3</a>-based interactive graphs for quantitative trait locus mapping experiments.</p>
-
 <p>Testing the interactive charts it produces is a bit of a pain. It seems like I pretty much <em>have</em> to just open a series of examples in a web browser and tab through them manually, checking that they look okay, that the interactions seem to work, and that they&rsquo;re not giving any sort of errors.</p>
-
 <p>But if I want to post the package to <a href="https://cran.r-project.org">CRAN</a>, it seems (from the <a href="https://cran.r-project.org/web/packages/policies.html">CRAN policy</a>) that the examples in the <code>.Rd</code> files shouldn&rsquo;t be opening a web browser. Thus, I need to surround the example code with <code>\dontrun{}</code>.</p>
-
 <p>But I was using those examples, and <code>R CMD check</code>, to open the series of examples for manual checking.</p>
-
 <p>So, what I&rsquo;ve decided to do:</p>
-
 <ul>
-<li><p>Include examples opening a browser, but within <code>\dontrun{}</code> so the browser isn&rsquo;t opened in <code>R CMD check</code>.</p></li>
-
-<li><p>Also include examples that don&rsquo;t open the browser, within <code>\dontshow{}</code>, so that <code>R CMD check</code> will at least check the basics.</p></li>
-
-<li><p>Write a <a href="http://ruby-lang.org">ruby</a> script that pulls out all of the examples from the <code>.Rd</code> files, stripping off the <code>\dontrun{}</code> and <code>\dontshow{}</code> and pasting it all into a <code>.R</code> file.</p></li>
-
-<li><p>Periodically run <code>R CMD BATCH</code> on that set of examples, to do the manual checking of the interactive graphs.</p></li>
+<li>
+<p>Include examples opening a browser, but within <code>\dontrun{}</code> so the browser isn&rsquo;t opened in <code>R CMD check</code>.</p>
+</li>
+<li>
+<p>Also include examples that don&rsquo;t open the browser, within <code>\dontshow{}</code>, so that <code>R CMD check</code> will at least check the basics.</p>
+</li>
+<li>
+<p>Write a <a href="http://ruby-lang.org">ruby</a> script that pulls out all of the examples from the <code>.Rd</code> files, stripping off the <code>\dontrun{}</code> and <code>\dontshow{}</code> and pasting it all into a <code>.R</code> file.</p>
+</li>
+<li>
+<p>Periodically run <code>R CMD BATCH</code> on that set of examples, to do the manual checking of the interactive graphs.</p>
+</li>
 </ul>
-
 <p>This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.</p>
-
 <p><strong>Update</strong>: <a href="http://had.co.nz/">Hadley Wickham</a> <a href="https://twitter.com/hadleywickham/status/495535873711431681">pointed me</a> to <strong><code>\donttest{}</code></strong>, added in R ver 2.7 (in 2008). (More value from blog + twitter!)</p>
-
 <p>So I replaced my <code>\dontrun{}</code> bits with <code>\donttest{}</code>. And I can use <code>devtools::run_examples()</code> to run all of the examples, for my manual checks.</p>
 
     </div>
@@ -116,7 +115,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -125,7 +124,7 @@
     
 
     
-<script src="../../../../js/math-code.js"></script>
+<script src="/js/math-code.js"></script>
 <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 

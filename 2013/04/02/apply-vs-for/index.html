@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>apply vs for - the stupidest thing...</title>
 <meta property="og:title" content="apply vs for - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,11 +87,8 @@
 
     <div class="article-content">
       <p>It&rsquo;s widely understood that, in <a href="http://r-project.org">R</a> programming, one should avoid <code>for</code> loops and always try to use <code>apply</code>-type functions.</p>
-
 <p>But this isn&rsquo;t entirely true.  It may have been true for Splus, back in the day: As  I recall, that had to do with the entire environment from each iteration being retained in memory.</p>
-
 <p>Here&rsquo;s a simple example:</p>
-
 <pre><code>&gt; x &lt;- matrix(rnorm(4000*40000), ncol=4000)
 
 &gt; system.time({
@@ -102,14 +101,9 @@
 &gt; system.time(mx2 &lt;- apply(x, 1, max))
    user  system elapsed
   5.548   1.783   7.333
-</code></pre>
-
-<p>There&rsquo;s <a href="http://www.r-project.org/doc/Rnews/Rnews_2008-1.pdf">a great commentary on this point</a> by Uwe Ligges and John Fox in the May, 2008, issue of R News (see the &ldquo;R help desk&rdquo;, starting on page 46, and note that R News is now the <a href="http://journal.r-project.org">R Journal</a>).</p>
-
+</code></pre><p>There&rsquo;s <a href="http://www.r-project.org/doc/Rnews/Rnews_2008-1.pdf">a great commentary on this point</a> by Uwe Ligges and John Fox in the May, 2008, issue of R News (see the &ldquo;R help desk&rdquo;, starting on page 46, and note that R News is now the <a href="http://journal.r-project.org">R Journal</a>).</p>
 <p>Also see <a href="http://stackoverflow.com/questions/7142767/why-are-loops-slow-in-r/7142982#7142982">the related discussion</a> at <a href="http://stackoverflow.com">stackoverflow</a>.</p>
-
 <p>They say that <code>apply</code> can be more readable.  It can certainly be more compact, but I usually find a <code>for</code> loop to be more readable, perhaps because I&rsquo;m a C programmer first and an R programmer second.</p>
-
 <p>A key point, from Ligges and Fox: &ldquo;Initialize new objects to full length before the loop, rather than increasing their size within the loop.&rdquo;</p>
 
     </div>
@@ -123,7 +117,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -133,12 +127,12 @@
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

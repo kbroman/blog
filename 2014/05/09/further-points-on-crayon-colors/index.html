@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Further points on crayon colors - the stupidest thing...</title>
 <meta property="og:title" content="Further points on crayon colors - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,25 +87,17 @@
 
     <div class="article-content">
       <p>I saw <a href="https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">this great post on crayola crayon colors</a> at the <a href="https://learnr.wordpress.com">Learning R blog</a>, reproducing a <a href="https://www.datapointed.net/2010/01/crayola-crayon-color-chart/">nice graph</a> of the Crayola crayon colors over time. (Also see <a href="http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/">this even nicer version</a>.)</p>
-
 <p>The <a href="https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">Learning R post</a> shows how to grab the crayon colors from the wikipedia page, &ldquo;<a href="https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">List of Crayola crayon colors</a>,&rdquo; directly in R. Here&rsquo;s the code (after some slight modifications due to changes in the page since 2010):</p>
-
 <pre><code>library(XML)
 theurl &lt;- &quot;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&quot;
 crayontable &lt;- readHTMLTable(theurl, stringsAsFactors = FALSE)[[1]]
 crayons &lt;- crayontable[,grep(&quot;Hex&quot;, colnames(crayontable))]
 names(crayons) &lt;- crayontable[,&quot;Color&quot;]
-</code></pre>
-
-<p>Comparing these to what I&rsquo;d grabbed, I noted one small discrepancy on the Wikipedia page: Yellow Orange was listed as <code>&quot;#FFAE42&quot;</code> but the background color for the Yellow Orange cell in the table was <code>&quot;#FFB653&quot;</code>.</p>
-
+</code></pre><p>Comparing these to what I&rsquo;d grabbed, I noted one small discrepancy on the Wikipedia page: Yellow Orange was listed as <code>&quot;#FFAE42&quot;</code> but the background color for the Yellow Orange cell in the table was <code>&quot;#FFB653&quot;</code>.</p>
 <p>So I created a Wikipedia account and edited the Wikipedia page.</p>
-
 <p>(Then I realized that I&rsquo;d made a mistake in my edit, undid my change, thought the whole thing through again, and edited the page again.)</p>
-
 <p>The <a href="https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">Learning R post</a> also showed a different way to sort the colors: convert to HSV, and then sort by the H then S then V. So <a href="https://github.com/kbroman/broman/commit/dde305de2c3cd5f3a00f7378fefd4f73a4520599">I edited my <code>plot_crayons()</code> function again</a>, to create the following picture:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png" alt="Crayon colors, again" /></p>
+<p><img src="https://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png" alt="Crayon colors, again"></p>
 
     </div>
   </article>
@@ -116,7 +110,7 @@ names(crayons) &lt;- crayontable[,&quot;Color&quot;]
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -126,12 +120,12 @@ names(crayons) &lt;- crayontable[,&quot;Color&quot;]
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

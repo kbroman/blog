@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>grants on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in grants on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/grants/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate><atom:link href="/tags/grants/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Complaints about the NIH grant review process</title>
       <link>/2013/10/02/complaints-about-the-nih-grant-review-process/</link>
@@ -50,8 +46,8 @@ Having read many grants (some good, many bad), I&amp;rsquo;ve formed quite stron
       <pubDate>Wed, 19 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>/2011/10/19/fund-people-not-projects/</guid>
-      <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&amp;rsquo; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
-It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work.</description>
+      <description>John Ioannidis, known for his comments on medical research (see also the Atlantic article), has an interesting opinion piece in Nature on saving researchers&#39; time writing and reviewing grants: fund people not projects. As he concludes, &amp;ldquo;Requiring [scientists] to spend most of their time writing grants is irrational. It&amp;rsquo;s time to seriously consider another approach.&amp;rdquo;
+It was thought provoking, but I don&amp;rsquo;t think any of his ideas will really work. Lots of people complain about peer review, but I think it largely works well and none of the proposed alternatives would actually be better.</description>
     </item>
     
   </channel>

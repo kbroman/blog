@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Why aren&#39;t all of our graphs interactive? - the stupidest thing...</title>
 <meta property="og:title" content="Why aren&#39;t all of our graphs interactive? - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -79,42 +81,23 @@
     
 
     <div class="article-content">
-      
-
-<p>I&rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.</p>
-
+      <p>I&rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.</p>
 <p>We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard.  This was a primary contributor to <a href="https://kbroman.org/blog/2012/04/25/microarrays-suck/">my recent embarrassments</a>, in which clear problems in the data were not discovered when they should have been.</p>
-
 <p>I gave <a href="https://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs">a talk on interactive graphs (with the title above)</a> at Johns Hopkins last fall, and then <a href="https://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2">a related talk</a> at ENAR earlier this week, and I have a few thoughts to add here.</p>
-
 <h3 id="a-brief-digression">A brief digression</h3>
-
 <p>I&rsquo;m giving a talk at a plant breeding symposium at Kansas State in a couple of weeks, and I&rsquo;ve been pondering what to talk about.  A principal problem is that I don&rsquo;t really work on plant breeding.  My most relevant talks are a bit too technical, and my more interesting talks are not relevant.</p>
-
 <p>Then I had the idea to talk about some of my recent work with my graduate student, Il-youp Kwak, on the genetic analysis of phenotypes measured over time.</p>
-
 <p>I realized that I could incorporate some interactive graphs into the talk.  Initially I was just thinking that the interactive graphs would make the talk more interesting and would allow me to talk about things that weren&rsquo;t necessarily relevant but were interesting to me.</p>
-
 <p>But then I realized that this work really cries out for interactive graphs.  And as I begin to construct one of them, I thought of a whole bunch more I might create.  More importantly, I realized that these interactive graphs are extremely useful teaching tools.</p>
-
-<h3 id="more-d3-https-d3js-org-examples">More <a href="https://d3js.org">D3</a> examples</h3>
-
+<h3 id="more-d3httpsd3jsorg-examples">More <a href="https://d3js.org">D3</a> examples</h3>
 <p>Here&rsquo;s an image of first graph I created for the talk; click on it to jump to the <a href="https://www.biostat.wisc.edu/~kbroman/D3/manycurves">interactive version</a>.</p>
-
 <p>Statisticians are often confronted with a large set of curves.  We&rsquo;d like to show the individual curves, but there are too many.  The resulting <a href="https://stats.idre.ucla.edu/stata/faq/how-can-i-make-spaghetti-plots-in-stata/">spaghetti plot</a> is a total mess.  An image plot (like the <a href="https://journals.lww.com/epidem/Fulltext/2010/09000/Lasagna_Plots__A_Saucy_Alternative_to_Spaghetti.15.aspx">lasagna plot</a>) allows us to see all of the curves, but it can be hard to get a sense of what the actual curves look like.  The interactive version solves the problem.</p>
-
-<p><a href="https://www.biostat.wisc.edu/~kbroman/D3/manycurves"><img src="https://kbroman.files.wordpress.com/2013/03/manycurves2.png" alt="Many curves" /></a></p>
-
+<p><a href="https://www.biostat.wisc.edu/~kbroman/D3/manycurves"><img src="https://kbroman.files.wordpress.com/2013/03/manycurves2.png" alt="Many curves"></a></p>
 <p>Here&rsquo;s a second example; again click on the image to jump to the <a href="https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect">interactive version</a>. (I&rsquo;ve shown this before, but I want to use it to make another point.)</p>
-
 <p>Typically, in a lecture on complex trait analysis, I&rsquo;d show one LOD curve (like the top panel in the image below) and a few different plots of phenotype vs genotype (the lower-right panel in the image).  I think the exploratory tool will be much more effective, in a lecture, for explaining what it all means.</p>
-
-<p><a href="https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect"><img src="https://kbroman.files.wordpress.com/2013/03/lod_and_effect.png" alt="LOD and QTL effects" /></a></p>
-
+<p><a href="https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect"><img src="https://kbroman.files.wordpress.com/2013/03/lod_and_effect.png" alt="LOD and QTL effects"></a></p>
 <h3 id="statisticians-need-to-be-doing-this-routinely">Statisticians need to be doing this routinely</h3>
-
 <p>In constructing a graph, one must make some difficult choices.  For high-dimensional data, one must greatly compress the available information.  The resulting summaries, while potentially informative, take one far away from the original data.</p>
-
 <p>Interactive graphs provide a means through which one may view the overall summary but have immediate access to the underlying details.</p>
 
     </div>
@@ -128,7 +111,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

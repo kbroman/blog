@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>writing text in Minecraft with R - the stupidest thing...</title>
 <meta property="og:title" content="writing text in Minecraft with R - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -79,9 +81,7 @@
     
 
     <div class="article-content">
-      
-
-<p>It&rsquo;s been nearly two years since I attended the <a href="https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/">RopenSci UnConf
+      <p>It&rsquo;s been nearly two years since I attended the <a href="https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/">RopenSci UnConf
 2017</a> in LA
 and worked with <a href="https://github.com/daroczig">Gergely Daróczi</a>,
 <a href="https://github.com/geanders">Brooke Anderson</a>, <a href="https://github.com/revodavid">David
@@ -96,25 +96,19 @@ implemented in the <a href="https://github.com/ropenscilabs/craft">craft</a>
 package and illustrated in the <a href="https://bookdown.org">bookdown</a> book,
 <a href="https://ropenscilabs.github.io/miner_book">R programming with
 Minecraft</a>.</p>
-
 <p>I&rsquo;d meant to follow up with a bunch more on the stuff we&rsquo;d done, and
 to really finish up and polish the book. But, well, I didn&rsquo;t. But I&rsquo;m
 going to try to do so now. I&rsquo;ll start by explaining how I was able to
 write text in Minecraft, like this:</p>
-
-<p><img src="../../../../images/rOpenSci_sign.png" alt="rOpenSci on a hill in Minecraft" /></p>
-
+<p><img src="/images/rOpenSci_sign.png" alt="rOpenSci on a hill in Minecraft"></p>
 <h2 id="my-goal-was-to-make-a-ggplot-scatterplot">My goal was to make a ggplot scatterplot</h2>
-
 <p>Once we had <a href="https://github.com/ropenscilabs/miner">miner</a> up and
 running, the first thing I wanted to do was <a href="https://ropenscilabs.github.io/miner_book/rendering-an-image-in-minecraft.html">render a picture out of
 blocks</a>.
 Specifically, I wanted to create a picture of
 <a href="http://inundata.org">Karthik</a> in Minecraft. And so I
 did:</p>
-
-<p><img src="../../../../images/karthik_minecraft.png" alt="Karthik in Minecraft" /></p>
-
+<p><img src="/images/karthik_minecraft.png" alt="Karthik in Minecraft"></p>
 <p>My next goal was to make a <code>ggplot2::theme_gray()</code>-styled scatterplot
 within Minecraft. Like, I wasn&rsquo;t so ambitious that I wanted to add a
 <code>geom_minecraft()</code> or a ggplot2 Minecraft plugin, but I thought it&rsquo;d
@@ -122,14 +116,11 @@ be cool to make an image of a ggplot2-style graph in Minecraft and
 then pretend that I&rsquo;d done it properly. If I can create an image in
 Minecraft, then of course I can create a scatterplot. The only tricky
 part would be the axis labels: being able to write text in Minecraft.</p>
-
 <p>(I mean, you can probably guess that I first tried saving a graph to
 an image file and then rendering that in Minecraft. But it looked
 terrible because the points in the scatterplot wouldn&rsquo;t be captured
 well, and the text in the axis labels was especially terrible.)</p>
-
 <h2 id="pixel-based-fonts">Pixel-based fonts</h2>
-
 <p>It seemed like I just needed some old-style, pixelated fonts. You know,
 like the ones used on LCD displays. It took a lot of googling, but I
 finally found this <a href="http://uzebox.org/wiki/index.php?title=Font_Bitmaps">font
@@ -138,20 +129,16 @@ bitmaps</a> page at
 and then for each font size there&rsquo;s a bunch of PNG images with
 different fonts in that size. For example, here&rsquo;s the one I&rsquo;m using
 for the 6x8 font:</p>
-
-<p><a href="http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png"><img src="../../../../images/Sebasic_charset_192w.png" alt="6x8 font bitmap" /></a></p>
-
+<p><a href="http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png"><img src="/images/Sebasic_charset_192w.png" alt="6x8 font bitmap"></a></p>
 <p>Yeah so that&rsquo;s great. I could see these images of the fonts, with the
 available characters, but what I wanted was like a bitmap: for
 example, for each character in a 6x8 font, I wanted 0s and 1s
 indicating which bits need to be dark versus light.</p>
-
 <p>Ugh, I spent a couple of hours googling and puzzling over this. Why
 would they provide these images and not provide a bitmap, so that you
 could actually make the font? I mean, the title of <a href="http://uzebox.org/wiki/index.php?title=Font_Bitmaps">that
 page</a> was &ldquo;<em>Font
 Bitmaps</em>&rdquo;!</p>
-
 <p><em>Finally</em> I realized that, just like the picture of Karthik that I
 had made, the PNG images I was looking at <em>were</em> the bitmaps. I could
 load them into R with the
@@ -162,33 +149,25 @@ images. For example, for the 6x8 image above, the PNG file is 192 x 24
 pixels: 24 pixels tall because there are three rows of characters and
 they each are 8 characters tall, and 192 pixels wide because there are
 32 columns of characters and they are each 6 pixels wide.</p>
-
 <p>The script I used to set up the fonts is <a href="https://github.com/ropenscilabs/craft/blob/master/inst/scripts/grab_fonts.R">hiding inside the craft
 package</a>.</p>
-
 <h2 id="rendering-text">Rendering text</h2>
-
 <p>For text I want to write in Minecraft, I first split it into
 the individual characters. Then I convert each character into a
 bitmap.</p>
-
 <p>For each size font, we basically have a matrix of available characters
 and then a matrix that is the font image bitmap. I find the character
 in the font, and then pull out the corresponding chunk of the font
 bitmap. I then paste those bitmaps back together, to get a bitmap for
 the full text.</p>
-
 <p>Finally, I render it in Minecraft by looping over the elements of the
 bitmap matrix of 0s and 1s and adding a block wherever there&rsquo;s a 1,
 using <a href="https://github.com/ropenscilabs/miner/blob/master/R/setBlock.R"><code>miner::setBlock()</code></a>.</p>
-
 <h2 id="rotating-the-text">Rotating the text</h2>
-
 <p>The other tricky bit was figuring out which direction to draw the text. And
 like, how many different directions can you draw text in 3d space?
 Really, I have a terrible spatial sense. And I refuse to admit how
 long it took me to work through that.</p>
-
 <p>Suffice it to say, there are six directions in Minecraft: north,
 south, east, west, up, and down. Your text could go in any of those
 directions, but then for each such direction, the top of the text
@@ -197,14 +176,12 @@ wrote an internal function
 <a href="https://github.com/ropenscilabs/craft/blob/master/R/write_text.R#L153-L164"><code>craft::check_dirtop()</code></a>
 to check compatibility. (That&rsquo;s &ldquo;check dir top&rdquo; not &ldquo;check dirt op&rdquo;, by
 the way.)</p>
-
 <p>And that was pretty much that. It doesn&rsquo;t seem like it was that hard,
-but there were some important conceptual puzzles that took like <sup>2</sup>&frasl;<sub>3</sub> of
+but there were some important conceptual puzzles that took like 2/3 of
 my time on this. In the end the code to grab the font information
 is just about 80 lines, and the code to render text in Minecraft is
 just about 160 lines. And it allowed me to do stuff like this:</p>
-
-<p><img src="../../../../images/rqtl2_3d.png" alt="&quot;R/qtl now in 3d&quot;, rendered within Minecraft" /></p>
+<p><img src="/images/rqtl2_3d.png" alt="&ldquo;R/qtl now in 3d&rdquo;, rendered within Minecraft"></p>
 
     </div>
   </article>
@@ -217,7 +194,7 @@ just about 160 lines. And it allowed me to do stuff like this:</p>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

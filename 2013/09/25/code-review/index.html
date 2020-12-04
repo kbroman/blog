@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Code review - the stupidest thing...</title>
 <meta property="og:title" content="Code review - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -79,52 +81,35 @@
     
 
     <div class="article-content">
-      
-
-<p>There was an <a href="http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812">interesting news item</a> in Nature on <a href="http://en.wikipedia.org/wiki/Code_review">code review</a>.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.</p>
-
+      <p>There was an <a href="http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812">interesting news item</a> in Nature on <a href="http://en.wikipedia.org/wiki/Code_review">code review</a>.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.</p>
 <p>There are very brief quotes from <a href="http://ivory.idyll.org/blog/">Titus Brown</a> and <a href="http://www.biostat.jhsph.edu/~rpeng/">Roger Peng</a>.  I expect that the author of the item, <a href="http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden">Erika Check Hayden</a>, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&rsquo;t fully (or much at all) characterize their view of the issue.</p>
-
 <p>Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:</p>
-
-<blockquote>"That's the kind of thing that should freak any scientist out.... We don't have good processes in place to detect that kind of thing in software."</blockquote>
-
+<!-- raw HTML omitted -->
 <p>Roger is quoted at the end, as follows:</p>
-
-<blockquote>"One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks."</blockquote>
-
+<!-- raw HTML omitted -->
 <p>I agree with both of them, but my initial reaction, from the beginning of the piece, was closer to Roger&rsquo;s: We often have a heck of time getting any code out of people; if we are too hard on people regarding the quality of their code, they might become even less willing to share.</p>
-
 <p>On the one hand, we want people to produce good code:</p>
-
 <ul>
-<li><p>that works</p></li>
-
-<li><p>that&rsquo;s readable</p></li>
-
-<li><p>that&rsquo;s reusable</p></li>
+<li>
+<p>that works</p>
+</li>
+<li>
+<p>that&rsquo;s readable</p>
+</li>
+<li>
+<p>that&rsquo;s reusable</p>
+</li>
 </ul>
-
 <p>And it would be great if, for every bit of code, there was a second programmer who studied it, verified that it was doing the right thing, and offered suggestions for improvement.</p>
-
 <p>But, on the other hand, it seems really unlikely that journals have the resources to do this. And I worry that a study showing that much scientific software is crap will make people even less willing to share.</p>
-
 <p>I would like to see the code associated with scientific articles made readily available, during the review process and beyond. But I don&rsquo;t think we (as a scientific community) want to enforce rigorous code review prior to publication.</p>
-
 <p>Later, on twitter, <a href="https://twitter.com/ctitusbrown/status/382862626692149248">Titus took issue</a> with the &ldquo;not improve how it looks&rdquo; part of what Roger said:</p>
-
-<blockquote>".@kwbroman @simplystats @rdpeng Please read <http://en.wikipedia.org/wiki/Code_review> you are deeply, significantly, and completely wrong about code review."</blockquote>
-
+<!-- raw HTML omitted -->
 <p>Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks <em>is</em> important.)</p>
-
 <p>I don&rsquo;t have enough time this morning to really clean up my thoughts on this issue, and I want to get this out and move on to reading that dissertation that I have to get through by tomorrow. So, let me summarize.</p>
-
 <h3 id="summary">Summary</h3>
-
 <p>We want scientific code to be <em>well written</em>: does what it&rsquo;s intended to do, readable, reusable.</p>
-
 <p>We want scientific code to be <em>available</em>. (Otherwise we can&rsquo;t verify that it does what it&rsquo;s intended to do, or reuse it.)</p>
-
 <p>If we&rsquo;re too hard on people for writing substandard code, we&rsquo;ll discourage the availability. It&rsquo;s an important trade-off.</p>
 
     </div>
@@ -138,7 +123,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

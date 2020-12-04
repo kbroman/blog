@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>news on the stupidest thing...</title>
@@ -6,19 +6,15 @@
     <description>Recent content in news on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>another new laptop</title>
       <link>/2019/02/02/another_new_laptop/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/02/02/another_new_laptop/</guid>
-      <description>I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them. My favorites were the 17&amp;rdquo; ones. Heavy, but that big screen was great for data analysis, programming, and writing papers.
+      <description>I&amp;rsquo;d long been a MacBook Pro user. I went through like 6 or 8 of them. My favorites were the 17&amp;quot; ones. Heavy, but that big screen was great for data analysis, programming, and writing papers.
 Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it seems like Apple is now designing with someone totally different in mind. I mean, my MacPro desktop is on its last legs but hell if I&amp;rsquo;m going to buy one of their new ones which are basically like a laptop that you sit on your desk.</description>
     </item>
     
@@ -108,8 +104,7 @@ We could see out the window that there was a campus police officer preventing pe
       
       <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
-There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
-As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.</description>
+There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!</description>
     </item>
     
     <item>
@@ -163,7 +158,7 @@ I really love these things. All airports should have them.</description>
       
       <guid>/2012/09/11/hilarious-graph/</guid>
       <description>I read an interesting post on the NY Times site this morning, which said:
-Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
+They must be right; they have a graph!</description>
     </item>
     
     <item>
@@ -173,12 +168,8 @@ Analyzing data from the 2008 American National Election Study, we found no relat
       
       <guid>/2012/05/24/police/</guid>
       <description>The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.
-The conversation went something like this:  Police: 
-What&amp;rsquo;s going on?    Me: 
-I&amp;rsquo;m enjoying the day.    Police: 
-Are you staff?    Me: 
-I&amp;rsquo;m faculty.    Police: 
-I&amp;rsquo;m enjoying the day, too.</description>
+The conversation went something like this:
+I&amp;rsquo;m not sure who was more suspicious, him of me or me of him. Perhaps he was thinking through the Prof or Hobo quiz.</description>
     </item>
     
     <item>
@@ -189,7 +180,8 @@ I&amp;rsquo;m enjoying the day, too.</description>
       <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
- An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
+The other:
+But the frequency of offspring of sperm donors with genetic diseases would be the same whether there were many more donors with one child each or fewer donors with many children each, and so it&amp;rsquo;s not clear how sperm donors fathering many children is an argument for genetic testing, except that with fewer donors for the same number of offspring, one would not need to perform as many genetic tests, and so there would be a considerable cost savings.</description>
     </item>
     
     <item>

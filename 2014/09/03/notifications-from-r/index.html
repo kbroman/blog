@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Notifications from R - the stupidest thing...</title>
 <meta property="og:title" content="Notifications from R - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -84,134 +86,94 @@
     
 
     <div class="article-content">
-      
-
-<p>You just sent a long <a href="http://www.r-project.org">R</a> job running. How to know when it&rsquo;s done? Have it notify you by <a href="https://github.com/rasmusab/beepr">beeping</a>, <a href="https://github.com/trinker/gmailR">sending you a text</a>, or <a href="https://github.com/eddelbuettel/rpushbullet">sending you a notification</a> <a href="http://pushbullet.com">via pushbullet</a>.</p>
-
-<!-- more -->
-
-<h3 id="beepr-https-github-com-rasmusab-beepr"><a href="https://github.com/rasmusab/beepr"><code>beepr</code></a></h3>
-
+      <p>You just sent a long <a href="http://www.r-project.org">R</a> job running. How to know when it&rsquo;s done? Have it notify you by <a href="https://github.com/rasmusab/beepr">beeping</a>, <a href="https://github.com/trinker/gmailR">sending you a text</a>, or <a href="https://github.com/eddelbuettel/rpushbullet">sending you a notification</a> <a href="http://pushbullet.com">via pushbullet</a>.</p>
+<!-- raw HTML omitted -->
+<h3 id="beeprhttpsgithubcomrasmusabbeepr"><a href="https://github.com/rasmusab/beepr"><code>beepr</code></a></h3>
 <p>You can use <a href="http://www.sumsar.net/">Rasmus Baath</a>&rsquo;s <a href="https://github.com/rasmusab/beepr">beepr</a> package to have your computer play a sound.</p>
-
 <p>Install it from <a href="http://cran.r-project.org">CRAN</a> with</p>
-
 <pre><code>install.packages(&quot;beepr&quot;)
-</code></pre>
-
-<p>Then, at the bottom of your script, load the package and have it beep.</p>
-
+</code></pre><p>Then, at the bottom of your script, load the package and have it beep.</p>
 <pre><code>library(beepr)
 beep()
-</code></pre>
-
-<p><a href="https://github.com/rasmusab/beepr">beepr</a> comes with a bunch of different sounds (e.g., try <code>beep(&quot;facebook&quot;)</code>), or use a path to any wav file. I tried <a href="http://www.kessels.com/CatSounds/">these cat sounds</a>, but they came out (with my computer&rsquo;s speaker) sounding more like a really unhappy electronic lion&hellip;not very pleasant.</p>
-
+</code></pre><p><a href="https://github.com/rasmusab/beepr">beepr</a> comes with a bunch of different sounds (e.g., try <code>beep(&quot;facebook&quot;)</code>), or use a path to any wav file. I tried <a href="http://www.kessels.com/CatSounds/">these cat sounds</a>, but they came out (with my computer&rsquo;s speaker) sounding more like a really unhappy electronic lion&hellip;not very pleasant.</p>
 <p><a href="https://github.com/rasmusab/beepr">beepr</a> is cool, but most of my long-running jobs are on a distant server. It could be useful for local jobs on my Mac, but most of the time my computer is muted or the sound goes to my headphones (and my headphones are not always on my head). So I&rsquo;m instead having my scripts send me a text or a notification via <a href="http://pushbullet.com">pushbullet</a>.</p>
-
-<h3 id="gmailr-https-github-com-trinker-gmailr"><a href="https://github.com/trinker/gmailR"><code>gmailR</code></a></h3>
-
+<h3 id="gmailrhttpsgithubcomtrinkergmailr"><a href="https://github.com/trinker/gmailR"><code>gmailR</code></a></h3>
 <p>There are a number of different packages for sending email from R (e.g., <a href="http://cran.r-project.org/web/packages/sendmailR/index.html">sendmailR</a> and <a href="http://cran.r-project.org/web/packages/mailR/index.html">mailR</a>). I tried <a href="http://trinkerrstuff.wordpress.com/">Tyler Rinker</a>&rsquo;s <a href="https://github.com/trinker/gmailR">gmailR</a> package.</p>
-
 <p>You can send yourself an email using the <code>gmail()</code> function. And since most cell phone companies have a method for sending a text via email, you can use this same function to send yourself a text. <a href="https://github.com/trinker/gmailR">gmailR</a> includes a function <code>cell2email()</code> that will help you figure out the appropriate email address to use, to send a text to your phone.</p>
-
 <p>The only problem with <a href="https://github.com/trinker/gmailR">gmailR</a> is that you have to pass your gmail account and password to the <code>gmail()</code> function, and you don&rsquo;t really want to have that stuff sitting in your R script.</p>
-
 <p>So I wrote a little package <a href="https://github.com/kbroman/mygmailR">mygmailR</a>, that will instead pull your private information from a file (<code>~/.gmail_private</code>). I set up a separate <a href="https://mail.google.com">gmail</a> account for this purpose, and I set the security settings to use <a href="https://support.google.com/accounts/answer/185833?hl=en">app-specific passwords</a>.</p>
-
 <p>My <code>~/.gmail_private</code> file looks like the following: app-specific gmail password, gmail account to be the default &ldquo;from&rdquo; email address (perhaps special for this purpose), the email address to use to send a text, and the default &ldquo;to&rdquo; email (which is my usual gmail account).</p>
-
 <pre><code>password my_private_app_specific_password
 gmail    my_gmail_account@gmail.com
 text     0123456789@txt.att.net
 to       default_to@gmail.com
-</code></pre>
-
-<p>You need to install a few packages. <a href="https://github.com/trinker/gmailR">gmailR</a> and <a href="https://github.com/kbroman/mygmailR">mygmailR</a> are not available on <a href="http://cran.r-project.org">CRAN</a>, so you need to install <a href="https://github.com/hadley/devtools">devtools</a> and use the <code>install_github()</code> function to install them from <a href="http://github.com">GitHub</a>.</p>
-
+</code></pre><p>You need to install a few packages. <a href="https://github.com/trinker/gmailR">gmailR</a> and <a href="https://github.com/kbroman/mygmailR">mygmailR</a> are not available on <a href="http://cran.r-project.org">CRAN</a>, so you need to install <a href="https://github.com/hadley/devtools">devtools</a> and use the <code>install_github()</code> function to install them from <a href="http://github.com">GitHub</a>.</p>
 <pre><code>install.packages(c(&quot;devtools&quot;, &quot;rJython&quot;, &quot;rJava&quot;, &quot;rjson&quot;))
 library(devtools)
 install_github(&quot;trinker/gmailR&quot;)
 install_github(&quot;kbroman/mygmailR&quot;)
-</code></pre>
-
-<p>In your script, to send yourself a text, you&rsquo;d write</p>
-
+</code></pre><p>In your script, to send yourself a text, you&rsquo;d write</p>
 <pre><code>library(mygmailR)
 send_text(&quot;subject here&quot; &quot;body of message here&quot;)
-</code></pre>
-
-<p>To send yourself an email, write</p>
-
+</code></pre><p>To send yourself an email, write</p>
 <pre><code>library(mygmailR)
 send_gmail(&quot;subject here&quot;, &quot;body of message here&quot;)
-</code></pre>
-
-<h3 id="rpushbullet-https-github-com-eddelbuettel-rpushbullet"><a href="https://github.com/eddelbuettel/rpushbullet"><code>RPushbullet</code></a></h3>
-
+</code></pre><h3 id="rpushbullethttpsgithubcomeddelbuettelrpushbullet"><a href="https://github.com/eddelbuettel/rpushbullet"><code>RPushbullet</code></a></h3>
 <p>Another alternative (suggested to me by <a href="https://twitter.com/PeteHaitch/status/507073412842278913">Peter Hickey</a> and <a href="https://twitter.com/jknowles/status/507152898674143232">Jared Knowles</a>) is to use <a href="http://dirk.eddelbuettel.com/">Dirk Eddelbuettel</a>&rsquo;s <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> package to send yourself a notification via <a href="http://pushbullet.com">pushbullet</a>.</p>
-
 <p>The main advantage of this, in my mind, is that there&rsquo;s no gmail password sitting around on your system anywhere, but rather just your <a href="http://pushbullet.com">pushbullet</a> &ldquo;Access Token&rdquo;, sitting in the file <code>~/.rpushbullet.json</code>, so this is less of a security issue.</p>
-
 <ol>
-<li><p>Sign up for <a href="http://pushbullet.com">pushbullet</a>; you&rsquo;ll need a <a href="http://www.google.com">Google</a> account.</p></li>
-
-<li><p>Install the pushbullet app on your phone or other device, or install the chrome extension.</p></li>
-
-<li><p>Go to <a href="https://www.pushbullet.com/account">your pushbullet account page</a> to get your &ldquo;Access Token&rdquo;.</p></li>
-
-<li><p>Install the <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> package from CRAN.</p>
-
+<li>
+<p>Sign up for <a href="http://pushbullet.com">pushbullet</a>; you&rsquo;ll need a <a href="http://www.google.com">Google</a> account.</p>
+</li>
+<li>
+<p>Install the pushbullet app on your phone or other device, or install the chrome extension.</p>
+</li>
+<li>
+<p>Go to <a href="https://www.pushbullet.com/account">your pushbullet account page</a> to get your &ldquo;Access Token&rdquo;.</p>
+</li>
+<li>
+<p>Install the <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> package from CRAN.</p>
+</li>
+</ol>
 <pre><code>install.packages(&quot;RPushbullet&quot;)
-</code></pre></li>
-
-<li><p>Create a <code>~/.rpushbullet.json</code> file with your api key and not much else.</p>
-
+</code></pre><ol start="5">
+<li>Create a <code>~/.rpushbullet.json</code> file with your api key and not much else.</li>
+</ol>
 <pre><code>{
-  &quot;key&quot;: &quot;your_api_key&quot;,
-  &quot;devices&quot;: [],
-  &quot;names&quot;: []
+    &quot;key&quot;: &quot;your_api_key&quot;,
+    &quot;devices&quot;: [],
+    &quot;names&quot;: []
 }
-</code></pre></li>
-
-<li><p>Install <a href="http://cran.r-project.org/package=jsonlite">jsonlite</a> and use <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a>&rsquo;s <code>pbGetDevices()</code> function to get the identifiers for the devices you&rsquo;ve registered with <a href="http://pushbullet.com">pushbullet</a>.</p>
-
+</code></pre><ol start="6">
+<li>Install <a href="http://cran.r-project.org/package=jsonlite">jsonlite</a> and use <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a>&rsquo;s <code>pbGetDevices()</code> function to get the identifiers for the devices you&rsquo;ve registered with <a href="http://pushbullet.com">pushbullet</a>.</li>
+</ol>
 <pre><code>install.packages(&quot;jsonlite&quot;)
 library(jsonlite)
 library(RPushbullet)
 fromJSON(pbGetDevices())$devices[,c(&quot;iden&quot;, &quot;nickname&quot;)]
-</code></pre></li>
-
-<li><p>Insert those device identifiers into your <code>~/.rpushbullet.json</code> file.</p>
-
-<pre><code>{
-  &quot;key&quot;: &quot;your_api_key&quot;,
-
-  &quot;devices&quot;: [
-      &quot;your_phone_device_id&quot;,
-      &quot;your_tablet_device_id&quot;,
-      &quot;your_chrome_device_id&quot;;
-  ],
-
-  &quot;names&quot;: [
-      &quot;phone&quot;,
-      &quot;tablet&quot;,
-      &quot;Chrome&quot;;
-  ]
-}
-</code></pre></li>
+</code></pre><ol start="7">
+<li>Insert those device identifiers into your <code>~/.rpushbullet.json</code> file.</li>
 </ol>
+<pre><code>{
+    &quot;key&quot;: &quot;your_api_key&quot;,
 
-<p>Now you&rsquo;re set!  Use the <code>pbPost()</code> function to post a message to yourself.</p>
+    &quot;devices&quot;: [
+        &quot;your_phone_device_id&quot;,
+        &quot;your_tablet_device_id&quot;,
+        &quot;your_chrome_device_id&quot;;
+    ],
 
+    &quot;names&quot;: [
+        &quot;phone&quot;,
+        &quot;tablet&quot;,
+        &quot;Chrome&quot;;
+    ]
+}
+</code></pre><p>Now you&rsquo;re set!  Use the <code>pbPost()</code> function to post a message to yourself.</p>
 <pre><code>library(RPushbullet)
 pbPost(&quot;note&quot;, &quot;Title of note&quot;, &quot;Body of message&quot;)
-</code></pre>
-
-<p>By default, the message is posted to the first device listed in your <code>~/.rpushbullet.json</code> file; to post it to a different device, use the argument <code>deviceind</code>, which takes a positive integer.</p>
-
+</code></pre><p>By default, the message is posted to the first device listed in your <code>~/.rpushbullet.json</code> file; to post it to a different device, use the argument <code>deviceind</code>, which takes a positive integer.</p>
 <p>I&rsquo;m still somewhat inclined towards using <a href="https://github.com/trinker/gmailR">gmailR</a> and <a href="https://github.com/kbroman/mygmailR">mygmailR</a> to send myself a text, but <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> seems more secure.</p>
-
 <p><strong>Update</strong>: The <a href="https://twitter.com/hadleywickham/status/507192305816567808">word from Hadley</a>: we should also check out <a href="https://github.com/jimhester/gmailr">gmailr</a>. [But you <a href="https://github.com/jimhester/gmailr/issues/5">can&rsquo;t currently send email</a> with <a href="https://github.com/jimhester/gmailr">gmailr</a>.]</p>
 
     </div>
@@ -225,7 +187,7 @@ pbPost(&quot;note&quot;, &quot;Title of note&quot;, &quot;Body of message&quot;)
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -235,18 +197,18 @@ pbPost(&quot;note&quot;, &quot;Title of note&quot;, &quot;Body of message&quot;)
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 
 
     
-<script src="../../../../js/math-code.js"></script>
+<script src="/js/math-code.js"></script>
 <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 

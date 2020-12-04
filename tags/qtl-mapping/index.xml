@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QTL mapping on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in QTL mapping on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/qtl-mapping/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="/tags/qtl-mapping/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
       <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>

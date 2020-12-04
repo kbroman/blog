@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Car crash stats revisited: My measurement errors - the stupidest thing...</title>
 <meta property="og:title" content="Car crash stats revisited: My measurement errors - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,27 +82,23 @@
 
     <div class="article-content">
       <p>Last week, I <a href="https://kbroman.org/blog/2014/10/29/improved-graphs-of-car-crash-stats/">created revised versions</a> of graphs of car crash statistics by state (including <a href="https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/">an interactive version</a>), from <a href="https://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/">a post</a> by <a href="https://fivethirtyeight.com/contributors/mona-chalabi/">Mona Chalabi</a> at <a href="https://fivethirtyeight.com/">538</a>.</p>
-
 <p>Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture <a href="https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf">on creating effective figures and tables</a>, I just read the data off printed versions of the bar charts, using a ruler.</p>
-
 <p>I later emailed <a href="https://fivethirtyeight.com/contributors/mona-chalabi">Mona Chalabi</a>, and she and <a href="https://fivethirtyeight.com/contributors/andrew-flowers/">Andrew Flowers</a> quickly posted the data to <a href="https://github.com/fivethirtyeight/data/tree/master/bad-drivers"><code>github.com/fivethirtyeight/data</code></a>. (That repository has a lot of interesting data, and if you see data at 538 that you&rsquo;re interested in, just ask them!)</p>
-
 <p>I was curious to look at how I&rsquo;d done with my measurements and data entry. Here&rsquo;s a plot of my percent errors:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png" alt="Percent measurement errors in Karl's car crash stats" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png" alt="Percent measurement errors in Karl&rsquo;s car crash stats"></p>
 <p>Not too bad, really. Here are the biggest problems:</p>
-
 <ul>
-<li><p>Mississippi, non-distracted: off by 6%, but that corresponded to 0.5 mm.</p></li>
-
-<li><p>Rhode Island and Ohio, speeding: off by 40 and 35%, respectively. I&rsquo;d written down 8 and 9 mm rather than 13 and 14 mm.</p></li>
-
-<li><p>Maine and Indiana, alcohol: wrote 15.5 and 14.5 mm, but typed 13.5 and 13 mm. In the former, I think I just misinterpreted my writing; in the latter, I think I wrote the number for the state below (Iowa).</p></li>
+<li>
+<p>Mississippi, non-distracted: off by 6%, but that corresponded to 0.5 mm.</p>
+</li>
+<li>
+<p>Rhode Island and Ohio, speeding: off by 40 and 35%, respectively. I&rsquo;d written down 8 and 9 mm rather than 13 and 14 mm.</p>
+</li>
+<li>
+<p>Maine and Indiana, alcohol: wrote 15.5 and 14.5 mm, but typed 13.5 and 13 mm. In the former, I think I just misinterpreted my writing; in the latter, I think I wrote the number for the state below (Iowa).</p>
+</li>
 </ul>
-
 <p>It&rsquo;s also interesting to note that my &ldquo;total&rdquo; and &ldquo;non-distracted&rdquo; were almost entirely under-estimates: probably an error in the measurement of the overall width of the bar chart.</p>
-
 <p>Also note: <a href="https://twitter.com/brycem">@brycem</a> had recommended using <a href="https://automeris.io/WebPlotDigitizer/">WebPlotDigitizer</a> for digitizing data from images.</p>
 
     </div>
@@ -114,7 +112,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

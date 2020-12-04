@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Microarrays suck - the stupidest thing...</title>
 <meta property="og:title" content="Microarrays suck - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -79,70 +81,50 @@
     
 
     <div class="article-content">
-      
-
-<p>Maybe it&rsquo;s just that I&rsquo;m stupid and haven&rsquo;t been paying proper attention to <a href="https://rafalab.github.io/">Rafa&rsquo;s work</a> in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&rsquo;ve re-learned.</p>
-
+      <p>Maybe it&rsquo;s just that I&rsquo;m stupid and haven&rsquo;t been paying proper attention to <a href="https://rafalab.github.io/">Rafa&rsquo;s work</a> in the past decade, but microarray data have really been kicking my ass the last few weeks.  Here are a few of the lessons that I&rsquo;ve re-learned.</p>
 <h3 id="lesson-1-what-the-hell-is-that">Lesson 1: What the hell is that?</h3>
-
 <p>Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (<a href="https://www.biostat.wisc.edu/~kbroman/publications/autozyg.pdf">autozygosity in the CEPH families</a>, <a href="https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf">a large, common human inversion polymorphism</a>, and most recently <a href="https://www.biostat.wisc.edu/~kbroman/presentations/enar2012.pdf">sample mixups</a>).</p>
-
 <p>A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, &ldquo;Hmm, that&rsquo;s interesting,&rdquo; and so I made some more plots.  And then I saw this:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png" alt="" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png" alt=""></p>
 <p>This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.</p>
-
 <p>Following up on this, it seems that the plaid pattern is the result of a set of bad arrays that should have been but hadn&rsquo;t been detected before.</p>
-
 <h3 id="lesson-2-look">Lesson 2: Look</h3>
-
 <p>Of course, I wouldn&rsquo;t have found this array problem if I hadn&rsquo;t looked.  And in my several years working on this project, I hadn&rsquo;t looked.</p>
-
 <p>I was overwhelmed by the 500 microarrays × 6 tissues × 40,000 probes, and so didn&rsquo;t make the sorts of plots that I should have.</p>
-
 <p>Plus, this is the first real microarray project I&rsquo;ve been involved in, and I haven&rsquo;t known what to look for.  (I should have looked at images of correlation matrices with arrays sorted by similarity as determined from hierarchical clustering.)</p>
-
 <p>You can&rsquo;t make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2012/04/many_boxplots.png" alt="" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2012/04/many_boxplots.png" alt=""></p>
 <p>There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.</p>
-
 <p>I quite like the picture.</p>
-
 <p>The code is available within my <a href="https://github.com/kbroman/broman">R/broman</a> package on <a href="https://github.com">github</a>, though there&rsquo;s not much to it.</p>
-
-<h3 id="lesson-3-don-t-trust-anyone">Lesson 3: Don&rsquo;t trust anyone</h3>
-
+<h3 id="lesson-3-dont-trust-anyone">Lesson 3: Don&rsquo;t trust anyone</h3>
 <p>Don&rsquo;t even trust yourself.</p>
-
 <p>I relied on others to do the data cleaning.  I should have checked things more carefully.</p>
-
 <p>I looked at the data quite closely a year or so ago and detected sample mix-ups.  In correcting those mistakes, I spent a lot of time looking at the array data and trying to identify bad arrays.  Clearly I didn&rsquo;t look closely enough, or I just looked at the wrong things.</p>
-
 <h3 id="lesson-4-take-your-time">Lesson 4: Take your time</h3>
-
 <p>Scientists are under a lot of pressure to produce and often are not exploring data as thoroughly as the data deserve.</p>
-
 <p>But if you rush through data diagnostics, you could embarrass yourself later.</p>
-
 <p>More importantly, take the time to follow up on apparent artifacts.  For me, the unintended analyses are more interesting than the planned ones.</p>
-
 <h3 id="my-basic-strategy-for-data-diagnostics">My basic strategy for data diagnostics</h3>
-
 <ul>
-<li><p>Expect errors</p></li>
-
-<li><p>Think about what might have gone wrong and how such problems might be revealed</p></li>
-
-<li><p>Make lots of specially-tailored plots</p></li>
-
-<li><p>Create a (potentially informal) pipeline of all of the useful diagnostics you&rsquo;ve used in the past</p></li>
-
-<li><p>Make more plots just because you think they might interesting</p></li>
-
-<li><p>If something looks odd, figure out why</p></li>
+<li>
+<p>Expect errors</p>
+</li>
+<li>
+<p>Think about what might have gone wrong and how such problems might be revealed</p>
+</li>
+<li>
+<p>Make lots of specially-tailored plots</p>
+</li>
+<li>
+<p>Create a (potentially informal) pipeline of all of the useful diagnostics you&rsquo;ve used in the past</p>
+</li>
+<li>
+<p>Make more plots just because you think they might interesting</p>
+</li>
+<li>
+<p>If something looks odd, figure out why</p>
+</li>
 </ul>
 
     </div>
@@ -156,7 +138,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Chutes &amp; ladders: How long is this going to take? - the stupidest thing...</title>
 <meta property="og:title" content="Chutes &amp; ladders: How long is this going to take? - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,29 +82,17 @@
 
     <div class="article-content">
       <p>I was playing Chutes &amp; Ladders with my four-year-old daughter yesterday, and I thought, &ldquo;How long is this going to take?&rdquo;</p>
-
 <p>I saw an <a href="https://datagenetics.com/blog/november12011/">interesting mathematical analysis of the game</a> a few years ago, but it seems to be offline, though <a href="https://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/">you can read it</a> via the <a href="https://web.archive.org/">wayback machine</a>.</p>
-
 <p>But that didn&rsquo;t answer my specific question, namely, &ldquo;How long is this going to take?&rdquo;</p>
-
 <p>So I wrote a bit of <a href="https://gist.github.com/kbroman/5600209">R code to simulate the game</a>.</p>
-
 <p>Here&rsquo;s the distribution of the number of spins to complete the game, by number of players:</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png" alt="No. spins in chutes &amp; ladders" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png" alt="No. spins in chutes & ladders"></p>
 <p>With two players, the average number of spins is 52, with a 90th percentile of 88.</p>
-
 <p>If you add a third player, the average increases to 65, and the 90th percentile increases to 103.  You&rsquo;re playing fewer rounds, but each round is three times as long. If you add a fourth player, the average is 76 and the 90th percentile is 117.</p>
-
 <p>So, in trying to minimize the agony, it seems best to not encourage my eight-year-old son to join us in the game.  If he plays with us, there&rsquo;s a 63% chance that it will take longer.</p>
-
-<p>And that&rsquo;s particularly true because then the chance of my daughter winning drops from about <sup>1</sup>&frasl;<sub>2</sub> to about <sup>1</sup>&frasl;<sub>3</sub>.</p>
-
+<p>And that&rsquo;s particularly true because then the chance of my daughter winning drops from about 1/2 to about 1/3.</p>
 <p>That raises another question: if I let her go first, what advantage does that give her?  Not much.  The chance that the person who goes first will win is 50.9%, 34.4%, and 25.9%, respectively, when there are 2, 3, and 4 players.  So not a noticeable amount.  Thus I cheat (on her behalf). Really, though, I&rsquo;m cheating in order to shorten the game as much as to ensure that she wins.</p>
-
 <p><em>Note</em>: There&rsquo;s a close connection between this problem and my work on the multiple-strain recombinant inbred lines. (See <a href="https://www.ncbi.nlm.nih.gov/pubmed/15545647">this</a> and <a href="https://www.ncbi.nlm.nih.gov/pubmed/22345609">that</a>.)  I&rsquo;m tempted to play around with it some more.</p>
-
 <p><a href="https://kbroman.org/blog/2013/05/20/more-on-chutes-ladders/">Additional numerical results here.</a></p>
 
     </div>
@@ -116,7 +106,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>exploratory data analysis on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in exploratory data analysis on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 03 Nov 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/exploratory-data-analysis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Mon, 03 Nov 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/exploratory-data-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Car crash stats revisited: My measurement errors</title>
       <link>/2014/11/03/car-crash-stats-revisited-my-measurement-errors/</link>
@@ -42,7 +38,8 @@ Code on github.</description>
       <guid>/2014/10/29/improved-graphs-of-car-crash-stats/</guid>
       <description>Last week, Mona Chalabi wrote an interesting post on car crash statistics by state, at fivethirtyeight.com.
 I didn&amp;rsquo;t like the figures so much, though. There were a number of them like this:
-I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better. There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
+I&amp;rsquo;m giving a talk today about data visualization [slides | github], and I thought this would make a good example, so I spent some time creating versions that I like better.
+There are two basic issues with Mona Chalabi&amp;rsquo;s graphs.</description>
     </item>
     
     <item>

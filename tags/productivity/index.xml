@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>productivity on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in productivity on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 04 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Error notifications from R</title>
       <link>/2014/09/04/error-notifications-from-r/</link>
@@ -32,8 +28,8 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
-install.packages(&amp;quot;beepr&amp;quot;)  Then, at the bottom of your script, load the package and have it beep.
-library(beepr) beep()  beepr comes with a bunch of different sounds (e.</description>
+install.packages(&amp;quot;beepr&amp;quot;) Then, at the bottom of your script, load the package and have it beep.
+library(beepr) beep() beepr comes with a bunch of different sounds (e.</description>
     </item>
     
     <item>

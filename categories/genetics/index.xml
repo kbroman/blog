@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Genetics on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in Genetics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/genetics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate><atom:link href="/categories/genetics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fitting linear mixed models for QTL mapping</title>
       <link>/2015/11/24/fitting-linear-mixed-models-for-qtl-mapping/</link>
@@ -69,7 +65,7 @@ I poked through the paper, and my eye was attracted to the following figure. The
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
       <guid>/2012/05/17/trees/</guid>
-      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
+      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&#39; artwork. Today I found one with this:
 That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
 These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>
     </item>
@@ -82,7 +78,8 @@ These scratchings are related to a bit of theory I&amp;rsquo;ve been working on 
       <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
- An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
+The other:
+But the frequency of offspring of sperm donors with genetic diseases would be the same whether there were many more donors with one child each or fewer donors with many children each, and so it&amp;rsquo;s not clear how sperm donors fathering many children is an argument for genetic testing, except that with fewer donors for the same number of offspring, one would not need to perform as many genetic tests, and so there would be a considerable cost savings.</description>
     </item>
     
     <item>
@@ -111,8 +108,8 @@ Lesson 1: What the hell is that? Many (or all) of my interesting findings have b
       
       <guid>/2012/02/16/collaborative-cross-papers/</guid>
       <description>A batch of 15 papers on the mouse Collaborative Cross appeared in Genetics and G3 today, including two of my own:
- Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
- Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202
+  Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
+  Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202
   </description>
     </item>
     
@@ -132,7 +129,7 @@ Lesson 1: What the hell is that? Many (or all) of my interesting findings have b
       
       <guid>/2011/10/19/parachutes/</guid>
       <description>I went to a great talk today by David Goldstein, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials. The main conclusion:
-We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.</description>
+Make sure to read the statement regarding the authors&#39; contributions.</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on the stupidest thing...</title>
@@ -6,16 +6,21 @@
     <description>Recent content in Tags on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
@@ -94,20 +99,20 @@
     </item>
     
     <item>
-      <title>Minecraft</title>
-      <link>/tags/minecraft/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/minecraft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>conference</title>
       <link>/tags/conference/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minecraft</title>
+      <link>/tags/minecraft/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/minecraft/</guid>
       <description></description>
     </item>
     
@@ -121,7 +126,7 @@
     </item>
     
     <item>
-      <title>mac</title>
+      <title>Mac</title>
       <link>/tags/mac/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -166,24 +171,6 @@
     </item>
     
     <item>
-      <title>data munging</title>
-      <link>/tags/data-munging/</link>
-      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
-      
-      <guid>/tags/data-munging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>read.table</title>
-      <link>/tags/read.table/</link>
-      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
-      
-      <guid>/tags/read.table/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>blogdown</title>
       <link>/tags/blogdown/</link>
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
@@ -198,15 +185,6 @@
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>/tags/publishing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RDS</title>
-      <link>/tags/rds/</link>
-      <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
-      
-      <guid>/tags/rds/</guid>
       <description></description>
     </item>
     
@@ -229,6 +207,15 @@
     </item>
     
     <item>
+      <title>RDS</title>
+      <link>/tags/rds/</link>
+      <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
+      
+      <guid>/tags/rds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>D3</title>
       <link>/tags/d3/</link>
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
@@ -243,15 +230,6 @@
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
       <guid>/tags/data-visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL</title>
-      <link>/tags/sql/</link>
-      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
-      
-      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     
@@ -274,11 +252,29 @@
     </item>
     
     <item>
+      <title>SQL</title>
+      <link>/tags/sql/</link>
+      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
+      
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>wordpress</title>
       <link>/tags/wordpress/</link>
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>censorship</title>
+      <link>/tags/censorship/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/censorship/</guid>
       <description></description>
     </item>
     

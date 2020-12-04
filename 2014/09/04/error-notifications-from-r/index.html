@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Error notifications from R - the stupidest thing...</title>
 <meta property="og:title" content="Error notifications from R - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,36 +87,24 @@
 
     <div class="article-content">
       <p>I&rsquo;m enthusiastic about having <a href="https://kbroman.org/blog/2014/09/03/notifications-from-r/">R notify me when my script is done</a>.</p>
-
 <p>But among my early uses of this, my script threw an error, and I never got a text or <a href="https://pushbullet.com">pushbullet</a> about <em>that</em>. And really, I&rsquo;m even more interested in being notified about such errors than anything else.</p>
-
 <p>It&rsquo;s relatively easy to get notified of errors. At the top of your script, include code like <code>options(error = function() { } )</code></p>
-
 <p>Fill in the function with your notification code. If there&rsquo;s an error, the error message will be printed and then that function will be called. (And then the script will halt.)</p>
-
 <p>You can use <code>geterrmessage()</code> to grab the error message to include in your notification.</p>
-
 <p>For example, if you want to use <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> for the notification, you could put, at the top of your script, something like this:</p>
-
 <pre><code>options(error = function() {
                     library(RPushbullet)
                     pbPost(&quot;note&quot;, &quot;Error&quot;, geterrmessage())
                 })
-</code></pre>
-
-<p>Then if the script gives an error, you&rsquo;ll get a note with title &ldquo;Error&rdquo; and with the error message as the body of the note.</p>
-
+</code></pre><p>Then if the script gives an error, you&rsquo;ll get a note with title &ldquo;Error&rdquo; and with the error message as the body of the note.</p>
 <p><strong>Update</strong>: I knew I&rsquo;d heard about this sort of thing somewhere, but I couldn&rsquo;t remember where. Duh; <a href="https://twitter.com/rabaath/">Rasmus</a> <a href="https://twitter.com/rabaath/status/507087947041357825">mentioned it on twitter</a> just a couple of days ago! Fortunately, he reminded me of that in the comments below.</p>
-
 <p><strong>Another update</strong>: Ian Kyle pointed out in the comments that the above function, if used in a script run with <code>R CMD BATCH</code>, won&rsquo;t actually halt the script. The simplest solution is to add <code>stop(geterrmessage())</code>, like this:</p>
-
 <pre><code>options(error = function() {
                     library(RPushbullet)
                     pbPost(&quot;note&quot;, &quot;Error&quot;, geterrmessage())
                     if(!interactive()) stop(geterrmessage())
                 })
 </code></pre>
-
     </div>
   </article>
 
@@ -126,7 +116,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -136,12 +126,12 @@
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

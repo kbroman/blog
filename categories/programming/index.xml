@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on the stupidest thing...</title>
@@ -6,11 +6,17 @@
     <description>Recent content in Programming on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>debugging with docker and r-devel</title>
+      <link>/2020/12/03/debugging-with-docker-and-r-devel/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/12/03/debugging-with-docker-and-r-devel/</guid>
+      <description>If you&amp;rsquo;ve not heard, there&amp;rsquo;s a big move away from Travis to GitHub Actions for continuous testing of R packages. I&amp;rsquo;m so glad for the infrastructure to help, but it&amp;rsquo;s a bit of work to figure it out.
+But that&amp;rsquo;s not what I&amp;rsquo;m talking about today. Today I want to talk about using docker to debug an R package that is throwing an error in the development version of R. This came up because with the new GitHub Actions infrastructure, I can now test my R packages on multiple OSs and with multiple versions of R, and today R/qtl was shown to throw an error in R-devel.</description>
+    </item>
     
     <item>
       <title>reproducible abstract</title>
@@ -107,11 +113,10 @@ In addition, it&amp;rsquo;d be useful to have session information (R and package
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/2015/09/24/its-not-you-its-me/</guid>
-      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;rdquo;)
+      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
- TravisCI for not handling system.file() properly.
- R-devel for having broken system.</description>
+  TravisCI for not handling system.file() properly.</description>
     </item>
     
     <item>
@@ -132,10 +137,9 @@ That&amp;rsquo;s led me to spend a good amount of time in the last few years lea
       <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
- ddplyr (from RStudio)
- ggplot2 (from RStudio)
- unix command line (from Dave Child at Cheatography)
- git (from GitHub)</description>
+  ddplyr (from RStudio)
+  ggplot2 (from RStudio)
+  unix command line (from Dave Child at Cheatography)</description>
     </item>
     
     <item>
@@ -186,7 +190,7 @@ Last night, I wrote a minimal tutorial on how I&amp;rsquo;ve been using this (fo
       <guid>/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
-&amp;mdash; __root__ (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
+&amp;mdash; Lynn Root (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
 Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     
@@ -228,7 +232,7 @@ There are very brief quotes from Titus Brown and Roger Peng. I expect that the a
       <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>/2013/08/20/electronic-lab-notebook/</guid>
-      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;ldquo;
+      <description>I was interested to read C. Titus Brown&amp;rsquo;s recent post, &amp;ldquo;Is version control an electronic lab notebook?&amp;rdquo;
 I think version control is really important, and I think all computational scientists should have something equivalent to a lab notebook. But I think of version control as serving needs orthogonal to those served by a lab notebook.
 As Titus points out, a traditional lab notebook serves two purposes: provenance and protocol. Version control could be useful for provenance, but I don&amp;rsquo;t really care about provenance.</description>
     </item>
@@ -295,7 +299,8 @@ We get them in an Excel file, and I was working on a Perl script to parse the fi
       
       <guid>/2013/03/16/why-arent-all-of-our-graphs-interactive/</guid>
       <description>I&amp;rsquo;ve come to believe that, for high-dimensional data, visualizations (aka graphs), and particularly interactive graphs, can be more important than precise statistical inference.
-We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.</description>
+We first need to be able to view and explore the data, and when it is unusually abundant, that is especially hard. This was a primary contributor to my recent embarrassments, in which clear problems in the data were not discovered when they should have been.
+I gave a talk on interactive graphs (with the title above) at Johns Hopkins last fall, and then a related talk at ENAR earlier this week, and I have a few thoughts to add here.</description>
     </item>
     
     <item>
@@ -320,18 +325,6 @@ The hardest part was setting up the data files. Well, that plus the fact that I 
 I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
 The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
 I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</description>
-    </item>
-    
-    <item>
-      <title>D3.js difficulties</title>
-      <link>/2013/02/08/d3-js-difficulties/</link>
-      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/02/08/d3-js-difficulties/</guid>
-      <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
-But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
-Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var h=50; var svg = d3.</description>
     </item>
     
   </channel>

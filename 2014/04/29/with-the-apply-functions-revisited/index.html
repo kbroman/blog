@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>&#34;[&#34; with the apply() functions, revisited - the stupidest thing...</title>
 <meta property="og:title" content="&#34;[&#34; with the apply() functions, revisited - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,19 +87,13 @@
 
     <div class="article-content">
       <p>I&rsquo;d <a href="https://kbroman.org/blog/2013/08/20/and-with-the-apply-functions/">mentioned in the fall</a> that one could use <code>&quot;[&quot;</code> in the <code>apply</code>-type functions, like this:</p>
-
 <pre><code>id &lt;- c(&quot;ZYY-43S-CWA3&quot;, &quot;6YU-F4B-VD2I&quot;)
 sapply(strsplit(id, &quot;-&quot;), &quot;[&quot;, 2)
-</code></pre>
-
-<p>I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.</p>
-
+</code></pre><p>I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.</p>
 <pre><code>z &lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2))
 lapply(z, &quot;[&quot;, 1, )
 lapply(z, &quot;[&quot;, , 3)
-</code></pre>
-
-<p>As you can see, my data isn&rsquo;t &ldquo;<a href="https://www.jstatsoft.org/article/view/v059i10">tidy</a>.&rdquo;</p>
+</code></pre><p>As you can see, my data isn&rsquo;t &ldquo;<a href="https://www.jstatsoft.org/article/view/v059i10">tidy</a>.&rdquo;</p>
 
     </div>
   </article>
@@ -110,7 +106,7 @@ lapply(z, &quot;[&quot;, , 3)
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -120,12 +116,12 @@ lapply(z, &quot;[&quot;, , 3)
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>reproducible abstract - the stupidest thing...</title>
 <meta property="og:title" content="reproducible abstract - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -87,7 +89,6 @@
       <p>A student asked me about how to include summary results in the abstract or
 executive summary at the top of an R Markdown report when they don&rsquo;t get
 calculated until somewhere below.</p>
-
 <p>I feel like I&rsquo;ve seen a generally accepted solution to this, but I
 can&rsquo;t find it. I thought maybe Keith Baggerly mentioned this in his
 <a href="https://github.com/SISBID/Module3/blob/master/2017_SISBID_3_12_good_reports.pdf">slides about good reproducible
@@ -95,10 +96,8 @@ reports</a>,
 but he doesn&rsquo;t seem to. I did find <a href="https://community.rstudio.com/t/best-practices-for-organizing-rmarkdown-projects/914">this RStudio Community
 discussion</a>
 that is relevant, but it doesn&rsquo;t have quite the solution I would want.</p>
-
 <p>My suggestion was to include a code chunk something like this
 before the abstract:</p>
-
 <pre><code>```{r load_summary_results, echo=FALSE}
 summary_file &lt;- &quot;_cache/summary_results.RData&quot;
 if(file.exists(summary_file)) {
@@ -110,12 +109,9 @@ if(file.exists(summary_file)) {
 }
 ```
 </code></pre>
-
 <p>And then use <code>resultA</code>, <code>resultB</code>, and <code>resultC</code> in the abstract.</p>
-
 <p>At the bottom of your document, save the results to a file with
 something like this:</p>
-
 <pre><code>```{r save_summary_results, echo=FALSE}
 resultA &lt;- [some calculation]
 resultB &lt;- [some other calculation]
@@ -124,11 +120,9 @@ resultC &lt;- [a third calculation]
 save(resultA, resultB, resultC, file=summary_file)
 ```
 </code></pre>
-
 <p>The first time you compile the report, your abstract would have a
 bunch of <code>NA</code> values in it. But then if you compile the report
 a second time, you&rsquo;d pull in the results from the previous run.</p>
-
 <p>Is there a better way? Let me know <a href="https://twitter.com/kwbroman">on twitter</a>.</p>
 
     </div>
@@ -142,7 +136,7 @@ a second time, you&rsquo;d pull in the results from the previous run.</p>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -152,12 +146,12 @@ a second time, you&rsquo;d pull in the results from the previous run.</p>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

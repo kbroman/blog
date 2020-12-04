@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Tutorials on git/github and GNU make - the stupidest thing...</title>
 <meta property="og:title" content="Tutorials on git/github and GNU make - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -85,20 +87,13 @@
 
     <div class="article-content">
       <p>If you&rsquo;re not using version control, you should be.  <em>Learn <a href="https://git-scm.com">git</a></em>.</p>
-
 <p>If you&rsquo;re not on <a href="https://github.com">github</a>, you should be.  That&rsquo;s <em>real</em> open source.</p>
-
 <p>To help some colleagues get started with <a href="https://git-scm.com">git</a> and <a href="https://github.com">github</a>, I wrote a <a href="https://kbroman.org/github_tutorial">minimal tutorial</a>. There are lots of git and github resources available, but I thought I&rsquo;d give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.</p>
-
 <p>And for <a href="https://www.r-project.org">R</a> folks, note that it&rsquo;s easy to install R packages that are hosted on github, using <a href="http://hadley.nz">Hadley Wickham</a>&rsquo;s <a href="https://github.com/hadley/devtools">devtools</a> package.  For example, to install <a href="https://github.com/nachocab">Nacho Caballero</a>&rsquo;s <a href="https://github.com/nachocab/clickme">clickme</a> package:</p>
-
-<pre><code class="language-r">install.packages(&quot;devtools&quot;)
-library(devtools)
-install_github(&quot;nachocab/clickme&quot;)
-</code></pre>
-
-<p>Having written that git/github tutorial, I thought: I should write more such!</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;devtools&#34;</span>)
+<span style="color:#a6e22e">library</span>(devtools)
+<span style="color:#a6e22e">install_github</span>(<span style="color:#e6db74">&#34;nachocab/clickme&#34;</span>)
+</code></pre></div><p>Having written that git/github tutorial, I thought: I should write more such!</p>
 <p>So I immediately wrote <a href="https://kbroman.org/minimal_make">a similar short tutorial</a> on <a href="https://www.gnu.org/software/make">GNU make</a>, which I think is the <em>most important tool</em> for reproducible research.</p>
 
     </div>
@@ -112,7 +107,7 @@ install_github(&quot;nachocab/clickme&quot;)
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -122,12 +117,12 @@ install_github(&quot;nachocab/clickme&quot;)
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

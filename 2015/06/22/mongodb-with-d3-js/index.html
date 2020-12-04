@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>MongoDB with D3.js - the stupidest thing...</title>
 <meta property="og:title" content="MongoDB with D3.js - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -79,66 +81,40 @@
     
 
     <div class="article-content">
-      
-
-<p>I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.</p>
-
+      <p>I consider interactive data visualization to be the critical tool for exploration of high-dimensional data.</p>
 <p>That&rsquo;s led me to spend a good amount of time in the last few years learning some new skills (<a href="https://d3js.org">D3</a> and <a href="https://coffeescript.org">CoffeeScript</a>) and developing some new tools, particularly the R package <a href="https://kbroman.org/qtlcharts">R/qtlcharts</a>, which provides interactive versions of the many data visualizations in <a href="https://rqtl.org">R/qtl</a>, my <a href="https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf">long-in-development</a> R package for mapping genetic loci (called quantitative trait loci, QTL) that underlie complex trait variation in experimental organisms.</p>
-
 <p><a href="https://kbroman.org/qtlcharts">R/qtlcharts</a> is rough in spots, and while it works well for moderate-sized data sets, it can&rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.</p>
-
 <p>For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.</p>
-
 <p>So, I&rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a <a href="https://github.com/kbroman/d3examples/tree/master/mongodb">small illustration</a> in my <a href="https://github.com/kbroman/d3examples">d3examples</a> repository on GitHub.</p>
-
-<!-- more -->
-
+<!-- raw HTML omitted -->
 <h3 id="learning-mongodb">Learning MongoDB</h3>
-
 <p>I thought <a href="https://www.mongodb.org">mongoDB</a> seemed like a good database to try:</p>
-
 <ul>
-<li><p>storage of general documents seems a good match for the sort of data I work with</p></li>
-
-<li><p>use of JSON/BSON seems a good match for <a href="https://d3js.org">D3.js</a></p></li>
+<li>
+<p>storage of general documents seems a good match for the sort of data I work with</p>
+</li>
+<li>
+<p>use of JSON/BSON seems a good match for <a href="https://d3js.org">D3.js</a></p>
+</li>
 </ul>
-
 <p>So I&rsquo;ve been taking an online-course though <a href="https://university.mongodb.com/">MongoDB University</a> &ndash; the <a href="https://university.mongodb.com/courses/M101JS/about">one for Node.js developers</a>. I should have done <a href="https://university.mongodb.com/courses/M101P/about">the more general one, using Python</a>, but I was thinking it&rsquo;d be interesting to learn <a href="https://nodejs.org">Node</a>, which is basically command-line scripting in javascript. I guess the advantage of node is that you can just write javascript. But personally I prefer to switch to the language appropriate to the task, so I&rsquo;m not too hot on node. But maybe I just haven&rsquo;t come to understand how best to make use of the whole callback function business.</p>
-
 <p>MongoDB is not all that hard. It&rsquo;s just kind of boring. The MongoDB Uni class is quite well done, though a few of the lectures were frustratingly out-of-date. I have the <a href="https://shop.oreilly.com/product/0636920028031.do">MongoDB book</a>, but it&rsquo;s been rough going; the class has been good for that. (The weekly deadlines have been good for motivating me to get through the dull &ndash; for me &ndash; material.)</p>
-
 <p>The obvious bits with a database: how to get stuff into it and then back out of it. And then I guess deleting or changing stuff. So that&rsquo;s all fine. I also learned about making indexes, so that you can more quickly get stuff out later. I don&rsquo;t think my needs for these things are all that complicated. And so I think I understand those bits.</p>
-
 <h3 id="getting-the-data-for-the-data-vis">Getting the data for the data vis</h3>
-
 <p>The last key step that I was pondering last night: how do I, based on some user interaction with a data visualization (clicking on a point, or some such), fire off a request to the database and get the data back?</p>
-
 <p>I guessed some sort of <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful API</a> type thing. But while I can write that down, I don&rsquo;t really understand what the hell it means.</p>
-
 <p>But then I thought, what I need is to use some sort of <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods">HTTP GET request</a>. I kind of know what that means, but I don&rsquo;t really understand what happens on the back end.</p>
-
 <p>I&rsquo;d been poking around in <a href="https://api.mongodb.org/python/current/tutorial.html">pymongo</a>, the python-based mongoDB driver. (I like it much better than the <a href="https://api.mongodb.org/ruby/current/">ruby</a> or <a href="https://docs.mongodb.org/ecosystem/drivers/node-js/">node</a> drivers.) And as part of the Mongo University class, we used <a href="https://expressjs.com/">express</a> with Node to do some HTTP GET and PUSH. If I want to grab some bit of data, I could have a python script running on the back end, looking for an http request, and then based on some key that was passed, grabbing data from the database and sending it back as JSON.</p>
-
 <p>So I looked around for how to do this with mongoDB, found <a href="https://github.com/10gen-labs/sleepy.mongoose">sleepy mongoose</a>, but that seemed like more than I wanted, and then came to <a href="https://bottlepy.org/docs/dev/index.html">bottle</a>, which seemed like what I needed to handle the http bit. The example on the front page is just what I want: take a name from a URL and use it as input to some function, and give results back.</p>
-
-<h3 id="mongodb-d3-illustration">MongoDB/D3 illustration</h3>
-
+<h3 id="mongodbd3-illustration">MongoDB/D3 illustration</h3>
 <p>The goal of all this: as part of some data visualization, the user will hover over or click a point, and this will lead to a request to the database, and then a plot of the data that comes back.</p>
-
 <p>It seemed like a simple test case would be to use the data for <a href="https://en.wikipedia.org/wiki/Anscombe's_quartet">Anscombe&rsquo;s quartet</a>. Put the four series into a MongoDB database, and then have four buttons that, when clicked, cause a request to the database to grab the corresponding series, which is then plotted.</p>
-
 <p>So first I wrote an <a href="https://github.com/kbroman/d3examples/blob/master/mongodb/grab_anscombe.R">R script</a> to grab the data from the table on the <a href="https://en.wikipedia.org/wiki/Anscombe's_quartet">wikipedia page</a> and write it to a <a href="https://www.json.org/">JSON</a> file. I&rsquo;m sure there was an easier way to get the data in a suitable form, but I was really procrastinating from writing a paper at this point, so I thought I&rsquo;d test my web scraping skill in a simple case.</p>
-
 <p>I then wrote a <a href="https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_insert.py">python script</a> that reads in the JSON file and inserts the data into a mongoDB database. You make a database connection with <code>pymongo.MongoClient()</code> and insert the documents with the <code>insert_one()</code> method to a collection. I later added an index with <code>create_index()</code>; pretty silly here, but for large problems it would be useful.</p>
-
 <p>So, the data&rsquo;s in the database. How to get it back out? I wrote a second <a href="https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py">python script</a> (just 8 lines, really), that uses <a href="https://bottlepy.org">bottle</a> to create a server that connects a URL to a function call. The function then uses <a href="https://api.mongodb.org/python/current/tutorial.html">pymongo</a> to find the corresponding document and send it back as JSON. One <a href="https://api.mongodb.org/python/current/tutorial.html">tricky bit that needed some extra googling</a> was getting the browser to allow the request.</p>
-
 <p>The <a href="https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee">D3 code (in coffeescript</a>) is pretty standard. On clicking a button, I call <code>d3.json</code> with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.</p>
-
 <p>This <a href="https://github.com/kbroman/d3examples/blob/master/mongodb/">MongoDB/D3 illustration</a> is a toy example, but it represents an important step for me, personally. I&rsquo;m rather proud of it.</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2015/06/anscombe_2.png" alt="Anscombe's quartet, set 2" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2015/06/anscombe_2.png" alt="Anscombe&rsquo;s quartet, set 2"></p>
 <p>I don&rsquo;t actually have a live example of this. That&rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.</p>
 
     </div>
@@ -152,7 +128,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

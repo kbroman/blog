@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>writing on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in writing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Wed, 03 Dec 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Wed, 03 Dec 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The value of thesis intro/discussion</title>
       <link>/2014/12/03/the-value-of-thesis-introdiscussion/</link>
@@ -19,9 +15,10 @@
       
       <guid>/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>Last week, Kelly Weinersmith tweeted:
-Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published? I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won&amp;rsquo;t be read?
+I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won&amp;rsquo;t be read?
 My response was:
-Intro &amp; disc of thesis get the student to think about the broader context of their work.</description>
+I&amp;rsquo;d like to expand on that just a bit.
+In the old days, a PhD dissertation was more of a monograph. The new style is to have three or so papers (published or ready-to-submit) as chapters, sandwiched between introductory and discussion chapters.</description>
     </item>
     
     <item>
@@ -51,7 +48,8 @@ However, sometimes an anonymous reviewer will identify an important flaw in a pa
       
       <guid>/2012/02/03/more-on-open-access/</guid>
       <description>I am quite persuaded by Michael Eisen&amp;rsquo;s recent comments on open access:
- ...it is simply unacceptable for any scientist who decries Elsevier&#39;s actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.  But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra \$1200 to make an article open access.</description>
+But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra $1200 to make an article open access. Would it really cost $1200 per article to make the journal fully open?
+Another follow-up to my comments yesterday: I had suggested that copyright law might be changed to make papers coming from federal research grants fully open.</description>
     </item>
     
     <item>
@@ -61,7 +59,8 @@ However, sometimes an anonymous reviewer will identify an important flaw in a pa
       
       <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
-So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
+So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc.
+The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>
@@ -81,7 +80,7 @@ I signed the boycott, and will refuse to review papers for Evilsevier journals, 
       
       <guid>/2011/10/03/terry-on-communication/</guid>
       <description>Relevant to my recent comments on seminars, Terry Speed&amp;rsquo;s latest commentary in the IMS Bulletin focuses on communication (talks and papers).
-He says: read others&amp;rsquo; work (which I would expand to say, pay attention) and practice.</description>
+He says: read others&#39; work (which I would expand to say, pay attention) and practice.</description>
     </item>
     
   </channel>

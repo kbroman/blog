@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Academics on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in Academics on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>reproducibility guidelines</title>
       <link>/2019/04/01/reproducibility-guidelines/</link>
@@ -39,7 +35,7 @@ I’ve just become ACUTELY aware that we should not say “these guys” when re
       <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/2016/04/15/chris-walker-at-faculty-senate/</guid>
-      <description>Chris Walker&amp;rsquo;s powerful speech at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;Hateful shit at UW-Madison&amp;rdquo;) was recorded!
+      <description>Chris Walker&amp;rsquo;s powerful speech at the Faculty Senate on 4 Apr 2016 (see &amp;ldquo;Hateful shit at UW-Madison&amp;quot;) was recorded!
 You must listen to it!</description>
     </item>
     
@@ -51,8 +47,8 @@ You must listen to it!</description>
       <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
 Here are the things he had mentioned yesterday at the Faculty Senate meeting:
- Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
- Look at &amp;ldquo;bullying&amp;rdquo; language as a way to address possible hate/bias incidents in the classroom.</description>
+  Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
+  Look at &amp;ldquo;bullying&amp;rdquo; language as a way to address possible hate/bias incidents in the classroom.</description>
     </item>
     
     <item>
@@ -102,9 +98,10 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
       
       <guid>/2014/12/03/the-value-of-thesis-introdiscussion/</guid>
       <description>Last week, Kelly Weinersmith tweeted:
-Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published? I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won&amp;rsquo;t be read?
+I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won&amp;rsquo;t be read?
 My response was:
-Intro &amp; disc of thesis get the student to think about the broader context of their work.</description>
+I&amp;rsquo;d like to expand on that just a bit.
+In the old days, a PhD dissertation was more of a monograph. The new style is to have three or so papers (published or ready-to-submit) as chapters, sandwiched between introductory and discussion chapters.</description>
     </item>
     
     <item>
@@ -115,12 +112,11 @@ Intro &amp; disc of thesis get the student to think about the broader context of
       <guid>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>At the Scholarly Publishing Symposium at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
 So here they are electronically.
- Know your Copy Rights, Association of Research Libraries
- Optimize Your Publishing, The Right to Research Coalition
- Right to Research, The Right to Research Coalition
- About SPARC (Scholarly Publishing and Academic Research Coalition)
- Open Data Factsheet, SPARC
- Open Education Factsheet, SPARC</description>
+  Know your Copy Rights, Association of Research Libraries
+  Optimize Your Publishing, The Right to Research Coalition
+  Right to Research, The Right to Research Coalition
+  About SPARC (Scholarly Publishing and Academic Research Coalition)
+  Open Data Factsheet, SPARC</description>
     </item>
     
     <item>
@@ -130,7 +126,6 @@ So here they are electronically.
       
       <guid>/2014/08/28/the-mustache-photo/</guid>
       <description>A certain photo of me has been following me around for some time.
-Karl with a mustache, 15 Nov 2002
 The thing is sitting on my website, so I suppose I have only myself to blame. I actually quite like the photo. I look happy. I was happy. I&amp;rsquo;m not always happy.
 It&amp;rsquo;s shown up in a lot of talks, particularly by a certain friend of mine.
 It appeared on the seminar board at Hopkins Biostat earlier this month.</description>
@@ -142,7 +137,7 @@ It appeared on the seminar board at Hopkins Biostat earlier this month.</descrip
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/05/01/reform-academic-statistics/</guid>
-      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&#39; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
@@ -196,8 +191,8 @@ Actually, I soundly trashed the proposal in my review. In the nicest possible wa
       <guid>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.
 Here are some thoughts on things to avoid.
- You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
- You may see needs for many new courses. Don&amp;rsquo;t try to develop all of them.</description>
+  You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
+  You may see needs for many new courses. Don&amp;rsquo;t try to develop all of them.</description>
     </item>
     
     <item>
@@ -270,10 +265,13 @@ These sites have a lot of advantages over R-help: The format is easier to read, 
       
       <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
- Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) nature.com/nature/journal...  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
-But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
+So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
+But then I thought, &amp;ldquo;Wait&amp;hellip;$18 for a two-page Nature comment? WTF?&amp;rdquo;
 So I tweeted:
- DNA: Celebrate the unknowns, like this Nature comment, which costs \$18.</description>
+And thinking about it some more, I got more annoyed, and tweeted:
+And then I thought, I&amp;rsquo;ll ask Nature directly:
+And they responded:
+But that didn&amp;rsquo;t quite answer my question.</description>
     </item>
     
     <item>
@@ -283,7 +281,10 @@ So I tweeted:
       
       <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
- To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
+But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper. The PDF says:
+Methods are important.
+  They shouldn&amp;rsquo;t be separated from the main text.
+  They shouldn&amp;rsquo;t be placed after the results (as so many journals, including PLoS, do).</description>
     </item>
     
     <item>
@@ -295,7 +296,9 @@ So I tweeted:
       <description>QR codes are stupid. See the well-known flowchart.
 And I don&amp;rsquo;t like Drupal. Sites that use it often give things URLs like https://www.genetics.wisc.edu/node/577 for their seminar list.
 And can we get rid of the www?
- &#34;What&#39;s your web site?&#34; &#34;double-u double-u double-u ...&#34; &#34;Zzz...&#34;  URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
+&amp;ldquo;double-u double-u double-u &amp;hellip;&amp;rdquo;
+&amp;ldquo;Zzz&amp;hellip;&amp;rdquo;
+URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
 URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>
     </item>
     
@@ -306,9 +309,9 @@ URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) o
       
       <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
       <description>When serving as referee for a journal, who are you working for?
- The editor: Will the paper add to the journal&amp;rsquo;s prestige?
- The reader: Is it worth reading?
- The author: How can it be improved?
+  The editor: Will the paper add to the journal&amp;rsquo;s prestige?
+  The reader: Is it worth reading?
+  The author: How can it be improved?
   I&amp;rsquo;d long thought that the referee&amp;rsquo;s duty was to the journal editors and then to the readers.
 But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should focus primarily on helping the author to improve the manuscript.</description>
     </item>
@@ -320,7 +323,7 @@ But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should f
       
       <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
-I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
+I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;quot;)
 Let me tell you about the high- and lowlights, for me.</description>
     </item>
     

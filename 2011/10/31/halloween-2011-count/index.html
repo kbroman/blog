@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Halloween 2011 count - the stupidest thing...</title>
 <meta property="og:title" content="Halloween 2011 count - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,33 +82,30 @@
 
     <div class="article-content">
       <p>We don&rsquo;t get many kids seeking candy at our house. I&rsquo;m not sure if there just aren&rsquo;t many kids in the neighborhood, or if it&rsquo;s our location (next to the pond, with a big gap before the next house).</p>
-
 <p>I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2011/10/halloween20111.png" alt="" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2011/10/halloween20111.png" alt=""></p>
 <p>They arrived pretty regularly from 5:50 to 7:50.</p>
-
 <p>I comment on the figure&rsquo;s style below.</p>
-
-<!-- more -->
-
+<!-- raw HTML omitted -->
 <p>In the above graph, I&rsquo;m applying ideas learned from <a href="http://statistics.gmu.edu/people_pages/carr.html">Dan Carr</a> when I visited the <a href="http://statistics.gmu.edu">statistics department</a> at <a href="https://www.gmu.edu">George Mason</a> in September, to give <a href="https://www.biostat.wisc.edu/~kbroman/presentations/gmu2011.pdf">a seminar</a>.  (I had a great time at GMU, particularly talking to Dan about graphics.  I had a copy of <a href="https://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20">his book about micromaps</a> on my iPad, but hadn&rsquo;t really looked at it until after I met him.  Take a look at the first chapter; it&rsquo;s full of good ideas and may convince you to read the rest.)</p>
-
 <ul>
-<li><p>The gray background makes the figure stand out on the &ldquo;page&rdquo;.  (I had disliked this aspect of <a href="http://had.co.nz/ggplot2/">ggplot2</a> plots, but Dan convinced me that it&rsquo;s better.)</p></li>
-
-<li><p>The black border around the figure is important.  (Dan pointed out that it&rsquo;s not the gray background I dislike about the default ggplot2 plots, but the lack of the border.)</p></li>
-
-<li><p>The white grid lines make it easy to see the details, and they still don&rsquo;t get in the way of the plot.</p></li>
-
-<li><p>With the grid lines, you don&rsquo;t need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no <strike>bristles</strike> ticks.)</p></li>
-
-<li><p>The use of color for the actual data makes them stand out better.</p></li>
+<li>
+<p>The gray background makes the figure stand out on the &ldquo;page&rdquo;.  (I had disliked this aspect of <a href="http://had.co.nz/ggplot2/">ggplot2</a> plots, but Dan convinced me that it&rsquo;s better.)</p>
+</li>
+<li>
+<p>The black border around the figure is important.  (Dan pointed out that it&rsquo;s not the gray background I dislike about the default ggplot2 plots, but the lack of the border.)</p>
+</li>
+<li>
+<p>The white grid lines make it easy to see the details, and they still don&rsquo;t get in the way of the plot.</p>
+</li>
+<li>
+<p>With the grid lines, you don&rsquo;t need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no <!-- raw HTML omitted -->bristles<!-- raw HTML omitted --> ticks.)</p>
+</li>
+<li>
+<p>The use of color for the actual data makes them stand out better.</p>
+</li>
 </ul>
-
-<hr />
-
+<hr>
 <p><strong>Update</strong>: The code I used for the figure is <a href="https://www.biostat.wisc.edu/~kbroman/blog/halloween2011.R">here</a>.  It&rsquo;s old-fashioned and inefficient, but it works.</p>
 
     </div>
@@ -120,7 +119,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

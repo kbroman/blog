@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>publishing on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in publishing on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Wed, 31 May 2017 23:16:00 -0500</lastBuildDate>
-    
-	<atom:link href="/tags/publishing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Wed, 31 May 2017 23:16:00 -0500</lastBuildDate><atom:link href="/tags/publishing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>omg, bookdown!</title>
       <link>/2017/05/31/omg-bookdown/</link>
@@ -30,12 +26,11 @@ I mean, from my own book writing experience, I felt like, “Hell if I’m going
       <guid>/2014/10/30/scholarly-publishing-symposium-at-uw-madison/</guid>
       <description>At the Scholarly Publishing Symposium at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
 So here they are electronically.
- Know your Copy Rights, Association of Research Libraries
- Optimize Your Publishing, The Right to Research Coalition
- Right to Research, The Right to Research Coalition
- About SPARC (Scholarly Publishing and Academic Research Coalition)
- Open Data Factsheet, SPARC
- Open Education Factsheet, SPARC</description>
+  Know your Copy Rights, Association of Research Libraries
+  Optimize Your Publishing, The Right to Research Coalition
+  Right to Research, The Right to Research Coalition
+  About SPARC (Scholarly Publishing and Academic Research Coalition)
+  Open Data Factsheet, SPARC</description>
     </item>
     
     <item>
@@ -66,10 +61,13 @@ Actually, I soundly trashed the proposal in my review. In the nicest possible wa
       
       <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
- Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) nature.com/nature/journal...  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
-But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
+So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
+But then I thought, &amp;ldquo;Wait&amp;hellip;$18 for a two-page Nature comment? WTF?&amp;rdquo;
 So I tweeted:
- DNA: Celebrate the unknowns, like this Nature comment, which costs \$18.</description>
+And thinking about it some more, I got more annoyed, and tweeted:
+And then I thought, I&amp;rsquo;ll ask Nature directly:
+And they responded:
+But that didn&amp;rsquo;t quite answer my question.</description>
     </item>
     
     <item>
@@ -78,8 +76,7 @@ So I tweeted:
       <pubDate>Thu, 25 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>/2012/10/25/open-access-animated/</guid>
-      <description>Here&amp;rsquo;s a great interview with Jonathan Eisen and Nick Shockey on open access publishing, nicely animated by Jorge Cham, who does the Piled Higher and Deeper comic.
-  </description>
+      <description>Here&amp;rsquo;s a great interview with Jonathan Eisen and Nick Shockey on open access publishing, nicely animated by Jorge Cham, who does the Piled Higher and Deeper comic.</description>
     </item>
     
     <item>
@@ -107,8 +104,7 @@ However, sometimes an anonymous reviewer will identify an important flaw in a pa
       <pubDate>Tue, 21 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>/2012/02/21/uw-madison-news-item-about-elsevier-boycott/</guid>
-      <description>There&amp;rsquo;s an article in the UW-Madison newsletter about the Elsevier boycott. I&amp;rsquo;m quoted as follows:
- &#34;The main issue is that scientists want their papers to be read and available, and not just to scientists at well-funded universities. We are spending, collectively, a good amount of money that goes toward profit for these journal companies, and that could be redirected.&#34;   At this point, Broman says scientists are in control.</description>
+      <description>There&amp;rsquo;s an article in the UW-Madison newsletter about the Elsevier boycott. I&amp;rsquo;m quoted as follows:</description>
     </item>
     
     <item>
@@ -119,7 +115,7 @@ However, sometimes an anonymous reviewer will identify an important flaw in a pa
       <guid>/2012/02/10/i-just-refused-an-elsevier-review/</guid>
       <description>This afternoon I refused a request from the American Journal of Human Genetics to review a paper, though the abstract was extremely interesting. AJHG is published by Elsevier, and I&amp;rsquo;d signed the declaration at http://thecostofknowledge.com to not publish or review for Elsevier journals. If only AJHG were still with the University of Chicago Press&amp;hellip;
 Michael Eisen recently wrote:
- The boycott isn&#39;t perfect. I wish they hadn&#39;t focused exclusively on Elsevier – they are hardly the only bad actors in the field.</description>
+I agree with him. It&amp;rsquo;s easy to turn down a review. (I do so several times a week.</description>
     </item>
     
     <item>
@@ -129,7 +125,8 @@ Michael Eisen recently wrote:
       
       <guid>/2012/02/03/more-on-open-access/</guid>
       <description>I am quite persuaded by Michael Eisen&amp;rsquo;s recent comments on open access:
- ...it is simply unacceptable for any scientist who decries Elsevier&#39;s actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.  But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra \$1200 to make an article open access.</description>
+But how can I do that if Genetics isn&amp;rsquo;t fully open? Genetics charges an extra $1200 to make an article open access. Would it really cost $1200 per article to make the journal fully open?
+Another follow-up to my comments yesterday: I had suggested that copyright law might be changed to make papers coming from federal research grants fully open.</description>
     </item>
     
     <item>
@@ -139,7 +136,8 @@ Michael Eisen recently wrote:
       
       <guid>/2012/02/02/paying-for-scholarly-publications/</guid>
       <description>I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see Michael Eisen&amp;rsquo;s OpEd in the New York Times]; the Elsevier boycott) has turned my thoughts to publishing generally.
-So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc. The value of publishing Obviously the most important thing is to communicate the results of research.</description>
+So I&amp;rsquo;ll take some time out (way too much time out) to comment on the value and costs of publishing and peer review, how to pay for it, PubMedCentral, etc.
+The value of publishing Obviously the most important thing is to communicate the results of research.</description>
     </item>
     
     <item>

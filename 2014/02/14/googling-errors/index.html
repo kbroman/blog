@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Googling errors - the stupidest thing...</title>
 <meta property="og:title" content="Googling errors - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -74,7 +76,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">1 min read</span>
     
 
     <h1 class="article-title">Googling errors</h1>
@@ -84,45 +86,29 @@
     
 
     <div class="article-content">
-      
-
-<p><a href="https://twitter.com/roguelynn">@roguelynn</a> tweeted the other day:</p>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.</p>&mdash; __root__ (@roguelynn) <a href="https://twitter.com/roguelynn/status/431321921909968896?ref_src=twsrc%5Etfw">February 6, 2014</a></blockquote>
+      <p><a href="https://twitter.com/roguelynn">@roguelynn</a> tweeted the other day:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.</p>&mdash; Lynn Root (@roguelynn) <a href="https://twitter.com/roguelynn/status/431321921909968896?ref_src=twsrc%5Etfw">February 6, 2014</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 <p>I had just talked about the technique in my <a href="https://kbroman.github.io/Tools4RR/">Tools for Reproducible Research</a> course, and I had a few recent examples.</p>
-
-<h3 id="gtk-warning-cannot-open-display">Gtk-WARNING **: cannot open display:</h3>
-
+<h3 id="gtk-warning--cannot-open-display">Gtk-WARNING **: cannot open display:</h3>
 <p>I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</p>
-
 <pre><code>(gnome-ssh-askpass:1731): Gtk-WARNING **: cannot open display:
 </code></pre>
-
 <p>I googled that, and the first item was a <a href="https://stackoverflow.com/questions/16077971/git-push-produces-gtk-warning">stackoverflow question</a>, whose answer said &ldquo;<code>unset SSH_ASKPASS</code>&rdquo;, which totally worked.</p>
-
 <h3 id="except-keyerror-k-raise-attributeerror-k">except KeyError, k: raise AttributeError, k</h3>
-
 <p>AsciiDoc was giving me this error:</p>
-
 <pre><code>asciidoc -a data-uri -a toc -a toclevels=4 -a num example2.txt
   File &quot;/usr/local/bin/asciidoc&quot;, line 101
     except KeyError, k: raise AttributeError, k
                    ^
 SyntaxError: invalid syntax
 </code></pre>
-
 <p>Google the &ldquo;<code>except KeyError</code>&rdquo; line, and you get to a <a href="https://groups.google.com/forum/#!topic/asciidoc/7ICtOReZJ74">Q&amp;A on the AsciiDoc google group</a>, which says &ldquo;Asciidoc is Python 2, not 3.&rdquo;</p>
-
-<h3 id="mclapply-isn-t-working-in-windows">mclapply isn&rsquo;t working in windows</h3>
-
+<h3 id="mclapply-isnt-working-in-windows">mclapply isn&rsquo;t working in windows</h3>
 <p>I got a report that parallel processing in my <a href="https://rqtl.org">R/qtl</a> package wasn&rsquo;t working in Windows.</p>
-
 <p>I googled &ldquo;mclapply isn&rsquo;t working windows&rdquo; (because mclapply was the function I was using) and got <a href="https://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r">this stackoverflow page</a>, which says:</p>
-
-<blockquote>since Windows does not have fork(), it will run standard lapply instead - no parallelization</blockquote>
+<!-- raw HTML omitted -->
 
     </div>
   </article>
@@ -135,7 +121,7 @@ SyntaxError: invalid syntax
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -145,12 +131,12 @@ SyntaxError: invalid syntax
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>code on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in code on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>reproducible abstract</title>
       <link>/2020/02/07/reproducible-abstract/</link>
@@ -48,11 +44,10 @@ It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, 
       <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/2015/09/24/its-not-you-its-me/</guid>
-      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&amp;ldquo;It&amp;rsquo;s not me, it&amp;rsquo;s you.&amp;ldquo;)
+      <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
- TravisCI for not handling system.file() properly.
- R-devel for having broken system.</description>
+  TravisCI for not handling system.file() properly.</description>
     </item>
     
     <item>
@@ -64,7 +59,7 @@ I spent the day trying to resolve a bug in my early-in-development R package, qt
       <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
 I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 Here&amp;rsquo;s the code I used to grab the text.
-library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot; hobbit &amp;lt;- NULL for(i in 1:74) { ```r cat(i,&amp;quot;\n&amp;quot;) if(i==1) { url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;) } else { url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.</description>
+library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot; hobbit &amp;lt;- NULL for(i in 1:74) { cat(i,&amp;quot;\n&amp;quot;) if(i==1) { url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;) } else { url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.</description>
     </item>
     
     <item>
@@ -87,8 +82,8 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
-install.packages(&amp;quot;beepr&amp;quot;)  Then, at the bottom of your script, load the package and have it beep.
-library(beepr) beep()  beepr comes with a bunch of different sounds (e.</description>
+install.packages(&amp;quot;beepr&amp;quot;) Then, at the bottom of your script, load the package and have it beep.
+library(beepr) beep() beepr comes with a bunch of different sounds (e.</description>
     </item>
     
     <item>
@@ -110,7 +105,7 @@ For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldq
       <description>This morning, I started a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.
 Yesterday I started reading the Rcpp book, and on page 4 there&amp;rsquo;s an example using the R function replicate, which (a) I&amp;rsquo;d never heard before, and (b) is super useful.
 I mean, I often write code like this, for a bootstrap:
-x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TRUE), c(0.025, 0.975)))  But I could just be writing</description>
+x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TRUE), c(0.025, 0.975))) But I could just be writing</description>
     </item>
     
     <item>
@@ -131,7 +126,7 @@ library(XML) theurl &amp;lt;- &amp;quot;https://en.</description>
       
       <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
-crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;)  I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
+crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
@@ -141,8 +136,8 @@ crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;An
       
       <guid>/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
-id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2)  I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
-z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3)  As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
+id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2) I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
+z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3) As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
     </item>
     
     <item>
@@ -187,8 +182,8 @@ An advantage of R is that you can just type the name of the function and see the
       
       <guid>/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>Another R tip: beware of as.character applied to a list.
-&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot;  Really, beware of grep with a list:
-&amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6])) [1] 1 2  You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
+&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot; Really, beware of grep with a list:
+&amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6])) [1] 1 2 You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
     </item>
     
     <item>
@@ -225,7 +220,7 @@ In the help file for [[:
       <description>I&amp;rsquo;m pleased with my progress learning javascript and D3. (I&amp;rsquo;m actually writing coffeescript rather than javascript.)
 But I spent a lot of time thrashing about yesterday, due mostly to two silly errors.
 Put the script in the body First, I&amp;rsquo;d tried to make a truly simple example, making just an SVG with a little rectangle.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var h=50; var svg = d3.</description>
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Put script in body&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;http://d3js.org/d3.v3.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; var h=50; var svg = d3.</description>
     </item>
     
     <item>
@@ -235,7 +230,7 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
       
       <guid>/2012/03/22/as-character-for-rownames/</guid>
       <description>Rainer pointed out, in response to my post, Row names in data frames: Beware of 1:nrow, that if I&amp;rsquo;d used rownames(x) &amp;lt;- as.character(1:3) rather than rownames(x) &amp;lt;- 1:3, I wouldn&amp;rsquo;t have had the problem I&amp;rsquo;d seen.
-&amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rownames(z) &amp;lt;- as.character(1:3) &amp;gt; rbind(y,x) id D 1 E 2 F 3 4 1 5 2 6 3 &amp;gt; rbind(y,z) id D 1 E 2 F 3 1 1 2 2 3 3  If you type rownames(x) you see the same result as rownames(z), and is.</description>
+&amp;gt; x &amp;lt;- z &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rownames(z) &amp;lt;- as.character(1:3) &amp;gt; rbind(y,x) id D 1 E 2 F 3 4 1 5 2 6 3 &amp;gt; rbind(y,z) id D 1 E 2 F 3 1 1 2 2 3 3 If you type rownames(x) you see the same result as rownames(z), and is.</description>
     </item>
     
     <item>
@@ -246,7 +241,7 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
       <guid>/2012/03/21/row-names-in-data-frames-beware-of-1nrow/</guid>
       <description>I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, x, as 1:nrow(x), R will act as if you&amp;rsquo;d not assigned row names, and the names might get changed when you do rbind.
 Here&amp;rsquo;s an illustration:
-&amp;gt; x &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rbind(x,y) id 1 1 2 2 3 3 D 4 E 5 F 6 &amp;gt; rbind(y,x) id D 4 E 5 F 6 4 1 5 2 6 3  As you can see, if you give x the row names 1:3, these are treated as generic row numbers and could get changed following rbind if they end up in different rows.</description>
+&amp;gt; x &amp;lt;- data.frame(id=1:3) &amp;gt; y &amp;lt;- data.frame(id=4:6) &amp;gt; rownames(x) &amp;lt;- 1:3 &amp;gt; rownames(y) &amp;lt;- LETTERS[4:6] &amp;gt; rbind(x,y) id 1 1 2 2 3 3 D 4 E 5 F 6 &amp;gt; rbind(y,x) id D 4 E 5 F 6 4 1 5 2 6 3 As you can see, if you give x the row names 1:3, these are treated as generic row numbers and could get changed following rbind if they end up in different rows.</description>
     </item>
     
     <item>
@@ -266,7 +261,7 @@ I decided to keep track. As usual, we bought a huge bag of candy, and we still h
       
       <guid>/2011/08/26/quick-labels-within-figures-done-right/</guid>
       <description>One of the coolest R packages I heard about at the useR! Conference: Toby Dylan Hocking&amp;rsquo;s directlabels package for putting labels directly next to the relevant curves or point clouds in a figure.
-I think I first learned about this idea from Andrew Gelman: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this: rather than this: I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place.</description>
+I think I first learned about this idea from Andrew Gelman: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this: I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place.</description>
     </item>
     
     <item>

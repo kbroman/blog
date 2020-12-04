@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>It&#39;s not you, it&#39;s me - the stupidest thing...</title>
 <meta property="og:title" content="It&#39;s not you, it&#39;s me - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -84,55 +86,37 @@
     
 
     <div class="article-content">
-      <p>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (&ldquo;It&rsquo;s not <em>me</em>, it&rsquo;s <em>you</em>.&rdquo;)</p>
-
+      <p>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&rsquo;s not <em>me</em>, it&rsquo;s <em>you</em>.”)</p>
 <p>And almost always, it&rsquo;s my own code that&rsquo;s the problem (hence the title of this post).</p>
-
 <p>I spent the day trying to resolve a bug in my early-in-development R package, <a href="https://github.com/kbroman/qtl2geno">qtl2geno</a>. In the process, I blamed</p>
-
 <ul>
-<li><p>TravisCI for not handling <code>system.file()</code> properly.</p></li>
-
-<li><p>R-devel for having broken <code>system.file()</code>.</p></li>
-
-<li><p><code>data.table::fread()</code> for treating <code>sep=NULL</code> differently on different operating systems.</p></li>
+<li>
+<p>TravisCI for not handling <code>system.file()</code> properly.</p>
+</li>
+<li>
+<p>R-devel for having broken <code>system.file()</code>.</p>
+</li>
+<li>
+<p><code>data.table::fread()</code> for treating <code>sep=NULL</code> differently on different operating systems.</p>
+</li>
 </ul>
-
 <p>Of course, none of these were true. I was just passing <code>sep=NULL</code> to <code>data.table::fread()</code>, and that worked in the previous version, but doesn&rsquo;t work in the latest release on <a href="https://cran.r-project.org">CRAN</a>, and I hadn&rsquo;t yet installed the latest version of <a href="https://github.com/Rdatatable/data.table">data.table</a> on my Mac, but Travis and my junky Windows laptop had the latest version.</p>
-
 <p>The debugging process seems a potentially interesting case study, so I thought I&rsquo;d write down some of the details.</p>
-
-<!-- more -->
-
+<!-- raw HTML omitted -->
 <p>The whole thing started off with my <a href="https://github.com/kbroman/qtl2geno">qtl2geno</a> package suddenly failing on <a href="http://travis-ci.org">TravisCI</a>, even though it was still passing <code>R CMD check</code> on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn&rsquo;t realize that until the very end of the story.)</p>
-
 <p>The problem line was in a <a href="https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd">vignette</a>:</p>
-
 <pre><code>grav2 &lt;- read_cross2( system.file(&quot;extdata&quot;, &quot;grav2.zip&quot;, package=&quot;qtl2geno&quot;) )
-</code></pre>
-
-<p>The changes I&rsquo;d been making to my package didn&rsquo;t seem to have anything to do with this, so I concluded that the problem was <code>system.file()</code>. Why that would have worked before but not now, I couldn&rsquo;t say, but I figured maybe Travis was installing things differently than before.</p>
-
+</code></pre><p>The changes I&rsquo;d been making to my package didn&rsquo;t seem to have anything to do with this, so I concluded that the problem was <code>system.file()</code>. Why that would have worked before but not now, I couldn&rsquo;t say, but I figured maybe Travis was installing things differently than before.</p>
 <p>I changed that code block to <code>eval=FALSE</code>, but then a bunch of tests using <code>read_cross2( system.file( ... ) )</code> were failing instead. Again, I figured the problem was <code>system.file()</code>, because <code>R CMD check</code> worked fine on my machine.</p>
-
 <p>I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used <a href="http://win-builder.r-project.org/">R Win-builder</a> to test my package with R-devel, and sure enough it failed there. So it wasn&rsquo;t Travis. My conclusion was that R-devel had broken <code>system.file()</code>.</p>
-
 <p>Poked around some more, and then finally used <a href="http://win-builder.r-project.org/">R Win-builder</a> with R-release. And it failed with that, too. So it wasn&rsquo;t R-devel either.</p>
-
 <p>I then created a little tester package, <a href="https://github.com/kbroman/testsysfile">testsysfile</a>, testing <code>system.file()</code> with <code>read.csv()</code> and then with <code>data.table::fread()</code>. That all worked fine. So it seemed like it wasn&rsquo;t actually <code>system.file()</code>, but something within <code>read_cross2()</code>.</p>
-
 <p>So finally I poked into my own code, and then I realized that I was passing a <code>NULL</code> value to the <code>sep</code> argument of <code>fread()</code>. (See <a href="https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L99-L100">here</a> and <a href="https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L474-L485">here</a>.)</p>
-
 <p>But why would <code>sep=NULL</code> work on my Mac but not on Travis or R Win-builder? I pulled out my junky Windows laptop (purchased in order to have a better sense of what my students were dealing with), went through all of the Windows updates, then updated R, <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a>, and <a href="http://rstudio.com">RStudio</a>, and tried things out there.</p>
-
 <p>With my <a href="https://github.com/kbroman/testsysfile">testsysfile</a> package, I could see that <code>data.table::fread()</code> was throwing an error with <code>sep=NULL</code> on Windows, though it was working fine on my Mac.</p>
-
 <p>I spent some time making a patch to <code>fread()</code>, and I was really close to submitting a pull request. (Treating <code>sep=NULL</code> didn&rsquo;t seem important, but it did seem like it the behavior should be the same on Windows and Mac.) But then I saw, in the <a href="https://github.com/Rdatatable/data.table/blob/master/README.md">README</a> file, that there were <a href="https://github.com/Rdatatable/data.table/blob/master/Contributing.md">Contribution guidelines</a>. I figured I&rsquo;d better go through them.</p>
-
 <p>The guidelines say, &ldquo;squash all your commits together,&rdquo; so I spent some time getting my two commits combined into one. The guidelines also say to update the README file. In doing so, I realized that they&rsquo;d put a new version of data.table on CRAN on 19 Sep 2015, which is precisely when my package started failing on Travis.</p>
-
 <p>And so then I finally installed the updated version of data.table on my Mac, and saw that there was no operating system dependence; the differences I was seeing were just because of the old vs new version of data.table.</p>
-
 <p>So data.table was updated in a way where <code>sep=NULL</code> was no longer working, and in my own code, I had relied on that. So six hours, <a href="https://twitter.com/kwbroman/status/647125510686920705">many tweets</a>, lots of blaming of others, and finally I&rsquo;d worked out that it was all my own fault.</p>
 
     </div>
@@ -146,7 +130,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -156,12 +140,12 @@
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

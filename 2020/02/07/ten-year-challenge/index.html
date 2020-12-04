@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>ten year reproducibility challenge - the stupidest thing...</title>
 <meta property="og:title" content="ten year reproducibility challenge - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -89,7 +91,6 @@
 Challenge</a>. The idea is to
 take a paper that you published at least ten years ago and try to
 re-run the code. Brilliant!</p>
-
 <p>I looked back through my pre-2010 papers and chose <a href="https://doi.org/10.1073/pnas.1231432100">Lamichhane et al.
 (2003)</a> on the analysis of a
 transposon mutagenesis experiment in <em>M. tuberculosis</em>. I picked that
@@ -105,7 +106,6 @@ Bishai</a> (Gyanu&rsquo;s advisor), and
 Hopkins biostat</a>,
 now an associate professor in statistics at
 <a href="https://statistics.byu.edu/">BYU</a>).</p>
-
 <p>The R package I wrote implementing the method,
 <a href="https://github.com/kbroman/negenes">R/negenes</a>, is <a href="https://cran.r-project.org/package=negenes">still on
 CRAN</a>. I&rsquo;ve not really
@@ -116,7 +116,6 @@ did <a href="https://github.com/kbroman/negenes/commit/7d8a35321fc3e451d790c538a
 over-run</a>,
 which <a href="https://en.wikipedia.org/wiki/Brian_D._Ripley">Prof. Ripley</a>
 identified.)</p>
-
 <p>Anyway, the deadline for this challenge is near (April 1),
 and so I sat down to start work on it, which was a humbling experience.
 It was easy to find the code and data for the project, sitting with my
@@ -124,7 +123,6 @@ other old projects as <code>~/Projects/Tar/Gyanu.tgz</code>. (I mentioned Gyanu
 above, he was first
 author on <a href="https://www.pnas.org/content/pnas/100/12/7213.full.pdf">the paper</a>.) But
 open that thing up and ugh; not quite what you would like to see.</p>
-
 <p>I dumped the <a href="https://github.com/kbroman/Project_Lamichhane2003">full thing on
 GitHub</a>, not
 changing anything other than to add
@@ -133,16 +131,13 @@ and
 <a href="https://github.com/kbroman/Project_Lamichhane2003/blob/master/LICENSE.md">License</a>
 files. Yes, that&rsquo;s right, the directory didn&rsquo;t contain a <em>single</em>
 ReadMe file. It&rsquo;s a bit of a mess.</p>
-
 <pre><code>class_problems.txt    findTA.pl*    Randomness/
 Converge/             mindGaps.pl*  Rawdata/
 crucial_doubleTA.txt  Nov02/        Sept02/
 Data/                 Operons/      Sims/
 doubleta_hit.txt      R/            TroubleShootingSubClasses.txt
 exploreSeq.pl*
-</code></pre>
-
-<p>I&rsquo;m pleased to report that I <em>was</em> able to reproduce my analyses.
+</code></pre><p>I&rsquo;m pleased to report that I <em>was</em> able to reproduce my analyses.
 (Well, mostly. I can&rsquo;t find the code that was used to do the
 simulations for <a href="https://bit.ly/lamichhane2003_fig3">Figure 3</a>, just
 the results and the code that used them to make the figure, which doesn&rsquo;t
@@ -150,7 +145,6 @@ fully count.) My work reproducing the analysis in the paper is <a href="https://
 GitHub</a>; now I just
 need to write the paper. But whoa it would have been a lot easier if
 I&rsquo;d left myself a bit of documentation.</p>
-
 <p>Keep in mind that I didn&rsquo;t start using proper version control until
 like 2006. So we have to think back to the summer and fall of 2002,
 and try to put ourselves in the state of mind of the confident and
@@ -159,23 +153,19 @@ Karl</a>.
 (Yeah, that famous photo was taken on 2002-11-15, and, well, note that
 <a href="https://github.com/kbroman/Project_Lamichhane2003/tree/master/Nov02"><code>Nov02</code></a>
 subdirectory up there. Same month.)</p>
-
 <p>Look at the subdirectories up there. <code>Rawdata/</code> has the raw data,
 <code>Data/</code> has the processed data, <code>R/</code> has the code. <code>Converge/</code>,
 <code>Operons/</code>, <code>Randomness/</code>, and <code>Sims/</code> are sort of side projects that
 didn&rsquo;t end up in the paper. Then there are some notes and some perl
 scripts that would probably best be organized into other folders, but
 whatever.</p>
-
 <p>Yeah, but how about <code>Sept02/</code>, what is that? And <code>Nov02/</code>?</p>
-
 <p>Well, if you look in
 <a href="https://github.com/kbroman/Project_Lamichhane2003/blob/master/Sept02/"><code>Sept02/</code></a>
 you&rsquo;ll find that <code>Rawdata/</code>, <code>Data/</code>, and <code>R/</code>, plus a copy of
 <code>findTA.pl</code>. Same for
 <a href="https://github.com/kbroman/Project_Lamichhane2003/blob/master/Nov02"><code>Nov02/</code></a>.
 These were one of Moustache Karl&rsquo;s methods of version control.</p>
-
 <p>Say your collaborator comes to you in September of 2002 and says, &ldquo;Hey
 these results are great, let&rsquo;s write a paper! But first, here&rsquo;s a bit
 more data and could you try out this and that and the other thing?&rdquo;
@@ -191,10 +181,8 @@ things (namely five of the six rows in <a href="https://bit.ly/lamichhane2003_ta
 2</a>) would be taken from the
 <code>Sept02</code> subdirectory. Free-wheeling and fun and totally
 reproducible, right?</p>
-
 <p>If I&rsquo;d just written that stuff down in a ReadMe file, it would all
 be totally acceptable. But yeah, no dice. Or no documentation, rather.</p>
-
 <p>Anyway, yesterday I looked at this mess and was like, &ldquo;What am I even
 supposed to reproduce?&rdquo; So step 1 was to <a href="https://www.pnas.org/content/pnas/100/12/7213.full.pdf">read the
 paper</a>. Having then
@@ -203,23 +191,25 @@ Karl&rsquo;s mind set and work out the details. And so in just a day I was
 able to <a href="https://kbroman.org/Paper_ReScience2020/reproduction/reproduction.html">reproduce the
 results</a>,
 except for that one figure.</p>
-
 <p>Further challenges that could have been avoided if I&rsquo;d put just a tiny
 bit more effort into the work at the time:</p>
-
 <ul>
-<li><p>I should have saved the random number generator seeds.</p></li>
-
-<li><p>I should have saved the key intermediate results to files, and then
+<li>
+<p>I should have saved the random number generator seeds.</p>
+</li>
+<li>
+<p>I should have saved the key intermediate results to files, and then
 loaded those results at the top of scripts that needed them. Instead,
 I&rsquo;d just left objects in the R environment (that is, the <code>.RData</code>
 file) and used them as needed without explaining where they had come
-from. (Please don&rsquo;t tell <a href="https://jennybryan.org/">Jenny</a> about this.)</p></li>
-
-<li><p>I should have indicated (and loaded) the required R library in the
-scripts.</p></li>
-
-<li><p>The code for <a href="https://bit.ly/lamichhane2003_fig1">Figure 1b</a> in the
+from. (Please don&rsquo;t tell <a href="https://jennybryan.org/">Jenny</a> about this.)</p>
+</li>
+<li>
+<p>I should have indicated (and loaded) the required R library in the
+scripts.</p>
+</li>
+<li>
+<p>The code for <a href="https://bit.ly/lamichhane2003_fig1">Figure 1b</a> in the
 paper was not actually in the project directory. At first I figured
 that
 <a href="https://www.hopkinsmedicine.org/profiles/results/directory/profile/6135965/gyanu-lamichhane">Gyanu</a>
@@ -227,20 +217,18 @@ must have made that figure, but then I found <a href="https://github.com/kbroman
 figure</a>
 <a href="https://github.com/kbroman/Talk_Mtb">with the files</a> for a <a href="https://www.biostat.wisc.edu/~kbroman/presentations/sk04_ho.pdf">talk I
 gave at the
-time</a>.</p></li>
+time</a>.</p>
+</li>
 </ul>
-
 <p>And once again for emphasis: I should have included at least one
 ReadMe file that explained the structure of the project directory. And
 I should have merged the multiple mutated copies of the analysis
 scripts into single scripts that did all the things that we ended up
 including in the paper.</p>
-
 <p>There was only one real R change that posed a problem. The output of
 <code>table()</code> used to just be a vector and now it is an object of class
 <code>&quot;table&quot;</code> and so a couple of scripts throw errors if I don&rsquo;t toss in
 an <code>as.numeric()</code>.</p>
-
 <p>I&rsquo;ve not tried going back to the 2002 version of my
 <a href="https://cran.r-project.org/package=negenes">negenes</a> package. It&rsquo;s
 not on github, because <a href="https://github.com/kbroman/negenes">my git repository for the
@@ -251,16 +239,12 @@ can see from the <a href="https://github.com/kbroman/negenes/blob/master/ChangeL
 file</a> for
 the package that the oldest version on CRAN is the one we had used for
 the analyses in the paper.</p>
-
 <p>I&rsquo;ve also not looked at much of <a href="https://github.com/kbroman/Paper_ReScience2020/blob/master/original/Sept02/R/analysis.R">the code itself</a>. And given the state
 of the project directory, I think I&rsquo;m not quite ready to. I
 mean, if you open up a script and you see <a href="https://github.com/kbroman/Paper_ReScience2020/blob/master/original/Nov02/R/analysis.R#L5-L6">this</a>:</p>
-
-<pre><code class="language-r">temp &lt;- negenes(mydata[,1], mydata[,2], mydata[,3], mydata[,4],
-                n.mcmc=50000, skip=49, return=TRUE, trace=FALSE)
-</code></pre>
-
-<p>And there&rsquo;s no mention of where the <code>mydata</code> object was created or
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">negenes</span>(mydata[,<span style="color:#ae81ff">1</span>], mydata[,<span style="color:#ae81ff">2</span>], mydata[,<span style="color:#ae81ff">3</span>], mydata[,<span style="color:#ae81ff">4</span>],
+                n.mcmc<span style="color:#f92672">=</span><span style="color:#ae81ff">50000</span>, skip<span style="color:#f92672">=</span><span style="color:#ae81ff">49</span>, return<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>, trace<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+</code></pre></div><p>And there&rsquo;s no mention of where the <code>mydata</code> object was created or
 what it even is, really. Well let&rsquo;s just leave that for another day.</p>
 
     </div>
@@ -274,7 +258,7 @@ what it even is, really. Well let&rsquo;s just leave that for another day.</p>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -284,12 +268,12 @@ what it even is, really. Well let&rsquo;s just leave that for another day.</p>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

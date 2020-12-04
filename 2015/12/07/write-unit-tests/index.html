@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>Write unit tests! - the stupidest thing...</title>
 <meta property="og:title" content="Write unit tests! - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,41 +82,30 @@
 
     <div class="article-content">
       <p>Since 2000, I&rsquo;ve been working on <a href="https://rqtl.org">R/qtl</a>, an R package for mapping the genetic loci (called quantitative trait loci, QTL) that contribute to variation in quantitative traits in experimental crosses. The <a href="https://www.biostat.wisc.edu/~kbroman/publications/rqtl.pdf">Bioinformatics paper about it</a> is my most cited; also see my 2014 JORS paper, &ldquo;<a href="https://www.biostat.wisc.edu/~kbroman/publications/rqtl_14yrs.pdf">Fourteen years of R/qtl: Just barely sustainable</a>.&rdquo;</p>
-
 <p>It&rsquo;s a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don&rsquo;t produce any errors that halt the code.</p>
-
 <p>I&rsquo;ve recently been working on <a href="https://kbroman.org/qtl2">R/qtl2</a>, a reimplementation of R/qtl to better handle high-dimensional data and more complex crosses, such as <a href="https://www.genetics.org/content/190/2/437.short">Diversity Outbred mice</a>. In doing so, I&rsquo;m trying to make use of the software engineering principles that I&rsquo;ve learned over the last 15 years, which pretty much correspond to the ideas in &ldquo;<a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>&rdquo; (<a href="http://third-bit.com/">Greg Wilson</a> et al., PLOS Biology 12(1): e1001745, <a href="https://doi.org/10.1371/journal.pbio.1001745">doi:10.1371/journal.pbio.1001745</a>).</p>
-
-<p>I&rsquo;m still working on &ldquo;Make names consistent, distinctive, and meaningful&rdquo;, but I&rsquo;m doing pretty well on writing shorter functions with less repeated code, and <em>particularly importantly</em> I&rsquo;m writing extensive unit tests.
-<!-- more --></p>
-
+<p>I&rsquo;m still working on &ldquo;Make names consistent, distinctive, and meaningful&rdquo;, but I&rsquo;m doing pretty well on writing shorter functions with less repeated code, and <em>particularly importantly</em> I&rsquo;m writing extensive unit tests.</p>
+<!-- raw HTML omitted -->
 <p>The basic idea is to break up your code into small functions that ideally do just one thing. (These are the &ldquo;units&rdquo;.) And then write tests that explicitly check whether those functions are giving the correct answers. That is, don&rsquo;t just test that the code <em>runs</em>; you want to know that your code is <em>giving the right answers</em>!</p>
-
 <p>Last week, I was working on implementing a basic genome scan function. I included the option of doing weighted least squares with known weights, because it&rsquo;s easy enough to do, and R/qtl had done that. (I&rsquo;ve never actually <em>used</em> that feature, but it&rsquo;s been there.) And my results were matching those that R/qtl provided. Well, mostly: in the case of multiple phenotypes, with some phenotypes having missing values, and when doing a weighted analysis, the results from R/qtl and R/qtl2 were quite different.</p>
-
 <p>I expect you may be questioning the logic of testing code by comparing it to software that has not been formally tested. I was thinking the same thing. And so I wrote some tests that compared results to those using <a href="https://www.r-project.org">R</a>&rsquo;s <code>lm()</code> function. And (surprise) the results from <code>lm()</code> matched R/qtl2 but not R/qtl. So it was R/qtl that was the problem.</p>
-
 <p>So that had me debugging the <a href="https://github.com/kbroman/qtl/blob/master/R/scanone.R"><code>scanone</code> function in R/qtl</a>, the R code for which is <strong>831</strong> lines long and was written according to the principle, &ldquo;I&rsquo;ll just add this one thing and then clean things up later,&rdquo; with &ldquo;later&rdquo; really meaning &ldquo;never&rdquo;, and &ldquo;this one thing&rdquo; really meaning &ldquo;all the things.&rdquo;</p>
-
 <p>I did, after resorting to a bunch of print/cat statements, <a href="https://github.com/kbroman/qtl/commit/254a1c728">find the bug</a>. In subsetting the data to remove individuals with missing values, I&rsquo;d forgotten to subset the weights. Back in 2012, I&rsquo;d <a href="https://github.com/kbroman/qtl/commit/a07c575">fixed a related bug</a>, but apparently it was only a partial fix. In thinking about the bug again while writing this post, and in looking back at the 2012 bug fix, I realized that I probably had the same bug in <a href="https://github.com/kbroman/qtl/blob/master/R/scantwo.R"><code>scantwo</code></a> (which is <strong>1443</strong> lines long). Sure enough, and so now there&rsquo;s <a href="https://github.com/kbroman/qtl/commit/c71b3dfce9">yet another bug fix</a>, though not yet on <a href="https://cran.r-project.org">CRAN</a>.</p>
-
 <p><a href="http://thebird.nl/">Pjotr Prins</a> was the first to encourage me towards software testing. <a href="http://had.co.nz/">Hadley Wickham</a>&rsquo;s <a href="https://github.com/hadley/testthat">testthat</a> package makes it easy to do in R packages. In his <a href="https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf">paper about testthat</a>, Hadley wrote:</p>
-
-<blockquote>It's not that we don't test our code, it's that we don't store our tests so they can be re-run automatically.
-</blockquote>
-
+<!-- raw HTML omitted -->
 <p>This is my favorite comment on testing; it totally applies to (old) me.</p>
-
 <p>The bottom line:</p>
-
 <ul>
-<li><p>Write unit tests.</p></li>
-
-<li><p>When you find a bug, first write a test for it and then fix the bug.</p></li>
-
-<li><p>When you find a bug, look for other possible instances of that bug, and fix them too.</p></li>
+<li>
+<p>Write unit tests.</p>
+</li>
+<li>
+<p>When you find a bug, first write a test for it and then fix the bug.</p>
+</li>
+<li>
+<p>When you find a bug, look for other possible instances of that bug, and fix them too.</p>
+</li>
 </ul>
-
 <p>To learn more about testing in R packages, see the <a href="http://r-pkgs.had.co.nz/tests.html">Testing</a> chapter in Hadley&rsquo;s <a href="amazon.com/exec/obidos/ASIN/1491910593/7210-20">R packages book</a>. Also see the <a href="https://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf">slides for my lecture on testing and debugging</a> in my <a href="https://kbroman.org/Tools4RR/">Tools for Reproducible Research</a> course.</p>
 
     </div>
@@ -128,7 +119,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>

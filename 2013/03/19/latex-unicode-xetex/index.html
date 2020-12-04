@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>LaTeX &#43; Unicode → XeTeX - the stupidest thing...</title>
 <meta property="og:title" content="LaTeX &#43; Unicode → XeTeX - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -20,10 +22,10 @@
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -32,31 +34,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -80,17 +82,11 @@
 
     <div class="article-content">
       <p>I&rsquo;m co-organizing <a href="https://rqtl.org/ctc2013">a scientific meeting</a> at the end of May.  The abstracts are all in.</p>
-
 <p>We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&rsquo;m using <a href="https://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm">Spreadsheet:XLSX</a> for the first time; it&rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)</p>
-
 <p>I spent way too much time trying to deal with special characters.  I was looking to do a search-and-replace for all possible <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters (for example, to change <code>\xE9</code> aka e into <code>\'{e}</code>, or <code>\xD7</code> aka × into <code>$\times$</code>).</p>
-
-<p><img src="https://kbroman.files.wordpress.com/2013/03/times_symbol.png" alt="MBT/Pas × BALB/cByJ" /></p>
-
+<p><img src="https://kbroman.files.wordpress.com/2013/03/times_symbol.png" alt="MBT/Pas × BALB/cByJ"></p>
 <p>But then I discovered that <a href="https://en.wikipedia.org/wiki/XeTeX">XeTeX</a> supports Unicode, so there&rsquo;s no need to do these sorts of substitutions.</p>
-
 <p>I changed <code>pdflatex</code> to <code>xelatex</code> in my <code>Makefile</code>, and I&rsquo;m done.  I think.</p>
-
 <p><em>Update</em>: Now that I think about it, CSV is way more convenient than XLS(X) for simple data files, as you don&rsquo;t have to traverse with the whole <code>$cell -&gt; (Val)</code> business.  But working with the Excel file directly is easier when the cells may contain lots of text with commas and such, like my abstracts.</p>
 
     </div>
@@ -104,7 +100,7 @@
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -113,7 +109,7 @@
     
 
     
-<script src="../../../../js/math-code.js"></script>
+<script src="/js/math-code.js"></script>
 <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 

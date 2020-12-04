@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on the stupidest thing...</title>
@@ -6,11 +6,17 @@
     <description>Recent content in R on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>debugging with docker and r-devel</title>
+      <link>/2020/12/03/debugging-with-docker-and-r-devel/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/12/03/debugging-with-docker-and-r-devel/</guid>
+      <description>If you&amp;rsquo;ve not heard, there&amp;rsquo;s a big move away from Travis to GitHub Actions for continuous testing of R packages. I&amp;rsquo;m so glad for the infrastructure to help, but it&amp;rsquo;s a bit of work to figure it out.
+But that&amp;rsquo;s not what I&amp;rsquo;m talking about today. Today I want to talk about using docker to debug an R package that is throwing an error in the development version of R. This came up because with the new GitHub Actions infrastructure, I can now test my R packages on multiple OSs and with multiple versions of R, and today R/qtl was shown to throw an error in R-devel.</description>
+    </item>
     
     <item>
       <title>reproducible abstract</title>
@@ -39,16 +45,6 @@ I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on t
       
       <guid>/2019/02/11/writing_text_in_minecraft_with_r/</guid>
       <description>It&amp;rsquo;s been nearly two years since I attended the RopenSci UnConf 2017 in LA and worked with Gergely Daróczi, Brooke Anderson, David Smith, Mario Inchiosa, and Adi Zaidi to create the miner package for interacting with Minecraft from R. We spent a half-day writing the package and then a day and a half playing, with a bunch of our ideas implemented in the craft package and illustrated in the bookdown book, R programming with Minecraft.</description>
-    </item>
-    
-    <item>
-      <title>EOF within quoted string</title>
-      <link>/2017/08/08/eof-within-quoted-string/</link>
-      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
-      
-      <guid>/2017/08/08/eof-within-quoted-string/</guid>
-      <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
-The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
     </item>
     
     <item>

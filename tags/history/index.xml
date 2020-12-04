@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>history on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in history on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Thu, 28 Aug 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/history/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Thu, 28 Aug 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/history/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The mustache photo</title>
       <link>/2014/08/28/the-mustache-photo/</link>
@@ -19,7 +15,6 @@
       
       <guid>/2014/08/28/the-mustache-photo/</guid>
       <description>A certain photo of me has been following me around for some time.
-Karl with a mustache, 15 Nov 2002
 The thing is sitting on my website, so I suppose I have only myself to blame. I actually quite like the photo. I look happy. I was happy. I&amp;rsquo;m not always happy.
 It&amp;rsquo;s shown up in a lot of talks, particularly by a certain friend of mine.
 It appeared on the seminar board at Hopkins Biostat earlier this month.</description>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Things that annoy me on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in Things that annoy me on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Mon, 30 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/things-that-annoy-me/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Mon, 30 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/categories/things-that-annoy-me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I thought maybe I was being paranoid</title>
       <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
@@ -33,8 +29,8 @@ Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</descr
       <guid>/2016/04/05/action-items-in-response-to-hateful-shit/</guid>
       <description>UW-Madison faculty got an email update from Vice Provost and Chief Diversity Officer Patrick Sims regarding the things we can do in response to the hate and bias incidents on campus.
 Here are the things he had mentioned yesterday at the Faculty Senate meeting:
- Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
- Look at &amp;ldquo;bullying&amp;rdquo; language as a way to address possible hate/bias incidents in the classroom.</description>
+  Address hate/bias incidents in your curriculum to ameliorate unacceptable occurrences in our campus community.
+  Look at &amp;ldquo;bullying&amp;rdquo; language as a way to address possible hate/bias incidents in the classroom.</description>
     </item>
     
     <item>
@@ -53,8 +49,8 @@ Here are the things he had mentioned yesterday at the Faculty Senate meeting:
       
       <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>What do I want in a conference website? Not this.
- I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
- If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
+  I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
+  If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
     </item>
     
     <item>
@@ -107,10 +103,13 @@ NIH proposals are typically reviewed by three people and given preliminary score
       
       <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
- Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball (\$) nature.com/nature/journal...  So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
-But then I thought, &amp;ldquo;Wait&amp;hellip;\$18 for a two-page Nature comment? WTF?&amp;rdquo;
+So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
+But then I thought, &amp;ldquo;Wait&amp;hellip;$18 for a two-page Nature comment? WTF?&amp;rdquo;
 So I tweeted:
- DNA: Celebrate the unknowns, like this Nature comment, which costs \$18.</description>
+And thinking about it some more, I got more annoyed, and tweeted:
+And then I thought, I&amp;rsquo;ll ask Nature directly:
+And they responded:
+But that didn&amp;rsquo;t quite answer my question.</description>
     </item>
     
     <item>
@@ -120,7 +119,10 @@ So I tweeted:
       
       <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
- To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
+But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper. The PDF says:
+Methods are important.
+  They shouldn&amp;rsquo;t be separated from the main text.
+  They shouldn&amp;rsquo;t be placed after the results (as so many journals, including PLoS, do).</description>
     </item>
     
     <item>
@@ -132,7 +134,9 @@ So I tweeted:
       <description>QR codes are stupid. See the well-known flowchart.
 And I don&amp;rsquo;t like Drupal. Sites that use it often give things URLs like https://www.genetics.wisc.edu/node/577 for their seminar list.
 And can we get rid of the www?
- &#34;What&#39;s your web site?&#34; &#34;double-u double-u double-u ...&#34; &#34;Zzz...&#34;  URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
+&amp;ldquo;double-u double-u double-u &amp;hellip;&amp;rdquo;
+&amp;ldquo;Zzz&amp;hellip;&amp;rdquo;
+URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
 URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>
     </item>
     
@@ -167,8 +171,7 @@ Their response included, &amp;ldquo;What you do with it when it arrives I am jus
       
       <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
-There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
-As for Google, Mr. DelBene said it has not &#34;in any way diminished demand&#34; for Office because Microsoft&#39;s applications are &#34;just so far beyond the capabilities that are in those alternative products.</description>
+There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!</description>
     </item>
     
     <item>

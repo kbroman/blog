@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>omg, binder! - the stupidest thing...</title>
 <meta property="og:title" content="omg, binder! - the stupidest thing...">
 
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,14 +23,14 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
 
-<link rel="stylesheet" href="../../../../css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 
 
 
@@ -37,31 +39,31 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/karl.png"
+  <a href="/" class="nav-logo">
+    <img src="/images/karl.png"
          width="50"
          height="50"
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="/" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
     <li><a href="https://kbroman.org/blog/about">
-            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            <img alt="about" src="/images/about_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://github.com/kbroman">
-            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            <img alt="github" src="/images/github_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://twitter.com/kwbroman">
-            <img alt="twitter" src="../../../../images/twitter_logo.png" class="nav-link"/>
+            <img alt="twitter" src="/images/twitter_logo.png" class="nav-link"/>
             </a></li>
     
     <li><a href="https://kbroman.org">
-            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            <img alt="web" src="/images/web_logo.png" class="nav-link"/>
             </a></li>
     
   </ul>
@@ -84,9 +86,7 @@
     
 
     <div class="article-content">
-      
-
-<p>At his <a href="https://github.com/karthik/rstudio2019">talk at
+      <p>At his <a href="https://github.com/karthik/rstudio2019">talk at
 RStudio::conf</a>, <a href="http://inundata.org">Karthik
 Ram</a> discussed
 <a href="https://mybinder.readthedocs.io/en/latest/index.html">binder</a> as a
@@ -98,45 +98,35 @@ live in RStudio on some cloud server somewhere. Seems too good to be true.
 But I trusted him, mentioned it in <a href="https://bit.ly/rrcollab">my talk at
 AAAS yesterday</a>, and talked it up to <a href="http://jtleek.com">Jeff
 Leek</a>.</p>
-
 <p>I spent the afternoon walking around DC, and then when it started to
 rain I came in and decided I&rsquo;d give binder a try. I figured my <a href="https://kbroman.org/FruitSnacks">Fruit
 Snacks project</a> would make a good
 example.</p>
-
 <p>The <a href="https://mybinder.readthedocs.io/en/latest/index.html">documentation for
 binder</a> is quite
 comprehensive, but I found it rather confusing. So it took me a bit of
 experimentation to figure things out. And I&rsquo;m eager to try to
 explain what I learned in the simplest possible terms.</p>
-
-<h2 id="what-s-the-point">What&rsquo;s the point?</h2>
-
+<h2 id="whats-the-point">What&rsquo;s the point?</h2>
 <p>First, let me make the awesomeness a bit more concrete.</p>
-
 <p>Say you have some code and data for a paper that you&rsquo;ve just written,
 and you want to share it with the world. You put it all in a GitHub
 repository, and people can pull it down to their laptop to work with
 it, but maybe they&rsquo;ll need to install a bunch of packages, and maybe
 they&rsquo;ll need to do a bit of work to make sure they have just the right
 versions of packages. Ugh, this is all getting a bit hard.</p>
-
 <p>Back up, with binder. You&rsquo;ve put your code and data in a github
 repository. Other people maybe want to try it out and peruse the work.
 They click on the &ldquo;launch binder&rdquo; badge in your ReadMe file, and it
 opens RStudio in their browser, with all the right packages installed
 and with your code and data sitting there, ready to work with.</p>
-
 <p>Click this to see my example in action:
-<a href="https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
-
+<a href="https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio"><img src="https://mybinder.org/badge_logo.svg" alt="Binder"></a></p>
 <p>Open the <code>fruit_snacks.Rmd</code> file in the <code>R/</code> directory and click the
 &ldquo;Knit&rdquo; button, and it will run my permutation tests and open the
 compiled report.</p>
-
 <p>And what do you need to do to make this happen? You&rsquo;ll be surprised by
 how simple it is, because you just need three things:</p>
-
 <ul>
 <li>tell binder you want R, using the
 <a href="https://mran.microsoft.com/">MRAN</a> snapshot of
@@ -145,46 +135,31 @@ how simple it is, because you just need three things:</p>
 <li>use the right URL, to have binder open your project in RStudio in a
 browser (namely with &ldquo;<code>?urlpath=rstudio</code>&rdquo; at the end)</li>
 </ul>
-
 <h2 id="initial-reorganization">Initial reorganization</h2>
-
 <p>Okay, so what did I need to do to use binder with my <a href="https://kbroman.org/FruitSnacks">Fruit
 Snacks project</a>?</p>
-
 <p>First, I made a copy of the <a href="https://github.com/kbroman/FruitSnacks">GitHub
 repository</a> and deleted a
 bunch of stuff, because it&rsquo;s a bit bloated with <a href="https://github.com/kbroman/FruitSnacks/blob/master/PhotoGallery.md">pictures of fruit
 snacks</a>.</p>
-
 <p>Specifically:</p>
-
 <pre><code>git clone git://github.com/kbroman/FruitSnacks FruitSnacksBinder
 cd FruitSnacksBinder
 \rm -rf .git
 \rm -r Photos
 \rm PhotoGallery.md Makefile
 \rm R/create_thumbnails.R R/generate_photo_gallery.R
-</code></pre>
-
-<p>Then I initialized it as a new git repository.</p>
-
+</code></pre><p>Then I initialized it as a new git repository.</p>
 <pre><code>git add .
 git commit -m &quot;Initial commit&quot;
-</code></pre>
-
-<p>I created a <a href="https://github.com/kbroman/FruitSnacksBinder">new repository on
+</code></pre><p>I created a <a href="https://github.com/kbroman/FruitSnacksBinder">new repository on
 GitHub</a>, and push the
 local repository there.</p>
-
 <pre><code>git remote add origin git@github.com:kbroman/FruitSnacksBinder
 git push -u origin master
-</code></pre>
-
-<p>(Note, I always use the ssh method of connecting to GitHub. You might
+</code></pre><p>(Note, I always use the ssh method of connecting to GitHub. You might
 want <code>https://github.com/</code> where I&rsquo;m using <code>git@github.com:</code>.)</p>
-
 <p>This puts me at a nice clean state. The repository has</p>
-
 <ul>
 <li>ReadMe and License files</li>
 <li>A <code>Data/</code> directory containing a few CSVs, a couple of PDFs, and a
@@ -192,73 +167,48 @@ couple of xlsx files</li>
 <li>An <code>R/</code> directory with an R script that defines a few functions plus
 a couple of R Markdown files that contain my analyses.</li>
 </ul>
-
 <p>The R Markdown files automatically install my
 <a href="https://github.com/kbroman/broman">R/broman</a> package, if it&rsquo;s not
 available. This isn&rsquo;t recommended behavior, and we won&rsquo;t need this
 with binder, so I removed the lines like</p>
-
-<pre><code class="language-r">if(!require(broman)) {
-    install.packages(&quot;broman&quot;, repos=&quot;https://cran.rstudio.com&quot;)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">require</span>(broman)) {
+    <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;broman&#34;</span>, repos<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cran.rstudio.com&#34;</span>)
 }
-</code></pre>
-
-<p>and replaced them with</p>
-
-<pre><code class="language-r">library(broman)
-</code></pre>
-
-<h2 id="how-to-use-binder-with-r">How to use binder with R</h2>
-
+</code></pre></div><p>and replaced them with</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(broman)
+</code></pre></div><h2 id="how-to-use-binder-with-r">How to use binder with R</h2>
 <p>Okay, now on to the real bit. We need to do three things:</p>
-
 <p><strong>1</strong>. Create a file called
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/master/runtime.txt"><code>runtime.txt</code></a>
 that has just one line like:</p>
-
 <pre><code>r-2019-02-14
-</code></pre>
-
-<p>This tells binder that you want R, and that you want R packages
+</code></pre><p>This tells binder that you want R, and that you want R packages
 from a particular date.</p>
-
 <p><strong>2</strong>. Specify the R packages that you want installed by creating a file called
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R"><code>install.R</code></a>
 that contains one or more <code>install.packages()</code> calls, like this:</p>
-
-<pre><code class="language-r">install.packages(c(&quot;broman&quot;,
-                   &quot;knitr&quot;, &quot;rmarkdown&quot;,
-                   &quot;caTools&quot;, &quot;bitops&quot;, &quot;rprojroot&quot;))
-</code></pre>
-
-<p><strong>3</strong>. The last thing is to make a badge, or anyway the URL that will
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">install.packages</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;broman&#34;</span>,
+                   <span style="color:#e6db74">&#34;knitr&#34;</span>, <span style="color:#e6db74">&#34;rmarkdown&#34;</span>,
+                   <span style="color:#e6db74">&#34;caTools&#34;</span>, <span style="color:#e6db74">&#34;bitops&#34;</span>, <span style="color:#e6db74">&#34;rprojroot&#34;</span>))
+</code></pre></div><p><strong>3</strong>. The last thing is to make a badge, or anyway the URL that will
 have binder open your repository in RStudio in a browser.
 The url is like this:</p>
-
 <p><a href="https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio">https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio</a></p>
-
 <p>The <code>?urlpath=rstudio</code> at the end of the URL is what makes the
 RStudio aspect happen.</p>
-
 <p>To make a proper badge, you put a line like the following in your
 <code>README.md</code> file:</p>
-
 <pre><code>[![Binder](https://mybinder.org/badge_logo.svg)]( put_url_here )
-</code></pre>
-
-<p>The first time you launch binder, it&rsquo;ll be quite slow to load as it
+</code></pre><p>The first time you launch binder, it&rsquo;ll be quite slow to load as it
 has to create the container and install R and RStudio and all of
 the packages and everything. Subsequent times it&rsquo;ll be much
 faster, though not particularly fast.</p>
-
 <h2 id="an-alternative">An alternative</h2>
-
 <p>There&rsquo;s an alternative to step 2 above, where you created the
 <code>install.R</code> file. Instead of making that file, you
 can make a
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/description/DESCRIPTION"><code>DESCRIPTION</code></a>
 file, sort of like an R package, like this:</p>
-
 <pre><code>Package: FruitSnacks
 Version: 0.1
 Date: 2019-02-18
@@ -273,58 +223,41 @@ Imports:
     caTools,
     bitops,
     rprojroot
-</code></pre>
-
-<p>The two approaches do the same thing. I think the <code>install.R</code> approach
+</code></pre><p>The two approaches do the same thing. I think the <code>install.R</code> approach
 seems easier, but the <code>DESCRIPTION</code> approach maybe seems more natural for
 R package developers, and would allow the repository to use this
 binder business and also be a proper R package.</p>
-
 <p>The <a href="https://github.com/kbroman/FruitSnacksBinder">master branch of my FruitSnacksBinder
 repository</a> uses the
 <code>install.R</code> approach.</p>
-
 <p>I tried out the <code>DESCRIPTION</code> file approach in the <a href="https://github.com/kbroman/FruitSnacksBinder/tree/description">description
 branch of that repository</a>.</p>
-
 <p>To use binder with a non-master branch in your repository, you edit
 <code>master</code> in the URL to the name of the branch you want to use, like this:</p>
-
 <p><a href="https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/description?urlpath=rstudio">https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/description?urlpath=rstudio</a></p>
-
 <h2 id="wait-was-that-it">Wait, was that it?</h2>
-
 <p>Yes, that was it.</p>
-
 <ol>
 <li>An <code>runtime.txt</code> file with a line like <code>r-2019-02-14</code></li>
 <li>Either an <code>install.R</code> file or a <code>DESCRIPTION</code> file. The key thing
 here is specifying what packages to install.</li>
 <li>Make a badge with the correct URL.</li>
 </ol>
-
 <h2 id="limitations">Limitations</h2>
-
 <p>There are some important limitations of binder.</p>
-
 <ul>
 <li>It&rsquo;s a pilot; it&rsquo;s not likely to continue long term the way it is now
 (totally free).</li>
 <li>You get just 1-2 GB RAM for your project.</li>
 </ul>
-
 <h2 id="conclusions">Conclusions</h2>
-
 <p>Putting the code and data for a project or paper on GitHub is an
 awesome thing. People can grab it and explore it and test it and
 modify it for other purposes.</p>
-
 <p>But there are some hassles, including getting all of the packages
 installed, and installing the right versions of packages.</p>
-
 <p>Docker containers are a clear and important solution to this problem,
 but many of us still find them a bit complicated and scary.</p>
-
 <p>Binder can bring that docker magic to all of our github repositories,
 with just three small steps.</p>
 
@@ -339,7 +272,7 @@ with just three small steps.</p>
       <footer class="footer">
         <ul class="footer-links">
           <li>
-            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="/images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
           </li>
         </ul>
       </footer>
@@ -349,18 +282,18 @@ with just three small steps.</p>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 
 
     
-<script src="../../../../js/math-code.js"></script>
+<script src="/js/math-code.js"></script>
 <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
