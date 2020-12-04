@@ -90,3 +90,17 @@ There's a lot more that one can do with Docker, but this was a pretty
 quick and satisfying experience poking around in the development
 version of R to fix a bug in my [ancient and
 creaky](https://doi.org/10.5334/jors.at) package.
+
+I gave a talk about docker in my [Advanced Data
+Analysis](https://kbroman.org/AdvData/) course last spring. You can
+look at the [slides](https://kbroman.org/AdvData/26_containers.pdf),
+including [a version with notes of what I
+said](https://kbroman.org/AdvData/26_containers_notes.pdf), and [watch
+the
+lecture](https://us-lti.bbcollab.com/recording/0fc7d7a1d7ac472084798e61c43e4a63).
+(It's
+[recommended](https://twitter.com/KenButler12/status/1334656652650405888)
+that you do so on fast-forward.) The course [resources
+page](https://kbroman.org/AdvData/resources.html) points to [other
+resources on
+docker](https://kbroman.org/AdvData/resources.html#docker-containers).
