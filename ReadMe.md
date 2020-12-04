@@ -1,11 +1,11 @@
 This is the source for [my blog](http://kbroman.org/blog) built on
 [blogdown](https://github.com/rstudio/blogdown) and the
 [Hugo](https://gohugo.io) theme
-[hugo-lithium-theme](https://github.com/yihui/hugo-lithium-theme), and
+[hugo-lithium](https://github.com/yihui/hugo-lithium), and
 copied from [Yihui](https://yihui.name)'s
 [template](https://github.com/yihui/blogdown-yihui-template).
 
-Also see my [old blog](https://kbroman.wordpress.com) and my [regular website](http://kbroman.org).
+Also see my [regular website](http://kbroman.org).
 
 ---
 
