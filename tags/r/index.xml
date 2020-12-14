@@ -48,13 +48,23 @@ I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on t
     </item>
     
     <item>
+      <title>EOF within quoted string</title>
+      <link>/2017/08/08/eof-within-quoted-string/</link>
+      <pubDate>Tue, 08 Aug 2017 00:10:12 -0500</pubDate>
+      
+      <guid>/2017/08/08/eof-within-quoted-string/</guid>
+      <description>So I was trying to parse this gff file from MGI, with mouse gene annotations. And, well, I’m an idiot. But in a way that is potentially instructive.
+The documentation for the file is a docx file (not really a recommended format for such metadata), but it seems rather simple, really: tab delimited, with 9 columns, the ninth column being a bunch of pasted attributes that needs to be further parsed, but we’ll skip over that detail.</description>
+    </item>
+    
+    <item>
       <title>miner and craft</title>
       <link>/2017/05/31/miner-and-craft/</link>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>/2017/05/31/miner-and-craft/</guid>
-      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
-I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
+      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we&amp;rsquo;re putting into a second package.
+I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, &amp;ldquo;Hey, we could call it craft.</description>
     </item>
     
     <item>
@@ -68,13 +78,23 @@ I mean, from my own book writing experience, I felt like, “Hell if I’m going
     </item>
     
     <item>
+      <title>omg, bookdown!</title>
+      <link>/2017/05/31/omg-bookdown/</link>
+      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
+      
+      <guid>/2017/05/31/omg-bookdown/</guid>
+      <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There&amp;rsquo;s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
+I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&amp;rsquo;m going to be writing another book.</description>
+    </item>
+    
+    <item>
       <title>deeply nested functions</title>
       <link>/2017/05/30/deeply-nested-functions/</link>
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
       <guid>/2017/05/30/deeply-nested-functions/</guid>
-      <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
-setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
+      <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you&amp;rsquo;re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &#39;|&#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
@@ -83,8 +103,8 @@ setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
-This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
+      <description>I&amp;rsquo;m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci&amp;rsquo;s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
     <item>

@@ -23,8 +23,8 @@
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>/2017/05/31/miner-and-craft/</guid>
-      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
-I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
+      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we&amp;rsquo;re putting into a second package.
+I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, &amp;ldquo;Hey, we could call it craft.</description>
     </item>
     
     <item>
@@ -33,8 +33,8 @@ I initially called this extra package “miner.extra”. (And I learned some new
       <pubDate>Sat, 27 May 2017 12:30:00 -0500</pubDate>
       
       <guid>/2017/05/27/ropensci-unconf-2017/</guid>
-      <description>I’m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
-This was ROpenSci’s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
+      <description>I&amp;rsquo;m back from the ROpenSci Unconference in LA. A fabulous two days of R programming and, ur, playing Minecraft. As one does.
+This was ROpenSci&amp;rsquo;s 4th unconference; the first I could attend. There were like 70 participants, nearly double what they had last year. The scheme is that people break up into groups and work on different projects that might be useful to the ROpenSci community. There was discussion about potential projects in advance on GitHub, and then the first morning we voted on what we were interested in doing via stickers:</description>
     </item>
     
   </channel>

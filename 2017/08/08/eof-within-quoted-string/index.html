@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.79.0" />
 
 
 <title>EOF within quoted string - the stupidest thing...</title>
 <meta property="og:title" content="EOF within quoted string - the stupidest thing...">
 
+
+  <link href='favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -21,7 +23,7 @@
 
 
 
-<link href='//cdn.bootcss.com/highlight.js/9.10.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
@@ -44,7 +46,7 @@
          alt="Logo">
   </a>
 
-  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+  <a href="" class="nav-title">the stupidest thing...</a>
 
   <ul class="nav-links">
     
@@ -149,16 +151,16 @@ function (file, header = TRUE, sep = &quot;\\t&quot;, quote = &quot;\\&quot;&quo
     fill = TRUE, comment.char = &quot;&quot;, ...)
 read.table(file = file, header = header, sep = sep, quote = quote,
     dec = dec, fill = fill, comment.char = comment.char, ...)</code></pre>
-<p>The key argument here is <code>quote</code>, in that <code>read.table()</code> uses <code>quote=&quot;'\&quot;&quot;</code>
+<p>The key argument here is <code>quote</code>, in that <code>read.table()</code> uses <code>quote="'\""</code>
 (that is, looking for either single- or double-quotes)
-while <code>read.delim()</code> uses <code>quote=&quot;\&quot;&quot;</code> (just looking for double-quotes).</p>
+while <code>read.delim()</code> uses <code>quote="\""</code> (just looking for double-quotes).</p>
 <p>There are no double-quotes in the file, but that ninth column includes some single-quotes, and
 so my use of <code>read.table()</code> was mucking everything up.
 And presumably there was an odd number of
 them, so the end-of-file (EOF) character was inside one of those
 quoted strings.</p>
-<p>To read the file properly, I should have used <code>quote=&quot;\&quot;&quot;</code>. Even
-better, I could use <code>quote=&quot;&quot;</code>, and for that matter also <code>fill=FALSE</code>
+<p>To read the file properly, I should have used <code>quote="\""</code>. Even
+better, I could use <code>quote=""</code>, and for that matter also <code>fill=FALSE</code>
 (since every line is supposed to contain all nine columns).</p>
 <pre class="r"><code>tab &lt;- read.table(file, sep=&quot;\t&quot;, header=FALSE, comment.char=&quot;#&quot;,
                   na.strings=&quot;.&quot;, stringsAsFactors=FALSE,
@@ -176,7 +178,7 @@ just about half as many lines as I should’ve, and so I’d clearly
 messed something up.</p></li>
 <li><p>When I run into a problem like this, it’s more likely that there’s a
 problem with my code than that there’s a problem with the file.</p></li>
-<li><p>With a file of this sort, I should have used <code>quote=&quot;&quot;</code> and
+<li><p>With a file of this sort, I should have used <code>quote=""</code> and
 <code>fill=FALSE</code> in my call to <code>read.table()</code>. I’m not expecting any
 quoted fields, and I’m expecting that every line will have exactly nine
 columns.</p></li>
@@ -205,12 +207,12 @@ columns.</p></li>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/r.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
 
 

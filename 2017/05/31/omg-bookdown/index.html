@@ -81,36 +81,33 @@
     
 
     <div class="article-content">
-      
-
-
-<p>So I heard <a href="https://yihui.name">Yihui Xie</a> talk about
+      <p>So I heard <a href="https://yihui.name">Yihui Xie</a> talk about
 <a href="https://bookdown.org">bookdown</a>, and I read, with considerable
 excitement, his <a href="https://bookdown.org/yihui/bookdown/">bookdown book</a>.
-(There’s a <a href="https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;tag=7210-20">blurb from me at
+(There&rsquo;s a <a href="https://www.amazon.com/gp/product/113870010X?ie=UTF8&amp;tag=7210-20">blurb from me at
 Amazon</a>
 saying nice things about it, after all). But I must admit that I read
 the book on my iPad, with my feet up. And so my understanding, while
 reasonably complete, was somewhat theoretical.</p>
 <p>I mean, from <a href="https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/">my own book writing
 experience</a>,
-I felt like, “Hell if <em>I’m</em> going to be writing another book.” And
+I felt like, &ldquo;Hell if <em>I&rsquo;m</em> going to be writing another book.&rdquo; And
 while I can see that it could be useful to reformat my <a href="https://kbroman.org/pages/tutorials">various
 tutorials</a> as bookdown books, I
-wasn’t in a hurry to do that.</p>
+wasn&rsquo;t in a hurry to do that.</p>
 <p>But the R/minecraft team from the <a href="https://ropensci.org">ROpenSci</a>
 <a href="https://unconf17.ropensci.org">Unconference</a> had such a great time
 last week, and we developed such cool stuff, that we thought it would
 be good, in addition to polishing our
-<a href="https://github.com/ROpenSciLabs/miner">miner</a> package, to compile our
+<a href="https://github.com/kbroman/miner">miner</a> package, to compile our
 varied set of vignettes into a bookdown book.</p>
 <p>And so today I did. (You can see the working draft at
-<a href="https://ROpenSciLabs.github.io/miner_book" class="uri">https://ROpenSciLabs.github.io/miner_book</a>.) And boy it was easy.</p>
+<a href="https://kbroman.org/miner_book">https://kbroman.org/miner_book</a>.) And boy it was easy.</p>
 <ul>
-<li>Made a <a href="https://github.com/ropenscilabs/miner_book">github repository</a></li>
+<li>Made a <a href="https://github.com/kbroman/miner_book">github repository</a></li>
 <li>Created a <code>index.Rmd</code> file and a <code>_bookdown.yml</code> file.</li>
 <li>Copied over all of our extra <code>.Rmd</code> files from <code>miner/extra_vignettes</code></li>
-<li>Replaced the YAML in those <code>.Rmd</code> files with “<code># [chapter title]</code>”</li>
+<li>Replaced the YAML in those <code>.Rmd</code> files with &ldquo;<code># [chapter title]</code>&rdquo;</li>
 <li>Copied over our screen shots</li>
 <li>Added references in <code>book.bib</code> (and <code>packages.bib</code>)</li>
 <li>Screwed around making a cover</li>
@@ -119,19 +116,21 @@ varied set of vignettes into a bookdown book.</p>
 <p>Okay, so I admit there was one glitch. I opened the thing in RStudio
 and said</p>
 <blockquote>
-<p>“Now I just click the Build Book button. Wait, where is that? I just
-see the cutest-button-ever knit button. And clicking that doesn’t
-work properly.”</p>
+<p>&ldquo;Now I just click the Build Book button. Wait, where is that? I just
+see the cutest-button-ever knit button. And clicking that doesn&rsquo;t
+work properly.&rdquo;</p>
 </blockquote>
 <p>More time than I care to admit passes, with me doing all kinds of
 crazy shit.</p>
 <blockquote>
-<p>“Oh, he said the Build Book button on the <em>Build</em> tab. I see it now.”</p>
+<p>&ldquo;Oh, he said the Build Book button on the <em>Build</em> tab. I see it now.&rdquo;</p>
 </blockquote>
 <p>And done.</p>
 <p>(Note that I also used his suggestion to have <code>output_dir: &quot;docs&quot;</code> and
 then use GitHub Pages to host the book-in-progress, which was also
 easy.)</p>
+<p><em>Update 2020-12-14</em>: the miner package and book have been moved from
+<a href="https://github.com/ropenscilabs">ROpenSciLabs</a> to <a href="https://github.com/kbroman">kbroman</a>.</p>
 
     </div>
   </article>

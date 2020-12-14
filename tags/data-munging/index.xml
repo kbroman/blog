@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data munging on the stupidest thing...</title>
@@ -6,12 +6,8 @@
     <description>Recent content in data munging on the stupidest thing...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT License</copyright>
-    <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate>
-    
-	<atom:link href="/tags/data-munging/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
+    <lastBuildDate>Tue, 08 Aug 2017 00:10:12 -0500</lastBuildDate><atom:link href="/tags/data-munging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EOF within quoted string</title>
       <link>/2017/08/08/eof-within-quoted-string/</link>

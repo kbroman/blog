@@ -208,6 +208,21 @@
   </url>
   
   <url>
+    <loc>/tags/data-munging/</loc>
+    <lastmod>2017-08-08T00:10:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/08/08/eof-within-quoted-string/</loc>
+    <lastmod>2017-08-08T00:10:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/read.table/</loc>
+    <lastmod>2017-08-08T00:10:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/blog/</loc>
     <lastmod>2017-08-03T00:01:00-05:00</lastmod>
   </url>
@@ -225,6 +240,11 @@
   <url>
     <loc>/2017/05/31/miner-and-craft/</loc>
     <lastmod>2017-05-31T23:48:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/05/31/omg-bookdown/</loc>
+    <lastmod>2017-05-31T23:16:00-05:00</lastmod>
   </url>
   
   <url>

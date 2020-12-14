@@ -44,8 +44,8 @@ More blather about languages Long ago, I wrote a tutorial on Perl.</description>
       <pubDate>Wed, 31 May 2017 23:48:00 -0500</pubDate>
       
       <guid>/2017/05/31/miner-and-craft/</guid>
-      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we’re putting into a second package.
-I initially called this extra package “miner.extra”. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, “Hey, we could call it craft.</description>
+      <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we&amp;rsquo;re putting into a second package.
+I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, &amp;ldquo;Hey, we could call it craft.</description>
     </item>
     
     <item>
@@ -54,8 +54,8 @@ I initially called this extra package “miner.extra”. (And I learned some new
       <pubDate>Tue, 30 May 2017 10:41:00 -0500</pubDate>
       
       <guid>/2017/05/30/deeply-nested-functions/</guid>
-      <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you’re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
-setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
+      <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you&amp;rsquo;re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &#39;|&#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>

@@ -147,7 +147,7 @@ itself is 769 MB.</p>
 will be useful to me, but <a href="https://www.sqlite.org/">SQLite</a> has the
 advantage of being a single file that you can hand to others. And
 installation is easy: you just need
-<a href="https://cran.rstudio.com/package=RSQLite/"><code>install.packages(&quot;RSQLite&quot;)</code></a>.</p>
+<a href="https://cran.rstudio.com/package=RSQLite/"><code>install.packages("RSQLite")</code></a>.</p>
 <p>SQLite won’t take more than <a href="https://sqlite.org/limits.html">2000
 columns</a> (or maybe 32,767 if you
 change a compile-time parameter), so we need to take the transpose of
@@ -229,12 +229,12 @@ db_clone &lt;- read_feather(feather_file_2)</code></pre>
 about 815 MB.</p>
 <p>Accessing particular rows is just as easy. First a bit of code to grab
 the SNP names by grabbing the column names,
-getting rid of the <code>&quot;.X&quot;</code> or <code>&quot;.Y&quot;</code> bits at the end, and then taking
+getting rid of the <code>".X"</code> or <code>".Y"</code> bits at the end, and then taking
 the first half.</p>
 <pre class="r"><code>db_f_2 &lt;- feather(feather_file_2)
 snp_names &lt;- sub(&quot;\\.[XY]$&quot;, &quot;&quot;, colnames(db_f_2))
 snp_names &lt;- snp_names[1:(length(snp_names)/2)]</code></pre>
-<p>Now, we grab the data for a random SNP by pasting <code>&quot;.X&quot;</code> and <code>&quot;.Y&quot;</code>
+<p>Now, we grab the data for a random SNP by pasting <code>".X"</code> and <code>".Y"</code>
 back onto the SNP name.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 system.time(z &lt;- db_f_2[,c(&quot;id&quot;, paste0(random_snp, c(&quot;.X&quot;, &quot;.Y&quot;)))])</code></pre>
@@ -322,7 +322,7 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
 <table>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="right">write time (s)</th>
 <th align="right">read time (s)</th>
 <th align="right">file size (MB)</th>
@@ -331,42 +331,42 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td>rds</td>
+<td align="left">rds</td>
 <td align="right">49.3</td>
 <td align="right">7.0</td>
 <td align="right">769</td>
 <td align="right">NA</td>
 </tr>
 <tr class="even">
-<td>sqlite</td>
+<td align="left">sqlite</td>
 <td align="right">34.7</td>
 <td align="right">NA</td>
 <td align="right">923</td>
 <td align="right">3.7</td>
 </tr>
 <tr class="odd">
-<td>feather</td>
+<td align="left">feather</td>
 <td align="right">3.0</td>
 <td align="right">1.0</td>
 <td align="right">803</td>
 <td align="right">716.5</td>
 </tr>
 <tr class="even">
-<td>feather (tr)</td>
+<td align="left">feather (tr)</td>
 <td align="right">3.3</td>
 <td align="right">1.8</td>
 <td align="right">815</td>
 <td align="right">48.3</td>
 </tr>
 <tr class="odd">
-<td>fst</td>
+<td align="left">fst</td>
 <td align="right">3.0</td>
 <td align="right">1.1</td>
 <td align="right">803</td>
 <td align="right">79.9</td>
 </tr>
 <tr class="even">
-<td>fst (compr)</td>
+<td align="left">fst (compr)</td>
 <td align="right">6.7</td>
 <td align="right">2.7</td>
 <td align="right">781</td>
