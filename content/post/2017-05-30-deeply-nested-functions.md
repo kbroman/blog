@@ -10,11 +10,11 @@ If, in teaching folks about the
 [magrittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)
 pipe operator, `%>%`, you're looking for an in-the-wild example of
 deeply nested functions, our
-[miner](https://github.com/ROpenSciLabs/miner) package (for connecting
+[miner](https://github.com/kbroman/miner) package (for connecting
 [R](https://www.r-project.org) to [Minecraft](https://minecraft.net),
 developed at the [ROpenSci](https://ropensci.org) [2017
 Unconference](http://unconf17.ropensci.org)) has [a good
-one](https://github.com/ropenscilabs/miner/blob/master/R/chat.R#L33-L41):
+one](https://github.com/kbroman/miner/blob/master/R/chat.R#L33-L41):
 
 ```{r, nested_func, eval=FALSE}
 setNames(data.frame(

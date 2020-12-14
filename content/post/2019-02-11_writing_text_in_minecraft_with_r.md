@@ -19,14 +19,14 @@ and worked with [Gergely Daróczi](https://github.com/daroczig),
 Smith](https://github.com/revodavid), [Mario
 Inchiosa](https://github.com/inchiosa), and [Adi
 Zaidi](https://github.com/akzaidi) to create the
-[miner](https://github.com/ropenscilabs/miner) package for interacting
+[miner](https://github.com/kbroman/miner) package for interacting
 with [Minecraft](https://minecraft.net) from
 [R](https://r-project.org). We spent a half-day writing the package
 and then a day and a half playing, with a bunch of our ideas
-implemented in the [craft](https://github.com/ropenscilabs/craft)
+implemented in the [craft](https://github.com/kbroman/craft)
 package and illustrated in the [bookdown](https://bookdown.org) book,
 [R programming with
-Minecraft](https://ropenscilabs.github.io/miner_book).
+Minecraft](https://kbroman.org/miner_book).
 
 I'd meant to follow up with a bunch more on the stuff we'd done, and
 to really finish up and polish the book. But, well, I didn't. But I'm
@@ -37,9 +37,9 @@ write text in Minecraft, like this:
 
 ## My goal was to make a ggplot scatterplot
 
-Once we had [miner](https://github.com/ropenscilabs/miner) up and
+Once we had [miner](https://github.com/kbroman/miner) up and
 running, the first thing I wanted to do was [render a picture out of
-blocks](https://ropenscilabs.github.io/miner_book/rendering-an-image-in-minecraft.html).
+blocks](https://kbroman.org/miner_book/rendering-an-image-in-minecraft.html).
 Specifically, I wanted to create a picture of
 [Karthik](http://inundata.org) in Minecraft. And so I
 did:
@@ -96,7 +96,7 @@ they each are 8 characters tall, and 192 pixels wide because there are
 32 columns of characters and they are each 6 pixels wide.
 
 The script I used to set up the fonts is [hiding inside the craft
-package](https://github.com/ropenscilabs/craft/blob/master/inst/scripts/grab_fonts.R).
+package](https://github.com/kbroman/craft/blob/master/inst/scripts/grab_fonts.R).
 
 ## Rendering text
 
@@ -112,7 +112,7 @@ the full text.
 
 Finally, I render it in Minecraft by looping over the elements of the
 bitmap matrix of 0s and 1s and adding a block wherever there's a 1,
-using [`miner::setBlock()`](https://github.com/ropenscilabs/miner/blob/master/R/setBlock.R).
+using [`miner::setBlock()`](https://github.com/kbroman/miner/blob/master/R/setBlock.R).
 
 ## Rotating the text
 
@@ -126,7 +126,7 @@ south, east, west, up, and down. Your text could go in any of those
 directions, but then for each such direction, the top of the text
 could be oriented in one of four of the other possible directions. I
 wrote an internal function
-[`craft::check_dirtop()`](https://github.com/ropenscilabs/craft/blob/master/R/write_text.R#L153-L164)
+[`craft::check_dirtop()`](https://github.com/kbroman/craft/blob/master/R/write_text.R#L153-L164)
 to check compatibility. (That's "check dir top" not "check dirt op", by
 the way.)
 
@@ -137,3 +137,6 @@ is just about 80 lines, and the code to render text in Minecraft is
 just about 160 lines. And it allowed me to do stuff like this:
 
 !["R/qtl now in 3d", rendered within Minecraft](/images/rqtl2_3d.png)
+
+_Update 2020-12-14_: the miner and craft packages and the miner book have been moved from
+[ROpenSciLabs](https://github.com/ropenscilabs) to [kbroman](https://github.com/kbroman).

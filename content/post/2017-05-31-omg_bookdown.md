@@ -26,13 +26,13 @@ But the R/minecraft team from the [ROpenSci](https://ropensci.org)
 [Unconference](https://unconf17.ropensci.org) had such a great time
 last week, and we developed such cool stuff, that we thought it would
 be good, in addition to polishing our
-[miner](https://github.com/ROpenSciLabs/miner) package, to compile our
+[miner](https://github.com/kbroman/miner) package, to compile our
 varied set of vignettes into a bookdown book.
 
 And so today I did. (You can see the working draft at
-<https://ROpenSciLabs.github.io/miner_book>.) And boy it was easy.
+<https://kbroman.org/miner_book>.) And boy it was easy.
 
-- Made a [github repository](https://github.com/ropenscilabs/miner_book)
+- Made a [github repository](https://github.com/kbroman/miner_book)
 - Created a `index.Rmd` file and a `_bookdown.yml` file.
 - Copied over all of our extra `.Rmd` files from `miner/extra_vignettes`
 - Replaced the YAML in those `.Rmd` files with "`# [chapter title]`"
@@ -59,3 +59,6 @@ And done.
 (Note that I also used his suggestion to have `output_dir: "docs"` and
 then use GitHub Pages to host the book-in-progress, which was also
 easy.)
+
+_Update 2020-12-14_: the miner package and book have been moved from
+[ROpenSciLabs](https://github.com/ropenscilabs) to [kbroman](https://github.com/kbroman).

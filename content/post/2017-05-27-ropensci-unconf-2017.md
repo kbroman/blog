@@ -82,7 +82,7 @@ functions:
 - read the chat messages
 
 We had our basic working package,
-[miner](https://github.com/ropenscilabs/miner), by lunchtime on the
+[miner](https://github.com/kbroman/miner), by lunchtime on the
 first day and spent the next day and a half playing with it and
 Minecraft.
 
@@ -100,7 +100,7 @@ Just eight basic functions, but we did a ton of awesome things:
 - Draw a full ggplot2-like scatterplot in the sky
 
 Check out [the ReadMe file for our
-package](https://github.com/ropenscilabs/miner/blob/master/README.md)
+package](https://github.com/kbroman/miner/blob/master/README.md)
 to see a bunch of pictures and gifs.
 
 I'll write about some of these things in the (hopefully near) future,
