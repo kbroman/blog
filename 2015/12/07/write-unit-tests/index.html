@@ -92,7 +92,9 @@
 <p>So that had me debugging the <a href="https://github.com/kbroman/qtl/blob/master/R/scanone.R"><code>scanone</code> function in R/qtl</a>, the R code for which is <strong>831</strong> lines long and was written according to the principle, &ldquo;I&rsquo;ll just add this one thing and then clean things up later,&rdquo; with &ldquo;later&rdquo; really meaning &ldquo;never&rdquo;, and &ldquo;this one thing&rdquo; really meaning &ldquo;all the things.&rdquo;</p>
 <p>I did, after resorting to a bunch of print/cat statements, <a href="https://github.com/kbroman/qtl/commit/254a1c728">find the bug</a>. In subsetting the data to remove individuals with missing values, I&rsquo;d forgotten to subset the weights. Back in 2012, I&rsquo;d <a href="https://github.com/kbroman/qtl/commit/a07c575">fixed a related bug</a>, but apparently it was only a partial fix. In thinking about the bug again while writing this post, and in looking back at the 2012 bug fix, I realized that I probably had the same bug in <a href="https://github.com/kbroman/qtl/blob/master/R/scantwo.R"><code>scantwo</code></a> (which is <strong>1443</strong> lines long). Sure enough, and so now there&rsquo;s <a href="https://github.com/kbroman/qtl/commit/c71b3dfce9">yet another bug fix</a>, though not yet on <a href="https://cran.r-project.org">CRAN</a>.</p>
 <p><a href="http://thebird.nl/">Pjotr Prins</a> was the first to encourage me towards software testing. <a href="http://had.co.nz/">Hadley Wickham</a>&rsquo;s <a href="https://github.com/hadley/testthat">testthat</a> package makes it easy to do in R packages. In his <a href="https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf">paper about testthat</a>, Hadley wrote:</p>
-<!-- raw HTML omitted -->
+<blockquote>
+<p>It&rsquo;s not that we don&rsquo;t test our code, it&rsquo;s that we don&rsquo;t store our tests so they can be re-run automatically.</p>
+</blockquote>
 <p>This is my favorite comment on testing; it totally applies to (old) me.</p>
 <p>The bottom line:</p>
 <ul>

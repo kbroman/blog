@@ -55,7 +55,8 @@ Sunday   (2:00 - 3:50) Open source statistical software for data science</descri
       <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
-If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics. You can call it data science or informatics or analytics or whatever, but it&amp;rsquo;s still statistics.</description>
+ When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
+If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.</description>
     </item>
     
     <item>
@@ -269,10 +270,8 @@ I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I 
       
       <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
-But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper. The PDF says:
-Methods are important.
-  They shouldn&amp;rsquo;t be separated from the main text.
-  They shouldn&amp;rsquo;t be placed after the results (as so many journals, including PLoS, do).</description>
+ To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
+ But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>

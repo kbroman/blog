@@ -76,7 +76,7 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">2 min read</span>
     
 
     <h1 class="article-title">Googling errors</h1>
@@ -108,7 +108,9 @@ SyntaxError: invalid syntax
 <h3 id="mclapply-isnt-working-in-windows">mclapply isn&rsquo;t working in windows</h3>
 <p>I got a report that parallel processing in my <a href="https://rqtl.org">R/qtl</a> package wasn&rsquo;t working in Windows.</p>
 <p>I googled &ldquo;mclapply isn&rsquo;t working windows&rdquo; (because mclapply was the function I was using) and got <a href="https://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r">this stackoverflow page</a>, which says:</p>
-<!-- raw HTML omitted -->
+<blockquote>
+<p>since Windows does not have fork(), it will run standard lapply instead - no parallelization</p>
+</blockquote>
 
     </div>
   </article>
