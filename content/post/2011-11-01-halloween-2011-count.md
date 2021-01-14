@@ -31,7 +31,7 @@ In the above graph, I'm applying ideas learned from [Dan Carr](http://statistics
 
   * The white grid lines make it easy to see the details, and they still don't get in the way of the plot.
 
-  * With the grid lines, you don't need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no <strike>bristles</strike> ticks.)
+  * With the grid lines, you don't need to include tick marks, but can just use proximity.  (Note that the labels can and should be closer to the plot when there are no ~~bristles~~ ticks.)
 
   * The use of color for the actual data makes them stand out better.
 
