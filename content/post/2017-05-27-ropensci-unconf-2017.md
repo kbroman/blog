@@ -20,8 +20,7 @@ GitHub](https://github.com/ropensci/unconf17/issues), and then the
 first morning we voted on what we were interested in doing via
 stickers:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love the sticker interest in my <a href="https://twitter.com/hashtag/runconf17?src=hash">#runconf17</a> issue! <a href="https://t.co/AqQpxVJZuk">pic.twitter.com/AqQpxVJZuk</a></p>&mdash; Amelia McNamara (@AmeliaMN) <a href="https://twitter.com/AmeliaMN/status/867793745986469889">May 25, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 867793745986469889 >}}
 
 I found the list of topics a bit forbidding. Important stuff, but a
 lot of them seemed technically difficult, and I didn't really see how

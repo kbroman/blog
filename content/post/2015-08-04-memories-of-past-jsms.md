@@ -41,6 +41,6 @@ The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) 
 
   * In the [December, 2002 issue](https://cran.r-project.org/doc/Rnews/Rnews_2002-3.pdf) of [R news](https://cran.r-project.org/doc/Rnews/) (superseded by the [R Journal](https://journal.r-project.org/)), I poked fun at Dallas, a previous JSM site. I didn't attend the meeting in Dallas. Here's what I wrote:
 
-<blockquote>A good time was had at the Joint Statistical Meetings (JSM) in New York City, August 11–15, 2002. After several years of dismal locations (who can forget Dallas?), this year's JSM began a series of venues possibly even more interesting than the Meetings: in the next two years, the JSM will be in San Francisco and Toronto.</blockquote>
+> A good time was had at the Joint Statistical Meetings (JSM) in New York City, August 11–15, 2002. After several years of dismal locations (who can forget Dallas?), this year's JSM began a series of venues possibly even more interesting than the Meetings: in the next two years, the JSM will be in San Francisco and Toronto.
 
 I have other memories that I can't share here. Find me at [#JSM2015](https://twitter.com/hashtag/jsm2015) next week. Seattle is sure to be great!

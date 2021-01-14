@@ -15,7 +15,7 @@ I was shocked.
 
 First, he says
 
-<blockquote>When I started writing my book, I knew that authors generally make more money from speaking than they do from royalties, so I wanted my talks on the Information Diet to be great.</blockquote>
+> When I started writing my book, I knew that authors generally make more money from speaking than they do from royalties, so I wanted my talks on the Information Diet to be great.
 
 I probably should have stopped there, since we clearly have completely different goals.  He wrote a book and is giving talks in order to make money?
 

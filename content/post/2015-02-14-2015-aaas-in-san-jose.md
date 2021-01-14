@@ -45,7 +45,7 @@ At the end of the day, [Daphne Koller](https://en.wikipedia.org/wiki/Daphne_Koll
 
 I don't think I'd heard the quote that Daphne mentioned, [attributed to](https://quoteinvestigator.com/2012/08/17/lecture-minds/) [Edwin Emery Slosson](https://en.wikipedia.org/wiki/Edwin_Emery_Slosson):
 
-<blockquote>College is a place where a professor's lecture notes go straight to the students' lecture notes, without passing through the brains of either.</blockquote>
+> College is a place where a professor's lecture notes go straight to the students' lecture notes, without passing through the brains of either.
 
 Still laughing!
 

@@ -14,9 +14,9 @@ slug: james-crow
 
 There have been a number of obituaries: [New York Times](https://www.nytimes.com/2012/01/11/science/james-f-crow-population-genetics-pioneer-dies-at-95.html), [Nature](https://www.nature.com/nature/journal/v481/n7382/full/481444a.html), [Genetics](https://doi.org/10.1534/genetics.112.138610). Also see [Jerry Coyne's comments](https://whyevolutionistrue.wordpress.com/2012/01/05/jim-crow-died/).  The one in Nature, by [Alexey Kondrashov](https://en.wikipedia.org/wiki/Alexey_Kondrashov), is my favorite: it really captures his humor. Here are a couple of quotes from the final paragraph:
 
-<blockquote>When asked about his religious views, he always cheerfully replied that the Bible is "important if true".</blockquote>
+> When asked about his religious views, he always cheerfully replied that the Bible is "important if true".
 
-<blockquote>Crow also explained to an insistent advocate of a healthy lifestyle that exercise prolongs life only by as much time as one spends exercising, so he did not see a point in it.</blockquote>
+> Crow also explained to an insistent advocate of a healthy lifestyle that exercise prolongs life only by as much time as one spends exercising, so he did not see a point in it.
 
 Another of Jim's jokes: at the end of his recent talks, on the standard acknowledgement slide, he thanked the Social Security Administration for its financial support.
 

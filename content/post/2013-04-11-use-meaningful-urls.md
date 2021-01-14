@@ -20,13 +20,11 @@ for their seminar list.
 
 And can we get rid of the `www`?
 
-<blockquote>
-"What's your web site?"
-
-"double-u double-u double-u ..."
-
-"Zzz..."
-</blockquote>
+> "What's your web site?"
+>
+> "double-u double-u double-u ..."
+>
+> "Zzz..."
 
 URLs should be meaningful and short.  I like deep hierarchies of folders, but it makes for long URLs.
 

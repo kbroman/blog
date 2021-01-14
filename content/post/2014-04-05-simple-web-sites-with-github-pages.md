@@ -19,7 +19,7 @@ Last night, I wrote a [minimal tutorial](https://kbroman.org/simple_site) on how
 
 In the tutorial, I wrote:
 
-<blockquote>(For example, I don't like how simple code is rendered in red within a gray box. Ultimately I'll try to figure out how to change that, but for now I just pretend that I like it that way.)</blockquote>
+> (For example, I don't like how simple code is rendered in red within a gray box. Ultimately I'll try to figure out how to change that, but for now I just pretend that I like it that way.)
 
 But this morning, I figured out how to change that: create [my own css file](https://github.com/kbroman/simple_site/blob/gh-pages/assets/themes/twitter/css/kbroman.css) with the following code:
 

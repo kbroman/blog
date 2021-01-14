@@ -17,9 +17,7 @@ I was eager to take a look, and, it's slightly embarrassing to say, I first did 
 
 What did the chr 8p inversion have to do with this?  Search for "[36]" and you'll find:
 
-<blockquote>
-We find that the local density of IBD blocks of all lengths is relatively constant across the genome, but in certain regions the length distribution is systematically perturbed (see Figure S1), including around certain centromeres and the large inversion on chromosome 8 [36], also seen by [35].
-</blockquote>
+> We find that the local density of IBD blocks of all lengths is relatively constant across the genome, but in certain regions the length distribution is systematically perturbed (see Figure S1), including around certain centromeres and the large inversion on chromosome 8 [36], also seen by [35].
 
 The chr 8p inversion presents an [interesting data analysis story](https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf) from my postdoc years.  In a nutshell: I was studying human crossover interference, found poor model fit for maternal chr 8 that was due to tight apparent triple-crossovers in two individuals in each of two families, hypothesized that there was an inversion in the region, but it would have to be both _long_ and with both orientations being _common_. The inversion was confirmed via FISH, and it's something like 5 Mbp long, with the frequencies of the two orientations being 40 and 60% in people of European ancestry.
 

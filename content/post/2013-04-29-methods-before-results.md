@@ -15,15 +15,11 @@ slug: methods-before-results
 
 It's great that, in a step towards improved reproducibility, the Nature journals are [removing page limits on Methods sections](http://www.nature.com/ng/journal/v45/n5/full/ng.2621.html):
 
-<blockquote>
-To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
-</blockquote>
+> To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
 
 But couldn't they include the Methods section in the pdf for the article?  For example, consider [this article in Nature Genetics](http://www.nature.com/ng/journal/v45/n5/full/ng.2591.html); the Methods section is only available in the html version of the paper. The PDF says:
 
-<blockquote>
-Methods and any associated references are available in the online version of the paper.
-</blockquote>
+> Methods and any associated references are available in the online version of the paper.
 
 _Methods_ are important.
 
@@ -51,10 +47,8 @@ At least supplements are now included at the journal sites!
 
 [This paper](http://bioinformatics.oxfordjournals.org/content/19/8/956.long) in Bioinformatics refers to a separate site for supplemental information:
 
-<blockquote>
-Expression data and supplementary information are available at
-http://www.rii.com/publications/2003/HE_SDS.htm.
-</blockquote>
+> Expression data and supplementary information are available at
+> <http://www.rii.com/publications/2003/HE_SDS.htm>.
 
 But `rii.com` doesn't exist anymore.  I was able to find [the supplement](http://web.archive.org/web/20080719125540/http://www.rii.com/publications/2003/HE_SDS.html) using the [Wayback Machine](http://web.archive.org), but
 

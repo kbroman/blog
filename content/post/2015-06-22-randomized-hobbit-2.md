@@ -49,16 +49,11 @@ Simulate some number of words with `babble()`. If you use the `seed` argument, y
 babble(ng2, 48, seed=53482175)
 ```
 
-<blockquote>
-into trees, and then bore to the Mountain to go through?" groaned the hobbit. "Well, are you doing, And where are you doing, And where are you?" it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes
-</blockquote>
+> into trees, and then bore to the Mountain to go through?" groaned the hobbit. "Well, are you doing, And where are you doing, And where are you?" it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes
+
 
 **Update**: [@wrathematics](https://twitter.com/wrathematics) suggested that I [mix two texts](http://librestats.com/2014/07/01/modern-applied-statistics-in-rlyeh/), so here's a bit from the _Hobbit in the Hat_ (The Hobbit with 59× Cat in the Hat -- up-sampled to match lengths.) But there's maybe not enough overlap between the two texts to get much of a mixture.
 
-<blockquote>
-"I am Gandalf," said the fish. This is no way at all!
-</blockquote>
+> "I am Gandalf," said the fish. This is no way at all!
 
-<blockquote>
-already off his horse and among the goblin and the dragon, who had remained behind to guard the door. "Something is outside!" Bilbo's heart jumped into his boat on to sharp rocks below; but there was a good game, Said our fish No! No! Those Things should not fly.
-</blockquote>
+> already off his horse and among the goblin and the dragon, who had remained behind to guard the door. "Something is outside!" Bilbo's heart jumped into his boat on to sharp rocks below; but there was a good game, Said our fish No! No! Those Things should not fly.

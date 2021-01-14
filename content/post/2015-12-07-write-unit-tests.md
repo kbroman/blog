@@ -35,8 +35,7 @@ I did, after resorting to a bunch of print/cat statements, [find the bug](https:
 
 [Pjotr Prins](http://thebird.nl/) was the first to encourage me towards software testing. [Hadley Wickham](http://had.co.nz/)'s [testthat](https://github.com/hadley/testthat) package makes it easy to do in R packages. In his [paper about testthat](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf), Hadley wrote:
 
-<blockquote>It's not that we don't test our code, it's that we don't store our tests so they can be re-run automatically.
-</blockquote>
+> It's not that we don't test our code, it's that we don't store our tests so they can be re-run automatically.
 
 This is my favorite comment on testing; it totally applies to (old) me.
 

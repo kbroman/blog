@@ -33,7 +33,7 @@ So that's my goal: to focus first on _minimal accessibility_ of the code and dat
 
 One last point: I use local [git](https://git-scm.com) repositories for my draft analyses and for the whole process of writing a paper.  I could post that whole history, but [as I said before](https://kbroman.org/blog/2011/08/17/the-stupidest-r-code-ever/):
 
-<blockquote>Open source means everyone can see my stupid mistakes. Version control means everyone can see every stupid mistake I've ever made.</blockquote>
+> Open source means everyone can see my stupid mistakes. Version control means everyone can see every stupid mistake I've ever made.
 
 It would be easy to make my working repository public, but it would include things like referees' reports and my responses to them, as well as the gory details on all of the stupid things that I might do along the way to publication.
 

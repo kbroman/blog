@@ -15,10 +15,8 @@ slug: 18-for-a-two-page-pdf-i-still-dont-get-it
 
 Yesterday, I saw [this tweet](https://twitter.com/Ananyo/status/329545985149775873) by [@Ananyo](https://twitter.com/Ananyo)
 
-<blockquote>
-Time that biologists stopped telling the public oversimplistic fairy
-tales on Darwinian evolution, says P Ball (\$) <a href="http://www.nature.com/nature/journal/v496/n7446/full/496419a.html">nature.com/nature/journal...</a>
-</blockquote>
+> Time that biologists stopped telling the public oversimplistic fairy
+> tales on Darwinian evolution, says P Ball (\$) <a href="http://www.nature.com/nature/journal/v496/n7446/full/496419a.html">nature.com/nature/journal...</a>
 
 So I clicked the link to the Nature paper and realized, "Oh, yeah.  I've got to enter through the UW library website."
 
@@ -26,42 +24,30 @@ But then I thought, "Wait...\$18 for a two-page Nature comment?  WTF?"
 
 So I [tweeted](https://twitter.com/kwbroman/status/329560393922002944):
 
-<blockquote>
-DNA: Celebrate the unknowns, like this Nature comment, which costs
-\$18. <a href="http://www.nature.com/nature/journal/v496/n7446/full/496419a.html">nature.com/nature/journal...</a>
-</blockquote>
+> DNA: Celebrate the unknowns, like this Nature comment, which costs
+> \$18. [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
 
 And thinking about it some more, I got more annoyed, and [tweeted](https://twitter.com/kwbroman/status/329566578024775683):
 
-<blockquote>
-Why do publishers charge such high per-article fees? At \$18/artcl, you'd have to be desperate or stupid to pay; at \$1-2, prob'ly lots would.
-</blockquote>
+> Why do publishers charge such high per-article fees? At \$18/artcl, you'd have to be desperate or stupid to pay; at \$1-2, prob'ly lots would.
 
 And then I thought, I'll [ask Nature directly](https://twitter.com/kwbroman/status/329575795716661250):
 
-<blockquote>
-@NatureMagazine Why is the per-article charge so high? It seems like you'd make more profit at \$2/article.
-</blockquote>
+> @NatureMagazine Why is the per-article charge so high? It seems like you'd make more profit at \$2/article.
 
 And [they](https://twitter.com/NatureMagazine) [responded](https://twitter.com/NatureMagazine/status/329655405355614210):
 
-<blockquote>
-@kwbroman For a while now, individual papers can be rented through @readcube for \$3-5. A full tablet subscription to Nature costs \$35.
-</blockquote>
+> @kwbroman For a while now, individual papers can be rented through @readcube for \$3-5. A full tablet subscription to Nature costs \$35.
 
 But that didn't quite answer my question.  So I [asked](https://twitter.com/kwbroman/status/329683444051365889):
 
-<blockquote>
-.@NatureMagazine So is the \$18 charge for a 2 pg PDF just to discourage piracy?
-</blockquote>
+> .@NatureMagazine So is the \$18 charge for a 2 pg PDF just to discourage piracy?
 
 I thought a lot about whether to put "piracy" in quotes or not, or whether to write "copyright infringement" instead.
 
 But anyway, they [responded](https://twitter.com/NatureMagazine/status/329692960205725696):
 
-<blockquote>
-@kwbroman just as with any product, the more you buy, the more you save. Media/publishing subscriptions have worked this way for decades.
-</blockquote>
+> @kwbroman just as with any product, the more you buy, the more you save. Media/publishing subscriptions have worked this way for decades.
 
 That again didn't quite answer my question.
 

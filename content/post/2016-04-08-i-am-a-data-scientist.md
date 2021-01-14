@@ -14,13 +14,13 @@ Three years ago this week, I wrote a blog post, "[Data science is statistics](ht
 
 It was a short post, so I might as well quote the whole thing:
 
-<blockquote>When physicists do mathematics, they don't say they're doing "number science". They're doing math.
-
-If you're analyzing data, you're doing statistics. You can call it data science or informatics or analytics or whatever, but it's still statistics.
-
-If you say that one kind of data analysis is statistics and another kind is not, you're not allowing innovation. We need to define the field broadly.
-
-You may not like what some statisticians do. You may feel they don't share your values. They may embarrass you. But that shouldn't lead us to abandon the term "statistics".</blockquote>
+> When physicists do mathematics, they don't say they're doing "number science". They're doing math.
+>
+> If you're analyzing data, you're doing statistics. You can call it data science or informatics or analytics or whatever, but it's still statistics.
+>
+> If you say that one kind of data analysis is statistics and another kind is not, you're not allowing innovation. We need to define the field broadly.
+>
+> You may not like what some statisticians do. You may feel they don't share your values. They may embarrass you. But that shouldn't lead us to abandon the term "statistics".
 
 I still sort of feel that way, but I must admit that _my_ definition of "statistics" is rather different than most others' definition. In my view, a good statistician will consider _all_ aspects of the data analysis process:
 

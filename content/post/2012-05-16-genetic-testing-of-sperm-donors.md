@@ -15,15 +15,12 @@ A recent New York Times article [discusses the potential need for genetic screen
 
 One, the mention of fragile X syndrome, has been corrected:
 
-<blockquote>
-An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.)
-</blockquote>
+> An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.)
+
 
 The other:
 
-<blockquote>
-Sperm donors are no more likely to carry genetic diseases than anybody else, but they can father a far greater number of children: 50, 100 or even 150, each a potential inheritor of flawed genes, and each a vector for making those genes more pervasive in the general population.
-</blockquote>
+> Sperm donors are no more likely to carry genetic diseases than anybody else, but they can father a far greater number of children: 50, 100 or even 150, each a potential inheritor of flawed genes, and each a vector for making those genes more pervasive in the general population.
 
 But the frequency of offspring of sperm donors with genetic diseases would be the same whether there were many more donors with one child each or fewer donors with many children each, and so it's not clear how sperm donors fathering many children is an argument for genetic testing, except that with fewer donors for the same number of offspring, one would not need to perform as many genetic tests, and so there would be a considerable cost savings.
 

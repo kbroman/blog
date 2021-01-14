@@ -14,7 +14,7 @@ slug: how-to-evaluate-faculty
 
 The [tenure guidelines](http://www.secfac.wisc.edu/divcomm/physical/TenureGuidelines.pdf) for the [Physical Sciences Division](http://www.secfac.wisc.edu/divcomm/physical/index.htm) at [UW-Madison](http://www.wisc.edu) include the following instructions (see section I-1 on page 11):
 
-<blockquote>Provide a list of the five leading institutions for research (and outreach/extension activities) in the candidate's discipline. The committee recognizes that the best work in the candidate's specialty may not be carried out at the top ranked institutions in the broader discipline.  However, it will look for a balance of evaluations from referees at the leading institutions who can evaluate the research and its impact on the broader field, and from the leaders in the subfield if they are at different institutions.</blockquote>
+> Provide a list of the five leading institutions for research (and outreach/extension activities) in the candidate's discipline. The committee recognizes that the best work in the candidate's specialty may not be carried out at the top ranked institutions in the broader discipline.  However, it will look for a balance of evaluations from referees at the leading institutions who can evaluate the research and its impact on the broader field, and from the leaders in the subfield if they are at different institutions.
 
 They use the ranking of a referee's institution as an indication of his/her ability to evaluate the importance of a candidate's work.
 

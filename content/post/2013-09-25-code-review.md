@@ -19,11 +19,11 @@ There are very brief quotes from [Titus Brown](http://ivory.idyll.org/blog/) and
 
 Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:
 
-<blockquote>"That's the kind of thing that should freak any scientist out.... We don't have good processes in place to detect that kind of thing in software."</blockquote>
+> "That's the kind of thing that should freak any scientist out.... We don't have good processes in place to detect that kind of thing in software."
 
 Roger is quoted at the end, as follows:
 
-<blockquote>"One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks."</blockquote>
+> "One worry I have is that, with reviews like this, scientists will be even more discouraged from publishing their code.... We need to get more code out there, not improve how it looks."
 
 I agree with both of them, but my initial reaction, from the beginning of the piece, was closer to Roger's: We often have a heck of time getting any code out of people; if we are too hard on people regarding the quality of their code, they might become even less willing to share.
 
@@ -43,7 +43,7 @@ I would like to see the code associated with scientific articles made readily av
 
 Later, on twitter, [Titus took issue](https://twitter.com/ctitusbrown/status/382862626692149248) with the "not improve how it looks" part of what Roger said:
 
-<blockquote>".@kwbroman @simplystats @rdpeng Please read <http://en.wikipedia.org/wiki/Code_review> you are deeply, significantly, and completely wrong about code review."</blockquote>
+> ".@kwbroman @simplystats @rdpeng Please read <http://en.wikipedia.org/wiki/Code_review> you are deeply, significantly, and completely wrong about code review."
 
 Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks _is_ important.)
 

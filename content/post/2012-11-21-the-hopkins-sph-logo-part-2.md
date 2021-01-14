@@ -47,7 +47,7 @@ I wish I could say I chose the former option, but I'm weak, and I chose the latt
 
 After, there was considerable discussion in the Dean's office about my "abuse" of the School's logo.  And they created [a formal policy](https://www.jhsph.edu/offices-and-services/marketing-and-communications/policies/wall_of_wonder.html) on the use of the Wall of Wonder, which includes:
 
-<blockquote>When there are School events that involve external audiences the Office of External Affairs will manage the content of the Wall so that it is appropriate for the event.</blockquote>
+> When there are School events that involve external audiences the Office of External Affairs will manage the content of the Wall so that it is appropriate for the event.
 
 You can see the slides as presented, as well as the "Director's Cut", at [my web page](https://kbroman.org/pages/talks.html#wow)
 

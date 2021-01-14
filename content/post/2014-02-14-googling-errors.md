@@ -44,4 +44,4 @@ I got a report that parallel processing in my [R/qtl](https://rqtl.org) package 
 
 I googled "mclapply isn't working windows" (because mclapply was the function I was using) and got [this stackoverflow page](https://stackoverflow.com/questions/17196261/understanding-the-differences-between-mclapply-and-parlapply-in-r), which says:
 
-<blockquote>since Windows does not have fork(), it will run standard lapply instead - no parallelization</blockquote>
+> since Windows does not have fork(), it will run standard lapply instead - no parallelization

@@ -24,7 +24,7 @@ What can a biostatistics professor do? I'm open to suggestions.
 
 But for now, I'll follow Patrick Sims's suggestion and start with one of the [United Council of UW Students' demands](http://www.unitedcouncilofuw.org/the-student-voice/2016/2/24/blackout-uw-system-administration-press-release-1212016):
 
-<blockquote>We demand that the University of Wisconsin System creates and enforces comprehensive racial awareness and inclusion curriculum and trainings throughout all 26 UW Institution departments, mandatory for all students, faculty, staff, campus & system administration, and regents. This curriculum and training must be vetted, maintained, and overseen by a board comprised of students, staff, and faculty of color.</blockquote>
+> We demand that the University of Wisconsin System creates and enforces comprehensive racial awareness and inclusion curriculum and trainings throughout all 26 UW Institution departments, mandatory for all students, faculty, staff, campus & system administration, and regents. This curriculum and training must be vetted, maintained, and overseen by a board comprised of students, staff, and faculty of color.
 
 I've written an email to the faculty in [my department](https://www.biostat.wisc.edu), asking that we, as a department, _volunteer_ to participate in such racial awareness training:
 
