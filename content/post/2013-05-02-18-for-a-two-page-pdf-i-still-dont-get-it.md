@@ -16,7 +16,7 @@ slug: 18-for-a-two-page-pdf-i-still-dont-get-it
 Yesterday, I saw [this tweet](https://twitter.com/Ananyo/status/329545985149775873) by [@Ananyo](https://twitter.com/Ananyo)
 
 > Time that biologists stopped telling the public oversimplistic fairy
-> tales on Darwinian evolution, says P Ball (\$) <a href="http://www.nature.com/nature/journal/v496/n7446/full/496419a.html">nature.com/nature/journal...</a>
+> tales on Darwinian evolution, says P Ball (\$) [nature.com/nature/journal...](http://www.nature.com/nature/journal/v496/n7446/full/496419a.html)
 
 So I clicked the link to the Nature paper and realized, "Oh, yeah.  I've got to enter through the UW library website."
 
