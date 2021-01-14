@@ -11,13 +11,13 @@ slug: the-value-of-thesis-introdiscussion
 
 Last week, [Kelly Weinersmith](https://twitter.com/FuSchmu) [tweeted](https://twitter.com/FuSchmu/status/536909452457172992):
 
-<blockquote>Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published?</blockquote>
+> Is any task a more monumental waste of time than writing an introduction and discussion for a dissertation where the chapters are published?
 
 I think many (or most?) of my colleagues would agree with her. The research and the papers are the important things, and theses are hardly read. Why spend time writing chapters that won't be read?
 
 [My response](https://twitter.com/kwbroman/status/536961364166979584) was:
 
-<blockquote>Intro & disc of thesis get the student to think about the broader context of their work.</blockquote>
+> Intro & disc of thesis get the student to think about the broader context of their work.
 
 I'd like to expand on that just a bit.
 
