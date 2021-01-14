@@ -10,7 +10,6 @@ slug: james-crow
 ---
 
 ![](https://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg) [James Crow](https://en.wikipedia.org/wiki/James_F._Crow) died a few weeks ago. He had definitely slowed down physically over the last few years (though not at all mentally!), but still it was a shock, and I'm sad to think that I won't talk to him again. Jim was _the nicest person I've met_ . It's been a privilege to get to know him in my time in Madison. His enthusiasm for my work was flattering and uplifting.
-<!-- more -->
 
 There have been a number of obituaries: [New York Times](https://www.nytimes.com/2012/01/11/science/james-f-crow-population-genetics-pioneer-dies-at-95.html), [Nature](https://www.nature.com/nature/journal/v481/n7382/full/481444a.html), [Genetics](https://doi.org/10.1534/genetics.112.138610). Also see [Jerry Coyne's comments](https://whyevolutionistrue.wordpress.com/2012/01/05/jim-crow-died/).  The one in Nature, by [Alexey Kondrashov](https://en.wikipedia.org/wiki/Alexey_Kondrashov), is my favorite: it really captures his humor. Here are a couple of quotes from the final paragraph:
 

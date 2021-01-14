@@ -15,7 +15,6 @@ slug: paying-for-scholarly-publications
 I have a couple of papers that I should be writing, but recent discussion (the whole PIPA/SOPA thing [see [Michael Eisen's](http://www.eisenlab.org/eisen/) [OpEd in the New York Times](http://www.nytimes.com/2012/01/11/opinion/research-bought-then-paid-for.html)]; the [Elsevier boycott](http://thecostofknowledge.com)) has turned my thoughts to publishing generally.
 
 So I'll take some time out (way _too much_ time out) to comment on the value and costs of publishing and peer review, how to pay for it, [PubMedCentral](http://www.ncbi.nlm.nih.gov/pmc/), etc.
-<!-- more -->
 
 ### The value of publishing
 

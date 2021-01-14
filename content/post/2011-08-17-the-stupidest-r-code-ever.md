@@ -34,8 +34,6 @@ Here `data` is the input matrix, and I use a `for` loop over columns, looking fo
 
 For a file with 200 individuals and 1500 phenotypes, it would take about 60 seconds to load; after the fix (below), it took about 2 seconds. I spent 58 seconds looking for the first non-blank cell in the second row!
 
-<!-- more -->
-
 In April, 2009, I fixed it (see the [commit](https://github.com/kbroman/qtl/commit/4cd486) at the [github repository](https://github.com/kbroman/qtl)) by replacing the above with the following.
 ````r
 if(data[2,1] != "")

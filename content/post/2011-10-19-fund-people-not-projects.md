@@ -14,8 +14,6 @@ slug: fund-people-not-projects
 
 It was thought provoking, but I don't think any of his ideas will really work.  Lots of people complain about peer review, but I think it largely works well and none of the proposed alternatives would actually be better.  Here are my thoughts.
 
-<!-- more -->
-
 #### We pretty much already do this, in part
 
 Prominent scientists can get sketchy ideas funded, while obscure researchers have to make an extremely strong case.  But obscure researchers with a fantastic idea _can_ get funding.

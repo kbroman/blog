@@ -34,8 +34,6 @@ There were 440 participants from 41 countries (342 Europe; 60 North America).
 
   * There will soon be a `parallel` package for [parallel computing](http://cran.r-project.org/web/views/HighPerformanceComputing.html).
 
-<!-- more -->
-
 [David Smith](http://www.r-bloggers.com/author/david-smith/) from [Revolution Analytics](http://www.revolutionanalytics.com/), in [his talk on the R Ecosystem](http://prezi.com/s1qrgfm9ko4i/the-r-ecosystem/), claimed that there are more than 2 million R users.
 
 [Barry Rowlingson](http://geospaced.blogspot.com/) gave a great lightning talk, "Why R-help must die!" He suggested the Q-and-A type sites [Stack Overflow](http://stackoverflow.com/) (on programming) and [Cross Validated](http://stats.stackexchange.com/) (on statistics), both part of [Stack Exchange](http://stackexchange.com/); they hope to create an R-specific site soon (currently R things are split between the two).

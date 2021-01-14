@@ -17,8 +17,6 @@ Hopkins SPH had done some fancy renovations of part of the building, including a
 
 ![](https://www.biostat.wisc.edu/~kbroman/presentations/graphs_photos/IMG_0213a.jpg)
 
-<!-- more -->
-
 A number of us in [Hopkins Biostatistics](https://www.biostat.jhsph.edu) had the idea to have a short seminar series on Friday afternoon just before Happy Hour, making use of the WOW.  (Fridays at 4, biochemistry graduate students sell beer, and lots of SPH faculty, staff, and students gather to drink and chat.)  The concept was informal lectures about different statistics topics, suitable for a general audience.  Here's the list of talks from 2005-2006.
 
 I volunteered to do the first one, on "How to display data badly," a lecture I'd given in my "[Statistics for laboratory scientists](https://www.biostat.wisc.edu/~kbroman/teaching/labstat/)" course, inspired by [Howard Wainer's 1984 article](https://www.jstor.org/sici?sici=0003-1305%28198405%2938%3A2%3C137%3AHTDDB%3E2.0.CO%3B2-N) in [The American Statistician](https://www.amstat.org/publications/tas.cfm).  It took a lot of negotiations to get access to the WOW, and even more to get beer served early and at the seminar.  But [we](https://www.jhsph.edu/faculty/directory/profile/3859/Zeger/Scott) pulled it off.

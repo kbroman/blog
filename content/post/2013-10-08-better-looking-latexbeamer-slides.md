@@ -25,8 +25,6 @@ After several days work, I've finally figured out how to create LaTeX/Beamer-bas
 
 In this post, I'll explain what I did.
 
-<!-- more -->
-
 ### My history
 
 Take a look at my [list of presentations](https://kbroman.org/pages/talks.html) (going back to 1998), and you'll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.

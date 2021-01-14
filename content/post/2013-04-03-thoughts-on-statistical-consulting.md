@@ -13,8 +13,6 @@ The [Statistics Department](https://www.stat.wisc.edu) at [UW-Madison](https://w
 
 I thought it might be useful write my thoughts on statistical consulting here: why, how, and difficulties.  This will be a bit rough, and long.  I'll revert to bullet points, to be more compact (and because I'm lazy).
 
-<!-- more -->
-
 ### My situation
 
 I'm an applied statistician at a university.  I have no defined consulting responsibilities.  Others at the university have a defined consulting role for a department or school, which pays part of their salary.  And then there are statisticians in industry (some effectively doing statistical consulting within a company), or working for a consulting company or as a contractor; I don't know much about these things, but only about my own situation: I feel I should do my best to help colleagues who ask for my advice (though I _can_ say no, at least in theory).

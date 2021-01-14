@@ -13,8 +13,11 @@ slug: quick-labels-within-figures-done-right
 One of the coolest R packages I heard about at the [useR! Conference](http://www.warwick.ac.uk/statsdept/user-2011/): [Toby Dylan Hocking](http://members.cbio.mines-paristech.fr/~thocking/)'s [directlabels](http://directlabels.r-forge.r-project.org/) package for putting labels directly next to the relevant curves or point clouds in a figure.
 
 I think I first learned about this idea from [Andrew Gelman](https://www.andrewgelman.com): that a separate legend requires a lot of back-and-forth glances, so it's better to put the labels right by the relevant bits. For example, like this:
+
 ![](https://kbroman.files.wordpress.com/2011/08/direct_by_hand.png)
-<!-- more -->rather than this:
+
+rather than this:
+
 ![](https://kbroman.files.wordpress.com/2011/08/legend.png)
 
 I've adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here's the code I used for the first of those pictures. (It was relatively easy here.)

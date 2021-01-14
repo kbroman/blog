@@ -18,8 +18,6 @@ Let me tell you about the high- and lowlights, for me.
 
 Also see the ENAR-related comments from [Yihui Xie](https://yihui.name/en/2013/03/on-enar-or-statistical-meetings-in-general/) and [Alyssa Frazee](https://alyssafrazee.wordpress.com/2013/03/18/ideas-for-super-awesome-conferences/).
 
-<!-- more -->
-
 ### Highlights
 
   * Getting to know [Yihui Xie](https://yihui.name), and the introductory part of his talk on [knitr](https://yihui.name/knitr/).

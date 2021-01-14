@@ -23,8 +23,6 @@ They arrived pretty regularly from 5:50 to 7:50.
 
 I comment on the figure's style below.
 
-<!-- more -->
-
 In the above graph, I'm applying ideas learned from [Dan Carr](http://statistics.gmu.edu/people_pages/carr.html) when I visited the [statistics department](http://statistics.gmu.edu) at [George Mason](https://www.gmu.edu) in September, to give [a seminar](https://www.biostat.wisc.edu/~kbroman/presentations/gmu2011.pdf).  (I had a great time at GMU, particularly talking to Dan about graphics.  I had a copy of [his book about micromaps](https://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20) on my iPad, but hadn't really looked at it until after I met him.  Take a look at the first chapter; it's full of good ideas and may convince you to read the rest.)
 
   * The gray background makes the figure stand out on the "page".  (I had disliked this aspect of [ggplot2](http://had.co.nz/ggplot2/) plots, but Dan convinced me that it's better.)

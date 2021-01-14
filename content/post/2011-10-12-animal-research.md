@@ -12,8 +12,6 @@ slug: animal-research
 
 Last night, I was an "expert" on a panel at a [public discussion on animal research](http://tinyurl.com/45y2jny).  I was really nervous, but I ended up not saying much and learning quite a lot.
 
-<!-- more -->
-
 [Paul Kaufman](http://www.ophth.wisc.edu/faculty/kaufman), Chair of Ophthalmology at UW-Madison, gave a 45 min talk about his research on glaucoma using monkeys.  In particular, he sought to articulate one case in which animal research had been useful, and it was a good one: the [development of prostoglandins](http://www.ncbi.nlm.nih.gov/pubmed/3477218) for lowering interocular pressure and so preventing or delaying the onset of glaucoma.  His talk was rather technical: great for me, but perhaps not so great for the audience (about 50 people, I would think mostly non-scientists).
 
 After his talk, the other two panelists and I spoke briefly: [Alta Charo](http://www.law.wisc.edu/profiles/racharo@wisc.edu), a bioethicist from the Law School, talked about the protection of human subjects and its relation to protection of animal subjects, and the importance of empathy for the subjects of research; [Sue Lederer](http://medhist.wisc.edu/faculty/lederer/index.shtml), Chair of Medical History and Bioethics, pointed out what Paul Kaufman hadn't mentioned in his presentation (how the animals are actually treated) and also mentioned the ethical issues in how we choose to spend research dollars (studying glaucoma versus, for example, treating trachoma, which affects as many people worldwide but is easily treated).

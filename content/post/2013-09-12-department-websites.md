@@ -18,7 +18,6 @@ I'll describe the basic principles for a good department website, and then I'll 
 But first: No discussion of academic web pages is complete without referring to the [xkcd comic](https://xkcd.com/773/) on University websites, so let's start with that:
 
 [![xkcd comic: University Websites](https://imgs.xkcd.com/comics/university_website.png)](https://xkcd.com/773/)
-<!-- more -->
 
 ### Basic principles
 

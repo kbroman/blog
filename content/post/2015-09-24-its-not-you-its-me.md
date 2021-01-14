@@ -28,8 +28,6 @@ Of course, none of these were true. I was just passing `sep=NULL` to `data.table
 
 The debugging process seems a potentially interesting case study, so I thought I'd write down some of the details.
 
-<!-- more -->
-
 The whole thing started off with my [qtl2geno](https://github.com/kbroman/qtl2geno) package suddenly failing on [TravisCI](http://travis-ci.org), even though it was still passing `R CMD check` on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn't realize that until the very end of the story.)
 
 The problem line was in a [vignette](https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd):

@@ -36,7 +36,7 @@ F  6
 5  2
 6  3
 ````
-<!-- more -->
+
 As you can see, if you give `x` the row names `1:3`, these are treated as generic row numbers and could get changed following `rbind` if they end up in different rows.  This doesn't happen if `x` and `y` are matrices.
 
 I often use row names as identifiers, so it seems I must be cautious to use something other than row numbers.

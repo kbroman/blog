@@ -22,8 +22,6 @@ For large-scale data, one needs to dynamically load slices of the data based on 
 
 So, I've been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I've finally made that last little conceptual step, where I can see what I need to do. I made a [small illustration](https://github.com/kbroman/d3examples/tree/master/mongodb) in my [d3examples](https://github.com/kbroman/d3examples) repository on GitHub.
 
-<!-- more -->
-
 ### Learning MongoDB
 
 I thought [mongoDB](https://www.mongodb.org) seemed like a good database to try:

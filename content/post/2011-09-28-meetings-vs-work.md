@@ -13,8 +13,6 @@ slug: meetings-vs-work
 
 I agree with his central point, that it can take some time to get back working on a project (whether data analysis, programming, or writing), and so blocks of less than a couple of hours can be inefficient.  Meetings that break up a work day can really erode one's productivity: academics often spend too much time meeting and not enough actually working, and three hour-long meetings spaced evenly throughout the day can mean that you don't get anything real done in the other five hours.
 
-<!-- more -->
-
 For me, the "ramp up" time for a project is less about re-familiarizing myself with the data files (though that can be true if I've not kept them well organized) and is more about the procrastination barrier (ie, inertia) and not keeping a good record of small chunks of work to tackle.
 
 So, in addition to Rafa's comment, that it's best to pack meetings onto the same day (and I'm particularly happy when multiple meetings get scheduled at the same time, so I only have to go to one of them), I would add

@@ -13,8 +13,6 @@ The [Joint Statistical Meetings](https://www.amstat.org/meetings/jsm/2016/) are 
 
 First things first: [snacks](https://www.amstat.org/meetings/jsm/2016/spotlightchicago.cfm). Search [the program](https://www.amstat.org/meetings/jsm/2016/onlineprogram/index.cfm) for "spotlight" or "while supplies last" for the free snacks being offered. Or go to the [page with the full list](https://www.amstat.org/meetings/jsm/2016/spotlightchicago.cfm).
 
-<!-- more -->
-
 ### Sunday
 
   * (_2:00 - 3:50_) [Open source statistical software for data science](https://www.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212387)

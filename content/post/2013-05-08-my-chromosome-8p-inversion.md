@@ -21,8 +21,6 @@ What did the chr 8p inversion have to do with this?  Search for "[36]" and you'l
 
 The chr 8p inversion presents an [interesting data analysis story](https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf) from my postdoc years.  In a nutshell: I was studying human crossover interference, found poor model fit for maternal chr 8 that was due to tight apparent triple-crossovers in two individuals in each of two families, hypothesized that there was an inversion in the region, but it would have to be both _long_ and with both orientations being _common_. The inversion was confirmed via FISH, and it's something like 5 Mbp long, with the frequencies of the two orientations being 40 and 60% in people of European ancestry.
 
-<!-- more -->
-
 ### Marshfield maps and crossover interference
 
 I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the [construction of human genetic maps](https://www.ncbi.nlm.nih.gov/pubmed/9718341) using data from eight of the [CEPH](http://www.cephb.fr/en/index.php) families.  I was particularly interested in [characterizing crossover interference](https://www.ncbi.nlm.nih.gov/pubmed/10801387).

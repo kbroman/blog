@@ -21,7 +21,6 @@ I've recently been working on [R/qtl2](https://kbroman.org/qtl2), a reimplementa
 http://third-bit.com/) et al., PLOS Biology 12(1): e1001745, [doi:10.1371/journal.pbio.1001745](https://doi.org/10.1371/journal.pbio.1001745)).
 
 I'm still working on "Make names consistent, distinctive, and meaningful", but I'm doing pretty well on writing shorter functions with less repeated code, and _particularly importantly_ I'm writing extensive unit tests.
-<!-- more -->
 
 The basic idea is to break up your code into small functions that ideally do just one thing. (These are the "units".) And then write tests that explicitly check whether those functions are giving the correct answers. That is, don't just test that the code _runs_; you want to know that your code is _giving the right answers_!
 

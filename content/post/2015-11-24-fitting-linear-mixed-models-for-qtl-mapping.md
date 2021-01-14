@@ -22,8 +22,6 @@ But I now finally understand LMMs, or at least a particular, simple LMM, and I'v
 
 It seemed worthwhile to write down some of the details.
 
-<!-- more -->
-
 The model I want to fit is _y = X b + e_, where var(_e_) = _sK + tI_, where _K_ is a known kinship matrix and _I_ is the identity matrix. Think of _y_ as a vector of phenotypes and _X_ as a matrix of covariates. Let _v = s+t_ be the residual variance, and let _h = s/(s+t) = s/v_ be the heritability.
 
 First, a shout to [Artem Tarasov](https://github.com/lomereiter), who wrote a [series of blog posts](https://lomereiter.github.io/2015/02/16/lmm_cov.html) walking through and explaining the source code for [FaST-LMM](https://github.com/MicrosoftGenomics/FaST-LMM) and [pylmm](https://github.com/nickFurlotte/pylmm), and to [Nick Furlotte](http://whatmind.com/), whose [pylmm](https://github.com/nickFurlotte/pylmm) code is especially clear and easy-to-read. Only by reading their work did I come to understand these LMMs.

@@ -13,8 +13,6 @@ While some may feel that grant proposals should be perfect, I think they should 
 
 Having read many grants (some good, many bad), I've formed quite strong opinions about what constitutes a good grant.
 
-<!-- more -->
-
 ### The ideas are most important
 
 Perhaps this is obvious, but in many grants, the real ideas are not apparent.  Don't hide them (thinking the reviewers might steal them), and don't just describe an important problem.  (We can all mostly agree on what problems are important; the question is: can you solve any of them?)  Focus more on what you will do than on what has been done.

@@ -13,8 +13,6 @@ I gave [my first fancy poster](https://kbroman.org/blog/2011/09/16/my-first-fanc
 
 I was hoping to use the experience as an opportunity to talk about how great poster sessions can be, and to refer to Terry Speed's old [IMS bulletin column](http://bulletin.imstat.org/category/terences-stuff/) in praise of poster sessions [[pdf](https://www.biostat.wisc.edu/~kbroman/terry/Bulletin34_06.pdf)], and then to go on to discuss how, for me, the interpersonal interactions at poster sessions are rather awkward. (For example, if you look at someone's poster for a while, with the presenter standing there watching you, are you obliged to ask a question, or can you slink off?)
 
-<!-- more -->
-
 However, other than two people I knew and lassoed over, I had just one person look at my poster. (He _was_ nice enough to ask me to explain it.)
 
 What went wrong?  Here are some possibilities:

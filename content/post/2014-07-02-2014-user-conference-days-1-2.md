@@ -15,8 +15,6 @@ I'm at UCLA for the [UseR Conference](https://user2014.r-project.org). I attende
 
 In my comments below, I give short shrift to some speakers (largely by not having attended their talks), and I'm critical in some places about the conference organization. Having [co-organized a small conference last year](https://rqtl.org/ctc2013/), I appreciate the difficulties. I think the organizers of this meeting have done a great job, but there are some ways it which it might have been better (e.g., no tiny rooms, a better time slot for the posters, and more space for the posters).
 
-<!-- more -->
-
 ### Day 1: Tutorials
 
 The first day was devoted to [tutorials](https://user2014.r-project.org/#tutorials). I arrived later than intended and missed the morning tutorials and was just in time for the afternoon ones. But the tutorial I wanted to attend, [Ramnath Vaidyanathan's tutorial on interactive documents]() was in a tiny room that was already filled beyond capacity. And by the time I tried to switch, the others were well underway, and I'd lost my momentum. Plus I was distracted by ice cream. And seeing [Yihui](https://yihui.name/en/), [Karthik](http://inundata.org/), [Hilary](https://hilaryparker.com/), and [Sandy](http://www.sandradgriffith.com/).

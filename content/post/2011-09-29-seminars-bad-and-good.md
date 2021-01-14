@@ -27,8 +27,6 @@ The overriding characteristic of a bad seminar is a lack of empathy for the audi
 
 Self-censorship is important. If you don't have something new and interesting to say, talk about something old and interesting or don't talk.
 
-<!-- more -->
-
 ### Good seminars
 
 An interesting topic (particularly, interesting data with an interesting question) trumps almost all else. I can be entertained with drivel, but afterwards I'll realize it was drivel.

@@ -19,7 +19,6 @@ I signed the boycott, and will refuse to review papers for Evilsevier journals, 
 Most important to me is that the journals are expensive and publishing companies are reaping an enormous profit.  The former head of the library at UW-Madison mentioned recently that they spend $4 million per year on electronic resources (books and journals), and that they are "struggling to pay that Elsevier bill".
 
 I prefer society-related journals.  These days, my own papers all go to my favorite journal, [Genetics](http://www.genetics.org), which is associated with the [Genetics Society of America](http://www.genetics-gsa.org/).
-<!-- more -->
 
 I looked back at my reviews of journal articles in 2011.  I did 23.  They were for:
 

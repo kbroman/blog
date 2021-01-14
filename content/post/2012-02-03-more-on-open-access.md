@@ -16,7 +16,6 @@ I am quite persuaded by [Michael Eisen's recent comments on open access](http://
 > ...it is simply unacceptable for any scientist who decries Elsevier's actions and believes that the subscription based model is no longer serving science to send a single additional paper to journals that do not provide full OA [open access] to every paper they publish.
 
 But how can I do that if [Genetics](http://www.genetics.org) isn't fully open?  Genetics charges an extra \$1200 to make an article open access.  Would it really cost \$1200 per article to make the journal fully open?
-<!-- more -->
 
 Another follow-up to [my comments yesterday](https://kbroman.org/blog/2012/02/02/paying-for-scholarly-publications/): I had suggested that copyright law might be changed to make papers coming from federal research grants fully open.  I later found an interesting paper in the [Journal of Legal Analysis](https://jla.oxfordjournals.org), [Should copyright of academic works be abolished?](https://jla.oxfordjournals.org/content/2/1/301.abstract)  The author concludes:
 

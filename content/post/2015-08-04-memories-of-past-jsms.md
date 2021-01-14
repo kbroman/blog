@@ -13,7 +13,6 @@ slug: memories-of-past-jsms
 The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) are the big statistics meetings in North America, "joint" among the [American Statistical Association](https://amstat.org), [Institute of Mathematical Statistics](https://www.imstat.org), [International Biometric Society](https://www.biometricsociety.org) ([ENAR](https://www.enar.org) and [WNAR](http://www.wnar.org)), [Statistical Society of Canada](https://ssc.ca/en), and others.
 
 [JSM 2015](https://www.amstat.org/meetings/jsm/2015/) is next week, in Seattle. In anticipation, I thought I'd write down some of my main memories of past JSMs.
-<!-- more -->
 
   * The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at [Berkeley](https://www.stat.berkeley.edu)), I got free registration in return for some small service work. I didn't register formally, but they got a list of volunteers and printed name tags from that. My name tag said "**Bioman**." I considered changing my name, since **Bioman** is so awesome.
 

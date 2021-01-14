@@ -15,8 +15,6 @@ I saw this great infographic at Andrew Gelman's blog:
 
 I'm inclined to [buy an art print](https://society6.com/albyantoniazzi/MOST-POPULAR-INFOGRAPHICS-You-can-find-around-the-Web_Print?show=promoters#user_list).
 
-<!-- more -->
-
 Note the relationship between the central panel and the cover of the latest [Amstat News](https://magazine.amstat.org/) (always a good source for embarrassing figures):
 
 ![](https://kbroman.files.wordpress.com/2011/09/amstatnews.png)

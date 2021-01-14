@@ -17,8 +17,6 @@ A certain photo of me has been following me around for some time.
 
 The thing is [sitting on my website](https://www.biostat.wisc.edu/~kbroman/pictures/moustache.jpg), so I suppose I have only myself to blame. I actually quite like the photo. I look happy. I _was_ happy. I'm not always happy.
 
-<!-- more -->
-
 It's shown up in a lot of talks, particularly by [a certain friend of mine](https://rafalab.github.io).
 
 It [appeared on the seminar board](https://twitter.com/StrictlyStat/status/495240349225607169) at [Hopkins Biostat](https://www.biostat.jhsph.edu) earlier this month. Perhaps it's [still there](https://twitter.com/simplystats/status/505066800842047488). ([My own innocent comments](https://twitter.com/simplystats/status/505066800842047488) prompt some of this.)

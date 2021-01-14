@@ -17,7 +17,6 @@ I didn't like the figures so much, though. There were a number of them like this
 ![chalabi-dearmona-drinking](https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png)
 
 I'm giving a talk today about data visualization [[slides](https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf) | [github](https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014)], and I thought this would make a good example, so I spent some time creating versions that I like better.
-<!-- more -->
 
 There are two basic issues with Mona Chalabi's graphs. First, you almost _never_ want to use alphabetical order. It's useful for finding particular states, but it's not useful for anything else. (Howard Wainer calls this "Austria first!" See, e.g., [this paper](https://www.sagepub.com/gray/Website%20material/Journals/er_wainer.pdf).) If you order the states by one of the variables (e.g., by the total collisions per billion miles), you can better identify important patterns.
 
