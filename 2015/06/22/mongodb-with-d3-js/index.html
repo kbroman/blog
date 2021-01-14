@@ -86,7 +86,6 @@
 <p><a href="https://kbroman.org/qtlcharts">R/qtlcharts</a> is rough in spots, and while it works well for moderate-sized data sets, it can&rsquo;t well handle truly large-scale data, as it just dumps all of the data into the file viewed by a web browser.</p>
 <p>For large-scale data, one needs to dynamically load slices of the data based on user interactions. It seems best to have a formal database behind the scenes. But I think I&rsquo;m not unusual, among statisticians, in having almost no experience working with databases. My collaborators tend to keep things in Excel. Even for quite large problems, I keep things in flat files.</p>
 <p>So, I&rsquo;ve been trying to come to understand the whole database business, and how I might use one for larger-scale data visualizations. I think I&rsquo;ve finally made that last little conceptual step, where I can see what I need to do. I made a <a href="https://github.com/kbroman/d3examples/tree/master/mongodb">small illustration</a> in my <a href="https://github.com/kbroman/d3examples">d3examples</a> repository on GitHub.</p>
-<!-- raw HTML omitted -->
 <h3 id="learning-mongodb">Learning MongoDB</h3>
 <p>I thought <a href="https://www.mongodb.org">mongoDB</a> seemed like a good database to try:</p>
 <ul>

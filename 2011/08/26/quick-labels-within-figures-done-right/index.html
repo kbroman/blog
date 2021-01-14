@@ -87,9 +87,9 @@
 
     <div class="article-content">
       <p>One of the coolest R packages I heard about at the <a href="http://www.warwick.ac.uk/statsdept/user-2011/">useR! Conference</a>: <a href="http://members.cbio.mines-paristech.fr/~thocking/">Toby Dylan Hocking</a>&rsquo;s <a href="http://directlabels.r-forge.r-project.org/">directlabels</a> package for putting labels directly next to the relevant curves or point clouds in a figure.</p>
-<p>I think I first learned about this idea from <a href="https://www.andrewgelman.com">Andrew Gelman</a>: that a separate legend requires a lot of back-and-forth glances, so it&rsquo;s better to put the labels right by the relevant bits. For example, like this:
-<img src="https://kbroman.files.wordpress.com/2011/08/direct_by_hand.png" alt=""></p>
-<!-- raw HTML omitted -->
+<p>I think I first learned about this idea from <a href="https://www.andrewgelman.com">Andrew Gelman</a>: that a separate legend requires a lot of back-and-forth glances, so it&rsquo;s better to put the labels right by the relevant bits. For example, like this:</p>
+<p><img src="https://kbroman.files.wordpress.com/2011/08/direct_by_hand.png" alt=""></p>
+<p>rather than this:</p>
 <p><img src="https://kbroman.files.wordpress.com/2011/08/legend.png" alt=""></p>
 <p>I&rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here&rsquo;s the code I used for the first of those pictures. (It was relatively easy here.)</p>
 <pre><code>load(con &lt;- url(&quot;https://www.biostat.wisc.edu/~kbroman/blog/mapexpansion.RData&quot;))

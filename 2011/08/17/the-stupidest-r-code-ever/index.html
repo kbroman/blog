@@ -101,7 +101,6 @@ temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</s
 n.phe <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">max</span>((<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)[temp])
 </code></pre></div><p>Here <code>data</code> is the input matrix, and I use a <code>for</code> loop over columns, looking for the first cell for which all preceding cells were empty. If you can understand the code above, I&rsquo;m sure you&rsquo;ll agree that it is really stupid. I think the code was in the package for at least five years, possibly even eight.</p>
 <p>For a file with 200 individuals and 1500 phenotypes, it would take about 60 seconds to load; after the fix (below), it took about 2 seconds. I spent 58 seconds looking for the first non-blank cell in the second row!</p>
-<!-- raw HTML omitted -->
 <p>In April, 2009, I fixed it (see the <a href="https://github.com/kbroman/qtl/commit/4cd486">commit</a> at the <a href="https://github.com/kbroman/qtl">github repository</a>) by replacing the above with the following.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">if</span>(data[2,<span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span>)
   <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;You must include at least one phenotype (e.g., an index).&#34;</span>)

@@ -284,7 +284,7 @@ Note the relationship between the central panel and the cover of the latest Amst
       
       <guid>/2011/08/26/quick-labels-within-figures-done-right/</guid>
       <description>One of the coolest R packages I heard about at the useR! Conference: Toby Dylan Hocking&amp;rsquo;s directlabels package for putting labels directly next to the relevant curves or point clouds in a figure.
-I think I first learned about this idea from Andrew Gelman: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this: I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place.</description>
+I think I first learned about this idea from Andrew Gelman: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this:</description>
     </item>
     
     <item>

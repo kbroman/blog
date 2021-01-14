@@ -102,7 +102,6 @@
 </ul>
 <p>Of course, none of these were true. I was just passing <code>sep=NULL</code> to <code>data.table::fread()</code>, and that worked in the previous version, but doesn&rsquo;t work in the latest release on <a href="https://cran.r-project.org">CRAN</a>, and I hadn&rsquo;t yet installed the latest version of <a href="https://github.com/Rdatatable/data.table">data.table</a> on my Mac, but Travis and my junky Windows laptop had the latest version.</p>
 <p>The debugging process seems a potentially interesting case study, so I thought I&rsquo;d write down some of the details.</p>
-<!-- raw HTML omitted -->
 <p>The whole thing started off with my <a href="https://github.com/kbroman/qtl2geno">qtl2geno</a> package suddenly failing on <a href="http://travis-ci.org">TravisCI</a>, even though it was still passing <code>R CMD check</code> on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn&rsquo;t realize that until the very end of the story.)</p>
 <p>The problem line was in a <a href="https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd">vignette</a>:</p>
 <pre><code>grav2 &lt;- read_cross2( system.file(&quot;extdata&quot;, &quot;grav2.zip&quot;, package=&quot;qtl2geno&quot;) )
