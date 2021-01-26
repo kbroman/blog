@@ -29,6 +29,9 @@ copyright = "The text in this work is licensed under CC-BY-4.0, https://creative
     name = "web"
     url = "https://kbroman.org"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
     description = "Karl Broman's blog: The stupidest thing... statistics, genetics, programming, academics."
     fullUrl = "https://kbroman.org/blog"
