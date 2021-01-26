@@ -86,24 +86,24 @@
 <p><a href="https://twitter.com/kwbroman/status/335499296193536000">My response</a> was that if the game ends early, it&rsquo;s even more likely that it&rsquo;ll be the kid who went first who won.  <em>But</em>, my intuition was wrong: exactly the opposite is true. <em>It is</em> the advantage to the first player that causes the sawtooth pattern, but that advantage <em>increases</em> with the number of rounds rather than decreases.</p>
 <h3 id="numerical-results">Numerical results</h3>
 <p>While it&rsquo;s fast and easy to study the Chutes &amp; Ladders game by simulation, if you want to answer questions more precisely, it&rsquo;s best to switch to more exact results.</p>
-<p>Consider a single individual playing the game, and let <em>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em> be
-his/her location at round <em>n</em>. The <em>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em>
+<p>Consider a single individual playing the game, and let <em>X<sub>n</sub></em> be
+his/her location at round <em>n</em>. The <em>X<sub>n</sub></em>
 form a <a href="https://en.wikipedia.org/wiki/Markov_chain"><em>Markov chain</em></a>,
-in that the future (<em>X<!-- raw HTML omitted -->n+1<!-- raw HTML omitted --></em>), given the present (<em>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em>),
-is conditionally independent of the history (<em>X<!-- raw HTML omitted -->1<!-- raw HTML omitted --></em>, &hellip;, <em>X<!-- raw HTML omitted -->n-1<!-- raw HTML omitted --></em>).</p>
-<p>It&rsquo;s relatively easy to construct the transition matrix of the chain.  (See my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)  This is a matrix <em>P</em>, with <em>P<!-- raw HTML omitted -->ij<!-- raw HTML omitted --></em> = Pr(<em>X<!-- raw HTML omitted -->n+1<!-- raw HTML omitted --></em> = <em>j</em> | <em>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em> = <em>i</em>).</p>
+in that the future (<em>X<sub>n+1</sub></em>), given the present (<em>X<sub>n</sub></em>),
+is conditionally independent of the history (<em>X<sub>1</sub></em>, &hellip;, <em>X<sub>n-1</sub></em>).</p>
+<p>It&rsquo;s relatively easy to construct the transition matrix of the chain.  (See my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)  This is a matrix <em>P</em>, with <em>P<sub>ij</sub></em> = Pr(<em>X<sub>n+1</sub></em> = <em>j</em> | <em>X<sub>n</sub></em> = <em>i</em>).</p>
 <p>Then the probability that a player has reached state 100 by round <em>n</em> is
-(1, 0, &hellip;, 0) <em>P<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em> (0, &hellip;, 0, 1)’.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this <em>q<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em>.  You can get the probability distribution by differences, say <em>p<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em> = <em>q<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em> - <em>q<!-- raw HTML omitted -->n-1<!-- raw HTML omitted --></em>.</p>
-<p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with <em>k</em> players is complete by round n is 1 - (1-<em>q<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em>)<em><!-- raw HTML omitted -->k<!-- raw HTML omitted --></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
+(1, 0, &hellip;, 0) <em>P<sup>n</sup></em> (0, &hellip;, 0, 1)’.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this <em>q<sub>n</sub></em>.  You can get the probability distribution by differences, say <em>p<sub>n</sub></em> = <em>q<sub>n</sub></em> - <em>q<sub>n-1</sub></em>.</p>
+<p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with <em>k</em> players is complete by round n is 1 - (1-<em>q<sub>n</sub></em>)<em><sup>k</sup></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
 <p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes & Ladders"></p>
 <h3 id="advantage-to-the-first-player">Advantage to the first player</h3>
 <p>Now, regarding the advantage to the first player: note that the first
 player wins in exactly <em>n</em> steps if he gets to the finish at n steps
 and none of the other players are done by <em>n-1</em> steps.  So, with <em>k</em>
-players, the probability that the first player wins in exactly <em>n</em> steps is <em>p<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em> (1-<em>q<!-- raw HTML omitted -->n-1<!-- raw HTML omitted --></em>)<em><!-- raw HTML omitted -->k-1<!-- raw HTML omitted --></em>.</p>
+players, the probability that the first player wins in exactly <em>n</em> steps is <em>p<sub>n</sub></em> (1-<em>q<sub>n-1</sub></em>)<em><sup>k-1</sup></em>.</p>
 <p>The chance that the second player wins in exactly n steps is
-(1-<em>q<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em>) <em>p<!-- raw HTML omitted -->n<!-- raw HTML omitted --></em>
-(1-<em>q<!-- raw HTML omitted -->n-1<!-- raw HTML omitted --></em>)<em><!-- raw HTML omitted -->k-2<!-- raw HTML omitted --></em>, with the last term included only
+(1-<em>q<sub>n</sub></em>) <em>p<sub>n</sub></em>
+(1-<em>q<sub>n-1</sub></em>)<em><sup>k-2</sup></em>, with the last term included only
 if there are <em>k</em> &gt; 2 players.</p>
 <p>From this idea, it&rsquo;s straightforward to calculate the probability that
 the first player wins given that the game is complete at round <em>n</em>.
