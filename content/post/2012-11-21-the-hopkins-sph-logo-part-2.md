@@ -31,7 +31,7 @@ and then show how to turn it into a terrible graph, like this:
 
 In addition, as an ancillary commentary on the use of gratuitous animation in slides, I animated [the School's logo](https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/) on each slide, with those animations becoming increasingly intrusive as the talk went on.  Then, at the summary slide, it was flying all around.  I wasn't going to refer to the logo in any way, or say anything about slide animations at all.  I just thought it would be a funny backdrop.
 
-Well, to get the slides on the computer that drives the big screen, you need to send them to the [Office of Communications](https://www.jhsph.edu/offices-and-services/marketing-and-communications/).  So I did that the morning of, and then went off to teach a class.  When I got back to my office, I had a voice mail from someone in Communications, saying that they had applied [the School's PowerPoint template](https://www.jhsph.edu/identity/commonCommunications/pptPresentations.shtml) to my slides.  (This was back in the days when I was using PowerPoint; you can see the slides for all of the talks I've given since 1998 [here](https://kbroman.org/pages/talks.html); I stopped using PowerPoint in 2006.) The Communications person said that since she wasn't as facile with PowerPoint as I was, I might want to take a look at the slides to be sure they were okay.
+Well, to get the slides on the computer that drives the big screen, you need to send them to the [Office of Communications](https://www.jhsph.edu/offices-and-services/marketing-and-communications/).  So I did that the morning of, and then went off to teach a class.  When I got back to my office, I had a voice mail from someone in Communications, saying that they had applied [the School's PowerPoint template](https://www.jhsph.edu/identity/commonCommunications/pptPresentations.shtml) to my slides.  (This was back in the days when I was using PowerPoint; you can see the slides for all of the talks I've given since 1998 [here](https://kbroman.org/talks.html); I stopped using PowerPoint in 2006.) The Communications person said that since she wasn't as facile with PowerPoint as I was, I might want to take a look at the slides to be sure they were okay.
 
 Of course, the animated logo was gone.  But also my slides had a blue background, while the School's template had a light background, and so all of my "nice" figures looked terrible, being big blue rectangles in the middle of a light background.  And this was a talk about good (well, actually bad) graphics!
 
@@ -47,7 +47,7 @@ After, there was considerable discussion in the Dean's office about my "abuse" o
 
 > When there are School events that involve external audiences the Office of External Affairs will manage the content of the Wall so that it is appropriate for the event.
 
-You can see the slides as presented, as well as the "Director's Cut", at [my web page](https://kbroman.org/pages/talks.html#wow)
+You can see the slides as presented, as well as the "Director's Cut", at [my web page](https://kbroman.org/talks.html#wow)
 
 Here's a slide from the Director's Cut (the colors matched better originally; that they don't now is one of the many reasons I hate PowerPoint):
 

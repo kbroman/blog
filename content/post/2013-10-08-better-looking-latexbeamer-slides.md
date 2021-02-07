@@ -27,7 +27,7 @@ In this post, I'll explain what I did.
 
 ### My history
 
-Take a look at my [list of presentations](https://kbroman.org/pages/talks.html) (going back to 1998), and you'll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.
+Take a look at my [list of presentations](https://kbroman.org/talks.html) (going back to 1998), and you'll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.
 
 My LaTeX-based slides (e.g., see [my talks on data visualization](https://github.com/kbroman/Talk_Graphs)) have been made using `\documentclass{article}`, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:
 

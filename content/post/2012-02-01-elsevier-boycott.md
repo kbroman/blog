@@ -48,7 +48,7 @@ I did okay.  I am down on Springer and Wiley, too, in spite of the fact that I p
 
 In the list of mathematics/statistics journals published by Elsevier, I only recognize _Computational Statistics & Data Analysis_ and _Journal of Statistical Planning and Inference_.  _Genomics_ and _Trends in Genetics_ are their only genetics journals that I recognize, but I didn't look so closely.  [I later realized that the American Journal of Human Genetics is published by Elsevier; that's a big one.]
 
-In terms of [my publications](https://kbroman.org/pages/pubs.html), looking at 2011, 2012 and in press articles, I have 13.  Several of the journals were listed above: [PLoS](https://www.plos.org), [Genome Research](https://genome.cshlp.org/), [BMC](https://www.biomedcentral.com), [Genetics](http://www.genetics.org)/[G3](http://www.g3journal.org/).  In addition:
+In terms of [my publications](https://kbroman.org/pubs.html), looking at 2011, 2012 and in press articles, I have 13.  Several of the journals were listed above: [PLoS](https://www.plos.org), [Genome Research](https://genome.cshlp.org/), [BMC](https://www.biomedcentral.com), [Genetics](http://www.genetics.org)/[G3](http://www.g3journal.org/).  In addition:
 
   * [Molecular Ecology](https://www.wiley.com/bw/journal.asp?ref=0962-1083) (Wiley)
 

@@ -19,7 +19,7 @@ I mean, from [my own book writing
 experience](https://kbroman.org/blog/2014/08/12/if-i-could-do-it-over-again-id-self-publish/),
 I felt like, "Hell if _I'm_ going to be writing another book." And
 while I can see that it could be useful to reformat my [various
-tutorials](https://kbroman.org/pages/tutorials) as bookdown books, I
+tutorials](https://kbroman.org/tutorials) as bookdown books, I
 wasn't in a hurry to do that.
 
 But the R/minecraft team from the [ROpenSci](https://ropensci.org)

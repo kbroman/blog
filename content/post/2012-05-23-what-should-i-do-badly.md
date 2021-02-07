@@ -25,7 +25,7 @@ There's just too much to do and not enough time to do it as well as you'd like.
 
 ### So, what should I do badly?
 
-Well, definitely not [my own research papers](https://kbroman.org/pages/pubs.html); those will outlast me.  Maybe some day someone will read them.  Similarly, not [seminars I give](https://kbroman.org/pages/talks.html), as through such research talks, I may gain a reader.  I suppose family, health, and sleep should be mentioned here.  And biking.
+Well, definitely not [my own research papers](https://kbroman.org/pubs.html); those will outlast me.  Maybe some day someone will read them.  Similarly, not [seminars I give](https://kbroman.org/talks.html), as through such research talks, I may gain a reader.  I suppose family, health, and sleep should be mentioned here.  And biking.
 
 So:
 
