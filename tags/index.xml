@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>stupid</title>
+      <link>/tags/stupid/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stupid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UW</title>
+      <link>/tags/uw/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uw/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>docker</title>
       <link>/tags/docker/</link>
@@ -153,15 +171,6 @@
     </item>
     
     <item>
-      <title>stupid</title>
-      <link>/tags/stupid/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/stupid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>graphics</title>
       <link>/tags/graphics/</link>
       <pubDate>Tue, 31 Oct 2017 20:05:00 -0500</pubDate>
@@ -266,15 +275,6 @@
       <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
       
       <guid>/tags/fst/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL</title>
-      <link>/tags/sql/</link>
-      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
-      
-      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     

@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/academics/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stupid/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/uw/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/06/wtf-uw-1/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -18,27 +53,12 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/programming/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -100,11 +120,6 @@
   <url>
     <loc>/tags/statistics/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/academics/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -188,11 +203,6 @@
   </url>
   
   <url>
-    <loc>/tags/stupid/</loc>
-    <lastmod>2017-12-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2017/12/18/these-guys/</loc>
     <lastmod>2017-12-18T00:00:00+00:00</lastmod>
   </url>
@@ -240,6 +250,11 @@
   <url>
     <loc>/2017/05/31/miner-and-craft/</loc>
     <lastmod>2017-05-31T23:48:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/05/31/omg-bookdown/</loc>
+    <lastmod>2017-05-31T23:16:00-05:00</lastmod>
   </url>
   
   <url>
@@ -389,11 +404,6 @@
   
   <url>
     <loc>/2016/04/15/chris-walker-at-faculty-senate/</loc>
-    <lastmod>2016-04-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/uw/</loc>
     <lastmod>2016-04-15T00:00:00+00:00</lastmod>
   </url>
   

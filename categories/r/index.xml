@@ -43,6 +43,16 @@ I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I 
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>/2017/05/31/omg-bookdown/</guid>
+      <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
+I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
+    </item>
+    
+    <item>
+      <title>omg, bookdown!</title>
+      <link>/2017/05/31/omg-bookdown/</link>
+      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
+      
+      <guid>/2017/05/31/omg-bookdown/</guid>
       <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There&amp;rsquo;s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
 I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&amp;rsquo;m going to be writing another book.</description>
     </item>
@@ -313,18 +323,6 @@ That led me to the list of Crayola crayon colors on wikipedia. I wrote a ruby sc
       <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
 id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2) I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
 z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3) As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
-    </item>
-    
-    <item>
-      <title>Googling errors</title>
-      <link>/2014/02/14/googling-errors/</link>
-      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/2014/02/14/googling-errors/</guid>
-      <description>@roguelynn tweeted the other day:
-If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
-&amp;mdash; Lynn Root (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
-Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     
   </channel>

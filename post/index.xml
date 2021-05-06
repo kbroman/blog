@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 1: how can you treat people like that?</title>
+      <link>/2021/05/06/wtf-uw-1/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/06/wtf-uw-1/</guid>
+      <description>I&amp;rsquo;m just a statistician trying to write software, devise statistical methods, and muck around with data, to help my scientific collaborators. I&amp;rsquo;ve had no formal training in the politics of higher education, or even in teaching for that matter. But ugh the shit that&amp;rsquo;s been happening around UW-Madison lately. I need to follow the example of Anatole Beck and start speaking up and speaking out.
+Yvonne Kim wrote two articles in the Capital Times in the last year that really pissed me off:</description>
+    </item>
+    
     <item>
       <title>debugging with docker and r-devel</title>
       <link>/2020/12/03/debugging-with-docker-and-r-devel/</link>
@@ -162,6 +172,16 @@ I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I 
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>/2017/05/31/omg-bookdown/</guid>
+      <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
+I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
+    </item>
+    
+    <item>
+      <title>omg, bookdown!</title>
+      <link>/2017/05/31/omg-bookdown/</link>
+      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
+      
+      <guid>/2017/05/31/omg-bookdown/</guid>
       <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There&amp;rsquo;s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
 I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&amp;rsquo;m going to be writing another book.</description>
     </item>
@@ -299,26 +319,6 @@ UW System had tweeted a statement from system president Ray Cross concerning Tru
 So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
 
 Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
-    </item>
-    
-    <item>
-      <title>Halloween 2016 count</title>
-      <link>/2016/10/31/halloween-2016-count/</link>
-      <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/2016/10/31/halloween-2016-count/</guid>
-      <description>Here&amp;rsquo;s a graph of the numbers of trick-or-treat-ers we saw this evening, by time. 10 of the 25 kids arrived in one big group. (Compare this to our 2011 experience.)</description>
-    </item>
-    
-    <item>
-      <title>My JSM 2016 itinerary</title>
-      <link>/2016/07/27/my-jsm-2016-itinerary/</link>
-      <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
-      <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
-First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
-Sunday   (2:00 - 3:50) Open source statistical software for data science</description>
     </item>
     
   </channel>
