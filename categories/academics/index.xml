@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 2: the new wisconsin idea is money</title>
+      <link>/2021/05/07/wtf-uw-2/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/07/wtf-uw-2/</guid>
+      <description>Back in 1999, when I interviewed for my first faculty job (in the biostatistics department at the Johns Hopkins School of Public Health), I got to meet with the Dean, Al Sommer. He talked about how collegial the faculty are at Hopkins, and also about his work on vitamin A, which showed that an inexpensive vitamin A supplement aimed at reducing childhood blindness had the surprising result of also reducing mortality.</description>
+    </item>
+    
     <item>
       <title>wtf uw 1: how can you treat people like that?</title>
       <link>/2021/05/06/wtf-uw-1/</link>
@@ -333,16 +342,6 @@ But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should f
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
 I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;quot;)
 Let me tell you about the high- and lowlights, for me.</description>
-    </item>
-    
-    <item>
-      <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>/2013/03/19/latex-unicode-xetex/</link>
-      <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/03/19/latex-unicode-xetex/</guid>
-      <description>I&amp;rsquo;m co-organizing a scientific meeting at the end of May. The abstracts are all in.
-We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review. (I&amp;rsquo;m using Spreadsheet:XLSX for the first time; it&amp;rsquo;s really easy. Why have I always converted Excel files to CSV before parsing them?</description>
     </item>
     
   </channel>

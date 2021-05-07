@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/stupid/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/stupid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 2: the new wisconsin idea is money</title>
+      <link>/2021/05/07/wtf-uw-2/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/07/wtf-uw-2/</guid>
+      <description>Back in 1999, when I interviewed for my first faculty job (in the biostatistics department at the Johns Hopkins School of Public Health), I got to meet with the Dean, Al Sommer. He talked about how collegial the faculty are at Hopkins, and also about his work on vitamin A, which showed that an inexpensive vitamin A supplement aimed at reducing childhood blindness had the surprising result of also reducing mortality.</description>
+    </item>
+    
     <item>
       <title>wtf uw 1: how can you treat people like that?</title>
       <link>/2021/05/06/wtf-uw-1/</link>
@@ -325,16 +334,6 @@ One, the mention of fragile X syndrome, has been corrected:
       <guid>/2012/05/07/boring-us-to-submission/</guid>
       <description>The University of Wisconsin-Madison has embarked on a big human resources redesign. I think the university administration has devised the ideal strategy to ensure little faculty input in the process: they&amp;rsquo;ve made it so dreadfully dull and full of business speak that we can&amp;rsquo;t bear to read through the material or show up to one of the many &amp;ldquo;engagement sessions&amp;rdquo;.
 What reasonable faculty member would seek to attend an &amp;ldquo;engagement session&amp;rdquo;?</description>
-    </item>
-    
-    <item>
-      <title>Microarrays suck</title>
-      <link>/2012/04/25/microarrays-suck/</link>
-      <pubDate>Wed, 25 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/2012/04/25/microarrays-suck/</guid>
-      <description>Maybe it&amp;rsquo;s just that I&amp;rsquo;m stupid and haven&amp;rsquo;t been paying proper attention to Rafa&amp;rsquo;s work in the past decade, but microarray data have really been kicking my ass the last few weeks. Here are a few of the lessons that I&amp;rsquo;ve re-learned.
-Lesson 1: What the hell is that? Many (or all) of my interesting findings have been completely fortuitous results of exploring apparent artifacts in data (autozygosity in the CEPH families, a large, common human inversion polymorphism, and most recently sample mixups).</description>
     </item>
     
   </channel>
