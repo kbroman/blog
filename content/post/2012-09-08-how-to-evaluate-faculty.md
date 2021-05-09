@@ -12,7 +12,9 @@ slug: how-to-evaluate-faculty
 
 ...rate their departments.
 
-The [tenure guidelines](http://www.secfac.wisc.edu/divcomm/physical/TenureGuidelines.pdf) for the [Physical Sciences Division](http://www.secfac.wisc.edu/divcomm/physical/index.htm) at [UW-Madison](http://www.wisc.edu) include the following instructions (see section I-1 on page 11):
+The [tenure guidelines](https://d808bmy3b6p21.cloudfront.net/wp-content/uploads/sites/50/2019/05/PSci-Tenure-guidelines-2020-21.pdf)
+for the [Physical Sciences Division](https://secfac.wisc.edu/tenure/physical-sciences-divisional-committee/tenure-documents/)
+at [UW-Madison](http://www.wisc.edu) include the following instructions (see section J-1 on page 12):
 
 > Provide a list of the five leading institutions for research (and outreach/extension activities) in the candidate's discipline. The committee recognizes that the best work in the candidate's specialty may not be carried out at the top ranked institutions in the broader discipline.  However, it will look for a balance of evaluations from referees at the leading institutions who can evaluate the research and its impact on the broader field, and from the leaders in the subfield if they are at different institutions.
 
