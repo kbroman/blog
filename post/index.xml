@@ -181,16 +181,6 @@ I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I 
       <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
       
       <guid>/2017/05/31/omg-bookdown/</guid>
-      <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There’s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
-I mean, from my own book writing experience, I felt like, “Hell if I’m going to be writing another book.</description>
-    </item>
-    
-    <item>
-      <title>omg, bookdown!</title>
-      <link>/2017/05/31/omg-bookdown/</link>
-      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
-      
-      <guid>/2017/05/31/omg-bookdown/</guid>
       <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There&amp;rsquo;s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
 I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&amp;rsquo;m going to be writing another book.</description>
     </item>
@@ -315,6 +305,19 @@ But I’ve finally entered the modern era of biggish data. (Why do they call it 
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
+    </item>
+    
+    <item>
+      <title>I thought maybe I was being paranoid</title>
+      <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
+      <description>An odd thing happened to me on twitter today.
+UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
+So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
+
+Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
     </item>
     
   </channel>
