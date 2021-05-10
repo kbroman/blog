@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 3: faculty are an impediment</title>
+      <link>/2021/05/10/wtf-uw-3/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/10/wtf-uw-3/</guid>
+      <description>I&amp;rsquo;m in a position of great privilege: a tenured full professor with solid funding, a history of success in both methodology and collaborative research, and some well-used software packages. So it seems wrong for me to complain about a lack of respect.
+When I joined the faculty at UW-Madison in 2007, I felt like the administration had our backs and the state legislators were the only ones to be concerned about.</description>
+    </item>
+    
     <item>
       <title>wtf uw 2: the new wisconsin idea is money</title>
       <link>/2021/05/07/wtf-uw-2/</link>
@@ -305,19 +315,6 @@ But I’ve finally entered the modern era of biggish data. (Why do they call it 
       <description>This is the new site for my blog; source at github.
 I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
 I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
-    </item>
-    
-    <item>
-      <title>I thought maybe I was being paranoid</title>
-      <link>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</link>
-      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/01/30/i-thought-maybe-i-was-being-paranoid/</guid>
-      <description>An odd thing happened to me on twitter today.
-UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
-So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
-
-Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
     </item>
     
   </channel>
