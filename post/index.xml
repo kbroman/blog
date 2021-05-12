@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 4: just a shitty corporation</title>
+      <link>/2021/05/12/wtf-uw-4/</link>
+      <pubDate>Wed, 12 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/12/wtf-uw-4/</guid>
+      <description>If you want an instant reaction from me, use the word &amp;ldquo;incentivize.&amp;rdquo; For example, &amp;ldquo;How can we incentivize faculty to improve their courses?&amp;rdquo; There’s a strong push to insert capitalism and competition into everything we do.
+If you&amp;rsquo;ve ever seen faculty job interviews in action, you likely agree that academics could use a bit of infusion of professionalism or at least some training in how not to be an asshole. But the drive to make universities more like businesses just turns them into shitty corporations with values that have been twisted away from what’s actually important.</description>
+    </item>
+    
     <item>
       <title>wtf uw 3: faculty are an impediment</title>
       <link>/2021/05/10/wtf-uw-3/</link>
@@ -304,17 +314,6 @@ But I’ve finally entered the modern era of biggish data. (Why do they call it 
       
       <guid>/2017/04/30/new_blog_site/</guid>
       <description>I&amp;rsquo;m starting a new blog site at kbroman.org/blog. I&amp;rsquo;m abandoning the WordPress site as it is; I don&amp;rsquo;t want to fuss with trying to move things.</description>
-    </item>
-    
-    <item>
-      <title>new blog</title>
-      <link>/2017/04/29/new-blog/</link>
-      <pubDate>Sat, 29 Apr 2017 08:37:00 -0500</pubDate>
-      
-      <guid>/2017/04/29/new-blog/</guid>
-      <description>This is the new site for my blog; source at github.
-I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
-I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
     </item>
     
   </channel>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 4: just a shitty corporation</title>
+      <link>/2021/05/12/wtf-uw-4/</link>
+      <pubDate>Wed, 12 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/12/wtf-uw-4/</guid>
+      <description>If you want an instant reaction from me, use the word &amp;ldquo;incentivize.&amp;rdquo; For example, &amp;ldquo;How can we incentivize faculty to improve their courses?&amp;rdquo; There’s a strong push to insert capitalism and competition into everything we do.
+If you&amp;rsquo;ve ever seen faculty job interviews in action, you likely agree that academics could use a bit of infusion of professionalism or at least some training in how not to be an asshole. But the drive to make universities more like businesses just turns them into shitty corporations with values that have been twisted away from what’s actually important.</description>
+    </item>
+    
     <item>
       <title>wtf uw 3: faculty are an impediment</title>
       <link>/2021/05/10/wtf-uw-3/</link>
@@ -327,20 +337,6 @@ And can we get rid of the www?
 &amp;ldquo;Zzz&amp;hellip;&amp;rdquo;
  URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
 URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>
-    </item>
-    
-    <item>
-      <title>Knuth: Journal referees should assist authors</title>
-      <link>/2013/04/08/knuth-journal-referees-should-assist-authors/</link>
-      <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/04/08/knuth-journal-referees-should-assist-authors/</guid>
-      <description>When serving as referee for a journal, who are you working for?
-  The editor: Will the paper add to the journal&amp;rsquo;s prestige?
-  The reader: Is it worth reading?
-  The author: How can it be improved?
-  I&amp;rsquo;d long thought that the referee&amp;rsquo;s duty was to the journal editors and then to the readers.
-But Donald Knuth&amp;rsquo;s comments on refereeing persuaded me that I should focus primarily on helping the author to improve the manuscript.</description>
     </item>
     
   </channel>
