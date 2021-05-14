@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Wed, 12 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>wtf uw 5: &#34;student&#34; employees</title>
+      <link>/2021/05/14/wtf-uw-5/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/14/wtf-uw-5/</guid>
+      <description>This is the fifth and final installment of my &amp;ldquo;Karl is so naive&amp;rdquo; series.
+I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&#39; dual roles of advisor and employer. Now I see it everywhere.
+Should they take further courses? No just focus on research.
+Should they help out at a software workshop or take on a teaching assistant position or spend the summer doing an internship in industry?</description>
+    </item>
+    
     <item>
       <title>wtf uw 4: just a shitty corporation</title>
       <link>/2021/05/12/wtf-uw-4/</link>
@@ -321,22 +333,6 @@ So I tweeted:
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
  To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
  But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
-    </item>
-    
-    <item>
-      <title>Use meaningful URLs</title>
-      <link>/2013/04/10/use-meaningful-urls/</link>
-      <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/04/10/use-meaningful-urls/</guid>
-      <description>QR codes are stupid. See the well-known flowchart.
-And I don&amp;rsquo;t like Drupal. Sites that use it often give things URLs like https://www.genetics.wisc.edu/node/577 for their seminar list.
-And can we get rid of the www?
- &amp;ldquo;What&amp;rsquo;s your web site?&amp;rdquo;
-&amp;ldquo;double-u double-u double-u &amp;hellip;&amp;rdquo;
-&amp;ldquo;Zzz&amp;hellip;&amp;rdquo;
- URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
-URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>
     </item>
     
   </channel>
