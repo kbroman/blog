@@ -80,3 +80,13 @@ img.nav-link {
     margin-right: 34px;
     margin-top: 34px;
 }
+
+/* don't underline links on main page */
+a.archive-item-link {
+    border-bottom-width: 0px;
+}
+
+/* purple background on hover */
+a.archive-item-link:hover {
+    background-color: #cdb1ea;
+}
