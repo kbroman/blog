@@ -18,7 +18,7 @@ I signed the boycott, and will refuse to review papers for Evilsevier journals, 
 
 Most important to me is that the journals are expensive and publishing companies are reaping an enormous profit.  The former head of the library at UW-Madison mentioned recently that they spend $4 million per year on electronic resources (books and journals), and that they are "struggling to pay that Elsevier bill".
 
-I prefer society-related journals.  These days, my own papers all go to my favorite journal, [Genetics](http://www.genetics.org), which is associated with the [Genetics Society of America](http://www.genetics-gsa.org/).
+I prefer society-related journals.  These days, my own papers all go to my favorite journal, [Genetics](https://academic.oup.com/genetics), which is associated with the [Genetics Society of America](http://www.genetics-gsa.org/).
 
 I looked back at my reviews of journal articles in 2011.  I did 23.  They were for:
 
@@ -28,7 +28,7 @@ I looked back at my reviews of journal articles in 2011.  I did 23.  They were f
 
   * [Genes, Brain and Behavior](https://www.wiley.com/bw/journal.asp?ref=1601-1848) ([IBANGS](https://www.ibangs.org/); published by Wiley)
 
-  * [Genetics](http://www.genetics.org) ([GSA](http://www.genetics-gsa.org))
+  * [Genetics](https://academic.oup.com/genetics) ([GSA](http://www.genetics-gsa.org))
 
   * [Genome](https://www.nrcresearchpress.com/journal/gen) ([National Research Council of Canada](https://www.nrcresearchpress.com))
 
@@ -48,7 +48,7 @@ I did okay.  I am down on Springer and Wiley, too, in spite of the fact that I p
 
 In the list of mathematics/statistics journals published by Elsevier, I only recognize _Computational Statistics & Data Analysis_ and _Journal of Statistical Planning and Inference_.  _Genomics_ and _Trends in Genetics_ are their only genetics journals that I recognize, but I didn't look so closely.  [I later realized that the American Journal of Human Genetics is published by Elsevier; that's a big one.]
 
-In terms of [my publications](https://kbroman.org/pubs.html), looking at 2011, 2012 and in press articles, I have 13.  Several of the journals were listed above: [PLoS](https://www.plos.org), [Genome Research](https://genome.cshlp.org/), [BMC](https://www.biomedcentral.com), [Genetics](http://www.genetics.org)/[G3](http://www.g3journal.org/).  In addition:
+In terms of [my publications](https://kbroman.org/pubs.html), looking at 2011, 2012 and in press articles, I have 13.  Several of the journals were listed above: [PLoS](https://www.plos.org), [Genome Research](https://genome.cshlp.org/), [BMC](https://www.biomedcentral.com), [Genetics](https://academic.oup.com/genetics)/[G3](https://academic.oup.com/g3journal).  In addition:
 
   * [Molecular Ecology](https://www.wiley.com/bw/journal.asp?ref=0962-1083) (Wiley)
 
