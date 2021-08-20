@@ -62,7 +62,7 @@ Many journals make articles open after a year; many charge for access for foreve
 
 [PLoS](http://www.plos.org) and [BMC](http://www.biomedcentral.com) charge authors large fees ("page charges") to publish in their journals.  Readers can then get free access.  These page charges can be pretty hefty ([PLoS charges](http://www.plos.org/publish/pricing-policy/publication-fees/) \$2900 for PLoS Biology, \$2250 for PLoS Genetics, and \$1350 for PLoS One.)
 
-Some pay journals have adopted an open access option.  For example, at [Genetics](http://www.genetics.org) the standard charges are \$70/page for members of [GSA](http://www.genetics-gsa.org) plus \$40/figure, and you can pay an extra \$1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be \$900 regular and \$2100 open access.
+Some pay journals have adopted an open access option.  For example, at [Genetics](https://academic.oup.com/genetics) the standard charges are \$70/page for members of [GSA](http://www.genetics-gsa.org) plus \$40/figure, and you can pay an extra \$1200 to make the article open access immediately (otherwise, non-subscribers must wait a year).  For a 10 page paper with 5 figures, that would be \$900 regular and \$2100 open access.
 
 This can give you an idea of the total cost of (4-6) for a typical journal.  Imagine \$2000/paper x 20 year/issue x 12 issues/year = \$500k/year.
 
@@ -102,7 +102,7 @@ To me, the value of standard peer review versus post-publication measures of qua
 
 To summarize my thoughts: there are real costs of publishing, and in the end they all get paid for from the same pots (research grants or institutional funds).  The question is how (page charges or subscriptions or something else), and should for-profit publishers be making big bucks in the process?
 
-I personally prefer journals that are associated with a scientific society (as [Genetics](http://www.genetics.org) is with the [Genetics Society of America](http://www.genetics-gsa.org)), and while I would like those societies to raise endowments to cover the full ongoing costs of their journals, in the meantime I prefer the open access model, where the publications costs are charged directly to the author and subsequently to the authors' research grants.  It's simpler that way.
+I personally prefer journals that are associated with a scientific society (as [Genetics](https://academic.oup.com/genetics) is with the [Genetics Society of America](http://www.genetics-gsa.org)), and while I would like those societies to raise endowments to cover the full ongoing costs of their journals, in the meantime I prefer the open access model, where the publications costs are charged directly to the author and subsequently to the authors' research grants.  It's simpler that way.
 
 ### How to change the world?
 
