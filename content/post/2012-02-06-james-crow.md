@@ -19,7 +19,7 @@ There have been a number of obituaries: [New York Times](https://www.nytimes.com
 
 Another of Jim's jokes: at the end of his recent talks, on the standard acknowledgement slide, he thanked the Social Security Administration for its financial support.
 
-[Genetics](http://www.genetics.org) is also publishing a series of commentaries on Jim's life and work, commissioned to celebrate his 95th birthday. Dan Hartl [wrote about his teaching](https://doi.org/10.1534/genetics.111.135160); Seymour Abrahamson [wrote about his public service](https://doi.org/10.1534/genetics.111.135186).
+[Genetics](https://academic.oup.com/genetics) is also publishing a series of commentaries on Jim's life and work, commissioned to celebrate his 95th birthday. Dan Hartl [wrote about his teaching](https://doi.org/10.1534/genetics.111.135160); Seymour Abrahamson [wrote about his public service](https://doi.org/10.1534/genetics.111.135186).
 
 Last summer, I sent him a couple of papers that I was writing. In response to, "I think you'll find this interesting," he said, "You are right. I did find it interesting." He also wrote, "This is a masterful paper." And later, "While I am writing let me mention something I forgot to say yesterday.  Your diagrams are very neat and very useful, both the chromosomes and the dominos.  The latter are particularly useful.  One picture is worth many words in this case." I cherish those comments.
 
