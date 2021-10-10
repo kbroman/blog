@@ -17,7 +17,7 @@ Since 2000, I've been working on [R/qtl](https://rqtl.org), an R package for map
 
 It's a bit of a miracle that R/qtl works and gives the right answers, as it includes essentially no formal tests. The only regular tests are that the examples in the help files don't produce any errors that halt the code.
 
-I've recently been working on [R/qtl2](https://kbroman.org/qtl2), a reimplementation of R/qtl to better handle high-dimensional data and more complex crosses, such as [Diversity Outbred mice](https://www.genetics.org/content/190/2/437.short). In doing so, I'm trying to make use of the software engineering principles that I've learned over the last 15 years, which pretty much correspond to the ideas in "[Best Practices for Scientific Computing](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)" ([Greg Wilson](
+I've recently been working on [R/qtl2](https://kbroman.org/qtl2), a reimplementation of R/qtl to better handle high-dimensional data and more complex crosses, such as [Diversity Outbred mice](https://doi.org/10.1534/genetics.111.132597). In doing so, I'm trying to make use of the software engineering principles that I've learned over the last 15 years, which pretty much correspond to the ideas in "[Best Practices for Scientific Computing](https://doi.org/10.1371/journal.pbio.1001745)" ([Greg Wilson](
 http://third-bit.com/) et al., PLOS Biology 12(1): e1001745, [doi:10.1371/journal.pbio.1001745](https://doi.org/10.1371/journal.pbio.1001745)).
 
 I'm still working on "Make names consistent, distinctive, and meaningful", but I'm doing pretty well on writing shorter functions with less repeated code, and _particularly importantly_ I'm writing extensive unit tests.
@@ -46,4 +46,4 @@ The bottom line:
 
   * When you find a bug, look for other possible instances of that bug, and fix them too.
 
-To learn more about testing in R packages, see the [Testing](http://r-pkgs.had.co.nz/tests.html) chapter in Hadley's [R packages book](amazon.com/exec/obidos/ASIN/1491910593/7210-20). Also see the [slides for my lecture on testing and debugging](https://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf) in my [Tools for Reproducible Research](https://kbroman.org/Tools4RR/) course.
+To learn more about testing in R packages, see the [Testing](https://r-pkgs.org/tests.html) chapter in Hadley's [R packages book](amazon.com/exec/obidos/ASIN/1491910593/7210-20). Also see the [slides for my lecture on testing and debugging](https://kbroman.org/Tools4RR/assets/lectures/09_testdebug_withnotes.pdf) in my [Tools for Reproducible Research](https://kbroman.org/Tools4RR/) course.
