@@ -28,8 +28,8 @@ thoughts and get community feedback.
 
 I'm particularly interested in developing these guidelines and using
 what I learn to further reproduciblity of work published in the
-journals [Genetics](http://www.genetics.org) and
-[G3](http://www.g3journal.org). These journals have been doing a great
+journals [Genetics](https://academic.oup.com/genetics) and
+[G3](https://academic.oup.com/g3journal). These journals have been doing a great
 job of enforcing their policy that data be made publicly available. They've
 also had a policy that software be made available, but there has not
 been much effort to enforce that, and it's clear that many authors need
@@ -45,7 +45,7 @@ think authors will benefit from very specific suggestions that can
 accommodate different levels of computational "sophistication." And I
 think what will be particularly helpful will be a variety of specific
 examples that authors might use as templates. I've been impressed with
-the care that [Will Valdar](http://valdarlab.unc.edu)'s group has been
+the care that [Will Valdar](https://valdarlab.unc.edu)'s group has been
 devoting to reproducibility. For example, the [recent paper by Shorter
 et al.](https://doi.org/10.1534/g3.118.200847) is
 accompanied by a proper [R Compendium](https://github.com/mauriziopaul/litterDiallel).
