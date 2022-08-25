@@ -4,3 +4,4 @@ static/post/
 _cache/
 drafts/
 .Rproj.user
+.hugo_build.lock
