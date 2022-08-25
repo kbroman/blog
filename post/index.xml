@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support the UW Health nurses</title>
+      <link>/2022/08/25/support-the-uw-health-nurses/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/08/25/support-the-uw-health-nurses/</guid>
+      <description>The UW Health nurses have been seeking recognition of their union. UW Health claims that it cannot legally recognize their union, but Wisconsin Attorney General Josh Kaul issued an opinion that UW Health can voluntarily recognize their union. Yesterday, the nurses voted to hold a 3-day strike, Sept 13-15, 2022. (See the articles in the Wisconsin State Journal and the Milwaukee Journal Sentinel.)
+Please join me in supporting the UW Health nurses:</description>
+    </item>
+    
     <item>
       <title>wtf uw 5: &#34;student&#34; employees</title>
       <link>/2021/05/14/wtf-uw-5/</link>
@@ -300,24 +310,6 @@ I had the mistaken impression that blogdown would look at the timestamps on the 
       <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
       <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
 But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
-    </item>
-    
-    <item>
-      <title>old posts</title>
-      <link>/2017/04/30/old-posts/</link>
-      <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
-      
-      <guid>/2017/04/30/old-posts/</guid>
-      <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
-Better-looking LaTeX/Beamer slides, 2013-10-07
-MongoDB with D3.js, 2015-06-22
-Crayon colors in R, 2014-05-07
-apply vs for, 2013-04-02
-Thoughts on statistical consulting, 2013-04-02
-Notifications from R, 2014-09-03
-A course in statistical programming, 2012-05-25
-Row names in data frames: beware of 1:nrow, 2012-03-21
-Interactive graphics with d3.</description>
     </item>
     
   </channel>

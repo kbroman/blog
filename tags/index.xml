@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>unions</title>
+      <link>/tags/unions/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UW</title>
+      <link>/tags/uw/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uw/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>graduate school</title>
       <link>/tags/graduate-school/</link>
@@ -23,15 +41,6 @@
       <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/stupid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>UW</title>
-      <link>/tags/uw/</link>
-      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/uw/</guid>
       <description></description>
     </item>
     
@@ -266,15 +275,6 @@
       <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
       
       <guid>/tags/data-visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>feather</title>
-      <link>/tags/feather/</link>
-      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
-      
-      <guid>/tags/feather/</guid>
       <description></description>
     </item>
     
