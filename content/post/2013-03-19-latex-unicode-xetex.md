@@ -8,7 +8,7 @@ categories:
 tags:
   - Latex
   - unicode
-slug: latex-unicode-%e2%86%92-xetex
+slug: latex-unicode-xetex
 ---
 
 I'm co-organizing [a scientific meeting](https://rqtl.org/ctc2013) at the end of May.  The abstracts are all in.
