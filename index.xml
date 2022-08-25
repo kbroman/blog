@@ -6059,10 +6059,10 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
     
     <item>
       <title>LaTeX &#43; Unicode → XeTeX</title>
-      <link>/2013/03/19/latex-unicode--xetex/</link>
+      <link>/2013/03/19/latex-unicode-xetex/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>/2013/03/19/latex-unicode--xetex/</guid>
+      <guid>/2013/03/19/latex-unicode-xetex/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m co-organizing &lt;a href=&#34;https://rqtl.org/ctc2013&#34;&gt;a scientific meeting&lt;/a&gt; at the end of May.  The abstracts are all in.&lt;/p&gt;
 &lt;p&gt;We get them in an Excel file, and I was working on a Perl script to parse the file to create a LaTeX file with the abstracts, so we could have nicely formatted versions for review.  (I&amp;rsquo;m using &lt;a href=&#34;https://search.cpan.org/~dmow/Spreadsheet-XLSX-0.13-withoutworldwriteables/lib/Spreadsheet/XLSX.pm&#34;&gt;Spreadsheet:XLSX&lt;/a&gt; for the first time; it&amp;rsquo;s really easy.  Why have I always converted Excel files to CSV before parsing them?)&lt;/p&gt;
 &lt;p&gt;I spent way too much time trying to deal with special characters.  I was looking to do a search-and-replace for all possible &lt;a href=&#34;https://en.wikipedia.org/wiki/Unicode&#34;&gt;Unicode&lt;/a&gt; characters (for example, to change &lt;code&gt;\xE9&lt;/code&gt; aka e into &lt;code&gt;\&#39;{e}&lt;/code&gt;, or &lt;code&gt;\xD7&lt;/code&gt; aka × into &lt;code&gt;$\times$&lt;/code&gt;).&lt;/p&gt;
