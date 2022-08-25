@@ -15,7 +15,7 @@
       
       <guid>/2019/08/15/data-analysis-principles/</guid>
       <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
- answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
+answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <guid>/2016/07/27/my-jsm-2016-itinerary/</guid>
       <description>The Joint Statistical Meetings are in Chicago next week. I thought I&amp;rsquo;d write down the set of sessions that I plan to attend. Please let me know if you have further suggestions.
 First things first: snacks. Search the program for &amp;ldquo;spotlight&amp;rdquo; or &amp;ldquo;while supplies last&amp;rdquo; for the free snacks being offered. Or go to the page with the full list.
-Sunday   (2:00 - 3:50) Open source statistical software for data science</description>
+Sunday (2:00 - 3:50) Open source statistical software for data science</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ Sunday   (2:00 - 3:50) Open source statistical software for data science</descri
       <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
- When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
+When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
 If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.</description>
     </item>
     
@@ -86,8 +86,8 @@ I recently had a paper accepted at G3, concerning a huge set of sample mix-ups i
       
       <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>What do I want in a conference website? Not this.
-  I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
-  If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
+I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
+If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ I recently had a paper accepted at G3, concerning a huge set of sample mix-ups i
       <guid>/2015/08/03/memories-of-past-jsms/</guid>
       <description>The Joint Statistical Meetings (JSM) are the big statistics meetings in North America, &amp;ldquo;joint&amp;rdquo; among the American Statistical Association, Institute of Mathematical Statistics, International Biometric Society (ENAR and WNAR), Statistical Society of Canada, and others.
 JSM 2015 is next week, in Seattle. In anticipation, I thought I&amp;rsquo;d write down some of my main memories of past JSMs.
-  The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
+The first JSM I attended was in 1993, in San Francisco. Since I was local at the time (a grad student at Berkeley), I got free registration in return for some small service work.</description>
     </item>
     
     <item>
@@ -129,7 +129,6 @@ Since I was working on those at the last minute in the middle of the night, to b
       
       <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
-
 See it in action here.
 Code on github.</description>
     </item>
@@ -162,7 +161,7 @@ In my comments below, I give short shrift to some speakers (largely by not havin
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/05/01/reform-academic-statistics/</guid>
-      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&#39; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     
@@ -270,8 +269,8 @@ I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I 
       
       <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
- To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
- But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
+To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
+But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
@@ -303,7 +302,6 @@ I thought it might be useful write my thoughts on statistical consulting here: w
       
       <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
-
 The code is on github. It took me about a day.
 The hardest part was figuring out the right data structures. A pixel here is linked to curves over there and over there and over there. You need to set things up so it&amp;rsquo;s easy to traverse such linkages.</description>
     </item>
@@ -315,7 +313,7 @@ The hardest part was figuring out the right data structures. A pixel here is lin
       
       <guid>/2013/03/19/enar-highs-and-lows/</guid>
       <description>I attended the ENAR meeting in Orlando, Florida, last week. (ENAR = &amp;ldquo;Eastern North American Region&amp;rdquo; of the International Biometric Society.)
-I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;quot;)
+I had a great time, but I did come to the strong realization that what I view as important is distinctly different from what the typical ENAR attendee views as important. (Rafa said, incredulously, &amp;ldquo;You knew that already!&amp;rdquo;)
 Let me tell you about the high- and lowlights, for me.</description>
     </item>
     

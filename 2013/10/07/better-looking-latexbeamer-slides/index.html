@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>Better-looking LaTeX/Beamer slides - the stupidest thing...</title>
@@ -92,7 +92,7 @@
 <h3 id="my-history">My history</h3>
 <p>Take a look at my <a href="https://kbroman.org/talks.html">list of presentations</a> (going back to 1998), and you&rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.</p>
 <p>My LaTeX-based slides (e.g., see <a href="https://github.com/kbroman/Talk_Graphs">my talks on data visualization</a>) have been made using <code>\documentclass{article}</code>, just changing the page size and increasing the font and then hard-coding placement of stuff. It leads to some pretty ugly and awkward code, like this:</p>
-<pre><code>\headsize \color{myyellow}
+<pre tabindex="0"><code>\headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
 Example 1
@@ -125,23 +125,23 @@ Example 1
 <p>I was preparing a talk on open access publishing. Here&rsquo;s <a href="https://github.com/kbroman/Talk_OpenAccess">the source</a>; <a href="https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf">the pdf</a>; and <a href="https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf">a pdf with notes on what I intend to say</a>.</p>
 <p>I&rsquo;ll go through the details of the code, in case it might be useful to someone.</p>
 <p>Here are the first two lines of the <code>.tex</code> file. The <code>12pt</code> makes the default font a bit bigger, but not actually twelve point. The <code>t</code> makes the body of each slide top-justified rather than vertically centered. You don&rsquo;t need many packages, as lots of them (like <code>color</code>) are included by default with Beamer.</p>
-<pre><code>\documentclass[12pt,t]{beamer}
+<pre tabindex="0"><code>\documentclass[12pt,t]{beamer}
 \usepackage{graphicx}
 </code></pre><p>These next two lines are for the notes pages (if you are going to use that feature); more below.  By default, the notes are hidden. I wrote a <a href="https://github.com/kbroman/Talk_OpenAccess/blob/master/createVersionWithNotes.rb">ruby script</a> to switch the <code>hide</code> to <code>show</code> and add <code>handout</code> to the options in the <code>\documentclass</code> command (more on that below). The <code>\setbeamertemplate</code> command makes the note pages completely plain.</p>
-<pre><code>\setbeameroption{hide notes}
+<pre tabindex="0"><code>\setbeameroption{hide notes}
 \setbeamertemplate{note page}[plain]
 </code></pre><p>These next lines choose the default Beamer theme, get rid of all of the navigation stuff, and make it so any bookmarks are not shown when you open the PDF in Acrobat.</p>
-<pre><code>\usetheme{default}
+<pre tabindex="0"><code>\usetheme{default}
 \beamertemplatenavigationsymbolsempty
-\hypersetup{pdfpagemode=UseNone} % don't show bookmarks on initial view
+\hypersetup{pdfpagemode=UseNone} % don&#39;t show bookmarks on initial view
 </code></pre><p>These next lines change the font to Helvetica Neue, with Palatino used for the notes pages.</p>
-<pre><code>\usefonttheme{professionalfonts}
+<pre tabindex="0"><code>\usefonttheme{professionalfonts}
 \usefonttheme{serif}
 \usepackage{fontspec}
 \setmainfont{Helvetica Neue}
 \setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
 </code></pre><p>I define a bunch of colors.</p>
-<pre><code>\definecolor{foreground}{RGB}{255,255,255}
+<pre tabindex="0"><code>\definecolor{foreground}{RGB}{255,255,255}
 \definecolor{background}{RGB}{24,24,24}
 \definecolor{title}{RGB}{107,174,214}
 \definecolor{gray}{RGB}{155,155,155}
@@ -149,31 +149,31 @@ Example 1
 \definecolor{hilight}{RGB}{102,255,204}
 \definecolor{vhilight}{RGB}{255,111,207}
 </code></pre><p>I use those colors, for the titles, subtitle, institute, etc.</p>
-<pre><code>\setbeamercolor{titlelike}{fg=title}
+<pre tabindex="0"><code>\setbeamercolor{titlelike}{fg=title}
 \setbeamercolor{subtitle}{fg=subtitle}
 \setbeamercolor{institute}{fg=gray}
 \setbeamercolor{normal text}{fg=foreground,bg=background}
 </code></pre><p>This stuff changes the color of bullets in <code>itemize</code> environments and changes nested bullet symbols to en-dashes (-) in gray, and a bit smaller.</p>
-<pre><code>\setbeamercolor{item}{fg=foreground} % color of bullets
+<pre tabindex="0"><code>\setbeamercolor{item}{fg=foreground} % color of bullets
 \setbeamercolor{subitem}{fg=gray}
 \setbeamercolor{itemize/enumerate subbody}{fg=gray}
 \setbeamertemplate{itemize subitem}{{\textendash}}
 \setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
 \setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
 </code></pre><p>This gives me a slide number in the lower-right, in gray.</p>
-<pre><code>\setbeamertemplate{footline}{%
+<pre tabindex="0"><code>\setbeamertemplate{footline}{%
     \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
           \scriptsize\insertframenumber}}}\hspace*{5pt}}
 </code></pre><p>This adds a bit of space between paragraphs on the notes pages.</p>
-<pre><code>\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
+<pre tabindex="0"><code>\addtobeamertemplate{note page}{\setlength{\parskip}{12pt}}
 </code></pre><p>I also made a few small macros to simplify some things.</p>
-<pre><code>\newcommand{\bi}{\begin{itemize}}
+<pre tabindex="0"><code>\newcommand{\bi}{\begin{itemize}}
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\ig}{\includegraphics}
 \newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
 </code></pre><h3 id="code-for-example-slides">Code for example slides</h3>
 <p>Here&rsquo;s the code to create the title slide. (The content is determined by <code>\title</code>, <code>\author</code>, etc., before the <code>\begin{document}</code>.) The first line is to get rid of the page number. The text in <code>\note{}</code> will appear on a separate page after the title slide, in the version of the PDF with notes.</p>
-<pre><code>{
+<pre tabindex="0"><code>{
 \setbeamertemplate{footline}{} % no page number here
 \frame{
   \titlepage
@@ -183,7 +183,7 @@ Example 1
 }
 }
 </code></pre><p>Here&rsquo;s an example regular slide. <code>\subt</code> is a macro defined above and just makes that text smaller and in a different color.</p>
-<pre><code>\begin{frame}{Access in action}
+<pre tabindex="0"><code>\begin{frame}{Access in action}
 \subt{Interesting reference}
 
 \bigskip
@@ -191,14 +191,14 @@ Example 1
 \ig[height=0.75\textheight]{Images/img01.jpg}
 }
 
-\note{I'll begin with an illustration of what I mean by
+\note{I&#39;ll begin with an illustration of what I mean by
   access.
 
   The other day I was reading a manuscript and saw an
   article of interest.}
 \end{frame}
 </code></pre><p>Here&rsquo;s a fancier slide, with a bit of animation: codes like <code>&lt;2-&gt;</code>, which means that bit is not on the first version of this slide but appears on subsequent versions. When the LaTeX file is turned into a PDF, four versions of this slide are created. But in the handout (with the notes), there&rsquo;ll be just one, and the <code>&lt;3| handout 0&gt;</code> bits are to control the separate look on the animated slides and on the single-slide version that shows up with the notes.</p>
-<pre><code>\begin{frame}{It's all about money}
+<pre tabindex="0"><code>\begin{frame}{It&#39;s all about money}
 \subt{(Costs in scientific publishing)}
 
 \vspace{24pt}

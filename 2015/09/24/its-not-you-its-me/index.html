@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>It&#39;s not you, it&#39;s me - the stupidest thing...</title>
@@ -100,7 +100,7 @@
 <p>The debugging process seems a potentially interesting case study, so I thought I&rsquo;d write down some of the details.</p>
 <p>The whole thing started off with my <a href="https://github.com/kbroman/qtl2geno">qtl2geno</a> package suddenly failing on <a href="http://travis-ci.org">TravisCI</a>, even though it was still passing <code>R CMD check</code> on my local machine. (This was on 19 Sept 2015, when a new version of data.table hit CRAN, but I didn&rsquo;t realize that until the very end of the story.)</p>
 <p>The problem line was in a <a href="https://github.com/kbroman/qtl2geno/blob/master/vignettes/user_guide.Rmd">vignette</a>:</p>
-<pre><code>grav2 &lt;- read_cross2( system.file(&quot;extdata&quot;, &quot;grav2.zip&quot;, package=&quot;qtl2geno&quot;) )
+<pre tabindex="0"><code>grav2 &lt;- read_cross2( system.file(&#34;extdata&#34;, &#34;grav2.zip&#34;, package=&#34;qtl2geno&#34;) )
 </code></pre><p>The changes I&rsquo;d been making to my package didn&rsquo;t seem to have anything to do with this, so I concluded that the problem was <code>system.file()</code>. Why that would have worked before but not now, I couldn&rsquo;t say, but I figured maybe Travis was installing things differently than before.</p>
 <p>I changed that code block to <code>eval=FALSE</code>, but then a bunch of tests using <code>read_cross2( system.file( ... ) )</code> were failing instead. Again, I figured the problem was <code>system.file()</code>, because <code>R CMD check</code> worked fine on my machine.</p>
 <p>I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used <a href="http://win-builder.r-project.org/">R Win-builder</a> to test my package with R-devel, and sure enough it failed there. So it wasn&rsquo;t Travis. My conclusion was that R-devel had broken <code>system.file()</code>.</p>

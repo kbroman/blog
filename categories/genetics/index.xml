@@ -35,7 +35,6 @@ I was eager to take a look, and, it&amp;rsquo;s slightly embarrassing to say, I 
       
       <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>I just finished an interactive eQTL plot using D3, in preparation for my talk on interactive graphics at the ENAR meeting next week.
-
 The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
 The hardest part was setting up the data files. Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.</description>
     </item>
@@ -65,7 +64,7 @@ I poked through the paper, and my eye was attracted to the following figure. The
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
       <guid>/2012/05/17/trees/</guid>
-      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&#39; artwork. Today I found one with this:
+      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
 That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
 These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>
     </item>
@@ -78,7 +77,7 @@ These scratchings are related to a bit of theory I&amp;rsquo;ve been working on 
       <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
- An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
+An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
     </item>
     
     <item>
@@ -107,9 +106,8 @@ Lesson 1: What the hell is that? Many (or all) of my interesting findings have b
       
       <guid>/2012/02/16/collaborative-cross-papers/</guid>
       <description>A batch of 15 papers on the mouse Collaborative Cross appeared in Genetics and G3 today, including two of my own:
-  Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
-  Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202
-  </description>
+Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412
+Broman KW (2012) Haplotype probabilities in advanced intercross populations. G3 2:199-202</description>
     </item>
     
     <item>
@@ -128,7 +126,7 @@ Lesson 1: What the hell is that? Many (or all) of my interesting findings have b
       
       <guid>/2011/10/19/parachutes/</guid>
       <description>I went to a great talk today by David Goldstein, which I might write about further later since he said many of things of considerable interest. But I had to quickly point to an interesting paper he mentioned: Parachute use to prevent death and major trauma related to gravitational challenge: systematic review of randomised controlled trials. The main conclusion:
- We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.</description>
+We think that everyone might benefit if the most radical protagonists of evidence based medicine organised and participated in a double blind, randomised, placebo controlled, crossover trial of the parachute.</description>
     </item>
     
     <item>

@@ -15,7 +15,7 @@
       
       <guid>/2021/05/14/wtf-uw-5/</guid>
       <description>This is the fifth and final installment of my &amp;ldquo;Karl is so naive&amp;rdquo; series.
-I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&#39; dual roles of advisor and employer. Now I see it everywhere.
+I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&amp;rsquo; dual roles of advisor and employer. Now I see it everywhere.
 Should they take further courses? No just focus on research.
 Should they help out at a software workshop or take on a teaching assistant position or spend the summer doing an internship in industry?</description>
     </item>
@@ -96,7 +96,7 @@ I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on t
       
       <guid>/2019/08/15/data-analysis-principles/</guid>
       <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
- answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
+answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -165,7 +165,7 @@ More blather about languages Long ago, I wrote a tutorial on Perl.</description>
       <guid>/2017/12/18/these-guys/</guid>
       <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
 I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
-&amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
+&amp;mdash; Karl Broman (@kwbroman) August 3, 2016 This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
     </item>
     
     <item>
@@ -224,7 +224,7 @@ I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&a
       
       <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you&amp;rsquo;re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
-setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &#39;|&#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;#34;,&amp;#34;, &amp;#34;|&amp;#34;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
@@ -309,14 +309,15 @@ But I’ve finally entered the modern era of biggish data. (Why do they call it 
       
       <guid>/2017/04/30/old-posts/</guid>
       <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
- Better-looking LaTeX/Beamer slides, 2013-10-07
- MongoDB with D3.js, 2015-06-22
- Crayon colors in R, 2014-05-07
- apply vs for, 2013-04-02
- Thoughts on statistical consulting, 2013-04-02
- Notifications from R, 2014-09-03
- A course in statistical programming, 2012-05-25
- Row names in data frames: beware of 1:nrow, 2012-03-21</description>
+Better-looking LaTeX/Beamer slides, 2013-10-07
+MongoDB with D3.js, 2015-06-22
+Crayon colors in R, 2014-05-07
+apply vs for, 2013-04-02
+Thoughts on statistical consulting, 2013-04-02
+Notifications from R, 2014-09-03
+A course in statistical programming, 2012-05-25
+Row names in data frames: beware of 1:nrow, 2012-03-21
+Interactive graphics with d3.</description>
     </item>
     
   </channel>

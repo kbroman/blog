@@ -16,9 +16,11 @@
       <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
-  ddplyr (from RStudio)
-  ggplot2 (from RStudio)
-  unix command line (from Dave Child at Cheatography)</description>
+ddplyr (from RStudio)
+ggplot2 (from RStudio)
+unix command line (from Dave Child at Cheatography)
+git (from GitHub)
+R Markdown (from RStudio)</description>
     </item>
     
     <item>
@@ -27,7 +29,7 @@ So at the SWC workshop at Washington State University this week, we handed out t
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/05/01/reform-academic-statistics/</guid>
-      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&#39; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     

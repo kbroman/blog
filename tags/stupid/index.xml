@@ -15,7 +15,7 @@
       
       <guid>/2021/05/14/wtf-uw-5/</guid>
       <description>This is the fifth and final installment of my &amp;ldquo;Karl is so naive&amp;rdquo; series.
-I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&#39; dual roles of advisor and employer. Now I see it everywhere.
+I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&amp;rsquo; dual roles of advisor and employer. Now I see it everywhere.
 Should they take further courses? No just focus on research.
 Should they help out at a software workshop or take on a teaching assistant position or spend the summer doing an internship in industry?</description>
     </item>
@@ -67,7 +67,7 @@ Yvonne Kim wrote two articles in the Capital Times in the last year that really 
       <guid>/2017/12/18/these-guys/</guid>
       <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
 I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
-&amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
+&amp;mdash; Karl Broman (@kwbroman) August 3, 2016 This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
     </item>
     
     <item>
@@ -79,7 +79,6 @@ I’ve just become ACUTELY aware that we should not say “these guys” when re
       <description>An odd thing happened to me on twitter today.
 UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
 So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
-
 Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
     </item>
     
@@ -100,8 +99,8 @@ It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, 
       
       <guid>/2015/08/05/god-awful-conference-web-sites/</guid>
       <description>What do I want in a conference website? Not this.
-  I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
-  If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
+I want to be able to browse sessions to find the ones I&amp;rsquo;m interested in. That means being able to see the session title and time as well as the speakers and talk titles. A super-long web page is perfectly fine.
+If you can&amp;rsquo;t show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts.</description>
     </item>
     
     <item>
@@ -122,7 +121,7 @@ We&amp;rsquo;d talked to several publishers, and ended up publishing with Spring
       <guid>/2014/02/09/i-still-dont-like-it/</guid>
       <description>I got a book in the mail this week, a book I hadn&amp;rsquo;t ordered and would never have ordered. The publisher sent me a complimentary copy, as I&amp;rsquo;d reviewed the book proposal last year. (It&amp;rsquo;s the one where the author refused to allow me to have an electronic copy.)
 Actually, I soundly trashed the proposal in my review. In the nicest possible way, of course. For example, I said:
- And then there are things that are just plain wrong.</description>
+And then there are things that are just plain wrong.</description>
     </item>
     
     <item>
@@ -133,8 +132,8 @@ Actually, I soundly trashed the proposal in my review. In the nicest possible wa
       <guid>/2013/12/05/things-to-avoid-as-a-new-faculty-member/</guid>
       <description>The transition from graduate student or postdoc to tenure-track faculty member is hard. You discover that there are a ton of new things to learn.
 Here are some thoughts on things to avoid.
-  You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
-  You may see needs for many new courses. Don&amp;rsquo;t try to develop all of them.</description>
+You may see lots of ways in which your department could be improved; don&amp;rsquo;t try to fix all of them at once.
+You may see needs for many new courses. Don&amp;rsquo;t try to develop all of them. Try to teach the same courses at least three years in a row.</description>
     </item>
     
     <item>
@@ -175,11 +174,11 @@ But first: No discussion of academic web pages is complete without referring to 
       
       <guid>/2013/05/02/18-for-a-two-page-pdf-i-still-dont-get-it/</guid>
       <description>Yesterday, I saw this tweet by @Ananyo
- Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball ($) nature.com/nature/journal&amp;hellip;
- So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
+Time that biologists stopped telling the public oversimplistic fairy tales on Darwinian evolution, says P Ball ($) nature.com/nature/journal&amp;hellip;
+So I clicked the link to the Nature paper and realized, &amp;ldquo;Oh, yeah. I&amp;rsquo;ve got to enter through the UW library website.&amp;rdquo;
 But then I thought, &amp;ldquo;Wait&amp;hellip;$18 for a two-page Nature comment? WTF?&amp;rdquo;
 So I tweeted:
- DNA: Celebrate the unknowns, like this Nature comment, which costs $18.</description>
+DNA: Celebrate the unknowns, like this Nature comment, which costs $18.</description>
     </item>
     
     <item>
@@ -189,8 +188,8 @@ So I tweeted:
       
       <guid>/2013/04/29/methods-before-results/</guid>
       <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
- To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
- But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
+To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
+But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
     <item>
@@ -202,10 +201,10 @@ So I tweeted:
       <description>QR codes are stupid. See the well-known flowchart.
 And I don&amp;rsquo;t like Drupal. Sites that use it often give things URLs like https://www.genetics.wisc.edu/node/577 for their seminar list.
 And can we get rid of the www?
- &amp;ldquo;What&amp;rsquo;s your web site?&amp;rdquo;
+&amp;ldquo;What&amp;rsquo;s your web site?&amp;rdquo;
 &amp;ldquo;double-u double-u double-u &amp;hellip;&amp;rdquo;
 &amp;ldquo;Zzz&amp;hellip;&amp;rdquo;
- URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
+URLs should be meaningful and short. I like deep hierarchies of folders, but it makes for long URLs.
 URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) one of those short URLs.</description>
     </item>
     
@@ -216,8 +215,8 @@ URL-shorteners help, but you don&amp;rsquo;t really want to read out (or type) o
       
       <guid>/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>Another R tip: beware of as.character applied to a list.
-&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot; Really, beware of grep with a list:
-&amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6])) [1] 1 2 You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
+&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;#34;c(\&amp;#34;a\&amp;#34;, \&amp;#34;b\&amp;#34;, \&amp;#34;c\&amp;#34;)&amp;#34; &amp;#34;c(\&amp;#34;d\&amp;#34;, \&amp;#34;e\&amp;#34;, \&amp;#34;f\&amp;#34;)&amp;#34; Really, beware of grep with a list:
+&amp;gt; grep(&amp;#34;c&amp;#34;, list(letters[1:3], letters[4:6])) [1] 1 2 You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
     </item>
     
     <item>
@@ -263,7 +262,7 @@ Put the script in the body First, I&amp;rsquo;d tried to make a truly simple exa
       <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
 There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
- As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
+As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
     </item>
     
     <item>
@@ -292,7 +291,7 @@ I should just forget about it, but the thought of some marketing jerk writing th
       
       <guid>/2012/11/21/the-hopkins-sph-logo-part-2/</guid>
       <description>Last week, I wrote about the Johns Hopkins Bloomberg School of Public Health logo. I now present part 2 of the story.
-Hopkins SPH had done some fancy renovations of part of the building, including an important new feature, the &amp;ldquo;Wall of Wonder&amp;quot;: a big display composed of nine LCD screens in the atrium of the building, to display various PR type stuff. (&amp;ldquo;Wall of Wonder&amp;rdquo; (WOW) is the official name!</description>
+Hopkins SPH had done some fancy renovations of part of the building, including an important new feature, the &amp;ldquo;Wall of Wonder&amp;rdquo;: a big display composed of nine LCD screens in the atrium of the building, to display various PR type stuff. (&amp;ldquo;Wall of Wonder&amp;rdquo; (WOW) is the official name!</description>
     </item>
     
     <item>
@@ -333,7 +332,7 @@ Here&amp;rsquo;s a PDF of the full article.</description>
       
       <guid>/2012/09/11/hilarious-graph/</guid>
       <description>I read an interesting post on the NY Times site this morning, which said:
- Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
+Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
     </item>
     
   </channel>

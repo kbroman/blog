@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>MongoDB with D3.js - the stupidest thing...</title>
@@ -109,7 +109,7 @@
 <p>So, the data&rsquo;s in the database. How to get it back out? I wrote a second <a href="https://github.com/kbroman/d3examples/blob/master/mongodb/mongo_request.py">python script</a> (just 8 lines, really), that uses <a href="https://bottlepy.org">bottle</a> to create a server that connects a URL to a function call. The function then uses <a href="https://api.mongodb.org/python/current/tutorial.html">pymongo</a> to find the corresponding document and send it back as JSON. One <a href="https://api.mongodb.org/python/current/tutorial.html">tricky bit that needed some extra googling</a> was getting the browser to allow the request.</p>
 <p>The <a href="https://github.com/kbroman/d3examples/tree/master/mongodb/anscombe.coffee">D3 code (in coffeescript</a>) is pretty standard. On clicking a button, I call <code>d3.json</code> with the appropriate URL that corresponds to a request from the python script; the data come back as JSON, and are then passed to a callback function to make the actual plot.</p>
 <p>This <a href="https://github.com/kbroman/d3examples/blob/master/mongodb/">MongoDB/D3 illustration</a> is a toy example, but it represents an important step for me, personally. I&rsquo;m rather proud of it.</p>
-<p><img src="https://kbroman.files.wordpress.com/2015/06/anscombe_2.png" alt="Anscombe&rsquo;s quartet, set 2"></p>
+<p><img src="https://kbroman.files.wordpress.com/2015/06/anscombe_2.png" alt="Anscombe&amp;rsquo;s quartet, set 2"></p>
 <p>I don&rsquo;t actually have a live example of this. That&rsquo;s the next thing: how to have this running on a proper web server, rather than just locally.</p>
 
     </div>

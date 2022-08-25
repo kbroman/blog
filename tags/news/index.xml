@@ -34,14 +34,15 @@ Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it s
       
       <guid>/2017/04/30/old-posts/</guid>
       <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
- Better-looking LaTeX/Beamer slides, 2013-10-07
- MongoDB with D3.js, 2015-06-22
- Crayon colors in R, 2014-05-07
- apply vs for, 2013-04-02
- Thoughts on statistical consulting, 2013-04-02
- Notifications from R, 2014-09-03
- A course in statistical programming, 2012-05-25
- Row names in data frames: beware of 1:nrow, 2012-03-21</description>
+Better-looking LaTeX/Beamer slides, 2013-10-07
+MongoDB with D3.js, 2015-06-22
+Crayon colors in R, 2014-05-07
+apply vs for, 2013-04-02
+Thoughts on statistical consulting, 2013-04-02
+Notifications from R, 2014-09-03
+A course in statistical programming, 2012-05-25
+Row names in data frames: beware of 1:nrow, 2012-03-21
+Interactive graphics with d3.</description>
     </item>
     
     <item>
@@ -105,7 +106,7 @@ We could see out the window that there was a campus police officer preventing pe
       <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
 There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
- As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
+As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
     </item>
     
     <item>
@@ -159,7 +160,7 @@ I really love these things. All airports should have them.</description>
       
       <guid>/2012/09/11/hilarious-graph/</guid>
       <description>I read an interesting post on the NY Times site this morning, which said:
- Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
+Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
     </item>
     
     <item>
@@ -170,12 +171,12 @@ I really love these things. All airports should have them.</description>
       <guid>/2012/05/24/police/</guid>
       <description>The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.
 The conversation went something like this:
- Police: What&amp;rsquo;s going on?
+Police: What&amp;rsquo;s going on?
 Me: I&amp;rsquo;m enjoying the day.
 Police: Are you staff?
 Me: I&amp;rsquo;m faculty.
 Police: I&amp;rsquo;m enjoying the day, too.
- And then he walked off.
+And then he walked off.
 I&amp;rsquo;m not sure who was more suspicious, him of me or me of him.</description>
     </item>
     
@@ -187,7 +188,7 @@ I&amp;rsquo;m not sure who was more suspicious, him of me or me of him.</descrip
       <guid>/2012/05/16/genetic-testing-of-sperm-donors/</guid>
       <description>A recent New York Times article discusses the potential need for genetic screening of sperm donors. A couple of points struck me as rather odd.
 One, the mention of fragile X syndrome, has been corrected:
- An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
+An earlier version of this article erroneously included fragile X syndrome in a list of genetic diseases that have affected children conceived with donated sperm. (Although a sperm donor who is a carrier of the fragile X premutation may pass it along to his daughters, the disease, which affects twice as many boys as girls, is almost always inherited from the mother.</description>
     </item>
     
     <item>

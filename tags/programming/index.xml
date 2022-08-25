@@ -55,7 +55,7 @@ I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I 
       
       <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you&amp;rsquo;re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
-setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &#39;|&#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;#34;,&amp;#34;, &amp;#34;|&amp;#34;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
@@ -107,7 +107,8 @@ In addition, it&amp;rsquo;d be useful to have session information (R and package
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
-  TravisCI for not handling system.file() properly.</description>
+TravisCI for not handling system.file() properly.
+R-devel for having broken system.</description>
     </item>
     
     <item>
@@ -128,9 +129,11 @@ That&amp;rsquo;s led me to spend a good amount of time in the last few years lea
       <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
-  ddplyr (from RStudio)
-  ggplot2 (from RStudio)
-  unix command line (from Dave Child at Cheatography)</description>
+ddplyr (from RStudio)
+ggplot2 (from RStudio)
+unix command line (from Dave Child at Cheatography)
+git (from GitHub)
+R Markdown (from RStudio)</description>
     </item>
     
     <item>
@@ -171,7 +174,7 @@ For example, I&amp;rsquo;m still using base graphics. (ggplot2 is on my &amp;ldq
       <guid>/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
-&amp;mdash; Lynn Root (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
+&amp;mdash; Lynn Root (@roguelynn) February 6, 2014 I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
 Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>Row names in data frames: beware of 1:nrow - the stupidest thing...</title>
@@ -84,27 +84,27 @@
     <div class="article-content">
       <p>I spent some time puzzling over row names in data frames in R this morning. It seems that if you make the row names for a data frame, <code>x</code>, as <code>1:nrow(x)</code>, R will act as if you&rsquo;d not assigned row names, and the names might get changed when you do <code>rbind</code>.</p>
 <p>Here&rsquo;s an illustration:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>)
-<span style="color:#f92672">&gt;</span> y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>)
-<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(x) <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>
-<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(y) <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">LETTERS</span>[4<span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>]
-<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(x,y)
-  id
-<span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">3</span>
-D  <span style="color:#ae81ff">4</span>
-E  <span style="color:#ae81ff">5</span>
-F  <span style="color:#ae81ff">6</span>
-<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(y,x)
-  id
-D  <span style="color:#ae81ff">4</span>
-E  <span style="color:#ae81ff">5</span>
-F  <span style="color:#ae81ff">6</span>
-<span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">1</span>
-<span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">2</span>
-<span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">3</span>
-</code></pre></div><p>As you can see, if you give <code>x</code> the row names <code>1:3</code>, these are treated as generic row numbers and could get changed following <code>rbind</code> if they end up in different rows.  This doesn&rsquo;t happen if <code>x</code> and <code>y</code> are matrices.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(id<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span><span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(x) <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rownames</span>(y) <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">LETTERS</span>[4<span style="color:#f92672">:</span><span style="color:#ae81ff">6</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(x,y)
+</span></span><span style="display:flex;"><span>  id
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>D  <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>E  <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>F  <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">rbind</span>(y,x)
+</span></span><span style="display:flex;"><span>  id
+</span></span><span style="display:flex;"><span>D  <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>E  <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>F  <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">3</span>
+</span></span></code></pre></div><p>As you can see, if you give <code>x</code> the row names <code>1:3</code>, these are treated as generic row numbers and could get changed following <code>rbind</code> if they end up in different rows.  This doesn&rsquo;t happen if <code>x</code> and <code>y</code> are matrices.</p>
 <p>I often use row names as identifiers, so it seems I must be cautious to use something other than row numbers.</p>
 
     </div>

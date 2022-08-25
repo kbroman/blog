@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>omg, binder! - the stupidest thing...</title>
@@ -139,19 +139,19 @@ repository</a> and deleted a
 bunch of stuff, because it&rsquo;s a bit bloated with <a href="https://github.com/kbroman/FruitSnacks/blob/master/PhotoGallery.md">pictures of fruit
 snacks</a>.</p>
 <p>Specifically:</p>
-<pre><code>git clone git://github.com/kbroman/FruitSnacks FruitSnacksBinder
+<pre tabindex="0"><code>git clone git://github.com/kbroman/FruitSnacks FruitSnacksBinder
 cd FruitSnacksBinder
 \rm -rf .git
 \rm -r Photos
 \rm PhotoGallery.md Makefile
 \rm R/create_thumbnails.R R/generate_photo_gallery.R
 </code></pre><p>Then I initialized it as a new git repository.</p>
-<pre><code>git add .
-git commit -m &quot;Initial commit&quot;
+<pre tabindex="0"><code>git add .
+git commit -m &#34;Initial commit&#34;
 </code></pre><p>I created a <a href="https://github.com/kbroman/FruitSnacksBinder">new repository on
 GitHub</a>, and push the
 local repository there.</p>
-<pre><code>git remote add origin git@github.com:kbroman/FruitSnacksBinder
+<pre tabindex="0"><code>git remote add origin git@github.com:kbroman/FruitSnacksBinder
 git push -u origin master
 </code></pre><p>(Note, I always use the ssh method of connecting to GitHub. You might
 want <code>https://github.com/</code> where I&rsquo;m using <code>git@github.com:</code>.)</p>
@@ -167,26 +167,26 @@ a couple of R Markdown files that contain my analyses.</li>
 <a href="https://github.com/kbroman/broman">R/broman</a> package, if it&rsquo;s not
 available. This isn&rsquo;t recommended behavior, and we won&rsquo;t need this
 with binder, so I removed the lines like</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">require</span>(broman)) {
-    <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;broman&#34;</span>, repos<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cran.rstudio.com&#34;</span>)
-}
-</code></pre></div><p>and replaced them with</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(broman)
-</code></pre></div><h2 id="how-to-use-binder-with-r">How to use binder with R</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">require</span>(broman)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">install.packages</span>(<span style="color:#e6db74">&#34;broman&#34;</span>, repos<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cran.rstudio.com&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>and replaced them with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(broman)
+</span></span></code></pre></div><h2 id="how-to-use-binder-with-r">How to use binder with R</h2>
 <p>Okay, now on to the real bit. We need to do three things:</p>
 <p><strong>1</strong>. Create a file called
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/master/runtime.txt"><code>runtime.txt</code></a>
 that has just one line like:</p>
-<pre><code>r-2019-02-14
+<pre tabindex="0"><code>r-2019-02-14
 </code></pre><p>This tells binder that you want R, and that you want R packages
 from a particular date.</p>
 <p><strong>2</strong>. Specify the R packages that you want installed by creating a file called
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/master/install.R"><code>install.R</code></a>
 that contains one or more <code>install.packages()</code> calls, like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">install.packages</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;broman&#34;</span>,
-                   <span style="color:#e6db74">&#34;knitr&#34;</span>, <span style="color:#e6db74">&#34;rmarkdown&#34;</span>,
-                   <span style="color:#e6db74">&#34;caTools&#34;</span>, <span style="color:#e6db74">&#34;bitops&#34;</span>, <span style="color:#e6db74">&#34;rprojroot&#34;</span>))
-</code></pre></div><p><strong>3</strong>. The last thing is to make a badge, or anyway the URL that will
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">install.packages</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;broman&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;knitr&#34;</span>, <span style="color:#e6db74">&#34;rmarkdown&#34;</span>,
+</span></span><span style="display:flex;"><span>                   <span style="color:#e6db74">&#34;caTools&#34;</span>, <span style="color:#e6db74">&#34;bitops&#34;</span>, <span style="color:#e6db74">&#34;rprojroot&#34;</span>))
+</span></span></code></pre></div><p><strong>3</strong>. The last thing is to make a badge, or anyway the URL that will
 have binder open your repository in RStudio in a browser.
 The url is like this:</p>
 <p><a href="https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio">https://mybinder.org/v2/gh/kbroman/FruitSnacksBinder/master?urlpath=rstudio</a></p>
@@ -194,7 +194,7 @@ The url is like this:</p>
 RStudio aspect happen.</p>
 <p>To make a proper badge, you put a line like the following in your
 <code>README.md</code> file:</p>
-<pre><code>[![Binder](https://mybinder.org/badge_logo.svg)]( put_url_here )
+<pre tabindex="0"><code>[![Binder](https://mybinder.org/badge_logo.svg)]( put_url_here )
 </code></pre><p>The first time you launch binder, it&rsquo;ll be quite slow to load as it
 has to create the container and install R and RStudio and all of
 the packages and everything. Subsequent times it&rsquo;ll be much
@@ -205,7 +205,7 @@ faster, though not particularly fast.</p>
 can make a
 <a href="https://github.com/kbroman/FruitSnacksBinder/blob/description/DESCRIPTION"><code>DESCRIPTION</code></a>
 file, sort of like an R package, like this:</p>
-<pre><code>Package: FruitSnacks
+<pre tabindex="0"><code>Package: FruitSnacks
 Version: 0.1
 Date: 2019-02-18
 Description: Fruit Snacks project arranged for myBinder.org

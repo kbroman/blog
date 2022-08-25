@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>Beware of grep with a list - the stupidest thing...</title>
@@ -83,10 +83,10 @@
 
     <div class="article-content">
       <p>Another <a href="http://r-project.org">R</a> tip: beware of <code>as.character</code> applied to a list.</p>
-<pre><code>&gt; as.character( list(letters[1:3], letters[4:6]) )
-[1] &quot;c(\&quot;a\&quot;, \&quot;b\&quot;, \&quot;c\&quot;)&quot; &quot;c(\&quot;d\&quot;, \&quot;e\&quot;, \&quot;f\&quot;)&quot;
+<pre tabindex="0"><code>&gt; as.character( list(letters[1:3], letters[4:6]) )
+[1] &#34;c(\&#34;a\&#34;, \&#34;b\&#34;, \&#34;c\&#34;)&#34; &#34;c(\&#34;d\&#34;, \&#34;e\&#34;, \&#34;f\&#34;)&#34;
 </code></pre><p>Really, beware of <code>grep</code> with a list:</p>
-<pre><code>&gt; grep(&quot;c&quot;, list(letters[1:3], letters[4:6]))
+<pre tabindex="0"><code>&gt; grep(&#34;c&#34;, list(letters[1:3], letters[4:6]))
 [1] 1 2
 </code></pre><p>You might have thought that the result would be just <code>1</code>, but <code>grep</code> expects a vector of character strings.  If the input is not that, it uses <code>as.character()</code>.  Since the result of that starts with <code>&quot;c(&quot;</code>, <code>grep</code> finds <code>&quot;c&quot;</code> in each.</p>
 <p>See the <a href="http://stackoverflow.com/questions/7591632/why-this-behavior-when-coercing-a-list-to-character-via-as-character">related discussion</a> (from Sept 2011) on <a href="http://stackoverflow.com">stackoverflow</a>.</p>

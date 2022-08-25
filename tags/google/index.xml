@@ -16,7 +16,7 @@
       <guid>/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
-&amp;mdash; Lynn Root (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
+&amp;mdash; Lynn Root (@roguelynn) February 6, 2014 I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
 Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     

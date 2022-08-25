@@ -25,7 +25,6 @@ Since I was working on those at the last minute in the middle of the night, to b
       
       <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
-
 See it in action here.
 Code on github.</description>
     </item>

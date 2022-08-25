@@ -47,7 +47,8 @@ It&amp;rsquo;s a bit of a miracle that R/qtl works and gives the right answers, 
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
-  TravisCI for not handling system.file() properly.</description>
+TravisCI for not handling system.file() properly.
+R-devel for having broken system.</description>
     </item>
     
     <item>
@@ -59,7 +60,7 @@ I spent the day trying to resolve a bug in my early-in-development R package, qt
       <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
 I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 Here&amp;rsquo;s the code I used to grab the text.
-library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot; hobbit &amp;lt;- NULL for(i in 1:74) { cat(i,&amp;quot;\n&amp;quot;) if(i==1) { url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;) } else { url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.</description>
+library(XML) stem &amp;lt;- &amp;#34;http://www.5novels.com/classics/u5688&amp;#34; hobbit &amp;lt;- NULL for(i in 1:74) { cat(i,&amp;#34;\n&amp;#34;) if(i==1) { url &amp;lt;- paste0(stem, &amp;#34;.html&amp;#34;) } else { url &amp;lt;- paste0(stem, &amp;#34;_&amp;#34;, i, &amp;#34;.</description>
     </item>
     
     <item>
@@ -82,7 +83,7 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
-install.packages(&amp;quot;beepr&amp;quot;) Then, at the bottom of your script, load the package and have it beep.
+install.packages(&amp;#34;beepr&amp;#34;) Then, at the bottom of your script, load the package and have it beep.
 library(beepr) beep() beepr comes with a bunch of different sounds (e.</description>
     </item>
     
@@ -116,7 +117,7 @@ x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TR
       <guid>/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>I saw this great post on crayola crayon colors at the Learning R blog, reproducing a nice graph of the Crayola crayon colors over time. (Also see this even nicer version.)
 The Learning R post shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;List of Crayola crayon colors,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):
-library(XML) theurl &amp;lt;- &amp;quot;https://en.</description>
+library(XML) theurl &amp;lt;- &amp;#34;https://en.</description>
     </item>
     
     <item>
@@ -126,7 +127,7 @@ library(XML) theurl &amp;lt;- &amp;quot;https://en.</description>
       
       <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
-crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
+crayons = c(&amp;#34;Almond&amp;#34;=&amp;#34;#efdecd&amp;#34;, &amp;#34;Antique Brass&amp;#34;=&amp;#34;#cd9575&amp;#34;, &amp;#34;Apricot&amp;#34;=&amp;#34;#fdd9b5&amp;#34;, ... &amp;#34;Yellow Green&amp;#34;=&amp;#34;#c5e384&amp;#34;, &amp;#34;Yellow Orange&amp;#34;=&amp;#34;#ffb653&amp;#34;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
@@ -136,8 +137,8 @@ crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;An
       
       <guid>/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
-id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2) I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
-z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3) As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
+id &amp;lt;- c(&amp;#34;ZYY-43S-CWA3&amp;#34;, &amp;#34;6YU-F4B-VD2I&amp;#34;) sapply(strsplit(id, &amp;#34;-&amp;#34;), &amp;#34;[&amp;#34;, 2) I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
+z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;#34;[&amp;#34;, 1, ) lapply(z, &amp;#34;[&amp;#34;, , 3) As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
     </item>
     
     <item>
@@ -148,7 +149,6 @@ z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quo
       <guid>/2013/10/07/better-looking-latexbeamer-slides/</guid>
       <description>I like to use LaTeX to make slides for talks, largely because I prefer to write code (rather than use a mouse and menus) for control of things like colors and figure placement.
 Most people that use LaTeX to make slides seem to use Beamer, but the resulting slides are usually a bit busy, like this:
-
 I admire Till Tantau for creating Beamer; it was a great idea and it&amp;rsquo;s been widely adopted.</description>
     </item>
     
@@ -182,8 +182,8 @@ An advantage of R is that you can just type the name of the function and see the
       
       <guid>/2013/04/03/beware-of-grep-with-a-list/</guid>
       <description>Another R tip: beware of as.character applied to a list.
-&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;quot;c(\&amp;quot;a\&amp;quot;, \&amp;quot;b\&amp;quot;, \&amp;quot;c\&amp;quot;)&amp;quot; &amp;quot;c(\&amp;quot;d\&amp;quot;, \&amp;quot;e\&amp;quot;, \&amp;quot;f\&amp;quot;)&amp;quot; Really, beware of grep with a list:
-&amp;gt; grep(&amp;quot;c&amp;quot;, list(letters[1:3], letters[4:6])) [1] 1 2 You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
+&amp;gt; as.character( list(letters[1:3], letters[4:6]) ) [1] &amp;#34;c(\&amp;#34;a\&amp;#34;, \&amp;#34;b\&amp;#34;, \&amp;#34;c\&amp;#34;)&amp;#34; &amp;#34;c(\&amp;#34;d\&amp;#34;, \&amp;#34;e\&amp;#34;, \&amp;#34;f\&amp;#34;)&amp;#34; Really, beware of grep with a list:
+&amp;gt; grep(&amp;#34;c&amp;#34;, list(letters[1:3], letters[4:6])) [1] 1 2 You might have thought that the result would be just 1, but grep expects a vector of character strings. If the input is not that, it uses as.character(). Since the result of that starts with &amp;quot;c(&amp;quot;, grep finds &amp;quot;c&amp;quot; in each.</description>
     </item>
     
     <item>
@@ -207,8 +207,8 @@ Here&amp;rsquo;s a simple example:
       <description>An R tip: Did you know that x[[c(5,3)]] is the same as x[[5]][[3]]?
 I should make more thorough use of this.
 In the help file for [[:
- [[ can be applied recursively to lists, so that if the single index i is a vector of length p, alist[[i]] is equivalent to alist[[i1]]...[[ip]] providing all but the final indexing results in a list.
- I never knew this; I came across it when playing around (i.</description>
+[[ can be applied recursively to lists, so that if the single index i is a vector of length p, alist[[i]] is equivalent to alist[[i1]]...[[ip]] providing all but the final indexing results in a list.
+I never knew this; I came across it when playing around (i.</description>
     </item>
     
     <item>

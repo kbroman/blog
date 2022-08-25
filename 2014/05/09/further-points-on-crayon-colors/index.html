@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 
 <title>Further points on crayon colors - the stupidest thing...</title>
@@ -84,11 +84,11 @@
     <div class="article-content">
       <p>I saw <a href="https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">this great post on crayola crayon colors</a> at the <a href="https://learnr.wordpress.com">Learning R blog</a>, reproducing a <a href="https://www.datapointed.net/2010/01/crayola-crayon-color-chart/">nice graph</a> of the Crayola crayon colors over time. (Also see <a href="http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/">this even nicer version</a>.)</p>
 <p>The <a href="https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/">Learning R post</a> shows how to grab the crayon colors from the wikipedia page, &ldquo;<a href="https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">List of Crayola crayon colors</a>,&rdquo; directly in R. Here&rsquo;s the code (after some slight modifications due to changes in the page since 2010):</p>
-<pre><code>library(XML)
-theurl &lt;- &quot;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&quot;
+<pre tabindex="0"><code>library(XML)
+theurl &lt;- &#34;https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors&#34;
 crayontable &lt;- readHTMLTable(theurl, stringsAsFactors = FALSE)[[1]]
-crayons &lt;- crayontable[,grep(&quot;Hex&quot;, colnames(crayontable))]
-names(crayons) &lt;- crayontable[,&quot;Color&quot;]
+crayons &lt;- crayontable[,grep(&#34;Hex&#34;, colnames(crayontable))]
+names(crayons) &lt;- crayontable[,&#34;Color&#34;]
 </code></pre><p>Comparing these to what I&rsquo;d grabbed, I noted one small discrepancy on the Wikipedia page: Yellow Orange was listed as <code>&quot;#FFAE42&quot;</code> but the background color for the Yellow Orange cell in the table was <code>&quot;#FFB653&quot;</code>.</p>
 <p>So I created a Wikipedia account and edited the Wikipedia page.</p>
 <p>(Then I realized that I&rsquo;d made a mistake in my edit, undid my change, thought the whole thing through again, and edited the page again.)</p>
