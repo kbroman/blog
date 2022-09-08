@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We are on our own, COVID-wise</title>
+      <link>/2022/09/06/on-our-own/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/09/06/on-our-own/</guid>
+      <description>A new academic year has begun, and this year it seems that we&amp;rsquo;re on our own, when it comes to protecting ourselves against COVID-19. In the latest guidance from the CDC and UW-Madison, we&amp;rsquo;re told that &amp;ldquo;individual responsibility&amp;rdquo; is sufficient to combat infectious disease.
+From the UW-Madison FAQ about COVID:
+Is it okay to ask someone I work with if they have been vaccinated? No. A person&amp;rsquo;s vaccination status is private, just like any other medical issue or condition, and employees should not be asked to share this information.</description>
+    </item>
+    
     <item>
       <title>Support the UW Health nurses</title>
       <link>/2022/08/25/support-the-uw-health-nurses/</link>
@@ -300,16 +311,6 @@ brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majes
       <guid>/2017/05/01/caching-blogdown/</guid>
       <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
 I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
-    </item>
-    
-    <item>
-      <title>sqlite, feather, and fst</title>
-      <link>/2017/04/30/sqlite-feather-and-fst/</link>
-      <pubDate>Sun, 30 Apr 2017 14:07:00 -0500</pubDate>
-      
-      <guid>/2017/04/30/sqlite-feather-and-fst/</guid>
-      <description>I don’t think I’m unusual among statisticians in having avoided working directly with databases for much of my career. The data for my projects have been reasonably small. (In fact, basically all of the data for my 20 years of projects are on my laptop’s drive.) Flat files (such as CSV files) were sufficient.
-But I’ve finally entered the modern era of biggish data. (Why do they call it big data?</description>
     </item>
     
   </channel>
