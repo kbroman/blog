@@ -1,5 +1,5 @@
 ---
-title: 'Support the UW Health nurses'
+title: 'support the UW Health nurses'
 author: Karl
 date: '2022-08-25'
 slug: support-the-uw-health-nurses
