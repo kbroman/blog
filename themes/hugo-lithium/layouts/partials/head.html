@@ -16,8 +16,6 @@
 
 {{ if eq .RelPermalink "/" }}
 <meta property="description" content="{{ .Site.Params.description }}">
-<link rel="me" href="https://fosstodon.org/@kbroman">
-<link rel="nofollow" href="https://fosstodon.org/@kbroman">
 {{ else }}
   {{ if .Description }}
   <meta property="description" content="{{ .Description }}">
