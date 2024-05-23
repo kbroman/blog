@@ -20,7 +20,7 @@ GitHub](https://github.com/ropensci/unconf17/issues), and then the
 first morning we voted on what we were interested in doing via
 stickers:
 
-{{< tweet 867793745986469889 >}}
+> [**deleted tweet removed**]
 
 I found the list of topics a bit forbidding. Important stuff, but a
 lot of them seemed technically difficult, and I didn't really see how
