@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>hipsteR: re-educating people who learned R before it was cool - the stupidest thing...</title>
@@ -89,10 +89,10 @@
       <p>This morning, I started <a href="https://kbroman.org/hipsteR/">a tutorial for folks whose knowledge of R is (like mine) stuck in 2001.</a></p>
 <p>Yesterday I started reading the <a href="https://www.amazon.com/exec/obidos/ASIN/1461468671/7210-20">Rcpp book</a>, and on page 4 there&rsquo;s an example using the R function <code>replicate</code>, which (a) I&rsquo;d never heard before, and (b) is super useful.</p>
 <p>I mean, I often write code like this, for a bootstrap:</p>
-<pre tabindex="0"><code>x &lt;- rnorm(2500)
+<pre><code>x &lt;- rnorm(2500)
 sapply(1:1000, function(a) quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
 </code></pre><p>But I could just be writing</p>
-<pre tabindex="0"><code>x &lt;- rnorm(100)
+<pre><code>x &lt;- rnorm(100)
 replicate(1000, quantile(sample(x, replace=TRUE), c(0.025, 0.975)))
 </code></pre><p>&ldquo;Oh, <code>replicate</code> must be some new function.&rdquo; Yeah, new in <strong>R version 1.8, in 2003!</strong></p>
 <p>I&rsquo;m in serious need of some re-education (e.g., I should be using more of <a href="https://github.com/hadley">Hadley Wickham&rsquo;s packages</a>). Hence the beginnings of a tutorial.</p>

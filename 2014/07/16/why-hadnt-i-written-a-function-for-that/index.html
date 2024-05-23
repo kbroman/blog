@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Why hadn&#39;t I written a function for that? - the stupidest thing...</title>
@@ -89,7 +89,7 @@
       <p>I&rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.</p>
 <p>For example, I&rsquo;m still using base graphics. (<a href="http://ggplot2.org">ggplot2</a> is on my &ldquo;to do&rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with <code>image</code>, the border is often obscured. I want a nice black rectangle around the outside.</p>
 <p>So I&rsquo;ll write the following:</p>
-<pre tabindex="0"><code>u &lt;- par(&#34;usr&#34;)
+<pre><code>u &lt;- par(&quot;usr&quot;)
 rect(u[1], u[3], u[2], u[4])
 </code></pre><p>I don&rsquo;t know <em>how</em> many times I&rsquo;ve typed that! Today I realized that I should put those two lines in a function <code>add_border()</code>. And then I added <code>add_border()</code> to my <a href="http://github.com/kbroman/broman">R/broman package</a>.</p>
 <p>It was a bit more work adding the <a href="https://github.com/klutometis/roxygen">Roxygen2</a> comments for the documentation, but now I&rsquo;ve got a proper function that is easier to use and much more clear.</p>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>debugging with docker and r-devel - the stupidest thing...</title>
@@ -114,7 +114,7 @@ pretty simple.</p>
 <p><em>Install Docker</em>. See the <a href="https://docs.docker.com/get-docker/">official
 instructions</a>.
 I&rsquo;m working on a Ubuntu laptop, so I did:</p>
-<pre tabindex="0"><code>sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&#34;
+<pre><code>sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&quot;
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
 </code></pre></li>
@@ -123,16 +123,16 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 and installs the package to be tested. (In this rocker image, <code>R</code>
 is the current version of R and <code>RD</code> is the devel version, so we
 need to use <code>RD</code> to install the package.)</p>
-<pre tabindex="0"><code>FROM rocker/r-devel
-RUN RD -e &#34;install.packages(&#39;qtl&#39;)&#34;
+<pre><code>FROM rocker/r-devel
+RUN RD -e &quot;install.packages('qtl')&quot;
 </code></pre></li>
 <li>
 <p><em>Build the docker image</em>.</p>
-<pre tabindex="0"><code>sudo docker build -t rdevel-qtl .
+<pre><code>sudo docker build -t rdevel-qtl .
 </code></pre></li>
 <li>
 <p><em>Fire up that image in a container</em>.</p>
-<pre tabindex="0"><code>sudo docker run -it rdevel-qtl bash
+<pre><code>sudo docker run -it rdevel-qtl bash
 </code></pre></li>
 <li>
 <p><em>Run R and load the package</em>.</p>
@@ -149,8 +149,8 @@ to think of them.)</p>
 GitHub, and then tested it out in my container by installing the
 repaired version with the <a href="https://remotes.r-lib.org">remotes</a>
 package.</p>
-<pre tabindex="0"><code>install.packages(&#34;remotes&#34;)
-remotes::install_github(&#34;kbroman/qtl&#34;)
+<pre><code>install.packages(&quot;remotes&quot;)
+remotes::install_github(&quot;kbroman/qtl&quot;)
 </code></pre></li>
 </ol>
 <p>There&rsquo;s a lot more that one can do with Docker, but this was a pretty

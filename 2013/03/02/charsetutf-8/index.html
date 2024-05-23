@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>charset=&#34;utf-8&#34; - the stupidest thing...</title>
@@ -90,9 +90,9 @@
 <p>I&rsquo;m giving a talk at <a href="https://www.enar.org/meetings">ENAR</a> in just over a week, on interactive graphics.  My slides (still in preparation) are <a href="https://www.biostat.wisc.edu/~kbroman/presentations/InteractiveGraphs2">on the web</a>.</p>
 <p>The slides were working fine locally on my laptop, but they weren&rsquo;t working on my web server&hellip;I was getting a syntax error regarding an illegal character.</p>
 <p>I figured out that I needed to add <code>charset=&quot;utf-8&quot;</code>, like so:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/d3.js&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/d3.js&#34;</span>&gt;
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div>
     </div>
   </article>
 

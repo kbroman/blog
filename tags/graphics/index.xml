@@ -53,6 +53,7 @@ Since I was working on those at the last minute in the middle of the night, to b
       
       <guid>/2014/10/30/interactive-plot-of-car-crash-stats/</guid>
       <description>I spent the afternoon making a D3-based interactive version of the graphs of car crash statistics by state that I&amp;rsquo;d discussed yesterday: my attempt to improve on the graphs in Mona Chalabi&amp;rsquo;s post at 538.
+
 See it in action here.
 Code on github.</description>
     </item>
@@ -97,7 +98,7 @@ In my comments below, I give short shrift to some speakers (largely by not havin
       <guid>/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>I saw this great post on crayola crayon colors at the Learning R blog, reproducing a nice graph of the Crayola crayon colors over time. (Also see this even nicer version.)
 The Learning R post shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;List of Crayola crayon colors,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):
-library(XML) theurl &amp;lt;- &amp;#34;https://en.</description>
+library(XML) theurl &amp;lt;- &amp;quot;https://en.</description>
     </item>
     
     <item>
@@ -107,7 +108,7 @@ library(XML) theurl &amp;lt;- &amp;#34;https://en.</description>
       
       <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
-crayons = c(&amp;#34;Almond&amp;#34;=&amp;#34;#efdecd&amp;#34;, &amp;#34;Antique Brass&amp;#34;=&amp;#34;#cd9575&amp;#34;, &amp;#34;Apricot&amp;#34;=&amp;#34;#fdd9b5&amp;#34;, ... &amp;#34;Yellow Green&amp;#34;=&amp;#34;#c5e384&amp;#34;, &amp;#34;Yellow Orange&amp;#34;=&amp;#34;#ffb653&amp;#34;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
+crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
@@ -128,6 +129,7 @@ That led me to the list of Crayola crayon colors on wikipedia. I wrote a ruby sc
       
       <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
+
 The code is on github. It took me about a day.
 The hardest part was figuring out the right data structures. A pixel here is linked to curves over there and over there and over there. You need to set things up so it&amp;rsquo;s easy to traverse such linkages.</description>
     </item>
@@ -150,6 +152,7 @@ I gave a talk on interactive graphs (with the title above) at Johns Hopkins last
       
       <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>I just finished an interactive eQTL plot using D3, in preparation for my talk on interactive graphics at the ENAR meeting next week.
+
 The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
 The hardest part was setting up the data files. Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.</description>
     </item>
@@ -160,7 +163,8 @@ The hardest part was setting up the data files. Well, that plus the fact that I 
       <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>/2013/02/11/interactive-ma-plot/</guid>
-      <description>The New York Times has an interesting interactive graphic on boys&amp;rsquo; and girls&amp;rsquo; average scores on a science exam, by country.
+      <description>The New York Times has an interesting interactive graphic on boys&#39; and girls&#39; average scores on a science exam, by country.
+
 It&amp;rsquo;s nice to see a scatterplot. (Often one would see just a bar plot, with female and male bars side-by-side.) Even better, this is an &amp;ldquo;MA plot.&amp;rdquo; That is, rather than just plot males vs females, they show the difference vs the average.
 The wikipedia entry for MA plot says such a plot of difference vs average is in medical statistics known as a Bland-Altman plot and in other fields is known as a Tukey mean-difference plot.</description>
     </item>
@@ -183,7 +187,7 @@ Many box plots First, an example for displaying many distributions. Here I&amp;r
       <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
 There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
-As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
+ As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
     </item>
     
     <item>
@@ -194,10 +198,9 @@ As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished dema
       <guid>/2012/10/11/curved-arrows-in-r/</guid>
       <description>I briefly investigated how to draw curved arrows in R. Here&amp;rsquo;s a small piece of the figure that I ultimately created:
 A google search for &amp;ldquo;curved arrows in R&amp;rdquo; revealed three options:
-curvedarrow in the diagram package
-The internal function igraph.Arrows within the igraph package (mentioned by Gabor Csardi in R help)
-Using xspline for the shaft and adding the head &amp;ldquo;by hand&amp;rdquo; (mentioned by Greg Snow)
-I wasn&amp;rsquo;t too happy with how the arrow heads looked using the diagram package, and I didn&amp;rsquo;t want to have to fiddle around with xspline, and igraph worked quite easily, so I went with that.</description>
+  curvedarrow in the diagram package
+  The internal function igraph.Arrows within the igraph package (mentioned by Gabor Csardi in R help)
+  Using xspline for the shaft and adding the head &amp;ldquo;by hand&amp;rdquo; (mentioned by Greg Snow)</description>
     </item>
     
     <item>
@@ -217,7 +220,7 @@ I poked through the paper, and my eye was attracted to the following figure. The
       
       <guid>/2012/09/11/hilarious-graph/</guid>
       <description>I read an interesting post on the NY Times site this morning, which said:
-Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
+ Analyzing data from the 2008 American National Election Study, we found no relationship between negative feelings toward African-Americans and opposition to government-provided health care among whites without college degrees. For college-educated whites, however, negative racial feelings were strongly associated with increased opposition to such reform. As the graph below shows, for whites without college degrees, feelings toward African-Americans are unrelated to whether respondents support or oppose government-provided health care.</description>
     </item>
     
     <item>
@@ -237,7 +240,7 @@ I&amp;rsquo;m really excited about D3. It&amp;rsquo;s long past time for dynamic
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
       <guid>/2012/05/17/trees/</guid>
-      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&amp;rsquo; artwork. Today I found one with this:
+      <description>I&amp;rsquo;m frequently picking pieces of paper up off the floor &amp;ndash; bits of the kids&#39; artwork. Today I found one with this:
 That&amp;rsquo;s actually mine, so I thought I&amp;rsquo;d share it. Here&amp;rsquo;s a link to the full page.
 These scratchings are related to a bit of theory I&amp;rsquo;ve been working on (with considerable help), regarding phylogenetic trees. It&amp;rsquo;s part of this paper, which I&amp;rsquo;m getting ready to re-submit.</description>
     </item>
@@ -269,6 +272,7 @@ I decided to keep track. As usual, we bought a huge bag of candy, and we still h
       
       <guid>/2011/09/22/infographics/</guid>
       <description>I saw this great infographic at Andrew Gelman&amp;rsquo;s blog:
+
 I&amp;rsquo;m inclined to buy an art print.
 Note the relationship between the central panel and the cover of the latest Amstat News (always a good source for embarrassing figures):</description>
     </item>

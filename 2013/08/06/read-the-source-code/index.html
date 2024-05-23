@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Read the source code - the stupidest thing...</title>
@@ -89,30 +89,30 @@
       <p>The other day, there was a bit of <a href="https://twitter.com/hspter/status/363015797204992000">a twitter conversation about <code>qqline</code></a> in R.</p>
 <p>It made me think: how exactly is the line produced by <code>qqline</code> chosen? I seemed to recall that the line was through the first and third quartiles.</p>
 <p>An advantage of R is that you can just type the name of the function and see the code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># qqline</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">function </span>(y, datax <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, distribution <span style="color:#f92672">=</span> qnorm, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.25</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">0.75</span>), qtype <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, <span style="color:#66d9ef">...</span>)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">stopifnot</span>(<span style="color:#a6e22e">length</span>(probs) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">is.function</span>(distribution))
-</span></span><span style="display:flex;"><span>    y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">quantile</span>(y, probs, names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, type <span style="color:#f92672">=</span> qtype, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-</span></span><span style="display:flex;"><span>    x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">distribution</span>(probs)
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">if </span>(datax) {
-</span></span><span style="display:flex;"><span>        slope <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">diff</span>(x)<span style="color:#f92672">/</span><span style="color:#a6e22e">diff</span>(y)
-</span></span><span style="display:flex;"><span>        int <span style="color:#f92672">&lt;-</span> x[1L] <span style="color:#f92672">-</span> slope <span style="color:#f92672">*</span> y[1L]
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    else {
-</span></span><span style="display:flex;"><span>        slope <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">diff</span>(y)<span style="color:#f92672">/</span><span style="color:#a6e22e">diff</span>(x)
-</span></span><span style="display:flex;"><span>        int <span style="color:#f92672">&lt;-</span> y[1L] <span style="color:#f92672">-</span> slope <span style="color:#f92672">*</span> x[1L]
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">abline</span>(int, slope, <span style="color:#66d9ef">...</span>)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>I was right: They take the 25th and 75th percentiles of the data and of the theoretical distribution, calculate the slope and y-intercept of the line that goes through those two points, and use <code>abline</code> to draw the line.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e"># qqline</span>
+<span style="color:#a6e22e">function </span>(y, datax <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, distribution <span style="color:#f92672">=</span> qnorm, probs <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0.25</span>,
+    <span style="color:#ae81ff">0.75</span>), qtype <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, <span style="color:#66d9ef">...</span>)
+{
+    <span style="color:#a6e22e">stopifnot</span>(<span style="color:#a6e22e">length</span>(probs) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">is.function</span>(distribution))
+    y <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">quantile</span>(y, probs, names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, type <span style="color:#f92672">=</span> qtype, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+    x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">distribution</span>(probs)
+    <span style="color:#a6e22e">if </span>(datax) {
+        slope <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">diff</span>(x)<span style="color:#f92672">/</span><span style="color:#a6e22e">diff</span>(y)
+        int <span style="color:#f92672">&lt;-</span> x[1L] <span style="color:#f92672">-</span> slope <span style="color:#f92672">*</span> y[1L]
+    }
+    else {
+        slope <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">diff</span>(y)<span style="color:#f92672">/</span><span style="color:#a6e22e">diff</span>(x)
+        int <span style="color:#f92672">&lt;-</span> y[1L] <span style="color:#f92672">-</span> slope <span style="color:#f92672">*</span> x[1L]
+    }
+    <span style="color:#a6e22e">abline</span>(int, slope, <span style="color:#66d9ef">...</span>)
+}
+</code></pre></div><p>I was right: They take the 25th and 75th percentiles of the data and of the theoretical distribution, calculate the slope and y-intercept of the line that goes through those two points, and use <code>abline</code> to draw the line.</p>
 <p>Open source means the source is open, so why not take the time to look at it?</p>
 <p>Sometimes typing the name of the function doesn&rsquo;t tell you much:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># qqnorm</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">function </span>(y, <span style="color:#66d9ef">...</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">UseMethod</span>(<span style="color:#e6db74">&#34;qqnorm&#34;</span>)
-</span></span></code></pre></div><p>In such cases, you could try typing, for example, <code>qqnorm.default</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#75715e"># qqnorm</span>
+<span style="color:#a6e22e">function </span>(y, <span style="color:#66d9ef">...</span>)
+<span style="color:#a6e22e">UseMethod</span>(<span style="color:#e6db74">&#34;qqnorm&#34;</span>)
+</code></pre></div><p>In such cases, you could try typing, for example, <code>qqnorm.default</code>.</p>
 <p>Still, the comments (if there were any) get stripped off, and for long functions, it&rsquo;s not pretty.  So I like to keep a copy of the source code (for example, <a href="http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz"><code>R-3.0.1.tar.gz</code></a>; extract it with <code>tar xzf R-3.0.1.tar.gz</code>). I use <code>grep</code> to find the relevant files.</p>
 <p>For example,</p>
 <pre><code>grep -r 'qqline' R-3.0.1/src/

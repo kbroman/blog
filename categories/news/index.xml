@@ -35,15 +35,14 @@ This was ROpenSci&amp;rsquo;s 4th unconference; the first I could attend. There 
       
       <guid>/2017/04/30/old-posts/</guid>
       <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
-Better-looking LaTeX/Beamer slides, 2013-10-07
-MongoDB with D3.js, 2015-06-22
-Crayon colors in R, 2014-05-07
-apply vs for, 2013-04-02
-Thoughts on statistical consulting, 2013-04-02
-Notifications from R, 2014-09-03
-A course in statistical programming, 2012-05-25
-Row names in data frames: beware of 1:nrow, 2012-03-21
-Interactive graphics with d3.</description>
+ Better-looking LaTeX/Beamer slides, 2013-10-07
+ MongoDB with D3.js, 2015-06-22
+ Crayon colors in R, 2014-05-07
+ apply vs for, 2013-04-02
+ Thoughts on statistical consulting, 2013-04-02
+ Notifications from R, 2014-09-03
+ A course in statistical programming, 2012-05-25
+ Row names in data frames: beware of 1:nrow, 2012-03-21</description>
     </item>
     
     <item>
@@ -75,6 +74,7 @@ I’m not been writing much recently, in part because Wordpress is such a drag t
       <description>An odd thing happened to me on twitter today.
 UW System had tweeted a statement from system president Ray Cross concerning Trump&amp;rsquo;s executive order banning refugees and immigrants from 7 countries. Cross&amp;rsquo;s statement is close to the most empty, useless possible such statement.
 So I tweeted back, asking him to revise his statement and actually take a stand against Trump&amp;rsquo;s executive order.
+
 Note that I mentioned not just @RayWCross and @UWSystem, but also @POTUS.</description>
     </item>
     
@@ -110,7 +110,7 @@ We could see out the window that there was a campus police officer preventing pe
       <guid>/2013/01/30/microsoft-office/</guid>
       <description>The New York Times has an article about how Microsoft will have users pay a yearly fee for MS Office, instead of buying it outright.
 There&amp;rsquo;s some mention of competition from Google Docs. Why should one still use Microsoft Office? The brilliant Excel graphs!
-As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
+ As for Google, Mr. DelBene said it has not &amp;ldquo;in any way diminished demand&amp;rdquo; for Office because Microsoft&amp;rsquo;s applications are &amp;ldquo;just so far beyond the capabilities that are in those alternative products.</description>
     </item>
     
     <item>
@@ -183,12 +183,12 @@ I really love these things. All airports should have them.</description>
       <guid>/2012/05/24/police/</guid>
       <description>The other day, I was sitting on campus, in the woods overlooking Lake Mendota, reading a journal article, and a campus police officer came up to me.
 The conversation went something like this:
-Police: What&amp;rsquo;s going on?
+ Police: What&amp;rsquo;s going on?
 Me: I&amp;rsquo;m enjoying the day.
 Police: Are you staff?
 Me: I&amp;rsquo;m faculty.
 Police: I&amp;rsquo;m enjoying the day, too.
-And then he walked off.
+ And then he walked off.
 I&amp;rsquo;m not sure who was more suspicious, him of me or me of him.</description>
     </item>
     
@@ -208,7 +208,7 @@ I&amp;rsquo;m not sure who was more suspicious, him of me or me of him.</descrip
       
       <guid>/2011/12/01/revised-bicycle-laws-in-wisconsin/</guid>
       <description>A newsletter from the Madison B-Cycle folks pointed out that the biking laws in Wisconsin have been revised somewhat, in interesting ways (at least to me).
-You can now stick your arm out to the right to signal a right turn. (I didn&amp;rsquo;t realize that this was wrong.) Studded bike tires (important for riding on snow and ice) are now legal. (I didn&amp;rsquo;t realize that they weren&amp;rsquo;t. I wish I&amp;rsquo;d had them when I crashed and broke my elbow back in 2008; now I don&amp;rsquo;t need them as I&amp;rsquo;m not risking riding on snow in any case.</description>
+  You can now stick your arm out to the right to signal a right turn. (I didn&amp;rsquo;t realize that this was wrong.)   Studded bike tires (important for riding on snow and ice) are now legal. (I didn&amp;rsquo;t realize that they weren&amp;rsquo;t.</description>
     </item>
     
     <item>

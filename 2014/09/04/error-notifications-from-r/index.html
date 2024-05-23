@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Error notifications from R - the stupidest thing...</title>
@@ -92,16 +92,16 @@
 <p>Fill in the function with your notification code. If there&rsquo;s an error, the error message will be printed and then that function will be called. (And then the script will halt.)</p>
 <p>You can use <code>geterrmessage()</code> to grab the error message to include in your notification.</p>
 <p>For example, if you want to use <a href="https://github.com/eddelbuettel/rpushbullet">RPushbullet</a> for the notification, you could put, at the top of your script, something like this:</p>
-<pre tabindex="0"><code>options(error = function() {
+<pre><code>options(error = function() {
                     library(RPushbullet)
-                    pbPost(&#34;note&#34;, &#34;Error&#34;, geterrmessage())
+                    pbPost(&quot;note&quot;, &quot;Error&quot;, geterrmessage())
                 })
 </code></pre><p>Then if the script gives an error, you&rsquo;ll get a note with title &ldquo;Error&rdquo; and with the error message as the body of the note.</p>
 <p><strong>Update</strong>: I knew I&rsquo;d heard about this sort of thing somewhere, but I couldn&rsquo;t remember where. Duh; <a href="https://twitter.com/rabaath/">Rasmus</a> <a href="https://twitter.com/rabaath/status/507087947041357825">mentioned it on twitter</a> just a couple of days ago! Fortunately, he reminded me of that in the comments below.</p>
 <p><strong>Another update</strong>: Ian Kyle pointed out in the comments that the above function, if used in a script run with <code>R CMD BATCH</code>, won&rsquo;t actually halt the script. The simplest solution is to add <code>stop(geterrmessage())</code>, like this:</p>
-<pre tabindex="0"><code>options(error = function() {
+<pre><code>options(error = function() {
                     library(RPushbullet)
-                    pbPost(&#34;note&#34;, &#34;Error&#34;, geterrmessage())
+                    pbPost(&quot;note&quot;, &quot;Error&quot;, geterrmessage())
                     if(!interactive()) stop(geterrmessage())
                 })
 </code></pre>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Fitting linear mixed models for QTL mapping - the stupidest thing...</title>
@@ -93,7 +93,7 @@
 <p>For a fixed value of the heritability, <em>h</em>, we have var(<em>e</em>) = <em>v[hK + (1-h)I] = vV</em> where <em>V</em> is known. And so we end up with a general least squares problem, which we can fit in order to estimate <em>b</em> and <em>v</em>.</p>
 </li>
 <li>
-<p>And actually, if you take the eigen decomposition of <em>K</em>, say <em>K = UDU&rsquo;</em>, it turns out that you can write <em>hK + (1-h)I = hUDU&rsquo; + (1-h)UU&rsquo; = U[hD + (1-h)I]U&rsquo;</em>. That is, the eigenvectors of <em>K</em> are the same as the eigenvectors of <em>hK + (1-h)I</em>. And so if you pre-multiply <em>y</em> and <em>X</em> by <em>U&rsquo;</em>, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.</p>
+<p>And actually, if you take the eigen decomposition of <em>K</em>, say <em>K = UDU'</em>, it turns out that you can write <em>hK + (1-h)I = hUDU' + (1-h)UU' = U[hD + (1-h)I]U'</em>. That is, the eigenvectors of <em>K</em> are the same as the eigenvectors of <em>hK + (1-h)I</em>. And so if you pre-multiply <em>y</em> and <em>X</em> by <em>U'</em>, you end up with a weighted least squares problem, which is way faster to fit than a general least squares problem.</p>
 </li>
 <li>
 <p>Having fit the weighted least squares problem to estimate <em>b</em> and <em>v</em>, you can then calculate the corresponding log likelihood (or, better, the restricted log likelihood, if you want to do REML).</p>

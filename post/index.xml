@@ -16,7 +16,7 @@
       <guid>/2022/09/06/on-our-own/</guid>
       <description>A new academic year has begun, and this year it seems that we&amp;rsquo;re on our own, when it comes to protecting ourselves against COVID-19. In the latest guidance from the CDC and UW-Madison, we&amp;rsquo;re told that &amp;ldquo;individual responsibility&amp;rdquo; is sufficient to combat infectious disease.
 From the UW-Madison FAQ about COVID:
-Is it okay to ask someone I work with if they have been vaccinated? No. A person&amp;rsquo;s vaccination status is private, just like any other medical issue or condition, and employees should not be asked to share this information.</description>
+ Is it okay to ask someone I work with if they have been vaccinated? No. A person&amp;rsquo;s vaccination status is private, just like any other medical issue or condition, and employees should not be asked to share this information.</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@ Please join me in supporting the UW Health nurses:</description>
       
       <guid>/2021/05/14/wtf-uw-5/</guid>
       <description>This is the fifth and final installment of my &amp;ldquo;Karl is so naive&amp;rdquo; series.
-I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&amp;rsquo; dual roles of advisor and employer. Now I see it everywhere.
+I&amp;rsquo;ve only recently become aware of the big conflict between graduate student mentors&#39; dual roles of advisor and employer. Now I see it everywhere.
 Should they take further courses? No just focus on research.
 Should they help out at a software workshop or take on a teaching assistant position or spend the summer doing an internship in industry?</description>
     </item>
@@ -117,7 +117,7 @@ I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on t
       
       <guid>/2019/08/15/data-analysis-principles/</guid>
       <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
-answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
+ answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -186,7 +186,7 @@ More blather about languages Long ago, I wrote a tutorial on Perl.</description>
       <guid>/2017/12/18/these-guys/</guid>
       <description>At the 2016 JSM in Chicago, in a session honoring William Cleveland, a speaker’s repeated use of the phrase “these guys”, when referring to programmers, made me livid.
 I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. #JSM2016
-&amp;mdash; Karl Broman (@kwbroman) August 3, 2016 This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
+&amp;mdash; Karl Broman (@kwbroman) August 3, 2016  This led to considerable discussion about whether and how to respond, and ultimately Hadley Wickham and I wrote to the speaker:</description>
     </item>
     
     <item>
@@ -245,7 +245,7 @@ I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&a
       
       <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you&amp;rsquo;re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
-setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;#34;,&amp;#34;, &amp;#34;|&amp;#34;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &#39;|&#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>

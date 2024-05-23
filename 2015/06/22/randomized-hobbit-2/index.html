@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Randomized Hobbit - the stupidest thing...</title>
@@ -89,27 +89,27 @@
       <p><a href="https://twitter.com/wrathematics">@wrathematics</a> pointed me to his <a href="http://cran.r-project.org/package=ngram">ngram</a> R package for constructing and simulating from n-grams from text.</p>
 <p>I&rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.</p>
 <p>Here&rsquo;s the code I used to grab the text.</p>
-<pre tabindex="0"><code>library(XML)
-stem &lt;- &#34;http://www.5novels.com/classics/u5688&#34;
+<pre><code>library(XML)
+stem &lt;- &quot;http://www.5novels.com/classics/u5688&quot;
 hobbit &lt;- NULL
 for(i in 1:74) {
-    cat(i,&#34;\n&#34;)
+    cat(i,&quot;\n&quot;)
     if(i==1) {
-        url &lt;- paste0(stem, &#34;.html&#34;)
+        url &lt;- paste0(stem, &quot;.html&quot;)
     } else {
-        url &lt;- paste0(stem, &#34;_&#34;, i, &#34;.html&#34;)
+        url &lt;- paste0(stem, &quot;_&quot;, i, &quot;.html&quot;)
     }
 
     x &lt;- htmlTreeParse(url, useInternalNodes=TRUE)
-    xx &lt;- xpathApply(x, &#34;//p&#34;, xmlValue)
-    hobbit &lt;- c(hobbit, gsub(&#34;\r&#34;, &#34;&#34;, xx[-length(xx)]))
+    xx &lt;- xpathApply(x, &quot;//p&quot;, xmlValue)
+    hobbit &lt;- c(hobbit, gsub(&quot;\r&quot;, &quot;&quot;, xx[-length(xx)]))
     Sys.sleep(0.5)
 }
 </code></pre><p>Then calculate the ngrams with n=2.</p>
-<pre tabindex="0"><code>library(ngram)
+<pre><code>library(ngram)
 ng2 &lt;- ngram(hobbit, n=2)
 </code></pre><p>Simulate some number of words with <code>babble()</code>. If you use the <code>seed</code> argument, you can get the result reproducibly.</p>
-<pre tabindex="0"><code>babble(ng2, 48, seed=53482175)
+<pre><code>babble(ng2, 48, seed=53482175)
 </code></pre><blockquote>
 <p>into trees, and then bore to the Mountain to go through?&quot; groaned the hobbit. &ldquo;Well, are you doing, And where are you doing, And where are you?&rdquo; it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes</p>
 </blockquote>

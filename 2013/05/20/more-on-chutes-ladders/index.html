@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>More on Chutes &amp; Ladders - the stupidest thing...</title>
@@ -95,7 +95,7 @@ is conditionally independent of the history (<em>X<sub>1</sub></em>, &hellip;, <
 <p>Then the probability that a player has reached state 100 by round <em>n</em> is
 (1, 0, &hellip;, 0) <em>P<sup>n</sup></em> (0, &hellip;, 0, 1)’.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this <em>q<sub>n</sub></em>.  You can get the probability distribution by differences, say <em>p<sub>n</sub></em> = <em>q<sub>n</sub></em> - <em>q<sub>n-1</sub></em>.</p>
 <p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with <em>k</em> players is complete by round n is 1 - (1-<em>q<sub>n</sub></em>)<em><sup>k</sup></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
-<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes &amp; Ladders"></p>
+<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes & Ladders"></p>
 <h3 id="advantage-to-the-first-player">Advantage to the first player</h3>
 <p>Now, regarding the advantage to the first player: note that the first
 player wins in exactly <em>n</em> steps if he gets to the finish at n steps
@@ -109,13 +109,13 @@ if there are <em>k</em> &gt; 2 players.</p>
 the first player wins given that the game is complete at round <em>n</em>.
 Here&rsquo;s a plot of that probability as a function of the number of
 players, relative to the nominal probability (1/2, 1/3, 1/4).</p>
-<p><img src="https://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png" alt="Advantage to the first player in Chutes &amp; Ladders"></p>
+<p><img src="https://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png" alt="Advantage to the first player in Chutes & Ladders"></p>
 <p>Note that <em>n</em>=7 is the minimum number of rounds to complete the game.
 I&rsquo;d thought that the first player&rsquo;s advantage went down over time, but
 the opposite is true.</p>
 <h3 id="no-spins-to-end-the-game">No. spins to end the game</h3>
 <p>Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of <a href="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png">the simulation-based figure in my last post</a>:</p>
-<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png" alt="No. spins to complete Chutes &amp; Ladders, numerical results"></p>
+<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png" alt="No. spins to complete Chutes & Ladders, numerical results"></p>
 <p>As you can see, the sawtooth pattern becomes more pronounced with the number of rounds, but then it gets lost in the downward slope of the distribution on the right side.  (Again, see my <a href="https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r">R code</a>.)</p>
 
     </div>

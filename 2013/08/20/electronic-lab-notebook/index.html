@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Electronic lab notebook - the stupidest thing...</title>
@@ -90,13 +90,13 @@
 <p>The other basic use of version control is for managing projects with multiple contributors. If there are multiple programmers working on a software project, or multiple authors working on a manuscript, version control is the best way to manage things, particularly for merging everyone&rsquo;s efforts.</p>
 <p>These are really useful things, but version control is more about <em>merging</em> and <em>history</em> and not so much <em>reproducible research</em>.</p>
 <h3 id="make-is-the-thing">Make is the thing</h3>
-<p>To me, the basic tool to make research reproducible is <a href="https://www.gnu.org/software/make/">GNU make</a> (see my <a href="https://kbroman.github.io/minimal_make/">minimal tutorial</a>). You create a <code>Makefile</code> that documents all analysis steps in a project. (For example, &ldquo;Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.&rdquo;)</p>
+<p>To me, the basic tool to make research reproducible is <a href="https://www.gnu.org/software/make/">GNU make</a> (see my <a href="https://kbroman.github.io/minimal_make/">minimal tutorial</a>). You create a <code>Makefile</code> that documents all analysis steps in a project. (For example, &ldquo;Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.&quot;)</p>
 <p>With GNU make (see also <a href="http://rake.rubyforge.org/">rake</a>), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing <code>Makefile</code>, the research is reproducible.</p>
 <h3 id="add-knitr-and-youve-got-a-notebook">Add knitr, and you&rsquo;ve got a notebook</h3>
 <p>The other ingredient to create the computational scientist&rsquo;s equivalent of a lab notebook is <a href="https://yihui.name/knitr/">knitr</a>, which allows one to combine text (e.g., in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> or <a href="https://www.methods.co.nz/asciidoc/">asciidoc</a>) and code (e.g., in <a href="https://www.r-project.org">R</a>) to make documents (e.g., in html or PDF) that both <em>do</em> the work and <em>explain</em> the work. Write such documents to describe what you did and what you learned, and you&rsquo;ve got an electronic lab notebook.</p>
 <p>You could even get rid of your <code>Makefile</code> by having an over-arching knitr-based document that does it all.  But I still like <a href="https://www.gnu.org/software/make">make</a>.</p>
 <h3 id="but-its-so-much-work">But it&rsquo;s so much work!</h3>
-<p>Going into a file and deleting a data point is a lot easier than writing a script that does it (and also documents <em>why</em>). But I don&rsquo;t think you should be going in and changing the data like that, even if it is being tracked by version control. (And that is the main complaint potential users have about version control: &ldquo;Too time consuming!&rdquo;)</p>
+<p>Going into a file and deleting a data point is a lot easier than writing a script that does it (and also documents <em>why</em>). But I don&rsquo;t think you should be going in and changing the data like that, even if it is being tracked by version control. (And that is the main complaint potential users have about version control: &ldquo;Too time consuming!&quot;)</p>
 <p>I think you have to expect that writing well-documented scripts and <a href="https://yihui.name/knitr/">knitr</a>-based reports that capture the totality of a data analysis project will take a lot of work: perhaps double (or more!) the effort. But it will save a ton of time later (if others care about what you did).</p>
 <p>I don&rsquo;t really want to take this time in the midst of a bout of exploratory data analysis. I find it too inhibiting. So I tend to do a bunch of analyses, capturing the main ideas in a draft R script (or reconstructed later from the <code>.Rhistory</code> file), and then go back later to make a clean knitr-based document that explains what I was doing and why.</p>
 <p>It can be hard to force myself to do the clean-up. I wish there were an easier way. But I expect that well-organized lab scientists devote a lot of time to constructing their lab notebooks, too.</p>

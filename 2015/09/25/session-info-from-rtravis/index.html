@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Session info from R/Travis - the stupidest thing...</title>
@@ -91,14 +91,14 @@
 <p>If you don&rsquo;t want to go with a fully custom Travis script, your <a href="https://docs.travis-ci.com/user/customizing-the-build/">customization options</a> are limited. We really only care about the case of a failure, so <code>after_success</code> is not of interest, and <code>after_script</code> seems not to be run if there&rsquo;s a Travis fail. Moreover, <code>script</code> and <code>after_failure</code> are defined by the main <code>language: r</code> script, so you can&rsquo;t change them without going all-custom.</p>
 <p>What&rsquo;s left is <code>before_script</code>.</p>
 <p>I want to see the result of <code>devtools::session_info()</code> with the package of interest loaded, but the package actually gets built <em>after</em> <code>before_script</code> is run, so we&rsquo;ll need to build and install it, even though it&rsquo;ll be built and installed again afterwards. The best I could work out is in <a href="https://github.com/kbroman/testsysfile/blob/master/.travis.yml#L12-L19">this example <code>.travis.yml</code> file</a>, with the key bits being:</p>
-<pre tabindex="0"><code>before_script:
-  - export PKG_NAME=$(Rscript -e &#39;cat(paste0(devtools::as.package(&#34;.&#34;)$package))&#39;)
-  - export PKG_TARBALL=$(Rscript -e &#39;pkg &lt;- devtools::as.package(&#34;.&#34;); cat(paste0(pkg$package,&#34;_&#34;,pkg$version,&#34;.tar.gz&#34;))&#39;)
+<pre><code>before_script:
+  - export PKG_NAME=$(Rscript -e 'cat(paste0(devtools::as.package(&quot;.&quot;)$package))')
+  - export PKG_TARBALL=$(Rscript -e 'pkg &lt;- devtools::as.package(&quot;.&quot;); cat(paste0(pkg$package,&quot;_&quot;,pkg$version,&quot;.tar.gz&quot;))')
   - R CMD build --no-build-vignettes .
   - R CMD INSTALL ${PKG_TARBALL}
   - rm ${PKG_TARBALL}
-  - echo &#34;Session info:&#34;
-  - Rscript -e &#34;library(${PKG_NAME});devtools::session_info(&#39;${PKG_NAME}&#39;)&#34;
+  - echo &quot;Session info:&quot;
+  - Rscript -e &quot;library(${PKG_NAME});devtools::session_info('${PKG_NAME}')&quot;
 </code></pre><p>I use <code>--no-build-vignettes</code> in <code>R CMD build</code> as otherwise the package would be built and installed yet another time. And I remove the <code>.tar.gz</code> file afterwards, to avoid having the later check complain about the extra file.</p>
 <p>Here&rsquo;s an <a href="https://travis-ci.org/kbroman/testsysfile#L850-L864">example of the session info in the Travis log</a>.</p>
 <p>If you have suggests about how to simplify this, I&rsquo;d be happy to hear them. I guess the key would be to have the main Travis script for R revised to report session information.</p>

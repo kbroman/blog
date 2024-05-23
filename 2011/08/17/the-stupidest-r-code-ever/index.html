@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>The stupidest R code ever - the stupidest thing...</title>
@@ -89,23 +89,23 @@
       <p>Let me tell you about my stupidest R mistake.</p>
 <p>In the R package that I write, <a href="https://rqtl.org">R/qtl</a>, one of the main file formats is a comma-delimited file, where the blank cells in the second row are important, as they distinguish the initial phenotype columns from the genetic marker columns.</p>
 <p>I&rsquo;d gotten some reports that if there were <em>many</em> phenotypes, the import of such a file could take an extremely long time. I ignored the problem (as it wasn&rsquo;t a problem for me), but eventually it <em>did</em> become a problem for me, and when I investigated, I found the following code.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e"># determine number of phenotypes based on initial blanks in row 2</span>
-</span></span><span style="display:flex;"><span>n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ncol</span>(data)
-</span></span><span style="display:flex;"><span>temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">FALSE</span>,n)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for</span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
-</span></span><span style="display:flex;"><span>  temp[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">all</span>(data[2,<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>i]<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;&#34;</span>)
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span>temp[i]) break
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">any</span>(temp)) <span style="color:#75715e"># no phenotypes!</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;You must include at least one phenotype (e.g., an index).&#34;</span>)
-</span></span><span style="display:flex;"><span>n.phe <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">max</span>((<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)[temp])
-</span></span></code></pre></div><p>Here <code>data</code> is the input matrix, and I use a <code>for</code> loop over columns, looking for the first cell for which all preceding cells were empty. If you can understand the code above, I&rsquo;m sure you&rsquo;ll agree that it is really stupid. I think the code was in the package for at least five years, possibly even eight.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># determine number of phenotypes based on initial blanks in row 2</span>
+n <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ncol</span>(data)
+temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rep</span>(<span style="color:#66d9ef">FALSE</span>,n)
+<span style="color:#a6e22e">for</span>(i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n) {
+  temp[i] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">all</span>(data[2,<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>i]<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;&#34;</span>)
+  <span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span>temp[i]) break
+}
+<span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">any</span>(temp)) <span style="color:#75715e"># no phenotypes!</span>
+  <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;You must include at least one phenotype (e.g., an index).&#34;</span>)
+n.phe <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">max</span>((<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>n)[temp])
+</code></pre></div><p>Here <code>data</code> is the input matrix, and I use a <code>for</code> loop over columns, looking for the first cell for which all preceding cells were empty. If you can understand the code above, I&rsquo;m sure you&rsquo;ll agree that it is really stupid. I think the code was in the package for at least five years, possibly even eight.</p>
 <p>For a file with 200 individuals and 1500 phenotypes, it would take about 60 seconds to load; after the fix (below), it took about 2 seconds. I spent 58 seconds looking for the first non-blank cell in the second row!</p>
 <p>In April, 2009, I fixed it (see the <a href="https://github.com/kbroman/qtl/commit/4cd486">commit</a> at the <a href="https://github.com/kbroman/qtl">github repository</a>) by replacing the above with the following.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">if</span>(data[2,<span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span>)
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;You must include at least one phenotype (e.g., an index).&#34;</span>)
-</span></span><span style="display:flex;"><span>n.phe <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">which</span>(data[2,] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span>))<span style="color:#ae81ff">-1</span>
-</span></span></code></pre></div><p>If you don&rsquo;t quite understand what I&rsquo;m talking about, here&rsquo;s a picture of one of these comma-delimited files; this one has three phenotypes.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">if</span>(data[2,<span style="color:#ae81ff">1</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+  <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;You must include at least one phenotype (e.g., an index).&#34;</span>)
+n.phe <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">which</span>(data[2,] <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span>))<span style="color:#ae81ff">-1</span>
+</code></pre></div><p>If you don&rsquo;t quite understand what I&rsquo;m talking about, here&rsquo;s a picture of one of these comma-delimited files; this one has three phenotypes.
 <img src="https://kbroman.files.wordpress.com/2011/08/examplecsv.png" alt=""></p>
 <p>Open source means everyone can see my stupid mistakes.  Version control means everyone can see every stupid mistake I&rsquo;ve ever made.</p>
 

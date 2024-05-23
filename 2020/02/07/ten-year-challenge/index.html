@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>ten year reproducibility challenge - the stupidest thing...</title>
@@ -131,7 +131,7 @@ and
 <a href="https://github.com/kbroman/Project_Lamichhane2003/blob/master/LICENSE.md">License</a>
 files. Yes, that&rsquo;s right, the directory didn&rsquo;t contain a <em>single</em>
 ReadMe file. It&rsquo;s a bit of a mess.</p>
-<pre tabindex="0"><code>class_problems.txt    findTA.pl*    Randomness/
+<pre><code>class_problems.txt    findTA.pl*    Randomness/
 Converge/             mindGaps.pl*  Rawdata/
 crucial_doubleTA.txt  Nov02/        Sept02/
 Data/                 Operons/      Sims/
@@ -242,9 +242,9 @@ the analyses in the paper.</p>
 <p>I&rsquo;ve also not looked at much of <a href="https://github.com/kbroman/Paper_ReScience2020/blob/master/original/Sept02/R/analysis.R">the code itself</a>. And given the state
 of the project directory, I think I&rsquo;m not quite ready to. I
 mean, if you open up a script and you see <a href="https://github.com/kbroman/Paper_ReScience2020/blob/master/original/Nov02/R/analysis.R#L5-L6">this</a>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">negenes</span>(mydata[,<span style="color:#ae81ff">1</span>], mydata[,<span style="color:#ae81ff">2</span>], mydata[,<span style="color:#ae81ff">3</span>], mydata[,<span style="color:#ae81ff">4</span>],
-</span></span><span style="display:flex;"><span>                n.mcmc<span style="color:#f92672">=</span><span style="color:#ae81ff">50000</span>, skip<span style="color:#f92672">=</span><span style="color:#ae81ff">49</span>, return<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>, trace<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
-</span></span></code></pre></div><p>And there&rsquo;s no mention of where the <code>mydata</code> object was created or
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">temp <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">negenes</span>(mydata[,<span style="color:#ae81ff">1</span>], mydata[,<span style="color:#ae81ff">2</span>], mydata[,<span style="color:#ae81ff">3</span>], mydata[,<span style="color:#ae81ff">4</span>],
+                n.mcmc<span style="color:#f92672">=</span><span style="color:#ae81ff">50000</span>, skip<span style="color:#f92672">=</span><span style="color:#ae81ff">49</span>, return<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>, trace<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+</code></pre></div><p>And there&rsquo;s no mention of where the <code>mydata</code> object was created or
 what it even is, really. Well let&rsquo;s just leave that for another day.</p>
 
     </div>

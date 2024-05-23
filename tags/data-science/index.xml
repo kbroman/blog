@@ -15,7 +15,7 @@
       
       <guid>/2019/08/15/data-analysis-principles/</guid>
       <description>I was looking through some of my old notes and came across this list of &amp;ldquo;data analysis principles&amp;rdquo;.
-answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
+ answer the question understand where the data came from make a graph does the result make sense? if it seems too good to be true, it probably is form a diagnostic checklist: think of ways things could go wrong and how they might be revealed follow up on all aberrations every estimate needs an SE consider taking logs consider taking differences use common axis scales avoid normality assumptions remember Simpson&amp;rsquo;s paradox  I also found this list of &amp;ldquo;key statistics concepts&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@ answer the question understand where the data came from make a graph does the re
       <guid>/2016/04/08/i-am-a-data-scientist/</guid>
       <description>Three years ago this week, I wrote a blog post, &amp;ldquo;Data science is statistics&amp;rdquo;. I was fiercely against the term at that time, as I felt that we already had a data science, and it was called Statistics.
 It was a short post, so I might as well quote the whole thing:
-When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
+ When physicists do mathematics, they don&amp;rsquo;t say they&amp;rsquo;re doing &amp;ldquo;number science&amp;rdquo;. They&amp;rsquo;re doing math.
 If you&amp;rsquo;re analyzing data, you&amp;rsquo;re doing statistics.</description>
     </item>
     
@@ -47,7 +47,7 @@ So, I spent some time today writing another of my minimal tutorials, on initial 
       <pubDate>Thu, 01 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/05/01/reform-academic-statistics/</guid>
-      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&amp;rsquo; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
+      <description>Terry Speed recently gave a talk on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the video or just look at the slides). He points to the history of statisticians&#39; discussions of massive data sets (e.g., the Proceedings of a 1998 NRC workshop on Massive data sets) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over Simply Statistics posts, I&amp;rsquo;ve decided that Rafael Irizarry and Jeff Leek have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.</description>
     </item>
     

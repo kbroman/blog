@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>deeply nested functions - the stupidest thing...</title>
@@ -95,19 +95,19 @@ deeply nested functions, our
 developed at the <a href="https://ropensci.org">ROpenSci</a> <a href="http://unconf17.ropensci.org">2017
 Unconference</a>) has <a href="https://github.com/kbroman/miner/blob/master/R/chat.R#L33-L41">a good
 one</a>:</p>
-<pre tabindex="0"><code class="language-{r," data-lang="{r,">setNames(data.frame(
+<pre><code class="language-{r," data-lang="{r,">setNames(data.frame(
     do.call(rbind,
             sapply(
-                X = sub(&#34;,&#34;, &#34;|&#34;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE),
+                X = sub(&quot;,&quot;, &quot;|&quot;, strsplit(string, '|', fixed = TRUE)[[1]], fixed=TRUE),
                 FUN = strsplit,
-                split = &#39;|&#39;, fixed=TRUE,
+                split = '|', fixed=TRUE,
                 USE.NAMES = FALSE)),
     stringsAsFactors=FALSE),
     colnames)
 </code></pre><p>This turns a character string like <code>&quot;121,hello everyone|4734,R mc_plot()&quot;</code>
 into a data frame like</p>
-<pre tabindex="0"><code class="language-{r" data-lang="{r">string &lt;- &#34;121,hello everyone|4734,R mc_plot()&#34;
-colnames &lt;- c(&#34;player&#34;, &#34;message&#34;)
+<pre><code class="language-{r" data-lang="{r">string &lt;- &quot;121,hello everyone|4734,R mc_plot()&quot;
+colnames &lt;- c(&quot;player&quot;, &quot;message&quot;)
 
 &lt;&lt;nested_func&gt;&gt;
 </code></pre><p>That&rsquo;s six functions deep:

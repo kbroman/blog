@@ -17,8 +17,7 @@
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
-TravisCI for not handling system.file() properly.
-R-devel for having broken system.</description>
+  TravisCI for not handling system.file() properly.</description>
     </item>
     
   </channel>

@@ -54,7 +54,7 @@ I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&a
       
       <guid>/2017/05/30/deeply-nested-functions/</guid>
       <description>If, in teaching folks about the magrittr pipe operator, %&amp;gt;%, you&amp;rsquo;re looking for an in-the-wild example of deeply nested functions, our miner package (for connecting R to Minecraft, developed at the ROpenSci 2017 Unconference) has a good one:
-setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;#34;,&amp;#34;, &amp;#34;|&amp;#34;, strsplit(string, &amp;#39;|&amp;#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &amp;#39;|&amp;#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
+setNames(data.frame( do.call(rbind, sapply( X = sub(&amp;quot;,&amp;quot;, &amp;quot;|&amp;quot;, strsplit(string, &#39;|&#39;, fixed = TRUE)[[1]], fixed=TRUE), FUN = strsplit, split = &#39;|&#39;, fixed=TRUE, USE.NAMES = FALSE)), stringsAsFactors=FALSE), colnames) This turns a character string like &amp;quot;121,hello everyone|4734,R mc_plot()&amp;quot; into a data frame like</description>
     </item>
     
     <item>
@@ -160,8 +160,7 @@ In addition, it&amp;rsquo;d be useful to have session information (R and package
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
-TravisCI for not handling system.file() properly.
-R-devel for having broken system.</description>
+  TravisCI for not handling system.file() properly.</description>
     </item>
     
     <item>
@@ -173,7 +172,7 @@ R-devel for having broken system.</description>
       <description>@wrathematics pointed me to his ngram R package for constructing and simulating from n-grams from text.
 I&amp;rsquo;d recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 Here&amp;rsquo;s the code I used to grab the text.
-library(XML) stem &amp;lt;- &amp;#34;http://www.5novels.com/classics/u5688&amp;#34; hobbit &amp;lt;- NULL for(i in 1:74) { cat(i,&amp;#34;\n&amp;#34;) if(i==1) { url &amp;lt;- paste0(stem, &amp;#34;.html&amp;#34;) } else { url &amp;lt;- paste0(stem, &amp;#34;_&amp;#34;, i, &amp;#34;.</description>
+library(XML) stem &amp;lt;- &amp;quot;http://www.5novels.com/classics/u5688&amp;quot; hobbit &amp;lt;- NULL for(i in 1:74) { cat(i,&amp;quot;\n&amp;quot;) if(i==1) { url &amp;lt;- paste0(stem, &amp;quot;.html&amp;quot;) } else { url &amp;lt;- paste0(stem, &amp;quot;_&amp;quot;, i, &amp;quot;.</description>
     </item>
     
     <item>
@@ -207,7 +206,7 @@ It&amp;rsquo;s relatively easy to get notified of errors. At the top of your scr
       <description>You just sent a long R job running. How to know when it&amp;rsquo;s done? Have it notify you by beeping, sending you a text, or sending you a notification via pushbullet.
 beepr You can use Rasmus Baath&amp;rsquo;s beepr package to have your computer play a sound.
 Install it from CRAN with
-install.packages(&amp;#34;beepr&amp;#34;) Then, at the bottom of your script, load the package and have it beep.
+install.packages(&amp;quot;beepr&amp;quot;) Then, at the bottom of your script, load the package and have it beep.
 library(beepr) beep() beepr comes with a bunch of different sounds (e.</description>
     </item>
     
@@ -281,7 +280,7 @@ x &amp;lt;- rnorm(2500) sapply(1:1000, function(a) quantile(sample(x, replace=TR
       <guid>/2014/05/09/further-points-on-crayon-colors/</guid>
       <description>I saw this great post on crayola crayon colors at the Learning R blog, reproducing a nice graph of the Crayola crayon colors over time. (Also see this even nicer version.)
 The Learning R post shows how to grab the crayon colors from the wikipedia page, &amp;ldquo;List of Crayola crayon colors,&amp;rdquo; directly in R. Here&amp;rsquo;s the code (after some slight modifications due to changes in the page since 2010):
-library(XML) theurl &amp;lt;- &amp;#34;https://en.</description>
+library(XML) theurl &amp;lt;- &amp;quot;https://en.</description>
     </item>
     
     <item>
@@ -291,7 +290,7 @@ library(XML) theurl &amp;lt;- &amp;#34;https://en.</description>
       
       <guid>/2014/05/08/two-more-points-about-crayon-colors/</guid>
       <description>If you want to use crayon colors in R but you don&amp;rsquo;t want to rely on my R/broman package, you can just grab the code. Copy the relevant lines from the R/brocolors.R file:
-crayons = c(&amp;#34;Almond&amp;#34;=&amp;#34;#efdecd&amp;#34;, &amp;#34;Antique Brass&amp;#34;=&amp;#34;#cd9575&amp;#34;, &amp;#34;Apricot&amp;#34;=&amp;#34;#fdd9b5&amp;#34;, ... &amp;#34;Yellow Green&amp;#34;=&amp;#34;#c5e384&amp;#34;, &amp;#34;Yellow Orange&amp;#34;=&amp;#34;#ffb653&amp;#34;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
+crayons = c(&amp;quot;Almond&amp;quot;=&amp;quot;#efdecd&amp;quot;, &amp;quot;Antique Brass&amp;quot;=&amp;quot;#cd9575&amp;quot;, &amp;quot;Apricot&amp;quot;=&amp;quot;#fdd9b5&amp;quot;, ... &amp;quot;Yellow Green&amp;quot;=&amp;quot;#c5e384&amp;quot;, &amp;quot;Yellow Orange&amp;quot;=&amp;quot;#ffb653&amp;quot;) I spent a bit of time thinking about how best to sort the colors in a meaningful way, for the plot_crayons() function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering.</description>
     </item>
     
     <item>
@@ -312,8 +311,8 @@ That led me to the list of Crayola crayon colors on wikipedia. I wrote a ruby sc
       
       <guid>/2014/04/29/with-the-apply-functions-revisited/</guid>
       <description>I&amp;rsquo;d mentioned in the fall that one could use &amp;quot;[&amp;quot; in the apply-type functions, like this:
-id &amp;lt;- c(&amp;#34;ZYY-43S-CWA3&amp;#34;, &amp;#34;6YU-F4B-VD2I&amp;#34;) sapply(strsplit(id, &amp;#34;-&amp;#34;), &amp;#34;[&amp;#34;, 2) I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
-z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;#34;[&amp;#34;, 1, ) lapply(z, &amp;#34;[&amp;#34;, , 3) As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
+id &amp;lt;- c(&amp;quot;ZYY-43S-CWA3&amp;quot;, &amp;quot;6YU-F4B-VD2I&amp;quot;) sapply(strsplit(id, &amp;quot;-&amp;quot;), &amp;quot;[&amp;quot;, 2) I just realized that you can use this with matrices, too. If you have a list of matrices, you can pull out rows and columns with this technique.
+z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;quot;[&amp;quot;, 1, ) lapply(z, &amp;quot;[&amp;quot;, , 3) As you can see, my data isn&amp;rsquo;t &amp;ldquo;tidy.</description>
     </item>
     
     <item>
@@ -324,7 +323,7 @@ z &amp;lt;- list(matrix(1:10, nrow=2), matrix(11:20, nrow=2)) lapply(z, &amp;#34
       <guid>/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
-&amp;mdash; Lynn Root (@roguelynn) February 6, 2014 I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
+&amp;mdash; Lynn Root (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
 Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     

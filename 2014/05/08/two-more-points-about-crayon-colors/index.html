@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <title>Two more points about crayon colors - the stupidest thing...</title>
@@ -87,14 +87,14 @@
 
     <div class="article-content">
       <p>If you want to use <a href="https://kbroman.org/blog/2014/05/07/crayon-colors-in-r/">crayon colors in R</a> but you don&rsquo;t want to rely on my <a href="https://github.com/kbroman/broman">R/broman</a> package, you can just grab the code. Copy the <a href="https://github.com/kbroman/broman/blob/master/R/brocolors.R#L72-L204">relevant lines from the <code>R/brocolors.R</code> file</a>:</p>
-<pre tabindex="0"><code>crayons = c(&#34;Almond&#34;=&#34;#efdecd&#34;,
-            &#34;Antique Brass&#34;=&#34;#cd9575&#34;,
-            &#34;Apricot&#34;=&#34;#fdd9b5&#34;,
+<pre><code>crayons = c(&quot;Almond&quot;=&quot;#efdecd&quot;,
+            &quot;Antique Brass&quot;=&quot;#cd9575&quot;,
+            &quot;Apricot&quot;=&quot;#fdd9b5&quot;,
             ...
-            &#34;Yellow Green&#34;=&#34;#c5e384&#34;,
-            &#34;Yellow Orange&#34;=&#34;#ffb653&#34;)
+            &quot;Yellow Green&quot;=&quot;#c5e384&quot;,
+            &quot;Yellow Orange&quot;=&quot;#ffb653&quot;)
 </code></pre><p>I spent a bit of time thinking about <a href="https://stackoverflow.com/questions/11923659/javascript-sort-rgb-values">how best to sort the colors in a meaningful way</a>, for the <code>plot_crayons()</code> function. But then decided to stop thinking and just do something brainless: measure distance between colors by RMS difference of the RGB values, and then use hierarchical clustering. Here&rsquo;s the code from <a href="https://github.com/kbroman/broman/blob/852b0ebd84c4cfed6f21f3e26635a46a10143757/R/brocolors.R#L234-L238"><code>plot_crayons()</code></a>:</p>
-<pre tabindex="0"><code># get rgb
+<pre><code># get rgb
 colval &lt;- t(col2rgb(crayons))
 
 # hclust to order the colors

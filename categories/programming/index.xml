@@ -116,8 +116,7 @@ In addition, it&amp;rsquo;d be useful to have session information (R and package
       <description>Somehow when my code stops working, my first (and second, and third) reaction is to blame everything except my own code. (“It&amp;rsquo;s not me, it&amp;rsquo;s you.”)
 And almost always, it&amp;rsquo;s my own code that&amp;rsquo;s the problem (hence the title of this post).
 I spent the day trying to resolve a bug in my early-in-development R package, qtl2geno. In the process, I blamed
-TravisCI for not handling system.file() properly.
-R-devel for having broken system.</description>
+  TravisCI for not handling system.file() properly.</description>
     </item>
     
     <item>
@@ -138,11 +137,9 @@ That&amp;rsquo;s led me to spend a good amount of time in the last few years lea
       <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>At the Software Carpentry workshop at UW-Madison in August, 2014, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.
 So at the SWC workshop at Washington State University this week, we handed out the following five pages:
-ddplyr (from RStudio)
-ggplot2 (from RStudio)
-unix command line (from Dave Child at Cheatography)
-git (from GitHub)
-R Markdown (from RStudio)</description>
+  ddplyr (from RStudio)
+  ggplot2 (from RStudio)
+  unix command line (from Dave Child at Cheatography)</description>
     </item>
     
     <item>
@@ -193,7 +190,7 @@ Last night, I wrote a minimal tutorial on how I&amp;rsquo;ve been using this (fo
       <guid>/2014/02/14/googling-errors/</guid>
       <description>@roguelynn tweeted the other day:
 If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.
-&amp;mdash; Lynn Root (@roguelynn) February 6, 2014 I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
+&amp;mdash; Lynn Root (@roguelynn) February 6, 2014  I had just talked about the technique in my Tools for Reproducible Research course, and I had a few recent examples.
 Gtk-WARNING **: cannot open display: I was logged into a department server, trying to clone a private repository from GitHub, and got an error like</description>
     </item>
     
@@ -280,6 +277,7 @@ To help some colleagues get started with git and github, I wrote a minimal tutor
       
       <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>I&amp;rsquo;ve created another D3 example, of QTL analysis for a phenotype measured over time. (Click on the image for the interactive version.)
+
 The code is on github. It took me about a day.
 The hardest part was figuring out the right data structures. A pixel here is linked to curves over there and over there and over there. You need to set things up so it&amp;rsquo;s easy to traverse such linkages.</description>
     </item>
@@ -312,6 +310,7 @@ I gave a talk on interactive graphs (with the title above) at Johns Hopkins last
       
       <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>I just finished an interactive eQTL plot using D3, in preparation for my talk on interactive graphics at the ENAR meeting next week.
+
 The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
 The hardest part was setting up the data files. Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.</description>
     </item>
