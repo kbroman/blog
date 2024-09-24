@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>premature ventricular complexes</title>
+      <link>/2024/09/24/premature-ventricular-complexes/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/2024/09/24/premature-ventricular-complexes/</guid>
+      <description>This is a long story about a personal health issue, but it&amp;rsquo;s also about programming and data analysis.
+PVCs Early last year, a phlebotomist at the Red Cross (where I was donating platelets), when taking my pulse, observed that my heart was doing a bit of tango: beat-beat-pause-beat-beat-pause.
+I had an appointment for a physical the following week, so I asked about it there, and the nurse confirmed the strange pulse rhythm.</description>
+    </item>
+    
     <item>
       <title>we are on our own, COVID-wise</title>
       <link>/2022/09/06/on-our-own/</link>
@@ -301,16 +312,6 @@ But using my package to get the crayon colors can be rather tedious.
 It’s easy to view the available colors.
 library(broman) plot_crayons() But grabbing a color, say “Purple Mountain’s Majesty”, requires rather verbose code.
 brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majesty&amp;quot;] ## Purple Mountain&amp;#39;s Majesty ## &amp;quot;#9d81ba&amp;quot; This morning, it was just too much for me.</description>
-    </item>
-    
-    <item>
-      <title>caching blogdown</title>
-      <link>/2017/05/01/caching-blogdown/</link>
-      <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
-      
-      <guid>/2017/05/01/caching-blogdown/</guid>
-      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
-I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
     </item>
     
   </channel>

@@ -7,7 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android</title>
+      <link>/tags/android/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>health</title>
+      <link>/tags/health/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>/tags/news/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>/tags/statistics/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>covid</title>
       <link>/tags/covid/</link>
@@ -63,15 +117,6 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>code</title>
       <link>/tags/code/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
@@ -86,15 +131,6 @@
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/papers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>/tags/programming/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/programming/</guid>
       <description></description>
     </item>
     
@@ -135,15 +171,6 @@
     </item>
     
     <item>
-      <title>statistics</title>
-      <link>/tags/statistics/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>conference</title>
       <link>/tags/conference/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
@@ -176,15 +203,6 @@
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/mac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>news</title>
-      <link>/tags/news/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/news/</guid>
       <description></description>
     </item>
     
@@ -257,24 +275,6 @@
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
       <guid>/tags/data.table/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RDS</title>
-      <link>/tags/rds/</link>
-      <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
-      
-      <guid>/tags/rds/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>D3</title>
-      <link>/tags/d3/</link>
-      <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
-      
-      <guid>/tags/d3/</guid>
       <description></description>
     </item>
     

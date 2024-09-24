@@ -6,8 +6,305 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>premature ventricular complexes</title>
+      <link>/2024/09/24/premature-ventricular-complexes/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/2024/09/24/premature-ventricular-complexes/</guid>
+      <description>&lt;p&gt;This is a long story about a personal health issue, but it&amp;rsquo;s also
+about programming and data analysis.&lt;/p&gt;
+&lt;h2 id=&#34;pvcs&#34;&gt;PVCs&lt;/h2&gt;
+&lt;p&gt;Early last year, a phlebotomist at the Red Cross (where I was
+donating platelets), when taking my pulse, observed that my heart was
+doing a bit of tango: beat-beat-pause-beat-beat-pause.&lt;/p&gt;
+&lt;p&gt;I had an appointment for a physical the following week, so I asked
+about it there, and the nurse confirmed the strange pulse rhythm.
+The doctor ordered an ECG and a bunch of blood work (which was normal
+except for having low iron, since I&amp;rsquo;d &lt;em&gt;just&lt;/em&gt; donated platelets).&lt;/p&gt;
+&lt;p&gt;While a typical ECG recording is only
+for a few seconds, it did catch the odd pattern, which turned
+out to be &lt;a href=&#34;https://en.wikipedia.org/wiki/Premature_ventricular_contraction&#34;&gt;premature ventricular complexes
+(PVCs)&lt;/a&gt;
+(also known as a premature ventricular &lt;em&gt;contractions&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;Basically, one of the ventricles initiates an extra beat, which happens a bit
+closer to the regular beat and causes a bit of a pause afterwards. And
+the extra ventricle contraction happens before it&amp;rsquo;s been able to fill
+with blood, so it&amp;rsquo;s seen on the ECG but not felt in the pulse.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve had no symptoms at all. Many others who have PVCs notice them
+and may find them disturbing or even painful, but I&amp;rsquo;ve felt nothing.&lt;/p&gt;
+&lt;h2 id=&#34;initial-diagnostics&#34;&gt;Initial diagnostics&lt;/h2&gt;
+&lt;p&gt;So they ordered a 24-hour &lt;a href=&#34;https://en.wikipedia.org/wiki/Holter_monitor&#34;&gt;Holter
+monitor&lt;/a&gt;, a portable ECG
+to determine the frequency of these aberrant beats. The results indicated
+that, of the about 100k beats over the 24 hours, nearly 20% were these
+PVCs.&lt;/p&gt;
+&lt;p&gt;PVCs are pretty normal. The longer you measure someone&amp;rsquo;s heart
+activity, the more likely you&amp;rsquo;ll see a PVC. But typically you&amp;rsquo;ll see
+about 2 PVCs in 24 hours, with the 95th percentile being around
+200 (see &lt;a href=&#34;https://doi.org/10.1161/CIRCULATIONAHA.119.042434&#34;&gt;Marcus
+2020&lt;/a&gt;). Seeing
+more than 1000 PVCs is pretty rare, and seeing &amp;gt;10% is often viewed as a
+problem that should be corrected.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t get to see much of the data (though it was a pretty detailed,
+28-page report), but there was a table with number of beats and PVCs by
+hour, which showed a clear association with heart rate: the frequency
+of PVCs is much higher when my heart rate is elevated (that is, when
+I&amp;rsquo;m exercising). Here&amp;rsquo;s a graph, with each dot being one hour during
+the 24-hour period. When my heart rate was below 80 bpm, the frequency of
+PVCs was around 10%, while when my heart rate was above 80 bpm, the
+frequency of PVCs was around 25%.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/pvc_v_hr_holter.png&#34;&gt;&lt;img src=&#34;./images/pvc_v_hr_holter_small.png&#34; alt=&#34;PVC percent vs heart rate by hour&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;They had also ordered an
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Echocardiography&#34;&gt;echocardiogram&lt;/a&gt;,
+which was scheduled a month later. The echo (ultrasound imaging of the
+heart) seeks to look for general problems with the heart&amp;rsquo;s shape and
+functioning: are things the right size and thickness, are the valves
+working right, is it pushing out the appropriate amount of blood?
+Everything looked normal, except for the frequent PVCs which interfered
+somewhat with the technician&amp;rsquo;s ability to measure the &lt;a href=&#34;https://en.wikipedia.org/wiki/Ejection_fraction&#34;&gt;left ventricular
+ejection fraction
+(LVEF)&lt;/a&gt;, which is a
+key measure of heart function.&lt;/p&gt;
+&lt;h2 id=&#34;home-ecg&#34;&gt;Home ECG&lt;/h2&gt;
+&lt;p&gt;Since I&amp;rsquo;ve had no symptoms, I looked for ways to be able to measure
+the PVCs myself. My apple watch has an ECG function, but it is kind of
+finicky.&lt;/p&gt;
+&lt;p&gt;So I purchased a &lt;a href=&#34;https://store.kardia.com/products/kardiamobile6l&#34;&gt;Kardia 6-lead
+ECG&lt;/a&gt;, which is
+similar to the apple watch in that you have to stop everything and
+measure the ECG, but it is much easier to use and gives more detail,
+so the presence of PVCs are very clear.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a typical image, which shows two normal beats, a PVC, and then
+another normal beat.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/kardia_pvc.png&#34;&gt;&lt;img src=&#34;./images/kardia_pvc_small.png&#34; alt=&#34;Kardia 6-lead ECG trace showing two normal beats, a PVC, and then anormal beat&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Kardia measures 30 seconds at a time, and so
+I spent a some time thinking about study designs to get a good
+understanding of the overall percent PVCs over the course of a day
+when you can see just individual 30 second windows. But I didn&amp;rsquo;t make
+much progress on that question. The Kardia gives good data so you can
+see what&amp;rsquo;s going on in the moment, but it&amp;rsquo;s hard to see how best to
+use it to characterize the overall situation.&lt;/p&gt;
+&lt;p&gt;Use of the Kardia did make clear the association between PVCs and
+exercise, for me. The frequency of PVCs would generally be low when my
+heart rate was low but would increase during exercise when my heart
+rate was elevated.&lt;/p&gt;
+&lt;h2 id=&#34;temporary-cardiologist&#34;&gt;Temporary cardiologist&lt;/h2&gt;
+&lt;p&gt;A full four months after the echocardiogram, I finally got to see a
+cardiologist. But it turned out to be a temporary cardiologist. (I
+asked him how long he&amp;rsquo;d been in Madison, and he said he actually was
+semi-retired and lived in Arizona and was just here to help work
+through the queue at UW Health.) He was very patient and gave good
+explanations. But that was the one and only time I was to see him.&lt;/p&gt;
+&lt;p&gt;He said the key thing was to look for potential heart problems that
+could be the cause of the PVCs. The echocardiogram indicated that
+there was no enlargement nor problems with heart valves or function,
+but he ordered two additional tests: a nuclear stress test (which
+could identify blockages) and a cardiac MRI (which would give a more
+precise view of heart structure and function). But even if they found
+no problems, they would probably want to do something to correct the
+PVCs, either through medication or by an ablation procedure (where
+they thread a device up through a blood vessel from the groin into the
+heart, measure the precise location where the PVCs are being initiated,
+and then burn a tiny bit of tissue at that spot using microwaves).&lt;/p&gt;
+&lt;h2 id=&#34;further-diagnostics&#34;&gt;Further diagnostics&lt;/h2&gt;
+&lt;p&gt;The nuclear stress test was done within a couple of weeks after seeing
+the cardiologist. They do a CT scan, inject you with some nuclear
+tracing substance, make you run on a treadmill, and then do the
+CT scan again. As I understand it, they&amp;rsquo;re looking for blood vessels
+that are not getting the tracer, which would indicate a blockage. But
+it all looked perfectly fine, other than the very high rate of PVCs when
+exercising.&lt;/p&gt;
+&lt;p&gt;The cardiac MRI was scheduled for three months later. But then I
+caught COVID (my first COVID infection) and so it had to be postponed
+a couple of more months. The cardiac MRI had some difficulties because
+of the frequent PVCs, but indicated possible reduced function of the
+left ventricle. (The echocardiogram measured the left ventricle
+ejection fraction, LVEF, to be 60%. The cardiac MRI measured the LVEF
+to be 47%. Normal LVEF should be around 50-75%.) The possibly reduced
+heart function got me an appointment with another cardiologist right
+away.&lt;/p&gt;
+&lt;h2 id=&#34;new-medication&#34;&gt;New medication&lt;/h2&gt;
+&lt;p&gt;The meeting with this cardiologist was brief. His first suggestion was
+that I be scheduled to see an electrophysiologist. (It turns out that
+there are two kinds of cardiologists: plumbers and electricians. I&amp;rsquo;d
+seen two plumbers, but I really need an electrician.) But that,
+of course, would mean another four month delay.&lt;/p&gt;
+&lt;p&gt;The second suggestion was to change my medication.
+I&amp;rsquo;ve been taking the beta blocker atenolol for a number of years, to
+control blood pressure. It is also supposed to have some effect of
+reducing arrhythmias, but he recommended switching to a more modern
+beta blocker, metoprolol.&lt;/p&gt;
+&lt;p&gt;The new medication had no side effects, but my blood pressure clearly
+increased, and so they increased the dosage and then increased it
+again. At that point my blood pressure was back under control, but
+I saw no effect on the PVCs.&lt;/p&gt;
+&lt;p&gt;I was trying to use the Kardia device to
+measure possible changes, but it was tricky, since I could just see
+30-second windows. Here is a plot of percent PVC vs heart rate
+with the two different medications, which shows the relationship
+between PVCs and heart rate, but no obvious effect of medication. Each
+dot corresponds to a 30-second window.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/pvc_v_hr_meds.png&#34;&gt;&lt;img src=&#34;./images/pvc_v_hr_meds_small.png&#34; alt=&#34;PVC percent vs heart rate before and after change in medication&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The doctor ordered another 24-hour Holter monitor, but it could not be
+scheduled for &amp;gt;6 weeks.&lt;/p&gt;
+&lt;h2 id=&#34;polar-h10&#34;&gt;Polar H10&lt;/h2&gt;
+&lt;p&gt;At this point I was quite frustrated with the waiting. It had been
+more than a year since the PVCs had been identified, and now I was to
+wait all summer, to get the official PVC measurements
+and then to finally see an electrophysiologist. In the meantime, I
+wanted to find a better way to get continuous data on my PVCs.&lt;/p&gt;
+&lt;p&gt;After searching for options on the web, I decided to try a &lt;a href=&#34;https://www.polar.com/us-en/sensors/h10-heart-rate-sensor&#34;&gt;Polar H10
+chest-strap heart-rate
+sensor&lt;/a&gt;. It
+costs about $100 and is basically a single-lead ECG with bluetooth.
+And Polar provides a &lt;a href=&#34;https://github.com/polarofficial/polar-ble-sdk&#34;&gt;software development kit
+(SDK)&lt;/a&gt; for iPhones and
+Android.&lt;/p&gt;
+&lt;p&gt;There are probably many iPhone apps for the Polar H10, and I picked
+basically the first one I found, &lt;a href=&#34;https://www.ecglogger.com/&#34;&gt;ECG
+Logger&lt;/a&gt;, and paid $7 to enable its data
+download capability, which made it very easy to save data in CSV
+files, each containing a one-hour block of time.&lt;/p&gt;
+&lt;p&gt;And then I immediately started on an R package,
+&lt;a href=&#34;https://github.com/kbroman/detectPVC/&#34;&gt;detectPVC&lt;/a&gt;, to analyze and
+graph the data. The main challenges were to identify the peaks, to
+identify and omit messy intervals from the data, and then to classify
+the peaks as normal beats vs PVCs. Here&amp;rsquo;s a stretch of 2 minutes of
+data, with the peaks labeled with dots (blue is a normal peak and pink
+is a PVC). This is a long stretch of &lt;em&gt;trigeminy&lt;/em&gt;, where every third
+beat is a PVC, which is a very common pattern for me.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/trigeminy.png&#34;&gt;&lt;img src=&#34;./images/trigeminy_small.png&#34; alt=&#34;2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For the peak finding, I used a function in the R package
+&lt;a href=&#34;https://cran.r-project.org/package=rsleep&#34;&gt;rsleep&lt;/a&gt;. (That package has
+since been removed from CRAN, but it was released under the &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT
+license&lt;/a&gt;, so I just grabbed
+the code for the one function I was using.) To identify messy
+intervals, I basically look for signal being &amp;gt; 2 in absolute value or
+having excessive missing data.&lt;/p&gt;
+&lt;p&gt;To classify the peaks as normal beats vs PVCs, I calculated various
+statistics on each peak: relative position between previous and
+following peaks (usually much closer to previous peak), the height of
+the peak (tend to be higher), and how quickly it goes from local
+maximum to the next local minimum (tends to be sooner). I ended up
+just going with the last of these. I could do more to compare the
+shape of the peaks, normal vs PVC, but this simple statistic seemed to
+work sufficiently well for my purposes.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s not super comfortable to wear the chest strap constantly, but I
+did try wearing it for 24 hours, and then wore it every other day for
+a couple of weeks. Here&amp;rsquo;s a plot of the running average of PVC
+percentage over time on nine different days. Note that the last six
+days are basically 6am to the following day at 6am, while the times
+for the first three days are a bit different.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/pvcs_many_days.png&#34;&gt;&lt;img src=&#34;./images/pvcs_many_days_small.png&#34; alt=&#34;2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A main feature is the observation I&amp;rsquo;d had previously: PVCs increase
+when I&amp;rsquo;m exercising and go back down when I&amp;rsquo;m resting (including at
+night). But there is a lot of day-to-day variation, with the overall
+percent PVCs being as low as 12% or as high as 28%. Much of this is
+just an indicator of how much I had been exercising, but there were
+also days (for example, 2024-05-05) where there was a sustained high
+rate of PVCs.&lt;/p&gt;
+&lt;p&gt;I presented some of this data to the cardiologist, basically saying
+&amp;ldquo;With this device I can measure the rate of PVCs, and sometimes it&amp;rsquo;s
+really high. Can we try a different medication?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;He was not at all interested, and said to just wait until we got the
+Holter monitor, and until I could see the electrophysiologist.&lt;/p&gt;
+&lt;h2 id=&#34;android-app&#34;&gt;Android app&lt;/h2&gt;
+&lt;p&gt;The cardiologist wasn&amp;rsquo;t interested, but I had become super interested.
+And I really wanted to have a way to look at the PVC percentage in
+real time. So I started to look at what it would take to make my own
+app, or to modify someone else&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;I decided to focus on Android apps, because it seemed much more likely
+that I would find open source software that I could learn from and
+build on. So I got myself a Samsung Galaxy phone, got some books on
+Android app development, and looked for suitable apps on GitHub.
+Writing an Android app involves Java (or
+&lt;a href=&#34;https://kotlinlang.org/&#34;&gt;Kotlin&lt;/a&gt;, which is sort of &amp;ldquo;Java improved&amp;rdquo;)
+and XML, two of my least favorite things, but so be it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://kenevans.net&#34;&gt;Kenneth Evans&lt;/a&gt; has an Android app on GitHub,
+&lt;a href=&#34;https://github.com/KennethEvans/KE.Net-ECG&#34;&gt;KE.Net ECG&lt;/a&gt;, that is
+released under the MIT license and includes both a plot of the ECG
+trace as well as a peak-finding algorithm and a plot of heart rate
+over time. (The plots are made using the &lt;a href=&#34;https://github.com/halfhp/androidplot&#34;&gt;Android Plot
+library&lt;/a&gt;.) That looked
+perfect for my purposes, and so I &lt;a href=&#34;https://github.com/kbroman/AndroidPolarPVC/tree/add_pvc&#34;&gt;forked his
+code&lt;/a&gt;, and with
+just a day&amp;rsquo;s work I was able to add a bit of code to classify peaks as
+normal or PVCs and add a read-out of PVC percentage (based on the last
+100 peaks):&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/android_app.jpg&#34;&gt;&lt;img src=&#34;./images/android_app_small.jpg&#34; alt=&#34;screen shot of modified android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to further modify the app to add a plot of the PVC percentage
+over time, but digging into the code, it became clear that we was
+using an older version of the &lt;a href=&#34;https://github.com/polarofficial/polar-ble-sdk&#34;&gt;Polar
+SDK&lt;/a&gt;, and so I decided
+to throw it all out and start over, but then I found that I
+really didn&amp;rsquo;t understand what I was doing (or what he was doing in his
+app), and so I started over, but using a bunch of his code and
+following his basic design. The revised app,
+&lt;a href=&#34;https://github.com/kbroman/AndroidPolarPVC2&#34;&gt;AndroidPolarPVC2&lt;/a&gt;, shows
+the ECG trace with peaks annotated as normal or PVC, as well as a plot
+of the PVC percentage and heart rate over time. It can also dump the
+ECG data to files, in one hour blocks.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/android_app_rev.jpg&#34;&gt;&lt;img src=&#34;./images/android_app_rev_small.jpg&#34; alt=&#34;screen shot of further improved android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The result is exactly what I wanted, though its not nearly as robust
+as the &lt;a href=&#34;https://www.ecglogger.com/&#34;&gt;ECG Logger&lt;/a&gt; iPhone app that I had
+been using. In particular, it locks up after 90 minutes. I&amp;rsquo;m not sure
+why that happens, and it means I can&amp;rsquo;t use it to dump 24 hours worth
+of data, as I&amp;rsquo;d been doing with the iPhone app. But for
+monitoring my PVCs during the day, it works great; I just need to
+re-start it every 90 minutes.&lt;/p&gt;
+&lt;h2 id=&#34;pvc-ablation&#34;&gt;PVC ablation&lt;/h2&gt;
+&lt;p&gt;When I finally met with the electrophysiologist, I wore the chest
+strap and brought the Android phone with the app running. I also
+brought a few charts to show some of the things I&amp;rsquo;d observed. But he
+showed little interest. He mentioned that there had been attempts
+to commercialize similar devices but without success, due to
+individual differences in the nature of the PVCs: the classification
+of ECG peaks as normal vs PVC would need to be redone for each
+patient.&lt;/p&gt;
+&lt;p&gt;Still, my &lt;a href=&#34;https://github.com/kbroman/detectPVC&#34;&gt;R
+package&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/AndroidPolarPVC2&#34;&gt;Android
+app&lt;/a&gt; work well for me and
+could be useful starting points for others.&lt;/p&gt;
+&lt;p&gt;Anyway, the electrophysiologist talked about possible medications to
+reduce the PVCs, but recommended &lt;a href=&#34;https://en.wikipedia.org/wiki/Catheter_ablation&#34;&gt;catheter
+ablation&lt;/a&gt;: they
+thread a device up through a blood vessel from the groin into the
+heart, and then burn a tiny bit of tissue where the PVCs are being
+initiated. The &lt;a href=&#34;https://doi.org/10.3390%2Fjcm11216583&#34;&gt;success rate is
+high&lt;/a&gt;, but there is also
+risk of complications (for example, &lt;a href=&#34;https://doi.org/10.1186/s12872-018-0913-2&#34;&gt;Wang et al.
+2018&lt;/a&gt; reported 2 deaths in
+1231 patients). I decided to go ahead with it, and have an appointment
+for the procedure in two weeks time.&lt;/p&gt;
+&lt;h2 id=&#34;when-did-this-start&#34;&gt;When did this start?&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s not really clear what causes PVCs. And it wasn&amp;rsquo;t really clear how
+long it&amp;rsquo;s been happening with me. It does appear that the COVID-19
+pandemic has led to an increase in cardiac arrhythmias including PVCs
+(for example, see &lt;a href=&#34;https://doi.org/10.1016/j.tcm.2020.08.002&#34;&gt;Manolis et al.
+2020&lt;/a&gt;). But when my PVCs
+were first identified (in April 2023) I hadn&amp;rsquo;t yet had COVID, and I
+was testing regularly. (I&amp;rsquo;ve had it twice since, despite continuing to
+be very cautious to avoid exposure.)&lt;/p&gt;
+&lt;p&gt;Recently I had a colonoscopy, in which they monitored my heart with a
+6-lead ECG. The ECG was beeping the whole time due to the high
+frequency of PVCs. (The nurse quickly turned off the alarm, because it
+was annoying.) I&amp;rsquo;d had a colonoscopy at the same clinic in March,
+2021, and there had been no noticeable PVCs at that time, so it seems
+likely that my PVCs have started since then. But still, it&amp;rsquo;s not
+clear why. Maybe it was due to a COVID infection that I never noticed.&lt;/p&gt;
+&lt;p&gt;I was hoping that by being able to monitor my PVCs, I might learn more
+about what&amp;rsquo;s causing them, but I&amp;rsquo;ve really haven&amp;rsquo;t. I tried cutting
+back on caffeine: I now drink exactly one cup of coffee a day, rather
+than 3+, but it&amp;rsquo;s had no effect. Hopefully the ablation procedure is
+successful. I do now have the means to monitor the change in PVCs. A
+month from now, I&amp;rsquo;ll put on the chest strap and do a dozen squat
+jumps, and we&amp;rsquo;ll see how my heart responds.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>we are on our own, COVID-wise</title>
