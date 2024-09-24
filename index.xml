@@ -237,7 +237,7 @@ normal or PVCs and add a read-out of PVC percentage (based on the last
 100 peaks):&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;./images/android_app.jpg&#34;&gt;&lt;img src=&#34;./images/android_app_small.jpg&#34; alt=&#34;screen shot of modified android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I wanted to further modify the app to add a plot of the PVC percentage
-over time, but digging into the code, it became clear that we was
+over time, but digging into the code, it became clear that he was
 using an older version of the &lt;a href=&#34;https://github.com/polarofficial/polar-ble-sdk&#34;&gt;Polar
 SDK&lt;/a&gt;, and so I decided
 to throw it all out and start over, but then I found that I
