@@ -7,20 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>android</title>
-      <link>/tags/android/</link>
-      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <title>covid-19</title>
+      <link>/tags/covid-19/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>/tags/android/</guid>
+      <guid>/tags/covid-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>health</title>
       <link>/tags/health/</link>
-      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/health/</guid>
       <description></description>
@@ -29,9 +29,18 @@
     <item>
       <title>news</title>
       <link>/tags/news/</link>
-      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>/tags/android/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/android/</guid>
       <description></description>
     </item>
     
@@ -266,15 +275,6 @@
       <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
       
       <guid>/tags/big-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data.table</title>
-      <link>/tags/data.table/</link>
-      <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
-      
-      <guid>/tags/data.table/</guid>
       <description></description>
     </item>
     
