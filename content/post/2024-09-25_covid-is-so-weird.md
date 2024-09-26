@@ -12,7 +12,7 @@ having symptoms for 14 days and continuing to test positive on at-home
 rapid-tests for 18 days. I was testing daily at that point, and didn't
 exit isolation until day 21, after 3 days of negative tests. I think I
 caught the infection early, and I started on Paxlovid immediately, and
-sort of wonder whether the Paxlovid contributed to the invection
+sort of wonder whether the Paxlovid contributed to the infection
 having lasted so long.
 
 A week ago Monday, I came home from teaching and felt I had a bit of a
