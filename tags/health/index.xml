@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>classifying pvc states</title>
+      <link>/2024/09/28/pvc-states/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/2024/09/28/pvc-states/</guid>
+      <description>Following up on my post about my heart arrhythmia, and my post about my current covid infection too: yesterday I was wearing my Polar H10 chest strap and watching my PVCs on my Android app, and I noticed very frequent PVCs. My heart seemed to be alternately between bigeminy (every other beat a PVC) and trigeminy (every third beat a PVC). I was also feeling particularly crappy from the covid.</description>
+    </item>
+    
     <item>
       <title>covid is so weird</title>
       <link>/2024/09/25/covid-is-so-weird/</link>

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>classifying pvc states</title>
+      <link>/2024/09/28/pvc-states/</link>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/2024/09/28/pvc-states/</guid>
+      <description>Following up on my post about my heart arrhythmia, and my post about my current covid infection too: yesterday I was wearing my Polar H10 chest strap and watching my PVCs on my Android app, and I noticed very frequent PVCs. My heart seemed to be alternately between bigeminy (every other beat a PVC) and trigeminy (every third beat a PVC). I was also feeling particularly crappy from the covid.</description>
+    </item>
+    
     <item>
       <title>covid is so weird</title>
       <link>/2024/09/25/covid-is-so-weird/</link>
@@ -296,17 +305,6 @@ I was chatting with Śaunak Sen about preparations: the main problem is installa
       <guid>/2017/05/11/reading/writing-biggish-data-revisited/</guid>
       <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
 I’ll first generate the same data that I was using before.</description>
-    </item>
-    
-    <item>
-      <title>updating d3panels and R/qtlcharts for D3 version 4</title>
-      <link>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</link>
-      <pubDate>Thu, 11 May 2017 16:22:00 -0500</pubDate>
-      
-      <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
-      <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
-(Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
-I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
     </item>
     
   </channel>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.80.0" />
+
+
+<title>classifying pvc states - the stupidest thing...</title>
+<meta property="og:title" content="classifying pvc states - the stupidest thing...">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://kbroman.org/blog/about">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://fosstodon.org/@kbroman">
+            <img alt="mastodon" src="../../../../images/mastodon_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">classifying pvc states</h1>
+
+    
+    <span class="article-date">2024-09-28</span>
+    
+
+    <div class="article-content">
+      <p>Following up on my <a href="../../../../2024/09/24/premature-ventricular-complexes/">post about my heart arrhythmia</a>,
+and my <a href="../../../../2024/09/25/covid-is-so-weird/">post about my current covid infection</a> too: yesterday
+I was wearing my <a href="https://www.polar.com/us-en/sensors/h10-heart-rate-sensor">Polar H10 chest strap</a> and watching my PVCs on my
+<a href="https://github.com/kbroman/AndroidPolarPVC2">Android app</a>, and I noticed <em>very</em> frequent PVCs. My heart seemed to be
+alternately between bigeminy (every other beat a PVC) and trigeminy
+(every third beat a PVC). I was also feeling particularly crappy from
+the covid.</p>
+<p>Here&rsquo;s a two minute example of what my heart was doing, with PVCs marked
+pink and normal beats marked blue. This has a stretch of trigeminy, a
+bit of bigeminy, and then back to trigeminy.</p>
+<p><a href="../../../../images/bi_tri_geminy_2024-09-27.png"><img src="../../../../images/bi_tri_geminy_2024-09-27_small.png" alt="ECG data showing stretches of trigeminy and bigeminy"></a></p>
+<p>Today I&rsquo;m feeling better, and so I thought I&rsquo;d take the ECG data from
+yesterday and identify stretches of bigeminy, trigeminy, or normal
+(&ldquo;sinus rhythm&rdquo;, with no PVCs).
+I had data just from about 11:45am to 8:30pm, and I compared it
+to some data from back in May, where I had data from 6am to the
+following 6am.</p>
+<p>What I do is turn the heart beats into a string of characters N or P
+(or O for omitted), and then look for stretches of beats that fit a
+particular pattern. I used a minimum length of 18 beats, either
+repeated N, or repeated NP, or repeated NNP.</p>
+<p>In the following plot, blue is normal sinus rhythm, orange is bigeminy, and green is
+trigeminy. Purple is omitted data, and white is some other state
+(except on 2024-09-27 in the lower right, where the patches of white at
+the top and bottom are missing data).</p>
+<p><a href="../../../../images/states_mult_days.png"><img src="../../../../images/states_mult_days_small.png" alt="Four days of data on PVC state over time"></a></p>
+<p>Wow, each day is really different.</p>
+<p>Yesterday (lower-right) I did have a lot of bigeminy (in orange),
+alternately with trigeminy. I was I&rsquo;d measured the full 24 hours.</p>
+<p>The first day here, 2024-05-08 (upper left), has a lot of normal
+rhythm, but a big chunk of trigeminy. The next day, 2024-05-10 (upper
+right), is almost entirely trigeminy. third day, 2024-05-12 (lower
+left), is more like the first day, though with a lot of trigeminy in
+the times that were previously sinus rhythm.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+
