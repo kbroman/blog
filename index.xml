@@ -39,7 +39,8 @@ repeated N, or repeated NP, or repeated NNP.&lt;/p&gt;
 &lt;p&gt;In the following plot, blue is normal sinus rhythm, orange is bigeminy, and green is
 trigeminy. Purple is omitted data, and white is some other state
 (except on 2024-09-27 in the lower right, where the patches of white at
-the top and bottom are missing data).&lt;/p&gt;
+the top and bottom are missing data). Time is moving from the lower
+left to the upper right, with each row being a single hour.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;./images/states_mult_days.png&#34;&gt;&lt;img src=&#34;./images/states_mult_days_small.png&#34; alt=&#34;Four days of data on PVC state over time&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Wow, each day is really different.&lt;/p&gt;
 &lt;p&gt;Yesterday (lower-right) I did have a lot of bigeminy (in orange),
