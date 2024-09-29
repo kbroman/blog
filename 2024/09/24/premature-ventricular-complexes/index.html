@@ -123,7 +123,7 @@ I&rsquo;m exercising). Here&rsquo;s a graph, with each dot being one hour during
 the 24-hour period. When my heart rate was below 80 bpm, the frequency of
 PVCs was around 10%, while when my heart rate was above 80 bpm, the
 frequency of PVCs was around 25%.</p>
-<p><a href="../../../../images/pvc_v_hr_holter.png"><img src="../../../../images/pvc_v_hr_holter_small.png" alt="PVC percent vs heart rate by hour"></a></p>
+<p><a href="https://kbroman.org/blog/images/pvc_v_hr_holter.png"><img src="https://kbroman.org/blog/images/pvc_v_hr_holter_small.png" alt="PVC percent vs heart rate by hour"></a></p>
 <p>They had also ordered an
 <a href="https://en.wikipedia.org/wiki/Echocardiography">echocardiogram</a>,
 which was scheduled a month later. The echo (ultrasound imaging of the
@@ -146,7 +146,7 @@ measure the ECG, but it is much easier to use and gives more detail,
 so the presence of PVCs are very clear.</p>
 <p>Here&rsquo;s a typical image, which shows two normal beats, a PVC, and then
 another normal beat.</p>
-<p><a href="../../../../images/kardia_pvc.png"><img src="../../../../images/kardia_pvc_small.png" alt="Kardia 6-lead ECG trace showing two normal beats, a PVC, and then anormal beat"></a></p>
+<p><a href="https://kbroman.org/blog/images/kardia_pvc.png"><img src="https://kbroman.org/blog/images/kardia_pvc_small.png" alt="Kardia 6-lead ECG trace showing two normal beats, a PVC, and then anormal beat"></a></p>
 <p>The Kardia measures 30 seconds at a time, and so
 I spent a some time thinking about study designs to get a good
 understanding of the overall percent PVCs over the course of a day
@@ -214,7 +214,7 @@ measure possible changes, but it was tricky, since I could just see
 with the two different medications, which shows the relationship
 between PVCs and heart rate, but no obvious effect of medication. Each
 dot corresponds to a 30-second window.</p>
-<p><a href="../../../../images/pvc_v_hr_meds.png"><img src="../../../../images/pvc_v_hr_meds_small.png" alt="PVC percent vs heart rate before and after change in medication"></a></p>
+<p><a href="https://kbroman.org/blog/images/pvc_v_hr_meds.png"><img src="https://kbroman.org/blog/images/pvc_v_hr_meds_small.png" alt="PVC percent vs heart rate before and after change in medication"></a></p>
 <p>The doctor ordered another 24-hour Holter monitor, but it could not be
 scheduled for &gt;6 weeks.</p>
 <h2 id="polar-h10">Polar H10</h2>
@@ -243,7 +243,7 @@ the peaks as normal beats vs PVCs. Here&rsquo;s a stretch of 2 minutes of
 data, with the peaks labeled with dots (blue is a normal peak and pink
 is a PVC). This is a long stretch of <em>trigeminy</em>, where every third
 beat is a PVC, which is a very common pattern for me.</p>
-<p><a href="../../../../images/trigeminy.png"><img src="../../../../images/trigeminy_small.png" alt="2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)"></a></p>
+<p><a href="https://kbroman.org/blog/images/trigeminy.png"><img src="https://kbroman.org/blog/images/trigeminy_small.png" alt="2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)"></a></p>
 <p>For the peak finding, I used a function in the R package
 <a href="https://cran.r-project.org/package=rsleep">rsleep</a>. (That package has
 since been removed from CRAN, but it was released under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT
@@ -265,7 +265,7 @@ a couple of weeks. Here&rsquo;s a plot of the running average of PVC
 percentage over time on nine different days. Note that the last six
 days are basically 6am to the following day at 6am, while the times
 for the first three days are a bit different.</p>
-<p><a href="../../../../images/pvcs_many_days.png"><img src="../../../../images/pvcs_many_days_small.png" alt="2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)"></a></p>
+<p><a href="https://kbroman.org/blog/images/pvcs_many_days.png"><img src="https://kbroman.org/blog/images/pvcs_many_days_small.png" alt="2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)"></a></p>
 <p>A main feature is the observation I&rsquo;d had previously: PVCs increase
 when I&rsquo;m exercising and go back down when I&rsquo;m resting (including at
 night). But there is a lot of day-to-day variation, with the overall
@@ -301,7 +301,7 @@ code</a>, and with
 just a day&rsquo;s work I was able to add a bit of code to classify peaks as
 normal or PVCs and add a read-out of PVC percentage (based on the last
 100 peaks):</p>
-<p><a href="../../../../images/android_app.jpg"><img src="../../../../images/android_app_small.jpg" alt="screen shot of modified android app"></a></p>
+<p><a href="https://kbroman.org/blog/images/android_app.jpg"><img src="https://kbroman.org/blog/images/android_app_small.jpg" alt="screen shot of modified android app"></a></p>
 <p>I wanted to further modify the app to add a plot of the PVC percentage
 over time, but digging into the code, it became clear that he was
 using an older version of the <a href="https://github.com/polarofficial/polar-ble-sdk">Polar
@@ -314,7 +314,7 @@ following his basic design. The revised app,
 the ECG trace with peaks annotated as normal or PVC, as well as a plot
 of the PVC percentage and heart rate over time. It can also dump the
 ECG data to files, in one hour blocks.</p>
-<p><a href="../../../../images/android_app_rev.jpg"><img src="../../../../images/android_app_rev_small.jpg" alt="screen shot of further improved android app"></a></p>
+<p><a href="https://kbroman.org/blog/images/android_app_rev.jpg"><img src="https://kbroman.org/blog/images/android_app_rev_small.jpg" alt="screen shot of further improved android app"></a></p>
 <p>The result is exactly what I wanted, though its not nearly as robust
 as the <a href="https://www.ecglogger.com/">ECG Logger</a> iPhone app that I had
 been using. In particular, it locks up after 90 minutes. I&rsquo;m not sure
