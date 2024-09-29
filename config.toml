@@ -1,6 +1,5 @@
-baseURL = "https://kbroman.org/blog/"
-url = "https://kbroman.org/blog"
-relativeurls=false
+baseURL = ""
+relativeurls=true
 languageCode = "en-us"
 title = "the stupidest thing..."
 theme = "hugo-lithium"
