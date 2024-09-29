@@ -15,8 +15,8 @@
       <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>/2024/09/28/pvc-states/</guid>
-      <description>&lt;p&gt;Following up on my &lt;a href=&#34;./2024/09/24/premature-ventricular-complexes/&#34;&gt;post about my heart arrhythmia&lt;/a&gt;,
-and my &lt;a href=&#34;./2024/09/25/covid-is-so-weird/&#34;&gt;post about my current covid infection&lt;/a&gt; too: yesterday
+      <description>&lt;p&gt;Following up on my &lt;a href=&#34;/2024/09/24/premature-ventricular-complexes/&#34;&gt;post about my heart arrhythmia&lt;/a&gt;,
+and my &lt;a href=&#34;/2024/09/25/covid-is-so-weird/&#34;&gt;post about my current covid infection&lt;/a&gt; too: yesterday
 I was wearing my &lt;a href=&#34;https://www.polar.com/us-en/sensors/h10-heart-rate-sensor&#34;&gt;Polar H10 chest strap&lt;/a&gt; and watching my PVCs on my
 &lt;a href=&#34;https://github.com/kbroman/AndroidPolarPVC2&#34;&gt;Android app&lt;/a&gt;, and I noticed &lt;em&gt;very&lt;/em&gt; frequent PVCs. My heart seemed to be
 alternating between bigeminy (every other beat a PVC) and trigeminy
@@ -25,7 +25,7 @@ the covid.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a two minute example of what my heart was doing, with PVCs marked
 pink and normal beats marked blue. This has a stretch of trigeminy, a
 bit of bigeminy, and then back to trigeminy.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/bi_tri_geminy_2024-09-27.png&#34;&gt;&lt;img src=&#34;./images/bi_tri_geminy_2024-09-27_small.png&#34; alt=&#34;ECG data showing stretches of trigeminy and bigeminy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/bi_tri_geminy_2024-09-27.png&#34;&gt;&lt;img src=&#34;/images/bi_tri_geminy_2024-09-27_small.png&#34; alt=&#34;ECG data showing stretches of trigeminy and bigeminy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Today I&amp;rsquo;m feeling better, and so I thought I&amp;rsquo;d take the ECG data from
 yesterday and identify stretches of bigeminy, trigeminy, or normal
 (&amp;ldquo;sinus rhythm&amp;rdquo;, with no PVCs).
@@ -41,7 +41,7 @@ trigeminy. Purple is omitted data, and white is some other state
 (except on 2024-09-27 in the lower right, where the patches of white at
 the top and bottom are missing data). Time is moving from the lower
 left to the upper right, with each row being a single hour.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/states_mult_days.png&#34;&gt;&lt;img src=&#34;./images/states_mult_days_small.png&#34; alt=&#34;Four days of data on PVC state over time&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/states_mult_days.png&#34;&gt;&lt;img src=&#34;/images/states_mult_days_small.png&#34; alt=&#34;Four days of data on PVC state over time&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Wow, each day is really different.&lt;/p&gt;
 &lt;p&gt;Yesterday (lower-right) I did have a lot of bigeminy (in orange),
 alternately with trigeminy (in green). I wish I&amp;rsquo;d measured the full 24 hours.&lt;/p&gt;
@@ -129,7 +129,7 @@ I&amp;rsquo;m exercising). Here&amp;rsquo;s a graph, with each dot being one hou
 the 24-hour period. When my heart rate was below 80 bpm, the frequency of
 PVCs was around 10%, while when my heart rate was above 80 bpm, the
 frequency of PVCs was around 25%.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/pvc_v_hr_holter.png&#34;&gt;&lt;img src=&#34;./images/pvc_v_hr_holter_small.png&#34; alt=&#34;PVC percent vs heart rate by hour&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/pvc_v_hr_holter.png&#34;&gt;&lt;img src=&#34;/images/pvc_v_hr_holter_small.png&#34; alt=&#34;PVC percent vs heart rate by hour&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;They had also ordered an
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Echocardiography&#34;&gt;echocardiogram&lt;/a&gt;,
 which was scheduled a month later. The echo (ultrasound imaging of the
@@ -152,7 +152,7 @@ measure the ECG, but it is much easier to use and gives more detail,
 so the presence of PVCs are very clear.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a typical image, which shows two normal beats, a PVC, and then
 another normal beat.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/kardia_pvc.png&#34;&gt;&lt;img src=&#34;./images/kardia_pvc_small.png&#34; alt=&#34;Kardia 6-lead ECG trace showing two normal beats, a PVC, and then anormal beat&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/kardia_pvc.png&#34;&gt;&lt;img src=&#34;/images/kardia_pvc_small.png&#34; alt=&#34;Kardia 6-lead ECG trace showing two normal beats, a PVC, and then anormal beat&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The Kardia measures 30 seconds at a time, and so
 I spent a some time thinking about study designs to get a good
 understanding of the overall percent PVCs over the course of a day
@@ -220,7 +220,7 @@ measure possible changes, but it was tricky, since I could just see
 with the two different medications, which shows the relationship
 between PVCs and heart rate, but no obvious effect of medication. Each
 dot corresponds to a 30-second window.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/pvc_v_hr_meds.png&#34;&gt;&lt;img src=&#34;./images/pvc_v_hr_meds_small.png&#34; alt=&#34;PVC percent vs heart rate before and after change in medication&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/pvc_v_hr_meds.png&#34;&gt;&lt;img src=&#34;/images/pvc_v_hr_meds_small.png&#34; alt=&#34;PVC percent vs heart rate before and after change in medication&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The doctor ordered another 24-hour Holter monitor, but it could not be
 scheduled for &amp;gt;6 weeks.&lt;/p&gt;
 &lt;h2 id=&#34;polar-h10&#34;&gt;Polar H10&lt;/h2&gt;
@@ -249,7 +249,7 @@ the peaks as normal beats vs PVCs. Here&amp;rsquo;s a stretch of 2 minutes of
 data, with the peaks labeled with dots (blue is a normal peak and pink
 is a PVC). This is a long stretch of &lt;em&gt;trigeminy&lt;/em&gt;, where every third
 beat is a PVC, which is a very common pattern for me.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/trigeminy.png&#34;&gt;&lt;img src=&#34;./images/trigeminy_small.png&#34; alt=&#34;2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/trigeminy.png&#34;&gt;&lt;img src=&#34;/images/trigeminy_small.png&#34; alt=&#34;2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For the peak finding, I used a function in the R package
 &lt;a href=&#34;https://cran.r-project.org/package=rsleep&#34;&gt;rsleep&lt;/a&gt;. (That package has
 since been removed from CRAN, but it was released under the &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT
@@ -271,7 +271,7 @@ a couple of weeks. Here&amp;rsquo;s a plot of the running average of PVC
 percentage over time on nine different days. Note that the last six
 days are basically 6am to the following day at 6am, while the times
 for the first three days are a bit different.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/pvcs_many_days.png&#34;&gt;&lt;img src=&#34;./images/pvcs_many_days_small.png&#34; alt=&#34;2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/pvcs_many_days.png&#34;&gt;&lt;img src=&#34;/images/pvcs_many_days_small.png&#34; alt=&#34;2 min data from a Polar H10 with a peaks identified as either normal (blue) or PVC (pink)&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A main feature is the observation I&amp;rsquo;d had previously: PVCs increase
 when I&amp;rsquo;m exercising and go back down when I&amp;rsquo;m resting (including at
 night). But there is a lot of day-to-day variation, with the overall
@@ -307,7 +307,7 @@ code&lt;/a&gt;, and with
 just a day&amp;rsquo;s work I was able to add a bit of code to classify peaks as
 normal or PVCs and add a read-out of PVC percentage (based on the last
 100 peaks):&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/android_app.jpg&#34;&gt;&lt;img src=&#34;./images/android_app_small.jpg&#34; alt=&#34;screen shot of modified android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/android_app.jpg&#34;&gt;&lt;img src=&#34;/images/android_app_small.jpg&#34; alt=&#34;screen shot of modified android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I wanted to further modify the app to add a plot of the PVC percentage
 over time, but digging into the code, it became clear that he was
 using an older version of the &lt;a href=&#34;https://github.com/polarofficial/polar-ble-sdk&#34;&gt;Polar
@@ -320,7 +320,7 @@ following his basic design. The revised app,
 the ECG trace with peaks annotated as normal or PVC, as well as a plot
 of the PVC percentage and heart rate over time. It can also dump the
 ECG data to files, in one hour blocks.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/android_app_rev.jpg&#34;&gt;&lt;img src=&#34;./images/android_app_rev_small.jpg&#34; alt=&#34;screen shot of further improved android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/android_app_rev.jpg&#34;&gt;&lt;img src=&#34;/images/android_app_rev_small.jpg&#34; alt=&#34;screen shot of further improved android app&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The result is exactly what I wanted, though its not nearly as robust
 as the &lt;a href=&#34;https://www.ecglogger.com/&#34;&gt;ECG Logger&lt;/a&gt; iPhone app that I had
 been using. In particular, it locks up after 90 minutes. I&amp;rsquo;m not sure
@@ -1461,7 +1461,7 @@ Minecraft&lt;/a&gt;.&lt;/p&gt;
 to really finish up and polish the book. But, well, I didn&amp;rsquo;t. But I&amp;rsquo;m
 going to try to do so now. I&amp;rsquo;ll start by explaining how I was able to
 write text in Minecraft, like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/rOpenSci_sign.png&#34; alt=&#34;rOpenSci on a hill in Minecraft&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/rOpenSci_sign.png&#34; alt=&#34;rOpenSci on a hill in Minecraft&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;my-goal-was-to-make-a-ggplot-scatterplot&#34;&gt;My goal was to make a ggplot scatterplot&lt;/h2&gt;
 &lt;p&gt;Once we had &lt;a href=&#34;https://github.com/kbroman/miner&#34;&gt;miner&lt;/a&gt; up and
 running, the first thing I wanted to do was &lt;a href=&#34;https://kbroman.org/miner_book/rendering-an-image-in-minecraft.html&#34;&gt;render a picture out of
@@ -1469,7 +1469,7 @@ blocks&lt;/a&gt;.
 Specifically, I wanted to create a picture of
 &lt;a href=&#34;http://inundata.org&#34;&gt;Karthik&lt;/a&gt; in Minecraft. And so I
 did:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/karthik_minecraft.png&#34; alt=&#34;Karthik in Minecraft&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/karthik_minecraft.png&#34; alt=&#34;Karthik in Minecraft&#34;&gt;&lt;/p&gt;
 &lt;p&gt;My next goal was to make a &lt;code&gt;ggplot2::theme_gray()&lt;/code&gt;-styled scatterplot
 within Minecraft. Like, I wasn&amp;rsquo;t so ambitious that I wanted to add a
 &lt;code&gt;geom_minecraft()&lt;/code&gt; or a ggplot2 Minecraft plugin, but I thought it&amp;rsquo;d
@@ -1490,7 +1490,7 @@ bitmaps&lt;/a&gt; page at
 and then for each font size there&amp;rsquo;s a bunch of PNG images with
 different fonts in that size. For example, here&amp;rsquo;s the one I&amp;rsquo;m using
 for the 6x8 font:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png&#34;&gt;&lt;img src=&#34;./images/Sebasic_charset_192w.png&#34; alt=&#34;6x8 font bitmap&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png&#34;&gt;&lt;img src=&#34;/images/Sebasic_charset_192w.png&#34; alt=&#34;6x8 font bitmap&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Yeah so that&amp;rsquo;s great. I could see these images of the fonts, with the
 available characters, but what I wanted was like a bitmap: for
 example, for each character in a 6x8 font, I wanted 0s and 1s
@@ -1542,7 +1542,7 @@ but there were some important conceptual puzzles that took like 2/3 of
 my time on this. In the end the code to grab the font information
 is just about 80 lines, and the code to render text in Minecraft is
 just about 160 lines. And it allowed me to do stuff like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/rqtl2_3d.png&#34; alt=&#34;&amp;ldquo;R/qtl now in 3d&amp;rdquo;, rendered within Minecraft&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/rqtl2_3d.png&#34; alt=&#34;&amp;ldquo;R/qtl now in 3d&amp;rdquo;, rendered within Minecraft&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update 2020-12-14&lt;/em&gt;: the miner and craft packages and the miner book have been moved from
 &lt;a href=&#34;https://github.com/ropenscilabs&#34;&gt;ROpenSciLabs&lt;/a&gt; to &lt;a href=&#34;https://github.com/kbroman&#34;&gt;kbroman&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -1635,9 +1635,9 @@ is just 5 oz (150 g), so jointly like 3.6 lbs vs 8.1 lbs for the Oryx
 Pro and adapter. But who cares about weight, really? I&amp;rsquo;m all about RAM,
 ports, SSDs, moderate battery, and easy projecting.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a picture of my Galago Pro, sitting on top of my Oryx Pro.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/system76_laptops.png&#34;&gt;&lt;img src=&#34;./images/system76_laptops_small.png&#34; alt=&#34;system76laptops&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/system76_laptops.png&#34;&gt;&lt;img src=&#34;/images/system76_laptops_small.png&#34; alt=&#34;system76laptops&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;And here&amp;rsquo;s a picture of the two power adapters.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./images/system76_power_adapters.png&#34;&gt;&lt;img src=&#34;./images/system76_power_adapters_small.png&#34; alt=&#34;system76 laptop poweradapters&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/images/system76_power_adapters.png&#34;&gt;&lt;img src=&#34;/images/system76_power_adapters_small.png&#34; alt=&#34;system76 laptop poweradapters&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1894,7 +1894,7 @@ girls followed immediately by a group of 4 girls). Here’s a graph;
 compare it to
 &lt;a href=&#34;https://kbroman.org/blog/2016/10/31/halloween-2016-count/&#34;&gt;2016&lt;/a&gt; and
 &lt;a href=&#34;https://kbroman.org/blog/2011/10/31/halloween-2011-count/&#34;&gt;2011&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-10-31_halloween2017_files/figure-html/halloween_graph-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -2017,7 +2017,7 @@ columns.&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;When I abandoned my &lt;a href=&#34;https://kbroman.wordpress.com&#34;&gt;wordpress site&lt;/a&gt;
 and moved to &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;,
-&lt;a href=&#34;./2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt;
+&lt;a href=&#34;/2017/04/30/new_blog_site/&#34;&gt;I’d said&lt;/a&gt;
 that I wouldn’t bother trying to move the old posts over.&lt;/p&gt;
 &lt;p&gt;But &lt;a href=&#34;https://yihui.name&#34;&gt;Yihui Xie&lt;/a&gt; just
 &lt;a href=&#34;https://github.com/kbroman/blog/pull/2&#34;&gt;transferred everything&lt;/a&gt; for
@@ -2396,7 +2396,7 @@ me towards this short-term solution.&lt;/p&gt;
 
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/mattdowle?lang=en&#34;&gt;Matt Dowle&lt;/a&gt; encouraged me to
-follow up on my &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and
+follow up on my &lt;a href=&#34;/2017/04/30/sqlite-feather-and-fst/&#34;&gt;post about sqlite, feather, and
 fst&lt;/a&gt;. One thing to emphasize is
 that &lt;code&gt;saveRDS&lt;/code&gt;, by default, uses compression. If you use
 &lt;code&gt;compress=FALSE&lt;/code&gt; you can skip that and it goes &lt;em&gt;much&lt;/em&gt; faster. See, for
@@ -2407,7 +2407,7 @@ fread&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’ll first generate the same data that I was using before. And note,
 as &lt;a href=&#34;https://twitter.com/shabbychef&#34;&gt;@shabbychef&lt;/a&gt; &lt;a href=&#34;https://twitter.com/shabbychef/status/858892435820130304&#34;&gt;mentioned on
 twitter&lt;/a&gt;, my
-iid simulations mean that compression isn’t likely to be useful, &lt;a href=&#34;./2017/04/30/sqlite-feather-and-fst/&#34;&gt;as
+iid simulations mean that compression isn’t likely to be useful, &lt;a href=&#34;/2017/04/30/sqlite-feather-and-fst/&#34;&gt;as
 we saw in my previous
 post&lt;/a&gt;.
 So don’t assume that these results apply generally; compression is
@@ -2868,7 +2868,7 @@ and
 &lt;p&gt;It’s easy to view the available colors.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(broman)
 plot_crayons()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./post/2017-05-02-crayon-colors-simplified_files/figure-html/plot_crayons-1.png&#34; width=&#34;700&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2017-05-02-crayon-colors-simplified_files/figure-html/plot_crayons-1.png&#34; width=&#34;700&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But grabbing a color, say “Purple Mountain’s Majesty”, requires rather
 verbose code.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majesty&amp;quot;]
@@ -7072,7 +7072,7 @@ y &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; y[1&lt;span s
       
       <guid>/2012/09/24/bottle-filling-station/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.msnairport.com&#34;&gt;Madison airport&lt;/a&gt; now has a bottle-filling machine, sort of like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/bottle_filler.jpeg&#34; alt=&#34;bottle filling station&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/bottle_filler.jpeg&#34; alt=&#34;bottle filling station&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.elkayusa.com/cps/rde/xchg/elkay/hs.xsl/elkay-com-103031.aspx&#34;&gt;Bottle filler/drinking fountains&lt;/a&gt; are being installed all over the &lt;a href=&#34;http://www.wisc.edu&#34;&gt;UW-Madison campus&lt;/a&gt;, too.&lt;/p&gt;
 &lt;p&gt;I really love these things.  All airports should have them.&lt;/p&gt;
 </description>
