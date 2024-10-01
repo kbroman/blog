@@ -29,8 +29,8 @@ This was a collaboration with [Gyanu
 Lamichhane](https://www.hopkinsmedicine.org/profiles/results/directory/profile/6135965/gyanu-lamichhane)
 (was a grad student at Johns Hopkins, now an associate professor of
 medicine at Hopkins), [William
-Bishai](http://bishailab.org/people.html) (Gyanu's advisor), and
-[Natalie Blades](http://blades.byu.edu/) (was a grad student in [Johns
+Bishai](https://tbcenter.jhu.edu/facultymember/william-r-bishai-md-phd/) (Gyanu's advisor), and
+[Natalie Blades](https://blades.byu.edu/) (was a grad student in [Johns
 Hopkins biostat](https://www.jhsph.edu/departments/biostatistics/),
 now an associate professor in statistics at
 [BYU](https://statistics.byu.edu/)).
