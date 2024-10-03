@@ -1205,16 +1205,13 @@ estimate&lt;/li&gt;
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/04/01/reproducibility-guidelines/</guid>
-      <description>
-
-
-&lt;p&gt;I’m in Delft, The Netherlands, for a few days this week, at a
+      <description>&lt;p&gt;I&amp;rsquo;m in Delft, The Netherlands, for a few days this week, at a
 &lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/&#34;&gt;workshop&lt;/a&gt; to develop
 guidelines for reproducibility for
-&lt;a href=&#34;https://agile-online.org/&#34;&gt;AGILE&lt;/a&gt; conference papers. I’m here as one of the
+&lt;a href=&#34;https://agile-online.org/&#34;&gt;AGILE&lt;/a&gt; conference papers. I&amp;rsquo;m here as one of the
 outside
-“&lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/#expert-meeting&#34;&gt;experts&lt;/a&gt;”.
-(It’s always a bit disconcerting to be considered an expert.) The
+&amp;ldquo;&lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/#expert-meeting&#34;&gt;experts&lt;/a&gt;&amp;rdquo;.
+(It&amp;rsquo;s always a bit disconcerting to be considered an expert.) The
 &lt;a href=&#34;https://o2r.info/reproducible-agile/initiative/#initiative-members&#34;&gt;leaders of this
 effort&lt;/a&gt;
 wrote an interesting &lt;a href=&#34;https://doi.org/10.7717/peerj.5072&#34;&gt;PeerJ paper&lt;/a&gt;
@@ -1225,28 +1222,28 @@ tomorrow (2019-04-02) at &lt;a href=&#34;https://www.timeanddate.com/worldclock/
 CEST&lt;/a&gt;
 (which is 9:00am US central daylight time), to report our initial
 thoughts and get community feedback.&lt;/p&gt;
-&lt;p&gt;I’m particularly interested in developing these guidelines and using
+&lt;p&gt;I&amp;rsquo;m particularly interested in developing these guidelines and using
 what I learn to further reproduciblity of work published in the
-journals &lt;a href=&#34;http://www.genetics.org&#34;&gt;Genetics&lt;/a&gt; and
-&lt;a href=&#34;http://www.g3journal.org&#34;&gt;G3&lt;/a&gt;. These journals have been doing a great
-job of enforcing their policy that data be made publicly available. They’ve
+journals &lt;a href=&#34;https://academic.oup.com/genetics&#34;&gt;Genetics&lt;/a&gt; and
+&lt;a href=&#34;https://academic.oup.com/g3journal&#34;&gt;G3&lt;/a&gt;. These journals have been doing a great
+job of enforcing their policy that data be made publicly available. They&amp;rsquo;ve
 also had a policy that software be made available, but there has not
-been much effort to enforce that, and it’s clear that many authors need
+been much effort to enforce that, and it&amp;rsquo;s clear that many authors need
 further pressure (or &lt;em&gt;encouragement&lt;/em&gt;) before they will comply.&lt;/p&gt;
-&lt;p&gt;I’ve done a better job with reproducibility of my recent
+&lt;p&gt;I&amp;rsquo;ve done a better job with reproducibility of my recent
 papers (about &lt;a href=&#34;https://github.com/kbroman/Paper_Rqtl2&#34;&gt;R/qtl2&lt;/a&gt; and
 &lt;a href=&#34;https://github.com/kbroman/Paper_MPPdiag&#34;&gt;genotype diagnostics&lt;/a&gt;), but
 it remains a challenge to keep things well-organized and well-documented.&lt;/p&gt;
 &lt;p&gt;Regarding these reproducibility guidelines, I
 think authors will benefit from very specific suggestions that can
-accommodate different levels of computational “sophistication.” And I
+accommodate different levels of computational &amp;ldquo;sophistication.&amp;rdquo; And I
 think what will be particularly helpful will be a variety of specific
-examples that authors might use as templates. I’ve been impressed with
-the care that &lt;a href=&#34;http://valdarlab.unc.edu&#34;&gt;Will Valdar&lt;/a&gt;’s group has been
+examples that authors might use as templates. I&amp;rsquo;ve been impressed with
+the care that &lt;a href=&#34;https://valdarlab.unc.edu&#34;&gt;Will Valdar&lt;/a&gt;&amp;rsquo;s group has been
 devoting to reproducibility. For example, the &lt;a href=&#34;https://doi.org/10.1534/g3.118.200847&#34;&gt;recent paper by Shorter
 et al.&lt;/a&gt; is
 accompanied by a proper &lt;a href=&#34;https://github.com/mauriziopaul/litterDiallel&#34;&gt;R Compendium&lt;/a&gt;.
-Will’s student &lt;a href=&#34;https://github.com/rcorty/&#34;&gt;Roberty Corty&lt;/a&gt; has github
+Will&amp;rsquo;s student &lt;a href=&#34;https://github.com/rcorty/&#34;&gt;Roberty Corty&lt;/a&gt; has github
 repositories for his recent papers on variance QTL, including
 &lt;a href=&#34;https://github.com/rcorty/qtl_mapping_with_BVH_supporting_files&#34;&gt;this&lt;/a&gt;
 and &lt;a href=&#34;https://github.com/rcorty/mvqtl_reanalyses_Bailey_Kumar_supporting_files&#34;&gt;that&lt;/a&gt;.&lt;/p&gt;
