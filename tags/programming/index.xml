@@ -45,7 +45,7 @@ I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on t
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/03/16/learning-a-new-programming-language/</guid>
-      <description>I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
+      <description>I&amp;rsquo;ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, &amp;ldquo;Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.&amp;rdquo; I&amp;rsquo;d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
 More blather about languages Long ago, I wrote a tutorial on Perl.</description>
     </item>
     

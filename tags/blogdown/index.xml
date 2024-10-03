@@ -14,7 +14,7 @@
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>/2017/08/03/yay-yihui/</guid>
-      <description>When I abandoned my wordpress site and moved to blogdown, I’d said that I wouldn’t bother trying to move the old posts over.
+      <description>When I abandoned my wordpress site and moved to blogdown, I&amp;rsquo;d said that I wouldn&amp;rsquo;t bother trying to move the old posts over.
 But Yihui Xie just transferred everything for me! So awesome.</description>
     </item>
     
@@ -24,8 +24,8 @@ But Yihui Xie just transferred everything for me! So awesome.</description>
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
       <guid>/2017/05/01/caching-blogdown/</guid>
-      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
-I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
+      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while&amp;hellip;well, every time you build the site it&amp;rsquo;s going to take a while.
+I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that&amp;rsquo;s not true.</description>
     </item>
     
     <item>
@@ -35,8 +35,8 @@ I had the mistaken impression that blogdown would look at the timestamps on the 
       
       <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
-I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
-I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
+I&amp;rsquo;m going to leave my old wordpress site as it is and not try to figure out how to move things over.
+I&amp;rsquo;m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas&amp;rsquo;s tutorial and the examples at github.</description>
     </item>
     
   </channel>

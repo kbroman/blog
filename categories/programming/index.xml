@@ -62,7 +62,7 @@ I looked back through my pre-2010 papers and chose Lamichhane et al. (2003) on t
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/03/16/learning-a-new-programming-language/</guid>
-      <description>I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
+      <description>I&amp;rsquo;ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, &amp;ldquo;Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.&amp;rdquo; I&amp;rsquo;d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
 More blather about languages Long ago, I wrote a tutorial on Perl.</description>
     </item>
     
@@ -73,8 +73,8 @@ More blather about languages Long ago, I wrote a tutorial on Perl.</description>
       
       <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
-(Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
-I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
+(Note that I just barely know what I&amp;rsquo;m doing, by which I mean I don&amp;rsquo;t know what I&amp;rsquo;m doing. I&amp;rsquo;m able to get things to work, but I don&amp;rsquo;t always know why.)
+I was very glad that I&amp;rsquo;d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
     </item>
     
     <item>

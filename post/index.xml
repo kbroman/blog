@@ -193,8 +193,8 @@ Mac OSX seemed designed just for me: unix minus the trouble, plus Word. But it s
       <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/10/05/twitter-break/</guid>
-      <description>What I’ve liked most about Twitter is that it’s helped me to feel less isolated, as I’ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible research.
-But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it’s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone’s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I’ve been working on for five years with little apparent progress.</description>
+      <description>What I&amp;rsquo;ve liked most about Twitter is that it&amp;rsquo;s helped me to feel less isolated, as I&amp;rsquo;ve been able to connect with distant folks who share my interests and values, particularly regarding open science and reproducible research.
+But somehow, lately, Twitter had me feeling less rather than more connected. I think maybe it&amp;rsquo;s been that conference effect: scientific conferences are great for catching up with old friends and seeing all of the cool things that everyone&amp;rsquo;s doing, but ultimately they often leave me feeling like crap because everyone else seems to be doing cool and exciting stuff while I gave a talk on the same old stuff I&amp;rsquo;ve been working on for five years with little apparent progress.</description>
     </item>
     
     <item>
@@ -203,7 +203,7 @@ But somehow, lately, Twitter had me feeling less rather than more connected. I t
       <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/03/16/learning-a-new-programming-language/</guid>
-      <description>I’ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, “Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.” I’d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
+      <description>I&amp;rsquo;ve long been an advocate for statisticians (and other data scientists) to become proficient in multiple programming languages. Fifteen years ago, I said, &amp;ldquo;Think CPR: C for speed, R for interactive data analysis and graphics, and Perl for manipulating data files.&amp;rdquo; I&amp;rsquo;d now substitute C++ for C, and Python or Ruby for Perl, but the general sentiment stands: use the language that best fits the problem at hand.
 More blather about languages Long ago, I wrote a tutorial on Perl.</description>
     </item>
     
@@ -243,7 +243,7 @@ The documentation for the file is a docx file (not really a recommended format f
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>/2017/08/03/yay-yihui/</guid>
-      <description>When I abandoned my wordpress site and moved to blogdown, I’d said that I wouldn’t bother trying to move the old posts over.
+      <description>When I abandoned my wordpress site and moved to blogdown, I&amp;rsquo;d said that I wouldn&amp;rsquo;t bother trying to move the old posts over.
 But Yihui Xie just transferred everything for me! So awesome.</description>
     </item>
     

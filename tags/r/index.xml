@@ -135,8 +135,8 @@ I’ll first generate the same data that I was using before.</description>
       
       <guid>/2017/05/11/updating-d3panels-and-r/qtlcharts-for-d3-version-4/</guid>
       <description>I just spent some time updating my d3panels library and R/qtlcharts package for D3 version 4. It took just about a day, and the majority of the time was spent puzzling over d3-force and d3-brush.
-(Note that I just barely know what I’m doing, by which I mean I don’t know what I’m doing. I’m able to get things to work, but I don’t always know why.)
-I was very glad that I’d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
+(Note that I just barely know what I&amp;rsquo;m doing, by which I mean I don&amp;rsquo;t know what I&amp;rsquo;m doing. I&amp;rsquo;m able to get things to work, but I don&amp;rsquo;t always know why.)
+I was very glad that I&amp;rsquo;d written a bunch of tests, because I could use those to figure out what was working and what was not working, and whether my changes were effective.</description>
     </item>
     
     <item>
@@ -159,8 +159,8 @@ brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Purple Mountain&amp;#39;s Majes
       <pubDate>Mon, 01 May 2017 00:10:00 -0500</pubDate>
       
       <guid>/2017/05/01/caching-blogdown/</guid>
-      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while…well, every time you build the site it’s going to take a while.
-I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that’s not true.</description>
+      <description>blogdown is cool, but it seems that it builds every .Rmd file every time you run build_site(), so if your site includes an analysis that takes a while&amp;hellip;well, every time you build the site it&amp;rsquo;s going to take a while.
+I had the mistaken impression that blogdown would look at the timestamps on the .Rmd and .html and only build the .html if the .Rmd file is newer, but that&amp;rsquo;s not true.</description>
     </item>
     
     <item>

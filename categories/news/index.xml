@@ -63,15 +63,14 @@ This was ROpenSci&amp;rsquo;s 4th unconference; the first I could attend. There 
       <pubDate>Sun, 30 Apr 2017 10:50:00 -0500</pubDate>
       
       <guid>/2017/04/30/old-posts/</guid>
-      <description>In moving away from my old wordpress site, I thought I’d look back at some of my old posts there. Here are the most frequently visited ones.
- Better-looking LaTeX/Beamer slides, 2013-10-07
- MongoDB with D3.js, 2015-06-22
- Crayon colors in R, 2014-05-07
- apply vs for, 2013-04-02
- Thoughts on statistical consulting, 2013-04-02
- Notifications from R, 2014-09-03
- A course in statistical programming, 2012-05-25
- Row names in data frames: beware of 1:nrow, 2012-03-21</description>
+      <description>In moving away from my old wordpress site, I thought I&amp;rsquo;d look back at some of my old posts there. Here are the most frequently visited ones.
+  Better-looking LaTeX/Beamer slides, 2013-10-07
+  MongoDB with D3.js, 2015-06-22
+  Crayon colors in R, 2014-05-07
+  apply vs for, 2013-04-02
+  Thoughts on statistical consulting, 2013-04-02
+  Notifications from R, 2014-09-03
+  A course in statistical programming, 2012-05-25</description>
     </item>
     
     <item>
@@ -90,8 +89,8 @@ This was ROpenSci&amp;rsquo;s 4th unconference; the first I could attend. There 
       
       <guid>/2017/04/29/new-blog/</guid>
       <description>This is the new site for my blog; source at github.
-I’m going to leave my old wordpress site as it is and not try to figure out how to move things over.
-I’m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas’s tutorial and the examples at github.</description>
+I&amp;rsquo;m going to leave my old wordpress site as it is and not try to figure out how to move things over.
+I&amp;rsquo;m not been writing much recently, in part because Wordpress is such a drag to work with. The present site uses blogdown, which is a joy. See the bookdown-based documentation (currently a bit thin) plus Amber Thomas&amp;rsquo;s tutorial and the examples at github.</description>
     </item>
     
     <item>
