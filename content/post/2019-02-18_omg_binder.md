@@ -20,7 +20,7 @@ configuration file in your GitHub repository and suddenly you can open it
 live in RStudio on some cloud server somewhere. Seems too good to be true.
 But I trusted him, mentioned it in [my talk at
 AAAS yesterday](https://bit.ly/rrcollab), and talked it up to [Jeff
-Leek](http://jtleek.com).
+Leek](https://jtleek.com).
 
 I spent the afternoon walking around DC, and then when it started to
 rain I came in and decided I'd give binder a try. I figured my [Fruit
