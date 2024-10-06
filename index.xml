@@ -1464,7 +1464,7 @@ write text in Minecraft, like this:&lt;/p&gt;
 running, the first thing I wanted to do was &lt;a href=&#34;https://kbroman.org/miner_book/rendering-an-image-in-minecraft.html&#34;&gt;render a picture out of
 blocks&lt;/a&gt;.
 Specifically, I wanted to create a picture of
-&lt;a href=&#34;http://inundata.org&#34;&gt;Karthik&lt;/a&gt; in Minecraft. And so I
+&lt;a href=&#34;https://inundata.org&#34;&gt;Karthik&lt;/a&gt; in Minecraft. And so I
 did:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/karthik_minecraft.png&#34; alt=&#34;Karthik in Minecraft&#34;&gt;&lt;/p&gt;
 &lt;p&gt;My next goal was to make a &lt;code&gt;ggplot2::theme_gray()&lt;/code&gt;-styled scatterplot
