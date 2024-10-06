@@ -41,7 +41,7 @@ Once we had [miner](https://github.com/kbroman/miner) up and
 running, the first thing I wanted to do was [render a picture out of
 blocks](https://kbroman.org/miner_book/rendering-an-image-in-minecraft.html).
 Specifically, I wanted to create a picture of
-[Karthik](http://inundata.org) in Minecraft. And so I
+[Karthik](https://inundata.org) in Minecraft. And so I
 did:
 
 ![Karthik in Minecraft](/images/karthik_minecraft.png)
