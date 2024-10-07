@@ -64,7 +64,7 @@ well, and the text in the axis labels was especially terrible.)
 It seemed like I just needed some old-style, pixelated fonts. You know,
 like the ones used on LCD displays. It took a lot of googling, but I
 finally found this [font
-bitmaps](http://uzebox.org/wiki/index.php?title=Font_Bitmaps) page at
+bitmaps](https://uzebox.org/wiki/index.php?title=Font_Bitmaps) page at
 [uzebox.org](http://uzebox.org), which has a big list of font sizes,
 and then for each font size there's a bunch of PNG images with
 different fonts in that size. For example, here's the one I'm using
