@@ -71,7 +71,7 @@ different fonts in that size. For example, here's the one I'm using
 for the 6x8 font:
 
 [![6x8 font bitmap](/images/Sebasic_charset_192w.png)](
-http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png)
+https://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png)
 
 Yeah so that's great. I could see these images of the fonts, with the
 available characters, but what I wanted was like a bitmap: for
