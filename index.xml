@@ -1487,7 +1487,7 @@ bitmaps&lt;/a&gt; page at
 and then for each font size there&amp;rsquo;s a bunch of PNG images with
 different fonts in that size. For example, here&amp;rsquo;s the one I&amp;rsquo;m using
 for the 6x8 font:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png&#34;&gt;&lt;img src=&#34;./images/Sebasic_charset_192w.png&#34; alt=&#34;6x8 font bitmap&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uzebox.org/wiki/images/a/a2/Sebasic_charset_192w.png&#34;&gt;&lt;img src=&#34;./images/Sebasic_charset_192w.png&#34; alt=&#34;6x8 font bitmap&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Yeah so that&amp;rsquo;s great. I could see these images of the fonts, with the
 available characters, but what I wanted was like a bitmap: for
 example, for each character in a 6x8 font, I wanted 0s and 1s
