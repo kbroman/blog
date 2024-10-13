@@ -81,7 +81,7 @@ indicating which bits need to be dark versus light.
 Ugh, I spent a couple of hours googling and puzzling over this. Why
 would they provide these images and not provide a bitmap, so that you
 could actually make the font? I mean, the title of [that
-page](http://uzebox.org/wiki/index.php?title=Font_Bitmaps) was "_Font
+page](https://uzebox.org/wiki/index.php?title=Font_Bitmaps) was "_Font
 Bitmaps_"!
 
 _Finally_ I realized that, just like the picture of Karthik that I
