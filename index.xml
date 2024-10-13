@@ -1494,7 +1494,7 @@ example, for each character in a 6x8 font, I wanted 0s and 1s
 indicating which bits need to be dark versus light.&lt;/p&gt;
 &lt;p&gt;Ugh, I spent a couple of hours googling and puzzling over this. Why
 would they provide these images and not provide a bitmap, so that you
-could actually make the font? I mean, the title of &lt;a href=&#34;http://uzebox.org/wiki/index.php?title=Font_Bitmaps&#34;&gt;that
+could actually make the font? I mean, the title of &lt;a href=&#34;https://uzebox.org/wiki/index.php?title=Font_Bitmaps&#34;&gt;that
 page&lt;/a&gt; was &amp;ldquo;&lt;em&gt;Font
 Bitmaps&lt;/em&gt;&amp;rdquo;!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Finally&lt;/em&gt; I realized that, just like the picture of Karthik that I
