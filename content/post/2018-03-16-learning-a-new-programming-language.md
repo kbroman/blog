@@ -46,7 +46,7 @@ switching between languages (C++ for speed and R for interactive data
 analysis and graphics, and maybe data file manipulation, though I
 still prefer to switch again to Ruby).
 
-[Pjotr Prins](http://thebird.nl/) had me writing [D](https://dlang.org/) for a while,
+[Pjotr Prins](https://thebird.nl/) had me writing [D](https://dlang.org/) for a while,
 and he continues to advocate for it. And boy was I ever glad to switch
 from C to C++ and from `.C()` to [Rcpp](http://www.rcpp.org/). html
 and CSS go without saying. And we should probably add JavaScript, or
