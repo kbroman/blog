@@ -48,7 +48,7 @@ still prefer to switch again to Ruby).
 
 [Pjotr Prins](https://thebird.nl/) had me writing [D](https://dlang.org/) for a while,
 and he continues to advocate for it. And boy was I ever glad to switch
-from C to C++ and from `.C()` to [Rcpp](http://www.rcpp.org/). html
+from C to C++ and from `.C()` to [Rcpp](https://www.rcpp.org/). html
 and CSS go without saying. And we should probably add JavaScript, or
 something that compiles to JavaScript. (I like
 [CoffeeScript](http://coffeescript.org/); in fact, CoffeeScript is
