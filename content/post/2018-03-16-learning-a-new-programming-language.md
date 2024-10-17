@@ -51,7 +51,7 @@ and he continues to advocate for it. And boy was I ever glad to switch
 from C to C++ and from `.C()` to [Rcpp](https://www.rcpp.org/). html
 and CSS go without saying. And we should probably add JavaScript, or
 something that compiles to JavaScript. (I like
-[CoffeeScript](http://coffeescript.org/); in fact, CoffeeScript is
+[CoffeeScript](https://coffeescript.org); in fact, CoffeeScript is
 probably my favorite language, presently.)
 
 There was also SQL and MongoDB in there, for me. Data scientists need to be
