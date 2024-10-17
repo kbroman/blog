@@ -1711,7 +1711,7 @@ and he continues to advocate for it. And boy was I ever glad to switch
 from C to C++ and from &lt;code&gt;.C()&lt;/code&gt; to &lt;a href=&#34;https://www.rcpp.org/&#34;&gt;Rcpp&lt;/a&gt;. html
 and CSS go without saying. And we should probably add JavaScript, or
 something that compiles to JavaScript. (I like
-&lt;a href=&#34;http://coffeescript.org/&#34;&gt;CoffeeScript&lt;/a&gt;; in fact, CoffeeScript is
+&lt;a href=&#34;https://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;; in fact, CoffeeScript is
 probably my favorite language, presently.)&lt;/p&gt;
 &lt;p&gt;There was also SQL and MongoDB in there, for me. Data scientists need to be
 comfortable with accessing formal databases.&lt;/p&gt;
