@@ -1715,7 +1715,7 @@ something that compiles to JavaScript. (I like
 probably my favorite language, presently.)&lt;/p&gt;
 &lt;p&gt;There was also SQL and MongoDB in there, for me. Data scientists need to be
 comfortable with accessing formal databases.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m now trying to learn &lt;a href=&#34;http://www.purescript.org/&#34;&gt;PureScript&lt;/a&gt;, but
+&lt;p&gt;I&amp;rsquo;m now trying to learn &lt;a href=&#34;https://www.purescript.org/&#34;&gt;PureScript&lt;/a&gt;, but
 I&amp;rsquo;m finding it heavy going and so am taking a detour into
 &lt;a href=&#34;https://www.haskell.org/&#34;&gt;Haskell&lt;/a&gt; for a bit, to try to get the
 basics of the &amp;ldquo;purely functional programming&amp;rdquo; business. But I intend to then
