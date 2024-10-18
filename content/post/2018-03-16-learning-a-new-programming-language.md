@@ -57,7 +57,7 @@ probably my favorite language, presently.)
 There was also SQL and MongoDB in there, for me. Data scientists need to be
 comfortable with accessing formal databases.
 
-I'm now trying to learn [PureScript](http://www.purescript.org/), but
+I'm now trying to learn [PureScript](https://www.purescript.org/), but
 I'm finding it heavy going and so am taking a detour into
 [Haskell](https://www.haskell.org/) for a bit, to try to get the
 basics of the "purely functional programming" business. But I intend to then
