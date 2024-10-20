@@ -10,7 +10,7 @@ In addition to our [miner](https://github.com/kbroman/miner)
 package and our [in-development bookdown
 book](https://kbroman.org/miner_book), the R/minecraft team from the
 [ROpenSci](https://ropensci.org)
-[Unconference](http://unconf17.ropensci.org) had
+[Unconference](https://unconf17.ropensci.org) had
 created a
 bunch of other useful code for interacting with
 [Minecraft](https://minecraft.net) from
