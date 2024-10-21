@@ -2111,7 +2111,7 @@ pipe operator, &lt;code&gt;%&amp;gt;%&lt;/code&gt;, you&amp;rsquo;re looking for
 deeply nested functions, our
 &lt;a href=&#34;https://github.com/kbroman/miner&#34;&gt;miner&lt;/a&gt; package (for connecting
 &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; to &lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;,
-developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;http://unconf17.ropensci.org&#34;&gt;2017
+developed at the &lt;a href=&#34;https://ropensci.org&#34;&gt;ROpenSci&lt;/a&gt; &lt;a href=&#34;https://unconf17.ropensci.org&#34;&gt;2017
 Unconference&lt;/a&gt;) has &lt;a href=&#34;https://github.com/kbroman/miner/blob/master/R/chat.R#L33-L41&#34;&gt;a good
 one&lt;/a&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-{r,&#34; data-lang=&#34;{r,&#34;&gt;setNames(data.frame(
