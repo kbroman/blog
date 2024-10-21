@@ -13,7 +13,7 @@ deeply nested functions, our
 [miner](https://github.com/kbroman/miner) package (for connecting
 [R](https://www.r-project.org) to [Minecraft](https://minecraft.net),
 developed at the [ROpenSci](https://ropensci.org) [2017
-Unconference](http://unconf17.ropensci.org)) has [a good
+Unconference](https://unconf17.ropensci.org)) has [a good
 one](https://github.com/kbroman/miner/blob/master/R/chat.R#L33-L41):
 
 ```{r, nested_func, eval=FALSE}
