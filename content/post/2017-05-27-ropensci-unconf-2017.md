@@ -7,7 +7,7 @@ tags: ["R", "conference", "Minecraft"]
 ---
 
 I'm back from the [ROpenSci](https://ropensci.org)
-[Unconference](http://unconf17.ropensci.org) in LA. A fabulous two
+[Unconference](https://unconf17.ropensci.org) in LA. A fabulous two
 days of R programming and, ur, playing
 [Minecraft](https://minecraft.net). As one does.
 
