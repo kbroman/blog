@@ -2262,8 +2262,8 @@ book&lt;/a&gt;. Stay tuned.&lt;/p&gt;
 
 &lt;p&gt;Next month, I’m teaching a workshop on &lt;a href=&#34;https://rqtl.org&#34;&gt;R/qtl&lt;/a&gt; and
 &lt;a href=&#34;https://kbroman.org/qtl2&#34;&gt;R/qtl2&lt;/a&gt; at the
-&lt;a href=&#34;http://www.complextrait.org/ctc2017&#34;&gt;joint Complex Trait Community and Rat Genomics Community meeting
-(CTC-RG2017)&lt;/a&gt; meeting in Memphis.&lt;/p&gt;
+joint Complex Trait Community and Rat Genomics Community meeting
+(CTC-RG2017) meeting in Memphis.&lt;/p&gt;
 &lt;p&gt;I was chatting with &lt;a href=&#34;http://www.senresearch.org/&#34;&gt;Śaunak Sen&lt;/a&gt;
 about preparations: the main problem is installation of R/qtl2, which
 is split into multiple R packages, and I’ve not yet placed them on
