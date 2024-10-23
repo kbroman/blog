@@ -12,8 +12,8 @@ knitr::opts_chunk$set(eval=FALSE)
 
 Next month, I'm teaching a workshop on [R/qtl](https://rqtl.org) and
 [R/qtl2](https://kbroman.org/qtl2) at the
-[joint Complex Trait Community and Rat Genomics Community meeting
-(CTC-RG2017)](http://www.complextrait.org/ctc2017) meeting in Memphis.
+joint Complex Trait Community and Rat Genomics Community meeting
+(CTC-RG2017) meeting in Memphis.
 
 I was chatting with [&#346;aunak Sen](http://www.senresearch.org/)
 about preparations: the main problem is installation of R/qtl2, which
