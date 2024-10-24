@@ -99,7 +99,7 @@ libraries, you might want to use the compression.
 
 ## How about CSV?
 
-[Dirk Eddelbuettel](http://dirk.eddelbuettel.com/) suggested that I
+[Dirk Eddelbuettel](https://dirk.eddelbuettel.com/) suggested that I
 might just use a plain CSV file, since `data.table::fread` and
 `data.table::fwrite` are so fast. How fast?
 
