@@ -2421,7 +2421,7 @@ uncompressed RDS files might get in the way of your music and movie
 libraries, you might want to use the compression.&lt;/p&gt;
 &lt;div id=&#34;how-about-csv&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;How about CSV?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt; suggested that I
+&lt;p&gt;&lt;a href=&#34;https://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt; suggested that I
 might just use a plain CSV file, since &lt;code&gt;data.table::fread&lt;/code&gt; and
 &lt;code&gt;data.table::fwrite&lt;/code&gt; are so fast. How fast?&lt;/p&gt;
 &lt;p&gt;To make use of the multi-threaded version of
