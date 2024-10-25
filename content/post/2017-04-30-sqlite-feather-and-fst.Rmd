@@ -29,7 +29,7 @@ advance, and I want rapid access to slices of data.
 So I've been playing with [SQLite](https://www.sqlite.org/) and
 [MongoDB](https://www.mongodb.com/), and more recently
 [feather](https://github.com/wesm/feather) and
-[fst](http://www.fstpackage.org). And I thought I'd show a few
+[fst](https://www.fstpackage.org). And I thought I'd show a few
 examples. I'm interested mostly in quick access, from
 [R](https://www.r-project.org), to small portions of a large file.
 
