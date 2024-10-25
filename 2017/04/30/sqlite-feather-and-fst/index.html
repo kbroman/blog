@@ -105,7 +105,7 @@ advance, and I want rapid access to slices of data.</p>
 <p>So I’ve been playing with <a href="https://www.sqlite.org/">SQLite</a> and
 <a href="https://www.mongodb.com/">MongoDB</a>, and more recently
 <a href="https://github.com/wesm/feather">feather</a> and
-<a href="http://www.fstpackage.org">fst</a>. And I thought I’d show a few
+<a href="https://www.fstpackage.org">fst</a>. And I thought I’d show a few
 examples. I’m interested mostly in quick access, from
 <a href="https://www.r-project.org">R</a>, to small portions of a large file.</p>
 <div id="data-rds" class="section level3">
@@ -182,7 +182,7 @@ snp_names &lt;- dbGetQuery(sqldb, &#39;select snp from snps&#39;)[,1]</code></pr
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 query &lt;- paste0(&#39;select * from snps where snp == &quot;&#39;, random_snp, &#39;&quot;&#39;)
 system.time(z &lt;- dbGetQuery(sqldb, query))</code></pre>
-<pre><code>##    user  system elapsed 
+<pre><code>##    user  system elapsed
 ##   0.353   0.485   0.838</code></pre>
 <p>Such queries are faster if we first add an index on the SNP names.</p>
 <pre class="r"><code>dbGetQuery(sqldb, &quot;CREATE INDEX snp ON snps(snp)&quot;)</code></pre>
@@ -192,7 +192,7 @@ are now all but instantaneous.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 query &lt;- paste0(&#39;select * from snps where snp == &quot;&#39;, random_snp, &#39;&quot;&#39;)
 system.time(z &lt;- dbGetQuery(sqldb, query))</code></pre>
-<pre><code>##    user  system elapsed 
+<pre><code>##    user  system elapsed
 ##   0.004   0.000   0.004</code></pre>
 </div>
 <div id="feather" class="section level3">
@@ -216,7 +216,7 @@ basically use feather like a database.</p>
 snp_names &lt;- unlist(db_f[,&quot;snp&quot;])
 random_snp &lt;- sample(snp_names, 1)
 system.time(z &lt;- db_f[snp_names==random_snp,])</code></pre>
-<pre><code>##    user  system elapsed 
+<pre><code>##    user  system elapsed
 ##   0.381   0.353   0.735</code></pre>
 <p>In this particular case, it’s actually quite a bit faster to work with
 feather the other way around; that is, in the original format of 500
@@ -238,7 +238,7 @@ snp_names &lt;- snp_names[1:(length(snp_names)/2)]</code></pre>
 back onto the SNP name.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 system.time(z &lt;- db_f_2[,c(&quot;id&quot;, paste0(random_snp, c(&quot;.X&quot;, &quot;.Y&quot;)))])</code></pre>
-<pre><code>##    user  system elapsed 
+<pre><code>##    user  system elapsed
 ##   0.045   0.000   0.045</code></pre>
 <p>Note that you can also use <a href="https://github.com/tidyverse/dplyr">dplyr</a>
 with <a href="https://github.com/wesm/feather">feather</a> as if you’ve got an
@@ -285,7 +285,7 @@ useful to have the the pairs of rows for each SNP be contiguous.</p>
 <pre class="r"><code>random_snp &lt;- sample(snp_names, 1)
 wh_rows &lt;- which(random_snp == snp_names)
 system.time(z &lt;- read.fst(fstcomp_file, from=wh_rows[1], to=wh_rows[2]))</code></pre>
-<pre><code>##    user  system elapsed 
+<pre><code>##    user  system elapsed
 ##   0.078   0.011   0.089</code></pre>
 </div>
 <div id="timings" class="section level3">
@@ -310,10 +310,10 @@ db_f_2 &lt;- feather(feather_file_2)</code></pre>
                times=100)</code></pre>
 <pre><code>## Unit: milliseconds
 ##       expr min  lq mean median  uq  max neval   cld
-##     sqlite   3   4    4      4   4    4   100 a    
+##     sqlite   3   4    4      4   4    4   100 a
 ##    feather 618 641  717    660 766 1215   100     e
-##  feather_t  43  47   48     48  49   54   100  b   
-##        fst  61  63   80     64  65  341   100   c  
+##  feather_t  43  47   48     48  49   54   100  b
+##        fst  61  63   80     64  65  341   100   c
 ##    fstcomp  91  95  117     95  97  691   100    d</code></pre>
 <p>Here’s a summary of all of the results:</p>
 <pre class="r"><code>knitr::kable(results, digits=c(1,1,0,1),
