@@ -356,7 +356,7 @@ in-memory data frame.
 ### fst
 
 After [tweeting about feather](https://twitter.com/kwbroman/status/855112575373148162),
-[Dirk Eddelbuettel](http://dirk.eddelbuettel.com/) suggested that I
+[Dirk Eddelbuettel](https://dirk.eddelbuettel.com/) suggested that I
 look at the [fst package](http://www.fstpackage.org/). It's not quite
 as slick to take data slices, but it's potentially faster and you can write a
 compressed file to save disk space.
