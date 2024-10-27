@@ -3055,7 +3055,7 @@ in-memory data frame.&lt;/p&gt;
 &lt;h3&gt;fst&lt;/h3&gt;
 &lt;p&gt;After &lt;a href=&#34;https://twitter.com/kwbroman/status/855112575373148162&#34;&gt;tweeting about feather&lt;/a&gt;,
 &lt;a href=&#34;https://dirk.eddelbuettel.com/&#34;&gt;Dirk Eddelbuettel&lt;/a&gt; suggested that I
-look at the &lt;a href=&#34;http://www.fstpackage.org/&#34;&gt;fst package&lt;/a&gt;. It’s not quite
+look at the &lt;a href=&#34;https://www.fstpackage.org/&#34;&gt;fst package&lt;/a&gt;. It’s not quite
 as slick to take data slices, but it’s potentially faster and you can write a
 compressed file to save disk space.&lt;/p&gt;
 &lt;p&gt;Like SQLite, it’s best not to have &lt;em&gt;too&lt;/em&gt; many columns, so we’ll work
