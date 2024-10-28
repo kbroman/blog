@@ -408,7 +408,7 @@ That took `r myround(write_fstcomp_time[3], 1)` sec to write,
 `r myround(read_fstcomp_time[3], 1)` sec to read, and the file is about
 `r round(fstcomp_size)` MB.
 
-Doing queries on an [fst](http://www.fstpackage.org) file is not quite
+Doing queries on an [fst](https://www.fstpackage.org) file is not quite
 as slick as for [feather](https://github.com/wesm/feather), but it's
 fast. The `read.fst` function has a `columns` argument to grab
 particular columns, and `from` and `to` arguments to grab a slice of
