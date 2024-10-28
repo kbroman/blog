@@ -3076,7 +3076,7 @@ t_db_clone &amp;lt;- read.fst(fstcomp_file)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;That took 6.7 sec to write,
 2.7 sec to read, and the file is about
 781 MB.&lt;/p&gt;
-&lt;p&gt;Doing queries on an &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; file is not quite
+&lt;p&gt;Doing queries on an &lt;a href=&#34;https://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; file is not quite
 as slick as for &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt;, but it’s
 fast. The &lt;code&gt;read.fst&lt;/code&gt; function has a &lt;code&gt;columns&lt;/code&gt; argument to grab
 particular columns, and &lt;code&gt;from&lt;/code&gt; and &lt;code&gt;to&lt;/code&gt; arguments to grab a slice of
