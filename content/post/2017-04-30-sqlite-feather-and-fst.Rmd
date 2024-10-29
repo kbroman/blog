@@ -541,7 +541,7 @@ and file size of the three approaches from these results. And I think
 they're all really useful and interesting.
 
 But in this particular case, the file compression didn't really help
-with [fst](http://www.fstpackage.org) and slowed things down.
+with [fst](https://www.fstpackage.org) and slowed things down.
 When accessing the data,
 [feather](https://github.com/wesm/feather) was considerably faster
 than [fst](http://www.fstpackage.org) when the data were organized
