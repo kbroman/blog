@@ -3185,7 +3185,7 @@ db_f_2 &amp;lt;- feather(feather_file_2)&lt;/code&gt;&lt;/pre&gt;
 and file size of the three approaches from these results. And I think
 they’re all really useful and interesting.&lt;/p&gt;
 &lt;p&gt;But in this particular case, the file compression didn’t really help
-with &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; and slowed things down.
+with &lt;a href=&#34;https://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; and slowed things down.
 When accessing the data,
 &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; was considerably faster
 than &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; when the data were organized
