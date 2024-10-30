@@ -544,7 +544,7 @@ But in this particular case, the file compression didn't really help
 with [fst](https://www.fstpackage.org) and slowed things down.
 When accessing the data,
 [feather](https://github.com/wesm/feather) was considerably faster
-than [fst](http://www.fstpackage.org) when the data were organized
+than [fst](https://www.fstpackage.org) when the data were organized
 with the SNPs as columns, but was considerably slower when the data
 were in the opposite orientation. [SQLite](https://www.sqlite.org/)
 has much faster access times, but with a larger file size that takes
