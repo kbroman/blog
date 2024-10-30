@@ -3188,7 +3188,7 @@ they’re all really useful and interesting.&lt;/p&gt;
 with &lt;a href=&#34;https://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; and slowed things down.
 When accessing the data,
 &lt;a href=&#34;https://github.com/wesm/feather&#34;&gt;feather&lt;/a&gt; was considerably faster
-than &lt;a href=&#34;http://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; when the data were organized
+than &lt;a href=&#34;https://www.fstpackage.org&#34;&gt;fst&lt;/a&gt; when the data were organized
 with the SNPs as columns, but was considerably slower when the data
 were in the opposite orientation. &lt;a href=&#34;https://www.sqlite.org/&#34;&gt;SQLite&lt;/a&gt;
 has much faster access times, but with a larger file size that takes
