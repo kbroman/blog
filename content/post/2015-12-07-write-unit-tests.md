@@ -32,7 +32,7 @@ So that had me debugging the [`scanone` function in R/qtl](https://github.com/kb
 
 I did, after resorting to a bunch of print/cat statements, [find the bug](https://github.com/kbroman/qtl/commit/254a1c728). In subsetting the data to remove individuals with missing values, I'd forgotten to subset the weights. Back in 2012, I'd [fixed a related bug](https://github.com/kbroman/qtl/commit/a07c575), but apparently it was only a partial fix. In thinking about the bug again while writing this post, and in looking back at the 2012 bug fix, I realized that I probably had the same bug in [`scantwo`](https://github.com/kbroman/qtl/blob/master/R/scantwo.R) (which is **1443** lines long). Sure enough, and so now there's [yet another bug fix](https://github.com/kbroman/qtl/commit/c71b3dfce9), though not yet on [CRAN](https://cran.r-project.org).
 
-[Pjotr Prins](https://thebird.nl/) was the first to encourage me towards software testing. [Hadley Wickham](http://had.co.nz/)'s [testthat](https://github.com/hadley/testthat) package makes it easy to do in R packages. In his [paper about testthat](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf), Hadley wrote:
+[Pjotr Prins](https://thebird.nl/) was the first to encourage me towards software testing. [Hadley Wickham](https://hadley.nz/)'s [testthat](https://github.com/hadley/testthat) package makes it easy to do in R packages. In his [paper about testthat](https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf), Hadley wrote:
 
 > It's not that we don't test our code, it's that we don't store our tests so they can be re-run automatically.
 
