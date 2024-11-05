@@ -40,7 +40,7 @@ The changes I'd been making to my package didn't seem to have anything to do wit
 
 I changed that code block to `eval=FALSE`, but then a bunch of tests using `read_cross2( system.file( ... ) )` were failing instead. Again, I figured the problem was `system.file()`, because `R CMD check` worked fine on my machine.
 
-I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used [R Win-builder](http://win-builder.r-project.org/) to test my package with R-devel, and sure enough it failed there. So it wasn't Travis. My conclusion was that R-devel had broken `system.file()`.
+I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used [R Win-builder](https://win-builder.r-project.org/) to test my package with R-devel, and sure enough it failed there. So it wasn't Travis. My conclusion was that R-devel had broken `system.file()`.
 
 Poked around some more, and then finally used [R Win-builder](http://win-builder.r-project.org/) with R-release. And it failed with that, too. So it wasn't R-devel either.
 
