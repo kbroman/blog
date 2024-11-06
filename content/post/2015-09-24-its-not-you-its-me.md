@@ -42,7 +42,7 @@ I changed that code block to `eval=FALSE`, but then a bunch of tests using `read
 
 I then thought maybe Travis was using R-devel whereas I was using the R-release. So I used [R Win-builder](https://win-builder.r-project.org/) to test my package with R-devel, and sure enough it failed there. So it wasn't Travis. My conclusion was that R-devel had broken `system.file()`.
 
-Poked around some more, and then finally used [R Win-builder](http://win-builder.r-project.org/) with R-release. And it failed with that, too. So it wasn't R-devel either.
+Poked around some more, and then finally used [R Win-builder](https://win-builder.r-project.org/) with R-release. And it failed with that, too. So it wasn't R-devel either.
 
 I then created a little tester package, [testsysfile](https://github.com/kbroman/testsysfile), testing `system.file()` with `read.csv()` and then with `data.table::fread()`. That all worked fine. So it seemed like it wasn't actually `system.file()`, but something within `read_cross2()`.
 
