@@ -48,7 +48,7 @@ I then created a little tester package, [testsysfile](https://github.com/kbroman
 
 So finally I poked into my own code, and then I realized that I was passing a `NULL` value to the `sep` argument of `fread()`. (See [here](https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L99-L100) and [here](https://github.com/kbroman/qtl2geno/blob/master/R/read_cross2.R#L474-L485).)
 
-But why would `sep=NULL` work on my Mac but not on Travis or R Win-builder? I pulled out my junky Windows laptop (purchased in order to have a better sense of what my students were dealing with), went through all of the Windows updates, then updated R, [Rtools](https://cran.r-project.org/bin/windows/Rtools/), and [RStudio](http://rstudio.com), and tried things out there.
+But why would `sep=NULL` work on my Mac but not on Travis or R Win-builder? I pulled out my junky Windows laptop (purchased in order to have a better sense of what my students were dealing with), went through all of the Windows updates, then updated R, [Rtools](https://cran.r-project.org/bin/windows/Rtools/), and [RStudio](https://rstudio.com), and tried things out there.
 
 With my [testsysfile](https://github.com/kbroman/testsysfile) package, I could see that `data.table::fread()` was throwing an error with `sep=NULL` on Windows, though it was working fine on my Mac.
 
