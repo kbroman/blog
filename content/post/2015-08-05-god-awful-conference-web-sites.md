@@ -17,7 +17,7 @@ What do I want in a conference website? Not [this](https://www.amstat.org/meetin
 
   * If you can't show me everything at once, at least let me click-to-expand: for the talk titles, and then for the abstracts. Otherwise I have to keep clicking and going back.
 
-  * I want to be able to search for people. And if I'm searching for [Hao Wu](http://www.haowulab.org), I don't want to look at _all_ of the Wus. Or all of the Haos. I just want the Hao Wus. If I can't search on `"Hao Wu"`, at least let me search on `"Wu, Hao"`.
+  * I want to be able to search for people. And if I'm searching for [Hao Wu](https://www.haowulab.org), I don't want to look at _all_ of the Wus. Or all of the Haos. I just want the Hao Wus. If I can't search on `"Hao Wu"`, at least let me search on `"Wu, Hao"`.
 
   * If my search returns nothing and I go back, bring me back to the same search form. Don't make me have to click "Search for people" again.
 
