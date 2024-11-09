@@ -10,7 +10,7 @@ tags:
 slug: memories-of-past-jsms
 ---
 
-The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) are the big statistics meetings in North America, "joint" among the [American Statistical Association](https://amstat.org), [Institute of Mathematical Statistics](https://www.imstat.org), [International Biometric Society](https://www.biometricsociety.org) ([ENAR](https://www.enar.org) and [WNAR](http://www.wnar.org)), [Statistical Society of Canada](https://ssc.ca/en), and others.
+The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) are the big statistics meetings in North America, "joint" among the [American Statistical Association](https://amstat.org), [Institute of Mathematical Statistics](https://www.imstat.org), [International Biometric Society](https://www.biometricsociety.org) ([ENAR](https://www.enar.org) and [WNAR](https://www.wnar.org)), [Statistical Society of Canada](https://ssc.ca/en), and others.
 
 [JSM 2015](https://www.amstat.org/meetings/jsm/2015/) is next week, in Seattle. In anticipation, I thought I'd write down some of my main memories of past JSMs.
 
