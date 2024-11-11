@@ -24,7 +24,7 @@ The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) 
 
   * That same night, Michael and I and the considerable entourage we'd formed ran into [Gary Churchill](https://www.jax.org/research-and-faculty/faculty/gary-churchill) at the [Rock Bottom](https://www.rockbottom.com/locations/chicago). He was sitting alone with a beer. I latched onto him and bent his ear about QTL mapping and [my thesis work](https://www.biostat.wisc.edu/~kbroman/publications/thesis.pdf). When we got up to leave, I asked him if he'd remembered me (we'd met previously when he'd visited Berkeley). He admitted that he hadn't, "But I'll remember you now!"
 
-  * We ended up at the [Crō*Bar](http://www.crobar.com/crobar-chicago.html), which featured free tattoos and body piercing.
+  * We ended up at the [Crō*Bar](https://www.crobar.com/crobar-chicago.html), which featured free tattoos and body piercing.
 
   * At JSM 2003 in San Francisco (I think), I spoke at a Sunday afternoon contributed papers session on statistical genetics. Many people didn't realize that they'd added Sunday afternoon sessions. And there were two invited sessions on statistical genetics at the same time. We had just one audience member. In fact, one of the speakers didn't even show up, and we waited through that time slot so as not to disturb the schedule. (It seemed like there was a greater risk of losing our audience member.) I went last, and when I got up to speak, a [friend of mine](http://statistics.calpoly.edu/steve-rein/) joined the audience. "When I got up to speak, the audience doubled!" is how I like to characterize it.
 
