@@ -30,7 +30,7 @@ The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) 
 
   * There was a session with John Chambers, Robert Gentleman, and Duncan Temple Lang on the future of [R](https://www.r-project.org), in room that seated 25 comfortably. There was crowd of like 50 people packed in a big bunch outside the door, hoping to at least hear John Chambers's voice.
 
-  * At JSM 2005 in Minneapolis, I was talking to some random statistician in a pub and made a statement like, "Does anyone still use Splus? Anyone who still uses Splus is an idiot." It turned out that the guy worked for Insightful, or whatever the company was that owned Splus at the time. [Ingo](http://www.biostat.jhsph.edu/~iruczins/) said the guy looked like he was going to punch me.
+  * At JSM 2005 in Minneapolis, I was talking to some random statistician in a pub and made a statement like, "Does anyone still use Splus? Anyone who still uses Splus is an idiot." It turned out that the guy worked for Insightful, or whatever the company was that owned Splus at the time. [Ingo](https://www.biostat.jhsph.edu/~iruczins/) said the guy looked like he was going to punch me.
 
   * There was the bet I made with [Ingo](http://www.biostat.jhsph.edu/~iruczins/), in which I promised to [put a certain variation on the Johns Hopkins _Bloomberg_ School of Public Health logo](https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/) on one of the slides of my talk, in exchange for a month's beer. I stayed up really late preparing, but I was ultimately successful.
 
