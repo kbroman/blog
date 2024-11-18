@@ -34,7 +34,7 @@ The [Joint Statistical Meetings (JSM)](https://www.amstat.org/meetings/jsm.cfm) 
 
   * There was the bet I made with [Ingo](https://www.biostat.jhsph.edu/~iruczins/), in which I promised to [put a certain variation on the Johns Hopkins _Bloomberg_ School of Public Health logo](https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/) on one of the slides of my talk, in exchange for a month's beer. I stayed up really late preparing, but I was ultimately successful.
 
-  * At the end of an evening, [Brian](http://www.bcaffo.com/), [Greg](https://www.albany.edu/sph/19585.php), and I paid the waitress to _not_ bring us the round of drinks that Ingo was trying to buy.
+  * At the end of an evening, [Brian](https://www.bcaffo.com/), [Greg](https://www.albany.edu/sph/19585.php), and I paid the waitress to _not_ bring us the round of drinks that Ingo was trying to buy.
 
   * Actually, I think those last 3 were all on the same night.
 
