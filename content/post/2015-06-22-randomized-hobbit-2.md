@@ -11,7 +11,7 @@ tags:
 slug: randomized-hobbit-2
 ---
 
-[@wrathematics](https://twitter.com/wrathematics) pointed me to his [ngram](http://cran.r-project.org/package=ngram) R package for constructing and simulating from n-grams from text.
+[@wrathematics](https://twitter.com/wrathematics) pointed me to his [ngram](https://cran.r-project.org/package=ngram) R package for constructing and simulating from n-grams from text.
 
 I'd recently grabbed the text of the hobbit, and so I applied it to that text, with amusing results.
 
