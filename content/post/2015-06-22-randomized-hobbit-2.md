@@ -52,7 +52,7 @@ babble(ng2, 48, seed=53482175)
 > into trees, and then bore to the Mountain to go through?" groaned the hobbit. "Well, are you doing, And where are you doing, And where are you?" it squeaked, as it was no answer. They were surly and angry and puzzled at finding them here in their holes
 
 
-**Update**: [@wrathematics](https://twitter.com/wrathematics) suggested that I [mix two texts](http://librestats.com/2014/07/01/modern-applied-statistics-in-rlyeh/), so here's a bit from the _Hobbit in the Hat_ (The Hobbit with 59× Cat in the Hat -- up-sampled to match lengths.) But there's maybe not enough overlap between the two texts to get much of a mixture.
+**Update**: [@wrathematics](https://twitter.com/wrathematics) suggested that I [mix two texts](https://librestats.com/2014/07/01/modern-applied-statistics-in-rlyeh/), so here's a bit from the _Hobbit in the Hat_ (The Hobbit with 59× Cat in the Hat -- up-sampled to match lengths.) But there's maybe not enough overlap between the two texts to get much of a mixture.
 
 > "I am Gandalf," said the fish. This is no way at all!
 
