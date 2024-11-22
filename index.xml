@@ -4206,7 +4206,7 @@ ng2 &amp;lt;- ngram(hobbit, n=2)
       
       <guid>/2015/04/29/cheat-sheets-for-r-based-software-carpentry-course/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;https://software-carpentry.org&#34;&gt;Software Carpentry&lt;/a&gt; workshop at  &lt;a href=&#34;https://github.com/UW-Madison-ACI/boot-camps/blob/2014-08-25/README.md&#34;&gt;UW-Madison in August, 2014&lt;/a&gt;, one of the students suggested that we hand out some cheat sheets on each topic. I thought that was a really good idea.&lt;/p&gt;
-&lt;p&gt;So at the SWC workshop at &lt;a href=&#34;http://karawoo.com/2015-04-27-wsu/&#34;&gt;Washington State University this week&lt;/a&gt;, we handed out the following five pages:&lt;/p&gt;
+&lt;p&gt;So at the SWC workshop at &lt;a href=&#34;https://karawoo.com/2015-04-27-wsu/&#34;&gt;Washington State University this week&lt;/a&gt;, we handed out the following five pages:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf&#34;&gt;ddplyr&lt;/a&gt; (from RStudio)&lt;/p&gt;
