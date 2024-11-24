@@ -14,7 +14,7 @@ At the [Software Carpentry](https://software-carpentry.org) workshop at  [UW-Mad
 
 So at the SWC workshop at [Washington State University this week](https://karawoo.com/2015-04-27-wsu/), we handed out the following five pages:
 
-  * [ddplyr](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (from RStudio)
+  * [ddplyr](https://web.archive.org/web/20240210163126/https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (from RStudio)
 
   * [ggplot2](http://www.rstudio.com/wp-content/uploads/2015/04/ggplot2-cheatsheet.pdf) (from RStudio)
 
