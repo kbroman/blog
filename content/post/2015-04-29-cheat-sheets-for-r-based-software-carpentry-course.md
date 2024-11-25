@@ -16,7 +16,7 @@ So at the SWC workshop at [Washington State University this week](https://karawo
 
   * [ddplyr](https://web.archive.org/web/20240210163126/https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (from RStudio)
 
-  * [ggplot2](http://www.rstudio.com/wp-content/uploads/2015/04/ggplot2-cheatsheet.pdf) (from RStudio)
+  * [ggplot2](https://web.archive.org/web/20201112023741/https://www.rstudio.com/wp-content/uploads/2015/04/ggplot2-cheatsheet.pdf) (from RStudio)
 
   * [unix command line](http://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/) (from Dave Child at Cheatography)
 
