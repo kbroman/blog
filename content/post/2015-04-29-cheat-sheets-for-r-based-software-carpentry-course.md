@@ -18,7 +18,7 @@ So at the SWC workshop at [Washington State University this week](https://karawo
 
   * [ggplot2](https://web.archive.org/web/20201112023741/https://www.rstudio.com/wp-content/uploads/2015/04/ggplot2-cheatsheet.pdf) (from RStudio)
 
-  * [unix command line](http://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/) (from Dave Child at Cheatography)
+  * [unix command line](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/) (from Dave Child at Cheatography)
 
   * [git](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf) (from GitHub)
 
