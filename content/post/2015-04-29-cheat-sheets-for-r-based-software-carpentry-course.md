@@ -22,6 +22,6 @@ So at the SWC workshop at [Washington State University this week](https://karawo
 
   * [git](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf) (from GitHub)
 
-  * [R Markdown](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) (from RStudio)
+  * [R Markdown](https://web.archive.org/web/20200524032612/https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) (from RStudio)
 
 I really appreciate the work (and design sense) that were put into these.
