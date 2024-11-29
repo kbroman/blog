@@ -10,7 +10,7 @@ tags:
 slug: scholarly-publishing-symposium-at-uw-madison
 ---
 
-At the [Scholarly Publishing Symposium](http://go.wisc.edu/publishing-symposium) at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
+At the [Scholarly Publishing Symposium](https://today.wisc.edu/events/view/76051) at UW-Madison today. Has interesting list of supplemental materials, but apparently only on paper:
 
 ![Supplemental materials from UW-Madison Scholarly Publishing Symposium](https://kbroman.files.wordpress.com/2014/10/img_3422.jpg)
 
