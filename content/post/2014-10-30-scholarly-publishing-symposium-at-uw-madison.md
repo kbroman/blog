@@ -16,7 +16,7 @@ At the [Scholarly Publishing Symposium](https://today.wisc.edu/events/view/76051
 
 So here they are electronically.
 
-  * [Know your Copy Rights, Association of Research Libraries](http://go.wisc.edu/l7k7vt)
+  * [Know your Copy Rights, Association of Research Libraries](https://www.arl.org/know-your-copyrights/)
 
   * [Optimize Your Publishing, The Right to Research Coalition](http://go.wisc.edu/181xyi)
 
