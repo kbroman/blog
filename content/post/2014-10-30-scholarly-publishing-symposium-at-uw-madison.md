@@ -18,9 +18,7 @@ So here they are electronically.
 
   * [Know your Copy Rights, Association of Research Libraries](https://www.arl.org/know-your-copyrights/)
 
-  * [Optimize Your Publishing, The Right to Research Coalition](https://sparcopen.org/our-work/r2rc/)
-
-  * [Right to Research, The Right to Research Coalition](http://go.wisc.edu/904z4t)
+  * [The Right to Research Coalition](https://sparcopen.org/our-work/r2rc/)
 
   * [About SPARC (Scholarly Publishing and Academic Research Coalition)](http://go.wisc.edu/39ef9o)
 
