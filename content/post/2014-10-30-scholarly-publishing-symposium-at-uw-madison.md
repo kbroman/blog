@@ -20,7 +20,7 @@ So here they are electronically.
 
   * [The Right to Research Coalition](https://sparcopen.org/our-work/r2rc/)
 
-  * [About SPARC (Scholarly Publishing and Academic Research Coalition)](http://go.wisc.edu/39ef9o)
+  * [About SPARC (Scholarly Publishing and Academic Research Coalition)](https://sparcopen.org/who-we-are/)
 
   * [Open Data Factsheet, SPARC](http://go.wisc.edu/74guz3)
 
