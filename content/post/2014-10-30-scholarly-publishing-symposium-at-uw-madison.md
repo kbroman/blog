@@ -22,7 +22,7 @@ So here they are electronically.
 
   * [About SPARC (Scholarly Publishing and Academic Research Coalition)](https://sparcopen.org/who-we-are/)
 
-  * [Open Data Factsheet, SPARC](http://go.wisc.edu/74guz3)
+  * [Open Data Factsheet, SPARC](https://sparcopen.org/wp-content/uploads/2016/01/SPARC-Open-Data-Factsheet.pdf)
 
   * [Open Education Factsheet, SPARC](http://go.wisc.edu/9980c2)
 
