@@ -24,7 +24,7 @@ So here they are electronically.
 
   * [Open Data Factsheet, SPARC](https://sparcopen.org/wp-content/uploads/2016/01/SPARC-Open-Data-Factsheet.pdf)
 
-  * [Open Education Factsheet, SPARC](http://go.wisc.edu/9980c2)
+  * [Open Education Factsheet, SPARC](https://sparcopen.org/wp-content/uploads/2016/01/Open-Education-Fact-Sheet_SPARC.11.10.pdf)
 
   * [Open Access to Scholarly and Scientific Research Articles, SPARC](http://go.wisc.edu/iqg0jj)
 
