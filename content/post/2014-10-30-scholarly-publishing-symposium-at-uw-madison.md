@@ -26,6 +26,6 @@ So here they are electronically.
 
   * [Open Education Factsheet, SPARC](https://sparcopen.org/wp-content/uploads/2016/01/Open-Education-Fact-Sheet_SPARC.11.10.pdf)
 
-  * [Open Access to Scholarly and Scientific Research Articles, SPARC](http://go.wisc.edu/iqg0jj)
+  * [Open Access to Scholarly and Scientific Research Articles, SPARC](https://sparcopen.org/wp-content/uploads/2016/01/SPARC-Open-Access-Factsheet.pdf)
 
   * [SPARC Author Addendum](http://go.wisc.edu/fl0kop)
