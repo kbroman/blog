@@ -28,4 +28,4 @@ So here they are electronically.
 
   * [Open Access to Scholarly and Scientific Research Articles, SPARC](https://sparcopen.org/wp-content/uploads/2016/01/SPARC-Open-Access-Factsheet.pdf)
 
-  * [SPARC Author Addendum](http://go.wisc.edu/fl0kop)
+  * [SPARC Author Addendum](https://sparcopen.org/our-work/author-rights/)
