@@ -58,7 +58,7 @@ Data entry was another not-quite-how-I-want-my-scientific-collaborators-to-be-do
 
 ### The code
 
-The code to make the dotplots is [here](https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/plot.R); the code to make the scatterplots is [here](https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/scatterplots.R). Not the prettiest, and uses base graphics not the recommended [ggplot2](http://ggplot2.org), and with the `grayplot` function in my [R/broman](https://github.com/kbroman/broman) package.
+The code to make the dotplots is [here](https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/plot.R); the code to make the scatterplots is [here](https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/scatterplots.R). Not the prettiest, and uses base graphics not the recommended [ggplot2](https://ggplot2.tidyverse.org), and with the `grayplot` function in my [R/broman](https://github.com/kbroman/broman) package.
 
 ### Update
 
