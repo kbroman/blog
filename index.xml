@@ -4445,7 +4445,7 @@ ng2 &amp;lt;- ngram(hobbit, n=2)
       <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/09/03/notifications-from-r/</guid>
-      <description>&lt;p&gt;You just sent a long &lt;a href=&#34;http://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;You just sent a long &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; job running. How to know when it&amp;rsquo;s done? Have it notify you by &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beeping&lt;/a&gt;, &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;sending you a text&lt;/a&gt;, or &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;sending you a notification&lt;/a&gt; &lt;a href=&#34;http://pushbullet.com&#34;&gt;via pushbullet&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;beeprhttpsgithubcomrasmusabbeepr&#34;&gt;&lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;&lt;code&gt;beepr&lt;/code&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;You can use &lt;a href=&#34;http://www.sumsar.net/&#34;&gt;Rasmus Baath&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://github.com/rasmusab/beepr&#34;&gt;beepr&lt;/a&gt; package to have your computer play a sound.&lt;/p&gt;
 &lt;p&gt;Install it from &lt;a href=&#34;http://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; with&lt;/p&gt;
