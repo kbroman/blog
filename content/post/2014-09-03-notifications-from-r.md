@@ -10,7 +10,7 @@ tags:
 slug: notifications-from-r
 ---
 
-You just sent a long [R](https://www.r-project.org) job running. How to know when it's done? Have it notify you by [beeping](https://github.com/rasmusab/beepr), [sending you a text](https://github.com/trinker/gmailR), or [sending you a notification](https://github.com/eddelbuettel/rpushbullet) [via pushbullet](http://pushbullet.com).
+You just sent a long [R](https://www.r-project.org) job running. How to know when it's done? Have it notify you by [beeping](https://github.com/rasmusab/beepr), [sending you a text](https://github.com/trinker/gmailR), or [sending you a notification](https://github.com/eddelbuettel/rpushbullet) [via pushbullet](https://pushbullet.com).
 
 ### [`beepr`](https://github.com/rasmusab/beepr)
 
