@@ -16,7 +16,7 @@ You just sent a long [R](https://www.r-project.org) job running. How to know whe
 
 You can use [Rasmus Baath](https://www.sumsar.net/)'s [beepr](https://github.com/rasmusab/beepr) package to have your computer play a sound.
 
-Install it from [CRAN](http://cran.r-project.org) with
+Install it from [CRAN](https://cran.r-project.org) with
 
 ````
 install.packages("beepr")
