@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cardiac ablation</title>
+      <link>/2024/12/15/ablation/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/2024/12/15/ablation/</guid>
+      <description>Following up on my PVCs: it&amp;rsquo;s been a couple of months since I had the cardiac ablation procedure, which went very well, and was easier in every way from what I expected.
+The worst part was that they had me arrive at 9:30am, but they didn&amp;rsquo;t get started until 1:30pm, and so I just lay in the hospital bed for four hours.
+The anaesthesia was similar to what is given for a colonoscopy (so you&amp;rsquo;ll be awake but feel no pain), but actually I did fall asleep almost immediately and didn&amp;rsquo;t wake up until it was all over.</description>
+    </item>
+    
     <item>
       <title>classifying pvc states</title>
       <link>/2024/09/28/pvc-states/</link>
@@ -295,16 +306,6 @@ This was ROpenSci&amp;rsquo;s 4th unconference; the first I could attend. There 
       <guid>/2017/05/23/minicran/</guid>
       <description>Next month, I’m teaching a workshop on R/qtl and R/qtl2 at the joint Complex Trait Community and Rat Genomics Community meeting (CTC-RG2017) meeting in Memphis.
 I was chatting with Śaunak Sen about preparations: the main problem is installation of R/qtl2, which is split into multiple R packages, and I’ve not yet placed them on CRAN. And they’re a bit of a pain to install from GitHub (people need the proper development tools, and compilation of the C++ code is painfully slow).</description>
-    </item>
-    
-    <item>
-      <title>reading/writing biggish data, revisited</title>
-      <link>/2017/05/11/reading/writing-biggish-data-revisited/</link>
-      <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
-      
-      <guid>/2017/05/11/reading/writing-biggish-data-revisited/</guid>
-      <description>Matt Dowle encouraged me to follow up on my post about sqlite, feather, and fst. One thing to emphasize is that saveRDS, by default, uses compression. If you use compress=FALSE you can skip that and it goes much faster. See, for example, his post on “Fast csv writing for R”. Also see his slides from a recent presentation on parallel fread.
-I’ll first generate the same data that I was using before.</description>
     </item>
     
   </channel>
