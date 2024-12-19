@@ -35,7 +35,7 @@ beep()
 
 ### [`gmailR`](https://github.com/trinker/gmailR)
 
-There are a number of different packages for sending email from R (e.g., [sendmailR](https://cran.r-project.org/package=sendmailR) and [mailR](https://cran.r-project.org/package=mailR)). I tried [Tyler Rinker](http://trinkerrstuff.wordpress.com/)'s [gmailR](https://github.com/trinker/gmailR) package.
+There are a number of different packages for sending email from R (e.g., [sendmailR](https://cran.r-project.org/package=sendmailR) and [mailR](https://cran.r-project.org/package=mailR)). I tried [Tyler Rinker](https://trinkerrstuff.wordpress.com/)'s [gmailR](https://github.com/trinker/gmailR) package.
 
 You can send yourself an email using the `gmail()` function. And since most cell phone companies have a method for sending a text via email, you can use this same function to send yourself a text. [gmailR](https://github.com/trinker/gmailR) includes a function `cell2email()` that will help you figure out the appropriate email address to use, to send a text to your phone.
 
