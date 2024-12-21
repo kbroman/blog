@@ -4515,7 +4515,7 @@ beep()
 gmail    my_gmail_account@gmail.com
 text     0123456789@txt.att.net
 to       default_to@gmail.com
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You need to install a few packages. &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt; are not available on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, so you need to install &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; and use the &lt;code&gt;install_github()&lt;/code&gt; function to install them from &lt;a href=&#34;http://github.com&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You need to install a few packages. &lt;a href=&#34;https://github.com/trinker/gmailR&#34;&gt;gmailR&lt;/a&gt; and &lt;a href=&#34;https://github.com/kbroman/mygmailR&#34;&gt;mygmailR&lt;/a&gt; are not available on &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt;, so you need to install &lt;a href=&#34;https://github.com/hadley/devtools&#34;&gt;devtools&lt;/a&gt; and use the &lt;code&gt;install_github()&lt;/code&gt; function to install them from &lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;install.packages(c(&amp;quot;devtools&amp;quot;, &amp;quot;rJython&amp;quot;, &amp;quot;rJava&amp;quot;, &amp;quot;rjson&amp;quot;))
 library(devtools)
 install_github(&amp;quot;trinker/gmailR&amp;quot;)
