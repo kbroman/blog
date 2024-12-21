@@ -52,7 +52,7 @@ text     0123456789@txt.att.net
 to       default_to@gmail.com
 ````
 
-You need to install a few packages. [gmailR](https://github.com/trinker/gmailR) and [mygmailR](https://github.com/kbroman/mygmailR) are not available on [CRAN](https://cran.r-project.org), so you need to install [devtools](https://github.com/hadley/devtools) and use the `install_github()` function to install them from [GitHub](http://github.com).
+You need to install a few packages. [gmailR](https://github.com/trinker/gmailR) and [mygmailR](https://github.com/kbroman/mygmailR) are not available on [CRAN](https://cran.r-project.org), so you need to install [devtools](https://github.com/hadley/devtools) and use the `install_github()` function to install them from [GitHub](https://github.com).
 
 ````
 install.packages(c("devtools", "rJython", "rJava", "rjson"))
