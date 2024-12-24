@@ -79,7 +79,7 @@ send_gmail("subject here", "body of message here")
 
 Another alternative (suggested to me by [Peter Hickey](https://twitter.com/PeteHaitch/status/507073412842278913) and [Jared Knowles](https://twitter.com/jknowles/status/507152898674143232)) is to use [Dirk Eddelbuettel](https://dirk.eddelbuettel.com/)'s [RPushbullet](https://github.com/eddelbuettel/rpushbullet) package to send yourself a notification via [pushbullet](https://pushbullet.com).
 
-The main advantage of this, in my mind, is that there's no gmail password sitting around on your system anywhere, but rather just your [pushbullet](http://pushbullet.com) "Access Token", sitting in the file `~/.rpushbullet.json`, so this is less of a security issue.
+The main advantage of this, in my mind, is that there's no gmail password sitting around on your system anywhere, but rather just your [pushbullet](https://pushbullet.com) "Access Token", sitting in the file `~/.rpushbullet.json`, so this is less of a security issue.
 
   1. Sign up for [pushbullet](http://pushbullet.com); you'll need a [Google](http://www.google.com) account.
 
