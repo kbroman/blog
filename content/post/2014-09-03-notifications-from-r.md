@@ -81,7 +81,7 @@ Another alternative (suggested to me by [Peter Hickey](https://twitter.com/PeteH
 
 The main advantage of this, in my mind, is that there's no gmail password sitting around on your system anywhere, but rather just your [pushbullet](https://pushbullet.com) "Access Token", sitting in the file `~/.rpushbullet.json`, so this is less of a security issue.
 
-  1. Sign up for [pushbullet](http://pushbullet.com); you'll need a [Google](http://www.google.com) account.
+  1. Sign up for [pushbullet](https://pushbullet.com); you'll need a [Google](http://www.google.com) account.
 
   2. Install the pushbullet app on your phone or other device, or install the chrome extension.
 
