@@ -4553,7 +4553,7 @@ send_gmail(&amp;quot;subject here&amp;quot;, &amp;quot;body of message here&amp;
     &amp;quot;names&amp;quot;: []
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Install &lt;a href=&#34;https://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;http://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://cran.r-project.org/package=jsonlite&#34;&gt;jsonlite&lt;/a&gt; and use &lt;a href=&#34;https://github.com/eddelbuettel/rpushbullet&#34;&gt;RPushbullet&lt;/a&gt;&amp;rsquo;s &lt;code&gt;pbGetDevices()&lt;/code&gt; function to get the identifiers for the devices you&amp;rsquo;ve registered with &lt;a href=&#34;https://pushbullet.com&#34;&gt;pushbullet&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;jsonlite&amp;quot;)
 library(jsonlite)
