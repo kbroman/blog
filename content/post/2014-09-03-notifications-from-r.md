@@ -101,7 +101,7 @@ The main advantage of this, in my mind, is that there's no gmail password sittin
   }
   ```
 
-  6. Install [jsonlite](https://cran.r-project.org/package=jsonlite) and use [RPushbullet](https://github.com/eddelbuettel/rpushbullet)'s `pbGetDevices()` function to get the identifiers for the devices you've registered with [pushbullet](http://pushbullet.com).
+  6. Install [jsonlite](https://cran.r-project.org/package=jsonlite) and use [RPushbullet](https://github.com/eddelbuettel/rpushbullet)'s `pbGetDevices()` function to get the identifiers for the devices you've registered with [pushbullet](https://pushbullet.com).
   ```
   install.packages("jsonlite")
   library(jsonlite)
