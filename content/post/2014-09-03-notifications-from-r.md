@@ -138,4 +138,4 @@ By default, the message is posted to the first device listed in your `~/.rpushbu
 
 I'm still somewhat inclined towards using [gmailR](https://github.com/trinker/gmailR) and [mygmailR](https://github.com/kbroman/mygmailR) to send myself a text, but [RPushbullet](https://github.com/eddelbuettel/rpushbullet) seems more secure.
 
-**Update**: The [word from Hadley](https://twitter.com/hadleywickham/status/507192305816567808): we should also check out [gmailr](https://github.com/jimhester/gmailr). [But you [can't currently send email](https://github.com/jimhester/gmailr/issues/5) with [gmailr](https://github.com/jimhester/gmailr).]
+**Update**: The [word from Hadley](https://twitter.com/hadleywickham/status/507192305816567808): we should also check out [gmailr](https://github.com/r-lib/gmailr). [But you [can't currently send email](https://github.com/r-lib/gmailr/issues/5) with [gmailr](https://github.com/r-lib/gmailr).]
