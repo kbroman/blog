@@ -49,7 +49,7 @@ Anyway, it was the morning of 15 Nov 2002, and I had a bit of an accident with m
 
 [Biochemistry](https://www.jhsph.edu/departments/biochemistry-and-molecular-biology/) graduate students organize a Happy Hour every Friday at the [Johns Hopkins Bloomberg School of Public Health](https://www.jhsph.edu). The [Biostat Faculty](https://www.biostat.jhsph.edu) were enthusiastic participants. (As you may recall, Happy Hour was featured in the whole JHSPH logo saga; see parts [one](https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/), [two](https://kbroman.org/blog/2012/11/21/the-hopkins-sph-logo-part-2/), and [three](https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/)).
 
-[The photo](https://www.biostat.wisc.edu/~kbroman/pictures/moustache) was taken at Happy Hour. So that's why I was happy. (There exists a dual photo of [John McGready](http://www.biostat.jhsph.edu/~jmcgread/), who was a true participant in the competition. But, as I recall, it's hard to detect the presence of a mustache in the photo of John, so it's not gotten the same play.)
+[The photo](https://www.biostat.wisc.edu/~kbroman/pictures/moustache) was taken at Happy Hour. So that's why I was happy. (There exists a dual photo of [John McGready](https://www.biostat.jhsph.edu/~jmcgread/), who was a true participant in the competition. But, as I recall, it's hard to detect the presence of a mustache in the photo of John, so it's not gotten the same play.)
 
 ### Wilmer dinner
 
