@@ -10,7 +10,7 @@ tags:
 slug: if-i-could-do-it-over-again-id-self-publish
 ---
 
-In 2009, [Śaunak Sen](http://www.epibiostat.ucsf.edu/biostat/sen/) and I wrote a [book](https://rqtl.org) about QTL mapping and the [R/qtl](https://rqtl.org) software. We started working on it in the fall of 2006, and it was a heck of a lot of work.
+In 2009, [Śaunak Sen](https://senresearch.org) and I wrote a [book](https://rqtl.org) about QTL mapping and the [R/qtl](https://rqtl.org) software. We started working on it in the fall of 2006, and it was a heck of a lot of work.
 
 We'd talked to several publishers, and ended up publishing with [Springer](https://springer.com). John Kimmel was the editor we worked with; I like John, and I felt that Springer (or _John_) did a good job of keeping prices reasonable. We were able to publish in full color with a list price of \$99, so that on Amazon it was about \$65. (In April, 2013, there was a brief period where [it was just \$42 at Amazon](https://twitter.com/kwbroman/status/321747087744184320)!)
 
