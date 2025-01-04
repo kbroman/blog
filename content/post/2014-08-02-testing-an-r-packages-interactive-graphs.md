@@ -27,7 +27,7 @@ So, what I've decided to do:
 
   * Also include examples that don't open the browser, within `\dontshow{}`, so that `R CMD check` will at least check the basics.
 
-  * Write a [ruby](http://ruby-lang.org) script that pulls out all of the examples from the `.Rd` files, stripping off the `\dontrun{}` and `\dontshow{}` and pasting it all into a `.R` file.
+  * Write a [ruby](https://ruby-lang.org) script that pulls out all of the examples from the `.Rd` files, stripping off the `\dontrun{}` and `\dontshow{}` and pasting it all into a `.R` file.
 
   * Periodically run `R CMD BATCH` on that set of examples, to do the manual checking of the interactive graphs.
 
