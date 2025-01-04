@@ -4708,7 +4708,7 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;Also include examples that don&amp;rsquo;t open the browser, within &lt;code&gt;\dontshow{}&lt;/code&gt;, so that &lt;code&gt;R CMD check&lt;/code&gt; will at least check the basics.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Write a &lt;a href=&#34;http://ruby-lang.org&#34;&gt;ruby&lt;/a&gt; script that pulls out all of the examples from the &lt;code&gt;.Rd&lt;/code&gt; files, stripping off the &lt;code&gt;\dontrun{}&lt;/code&gt; and &lt;code&gt;\dontshow{}&lt;/code&gt; and pasting it all into a &lt;code&gt;.R&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Write a &lt;a href=&#34;https://ruby-lang.org&#34;&gt;ruby&lt;/a&gt; script that pulls out all of the examples from the &lt;code&gt;.Rd&lt;/code&gt; files, stripping off the &lt;code&gt;\dontrun{}&lt;/code&gt; and &lt;code&gt;\dontshow{}&lt;/code&gt; and pasting it all into a &lt;code&gt;.R&lt;/code&gt; file.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Periodically run &lt;code&gt;R CMD BATCH&lt;/code&gt; on that set of examples, to do the manual checking of the interactive graphs.&lt;/p&gt;
