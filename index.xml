@@ -4715,7 +4715,7 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;http://had.co.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham/status/495535873711431681&#34;&gt;pointed me&lt;/a&gt; to &lt;strong&gt;&lt;code&gt;\donttest{}&lt;/code&gt;&lt;/strong&gt;, added in R ver 2.7 (in 2008). (More value from blog + twitter!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: &lt;a href=&#34;https://hadley.nz/&#34;&gt;Hadley Wickham&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hadleywickham/status/495535873711431681&#34;&gt;pointed me&lt;/a&gt; to &lt;strong&gt;&lt;code&gt;\donttest{}&lt;/code&gt;&lt;/strong&gt;, added in R ver 2.7 (in 2008). (More value from blog + twitter!)&lt;/p&gt;
 &lt;p&gt;So I replaced my &lt;code&gt;\dontrun{}&lt;/code&gt; bits with &lt;code&gt;\donttest{}&lt;/code&gt;. And I can use &lt;code&gt;devtools::run_examples()&lt;/code&gt; to run all of the examples, for my manual checks.&lt;/p&gt;
 </description>
     </item>

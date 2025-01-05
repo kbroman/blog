@@ -101,7 +101,7 @@
 </li>
 </ul>
 <p>This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.</p>
-<p><strong>Update</strong>: <a href="http://had.co.nz/">Hadley Wickham</a> <a href="https://twitter.com/hadleywickham/status/495535873711431681">pointed me</a> to <strong><code>\donttest{}</code></strong>, added in R ver 2.7 (in 2008). (More value from blog + twitter!)</p>
+<p><strong>Update</strong>: <a href="https://hadley.nz/">Hadley Wickham</a> <a href="https://twitter.com/hadleywickham/status/495535873711431681">pointed me</a> to <strong><code>\donttest{}</code></strong>, added in R ver 2.7 (in 2008). (More value from blog + twitter!)</p>
 <p>So I replaced my <code>\dontrun{}</code> bits with <code>\donttest{}</code>. And I can use <code>devtools::run_examples()</code> to run all of the examples, for my manual checks.</p>
 
     </div>
