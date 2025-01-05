@@ -33,6 +33,6 @@ So, what I've decided to do:
 
 This will always be a bit of a pain, but with this approach I can do my manual testing in a straightforward way and still fulfill the CRAN policies.
 
-**Update**: [Hadley Wickham](http://had.co.nz/) [pointed me](https://twitter.com/hadleywickham/status/495535873711431681) to **`\donttest{}`**, added in R ver 2.7 (in 2008). (More value from blog + twitter!)
+**Update**: [Hadley Wickham](https://hadley.nz/) [pointed me](https://twitter.com/hadleywickham/status/495535873711431681) to **`\donttest{}`**, added in R ver 2.7 (in 2008). (More value from blog + twitter!)
 
 So I replaced my `\dontrun{}` bits with `\donttest{}`. And I can use `devtools::run_examples()` to run all of the examples, for my manual checks.
