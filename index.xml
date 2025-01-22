@@ -4773,7 +4773,7 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014&lt;/a&gt; was a great meeting. In addition to the packages mentioned with &lt;a href=&#34;https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/&#34;&gt;Days 1-2&lt;/a&gt;, I need to pick up &lt;a href=&#34;https://rcpp.org&#34;&gt;Rcpp&lt;/a&gt; and &lt;a href=&#34;https://rstudio.github.io/packrat/&#34;&gt;packrat&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://user2014.stat.ucla.edu/&#34;&gt;UseR 2014&lt;/a&gt; was a great meeting. In addition to the packages mentioned with &lt;a href=&#34;https://kbroman.org/blog/2014/07/02/2014-user-conference-days-1-2/&#34;&gt;Days 1-2&lt;/a&gt;, I need to pick up &lt;a href=&#34;https://rcpp.org&#34;&gt;Rcpp&lt;/a&gt; and &lt;a href=&#34;https://rstudio.github.io/packrat/&#34;&gt;packrat&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Slides for many of the talks and tutorials are on the &lt;a href=&#34;http://user2014.stat.ucla.edu/&#34;&gt;UseR 2014 web site&lt;/a&gt;. If you know of others, you can add them via the &lt;a href=&#34;https://github.com/user2014/user2014.github.io&#34;&gt;site&amp;rsquo;s GitHub repository&lt;/a&gt; and make a pull request.&lt;/p&gt;
 </description>
     </item>
