@@ -13,7 +13,7 @@ slug: why-hadnt-i-written-a-function-for-that
 
 I'm often typing the same bits of code over and over. Those bits of code really should be made into functions.
 
-For example, I'm still using base graphics. ([ggplot2](http://ggplot2.org) is on my "to do" list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with `image`, the border is often obscured. I want a nice black rectangle around the outside.
+For example, I'm still using base graphics. ([ggplot2](https://ggplot2.tidyverse.org) is on my "to do" list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with `image`, the border is often obscured. I want a nice black rectangle around the outside.
 
 So I'll write the following:
 
