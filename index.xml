@@ -4785,7 +4785,7 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
       
       <guid>/2014/07/16/why-hadnt-i-written-a-function-for-that/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m often typing the same bits of code over and over. Those bits of code really should be made into functions.&lt;/p&gt;
-&lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;http://ggplot2.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
+&lt;p&gt;For example, I&amp;rsquo;m still using base graphics. (&lt;a href=&#34;https://ggplot2.tidyverse.org&#34;&gt;ggplot2&lt;/a&gt; is on my &amp;ldquo;to do&amp;rdquo; list, really!) Often some things will be drawn with a slight overlap of the border of the plotting region. And in heatmaps with &lt;code&gt;image&lt;/code&gt;, the border is often obscured. I want a nice black rectangle around the outside.&lt;/p&gt;
 &lt;p&gt;So I&amp;rsquo;ll write the following:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;u &amp;lt;- par(&amp;quot;usr&amp;quot;)
 rect(u[1], u[3], u[2], u[4])
