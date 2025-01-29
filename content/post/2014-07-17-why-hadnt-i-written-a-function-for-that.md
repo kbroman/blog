@@ -22,7 +22,7 @@ u <- par("usr")
 rect(u[1], u[3], u[2], u[4])
 ````
 
-I don't know _how_ many times I've typed that! Today I realized that I should put those two lines in a function `add_border()`. And then I added `add_border()` to my [R/broman package](http://github.com/kbroman/broman).
+I don't know _how_ many times I've typed that! Today I realized that I should put those two lines in a function `add_border()`. And then I added `add_border()` to my [R/broman package](https://github.com/kbroman/broman).
 
 It was a bit more work adding the [Roxygen2](https://github.com/klutometis/roxygen) comments for the documentation, but now I've got a proper function that is easier to use and much more clear.
 
