@@ -91,7 +91,7 @@
 <p>So I&rsquo;ll write the following:</p>
 <pre><code>u &lt;- par(&quot;usr&quot;)
 rect(u[1], u[3], u[2], u[4])
-</code></pre><p>I don&rsquo;t know <em>how</em> many times I&rsquo;ve typed that! Today I realized that I should put those two lines in a function <code>add_border()</code>. And then I added <code>add_border()</code> to my <a href="http://github.com/kbroman/broman">R/broman package</a>.</p>
+</code></pre><p>I don&rsquo;t know <em>how</em> many times I&rsquo;ve typed that! Today I realized that I should put those two lines in a function <code>add_border()</code>. And then I added <code>add_border()</code> to my <a href="https://github.com/kbroman/broman">R/broman package</a>.</p>
 <p>It was a bit more work adding the <a href="https://github.com/klutometis/roxygen">Roxygen2</a> comments for the documentation, but now I&rsquo;ve got a proper function that is easier to use and much more clear.</p>
 <p><strong>Update</strong>: <a href="https://twitter.com/tpoi">@tpoi</a> <a href="https://twitter.com/tpoi/status/489622770398289920">pointed out</a> that <code>box()</code> does the same thing as my <code>add_border()</code>. My general point still stands, and this raises the additional point: twitter + blog -&gt; education.</p>
 <p>I want to add, &ldquo;I&rsquo;m an idiot&rdquo; but I think I&rsquo;ll just say that there&rsquo;s always more that I can learn about R. And I&rsquo;ll remove <code>add_border</code> from R/broman and just use <code>box()</code>.</p>
