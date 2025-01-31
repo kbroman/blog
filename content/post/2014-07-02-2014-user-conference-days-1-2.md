@@ -121,7 +121,7 @@ I think I just don't like panel discussion. The five women on the panel, and the
 
 I felt the same way about the panel discussion at [the meeting I co-organized in 2013](https://rqtl.org/ctc2013): I would have preferred to have heard much more from the general audience and less from the panel.
 
-The most shocking revelation concerned the unnecessarily extensive effort that [Amelia McNamara](http://www.stat.ucla.edu/~amelia.mcnamara/) had to expend in order to include a _harrassment policy_ on the [meeting web site](https://user2014.r-project.org/). The value of such a policy should be obvious from the [history of bad behavior](https://geekfeminism.wikia.com/wiki/Timeline_of_incidents) at scientific and technical conferences.
+The most shocking revelation concerned the unnecessarily extensive effort that [Amelia McNamara](https://www.amelia.mn) had to expend in order to include a _harrassment policy_ on the [meeting web site](https://user2014.r-project.org/). The value of such a policy should be obvious from the [history of bad behavior](https://geekfeminism.wikia.com/wiki/Timeline_of_incidents) at scientific and technical conferences.
 
 I would have been happier had the discussion continued for another hour. The audience was just getting going when the event ended.
 
