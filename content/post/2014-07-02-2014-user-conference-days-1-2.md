@@ -17,7 +17,7 @@ In my comments below, I give short shrift to some speakers (largely by not havin
 
 ### Day 1: Tutorials
 
-The first day was devoted to [tutorials](https://user2014.r-project.org/#tutorials). I arrived later than intended and missed the morning tutorials and was just in time for the afternoon ones. But the tutorial I wanted to attend, [Ramnath Vaidyanathan's tutorial on interactive documents]() was in a tiny room that was already filled beyond capacity. And by the time I tried to switch, the others were well underway, and I'd lost my momentum. Plus I was distracted by ice cream. And seeing [Yihui](https://yihui.name/en/), [Karthik](https://inundata.org/), [Hilary](https://hilaryparker.com/), and [Sandy](http://www.sandradgriffith.com/).
+The first day was devoted to [tutorials](https://user2014.r-project.org/#tutorials). I arrived later than intended and missed the morning tutorials and was just in time for the afternoon ones. But the tutorial I wanted to attend, [Ramnath Vaidyanathan's tutorial on interactive documents]() was in a tiny room that was already filled beyond capacity. And by the time I tried to switch, the others were well underway, and I'd lost my momentum. Plus I was distracted by ice cream. And seeing [Yihui](https://yihui.name/en/), [Karthik](https://inundata.org/), [Hilary](https://hilaryparker.com/), and [Sandy](https://www.sandradgriffith.com/).
 
 Materials for many of the tutorials are [online](https://user2014.r-project.org/#tutorials); grab them while you can.
 
