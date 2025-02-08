@@ -23,7 +23,7 @@ Materials for many of the tutorials are [online](https://user2014.r-project.org/
 
 The evening reception was interesting. I listened in to [Joe Chang](https://github.com/jcheng5) talking to [Tal Galili](https://www.talgalili.com/) about the value of [dplyr](https://github.com/hadley/dplyr) and [magrittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)'s pipe operator (`%>%`) for data manipulation in R. Joe was quite persuasive: replace a nested series of function calls, to be read from the inside out, with a stream of pipes.
 
-I was excited to meet [Scott Chamberlain](https://scottchamberlain.info/) and to see [Jenny Bryan](https://www.stat.ubc.ca/~jenny/) and [Vince Vu](http://www.vince.vu/), and of course [Hadley](http://hadley.nz/).
+I was excited to meet [Scott Chamberlain](https://scottchamberlain.info/) and to see [Jenny Bryan](https://www.stat.ubc.ca/~jenny/) and [Vince Vu](http://www.vince.vu/), and of course [Hadley](https://hadley.nz/).
 
 ### Day 2
 
