@@ -33,7 +33,7 @@ The opening talk was by [John Chambers](https://en.wikipedia.org/wiki/John_Chamb
 
 John talked about the origin of S, including a [handwritten "viewgraph"](https://twitter.com/kwbroman/status/484005898965090305) from the first discussion of the idea in 1976. His basic point was that R was conceived not as a language but as an interface to algorithms: to make it easier to use Fortran-based routines for things like linear regression. And R continues to have much value in that regard:  user-friendly interfaces for statistical calculations.
 
-He gave a shout out to [Rcpp](https://www.rcpp.org/), [Rllvm](http://www.omegahat.org/Rllvm/), and [h2o](http://0xdata.com/)
+He gave a shout out to [Rcpp](https://www.rcpp.org/), [Rllvm](https://web.archive.org/web/20160121102551/https://www.omegahat.org/Rllvm), and [h2o](http://0xdata.com/)
 
 #### Interactive graphics
 
