@@ -55,7 +55,7 @@ I skipped a couple of important talks in here: on [RCloud](https://rcloud.persis
 
 I was back for [Joe Cheng](https://github.com/jcheng5)'s talk about [Shiny](https://shiny.rstudio.com/), for making interactive web applications with R, with no requirement of knowledge of html, css, or javascript. It was really well presented; especially cool is the ability to include shiny apps within R Markdown documents, which is apparently even easier than creating stand-alone shiny apps.
 
-And then [Karthik Ram](http://inundata.org/) gave a great talk about [rOpenSci](https://ropensci.org/), to foster open science: a large set of packages providing access to a variety of data sources.
+And then [Karthik Ram](https://inundata.org/) gave a great talk about [rOpenSci](https://ropensci.org/), to foster open science: a large set of packages providing access to a variety of data sources.
 
 #### Martin Machler
 
