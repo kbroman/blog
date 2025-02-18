@@ -4824,7 +4824,7 @@ rect(u[1], u[3], u[2], u[4])
 &lt;h4 id=&#34;webintegration&#34;&gt;Web/integration&lt;/h4&gt;
 &lt;p&gt;I skipped a couple of important talks in here: on &lt;a href=&#34;https://rcloud.persistent.com/rCloud&#34;&gt;RCloud&lt;/a&gt; and &lt;a href=&#34;https://www.opencpu.org/&#34;&gt;OpenCPU&lt;/a&gt;. I needed a walk and an espresso.&lt;/p&gt;
 &lt;p&gt;I was back for &lt;a href=&#34;https://github.com/jcheng5&#34;&gt;Joe Cheng&lt;/a&gt;&amp;rsquo;s talk about &lt;a href=&#34;https://shiny.rstudio.com/&#34;&gt;Shiny&lt;/a&gt;, for making interactive web applications with R, with no requirement of knowledge of html, css, or javascript. It was really well presented; especially cool is the ability to include shiny apps within R Markdown documents, which is apparently even easier than creating stand-alone shiny apps.&lt;/p&gt;
-&lt;p&gt;And then &lt;a href=&#34;http://inundata.org/&#34;&gt;Karthik Ram&lt;/a&gt; gave a great talk about &lt;a href=&#34;https://ropensci.org/&#34;&gt;rOpenSci&lt;/a&gt;, to foster open science: a large set of packages providing access to a variety of data sources.&lt;/p&gt;
+&lt;p&gt;And then &lt;a href=&#34;https://inundata.org/&#34;&gt;Karthik Ram&lt;/a&gt; gave a great talk about &lt;a href=&#34;https://ropensci.org/&#34;&gt;rOpenSci&lt;/a&gt;, to foster open science: a large set of packages providing access to a variety of data sources.&lt;/p&gt;
 &lt;h4 id=&#34;martin-machler&#34;&gt;Martin Machler&lt;/h4&gt;
 &lt;p&gt;Martin Machler gave a superb talk on &amp;ldquo;Good practices for R programming,&amp;rdquo; including seven principles:&lt;/p&gt;
 &lt;ol&gt;
