@@ -10,7 +10,7 @@ tags:
 slug: further-points-on-crayon-colors
 ---
 
-I saw [this great post on crayola crayon colors](https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/) at the [Learning R blog](https://learnr.wordpress.com), reproducing a [nice graph](https://web.archive.org/web/20240726193652/https://www.datapointed.net/2010/01/crayola-crayon-color-chart/) of the Crayola crayon colors over time. (Also see [this even nicer version](http://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/).)
+I saw [this great post on crayola crayon colors](https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/) at the [Learning R blog](https://learnr.wordpress.com), reproducing a [nice graph](https://web.archive.org/web/20240726193652/https://www.datapointed.net/2010/01/crayola-crayon-color-chart/) of the Crayola crayon colors over time. (Also see [this even nicer version](https://web.archive.org/web/20240928152104/https://www.datapointed.net/2010/10/crayola-color-chart-rainbow-style/).)
 
 The [Learning R post](https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/) shows how to grab the crayon colors from the wikipedia page, "[List of Crayola crayon colors](https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)," directly in R. Here's the code (after some slight modifications due to changes in the page since 2010):
 
