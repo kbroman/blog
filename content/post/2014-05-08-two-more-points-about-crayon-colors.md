@@ -33,4 +33,4 @@ ord <- hclust(dist(colval))$order
 
 It's not perfect, but I think it worked remarkably well:
 
-![Crayon colors](https://kbroman.files.wordpress.com/2014/05/crayons.png)
+![Crayon colors](/images/crayons.png)

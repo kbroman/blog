@@ -30,4 +30,4 @@ So I created a Wikipedia account and edited the Wikipedia page.
 
 The [Learning R post](https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/) also showed a different way to sort the colors: convert to HSV, and then sort by the H then S then V. So [I edited my `plot_crayons()` function again](https://github.com/kbroman/broman/commit/dde305de2c3cd5f3a00f7378fefd4f73a4520599), to create the following picture:
 
-![Crayon colors, again](https://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png)
+![Crayon colors, again](/images/crayon_colors_again.png)

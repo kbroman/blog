@@ -24,7 +24,7 @@ pink <- brocolors("crayons")["Tickle Me Pink"]
 
 Use `plot_crayons()` to get the following summary plot of the colors:
 
-![Crayon colors](https://kbroman.files.wordpress.com/2014/05/crayons.png)
+![Crayon colors](/images/crayons.png)
 
 You can install the R/broman package using `install_github` in devtools, (specifically, `install_github("kbroman/broman")`) or wait a day or two and the version with this code will be [on CRAN](https://cran.r-project.org/web/packages/broman/).
 
