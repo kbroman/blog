@@ -4959,7 +4959,7 @@ names(crayons) &amp;lt;- crayontable[,&amp;quot;Color&amp;quot;]
 &lt;p&gt;So I created a Wikipedia account and edited the Wikipedia page.&lt;/p&gt;
 &lt;p&gt;(Then I realized that I&amp;rsquo;d made a mistake in my edit, undid my change, thought the whole thing through again, and edited the page again.)&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&#34;https://learnr.wordpress.com/2010/01/21/ggplot2-crayola-crayon-colours/&#34;&gt;Learning R post&lt;/a&gt; also showed a different way to sort the colors: convert to HSV, and then sort by the H then S then V. So &lt;a href=&#34;https://github.com/kbroman/broman/commit/dde305de2c3cd5f3a00f7378fefd4f73a4520599&#34;&gt;I edited my &lt;code&gt;plot_crayons()&lt;/code&gt; function again&lt;/a&gt;, to create the following picture:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/05/crayon_colors_again.png&#34; alt=&#34;Crayon colors, again&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/crayon_colors_again.png&#34; alt=&#34;Crayon colors, again&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -4983,7 +4983,7 @@ colval &amp;lt;- t(col2rgb(crayons))
 # hclust to order the colors
 ord &amp;lt;- hclust(dist(colval))$order
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It&amp;rsquo;s not perfect, but I think it worked remarkably well:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/05/crayons.png&#34; alt=&#34;Crayon colors&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/crayons.png&#34; alt=&#34;Crayon colors&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -5000,7 +5000,7 @@ ord &amp;lt;- hclust(dist(colval))$order
 &lt;pre&gt;&lt;code&gt;library(broman)
 pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Use &lt;code&gt;plot_crayons()&lt;/code&gt; to get the following summary plot of the colors:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/05/crayons.png&#34; alt=&#34;Crayon colors&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/crayons.png&#34; alt=&#34;Crayon colors&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can install the R/broman package using &lt;code&gt;install_github&lt;/code&gt; in devtools, (specifically, &lt;code&gt;install_github(&amp;quot;kbroman/broman&amp;quot;)&lt;/code&gt;) or wait a day or two and the version with this code will be &lt;a href=&#34;https://cran.r-project.org/web/packages/broman/&#34;&gt;on CRAN&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: See also &lt;a href=&#34;https://kbroman.org/blog/2014/05/08/two-more-points-about-crayon-colors/&#34;&gt;Two more points about crayon colors&lt;/a&gt;.&lt;/p&gt;
 </description>
