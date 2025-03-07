@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="/categories/academics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>old genetics articles are no longer open</title>
+      <link>/2025/03/07/genetics/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/2025/03/07/genetics/</guid>
+      <description>Nearly 20% of my publications are in the journal Genetics. It&amp;rsquo;s long been my favorite journal. It&amp;rsquo;s a peer-edited, society journal covering the full range of genetics, including statistical and computational methods. Authors are encouraged to include the full details (for example, of methods).
+When I started reading Genetics, it was only available in print. It&amp;rsquo;s now solely online, and they scanned all and posted all of the articles going back to the first issue from January, 1916.</description>
+    </item>
+    
     <item>
       <title>wtf uw 5: &#34;student&#34; employees</title>
       <link>/2021/05/14/wtf-uw-5/</link>
@@ -323,17 +333,6 @@ These sites have a lot of advantages over R-help: The format is easier to read, 
 But then I thought, &amp;ldquo;Wait&amp;hellip;$18 for a two-page Nature comment? WTF?&amp;rdquo;
 So I tweeted:
  DNA: Celebrate the unknowns, like this Nature comment, which costs $18.</description>
-    </item>
-    
-    <item>
-      <title>Methods before results</title>
-      <link>/2013/04/29/methods-before-results/</link>
-      <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/04/29/methods-before-results/</guid>
-      <description>It&amp;rsquo;s great that, in a step towards improved reproducibility, the Nature journals are removing page limits on Methods sections:
- To allow authors to describe their experimental designs and methods in enough detail for others to interpret and replicate them, the participating journals are removing length restrictions on Methods sections.
- But couldn&amp;rsquo;t they include the Methods section in the pdf for the article? For example, consider this article in Nature Genetics; the Methods section is only available in the html version of the paper.</description>
     </item>
     
   </channel>

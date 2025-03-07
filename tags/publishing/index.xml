@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Wed, 31 May 2017 23:16:00 -0500</lastBuildDate><atom:link href="/tags/publishing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/publishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>old genetics articles are no longer open</title>
+      <link>/2025/03/07/genetics/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/2025/03/07/genetics/</guid>
+      <description>Nearly 20% of my publications are in the journal Genetics. It&amp;rsquo;s long been my favorite journal. It&amp;rsquo;s a peer-edited, society journal covering the full range of genetics, including statistical and computational methods. Authors are encouraged to include the full details (for example, of methods).
+When I started reading Genetics, it was only available in print. It&amp;rsquo;s now solely online, and they scanned all and posted all of the articles going back to the first issue from January, 1916.</description>
+    </item>
+    
     <item>
       <title>omg, bookdown!</title>
       <link>/2017/05/31/omg-bookdown/</link>

@@ -7,22 +7,49 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>news</title>
+      <link>/tags/news/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open access</title>
+      <link>/tags/open-access/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/open-access/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>papers</title>
+      <link>/tags/papers/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/papers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>publishing</title>
+      <link>/tags/publishing/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/publishing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>health</title>
       <link>/tags/health/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/health/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>news</title>
-      <link>/tags/news/</link>
-      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/news/</guid>
       <description></description>
     </item>
     
@@ -131,15 +158,6 @@
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>papers</title>
-      <link>/tags/papers/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/papers/</guid>
       <description></description>
     </item>
     
@@ -257,24 +275,6 @@
       <pubDate>Thu, 03 Aug 2017 00:01:00 -0500</pubDate>
       
       <guid>/tags/blogdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>publishing</title>
-      <link>/tags/publishing/</link>
-      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
-      
-      <guid>/tags/publishing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>big data</title>
-      <link>/tags/big-data/</link>
-      <pubDate>Thu, 11 May 2017 23:50:00 -0500</pubDate>
-      
-      <guid>/tags/big-data/</guid>
       <description></description>
     </item>
     
