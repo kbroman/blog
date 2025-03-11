@@ -21,9 +21,10 @@ It's shown up in a lot of talks, particularly by [a certain friend of mine](http
 
 It [appeared on the seminar board](https://twitter.com/StrictlyStat/status/495240349225607169) at [Hopkins Biostat](https://www.biostat.jhsph.edu) earlier this month. Perhaps it's [still there](https://twitter.com/simplystats/status/505066800842047488). ([My own innocent comments](https://twitter.com/simplystats/status/505066800842047488) prompt some of this.)
 
-[Hilary Parker](https://hilaryparker.com) confirmed:
+[Hilary Parker](https://hilaryparker.com) confirmed on twitter:
 
-{{< tweet 505091356822609922 >}}
+> _like if there was no pizza for the computing club, "no pizza" would
+> link to this photo_
 
 It seems time to tell the story behind the photo. This will probably be longer than it should be. But I've included photos of cats.
 

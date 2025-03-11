@@ -14,7 +14,10 @@ in a
 a speaker's repeated use of the phrase "these guys", when referring to
 programmers, made me livid.
 
-`r htmltools::HTML("{{< tweet 760881386651848708 >}}")`
+I wrote on twitter:
+
+> _I've just become ACUTELY aware that we should not say "these guys"
+> when referring to programmers or analysts in a talk #JSM2016_
 
 This led to considerable discussion about whether and how to respond,
 and ultimately Hadley Wickham and I wrote to the speaker:
