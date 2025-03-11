@@ -1927,9 +1927,12 @@ in a
 &lt;a href=&#34;https://ww2.amstat.org/meetings/jsm/2016/onlineprogram/ActivityDetails.cfm?SessionID=212769&#34;&gt;session honoring William Cleveland&lt;/a&gt;,
 a speaker’s repeated use of the phrase “these guys”, when referring to
 programmers, made me livid.&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’ve just become ACUTELY aware that we should not say “these guys” when referring to programmers or analysts in a talk. &lt;a href=&#34;https://twitter.com/hashtag/JSM2016?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#JSM2016&lt;/a&gt;&lt;/p&gt;&amp;mdash; Karl Broman (@kwbroman) &lt;a href=&#34;https://twitter.com/kwbroman/status/760881386651848708?ref_src=twsrc%5Etfw&#34;&gt;August 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
+&lt;p&gt;I wrote on twitter:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;em&gt;_I&#39;ve just become ACUTELY aware that we should not say &#34;these guys&#34;
+when referring to programmers or analysts in a talk #JSM2016&lt;/em&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;This led to considerable discussion about whether and how to respond,
 and ultimately Hadley Wickham and I wrote to the speaker:&lt;/p&gt;
@@ -4646,11 +4649,11 @@ pbPost(&amp;quot;note&amp;quot;, &amp;quot;Title of note&amp;quot;, &amp;quot;Bo
 &lt;p&gt;The thing is &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/pictures/moustache.jpg&#34;&gt;sitting on my website&lt;/a&gt;, so I suppose I have only myself to blame. I actually quite like the photo. I look happy. I &lt;em&gt;was&lt;/em&gt; happy. I&amp;rsquo;m not always happy.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s shown up in a lot of talks, particularly by &lt;a href=&#34;https://rafalab.github.io&#34;&gt;a certain friend of mine&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It &lt;a href=&#34;https://twitter.com/StrictlyStat/status/495240349225607169&#34;&gt;appeared on the seminar board&lt;/a&gt; at &lt;a href=&#34;https://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostat&lt;/a&gt; earlier this month. Perhaps it&amp;rsquo;s &lt;a href=&#34;https://twitter.com/simplystats/status/505066800842047488&#34;&gt;still there&lt;/a&gt;. (&lt;a href=&#34;https://twitter.com/simplystats/status/505066800842047488&#34;&gt;My own innocent comments&lt;/a&gt; prompt some of this.)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; confirmed:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/sgrifter?ref_src=twsrc%5Etfw&#34;&gt;@sgrifter&lt;/a&gt; &lt;a href=&#34;https://twitter.com/kwbroman?ref_src=twsrc%5Etfw&#34;&gt;@kwbroman&lt;/a&gt; &lt;a href=&#34;https://twitter.com/_inundata?ref_src=twsrc%5Etfw&#34;&gt;@_inundata&lt;/a&gt; &lt;a href=&#34;https://twitter.com/simplystats?ref_src=twsrc%5Etfw&#34;&gt;@simplystats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/StrictlyStat?ref_src=twsrc%5Etfw&#34;&gt;@StrictlyStat&lt;/a&gt; like if there was no pizza for computing club, &amp;quot;no pizza&amp;quot; would link to this photo&lt;/p&gt;&amp;mdash; Hilary Parker (@hspter) &lt;a href=&#34;https://twitter.com/hspter/status/505091356822609922?ref_src=twsrc%5Etfw&#34;&gt;August 28, 2014&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-
+&lt;p&gt;&lt;a href=&#34;https://hilaryparker.com&#34;&gt;Hilary Parker&lt;/a&gt; confirmed on twitter:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;like if there was no pizza for the computing club, &amp;ldquo;no pizza&amp;rdquo; would
+link to this photo&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;It seems time to tell the story behind the photo. This will probably be longer than it should be. But I&amp;rsquo;ve included photos of cats.&lt;/p&gt;
 &lt;h3 id=&#34;movember&#34;&gt;Movember&lt;/h3&gt;
 &lt;p&gt;I think November, 2002, was the first time that a group of young &lt;a href=&#34;https://www.biostat.jhsph.edu&#34;&gt;Hopkins Biostat&lt;/a&gt; faculty participated in the &lt;a href=&#34;https://us.movember.com/&#34;&gt;Movember Campaign&lt;/a&gt;, in which guys shave and then grow a mustache (or moustache) for a month.&lt;/p&gt;
@@ -5061,7 +5064,7 @@ pink &amp;lt;- brocolors(&amp;quot;crayons&amp;quot;)[&amp;quot;Tickle Me Pink&a
       
       <guid>/2014/05/01/reform-academic-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.wehi.edu.au/researcher/terry-speed/&#34;&gt;Terry Speed&lt;/a&gt; recently gave a &lt;a href=&#34;https://web.archive.org/web/20141016190535/https://www.chalmers.se/en/areas-of-advance/ict/calendar/Pages/Terry-Speed.aspx&#34;&gt;talk&lt;/a&gt; on the role of statisticians in &amp;ldquo;Big Data&amp;rdquo; initiatives (see the &lt;a href=&#34;https://vimeo.com/91502942&#34;&gt;video&lt;/a&gt; or just look at the &lt;a href=&#34;https://web.archive.org/web/20141009043019/https://www.chalmers.se/en/areas-of-advance/ict/events/Documents/Terry%20Speed_Data%20Science,%20Big%20Data%20and%20Statistics%20-%20Can%20We%20All%20Live%20Together.pdf&#34;&gt;slides&lt;/a&gt;). He points to the history of statisticians&#39; discussions of massive data sets (e.g., the &lt;a href=&#34;https://www.nap.edu/openbook.php?record_id=5505&#34;&gt;Proceedings of a 1998 NRC workshop on Massive data sets&lt;/a&gt;) and how this history is being ignored in the current Big Data hype, and that statisticians, generally, are being ignored.&lt;/p&gt;
-&lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;http://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
+&lt;p&gt;I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over &lt;a href=&#34;https://simplystatistics.org&#34;&gt;Simply Statistics&lt;/a&gt; posts, I&amp;rsquo;ve decided that &lt;a href=&#34;http://rafalab.dfci.harvard.edu/&#34;&gt;Rafael Irizarry&lt;/a&gt; and &lt;a href=&#34;jtleek.com&#34;&gt;Jeff Leek&lt;/a&gt; have already said what I wanted to say, and so I think I&amp;rsquo;ll just summarize their points.&lt;/p&gt;
 &lt;p&gt;Following the &lt;a href=&#34;http://www.rss.org.uk/&#34;&gt;RSS&lt;/a&gt; &lt;a href=&#34;http://www.worldofstatistics.org/presentations-and-panelists&#34;&gt;Future of the Statistical Sciences Workshop&lt;/a&gt;, Rafael was &lt;a href=&#34;http://simplystatistics.org/2013/11/18/feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop&#34;&gt;quite optimistic&lt;/a&gt; about the prospects for academic statistics, as he noted considerable consensus on the following points:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -5202,10 +5205,9 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
       
       <guid>/2014/02/14/googling-errors/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/roguelynn&#34;&gt;@roguelynn&lt;/a&gt; tweeted the other day:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.&lt;/p&gt;&amp;mdash; Lynn Root (@roguelynn) &lt;a href=&#34;https://twitter.com/roguelynn/status/431321921909968896?ref_src=twsrc%5Etfw&#34;&gt;February 6, 2014&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;If attendees of this weekend’s intro to python workshop leave with one thing, it’ll be to Google your error messages first and foremost.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;I had just talked about the technique in my &lt;a href=&#34;https://kbroman.github.io/Tools4RR/&#34;&gt;Tools for Reproducible Research&lt;/a&gt; course, and I had a few recent examples.&lt;/p&gt;
 &lt;h3 id=&#34;gtk-warning--cannot-open-display&#34;&gt;Gtk-WARNING **: cannot open display:&lt;/h3&gt;
 &lt;p&gt;I was logged into a department server, trying to clone a private repository from GitHub, and got an error like&lt;/p&gt;
