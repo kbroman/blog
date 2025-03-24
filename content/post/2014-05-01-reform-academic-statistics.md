@@ -16,7 +16,7 @@ slug: reform-academic-statistics
 
 I was thinking of writing a polemic on the need for reform of academic statistics and biostatistics, but in reading back over [Simply Statistics](https://simplystatistics.org) posts, I've decided that [Rafael Irizarry](https://rafalab.dfci.harvard.edu/) and [Jeff Leek](https://jtleek.com) have already said what I wanted to say, and so I think I'll just summarize their points.
 
-Following the [RSS](https://www.rss.org.uk/) [Future of the Statistical Sciences Workshop](https://web.archive.org/web/20141009023404/https://www.worldofstatistics.org/presentations-and-panelists/), Rafael was [quite optimistic](http://simplystatistics.org/2013/11/18/feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop) about the prospects for academic statistics, as he noted considerable consensus on the following points:
+Following the [RSS](https://www.rss.org.uk/) [Future of the Statistical Sciences Workshop](https://web.archive.org/web/20141009023404/https://www.worldofstatistics.org/presentations-and-panelists/), Rafael was [quite optimistic](https://simplystatistics.org/posts/2013-11-18-feeling-optimistic-after-the-future-of-the-statistical-sciences-workshop/) about the prospects for academic statistics, as he noted considerable consensus on the following points:
 
   * We need to engage in real present-day problems
 
