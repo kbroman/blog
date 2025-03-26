@@ -26,7 +26,7 @@ Following the [RSS](https://www.rss.org.uk/) [Future of the Statistical Sciences
 
   * We need to improve our communication skills
 
-Jeff said, "[Data science only poses a threat to (bio)statistics if we don't adapt,](http://simplystatistics.org/2013/04/15/data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/)" and made the following series of proposals:
+Jeff said, "[Data science only poses a threat to (bio)statistics if we don't adapt,](https://simplystatistics.org/posts/2013-04-15-data-science-only-poses-a-threat-to-biostatistics-if-we-dont-adapt/)" and made the following series of proposals:
 
   * Remove some theoretical requirements and add computing requirements to statistics curricula.
 
