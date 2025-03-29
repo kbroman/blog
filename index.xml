@@ -5190,7 +5190,7 @@ lapply(z, &amp;quot;[&amp;quot;, , 3)
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/2014/03/14/startling-lack-of-training-in-statistical-computing/</guid>
-      <description>&lt;p&gt;It is shocking to me that &lt;a href=&#34;http://www.stat.wisc.edu&#34;&gt;a statistics department&lt;/a&gt; would offer a graduate-level statistical computing course only &lt;em&gt;every fourth year&lt;/em&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;It is shocking to me that &lt;a href=&#34;https://www.stat.wisc.edu&#34;&gt;a statistics department&lt;/a&gt; would offer a graduate-level statistical computing course only &lt;em&gt;every fourth year&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;I &lt;a href=&#34;https://kbroman.org/blog/2012/05/25/a-course-in-statistical-programming/&#34;&gt;had been arguing for a statistical programming course&lt;/a&gt;: that we supplement the usual course on the &lt;em&gt;theory&lt;/em&gt; of statistical computing (numerical linear algebra, EM algorithm, MCMC, etc.) with a course on the &lt;em&gt;practice&lt;/em&gt; of statistical computing.&lt;/p&gt;
 &lt;p&gt;But I was assuming that the more theoretical statistical computing course was &lt;em&gt;actually being taught&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;If a department teaches a course at a frequency less than every-other-year, it&amp;rsquo;s unavailable to many students, or it comes too late in their training to be useful. And statistical computing should really be considered part of a statistics department&amp;rsquo;s &lt;em&gt;core curriculum&lt;/em&gt;.&lt;/p&gt;
