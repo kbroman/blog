@@ -14,7 +14,7 @@ slug: emacs-key-bindings-in-ms-word
 
 Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It's maybe not as bad as typing Markdown marks within a LaTeX document, which I've also been doing.)
 
-A google search on the title of this post got me [to this post](http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/). I should have looked before.
+A google search on the title of this post got me [to this post](https://web.archive.org/web/20200223141453/https://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/). I should have looked before.
 
 Following that suggestion, I was able to get these:
 
