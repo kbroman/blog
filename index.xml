@@ -5239,7 +5239,7 @@ SyntaxError: invalid syntax
       
       <guid>/2014/02/12/emacs-key-bindings-in-ms-word/</guid>
       <description>&lt;p&gt;Collaboration on grant proposals has forced me to spend a lot of time writing in MS Word lately. I find my self typing emacs key strokes and then getting annoyed when I have to move my hand over to the arrow keys. (It&amp;rsquo;s maybe not as bad as typing Markdown marks within a LaTeX document, which I&amp;rsquo;ve also been doing.)&lt;/p&gt;
-&lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;http://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
+&lt;p&gt;A google search on the title of this post got me &lt;a href=&#34;https://web.archive.org/web/20200223141453/https://emacsblog.org/2007/02/18/emacs-key-bindings-in-ms-word/&#34;&gt;to this post&lt;/a&gt;. I should have looked before.&lt;/p&gt;
 &lt;p&gt;Following that suggestion, I was able to get these:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;C-b&lt;/code&gt; – CharLeft&lt;/li&gt;
