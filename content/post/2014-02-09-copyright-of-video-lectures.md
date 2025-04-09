@@ -17,7 +17,7 @@ I spoke to my [family librarian](https://web.archive.org/web/20240527140007/http
 
 In most jobs, the product of your work is owned by the company, even if they didn't have anything to do with it. But universities have a different tradition. Typically, the university doesn't assert any rights over a faculty member's instructional materials. For example, if you write a textbook, you don't have to negotiate with the university over its publication, nor do you have to give the university a cut of the royalty income. That's different than patents.
 
-UW-Madison has [an explicit policy about faculty instructional materials](http://www.uwsa.edu/fadmin/gapp/gapp27.htm). (Really, it's a UW System policy.) As I understand it, the university will assert some rights over your instructional materials only if they had contributed special resources or support to their creation (for example, if university staff assisted you with the recording and editing of a video).
+UW-Madison has [an explicit policy about faculty instructional materials](https://web.archive.org/web/20141019020352/https://www.uwsa.edu/fadmin/gapp/gapp27.htm). (Really, it's a UW System policy.) As I understand it, the university will assert some rights over your instructional materials only if they had contributed special resources or support to their creation (for example, if university staff assisted you with the recording and editing of a video).
 
 Returning to the video issue: since the university wasn't involved in the production of the video, I didn't have to get their okay.
 
