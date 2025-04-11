@@ -21,7 +21,7 @@ UW-Madison has [an explicit policy about faculty instructional materials](https:
 
 Returning to the video issue: since the university wasn't involved in the production of the video, I didn't have to get their okay.
 
-Carrie mentioned another important thing to pay attention to: if I had used any photos or other media to which I don't have rights, I need to be careful about their inclusion in videos posted online. Within a classroom, or in a video posted online but only made accessible to a defined group of students, inclusion of such material could fall under [fair use](http://en.wikipedia.org/wiki/Fair_use). But if such material is included in a video that is posted online for general viewing, others may question my fair use claim.
+Carrie mentioned another important thing to pay attention to: if I had used any photos or other media to which I don't have rights, I need to be careful about their inclusion in videos posted online. Within a classroom, or in a video posted online but only made accessible to a defined group of students, inclusion of such material could fall under [fair use](https://en.wikipedia.org/wiki/Fair_use). But if such material is included in a video that is posted online for general viewing, others may question my fair use claim.
 
 That may explain why so many instructors here are using password-protected sites, like [Learn@UW](https://learnuw.wisc.edu/) and [Moodle](https://courses.moodle.wisc.edu). I can't even look at my colleagues' course material.
 
