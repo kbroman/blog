@@ -25,6 +25,4 @@ Carrie mentioned another important thing to pay attention to: if I had used any 
 
 That may explain why so many instructors here are using password-protected sites, like [Learn@UW](https://learnuw.wisc.edu/) and [Moodle](https://courses.moodle.wisc.edu). I can't even look at my colleagues' course material.
 
-I dislike web pages via online forms. (Well, except for you, wordpress; I wish I'd started this blog with [GitHub pages](http://pages.github.com/), but you're okay.)
-
-And I _despise_ the password protection of instructional materials. If I spend a bunch of time preparing material, I want to distribute it as widely as possible. If another instructor uses it in their own class, I consider that a Good Thing.
+I dislike web pages via online forms. And I _despise_ the password protection of instructional materials. If I spend a bunch of time preparing material, I want to distribute it as widely as possible. If another instructor uses it in their own class, I consider that a Good Thing.
