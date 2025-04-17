@@ -21,4 +21,4 @@ I've gotten really excited about the tools for reproducible research. I think th
 
 I'm hoping that these tutorials, plus the other materials that I'm putting together over the course of this semester, for my [Tools for Reproducible Research](https://kbroman.org/Tools4RR) course, will help.
 
-But take a look at the [material](https://github.com/DataScienceSpecialization/courses) that [Jeff](https://jtleek.com), [Roger](http://www.biostat.jhsph.edu/~rpeng/), and [Brian](http://www.bcaffo.com/) are developing for their [Data Science MOOCs](https://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/); you'll see that mine are pretty humble contributions.
+But take a look at the [material](https://github.com/DataScienceSpecialization/courses) that [Jeff](https://jtleek.com), [Roger](https://rdpeng.org), and [Brian](http://www.bcaffo.com/) are developing for their [Data Science MOOCs](https://simplystatistics.org/2014/01/21/the-johns-hopkins-data-science-specialization-on-coursera/); you'll see that mine are pretty humble contributions.
