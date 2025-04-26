@@ -11,7 +11,7 @@ research in statistical genetics; developer of
 
  - [Website](https://kbroman.org)
  - [Github](https://github.com/kbroman)
- - <a rel="me" href="https://fosstodon.org/@kbroman">Mastodon</a>
+ - <a rel="me" href="https://rstats.me/@kbroman">Mastodon</a>
  - [Old wordpress site](https://kbroman.wordpress.com)
 
 The source for this site is at [GitHub](https://github.com/kbroman/blog).

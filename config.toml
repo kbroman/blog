@@ -27,7 +27,7 @@ copyright = "The text in this work is licensed under CC-BY-4.0, https://creative
     url = "https://kbroman.org"
 [[menu.main]]
     name = "mastodon"
-    url = "https://fosstodon.org/@kbroman"
+    url = "https://rstats.me/@kbroman"
 
 [markup.goldmark.renderer]
 unsafe= true
