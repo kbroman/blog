@@ -5415,7 +5415,7 @@ or installed font not found.
 &lt;p&gt;It obviously wasn&amp;rsquo;t finding the font.&lt;/p&gt;
 &lt;p&gt;I futzed about for an hour, trying to figure out where fonts are located on my Mac, and where fonts are located on Unix, and doing various web searches. But no luck.&lt;/p&gt;
 &lt;h3 id=&#34;how-i-solved-the-problem&#34;&gt;How I solved the problem&lt;/h3&gt;
-&lt;p&gt;Finally, I read &lt;a href=&#34;http://existentialtype.net/2008/07/12/fonts-in-latex-part-one-xelatex/&#34;&gt;this post on fonts in xelatex&lt;/a&gt;, and following that set of ideas, I figured out what to do.&lt;/p&gt;
+&lt;p&gt;Finally, I read &lt;a href=&#34;https://web.archive.org/web/20150228202846/https://existentialtype.net/2008/07/12/fonts-in-latex-part-one-xelatex/&#34;&gt;this post on fonts in xelatex&lt;/a&gt;, and following that set of ideas, I figured out what to do.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Switch to the &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html&#34;&gt;TeX Gyre Heros&lt;/a&gt; font. It looks just like Helvetica to me.&lt;/p&gt;
