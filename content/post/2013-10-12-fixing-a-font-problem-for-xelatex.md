@@ -39,7 +39,7 @@ I futzed about for an hour, trying to figure out where fonts are located on my M
 
 Finally, I read [this post on fonts in xelatex](https://web.archive.org/web/20150228202846/https://existentialtype.net/2008/07/12/fonts-in-latex-part-one-xelatex/), and following that set of ideas, I figured out what to do.
 
-  * Switch to the [TeX Gyre Heros](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html) font. It looks just like Helvetica to me.
+  * Switch to the [TeX Gyre Heros](https://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html) font. It looks just like Helvetica to me.
 
   * Download [`qhv2.004otf.zip`](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip).
 
