@@ -5418,7 +5418,7 @@ or installed font not found.
 &lt;p&gt;Finally, I read &lt;a href=&#34;https://web.archive.org/web/20150228202846/https://existentialtype.net/2008/07/12/fonts-in-latex-part-one-xelatex/&#34;&gt;this post on fonts in xelatex&lt;/a&gt;, and following that set of ideas, I figured out what to do.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Switch to the &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html&#34;&gt;TeX Gyre Heros&lt;/a&gt; font. It looks just like Helvetica to me.&lt;/p&gt;
+&lt;p&gt;Switch to the &lt;a href=&#34;https://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html&#34;&gt;TeX Gyre Heros&lt;/a&gt; font. It looks just like Helvetica to me.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Download &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip&#34;&gt;&lt;code&gt;qhv2.004otf.zip&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
