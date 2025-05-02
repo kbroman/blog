@@ -41,7 +41,7 @@ Finally, I read [this post on fonts in xelatex](https://web.archive.org/web/2015
 
   * Switch to the [TeX Gyre Heros](https://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html) font. It looks just like Helvetica to me.
 
-  * Download [`qhv2.004otf.zip`](http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip).
+  * Download [`qhv2.004otf.zip`](https://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip).
 
   * On unix, unzip the file (which contains eight [`.otf`](https://en.wikipedia.org/wiki/OpenType) files) into `~/.fonts`
 
