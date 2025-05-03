@@ -5421,7 +5421,7 @@ or installed font not found.
 &lt;p&gt;Switch to the &lt;a href=&#34;https://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/index_html&#34;&gt;TeX Gyre Heros&lt;/a&gt; font. It looks just like Helvetica to me.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Download &lt;a href=&#34;http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip&#34;&gt;&lt;code&gt;qhv2.004otf.zip&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Download &lt;a href=&#34;https://www.gust.org.pl/projects/e-foundry/tex-gyre/heros/qhv2.004otf.zip&#34;&gt;&lt;code&gt;qhv2.004otf.zip&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;On unix, unzip the file (which contains eight &lt;a href=&#34;https://en.wikipedia.org/wiki/OpenType&#34;&gt;&lt;code&gt;.otf&lt;/code&gt;&lt;/a&gt; files) into &lt;code&gt;~/.fonts&lt;/code&gt;&lt;/p&gt;
