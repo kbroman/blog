@@ -15,7 +15,7 @@ I like to use [LaTeX](https://www.latex-project.org/) to make slides for talks, 
 
 Most people that use LaTeX to make slides seem to use [Beamer](https://en.wikipedia.org/wiki/Beamer_(LaTeX)), but the resulting slides are usually a bit busy, like this:
 
-[![Typical beamer slide](https://www.biostat.wisc.edu/~kbroman/blog/Warsaw-default-default-01.png)](http://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html)
+[![Typical beamer slide](https://www.biostat.wisc.edu/~kbroman/blog/Warsaw-default-default-01.png)](https://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html)
 
 I admire [Till Tantau](https://en.wikipedia.org/wiki/Till_Tantau) for creating Beamer; it was a great idea and it's been widely adopted. But I don't like talk outlines at all; I certainly don't want to see one on every page.
 
