@@ -14,7 +14,7 @@ The [Morgridge Institute for Research](https://morgridge.org) (MIR), a private r
 
 ### Yet another symposium
 
-Yesterday afternoon, they held a symposium on "Computation in Biology" ([Here's the agenda.](https://kbroman.files.wordpress.com/2013/09/computation-in-biology-agenda.pdf)) Great speakers: [Marc Suchard](https://suchard-group.github.io/), [Brian Shoichet](http://shoichetlab.compbio.ucsf.edu/), [David Page](http://pages.cs.wisc.edu/~dpage/), and [Winston Hide](https://hsci.harvard.edu/people/winston-hide-phd). They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.
+Yesterday afternoon, they held a symposium on "Computation in Biology" ([Here's the agenda.](https://kbroman.files.wordpress.com/2013/09/computation-in-biology-agenda.pdf)) Great speakers: [Marc Suchard](https://suchard-group.github.io/), [Brian Shoichet](https://bkslab.org/), [David Page](http://pages.cs.wisc.edu/~dpage/), and [Winston Hide](https://hsci.harvard.edu/people/winston-hide-phd). They were asked to speak broadly about computation in biology and on the key issues for the future, and there was plenty of time for discussion.
 
 I'm not sure what MIR was hoping to get out of the symposium, but if they were looking for guidance regarding their hiring efforts, it wasn't effective. At the beginning, the discussion was quite heated but not terribly constructive. In the middle, it became more like the usual sort of question/answer after a seminar. I must admit I didn't stay to the end. Perhaps some important insights were gained after I left. But it seems unlikely that the symposium provided much guidance about hiring in computational biology.
 
