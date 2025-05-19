@@ -10,7 +10,7 @@ tags:
 slug: hiring-computational-biologists
 ---
 
-The [Morgridge Institute for Research](https://morgridge.org) (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. [One position](https://www.biostat.wisc.edu/About/Jobs/adPLV77619.pdf) is joint with my department,  [Biostatistics & Medical Informatics](https://www.biostat.wisc.edu).
+The [Morgridge Institute for Research](https://morgridge.org) (MIR), a private research institute associated with UW-Madison, is looking to hire some computational folks working in biology. One position is joint with my department,  [Biostatistics & Medical Informatics](https://www.biostat.wisc.edu).
 
 ### Yet another symposium
 
