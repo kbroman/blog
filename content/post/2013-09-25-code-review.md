@@ -13,7 +13,7 @@ tags:
 slug: code-review
 ---
 
-There was an [interesting news item](http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812) in Nature on [code review](http://en.wikipedia.org/wiki/Code_review).  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
+There was an [interesting news item](https://www.nature.com/articles/501472a) in Nature on [code review](http://en.wikipedia.org/wiki/Code_review).  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 
 There are very brief quotes from [Titus Brown](http://ivory.idyll.org/blog/) and [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/).  I expect that the author of the item, [Erika Check Hayden](http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden), spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn't fully (or much at all) characterize their view of the issue.
 
