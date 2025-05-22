@@ -5682,7 +5682,7 @@ Example 1
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>/2013/09/25/code-review/</guid>
-      <description>&lt;p&gt;There was an &lt;a href=&#34;http://www.nature.com/news/mozilla-plan-seeks-to-debug-scientific-code-1.13812&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
+      <description>&lt;p&gt;There was an &lt;a href=&#34;https://www.nature.com/articles/501472a&#34;&gt;interesting news item&lt;/a&gt; in Nature on &lt;a href=&#34;http://en.wikipedia.org/wiki/Code_review&#34;&gt;code review&lt;/a&gt;.  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.&lt;/p&gt;
 &lt;p&gt;There are very brief quotes from &lt;a href=&#34;http://ivory.idyll.org/blog/&#34;&gt;Titus Brown&lt;/a&gt; and &lt;a href=&#34;http://www.biostat.jhsph.edu/~rpeng/&#34;&gt;Roger Peng&lt;/a&gt;.  I expect that the author of the item, &lt;a href=&#34;http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden&#34;&gt;Erika Check Hayden&lt;/a&gt;, spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn&amp;rsquo;t fully (or much at all) characterize their view of the issue.&lt;/p&gt;
 &lt;p&gt;Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:&lt;/p&gt;
 &lt;blockquote&gt;
