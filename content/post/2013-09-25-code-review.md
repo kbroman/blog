@@ -15,7 +15,7 @@ slug: code-review
 
 There was an [interesting news item](https://www.nature.com/articles/501472a) in Nature on [code review](https://en.wikipedia.org/wiki/Code_review).  It describes a project by some folks at Mozilla to review the code (well, really just 200-line snippets) from 6 selected papers in computational biology.
 
-There are very brief quotes from [Titus Brown](http://ivory.idyll.org/blog/) and [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/).  I expect that the author of the item, [Erika Check Hayden](http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden), spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn't fully (or much at all) characterize their view of the issue.
+There are very brief quotes from [Titus Brown](http://ivory.idyll.org/blog/) and [Roger Peng](https://rdpeng.org/).  I expect that the author of the item, [Erika Check Hayden](http://www.nature.com/nature/about/editors/index.html#ErikaCheckHayden), spoke to Titus and Roger at length but could just include short bits from each, and so what they say probably doesn't fully (or much at all) characterize their view of the issue.
 
 Titus is quoted as follows, in reference to another scientist who retracted five papers due to an error in his code:
 
