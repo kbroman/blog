@@ -43,7 +43,7 @@ I would like to see the code associated with scientific articles made readily av
 
 Later, on twitter, [Titus took issue](https://twitter.com/ctitusbrown/status/382862626692149248) with the "not improve how it looks" part of what Roger said:
 
-> ".@kwbroman @simplystats @rdpeng Please read <http://en.wikipedia.org/wiki/Code_review> you are deeply, significantly, and completely wrong about code review."
+> ".@kwbroman @simplystats @rdpeng Please read <https://en.wikipedia.org/wiki/Code_review> you are deeply, significantly, and completely wrong about code review."
 
 Characterizing code review as strictly cosmetic was an unfortunate, gross simplification. (And how code looks _is_ important.)
 
