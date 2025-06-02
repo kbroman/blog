@@ -32,7 +32,7 @@ These are really useful things, but version control is more about _merging_ and 
 
 To me, the basic tool to make research reproducible is [GNU make](https://www.gnu.org/software/make/) (see my [minimal tutorial](https://kbroman.github.io/minimal_make/)). You create a `Makefile` that documents all analysis steps in a project. (For example, "Use this script to turn these raw data files into that combined file, and use this script to create figure 1 and that script to create figure 2, then combine them with this LaTeX file to make the manuscript PDF.")
 
-With GNU make (see also [rake](http://rake.rubyforge.org/)), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing `Makefile`, the research is reproducible.
+With GNU make (see also [targets](https://docs.ropensci.org/targets/)), you both document and automate these processes. With well-documented/commented scripts and an all-encompassing `Makefile`, the research is reproducible.
 
 ### Add knitr, and you've got a notebook
 
