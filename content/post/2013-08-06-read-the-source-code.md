@@ -51,7 +51,7 @@ UseMethod("qqnorm")
 
 In such cases, you could try typing, for example, `qqnorm.default`.
 
-Still, the comments (if there were any) get stripped off, and for long functions, it's not pretty.  So I like to keep a copy of the source code (for example, [`R-3.0.1.tar.gz`](http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz); extract it with `tar xzf R-3.0.1.tar.gz`). I use `grep` to find the relevant files.
+Still, the comments (if there were any) get stripped off, and for long functions, it's not pretty.  So I like to keep a copy of the source code (for example, [`R-3.0.1.tar.gz`](https://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz); extract it with `tar xzf R-3.0.1.tar.gz`). I use `grep` to find the relevant files.
 
 For example,
 
