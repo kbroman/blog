@@ -5945,7 +5945,7 @@ id &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span sty
 &lt;span style=&#34;color:#a6e22e&#34;&gt;function &lt;/span&gt;(y, &lt;span style=&#34;color:#66d9ef&#34;&gt;...&lt;/span&gt;)
 &lt;span style=&#34;color:#a6e22e&#34;&gt;UseMethod&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;qqnorm&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In such cases, you could try typing, for example, &lt;code&gt;qqnorm.default&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Still, the comments (if there were any) get stripped off, and for long functions, it&amp;rsquo;s not pretty.  So I like to keep a copy of the source code (for example, &lt;a href=&#34;http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz&#34;&gt;&lt;code&gt;R-3.0.1.tar.gz&lt;/code&gt;&lt;/a&gt;; extract it with &lt;code&gt;tar xzf R-3.0.1.tar.gz&lt;/code&gt;). I use &lt;code&gt;grep&lt;/code&gt; to find the relevant files.&lt;/p&gt;
+&lt;p&gt;Still, the comments (if there were any) get stripped off, and for long functions, it&amp;rsquo;s not pretty.  So I like to keep a copy of the source code (for example, &lt;a href=&#34;https://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz&#34;&gt;&lt;code&gt;R-3.0.1.tar.gz&lt;/code&gt;&lt;/a&gt;; extract it with &lt;code&gt;tar xzf R-3.0.1.tar.gz&lt;/code&gt;). I use &lt;code&gt;grep&lt;/code&gt; to find the relevant files.&lt;/p&gt;
 &lt;p&gt;For example,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;grep -r &#39;qqline&#39; R-3.0.1/src/
 &lt;/code&gt;&lt;/pre&gt;

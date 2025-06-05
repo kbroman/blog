@@ -113,7 +113,7 @@
 <span style="color:#a6e22e">function </span>(y, <span style="color:#66d9ef">...</span>)
 <span style="color:#a6e22e">UseMethod</span>(<span style="color:#e6db74">&#34;qqnorm&#34;</span>)
 </code></pre></div><p>In such cases, you could try typing, for example, <code>qqnorm.default</code>.</p>
-<p>Still, the comments (if there were any) get stripped off, and for long functions, it&rsquo;s not pretty.  So I like to keep a copy of the source code (for example, <a href="http://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz"><code>R-3.0.1.tar.gz</code></a>; extract it with <code>tar xzf R-3.0.1.tar.gz</code>). I use <code>grep</code> to find the relevant files.</p>
+<p>Still, the comments (if there were any) get stripped off, and for long functions, it&rsquo;s not pretty.  So I like to keep a copy of the source code (for example, <a href="https://cran.r-project.org/src/base/R-3/R-3.0.1.tar.gz"><code>R-3.0.1.tar.gz</code></a>; extract it with <code>tar xzf R-3.0.1.tar.gz</code>). I use <code>grep</code> to find the relevant files.</p>
 <p>For example,</p>
 <pre><code>grep -r 'qqline' R-3.0.1/src/
 </code></pre>
