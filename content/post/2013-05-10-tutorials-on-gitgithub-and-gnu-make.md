@@ -19,7 +19,7 @@ If you're not on [github](https://github.com), you should be.  That's _real_ ope
 
 To help some colleagues get started with [git](https://git-scm.com) and [github](https://github.com), I wrote a [minimal tutorial](https://kbroman.org/github_tutorial). There are lots of git and github resources available, but I thought I'd give just the bare minimum to get started; after using git and github for a while, other resources make a lot more sense and seem much more worthwhile.
 
-And for [R](https://www.r-project.org) folks, note that it's easy to install R packages that are hosted on github, using [Hadley Wickham](http://hadley.nz)'s [devtools](https://github.com/hadley/devtools) package.  For example, to install [Nacho Caballero](https://github.com/nachocab)'s [clickme](https://github.com/nachocab/clickme) package:
+And for [R](https://www.r-project.org) folks, note that it's easy to install R packages that are hosted on github, using [Hadley Wickham](https://hadley.nz)'s [devtools](https://github.com/hadley/devtools) package.  For example, to install [Nacho Caballero](https://github.com/nachocab)'s [clickme](https://github.com/nachocab/clickme) package:
 
 ````r
 install.packages("devtools")
