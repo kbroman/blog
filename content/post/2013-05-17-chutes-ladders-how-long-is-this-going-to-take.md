@@ -14,7 +14,7 @@ slug: chutes-ladders-how-long-is-this-going-to-take
 
 I was playing Chutes & Ladders with my four-year-old daughter yesterday, and I thought, "How long is this going to take?"
 
-I saw an [interesting mathematical analysis of the game](https://datagenetics.com/blog/november12011/) a few years ago, but it seems to be offline, though [you can read it](https://web.archive.org/web/20120819014527/http://www.datagenetics.com/blog/november12011/) via the [wayback machine](https://web.archive.org/).
+I saw an [interesting mathematical analysis of the game](https://datagenetics.com/blog/november12011/) a few years ago, but it seems to be offline, though [you can read it](https://web.archive.org/web/20120819014527/https://www.datagenetics.com/blog/november12011/) via the [wayback machine](https://web.archive.org/).
 
 But that didn't answer my specific question, namely, "How long is this going to take?"
 
