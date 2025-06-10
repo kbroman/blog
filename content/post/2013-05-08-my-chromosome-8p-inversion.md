@@ -11,7 +11,7 @@ tags:
 slug: my-chromosome-8p-inversion
 ---
 
-There was [lots of discussion on twitter yesterday](https://twitter.com/Graham_Coop/status/331882743900303360) about Graham Coop's paper with Peter Ralph (or vice versa), on [The geography of recent genetic ancestry across Europe](http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001555), particularly regarding the [FAQ](https://gcbias.org/european-genealogy-faq/) they'd created.
+There was [lots of discussion on twitter yesterday](https://twitter.com/Graham_Coop/status/331882743900303360) about Graham Coop's paper with Peter Ralph (or vice versa), on [The geography of recent genetic ancestry across Europe](https://doi.org/10.1371/journal.pbio.1001555), particularly regarding the [FAQ](https://gcbias.org/european-genealogy-faq/) they'd created.
 
 I was eager to take a look, and, it's slightly embarrassing to say, I first did a search to see if they'd made a connection to any of my work. (I'm probably not the only one to do that.) Sure enough, they cited a paper of mine, but it was [Giglo et al. (2001) Am J Hum Genet 68: 874–883](https://www.ncbi.nlm.nih.gov/pubmed/11231899), on "my" chr 8p inversion, and not what I'd expected, [my autozygosity paper](https://www.ncbi.nlm.nih.gov/pubmed/10577902).
 
