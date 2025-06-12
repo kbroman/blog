@@ -23,7 +23,7 @@ The chr 8p inversion presents an [interesting data analysis story](https://www.b
 
 ### Marshfield maps and crossover interference
 
-I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the [construction of human genetic maps](https://www.ncbi.nlm.nih.gov/pubmed/9718341) using data from eight of the [CEPH](http://www.cephb.fr/en/index.php) families.  I was particularly interested in [characterizing crossover interference](https://www.ncbi.nlm.nih.gov/pubmed/10801387).
+I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the [construction of human genetic maps](https://www.ncbi.nlm.nih.gov/pubmed/9718341) using data from eight of the [CEPH](https://www.cephb.fr/en/index.php) families.  I was particularly interested in [characterizing crossover interference](https://www.ncbi.nlm.nih.gov/pubmed/10801387).
 
 I found that the [gamma model](https://www.ncbi.nlm.nih.gov/pubmed/7713406) fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:
 
