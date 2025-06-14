@@ -59,7 +59,7 @@ I try not to discuss author order anymore.  I care only about presence/absence.
 
 ### A related story: autozygosity
 
-This wasn't the only surprising finding to come from my efforts on the [Marshfield genetic maps](http://research.marshfieldclinic.org/genetics/GeneticResearch/compMaps.asp).
+This wasn't the only surprising finding to come from my efforts on the [Marshfield genetic maps](https://www.biostat.wisc.edu/~kbroman/publications/mfdmaps/).
 
 An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of [CRI-MAP](https://compgen.rutgers.edu/old/multimap/crimap/) _chrompic_ output, to find such double crossovers.  Here's a somewhat nicer image:
 
