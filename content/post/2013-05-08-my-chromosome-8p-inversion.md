@@ -27,7 +27,7 @@ I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main eff
 
 I found that the [gamma model](https://www.ncbi.nlm.nih.gov/pubmed/7713406) fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:
 
-![Distances between crossovers](https://kbroman.files.wordpress.com/2013/05/xodist.jpg)
+![Distances between crossovers](/images/xodist.jpg)
 
 But the model fit poorly for maternal chromosome 8:
 
