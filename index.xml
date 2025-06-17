@@ -6110,7 +6110,7 @@ the opposite is true.&lt;/p&gt;
 &lt;h3 id=&#34;marshfield-maps-and-crossover-interference&#34;&gt;Marshfield maps and crossover interference&lt;/h3&gt;
 &lt;p&gt;I was a postdoc with Jim Weber in Marshfield, Wisconsin, 1997-1999.  My main effort concerned the &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/9718341&#34;&gt;construction of human genetic maps&lt;/a&gt; using data from eight of the &lt;a href=&#34;https://www.cephb.fr/en/index.php&#34;&gt;CEPH&lt;/a&gt; families.  I was particularly interested in &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/10801387&#34;&gt;characterizing crossover interference&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I found that the &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/7713406&#34;&gt;gamma model&lt;/a&gt; fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34;&gt;&lt;/p&gt;
 &lt;p&gt;But the model fit poorly for maternal chromosome 8:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
