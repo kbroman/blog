@@ -31,7 +31,7 @@ I found that the [gamma model](https://www.ncbi.nlm.nih.gov/pubmed/7713406) fit 
 
 But the model fit poorly for maternal chromosome 8:
 
-![XO dist, maternal chr 8](https://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg)
+![XO dist, maternal chr 8](/images/xodist_chr8mat.jpg)
 
 ### Why the poor model fit?
 
