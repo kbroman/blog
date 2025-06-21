@@ -6112,7 +6112,7 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;I found that the &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/7713406&#34;&gt;gamma model&lt;/a&gt; fit the data quite well.  These are histograms of the inter-crossover distances, with expected distributions for different models:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/xodist.jpg&#34; alt=&#34;Distances between crossovers&#34;&gt;&lt;/p&gt;
 &lt;p&gt;But the model fit poorly for maternal chromosome 8:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
 &lt;p&gt;Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34;&gt;&lt;/p&gt;
