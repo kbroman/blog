@@ -37,7 +37,7 @@ But the model fit poorly for maternal chromosome 8:
 
 Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:
 
-![Genotypes at inversion](https://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg)
+![Genotypes at inversion](/images/inversion_genotypes.jpg)
 
 I saw these tight triple-crossovers and thought, "Oops!  I got the marker order wrong." (Remember, this was before we had a physical map.)  But if you reverse the orientation of the region, crossovers in other individuals would become triple-crossovers.
 
