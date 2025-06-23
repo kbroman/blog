@@ -6115,7 +6115,7 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/xodist_chr8mat.jpg&#34; alt=&#34;XO dist, maternal chr 8&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;why-the-poor-model-fit&#34;&gt;Why the poor model fit?&lt;/h3&gt;
 &lt;p&gt;Why was the model fit for maternal chromosome 8 so terrible?  It turned out that there was a set of four tight apparent triple-crossovers, two in each of two families.  The black and white dots indicate grandmother and grandfather DNA on different meiotic products:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/inversion_genotypes.jpg&#34; alt=&#34;Genotypes at inversion&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I saw these tight triple-crossovers and thought, &amp;ldquo;Oops!  I got the marker order wrong.&amp;rdquo; (Remember, this was before we had a physical map.)  But if you reverse the orientation of the region, crossovers in other individuals would become triple-crossovers.&lt;/p&gt;
 &lt;p&gt;So I thought, perhaps this is an inversion polymorphism: some individuals have the region in one orientation and others have it in the opposite orientation.  But it would have to be long (it was an estimated 12 cM in females: something like 5 Mbp).  And both orientations would have to be common, since they would each need to be present in the homozygous state for there to be recombination events.&lt;/p&gt;
 &lt;h3 id=&#34;the-inversion&#34;&gt;The inversion&lt;/h3&gt;
