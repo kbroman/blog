@@ -47,7 +47,7 @@ So I thought, perhaps this is an inversion polymorphism: some individuals have t
 
 Jim Weber contacted David Ledbetter, and folks in his group investigated the region and confirmed, via FISH, that there was indeed a long, common inversion polymorphisms on chromosome 8p.
 
-![Inversion, FISH](https://kbroman.files.wordpress.com/2013/05/inversion_fish.jpg)
+![Inversion, FISH](/images/inversion_fish.jpg)
 
 They marked one side of the region in green and the other side red, and in the left panels green is above red on both chromosomes, in the right panels red is above green on both chromosomes, and in the center there is one chromosome with each orientation.  Analysis of further subjects indicated that the two orientations have allele frequencies 40 and 60% in people of European ancestry.
 
