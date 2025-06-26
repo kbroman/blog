@@ -63,7 +63,7 @@ This wasn't the only surprising finding to come from my efforts on the [Marshfie
 
 An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of [CRI-MAP](https://compgen.rutgers.edu/old/multimap/crimap/) _chrompic_ output, to find such double crossovers.  Here's a somewhat nicer image:
 
-![Autozygosity](https://kbroman.files.wordpress.com/2013/05/autozygosity.png)
+![Autozygosity](/images/autozygosity.png)
 
 Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?
 
