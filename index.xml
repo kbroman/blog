@@ -6128,7 +6128,7 @@ the opposite is true.&lt;/p&gt;
 &lt;h3 id=&#34;a-related-story-autozygosity&#34;&gt;A related story: autozygosity&lt;/h3&gt;
 &lt;p&gt;This wasn&amp;rsquo;t the only surprising finding to come from my efforts on the &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/mfdmaps/&#34;&gt;Marshfield genetic maps&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;An important part of the map construction was data cleaning: identifying tight double-crossovers indicative of genotyping errors.  I looked at piles of &lt;a href=&#34;https://compgen.rutgers.edu/old/multimap/crimap/&#34;&gt;CRI-MAP&lt;/a&gt; &lt;em&gt;chrompic&lt;/em&gt; output, to find such double crossovers.  Here&amp;rsquo;s a somewhat nicer image:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/autozygosity.png&#34; alt=&#34;Autozygosity&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/autozygosity.png&#34; alt=&#34;Autozygosity&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?&lt;/p&gt;
 &lt;p&gt;After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34;&gt;&lt;/p&gt;
