@@ -69,7 +69,7 @@ Pink and blue indicate grandmother and grandfather DNA, respectively, on the mat
 
 After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:
 
-![Autozygosity table](https://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg)
+![Autozygosity table](/images/autozyg_table.jpg)
 
 It [turned out to be autozygosity](https://www.ncbi.nlm.nih.gov/pubmed/10577902): in two CEPH families, the grandparents were related, and so the parents where homozygous by descent (aka autozygous) for chunks of their genome.
 
