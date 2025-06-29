@@ -6131,7 +6131,7 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/autozygosity.png&#34; alt=&#34;Autozygosity&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pink and blue indicate grandmother and grandfather DNA, respectively, on the maternal and paternal chromosomes in each individual from a large sibship.  Yellow indicates missing data: if the mother or father was homozygous, the grandparental origin of DNA was indeterminate.  Why these long stretches of homozygosity?&lt;/p&gt;
 &lt;p&gt;After publishing the genetic map paper, I went back to study these long stretches of homozygosity. And then I looked for such regions more systematically, and found lots of them:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/autozyg_table.jpg&#34; alt=&#34;Autozygosity table&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/10577902&#34;&gt;turned out to be autozygosity&lt;/a&gt;: in two CEPH families, the grandparents were related, and so the parents where homozygous by descent (aka autozygous) for chunks of their genome.&lt;/p&gt;
 &lt;h3 id=&#34;moral&#34;&gt;Moral&lt;/h3&gt;
 &lt;p&gt;In both of these cases, apparent artifacts in the data led to the most interesting findings in the work. If your model doesn&amp;rsquo;t fit, or you see something odd, ask, &amp;ldquo;Why is that?&amp;rdquo;&lt;/p&gt;
