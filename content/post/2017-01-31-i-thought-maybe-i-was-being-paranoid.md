@@ -19,7 +19,7 @@ An odd thing happened to me on twitter today.
 
 So I [tweeted back](https://twitter.com/kwbroman/status/826174494096109568), asking him to revise his statement and actually take a stand against Trump's executive order.
 
-[![disappearedtweet](https://kbroman.files.wordpress.com/2017/01/disappearedtweet.png)](https://twitter.com/kwbroman/status/826174494096109568)
+[![disappearedtweet](/images/disappearedtweet.png)](https://twitter.com/kwbroman/status/826174494096109568)
 
 Note that I mentioned not just [@RayWCross](https://twitter.com/raywcross) and [@UWSystem](https://twitter.com/uwsystem), but also [@POTUS](https://twitter.com/potus).
 
