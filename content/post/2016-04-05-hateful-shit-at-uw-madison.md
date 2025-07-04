@@ -28,7 +28,7 @@ But for now, I'll follow Patrick Sims's suggestion and start with one of the [Un
 
 I've written an email to the faculty in [my department](https://www.biostat.wisc.edu), asking that we, as a department, _volunteer_ to participate in such racial awareness training:
 
-![email_to_dept](https://kbroman.files.wordpress.com/2016/04/email_to_dept1.png)
+![email_to_dept](/images/email_to_dept1.png)
 
 **Correction**: There's an error in my email; Chris Walker is Associate Professor, and has been for a couple of years.
 
