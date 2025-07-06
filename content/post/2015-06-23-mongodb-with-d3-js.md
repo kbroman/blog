@@ -64,6 +64,6 @@ The [D3 code (in coffeescript](https://github.com/kbroman/d3examples/tree/master
 
 This [MongoDB/D3 illustration](https://github.com/kbroman/d3examples/blob/master/mongodb/) is a toy example, but it represents an important step for me, personally. I'm rather proud of it.
 
-![Anscombe's quartet, set 2](https://kbroman.files.wordpress.com/2015/06/anscombe_2.png)
+![Anscombe's quartet, set 2](/images/anscombe_2.png)
 
 I don't actually have a live example of this. That's the next thing: how to have this running on a proper web server, rather than just locally.
