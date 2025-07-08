@@ -18,7 +18,7 @@ I later emailed [Mona Chalabi](https://fivethirtyeight.com/contributors/mona-cha
 
 I was curious to look at how I'd done with my measurements and data entry. Here's a plot of my percent errors:
 
-![Percent measurement errors in Karl's car crash stats](https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png)
+![Percent measurement errors in Karl's car crash stats](/images/crashstats_errors.png)
 
 Not too bad, really. Here are the biggest problems:
 
