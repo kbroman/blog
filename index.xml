@@ -4411,7 +4411,7 @@ ng2 &amp;lt;- ngram(hobbit, n=2)
 &lt;p&gt;Since I was working on those at the last minute in the middle of the night, to be included as an example in a lecture &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf&#34;&gt;on creating effective figures and tables&lt;/a&gt;, I just read the data off printed versions of the bar charts, using a ruler.&lt;/p&gt;
 &lt;p&gt;I later emailed &lt;a href=&#34;https://fivethirtyeight.com/contributors/mona-chalabi&#34;&gt;Mona Chalabi&lt;/a&gt;, and she and &lt;a href=&#34;https://fivethirtyeight.com/contributors/andrew-flowers/&#34;&gt;Andrew Flowers&lt;/a&gt; quickly posted the data to &lt;a href=&#34;https://github.com/fivethirtyeight/data/tree/master/bad-drivers&#34;&gt;&lt;code&gt;github.com/fivethirtyeight/data&lt;/code&gt;&lt;/a&gt;. (That repository has a lot of interesting data, and if you see data at 538 that you&amp;rsquo;re interested in, just ask them!)&lt;/p&gt;
 &lt;p&gt;I was curious to look at how I&amp;rsquo;d done with my measurements and data entry. Here&amp;rsquo;s a plot of my percent errors:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/11/crashstats_errors.png&#34; alt=&#34;Percent measurement errors in Karl&amp;rsquo;s car crash stats&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/crashstats_errors.png&#34; alt=&#34;Percent measurement errors in Karl&amp;rsquo;s car crash stats&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Not too bad, really. Here are the biggest problems:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
