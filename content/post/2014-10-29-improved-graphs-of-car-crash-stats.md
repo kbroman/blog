@@ -14,7 +14,7 @@ Last week, [Mona Chalabi](https://twitter.com/MonaChalabi) wrote [an interesting
 
 I didn't like the figures so much, though. There were a number of them like this:
 
-![chalabi-dearmona-drinking](https://kbroman.files.wordpress.com/2014/10/chalabi-dearmona-drinking.png)
+![chalabi-dearmona-drinking](/images/chalabi-dearmona-drinking.png)
 
 I'm giving a talk today about data visualization [[slides](https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf) | [github](https://github.com/kbroman/Talk_Graphs/tree/MDPhD2014)], and I thought this would make a good example, so I spent some time creating versions that I like better.
 
