@@ -28,7 +28,7 @@ Second, the separate figures make comparisons difficult. It would be better to p
 
 I started with a set of side-by-side dot plots, with states ordered by total collisions per billion miles:
 
-![Dot plots of crash statistics](https://kbroman.files.wordpress.com/2014/10/dotplots.png)
+![Dot plots of crash statistics](/images/dotplots.png)
 
 The design was inspired by the figures in [Visualizing data patterns with micromaps](https://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20) (Carr and Pickle, 2010). (I'm a huge [Dan Carr](https://mason.gmu.edu/~dcarr/) fan.)
 
