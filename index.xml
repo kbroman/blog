@@ -4492,7 +4492,7 @@ ng2 &amp;lt;- ngram(hobbit, n=2)
 &lt;p&gt;(We shouldn&amp;rsquo;t be too hard on Mona Chalabi, though. Yesterday &lt;a href=&#34;https://twitter.com/MonaChalabi/status/527121946073632768&#34;&gt;she tweeted a great illustration of the suckiness of pie charts&lt;/a&gt;, which I&amp;rsquo;m also using as an example in my lecture today.)&lt;/p&gt;
 &lt;h3 id=&#34;dot-plots&#34;&gt;Dot plots&lt;/h3&gt;
 &lt;p&gt;I started with a set of side-by-side dot plots, with states ordered by total collisions per billion miles:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/dotplots.png&#34; alt=&#34;Dot plots of crash statistics&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/dotplots.png&#34; alt=&#34;Dot plots of crash statistics&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The design was inspired by the figures in &lt;a href=&#34;https://www.amazon.com/exec/obidos/ASIN/142007573X/7210-20&#34;&gt;Visualizing data patterns with micromaps&lt;/a&gt; (Carr and Pickle, 2010). (I&amp;rsquo;m a huge &lt;a href=&#34;https://mason.gmu.edu/~dcarr/&#34;&gt;Dan Carr&lt;/a&gt; fan.)&lt;/p&gt;
 &lt;p&gt;Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes &lt;em&gt;with fatalities&lt;/em&gt;.) And you can more easily see the associations among the different variables.&lt;/p&gt;
 &lt;h3 id=&#34;scatterplots&#34;&gt;Scatterplots&lt;/h3&gt;
