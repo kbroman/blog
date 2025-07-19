@@ -38,7 +38,7 @@ Sorting the states by the first variable allows you to more easily pick out the 
 
 If you're interested in the associations among the variables, it's best to look at scatterplots. Here are what I viewed to be the most interesting ones:
 
-![Scatterplots of car crash stats](https://kbroman.files.wordpress.com/2014/10/scatterplots.png)
+![Scatterplots of car crash stats](/images/scatterplots.png)
 
 The association between average insurance premiums and average insurance losses is now clear. And there's an interesting pattern in the association between speeding-related crashes and total crashes. It's like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.
 
