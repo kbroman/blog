@@ -4497,7 +4497,7 @@ ng2 &amp;lt;- ngram(hobbit, n=2)
 &lt;p&gt;Sorting the states by the first variable allows you to more easily pick out the states with the highest (and lowest) rates of car crashes. (Note that these are just car crashes &lt;em&gt;with fatalities&lt;/em&gt;.) And you can more easily see the associations among the different variables.&lt;/p&gt;
 &lt;h3 id=&#34;scatterplots&#34;&gt;Scatterplots&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in the associations among the variables, it&amp;rsquo;s best to look at scatterplots. Here are what I viewed to be the most interesting ones:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2014/10/scatterplots.png&#34; alt=&#34;Scatterplots of car crash stats&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/scatterplots.png&#34; alt=&#34;Scatterplots of car crash stats&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The association between average insurance premiums and average insurance losses is now clear. And there&amp;rsquo;s an interesting pattern in the association between speeding-related crashes and total crashes. It&amp;rsquo;s like there are two groups of states: those with low speeding-related crashes and those with high speeding-related crashes.&lt;/p&gt;
 &lt;p&gt;You can&amp;rsquo;t identify the states in this graph; it would be far better if it were interactive (ideally, linked to the dot chart and allowing &lt;a href=&#34;https://www.jstor.org/stable/1269768&#34;&gt;brushing&lt;/a&gt;).&lt;/p&gt;
 &lt;h3 id=&#34;the-data&#34;&gt;The data&lt;/h3&gt;
