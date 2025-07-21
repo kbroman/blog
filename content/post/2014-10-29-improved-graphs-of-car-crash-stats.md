@@ -52,7 +52,7 @@ I considered trying to do some image analysis to figure out the lengths of the b
 
 So I used the old-fashioned method: print the graphs and measure the bars with a ruler.  Here's a scan of some of my measurements (click on it to see the larger version).
 
-![Digitizing car crash stats with a ruler](https://kbroman.files.wordpress.com/2014/10/via_ruler.png)
+![Digitizing car crash stats with a ruler](/images/via_ruler.png)
 
 Data entry was another not-quite-how-I-want-my-scientific-collaborators-to-be-doing-this aspect. The data are [here](https://github.com/kbroman/Talk_Graphs/blob/MDPhD2014/Crashes/data.R), as R code, in the most tedious possible form. And surely there are errors.
 
