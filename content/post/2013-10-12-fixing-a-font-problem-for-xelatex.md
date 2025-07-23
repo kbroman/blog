@@ -14,7 +14,7 @@ If the topic sounds boring, well, it is really boring. I write it down here in c
 
 I was working on a [talk about git & GitHub](https://github.com/syounkin/GitPrimer.git), and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here's the default:
 
-![Slide with default font](https://kbroman.files.wordpress.com/2013/10/slide_default.png)
+![Slide with default font](/images/slide_default.png)
 
 And here's what I wanted:
 
