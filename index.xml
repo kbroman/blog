@@ -5401,7 +5401,7 @@ karl&lt;/p&gt;
       <guid>/2013/10/11/fixing-a-font-problem-for-xelatex/</guid>
       <description>&lt;p&gt;If the topic sounds boring, well, it is really boring. I write it down here in case it&amp;rsquo;s useful to someone.&lt;/p&gt;
 &lt;p&gt;I was working on a &lt;a href=&#34;https://github.com/syounkin/GitPrimer.git&#34;&gt;talk about git &amp;amp; GitHub&lt;/a&gt;, and chose a different font (Helvetica Neue, sort of the default Apple font). I think the default font for LaTeX/Beamer is a bit too tall and thin for slides. Here&amp;rsquo;s the default:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/10/slide_default.png&#34; alt=&#34;Slide with default font&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/slide_default.png&#34; alt=&#34;Slide with default font&#34;&gt;&lt;/p&gt;
 &lt;p&gt;And here&amp;rsquo;s what I wanted:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/10/slide_helveticaneue.png&#34; alt=&#34;Slide with Helvetica Neue&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;but-it-didnt-work-on-unix&#34;&gt;But it didn&amp;rsquo;t work on unix&lt;/h3&gt;
