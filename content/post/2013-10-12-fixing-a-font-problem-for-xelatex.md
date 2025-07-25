@@ -18,7 +18,7 @@ I was working on a [talk about git & GitHub](https://github.com/syounkin/GitPrim
 
 And here's what I wanted:
 
-![Slide with Helvetica Neue](https://kbroman.files.wordpress.com/2013/10/slide_helveticaneue.png)
+![Slide with Helvetica Neue](/images/slide_helveticaneue.png)
 
 ### But it didn't work on unix
 
