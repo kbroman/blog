@@ -21,7 +21,7 @@ I admire [Till Tantau](https://en.wikipedia.org/wiki/Till_Tantau) for creating B
 
 After several days work, I've finally figured out how to create LaTeX/Beamer-based slides that look like what I want:
 
-[![Open Access talk, title page](https://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png)](https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf)
+[![Open Access talk, title page](/images/openaccess_pg1.png)](https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf)
 
 In this post, I'll explain what I did.
 
