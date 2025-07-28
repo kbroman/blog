@@ -5471,7 +5471,7 @@ or installed font not found.
 &lt;p&gt;&lt;a href=&#34;https://deic.uab.es/~iblanes/beamer_gallery/individual/Warsaw-default-default.html&#34;&gt;&lt;img src=&#34;https://www.biostat.wisc.edu/~kbroman/blog/Warsaw-default-default-01.png&#34; alt=&#34;Typical beamer slide&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I admire &lt;a href=&#34;https://en.wikipedia.org/wiki/Till_Tantau&#34;&gt;Till Tantau&lt;/a&gt; for creating Beamer; it was a great idea and it&amp;rsquo;s been widely adopted. But I don&amp;rsquo;t like talk outlines at all; I certainly don&amp;rsquo;t want to see one on every page.&lt;/p&gt;
 &lt;p&gt;After several days work, I&amp;rsquo;ve finally figured out how to create LaTeX/Beamer-based slides that look like what I want:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/10/openaccess_pg1.png&#34; alt=&#34;Open Access talk, title page&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;&lt;img src=&#34;./images/openaccess_pg1.png&#34; alt=&#34;Open Access talk, title page&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In this post, I&amp;rsquo;ll explain what I did.&lt;/p&gt;
 &lt;h3 id=&#34;my-history&#34;&gt;My history&lt;/h3&gt;
 &lt;p&gt;Take a look at my &lt;a href=&#34;https://kbroman.org/talks.html&#34;&gt;list of presentations&lt;/a&gt; (going back to 1998), and you&amp;rsquo;ll see that I switched from LaTeX to powerpoint in 2004 and then switched back to LaTeX in 2006.&lt;/p&gt;
