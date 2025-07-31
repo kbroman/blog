@@ -65,7 +65,7 @@ The main benefits of using Beamer:
 
   * Easy way to create handouts with notes on what you're going to say. This is especially useful for others to learn from your presentation even if they can't attend (which is most of the world). Here's an example page from such a handout:
 
-[![Example notes page from Open Access talk](https://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png)](https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf)
+[![Example notes page from Open Access talk](/images/openaccess_withnotes_pg15.png)](https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf)
 
 ### Here's what I did
 
