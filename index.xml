@@ -5504,7 +5504,7 @@ Example 1
 &lt;p&gt;Easy way to create handouts with notes on what you&amp;rsquo;re going to say. This is especially useful for others to learn from your presentation even if they can&amp;rsquo;t attend (which is most of the world). Here&amp;rsquo;s an example page from such a handout:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/10/openaccess_withnotes_pg15.png&#34; alt=&#34;Example notes page from Open Access talk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;&lt;img src=&#34;./images/openaccess_withnotes_pg15.png&#34; alt=&#34;Example notes page from Open Access talk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;heres-what-i-did&#34;&gt;Here&amp;rsquo;s what I did&lt;/h3&gt;
 &lt;p&gt;I was preparing a talk on open access publishing. Here&amp;rsquo;s &lt;a href=&#34;https://github.com/kbroman/Talk_OpenAccess&#34;&gt;the source&lt;/a&gt;; &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/openaccess.pdf&#34;&gt;the pdf&lt;/a&gt;; and &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/presentations/openaccess_withnotes.pdf&#34;&gt;a pdf with notes on what I intend to say&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll go through the details of the code, in case it might be useful to someone.&lt;/p&gt;
