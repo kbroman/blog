@@ -43,7 +43,7 @@ In the new system, reviewers score grants on a scale of 1-9, in single digits, w
 
 When the new scale was introduced, we were given the following handy chart:
 
-![NIH 9-point score chart](https://kbroman.files.wordpress.com/2013/10/nih_score_chart.png)
+![NIH 9-point score chart](/images/nih_score_chart.png)
 
 As I understand it, there were two main reasons for revising the scoring system:
 
