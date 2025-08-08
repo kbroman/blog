@@ -11,7 +11,7 @@ tags:
 slug: more-on-chutes-ladders
 ---
 
-[Matt Maenner asked](https://twitter.com/mmaenner/status/335478612084006912) about the sawtooth pattern in the [figure](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png) in [my last post on Chutes & Ladders](https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/).
+[Matt Maenner asked](https://twitter.com/mmaenner/status/335478612084006912) about the sawtooth pattern in the [figure](/images/chutes_and_ladders_spins1.png) in [my last post on Chutes & Ladders](https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/).
 
 Damn you, Matt!  I thought I was done with this.  Don't feed my obsession.
 
