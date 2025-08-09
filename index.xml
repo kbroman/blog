@@ -5971,7 +5971,7 @@ id &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span sty
       <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
       
       <guid>/2013/05/20/more-on-chutes-ladders/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mmaenner/status/335478612084006912&#34;&gt;Matt Maenner asked&lt;/a&gt; about the sawtooth pattern in the &lt;a href=&#34;https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34;&gt;figure&lt;/a&gt; in &lt;a href=&#34;https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;my last post on Chutes &amp;amp; Ladders&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mmaenner/status/335478612084006912&#34;&gt;Matt Maenner asked&lt;/a&gt; about the sawtooth pattern in the &lt;a href=&#34;./images/chutes_and_ladders_spins1.png&#34;&gt;figure&lt;/a&gt; in &lt;a href=&#34;https://kbroman.org/blog/2013/05/17/chutes-ladders-how-long-is-this-going-to-take/&#34;&gt;my last post on Chutes &amp;amp; Ladders&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Damn you, Matt!  I thought I was done with this.  Don&amp;rsquo;t feed my obsession.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/kwbroman/status/335499296193536000&#34;&gt;My response&lt;/a&gt; was that if the game ends early, it&amp;rsquo;s even more likely that it&amp;rsquo;ll be the kid who went first who won.  &lt;em&gt;But&lt;/em&gt;, my intuition was wrong: exactly the opposite is true. &lt;em&gt;It is&lt;/em&gt; the advantage to the first player that causes the sawtooth pattern, but that advantage &lt;em&gt;increases&lt;/em&gt; with the number of rounds rather than decreases.&lt;/p&gt;
 &lt;h3 id=&#34;numerical-results&#34;&gt;Numerical results&lt;/h3&gt;
