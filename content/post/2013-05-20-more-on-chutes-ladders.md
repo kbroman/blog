@@ -34,7 +34,7 @@ Then the probability that a player has reached state 100 by round _n_ is
 
 To calculate the number of rounds to complete a game with _k_ players, you want the minimum of _k_ independent draws from this distribution.  The probability that a game with _k_ players is complete by round n is 1 - (1-_q<sub>n</sub>_)_<sup>k</sup>_.  And again you can get the probability distributions by differences.  Here's a picture.
 
-![No. rounds to complete Chutes & Ladders](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png)
+![No. rounds to complete Chutes & Ladders](/images/chutes_and_ladders_rounds.png)
 
 ### Advantage to the first player
 
