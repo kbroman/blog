@@ -95,7 +95,7 @@ is conditionally independent of the history (<em>X<sub>1</sub></em>, &hellip;, <
 <p>Then the probability that a player has reached state 100 by round <em>n</em> is
 (1, 0, &hellip;, 0) <em>P<sup>n</sup></em> (0, &hellip;, 0, 1)’.  That&rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this <em>q<sub>n</sub></em>.  You can get the probability distribution by differences, say <em>p<sub>n</sub></em> = <em>q<sub>n</sub></em> - <em>q<sub>n-1</sub></em>.</p>
 <p>To calculate the number of rounds to complete a game with <em>k</em> players, you want the minimum of <em>k</em> independent draws from this distribution.  The probability that a game with <em>k</em> players is complete by round n is 1 - (1-<em>q<sub>n</sub></em>)<em><sup>k</sup></em>.  And again you can get the probability distributions by differences.  Here&rsquo;s a picture.</p>
-<p><img src="https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes & Ladders"></p>
+<p><img src="../../../../images/chutes_and_ladders_rounds.png" alt="No. rounds to complete Chutes & Ladders"></p>
 <h3 id="advantage-to-the-first-player">Advantage to the first player</h3>
 <p>Now, regarding the advantage to the first player: note that the first
 player wins in exactly <em>n</em> steps if he gets to the finish at n steps

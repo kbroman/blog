@@ -5985,7 +5985,7 @@ is conditionally independent of the history (&lt;em&gt;X&lt;sub&gt;1&lt;/sub&gt;
 &lt;p&gt;Then the probability that a player has reached state 100 by round &lt;em&gt;n&lt;/em&gt; is
 (1, 0, &amp;hellip;, 0) &lt;em&gt;P&lt;sup&gt;n&lt;/sup&gt;&lt;/em&gt; (0, &amp;hellip;, 0, 1)’.  That&amp;rsquo;s the cumulative distribution function (cdf) of the number of rounds for a single player to finish the game.  Call this &lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;.  You can get the probability distribution by differences, say &lt;em&gt;p&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; = &lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt; - &lt;em&gt;q&lt;sub&gt;n-1&lt;/sub&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;To calculate the number of rounds to complete a game with &lt;em&gt;k&lt;/em&gt; players, you want the minimum of &lt;em&gt;k&lt;/em&gt; independent draws from this distribution.  The probability that a game with &lt;em&gt;k&lt;/em&gt; players is complete by round n is 1 - (1-&lt;em&gt;q&lt;sub&gt;n&lt;/sub&gt;&lt;/em&gt;)&lt;em&gt;&lt;sup&gt;k&lt;/sup&gt;&lt;/em&gt;.  And again you can get the probability distributions by differences.  Here&amp;rsquo;s a picture.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_rounds.png&#34; alt=&#34;No. rounds to complete Chutes &amp; Ladders&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/chutes_and_ladders_rounds.png&#34; alt=&#34;No. rounds to complete Chutes &amp; Ladders&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;advantage-to-the-first-player&#34;&gt;Advantage to the first player&lt;/h3&gt;
 &lt;p&gt;Now, regarding the advantage to the first player: note that the first
 player wins in exactly &lt;em&gt;n&lt;/em&gt; steps if he gets to the finish at n steps
