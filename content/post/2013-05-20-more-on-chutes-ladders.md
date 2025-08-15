@@ -53,7 +53,7 @@ the first player wins given that the game is complete at round _n_.
 Here's a plot of that probability as a function of the number of
 players, relative to the nominal probability (1/2, 1/3, 1/4).
 
-![Advantage to the first player in Chutes & Ladders](https://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png)
+![Advantage to the first player in Chutes & Ladders](/images/advantage_to_first_player1.png)
 
 Note that _n_=7 is the minimum number of rounds to complete the game.
 I'd thought that the first player's advantage went down over time, but
