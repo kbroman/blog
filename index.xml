@@ -5999,7 +5999,7 @@ if there are &lt;em&gt;k&lt;/em&gt; &amp;gt; 2 players.&lt;/p&gt;
 the first player wins given that the game is complete at round &lt;em&gt;n&lt;/em&gt;.
 Here&amp;rsquo;s a plot of that probability as a function of the number of
 players, relative to the nominal probability (1/2, 1/3, 1/4).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/advantage_to_first_player1.png&#34; alt=&#34;Advantage to the first player in Chutes &amp; Ladders&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/advantage_to_first_player1.png&#34; alt=&#34;Advantage to the first player in Chutes &amp; Ladders&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Note that &lt;em&gt;n&lt;/em&gt;=7 is the minimum number of rounds to complete the game.
 I&amp;rsquo;d thought that the first player&amp;rsquo;s advantage went down over time, but
 the opposite is true.&lt;/p&gt;
