@@ -61,7 +61,7 @@ the opposite is true.
 
 ### No. spins to end the game
 
-Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of [the simulation-based figure in my last post](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png):
+Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of [the simulation-based figure in my last post](/images/chutes_and_ladders_spins1.png):
 
 ![No. spins to complete Chutes & Ladders, numerical results](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png)
 
