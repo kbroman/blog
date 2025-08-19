@@ -63,6 +63,6 @@ the opposite is true.
 
 Combining these two results (on the number of rounds to complete the game and the probability that player i will win in n rounds), we can get a more precise version of [the simulation-based figure in my last post](/images/chutes_and_ladders_spins1.png):
 
-![No. spins to complete Chutes & Ladders, numerical results](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins_exact.png)
+![No. spins to complete Chutes & Ladders, numerical results](/images/chutes_and_ladders_spins_exact.png)
 
 As you can see, the sawtooth pattern becomes more pronounced with the number of rounds, but then it gets lost in the downward slope of the distribution on the right side.  (Again, see my [R code](https://gist.github.com/kbroman/5600209/#file-chutes_and_ladders_numerical-r).)
