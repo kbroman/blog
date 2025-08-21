@@ -22,7 +22,7 @@ So I wrote a bit of [R code to simulate the game](https://gist.github.com/kbroma
 
 Here's the distribution of the number of spins to complete the game, by number of players:
 
-![No. spins in chutes & ladders](https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png)
+![No. spins in chutes & ladders](/images/chutes_and_ladders_spins1.png)
 
 With two players, the average number of spins is 52, with a 90th percentile of 88.
 
