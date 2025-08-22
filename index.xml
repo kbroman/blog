@@ -6021,7 +6021,7 @@ the opposite is true.&lt;/p&gt;
 &lt;p&gt;But that didn&amp;rsquo;t answer my specific question, namely, &amp;ldquo;How long is this going to take?&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;So I wrote a bit of &lt;a href=&#34;https://gist.github.com/kbroman/5600209&#34;&gt;R code to simulate the game&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s the distribution of the number of spins to complete the game, by number of players:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/05/chutes_and_ladders_spins1.png&#34; alt=&#34;No. spins in chutes &amp; ladders&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/chutes_and_ladders_spins1.png&#34; alt=&#34;No. spins in chutes &amp; ladders&#34;&gt;&lt;/p&gt;
 &lt;p&gt;With two players, the average number of spins is 52, with a 90th percentile of 88.&lt;/p&gt;
 &lt;p&gt;If you add a third player, the average increases to 65, and the 90th percentile increases to 103.  You&amp;rsquo;re playing fewer rounds, but each round is three times as long. If you add a fourth player, the average is 76 and the 90th percentile is 117.&lt;/p&gt;
 &lt;p&gt;So, in trying to minimize the agony, it seems best to not encourage my eight-year-old son to join us in the game.  If he plays with us, there&amp;rsquo;s a 63% chance that it will take longer.&lt;/p&gt;
