@@ -6546,7 +6546,7 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       
       <guid>/2013/03/19/data-structures-are-important/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve created another &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt; example, of QTL analysis for a phenotype measured over time. (Click on the image for the &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;interactive version&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/03/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/lod_by_time&#34;&gt;&lt;img src=&#34;./images/lod_by_time.png&#34; alt=&#34;QTL analysis with phenotype over time&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The code is on &lt;a href=&#34;https://github.com/kbroman/d3examples/tree/master/lod_by_time&#34;&gt;github&lt;/a&gt;. It took me about a day.&lt;/p&gt;
 &lt;p&gt;The hardest part was figuring out the right data structures.  A pixel here is linked to curves over there and over there and over there.  You need to set things up so it&amp;rsquo;s easy to traverse such linkages.&lt;/p&gt;
 &lt;p&gt;If you hover over a point in the top-left image, you get views of the vertical and horizontal cross-sections.  If you click on a point, pointwise confidence bands are added to the &amp;ldquo;QTL effect&amp;rdquo; plot.  (You have to click, because if I included those confidence bands automatically, the graph became painfully slow to refresh.)&lt;/p&gt;
