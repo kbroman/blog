@@ -33,7 +33,7 @@ Here's an image of first graph I created for the talk; click on it to jump to th
 
 Statisticians are often confronted with a large set of curves.  We'd like to show the individual curves, but there are too many.  The resulting [spaghetti plot](https://stats.idre.ucla.edu/stata/faq/how-can-i-make-spaghetti-plots-in-stata/) is a total mess.  An image plot (like the [lasagna plot](https://journals.lww.com/epidem/Fulltext/2010/09000/Lasagna_Plots__A_Saucy_Alternative_to_Spaghetti.15.aspx)) allows us to see all of the curves, but it can be hard to get a sense of what the actual curves look like.  The interactive version solves the problem.
 
-[![Many curves](https://kbroman.files.wordpress.com/2013/03/manycurves2.png)](https://www.biostat.wisc.edu/~kbroman/D3/manycurves)
+[![Many curves](/images/manycurves2.png)](https://www.biostat.wisc.edu/~kbroman/D3/manycurves)
 
 Here's a second example; again click on the image to jump to the [interactive version](https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect). (I've shown this before, but I want to use it to make another point.)
 
