@@ -24,7 +24,7 @@ So, I did, though I had to stay up quite a bit later to get the images together.
 
 Here's Brian's alternative logo, next to the original.  Well, it's Brian's design but my rendering.
 
-![JHBSPH logo](/images/logo.png) ![Alternative logo](https://kbroman.files.wordpress.com/2013/03/altlogo.png)
+![JHBSPH logo](/images/logo.png) ![Alternative logo](/images/altlogo.png)
 
 And [here's a PDF of the logos in context](https://kbroman.files.wordpress.com/2013/03/evidence.pdf).
 
