@@ -26,7 +26,7 @@ Here's Brian's alternative logo, next to the original.  Well, it's Brian's desig
 
 ![JHBSPH logo](/images/logo.png) ![Alternative logo](/images/altlogo.png)
 
-And [here's a PDF of the logos in context](https://kbroman.files.wordpress.com/2013/03/evidence.pdf).
+And [here's a PDF of the logos in context](/images/evidence.pdf).
 
 And here's the month of beer:
 
