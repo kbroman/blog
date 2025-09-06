@@ -30,7 +30,7 @@ And [here's a PDF of the logos in context](/images/evidence.pdf).
 
 And here's the month of beer:
 
-![Month of beer](https://kbroman.files.wordpress.com/2013/03/month_of_beer.jpg)
+![Month of beer](/images/month_of_beer.jpg)
 
 Ingo was willing to restock if necessary, but that wasn't allowed.  We still have most of those coasters; they've been great toys for the kids.
 
