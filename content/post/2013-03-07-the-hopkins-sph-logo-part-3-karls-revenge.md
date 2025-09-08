@@ -42,7 +42,7 @@ I gave another of those informal statistics lectures, this time on "[What is reg
 
 Here's the second month of beer:
 
-![Second month of beer](https://kbroman.files.wordpress.com/2013/03/second_month_of_beer.jpg)
+![Second month of beer](/images/second_month_of_beer.jpg)
 
 It all seems a bit juvenile in retrospect.  I guess I'm getting (or _have gotten_) old.
 
