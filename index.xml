@@ -6711,7 +6711,7 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       
       <guid>/2013/03/06/interactive-eqtl-plot-with-d3-js/</guid>
       <description>&lt;p&gt;I just finished an &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;interactive eQTL plot&lt;/a&gt; using &lt;a href=&#34;https://d3js.org&#34;&gt;D3&lt;/a&gt;, in preparation for my &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/talks/InteractiveGraphs2&#34;&gt;talk on interactive graphics&lt;/a&gt; at the &lt;a href=&#34;https://www.enar.org/meetings/index.cfm&#34;&gt;ENAR meeting&lt;/a&gt; next week.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/03/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/D3/cistrans&#34;&gt;&lt;img src=&#34;./images/interactive_eqtl_plot.png&#34; alt=&#34;Static view of interactive eQTL plot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The code (in &lt;a href=&#34;https://coffeescript.org&#34;&gt;CoffeeScript&lt;/a&gt;) is available at &lt;a href=&#34;https://github.com/kbroman/JSbroman/tree/master/cistrans&#34;&gt;github&lt;/a&gt;.  But beware: it&amp;rsquo;s pretty awful.&lt;/p&gt;
 &lt;p&gt;The hardest part was setting up the data files.  Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.&lt;/p&gt;
 </description>
