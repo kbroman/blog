@@ -11,7 +11,7 @@ slug: theres-a-fire-in-the-building
 
 I was at work this morning at 8am.  At 8:45am I got a text asking what was going on in [my building](https://www.map.wisc.edu/?initObj=bdg_MdScC), with this picture:
 
-![Fire trucks at MSC](https://kbroman.files.wordpress.com/2013/02/fire_trucks.jpg)
+![Fire trucks at MSC](/images/fire_trucks.jpg)
 
 It was news to me.
 
