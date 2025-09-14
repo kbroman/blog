@@ -23,7 +23,7 @@ At 9:05am I called the campus police to ask what was going on.  They said all th
 
 Apparently no one was hurt, but there seems to be quite a mess.  This is on the same floor as my office, not too far away:
 
-![Fire-related mess, 4th floor SMI](https://kbroman.files.wordpress.com/2013/02/smi.jpg)
+![Fire-related mess, 4th floor SMI](/images/smi.jpg)
 
 The fire seems to be around the corner from that shot, in the back-central part of the building.  I peaked around the corner and saw a bunch of people standing around, but I was too shy to take a picture of them.
 
