@@ -6814,7 +6814,7 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       
       <guid>/2013/02/11/interactive-ma-plot/</guid>
       <description>&lt;p&gt;The New York Times has &lt;a href=&#34;https://tinyurl.com/aqa9wum&#34;&gt;an interesting interactive graphic&lt;/a&gt; on boys&#39; and girls&#39; average scores on a science exam, by country.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://tinyurl.com/aqa9wum&#34;&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2013/02/science_scores.png&#34; alt=&#34;Science scores&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tinyurl.com/aqa9wum&#34;&gt;&lt;img src=&#34;./images/science_scores.png&#34; alt=&#34;Science scores&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s nice to see a scatterplot. (Often one would see just a bar plot, with female and male bars side-by-side.) Even better, this is an &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/MA_plot&#34;&gt;MA plot&lt;/a&gt;.&amp;rdquo; That is, rather than just plot males vs females, they show the difference vs the average.&lt;/p&gt;
 &lt;p&gt;The wikipedia entry for &lt;a href=&#34;https://en.wikipedia.org/wiki/MA_plot&#34;&gt;MA plot&lt;/a&gt; says such a plot of difference vs average is in medical statistics known as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Bland-Altman_plot&#34;&gt;Bland-Altman plot&lt;/a&gt; and in other fields is known as a Tukey mean-difference plot.&lt;/p&gt;
 </description>
