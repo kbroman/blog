@@ -17,7 +17,7 @@ I'm making some progress learning [D3](https://d3js.org) (for interactive graphi
 
 First, an [example for displaying many distributions](https://www.biostat.wisc.edu/~kbroman/D3/manyboxplots).  Here I'm considering a set of nearly 500 gene expression microarrays, each with 40,000 or so measurements.  It's hard to look at 500 box plots side-by-side, and with 40k measurements, traditional box plots don't give enough information about the tails.
 
-[![Many box plots](https://kbroman.files.wordpress.com/2013/02/manyboxplots.png)](https://www.biostat.wisc.edu/~kbroman/D3/manyboxplots)
+[![Many box plots](/images/manyboxplots.png)](https://www.biostat.wisc.edu/~kbroman/D3/manyboxplots)
 
 In the top figure, the 500 arrays are aligned next to each other, sorted by their median, and then I show the 1, 5, 10, 25 50, ..., 99th percentiles.  The advantage of the interactive plot is that you can hover over a given array on the top and see a more detailed histogram below.  And if you click on an array, its histogram will be retained below, for easy comparison to other arrays.
 
