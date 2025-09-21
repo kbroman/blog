@@ -25,7 +25,7 @@ In the top figure, the 500 arrays are aligned next to each other, sorted by thei
 
 As a [second example](https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect), I plot the LOD curves from QTL analysis across the genome; click on a chromosome above and you get a more detailed view of that chromosome in the bottom-left; click on a marker position in the bottom-left, and you get a view of the QTL effect on the bottom-right.
 
-[![LOD curves and QTL effects](https://kbroman.files.wordpress.com/2013/02/lod_and_effect1.png)](https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect)
+[![LOD curves and QTL effects](/images/lod_and_effect1.png)](https://www.biostat.wisc.edu/~kbroman/D3/lod_and_effect)
 
 Likely none of that is understandable; let me try to explain.  QTL stands for "quantitative trait locus," a region of the genome (i.e., locus) that influences some quantitative trait (like insulin level in serum).  To identify QTL, we look at the association between the quantitative trait and genotype at each of many genetic markers across the genome.  We're basically doing analysis of variance, but we express the results as a log10 likelihood ratio, called the LOD score.
 
