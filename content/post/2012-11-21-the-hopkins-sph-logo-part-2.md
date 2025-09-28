@@ -23,7 +23,7 @@ I volunteered to do the first one, on "How to display data badly," a lecture I'd
 
 The concept of my talk was to take a reasonably good graph, like this:
 
-![](https://kbroman.files.wordpress.com/2012/11/fig1a.png)
+![](/images/fig1a.png)
 
 and then show how to turn it into a terrible graph, like this:
 
