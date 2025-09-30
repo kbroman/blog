@@ -27,7 +27,7 @@ The concept of my talk was to take a reasonably good graph, like this:
 
 and then show how to turn it into a terrible graph, like this:
 
-![](https://kbroman.files.wordpress.com/2012/11/fig1h.png)
+![](/images/fig1h.png)
 
 In addition, as an ancillary commentary on the use of gratuitous animation in slides, I animated [the School's logo](https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1/) on each slide, with those animations becoming increasingly intrusive as the talk went on.  Then, at the summary slide, it was flying all around.  I wasn't going to refer to the logo in any way, or say anything about slide animations at all.  I just thought it would be a funny backdrop.
 
