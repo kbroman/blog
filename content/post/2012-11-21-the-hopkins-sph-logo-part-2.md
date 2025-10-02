@@ -51,7 +51,7 @@ You can see the slides as presented, as well as the "Director's Cut", at [my web
 
 Here's a slide from the Director's Cut (the colors matched better originally; that they don't now is one of the many reasons I hate PowerPoint):
 
-![](https://kbroman.files.wordpress.com/2012/11/before.png)
+![](/images/before.png)
 
 And here's how it was presented:
 
