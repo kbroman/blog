@@ -55,6 +55,6 @@ Here's a slide from the Director's Cut (the colors matched better originally; th
 
 And here's how it was presented:
 
-![](https://kbroman.files.wordpress.com/2012/11/after.png)
+![](/images/after.png)
 
 Related posts on the Hopkins SPH logo: [part 1](https://kbroman.org/blog/2012/11/16/the-hopkins-sph-logo-part-1) | [part 3](https://kbroman.org/blog/2013/03/06/the-hopkins-sph-logo-part-3-karls-revenge/)
