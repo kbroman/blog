@@ -14,7 +14,7 @@ I was just telling [a distinguished visitor](http://www.stodden.net) a few of my
 
 Here's the logo:
 
-![](https://kbroman.files.wordpress.com/2013/03/logo.png&h=150)
+![](/images/logo.png&h=150)
 
 The logo was newly released while I was a faculty member in the [Department of Biostatistics](https://www.biostat.jhsph.edu) at Hopkins.  It was part of a ["branding"](https://en.wikipedia.org/wiki/Brand_management) effort for the school that was a near-constant source of amusement for me, though I think I did strain an eye muscle or two from all the rolling.
 
