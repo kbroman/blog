@@ -16,4 +16,4 @@ There's [a nice op-ed](https://www.nytimes.com/2012/10/27/opinion/a-failed-earth
 
 The third highlighted line should be in the middle of the fourth one, to give "...who allow flimsy buildings to be built..."  I'm not sure how such an error can occur.
 
-[Here's a PDF of the full article.](https://kbroman.files.wordpress.com/2012/10/nytimes_article.pdf)
+[Here's a PDF of the full article.](/images/nytimes_article.pdf)
