@@ -7093,7 +7093,7 @@ Did you know that &lt;code&gt;x[[c(5,3)]]&lt;/code&gt; is the same as &lt;code&g
       
       <guid>/2012/10/11/curved-arrows-in-r/</guid>
       <description>&lt;p&gt;I briefly investigated how to draw curved arrows in R. Here&amp;rsquo;s a small piece of the figure that I ultimately created:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2012/10/sample_mix-ups.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/sample_mix-ups.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;A google search for &amp;ldquo;curved arrows in R&amp;rdquo; revealed three options:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
