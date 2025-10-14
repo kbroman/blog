@@ -75,6 +75,6 @@ iArrows(x1, y, x2, y,
 
 And here's the corresponding figure:
 
-![](https://kbroman.files.wordpress.com/2012/10/igraph_arrows1.png)
+![](/images/igraph_arrows1.png)
 
 Note that the arrows at the top all have green arrow heads.
