@@ -25,6 +25,6 @@ I want to make things like [this](https://mbostock.github.com/d3/talk/20111018/c
 
 The important thing is that I'm having fun; eventually I'll be able to usefully apply some new skills.  For now I've got this: [[Click](https://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html) for the dynamic version.]
 
-[![](https://kbroman.files.wordpress.com/2012/06/lod_curve1.png)](https://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html)
+[![](/images/lod_curve1.png)](https://www.biostat.wisc.edu/~kbroman/D3/lod_curve.html)
 
 PS: I really like [Scott Murray's tutorials on D3](http://alignedleft.com/tutorials/d3/). After working through those, [other tutorials](https://github.com/mbostock/d3/wiki/Tutorials) became much more understandable.  [Eloquent JavaScript](http://eloquentjavascript.net/) is a super-cool, open source, interactive text on JavaScript; also take a look at the "fork" for [CoffeeScript](https://coffeescript.org/), [Smooth CoffeeScript](http://autotelicum.github.com/Smooth-CoffeeScript/).  (I'm thinking I'll switch to CoffeeScript once I've learned a bit of JavaScript; the useful libraries and examples are mostly in JavaScript.)
