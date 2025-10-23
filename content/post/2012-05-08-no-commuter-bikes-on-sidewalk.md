@@ -11,6 +11,6 @@ slug: no-commuter-bikes-on-sidewalk
 
 I'm pretty sure you won't find a street sign like this in Baltimore:
 
-!["No commuter bikes on sidewalk"](https://kbroman.files.wordpress.com/2012/05/bike_sign.jpg)
+!["No commuter bikes on sidewalk"](/images/bike_sign.jpg)
 
 It's [on my usual commute](https://g.co/maps/rwjdy) to campus.
