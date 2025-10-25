@@ -14,7 +14,7 @@ The [University of Wisconsin-Madison](https://www.wisc.edu) has embarked on a bi
 What reasonable faculty member would seek to attend an "engagement session"?
 
 And then there are diagrams like this:
-![](https://kbroman.files.wordpress.com/2012/05/hrd_project_structure-1024x770.gif)
+![](/images/hrd_project_structure-1024x770.gif)
 
 And stuff like this:
 ![](https://kbroman.files.wordpress.com/2012/05/hrd_vision.png)
