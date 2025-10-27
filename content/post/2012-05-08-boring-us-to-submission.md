@@ -17,7 +17,7 @@ And then there are diagrams like this:
 ![](/images/hrd_project_structure-1024x770.gif)
 
 And stuff like this:
-![](https://kbroman.files.wordpress.com/2012/05/hrd_vision.png)
+![](/images/hrd_vision.png)
 
 When they talk about market-based blah blah blah, my eyes glaze over and I want to take a nap.
 
