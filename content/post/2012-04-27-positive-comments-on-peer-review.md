@@ -12,7 +12,7 @@ tags:
 slug: positive-comments-on-peer-review
 ---
 
-We all complain about peer review, particularly when [our best work](https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf) is rejected by every journal from Nature Genetics down to [that journal that will publish anything](https://www.biomedcentral.com/bmcgenet), so that it finally appears in [a volume](https://projecteuclid.org/euclid.lnms/1215091126) to honor [some guy](https://www.stat.berkeley.edu/~terry/) that [only he will read](https://kbroman.files.wordpress.com/2012/04/terry2.jpg).
+We all complain about peer review, particularly when [our best work](https://www.biostat.wisc.edu/~kbroman/publications/inversion.pdf) is rejected by every journal from Nature Genetics down to [that journal that will publish anything](https://www.biomedcentral.com/bmcgenet), so that it finally appears in [a volume](https://projecteuclid.org/euclid.lnms/1215091126) to honor [some guy](https://www.stat.berkeley.edu/~terry/) that [only he will read](/images/terry2.jpg).
 
 However, sometimes [an anonymous reviewer](https://medicine.yale.edu/ysph/people/hongyu_zhao.profile) will identify an important flaw in [a paper](https://www.biostat.wisc.edu/~kbroman/publications/interfer.pdf) that you can fix before it's published, thus saving you from potential public embarrassment.
 
