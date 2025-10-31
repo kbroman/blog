@@ -22,7 +22,7 @@ Many (or all) of my interesting findings have been completely fortuitous results
 
 A couple of weeks ago, I was working on writing up a paper, and saw an unusual plot, and thought, "Hmm, that's interesting," and so I made some more plots.  And then I saw this:
 
-![](https://kbroman.files.wordpress.com/2012/04/weird_correlation_matrix1.png)
+![](/images/weird_correlation_matrix1.png)
 
 This is an image of the correlations between samples, across genes, for a study with 500 microarrays on each of 6 tissues.  The samples are sorted by sex (female on bottom left; male on top right) and then by ID.  I was initially puzzling over the sex difference in other tissues (same-sex pairs are positively correlated; opposite-sex pairs are negatively correlated), but when I saw this tissue, I was struck by the plaid pattern.
 
