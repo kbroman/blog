@@ -38,7 +38,7 @@ Plus, this is the first real microarray project I've been involved in, and I hav
 
 You can't make 3000 choose 2 scatterplots, but you can look at summaries of the marginal distributions of the 3000 arrays.  I was thinking about how to depict 500 box plots, and came up with this:
 
-![](https://kbroman.files.wordpress.com/2012/04/many_boxplots.png)
+![](/images/many_boxplots.png)
 
 There are ~500 arrays here, with the lines indicating quantiles: 1, 5, 10, 25, 50, 75, 90, 95, 99%iles.  The first batch of arrays are the bad ones.  You can see that those have a shift upward in median but also a heavy lower tail.
 
