@@ -24,7 +24,7 @@ Another of Jim's jokes: at the end of his recent talks, on the standard acknowle
 Last summer, I sent him a couple of papers that I was writing. In response to, "I think you'll find this interesting," he said, "You are right. I did find it interesting." He also wrote, "This is a masterful paper." And later, "While I am writing let me mention something I forgot to say yesterday.  Your diagrams are very neat and very useful, both the chromosomes and the dominos.  The latter are particularly useful.  One picture is worth many words in this case." I cherish those comments.
 
 The dominos he's referring to are in the 20+ supplemental tables to one of the papers. Here's an example:
-![](https://kbroman.files.wordpress.com/2012/02/dominos.png)
+![](/images/dominos.png)
 
 In August, I sat with Jim in his office, discussing the two papers. I asked him for advice on how to maintain a balanced life, referring particularly to my obsession, over several weeks, with the calculations in those papers. He did not offer any advice, but expressed that he had also experienced such intense periods of concentration and obsession about a problem, with a mixture of pleasure and pain, though in hindsight mostly pleasure.
 
