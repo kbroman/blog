@@ -34,4 +34,4 @@ I wish I could be more like him. In particular, I wish I paid as much attention 
 
 The [Laboratory of Genetics](https://www.genetics.wisc.edu) at UW-Madison is raising money for a [James F. Crow Endowed Professorship](https://genetics.wisc.edu/donations/). Consider [making a donation](https://www.supportuw.org/giving?seq=6949).
 
-![](https://kbroman.files.wordpress.com/2012/02/jimcrow.jpeg)
+![](/images/jimcrow.jpeg)
