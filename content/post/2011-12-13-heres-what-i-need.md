@@ -11,4 +11,4 @@ slug: heres-what-i-need
 
 for riding in Wisconsin in the winter, the Surly Moonlander:
 
-![](https://kbroman.files.wordpress.com/2011/12/moonlander.jpeg)
+![](/images/moonlander.jpeg)
