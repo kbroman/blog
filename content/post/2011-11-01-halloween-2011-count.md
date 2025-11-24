@@ -17,7 +17,7 @@ We don't get many kids seeking candy at our house. I'm not sure if there just ar
 
 I decided to keep track. As usual, we bought a huge bag of candy, and we still had about half of it left to hand out tonight. But only 19 kids came.
 
-![](https://kbroman.files.wordpress.com/2011/10/halloween20111.png)
+![](/images/halloween20111.png)
 
 They arrived pretty regularly from 5:50 to 7:50.
 
