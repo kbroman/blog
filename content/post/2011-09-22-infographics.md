@@ -17,4 +17,4 @@ I'm inclined to [buy an art print](https://society6.com/albyantoniazzi/MOST-POPU
 
 Note the relationship between the central panel and the cover of the latest [Amstat News](https://magazine.amstat.org/) (always a good source for embarrassing figures):
 
-![](https://kbroman.files.wordpress.com/2011/09/amstatnews.png)
+![](/images/amstatnews.png)
