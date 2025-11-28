@@ -7,22 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News</title>
+      <link>/categories/news/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/news/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Academics</title>
       <link>/categories/academics/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>/categories/academics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>News</title>
-      <link>/categories/news/</link>
-      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/news/</guid>
       <description></description>
     </item>
     
