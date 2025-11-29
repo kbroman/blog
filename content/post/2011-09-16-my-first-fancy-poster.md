@@ -20,6 +20,6 @@ I got a LaTeX template from &#346;aunak Sen, which originally came from [Nathani
 Not having a good sense of how this 1m x 1m poster is actually going to look, I  used Acrobat to print it onto a bunch of pieces of paper ("Tile all pages" in the print dialog), which I then reassembled with scissors and tape.
 
 It looks like it will be fine.
-![](https://kbroman.files.wordpress.com/2011/09/photo_of_poster.jpg)
+![](/images/photo_of_poster.jpg)
 
 Maybe I should save the \$50 or \$100 and post the black-and-white, pasted-together version?
