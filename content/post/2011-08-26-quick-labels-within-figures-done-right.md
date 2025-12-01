@@ -14,7 +14,7 @@ One of the coolest R packages I heard about at the [useR! Conference](http://www
 
 I think I first learned about this idea from [Andrew Gelman](https://www.andrewgelman.com): that a separate legend requires a lot of back-and-forth glances, so it's better to put the labels right by the relevant bits. For example, like this:
 
-![](https://kbroman.files.wordpress.com/2011/08/direct_by_hand.png)
+![](/images/direct_by_hand.png)
 
 rather than this:
 
