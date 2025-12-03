@@ -18,7 +18,7 @@ I think I first learned about this idea from [Andrew Gelman](https://www.andrewg
 
 rather than this:
 
-![](https://kbroman.files.wordpress.com/2011/08/legend.png)
+![](/images/legend.png)
 
 I've adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here's the code I used for the first of those pictures. (It was relatively easy here.)
 
