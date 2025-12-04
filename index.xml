@@ -8773,7 +8773,7 @@ Elsevier journals &lt;a href=&#34;http://thecostofknowledge.com&#34;&gt;http://t
 &lt;p&gt;I think I first learned about this idea from &lt;a href=&#34;https://www.andrewgelman.com&#34;&gt;Andrew Gelman&lt;/a&gt;: that a separate legend requires a lot of back-and-forth glances, so it&amp;rsquo;s better to put the labels right by the relevant bits. For example, like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/direct_by_hand.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;rather than this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://kbroman.files.wordpress.com/2011/08/legend.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./images/legend.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve adopted this approach as much as possible, though it often requires a bit of work (and thought) to get the labels in just the right place. Here&amp;rsquo;s the code I used for the first of those pictures. (It was relatively easy here.)&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;load(con &amp;lt;- url(&amp;quot;https://www.biostat.wisc.edu/~kbroman/blog/mapexpansion.RData&amp;quot;))
 close(con)
