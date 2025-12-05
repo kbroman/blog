@@ -56,7 +56,7 @@ direct.label(p)
 ````
 
 And here's what I get:
-![](https://kbroman.files.wordpress.com/2011/08/from_directlabels.png)
+![](/images/from_directlabels.png)
 
 For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the "real" version of the above figure, from [a paper under review](https://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf), using a mixture of legend and direct labels:
 
