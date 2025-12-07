@@ -60,7 +60,7 @@ And here's what I get:
 
 For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the "real" version of the above figure, from [a paper under review](https://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf), using a mixture of legend and direct labels:
 
-![](https://kbroman.files.wordpress.com/2011/08/fig_in_paper.png)
+![](/images/fig_in_paper.png)
 
 Here's another figure I'm quite proud of, from a paper nearing submission.
 ![](https://kbroman.files.wordpress.com/2011/08/phyloqtl.png)
