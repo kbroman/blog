@@ -63,4 +63,4 @@ For a final figure for publication, one will want to do some editing by hand, bu
 ![](/images/fig_in_paper.png)
 
 Here's another figure I'm quite proud of, from a paper nearing submission.
-![](https://kbroman.files.wordpress.com/2011/08/phyloqtl.png)
+![](/images/phyloqtl.png)
