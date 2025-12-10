@@ -8805,7 +8805,7 @@ direct.label(p)
 &lt;p&gt;For a final figure for publication, one will want to do some editing by hand, but for day-to-day graphics, this looks really useful. The following is the &amp;ldquo;real&amp;rdquo; version of the above figure, from &lt;a href=&#34;https://www.biostat.wisc.edu/~kbroman/publications/preCCprob.pdf&#34;&gt;a paper under review&lt;/a&gt;, using a mixture of legend and direct labels:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./images/fig_in_paper.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s another figure I&amp;rsquo;m quite proud of, from a paper nearing submission.
-&lt;img src=&#34;https://kbroman.files.wordpress.com/2011/08/phyloqtl.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;./images/phyloqtl.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
