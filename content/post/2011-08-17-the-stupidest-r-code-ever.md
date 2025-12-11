@@ -42,6 +42,6 @@ n.phe <- min(which(data[2,] != ""))-1
 ````
 
 If you don't quite understand what I'm talking about, here's a picture of one of these comma-delimited files; this one has three phenotypes.
-![](https://kbroman.files.wordpress.com/2011/08/examplecsv.png)
+![](/images/examplecsv.png)
 
 Open source means everyone can see my stupid mistakes.  Version control means everyone can see every stupid mistake I've ever made.
