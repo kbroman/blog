@@ -9015,7 +9015,7 @@ n.phe &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span 
   &lt;span style=&#34;color:#a6e22e&#34;&gt;stop&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;You must include at least one phenotype (e.g., an index).&amp;#34;&lt;/span&gt;)
 n.phe &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;min&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;which&lt;/span&gt;(data[2,] &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;))&lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you don&amp;rsquo;t quite understand what I&amp;rsquo;m talking about, here&amp;rsquo;s a picture of one of these comma-delimited files; this one has three phenotypes.
-&lt;img src=&#34;https://kbroman.files.wordpress.com/2011/08/examplecsv.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;./images/examplecsv.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Open source means everyone can see my stupid mistakes.  Version control means everyone can see every stupid mistake I&amp;rsquo;ve ever made.&lt;/p&gt;
 </description>
     </item>
