@@ -103,7 +103,7 @@ package](https://github.com/kbroman/miner/blob/master/README.md)
 to see a bunch of pictures and gifs.
 
 I'll write about some of these things in the (hopefully near) future,
-because I learned some cool stuff, and it was was really fun.
+because I learned some cool stuff, and it was really fun.
 
 Just after lunch on day 2, I realized that we could use the chat
 feature in Minecraft to _execute R code from within Minecraft_, using
@@ -119,3 +119,5 @@ Watch me type a bit of R and get my scatterplot going:
 What next? We're thinking we'll compile the many vignettes we
 developed into a [bookdown
 book](https://bookdown.org/yihui/bookdown/). Stay tuned.
+
+[Update: we did create an ebook, [R Programming with Minecraft](https://kbroman.org/miner_book).]
