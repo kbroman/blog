@@ -139,7 +139,7 @@ repository](https://github.com/kbroman/ProgrammingNotes) on GitHub.
 But most importantly, you want an informal script that you can quickly skim
 through or search, because you'll forget stuff:
 
-- How do define a function in this language?
+- How do I define a function in this language?
 - What do I use to indicate comments?
 - How do I concatenate two vectors?
 - How do I search for an element in a vector?
