@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ask me about atan2</title>
+      <link>/2026/05/14/atan2/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/2026/05/14/atan2/</guid>
+      <description>The semester is done, so I&amp;rsquo;ve turned to something light and fun: revisiting the packages miner and craft for R programming with Minecraft, created at the 2017 ROpenSci UnConf. (See my past posts on the topic: ROpenSci Unconf 2017, miner and craft, and writing text in Minecraft with R. Also see our ebook, Programming R with Minecraft.)
+I first wanted to see if it all still worked, particularly as the RaspberryJuice plugin which we rely on is no longer under development.</description>
+    </item>
+    
     <item>
       <title>debugging with docker and r-devel</title>
       <link>/2020/12/03/debugging-with-docker-and-r-devel/</link>
@@ -313,18 +323,6 @@ I gave a talk on interactive graphs (with the title above) at Johns Hopkins last
 
 The code (in CoffeeScript) is available at github. But beware: it&amp;rsquo;s pretty awful.
 The hardest part was setting up the data files. Well, that plus the fact that I just barely know what I&amp;rsquo;m doing in D3.</description>
-    </item>
-    
-    <item>
-      <title>charset=&#34;utf-8&#34;</title>
-      <link>/2013/03/02/charsetutf-8/</link>
-      <pubDate>Sat, 02 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/2013/03/02/charsetutf-8/</guid>
-      <description>To use the latest version of D3, you need to use charset=&amp;quot;utf-8&amp;quot; in the call to &amp;lt;script&amp;gt;.
-I&amp;rsquo;m giving a talk at ENAR in just over a week, on interactive graphics. My slides (still in preparation) are on the web.
-The slides were working fine locally on my laptop, but they weren&amp;rsquo;t working on my web server&amp;hellip;I was getting a syntax error regarding an illegal character.
-I figured out that I needed to add charset=&amp;quot;utf-8&amp;quot;, like so:</description>
     </item>
     
   </channel>

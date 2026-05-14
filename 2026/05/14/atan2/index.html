@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.80.0" />
+
+
+<title>ask me about atan2 - the stupidest thing...</title>
+<meta property="og:title" content="ask me about atan2 - the stupidest thing...">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+<link rel="stylesheet" href="../../../../css/custom.css">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/karl.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <a href="../../../../" class="nav-title">the stupidest thing...</a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://kbroman.org/blog/about">
+            <img alt="about" src="../../../../images/about_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://github.com/kbroman">
+            <img alt="github" src="../../../../images/github_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://rstats.me/@kbroman">
+            <img alt="mastodon" src="../../../../images/mastodon_logo.png" class="nav-link"/>
+            </a></li>
+    
+    <li><a href="https://kbroman.org">
+            <img alt="web" src="../../../../images/web_logo.png" class="nav-link"/>
+            </a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">ask me about atan2</h1>
+
+    
+    <span class="article-date">2026-05-14</span>
+    
+
+    <div class="article-content">
+      <p>The semester is done, so I&rsquo;ve turned to something light and fun:
+revisiting the packages <a href="https://github.com/kbroman/miner">miner</a> and
+<a href="https://github.com/kbroman/craft">craft</a> for
+<a href="https://www.r-project.org">R</a> programming with
+<a href="https://minecraft.net">Minecraft</a>, created at the <a href="https://unconf17.ropensci.org/">2017 ROpenSci
+UnConf</a>. (See my past posts on the
+topic: <a href="https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/">ROpenSci Unconf
+2017</a>,
+<a href="https://kbroman.org/blog/2017/05/31/miner-and-craft/">miner and
+craft</a>, and
+<a href="https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/">writing text in Minecraft with
+R</a>.
+Also see our ebook, <a href="https://kbroman.org/miner_book">Programming R with
+Minecraft</a>.)</p>
+<p>I first wanted to see if it all still worked, particularly as the
+<a href="https://github.com/zhuowei/RaspberryJuice">RaspberryJuice plugin</a>
+which we rely on is
+no longer under development. So that meant firing up a minecraft
+server on my laptop, and on a <a href="https://raspberrypi.com">Raspberry Pi</a>,
+and in a <a href="https://www.docker.com">Docker</a> container. (Ugh, installing
+docker was a pain in the ass. In the end I got it to work, but I&rsquo;m not
+sure how. Finding and installing the right version of Java was not so
+fun either.)</p>
+<p>Anyway, I was working on incorporating a <a href="https://github.com/kbroman/craft/issues/5">bunch of code that Felix Ling had
+sent me years ago</a>. In
+particular,
+I was puzzling over his function to build a set of stairs, which would
+sometimes put them behind me instead of (as intended) in front of
+me.</p>
+<p>It turns out our
+<a href="https://github.com/kbroman/miner/blob/master/R/getPlayerOrientation.R#L26-L42"><code>miner::getPlayerRotation()</code></a>
+function gave different results
+depending on whether <code>player_id</code> was specified, but only for some
+orientations. Underneath the hood, we call the API function
+<code>entity.getRotation()</code> if <code>player_id</code> is specified but
+<code>player.getRotation()</code> if it&rsquo;s not, and the latter was giving</p>
+<p>So I used
+<a href="https://github.com/kbroman/miner/blob/master/R/setPlayerOrientation.R#L25-L30"><code>miner::setPlayerRotation()</code></a>
+in a loop over angles (making my Minecraft player spin around in a
+circle) and polled the <code>getPlayerRotation()</code> function with and without
+specifying <code>player_id</code>, and also
+<a href="https://github.com/kbroman/miner/blob/master/R/getPlayerOrientation.R#L111-L122"><code>miner::getPlayerDirection()</code></a>
+which returns a unit vector to indicate direction, rather than an
+angle. (Note that there&rsquo;s a related function
+<a href="https://github.com/kbroman/miner/blob/master/R/getPlayerOrientation.R#L70-L81"><code>miner::getPlayerPitch()</code></a>
+for determining the up/down angle of where you&rsquo;re facing.)</p>
+<p>I can&rsquo;t tell you how long I spent puzzling over the conversion between
+Cartesian and polar coordinates. Isn&rsquo;t this easy?
+<code>$x=r sin(\theta)$</code> and <code>$y = r cos(\theta)$</code>, and then to go back you
+have <code>$r = \sqrt{x^2 + y^2}$</code> and <code>$\theta = atan(y/x)$</code>, right?.</p>
+<p>But WTF <code>$atan(y/x)$</code> only returns a value in <code>$(-\pi/2, \pi/2)$</code>, not the whole
+circle.</p>
+<p>Finally, I turned to <a href="https://en.wikipedia.org/wiki/Polar_coordinate_system">the wikipedia page on polar
+coordinates</a>
+and learned about <code>$atan2(y,x)$</code>, which I&rsquo;m sure I&rsquo;d never heard of
+before.</p>
+<p>So it&rsquo;s not really been what I&rsquo;d call &ldquo;light&rdquo;, but it&rsquo;s definitely been
+fun. And I&rsquo;m learning about docker (though it likely won&rsquo;t seem like I did
+the next time I have to revisit it), and math, and <a href="https://github.com/kbroman/craft/commit/cc8dbef496aa4fbf6d2eba68394f842000aed91d">how to get fences
+to connect
+up</a>,
+and I&rsquo;m making a mess of my Minecraft world.</p>
+<p><a href="../../../../images/2026-05-14_minecraft.png"><img src="../../../../images/2026-05-14_minecraft_small.png" alt="Minecraft world after messing with the miner package"></a></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://creativecommons.org/licenses/by/4.0/legalcode"><img src="../../../../images/cc-by.svg" height="28" style="vertical-align:middle;"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

@@ -3,8 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2026/05/14/atan2/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/minecraft/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/programming/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -29,21 +74,6 @@
   
   <url>
     <loc>/tags/news/</loc>
-    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2025-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -104,16 +134,6 @@
   
   <url>
     <loc>/2024/09/24/premature-ventricular-complexes/</loc>
-    <lastmod>2024-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/programming/</loc>
-    <lastmod>2024-09-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -198,11 +218,6 @@
   </url>
   
   <url>
-    <loc>/categories/programming/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/code/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
   </url>
@@ -259,16 +274,6 @@
   
   <url>
     <loc>/tags/conference/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/minecraft/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   

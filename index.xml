@@ -6,8 +6,80 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ask me about atan2</title>
+      <link>/2026/05/14/atan2/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/2026/05/14/atan2/</guid>
+      <description>&lt;p&gt;The semester is done, so I&amp;rsquo;ve turned to something light and fun:
+revisiting the packages &lt;a href=&#34;https://github.com/kbroman/miner&#34;&gt;miner&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/kbroman/craft&#34;&gt;craft&lt;/a&gt; for
+&lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt; programming with
+&lt;a href=&#34;https://minecraft.net&#34;&gt;Minecraft&lt;/a&gt;, created at the &lt;a href=&#34;https://unconf17.ropensci.org/&#34;&gt;2017 ROpenSci
+UnConf&lt;/a&gt;. (See my past posts on the
+topic: &lt;a href=&#34;https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/&#34;&gt;ROpenSci Unconf
+2017&lt;/a&gt;,
+&lt;a href=&#34;https://kbroman.org/blog/2017/05/31/miner-and-craft/&#34;&gt;miner and
+craft&lt;/a&gt;, and
+&lt;a href=&#34;https://kbroman.org/blog/2019/02/11/writing_text_in_minecraft_with_r/&#34;&gt;writing text in Minecraft with
+R&lt;/a&gt;.
+Also see our ebook, &lt;a href=&#34;https://kbroman.org/miner_book&#34;&gt;Programming R with
+Minecraft&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;I first wanted to see if it all still worked, particularly as the
+&lt;a href=&#34;https://github.com/zhuowei/RaspberryJuice&#34;&gt;RaspberryJuice plugin&lt;/a&gt;
+which we rely on is
+no longer under development. So that meant firing up a minecraft
+server on my laptop, and on a &lt;a href=&#34;https://raspberrypi.com&#34;&gt;Raspberry Pi&lt;/a&gt;,
+and in a &lt;a href=&#34;https://www.docker.com&#34;&gt;Docker&lt;/a&gt; container. (Ugh, installing
+docker was a pain in the ass. In the end I got it to work, but I&amp;rsquo;m not
+sure how. Finding and installing the right version of Java was not so
+fun either.)&lt;/p&gt;
+&lt;p&gt;Anyway, I was working on incorporating a &lt;a href=&#34;https://github.com/kbroman/craft/issues/5&#34;&gt;bunch of code that Felix Ling had
+sent me years ago&lt;/a&gt;. In
+particular,
+I was puzzling over his function to build a set of stairs, which would
+sometimes put them behind me instead of (as intended) in front of
+me.&lt;/p&gt;
+&lt;p&gt;It turns out our
+&lt;a href=&#34;https://github.com/kbroman/miner/blob/master/R/getPlayerOrientation.R#L26-L42&#34;&gt;&lt;code&gt;miner::getPlayerRotation()&lt;/code&gt;&lt;/a&gt;
+function gave different results
+depending on whether &lt;code&gt;player_id&lt;/code&gt; was specified, but only for some
+orientations. Underneath the hood, we call the API function
+&lt;code&gt;entity.getRotation()&lt;/code&gt; if &lt;code&gt;player_id&lt;/code&gt; is specified but
+&lt;code&gt;player.getRotation()&lt;/code&gt; if it&amp;rsquo;s not, and the latter was giving&lt;/p&gt;
+&lt;p&gt;So I used
+&lt;a href=&#34;https://github.com/kbroman/miner/blob/master/R/setPlayerOrientation.R#L25-L30&#34;&gt;&lt;code&gt;miner::setPlayerRotation()&lt;/code&gt;&lt;/a&gt;
+in a loop over angles (making my Minecraft player spin around in a
+circle) and polled the &lt;code&gt;getPlayerRotation()&lt;/code&gt; function with and without
+specifying &lt;code&gt;player_id&lt;/code&gt;, and also
+&lt;a href=&#34;https://github.com/kbroman/miner/blob/master/R/getPlayerOrientation.R#L111-L122&#34;&gt;&lt;code&gt;miner::getPlayerDirection()&lt;/code&gt;&lt;/a&gt;
+which returns a unit vector to indicate direction, rather than an
+angle. (Note that there&amp;rsquo;s a related function
+&lt;a href=&#34;https://github.com/kbroman/miner/blob/master/R/getPlayerOrientation.R#L70-L81&#34;&gt;&lt;code&gt;miner::getPlayerPitch()&lt;/code&gt;&lt;/a&gt;
+for determining the up/down angle of where you&amp;rsquo;re facing.)&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t tell you how long I spent puzzling over the conversion between
+Cartesian and polar coordinates. Isn&amp;rsquo;t this easy?
+&lt;code&gt;$x=r sin(\theta)$&lt;/code&gt; and &lt;code&gt;$y = r cos(\theta)$&lt;/code&gt;, and then to go back you
+have &lt;code&gt;$r = \sqrt{x^2 + y^2}$&lt;/code&gt; and &lt;code&gt;$\theta = atan(y/x)$&lt;/code&gt;, right?.&lt;/p&gt;
+&lt;p&gt;But WTF &lt;code&gt;$atan(y/x)$&lt;/code&gt; only returns a value in &lt;code&gt;$(-\pi/2, \pi/2)$&lt;/code&gt;, not the whole
+circle.&lt;/p&gt;
+&lt;p&gt;Finally, I turned to &lt;a href=&#34;https://en.wikipedia.org/wiki/Polar_coordinate_system&#34;&gt;the wikipedia page on polar
+coordinates&lt;/a&gt;
+and learned about &lt;code&gt;$atan2(y,x)$&lt;/code&gt;, which I&amp;rsquo;m sure I&amp;rsquo;d never heard of
+before.&lt;/p&gt;
+&lt;p&gt;So it&amp;rsquo;s not really been what I&amp;rsquo;d call &amp;ldquo;light&amp;rdquo;, but it&amp;rsquo;s definitely been
+fun. And I&amp;rsquo;m learning about docker (though it likely won&amp;rsquo;t seem like I did
+the next time I have to revisit it), and math, and &lt;a href=&#34;https://github.com/kbroman/craft/commit/cc8dbef496aa4fbf6d2eba68394f842000aed91d&#34;&gt;how to get fences
+to connect
+up&lt;/a&gt;,
+and I&amp;rsquo;m making a mess of my Minecraft world.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./images/2026-05-14_minecraft.png&#34;&gt;&lt;img src=&#34;./images/2026-05-14_minecraft_small.png&#34; alt=&#34;Minecraft world after messing with the miner package&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>common variable immunodeficiency</title>
