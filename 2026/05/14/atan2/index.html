@@ -116,7 +116,7 @@ function gave different results
 depending on whether <code>player_id</code> was specified, but only for some
 orientations. Underneath the hood, we call the API function
 <code>entity.getRotation()</code> if <code>player_id</code> is specified but
-<code>player.getRotation()</code> if it&rsquo;s not, and the latter was giving</p>
+<code>player.getRotation()</code> if it&rsquo;s not, and the latter was giving crap results for some orientations.</p>
 <p>So I used
 <a href="https://github.com/kbroman/miner/blob/master/R/setPlayerOrientation.R#L25-L30"><code>miner::setPlayerRotation()</code></a>
 in a loop over angles (making my Minecraft player spin around in a
