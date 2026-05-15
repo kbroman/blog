@@ -50,7 +50,7 @@ function gave different results
 depending on whether &lt;code&gt;player_id&lt;/code&gt; was specified, but only for some
 orientations. Underneath the hood, we call the API function
 &lt;code&gt;entity.getRotation()&lt;/code&gt; if &lt;code&gt;player_id&lt;/code&gt; is specified but
-&lt;code&gt;player.getRotation()&lt;/code&gt; if it&amp;rsquo;s not, and the latter was giving&lt;/p&gt;
+&lt;code&gt;player.getRotation()&lt;/code&gt; if it&amp;rsquo;s not, and the latter was giving crap results for some orientations.&lt;/p&gt;
 &lt;p&gt;So I used
 &lt;a href=&#34;https://github.com/kbroman/miner/blob/master/R/setPlayerOrientation.R#L25-L30&#34;&gt;&lt;code&gt;miner::setPlayerRotation()&lt;/code&gt;&lt;/a&gt;
 in a loop over angles (making my Minecraft player spin around in a
