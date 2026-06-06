@@ -54,16 +54,28 @@ pretty simple.
    RUN RD -e "install.packages('qtl')"
    ```
 
+   You might want to install some further tools like `git`, and some
+   further packages like `devtools` and `testthat`. The latter may
+   require yet further tools like `libuv1-dev` and `libxml2-dev`. So
+   your `Dockerfile` might look like this:
+
+   ```
+   FROM rocker/r-devel
+   RUN apt install -y git libuv1-dev libxml2-dev
+   RUN RD -e "install.packages(c('broman', 'qtl', 'devtools', 'testthat'))"
+   ```
+
+
 3. _Build the docker image_.
 
    ```
-   sudo docker build -t rdevel-qtl .
+   docker build -t rdevel-qtl .
    ```
 
 4. _Fire up that image in a container_.
 
    ```
-   sudo docker run -it rdevel-qtl bash
+   docker run -it rdevel-qtl bash
    ```
 
 5. _Run R and load the package_.
