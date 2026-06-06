@@ -125,14 +125,21 @@ is the current version of R and <code>RD</code> is the devel version, so we
 need to use <code>RD</code> to install the package.)</p>
 <pre><code>FROM rocker/r-devel
 RUN RD -e &quot;install.packages('qtl')&quot;
+</code></pre><p>You might want to install some further tools like <code>git</code>, and some
+further packages like <code>devtools</code> and <code>testthat</code>. The latter may
+require yet further tools like <code>libuv1-dev</code> and <code>libxml2-dev</code>. So
+your <code>Dockerfile</code> might look like this:</p>
+<pre><code>FROM rocker/r-devel
+RUN apt install -y git libuv1-dev libxml2-dev
+RUN RD -e &quot;install.packages(c('broman', 'qtl', 'devtools', 'testthat'))&quot;
 </code></pre></li>
 <li>
 <p><em>Build the docker image</em>.</p>
-<pre><code>sudo docker build -t rdevel-qtl .
+<pre><code>docker build -t rdevel-qtl .
 </code></pre></li>
 <li>
 <p><em>Fire up that image in a container</em>.</p>
-<pre><code>sudo docker run -it rdevel-qtl bash
+<pre><code>docker run -it rdevel-qtl bash
 </code></pre></li>
 <li>
 <p><em>Run R and load the package</em>.</p>

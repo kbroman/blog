@@ -1264,14 +1264,21 @@ is the current version of R and &lt;code&gt;RD&lt;/code&gt; is the devel version
 need to use &lt;code&gt;RD&lt;/code&gt; to install the package.)&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
 RUN RD -e &amp;quot;install.packages(&#39;qtl&#39;)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You might want to install some further tools like &lt;code&gt;git&lt;/code&gt;, and some
+further packages like &lt;code&gt;devtools&lt;/code&gt; and &lt;code&gt;testthat&lt;/code&gt;. The latter may
+require yet further tools like &lt;code&gt;libuv1-dev&lt;/code&gt; and &lt;code&gt;libxml2-dev&lt;/code&gt;. So
+your &lt;code&gt;Dockerfile&lt;/code&gt; might look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
+RUN apt install -y git libuv1-dev libxml2-dev
+RUN RD -e &amp;quot;install.packages(c(&#39;broman&#39;, &#39;qtl&#39;, &#39;devtools&#39;, &#39;testthat&#39;))&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Build the docker image&lt;/em&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo docker build -t rdevel-qtl .
+&lt;pre&gt;&lt;code&gt;docker build -t rdevel-qtl .
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Fire up that image in a container&lt;/em&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo docker run -it rdevel-qtl bash
+&lt;pre&gt;&lt;code&gt;docker run -it rdevel-qtl bash
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Run R and load the package&lt;/em&gt;.&lt;/p&gt;
