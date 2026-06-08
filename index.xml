@@ -1286,7 +1286,7 @@ RUN R -e &amp;quot;install.packages(c(&#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2
 &lt;p&gt;&lt;em&gt;Run R and load the package&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The above puts you into a bash shell within the container. If you
 used &lt;code&gt;rocker/r-devel&lt;/code&gt;, type &lt;code&gt;RD&lt;/code&gt; to fire up the devel version of
-R; if you used &lt;code&gt;rocker/tidyverse:devel&lt;/code&gt;, just use &lt;code&gt;R&lt;/code&gt;. Then load
+R; if you used &lt;code&gt;rocker/tidyverse:devel&lt;/code&gt;, just type &lt;code&gt;R&lt;/code&gt;. Then load
 your package and mess about. I quickly saw &lt;a href=&#34;https://bit.ly/3qujHRV&#34;&gt;where I went
 wrong&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
