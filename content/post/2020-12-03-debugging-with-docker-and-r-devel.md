@@ -84,7 +84,7 @@ pretty simple.
 
     The above puts you into a bash shell within the container. If you
     used `rocker/r-devel`, type `RD` to fire up the devel version of
-    R; if you used `rocker/tidyverse:devel`, just use `R`. Then load
+    R; if you used `rocker/tidyverse:devel`, just type `R`. Then load
     your package and mess about. I quickly saw [where I went
     wrong](https://bit.ly/3qujHRV).
 
