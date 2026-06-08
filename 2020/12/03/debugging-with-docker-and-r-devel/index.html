@@ -127,11 +127,13 @@ need to use <code>RD</code> to install the package.)</p>
 RUN RD -e &quot;install.packages('qtl')&quot;
 </code></pre><p>You might want to install some further tools like <code>git</code>, and some
 further packages like <code>devtools</code> and <code>testthat</code>. The latter may
-require yet further tools like <code>libuv1-dev</code> and <code>libxml2-dev</code>. So
-your <code>Dockerfile</code> might look like this:</p>
-<pre><code>FROM rocker/r-devel
-RUN apt install -y git libuv1-dev libxml2-dev
-RUN RD -e &quot;install.packages(c('broman', 'qtl', 'devtools', 'testthat'))&quot;
+require yet further tools like <code>libuv1-dev</code> and <code>libxml2-dev</code>, and
+to make it easier, you might want use the
+<a href="https://hub.docker.com/r/rocker/tidyverse">rocker/tidyverse:devel</a>,
+as in the following example:</p>
+<pre><code>FROM rocker/tidyverse:devel
+RUN apt install -y git
+RUN R -e &quot;install.packages(c('broman', 'qtl', 'qtl2'))
 </code></pre></li>
 <li>
 <p><em>Build the docker image</em>.</p>
@@ -143,9 +145,11 @@ RUN RD -e &quot;install.packages(c('broman', 'qtl', 'devtools', 'testthat'))&quo
 </code></pre></li>
 <li>
 <p><em>Run R and load the package</em>.</p>
-<p>The above puts you into a bash shell within the container. Type
-<code>RD</code> to fire up the devel version of R, and then load your package
-and mess about. I quickly saw <a href="https://bit.ly/3qujHRV">where I went wrong</a>.</p>
+<p>The above puts you into a bash shell within the container. If you
+used <code>rocker/r-devel</code>, type <code>RD</code> to fire up the devel version of
+R; if you used <code>rocker/tidyverse:devel</code>, just use <code>R</code>. Then load
+your package and mess about. I quickly saw <a href="https://bit.ly/3qujHRV">where I went
+wrong</a>.</p>
 </li>
 <li>
 <p><em>Fix the problem and test it</em>.</p>
