@@ -56,13 +56,15 @@ pretty simple.
 
    You might want to install some further tools like `git`, and some
    further packages like `devtools` and `testthat`. The latter may
-   require yet further tools like `libuv1-dev` and `libxml2-dev`. So
-   your `Dockerfile` might look like this:
+   require yet further tools like `libuv1-dev` and `libxml2-dev`, and
+   to make it easier, you might want use the
+   [rocker/tidyverse:devel](https://hub.docker.com/r/rocker/tidyverse),
+   as in the following example:
 
    ```
-   FROM rocker/r-devel
-   RUN apt install -y git libuv1-dev libxml2-dev
-   RUN RD -e "install.packages(c('broman', 'qtl', 'devtools', 'testthat'))"
+   FROM rocker/tidyverse:devel
+   RUN apt install -y git
+   RUN R -e "install.packages(c('broman', 'qtl', 'qtl2'))
    ```
 
 
@@ -80,9 +82,11 @@ pretty simple.
 
 5. _Run R and load the package_.
 
-    The above puts you into a bash shell within the container. Type
-    `RD` to fire up the devel version of R, and then load your package
-    and mess about. I quickly saw [where I went wrong](https://bit.ly/3qujHRV).
+    The above puts you into a bash shell within the container. If you
+    used `rocker/r-devel`, type `RD` to fire up the devel version of
+    R; if you used `rocker/tidyverse:devel`, just use `R`. Then load
+    your package and mess about. I quickly saw [where I went
+    wrong](https://bit.ly/3qujHRV).
 
 6. _Fix the problem and test it_.
 
