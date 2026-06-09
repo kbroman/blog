@@ -67,6 +67,16 @@ pretty simple.
    RUN R -e "install.packages(c('broman', 'qtl', 'qtl2'))
    ```
 
+   But that docker image seems to be updated less often, so maybe
+   stick to `rocker/r-devel` as follows. (But this didn't totally work
+   for me; to install `devtools` I seem to need `libxml2-dev` but I
+   wasn't able to get it to work.)
+
+   ```
+   FROM rocker/r-devel
+   RUN apt install -y git libuv1-dev
+   RUN R -e "install.packages(c('testthat', 'devtools', 'broman', 'qtl', 'qtl2'))
+   ```
 
 3. _Build the docker image_.
 
@@ -84,7 +94,7 @@ pretty simple.
 
     The above puts you into a bash shell within the container. If you
     used `rocker/r-devel`, type `RD` to fire up the devel version of
-    R; if you used `rocker/tidyverse:devel`, just type `R`. Then load
+    R. (If you used `rocker/tidyverse:devel`, just type `R`.) Then load
     your package and mess about. I quickly saw [where I went
     wrong](https://bit.ly/3qujHRV).
 
