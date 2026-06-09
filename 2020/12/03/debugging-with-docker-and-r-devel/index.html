@@ -76,7 +76,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     
 
     <h1 class="article-title">debugging with docker and r-devel</h1>
@@ -141,6 +141,14 @@ wasn&rsquo;t able to get it to work.)</p>
 <pre><code>FROM rocker/r-devel
 RUN apt install -y git libuv1-dev
 RUN R -e &quot;install.packages(c('testthat', 'devtools', 'broman', 'qtl', 'qtl2'))
+</code></pre><p>Here&rsquo;s the error I got:</p>
+<pre><code>Error: Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. libxml2-16:amd64=2.15.2+dfsg-0.1 is not selected for install
+   2. libxml2-16:amd64=2.15.2+dfsg-0.1 is selected as a downgrade because:
+      1. libxml2-dev:amd64=2.15.2+dfsg-0.1 is selected for install
+      2. libxml2-dev:amd64=2.15.2+dfsg-0.1 Depends libxml2-16 (= 2.15.2+dfsg-0.1)
+</code></pre><p>And here&rsquo;s what worked:</p>
+<pre><code>apt install -y libxml2-dev libxml2-16:amd64=2.15.2+dfsg-0.1
 </code></pre></li>
 <li>
 <p><em>Build the docker image</em>.</p>
