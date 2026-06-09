@@ -134,6 +134,13 @@ as in the following example:</p>
 <pre><code>FROM rocker/tidyverse:devel
 RUN apt install -y git
 RUN R -e &quot;install.packages(c('broman', 'qtl', 'qtl2'))
+</code></pre><p>But that docker image seems to be updated less often, so maybe
+stick to <code>rocker/r-devel</code> as follows. (But this didn&rsquo;t totally work
+for me; to install <code>devtools</code> I seem to need <code>libxml2-dev</code> but I
+wasn&rsquo;t able to get it to work.)</p>
+<pre><code>FROM rocker/r-devel
+RUN apt install -y git libuv1-dev
+RUN R -e &quot;install.packages(c('testthat', 'devtools', 'broman', 'qtl', 'qtl2'))
 </code></pre></li>
 <li>
 <p><em>Build the docker image</em>.</p>
@@ -147,7 +154,7 @@ RUN R -e &quot;install.packages(c('broman', 'qtl', 'qtl2'))
 <p><em>Run R and load the package</em>.</p>
 <p>The above puts you into a bash shell within the container. If you
 used <code>rocker/r-devel</code>, type <code>RD</code> to fire up the devel version of
-R; if you used <code>rocker/tidyverse:devel</code>, just type <code>R</code>. Then load
+R. (If you used <code>rocker/tidyverse:devel</code>, just type <code>R</code>.) Then load
 your package and mess about. I quickly saw <a href="https://bit.ly/3qujHRV">where I went
 wrong</a>.</p>
 </li>

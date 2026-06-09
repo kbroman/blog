@@ -1273,6 +1273,13 @@ as in the following example:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;FROM rocker/tidyverse:devel
 RUN apt install -y git
 RUN R -e &amp;quot;install.packages(c(&#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2&#39;))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;But that docker image seems to be updated less often, so maybe
+stick to &lt;code&gt;rocker/r-devel&lt;/code&gt; as follows. (But this didn&amp;rsquo;t totally work
+for me; to install &lt;code&gt;devtools&lt;/code&gt; I seem to need &lt;code&gt;libxml2-dev&lt;/code&gt; but I
+wasn&amp;rsquo;t able to get it to work.)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
+RUN apt install -y git libuv1-dev
+RUN R -e &amp;quot;install.packages(c(&#39;testthat&#39;, &#39;devtools&#39;, &#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2&#39;))
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Build the docker image&lt;/em&gt;.&lt;/p&gt;
@@ -1286,7 +1293,7 @@ RUN R -e &amp;quot;install.packages(c(&#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2
 &lt;p&gt;&lt;em&gt;Run R and load the package&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The above puts you into a bash shell within the container. If you
 used &lt;code&gt;rocker/r-devel&lt;/code&gt;, type &lt;code&gt;RD&lt;/code&gt; to fire up the devel version of
-R; if you used &lt;code&gt;rocker/tidyverse:devel&lt;/code&gt;, just type &lt;code&gt;R&lt;/code&gt;. Then load
+R. (If you used &lt;code&gt;rocker/tidyverse:devel&lt;/code&gt;, just type &lt;code&gt;R&lt;/code&gt;.) Then load
 your package and mess about. I quickly saw &lt;a href=&#34;https://bit.ly/3qujHRV&#34;&gt;where I went
 wrong&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
