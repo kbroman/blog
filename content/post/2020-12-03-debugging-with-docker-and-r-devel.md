@@ -75,7 +75,7 @@ pretty simple.
    ```
    FROM rocker/r-devel
    RUN apt install -y git libuv1-dev
-   RUN R -e "install.packages(c('testthat', 'devtools', 'broman', 'qtl', 'qtl2'))
+   RUN R -e "install.packages(c('testthat', 'devtools', 'broman', 'qtl', 'qtl2'))"
    ```
 
    Here's the error I got:
@@ -91,7 +91,10 @@ pretty simple.
    And here's what worked:
 
    ```
-   apt install -y libxml2-dev libxml2-16:amd64=2.15.2+dfsg-0.1
+   FROM rocker/r-devel
+   RUN apt update && apt upgrade -y
+   RUN apt install -y --allow-downgrades git libuv1-dev libxml2-dev libxml2-16:amd64=2.15.2+dfsg-0.1
+   RUN R -e "install.packages(c('devtools', 'testthat', 'broman', 'qtl', 'qtl2'))"
    ```
 
 3. _Build the docker image_.
