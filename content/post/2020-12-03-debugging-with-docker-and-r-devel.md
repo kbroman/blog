@@ -78,6 +78,22 @@ pretty simple.
    RUN R -e "install.packages(c('testthat', 'devtools', 'broman', 'qtl', 'qtl2'))
    ```
 
+   Here's the error I got:
+
+   ```
+   Error: Unable to satisfy dependencies. Reached two conflicting decisions:
+      1. libxml2-16:amd64=2.15.2+dfsg-0.1 is not selected for install
+      2. libxml2-16:amd64=2.15.2+dfsg-0.1 is selected as a downgrade because:
+         1. libxml2-dev:amd64=2.15.2+dfsg-0.1 is selected for install
+         2. libxml2-dev:amd64=2.15.2+dfsg-0.1 Depends libxml2-16 (= 2.15.2+dfsg-0.1)
+   ```
+
+   And here's what worked:
+
+   ```
+   apt install -y libxml2-dev libxml2-16:amd64=2.15.2+dfsg-0.1
+   ```
+
 3. _Build the docker image_.
 
    ```
