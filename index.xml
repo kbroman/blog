@@ -1279,7 +1279,7 @@ for me; to install &lt;code&gt;devtools&lt;/code&gt; I seem to need &lt;code&gt;
 wasn&amp;rsquo;t able to get it to work.)&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
 RUN apt install -y git libuv1-dev
-RUN R -e &amp;quot;install.packages(c(&#39;testthat&#39;, &#39;devtools&#39;, &#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2&#39;))
+RUN R -e &amp;quot;install.packages(c(&#39;testthat&#39;, &#39;devtools&#39;, &#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2&#39;))&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s the error I got:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Error: Unable to satisfy dependencies. Reached two conflicting decisions:
    1. libxml2-16:amd64=2.15.2+dfsg-0.1 is not selected for install
@@ -1287,7 +1287,10 @@ RUN R -e &amp;quot;install.packages(c(&#39;testthat&#39;, &#39;devtools&#39;, &#
       1. libxml2-dev:amd64=2.15.2+dfsg-0.1 is selected for install
       2. libxml2-dev:amd64=2.15.2+dfsg-0.1 Depends libxml2-16 (= 2.15.2+dfsg-0.1)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And here&amp;rsquo;s what worked:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;apt install -y libxml2-dev libxml2-16:amd64=2.15.2+dfsg-0.1
+&lt;pre&gt;&lt;code&gt;FROM rocker/r-devel
+RUN apt update &amp;amp;&amp;amp; apt upgrade -y
+RUN apt install -y --allow-downgrades git libuv1-dev libxml2-dev libxml2-16:amd64=2.15.2+dfsg-0.1
+RUN R -e &amp;quot;install.packages(c(&#39;devtools&#39;, &#39;testthat&#39;, &#39;broman&#39;, &#39;qtl&#39;, &#39;qtl2&#39;))&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;Build the docker image&lt;/em&gt;.&lt;/p&gt;
