@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>immune deficiency foundation fundraiser</title>
+      <link>/2026/08/08/fundraiser/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/2026/08/08/fundraiser/</guid>
+      <description>I&amp;rsquo;m participating in a fundraiser walk (at the Milwaukee Zoo on 2026-08-29) for the Immune Deficiency Foundation, which has been a great source of information and support as I&amp;rsquo;ve dealt with CVID and now also GLILD. I&amp;rsquo;ve particularly appreciated their Patient &amp;amp; Family Handbook, their many webinars on youtube, and their online support groups (particularly valuable for a rare disease).
+Please visit my fundraising page and consider supporting the Immune Deficiency Foundation.</description>
+    </item>
+    
     <item>
       <title>ask me about atan2</title>
       <link>/2026/05/14/atan2/</link>
@@ -296,16 +306,6 @@ But Yihui Xie just transferred everything for me! So awesome.</description>
       <guid>/2017/05/31/miner-and-craft/</guid>
       <description>In addition to our miner package and our in-development bookdown book, the R/minecraft team from the ROpenSci Unconference had created a bunch of other useful code for interacting with Minecraft from R, which we&amp;rsquo;re putting into a second package.
 I initially called this extra package &amp;ldquo;miner.extra&amp;rdquo;. (And I learned some new things about the rules for what characters can be used in R package names.) But then this evening I realized, &amp;ldquo;Hey, we could call it craft.</description>
-    </item>
-    
-    <item>
-      <title>omg, bookdown!</title>
-      <link>/2017/05/31/omg-bookdown/</link>
-      <pubDate>Wed, 31 May 2017 23:16:00 -0500</pubDate>
-      
-      <guid>/2017/05/31/omg-bookdown/</guid>
-      <description>So I heard Yihui Xie talk about bookdown, and I read, with considerable excitement, his bookdown book. (There&amp;rsquo;s a blurb from me at Amazon saying nice things about it, after all). But I must admit that I read the book on my iPad, with my feet up. And so my understanding, while reasonably complete, was somewhat theoretical.
-I mean, from my own book writing experience, I felt like, &amp;ldquo;Hell if I&amp;rsquo;m going to be writing another book.</description>
     </item>
     
   </channel>

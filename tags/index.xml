@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The text in this work is licensed under CC-BY-4.0, https://creativecommons.org/licenses/by/4.0/legalcode; code licensed under the MIT license</copyright>
-    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cvid</title>
+      <link>/tags/cvid/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cvid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>health</title>
+      <link>/tags/health/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>/tags/news/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/news/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Minecraft</title>
       <link>/tags/minecraft/</link>
@@ -32,33 +59,6 @@
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cvid</title>
-      <link>/tags/cvid/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cvid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>health</title>
-      <link>/tags/health/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/health/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>news</title>
-      <link>/tags/news/</link>
-      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/news/</guid>
       <description></description>
     </item>
     
